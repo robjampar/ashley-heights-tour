@@ -240,6 +240,7 @@
 <script src='assets/www.madesnappy.co.uk/javascript/photo-sphere-viewer.min.js'></script>
 <script src='assets/www.madesnappy.co.uk/javascript/gallery.js'></script>
 <script src='assets/www.madesnappy.co.uk/javascript/utils.js'></script>
+<script src='auth.js'></script>
 <script type='text/javascript'>
 var todays_date = '2026-07-05';var url_root = 'https://www.madesnappy.co.uk/';$(document).ready(function() {
 initialise_page();        let form_initialise_options = {
@@ -566,16 +567,17 @@ $(window).on('load', function() {
           "#design_panel .dp-min-btn{position:absolute;top:-9px;right:-9px;width:22px;height:22px;border-radius:50%;" +
           "border:0;background:" + accent + ";color:#fff;font-size:13px;line-height:22px;cursor:pointer;padding:0;}" +
           "@media (max-width:600px){#design_panel{bottom:64px;}#design_panel .dp-select{max-width:130px;}}" +
-          "#dp-token-modal{position:fixed;inset:0;z-index:10000;display:none;align-items:center;justify-content:center;" +
+          ".dp-modal{position:fixed;inset:0;z-index:10000;display:none;align-items:center;justify-content:center;" +
           "background:rgba(0,0,0,.55);font-family:Montserrat,Arial,sans-serif;}" +
-          "#dp-token-modal .dp-tm-card{background:#1c1e1c;color:#eee;max-width:460px;width:90%;border-radius:12px;" +
+          ".dp-modal .dp-tm-card{background:#1c1e1c;color:#eee;max-width:460px;width:90%;border-radius:12px;" +
           "padding:18px 18px 14px;box-shadow:0 10px 40px rgba(0,0,0,.5);}" +
-          "#dp-token-modal .dp-tm-title{font-size:16px;font-weight:700;margin-bottom:8px;}" +
-          "#dp-token-modal .dp-tm-body{font-size:12.5px;line-height:1.55;opacity:.92;}" +
-          "#dp-token-modal .dp-tm-body a{color:#6bd08b;text-decoration:none;font-weight:600;}" +
-          "#dp-token-modal .dp-tm-input{width:100%;margin:12px 0;padding:9px 10px;border-radius:8px;" +
+          ".dp-modal .dp-tm-title{font-size:16px;font-weight:700;margin-bottom:8px;}" +
+          ".dp-modal .dp-tm-body{font-size:12.5px;line-height:1.55;opacity:.92;}" +
+          ".dp-modal .dp-tm-body a{color:#6bd08b;text-decoration:none;font-weight:600;}" +
+          ".dp-modal .dp-tm-input{width:100%;margin:12px 0;padding:9px 10px;border-radius:8px;" +
           "border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;font-size:13px;}" +
-          "#dp-token-modal .dp-tm-btns{display:flex;gap:8px;justify-content:flex-end;}";
+          ".dp-modal .dp-tm-err{color:#ff8f8f;font-size:12px;min-height:15px;margin:-4px 0 8px;}" +
+          ".dp-modal .dp-tm-btns{display:flex;gap:8px;justify-content:flex-end;}";
         document.head.appendChild(css);
 
         var panel = document.createElement("div");
@@ -726,9 +728,44 @@ $(window).on('load', function() {
         function utf8_to_b64(str) { return btoa(unescape(encodeURIComponent(str))); }
         function b64_to_utf8(b64) { return decodeURIComponent(escape(atob((b64 || "").replace(/\n/g, "")))); }
 
-        function get_token() { try { return localStorage.getItem("gh_pat") || ""; } catch (e) { return ""; } }
-        function set_token(t) { try { localStorage.setItem("gh_pat", t); } catch (e) {} }
-        function clear_token() { try { localStorage.removeItem("gh_pat"); } catch (e) {} }
+        // The token is held in memory only (never persisted to disk), so a
+        // passcode is entered once per session. It can come from either the
+        // embedded encrypted blob (auth.js -> window.__GH_ENC, unlocked by PIN)
+        // or a manually pasted token.
+        var runtimeToken = null;
+        function get_token() { return runtimeToken || ""; }
+        function set_token(t) { runtimeToken = t || null; }
+        function clear_token() { runtimeToken = null; }
+
+        // The GitHub token prefix is stripped before encryption (see
+        // encrypt-setup.html) and re-added here, so the committed ciphertext
+        // carries no give-away prefix.
+        var TOKEN_PREFIX = "github_pat_";
+        function b64_to_bytes(b64) {
+          var bin = atob((b64 || "").replace(/\n/g, "")), u = new Uint8Array(bin.length);
+          for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+          return u;
+        }
+        // Derive an AES key from the passcode and decrypt the embedded token.
+        // A wrong passcode fails the AES-GCM tag and rejects.
+        function decrypt_token(pin) {
+          var enc = window.__GH_ENC;
+          var subtle = window.crypto && window.crypto.subtle;
+          if (!enc) return Promise.reject(new Error("no embedded token"));
+          if (!subtle) return Promise.reject(new Error("WebCrypto unavailable (needs https/localhost)"));
+          var salt = b64_to_bytes(enc.salt), iv = b64_to_bytes(enc.iv), ct = b64_to_bytes(enc.ct);
+          return subtle.importKey("raw", new TextEncoder().encode(pin), { name: "PBKDF2" }, false, ["deriveKey"])
+            .then(function(km) {
+              return subtle.deriveKey(
+                { name: "PBKDF2", salt: salt, iterations: enc.iter || 600000, hash: "SHA-256" },
+                km, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+            })
+            .then(function(key) { return subtle.decrypt({ name: "AES-GCM", iv: iv }, key, ct); })
+            .then(function(pt) {
+              // Strip the fixed-length space/NUL padding, then re-add the prefix.
+              return TOKEN_PREFIX + new TextDecoder().decode(pt).replace(/[\s ]+$/g, "");
+            });
+        }
 
         function gh_headers(tok) {
           return { "Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json",
@@ -834,12 +871,13 @@ $(window).on('load', function() {
           if (!tokenModal) {
             var m = document.createElement("div");
             m.id = "dp-token-modal";
+            m.className = "dp-modal";
             m.innerHTML =
               "<div class='dp-tm-card'>" +
                 "<div class='dp-tm-title'>Publish uploads to GitHub</div>" +
                 "<div class='dp-tm-body'>Uploading a render commits it to <b>" + GH.owner + "/" + GH.repo + "</b>. " +
                   "Paste a GitHub <b>fine-grained personal access token</b> with <b>Contents: Read and write</b> " +
-                  "on that repository. It is stored only in this browser (localStorage).<br><br>" +
+                  "on that repository. It is kept in memory for this session only.<br><br>" +
                   "<a href='https://github.com/settings/personal-access-tokens/new' target='_blank' rel='noopener'>Create a token →</a> " +
                   "&nbsp;Resource owner: " + GH.owner + " &middot; Repository access: only " + GH.repo +
                   " &middot; Permissions → Contents: Read and write." +
@@ -866,9 +904,58 @@ $(window).on('load', function() {
           var self = tokenModal;
           return new Promise(function(res) { tokenResolve = res; setTimeout(function(){ self.querySelector("#dp-tm-input").focus(); }, 30); });
         }
+        // ---- Passcode modal (unlocks the embedded encrypted token) --------
+        var pinModal = null, pinResolve = null;
+        function open_pin_modal() {
+          if (!pinModal) {
+            var m = document.createElement("div");
+            m.id = "dp-pin-modal";
+            m.className = "dp-modal";
+            m.innerHTML =
+              "<div class='dp-tm-card'>" +
+                "<div class='dp-tm-title'>Enter passcode to publish</div>" +
+                "<div class='dp-tm-body'>Uploads commit to <b>" + GH.owner + "/" + GH.repo + "</b>. " +
+                  "Enter the passcode to unlock publishing for this session.</div>" +
+                "<input id='dp-pin-input' class='dp-tm-input' type='password' inputmode='numeric' " +
+                  "placeholder='passcode' autocomplete='off' spellcheck='false'>" +
+                "<div class='dp-tm-err' id='dp-pin-err'></div>" +
+                "<div class='dp-tm-btns'>" +
+                  "<button id='dp-pin-ok' class='dp-btn'>Unlock</button>" +
+                  "<button id='dp-pin-forget' class='dp-btn'>Lock</button>" +
+                  "<button id='dp-pin-cancel' class='dp-btn'>Cancel</button>" +
+                "</div>" +
+              "</div>";
+            document.body.appendChild(m);
+            m.addEventListener("mousedown", function(e) { e.stopPropagation(); });
+            var input = m.querySelector("#dp-pin-input");
+            var err = m.querySelector("#dp-pin-err");
+            function close(val) { m.style.display = "none"; var r = pinResolve; pinResolve = null; if (r) r(val); }
+            function attempt() {
+              err.textContent = "Unlocking…";
+              decrypt_token(input.value).then(function(tok) {
+                set_token(tok); input.value = ""; err.textContent = ""; close(tok);
+              }).catch(function(e) {
+                err.textContent = (e && /WebCrypto/.test(e.message)) ? e.message : "Wrong passcode";
+              });
+            }
+            m.querySelector("#dp-pin-ok").onclick = attempt;
+            input.addEventListener("keydown", function(e) { if (e.key === "Enter") attempt(); });
+            m.querySelector("#dp-pin-forget").onclick = function() { clear_token(); input.value = ""; err.textContent = "Locked."; };
+            m.querySelector("#dp-pin-cancel").onclick = function() { close(null); };
+            m.addEventListener("click", function(e) { if (e.target === m) close(null); });
+            pinModal = m;
+          }
+          pinModal.querySelector("#dp-pin-err").textContent = "";
+          pinModal.style.display = "flex";
+          var self = pinModal;
+          return new Promise(function(res) { pinResolve = res; setTimeout(function(){ self.querySelector("#dp-pin-input").focus(); }, 30); });
+        }
+        // Prefer the embedded encrypted token (unlock by passcode); otherwise
+        // fall back to a manually pasted token.
         function ensure_token() {
           var t = get_token();
-          return t ? Promise.resolve(t) : open_token_modal();
+          if (t) return Promise.resolve(t);
+          return window.__GH_ENC ? open_pin_modal() : open_token_modal();
         }
 
         // ---- Wire controls -----------------------------------------------
@@ -889,7 +976,9 @@ $(window).on('load', function() {
           if (idx == null || idx < 0) return;
           do_upload(idx, stem_of(ORIG[idx]), f);
         };
-        panel.querySelector("#dp-token").onclick = function() { open_token_modal(); };
+        panel.querySelector("#dp-token").onclick = function() {
+          if (window.__GH_ENC) open_pin_modal(); else open_token_modal();
+        };
         panel.querySelector("#dp-min").onclick = function() {
           panel.classList.toggle("dp-min");
           this.textContent = panel.classList.contains("dp-min") ? "+" : "–";
