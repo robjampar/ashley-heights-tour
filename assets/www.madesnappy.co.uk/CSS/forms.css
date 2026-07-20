@@ -1,0 +1,898 @@
+/*******************************************************************************
+//
+// Styles for forms
+//
+*******************************************************************************/
+
+/* Make sure the form has enough space */
+.prevent_form_width_collapse {
+  min-width: 40vw;
+}
+
+/* Forms */
+@media only screen and (min-width: 426px) {
+  .form_top_margin {
+    margin-top: 20px;
+  }
+  .label {
+    font-size: 1.2em;
+    padding: 11px 0px;
+    font-weight: bold;
+  }
+  .left .label {
+    padding: 11px 0;
+  }
+  .inline_form input, .inline_form select, .inline_form select option {
+    font-size: 0.9em;
+  }
+  .input_symbol_overlay {
+    left: 20px;
+    top: 14px;
+  }
+  .text_area_counter {
+    font-size: 1.2em;
+    right: 20px;
+    bottom: 14px;
+  }
+  .input_end_symbol_overlay {
+    right: 4rem;
+    top: 14px;
+  }
+  .input_symbol_space {
+    padding-left: 35px !important;
+  }
+  .input_symbol_end_space {
+    padding-right: 35px !important;
+  }
+  .password_strength {
+    right: 20px;
+    top: 11px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+  }
+  .password_strength_text {
+    font-size: 1.2em;
+    right: 55px;
+    top: 11px;
+  }
+  .no_space_form_buttons .bottom_form_button {
+    margin: 10px;
+  }
+  .half_input_width {
+    width: 50% !important;
+  }
+  .center_text .half_input_width {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .two_third_input_width {
+    margin-left: 16%;
+    width: 66% !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .half_input_width {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .row .col_25 {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .row .col_75 {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .half_input_width {
+    width: 100% !important;
+  }
+  .center_text .half_input_width {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .two_third_input_width {
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .form_top_margin {
+    margin-top: 10px;
+  }
+  .label {
+    font-size: 1em;
+    padding: 6px 0px;
+  }
+  .row .text_input, .row .textarea_input, .row .select_input, .row .stripe_element {
+    font-size: 0.9em;
+    border-radius: 10px;
+    padding: 7px 15px;
+  }
+  .password_strength {
+    right: 15px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+  }
+  .password_strength_text {
+    display: none;
+  }
+  .half_input_width, .two_third_input_width {
+    width: 100% !important;
+  }
+  .center_text .half_input_width {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .input_symbol_overlay {
+    font-size: 1em;
+    left: 20px;
+    top: 10px;
+  }
+  .text_area_counter {
+    font-size: 1em;
+    right: 20px;
+    bottom: 10px;
+  }
+  .input_end_symbol_overlay {
+    right: 3.25rem;
+    top:0;
+    line-height:2.5rem;
+  }
+  .input_symbol_space {
+    padding-left: 35px !important;
+  }
+}
+.form_container {
+  clear: both;
+}
+form .row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.overflow_row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+.row .stripe_element {
+  border: 3px solid rgb(8, 24, 41);
+  box-sizing: border-box;
+  background-color: white;
+}
+.row .textarea_input {
+  height: 100px;
+}
+.space_form_buttons {
+  margin: 20px 0px;
+}
+.no_space_form_buttons {
+  margin: 0px;
+}
+.no_space_form_buttons .small_button small_orange_button {
+  margin: 15px !important;
+}
+.label {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+.form_button_text {
+  margin-bottom: 0px;
+}
+.select_input {
+  overflow-y: hidden;
+}
+.invalid_input {
+  border-color: red !important;
+}
+.invalid_input * {
+  border-color: red !important;
+}
+.password_strength, .password_strength_text, .input_symbol_overlay, .input_end_symbol_overlay, .text_area_counter {
+  position: absolute;
+}
+.input_row_center {
+  text-align: center;
+}
+.input_row_center input {
+  text-align: center;
+}
+.input_row_center select {
+  text-align: center;
+}
+.input_row_input {
+  position: relative;
+}
+.hidden_form {
+  display: none;
+}
+.fixed-col-49 {
+  width: 49%;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+.fixed-col-2 {
+  width: 2%;
+  box-sizing: border-box;
+  float: left;
+}
+.inline_form {
+  display: inline-block;
+}
+.inline_form_trigger:hover {
+  cursor: pointer;
+}
+
+/* Submit button */
+.form_button {
+  color: white;
+  padding: 12px 45px;
+  border-radius: 37.5px;
+  line-height: 18px;
+  font-size: 18px;
+  border: none;
+}
+.form_button:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .form_button {
+    line-height: 14px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .form_button {
+    padding: 10px 30px;
+    line-height: 12px;
+    font-size: 12px;
+  }
+}
+
+/* Text input */
+.row .text_input, .row .textarea_input, .row .select_input, .row .stripe_element {
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid #B8B8B8;
+  box-sizing: border-box;
+  margin: 1px 0px;
+}
+.text_input:focus, .textarea_input:focus, .select_input:focus {
+  outline: none;
+  padding: 11px 19px;
+}
+@media only screen and (max-width: 425px) {
+  .row .text_input, .row .textarea_input, .row .select_input, .row .stripe_element {
+    border-radius: 10px;
+    padding: 7px 15px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .text_input:focus, .textarea_input:focus, .select_input:focus {
+    padding: 6px 14px;
+  }
+}
+
+/* Buttons that are selected on forms */
+@media only screen and (min-width: 426px) {
+  .select_button {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .select_button {
+    font-size: 1em;
+  }
+}
+.select_button {
+  margin: 10px;
+  padding: 8px 20px;
+  border: 3px solid rgb(8, 24, 41);
+  border-radius: 30px;
+  background-color: white;
+}
+.select_button:hover {
+  background-color: rgba(0, 162, 232, 0.4);
+  cursor: pointer;
+}
+.selected_button {
+  background-color: rgba(0, 162, 232, 0.4);
+}
+
+/* Checkbox */
+.checkbox_input_container {
+  display: block;
+  position: relative;
+  min-height: 42px;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-bottom: 12px;
+  padding-top: 12px;
+
+}
+.checkbox_grid {
+  display: grid;
+  grid-template-columns: auto 25px auto;
+  justify-items: start;
+  align-items: center;
+}
+.checkbox_input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.checkbox_text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 12px;
+  margin: 0px;
+}
+.checkbox {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid #B8B8B8;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox_input_container input:checked ~ .checkbox:after {
+  display: block;
+}
+.checkbox_input_container .checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Multiple selection on a form */
+@media only screen and (min-width: 426px) {
+  .multiple_select {
+    font-size: 1.2em;
+    border-radius: 30px;
+    padding: 12px 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .multiple_select {
+    font-size: 0.9em;
+    border-radius: 20px;
+    padding: 7px 15px;
+  }
+}
+.multiple_select {
+  width: 100%;
+  box-sizing: border-box;
+}
+.multiple_select_option {
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+.multiple_select_option:hover {
+  cursor: pointer;
+}
+.multiple_select_option_disabled {
+  color: rgb(117, 117, 117);
+}
+
+/* Information Section */
+.information_section {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.information_section h2 {
+  display: inline-block;
+  margin: auto;
+  border-radius: 30px;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(245, 245, 245);
+  padding: 5px 30px;
+  font-size: 1.8em;
+}
+
+/* Custom file upload form */
+input[type="file"] {
+  display: none;
+}
+.custom_file_upload {
+  border: 3px solid rgb(235, 235, 235);
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 6px 12px;
+  width: 100%;
+  min-height: 200px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  display: table;
+}
+.custom_file_upload p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px;
+}
+
+
+/*******************************************************************************
+//
+// Alerts
+//
+*******************************************************************************/
+
+/* Swish alerts */
+.alert {
+  display: none;
+}
+.alert_success .alert_contents {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+ }
+.alert .alert_contents {
+  display: inline-block;
+  text-align: left;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.alert .alert_contents * {
+  vertical-align: middle;
+  display: inline-block;
+}
+.alert p {
+  margin: 0px 10px 0px 0px;
+}
+.alert_failed .alert_contents {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+a.close {
+  text-decoration: none !important;
+  font-size: 1.3em;
+  margin-top: 2px;
+}
+a.close:hover {
+  color: black !important;
+}
+.close {
+  color: #000;
+  float: right;
+  font-weight: 700;
+  opacity: 0.2;
+  text-shadow: 0 1px 0 #fff;
+}
+
+
+/*******************************************************************************
+//
+// Yes No control on a form
+//
+*******************************************************************************/
+
+/* Have a yes no selection on the form */
+@media only screen and (max-width: 768px) {
+  .yesno_input .col_33 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .yesno_input {
+    font-size: 1em;
+  }
+}
+.yesno_input {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Style the yes no selections */
+.yesno_element {
+  display: inline-block;
+  padding: 12px 20px;
+  width: 95%;
+  text-align: center;
+  border-radius: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Mark the correct box that is selected */
+.yesno_on > div {
+  color: white !important;
+}
+
+
+/*******************************************************************************
+//
+// Bespoke select styles
+//
+*******************************************************************************/
+
+.bespoke_select {}
+.bespoke_select_element {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: rgba(109, 174, 219, 0.3);
+}
+.bespoke_select_element:hover {
+  cursor: pointer;
+}
+.bespoke_select_element p {
+  padding: 10px 0px;
+  margin: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.bespoke_select.invalid_input {
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+/*******************************************************************************
+//
+// Button select styles
+//
+*******************************************************************************/
+
+.button_select_element {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/*******************************************************************************
+//
+// Form upload
+//
+*******************************************************************************/
+
+/* Hide the file upload widget without removing it from the page */
+@media only screen and (min-width: 426px) {
+  .file_upload_label {}
+  .files_unselected {
+    padding: 40px;
+    height: 200px;
+  }
+  .files_selected {
+    padding: 20px;
+  }
+  .file_upload_name {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .files_selected {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .file_upload_label {
+    font-size: 0.9em;
+  }
+  .files_unselected {
+    padding: 20px;
+    height: 120px;
+  }
+  .file_upload_name {
+    width: 100%;
+  }
+}
+.file_upload_input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.file_upload_label {
+  width: 100%;
+  display: block;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.inner_file_upload {
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+}
+.files_unselected {
+  display: table-cell;
+  text-align: center;
+}
+.files_unselected {
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.file_upload_label:hover {
+  background-color: rgb(245, 245, 245);
+}
+.dragover_start {
+  background-color: rgb(220, 220, 220);
+}
+.drag_drop_available {
+  display: none;
+}
+.has_drag_drop .inner_file_upload {
+  border-radius: 20px;
+}
+.file_upload_status {
+  display: inline-block;
+  float: right;
+  opacity: 0.8;
+}
+@media only screen and (min-width: 768px) {
+  .file_upload_image {
+    margin-right: -4px;
+    width: 33%;
+    padding: 10px;
+  }
+  .file_upload_remove {
+    top: 10px;
+    right: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .file_upload_image {
+    margin-right: -2px;
+    width: 50%;
+    padding: 5px;
+  }
+  .file_upload_remove {
+    top: 5px;
+    right: 5px;
+  }
+}
+.file_upload_image {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.file_upload_image img {
+  width: 100%;
+}
+.file_upload_remove {
+  position: absolute;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 0 1px 0 #fff;
+}
+.file_upload_remove:hover {
+  cursor: pointer;
+}
+.file_upload_progress_overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 30px;
+  width: calc(100% - 20px);
+  line-height: 30px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+}
+.file_upload_progress_bar {
+  height: 30px;
+}
+.file_upload_progress_overlay p {
+  line-height: 30px;
+  margin: 0px;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .file_upload_progress_overlay {
+    bottom: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+  }
+}
+
+/*******************************************************************************
+//
+// Styles toolbelts that pop open and closed forms
+//
+*******************************************************************************/
+
+.operations_belt {
+  position:relative;
+	display:block;
+	width:100%;
+	line-height:2.5rem;
+  padding-left:75px;
+}
+.operation_button {
+  position: relative;
+	display:inline-block;
+	margin-right:1rem;
+	font-weight:600;
+	cursor:pointer;
+}
+
+
+/*******************************************************************************
+//
+// Styles form trigguring
+//
+*******************************************************************************/
+
+.form_trigger:hover {
+  cursor: pointer;
+}
+
+/***  Radio / Checkbox select  ***/
+.radio_select_container,
+.checkbox_select_container {
+  position:relative;
+  display:table;
+  width:100%;
+  box-sizing: border-box;
+  text-align:center;
+  font-weight:bold;
+  line-height:2rem;
+  border-radius:.25rem;
+  border:1px solid #b8b8b8;
+  color:black;
+  background:white;
+  overflow:auto;
+}
+.radio_select_item,
+.checkbox_select_item {
+  position:relative;
+  display:table-cell;
+  margin:1px;
+  width:50%;
+  cursor:pointer;
+  user-select: none;
+}
+.radio_select_item label,
+.checkbox_select_item label {
+  position:relative;
+  display:block;
+  cursor:pointer;
+  padding:0 1rem;
+}
+
+.yesno_input .radio_select_item:not(.bespoke_selected_element) {
+  background:rgba(150, 150, 150, .25);
+}
+
+
+.radio_select_item:not(:last-child):after,
+.checkbox_select_item:not(:last-child):after {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:100%;
+  transform:translateY(-50%);
+  width:1px;
+  height:80%;
+  background:rgba(43, 43, 46, .4);
+  z-index:1;
+}
+.radio_select_item input,
+.checkbox_select_item input {
+  display:none;
+}
+.row_2_options,
+.row_3_options {
+  position:relative;
+  display:table;
+  width:100%;
+}
+.row_2_options:not(:last-child):after,
+.row_3_options:not(:last-child):after {
+  content:'';
+  position:absolute;
+  top:calc(100% - 1px);
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  height:2px;
+  background:rgba(43, 43, 46, .4)
+}
+
+.row_2_options .checkbox_select_item,
+.row_3_options .checkbox_select_item {
+  position:relative;
+  display:table-cell;
+  width:50%;
+  line-height:2rem;
+}
+.checkbox_select_item:not(:last-child):after {
+  content:'';
+  position:absolute;
+  display:block;
+  top:50%;
+  left:calc(100% - 1px);
+  transform:translateY(-50%);
+  width:2px;
+  height:80%;
+  background:rgba(43, 43, 46, .4)
+}
+.row_3_options .checkbox_select_item {
+  width:calc(100% / 3);
+}
+
+
+/**** Payment cards ****/
+
+/* Card Payments */
+.inner_payment_card {
+  display: inline-block;
+  overflow: hidden;
+  height: 100px;
+  padding: 0px 30px;
+}
+.inner_payment_card div {
+  float: left;
+}
+.payment_card_icon img {
+  height: 100px;
+}
+.payment_card_number {
+  display: table;
+  height: 100px;
+  margin-left: 50px;
+}
+.payment_card_number p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.selected_card .inner_payment_card {
+  background-color: #C0D1E2;
+}
+
+
+/**** Large inline forms ****/
+
+/* Form */
+.large_inline_form .row {
+  margin: 0px;
+}

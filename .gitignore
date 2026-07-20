@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+**/.venv/
+*.log
+
+# Not published to the Pages site (kept locally only):
+# the walkable 3D mode and the depth/reconstruction pipeline.
+walkable.html
+walkable/
+model/
