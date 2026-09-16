@@ -1444,7 +1444,18 @@ $(window).on('load', function() {
         return overlay_stack[overlay_stack.length - 1] == overlay_id;
       }      // The gallery
       var gallery;</script>
-</head><body>        <!-- Google Tag Manager (noscript) -->
+
+<!-- Ashley Heights: alternate 3D model view -->
+<style id="ashley-model-link-style">
+#ashley-model-link{position:fixed;z-index:985;top:calc(max(70px,28px + 3.6vw) + env(safe-area-inset-top,0px));left:calc(14px + env(safe-area-inset-left,0px));display:inline-flex;align-items:center;gap:8px;box-sizing:border-box;min-height:44px;padding:10px 14px;border:1px solid #d2dad6;border-radius:8px;background:#fff;color:#133752;font:600 14px/1.2 Montserrat,Arial,sans-serif;text-decoration:none;box-shadow:0 2px 8px #0003}
+#ashley-model-link:hover{background:#eff5f1;color:#133752}
+#ashley-model-link:focus-visible{outline:3px solid #fff;box-shadow:0 0 0 6px #133752}
+body:has(.tour_floorplan:not(.hidden)) #ashley-model-link,body:has(#photo_navigation.photo_navigation_open) #ashley-model-link{visibility:hidden}
+@media(max-width:768px){#ashley-model-link{top:calc(94px + env(safe-area-inset-top,0px));left:calc(18px + env(safe-area-inset-left,0px))}}
+</style>
+</head><body>
+<a id="ashley-model-link" href="model/" aria-label="Open the Ashley Heights 3D model">3D model <span aria-hidden="true">→</span></a>
+        <!-- Google Tag Manager (noscript) -->
         <noscript></noscript>
         <!-- End Google Tag Manager (noscript) --><div id='photo_view' class='full_photo_view'></div>        <div id='photo_navigation' class='photo_navigation'>
           <div class='photo_navigation_slides'></div>

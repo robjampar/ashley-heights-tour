@@ -82,3 +82,9 @@ manually): `python3 -c "import serve, json; open('designs.json','w').write(json.
   runs with no network access.
 - The "apply/contact" form posts to a stubbed endpoint; everything else (room
   navigation, hotspots, floorplan, fullscreen, design toggle) works.
+
+## Editable-house walkthrough
+
+The reconstructed house is available at [3D model](https://robjampar.github.io/ashley-heights-tour/model/), linked from the original tour. On phones, use the left movement pad and drag the scene to look; on desktop use W/A/S/D and the mouse. A room picker and collapsible floorplan provide shortcuts.
+
+`model/` contains the static viewer, a GLB, navigation data and content-hashed JavaScript/CSS. GitHub Pages serves it from the same `main` branch. Native Blender/SketchUp projects and source plans are maintained locally and are not included here. Geometry is a photo/plan reconstruction; unmeasured details remain estimates.

@@ -1,0 +1,26 @@
+{
+  "published_utc": "2026-09-16T20:41:52.998342+00:00",
+  "model_updated_at": "2026-09-16T20:35:33.580983+00:00",
+  "source_native_sha256": "94c25ad5eadb734e01042cc3af51c2638c63183887f07a2f4beb8b80bc1e07eb",
+  "source_geometry_sha256": "fceb9117a93b641c3e91b9893e611ace446cf4693f17239a2cf1f8f0bcf50d17",
+  "assets": {
+    "house.ecc752b44878a2e2.glb": {
+      "bytes": 31031204,
+      "sha256": "ecc752b44878a2e2b8000cb0f3f404aaddba72f6e4b41f4b15e0f7e728ada933"
+    },
+    "navigation.b61d6f14e64e432d.json": {
+      "bytes": 175064,
+      "sha256": "b61d6f14e64e432d6a53de234fe745646c9b3ba074c3e5c3253ed5646c3a975b"
+    },
+    "style.6cbc8e94bf1c0b66.css": {
+      "bytes": 10929,
+      "sha256": "6cbc8e94bf1c0b6657ee0eb7ffe4f1d47944c8af66e7ab48e9b1ab37d9473c2e"
+    },
+    "app.ce879bf1333b9aac.js": {
+      "bytes": 691877,
+      "sha256": "ce879bf1333b9aace01e9a2e1e40fba479e938ce46ee34461dbe9003ef341838"
+    }
+  },
+  "interactive_door_leaves": 21,
+  "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates."
+}

@@ -11,10 +11,9 @@ __pycache__/
 *.log
 
 # Not published to the Pages site (kept locally only):
-# the walkable 3D mode and the depth/reconstruction pipeline.
+# the earlier experimental walkable mode and reconstruction pipeline.
 walkable.html
 walkable/
-model/
 
 # Local-only token encryptor (don't publish the tool)
 encrypt-setup.html
