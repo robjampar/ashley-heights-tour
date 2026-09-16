@@ -1,24 +1,24 @@
 {
-  "published_utc": "2026-09-16T21:35:31.665324+00:00",
-  "model_updated_at": "2026-09-16T20:35:33.580983+00:00",
-  "source_native_sha256": "94c25ad5eadb734e01042cc3af51c2638c63183887f07a2f4beb8b80bc1e07eb",
-  "source_geometry_sha256": "fceb9117a93b641c3e91b9893e611ace446cf4693f17239a2cf1f8f0bcf50d17",
+  "published_utc": "2026-09-16T23:10:56.067990+00:00",
+  "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
+  "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
+  "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
   "assets": {
-    "house.ecc752b44878a2e2.glb": {
-      "bytes": 31031204,
-      "sha256": "ecc752b44878a2e2b8000cb0f3f404aaddba72f6e4b41f4b15e0f7e728ada933"
+    "house.7766e892321887bc.glb": {
+      "bytes": 31242236,
+      "sha256": "7766e892321887bce8c00a6adb3d14c5810d3dec2f7544f3d106195a4265b19e"
     },
-    "navigation.edf7c101ff0ba244.json": {
-      "bytes": 200199,
-      "sha256": "edf7c101ff0ba24484c79b9c8f8a878a79af6a90a7876c6e492628e7760f1a9a"
+    "navigation.8d80a66983989e77.json": {
+      "bytes": 194804,
+      "sha256": "8d80a66983989e7767df4582ddc9f1dc9b4355f7262db29cba35fce8291c9cd8"
     },
-    "style.64d02db02a905caf.css": {
-      "bytes": 12350,
-      "sha256": "64d02db02a905caf047d5cfb5aefa5ad9ad8ece0b1277c3fbb2ef5cfd620e000"
+    "style.4c5aa66731beea5e.css": {
+      "bytes": 17442,
+      "sha256": "4c5aa66731beea5efa710289ad2328660756092dfad81a9aebb0dcce11f493da"
     },
-    "app.ba6896a1e518153b.js": {
-      "bytes": 742175,
-      "sha256": "ba6896a1e518153b3a0246ffe0c345225e4df0fc4e6f95d150a8bba4747ad5d8"
+    "app.74261a8bd017e541.js": {
+      "bytes": 798092,
+      "sha256": "74261a8bd017e541c19a7358f321344ede196bf762881888ac5cc49342a2e1b0"
     }
   },
   "previous_assets": {
@@ -36,13 +36,50 @@
       "bytes": 691877,
       "sha256": "ce879bf1333b9aace01e9a2e1e40fba479e938ce46ee34461dbe9003ef341838",
       "retain_until_epoch": 1789680821.072428
+    },
+    "house.ecc752b44878a2e2.glb": {
+      "bytes": 31031204,
+      "sha256": "ecc752b44878a2e2b8000cb0f3f404aaddba72f6e4b41f4b15e0f7e728ada933",
+      "retain_until_epoch": 1789686656.045949
+    },
+    "navigation.edf7c101ff0ba244.json": {
+      "bytes": 200199,
+      "sha256": "edf7c101ff0ba24484c79b9c8f8a878a79af6a90a7876c6e492628e7760f1a9a",
+      "retain_until_epoch": 1789686656.045949
+    },
+    "style.64d02db02a905caf.css": {
+      "bytes": 12350,
+      "sha256": "64d02db02a905caf047d5cfb5aefa5ad9ad8ece0b1277c3fbb2ef5cfd620e000",
+      "retain_until_epoch": 1789686656.045949
+    },
+    "app.ba6896a1e518153b.js": {
+      "bytes": 742175,
+      "sha256": "ba6896a1e518153b3a0246ffe0c345225e4df0fc4e6f95d150a8bba4747ad5d8",
+      "retain_until_epoch": 1789686656.045949
     }
   },
   "easter": {
     "path": "../easter/",
-    "delay_active_seconds": 30,
-    "trigger": "first house entry",
-    "html_sha256": "ae97828f0c300d1085f7640825516f6bdc9998875ae913cc77314bb93d281674"
+    "delay_active_seconds": 0,
+    "trigger": "explicit garden shed bow pickup",
+    "game": "unified tour with optional wave survival",
+    "weapons": {
+      "bow": 1,
+      "pistol": 3,
+      "shotgun": 5,
+      "carbine": 7
+    },
+    "enemy_types": [
+      "shambler",
+      "runner",
+      "brute",
+      "flanker"
+    ],
+    "concurrent_cap": {
+      "desktop": 12,
+      "touch": 7
+    },
+    "html_sha256": "31f5897d9eb32e7864e5e5c802c9fda64566d52f7d7f1de5bc7b7a01a492d76b"
   },
   "interactive_door_leaves": 23,
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates."
