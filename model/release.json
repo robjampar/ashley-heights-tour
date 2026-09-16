@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-16T23:10:56.067990+00:00",
+  "published_utc": "2026-09-16T23:28:33.468750+00:00",
   "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
   "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
   "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
@@ -12,13 +12,13 @@
       "bytes": 194804,
       "sha256": "8d80a66983989e7767df4582ddc9f1dc9b4355f7262db29cba35fce8291c9cd8"
     },
-    "style.4c5aa66731beea5e.css": {
-      "bytes": 17442,
-      "sha256": "4c5aa66731beea5efa710289ad2328660756092dfad81a9aebb0dcce11f493da"
+    "style.cb53696ca4401c78.css": {
+      "bytes": 17041,
+      "sha256": "cb53696ca4401c78ae7fec4a31e783d41e70fe43fe815a651cd50087798c0fb1"
     },
-    "app.74261a8bd017e541.js": {
-      "bytes": 798092,
-      "sha256": "74261a8bd017e541c19a7358f321344ede196bf762881888ac5cc49342a2e1b0"
+    "app.d56a264f429df633.js": {
+      "bytes": 797821,
+      "sha256": "d56a264f429df6330341ae0d7f000bf31449d2521ae3b69923090d5cdec697a5"
     }
   },
   "previous_assets": {
@@ -56,12 +56,22 @@
       "bytes": 742175,
       "sha256": "ba6896a1e518153b3a0246ffe0c345225e4df0fc4e6f95d150a8bba4747ad5d8",
       "retain_until_epoch": 1789686656.045949
+    },
+    "style.4c5aa66731beea5e.css": {
+      "bytes": 17442,
+      "sha256": "4c5aa66731beea5efa710289ad2328660756092dfad81a9aebb0dcce11f493da",
+      "retain_until_epoch": 1789687713.442135
+    },
+    "app.74261a8bd017e541.js": {
+      "bytes": 798092,
+      "sha256": "74261a8bd017e541c19a7358f321344ede196bf762881888ac5cc49342a2e1b0",
+      "retain_until_epoch": 1789687713.442135
     }
   },
   "easter": {
     "path": "../easter/",
     "delay_active_seconds": 0,
-    "trigger": "explicit garden shed bow pickup",
+    "trigger": "automatic walk-over garden shed bow pickup",
     "game": "unified tour with optional wave survival",
     "weapons": {
       "bow": 1,
