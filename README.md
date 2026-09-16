@@ -87,4 +87,8 @@ manually): `python3 -c "import serve, json; open('designs.json','w').write(json.
 
 The reconstructed house is available at [3D model](https://robjampar.github.io/ashley-heights-tour/model/), linked from the original tour. On phones, use the left movement pad and drag the scene to look; on desktop use W/A/S/D and the mouse. A room picker and collapsible floorplan provide shortcuts.
 
+Both the model and [Easter mode](https://robjampar.github.io/ashley-heights-tour/easter/) start outside the front gates, which open inward on approach and close afterwards. Easter mode starts a 30-second active-time countdown only after entering the house, then three zombies pursue the visitor. Controls, loading and an unfocused window pause the timer. Retry starts outside again. Normal model mode has no zombies.
+
+The viewer includes daylight shadows, sky reflections, tailored material roughness and warm interior fill. Phones use reduced shadow resolution and a lighter rendering profile. `easter/` shares the content-hashed assets in `model/`; it does not duplicate the house download.
+
 `model/` contains the static viewer, a GLB, navigation data and content-hashed JavaScript/CSS. GitHub Pages serves it from the same `main` branch. Native Blender/SketchUp projects and source plans are maintained locally and are not included here. Geometry is a photo/plan reconstruction; unmeasured details remain estimates.
