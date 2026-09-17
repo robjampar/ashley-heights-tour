@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-17T09:05:17.285112+00:00",
+  "published_utc": "2026-09-17T10:54:34.502178+00:00",
   "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
   "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
   "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
@@ -12,21 +12,21 @@
       "bytes": 194804,
       "sha256": "8d80a66983989e7767df4582ddc9f1dc9b4355f7262db29cba35fce8291c9cd8"
     },
-    "proposal.5479494c6ef1e4a6.glb": {
-      "bytes": 29344980,
-      "sha256": "5479494c6ef1e4a6d1618c9303034ef66c06a5dc8848003bfd1d13ced0f456f5"
+    "proposal.c1965ef989c0be0a.glb": {
+      "bytes": 28790088,
+      "sha256": "c1965ef989c0be0a224a5943d3b0743c357950107188ec3086734e0cbd3ef2b7"
     },
-    "proposal-navigation.247ed2471b163fc4.json": {
-      "bytes": 733537,
-      "sha256": "247ed2471b163fc4639f8736b2734e8b11805e26815eed091e6ad38b8633d711"
+    "proposal-navigation.2d02fb43e9f8f73d.json": {
+      "bytes": 797910,
+      "sha256": "2d02fb43e9f8f73d58c55a5807869df1243f046568eac9508c5d3f744b3b02b7"
     },
-    "style.58dc01b48dfbc075.css": {
-      "bytes": 20291,
-      "sha256": "58dc01b48dfbc07590fff97f8b75f31742bce75c216063984e3faacff46dfb9f"
+    "style.30a7b91cfc5c0c9e.css": {
+      "bytes": 22231,
+      "sha256": "30a7b91cfc5c0c9ec7eeda0d35c10c459013f337f3aa17a096e3e2f597aa339d"
     },
-    "app.1558b3dd8d65bf66.js": {
-      "bytes": 843826,
-      "sha256": "1558b3dd8d65bf66bad6b66acf07275d0462efecbf8514c7fdd746b7ea555c92"
+    "app.0db12f7d25e11b77.js": {
+      "bytes": 853062,
+      "sha256": "0db12f7d25e11b770711eed04dd2f3c2286c5d5988e010108030c3fba82098a9"
     }
   },
   "previous_assets": {
@@ -154,6 +154,26 @@
       "bytes": 834628,
       "sha256": "a5fed278641dc77e19e153c685b87523d1f92a0e3141f3ac4e53a818ca581f4f",
       "retain_until_epoch": 1789722317.240314
+    },
+    "proposal.5479494c6ef1e4a6.glb": {
+      "bytes": 29344980,
+      "sha256": "5479494c6ef1e4a6d1618c9303034ef66c06a5dc8848003bfd1d13ced0f456f5",
+      "retain_until_epoch": 1789728874.450409
+    },
+    "proposal-navigation.247ed2471b163fc4.json": {
+      "bytes": 733537,
+      "sha256": "247ed2471b163fc4639f8736b2734e8b11805e26815eed091e6ad38b8633d711",
+      "retain_until_epoch": 1789728874.450409
+    },
+    "style.58dc01b48dfbc075.css": {
+      "bytes": 20291,
+      "sha256": "58dc01b48dfbc07590fff97f8b75f31742bce75c216063984e3faacff46dfb9f",
+      "retain_until_epoch": 1789728874.450409
+    },
+    "app.1558b3dd8d65bf66.js": {
+      "bytes": 843826,
+      "sha256": "1558b3dd8d65bf66bad6b66acf07275d0462efecbf8514c7fdd746b7ea555c92",
+      "retain_until_epoch": 1789728874.450409
     }
   },
   "easter": {
@@ -183,11 +203,18 @@
   "designs": {
     "original": "./",
     "proposed": "./?design=proposed",
-    "proposal_revision": "P5",
-    "proposal_updated_at": "2026-09-17T08:33:19.300347+00:00",
-    "proposal_native_sha256": "0a0d0ecedbef07673f622f3a4647a572b6b7e2f98d975a834d1b51fe5ced0ec5",
-    "proposal_geometry_sha256": "667d51aa7e323c1e88ca26c0d850e8b08d3ba0c1391c2ce0fd39b981bf33b73c"
+    "proposal_revision": "P6",
+    "proposal_updated_at": "2026-09-17T10:47:13.719115+00:00",
+    "proposal_native_sha256": "767653af5359630fa7fd3cb5e938b048691db8f8781bd3daae744256ab2998d1",
+    "proposal_geometry_sha256": "9cac07f3b6a99634d186fde211bd3843ec5ffc3c1b6e5e5b7e48f47f39b1720e"
   },
   "interactive_door_leaves": 23,
+  "optional_street_context": {
+    "setting": "Settings \u2192 Street & neighbours",
+    "default": "off",
+    "preference_shared_between_designs": true,
+    "walk_distance_beyond_gates_m": 50,
+    "basis": "Approximate road and low-detail neighbouring buildings from supplied site images"
+  },
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates."
 }
