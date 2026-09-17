@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-17T04:03:10.931817+00:00",
+  "published_utc": "2026-09-17T07:26:14.371773+00:00",
   "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
   "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
   "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
@@ -12,21 +12,21 @@
       "bytes": 194804,
       "sha256": "8d80a66983989e7767df4582ddc9f1dc9b4355f7262db29cba35fce8291c9cd8"
     },
-    "proposal.71f18df8bfc65820.glb": {
-      "bytes": 22084540,
-      "sha256": "71f18df8bfc65820acaebed751227ef5ab8bab6037f4bc0448309a0d2444209e"
+    "proposal.d6994e5338b0b2af.glb": {
+      "bytes": 27043040,
+      "sha256": "d6994e5338b0b2af176de33449d410e5930b52ca8aceac5571ffa7e78fe3c715"
     },
-    "proposal-navigation.833dfebbdabae827.json": {
-      "bytes": 439925,
-      "sha256": "833dfebbdabae8276b5b5c6b94575311c22dbf23eaf3521df2049daa196f9bb1"
+    "proposal-navigation.c325ee369059e98a.json": {
+      "bytes": 558815,
+      "sha256": "c325ee369059e98ae45b4af2bc736afe8996aeb1aa54b9b61dafd12dc74494e4"
     },
     "style.6a3fd6deb9df8aaa.css": {
       "bytes": 18162,
       "sha256": "6a3fd6deb9df8aaaefd754cb597c4820c8b143edef2dc336cf12234e94b0f9b0"
     },
-    "app.17f4bb673d75d3fb.js": {
-      "bytes": 830018,
-      "sha256": "17f4bb673d75d3fbd0f007c1d7adcb2199a136618939672fc8a606e94c382b56"
+    "app.44f833bb85679ec2.js": {
+      "bytes": 830254,
+      "sha256": "44f833bb85679ec23d8486ebfa6fd8497e272a4a599ca3cd781a5a122677ef7d"
     }
   },
   "previous_assets": {
@@ -114,6 +114,21 @@
       "bytes": 799372,
       "sha256": "9b244cbcb747683bd2e229e97322a0a404c7db9e83b4e51261a63d96c768bb9c",
       "retain_until_epoch": 1789704190.884497
+    },
+    "proposal.71f18df8bfc65820.glb": {
+      "bytes": 22084540,
+      "sha256": "71f18df8bfc65820acaebed751227ef5ab8bab6037f4bc0448309a0d2444209e",
+      "retain_until_epoch": 1789716374.319305
+    },
+    "proposal-navigation.833dfebbdabae827.json": {
+      "bytes": 439925,
+      "sha256": "833dfebbdabae8276b5b5c6b94575311c22dbf23eaf3521df2049daa196f9bb1",
+      "retain_until_epoch": 1789716374.319305
+    },
+    "app.17f4bb673d75d3fb.js": {
+      "bytes": 830018,
+      "sha256": "17f4bb673d75d3fbd0f007c1d7adcb2199a136618939672fc8a606e94c382b56",
+      "retain_until_epoch": 1789716374.319305
     }
   },
   "easter": {
@@ -144,9 +159,9 @@
     "original": "./",
     "proposed": "./?design=proposed",
     "proposal_revision": "P4",
-    "proposal_updated_at": "2026-09-17T03:54:39.296266+00:00",
-    "proposal_native_sha256": "c8c9b2f5f2673edf697817410bcf9eedd18f2e172e60c54a2efdc8b188f63eed",
-    "proposal_geometry_sha256": "ab5aff637d67ccccceac8bfaf9dc7951ef90d014f8e49b80a5b2f62f0fb10985"
+    "proposal_updated_at": "2026-09-17T04:41:51.800704+00:00",
+    "proposal_native_sha256": "9fc4cc6599a4af98323c89157a01004e28e51589440c47b7336278b0577a549d",
+    "proposal_geometry_sha256": "d20cfd1bdad2309b2cda1ed13c6e38e1e653ccc37908bd3c809d1ebd6ccef995"
   },
   "interactive_door_leaves": 23,
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates."
