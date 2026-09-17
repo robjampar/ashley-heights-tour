@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-17T07:26:14.371773+00:00",
+  "published_utc": "2026-09-17T08:39:25.324250+00:00",
   "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
   "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
   "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
@@ -12,21 +12,21 @@
       "bytes": 194804,
       "sha256": "8d80a66983989e7767df4582ddc9f1dc9b4355f7262db29cba35fce8291c9cd8"
     },
-    "proposal.d6994e5338b0b2af.glb": {
-      "bytes": 27043040,
-      "sha256": "d6994e5338b0b2af176de33449d410e5930b52ca8aceac5571ffa7e78fe3c715"
+    "proposal.5479494c6ef1e4a6.glb": {
+      "bytes": 29344980,
+      "sha256": "5479494c6ef1e4a6d1618c9303034ef66c06a5dc8848003bfd1d13ced0f456f5"
     },
-    "proposal-navigation.c325ee369059e98a.json": {
-      "bytes": 558815,
-      "sha256": "c325ee369059e98ae45b4af2bc736afe8996aeb1aa54b9b61dafd12dc74494e4"
+    "proposal-navigation.247ed2471b163fc4.json": {
+      "bytes": 733537,
+      "sha256": "247ed2471b163fc4639f8736b2734e8b11805e26815eed091e6ad38b8633d711"
     },
-    "style.6a3fd6deb9df8aaa.css": {
-      "bytes": 18162,
-      "sha256": "6a3fd6deb9df8aaaefd754cb597c4820c8b143edef2dc336cf12234e94b0f9b0"
+    "style.58dc01b48dfbc075.css": {
+      "bytes": 20291,
+      "sha256": "58dc01b48dfbc07590fff97f8b75f31742bce75c216063984e3faacff46dfb9f"
     },
-    "app.44f833bb85679ec2.js": {
-      "bytes": 830254,
-      "sha256": "44f833bb85679ec23d8486ebfa6fd8497e272a4a599ca3cd781a5a122677ef7d"
+    "app.a5fed278641dc77e.js": {
+      "bytes": 834628,
+      "sha256": "a5fed278641dc77e19e153c685b87523d1f92a0e3141f3ac4e53a818ca581f4f"
     }
   },
   "previous_assets": {
@@ -129,6 +129,26 @@
       "bytes": 830018,
       "sha256": "17f4bb673d75d3fbd0f007c1d7adcb2199a136618939672fc8a606e94c382b56",
       "retain_until_epoch": 1789716374.319305
+    },
+    "proposal.d6994e5338b0b2af.glb": {
+      "bytes": 27043040,
+      "sha256": "d6994e5338b0b2af176de33449d410e5930b52ca8aceac5571ffa7e78fe3c715",
+      "retain_until_epoch": 1789720765.281834
+    },
+    "proposal-navigation.c325ee369059e98a.json": {
+      "bytes": 558815,
+      "sha256": "c325ee369059e98ae45b4af2bc736afe8996aeb1aa54b9b61dafd12dc74494e4",
+      "retain_until_epoch": 1789720765.281834
+    },
+    "style.6a3fd6deb9df8aaa.css": {
+      "bytes": 18162,
+      "sha256": "6a3fd6deb9df8aaaefd754cb597c4820c8b143edef2dc336cf12234e94b0f9b0",
+      "retain_until_epoch": 1789720765.281834
+    },
+    "app.44f833bb85679ec2.js": {
+      "bytes": 830254,
+      "sha256": "44f833bb85679ec23d8486ebfa6fd8497e272a4a599ca3cd781a5a122677ef7d",
+      "retain_until_epoch": 1789720765.281834
     }
   },
   "easter": {
@@ -158,10 +178,10 @@
   "designs": {
     "original": "./",
     "proposed": "./?design=proposed",
-    "proposal_revision": "P4",
-    "proposal_updated_at": "2026-09-17T04:41:51.800704+00:00",
-    "proposal_native_sha256": "9fc4cc6599a4af98323c89157a01004e28e51589440c47b7336278b0577a549d",
-    "proposal_geometry_sha256": "d20cfd1bdad2309b2cda1ed13c6e38e1e653ccc37908bd3c809d1ebd6ccef995"
+    "proposal_revision": "P5",
+    "proposal_updated_at": "2026-09-17T08:33:19.300347+00:00",
+    "proposal_native_sha256": "0a0d0ecedbef07673f622f3a4647a572b6b7e2f98d975a834d1b51fe5ced0ec5",
+    "proposal_geometry_sha256": "667d51aa7e323c1e88ca26c0d850e8b08d3ba0c1391c2ce0fd39b981bf33b73c"
   },
   "interactive_door_leaves": 23,
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates."
