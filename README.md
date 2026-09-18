@@ -91,4 +91,6 @@ Both the model and [Easter mode](https://robjampar.github.io/ashley-heights-tour
 
 The viewer includes daylight shadows, sky reflections, tailored material roughness and warm interior fill. Phones use reduced shadow resolution and a lighter rendering profile. `easter/` shares the content-hashed assets in `model/`; it does not duplicate the house download.
 
-`model/` contains the static viewer, a GLB, navigation data and content-hashed JavaScript/CSS. GitHub Pages serves it from the same `main` branch. Native Blender/SketchUp projects and source plans are maintained locally and are not included here. Geometry is a photo/plan reconstruction; unmeasured details remain estimates.
+The model tour offers three designs: the original house (`model/`), **Proposal A** (`model/?design=proposed`) and the smaller **Proposal B (compact)** (`model/?design=compact`), whose new-wing upper floors are about 25% smaller in volume, taken off the width from the east with the same depth, ground floor and garage. The button under the header compares the current proposal with the original, keeping the viewpoint; a second button swaps between the two proposals.
+
+`model/` contains the static viewer, three GLBs, their navigation data and content-hashed JavaScript/CSS. GitHub Pages serves it from the same `main` branch. Native Blender/SketchUp projects and source plans are maintained locally and are not included here. Geometry is a photo/plan reconstruction; unmeasured details remain estimates.
