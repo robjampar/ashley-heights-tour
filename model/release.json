@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-18T03:30:24.351618+00:00",
+  "published_utc": "2026-09-18T07:25:40.454214+00:00",
   "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
   "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
   "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
@@ -12,51 +12,56 @@
       "bytes": 194804,
       "sha256": "8d80a66983989e7767df4582ddc9f1dc9b4355f7262db29cba35fce8291c9cd8"
     },
-    "proposal.585c20f724262d98.glb": {
+    "proposal.b87a7d7f4dbfec43.glb": {
       "bytes": 31337012,
-      "sha256": "585c20f724262d98b4edd0bd88ad374b1f7566c7a52f958ec671157b95f8e942"
+      "sha256": "b87a7d7f4dbfec43ee09d9143de3a75579776eed7940ce8c81b7839adbaad748"
     },
-    "proposal-navigation.28715c5592b37625.json": {
-      "bytes": 917219,
-      "sha256": "28715c5592b37625d1effed81bcc246fe85c8de1a39016aeeb1fb21fa838b74c"
+    "proposal-navigation.79f0d2b9c4a6f296.json": {
+      "bytes": 917449,
+      "sha256": "79f0d2b9c4a6f296d9e757ca5053f85ce4a342386b923334c1db01aeca7cb5c8"
     },
-    "proposal-compact.d6607a65aadac022.glb": {
-      "bytes": 31391356,
-      "sha256": "d6607a65aadac022bf5f20f2d3632ac342f528f69963f50637836b4e1c5fe6fc"
+    "proposal-compact.13db4a6be8e4f685.glb": {
+      "bytes": 31269852,
+      "sha256": "13db4a6be8e4f685d4d010592415c4388e3819a93949ebf6853035b773d38dbe"
     },
-    "proposal-compact-navigation.232ee7a588192c36.json": {
-      "bytes": 916348,
-      "sha256": "232ee7a588192c36c1f8f0258d06df0c18f463dc611befcb7b881d1736522791"
+    "proposal-compact-navigation.90821438943b6470.json": {
+      "bytes": 912169,
+      "sha256": "90821438943b647073b64ffb5047e4880e6fca2daf06d8fc11cf309dc0bec39f"
     },
     "style.a7da8dde2347ed65.css": {
       "bytes": 22680,
       "sha256": "a7da8dde2347ed65d63c180daa8612c33eb0d6b4cf7687df8053c6b6dd6203e5"
     },
-    "app.542700c49e1793ee.js": {
+    "app.dbb5ceed48756988.js": {
       "bytes": 870026,
-      "sha256": "542700c49e1793eebcda09194660786ef970dfed4cd1cf3a5beb8c3a8e618cf8"
+      "sha256": "dbb5ceed48756988e0de8a333b15c4dce3508c0047166d82867130e8b9ec181c"
     }
   },
   "previous_assets": {
-    "proposal.c1965ef989c0be0a.glb": {
-      "bytes": 28790088,
-      "sha256": "c1965ef989c0be0a224a5943d3b0743c357950107188ec3086734e0cbd3ef2b7",
-      "retain_until_epoch": 1789735032.756408
+    "proposal.585c20f724262d98.glb": {
+      "bytes": 31337012,
+      "sha256": "585c20f724262d98b4edd0bd88ad374b1f7566c7a52f958ec671157b95f8e942",
+      "retain_until_epoch": 1789798302.130967
     },
-    "proposal-navigation.2d02fb43e9f8f73d.json": {
-      "bytes": 797910,
-      "sha256": "2d02fb43e9f8f73d58c55a5807869df1243f046568eac9508c5d3f744b3b02b7",
-      "retain_until_epoch": 1789735032.756408
+    "proposal-navigation.28715c5592b37625.json": {
+      "bytes": 917219,
+      "sha256": "28715c5592b37625d1effed81bcc246fe85c8de1a39016aeeb1fb21fa838b74c",
+      "retain_until_epoch": 1789798302.130967
     },
-    "app.0db12f7d25e11b77.js": {
-      "bytes": 853062,
-      "sha256": "0db12f7d25e11b770711eed04dd2f3c2286c5d5988e010108030c3fba82098a9",
-      "retain_until_epoch": 1789735032.756408
+    "proposal-compact.d6607a65aadac022.glb": {
+      "bytes": 31391356,
+      "sha256": "d6607a65aadac022bf5f20f2d3632ac342f528f69963f50637836b4e1c5fe6fc",
+      "retain_until_epoch": 1789798302.130967
     },
-    "style.30a7b91cfc5c0c9e.css": {
-      "bytes": 22231,
-      "sha256": "30a7b91cfc5c0c9ec7eeda0d35c10c459013f337f3aa17a096e3e2f597aa339d",
-      "retain_until_epoch": 1789782364.34087
+    "proposal-compact-navigation.232ee7a588192c36.json": {
+      "bytes": 916348,
+      "sha256": "232ee7a588192c36c1f8f0258d06df0c18f463dc611befcb7b881d1736522791",
+      "retain_until_epoch": 1789798302.130967
+    },
+    "app.542700c49e1793ee.js": {
+      "bytes": 870026,
+      "sha256": "542700c49e1793eebcda09194660786ef970dfed4cd1cf3a5beb8c3a8e618cf8",
+      "retain_until_epoch": 1789798302.130967
     }
   },
   "easter": {
@@ -88,13 +93,13 @@
     "proposed": "./?design=proposed",
     "compact": "./?design=compact",
     "proposal_revision": "P8",
-    "proposal_updated_at": "2026-09-18T03:27:11.007559+00:00",
-    "proposal_native_sha256": "fe91759942ef8a206c527409e21ee9437e0465102e1933642ac6e69ee8c86330",
-    "proposal_geometry_sha256": "146a76a2d04a339cb3eb399f07330d231e27b8a63b2f089e0cf3a1c9f8eba4cd",
+    "proposal_updated_at": "2026-09-18T06:09:16.820450+00:00",
+    "proposal_native_sha256": "2aa407208be37e3b6e2d762c7841d54a0574069e129ff118d887ca14d6444003",
+    "proposal_geometry_sha256": "c3e381ff2ebd0de452ab580e77f1edc8846837f542904d1b75f81d349a83a14c",
     "compact_label": "Proposal B (compact)",
-    "compact_updated_at": "2026-09-18T03:25:51.464321+00:00",
-    "compact_native_sha256": "a8cbc26ba9f46baa902c127c9ecb94e74d2e0508012c63fd2311870878c9ded7",
-    "compact_geometry_sha256": "a2cbc6ad41edc9d2b97aef35b7bb7115af25b360050dd7068c15dc4add127c15"
+    "compact_updated_at": "2026-09-18T07:24:19.887178+00:00",
+    "compact_native_sha256": "a4ce8d29a6af92eccb004452792d183aeeeaa15bae8b1f6f2ebf8eab5a560b7d",
+    "compact_geometry_sha256": "f8ddecdd9c8ed122d94688c8ea137573b61b683c650052e4c32896019198a8b1"
   },
   "interactive_door_leaves": 23,
   "optional_street_context": {
