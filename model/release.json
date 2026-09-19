@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-19T17:34:14.704554+00:00",
+  "published_utc": "2026-09-19T18:48:31.927153+00:00",
   "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
   "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
   "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
@@ -20,53 +20,38 @@
       "bytes": 929842,
       "sha256": "433ef4665f1e57398401afea0094309f3bdd2aa9fface4c537959e3d5f25ac34"
     },
-    "proposal-compact.022118cc563d5b10.glb": {
-      "bytes": 35183200,
-      "sha256": "022118cc563d5b10ae3a528946c613080707ceb86ef8d4a15b76e975c7379d8f"
+    "proposal-compact.1e6363ed374446f6.glb": {
+      "bytes": 35860404,
+      "sha256": "1e6363ed374446f6c774c7ee783721e26b47290890eb9487a9da5c4699434fbe"
     },
-    "proposal-compact-navigation.2a11123d5799a0d4.json": {
-      "bytes": 934800,
-      "sha256": "2a11123d5799a0d486e4afe4374853094aa807f6cb1c171bcf6bff6f3940c9a4"
+    "proposal-compact-navigation.761912ccc9fedd93.json": {
+      "bytes": 925793,
+      "sha256": "761912ccc9fedd9337961d02a0d8f11a9b21626c892fa3c9ceea694b90b0191c"
     },
     "style.59fb16960f475e51.css": {
       "bytes": 22723,
       "sha256": "59fb16960f475e5153aa0d71546b667079c331313715bb2196d807917b09c66d"
     },
-    "app.288d1b9fdbd6ee85.js": {
+    "app.ac6444c0583c0de0.js": {
       "bytes": 892520,
-      "sha256": "288d1b9fdbd6ee85e496783cc7ccbcff3ac149e4f88618a7056a415c355777ab"
+      "sha256": "ac6444c0583c0de0401cc5cd1c5b72cd0e851b5b5e64f8c264fc74c09ffd971a"
     }
   },
   "previous_assets": {
-    "proposal.b87a7d7f4dbfec43.glb": {
-      "bytes": 31337012,
-      "sha256": "b87a7d7f4dbfec43ee09d9143de3a75579776eed7940ce8c81b7839adbaad748",
-      "retain_until_epoch": 1790444283.8045561
-    },
-    "proposal-navigation.79f0d2b9c4a6f296.json": {
-      "bytes": 917449,
-      "sha256": "79f0d2b9c4a6f296d9e757ca5053f85ce4a342386b923334c1db01aeca7cb5c8",
-      "retain_until_epoch": 1790444283.804561
-    },
-    "proposal-compact.d478321c9a52a2eb.glb": {
+    "proposal-compact.022118cc563d5b10.glb": {
       "bytes": 35183200,
-      "sha256": "d478321c9a52a2ebea25ecf865ca72e894f402bc6e767229b4086f7d5f7310bb",
-      "retain_until_epoch": 1790444283.804561
+      "sha256": "022118cc563d5b10ae3a528946c613080707ceb86ef8d4a15b76e975c7379d8f",
+      "retain_until_epoch": 1790448687.4674602
     },
-    "proposal-compact-navigation.12a985461858273a.json": {
-      "bytes": 922724,
-      "sha256": "12a985461858273acff57aadee83ee894c599a8f9293d6fdb393bf3e7554b785",
-      "retain_until_epoch": 1790444283.8045619
+    "proposal-compact-navigation.2a11123d5799a0d4.json": {
+      "bytes": 934800,
+      "sha256": "2a11123d5799a0d486e4afe4374853094aa807f6cb1c171bcf6bff6f3940c9a4",
+      "retain_until_epoch": 1790448687.467465
     },
-    "style.a7da8dde2347ed65.css": {
-      "bytes": 22680,
-      "sha256": "a7da8dde2347ed65d63c180daa8612c33eb0d6b4cf7687df8053c6b6dd6203e5",
-      "retain_until_epoch": 1790444283.8045619
-    },
-    "app.be5dd9470bf01137.js": {
-      "bytes": 870026,
-      "sha256": "be5dd9470bf01137d8429aed27c473ac0d28ec7ffde6030fe1cc1867a1d6010b",
-      "retain_until_epoch": 1790444283.8045619
+    "app.288d1b9fdbd6ee85.js": {
+      "bytes": 892520,
+      "sha256": "288d1b9fdbd6ee85e496783cc7ccbcff3ac149e4f88618a7056a415c355777ab",
+      "retain_until_epoch": 1790448687.467465
     }
   },
   "easter": {
@@ -102,9 +87,9 @@
     "proposal_native_sha256": "96bb0ba3f3c59c504dcd3b9e8b909ce673741980e1ca7a9141164f971e9fc165",
     "proposal_geometry_sha256": "2b5dc7bce0f1752367235bca4f6ecd5fe32105aaa46d6687fdf1a8187ef2ed5c",
     "compact_label": "Proposal B (compact)",
-    "compact_updated_at": "2026-09-19T17:19:34.981061+00:00",
-    "compact_native_sha256": "18227ec9ca4689a9d21645acbf939efd5894f8db54e780e9bbadae2cbc9c9812",
-    "compact_geometry_sha256": "fc1dd3dc65c11c595e50fdaeccb21e488caf5d0e8c43b4dbb0a666ec3dd671f3"
+    "compact_updated_at": "2026-09-19T18:46:37.442770+00:00",
+    "compact_native_sha256": "48690cc78e39986d429ab6cd3fc79099b3175825e6934c7d9d7dce7eb9e24b41",
+    "compact_geometry_sha256": "7a236832b55ae38042bb2c4024273d8fb05057e356d0b27287cfe57e895de41e"
   },
   "interactive_door_leaves": 23,
   "optional_street_context": {
