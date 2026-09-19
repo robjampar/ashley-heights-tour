@@ -37,38 +37,7 @@
       "sha256": "be5dd9470bf01137d8429aed27c473ac0d28ec7ffde6030fe1cc1867a1d6010b"
     }
   },
-  "previous_assets": {
-    "proposal-compact.8c73a4572bad7d25.glb": {
-      "bytes": 35128508,
-      "sha256": "8c73a4572bad7d2529c347aadedfac1a15915ded149e6b9f8eb9744d15f0a551",
-      "retain_until_epoch": 1790350371.371617
-    },
-    "proposal-compact-navigation.5174a373a4ef7838.json": {
-      "bytes": 921007,
-      "sha256": "5174a373a4ef783888f1c0ac87432f0ffa9aa6aa1ba0e9c01624d5af88a360d3",
-      "retain_until_epoch": 1790350371.3716228
-    },
-    "app.95c6598577ea7cb6.js": {
-      "bytes": 870026,
-      "sha256": "95c6598577ea7cb62c75df310a69a8cb2573e5039e20008bb80cf1986f244e73",
-      "retain_until_epoch": 1790350371.371624
-    },
-    "proposal-compact.c1902c790356fd7a.glb": {
-      "bytes": 35133324,
-      "sha256": "c1902c790356fd7a32a3ba8fcb01e86adb960b596038b025304e86b8df0bef08",
-      "retain_until_epoch": 1789906169.795999
-    },
-    "proposal-compact-navigation.b4ec8889e99d4505.json": {
-      "bytes": 921962,
-      "sha256": "b4ec8889e99d450548be1ec741e2d2d9ad92c6ae89606c82122cbcc67734afc0",
-      "retain_until_epoch": 1789906169.795999
-    },
-    "app.ca26977d885427b7.js": {
-      "bytes": 870026,
-      "sha256": "ca26977d885427b70cf62560064b548716b09e4917f3857efb13c1fa69421e8e",
-      "retain_until_epoch": 1789906169.795999
-    }
-  },
+  "previous_assets": {},
   "easter": {
     "path": "../easter/",
     "delay_active_seconds": 0,
