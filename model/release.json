@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-21T23:15:14.629356+00:00",
+  "published_utc": "2026-09-22T00:11:08.046151+00:00",
   "model_updated_at": "2026-09-16T22:11:21.786287+00:00",
   "source_native_sha256": "00e5e8b9a1907d0fc1805c6157cf4aaa6235e15191de999193869569f280b9f6",
   "source_geometry_sha256": "edde0f39f8c37da19ab9a7dfe7d123711f1305d8686d95c08eb4bb98793c8e5a",
@@ -20,21 +20,21 @@
       "bytes": 936271,
       "sha256": "fa39c66a96579f88f4991be17cefb89694c07894fa89d4ee213983081bb9005a"
     },
-    "proposal-compact.2e42bb67f0715bbc.glb": {
-      "bytes": 33751120,
-      "sha256": "2e42bb67f0715bbcfbf16d4119f477e5e9a68e9581abd2703ba4e21e36c6d5ef"
+    "proposal-compact.1c71ef86c15c6d85.glb": {
+      "bytes": 33442088,
+      "sha256": "1c71ef86c15c6d85436175ee30beb38785169821e5542a6618dca931bb8b5f83"
     },
-    "proposal-compact-navigation.5e9d3de71facc78e.json": {
-      "bytes": 1361888,
-      "sha256": "5e9d3de71facc78eaaf714961ecb2998e4d883297fcaa58b4c31da41ebfbd9a1"
+    "proposal-compact-navigation.d89cdbbcc7bcfad2.json": {
+      "bytes": 1375703,
+      "sha256": "d89cdbbcc7bcfad220b254ddce73696dc9edc358c34ce2a7b61c35f9b3d0bb3c"
     },
     "style.428bc866085030d2.css": {
       "bytes": 24079,
       "sha256": "428bc866085030d240f055d333e0a7c583f6eface4fb2e7cd388ea857345bb8f"
     },
-    "app.0e301d6159095914.js": {
+    "app.4dcaafe3fd91afe0.js": {
       "bytes": 897852,
-      "sha256": "0e301d6159095914ec1390ec7789765ed84277cf4b6c650b6721796a0d692c1a"
+      "sha256": "4dcaafe3fd91afe066547ee4ce4ffd0087a949fa1e3fbf4d780a033b8646462a"
     }
   },
   "previous_assets": {
@@ -92,6 +92,21 @@
       "bytes": 897852,
       "sha256": "b44069fb2d7c7ffce395f355c83ff5f0f4c853d713355328d95b3ef543bf7aa2",
       "retain_until_epoch": 1790118914.56904
+    },
+    "proposal-compact.2e42bb67f0715bbc.glb": {
+      "bytes": 33751120,
+      "sha256": "2e42bb67f0715bbcfbf16d4119f477e5e9a68e9581abd2703ba4e21e36c6d5ef",
+      "retain_until_epoch": 1790122267.97496
+    },
+    "proposal-compact-navigation.5e9d3de71facc78e.json": {
+      "bytes": 1361888,
+      "sha256": "5e9d3de71facc78eaaf714961ecb2998e4d883297fcaa58b4c31da41ebfbd9a1",
+      "retain_until_epoch": 1790122267.97496
+    },
+    "app.0e301d6159095914.js": {
+      "bytes": 897852,
+      "sha256": "0e301d6159095914ec1390ec7789765ed84277cf4b6c650b6721796a0d692c1a",
+      "retain_until_epoch": 1790122267.97496
     }
   },
   "easter": {
@@ -127,9 +142,9 @@
     "proposal_native_sha256": "97675b79c17bb3d974cc87d818b1764c7c16fa9c8209e37bc5416015225aa64c",
     "proposal_geometry_sha256": "6aa8e945f52083c1d996889a77b0e514f1da2d0265eb6f9df140cf1976c8ae7e",
     "compact_label": "Proposal B (compact)",
-    "compact_updated_at": "2026-09-21T23:11:18.244659+00:00",
-    "compact_native_sha256": "6a41dad4377f9b25b8601a349caf4f4c06c3017481aa4ff1380fd87be7c55c17",
-    "compact_geometry_sha256": "37b9c6aa2e8dce060e0f2952ba4c25df1614b4c0326987cb17a8f74c1ea87fb7"
+    "compact_updated_at": "2026-09-22T00:08:41.392550+00:00",
+    "compact_native_sha256": "d362d32a95b226a299e1c30724fc8bf63d1cf8193d3422d6af0a90f7af6f8bbf",
+    "compact_geometry_sha256": "103d3e88b4930003e0fc132a13eec22aec6a882e4397a50548b39e888a482615"
   },
   "interactive_door_leaves": 23,
   "optional_street_context": {
