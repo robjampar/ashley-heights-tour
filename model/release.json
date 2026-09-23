@@ -1,32 +1,32 @@
 {
-  "published_utc": "2026-09-23T01:00:35.454304+00:00",
-  "model_updated_at": "2026-09-23T00:51:09.460516+00:00",
-  "source_native_sha256": "ea90312b0d911c0538219772a044e6c7bdd78da0c20e34b32934ec256fc44e2a",
-  "source_geometry_sha256": "bb8910006615ef0d383ac7f5cca471a68b349ebd1197431b7fb20496c74d38e9",
+  "published_utc": "2026-09-23T07:44:44.153861+00:00",
+  "model_updated_at": "2026-09-23T07:22:56.444263+00:00",
+  "source_native_sha256": "fe3d3ccb2f8d2c45b5108553134f2f63ec031b93aaa2f8ff20358db08ca0c823",
+  "source_geometry_sha256": "1abbbde2082266949d2569f535ed428d98bb2a96f93bc5de9f79068300302354",
   "assets": {
-    "house.b4bebdf7a381a37e.glb": {
-      "bytes": 18994948,
-      "sha256": "b4bebdf7a381a37e5b863ea14dd9b940239ad0ed7a59b4d3ce61d803db8a485c"
+    "house.6d24f915fbb9ba1c.glb": {
+      "bytes": 18994016,
+      "sha256": "6d24f915fbb9ba1c977b9022c15d61438da422720966f302c255f69c984cd4ba"
     },
-    "navigation.3cd4d8062206d6e6.json": {
+    "navigation.7c5c1b82a630c73e.json": {
       "bytes": 190149,
-      "sha256": "3cd4d8062206d6e6aae33d0826e738ad09f4e731e534f09b8d253a2cfa44104a"
+      "sha256": "7c5c1b82a630c73e988649f1157cf8ee6bbda2ca59466b67f1033e41b5d9b212"
     },
-    "proposal-compact.43d94a938732b666.glb": {
-      "bytes": 28617336,
-      "sha256": "43d94a938732b66605484b314c87b38361e4fd0cc1eacc570d56b4cc336aa35c"
+    "proposal-compact.3b68cb06ed66b98b.glb": {
+      "bytes": 28606844,
+      "sha256": "3b68cb06ed66b98b27e47ce8fc99a032314add80673dfc21de73f87f075df1ed"
     },
-    "proposal-compact-navigation.97f582468f8eda69.json": {
-      "bytes": 1369511,
-      "sha256": "97f582468f8eda698c8d68bc921e16381afcd10e40b3779dd0c1af4249b620a6"
+    "proposal-compact-navigation.f490429ac608d0b9.json": {
+      "bytes": 1368514,
+      "sha256": "f490429ac608d0b92f8d95a1438a52038b18540e1874511b455dd4e8873bb107"
     },
     "style.428bc866085030d2.css": {
       "bytes": 24079,
       "sha256": "428bc866085030d240f055d333e0a7c583f6eface4fb2e7cd388ea857345bb8f"
     },
-    "app.9b5ace9bc9882dac.js": {
-      "bytes": 5364831,
-      "sha256": "9b5ace9bc9882dacb8145b32198e2e7e0cd3df4c6f5f52efff69be9ed6eba589"
+    "app.79ea479256d32895.js": {
+      "bytes": 5366582,
+      "sha256": "79ea479256d32895125313e5e82ea20f550b9773daf38126f3eb9be2bd104ae6"
     }
   },
   "previous_assets": {
@@ -249,6 +249,31 @@
       "bytes": 917645,
       "sha256": "df430bac6a328969e3ded746165848361fb91b828e2fb4df79c79688c4e87c58",
       "retain_until_epoch": 1790211635.403421
+    },
+    "house.b4bebdf7a381a37e.glb": {
+      "bytes": 18994948,
+      "sha256": "b4bebdf7a381a37e5b863ea14dd9b940239ad0ed7a59b4d3ce61d803db8a485c",
+      "retain_until_epoch": 1790235884.11733
+    },
+    "navigation.3cd4d8062206d6e6.json": {
+      "bytes": 190149,
+      "sha256": "3cd4d8062206d6e6aae33d0826e738ad09f4e731e534f09b8d253a2cfa44104a",
+      "retain_until_epoch": 1790235884.11733
+    },
+    "proposal-compact.43d94a938732b666.glb": {
+      "bytes": 28617336,
+      "sha256": "43d94a938732b66605484b314c87b38361e4fd0cc1eacc570d56b4cc336aa35c",
+      "retain_until_epoch": 1790235884.11733
+    },
+    "proposal-compact-navigation.97f582468f8eda69.json": {
+      "bytes": 1369511,
+      "sha256": "97f582468f8eda698c8d68bc921e16381afcd10e40b3779dd0c1af4249b620a6",
+      "retain_until_epoch": 1790235884.11733
+    },
+    "app.9b5ace9bc9882dac.js": {
+      "bytes": 5364831,
+      "sha256": "9b5ace9bc9882dacb8145b32198e2e7e0cd3df4c6f5f52efff69be9ed6eba589",
+      "retain_until_epoch": 1790235884.11733
     }
   },
   "easter": {
@@ -280,9 +305,9 @@
     "proposed": "./?design=proposed",
     "proposal_label": "Proposed",
     "proposal_revision": "P8",
-    "proposal_updated_at": "2026-09-23T00:57:23.325666+00:00",
-    "proposal_native_sha256": "82c0938589555924b18826bc1253843f291e96138b6c4acd1200863c1d7ba310",
-    "proposal_geometry_sha256": "62333f76218d008f0f75b58412f5d2fe73d29d58111094fc81cf541d33f9d8f5"
+    "proposal_updated_at": "2026-09-23T07:33:46.412754+00:00",
+    "proposal_native_sha256": "04e9c12223e35c716722a4f045f33a3fe23fcdf2db9ec13807e6e044d867014d",
+    "proposal_geometry_sha256": "0949045cb17590a75ef39a28ab8ab43656eaf4fa15facd8560657232cc294aec"
   },
   "interactive_door_leaves": 23,
   "optional_street_context": {
