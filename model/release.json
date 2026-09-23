@@ -1,32 +1,32 @@
 {
-  "published_utc": "2026-09-23T00:04:13.400192+00:00",
-  "model_updated_at": "2026-09-22T22:19:10.940881+00:00",
-  "source_native_sha256": "6c11c91d4305320163938a0d0b47fc0ed3fe497073922da4dcde2c8d1ee5f6d8",
-  "source_geometry_sha256": "a5c3a1f5ea23eaca634b34a9c07ebf77f3cbfda60457ab0a1cdef332c581b8aa",
+  "published_utc": "2026-09-23T01:00:35.454304+00:00",
+  "model_updated_at": "2026-09-23T00:51:09.460516+00:00",
+  "source_native_sha256": "ea90312b0d911c0538219772a044e6c7bdd78da0c20e34b32934ec256fc44e2a",
+  "source_geometry_sha256": "bb8910006615ef0d383ac7f5cca471a68b349ebd1197431b7fb20496c74d38e9",
   "assets": {
-    "house.4c51753afa49d59e.glb": {
-      "bytes": 19285624,
-      "sha256": "4c51753afa49d59efadc82e6f6d7a3a35554f514f49856288dbf22f523cdbff0"
+    "house.b4bebdf7a381a37e.glb": {
+      "bytes": 18994948,
+      "sha256": "b4bebdf7a381a37e5b863ea14dd9b940239ad0ed7a59b4d3ce61d803db8a485c"
     },
-    "navigation.14ac12721de5bd9a.json": {
-      "bytes": 194409,
-      "sha256": "14ac12721de5bd9abc5a532aefee44652ed6185fcd62a49ffbf7ff072a6b9ae7"
+    "navigation.3cd4d8062206d6e6.json": {
+      "bytes": 190149,
+      "sha256": "3cd4d8062206d6e6aae33d0826e738ad09f4e731e534f09b8d253a2cfa44104a"
     },
-    "proposal-compact.2742e0383c3b71c2.glb": {
-      "bytes": 33235880,
-      "sha256": "2742e0383c3b71c29f2dad033c30afe2acbfd6e17538b8985175c556c9f73be7"
+    "proposal-compact.43d94a938732b666.glb": {
+      "bytes": 28617336,
+      "sha256": "43d94a938732b66605484b314c87b38361e4fd0cc1eacc570d56b4cc336aa35c"
     },
-    "proposal-compact-navigation.d989427b81b55f8d.json": {
-      "bytes": 1413567,
-      "sha256": "d989427b81b55f8d7572e01313d305de0e5084b04c2ac1be20b4c3d567deec67"
+    "proposal-compact-navigation.97f582468f8eda69.json": {
+      "bytes": 1369511,
+      "sha256": "97f582468f8eda698c8d68bc921e16381afcd10e40b3779dd0c1af4249b620a6"
     },
     "style.428bc866085030d2.css": {
       "bytes": 24079,
       "sha256": "428bc866085030d240f055d333e0a7c583f6eface4fb2e7cd388ea857345bb8f"
     },
-    "app.df430bac6a328969.js": {
-      "bytes": 917645,
-      "sha256": "df430bac6a328969e3ded746165848361fb91b828e2fb4df79c79688c4e87c58"
+    "app.9b5ace9bc9882dac.js": {
+      "bytes": 5364831,
+      "sha256": "9b5ace9bc9882dacb8145b32198e2e7e0cd3df4c6f5f52efff69be9ed6eba589"
     }
   },
   "previous_assets": {
@@ -54,21 +54,6 @@
       "bytes": 897852,
       "sha256": "3244861fb6d5ed168597ef7aa8202ca6f3259ee379fcf15f2795f85892b2b309",
       "retain_until_epoch": 1790607606.9848409
-    },
-    "proposal-compact.2e42bb67f0715bbc.glb": {
-      "bytes": 33751120,
-      "sha256": "2e42bb67f0715bbcfbf16d4119f477e5e9a68e9581abd2703ba4e21e36c6d5ef",
-      "retain_until_epoch": 1790122267.97496
-    },
-    "proposal-compact-navigation.5e9d3de71facc78e.json": {
-      "bytes": 1361888,
-      "sha256": "5e9d3de71facc78eaaf714961ecb2998e4d883297fcaa58b4c31da41ebfbd9a1",
-      "retain_until_epoch": 1790122267.97496
-    },
-    "app.0e301d6159095914.js": {
-      "bytes": 897852,
-      "sha256": "0e301d6159095914ec1390ec7789765ed84277cf4b6c650b6721796a0d692c1a",
-      "retain_until_epoch": 1790122267.97496
     },
     "proposal-compact.1c71ef86c15c6d85.glb": {
       "bytes": 33442088,
@@ -239,6 +224,31 @@
       "bytes": 917645,
       "sha256": "a93ca7170fafc5e536d4244f6cc6076e420fa03d494048b246fd33a6f4ec1924",
       "retain_until_epoch": 1790208253.357777
+    },
+    "house.4c51753afa49d59e.glb": {
+      "bytes": 19285624,
+      "sha256": "4c51753afa49d59efadc82e6f6d7a3a35554f514f49856288dbf22f523cdbff0",
+      "retain_until_epoch": 1790211635.403421
+    },
+    "navigation.14ac12721de5bd9a.json": {
+      "bytes": 194409,
+      "sha256": "14ac12721de5bd9abc5a532aefee44652ed6185fcd62a49ffbf7ff072a6b9ae7",
+      "retain_until_epoch": 1790211635.403421
+    },
+    "proposal-compact.2742e0383c3b71c2.glb": {
+      "bytes": 33235880,
+      "sha256": "2742e0383c3b71c29f2dad033c30afe2acbfd6e17538b8985175c556c9f73be7",
+      "retain_until_epoch": 1790211635.403421
+    },
+    "proposal-compact-navigation.d989427b81b55f8d.json": {
+      "bytes": 1413567,
+      "sha256": "d989427b81b55f8d7572e01313d305de0e5084b04c2ac1be20b4c3d567deec67",
+      "retain_until_epoch": 1790211635.403421
+    },
+    "app.df430bac6a328969.js": {
+      "bytes": 917645,
+      "sha256": "df430bac6a328969e3ded746165848361fb91b828e2fb4df79c79688c4e87c58",
+      "retain_until_epoch": 1790211635.403421
     }
   },
   "easter": {
@@ -270,9 +280,9 @@
     "proposed": "./?design=proposed",
     "proposal_label": "Proposed",
     "proposal_revision": "P8",
-    "proposal_updated_at": "2026-09-22T23:04:52.425682+00:00",
-    "proposal_native_sha256": "dbbfc78822faf32653b0485f564ba3ba33d48b258ec658f92f860c8831eb17a6",
-    "proposal_geometry_sha256": "ab6117f70b2627860824cd15b7832fe0c77821718337ebd68ccc35d4180603e5"
+    "proposal_updated_at": "2026-09-23T00:57:23.325666+00:00",
+    "proposal_native_sha256": "82c0938589555924b18826bc1253843f291e96138b6c4acd1200863c1d7ba310",
+    "proposal_geometry_sha256": "62333f76218d008f0f75b58412f5d2fe73d29d58111094fc81cf541d33f9d8f5"
   },
   "interactive_door_leaves": 23,
   "optional_street_context": {
