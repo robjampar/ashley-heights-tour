@@ -102,6 +102,18 @@ class ExteriorFinishFaces(unittest.TestCase):
                 for _, _, role, mat in faces(model['Proposal | North ground facade end pier']):
                     self.assertInterior(role, mat)
 
+    def test_planning_kitchen_internal_opening_is_white_including_reveals_and_soffit(self):
+        pieces = [obj for name, obj in self.models['planning'].items()
+                  if name.startswith(('Proposal | Kitchen side opening reveal',
+                                      'Proposal | Kitchen side opening head',
+                                      'Garage kitchen partition | lintel'))]
+        self.assertEqual(len(pieces), 5, 'Expected the head, jamb reveals and retained lintels')
+        for obj in pieces:
+            with self.subTest(object=obj['object_name']):
+                for _, _, role, material in faces(obj):
+                    self.assertInterior(role, material)
+                    self.assertEqual(material, 'Proposal | White internal walls')
+
 
 if __name__ == '__main__':
     unittest.main()

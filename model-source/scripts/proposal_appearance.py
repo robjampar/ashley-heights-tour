@@ -122,6 +122,10 @@ def _appearance_constructed_side(name, point, normal):
     None leaves the general exposure classifier in charge.
     """
     name = name.removeprefix('proposal revision | ')
+    if PLANNING and name.startswith(('proposal | kitchen side opening reveal',
+                                     'proposal | kitchen side opening head',
+                                     'garage kitchen partition | lintel')):
+        return False  # internal portal between the kitchen and side garden living
     if name == 'proposal | north ground facade end pier':
         return False  # between the wing, gym and attached entrance gallery
     if name == 'proposal | entrance bay north return' and abs(normal.y) > .7:

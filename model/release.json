@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-25T11:38:32.101343+00:00",
+  "published_utc": "2026-09-25T13:10:00.393230+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -20,13 +20,13 @@
       "bytes": 1790176,
       "sha256": "3af512b658cbae29355985c03286f8e8295c148ddb230a4fbe48dc285515dd00"
     },
-    "proposal-planning.44b88f1a64b13b21.glb": {
-      "bytes": 30929960,
-      "sha256": "44b88f1a64b13b21501c7f8bdbdb62adae8d7feb17091130e58bb0f8c249080e"
+    "proposal-planning.f1d2abc2242f6488.glb": {
+      "bytes": 30927960,
+      "sha256": "f1d2abc2242f6488b56e17ddb23d29ef1f62a6995dcf5d865dac5def13fc761d"
     },
-    "proposal-planning-navigation.e33b60cd518cad09.json": {
-      "bytes": 1475449,
-      "sha256": "e33b60cd518cad095b6119fcfc541b8aa02cede0c567c5c009d2adb25fcd0485"
+    "proposal-planning-navigation.ce1f7f4f9ff8954e.json": {
+      "bytes": 1475253,
+      "sha256": "ce1f7f4f9ff8954ed335842a97a1fd24cd0169070ea8314623b4fa5f48119b23"
     },
     "redesign-i1.5eb0c2a9c90443f1.glb": {
       "bytes": 30706732,
@@ -88,9 +88,9 @@
       "bytes": 25871,
       "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a"
     },
-    "app.78ef7d759ffdf1cf.js": {
+    "app.30f8644e54fc4feb.js": {
       "bytes": 5374150,
-      "sha256": "78ef7d759ffdf1cfe09d0a041aed738ea27b4748a48c25289c543d4ba8585056"
+      "sha256": "30f8644e54fc4feb4a09dd75f097cc450fa9bdd027ea70a5ff257547a9d86ea3"
     }
   },
   "previous_assets": {
@@ -153,6 +153,24 @@
       "sha256": "6ffad34e39df094a90a747658bc1f980ee4db883744355f077774973eda3449c",
       "retired_at_epoch": 1790336311.698618,
       "retain_until_epoch": 1790343511.698618
+    },
+    "proposal-planning.44b88f1a64b13b21.glb": {
+      "bytes": 30929960,
+      "sha256": "44b88f1a64b13b21501c7f8bdbdb62adae8d7feb17091130e58bb0f8c249080e",
+      "retired_at_epoch": 1790341799.260894,
+      "retain_until_epoch": 1790348999.260894
+    },
+    "proposal-planning-navigation.e33b60cd518cad09.json": {
+      "bytes": 1475449,
+      "sha256": "e33b60cd518cad095b6119fcfc541b8aa02cede0c567c5c009d2adb25fcd0485",
+      "retired_at_epoch": 1790341799.260894,
+      "retain_until_epoch": 1790348999.260894
+    },
+    "app.78ef7d759ffdf1cf.js": {
+      "bytes": 5374150,
+      "sha256": "78ef7d759ffdf1cfe09d0a041aed738ea27b4748a48c25289c543d4ba8585056",
+      "retired_at_epoch": 1790341799.260894,
+      "retain_until_epoch": 1790348999.260894
     }
   },
   "easter": {
@@ -191,9 +209,9 @@
     "gate_aligned": "./?design=g1",
     "gate_aligned_updated_at": "2026-09-25T09:13:00.386616+00:00",
     "planning_label": "Proposed (planning application)",
-    "planning_updated_at": "2026-09-25T11:34:58.037034+00:00",
-    "planning_native_sha256": "9357df24a166da54867f45880d713680be24cdbd89c42a6e57c3a692cfe396b1",
-    "planning_geometry_sha256": "7f3ebbbfea91044efc619bb3f09c568c948820d24c0ee3148afc1443881a0396"
+    "planning_updated_at": "2026-09-25T13:07:57.536544+00:00",
+    "planning_native_sha256": "7e641d7918e96cbcf36eae6b86c5145b8b5d3783406ee1d46e66297aaab438a3",
+    "planning_geometry_sha256": "1bce7384392a3aad20b45bfdbced283fc2083a26156c80bd11cc4f757757d924"
   },
   "exterior_finishes": {
     "scope": "house-and-extensions",

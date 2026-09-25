@@ -692,8 +692,8 @@
     },
     "scripts/proposal_appearance.py": {
       "source": "scripts/proposal_appearance.py",
-      "sha256": "028d45cb89eb85b593b8e4232161edf26c7e94327cd7a57ef3990d856e394440",
-      "bytes": 11837
+      "sha256": "d75bd8bdc3333b2d4e41db5536aed4f8098cdeb82542f398fa7a5352352df815",
+      "bytes": 12152
     },
     "scripts/proposal_architectural_lighting.py": {
       "source": "scripts/proposal_architectural_lighting.py",
@@ -1362,8 +1362,8 @@
     },
     "tests/test_exterior_finish_faces.py": {
       "source": "tests/test_exterior_finish_faces.py",
-      "sha256": "f271986d38c47039a8e3d79fe72d134f3592860ffe26501d9796e8e79005c9c4",
-      "bytes": 4977
+      "sha256": "dc9efb26f7d5df139274f2d06bcf4380a0cf6968f2b534419af448f7fc05d50e",
+      "bytes": 5752
     },
     "tests/test_loft_bedroom_wall.py": {
       "source": "tests/test_loft_bedroom_wall.py",
@@ -1754,6 +1754,11 @@
       "source": "walkthrough/tests/horde.test.mjs",
       "sha256": "4f5f47144a09d9f2d52265dca9e19e08b57beb1f2b7406ecbd9ab399aba3f3c6",
       "bytes": 10318
+    },
+    "walkthrough/tests/kitchen-opening-browser.mjs": {
+      "source": "walkthrough/tests/kitchen-opening-browser.mjs",
+      "sha256": "0882667a784c111bdc6c839d9204e01f7a5c70b0d1bd3dc98b04890df4256d94",
+      "bytes": 3479
     },
     "walkthrough/tests/life.test.mjs": {
       "source": "walkthrough/tests/life.test.mjs",
