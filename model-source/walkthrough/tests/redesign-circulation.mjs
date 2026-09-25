@@ -54,7 +54,7 @@ for(const option of options){
    results.push({floor:z,room:r.name,standable,accessible,access_from:r.separateAccess?'Forecourt approach':'Shared internal landing',pass:accessible>0});
   }
  }
- if(process.env.AUDIT_DEBUG)fs.writeFileSync(new URL('circulation-grid.json',root),JSON.stringify(grids));
+ if(process.env.AUDIT_DEBUG)fs.writeFileSync(new URL('circulation-grid.json',root),JSON.stringify({modelUpdatedAt:data.modelUpdatedAt,grids}));
  const views=data.rooms.map(v=>({name:v.label,position:v.position,pass:!nav.blocked(...v.position)&&nav.support(...v.position)!==null}));
  const passed=results.every(r=>r.pass)&&views.every(v=>v.pass);allPass&&=passed;
  const report={option,modelUpdatedAt:data.modelUpdatedAt,body_width_m:.44,grid_m:step,root_positions:roots,rooms:results,views,passed,limitations:'Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance.'};

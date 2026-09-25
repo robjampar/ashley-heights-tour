@@ -26,7 +26,7 @@ class BuildCacheTests(unittest.TestCase):
             'proposal/site-terrain.json', 'proposal/P4_site-feasibility.json',
             'proposal/P4_parking-validated.json', 'scripts/build_model.py',
             'scripts/build_extension_proposal.py', 'scripts/build_support.py',
-            'scripts/blender_collections.py', 'scripts/exterior_exposure.py',
+            'scripts/blender_collections.py', 'scripts/blender_booleans.py', 'scripts/exterior_exposure.py',
         }
         names.update('scripts/' + name for v in ('compact', 'planning') for name in build.modules_for(v))
         for name in names:

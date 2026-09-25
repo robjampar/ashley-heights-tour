@@ -16,13 +16,13 @@ for id in ('i1','i2','i3','e1','e2','e3'):
  view=next((r for r in nav['rooms']if r['label']==d['tourRoom']),None)
  if view:d['tourView']=view['id']
  checks={}
- for name,file in [('circulation','circulation-audit.json'),('stairs','stairs-navigation-audit.json'),('parking','parking-audit.json'),('headroom','stair-headroom-audit.json'),('pool','pool-navigation-audit.json'),('site','site-clearance-audit.json')]:
+ for name,file in [('circulation','circulation-audit.json'),('privateAccess','private-access-audit.json'),('stairs','stairs-navigation-audit.json'),('parking','parking-audit.json'),('headroom','stair-headroom-audit.json'),('pool','pool-navigation-audit.json'),('site','site-clearance-audit.json')]:
   p=out/file
   if p.exists():
    a=json.loads(p.read_text())
    assert a.get('modelUpdatedAt')==nav['modelUpdatedAt'],id+' '+name+' audit is stale'
-   checks[name]={k:a[k]for k in ('passed','groups','limitations','body_width_m','search_margin_m','vehicle_m','clearances','positions')if k in a}
- assert checks.get('circulation',{}).get('passed'),id+' needs a passing circulation audit'
+   checks[name]={k:a[k]for k in ('passed','groups','limitations','body_width_m','search_margin_m','vehicle_m','clearances','positions','bedrooms')if k in a}
+ assert all(checks.get(k,{}).get('passed')for k in ('circulation','privateAccess')),id+' needs passing circulation and private-access audits'
  if id.startswith('e'):
   assert all(checks.get(k,{}).get('passed')for k in ('stairs','parking','pool')),id+' needs current passing stairs, parking and pool audits'
   assert 'headroom'in checks,id+' needs current native-mesh stair headroom measurements'

@@ -1,0 +1,164 @@
+{
+  "option": "e2",
+  "modelUpdatedAt": "2026-09-25T04:34:46.117936+00:00",
+  "passed": true,
+  "bedrooms": 7,
+  "body_width_m": 0.44,
+  "results": [
+    {
+      "room": "Open-plan family living",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Family kitchen",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Wine bar room",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Drawing room",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Ground guest bedroom",
+      "floor": 0,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Entrance hall",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Garden link and changing",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Pool changing and visitor shower",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Garden leisure gallery",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Gym",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Cinema",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "New double garage",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Bedroom 3",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 4,
+      "passed": true
+    },
+    {
+      "room": "Side connection and loft stair",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 5,
+      "passed": true
+    },
+    {
+      "room": "Bedroom 4",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 4,
+      "passed": true
+    },
+    {
+      "room": "Garden guest bedroom",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 4,
+      "passed": true
+    },
+    {
+      "room": "Bedroom 2",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 4,
+      "passed": true
+    },
+    {
+      "room": "Landing",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 5,
+      "passed": true
+    },
+    {
+      "room": "Side principal bedroom",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 4,
+      "passed": true
+    },
+    {
+      "room": "Loft landing",
+      "floor": 5.55,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Loft workspace",
+      "floor": 5.55,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 1,
+      "passed": true
+    },
+    {
+      "room": "Loft guest bedroom",
+      "floor": 5.55,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    }
+  ],
+  "limitations": "Checks floor-level paths with other sleeping-room polygons unavailable. Does not establish fire escape, sound insulation, door locks, wheelchair access or ensuite plumbing."
+}

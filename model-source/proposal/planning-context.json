@@ -1,0 +1,212 @@
+{
+  "project": "Ashley Heights",
+  "address": "Ashley Heights, 4 Ashley Close, Sevenoaks, Kent",
+  "postcode": "TN13 3AP",
+  "postcode_basis": "TN13 3AP is recorded in the retained agent listing (source/agent-listing.html). Confirm the site address against the title register; the recorded applicant name/address remain working assumptions.",
+  "title_number": "K568939",
+  "os_sheet": "TQ 5255",
+  "lpa": "Sevenoaks District Council",
+  "application_type": "Householder planning application (Town and Country Planning Act 1990)",
+  "applicant": {
+    "name": "Mr R Parker",
+    "address": "4 Ashley Close, Sevenoaks, Kent"
+  },
+  "agent": {
+    "name": "None \u2014 applicant acting",
+    "address": ""
+  },
+  "proposal_description": "Erection of a two-storey extension with rooms in the roof and a basement beneath, forming a new principal elevation to Ashley Close, together with a first-floor and roof extension to the existing side wing, rear dormer, with the side-extension front wall and roof edge set back 450 mm from the original front alignment, keeping the retained house frontage visually prominent, and alterations to fenestration, forecourt, boundary wall and gate, following removal of the porch, chimney and front boundary piers. External walls finished in red-brown facing brick to match the existing house, with matching dark brown-grey roof tiles and tile-hung dormer cheeks and front panels, consistent with the same roof finish on neighbouring houses.",
+  "north_bearing_of_model_y_deg": 352.9,
+  "north_basis": "Least-squares registration of the model to the north-up OS extract (proposal/street-registration/registration.json): model +x bears 82.65\u00b0, so model +y bears 352.9\u00b0. Confirm against the purchased OS extract.",
+  "red_line_source": "navigation.site.outline_m (HM Land Registry title plan K568939 traced and registered)",
+  "blue_line_polygons": [],
+  "rear_strip_in_same_title": true,
+  "rear_strip_basis": "The rear garden strip is drawn inside the same red line as on the title plan; the coloured strips at its north-west corner on the title plan are rights of way, not separate titles \u2014 verify against the register.",
+  "designations": {
+    "green_belt": false,
+    "aonb": false,
+    "conservation_area": false,
+    "listed_building": false,
+    "tpo": null,
+    "flood_zone": "1",
+    "article_4_direction": false,
+    "basis": "Green Belt: owner confirms the site is outside. Read-only Sevenoaks public GIS screening on 25 September 2026, using the existing approximate model-to-BNG registration, shows no plot overlap with The Vine conservation area or nearby Article 4 areas. These are map checks, not formal land-charge verification. TPO 19/1987 (T4 cherry and G1 group) is mapped beside the east/rear boundary; legal coverage, surviving tree identity and root protection require survey and council/arboricultural confirmation. Heritage, AONB and flood assumptions remain unverified. See proposal/redesigns/research/RESEARCH.md.",
+    "confirmed": [
+      "green_belt"
+    ],
+    "map_screened": [
+      "conservation_area",
+      "article_4_direction"
+    ]
+  },
+  "original_dwelling": {
+    "basis": "The existing house is treated as the original dwelling as first built (post-1948, unextended); no previous extensions are known.",
+    "previous_extensions_m2": 0
+  },
+  "existing_drawings_basis": "Existing drawings are a model reconstruction from the estate-agent floor plan, aerial and photographic sources, validated against the 34 published room dimensions; heights are photo-fitted (floor-to-floor 2.80 m, eaves 5.35 m, ridge 8.05 m). To be confirmed by measured survey before submission.",
+  "levels_basis": "Site terrain and ground levels are model estimates, not a measured topographical survey; verify all levels, thresholds and boundaries.",
+  "bins_cycles": {
+    "location": "Within the double garage (two bins, two cycles); collection point at the gate",
+    "draw_rect_m": [
+      10.35,
+      -17.2,
+      12.0,
+      -16.4
+    ]
+  },
+  "renewables": {
+    "ashp": null,
+    "solar_pv": null,
+    "note": "None proposed at planning stage; any air-source heat pump or PV to be added under permitted development or a later application."
+  },
+  "parking": {
+    "existing_spaces": 4,
+    "existing_spaces_note": "4 forecourt spaces; garage capacity to verify",
+    "proposed_spaces": 5,
+    "basis": "Three forecourt bays and two garage spaces in the proposal. The existing forecourt holds four cars informally; existing garage capacity requires verification."
+  },
+  "visibility_splays": {
+    "vehicle_x_m": 2.4,
+    "vehicle_y_m": 25,
+    "pedestrian_m": 2.0,
+    "basis": "The shown 2.4 m x 25 m splay is an unverified concept, not an accepted 30 mph design. Manual for Streets Table 7.1 gives 25 m at 20 mph and 43 m at 30 mph. Confirm observed speeds, highway geometry and the required splays with KCC Highways."
+  },
+  "trees": {
+    "basis": "Tree positions are the modelled trunks (photographic reconstruction); species and dimensions are estimates for this issue. A BS5837 survey is required."
+  },
+  "materials": {
+    "walls": "External walls: red-brown facing brick to match the existing house in colour, texture, bond and mortar. Internal wall faces: white painted plaster, with no exposed brick.",
+    "roof": "Weathered dark brown-grey roof tiles with subtle tile-to-tile variation to match the existing house in material, colour, profile, size and coursing, consistent with neighbouring houses; existing roof covering retained where shown",
+    "dormers": "Tile-hung cheeks and front panels to match the existing weathered dark brown-grey roof tiles; dark flat roof membrane and metal flashings; black window frames",
+    "windows_doors": "Bronze-black powder-coated aluminium frames, clear double glazing; pale oak external doors",
+    "rainwater": "Anthracite aluminium gutters and downpipes",
+    "hard_landscape": "Resin-bound gravel forecourt, limestone paving, permeable court paving",
+    "boundary": "Matching red-brown brick front wall, 1.95 m (26 courses), with oak-slatted sliding gate; existing fences and hedges retained",
+    "privacy": "Side-wing west bedroom windows and new-wing east windows facing neighbours obscure-glazed below 1.7 m; opening restrictions and sightlines to be verified."
+  },
+  "drawing_revision": "G",
+  "issue_date": "2026-09-25",
+  "sheet_status": "REVIEW - NOT FOR SUBMISSION",
+  "drawn_by": "RP",
+  "checked_by": "\u2014",
+  "pre_application_advice": false,
+  "site_visit_contact": "Applicant",
+  "reports_to_commission": [
+    {
+      "id": "SURV",
+      "title": "Measured building survey and topographical survey",
+      "trigger": "Existing drawings are a model reconstruction; levels are assumed",
+      "status": "required before submission"
+    },
+    {
+      "id": "ARB",
+      "title": "BS5837:2012 arboricultural impact assessment and tree protection plan",
+      "trigger": "Mature trees within 15 m of the works; TPO status unknown",
+      "status": "required"
+    },
+    {
+      "id": "PEA",
+      "title": "Preliminary ecological appraisal (bat roost potential \u2014 roof and loft works)",
+      "trigger": "Alterations to the roof of a pre-2000 dwelling with mature trees",
+      "status": "required"
+    },
+    {
+      "id": "BIA",
+      "title": "Basement impact / structural method statement",
+      "trigger": "New basement under the front wing adjoining the retained house",
+      "status": "required"
+    },
+    {
+      "id": "SUDS",
+      "title": "Drainage strategy (surface water, SuDS)",
+      "trigger": "Increase in impermeable area; basement",
+      "status": "required"
+    },
+    {
+      "id": "FRA",
+      "title": "Flood risk assessment",
+      "trigger": "Only if the site is in flood zone 2/3 or at surface-water risk",
+      "status": "not expected (flood zone 1 assumed)"
+    },
+    {
+      "id": "HER",
+      "title": "Heritage statement",
+      "trigger": "Only if within or adjoining a conservation area",
+      "status": "not expected"
+    },
+    {
+      "id": "HWY",
+      "title": "Highways: access and visibility splay confirmation",
+      "trigger": "Altered gate and forecourt",
+      "status": "confirm with KCC Highways"
+    }
+  ],
+  "front_wing_case": {
+    "summary": "The new wing is two storeys with rooms in the roof: its eaves (5.35 m) and ridge (8.05 m) are the same as the existing two-storey house, and the loft rooms sit within that roof behind a flat-topped dormer. The plot sits at the head of the Ashley Close cul-de-sac, so the wing is designed as the house's new principal elevation towards the turning head rather than as a front extension of the retained house: its south gable stands parallel to the front boundary wall and faces the turning head, the entrance moves into it, and the retained house reads as the rear range behind the courtyard.",
+    "basis": "Owner's position (22 September): the front elevation of the house is being re-formed; because the plot closes the cul-de-sac the wing faces the road as a new frontage rather than projecting in front of a building line shared with neighbours."
+  },
+  "precedents": [
+    {
+      "ref": "21/02393/HOUSE",
+      "address": "Meadowfield, 60 Hitchen Hatch Lane, Sevenoaks TN13 3AU",
+      "decision": "Granted by Development Control Committee (2021; referred by a councillor on neighbour amenity, officers recommended approval)",
+      "description": "Demolition of garage and shed; remodelling and enhancement including extensions to the existing house, new porch, integral garage, loft conversion, landscaping, covered pergola, rooflights and alterations to fenestration",
+      "relevance": "A whole-house remodel keeping the existing house, on the road bounding Ashley Close. The committee report found that the extension, 'whilst not set down from the ridge height of the main house, would incorporate the existing roof form, therefore considered to reflect the character of the existing dwelling', and that it would not 'significantly alter the existing residential and built up character of the area'. Mature landscaping screening it from the street weighed in its favour. Assessed under Core Strategy SP1, ADMP EN1/EN2/T2 and the Residential Extensions SPD.",
+      "policies": "Core Strategy SP1, ADMP EN1, EN2, T2, Residential Extensions SPD"
+    },
+    {
+      "ref": "23/01491/HOUSE",
+      "address": "54 Hitchen Hatch Lane, Sevenoaks TN13 3AU",
+      "decision": "Granted 25 Jul 2023 (delegated)",
+      "description": "Two storey front extension with front porch; alteration to fenestration",
+      "relevance": "Adjoining road (Hitchen Hatch Lane bounds Ashley Close to the north); same Urban Confines and Sevenoaks Residential Character Area constraints. The officer's test was whether the front extension would 'significantly lessen the set-back nature' of the properties lining that section of the road, and whether it was subservient in scale with a common gabled design. Obscure glazing in the flank was accepted as the privacy answer.",
+      "policies": "ADMP EN1, Core Strategy SP1, Sevenoaks Town Neighbourhood Plan C4, Residential Character Area assessment"
+    },
+    {
+      "ref": "23/02575/HOUSE",
+      "address": "Cedar Bank, Hopgarden Lane, Sevenoaks TN13 1PX",
+      "decision": "Granted",
+      "description": "Demolition of garage; two storey front and side extension incorporating a garage at lower ground level, with a dormer to the new front extension",
+      "relevance": "A two-storey front extension with rooms in the roof (dormer) granted in Sevenoaks town \u2014 the closest match in form to the new wing."
+    },
+    {
+      "ref": "23/02298/HOUSE",
+      "address": "Springfield, 4 Farnaby Drive, Sevenoaks TN13 2LQ",
+      "decision": "Granted",
+      "description": "Two storey front extension, part single/part double storey rear and side extension, facade updates including alterations to fenestration, removal of chimney",
+      "relevance": "Re-formed front facade with chimney removal \u2014 the same package of front changes as this scheme."
+    },
+    {
+      "ref": "25/02441/HOUSE",
+      "address": "Aldington, 53 Oakhill Road, Sevenoaks TN13 1NT",
+      "decision": "Granted",
+      "description": "Demolition of chimney; two storey front extension; first floor front and rear extension; two storey side extension; raising the roof for a loft conversion",
+      "relevance": "Recent (2025) grant combining a two-storey front extension, side extension, chimney removal and roof works."
+    },
+    {
+      "ref": "22/02064/HOUSE",
+      "address": "66 Brittains Lane, Sevenoaks TN13 2JS",
+      "decision": "Granted",
+      "description": "Part single/part two storey side and rear extension; two storey front extension; roof extension and loft conversion with front and rear dormers",
+      "relevance": "Two-storey front extension with front and rear dormers granted together."
+    }
+  ],
+  "policy_to_check": "The council's Formal Detached character assessment, printed pages 273-277, explicitly places Ashley Close in F05 Vine Avenue / Ashley Road (verified 25 September 2026). Use its guidance on spacing, setbacks and mature planting. Source: https://www.sevenoaks.gov.uk/download/downloads/id/740/f_formal_detached.pdf . The F04 reference in the nearby Hitchen Hatch Lane precedent is not this property's character-area designation. Sevenoaks Town Neighbourhood Plan policy C4 and the cited precedent decisions still require full verification for an application.",
+  "precedents_other": "Other granted remodelling schemes in Sevenoaks keeping the house: 13/01992/HOUSE Rozelle, Hillborough Avenue (remodelling with two-storey side and part two-storey front extension and a basement); 12/00579/HOUSE and 13/01081/HOUSE 3 Cade Lane (remodelling with new front gable, double-height entrance, ridge raised 0.7 m); 17/01231/HOUSE Blackhall Barns, Woodland Rise (remodelling with front, side and two-storey rear extensions, ridge raised); 16/02673/HOUSE Yarnfield, 100 Kippington Road ('new front elevation design'); 25/03547/HOUSE Chenies, 84 Oakhill Road (fa\u00e7ade improvements, front door relocated).",
+  "submission_verification": {
+    "applicant_details": "unconfirmed",
+    "ownership_certificate": "unconfirmed",
+    "agricultural_holding": "unconfirmed",
+    "works_started": "unconfirmed",
+    "cil_lawful_use": "unconfirmed",
+    "cil_exemption_eligibility": "unconfirmed",
+    "checked_on": "2026-09-23"
+  },
+  "validation_source": {
+    "title": "Sevenoaks householder validation checklist, revision September 2026",
+    "url": "https://www.sevenoaks.gov.uk/download/downloads/id/4896/1_application_for_householder_planning_permission_validation_checklist.pdf",
+    "checked_on": "2026-09-23"
+  },
+  "design_variant": "planning",
+  "roof_context_basis": "Owner confirmed on 23 September 2026 that all neighbouring houses have the same dark brown-grey roof tiles as Ashley Heights and supplied a close-up colour reference (proposal/reference/roof-tile-colour-reference.png)."
+}

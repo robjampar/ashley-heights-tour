@@ -55,7 +55,7 @@ def source_hashes(root, variant):
         'proposal/site-terrain.json', 'proposal/P4_site-feasibility.json',
         'proposal/P4_parking-validated.json', 'proposal/original-preservation.json',
         'scripts/build_model.py', 'scripts/build_extension_proposal.py',
-        'scripts/build_support.py', 'scripts/blender_collections.py', 'scripts/exterior_exposure.py',
+        'scripts/build_support.py', 'scripts/blender_collections.py', 'scripts/blender_booleans.py', 'scripts/exterior_exposure.py',
     }
     if variant:
         paths.add(f'proposal/design-spec-{variant}.json')

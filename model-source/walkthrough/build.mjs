@@ -14,10 +14,10 @@ await build({entryPoints:['src/main.js'],outfile:'dist/app.js',bundle:true,minif
 await cp('public','dist',{recursive:true,filter:source=>!modelNames.has(path.basename(source))});
 // The "Cars" setting plays drive paths planned here against each design's
 // navigation data, so the browser never runs the planner.
-const {planDrivePaths}=await import('./tools/plan-drive.mjs');
+const {planDrivePaths,drivePlanningInput}=await import('./tools/plan-drive.mjs');
 for(const {navigation:name} of assets){
  const source=await readFile('public/'+name,'utf8'),data=JSON.parse(source),t=performance.now();
- const key=digest(driveSignature+'\n'+source);
+ const key=digest(driveSignature+'\n'+JSON.stringify(drivePlanningInput(data)));
  const {value:drive,hit}=await cachedJson('.cache/drive',key,()=>planDrivePaths(data,{log:line=>console.log(`${name} drive · ${line}`)}));
  if(drive){data.life={...(data.life??{}),drive};await writeFile('dist/'+name,JSON.stringify(data));}
  performanceReport.navigation.push({name,cached:hit,seconds:(performance.now()-t)/1000});

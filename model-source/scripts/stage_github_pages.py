@@ -69,10 +69,17 @@ for option in review_options:
     candidate_nav = json.loads((DIST / ('redesign-' + option['id'] + '-navigation.json')).read_text())
     assert option['modelUpdatedAt'] == candidate_nav['modelUpdatedAt'], option['id'] + ' review/model issue mismatch'
 review_map, review_manifest = {}, {}
-for source in sorted(review_source.rglob('*')):
-    if not source.is_file() or source.name in ('index.html', 'review.js'):
-        continue
-    relative = source.relative_to(review_source)
+review_files = {'review.css', 'options.json', 'six-options.pdf'}
+for option in review_options:
+    ident = option['id']
+    review_files.update(f'images/{ident}-{camera}.jpg' for camera in ('front', 'rear', 'interior'))
+    review_files.add(f'plans/{ident}/manifest.json')
+    for plan in option['plans']:
+        review_files.update(f'plans/{ident}/{plan[key]}' for key in ('file', 'detail'))
+for name in sorted(review_files):
+    source = (review_source / name).resolve()
+    assert source.is_relative_to(review_source.resolve()), 'Review asset outside its directory: '+name
+    relative = source.relative_to(review_source.resolve())
     data = source.read_bytes()
     target = relative.with_name(relative.stem + '.' + sha(data)[:16] + relative.suffix)
     review_map[relative.as_posix()] = target.as_posix()
@@ -86,6 +93,20 @@ review_js = review_js.replace('const asset=path=>path;', 'const assets='+json.du
 review_name = 'review.' + sha(review_js.encode())[:16] + '.js'
 (review_dest / review_name).write_text(review_js)
 review_manifest[review_name] = {'bytes': len(review_js.encode()), 'sha256': sha(review_js.encode())}
+# Apply the same cache-age window to review files. Only referenced assets are
+# issued; editor duplicates and superseded sheets never enter a new release.
+review_retained = {}
+prior_review = previous.get('redesign_review', {})
+for name, info in {**prior_review.get('previous_assets', {}), **prior_review.get('assets', {})}.items():
+    candidate = (review_dest / name).resolve()
+    assert candidate.is_relative_to(review_dest.resolve()), name
+    if name in review_manifest:
+        continue
+    expiry = info.get('retain_until_epoch', now + 86400)
+    if expiry > now:
+        review_retained[name] = {**info, 'retain_until_epoch': expiry}
+    else:
+        candidate.unlink(missing_ok=True)
 review_html = (review_source / 'index.html').read_text().replace('src="review.js"', 'src="'+review_name+'"')
 for name in ('review.css', 'six-options.pdf'):
     assert name in review_map, 'Missing review asset: '+name
@@ -119,7 +140,7 @@ manifest = {
     'redesign_review': {'path': './redesigns/', 'options': {
         option: {'path': './?design='+option,
                  'model_updated_at': json.loads((DIST / ('redesign-'+option+'-navigation.json')).read_text())['modelUpdatedAt']}
-        for option in redesign_ids}, 'assets': review_manifest},
+        for option in redesign_ids}, 'assets': review_manifest, 'previous_assets': review_retained},
     'interactive_door_leaves': len(nav['interactiveDoors']),
     'optional_street_context': {'setting': 'Settings → Street & neighbours', 'default': 'off',
         'preference_shared_between_designs': True, 'walk_distance_beyond_gates_m': 50,

@@ -1,10 +1,32 @@
 import {DriveWorld,HybridPlanner,gateGeometry} from '../src/drive.js';
 
+// This is the complete input consumed by the build-time planner, as well as
+// its cache key. Normalising at the planner boundary prevents a future caller
+// from making a cached result depend on a field that the key omitted. Keep
+// geometry and object names (gate/car identification), omit render materials,
+// room descriptions, capture dates and other non-driving metadata.
+export function drivePlanningInput(data){
+ const pick=(value,keys)=>Object.fromEntries(keys.filter(key=>value?.[key]!==undefined).map(key=>[key,value[key]]));
+ return {
+  levelHeight:data.levelHeight,
+  walls:(data.walls??[]).map(w=>pick(w,['name','a','b','floor','base_z','height_m','thickness_m','openings','projected_x_span','front_projection_m'])),
+  segments:(data.segments??[]).map(s=>pick(s,['name','a','b','thickness','bottom','top'])),
+  obstacles:(data.obstacles??[]).map(o=>pick(o,['name','box','polygon','bottom','top'])),
+  surfaces:(data.surfaces??[]).map(s=>pick(s,['polygon','z'])),
+  site:pick(data.site,['outline_m']),
+  approachSurface:pick(data.approachSurface,['polygon']),
+  proposalFrontage:pick(data.proposalFrontage,['wall_line_m']),
+  proposalSite:{...pick(data.proposalSite,['pedestrianCourtyards','drivablePolygons']),
+   driveway_bay_bounds_m:(data.proposalSite?.driveway_bay_bounds_m??[]).map(b=>pick(b,['id','bounds_m']))},
+ };
+}
+
 // Plans every car's arrival and departure for one design's navigation data
 // (run at build time; the results are embedded as data.life.drive). Each bay
 // is planned with the other bays occupied, so the paths hold whether or not
 // the neighbours are in.
 export function planDrivePaths(data,{log=()=>{},planningMargin=.22}={}){
+ data=drivePlanningInput(data);
  const bays=data.proposalSite?.driveway_bay_bounds_m??[];
  if(!bays.length)return null;
  const carName=id=>'Proposal | Compact car '+id;

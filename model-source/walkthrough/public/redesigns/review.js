@@ -28,6 +28,7 @@ function choose(id,{scroll=false,updateHash=true}={}){
  $('floor-buttons').querySelectorAll('button').forEach(b=>b.onclick=()=>floorPlan(b.dataset.floor));
  const checks=[];
  if(selected.checks.circulation?.passed)checks.push('Every scheduled room has a connected walking route in the model at a 44 cm body width; saved room viewpoints are clear.');
+ if(selected.checks.privateAccess?.passed)checks.push('All seven bedrooms and shared rooms have routes that avoid the other sleeping rooms.');
  if(selected.checks.stairs?.passed)checks.push('New stairs tested continuously up and down at a 50 cm body width.');
  if(selected.checks.pool?.passed)checks.push('A continuous 50 cm-wide walking test passes both sides of the pool, past the loungers and up/down the garden steps.');
  if(selected.checks.parking?.passed)checks.push((selected.checks.parking.positions??6)+' compact-car parking positions tested on arrival and exit with the other cars occupied. Swept-body samples taken every 10 cm.');

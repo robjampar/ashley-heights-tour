@@ -6,10 +6,10 @@
     "mtime_ns": 1789436253000000000
   },
   "option": "e1",
-  "modelUpdatedAt": "2026-09-25T03:56:24.478052+00:00",
+  "modelUpdatedAt": "2026-09-25T04:33:34.186775+00:00",
   "inputs": {
-    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "520ac9bd5a2d144a09cbb954d99faa437c471ea79e5362c57c9453f2de5a51c9",
-    "output-proposed-compact/navigation.json": "392b0e02d671d777e67f4ad817fa229a588e95455c740746caad43d688142aef",
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "f02d6b7419867aac3bb719d1ec720d05ab3b6abc700715a22a6e1aae30775990",
+    "output-proposed-compact/navigation.json": "ed2ffec2e3b40aeebd5656252af7e72aada9a54b432e9f49f65f04ed9eae4896",
     "output-walkthrough/Ashley Heights.blend": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
     "output-walkthrough/geometry.json": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
     "proposal/original-preservation.json": "9971c88ecd0e6fe59cda187c0a308604d94c1e3b42e29c36e77c74964dee2e43",
@@ -21,7 +21,7 @@
     "scripts/build_extension_proposal.py": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
     "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
     "scripts/build_redesign.py": "69bdfbdb9507cd3ef756ca6dd98913fc6ebabec72df2829a30364b837f69a3a6",
-    "scripts/build_support.py": "1c487df317046ee8ee5147293d8792b49ac886fa4ab3277f60269314b2422c1c",
+    "scripts/build_support.py": "2ab6c3fa55957db3dd506b82e9cf79fe95d63d56aea627a07db435e4a0ee45f3",
     "scripts/exterior_exposure.py": "943c00a6c0d92df0fb48b7b0649d33f74bcaeb15952722cc6abcb85e7de94284",
     "scripts/proposal_helpers.py": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
     "scripts/proposal_loft.py": "3f4029e5c7b12b3bde1d182fc16fdecae51c57f6b91d53a3a7110b1cc30a7104",
@@ -47,11 +47,11 @@
     "walkthrough/public/navigation.json": true
   },
   "outputs": {
-    "output-redesign-e1/Ashley Heights \u2014 E1 Retained front.blend": "8fd66c1e5f393d5fe2c063dbe0c2357de09f3176ac258e26f579992b667413ea",
+    "output-redesign-e1/Ashley Heights \u2014 E1 Retained front.blend": "13fe0479437eb952aa8a3e399f1e5473a2c0bb933bc7137e5a16097ba5038d30",
     "output-redesign-e1/redesign-e1.glb": "5f6d9f73640ae28199f829fc3b07ebb78249120bb4dda699c2b45e2138ec07cf",
-    "output-redesign-e1/navigation.json": "0237914536d1c8b0a49321f25d19eac3cbf680fd52fdb1eddc41357af7fc2ad7",
+    "output-redesign-e1/navigation.json": "a1574527eea63a36a39678b765377f17b48fbbcb228bdcbcc5e25f5340f5f445",
     "output-redesign-e1/geometry.json": "dbd1d0911de3f842020fa8707130b9c9d5ed2c112d81cfb9a5d78531f2475867",
     "walkthrough/public/redesign-e1.glb": "5f6d9f73640ae28199f829fc3b07ebb78249120bb4dda699c2b45e2138ec07cf",
-    "walkthrough/public/redesign-e1-navigation.json": "0237914536d1c8b0a49321f25d19eac3cbf680fd52fdb1eddc41357af7fc2ad7"
+    "walkthrough/public/redesign-e1-navigation.json": "a1574527eea63a36a39678b765377f17b48fbbcb228bdcbcc5e25f5340f5f445"
   }
 }

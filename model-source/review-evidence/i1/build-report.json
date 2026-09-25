@@ -6,11 +6,11 @@
     "mtime_ns": 1789436253000000000
   },
   "option": "i1",
-  "modelUpdatedAt": "2026-09-25T03:50:56.784327+00:00",
+  "modelUpdatedAt": "2026-09-25T04:31:27.446974+00:00",
   "inputs": {
-    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "520ac9bd5a2d144a09cbb954d99faa437c471ea79e5362c57c9453f2de5a51c9",
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "f02d6b7419867aac3bb719d1ec720d05ab3b6abc700715a22a6e1aae30775990",
     "output-proposed-compact/geometry.json": "4871e75a5cfa46a46ddf8087171c067b9fa49bb05de50d4c30e8ef8635ee1a3b",
-    "output-proposed-compact/navigation.json": "392b0e02d671d777e67f4ad817fa229a588e95455c740746caad43d688142aef",
+    "output-proposed-compact/navigation.json": "ed2ffec2e3b40aeebd5656252af7e72aada9a54b432e9f49f65f04ed9eae4896",
     "proposal/original-preservation.json": "9971c88ecd0e6fe59cda187c0a308604d94c1e3b42e29c36e77c74964dee2e43",
     "proposal/redesigns/i1.json": "bb3c83488ffd1720e03a47e911535376a8237e34bf77769d6d68c09137f07f2c",
     "revisions/redesigns-2026-09-25/original-object-index.json": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595",
@@ -18,7 +18,7 @@
     "scripts/build_extension_proposal.py": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
     "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
     "scripts/build_redesign.py": "69bdfbdb9507cd3ef756ca6dd98913fc6ebabec72df2829a30364b837f69a3a6",
-    "scripts/build_support.py": "1c487df317046ee8ee5147293d8792b49ac886fa4ab3277f60269314b2422c1c",
+    "scripts/build_support.py": "2ab6c3fa55957db3dd506b82e9cf79fe95d63d56aea627a07db435e4a0ee45f3",
     "scripts/proposal_helpers.py": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
     "scripts/redesign_layouts.py": "35080daa7c6899714b0ec4b865feb9324204236a367398f5d1cdbc83e195ae96",
     "scripts/redesign_support.py": "5d95544d2dd284124a6d1446ec0456c0d330146f33420ae95c55ae18f29484c8"
@@ -35,11 +35,11 @@
     "walkthrough/public/navigation.json": true
   },
   "outputs": {
-    "output-redesign-i1/Ashley Heights \u2014 I1 Garden kitchen.blend": "636b1bbcf580fd8354782556e42db42a7e5f38200cc1f555cb04caf8c4ed8e9b",
-    "output-redesign-i1/redesign-i1.glb": "8d652bac85d3833664d198b87979e5c9f161c3dfab57760573b0262f3b2e04bf",
-    "output-redesign-i1/navigation.json": "68f5cb2b8dfc36482484087196432eb9536c62dec4f6818677483032f0695688",
+    "output-redesign-i1/Ashley Heights \u2014 I1 Garden kitchen.blend": "2ba85f2825ac0cebddf86685f65c99e4d305672bb1efc57131a95b322ce9e5cf",
+    "output-redesign-i1/redesign-i1.glb": "68e60d4cc51994d8fbd0ee1ecd4b2afdcb71bd5af80188796fb1a7932f822159",
+    "output-redesign-i1/navigation.json": "d0a1b9ce1bb84c1673fc09f780a192c6085fe59f5bd27cb42449754dea862908",
     "output-redesign-i1/geometry.json": "effd44efb31a4a8689ddf263e9e7148db4824fd01ee3d2998c795ccde21864fe",
-    "walkthrough/public/redesign-i1.glb": "8d652bac85d3833664d198b87979e5c9f161c3dfab57760573b0262f3b2e04bf",
-    "walkthrough/public/redesign-i1-navigation.json": "68f5cb2b8dfc36482484087196432eb9536c62dec4f6818677483032f0695688"
+    "walkthrough/public/redesign-i1.glb": "68e60d4cc51994d8fbd0ee1ecd4b2afdcb71bd5af80188796fb1a7932f822159",
+    "walkthrough/public/redesign-i1-navigation.json": "d0a1b9ce1bb84c1673fc09f780a192c6085fe59f5bd27cb42449754dea862908"
   }
 }

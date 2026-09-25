@@ -2,8 +2,8 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "4807da50967138c463f90328fa8acc79298a3289674942b9342d9b48a67ff9e0",
-      "bytes": 10551
+      "sha256": "6e5c3b5e2fdf296971110cdcde12b9aa96a34bcab7d60d1f0486dcc246d996c8",
+      "bytes": 11309
     },
     "proposal/P4_parking-validated.json": {
       "source": "proposal/P4_parking-validated.json",
@@ -44,6 +44,16 @@
       "source": "proposal/original-preservation.json",
       "sha256": "9971c88ecd0e6fe59cda187c0a308604d94c1e3b42e29c36e77c74964dee2e43",
       "bytes": 678
+    },
+    "proposal/planning-context-proposed.json": {
+      "source": "proposal/planning-context-proposed.json",
+      "sha256": "ab598db8c59ddc629c09b6c838a15befe1cab61f771941756cb41af20c9e7390",
+      "bytes": 15393
+    },
+    "proposal/planning-context.json": {
+      "source": "proposal/planning-context.json",
+      "sha256": "8ac810085c090771f5fff444f178ffba9373f1da853269342d2f0452e48c8e62",
+      "bytes": 15005
     },
     "proposal/redesigns/CONCEPTS.md": {
       "source": "proposal/redesigns/CONCEPTS.md",
@@ -92,8 +102,8 @@
     },
     "proposal/redesigns/research/RESEARCH.md": {
       "source": "proposal/redesigns/research/RESEARCH.md",
-      "sha256": "97254ac0b6cd34c97900f3cfe0ad57fa0ee5b02ea6e5b98d108bd7716226a30c",
-      "bytes": 4534
+      "sha256": "5749939e71e415111807d47fba610ba511283c804053778565b08f3334457754",
+      "bytes": 7672
     },
     "proposal/redesigns/review-notes.json": {
       "source": "proposal/redesigns/review-notes.json",
@@ -225,6 +235,11 @@
       "sha256": "4f694af30f49d45943d64ec6aac3010dd5fa8fda5f2363f8dd994d8d5f51ba2c",
       "bytes": 3369
     },
+    "scripts/blender_booleans.py": {
+      "source": "scripts/blender_booleans.py",
+      "sha256": "736f3b81a8cc1fef74d14c7a61669e8f0964282d8b1a8d06d00ef179ee849acb",
+      "bytes": 2836
+    },
     "scripts/blender_collections.py": {
       "source": "scripts/blender_collections.py",
       "sha256": "c258b2361a2082941251cf76d6afd9e4e5f98d65efbe781a1a0e4292c4f90cdc",
@@ -252,13 +267,13 @@
     },
     "scripts/build_redesign_pdf.py": {
       "source": "scripts/build_redesign_pdf.py",
-      "sha256": "ed292fb228be9fe9511060ff2bb4d92d137420e6c8aecbe38dd077eaff053aaa",
-      "bytes": 10553
+      "sha256": "9039979b2cb8e8d44363d85f834dc39f0ac74ff8bc1ffb4bc56e31a95c084f58",
+      "bytes": 13730
     },
     "scripts/build_support.py": {
       "source": "scripts/build_support.py",
-      "sha256": "1c487df317046ee8ee5147293d8792b49ac886fa4ab3277f60269314b2422c1c",
-      "bytes": 7661
+      "sha256": "2ab6c3fa55957db3dd506b82e9cf79fe95d63d56aea627a07db435e4a0ee45f3",
+      "bytes": 7692
     },
     "scripts/check_bedroom4_window_height.py": {
       "source": "scripts/check_bedroom4_window_height.py",
@@ -467,8 +482,8 @@
     },
     "scripts/package_redesign_review.py": {
       "source": "scripts/package_redesign_review.py",
-      "sha256": "06da6b7c8e49fe500f88e3498ca322b602823162315acf06e9624f0243c87c56",
-      "bytes": 2953
+      "sha256": "cb3287e28e84d277b89662f4b50e1fc3455d5e664680d9bca9cd8e74121454d5",
+      "bytes": 3061
     },
     "scripts/planning_drawings/__init__.py": {
       "source": "scripts/planning_drawings/__init__.py",
@@ -707,8 +722,8 @@
     },
     "scripts/proposal_loft_roof_trim.py": {
       "source": "scripts/proposal_loft_roof_trim.py",
-      "sha256": "036cad00094fb33d6eeec7a5db085e73cc1277c198b8ca9d110f888626cca778",
-      "bytes": 2624
+      "sha256": "f49bd8fbfe583e637cf87162139bfb6709eaa0c6abb1b90637ea6ad1603284e5",
+      "bytes": 2519
     },
     "scripts/proposal_materials.py": {
       "source": "scripts/proposal_materials.py",
@@ -1182,13 +1197,13 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "ae2f4df3c274e36a9d200a85c872eb16c2a7a8aa8755890b74af21e21a7dcb88",
-      "bytes": 8407
+      "sha256": "556ecedffc0042fcec4006182c50a64949dafde2d62cc2c2bbc4f47d862eb256",
+      "bytes": 9584
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "5a1e63af6499cbd273e4d96c5924b2ea5681206483997714c8af8ea80cf2ace1",
-      "bytes": 4728
+      "sha256": "fbdbc297acc9b73e86889e28fac9d9896079910346100b5bc4301730845cc301",
+      "bytes": 4831
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1240,6 +1255,11 @@
       "sha256": "01d5a1eb14427dab74d750b085593b129726e3d5722d5c1dd9b58aecce3a59af",
       "bytes": 8239
     },
+    "tests/blender_boolean_workspace.py": {
+      "source": "tests/blender_boolean_workspace.py",
+      "sha256": "bbcc1096d67f316c7e0702a3e6b418e8a63b05a77a7c53fd747c257941593ab7",
+      "bytes": 3189
+    },
     "tests/easter/progression/performance.json": {
       "source": "tests/easter/progression/performance.json",
       "sha256": "3b9305b2061245ac646d4847d74f26828c5bf3572a1a1e29da2cc973838e8fca",
@@ -1247,8 +1267,8 @@
     },
     "tests/test_build_pipeline.py": {
       "source": "tests/test_build_pipeline.py",
-      "sha256": "ef7ad61963d7c139031d50d1a85bd61ee20ebda8e0286e1fcff1bd63017b2dec",
-      "bytes": 12839
+      "sha256": "d2f765d5a1d473aef6859d6b6b4fc49781f3eb9766bfcffb2bff715ac51030ed",
+      "bytes": 12870
     },
     "tests/test_entrance_gable.py": {
       "source": "tests/test_entrance_gable.py",
@@ -1272,8 +1292,8 @@
     },
     "walkthrough/build.mjs": {
       "source": "walkthrough/build.mjs",
-      "sha256": "b40fc5a6ab3584d684de54e746100198ec93732bd5a5ea6a22ac448f41d0d23d",
-      "bytes": 3555
+      "sha256": "97d111ac2cc56d20ab51730de561d2e638689627dde6f03da0b6d060abdf3c0c",
+      "bytes": 3608
     },
     "walkthrough/index.html": {
       "source": "walkthrough/index.html",
@@ -1297,13 +1317,13 @@
     },
     "walkthrough/public/redesigns/index.html": {
       "source": "walkthrough/public/redesigns/index.html",
-      "sha256": "61b698f0724cd05d909b864cb3eb3f124113ac4a81577db6b2498936e6afe9ba",
-      "bytes": 6903
+      "sha256": "a698536fe6e340269e8890316553a6c4e7f4e213ef6f3ca3e645306f6bf78548",
+      "bytes": 7531
     },
     "walkthrough/public/redesigns/options.json": {
       "source": "walkthrough/public/redesigns/options.json",
-      "sha256": "c49e1e325fac19154e63bbb07e9f06062cad3d6b54ec3f86b1ac972f110a66d8",
-      "bytes": 62883
+      "sha256": "dc39884f6d51169b93c4cc6672296d30407a490267d949166a3b66bc6b5d0493",
+      "bytes": 64809
     },
     "walkthrough/public/redesigns/review.css": {
       "source": "walkthrough/public/redesigns/review.css",
@@ -1312,8 +1332,8 @@
     },
     "walkthrough/public/redesigns/review.js": {
       "source": "walkthrough/public/redesigns/review.js",
-      "sha256": "6c92ec4c6565078503cc6587145191e11b6f3565899b43edf02f0501e08fdaa4",
-      "bytes": 7190
+      "sha256": "a780c85cfd624bc332d990ccf5e4ee47a97ed5547bb1c4a4e127722c993a6da5",
+      "bytes": 7333
     },
     "walkthrough/src/combat-audio.js": {
       "source": "walkthrough/src/combat-audio.js",
@@ -1545,6 +1565,11 @@
       "sha256": "2cbdf473aba9dd83accfea5196ea053b832b9976e2a3a9963e4f5ccc6d7c78c2",
       "bytes": 4825
     },
+    "walkthrough/tests/drive-input.test.mjs": {
+      "source": "walkthrough/tests/drive-input.test.mjs",
+      "sha256": "e0c78fa74eb14b2913feff43100d80957f84985f482ff9b947a3ccc21c5dbfe4",
+      "bytes": 2704
+    },
     "walkthrough/tests/easter-session.test.mjs": {
       "source": "walkthrough/tests/easter-session.test.mjs",
       "sha256": "12a51c657e0279f114be2a3dad1413fe0d9e29b76d05ea6e9ce340a56a90a600",
@@ -1682,8 +1707,8 @@
     },
     "walkthrough/tests/redesign-circulation.mjs": {
       "source": "walkthrough/tests/redesign-circulation.mjs",
-      "sha256": "d709ed682198c004ace1ea1684943efca18c14f95c16d06c1dc2ad3148eae3c8",
-      "bytes": 3724
+      "sha256": "f1a5b1a4381c13749b353598d4201032ab22252cf84f21e811e53dd26957da6b",
+      "bytes": 3761
     },
     "walkthrough/tests/redesign-parking.mjs": {
       "source": "walkthrough/tests/redesign-parking.mjs",
@@ -1694,6 +1719,11 @@
       "source": "walkthrough/tests/redesign-pool.mjs",
       "sha256": "1dcf896c92026993ba8057d009f4f93f8791e2195879e34c8e8c8af65e4d6329",
       "bytes": 3034
+    },
+    "walkthrough/tests/redesign-private-access.mjs": {
+      "source": "walkthrough/tests/redesign-private-access.mjs",
+      "sha256": "e9c20579df81795f357a07d628bf0a579643241677c53371e82cf84382b2c06f",
+      "bytes": 3914
     },
     "walkthrough/tests/redesign-review-browser.mjs": {
       "source": "walkthrough/tests/redesign-review-browser.mjs",
@@ -1802,8 +1832,8 @@
     },
     "walkthrough/tools/plan-drive.mjs": {
       "source": "walkthrough/tools/plan-drive.mjs",
-      "sha256": "16b4b67061d93c7881aaf51fd3e794a4627e9514e3591f097e5d69bd4f075a3d",
-      "bytes": 2291
+      "sha256": "8c342e372b330c855d6f64fb37acaa00f98e388c0dafe99df1f43d3632e52a56",
+      "bytes": 3664
     },
     "walkthrough/tools/verify-compressed-glbs.mjs": {
       "source": "walkthrough/tools/verify-compressed-glbs.mjs",
@@ -1813,7 +1843,7 @@
   },
   "required_local_baselines": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
-      "sha256": "520ac9bd5a2d144a09cbb954d99faa437c471ea79e5362c57c9453f2de5a51c9",
+      "sha256": "f02d6b7419867aac3bb719d1ec720d05ab3b6abc700715a22a6e1aae30775990",
       "bytes": 190054488
     },
     "output-proposed-compact/geometry.json": {
@@ -1821,7 +1851,7 @@
       "bytes": 66346298
     },
     "output-proposed-compact/navigation.json": {
-      "sha256": "392b0e02d671d777e67f4ad817fa229a588e95455c740746caad43d688142aef",
+      "sha256": "ed2ffec2e3b40aeebd5656252af7e72aada9a54b432e9f49f65f04ed9eae4896",
       "bytes": 1782046
     },
     "output-walkthrough/Ashley Heights.blend": {
