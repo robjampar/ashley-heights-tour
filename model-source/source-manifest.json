@@ -17,8 +17,8 @@
     },
     "proposal/CURRENT-BRIEF.md": {
       "source": "proposal/CURRENT-BRIEF.md",
-      "sha256": "863200909b25c01237d0783c88ee2959ea0abd9b3a207cec4779cad119dfc733",
-      "bytes": 38366
+      "sha256": "fa63b718dcc2c54826414b880c8b6f519da2b901107a44748600d875ed55106a",
+      "bytes": 38725
     },
     "proposal/P4_parking-validated.json": {
       "source": "proposal/P4_parking-validated.json",
@@ -42,8 +42,8 @@
     },
     "proposal/design-spec-compact.json": {
       "source": "proposal/design-spec-compact.json",
-      "sha256": "ea9c3b784b966ff5329ff44ba58c6440a02a7ea8e0d835cca0fa0b3fdee4013a",
-      "bytes": 35512
+      "sha256": "5cbd9947129dcae5736f9e8a9b00b4e17e059d5c3597be55592e649ebafadc3c",
+      "bytes": 35755
     },
     "proposal/design-spec-planning.json": {
       "source": "proposal/design-spec-planning.json",
@@ -792,8 +792,8 @@
     },
     "scripts/proposal_loft_roof_trim.py": {
       "source": "scripts/proposal_loft_roof_trim.py",
-      "sha256": "f49bd8fbfe583e637cf87162139bfb6709eaa0c6abb1b90637ea6ad1603284e5",
-      "bytes": 2519
+      "sha256": "7b361351293ed08838545c3f8c574543ff00e9d2fb7f3e2bd547dd0059495d50",
+      "bytes": 4444
     },
     "scripts/proposal_materials.py": {
       "source": "scripts/proposal_materials.py",
@@ -1365,6 +1365,11 @@
       "sha256": "f271986d38c47039a8e3d79fe72d134f3592860ffe26501d9796e8e79005c9c4",
       "bytes": 4977
     },
+    "tests/test_loft_bedroom_wall.py": {
+      "source": "tests/test_loft_bedroom_wall.py",
+      "sha256": "33fb1601d5881db19200e61b70db6e7a3f315e6bd6119460b6ee3620e3b4ced9",
+      "bytes": 2329
+    },
     "tests/test_planning_model_cache.py": {
       "source": "tests/test_planning_model_cache.py",
       "sha256": "4ac401028d2acc50fcc11faa258d50fc2da65031c79d905a01de1927900a73e3",
@@ -1765,6 +1770,11 @@
       "sha256": "ca4b0403a44e31f559b4d388b3d55cf9ef96bb8eff174cbf1968d020d3a9783f",
       "bytes": 4021
     },
+    "walkthrough/tests/loft-wall-browser.mjs": {
+      "source": "walkthrough/tests/loft-wall-browser.mjs",
+      "sha256": "69e6f47e940c1f4693dc60af573f98c73b2bae027d16b913abbcc12ae2478c9d",
+      "bytes": 2665
+    },
     "walkthrough/tests/mobile-tap-fire.mjs": {
       "source": "walkthrough/tests/mobile-tap-fire.mjs",
       "sha256": "a643e3445906ce4d76a56a40f4777b43653a146d4c3fc375700958be5e935475",
@@ -1983,16 +1993,16 @@
   },
   "required_local_baselines": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
-      "sha256": "edd3e7594f1b6511a9cd2c0c85a4acb1639201a3e8dbd310e5875e0b8d836ebb",
-      "bytes": 190055596
+      "sha256": "96913bb714657167d2db0b0ad1f0cce6fd0ead9b65c89ced469c8d22f0916dce",
+      "bytes": 190080854
     },
     "output-proposed-compact/geometry.json": {
-      "sha256": "554548517350d5f186a20483043bd947344715fe1cd5797533c527c3f7a89f4d",
-      "bytes": 66350500
+      "sha256": "9e08c76259b8ba40bb1482355db70a65c91e98d33d6f940beecaee9cd6ef4923",
+      "bytes": 66349261
     },
     "output-proposed-compact/navigation.json": {
-      "sha256": "34322858fcd7f6889ca734b27c37010d892a5e679d7a430f58584e637c4a2671",
-      "bytes": 1782114
+      "sha256": "90f950c1049fd59fc96a94b60aaf7568e4a2711feb8a0027bce3f558d702fbc1",
+      "bytes": 1782335
     },
     "output-walkthrough/Ashley Heights.blend": {
       "sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",

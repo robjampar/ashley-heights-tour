@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-25T09:19:25.285969+00:00",
+  "published_utc": "2026-09-25T11:38:32.101343+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -12,21 +12,21 @@
       "bytes": 531449,
       "sha256": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
     },
-    "proposal-compact.bf6f4e3cb4daaaf5.glb": {
-      "bytes": 31364332,
-      "sha256": "bf6f4e3cb4daaaf5378b9510acea040ad9f8fad0de808b7c67513712c3148466"
+    "proposal-compact.d1af6243bb851e22.glb": {
+      "bytes": 31365892,
+      "sha256": "d1af6243bb851e2247180262d5e194adef200ea45c90aaaa2c1119580128df44"
     },
-    "proposal-compact-navigation.8f91a98be200b8bd.json": {
-      "bytes": 1789955,
-      "sha256": "8f91a98be200b8bdeef735678d020613a0d33e1091a6a32be4144dc73252cf56"
+    "proposal-compact-navigation.3af512b658cbae29.json": {
+      "bytes": 1790176,
+      "sha256": "3af512b658cbae29355985c03286f8e8295c148ddb230a4fbe48dc285515dd00"
     },
-    "proposal-planning.ba6ed9a221f1fc4a.glb": {
-      "bytes": 30928892,
-      "sha256": "ba6ed9a221f1fc4ad0f731389b82191ef54e3b420dd01f2bb266f13bdeb808e7"
+    "proposal-planning.44b88f1a64b13b21.glb": {
+      "bytes": 30929960,
+      "sha256": "44b88f1a64b13b21501c7f8bdbdb62adae8d7feb17091130e58bb0f8c249080e"
     },
-    "proposal-planning-navigation.9e2172fe9b653faa.json": {
-      "bytes": 1475419,
-      "sha256": "9e2172fe9b653faaf137598c21618bad5a756d6289f6c09c0d43d97119a3085a"
+    "proposal-planning-navigation.e33b60cd518cad09.json": {
+      "bytes": 1475449,
+      "sha256": "e33b60cd518cad095b6119fcfc541b8aa02cede0c567c5c009d2adb25fcd0485"
     },
     "redesign-i1.5eb0c2a9c90443f1.glb": {
       "bytes": 30706732,
@@ -88,9 +88,9 @@
       "bytes": 25871,
       "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a"
     },
-    "app.6ffad34e39df094a.js": {
+    "app.78ef7d759ffdf1cf.js": {
       "bytes": 5374150,
-      "sha256": "6ffad34e39df094a90a747658bc1f980ee4db883744355f077774973eda3449c"
+      "sha256": "78ef7d759ffdf1cfe09d0a041aed738ea27b4748a48c25289c543d4ba8585056"
     }
   },
   "previous_assets": {
@@ -124,47 +124,35 @@
       "retain_until_epoch": 1790528406.9848409,
       "retired_at_epoch": 1790521206.9848409
     },
-    "proposal-compact.9713403abcd27a35.glb": {
-      "bytes": 31357348,
-      "sha256": "9713403abcd27a3562b4998207288643a1d47a2964a1cbe02a94b3b8901648d0",
-      "retired_at_epoch": 1790324713.956663,
-      "retain_until_epoch": 1790331913.956663
+    "proposal-compact.bf6f4e3cb4daaaf5.glb": {
+      "bytes": 31364332,
+      "sha256": "bf6f4e3cb4daaaf5378b9510acea040ad9f8fad0de808b7c67513712c3148466",
+      "retired_at_epoch": 1790336311.698618,
+      "retain_until_epoch": 1790343511.698618
     },
-    "proposal-compact-navigation.cfd7149c8d74ce98.json": {
-      "bytes": 1789887,
-      "sha256": "cfd7149c8d74ce983416f0448b2632d554359258bdb5dbe40833a162d44c6cec",
-      "retired_at_epoch": 1790324713.956663,
-      "retain_until_epoch": 1790331913.956663
+    "proposal-compact-navigation.8f91a98be200b8bd.json": {
+      "bytes": 1789955,
+      "sha256": "8f91a98be200b8bdeef735678d020613a0d33e1091a6a32be4144dc73252cf56",
+      "retired_at_epoch": 1790336311.698618,
+      "retain_until_epoch": 1790343511.698618
     },
-    "proposal-planning.ee1ec058fd2e64b0.glb": {
-      "bytes": 30928592,
-      "sha256": "ee1ec058fd2e64b0345831207a484604749bae5792a578e66112aa7d3e6f6755",
-      "retired_at_epoch": 1790324713.956663,
-      "retain_until_epoch": 1790331913.956663
+    "proposal-planning.ba6ed9a221f1fc4a.glb": {
+      "bytes": 30928892,
+      "sha256": "ba6ed9a221f1fc4ad0f731389b82191ef54e3b420dd01f2bb266f13bdeb808e7",
+      "retired_at_epoch": 1790336311.698618,
+      "retain_until_epoch": 1790343511.698618
     },
-    "proposal-planning-navigation.0126cb02b5dda9bd.json": {
-      "bytes": 1475461,
-      "sha256": "0126cb02b5dda9bd92b1b2c199245773698b9857a17124f269e37f68e387596b",
-      "retired_at_epoch": 1790324713.956663,
-      "retain_until_epoch": 1790331913.956663
+    "proposal-planning-navigation.9e2172fe9b653faa.json": {
+      "bytes": 1475419,
+      "sha256": "9e2172fe9b653faaf137598c21618bad5a756d6289f6c09c0d43d97119a3085a",
+      "retired_at_epoch": 1790336311.698618,
+      "retain_until_epoch": 1790343511.698618
     },
-    "app.a93ea20bb38aa186.js": {
-      "bytes": 5373973,
-      "sha256": "a93ea20bb38aa186bbccb4c03bf80193938116403913d3c97a7681a3f19fed4d",
-      "retired_at_epoch": 1790324713.956663,
-      "retain_until_epoch": 1790331913.956663
-    },
-    "app.1cdee1643953f0f1.js": {
-      "bytes": 5373973,
-      "sha256": "1cdee1643953f0f1d08f90bcc2af0d3d1e0c23d3cb2a9389e3ab9c6e99edcea6",
-      "retired_at_epoch": 1790327687.364441,
-      "retain_until_epoch": 1790334887.364441
-    },
-    "app.e4d3b060160395f3.js": {
-      "bytes": 5374117,
-      "sha256": "e4d3b060160395f3104e5eeadb6825c9067d4d6deea524d8575bad664e568055",
-      "retired_at_epoch": 1790327964.992361,
-      "retain_until_epoch": 1790335164.992361
+    "app.6ffad34e39df094a.js": {
+      "bytes": 5374150,
+      "sha256": "6ffad34e39df094a90a747658bc1f980ee4db883744355f077774973eda3449c",
+      "retired_at_epoch": 1790336311.698618,
+      "retain_until_epoch": 1790343511.698618
     }
   },
   "easter": {
@@ -197,15 +185,15 @@
     "planning": "./?design=planning",
     "proposal_label": "Proposed",
     "proposal_revision": "P8",
-    "proposal_updated_at": "2026-09-25T08:22:54.843111+00:00",
-    "proposal_native_sha256": "edd3e7594f1b6511a9cd2c0c85a4acb1639201a3e8dbd310e5875e0b8d836ebb",
-    "proposal_geometry_sha256": "554548517350d5f186a20483043bd947344715fe1cd5797533c527c3f7a89f4d",
+    "proposal_updated_at": "2026-09-25T11:36:12.210720+00:00",
+    "proposal_native_sha256": "96913bb714657167d2db0b0ad1f0cce6fd0ead9b65c89ced469c8d22f0916dce",
+    "proposal_geometry_sha256": "9e08c76259b8ba40bb1482355db70a65c91e98d33d6f940beecaee9cd6ef4923",
     "gate_aligned": "./?design=g1",
     "gate_aligned_updated_at": "2026-09-25T09:13:00.386616+00:00",
     "planning_label": "Proposed (planning application)",
-    "planning_updated_at": "2026-09-25T08:22:56.153703+00:00",
-    "planning_native_sha256": "31e020252525d7880cb9a5db9eeb17f4517e2f4f1bfae31b85e84b2f2dca08c9",
-    "planning_geometry_sha256": "226b619df38dc2957c7835b423584a8f5dc08ef5cccff61e69bafbcd6de351ce"
+    "planning_updated_at": "2026-09-25T11:34:58.037034+00:00",
+    "planning_native_sha256": "9357df24a166da54867f45880d713680be24cdbd89c42a6e57c3a692cfe396b1",
+    "planning_geometry_sha256": "7f3ebbbfea91044efc619bb3f09c568c948820d24c0ee3148afc1443881a0396"
   },
   "exterior_finishes": {
     "scope": "house-and-extensions",

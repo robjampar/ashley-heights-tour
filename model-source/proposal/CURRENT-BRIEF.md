@@ -2,6 +2,8 @@
 
 Current design arrangement: [START-HERE.md](START-HERE.md). The notes below are chronological; later instructions supersede earlier ones.
 
+25 September 2026, loft-bedroom clarification: removing the banister means restoring the solid white plastered wall along the west eaves in both current Proposed designs. Keep its existing alignment and fit its top to the roof underside; the loft stair and bedroom access remain unchanged. This supersedes the 24 September open-balustrade instruction below.
+
 23 September, side-extension setback: the owner confirmed that both proposed designs recess the former-garage front wall and roof edge by 450 mm (approximately two brick lengths with joints). The rear alignment and original house remain fixed. Front glazing, rainwater goods, floors, room outlines and bedroom furniture follow the setback. This is a shared compact-specification change, inherited by the planning option.
 
 23 September 2026: retain Existing, Proposed (planning application), and the full Proposed design. Generate the planning option from the full compact specification with a small overlay. Its external walls use matching red-brown brick; internal wall faces are white painted plaster. Roof tiles and tile-hung dormer cheeks/front panels use the weathered dark brown-grey finish in the owner's reference photograph. The planning option retains the existing garden buildings and garden layout, omits the garden additions, and completes the rear side-wing elevation with paired 2.40 m garden doors and a first-floor window. Planning documents describe that completed scheme. Both proposed variants have clean, mitred entrance-gable rake bands and non-overlapping pier/return junctions.
