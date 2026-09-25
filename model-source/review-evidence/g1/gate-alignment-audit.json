@@ -1,0 +1,141 @@
+{
+  "option": "g1",
+  "modelUpdatedAt": "2026-09-25T09:13:00.386616+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "G1 | Double garage door parallel to gate",
+      "passed": true,
+      "cross_product": 0.0
+    },
+    {
+      "name": "G1 | Entrance left parallel to gate",
+      "passed": true,
+      "cross_product": 4.996003610813204e-16
+    },
+    {
+      "name": "G1 | Entrance right parallel to gate",
+      "passed": true,
+      "cross_product": 8.881784197001252e-16
+    },
+    {
+      "name": "Taper inside existing east/south wing extents",
+      "passed": true,
+      "original_core_m2": 111.36930000000002,
+      "new_core_m2": 80.19368539735358,
+      "reduction_m2": 31.17561460264644
+    },
+    {
+      "name": "6.0 x 5.3 m clear garage envelope",
+      "passed": true,
+      "dimensions_m": [
+        6.0,
+        5.3
+      ]
+    },
+    {
+      "name": "New double garage inside new envelope",
+      "passed": true,
+      "area_m2": 31.800000000000004,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "New entrance gallery inside new envelope",
+      "passed": true,
+      "area_m2": 20.622726270375516,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "Gym inside new envelope",
+      "passed": true,
+      "area_m2": 16.95375,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "Utility inside new envelope",
+      "passed": true,
+      "area_m2": 5.274150000000003,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "New principal suite inside new envelope",
+      "passed": true,
+      "area_m2": 34.343140000000005,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "Principal study area inside new envelope",
+      "passed": true,
+      "area_m2": 6.879999999999999,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "Walk-through wardrobe inside new envelope",
+      "passed": true,
+      "area_m2": 6.060999999999998,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "Principal en suite inside new envelope",
+      "passed": true,
+      "area_m2": 7.510999999999993,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "Upper gallery and library inside new envelope",
+      "passed": true,
+      "area_m2": 9.030799999999997,
+      "outside_m2": 0.0
+    },
+    {
+      "name": "Entrance link meshes retained apart from local stair-ceiling opening",
+      "passed": true,
+      "bounds_m": [
+        5.5,
+        -4.0,
+        -0.3,
+        10.465,
+        -0.115,
+        9.0
+      ],
+      "before_surface_m2": 493.0077285508445,
+      "after_surface_m2": 493.00772854562405,
+      "difference_m2": -5.220442744757747e-09
+    },
+    {
+      "name": "Existing link loft stair meshes unchanged",
+      "passed": true,
+      "objects": 107
+    },
+    {
+      "name": "Car G1 actual body inside garage",
+      "passed": true,
+      "projected_width_length_m": [
+        1.794001480802141,
+        4.40000147218533
+      ],
+      "audited_size_m": [
+        4.4,
+        1.8
+      ]
+    },
+    {
+      "name": "Car G2 actual body inside garage",
+      "passed": true,
+      "projected_width_length_m": [
+        1.793999688657168,
+        4.400001193375752
+      ],
+      "audited_size_m": [
+        4.4,
+        1.8
+      ]
+    },
+    {
+      "name": "New roof no higher than retained ridge",
+      "passed": true,
+      "maximum_z_m": 8.050000190734863
+    }
+  ],
+  "limitations": "Geometric checks of a concept model; no surveyed planning or structural approval is implied."
+}

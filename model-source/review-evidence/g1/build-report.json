@@ -1,0 +1,47 @@
+{
+  "cache_schema": 1,
+  "blender": {
+    "path": "/Users/r.parker/Applications/Blender.app/Contents/MacOS/Blender",
+    "size": 175689264,
+    "mtime_ns": 1789436253000000000
+  },
+  "option": "g1",
+  "modelUpdatedAt": "2026-09-25T09:13:00.386616+00:00",
+  "inputs": {
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "edd3e7594f1b6511a9cd2c0c85a4acb1639201a3e8dbd310e5875e0b8d836ebb",
+    "output-proposed-compact/geometry.json": "554548517350d5f186a20483043bd947344715fe1cd5797533c527c3f7a89f4d",
+    "output-proposed-compact/navigation.json": "34322858fcd7f6889ca734b27c37010d892a5e679d7a430f58584e637c4a2671",
+    "proposal/original-preservation.json": "9971c88ecd0e6fe59cda187c0a308604d94c1e3b42e29c36e77c74964dee2e43",
+    "proposal/redesigns/g1.json": "778b59c9a3d8f18325c016a7cdef866c1432337e553c5c107929628d4ba30e21",
+    "revisions/redesigns-2026-09-25/original-object-index.json": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595",
+    "scripts/blender_collections.py": "c258b2361a2082941251cf76d6afd9e4e5f98d65efbe781a1a0e4292c4f90cdc",
+    "scripts/build_extension_proposal.py": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
+    "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+    "scripts/build_redesign.py": "aac5f005a7ebd8a68073b8f44e3f035d3313dc121fedc821294b8a6725d0dec1",
+    "scripts/build_support.py": "2ab6c3fa55957db3dd506b82e9cf79fe95d63d56aea627a07db435e4a0ee45f3",
+    "scripts/gate_aligned_layout.py": "3e34cd6f4046d50a14a6df69d91f729fcfab76793102186daa9045c43cb188cd",
+    "scripts/gate_aligned_support.py": "ff072796ca18221276902619e89bc1650c69e6cfa8ee6f8f20e8a02e756057f6",
+    "scripts/proposal_helpers.py": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
+    "scripts/redesign_layouts.py": "35080daa7c6899714b0ec4b865feb9324204236a367398f5d1cdbc83e195ae96",
+    "scripts/redesign_support.py": "b08d662d6ae184364034651ddc3134b313ca57b1af9f824c6df85bf2c0f1911b"
+  },
+  "native": "output-redesign-g1/Ashley Heights \u2014 G1 Gate-aligned frontage.blend",
+  "objects": 13488,
+  "new_rooms": 15,
+  "alterations": 1371,
+  "original_preserved": {
+    "output-walkthrough/Ashley Heights.blend": true,
+    "output-walkthrough/Ashley Heights.glb": true,
+    "output-walkthrough/geometry.json": true,
+    "walkthrough/public/house.glb": true,
+    "walkthrough/public/navigation.json": true
+  },
+  "outputs": {
+    "output-redesign-g1/Ashley Heights \u2014 G1 Gate-aligned frontage.blend": "13bd41a8984fc2c8c92f053bc891ca1fd5b5ee17ccf4334b15d713fafebd3b17",
+    "output-redesign-g1/redesign-g1.glb": "65d94f50c201655a284c53322584c9831624f0017e6ff119b679db63629c6bb3",
+    "output-redesign-g1/navigation.json": "ca1ffe8a931e7c7038f7f55f1e05198e4a86b75ef2bb39d899d9911d9cf75307",
+    "output-redesign-g1/geometry.json": "2cd127e7a24e5fea96c48f7634a7a96c2f161fbbde9cba60de68a6b70ee2d094",
+    "walkthrough/public/redesign-g1.glb": "65d94f50c201655a284c53322584c9831624f0017e6ff119b679db63629c6bb3",
+    "walkthrough/public/redesign-g1-navigation.json": "ca1ffe8a931e7c7038f7f55f1e05198e4a86b75ef2bb39d899d9911d9cf75307"
+  }
+}

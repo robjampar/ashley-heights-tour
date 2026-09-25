@@ -1,0 +1,1017 @@
+{
+  "option": "g1",
+  "modelUpdatedAt": "2026-09-25T09:13:00.386616+00:00",
+  "passed": true,
+  "samples": [
+    {
+      "surface": "Proposal | Loft stair oak tread 01",
+      "position": [
+        9.450000381469726,
+        -4.483999967575073,
+        2.971874952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.313124895095825,
+      "overhead": "G1 | Proposal | Wing First ceiling",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 01",
+      "position": [
+        9.830000400543213,
+        -4.483999967575073,
+        2.971874952316284
+      ],
+      "class": "centre",
+      "clearance_m": 2.313124895095825,
+      "overhead": "G1 | Proposal | Wing First ceiling",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 01",
+      "position": [
+        10.2100004196167,
+        -4.483999967575073,
+        2.971874952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.313124895095825,
+      "overhead": "G1 | Proposal | Wing First ceiling",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 02",
+      "position": [
+        9.450000381469726,
+        -4.233999967575073,
+        3.143749952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.141249895095825,
+      "overhead": "G1 | Proposal | Wing First ceiling",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 02",
+      "position": [
+        9.830000400543213,
+        -4.233999967575073,
+        3.143749952316284
+      ],
+      "class": "centre",
+      "clearance_m": 2.141249895095825,
+      "overhead": "G1 | Proposal | Wing First ceiling",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 02",
+      "position": [
+        10.2100004196167,
+        -4.233999967575073,
+        3.143749952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.141249895095825,
+      "overhead": "G1 | Proposal | Wing First ceiling",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 03",
+      "position": [
+        9.450000381469726,
+        -3.9839999675750732,
+        3.315624952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.034374952316284,
+      "overhead": "Proposal | Original loft deck 01",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 03",
+      "position": [
+        9.830000400543213,
+        -3.9839999675750732,
+        3.315624952316284
+      ],
+      "class": "centre",
+      "clearance_m": 2.034374952316284,
+      "overhead": "Proposal | Original loft deck 01",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 03",
+      "position": [
+        10.2100004196167,
+        -3.9839999675750732,
+        3.315624952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.034374952316284,
+      "overhead": "Proposal | Original loft deck 01",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 04",
+      "position": [
+        9.450000381469726,
+        -3.7339999675750732,
+        3.487499952316284
+      ],
+      "class": "edge",
+      "clearance_m": 4.209643602371216,
+      "overhead": "Proposal | Joined roof lining 125 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 04",
+      "position": [
+        9.830000400543213,
+        -3.7339999675750732,
+        3.487499952316284
+      ],
+      "class": "centre",
+      "clearance_m": 4.15250039100647,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 04",
+      "position": [
+        10.2100004196167,
+        -3.7339999675750732,
+        3.487499952316284
+      ],
+      "class": "edge",
+      "clearance_m": 4.15250039100647,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 05",
+      "position": [
+        9.450000381469726,
+        -3.4839999675750732,
+        3.659374952316284
+      ],
+      "class": "edge",
+      "clearance_m": 4.037769079208374,
+      "overhead": "Proposal | Joined roof lining 125 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 05",
+      "position": [
+        9.830000400543213,
+        -3.4839999675750732,
+        3.659374952316284
+      ],
+      "class": "centre",
+      "clearance_m": 3.9806253910064697,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 05",
+      "position": [
+        10.2100004196167,
+        -3.4839999675750732,
+        3.659374952316284
+      ],
+      "class": "edge",
+      "clearance_m": 3.9806253910064697,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 06",
+      "position": [
+        9.450000381469726,
+        -3.2339999675750732,
+        3.831249952316284
+      ],
+      "class": "edge",
+      "clearance_m": 3.865893602371216,
+      "overhead": "Proposal | Joined roof lining 126 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 06",
+      "position": [
+        9.830000400543213,
+        -3.2339999675750732,
+        3.831249952316284
+      ],
+      "class": "centre",
+      "clearance_m": 3.8087503910064697,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 06",
+      "position": [
+        10.2100004196167,
+        -3.2339999675750732,
+        3.831249952316284
+      ],
+      "class": "edge",
+      "clearance_m": 3.8087503910064697,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 07",
+      "position": [
+        9.450000381469726,
+        -2.9839999675750732,
+        4.003125190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.6940183639526367,
+      "overhead": "Proposal | Joined roof lining 126 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 07",
+      "position": [
+        9.830000400543213,
+        -2.9839999675750732,
+        4.003125190734863
+      ],
+      "class": "centre",
+      "clearance_m": 3.6368751525878906,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 07",
+      "position": [
+        10.2100004196167,
+        -2.9839999675750732,
+        4.003125190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.6368751525878906,
+      "overhead": "Proposal | Joined roof lining 205 | Wing east dormer",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 08",
+      "position": [
+        9.450000381469726,
+        -2.7339999675750732,
+        4.175000190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.5221433639526367,
+      "overhead": "Proposal | Joined roof lining 121 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 08",
+      "position": [
+        9.830000400543213,
+        -2.7339999675750732,
+        4.175000190734863
+      ],
+      "class": "centre",
+      "clearance_m": 3.4650001525878906,
+      "overhead": "Proposal | Joined roof lining 231 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 08",
+      "position": [
+        10.2100004196167,
+        -2.7339999675750732,
+        4.175000190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.4650001525878906,
+      "overhead": "Proposal | Joined roof lining 231 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 09",
+      "position": [
+        9.450000381469726,
+        -2.4839999675750732,
+        4.346875190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.3502683639526367,
+      "overhead": "Proposal | Joined roof lining 121 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 09",
+      "position": [
+        9.830000400543213,
+        -2.4839999675750732,
+        4.346875190734863
+      ],
+      "class": "centre",
+      "clearance_m": 3.2931251525878906,
+      "overhead": "Proposal | Joined roof lining 231 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 09",
+      "position": [
+        10.2100004196167,
+        -2.4839999675750732,
+        4.346875190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.2931251525878906,
+      "overhead": "Proposal | Joined roof lining 231 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 10",
+      "position": [
+        9.450000381469726,
+        -2.2339999675750732,
+        4.518750190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.1783933639526367,
+      "overhead": "Proposal | Joined roof lining 121 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 10",
+      "position": [
+        9.830000400543213,
+        -2.2339999675750732,
+        4.518750190734863
+      ],
+      "class": "centre",
+      "clearance_m": 3.1212501525878906,
+      "overhead": "Proposal | Joined roof lining 231 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 10",
+      "position": [
+        10.2100004196167,
+        -2.2339999675750732,
+        4.518750190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.1212501525878906,
+      "overhead": "Proposal | Joined roof lining 231 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 11",
+      "position": [
+        9.450000381469726,
+        -1.984000027179718,
+        4.690625190734863
+      ],
+      "class": "edge",
+      "clearance_m": 3.0065183639526367,
+      "overhead": "Proposal | Joined roof lining 122 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 11",
+      "position": [
+        9.830000400543213,
+        -1.984000027179718,
+        4.690625190734863
+      ],
+      "class": "centre",
+      "clearance_m": 2.9493751525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 11",
+      "position": [
+        10.2100004196167,
+        -1.984000027179718,
+        4.690625190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.9493751525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 12",
+      "position": [
+        9.450000381469726,
+        -1.734000027179718,
+        4.862500190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.8346433639526367,
+      "overhead": "Proposal | Joined roof lining 122 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 12",
+      "position": [
+        9.830000400543213,
+        -1.734000027179718,
+        4.862500190734863
+      ],
+      "class": "centre",
+      "clearance_m": 2.7775001525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 12",
+      "position": [
+        10.2100004196167,
+        -1.734000027179718,
+        4.862500190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.7775001525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 13",
+      "position": [
+        9.450000381469726,
+        -1.484000027179718,
+        5.034375190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.6627683639526367,
+      "overhead": "Proposal | Joined roof lining 122 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 13",
+      "position": [
+        9.830000400543213,
+        -1.484000027179718,
+        5.034375190734863
+      ],
+      "class": "centre",
+      "clearance_m": 2.6056251525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 13",
+      "position": [
+        10.2100004196167,
+        -1.484000027179718,
+        5.034375190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.6056251525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 14",
+      "position": [
+        9.450000381469726,
+        -1.234000027179718,
+        5.206250190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.4908933639526367,
+      "overhead": "Proposal | Joined roof lining 122 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 14",
+      "position": [
+        9.830000400543213,
+        -1.234000027179718,
+        5.206250190734863
+      ],
+      "class": "centre",
+      "clearance_m": 2.4337501525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 14",
+      "position": [
+        10.2100004196167,
+        -1.234000027179718,
+        5.206250190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.4337501525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 15",
+      "position": [
+        9.450000381469726,
+        -0.984000027179718,
+        5.378125190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.3190183639526367,
+      "overhead": "Proposal | Joined roof lining 122 | New main hip 1 continued re",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 15",
+      "position": [
+        9.830000400543213,
+        -0.984000027179718,
+        5.378125190734863
+      ],
+      "class": "centre",
+      "clearance_m": 2.2618751525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "Proposal | Loft stair oak tread 15",
+      "position": [
+        10.2100004196167,
+        -0.984000027179718,
+        5.378125190734863
+      ],
+      "class": "edge",
+      "clearance_m": 2.2618751525878906,
+      "overhead": "Proposal | Joined roof lining 232 | Wing east dormer link",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 1",
+      "position": [
+        6.319999933242798,
+        -8.18499984741211,
+        -0.21539999544620514
+      ],
+      "class": "edge",
+      "clearance_m": 5.741587415337563,
+      "overhead": "G1 | Entrance gable roof south part 0",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 1",
+      "position": [
+        6.319999933242798,
+        -7.815000057220459,
+        -0.21539999544620514
+      ],
+      "class": "centre",
+      "clearance_m": 5.935419335961342,
+      "overhead": "G1 | Entrance gable roof south part 1",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 1",
+      "position": [
+        6.319999933242798,
+        -7.445000267028808,
+        -0.21539999544620514
+      ],
+      "class": "edge",
+      "clearance_m": 2.7603995949029922,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 2",
+      "position": [
+        6.559999942779541,
+        -8.18499984741211,
+        -0.4307999908924103
+      ],
+      "class": "edge",
+      "clearance_m": 2.9757998287677765,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 2",
+      "position": [
+        6.559999942779541,
+        -7.815000057220459,
+        -0.4307999908924103
+      ],
+      "class": "centre",
+      "clearance_m": 2.9758003056049347,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 2",
+      "position": [
+        6.559999942779541,
+        -7.445000267028808,
+        -0.4307999908924103
+      ],
+      "class": "edge",
+      "clearance_m": 2.9758003056049347,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 3",
+      "position": [
+        6.799999952316284,
+        -8.18499984741211,
+        -0.6462000012397766
+      ],
+      "class": "edge",
+      "clearance_m": 3.191200077533722,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 3",
+      "position": [
+        6.799999952316284,
+        -7.815000057220459,
+        -0.6462000012397766
+      ],
+      "class": "centre",
+      "clearance_m": 3.191200315952301,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 3",
+      "position": [
+        6.799999952316284,
+        -7.445000267028808,
+        -0.6462000012397766
+      ],
+      "class": "edge",
+      "clearance_m": 3.191200077533722,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 4",
+      "position": [
+        7.039999961853027,
+        -8.18499984741211,
+        -0.8615999817848206
+      ],
+      "class": "edge",
+      "clearance_m": 3.4065998196601868,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 4",
+      "position": [
+        7.039999961853027,
+        -7.815000057220459,
+        -0.8615999817848206
+      ],
+      "class": "centre",
+      "clearance_m": 3.406600296497345,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 4",
+      "position": [
+        7.039999961853027,
+        -7.445000267028808,
+        -0.8615999817848206
+      ],
+      "class": "edge",
+      "clearance_m": 3.4065995812416077,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 5",
+      "position": [
+        7.2799999713897705,
+        -8.18499984741211,
+        -1.0770000219345093
+      ],
+      "class": "edge",
+      "clearance_m": 3.6219998598098755,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 5",
+      "position": [
+        7.2799999713897705,
+        -7.815000057220459,
+        -1.0770000219345093
+      ],
+      "class": "centre",
+      "clearance_m": 3.6220000982284546,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 5",
+      "position": [
+        7.2799999713897705,
+        -7.445000267028808,
+        -1.0770000219345093
+      ],
+      "class": "edge",
+      "clearance_m": 3.6219998598098755,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 6",
+      "position": [
+        7.519999980926514,
+        -8.18499984741211,
+        -1.2924000024795532
+      ],
+      "class": "edge",
+      "clearance_m": 3.8374000787734985,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 6",
+      "position": [
+        7.519999980926514,
+        -7.815000057220459,
+        -1.2924000024795532
+      ],
+      "class": "centre",
+      "clearance_m": 3.8374000787734985,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 6",
+      "position": [
+        7.519999980926514,
+        -7.445000267028808,
+        -1.2924000024795532
+      ],
+      "class": "edge",
+      "clearance_m": 3.8374000787734985,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 7",
+      "position": [
+        7.759999990463257,
+        -8.18499984741211,
+        -1.5077999830245972
+      ],
+      "class": "edge",
+      "clearance_m": 4.052799820899963,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 7",
+      "position": [
+        7.759999990463257,
+        -7.815000057220459,
+        -1.5077999830245972
+      ],
+      "class": "centre",
+      "clearance_m": 4.052799820899963,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 7",
+      "position": [
+        7.759999990463257,
+        -7.445000267028808,
+        -1.5077999830245972
+      ],
+      "class": "edge",
+      "clearance_m": 4.052799820899963,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 8",
+      "position": [
+        8.0,
+        -8.18499984741211,
+        -1.7231999635696411
+      ],
+      "class": "edge",
+      "clearance_m": 4.268199563026428,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 8",
+      "position": [
+        8.0,
+        -7.815000057220459,
+        -1.7231999635696411
+      ],
+      "class": "centre",
+      "clearance_m": 4.268200039863586,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 8",
+      "position": [
+        8.0,
+        -7.445000267028808,
+        -1.7231999635696411
+      ],
+      "class": "edge",
+      "clearance_m": 4.268199563026428,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 9",
+      "position": [
+        8.239999771118164,
+        -8.18499984741211,
+        -1.938599944114685
+      ],
+      "class": "edge",
+      "clearance_m": 4.483600735664368,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 9",
+      "position": [
+        8.239999771118164,
+        -7.815000057220459,
+        -1.938599944114685
+      ],
+      "class": "centre",
+      "clearance_m": 4.4836002588272095,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 9",
+      "position": [
+        8.239999771118164,
+        -7.445000267028808,
+        -1.938599944114685
+      ],
+      "class": "edge",
+      "clearance_m": 4.4836002588272095,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 10",
+      "position": [
+        8.480000019073486,
+        -8.18499984741211,
+        -2.1540000438690186
+      ],
+      "class": "edge",
+      "clearance_m": 4.699000597000122,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 10",
+      "position": [
+        8.480000019073486,
+        -7.815000057220459,
+        -2.1540000438690186
+      ],
+      "class": "centre",
+      "clearance_m": 4.699000120162964,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 10",
+      "position": [
+        8.480000019073486,
+        -7.445000267028808,
+        -2.1540000438690186
+      ],
+      "class": "edge",
+      "clearance_m": 4.699000120162964,
+      "overhead": "G1 | Ground ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 11",
+      "position": [
+        8.720000267028809,
+        -8.18499984741211,
+        -2.3694000244140625
+      ],
+      "class": "edge",
+      "clearance_m": 2.1224000453948975,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 11",
+      "position": [
+        8.720000267028809,
+        -7.815000057220459,
+        -2.3694000244140625
+      ],
+      "class": "centre",
+      "clearance_m": 2.1224002838134766,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 11",
+      "position": [
+        8.720000267028809,
+        -7.445000267028808,
+        -2.3694000244140625
+      ],
+      "class": "edge",
+      "clearance_m": 2.1224002838134766,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 12",
+      "position": [
+        8.960000038146973,
+        -8.18499984741211,
+        -2.5848000049591064
+      ],
+      "class": "edge",
+      "clearance_m": 2.3378002643585205,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 12",
+      "position": [
+        8.960000038146973,
+        -7.815000057220459,
+        -2.5848000049591064
+      ],
+      "class": "centre",
+      "clearance_m": 2.3197999000549316,
+      "overhead": "G1 | Proposal | Basement stair landing diffuser",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement tread 12",
+      "position": [
+        8.960000038146973,
+        -7.445000267028808,
+        -2.5848000049591064
+      ],
+      "class": "edge",
+      "clearance_m": 2.3378000259399414,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement stair landing",
+      "position": [
+        9.179999923706054,
+        -7.815000057220459,
+        -2.799999952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.552999973297119,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement stair landing",
+      "position": [
+        9.550000190734863,
+        -7.815000057220459,
+        -2.799999952316284
+      ],
+      "class": "centre",
+      "clearance_m": 2.5530002117156982,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    },
+    {
+      "surface": "G1 | Proposal | Basement stair landing",
+      "position": [
+        9.920000457763672,
+        -7.815000057220459,
+        -2.799999952316284
+      ],
+      "class": "edge",
+      "clearance_m": 2.55299973487854,
+      "overhead": "G1 | Cellar ceiling",
+      "passed": true
+    }
+  ],
+  "minimum_clearance_m": 2.034374952316284,
+  "limitations": "Model-only vertical headroom measurements, 100 mm inside usable stair edges. Survey, structural allowances and regulatory assessment remain required."
+}

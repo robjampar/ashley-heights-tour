@@ -23,7 +23,7 @@ for(const id of process.argv.slice(2)){
  const root=new URL('../../output-redesign-'+id+'/',import.meta.url);
  if(!fs.existsSync(new URL('build-report.json',root)))throw Error(id+': build incomplete');
  const data=JSON.parse(fs.readFileSync(new URL('navigation.json',root)));
- const flights=[{name:'Loft',start:[4.55,4.40,2.8],end_z:5.55,points:[[4.55,5.505],[4.0,5.505],[1.80,5.505],[1.80,4.405],[2.32,4.405],[4.45,4.405]]}];
+ const flights=id==='g1'?[{name:'Loft',start:[9.83,-4.85,2.8],end_z:5.55,points:[[9.83,-4.6],[9.83,-.40],[9.0,-.40]]},{name:'Cellar',start:[5.8,-7.815,0],end_z:-2.8,points:[[6.2,-7.815],[9.1,-7.815],[9.7,-7.815]]}]:[{name:'Loft',start:[4.55,4.40,2.8],end_z:5.55,points:[[4.55,5.505],[4.0,5.505],[1.80,5.505],[1.80,4.405],[2.32,4.405],[4.45,4.405]]}];
  if(id==='e3')flights.push({name:'Cellar',start:[9.61,-5.50,0],end_z:-2.8,points:[[9.61,-6.18],[9.61,-10.70]]});
  const routes=[];
  for(const route of flights){

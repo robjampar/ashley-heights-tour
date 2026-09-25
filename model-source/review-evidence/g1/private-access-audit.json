@@ -1,0 +1,234 @@
+{
+  "option": "g1",
+  "modelUpdatedAt": "2026-09-25T09:13:00.386616+00:00",
+  "passed": true,
+  "bedrooms": 7,
+  "body_width_m": 0.44,
+  "results": [
+    {
+      "room": "Kitchen",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Formal dining and lounge",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Office",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Cloakroom",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Entrance hall",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Attached entrance gallery",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Garden living and dining",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Side garden living",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "New double garage",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "New entrance gallery",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Gym",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Utility",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Retained wing connection ground",
+      "floor": 0,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Basement cinema",
+      "floor": -2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Basement bar and games room",
+      "floor": -2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Basement stair landing",
+      "floor": -2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Bedroom 3",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 6,
+      "passed": true
+    },
+    {
+      "room": "Side-wing connecting landing",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 7,
+      "passed": true
+    },
+    {
+      "room": "Bedroom 4",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 6,
+      "passed": true
+    },
+    {
+      "room": "Garden guest suite",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 6,
+      "passed": true
+    },
+    {
+      "room": "Bedroom 2",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 6,
+      "passed": true
+    },
+    {
+      "room": "Landing",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 7,
+      "passed": true
+    },
+    {
+      "room": "Joined first-floor landing",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 7,
+      "passed": true
+    },
+    {
+      "room": "Side wing south bedroom",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 6,
+      "passed": true
+    },
+    {
+      "room": "Seventh bedroom",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 6,
+      "passed": true
+    },
+    {
+      "room": "New principal suite",
+      "floor": 2.8,
+      "bedroom": true,
+      "other_sleeping_rooms_blocked": 6,
+      "passed": true
+    },
+    {
+      "room": "Upper gallery and library",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 7,
+      "passed": true
+    },
+    {
+      "room": "Side-wing bedroom corridor",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 7,
+      "passed": true
+    },
+    {
+      "room": "Retained wing connection upper",
+      "floor": 2.8,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 7,
+      "passed": true
+    },
+    {
+      "room": "Loft studio and lounge",
+      "floor": 5.55,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Original loft bridge",
+      "floor": 5.55,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    },
+    {
+      "room": "Loft stair landing",
+      "floor": 5.55,
+      "bedroom": false,
+      "other_sleeping_rooms_blocked": 0,
+      "passed": true
+    }
+  ],
+  "limitations": "Checks floor-level paths with other sleeping-room polygons unavailable. Does not establish fire escape, sound insulation, door locks, wheelchair access or ensuite plumbing."
+}

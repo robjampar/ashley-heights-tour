@@ -9,6 +9,7 @@ const common=[['Bedroom 4','Bedroom 4 en suite']];
 const frontPrincipal=['New principal suite','New principal bathroom','New dressing room','Principal study','Principal WC','Principal window alcove'];
 const gardenPrincipal=['Garden principal bedroom','Principal en suite','Principal study and walk-through dressing'];
 const suites={
+ g1:[...common,['Garden guest suite','Garden guest en suite'],['Side wing south bedroom','Side south ensuite'],['Seventh bedroom','Side guest en suite'],['New principal suite','Principal en suite','Walk-through wardrobe','Principal study area']],
  i1:[...common,['Garden guest suite','Garden guest en suite'],['Bedroom 2','Bedroom 2 en suite'],frontPrincipal,['New loft bedroom','Loft ensuite'],['Side wing south bedroom','Side south ensuite']],
  i2:[...common,['Garden guest suite','Garden guest en suite'],['Ground-floor guest suite','Ground-floor guest en suite'],frontPrincipal,['New loft bedroom','Loft ensuite']],
  i3:[...common,gardenPrincipal,['Front guest suite A','Guest A bathroom'],['Front guest suite B','Guest B en suite'],['New loft bedroom','Loft ensuite'],['Side wing south bedroom','Side south ensuite']],

@@ -2,8 +2,13 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "5b110e33ae9f4e9f5c6ab6a85657a7625de571f11b602306d28508bcaa444660",
-      "bytes": 15829
+      "sha256": "2097ad09af2bff392b980c678773b0a236605514d0b66e73d3616aea08fa4871",
+      "bytes": 16329
+    },
+    "Regenerate Gate-aligned Option.command": {
+      "source": "Regenerate Gate-aligned Option.command",
+      "sha256": "1ca71541389eca03789377253a0e4bf142fa52362822071e856e826cab4bc6ab",
+      "bytes": 89
     },
     "Regenerate Six Options.command": {
       "source": "Regenerate Six Options.command",
@@ -90,6 +95,11 @@
       "sha256": "66b9062da0ed9914648f78793a7ed8e707dea0fd3202a64180c761f56dc51692",
       "bytes": 7994
     },
+    "proposal/redesigns/GATE-ALIGNED.md": {
+      "source": "proposal/redesigns/GATE-ALIGNED.md",
+      "sha256": "1e5dd20b1c4e899d211852d014b302d9e93d69235a00c7db5d90e03c393d71b0",
+      "bytes": 2828
+    },
     "proposal/redesigns/PARKING-SENSITIVITY.md": {
       "source": "proposal/redesigns/PARKING-SENSITIVITY.md",
       "sha256": "ae3d019ed398079303ffaaa0817cde953730f053c3ed4ce42bf8258be84efda9",
@@ -109,6 +119,11 @@
       "source": "proposal/redesigns/e3.json",
       "sha256": "5107cfe16987cf4fb9ecc4044bf6d644c1527164b92cde469004abd00ed9e673",
       "bytes": 1164
+    },
+    "proposal/redesigns/g1.json": {
+      "source": "proposal/redesigns/g1.json",
+      "sha256": "778b59c9a3d8f18325c016a7cdef866c1432337e553c5c107929628d4ba30e21",
+      "bytes": 1042
     },
     "proposal/redesigns/i1.json": {
       "source": "proposal/redesigns/i1.json",
@@ -225,6 +240,16 @@
       "sha256": "f9157bc0b9af91ef9f8219962ef54b770a46cb64858762254ba1cbbc363c641e",
       "bytes": 5321
     },
+    "scripts/audit_gate_aligned.py": {
+      "source": "scripts/audit_gate_aligned.py",
+      "sha256": "8f7ed32fe74574da1600ed76a06267c51faa942855212e6395c580580fdf60bb",
+      "bytes": 4859
+    },
+    "scripts/audit_gate_headroom.py": {
+      "source": "scripts/audit_gate_headroom.py",
+      "sha256": "a034a108a23e7d09dfde98eb67c9dcfdaa81cc7fbe0500cfaaedad80b4453873",
+      "bytes": 2363
+    },
     "scripts/audit_ground_under_floors.py": {
       "source": "scripts/audit_ground_under_floors.py",
       "sha256": "c63075ebe6f6b710f8927d79c70546335ef0835fc5f599068afb66a675671615",
@@ -292,8 +317,8 @@
     },
     "scripts/build_redesign.py": {
       "source": "scripts/build_redesign.py",
-      "sha256": "69bdfbdb9507cd3ef756ca6dd98913fc6ebabec72df2829a30364b837f69a3a6",
-      "bytes": 23862
+      "sha256": "aac5f005a7ebd8a68073b8f44e3f035d3313dc121fedc821294b8a6725d0dec1",
+      "bytes": 23962
     },
     "scripts/build_redesign_options.py": {
       "source": "scripts/build_redesign_options.py",
@@ -439,6 +464,16 @@
       "source": "scripts/floor_finishes.py",
       "sha256": "91744ac442773696a2881b16aae4368f50a37e76cbe176cf96dd19cd5c76a5e2",
       "bytes": 595
+    },
+    "scripts/gate_aligned_layout.py": {
+      "source": "scripts/gate_aligned_layout.py",
+      "sha256": "3e34cd6f4046d50a14a6df69d91f729fcfab76793102186daa9045c43cb188cd",
+      "bytes": 26136
+    },
+    "scripts/gate_aligned_support.py": {
+      "source": "scripts/gate_aligned_support.py",
+      "sha256": "ff072796ca18221276902619e89bc1650c69e6cfa8ee6f8f20e8a02e756057f6",
+      "bytes": 1814
     },
     "scripts/height_spec.py": {
       "source": "scripts/height_spec.py",
@@ -897,8 +932,8 @@
     },
     "scripts/redesign_support.py": {
       "source": "scripts/redesign_support.py",
-      "sha256": "5d95544d2dd284124a6d1446ec0456c0d330146f33420ae95c55ae18f29484c8",
-      "bytes": 3803
+      "sha256": "b08d662d6ae184364034651ddc3134b313ca57b1af9f824c6df85bf2c0f1911b",
+      "bytes": 3936
     },
     "scripts/redesign_walk_masks.py": {
       "source": "scripts/redesign_walk_masks.py",
@@ -1135,6 +1170,11 @@
       "sha256": "0fb43e3db265078f0468ac7b011558029685ca8483c6b146b4ae95a21ab85229",
       "bytes": 9797
     },
+    "scripts/regenerate_gate_aligned.py": {
+      "source": "scripts/regenerate_gate_aligned.py",
+      "sha256": "aa90e961be2b1fd7c8fcf7f19106c6d92520e78a133e0ba683efbeb7f7cb1a79",
+      "bytes": 1753
+    },
     "scripts/regenerate_redesign_review.py": {
       "source": "scripts/regenerate_redesign_review.py",
       "sha256": "5acd11d5b0c5e2940797b77a5cf38a4280d9d0f1e491339b175e57c7a6b0c491",
@@ -1242,13 +1282,13 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "44d8ac3366199a1641210926719e6e3244fccd396688b50f638bdcfcf4807f0a",
-      "bytes": 9981
+      "sha256": "548bd442f8256afe6e6556a7ad121d68efbd4893a1e7bc396f62dde429ca4972",
+      "bytes": 10142
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "5dc6a8b007ec378c3724ec4de53fad5d5116792c6ba5f6373542a977e547fc2c",
-      "bytes": 5773
+      "sha256": "077d2fa219dca6dc8d72bb615835ede907eef2170b69ddf4bccbebeb44f32556",
+      "bytes": 5937
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1357,8 +1397,8 @@
     },
     "walkthrough/index.html": {
       "source": "walkthrough/index.html",
-      "sha256": "de74f4cc2dd47028a967ee60e23dfe1396e2621cb98b6f6dcd3dc8c86bda83fb",
-      "bytes": 7221
+      "sha256": "3c0eb4289ceedd9dd0b132f57b903ece3e6625a6ad5e48f183661865051c689a",
+      "bytes": 7326
     },
     "walkthrough/package-lock.json": {
       "source": "walkthrough/package-lock.json",
@@ -1412,8 +1452,8 @@
     },
     "walkthrough/src/design-assets.js": {
       "source": "walkthrough/src/design-assets.js",
-      "sha256": "ffd905cb8e61cb2ea369e6af87796c769d7bcc3bea6988689524f4059767103a",
-      "bytes": 1120
+      "sha256": "01c9733c2cdd16288ea2e90a0aab0787b4e703c4cdb3c65ec9e7ea794abc57b4",
+      "bytes": 1228
     },
     "walkthrough/src/design-comparison.js": {
       "source": "walkthrough/src/design-comparison.js",
@@ -1597,8 +1637,8 @@
     },
     "walkthrough/tests/design-variants.test.mjs": {
       "source": "walkthrough/tests/design-variants.test.mjs",
-      "sha256": "2c305541e175eb31a6ef6334d8655eb52f28082d183b732c5d1fc4573ccb1b9e",
-      "bytes": 1352
+      "sha256": "8c269641b588255931c04a5ee5a3e2bd60b27f7919c67b75bf93ff5be1863026",
+      "bytes": 1486
     },
     "walkthrough/tests/detail-captures.mjs": {
       "source": "walkthrough/tests/detail-captures.mjs",
@@ -1674,6 +1714,16 @@
       "source": "walkthrough/tests/garage-door.mjs",
       "sha256": "414d7327b9f0abd686d1e4693e15b67f46629bdcae60c24880c6a35d283003a9",
       "bytes": 5263
+    },
+    "walkthrough/tests/gate-aligned-browser.mjs": {
+      "source": "walkthrough/tests/gate-aligned-browser.mjs",
+      "sha256": "b3faf7328f16ea1494ba4235acafc9647c474377191458698f15d0ab98a23bba",
+      "bytes": 4510
+    },
+    "walkthrough/tests/gate-aligned-parking.mjs": {
+      "source": "walkthrough/tests/gate-aligned-parking.mjs",
+      "sha256": "caf8ac820e9c6a830de8ae43cc790a3bb2668fd8e05e6f35280749fe5afc3ac4",
+      "bytes": 1810
     },
     "walkthrough/tests/gate-doors.mjs": {
       "source": "walkthrough/tests/gate-doors.mjs",
@@ -1782,13 +1832,13 @@
     },
     "walkthrough/tests/redesign-ensuite-access.mjs": {
       "source": "walkthrough/tests/redesign-ensuite-access.mjs",
-      "sha256": "73211ebd3c1f6ede6e4939f4c61128312cb5b2d1a7d3f3bcf0ea83861ddd46f5",
-      "bytes": 4646
+      "sha256": "0a3d5b6f84e9d3bb18c0cd6f9dab93dc3700f61ed249102d00252de9deb9edaf",
+      "bytes": 4893
     },
     "walkthrough/tests/redesign-garage-access.mjs": {
       "source": "walkthrough/tests/redesign-garage-access.mjs",
-      "sha256": "eda519626cbcaa1477408830b8b4cf002779dad0611fcfc9884b87790afdc15b",
-      "bytes": 3278
+      "sha256": "054449c767b6373876466a234960e990fd1258ba7aa53470f874277cfd992aa8",
+      "bytes": 3289
     },
     "walkthrough/tests/redesign-parking.mjs": {
       "source": "walkthrough/tests/redesign-parking.mjs",
@@ -1802,8 +1852,8 @@
     },
     "walkthrough/tests/redesign-private-access.mjs": {
       "source": "walkthrough/tests/redesign-private-access.mjs",
-      "sha256": "e9c20579df81795f357a07d628bf0a579643241677c53371e82cf84382b2c06f",
-      "bytes": 3914
+      "sha256": "5b4f44b7e9a1cb165f379a6e7a0e2f480fd89f5f61832f25c242377a85697b5f",
+      "bytes": 4044
     },
     "walkthrough/tests/redesign-review-browser.mjs": {
       "source": "walkthrough/tests/redesign-review-browser.mjs",
@@ -1812,8 +1862,8 @@
     },
     "walkthrough/tests/redesign-stairs.mjs": {
       "source": "walkthrough/tests/redesign-stairs.mjs",
-      "sha256": "4105f8aa057e85c3e92dddde649691d813609ad2252a9994a1571fdbe753fd17",
-      "bytes": 2537
+      "sha256": "7a9d11967e5b37465237a6a9496886a857da2b863572676de9e21ac15d0211c5",
+      "bytes": 2737
     },
     "walkthrough/tests/render-budget.test.mjs": {
       "source": "walkthrough/tests/render-budget.test.mjs",

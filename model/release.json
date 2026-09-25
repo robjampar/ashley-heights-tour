@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-25T08:25:14.389466+00:00",
+  "published_utc": "2026-09-25T09:14:48.138427+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -76,13 +76,21 @@
       "bytes": 963339,
       "sha256": "4268eedcca5bdd34feffde71840d1a35b1a638c9f1adc4817bba725083a1357c"
     },
+    "redesign-g1.dcf35466c0fe0d5c.glb": {
+      "bytes": 29916968,
+      "sha256": "dcf35466c0fe0d5ca4383be6ad3d3bb7b4348b683f0b0669f3746118b8f1e921"
+    },
+    "redesign-g1-navigation.5ac4c2d56c138bc3.json": {
+      "bytes": 2010991,
+      "sha256": "5ac4c2d56c138bc30b72b5b9a7f8fbbdca6c3c5988c1634e75f68dd1e137c02c"
+    },
     "style.1bc4a2b50aa0d851.css": {
       "bytes": 25871,
       "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a"
     },
-    "app.1cdee1643953f0f1.js": {
-      "bytes": 5373973,
-      "sha256": "1cdee1643953f0f1d08f90bcc2af0d3d1e0c23d3cb2a9389e3ab9c6e99edcea6"
+    "app.e4d3b060160395f3.js": {
+      "bytes": 5374117,
+      "sha256": "e4d3b060160395f3104e5eeadb6825c9067d4d6deea524d8575bad664e568055"
     }
   },
   "previous_assets": {
@@ -116,60 +124,6 @@
       "retain_until_epoch": 1790528406.9848409,
       "retired_at_epoch": 1790521206.9848409
     },
-    "proposal-compact-navigation.079e29d2309d6d68.json": {
-      "bytes": 1789934,
-      "sha256": "079e29d2309d6d68532688f197bc928c2f9f36412f42a3bd7250b8e679c9949a",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "proposal-planning-navigation.035eae60c02a1a2c.json": {
-      "bytes": 1475508,
-      "sha256": "035eae60c02a1a2cfa8845c560625804af3a7d85b342e741e9e628eab790944a",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "redesign-i1-navigation.b70e8f74868c7490.json": {
-      "bytes": 1836641,
-      "sha256": "b70e8f74868c7490fde21b3aeaac527eb005157c54ef0be4d4627410af9ecff7",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "redesign-i2-navigation.21047d9628fab779.json": {
-      "bytes": 2006006,
-      "sha256": "21047d9628fab7797ca702181584b491e7277b0942ead86b933d313e2b2f2264",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "redesign-i3-navigation.4c044909a8e6c4ee.json": {
-      "bytes": 1952340,
-      "sha256": "4c044909a8e6c4eef3643295adbc59c1d220a97ccd50f53a6a58bc41f5828021",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "redesign-e1-navigation.039e01ae13b230fb.json": {
-      "bytes": 1303967,
-      "sha256": "039e01ae13b230fb7942234cea9dfdaccf45423defbb83e820ff59c1a84203ef",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "redesign-e2-navigation.0f6db1a760fbfb9e.json": {
-      "bytes": 1056750,
-      "sha256": "0f6db1a760fbfb9e5586d8e80eded9017f366b25af3060d2525438f796e95f4f",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "redesign-e3-navigation.fd97dac09d73eb69.json": {
-      "bytes": 963166,
-      "sha256": "fd97dac09d73eb69558f4c374e82a5228923bd4ee42bfc1838c29cac5dfbb638",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
-    "app.1aa583c99cb76ea0.js": {
-      "bytes": 5373973,
-      "sha256": "1aa583c99cb76ea05542f674b7006f5ce5778767362ba7baf40bab97ac7fda52",
-      "retain_until_epoch": 1790326103.054696,
-      "retired_at_epoch": 1790318903.054696
-    },
     "proposal-compact.9713403abcd27a35.glb": {
       "bytes": 31357348,
       "sha256": "9713403abcd27a3562b4998207288643a1d47a2964a1cbe02a94b3b8901648d0",
@@ -199,6 +153,12 @@
       "sha256": "a93ea20bb38aa186bbccb4c03bf80193938116403913d3c97a7681a3f19fed4d",
       "retired_at_epoch": 1790324713.956663,
       "retain_until_epoch": 1790331913.956663
+    },
+    "app.1cdee1643953f0f1.js": {
+      "bytes": 5373973,
+      "sha256": "1cdee1643953f0f1d08f90bcc2af0d3d1e0c23d3cb2a9389e3ab9c6e99edcea6",
+      "retired_at_epoch": 1790327687.364441,
+      "retain_until_epoch": 1790334887.364441
     }
   },
   "easter": {
@@ -234,6 +194,8 @@
     "proposal_updated_at": "2026-09-25T08:22:54.843111+00:00",
     "proposal_native_sha256": "edd3e7594f1b6511a9cd2c0c85a4acb1639201a3e8dbd310e5875e0b8d836ebb",
     "proposal_geometry_sha256": "554548517350d5f186a20483043bd947344715fe1cd5797533c527c3f7a89f4d",
+    "gate_aligned": "./?design=g1",
+    "gate_aligned_updated_at": "2026-09-25T09:13:00.386616+00:00",
     "planning_label": "Proposed (planning application)",
     "planning_updated_at": "2026-09-25T08:22:56.153703+00:00",
     "planning_native_sha256": "31e020252525d7880cb9a5db9eeb17f4517e2f4f1bfae31b85e84b2f2dca08c9",
@@ -618,140 +580,7 @@
         "sha256": "fbf39f1d98a8def8cb9ef4126dfa1a4d423d070ee77e777abd6e00b688ffe4cd"
       }
     },
-    "previous_assets": {
-      "six-options.740e2f68ec319df1.pdf": {
-        "bytes": 5705332,
-        "sha256": "740e2f68ec319df1a9515abaa36ae55550782a0a9782bab22d37b3c09ae8a250",
-        "retain_until_epoch": 1790325231.35876,
-        "retired_at_epoch": 1790318031.35876
-      },
-      "review.9204f50854375b86.js": {
-        "bytes": 13607,
-        "sha256": "9204f50854375b867cd8b5be2eaef653e39fb8f5fe15a2580f8d8a7b7301bb66",
-        "retain_until_epoch": 1790325231.35876,
-        "retired_at_epoch": 1790318031.35876
-      },
-      "images/e1-front.bd91305c3891554c.jpg": {
-        "bytes": 291271,
-        "sha256": "bd91305c3891554c9ed5d9a77fac5250299df35bc636f0491617aca8529e970b",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e1-interior.609ee11774659c86.jpg": {
-        "bytes": 155210,
-        "sha256": "609ee11774659c86359674f1dcb3e21fbae5938a150bf06b9cbeb83f4ce1ceec",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e1-rear.f478942134cf548f.jpg": {
-        "bytes": 312692,
-        "sha256": "f478942134cf548f17f244345ff14e0f74a9fae367ad8ba773c1afc47148f1fc",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e2-front.061ed5ecec4b6bde.jpg": {
-        "bytes": 289261,
-        "sha256": "061ed5ecec4b6bde102e157d8dbf781d75916d518dd4e931a1b8f03026c59fa9",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e2-interior.b2386d7e0dc7fe32.jpg": {
-        "bytes": 67624,
-        "sha256": "b2386d7e0dc7fe3268254780a5db482854ed71624de3fdfd9191ef052d09975b",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e2-rear.67d5276f4b3ebbb0.jpg": {
-        "bytes": 313673,
-        "sha256": "67d5276f4b3ebbb02af594a10092a961dae39ff5f27cd4f035a1bf8faaa16133",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e3-front.e2422da31fbd5b35.jpg": {
-        "bytes": 298196,
-        "sha256": "e2422da31fbd5b354e30533517a2dca704ef99ee3f19dbce77103f089570b681",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e3-interior.69b7d2557ce60aef.jpg": {
-        "bytes": 96749,
-        "sha256": "69b7d2557ce60aef9966293a7d1bdef721df9891f3d5dad995051258d90e57c6",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/e3-rear.060b4d89d1c78a99.jpg": {
-        "bytes": 317111,
-        "sha256": "060b4d89d1c78a996685eed9c5e9eb31b928e26eff2ed466e3c0f217c432a9f4",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i1-front.15dc3294d81d24d2.jpg": {
-        "bytes": 308984,
-        "sha256": "15dc3294d81d24d22881ebf4677018398ff7675ac799e260a102a245d743a56b",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i1-interior.669b75c8a2cc86d1.jpg": {
-        "bytes": 155872,
-        "sha256": "669b75c8a2cc86d1a3d321d5bb761cd05d6df615e698abbef21b0756fd4d476f",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i1-rear.b32a59f3b06e05ac.jpg": {
-        "bytes": 330527,
-        "sha256": "b32a59f3b06e05acc79ec3d2166d2ae979b4796ddc709030172eed4c64a6027b",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i2-front.b087326d83d377a7.jpg": {
-        "bytes": 308988,
-        "sha256": "b087326d83d377a7785e0f10e75c643b050546b95b017718972c8bf670390ad8",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i2-interior.dd78e5c43e1f100d.jpg": {
-        "bytes": 146204,
-        "sha256": "dd78e5c43e1f100d20bedee35cc02696388c2c6f8f748935afe94943271215ba",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i2-rear.364a5658817d7460.jpg": {
-        "bytes": 330974,
-        "sha256": "364a5658817d74607360528c59a3064738c2e2730ae317a3e0b250ab2f092803",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i3-front.3c016fa27db7c19c.jpg": {
-        "bytes": 309025,
-        "sha256": "3c016fa27db7c19cba894fb6648bec3e813f046388abe179a613886d3355caf7",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i3-interior.64633297e7901e93.jpg": {
-        "bytes": 90574,
-        "sha256": "64633297e7901e938136b7cd5661d05dce44fecac08f32e5e9f48ca55027cdba",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "images/i3-rear.ea2de02ec79c61e9.jpg": {
-        "bytes": 330384,
-        "sha256": "ea2de02ec79c61e9fa0bb47040d89b809f54f4d218a700a9d84609bc6bca80f8",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "six-options.acc2b4029a725109.pdf": {
-        "bytes": 5710090,
-        "sha256": "acc2b4029a725109891108c0a82950fe8f0f633f4e50a1fb40f2b25a222f53c3",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      },
-      "review.0dcd5fe408884a8f.js": {
-        "bytes": 13607,
-        "sha256": "0dcd5fe408884a8f569d7cbe5ff0d7bb036a9b3e9ceae6a23e8daa6495dc2591",
-        "retain_until_epoch": 1790326103.054696,
-        "retired_at_epoch": 1790318903.054696
-      }
-    }
+    "previous_assets": {}
   },
   "interactive_door_leaves": 27,
   "optional_street_context": {

@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {Navigation} from '../src/navigation.js';
-const forecourts={e1:[-2.625,-.55],e2:[6.75,-14.45],e3:[2,-9]};
+const forecourts={g1:[3,-10],e1:[-2.625,-.55],e2:[6.75,-14.45],e3:[2,-9]};
 let success=true;
 for(const id of process.argv.slice(2)){
  const dir=new URL('../../output-redesign-'+id+'/',import.meta.url),data=JSON.parse(fs.readFileSync(new URL('navigation.json',dir)));

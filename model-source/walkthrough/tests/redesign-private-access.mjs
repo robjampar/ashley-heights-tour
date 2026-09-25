@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {pointInPolygon} from '../src/navigation.js';
 const bedrooms={
+ g1:['Bedroom 3','Bedroom 4','Garden guest suite','Bedroom 2','Side wing south bedroom','Seventh bedroom','New principal suite'],
  i1:['Bedroom 3','Bedroom 4','Garden guest suite','Bedroom 2','New principal suite','New loft bedroom','Side wing south bedroom'],
  i2:['Bedroom 3','Bedroom 4','Garden guest suite','Bedroom 2','Ground-floor guest suite','New principal suite','New loft bedroom'],
  i3:['Bedroom 3','Bedroom 4','Garden principal bedroom','Front guest suite A','Front guest suite B','New loft bedroom','Side wing south bedroom'],

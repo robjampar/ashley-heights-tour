@@ -15,7 +15,7 @@ assets = {}
 redesign_ids = ('i1', 'i2', 'i3', 'e1', 'e2', 'e3')
 model_files = ('house.glb', 'navigation.json', 'proposal-compact.glb', 'proposal-compact-navigation.json',
                'proposal-planning.glb', 'proposal-planning-navigation.json') + tuple(
-                   name for option in redesign_ids for name in (f'redesign-{option}.glb', f'redesign-{option}-navigation.json'))
+                   name for option in (*redesign_ids, 'g1') for name in (f'redesign-{option}.glb', f'redesign-{option}-navigation.json'))
 for name in (*model_files, 'style.css'):
     data = (DIST / name).read_bytes()
     stem, suffix = name.rsplit('.', 1)
@@ -143,6 +143,7 @@ manifest = {
                 'proposal_revision':compact_nav.get('designRevision'),'proposal_updated_at':compact_nav.get('modelUpdatedAt'),
                 'proposal_native_sha256':sha((ROOT/'output-proposed-compact'/'Ashley Heights — Proposed (compact).blend').read_bytes()),
                 'proposal_geometry_sha256':sha((ROOT/'output-proposed-compact'/'geometry.json').read_bytes()),
+                'gate_aligned':'./?design=g1','gate_aligned_updated_at':json.loads((DIST/'redesign-g1-navigation.json').read_text())['modelUpdatedAt'],
                 'planning_label':planning_nav.get('designLabel'),'planning_updated_at':planning_nav.get('modelUpdatedAt'),
                 'planning_native_sha256':sha((ROOT/'output-proposed-planning'/'Ashley Heights — Proposed (planning application).blend').read_bytes()),
                 'planning_geometry_sha256':sha((ROOT/'output-proposed-planning'/'geometry.json').read_bytes())},

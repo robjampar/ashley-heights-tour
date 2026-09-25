@@ -1,0 +1,111 @@
+{
+  "option": "g1",
+  "modelUpdatedAt": "2026-09-25T09:13:00.386616+00:00",
+  "passed": true,
+  "positions": 6,
+  "vehicle_m": [
+    4.4,
+    1.8
+  ],
+  "turning_radius_m": 4.3,
+  "other_cars_occupied": true,
+  "results": [
+    {
+      "bay": "N1",
+      "journey": "arrive",
+      "passed": true,
+      "failure": null,
+      "samples": 263,
+      "poses": 54
+    },
+    {
+      "bay": "N1",
+      "journey": "exit",
+      "passed": true,
+      "failure": null,
+      "samples": 292,
+      "poses": 60
+    },
+    {
+      "bay": "N2",
+      "journey": "arrive",
+      "passed": true,
+      "failure": null,
+      "samples": 229,
+      "poses": 47
+    },
+    {
+      "bay": "N2",
+      "journey": "exit",
+      "passed": true,
+      "failure": null,
+      "samples": 277,
+      "poses": 57
+    },
+    {
+      "bay": "S1",
+      "journey": "arrive",
+      "passed": true,
+      "failure": null,
+      "samples": 192,
+      "poses": 40
+    },
+    {
+      "bay": "S1",
+      "journey": "exit",
+      "passed": true,
+      "failure": null,
+      "samples": 218,
+      "poses": 45
+    },
+    {
+      "bay": "G1",
+      "journey": "arrive",
+      "passed": true,
+      "failure": null,
+      "samples": 232,
+      "poses": 48
+    },
+    {
+      "bay": "G1",
+      "journey": "exit",
+      "passed": true,
+      "failure": null,
+      "samples": 319,
+      "poses": 65
+    },
+    {
+      "bay": "G2",
+      "journey": "arrive",
+      "passed": true,
+      "failure": null,
+      "samples": 227,
+      "poses": 47
+    },
+    {
+      "bay": "G2",
+      "journey": "exit",
+      "passed": true,
+      "failure": null,
+      "samples": 347,
+      "poses": 71
+    },
+    {
+      "bay": "N3",
+      "journey": "arrive",
+      "passed": true,
+      "failure": null,
+      "samples": 217,
+      "poses": 45
+    },
+    {
+      "bay": "N3",
+      "journey": "exit",
+      "passed": true,
+      "failure": null,
+      "samples": 301,
+      "poses": 62
+    }
+  ],
+  "limitations": "Compact-car model tracking, sampled every 100 mm; actual vehicles, mirrors, gradients and visibility require survey."
+}

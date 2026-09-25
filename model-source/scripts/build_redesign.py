@@ -16,10 +16,10 @@ from redesign_support import input_paths, required_outputs
 from blender_collections import collection_memberships
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('option', choices=('i1', 'i2', 'i3', 'e1', 'e2', 'e3'))
+parser.add_argument('option', choices=('i1', 'i2', 'i3', 'e1', 'e2', 'e3', 'g1'))
 args = parser.parse_args(sys.argv[sys.argv.index('--') + 1:])
 OPTION = args.option
-INTERNAL = OPTION.startswith('i')
+INTERNAL = OPTION.startswith('i') or OPTION == 'g1'
 OUT = ROOT / ('output-redesign-' + OPTION)
 OUT.mkdir(exist_ok=True)
 (OUT/'build-report.json').unlink(missing_ok=True)
@@ -349,7 +349,8 @@ def add_fourth_parking_bay():
     rect_room('Outside parking N3',rect,0,'parking')
 
 with timer.phase('design_layout'):
-    exec(compile((ROOT/'scripts/redesign_layouts.py').read_text(),'redesign_layouts.py','exec'))
+    layout_script = 'gate_aligned_layout.py' if OPTION == 'g1' else 'redesign_layouts.py'
+    exec(compile((ROOT/'scripts'/layout_script).read_text(),layout_script,'exec'))
 
 with timer.phase('export'):
     assert inputs == {str(p.relative_to(ROOT)):sha256(p) for p in INPUT_FILES}, 'Build inputs changed during build'

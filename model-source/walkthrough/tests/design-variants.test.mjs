@@ -9,6 +9,8 @@ test('current designs and review options keep independent model and navigation a
  assert.equal(design.currentDesign,'planning');
  assert.equal(new Set(Object.values(design.DESIGN_ASSETS).map(v=>v.model)).size,design.DESIGNS.length);
  assert.equal(new Set(Object.values(design.DESIGN_ASSETS).map(v=>v.navigation)).size,design.DESIGNS.length);
+ assert.equal(design.DESIGN_LABELS.g1,'G1 · Gate-aligned frontage');
+ assert.equal(design.DESIGN_ASSETS.g1.model,'redesign-g1.glb');
  assert.equal(design.DESIGN_LABELS.planning,'Proposed (planning application)');
 });
 test('switching preserves the selected option in its URL and unrelated parameters',()=>{

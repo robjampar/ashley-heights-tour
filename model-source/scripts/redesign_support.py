@@ -10,7 +10,7 @@ OPTIONS = ('i1', 'i2', 'i3', 'e1', 'e2', 'e3')
 
 
 def input_paths(root, option):
-    internal = option.startswith('i')
+    internal = option.startswith('i') or option == 'g1'
     base = 'output-proposed-compact' if internal else 'output-walkthrough'
     stem = 'Ashley Heights — Proposed (compact)' if internal else 'Ashley Heights'
     names = {
@@ -23,6 +23,8 @@ def input_paths(root, option):
         'scripts/build_support.py', 'scripts/blender_collections.py',
         'revisions/redesigns-2026-09-25/original-object-index.json',
     }
+    if option == 'g1':
+        names.update({'scripts/gate_aligned_layout.py', 'scripts/gate_aligned_support.py'})
     if not internal:
         names.update({
             'scripts/redesign_external.py', 'scripts/redesign_site.py',
