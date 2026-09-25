@@ -8,6 +8,7 @@ try{for(const design of ['compact','planning']){
  for(const view of ['kitchen','oven','table','sink']){await page.locator(`[data-camera=${view}]`).click();await page.waitForTimeout(800);await page.locator('#room-model').screenshot({path:new URL(`model-${design}-${view}.png`,out).pathname});}
  await page.locator('#native-render').scrollIntoViewIfNeeded();
  await page.waitForFunction(()=>['selected-concept','native-render'].every(id=>document.getElementById(id).naturalWidth>1000));
+ assert.equal(await page.locator('footer [data-reference]').getAttribute('href'),'./#01-'+(design==='compact'?'proposed':'planning'));
  const result=await page.evaluate(()=>{let textureCount=0,uvCount=0,ovenControls=0,names=[];interiorPreview.scene.traverse(o=>{if(!o.isMesh)return;names.push(...o.userData.spatialBatch?.sourceNames??[]);if(o.material.map){textureCount++;if(o.geometry.attributes.uv)uvCount++;}});return {textureCount,uvCount,ovenControls:names.filter(n=>/rotary.dial|illuminated.digit|touch.control/i.test(n)).length,names:names.filter(n=>/Quiet.oak/i.test(n)).length,batches:interiorPreview.batches};});
  assert(result.textureCount>=3);assert.equal(result.textureCount,result.uvCount);assert(result.ovenControls>20);assert(result.names>500);assert.deepEqual(errors,[]);checks.push({design,...result});await page.close();
 }

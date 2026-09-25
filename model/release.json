@@ -5,8 +5,8 @@
     "options": 10,
     "images": 20,
     "engine": "Built-in image_gen",
-    "html_sha256": "e9537d3bc624bf23ea91e9b716137d7ffdad7adc889ed13beadfa120029eaaf5",
-    "model_html_sha256": "f5decc5357c9ab67e57bbd4bc58fb331c91d7c6c80864d5fb49cc30741048cfe",
+    "html_sha256": "8ec0368f94fd7c8d56e445b94ffc1b539d0a831f46506cb9893bb7ed6790f392",
+    "model_html_sha256": "4bd3a7d40f491c9ba266aafac616011727c66a128e962b8d29af44a7d93b6ee3",
     "assets": {
       "images/01-planning.da95d4f435a5ebe2.png": {
         "source": "images/01-planning.png",
@@ -208,20 +208,20 @@
         "bytes": 228,
         "sha256": "982a4c163a07423699cf5aabfd38c22c4362b9e84c5a0f63837bf4058d44a0ec"
       },
-      "room-model.d06082638e7849ce.js": {
+      "room-model.78345b7051008bb8.js": {
         "source": "room-model.js",
-        "bytes": 4787032,
-        "sha256": "d06082638e7849ce67a6d4e3c936c0eb951b9c53c68ed2a7b4711a0a1e556bcb"
+        "bytes": 4787145,
+        "sha256": "78345b7051008bb8039c72df977bc4e54bcb719e66edba5d04b8b9d728f96085"
       },
       "studio.53ef1e5b1b574299.css": {
         "source": "studio.css",
         "bytes": 8996,
         "sha256": "53ef1e5b1b574299afb9171d6d3320e6cc85015107375cc8a999b5f46ff7f0f1"
       },
-      "studio.0e67be461dbb4b6e.js": {
+      "studio.bac55dbec0cf539f.js": {
         "source": "studio.js",
-        "bytes": 17897,
-        "sha256": "0e67be461dbb4b6ef52b1dee2ae039eb0602749a51b64766a40813bcc94369b6"
+        "bytes": 17982,
+        "sha256": "bac55dbec0cf539ff4b3411b824e5a323971039ba1048a1de692f61acea103e5"
       }
     },
     "previous_assets": {
@@ -238,10 +238,24 @@
         "sha256": "d7cf6a2b1d8e425253e0626f75437149b755e783e03621402607d4b3e23f257e",
         "retired_at_epoch": 1790346336.996829,
         "retain_until_epoch": 1790353536.996829
+      },
+      "room-model.d06082638e7849ce.js": {
+        "source": "room-model.js",
+        "bytes": 4787032,
+        "sha256": "d06082638e7849ce67a6d4e3c936c0eb951b9c53c68ed2a7b4711a0a1e556bcb",
+        "retired_at_epoch": 1790346533.315981,
+        "retain_until_epoch": 1790353733.315981
+      },
+      "studio.0e67be461dbb4b6e.js": {
+        "source": "studio.js",
+        "bytes": 17897,
+        "sha256": "0e67be461dbb4b6ef52b1dee2ae039eb0602749a51b64766a40813bcc94369b6",
+        "retired_at_epoch": 1790346533.315981,
+        "retain_until_epoch": 1790353733.315981
       }
     }
   },
-  "published_utc": "2026-09-25T14:25:37.521338+00:00",
+  "published_utc": "2026-09-25T14:28:53.733704+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
