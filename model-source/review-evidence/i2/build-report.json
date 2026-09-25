@@ -1,0 +1,32 @@
+{
+  "option": "i2",
+  "inputs": {
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "a0a99af60e725b8f76bb3c68d323706125911ef88092d1a41d0ee86b0b5d1b74",
+    "output-proposed-compact/navigation.json": "a7aab138beb832170a62eb342bf774e3a8991e47a4f90c70c1665b22a907c8d6",
+    "output-proposed-compact/geometry.json": "0121ff49b184485d2bf69c284c6784a1f8f8190d03aa37dabffff98b53289e88",
+    "proposal/redesigns/i2.json": "fd6fa5fc1e0b0847e700e7e37ef4aab44fbc6432885d17f771db43fdb26cc55d",
+    "scripts/build_redesign.py": "7b7bb6a78717c30ce72ef5dccb98a851a46f1bc3313ef32b09fa5ea3fbb457a3",
+    "scripts/redesign_layouts.py": "09e64d7a608a3e540d33f1fbbce5ba4482f050b2abafd772bd90f6316a0a3d39",
+    "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+    "scripts/build_extension_proposal.py": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
+    "scripts/proposal_helpers.py": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
+    "revisions/redesigns-2026-09-25/original-object-index.json": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595"
+  },
+  "native": "output-redesign-i2/Ashley Heights \u2014 I2 Social east.blend",
+  "objects": 13045,
+  "new_rooms": 3,
+  "alterations": 1332,
+  "original_preserved": {
+    "output-walkthrough/Ashley Heights.blend": true,
+    "output-walkthrough/Ashley Heights.glb": true,
+    "output-walkthrough/geometry.json": true,
+    "walkthrough/public/house.glb": true,
+    "walkthrough/public/navigation.json": true
+  },
+  "outputs": {
+    "output-redesign-i2/Ashley Heights \u2014 I2 Social east.blend": "eaadedc9132e186241ad8726c7327703d634f078a6393a682e8203f4f4e62eb2",
+    "output-redesign-i2/redesign-i2.glb": "2a0fe2c9878a00b7ef4fa1d1b26626cc87f6c288fde9e2fdee113a90ace61899",
+    "output-redesign-i2/navigation.json": "6c01af4ee04209fc56d96a50f3ae5c740648c1111f161b7e51a196c0e54477a0",
+    "output-redesign-i2/geometry.json": "8a3ef2c0d02f981a787da7c2614ab1009d7f5d6559d9292e661b38d255928485"
+  }
+}

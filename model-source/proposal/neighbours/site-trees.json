@@ -1,0 +1,76 @@
+[
+ {
+  "id": "M1",
+  "label": "Large tree in the front garden, south-east",
+  "x": 15.4,
+  "y": -13.5,
+  "height": 11.05,
+  "crown": 4.2,
+  "source": "Owner (22 Sep 2026): the former M1 and M2 are one tree, about 1 m left (west) of M1 as seen from the close, with a much larger trunk, reaching about 2 m above the roof ridge (8.05 + 2). Crown spread estimated to cover both former crowns; trunk diameter estimated. | Owner: 1 m nearer the (east) boundary and 2 m left facing it from outside the gates -> (15.4, -13.5). | Owner: crown not quite as wide (5.5 -> 4.2 m radius); height right. | Owner: leafy right to the ground, sparser there (crown from 0.4 m, tapering). | Owner: about 1 m taller -> 11.05 m.",
+  "kind": "broadleaf",
+  "dbh": 0.8,
+  "crownBase": 0.4
+ },
+ {
+  "id": "M3",
+  "label": "Tall open conifer on the west front wall by No 3",
+  "x": -6.8,
+  "y": -4.0,
+  "height": 11.3,
+  "crown": 2.6,
+  "source": "Position from 3D top view; form and height from the close-head Street View (Aug 2023, heading 20): a tall dark conifer at the corner of the front wall, crown top above 25 deg elevation at ~13 m | Owner photo (22 Sep 2026): tall sparse conifer, straight trunk visible through thin drooping whorls; rises far above the neighbouring roof (height ~17 m estimated from the photo). Dense shrubs and a denser conifer stand beneath/beside it (not yet modelled). | Owner (22 Sep 2026): about two-thirds of the 17 m first drawn -> 11.3 m.",
+  "kind": "spruce",
+  "dbh": 0.35
+ },
+ {
+  "id": "M4",
+  "label": "Rear north boundary corner",
+  "x": -5.9,
+  "y": 26.0,
+  "height": 7,
+  "crown": 3.0,
+  "source": "Unchanged",
+  "kind": "broadleaf"
+ },
+ {
+  "id": "M5",
+  "label": "Fir hedge mass inside the south front wall",
+  "kind": "row",
+  "from": [
+   1.5,
+   -22.2
+  ],
+  "to": [
+   8.0,
+   -21.5
+  ],
+  "x": 4.75,
+  "y": -21.85,
+  "height": 10.0,
+  "crown": 1.1,
+  "width": 2.8,
+  "source": "Owner (22 Sep 2026): what was modelled as the neighbouring tree T7 is a row of tree-like bushes on our side of the south front wall. Line 1 m inside the wall under T7's crown; its crown showed above the 1.95 m wall in Street View, height ~5 m estimated. | Owner: about twice as tall (~10 m), foliage still starting low down. | Owner (23 Sep 2026): it is a big fir hedge / mass, not separate trees.",
+  "foliageFrom": 0.3,
+  "species": "fir"
+ },
+ {
+  "id": "M6",
+  "label": "Hedge inside the front wall, west boundary to the gate",
+  "kind": "row",
+  "from": [
+   -6.64,
+   -7.62
+  ],
+  "to": [
+   -4.3,
+   -12.6
+  ],
+  "x": -5.47,
+  "y": -10.11,
+  "height": 4.5,
+  "crown": 0.8,
+  "width": 1.6,
+  "foliageFrom": 0.15,
+  "source": "Owner (22 Sep 2026): the west boundary hedge (Boundary hedge .040 on) continues on the inside of the front wall from the house side right to the gate. Line 0.8 m inside the wall; height as the west hedge (~3 m). | Close-head Street View (heading 40): the leafy mass inside the west front wall stands ~2.5 m above the 1.95 m wall -> 4.5 m."
+ }
+]

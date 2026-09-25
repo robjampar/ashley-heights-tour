@@ -1,0 +1,1789 @@
+{
+  "date": "25 September 2026",
+  "options": [
+    {
+      "code": "I1",
+      "name": "Garden kitchen",
+      "group": "Internal layout",
+      "summary": "Make the garden room the everyday kitchen and dining space, opening to family living in the side wing.",
+      "bedrooms": 7,
+      "ensuites": 6,
+      "retained": "Current Proposed external walls, roofs, principal suite, gym, cinema, wine bar, pool and garage.",
+      "main_changes": [
+        "Main kitchen relocates to the garden room",
+        "Existing kitchen becomes prep kitchen and pantry",
+        "Bedroom 2 gains a private shower room",
+        "Fourth outside parking bay beside the northern bays"
+      ],
+      "tagline": "A kitchen at the heart of the garden",
+      "bestFor": "Everyday cooking and dining beside the pool, while keeping the current principal suite and leisure spaces.",
+      "why": [
+        "The rear room becomes the main kitchen and dining space, connected to family living in the side wing.",
+        "The existing kitchen stays useful as a prep kitchen and pantry, close to the original services.",
+        "An extra shower room gives six of the seven bedrooms private bathrooms."
+      ],
+      "compromises": [
+        "Shopping travels farther from the garage to the main kitchen.",
+        "The current Proposed front wing, basement and roof terrace remain; the external planning case is unchanged."
+      ],
+      "principal": "Current front principal suite, with separate study, walk-through dressing and private bathroom.",
+      "bedroomNote": "Six main-floor bedrooms plus one loft guest bedroom; six en suites.",
+      "construction": "Internal refitting, kitchen services and one additional en suite within the current Proposed envelope.",
+      "planningFocus": "Internal alternative only. It inherits the massing, roof-terrace and neighbour-impact issues of the current Proposed scheme.",
+      "parkingNote": "Four outside spaces plus the current double garage. Compact-car tracking; the retained south bay is only about 4.65 m long.",
+      "tourRoom": "Garden kitchen",
+      "id": "i1",
+      "modelUpdatedAt": "2026-09-25T00:56:59.897158+00:00",
+      "plans": [
+        {
+          "title": "Ground floor",
+          "file": "ground-floor.svg",
+          "detail": "ground-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Formal dining and lounge",
+              "area_m2": 64.3
+            },
+            {
+              "number": 2,
+              "name": "New double garage",
+              "area_m2": 49.2
+            },
+            {
+              "number": 3,
+              "name": "Garden kitchen and dining",
+              "area_m2": 48.7
+            },
+            {
+              "number": 4,
+              "name": "Open-plan family living",
+              "area_m2": 38.1
+            },
+            {
+              "number": 5,
+              "name": "Gym",
+              "area_m2": 31.4
+            },
+            {
+              "number": 6,
+              "name": "New entrance gallery",
+              "area_m2": 27.9
+            },
+            {
+              "number": 7,
+              "name": "Prep kitchen and pantry",
+              "area_m2": 23.6
+            },
+            {
+              "number": 8,
+              "name": "Entrance hall",
+              "area_m2": 19.1
+            },
+            {
+              "number": 9,
+              "name": "Office",
+              "area_m2": 17.9
+            },
+            {
+              "number": 10,
+              "name": "Attached entrance gallery",
+              "area_m2": 15.0
+            },
+            {
+              "number": 11,
+              "name": "Utility",
+              "area_m2": 7.5
+            },
+            {
+              "number": 12,
+              "name": "Cloakroom",
+              "area_m2": 4.1
+            }
+          ]
+        },
+        {
+          "title": "First floor",
+          "file": "first-floor.svg",
+          "detail": "first-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Shared roof terrace",
+              "area_m2": 47.4
+            },
+            {
+              "number": 2,
+              "name": "New principal suite",
+              "area_m2": 31.9
+            },
+            {
+              "number": 3,
+              "name": "Principal study",
+              "area_m2": 24.0
+            },
+            {
+              "number": 4,
+              "name": "Garden guest suite",
+              "area_m2": 23.8
+            },
+            {
+              "number": 5,
+              "name": "Upstairs family lounge",
+              "area_m2": 21.2
+            },
+            {
+              "number": 6,
+              "name": "Bedroom 3",
+              "area_m2": 17.3
+            },
+            {
+              "number": 7,
+              "name": "Landing",
+              "area_m2": 15.3
+            },
+            {
+              "number": 8,
+              "name": "Joined first-floor landing",
+              "area_m2": 14.7
+            },
+            {
+              "number": 9,
+              "name": "Bedroom 4",
+              "area_m2": 14.4
+            },
+            {
+              "number": 10,
+              "name": "New principal bathroom",
+              "area_m2": 14.3
+            },
+            {
+              "number": 11,
+              "name": "Bedroom 2",
+              "area_m2": 12.3
+            },
+            {
+              "number": 12,
+              "name": "Side wing south bedroom",
+              "area_m2": 10.9
+            },
+            {
+              "number": 13,
+              "name": "Principal window alcove",
+              "area_m2": 9.8
+            },
+            {
+              "number": 14,
+              "name": "Side-wing connecting landing",
+              "area_m2": 9.4
+            },
+            {
+              "number": 15,
+              "name": "Bathroom",
+              "area_m2": 8.0
+            },
+            {
+              "number": 16,
+              "name": "New dressing room",
+              "area_m2": 7.6
+            },
+            {
+              "number": 17,
+              "name": "Landing library",
+              "area_m2": 5.9
+            },
+            {
+              "number": 18,
+              "name": "Side south ensuite",
+              "area_m2": 4.8
+            },
+            {
+              "number": 19,
+              "name": "Garden guest en suite",
+              "area_m2": 4.4
+            },
+            {
+              "number": 20,
+              "name": "Bedroom 4 en suite",
+              "area_m2": 4.3
+            },
+            {
+              "number": 21,
+              "name": "Bedroom 2 en suite",
+              "area_m2": 3.6
+            },
+            {
+              "number": 22,
+              "name": "New upper gallery",
+              "area_m2": 2.9
+            },
+            {
+              "number": 23,
+              "name": "Principal WC",
+              "area_m2": 2.1
+            }
+          ]
+        },
+        {
+          "title": "Loft",
+          "file": "loft.svg",
+          "detail": "loft-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Loft studio and lounge",
+              "area_m2": 43.4
+            },
+            {
+              "number": 2,
+              "name": "Original loft bridge",
+              "area_m2": 21.5
+            },
+            {
+              "number": 3,
+              "name": "New loft bedroom",
+              "area_m2": 19.1
+            },
+            {
+              "number": 4,
+              "name": "Loft ensuite",
+              "area_m2": 10.0
+            },
+            {
+              "number": 5,
+              "name": "Loft landing",
+              "area_m2": 8.3
+            },
+            {
+              "number": 6,
+              "name": "Loft west eaves store",
+              "area_m2": 7.8
+            },
+            {
+              "number": 7,
+              "name": "Loft east eaves store",
+              "area_m2": 7.8
+            },
+            {
+              "number": 8,
+              "name": "Loft hip store",
+              "area_m2": 6.6
+            }
+          ]
+        },
+        {
+          "title": "Cellar",
+          "file": "cellar.svg",
+          "detail": "cellar-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Basement bar and games room",
+              "area_m2": 71.6
+            },
+            {
+              "number": 2,
+              "name": "Basement cinema",
+              "area_m2": 20.3
+            },
+            {
+              "number": 3,
+              "name": "Basement stair landing",
+              "area_m2": 0.9
+            }
+          ]
+        },
+        {
+          "title": "Site",
+          "file": "site.svg",
+          "detail": "site-detail.svg",
+          "rooms": []
+        }
+      ],
+      "footprint": {
+        "original_ground_footprint_m2": 181.4,
+        "added_ground_footprint_m2": 192.2
+      },
+      "tourUrl": "../?design=i1",
+      "tourView": "i1-garden-kitchen",
+      "checks": {
+        "circulation": {
+          "passed": true,
+          "limitations": "Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance.",
+          "body_width_m": 0.44
+        }
+      },
+      "groundworks": null
+    },
+    {
+      "code": "I2",
+      "name": "Social east",
+      "group": "Internal layout",
+      "summary": "An east-side kitchen and living room, a ground-floor guest suite, and gym and cinema within the original house footprint.",
+      "bedrooms": 7,
+      "ensuites": 5,
+      "retained": "Current Proposed envelope, front principal suite, pool, double garage and original staircase.",
+      "main_changes": [
+        "Main kitchen moves to the east garden-facing living room",
+        "One wide kitchen/dining opening",
+        "Ground-floor guest suite replaces the front gym",
+        "Side garden living becomes gym",
+        "Original family room becomes cinema",
+        "Side bedroom becomes family workspace"
+      ],
+      "tagline": "Social rooms on the east, a guest suite downstairs",
+      "bestFor": "A main kitchen connected to the original east living and dining rooms, with a bedroom available on the ground floor.",
+      "why": [
+        "Kitchen, dining and sitting share the east side of the original house.",
+        "The former front gym becomes a guest suite with a private shower room and an independent service passage alongside it.",
+        "The cinema moves upstairs into the original family room; the side wing holds the gym and a shared family workspace."
+      ],
+      "compromises": [
+        "The cinema is a smaller four-seat room; the gym takes the side garden living room.",
+        "The old basement remains as wine-bar and games space, so this is not a reduction in construction scope."
+      ],
+      "principal": "Current front principal suite, study, walk-through dressing and bathroom retained.",
+      "bedroomNote": "Five first-floor bedrooms, one ground-floor guest and one loft guest; five en suites.",
+      "construction": "New kitchen, one wide internal opening, ground guest bathroom and room refits; the current outer envelope stays.",
+      "planningFocus": "External form remains the current Proposed design. Moving rooms does not resolve its front-wing, terrace or basement concerns.",
+      "parkingNote": "Four outside spaces plus the current double garage; compact-car tracking and a short retained south bay.",
+      "tourRoom": "East kitchen",
+      "id": "i2",
+      "modelUpdatedAt": "2026-09-25T02:58:57.020156+00:00",
+      "plans": [
+        {
+          "title": "Ground floor",
+          "file": "ground-floor.svg",
+          "detail": "ground-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "East kitchen, dining and living",
+              "area_m2": 64.3
+            },
+            {
+              "number": 2,
+              "name": "New double garage",
+              "area_m2": 49.2
+            },
+            {
+              "number": 3,
+              "name": "Garden living and dining",
+              "area_m2": 48.7
+            },
+            {
+              "number": 4,
+              "name": "Gym",
+              "area_m2": 38.1
+            },
+            {
+              "number": 5,
+              "name": "New entrance gallery",
+              "area_m2": 27.9
+            },
+            {
+              "number": 6,
+              "name": "Breakfast and prep kitchen",
+              "area_m2": 23.6
+            },
+            {
+              "number": 7,
+              "name": "Entrance hall",
+              "area_m2": 19.1
+            },
+            {
+              "number": 8,
+              "name": "Cinema",
+              "area_m2": 17.9
+            },
+            {
+              "number": 9,
+              "name": "Ground-floor guest suite",
+              "area_m2": 11.7
+            },
+            {
+              "number": 10,
+              "name": "Independent garage and utility passage",
+              "area_m2": 15.3
+            },
+            {
+              "number": 11,
+              "name": "Attached entrance gallery",
+              "area_m2": 15.0
+            },
+            {
+              "number": 12,
+              "name": "Utility",
+              "area_m2": 7.5
+            },
+            {
+              "number": 13,
+              "name": "Cloakroom",
+              "area_m2": 4.1
+            },
+            {
+              "number": 14,
+              "name": "Ground-floor guest en suite",
+              "area_m2": 3.8
+            }
+          ]
+        },
+        {
+          "title": "First floor",
+          "file": "first-floor.svg",
+          "detail": "first-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Shared roof terrace",
+              "area_m2": 47.4
+            },
+            {
+              "number": 2,
+              "name": "New principal suite",
+              "area_m2": 31.9
+            },
+            {
+              "number": 3,
+              "name": "Principal study",
+              "area_m2": 24.0
+            },
+            {
+              "number": 4,
+              "name": "Garden guest suite",
+              "area_m2": 23.8
+            },
+            {
+              "number": 5,
+              "name": "Upstairs family lounge",
+              "area_m2": 21.2
+            },
+            {
+              "number": 6,
+              "name": "Bedroom 2",
+              "area_m2": 18.4
+            },
+            {
+              "number": 7,
+              "name": "Bedroom 3",
+              "area_m2": 17.3
+            },
+            {
+              "number": 8,
+              "name": "Landing",
+              "area_m2": 15.3
+            },
+            {
+              "number": 9,
+              "name": "Joined first-floor landing",
+              "area_m2": 14.7
+            },
+            {
+              "number": 10,
+              "name": "Bedroom 4",
+              "area_m2": 14.4
+            },
+            {
+              "number": 11,
+              "name": "New principal bathroom",
+              "area_m2": 14.3
+            },
+            {
+              "number": 12,
+              "name": "Family workspace",
+              "area_m2": 10.9
+            },
+            {
+              "number": 13,
+              "name": "Principal window alcove",
+              "area_m2": 9.8
+            },
+            {
+              "number": 14,
+              "name": "Side-wing connecting landing",
+              "area_m2": 9.4
+            },
+            {
+              "number": 15,
+              "name": "Bathroom",
+              "area_m2": 8.0
+            },
+            {
+              "number": 16,
+              "name": "New dressing room",
+              "area_m2": 7.6
+            },
+            {
+              "number": 17,
+              "name": "Landing library",
+              "area_m2": 5.9
+            },
+            {
+              "number": 18,
+              "name": "Family shower room",
+              "area_m2": 4.8
+            },
+            {
+              "number": 19,
+              "name": "Garden guest en suite",
+              "area_m2": 4.4
+            },
+            {
+              "number": 20,
+              "name": "Bedroom 4 en suite",
+              "area_m2": 4.3
+            },
+            {
+              "number": 21,
+              "name": "New upper gallery",
+              "area_m2": 2.9
+            },
+            {
+              "number": 22,
+              "name": "Principal WC",
+              "area_m2": 2.1
+            }
+          ]
+        },
+        {
+          "title": "Loft",
+          "file": "loft.svg",
+          "detail": "loft-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Loft studio and lounge",
+              "area_m2": 43.4
+            },
+            {
+              "number": 2,
+              "name": "Original loft bridge",
+              "area_m2": 21.5
+            },
+            {
+              "number": 3,
+              "name": "New loft bedroom",
+              "area_m2": 19.1
+            },
+            {
+              "number": 4,
+              "name": "Loft ensuite",
+              "area_m2": 10.0
+            },
+            {
+              "number": 5,
+              "name": "Loft landing",
+              "area_m2": 8.3
+            },
+            {
+              "number": 6,
+              "name": "Loft west eaves store",
+              "area_m2": 7.8
+            },
+            {
+              "number": 7,
+              "name": "Loft east eaves store",
+              "area_m2": 7.8
+            },
+            {
+              "number": 8,
+              "name": "Loft hip store",
+              "area_m2": 6.6
+            }
+          ]
+        },
+        {
+          "title": "Cellar",
+          "file": "cellar.svg",
+          "detail": "cellar-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Wine bar and lounge",
+              "area_m2": 71.6
+            },
+            {
+              "number": 2,
+              "name": "Games room",
+              "area_m2": 20.3
+            },
+            {
+              "number": 3,
+              "name": "Basement stair landing",
+              "area_m2": 0.9
+            }
+          ]
+        },
+        {
+          "title": "Site",
+          "file": "site.svg",
+          "detail": "site-detail.svg",
+          "rooms": []
+        }
+      ],
+      "footprint": {
+        "original_ground_footprint_m2": 181.4,
+        "added_ground_footprint_m2": 192.2
+      },
+      "tourUrl": "../?design=i2",
+      "tourView": "i2-east-kitchen",
+      "checks": {
+        "circulation": {
+          "passed": true,
+          "limitations": "Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance.",
+          "body_width_m": 0.44
+        }
+      },
+      "groundworks": null
+    },
+    {
+      "code": "I3",
+      "name": "Garden principal",
+      "group": "Internal layout",
+      "summary": "Move the principal suite to the original garden-facing bedrooms and put two guest suites in the front wing.",
+      "bedrooms": 7,
+      "ensuites": 6,
+      "retained": "Current Proposed envelope, original principal partition with a new doorway, pool, basement cinema, double garage and main stair.",
+      "main_changes": [
+        "Garden-facing principal bedroom with study and walk-through dressing",
+        "Two front guest suites",
+        "Pool-side gym in the rear garden room",
+        "Separate front wine bar",
+        "Wider kitchen and side-living connection"
+      ],
+      "tagline": "A quieter principal suite facing the garden",
+      "bestFor": "A garden-facing principal bedroom and pool-side gym, with the front wing used for guests.",
+      "why": [
+        "A single new doorway links the original east bedrooms into a principal bedroom, study and walk-through dressing suite.",
+        "The generous current front principal area becomes two guest suites.",
+        "The existing kitchen opens more widely to side living; the rear glazed room becomes the gym, beside the pool."
+      ],
+      "compromises": [
+        "Everyday living loses the rear glazed room to the gym.",
+        "The current Proposed envelope, basement and roof terrace remain, with their existing planning and construction implications."
+      ],
+      "principal": "Garden bedroom and retained bathroom, entered through the original front-east room with study and walk-through wardrobes.",
+      "bedroomNote": "Six main-floor bedrooms plus one loft guest; six en suites.",
+      "construction": "One principal-suite doorway, a wider kitchen opening, two front guest suites and room refitting.",
+      "planningFocus": "The external proposal is unchanged. Structural design is needed for the new internal openings.",
+      "parkingNote": "Four outside spaces plus the current double garage; compact-car tracking and a short retained south bay.",
+      "tourRoom": "Principal study and walk-through dressing",
+      "id": "i3",
+      "modelUpdatedAt": "2026-09-25T00:59:26.983023+00:00",
+      "plans": [
+        {
+          "title": "Ground floor",
+          "file": "ground-floor.svg",
+          "detail": "ground-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Formal dining and lounge",
+              "area_m2": 64.3
+            },
+            {
+              "number": 2,
+              "name": "New double garage",
+              "area_m2": 49.2
+            },
+            {
+              "number": 3,
+              "name": "Garden gym",
+              "area_m2": 48.7
+            },
+            {
+              "number": 4,
+              "name": "Open-plan dining and living",
+              "area_m2": 38.1
+            },
+            {
+              "number": 5,
+              "name": "Wine bar room",
+              "area_m2": 31.4
+            },
+            {
+              "number": 6,
+              "name": "New entrance gallery",
+              "area_m2": 27.9
+            },
+            {
+              "number": 7,
+              "name": "Family kitchen",
+              "area_m2": 23.6
+            },
+            {
+              "number": 8,
+              "name": "Entrance hall",
+              "area_m2": 19.1
+            },
+            {
+              "number": 9,
+              "name": "Office",
+              "area_m2": 17.9
+            },
+            {
+              "number": 10,
+              "name": "Attached entrance gallery",
+              "area_m2": 15.0
+            },
+            {
+              "number": 11,
+              "name": "Utility",
+              "area_m2": 7.5
+            },
+            {
+              "number": 12,
+              "name": "Cloakroom",
+              "area_m2": 4.1
+            }
+          ]
+        },
+        {
+          "title": "First floor",
+          "file": "first-floor.svg",
+          "detail": "first-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Shared roof terrace",
+              "area_m2": 47.4
+            },
+            {
+              "number": 2,
+              "name": "Front guest suite A",
+              "area_m2": 31.1
+            },
+            {
+              "number": 3,
+              "name": "Front guest suite B",
+              "area_m2": 25.0
+            },
+            {
+              "number": 4,
+              "name": "Garden principal bedroom",
+              "area_m2": 23.8
+            },
+            {
+              "number": 5,
+              "name": "Upstairs family lounge",
+              "area_m2": 21.2
+            },
+            {
+              "number": 6,
+              "name": "Principal study and walk-through dressing",
+              "area_m2": 18.4
+            },
+            {
+              "number": 7,
+              "name": "Bedroom 3",
+              "area_m2": 17.3
+            },
+            {
+              "number": 8,
+              "name": "Landing",
+              "area_m2": 15.3
+            },
+            {
+              "number": 9,
+              "name": "Joined first-floor landing",
+              "area_m2": 14.7
+            },
+            {
+              "number": 10,
+              "name": "Bedroom 4",
+              "area_m2": 14.4
+            },
+            {
+              "number": 11,
+              "name": "Guest A bathroom",
+              "area_m2": 14.3
+            },
+            {
+              "number": 12,
+              "name": "Side wing south bedroom",
+              "area_m2": 10.9
+            },
+            {
+              "number": 13,
+              "name": "Principal window alcove",
+              "area_m2": 9.8
+            },
+            {
+              "number": 14,
+              "name": "Side-wing connecting landing",
+              "area_m2": 9.4
+            },
+            {
+              "number": 15,
+              "name": "Bathroom",
+              "area_m2": 8.0
+            },
+            {
+              "number": 16,
+              "name": "Guest B en suite",
+              "area_m2": 7.7
+            },
+            {
+              "number": 17,
+              "name": "Landing library",
+              "area_m2": 5.9
+            },
+            {
+              "number": 18,
+              "name": "Side south ensuite",
+              "area_m2": 4.8
+            },
+            {
+              "number": 19,
+              "name": "Principal en suite",
+              "area_m2": 4.4
+            },
+            {
+              "number": 20,
+              "name": "Bedroom 4 en suite",
+              "area_m2": 4.3
+            },
+            {
+              "number": 21,
+              "name": "New upper gallery",
+              "area_m2": 2.9
+            }
+          ]
+        },
+        {
+          "title": "Loft",
+          "file": "loft.svg",
+          "detail": "loft-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Loft studio and lounge",
+              "area_m2": 43.4
+            },
+            {
+              "number": 2,
+              "name": "Original loft bridge",
+              "area_m2": 21.5
+            },
+            {
+              "number": 3,
+              "name": "New loft bedroom",
+              "area_m2": 19.1
+            },
+            {
+              "number": 4,
+              "name": "Loft ensuite",
+              "area_m2": 10.0
+            },
+            {
+              "number": 5,
+              "name": "Loft landing",
+              "area_m2": 8.3
+            },
+            {
+              "number": 6,
+              "name": "Loft west eaves store",
+              "area_m2": 7.8
+            },
+            {
+              "number": 7,
+              "name": "Loft east eaves store",
+              "area_m2": 7.8
+            },
+            {
+              "number": 8,
+              "name": "Loft hip store",
+              "area_m2": 6.6
+            }
+          ]
+        },
+        {
+          "title": "Cellar",
+          "file": "cellar.svg",
+          "detail": "cellar-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Basement bar and games room",
+              "area_m2": 71.6
+            },
+            {
+              "number": 2,
+              "name": "Basement cinema",
+              "area_m2": 20.3
+            },
+            {
+              "number": 3,
+              "name": "Basement stair landing",
+              "area_m2": 0.9
+            }
+          ]
+        },
+        {
+          "title": "Site",
+          "file": "site.svg",
+          "detail": "site-detail.svg",
+          "rooms": []
+        }
+      ],
+      "footprint": {
+        "original_ground_footprint_m2": 181.4,
+        "added_ground_footprint_m2": 192.2
+      },
+      "tourUrl": "../?design=i3",
+      "tourView": "i3-principal-study-and-walk-through-dressing",
+      "checks": {
+        "circulation": {
+          "passed": true,
+          "limitations": "Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance.",
+          "body_width_m": 0.44
+        }
+      },
+      "groundworks": null
+    },
+    {
+      "code": "E1",
+      "name": "Retained front",
+      "group": "Complete redesign",
+      "summary": "Retain the original front, double garage, fountain and main stair; add rear family living and a subordinate side floor.",
+      "bedrooms": 7,
+      "ensuites": 6,
+      "retained": "Original main facade, entrance, main stair, double garage, fountain, main roof form and chimney; most original walls.",
+      "main_changes": [
+        "3.8 m single-storey rear living and dining addition",
+        "Subordinate side floor with two bedrooms, one metre rear projection",
+        "Original east rooms form the principal suite",
+        "Ground guest suite and one loft guest room with separate workspace",
+        "Four outside parking spaces and an 8 \u00d7 3.5 m pool"
+      ],
+      "tagline": "Keep the front, garage and arrival sequence",
+      "bestFor": "The strongest starting point for reducing changes to the original house while keeping the full brief.",
+      "why": [
+        "The original front, entrance, main stair, double garage and fountain stay in place.",
+        "A 3.8 m rear addition links to the original kitchen, making about 60 m\u00b2 of connected kitchen, dining and living space.",
+        "Gym, cinema and wine bar reuse original ground-floor rooms. There is no new basement or roof terrace."
+      ],
+      "compromises": [
+        "The original garage is only about 4.95 m wide inside: a tight double for compact cars, with door-opening clearance still to resolve.",
+        "A side upper floor and rear dormer are still substantial work; the garage foundations and roof junction need engineering."
+      ],
+      "principal": "Original east bedrooms form a garden-facing bedroom, study and walk-through dressing; the existing principal bathroom stays.",
+      "bedroomNote": "Five first-floor bedrooms, one ground guest and one loft guest; six en suites.",
+      "construction": "Rear family room, two bedrooms over the garage, original-roof loft conversion and targeted internal alterations. Pool and forecourt grading are additional site work.",
+      "planningFocus": "Retaining the front helps preserve the established character. Side spacing, upper-floor bulk, rear depth, dormer scale and neighbour light/privacy still need assessment.",
+      "parkingNote": "Four outside bays plus two compact cars in the retained garage. All six enter and leave with the others occupied, using a tighter search clearance for the garage.",
+      "tourRoom": "Garden living",
+      "id": "e1",
+      "modelUpdatedAt": "2026-09-25T02:55:34.211062+00:00",
+      "plans": [
+        {
+          "title": "Ground floor",
+          "file": "ground-floor.svg",
+          "detail": "ground-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Retained double garage",
+              "area_m2": 37.8
+            },
+            {
+              "number": 2,
+              "name": "Garden living and dining",
+              "area_m2": 35.5
+            },
+            {
+              "number": 3,
+              "name": "Family kitchen",
+              "area_m2": 23.6
+            },
+            {
+              "number": 4,
+              "name": "Entrance hall",
+              "area_m2": 19.1
+            },
+            {
+              "number": 5,
+              "name": "Gym",
+              "area_m2": 19.0
+            },
+            {
+              "number": 6,
+              "name": "Wine bar room",
+              "area_m2": 18.6
+            },
+            {
+              "number": 7,
+              "name": "Ground guest bedroom",
+              "area_m2": 14.2
+            },
+            {
+              "number": 8,
+              "name": "Cinema",
+              "area_m2": 17.9
+            },
+            {
+              "number": 9,
+              "name": "Utility",
+              "area_m2": 7.9
+            },
+            {
+              "number": 10,
+              "name": "East cross-hall",
+              "area_m2": 4.9
+            },
+            {
+              "number": 11,
+              "name": "Cloakroom",
+              "area_m2": 4.1
+            },
+            {
+              "number": 12,
+              "name": "Ground guest en suite",
+              "area_m2": 3.9
+            }
+          ]
+        },
+        {
+          "title": "First floor",
+          "file": "first-floor.svg",
+          "detail": "first-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Garden principal bedroom",
+              "area_m2": 23.8
+            },
+            {
+              "number": 2,
+              "name": "Side north bedroom",
+              "area_m2": 16.2
+            },
+            {
+              "number": 3,
+              "name": "Principal study and walk-through dressing",
+              "area_m2": 18.5
+            },
+            {
+              "number": 4,
+              "name": "Side connection and loft stair",
+              "area_m2": 14.1
+            },
+            {
+              "number": 5,
+              "name": "Landing",
+              "area_m2": 15.4
+            },
+            {
+              "number": 6,
+              "name": "Side south bedroom",
+              "area_m2": 14.6
+            },
+            {
+              "number": 7,
+              "name": "Bedroom 3",
+              "area_m2": 13.2
+            },
+            {
+              "number": 8,
+              "name": "Bedroom 4",
+              "area_m2": 12.7
+            },
+            {
+              "number": 9,
+              "name": "Bathroom",
+              "area_m2": 8.0
+            },
+            {
+              "number": 10,
+              "name": "Principal en suite",
+              "area_m2": 4.4
+            },
+            {
+              "number": 11,
+              "name": "Bedroom 4 en suite",
+              "area_m2": 4.3
+            },
+            {
+              "number": 12,
+              "name": "Side north en suite",
+              "area_m2": 3.7
+            },
+            {
+              "number": 13,
+              "name": "Side south en suite",
+              "area_m2": 3.6
+            },
+            {
+              "number": 14,
+              "name": "Side connecting corridor",
+              "area_m2": 3.0
+            }
+          ]
+        },
+        {
+          "title": "Loft",
+          "file": "loft.svg",
+          "detail": "loft-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Loft guest bedroom",
+              "area_m2": 9.6
+            },
+            {
+              "number": 2,
+              "name": "Loft landing",
+              "area_m2": 4.9
+            },
+            {
+              "number": 3,
+              "name": "Loft guest en suite",
+              "area_m2": 3.7
+            },
+            {
+              "number": 4,
+              "name": "Loft workspace",
+              "area_m2": 2.9
+            }
+          ]
+        },
+        {
+          "title": "Site",
+          "file": "site.svg",
+          "detail": "site-detail.svg",
+          "rooms": []
+        }
+      ],
+      "footprint": {
+        "original_ground_footprint_m2": 181.4,
+        "added_ground_footprint_m2": 37.3
+      },
+      "tourUrl": "../?design=e1",
+      "tourView": "e1-garden-living",
+      "checks": {
+        "circulation": {
+          "passed": true,
+          "limitations": "Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance.",
+          "body_width_m": 0.44
+        },
+        "stairs": {
+          "passed": true,
+          "limitations": "Continuous walking up and down the actual navigation ramps and landings. Headroom is measured separately against the native mesh.",
+          "body_width_m": 0.5
+        },
+        "parking": {
+          "passed": true,
+          "limitations": "Concept vehicle tracking of a compact-car body. Does not establish door-opening clearance, gradient, visibility, SUV fit or a surveyed highway design.",
+          "search_margin_m": 0.12,
+          "vehicle_m": [
+            4.4,
+            1.8
+          ]
+        },
+        "headroom": {
+          "groups": {
+            "loft": {
+              "centre_minimum_m": 2.2421,
+              "edge_minimum_m": 1.9816,
+              "all_samples_2m": false,
+              "reduced_loft_geometry": true
+            }
+          }
+        }
+      },
+      "groundworks": {
+        "finished_datum_m": 0,
+        "surface": "Existing paved footprint regraded; permeable parking pads",
+        "maximum_cut_from_terrain_m": 0.92,
+        "maximum_fill_from_terrain_m": 0.265,
+        "retaining_segments": 101,
+        "basis": "Concept level forecourt and retaining kerbs. Earthworks quantities, gate/road tie-in, drainage falls and foundation levels require a measured survey; parking tracking is at this proposed datum."
+      }
+    },
+    {
+      "code": "E2",
+      "name": "Garden courtyard",
+      "group": "Complete redesign",
+      "summary": "Keep the original front; move the principal suite into a side wing and arrange leisure rooms beside a garden courtyard.",
+      "bedrooms": 7,
+      "ensuites": 5,
+      "retained": "Original front, entrance, main stair and four larger original first-floor bedrooms; main roof ridge and chimney.",
+      "main_changes": [
+        "Side principal suite with study, walk-through dressing and bathroom",
+        "Low garden gym and cinema wing",
+        "Ground guest suite; one loft guest room and workspace",
+        "Kitchen and former garage become open-plan family living",
+        "Detached double garage; four outside spaces; pool"
+      ],
+      "tagline": "A garden principal suite and a low leisure wing",
+      "bestFor": "A larger dedicated principal suite and garden leisure rooms without basement excavation.",
+      "why": [
+        "The original front and four larger first-floor bedrooms remain; the new principal suite occupies the side upper floor.",
+        "The original kitchen and converted garage provide connected family living and dining.",
+        "A low rear wing separates gym and cinema from the main rooms; the garden link adds pool changing and a visitor shower room."
+      ],
+      "compromises": [
+        "The side floor projects 3.2 m behind the original house, and the low leisure wing continues farther into the garden.",
+        "A detached double garage changes the forecourt. The fountain moves to the rear garden."
+      ],
+      "principal": "Study and bathroom at the front, a generous walk-through wardrobe in the middle, and the bedroom facing the garden.",
+      "bedroomNote": "Five first-floor bedrooms, one ground guest and one loft guest; five en suites.",
+      "construction": "Garage conversion, side upper floor, low garden link and leisure wing, original-roof loft conversion and detached garage. No basement or roof terrace.",
+      "planningFocus": "The retained main front is a positive starting point, but the side/rear extent, new forecourt garage, trees and neighbour effects need careful testing.",
+      "parkingNote": "Four outside bays plus a detached garage with about 6.97 m clear width and 6.67 m clear depth. Six occupied-bay routes checked with a compact car.",
+      "tourRoom": "Side principal bedroom",
+      "id": "e2",
+      "modelUpdatedAt": "2026-09-25T02:56:49.763195+00:00",
+      "plans": [
+        {
+          "title": "Ground floor",
+          "file": "ground-floor.svg",
+          "detail": "ground-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "New double garage",
+              "area_m2": 46.5
+            },
+            {
+              "number": 2,
+              "name": "Drawing room",
+              "area_m2": 45.7
+            },
+            {
+              "number": 3,
+              "name": "Open-plan family living",
+              "area_m2": 42.5
+            },
+            {
+              "number": 4,
+              "name": "Family kitchen",
+              "area_m2": 23.6
+            },
+            {
+              "number": 5,
+              "name": "Entrance hall",
+              "area_m2": 19.1
+            },
+            {
+              "number": 6,
+              "name": "Wine bar room",
+              "area_m2": 18.6
+            },
+            {
+              "number": 7,
+              "name": "Ground guest bedroom",
+              "area_m2": 17.9
+            },
+            {
+              "number": 8,
+              "name": "Gym",
+              "area_m2": 17.7
+            },
+            {
+              "number": 9,
+              "name": "Cinema",
+              "area_m2": 17.2
+            },
+            {
+              "number": 10,
+              "name": "Garden link and changing",
+              "area_m2": 11.6
+            },
+            {
+              "number": 11,
+              "name": "Garden leisure gallery",
+              "area_m2": 8.3
+            },
+            {
+              "number": 12,
+              "name": "Ground guest en suite",
+              "area_m2": 3.5
+            },
+            {
+              "number": 13,
+              "name": "Pool changing and visitor shower",
+              "area_m2": 3.3
+            }
+          ]
+        },
+        {
+          "title": "First floor",
+          "file": "first-floor.svg",
+          "detail": "first-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Side principal bedroom",
+              "area_m2": 23.8
+            },
+            {
+              "number": 2,
+              "name": "Garden guest bedroom",
+              "area_m2": 23.8
+            },
+            {
+              "number": 3,
+              "name": "Bedroom 2",
+              "area_m2": 18.5
+            },
+            {
+              "number": 4,
+              "name": "Side connection and loft stair",
+              "area_m2": 14.1
+            },
+            {
+              "number": 5,
+              "name": "Landing",
+              "area_m2": 15.4
+            },
+            {
+              "number": 6,
+              "name": "Bedroom 3",
+              "area_m2": 13.2
+            },
+            {
+              "number": 7,
+              "name": "Bedroom 4",
+              "area_m2": 12.7
+            },
+            {
+              "number": 8,
+              "name": "Walk-through principal wardrobe",
+              "area_m2": 11.9
+            },
+            {
+              "number": 9,
+              "name": "Principal study and entry",
+              "area_m2": 8.6
+            },
+            {
+              "number": 10,
+              "name": "Bathroom",
+              "area_m2": 8.0
+            },
+            {
+              "number": 11,
+              "name": "Principal bathroom",
+              "area_m2": 7.6
+            },
+            {
+              "number": 12,
+              "name": "Garden guest en suite",
+              "area_m2": 4.4
+            },
+            {
+              "number": 13,
+              "name": "Bedroom 4 en suite",
+              "area_m2": 4.3
+            }
+          ]
+        },
+        {
+          "title": "Loft",
+          "file": "loft.svg",
+          "detail": "loft-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Loft guest bedroom",
+              "area_m2": 9.6
+            },
+            {
+              "number": 2,
+              "name": "Loft landing",
+              "area_m2": 4.9
+            },
+            {
+              "number": 3,
+              "name": "Loft guest en suite",
+              "area_m2": 3.7
+            },
+            {
+              "number": 4,
+              "name": "Loft workspace",
+              "area_m2": 2.9
+            }
+          ]
+        },
+        {
+          "title": "Site",
+          "file": "site.svg",
+          "detail": "site-detail.svg",
+          "rooms": []
+        }
+      ],
+      "footprint": {
+        "original_ground_footprint_m2": 181.4,
+        "added_ground_footprint_m2": 113.4
+      },
+      "tourUrl": "../?design=e2",
+      "tourView": "e2-side-principal-bedroom",
+      "checks": {
+        "circulation": {
+          "passed": true,
+          "limitations": "Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance.",
+          "body_width_m": 0.44
+        },
+        "stairs": {
+          "passed": true,
+          "limitations": "Continuous walking up and down the actual navigation ramps and landings. Headroom is measured separately against the native mesh.",
+          "body_width_m": 0.5
+        },
+        "parking": {
+          "passed": true,
+          "limitations": "Concept vehicle tracking of a compact-car body. Does not establish door-opening clearance, gradient, visibility, SUV fit or a surveyed highway design.",
+          "search_margin_m": 0.22,
+          "vehicle_m": [
+            4.4,
+            1.8
+          ]
+        },
+        "headroom": {
+          "groups": {
+            "loft": {
+              "centre_minimum_m": 2.2421,
+              "edge_minimum_m": 1.9816,
+              "all_samples_2m": false,
+              "reduced_loft_geometry": true
+            }
+          }
+        }
+      },
+      "groundworks": {
+        "finished_datum_m": 0,
+        "surface": "Existing paved footprint regraded; permeable parking pads",
+        "maximum_cut_from_terrain_m": 0.92,
+        "maximum_fill_from_terrain_m": 0.265,
+        "retaining_segments": 101,
+        "basis": "Concept level forecourt and retaining kerbs. Earthworks quantities, gate/road tie-in, drainage falls and foundation levels require a measured survey; parking tracking is at this proposed datum."
+      }
+    },
+    {
+      "code": "E3",
+      "name": "Short forecourt wing",
+      "group": "Complete redesign",
+      "summary": "Shorten the current front-wing approach, with a lower roof and leisure rooms below the new footprint.",
+      "bedrooms": 7,
+      "ensuites": 5,
+      "retained": "Original house walls, main stair, four larger original bedrooms and main roof ridge.",
+      "main_changes": [
+        "Shorter two-storey front wing with garage, gym and two bedroom suites",
+        "One side bedroom and a shallow rear living addition",
+        "Original loft workspace only; no occupied front loft",
+        "Cinema and wine bar beneath the new wing",
+        "Four outside parking spaces and rear pool"
+      ],
+      "tagline": "A shorter front wing with leisure rooms below",
+      "bestFor": "Keeping the current proposal's separate front-suite approach while reducing its length and removing its occupied front loft.",
+      "why": [
+        "A shorter front wing holds the double garage, gym and utility below two bedroom suites.",
+        "Four original bedrooms and one side bedroom remain, so all seven bedrooms sit on the main first floor.",
+        "Cinema and wine bar use the cellar beneath the new wing; the original loft is a workspace only."
+      ],
+      "compromises": [
+        "Basement excavation, waterproofing and a new front wing remain significant construction work.",
+        "The front building line changes substantially. This is the most difficult planning argument of the three complete redesigns."
+      ],
+      "principal": "Front-wing study leads through a walk-through wardrobe to the large bedroom and private bathroom.",
+      "bedroomNote": "Seven first-floor bedrooms; five en suites. Loft workspace only, with low eaves clearly shown.",
+      "construction": "Two-storey front wing with cellar, two-level link to the original entrance/landing, one side bedroom and a 3.2 m rear living addition.",
+      "planningFocus": "The front ridge is below the original roof, but a lower ridge alone does not make the forward projection acceptable. Street character, setback, trees and neighbours are central concerns.",
+      "parkingNote": "Four outside bays plus a new garage with about 6.33 \u00d7 6.41 m clear floor space. All six compact-car routes checked with other cars occupied.",
+      "tourRoom": "Front principal bedroom",
+      "id": "e3",
+      "modelUpdatedAt": "2026-09-25T02:58:10.047890+00:00",
+      "plans": [
+        {
+          "title": "Ground floor",
+          "file": "ground-floor.svg",
+          "detail": "ground-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Drawing room",
+              "area_m2": 45.7
+            },
+            {
+              "number": 2,
+              "name": "Open-plan family living",
+              "area_m2": 42.5
+            },
+            {
+              "number": 3,
+              "name": "New double garage",
+              "area_m2": 40.5
+            },
+            {
+              "number": 4,
+              "name": "Gym",
+              "area_m2": 31.4
+            },
+            {
+              "number": 5,
+              "name": "Garden dining and living",
+              "area_m2": 28.9
+            },
+            {
+              "number": 6,
+              "name": "Family kitchen",
+              "area_m2": 23.6
+            },
+            {
+              "number": 7,
+              "name": "Entrance hall",
+              "area_m2": 19.1
+            },
+            {
+              "number": 8,
+              "name": "Dining room",
+              "area_m2": 18.6
+            },
+            {
+              "number": 9,
+              "name": "Family room",
+              "area_m2": 17.9
+            },
+            {
+              "number": 10,
+              "name": "Front service lobby",
+              "area_m2": 9.7
+            },
+            {
+              "number": 11,
+              "name": "Entrance link",
+              "area_m2": 9.3
+            },
+            {
+              "number": 12,
+              "name": "Utility and pool laundry",
+              "area_m2": 6.9
+            },
+            {
+              "number": 13,
+              "name": "Cloakroom",
+              "area_m2": 4.1
+            }
+          ]
+        },
+        {
+          "title": "First floor",
+          "file": "first-floor.svg",
+          "detail": "first-floor-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Side guest bedroom",
+              "area_m2": 32.7
+            },
+            {
+              "number": 2,
+              "name": "Front guest bedroom",
+              "area_m2": 24.0
+            },
+            {
+              "number": 3,
+              "name": "Garden guest bedroom",
+              "area_m2": 23.8
+            },
+            {
+              "number": 4,
+              "name": "Front principal bedroom",
+              "area_m2": 20.9
+            },
+            {
+              "number": 5,
+              "name": "Bedroom 2",
+              "area_m2": 18.5
+            },
+            {
+              "number": 6,
+              "name": "Side connection and loft stair",
+              "area_m2": 14.1
+            },
+            {
+              "number": 7,
+              "name": "Landing",
+              "area_m2": 15.4
+            },
+            {
+              "number": 8,
+              "name": "Bedroom 3",
+              "area_m2": 13.2
+            },
+            {
+              "number": 9,
+              "name": "Front suite corridor",
+              "area_m2": 12.8
+            },
+            {
+              "number": 10,
+              "name": "Bedroom 4",
+              "area_m2": 12.7
+            },
+            {
+              "number": 11,
+              "name": "Principal study",
+              "area_m2": 12.6
+            },
+            {
+              "number": 12,
+              "name": "Principal walk-through wardrobe",
+              "area_m2": 12.1
+            },
+            {
+              "number": 13,
+              "name": "Upper link",
+              "area_m2": 9.3
+            },
+            {
+              "number": 14,
+              "name": "Bathroom",
+              "area_m2": 8.0
+            },
+            {
+              "number": 15,
+              "name": "Principal bathroom",
+              "area_m2": 6.9
+            },
+            {
+              "number": 16,
+              "name": "Side guest en suite",
+              "area_m2": 5.4
+            },
+            {
+              "number": 17,
+              "name": "Garden guest en suite",
+              "area_m2": 4.4
+            },
+            {
+              "number": 18,
+              "name": "Front guest en suite",
+              "area_m2": 4.4
+            },
+            {
+              "number": 19,
+              "name": "Bedroom 4 en suite",
+              "area_m2": 4.3
+            }
+          ]
+        },
+        {
+          "title": "Loft",
+          "file": "loft.svg",
+          "detail": "loft-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Loft workspace and landing",
+              "area_m2": 4.9
+            },
+            {
+              "number": 2,
+              "name": "Loft workspace",
+              "area_m2": 2.9
+            }
+          ]
+        },
+        {
+          "title": "Cellar",
+          "file": "cellar.svg",
+          "detail": "cellar-detail.svg",
+          "rooms": [
+            {
+              "number": 1,
+              "name": "Cinema",
+              "area_m2": 27.0
+            },
+            {
+              "number": 2,
+              "name": "Cellar plant and store",
+              "area_m2": 20.1
+            },
+            {
+              "number": 3,
+              "name": "Wine bar room",
+              "area_m2": 16.3
+            },
+            {
+              "number": 4,
+              "name": "Cellar corridor",
+              "area_m2": 10.5
+            },
+            {
+              "number": 5,
+              "name": "Cellar north lobby",
+              "area_m2": 7.0
+            },
+            {
+              "number": 6,
+              "name": "Cellar WC",
+              "area_m2": 6.1
+            },
+            {
+              "number": 7,
+              "name": "Cellar stair landing",
+              "area_m2": 1.4
+            }
+          ]
+        },
+        {
+          "title": "Site",
+          "file": "site.svg",
+          "detail": "site-detail.svg",
+          "rooms": []
+        }
+      ],
+      "footprint": {
+        "original_ground_footprint_m2": 181.4,
+        "added_ground_footprint_m2": 137.1
+      },
+      "tourUrl": "../?design=e3",
+      "tourView": "e3-front-principal-bedroom",
+      "checks": {
+        "circulation": {
+          "passed": true,
+          "limitations": "Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance.",
+          "body_width_m": 0.44
+        },
+        "stairs": {
+          "passed": true,
+          "limitations": "Continuous walking up and down the actual navigation ramps and landings. Headroom is measured separately against the native mesh.",
+          "body_width_m": 0.5
+        },
+        "parking": {
+          "passed": true,
+          "limitations": "Concept vehicle tracking of a compact-car body. Does not establish door-opening clearance, gradient, visibility, SUV fit or a surveyed highway design.",
+          "search_margin_m": 0.22,
+          "vehicle_m": [
+            4.4,
+            1.8
+          ]
+        },
+        "headroom": {
+          "groups": {
+            "loft": {
+              "centre_minimum_m": 2.2421,
+              "edge_minimum_m": 1.9816,
+              "all_samples_2m": false,
+              "reduced_loft_geometry": true
+            },
+            "cellar": {
+              "centre_minimum_m": 2.58,
+              "edge_minimum_m": 2.58,
+              "all_samples_2m": true
+            }
+          }
+        }
+      },
+      "groundworks": {
+        "finished_datum_m": 0,
+        "surface": "Existing paved footprint regraded; permeable parking pads",
+        "maximum_cut_from_terrain_m": 0.92,
+        "maximum_fill_from_terrain_m": 0.265,
+        "retaining_segments": 101,
+        "basis": "Concept level forecourt and retaining kerbs. Earthworks quantities, gate/road tie-in, drainage falls and foundation levels require a measured survey; parking tracking is at this proposed datum."
+      }
+    }
+  ]
+}

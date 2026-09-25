@@ -1,0 +1,762 @@
+{
+  "option": "e3",
+  "body_width_m": 0.44,
+  "grid_m": 0.15,
+  "root_positions": {
+    "0": [
+      7,
+      3.9
+    ],
+    "2.8": [
+      7,
+      3.9
+    ],
+    "5.55": [
+      8.9,
+      3.9
+    ],
+    "-2.8": [
+      9.8,
+      -9.3
+    ]
+  },
+  "rooms": [
+    {
+      "floor": 0,
+      "room": "Open-plan family living",
+      "standable": 1270,
+      "accessible": 1270,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Family kitchen",
+      "standable": 555,
+      "accessible": 555,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Dining room",
+      "standable": 303,
+      "accessible": 169,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Drawing room",
+      "standable": 961,
+      "accessible": 960,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Family room",
+      "standable": 350,
+      "accessible": 349,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Cloakroom",
+      "standable": 31,
+      "accessible": 31,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Entrance hall",
+      "standable": 622,
+      "accessible": 622,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Garden dining and living",
+      "standable": 511,
+      "accessible": 511,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Entrance link",
+      "standable": 312,
+      "accessible": 312,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "New double garage",
+      "standable": 682,
+      "accessible": 682,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Front service lobby",
+      "standable": 356,
+      "accessible": 356,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Gym",
+      "standable": 624,
+      "accessible": 622,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 0,
+      "room": "Utility and pool laundry",
+      "standable": 90,
+      "accessible": 90,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": -2.8,
+      "room": "Cinema",
+      "standable": 690,
+      "accessible": 690,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": -2.8,
+      "room": "Wine bar room",
+      "standable": 233,
+      "accessible": 138,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": -2.8,
+      "room": "Cellar corridor",
+      "standable": 313,
+      "accessible": 313,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": -2.8,
+      "room": "Cellar stair landing",
+      "standable": 47,
+      "accessible": 47,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": -2.8,
+      "room": "Cellar plant and store",
+      "standable": 712,
+      "accessible": 712,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": -2.8,
+      "room": "Cellar north lobby",
+      "standable": 246,
+      "accessible": 246,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": -2.8,
+      "room": "Cellar WC",
+      "standable": 136,
+      "accessible": 136,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Bedroom 3",
+      "standable": 149,
+      "accessible": 105,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Side connection and loft stair",
+      "standable": 300,
+      "accessible": 292,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Bedroom 4",
+      "standable": 118,
+      "accessible": 118,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Bedroom 4 en suite",
+      "standable": 45,
+      "accessible": 45,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Bathroom",
+      "standable": 114,
+      "accessible": 114,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Garden guest en suite",
+      "standable": 30,
+      "accessible": 30,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Garden guest bedroom",
+      "standable": 420,
+      "accessible": 420,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Bedroom 2",
+      "standable": 528,
+      "accessible": 528,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Landing",
+      "standable": 453,
+      "accessible": 453,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Side guest en suite",
+      "standable": 118,
+      "accessible": 118,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Side guest bedroom",
+      "standable": 852,
+      "accessible": 852,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Upper link",
+      "standable": 330,
+      "accessible": 330,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Front suite corridor",
+      "standable": 384,
+      "accessible": 384,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Principal study",
+      "standable": 333,
+      "accessible": 333,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Principal walk-through wardrobe",
+      "standable": 216,
+      "accessible": 216,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Principal bathroom",
+      "standable": 190,
+      "accessible": 190,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Front principal bedroom",
+      "standable": 481,
+      "accessible": 481,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Front guest bedroom",
+      "standable": 565,
+      "accessible": 546,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 2.8,
+      "room": "Front guest en suite",
+      "standable": 72,
+      "accessible": 53,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 5.55,
+      "room": "Loft workspace and landing",
+      "standable": 226,
+      "accessible": 226,
+      "access_from": "Shared internal landing",
+      "pass": true
+    },
+    {
+      "floor": 5.55,
+      "room": "Loft workspace",
+      "standable": 54,
+      "accessible": 54,
+      "access_from": "Shared internal landing",
+      "pass": true
+    }
+  ],
+  "views": [
+    {
+      "name": "Entrance Hall",
+      "position": [
+        6.98,
+        4.1,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Dining Room",
+      "position": [
+        7.8,
+        6.2,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Drawing Room",
+      "position": [
+        11.417438963152719,
+        1.7388538429854843,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Family Room",
+      "position": [
+        2.2122610772710996,
+        1.8723325972924534,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Kitchen/Breakfast Room",
+      "position": [
+        2.864546347589754,
+        6.87,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Utility Room",
+      "position": [
+        -1.05,
+        7.62,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Cloakroom",
+      "position": [
+        5.580256939103607,
+        1.2410369253257474,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Open-plan family living",
+      "position": [
+        -1.05,
+        4.35,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Landing",
+      "position": [
+        6.84,
+        4.24,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Garden guest bedroom",
+      "position": [
+        11.64141182771682,
+        6.3427842620932555,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Garden guest en suite",
+      "position": [
+        8.414516111997282,
+        6.799571740052385,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Bedroom 2",
+      "position": [
+        11.988074842817971,
+        2.269318038359872,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Bedroom 3",
+      "position": [
+        4.3,
+        7,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Bedroom 4",
+      "position": [
+        3.6,
+        2.4,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Bedroom 4 en suite",
+      "position": [
+        5.199946393023642,
+        1.3262031220630561,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Side connection and loft stair",
+      "position": [
+        2.8,
+        3.36,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Bathroom",
+      "position": [
+        6.280628118872356,
+        5.806093488968693,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Balcony",
+      "position": [
+        7.216687310391798,
+        9.067971748927947,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Summer House",
+      "position": [
+        15.25999896177807,
+        21.449999319099348,
+        0.572
+      ],
+      "pass": true
+    },
+    {
+      "name": "Front of house",
+      "position": [
+        2,
+        -14,
+        -0.003
+      ],
+      "pass": true
+    },
+    {
+      "name": "Back garden",
+      "position": [
+        3.8,
+        16.5,
+        0.05099999999999997
+      ],
+      "pass": true
+    },
+    {
+      "name": "Garden building",
+      "position": [
+        10.65,
+        21.5,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Rear garden strip",
+      "position": [
+        -13,
+        23.4,
+        -0.533
+      ],
+      "pass": true
+    },
+    {
+      "name": "Entrance gates",
+      "position": [
+        1.2410401344299316,
+        -13.327925872802734,
+        -0.039
+      ],
+      "pass": true
+    },
+    {
+      "name": "Former boiler side annex",
+      "position": [
+        14.557500000000001,
+        4.41,
+        0.278
+      ],
+      "pass": true
+    },
+    {
+      "name": "Outside front gates",
+      "position": [
+        -5.709374036212225,
+        -16.771385522798607,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Loft workspace",
+      "position": [
+        8.7,
+        4.4,
+        5.55
+      ],
+      "pass": true
+    },
+    {
+      "name": "Loft stair",
+      "position": [
+        4.5,
+        4.4,
+        5.55
+      ],
+      "pass": true
+    },
+    {
+      "name": "Side guest bedroom",
+      "position": [
+        -1.2,
+        4.65,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Family kitchen",
+      "position": [
+        3.3,
+        5.35,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Garden dining and living",
+      "position": [
+        -0.4,
+        10.5,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Entrance link",
+      "position": [
+        7.3,
+        -2,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Upper link",
+      "position": [
+        7,
+        -1.5,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Principal study",
+      "position": [
+        8.9,
+        -6.8,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Principal walk-through wardrobe",
+      "position": [
+        8.68,
+        -9.4,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Front principal bedroom",
+      "position": [
+        6.33,
+        -8.7,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Front guest bedroom",
+      "position": [
+        12.7,
+        -8.25,
+        2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Gym",
+      "position": [
+        12,
+        -5.7,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Utility and pool laundry",
+      "position": [
+        4.4,
+        -5,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "New double garage",
+      "position": [
+        8.1,
+        -6.85,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Cellar stair",
+      "position": [
+        9.61,
+        -5.55,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Cinema",
+      "position": [
+        6.6,
+        -10.5,
+        -2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Wine bar room",
+      "position": [
+        6.5,
+        -6.2,
+        -2.8
+      ],
+      "pass": true
+    },
+    {
+      "name": "Pool terrace",
+      "position": [
+        10.65,
+        17,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "name": "Garden fountain",
+      "position": [
+        4.6,
+        19.6,
+        0
+      ],
+      "pass": true
+    }
+  ],
+  "passed": true,
+  "limitations": "Navigation audit of continuous floor-level access; does not establish structural, fire, accessibility or loft headroom compliance."
+}

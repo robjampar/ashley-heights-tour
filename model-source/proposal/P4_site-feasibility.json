@@ -1,0 +1,403 @@
+{
+  "revision": "P4",
+  "coordinate_system": "Existing Blender XY in metres, +Y rear garden, +X east planted boundary",
+  "site_area_m2": 1246.02165046623,
+  "front_wing_bounds_m": [
+    4.93,
+    -20.40606211322894,
+    13.98,
+    -4
+  ],
+  "front_wing_size_m": [
+    9.05,
+    16.40606211322894
+  ],
+  "front_wing_footprint_m2": 148.47486212472194,
+  "new_garage_clear_bounds_m": [
+    5.16,
+    -17.98,
+    11.2,
+    -11.94
+  ],
+  "new_garage_door_bounds_m": [
+    4.8,
+    -17.68,
+    5.3,
+    -12.24
+  ],
+  "rear_wing_bounds_m": [
+    -4.9,
+    9.08,
+    4.5,
+    14.1
+  ],
+  "pool_bounds_m": [
+    6.5,
+    16.0,
+    10.0,
+    24.0
+  ],
+  "pavilion_addition_bounds_m": [
+    11.5,
+    19.59,
+    14.32,
+    23.52
+  ],
+  "fountain": "REMOVED completely per user instruction",
+  "garden_tree_change": {
+    "approximate_current_trunk_m": [
+      7.2,
+      19.4
+    ],
+    "reason": "Inside requested pool footprint",
+    "proposal": "Relocate conceptually to west lawn; feasibility and roots unverified"
+  },
+  "retained_front_tree_trunks_m": [
+    [
+      -6.8,
+      -4
+    ],
+    [
+      15.4,
+      -15.5
+    ],
+    [
+      15.7,
+      -5
+    ]
+  ],
+  "parking_count": {
+    "driveway": 4,
+    "new_double_garage": 2,
+    "old_garage_counted": 0
+  },
+  "bays": [
+    {
+      "id": "N1",
+      "bounds_m": [
+        -5.8,
+        -6,
+        -3.3,
+        -1
+      ],
+      "outside": true,
+      "long_axis_m": 5.0,
+      "width_m": 2.5,
+      "vehicle_heading_radians": 4.71238898038469,
+      "turning_check_direction_changes": 1,
+      "validation": {
+        "samples": 360,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.6943,
+        "minimum_inset_plot_clearance_m": 0.2949
+      },
+      "within_plot": true
+    },
+    {
+      "id": "N2",
+      "bounds_m": [
+        -3,
+        -6,
+        -0.5,
+        -1
+      ],
+      "outside": true,
+      "long_axis_m": 5.0,
+      "width_m": 2.5,
+      "vehicle_heading_radians": 4.71238898038469,
+      "turning_check_direction_changes": 1,
+      "validation": {
+        "samples": 370,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.3047,
+        "minimum_inset_plot_clearance_m": 1.0526
+      },
+      "within_plot": true
+    },
+    {
+      "id": "S1",
+      "bounds_m": [
+        -0.2,
+        -22,
+        2.3,
+        -17
+      ],
+      "outside": true,
+      "long_axis_m": 5.0,
+      "width_m": 2.5,
+      "vehicle_heading_radians": 1.5707963267948966,
+      "turning_check_direction_changes": 1,
+      "validation": {
+        "samples": 220,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.5893,
+        "minimum_inset_plot_clearance_m": 0.8178
+      },
+      "within_plot": true
+    },
+    {
+      "id": "S2",
+      "bounds_m": [
+        2.4,
+        -22,
+        4.9,
+        -17
+      ],
+      "outside": true,
+      "long_axis_m": 5.0,
+      "width_m": 2.5,
+      "vehicle_heading_radians": 1.5707963267948966,
+      "turning_check_direction_changes": 1,
+      "validation": {
+        "samples": 320,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.2709,
+        "minimum_inset_plot_clearance_m": 1.1096
+      },
+      "within_plot": true
+    },
+    {
+      "id": "G1",
+      "bounds_m": [
+        5.65,
+        -17.76,
+        10.65,
+        -15.26
+      ],
+      "outside": false,
+      "long_axis_m": 5.0,
+      "width_m": 2.5,
+      "vehicle_heading_radians": 0,
+      "turning_check_direction_changes": 0,
+      "validation": {
+        "samples": 210,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.209,
+        "minimum_inset_plot_clearance_m": 1.6934
+      },
+      "within_plot": true
+    },
+    {
+      "id": "G2",
+      "bounds_m": [
+        5.65,
+        -14.66,
+        10.65,
+        -12.16
+      ],
+      "outside": false,
+      "long_axis_m": 5.0,
+      "width_m": 2.5,
+      "vehicle_heading_radians": 0,
+      "turning_check_direction_changes": 0,
+      "validation": {
+        "samples": 200,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.3654,
+        "minimum_inset_plot_clearance_m": 1.6934
+      },
+      "within_plot": true
+    }
+  ],
+  "old_garage_access_retained": false,
+  "area_target": {
+    "revision": "P4 footprint, area calculation unchanged from P3",
+    "source_geometry": "output-walkthrough/geometry.json",
+    "area_basis": "Ground-floor envelope includes original garage; original side boiler annex and garden outbuildings excluded. New footprint bounds mean OUTSIDE wall faces. Comparison uses a230mm inward external-wall offset.",
+    "original": {
+      "published_approximate_ground_floor_m2": 166,
+      "model_internal_envelope_m2": 168.1343735526366,
+      "model_external_envelope_m2": 181.43667508650933,
+      "rectangle_only_m2": 175.47950000000003,
+      "centreline_perimeter_m": 57.83610460984041
+    },
+    "new": {
+      "main_wing_outer_bounds_m": [
+        4.93,
+        -20.40606211322894,
+        13.98,
+        -4
+      ],
+      "outer_polygon_m": [
+        [
+          13.98,
+          -20.40606211322894
+        ],
+        [
+          4.93,
+          -20.40606211322894
+        ],
+        [
+          4.93,
+          -4.0
+        ],
+        [
+          5.5,
+          -4.0
+        ],
+        [
+          5.5,
+          -0.115
+        ],
+        [
+          13.98,
+          -0.115
+        ],
+        [
+          13.98,
+          -4.0
+        ]
+      ],
+      "comparison_internal_polygon_m": [
+        [
+          13.75,
+          -20.17606211322894
+        ],
+        [
+          5.16,
+          -20.17606211322894
+        ],
+        [
+          5.16,
+          -4.23
+        ],
+        [
+          5.73,
+          -4.23
+        ],
+        [
+          5.73,
+          -0.34500000000000003
+        ],
+        [
+          13.75,
+          -0.34500000000000003
+        ]
+      ],
+      "main_wing_external_area_m2": 148.47486212472194,
+      "north_join_external_area_m2": 32.9448,
+      "external_area_m2": 181.41966212472192,
+      "comparison_internal_area_m2": 168.13437355263656,
+      "comparison_internal_difference_m2": -2.842170943040401e-14,
+      "external_difference_m2": -0.017012961787401082,
+      "external_wall_thickness_m": 0.23,
+      "minimum_boundary_distance_m": 1.4344708554929275,
+      "within_plot": true,
+      "minimum_south_wall_normal_clearance_m": 1.4344708554929275,
+      "main_wing_depth_m": 16.40606211322894,
+      "main_wing_width_m": 9.05,
+      "north_join_outer_bounds_m": [
+        5.5,
+        -4,
+        13.98,
+        -0.115
+      ]
+    },
+    "connection_accounting": {
+      "overlap_with_original_external_footprint_m2": 0.7094177557867263,
+      "combined_external_increment_m2": 180.71024436893524,
+      "combined_internal_increment_m2": 171.1393721900352,
+      "note": "Isolated comparison envelope matches original area. Joining to the existing house removes the conceptual north separating-wall allowance and encloses local original-bay overlap, so incremental combined-house GIA is different. Report both rather than claiming identical net newly created floor area."
+    },
+    "courtyard": {
+      "nominal_open_area_bounds_m": [
+        0,
+        -4,
+        5.5,
+        0
+      ],
+      "nominal_area_m2": 22,
+      "open_side": "WEST",
+      "parked_car_overlap_m2": 0,
+      "parking_bay_overlap_m2": 0,
+      "note": "Entire nominal courtyard zone is clear of parking. Existing front bay reduces actual usable floor area locally. Keep the gate-to-entry pedestrian corridor clear; root designer owns planting/bench layout.",
+      "hard_landscape_minimum_x_m": 0.3,
+      "vehicle_sweeps": "No sampled vehicle body enters the courtyard. N2 additional 200 mm margin reaches x0.106 near the western edge; keep hard planter/bench edges at x>=0.30."
+    },
+    "north_join": {
+      "storeys": "Full-height central entrance connection, lower east anteroom",
+      "reason": "P4 owner instruction removes central front door, porch and arched landing window. Original bedroom 2 front windows remain above the east link. Pitched-roof layout coordinated separately.",
+      "original_ground_floor_change": "Owner permits removal of the central front facade locally for direct connection; original comparison model is preserved."
+    }
+  },
+  "courtyard": {
+    "nominal_open_area_bounds_m": [
+      0,
+      -4,
+      5.5,
+      0
+    ],
+    "nominal_area_m2": 22,
+    "open_side": "WEST",
+    "parked_car_overlap_m2": 0,
+    "parking_bay_overlap_m2": 0,
+    "note": "Entire nominal courtyard zone is clear of parking. Existing front bay reduces actual usable floor area locally. Keep the gate-to-entry pedestrian corridor clear; root designer owns planting/bench layout.",
+    "hard_landscape_minimum_x_m": 0.3,
+    "vehicle_sweeps": "No sampled vehicle body enters the courtyard. N2 additional 200 mm margin reaches x0.106 near the western edge; keep hard planter/bench edges at x>=0.30."
+  },
+  "front_wing_plot_check": {
+    "within_model_plot": true,
+    "minimum_boundary_distance_m": 1.434,
+    "area_m2": 148.475
+  },
+  "rear_wing_plot_check": {
+    "within_model_plot": true,
+    "minimum_boundary_distance_m": 1.792,
+    "area_m2": 47.188
+  },
+  "pool_plot_check": {
+    "within_model_plot": true,
+    "minimum_boundary_distance_m": 2.557,
+    "area_m2": 28.0
+  },
+  "pavilion_addition_plot_check": {
+    "within_model_plot": true,
+    "minimum_boundary_distance_m": 2.21,
+    "area_m2": 11.083
+  },
+  "parking_option": "A \u2014 northern pair on original garage forecourt",
+  "parking_source": "proposal/P4_A_west_forecourt.json",
+  "parking_path_proof": "proposal/P4_parking-validated.json",
+  "old_garage_access_tradeoff": "The original garage structure and doors remain. N1/N2 use its forecourt, so vehicle access requires moving those cars. It is excluded from the six-space parking count.",
+  "pedestrian_route": {
+    "centreline_m": [
+      [
+        -1.45,
+        -14.88
+      ],
+      [
+        0.4,
+        -13.5
+      ],
+      [
+        2.8,
+        -11.6
+      ],
+      [
+        4.1,
+        -10.6
+      ],
+      [
+        4.25,
+        -8.85
+      ],
+      [
+        4.93,
+        -8.85
+      ]
+    ],
+    "width_m": 1.2,
+    "parked_car_min_centreline_distance_m": 2.659,
+    "clear_of_parked_cars": true,
+    "clear_of_walls_and_trees": true,
+    "inside_model_plot": true,
+    "existing_threshold_paving_width_m": 1.03,
+    "proposed_paving_change": "Widen threshold terrace west edge from x3.90 to x3.65; allow 1.20 m clear pedestrian strip. Route shares the unmarked private driveway with vehicle circulation."
+  },
+  "north_join_outer_bounds_m": [
+    5.5,
+    -4,
+    13.98,
+    -0.115
+  ]
+}

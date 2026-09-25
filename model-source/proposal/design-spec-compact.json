@@ -1,0 +1,924 @@
+{
+  "variant": "compact",
+  "variantLabel": "Proposed",
+  "variantBasis": "Owner (18 September): a second proposal with the new extension about 25% shorter along the front, coming in from the garage end on all three floors; its depth (east-west), the original house and the plot are unchanged; stairs, doors and corridors keep their sizes.",
+  "frontWing": [
+    4.93,
+    -16.306,
+    13.98,
+    -4.0
+  ],
+  "garageBay": {
+    "projection_m": 1.67,
+    "y": [
+      -16.09,
+      -9.79
+    ],
+    "wall_thickness_m": 0.23,
+    "eave_z": 3.0,
+    "ridge_z": 5.199,
+    "pitch_degrees": 34.0,
+    "verge_overhang_m": 0.22,
+    "first_floor_z": 2.8,
+    "gable_window_y": [
+      -13.59,
+      -12.29
+    ],
+    "gable_window_z": [
+      3.0,
+      4.05
+    ],
+    "door_y": [
+      -15.66,
+      -10.22
+    ],
+    "store_window_y": null,
+    "upper_space": "Vaulted window alcove open to the principal suite, as in proposal A",
+    "basis": "Compact variant: the same garage wing at the south end of the shorter wing, 4.1 m further north"
+  },
+  "entranceBay": {
+    "projection_m": 1.67,
+    "y": [
+      -9.4,
+      -5.0
+    ],
+    "glazing_y": [
+      -8.9,
+      -5.5
+    ],
+    "wall_thickness_m": 0.35,
+    "pier_width_m": 0.5,
+    "pier_depth_m": 0.55,
+    "glass_inset_m": 0.5,
+    "eave_z": 5.35,
+    "ridge_z": 6.62,
+    "pitch_degrees": 30.0,
+    "verge_overhang_m": 0.0,
+    "rake_band_m": 0.303,
+    "glazing_head_inset_m": 0.12,
+    "frame_member_m": 0.055,
+    "basis": "Compact variant: the entrance gable is 4.4 m wide (A: 5.36 m) so a 0.39 m recess and a 1.0 m oak band survive beside it on the shorter front Owner (21 September, proposal B): less glass round the entrance - a pair of solid oak doors with solid rendered panels either side; only the gable glass above the door-head transom remains. Owner (22 September): a 0.4 m band of solid rendered wall above the door head before the gable glass starts, and the old stone step inside the entrance gallery goes.",
+    "solid_door": true,
+    "door_head_band_m": 0.4,
+    "remove_original_step": true
+  },
+  "wingDormer": {
+    "bounds": [
+      9.55,
+      -11.7,
+      12.6,
+      -2.929
+    ],
+    "ceiling_z": 7.64,
+    "roof_top_z": 7.86,
+    "basis": "Compact variant: with the lower ridge the loft lives in one long flat-roofed dormer on the east slope, like the existing rear dormer: the studio at its south end, the passage past the loft flight along its north part, its back edge beside the ridge; owner: the dormer ROOF continues north over the loft bridge to the original front wall, and the loft glass simply rises straight above the landing's garden-facing glazing on the same line (x 10.35), floor to dormer ceiling 19 September: moved out 0.5 m with the upper east wall (front at x 12.6, back 95 mm east of the re-centred ridge so the flat roof still tucks under the slope) and its south end kept north of the hip start (y -11.78). Owner (21 September, evening): the flat dormer roof carries on along the ridge over the loft bridge, from the original front wall to the rear dormer, in the same style as the link, so the two dormers read as one flat cap. The link and its extension start on the main dormer's line (x 9.55, just east of the ridge) and tuck under the slope, so the ridge runs unbroken the whole length. Owner (22 September): the original ridge continues through between the passage cap and the rear dormer; the passage's east side is a plain wall with a door into the eaves store. 22 September: the dormer's north end and the link's south end follow the courtyard facade north to y -3.229. 22 September (later): the dormer's north end runs on to the eaves over the courtyard facade, so its flat roof meets the eaves and its north cheek is a straight wall there instead of a 0.3 m strip of pitched slate beyond it.",
+    "link_bounds": [
+      9.55,
+      -2.929,
+      10.35,
+      -0.115
+    ],
+    "link_extension": [
+      9.55,
+      -0.115,
+      10.3,
+      4.075
+    ],
+    "passage_wall": {
+      "door_y": [
+        4.5,
+        5.2
+      ],
+      "basis": "Owner (22 September): the loft passage's east side is a plain clad wall - the rear dormer's east cheek carried on south to the link's glazed face, flush with it (so the cap over the passage is 10.505 wide like the rear dormer) - with a low door at its north end into the eaves store under the retained original hip. The cap over the passage stops at 4.075 where the original south slope meets it, so the original ridge and its two slopes run through unbroken between the two flat dormers. 22 September (later): both store doors move 0.8 m north towards the dormer windows and run full height, stopping 100 mm below the ceiling (the west one follows the slope).",
+      "head_gap_m": 0.1
+    }
+  },
+  "wingLayout": {
+    "utility_store": false,
+    "garage_north_door": 0.655,
+    "store_north_y": -9.905,
+    "east_sep_doors": [
+      "-13.4"
+    ],
+    "east_sep_north_y": -9.905,
+    "workshop_store": false,
+    "wc_south_wall_y": null,
+    "wc": [
+      11.55,
+      -16.0,
+      13.75,
+      -14.53
+    ],
+    "wc_dy": 2.0,
+    "utility": [
+      11.55,
+      -16.0,
+      13.75,
+      -12.6
+    ],
+    "utility_dy": 2.02,
+    "boot_partition_y": -12.55,
+    "utility_wc_partition_y": -14.45,
+    "gym_south_y": -12.5,
+    "gym_west_y": -9.85,
+    "gym_west_partition_y0": -9.905,
+    "gym_west_holes": [
+      [
+        1.1,
+        1.4,
+        0.6,
+        2.4,
+        "window"
+      ],
+      [
+        2.6,
+        1.0,
+        0,
+        2.3,
+        "door"
+      ],
+      [
+        4.4,
+        1.8,
+        0.6,
+        2.4,
+        "window"
+      ]
+    ],
+    "gallery_north_y": -6.77,
+    "reading_alcove": false,
+    "east_ground_windows": [
+      [
+        0.941,
+        1.0,
+        1.2,
+        2.3,
+        "window"
+      ],
+      [
+        5.291,
+        2.0,
+        0.55,
+        2.35,
+        "window"
+      ],
+      [
+        7.701,
+        2.0,
+        0.55,
+        2.35,
+        "window"
+      ]
+    ],
+    "east_upper_windows": [
+      [
+        1.591,
+        1.45,
+        0.85,
+        2.25,
+        "window"
+      ],
+      [
+        4.871,
+        1.6,
+        0.7,
+        2.25,
+        "window"
+      ],
+      [
+        8.201,
+        1.8,
+        0.75,
+        2.25,
+        "window"
+      ]
+    ],
+    "suite_partition_y": -8.7,
+    "bath_partition_y": -12.7,
+    "dressing": [
+      -12.64,
+      -9.36
+    ],
+    "wardrobe_east": [
+      -12.5,
+      -10.5
+    ],
+    "wardrobe_north": [
+      -10.84,
+      -10.26
+    ],
+    "bath_fittings": [
+      -15.9,
+      -13.2
+    ],
+    "basin_y": -14.6,
+    "freestanding_bath": false,
+    "bed_y": -10.5,
+    "sofa_y": -15.2,
+    "suite_view_y": -10.4,
+    "laundry_south_y": -9.2,
+    "linen": false,
+    "library_desk": false,
+    "library_west_x": 7.85,
+    "library_view": [
+      10.5,
+      -5.4
+    ],
+    "gallery_view_y": -7.9,
+    "loft_south_edge": -12.0,
+    "loft_partition_y": -8.3,
+    "loft_gallery_north_y": -6.85,
+    "loft_desk_y": -9.6,
+    "loft_studio_light_y": -10.8,
+    "loft_gallery_light_y": -7.5,
+    "lounge_rooflight_y": [
+      -6.7,
+      -5.4
+    ],
+    "passage_light_first_y": -8.7,
+    "downlights": {
+      "bedroom_y": [
+        -11.0,
+        -14.8
+      ],
+      "bathroom_y": [
+        -13.9,
+        -15.4
+      ],
+      "dressing_y": -11.2,
+      "library_x": [
+        9.5
+      ],
+      "study_y": -4.7,
+      "boot_y": -11.8,
+      "utility_y": -13.5,
+      "wc_y": -15.2
+    },
+    "nav_lights": {
+      "bedroom_y": -12.7,
+      "bathroom_y": -14.5
+    },
+    "battens": {
+      "garage_north_y": -11.4,
+      "garage_south_y": -14.5,
+      "workshop_y": -15.0
+    },
+    "garage_bays_dy": 4.1,
+    "laundry_door_at": 0.55,
+    "laundry_sink_dx": 0.93,
+    "laundry_view": [
+      11.9,
+      -8.3
+    ],
+    "utility_counter": {
+      "center": [
+        13.4,
+        -14.3
+      ],
+      "size": [
+        0.62,
+        3.2
+      ]
+    },
+    "loft_plan": "dormer",
+    "loft_bed": [
+      9.4,
+      -6.4
+    ],
+    "junction_walk_x": [
+      7.45,
+      10.35
+    ],
+    "loft_control": false,
+    "loft_standing": [
+      [
+        7.58,
+        -11.52,
+        12.42,
+        -4.2
+      ],
+      [
+        10.35,
+        -4.2,
+        12.42,
+        -3.029
+      ]
+    ],
+    "loft_studio_polygon": [
+      [
+        7.58,
+        -11.52
+      ],
+      [
+        12.42,
+        -11.52
+      ],
+      [
+        12.42,
+        -3.329
+      ],
+      [
+        10.35,
+        -3.329
+      ],
+      [
+        10.35,
+        -4.0
+      ],
+      [
+        7.58,
+        -4.0
+      ]
+    ],
+    "loft_studio_view": [
+      10.6,
+      -5.0,
+      5.55,
+      -0.15,
+      -1,
+      0
+    ],
+    "loft_passage_view": [
+      8.9,
+      -3.6
+    ],
+    "loft_studio_light": [
+      11.2,
+      -9.8
+    ],
+    "loft_gallery_light": [
+      11.92,
+      -6.5
+    ],
+    "passage_light_x": 9.455,
+    "entrance_view_y": -8.0,
+    "loft_desk": null,
+    "garage_bench": false,
+    "loft_knee_walls": [
+      [
+        [
+          7.52,
+          -11.6
+        ],
+        [
+          7.52,
+          -3.98
+        ]
+      ],
+      [
+        [
+          7.46,
+          -11.6
+        ],
+        [
+          9.6,
+          -11.6
+        ]
+      ]
+    ],
+    "loft_suite": {
+      "plan": "open",
+      "ensuite_side": "south",
+      "lobby_y": -5.35,
+      "entry_door_x": [
+        11.35,
+        12.25
+      ],
+      "ensuite": [
+        7.58,
+        -11.52,
+        12.42,
+        -9.4
+      ],
+      "ensuite_door_x": [
+        11.45,
+        12.25
+      ],
+      "fitted_wardrobe": [
+        9.6,
+        -9.35,
+        11.3,
+        -8.75
+      ],
+      "basis": "Owner (21 September, evening): the suite is entered off the loft landing; the bed is right there as you go in, its head on the landing wall beside the door; the ensuite is across the far (south) end of the dormer with its door at the left-hand end of that wall as you look down the room; a fitted wardrobe stands against the ensuite wall; no walk-in wardrobe; no corridor."
+    },
+    "study": {
+      "west_x": 9.9,
+      "dressing_north_y": -10.3,
+      "desk_y": -7.2,
+      "basis": "Owner (18 September): the first-floor laundry ('utility room') comes out further into the gallery and becomes a study that is part of the bedroom: the bedroom's north-east corner opens into it round both sides and the dressing room gives up its north 0.9 m."
+    },
+    "suite_door_at": 3.9,
+    "bed_pose": [
+      7.57,
+      -14.42,
+      -1.5707963267948966
+    ],
+    "sofa_pose": [
+      7.2,
+      -9.23,
+      0.0
+    ],
+    "suite_view": [
+      6.4,
+      -12.3,
+      2.8,
+      0.55,
+      -0.85,
+      0
+    ],
+    "gym_north_y": -4.169,
+    "gym_view": [
+      11.7,
+      -4.8,
+      0,
+      0.2,
+      -1,
+      0
+    ],
+    "furniture_basis": "Owner (18 September): the bed stands against the bedroom's empty east wall and the sofa takes its old place under the north partition; the gym takes the whole east side up to the north facade so the internal garden's doors open off it.",
+    "gym_west_x": 9.2,
+    "gym_basis": "Owner (18 September): a second internal window the other side of the gym door, the gym's west wall 0.6 m further towards the front (x 10.09), and the garage's door into the house moved 2 m to the right as seen from the hall (west, to x 7.3..8.2) to make room. | Owner (22 September, late): the gym is bigger again - with the garage door moved to the stair head its west wall comes forward to x 9.2 (from 10.09); the north facade opening towards the link now stops at the gym wall and the wall between the gym and the courtyard corner is solid full height (closing the gap beside the internal garden gallery south panel).",
+    "gallery_shower_room": false,
+    "suite_basis": "Owner (21 September): the suite's north partition and door come forward to the entrance-void edge (y -8.70) and that balustrade goes; the gallery shower room is no longer an ensuite - its fittings and gallery door go, its wall to the landing stays, its wall to the study goes, so the suite runs bedroom, sitting area, study and a north-east nook.",
+    "suite_east_door_at": 4.68,
+    "north_upper_windows": [
+      [
+        6.16,
+        1.0,
+        0.85,
+        2.3,
+        "window"
+      ],
+      [
+        7.64,
+        1.0,
+        0.85,
+        2.3,
+        "window"
+      ]
+    ],
+    "north_upper_windows_basis": "Owner (22 September, late): the first window east of the courtyard corner moves 0.12 m east so its frame clears the courtyard upper return / guest bathroom wall. Owner (23 September): a further 0.20 m east (to the right from inside), nearer the other window.",
+    "suite_east_x": 10.35,
+    "principal_suite_basis": "Owner (21 September): the bathroom and the dressing room are bigger - the suite's east partition moves 1 m west (x 10.35) so the strip is 3.4 m wide; the bathroom (3.3 x 3.3 m) has a freestanding bath, walk-in shower, twin basins and the WC in its own compartment with its own basin; the dressing room (3.3 x 2.3 m) has wardrobes on three sides.",
+    "ground_wc": false,
+    "utility_basis": "Owner (21 September): no ground-floor WC - the partition comes out and the whole 2.2 x 3.4 m room is the utility: a 3.2 m counter along the east wall, washer and dryer against the west wall.",
+    "bath_west_x": 8.7,
+    "bath_basis": " Owner (22 September): the principal bathroom is half as big again - its west wall moves out to x 8.7 across the bedroom's south end (interior 4.99 x 3.32 m, 16.6 m2, was 11.1), the dressing room keeps its line at 10.35; the bed moves to the bathroom's new west wall, head east, facing the west windows.",
+    "suite_nook_west_x": 10.41,
+    "suite_nook_basis": "Owner (22 September): the nook's west wall moves across to the loft stair (x 10.41, continuing the courtyard return), so the landing library's east end and the nook either side of the old wall line both become part of the principal suite.",
+    "south_ground_windows": [
+      [
+        3.155,
+        2.4,
+        1.0,
+        2.4,
+        "window"
+      ],
+      [
+        7.65,
+        1.0,
+        1.4,
+        2.35,
+        "window"
+      ]
+    ],
+    "south_windows_basis": "Owner (22 September): a big window (2.4 x 1.4 m, sill 1.0 m) in the garage's south wall - its right-hand side coming in - beside the existing utility window.",
+    "gym_layout": {
+      "treadmills": [
+        [
+          10.32,
+          -5.98
+        ],
+        [
+          10.32,
+          -4.96
+        ]
+      ],
+      "bike": [
+        13.15,
+        -4.85
+      ],
+      "rower": [
+        13.42,
+        -11.2
+      ],
+      "cable": [
+        11.68,
+        -11.1
+      ],
+      "bench": [
+        13.0,
+        -9.0
+      ],
+      "rack": [
+        10.86,
+        -9.4
+      ],
+      "mat": [
+        12.3,
+        -6.8
+      ],
+      "basis": "Owner (22 September): treadmills face west on the door axis so the front doors are in view. Later that day the rower, cable station and bench were rearranged so the partition door, its open leaf and the walk from the entrance through to the utility door stay clear: bike in the north-east corner, rower on the east wall of the south bay, cable station on the garage-store wall, bench and barbell rack under the east window south of the treadmills, dumbbell rack in the south-west corner of the north bay. Night: the stability ball moves out of the way of the internal garden doors to the gym's new north-west corner (9.65, -4.95), clear of the west partition's window and door. Night (review): both treadmills stand side by side right up against the internal window north of the gym's oak door, facing it (fronts 0.12 m off the glass); the mat and ball take their old place on the door axis further in.",
+      "ball": [
+        13.3,
+        -6.35
+      ]
+    },
+    "east_windows_basis": "Owner (22 September): the east external door goes - that elevation is windows only. The gym's south window matches the one beside it (2.0 x 1.8 m, sill 0.55).",
+    "garage_north_door_basis": "Owner (22 September, late): the garage's door into the house moves to the top of the basement stair - x 5.25-6.15 in the garage's north wall, opening from the garage onto the stair-head landing (x 5.16-6.2) beside the first tread; it swings into the garage."
+  },
+  "newWingRoof": {
+    "ridge": 8.05,
+    "eave": 5.35,
+    "pitch_degrees": 29.7,
+    "basis": "Compact variant (owner): ridge at the existing ridge height, 8.05 m, running straight into it; eaves 5.35 m; with the upper east wall on the ground-floor line the span is 9.45 m and the pitch about 29.7 degrees Owner (22 September): the new east slope is not carried over the original house; the retained original south slope and east hip stay there and the loft passage crosses them under its flat cap, its east side a plain wall. (The west slope still continues over the original house to the ridge junction.) Owner (22 September): the west slope over the connector keeps the wing's eaves line (x 4.73, fascia continuous with the wing) instead of stepping back to the link's wall line at x 5.43, so the eaves overhang the west court's edge.",
+    "keep_original_roof_east_of_passage": true,
+    "connector_west_eave_aligned": true
+  },
+  "loftStairX": [
+    9.35,
+    10.31
+  ],
+  "loftStairFootY": -4.6,
+  "loftPassageX": 11.92,
+  "loftNorthX": 8.9,
+  "loftLinkRooflightX": [
+    7.85,
+    8.45
+  ],
+  "sideGarden": {
+    "basis": "Owner (18 September): make use of the strip the shorter wing frees on the right (south) of the house. Chosen over a store outbuilding, a garden room or a carport: side garden only - lawn, planting and the tree run from the gate corner along the whole south boundary up to the garage gable, so the garage looks onto garden instead of resin. A 1 m limestone path follows the gable from the drive and continues up the wing's east wall to the east door; the lawn returns beside it. Bay S1, the gate-to-door pedestrian route and the garage door approach are unchanged.",
+    "lawn_west_x": 2.2,
+    "path_width_m": 1.0,
+    "border_m": 0.6,
+    "east_lawn_x": [
+      15.18,
+      16.1
+    ],
+    "east_hedge_x": 16.7,
+    "east_end_y": -4.3,
+    "trees": [
+      [
+        3.55,
+        -21.9
+      ],
+      [
+        9.2,
+        -21.0
+      ],
+      [
+        14.6,
+        -20.4
+      ]
+    ]
+  },
+  "loftStairRises": "north",
+  "loftStairBasis": "Owner (18 September): the loft flight turns round to rise north in front of the two large garden windows (the landing glazing and the loft glass above it, both on x 10.35), so the loft room keeps no stair void; its top lands on the bridge and the wing loft is reached along the gallery west of the well.",
+  "loftCeiling": 7.64,
+  "rearDormer": [
+    -1.665,
+    4.45,
+    10.42,
+    8.05
+  ],
+  "rearDormerBasis": "Owner (18 September): the garden-facing (rear, longer) dormer drops to the height of the wing's dormer - ceiling 7.64, roof top 7.86 - and, with the chimney removed, runs east over its footprint to 115 mm inside the original ridge end (x 10.62), like the west cheek at the side-wing ridge start. 22 September (planning review): both cheeks move 200 mm in from where the hips start (x -1.865 and 10.62), meeting Residential Extensions SPD para 4.35 ('set back a minimum of 20 centimetres from the eaves and sides'); the loft passage's east wall and the cap over it move with the east cheek.",
+  "removeChimney": true,
+  "variantViews": {
+    "loft-stair": {
+      "position": [
+        8.3,
+        -5.3,
+        2.8
+      ],
+      "direction": [
+        0.5,
+        0.78,
+        0.28
+      ]
+    }
+  },
+  "frontWingUpperEastX": 13.98,
+  "frontWingUpperBasis": "Owner (19 September): the first floor's east wall stands directly on top of the ground-floor wall (x 13.98) instead of 0.5 m inside it as in proposal A; the roof eaves, the east dormer and the rooms on that side all move out with it. Ridge held at 8.05, so the pitch is 29.7 degrees over the 9.45 m span.",
+  "entertainmentBasement": {
+    "outerBounds": [
+      4.93,
+      -16.306,
+      13.98,
+      -4.0
+    ],
+    "fractionOfMainWingFootprint": 1.0,
+    "floorZ": -2.8,
+    "wallThickness": 0.23,
+    "programme": [
+      "Cinema",
+      "Games room",
+      "Wine store"
+    ],
+    "stairVoid": [
+      6.2,
+      -9.785,
+      8.6,
+      -8.845
+    ],
+    "basis": "Owner (19 September): the basement runs under the whole of the new wing, and the wine cellar leaves the side wing and joins the games room, which grows to take it: cinema as before, the long east room with the media wall, pool table and the wine store at its far end, and a wine alcove behind the cinema. The north wall stays on the wing's north facade (y -4.0), 4 m from the original house's south wall and 3.4 m from the drawing-room bay, so nothing comes closer to the existing foundations than the wing itself. 21 September: straight flight along the garage wall; cinema south, wine store east, games room north, AV cupboard behind the screen.",
+    "stair": {
+      "type": "straight",
+      "top_x": 6.2,
+      "wall_y": -9.9,
+      "risers": 13,
+      "riser_m": 0.2154,
+      "going_m": 0.24,
+      "clear_width_m": 0.94,
+      "landing_m": 0.94,
+      "descends": "east",
+      "basis": "Owner (21 September): a single straight flight against the garage wall instead of the dogleg in the middle of the gallery. 13 risers of 215 mm on 240 mm goings (pitch 41.9\u00b0, 2R+G 671 mm), descending east from x 5.30; the slab is cut only over the top ten treads (x 5.30\u20137.70), the last three treads and the landing run under it with 2.0 m headroom. The hall-to-garage door moves to the last metre of that wall (x 9.15\u201310.05). Below, the cinema moves south of the flight (still 5.1 m deep), the wine store beside it, the games room across the north. Owner (22 September): the flight moves 0.9 m forward (east) so there is a 0.9 m landing at the top between the wing's west wall and the first riser (x 5.30-6.20); the slab is cut over x 6.20-8.60. Below, the flight lands at x 9.08 and the cinema door moves to the cinema's east wall (hinged north, swinging in) because the north-wall door would now sit under the lower treads.",
+      "cinema_door": "east"
+    }
+  },
+  "sideWingCellar": false,
+  "dormerWindows": {
+    "wing": {
+      "width": 1.2,
+      "height": 1.2,
+      "sill": 0.75,
+      "centres_y": [
+        -10.6,
+        -8.65,
+        -6.3
+      ],
+      "basis": " Owner (22 September): the middle window moved north (centre -8.65) so the loft ensuite's north wall (y -9.4) no longer bisects it."
+    },
+    "rear": {
+      "width": 1.5,
+      "height": 1.2,
+      "sill": 0.75,
+      "count": 4
+    },
+    "basis": "Owner (21 September): standard casement windows with framed, insulated, clad panels between them instead of the 7.14 m and 11.9 m continuous glazed bands, to bring the cost down; two light the loft bedroom, one the suite corridor, four the rear loft room"
+  },
+  "internalGuards": {
+    "material": "oak",
+    "basis": "Owner (21 September): every internal balustrade - basement void and flights, loft void and flight, arrival gallery and landing library - is oak newels, handrail and spindles instead of frameless glass"
+  },
+  "dormerRooflights": false,
+  "dormerRooflightsBasis": "Owner (21 September): no rooflight in the dormer roof; the dormer windows light the suite. Later the same day: the loft lounge rooflight on the east slope goes too; the central loft link and original loft stair rooflights remain.",
+  "formalRoom": {
+    "partition": "Dining drawing partition",
+    "basis": "Owner (21 September): the wall between the drawing room and the dining room comes out (over a new beam) so the two are one formal dining and lounge; the lounge's doors and everything else stay; a long table runs east-west across the old wall line. The kitchen, garden living and side garden living are the informal kitchen, dining and lounge. The cane settee and bureau that stood against that wall are omitted. Owner (22 September): the east dining display chamfered wall (and its recess, shelves, cornice reliefs) goes too, so the opening between the two ends is wider; the continuous cornice is squared into the corner. The dining writing desk goes (22 September). Owner (22 September): the long table did not fit - an oval table (2.2 x 1.2 m, six chairs) centred in the dining room instead, with the chandelier moved over it; the carved sideboard and the rest of the dining room's furniture go, and the opening between the two ends stays. 22 September (later): the table moves 0.8 m towards the garden doors, clear of the hall doors.",
+    "remove_east_display": true,
+    "remove_writing_desk": true,
+    "oval_table": {
+      "center": [
+        6.99,
+        7.99
+      ],
+      "long_m": 2.2,
+      "short_m": 1.2,
+      "seats": 6
+    },
+    "clear_room_furniture": true
+  },
+  "sideWingEnsuite": {
+    "enabled": true,
+    "basis": "Owner (21 September): the side-wing shower room is the south bedroom's ensuite - door in its south wall (swinging into the ensuite, hinged east), hall door closed, basin moved to the east wall."
+  },
+  "originalBedrooms": {
+    "bedroom3": {
+      "bed": [
+        2.2,
+        6.74,
+        1.5,
+        2.0
+      ],
+      "wardrobe": [
+        0.06,
+        7.0,
+        0.66,
+        8.7
+      ]
+    },
+    "bedroom2": {
+      "bed": [
+        12.8,
+        1.9,
+        1.5,
+        2.0
+      ],
+      "wardrobe": [
+        10.15,
+        3.24,
+        11.7,
+        3.78
+      ]
+    },
+    "bookcases_to_landing": {
+      "dx": -9.95,
+      "dy": 1.895,
+      "obstacle": [
+        0.6,
+        5.315,
+        3.43,
+        5.68
+      ]
+    },
+    "basis": "Owner (21 September): Bedrooms 2 and 3 are furnished as bedrooms (bed, bedsides, wardrobe) instead of the photographed sitting room and TV room; Bedroom 2's bookcases move to the north wall of the former Bedroom 5 landing, one side only; the rest of the shelving, sofa, television and armchair are omitted. Owner (22 September): Bedroom 3's bed 0.6 m further from the wardrobe (centre x 2.2)."
+  },
+  "basementBar": {
+    "enabled": true,
+    "basis": "Owner (21 September): no wall between the wine store and the games room - one bar, club and games room: bar counter with stools in front of the wine racks, dartboard, pool table, media wall and sofa. Owner (22 September): the bar counter is 0.8 m narrower (2.0 m), three stools.",
+    "counter_width_m": 2.0
+  },
+  "office": {
+    "enabled": true,
+    "basis": "Owner (21 September): the original family room is a full office/study - desk facing the bay, office chair, shelving along the kitchen wall, filing cabinet; the CD bookcase stays, the cane chairs go. Owner (22 September): no shelving run along the kitchen wall. Owner (22 September): a fancy office - walnut pedestal desk with a leather top and a banker's lamp, high-back leather chair with the bay behind it, two leather visitor chairs, a walnut credenza with decanters on the kitchen wall, oak dado panelling, pictures, a rug and a floor lamp; the small wooden chair, filing cabinet and printer go.",
+    "shelving": false,
+    "fancy": true
+  },
+  "removeRooflights": [
+    "Loft lounge"
+  ],
+  "sideWingSideDoor": {
+    "y": [
+      1.55,
+      2.45
+    ],
+    "height_m": 2.1,
+    "basis": "Owner (22 September): a side entrance door in the former garage's west wall (the rendered pier south of its window), opening off the west side path into the side garden living; oak, hinged on its south jamb, swinging in."
+  },
+  "courtyard": {
+    "facade_y": -3.029,
+    "west_x": 10.35,
+    "ground_glazing_x": 9.7,
+    "basis": "Owner (22 September): the internal courtyard is slightly smaller - the wing's north wall east of the link comes north one glazing bay (0.971 m, outer face at y -3.029), taking the link's southernmost glazing bay at all three levels with it (the wing's north-east rooms, the eaves and the north-east elevation closure move with it), and the link's northernmost bay beside the original front wall is solid wall instead of glass at all three levels (0.996 m). The courtyard is 2.9 m deep between the link glass and the original front wall. 22 September (later): the link's courtyard glazing is centred in the courtyard opening at all three levels - glass from y -2.53 to -0.61 with about 0.5 m of solid wall at each end, the loft, landing and gallery glazing aligned on the same lines. 22 September (later): at ground level the wall with the garden doors comes back 1.2 m from the courtyard facade (outer face y -4.229), so the courtyard is that much bigger and the first floor and loft above overhang it as a covered loggia. A rendered column carries the overhang's free corner at the link end.",
+    "glazing_y": [
+      -2.53,
+      -0.61
+    ],
+    "ground_recess_m": 1.2,
+    "overhang_column": null,
+    "overhang_column_basis": "Owner (22 September, late): the rendered column under the courtyard overhang's free corner is removed.",
+    "gallery_south_panel_to_corner": true,
+    "gallery_south_panel_basis": "Owner (22 September, night): the internal garden gallery's south panel extends south (to the right, seen from the gallery) to the corner stub by the gym at the wing's north wall, closing the 1.08 m gap between them.",
+    "gallery_panes": 3,
+    "overhang_fascia": true,
+    "gallery_glazing_y": [
+      -3.49,
+      -0.61
+    ],
+    "north_opening_west_x": 5.64,
+    "overhang_basis": "Owner review (23 September): the courtyard overhang's edge is a rendered band flush with the upper wall from the soffit (2.51) to the first floor (2.80), along the courtyard and down the east corner where the ground wall is recessed; the old storey-edge strip on the former wall line is dropped. The ground-floor gallery glazing grows by one pane to its south (the left, seen from the courtyard): three 0.96 m panes, y -3.49 to -0.61. The wing's north ground wall no longer runs 0.4 m past the link glazing into the house (opening from x 5.64)."
+  },
+  "internalGarden": {
+    "basis": "P5 owner request: open-to-sky garden immediately outside the retained original drawing-room bay. Complete bay window, masonry, roof and curtains retained. Former east anteroom no longer enclosed floor area. 22 September: south edge at y -3.029 (see courtyard); the ground-floor divider glass runs between the wing's wall and a solid north bay.",
+    "previousRoomBounds": [
+      10.47,
+      -2.879,
+      13.75,
+      -0.15
+    ],
+    "bounds": [
+      9.815,
+      -3.029,
+      13.98,
+      -0.115
+    ],
+    "glazedBoundaryCenterline": [
+      [
+        9.7,
+        -2.53
+      ],
+      [
+        9.7,
+        -0.61
+      ]
+    ],
+    "bayClearanceReason": "Straight X10.35 glazing would cut the original western angled bay pane; returned boundary clears its shallow roof by approximately65mm and masonry by more.",
+    "newWingDoors": {
+      "jambs": [
+        [
+          10.745,
+          -3.144
+        ],
+        [
+          13.145,
+          -3.144
+        ]
+      ],
+      "width": 2.4,
+      "height": 2.35,
+      "leaves": 2,
+      "swing": "north into garden"
+    },
+    "pathBounds": [
+      11.27,
+      -3.029,
+      12.62,
+      -0.8
+    ],
+    "eastPlantingBounds": [
+      13.35,
+      -2.5,
+      13.89,
+      -0.75
+    ],
+    "formerRoomAreaM2": 12.136,
+    "enclosedAreaComparison": {
+      "basis": "Same230mm inward-offset isolated envelope comparison as P3; conservative fixed allowance for new glazed boundary, not measured net habitable floor area. Main wing and parking unchanged.",
+      "previousM2": 168.13437355263656,
+      "proposedM2": 154.09834855263657,
+      "reductionM2": 14.036024999999995,
+      "newOuterFootprintM2": 167.38363712472193,
+      "outerFootprintReductionM2": 14.036024999999995
+    },
+    "floorPolygon": [
+      [
+        13.98,
+        -3.029
+      ],
+      [
+        9.815,
+        -3.029
+      ],
+      [
+        9.815,
+        -0.115
+      ],
+      [
+        9.89113402116571,
+        -0.115
+      ],
+      [
+        10.493058587284882,
+        -0.35524499387249986
+      ],
+      [
+        10.938559052788456,
+        -0.45000001311302185
+      ],
+      [
+        11.899170401252071,
+        -0.45000001311302185
+      ],
+      [
+        12.34394085529593,
+        -0.35540026250916207
+      ],
+      [
+        12.968561785494297,
+        -0.115
+      ],
+      [
+        13.98,
+        -0.115
+      ]
+    ],
+    "usableGroundFootprintM2": 13.310739505906417,
+    "glazingBasis": "Owner: the gallery glazing runs straight at x 9.7 instead of returning round the bay; the first floor above is unchanged",
+    "glazing_flush": true
+  },
+  "loftHipStore": {
+    "wall_y": -11.6,
+    "door_x": [
+      8.95,
+      9.75
+    ],
+    "door_height_m": 1.8,
+    "store_south_y": -13.0,
+    "basis": "Owner (22 September): the wing dormer's south cheek and the loft's south knee wall become one full-height wall following the roof lining, sectioning off the hip void south of it; a low door at its east end opens off the ensuite into that space as storage."
+  },
+  "hotTub": {
+    "bounds": [
+      11.62,
+      16.16,
+      14.7,
+      18.44
+    ],
+    "basis": "Owner: a double-width 3.4 x 2.3 m unit in place of the 2.3 m square tub; the access stair, timber skirt and pad follow it east. Owner (22 September): the tub is built into the ground as a sunken spa in the pool terrace - water level with the pool's, its own separate basin (floor -0.95, bench seat -0.50), stone coping flush with the paving all round, and the access stair, timber skirt and raised shell omitted. The basin is 3.08 x 2.28 m (the old tub's water area) so its 0.32 m coping sits inside the existing terrace paving.",
+    "sunken": true,
+    "water_z": -0.1,
+    "floor_z": -0.95,
+    "seat_z": -0.5,
+    "coping_m": 0.32,
+    "alignment_basis": "Owner review (23 Sep 2026): the spa moves 0.16 m north so its coping's outer edge lines up with the pool coping (y 15.84); its paving pad now matches the pool terrace's south edge and the tub's north coping."
+  },
+  "dormerFinish": {
+    "cladding": "white",
+    "basis": "Owner (22 September): the dormers are white - cheeks, front panels, sills and heads in render like the rest of the house, with the window frames still black and the flat roof membrane dark."
+  },
+  "roofTerrace": {
+    "privacy_screens": [
+      {
+        "edge": "west",
+        "height_m": 1.8,
+        "finish": "opal laminated glass in bronze-black posts",
+        "basis": "Owner (22 September, planning review): a privacy screen on the terrace edge facing No 3 so the deck cannot overlook the neighbour garden (risk register R07)."
+      }
+    ]
+  },
+  "northUpperFacadeEndPier": false,
+  "oldFrontGardenGable": false,
+  "removals_basis": "Owner (22 September, late): the pier at the east end of the north upper facade opening and the floating 'old front garden gable' wall head above the original front eaves are removed.",
+  "review_22_sep_basis": "Owner-requested fit review (22 Sep 2026, night), found by scripts/audit_proposal_fit.py and checked in the tour: utility wall cupboards no longer hang in front of the utility window; the dressing room's east window moves 0.12 m south clear of its north partition; the loft suite and ensuite doors move 0.10 m west so they no longer finish in a 7 cm stub against the east wall; the rear garden glazing starts at the west return's face instead of inside it; the ground-floor east wall stops at the recessed courtyard face; the internal garden gallery glazing has three panes.",
+  "sideWingFrontSetback_m": 0.9
+}

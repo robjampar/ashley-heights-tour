@@ -1,0 +1,30 @@
+{
+  "code": "E2",
+  "name": "Garden courtyard",
+  "group": "Complete redesign",
+  "summary": "Keep the original front; move the principal suite into a side wing and arrange leisure rooms beside a garden courtyard.",
+  "bedrooms": 7,
+  "ensuites": 5,
+  "retained": "Original front, entrance, main stair and four larger original first-floor bedrooms; main roof ridge and chimney.",
+  "main_changes": [
+    "Side principal suite with study, walk-through dressing and bathroom",
+    "Low garden gym and cinema wing",
+    "Ground guest suite; one loft guest room and workspace",
+    "Kitchen and former garage become open-plan family living",
+    "Detached double garage; four outside spaces; pool"
+  ],
+  "compromise": "More side and rear building, with neighbour and tree constraints to resolve.",
+  "planning": "Retaining the front reduces one concern; the longer side wing and garden leisure building need a careful neighbour-impact assessment.",
+  "status": "Concept under development; dimensions from reconstructed model",
+  "internalGuards": {
+    "material": "oak"
+  },
+  "loftFloor": 5.55,
+  "loftCeiling": 7.65,
+  "rearDormer": [
+    4.45,
+    4.8,
+    9.6,
+    8.0
+  ]
+}

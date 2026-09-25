@@ -1,0 +1,47 @@
+{
+  "variantLabel": "Proposed (planning application)",
+  "planningScope": true,
+  "externalWallFinish": "Red-brown facing brick to match the existing house in colour, texture, bond and mortar",
+  "sideRearDoor": {
+    "width_m": 4.95,
+    "height_m": 2.25,
+    "leaf_height_m": 2.2,
+    "leaves": 4,
+    "basis": "Owner, 24 Sep 2026: four glazed leaves across the full width of the side extension, no pier either side"
+  },
+  "sideRearUpperWindow": {
+    "width_m": 2.4,
+    "sill_m": 0.8,
+    "head_m": 2.25
+  },
+  "roofFinish": "Weathered dark brown-grey roof tiles to match the existing house in material, colour, profile, size and coursing",
+  "dormerFinish": {
+    "cladding": "tiles_matching_existing_roof",
+    "description": "Tile-hung dormer cheeks and front panels to match the existing weathered dark brown-grey roof tiles"
+  },
+  "roofTileAppearance": {
+    "reference_image": "proposal/reference/roof-tile-colour-reference.png",
+    "reference_sha256": "f8608d1fcd92718b4336eafa054118eed6494b4e79e444789d4f2194a48a6e40",
+    "base_linear_rgb": [
+      0.266,
+      0.231,
+      0.198
+    ],
+    "tile_dark_linear_rgb": [
+      0.212,
+      0.181,
+      0.153
+    ],
+    "tile_light_linear_rgb": [
+      0.347,
+      0.305,
+      0.262
+    ],
+    "joint_linear_rgb": [
+      0.105,
+      0.09,
+      0.075
+    ]
+  },
+  "internalWallFinish": "White painted plaster to all internal wall faces; no exposed brick internally"
+}

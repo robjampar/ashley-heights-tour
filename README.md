@@ -99,4 +99,13 @@ In either proposal, **Settings → Exterior finishes** switches the house and ex
 
 Current checkpoint: 25 September 2026. Both proposal models include the latest site levels, roof junctions and exterior finishes. The planning scheme keeps the existing garden buildings/layout; the full proposal includes its garden and leisure additions.
 
-`model/` contains the static viewer, three GLBs, their navigation data and content-hashed JavaScript/CSS. GitHub Pages serves it from the same `main` branch. Native Blender/SketchUp projects and source plans are maintained locally and are not included here. Geometry is a photo/plan reconstruction; unmeasured details remain estimates.
+`model/` contains the static viewer, nine GLBs, their navigation data and content-hashed JavaScript/CSS. GitHub Pages serves it from the same `main` branch. Large native Blender/SketchUp projects remain local. Geometry is a photo/plan reconstruction; unmeasured details remain estimates.
+
+
+## Six additional design options
+
+The [six-option review](https://robjampar.github.io/ashley-heights-tour/model/redesigns/) compares three internal layouts within Proposed (I1 Garden kitchen, I2 Social east, I3 Garden principal) and three complete alternatives starting from the original house (E1 Retained front, E2 Garden courtyard, E3 Short forecourt wing). Each has a separate tour, floor/site plans, approximate room schedule, model images and a downloadable 36-page drawing pack. The three current designs remain available.
+
+Every option keeps seven bedrooms, most en suite, principal study/dressing/bathroom, open-plan family space, gym, cinema, wine bar, pool, double garage and four outside parking positions. The review explains compromises, including E1's tight retained garage and E3's greater front/basement intervention. All six support house-only wall and roof finish previews with tiled dormers. These are concept options, not surveyed application or construction drawings and not a guarantee of planning permission.
+
+The curated [editable source snapshot](model-source/) includes Blender scripts, specifications, browser code and audit evidence. Required large local baselines are identified by checksum in `model-source/source-manifest.json`. See `model-source/WORKSPACE-README.md` for build instructions and measured speed improvements. Account/session records and credentials are excluded.

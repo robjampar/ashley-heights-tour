@@ -1,0 +1,27 @@
+{
+  "name": "walkthrough",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:routes": "node tests/circulation.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:easter": "node tests/easter.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@dgreenheck/ez-tree": "^1.1.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "meshoptimizer": "0.18.1",
+    "playwright": "1.63.0"
+  },
+  "private": true
+}

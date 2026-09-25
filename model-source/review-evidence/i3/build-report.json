@@ -1,0 +1,32 @@
+{
+  "option": "i3",
+  "inputs": {
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "a0a99af60e725b8f76bb3c68d323706125911ef88092d1a41d0ee86b0b5d1b74",
+    "output-proposed-compact/navigation.json": "a7aab138beb832170a62eb342bf774e3a8991e47a4f90c70c1665b22a907c8d6",
+    "output-proposed-compact/geometry.json": "0121ff49b184485d2bf69c284c6784a1f8f8190d03aa37dabffff98b53289e88",
+    "proposal/redesigns/i3.json": "05ad314d60b4794f90ecb46244fcc44db159eb9514e1ba7f3f0aef02be09a4e0",
+    "scripts/build_redesign.py": "1ec785e04111f5a999c955621e5e52695a4a35592b103595b7a46f1217ba252b",
+    "scripts/redesign_layouts.py": "000c32a3c8af4b469806d3a96891f6ac5527c2115244e359aedb5d87fa8ab310",
+    "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+    "scripts/build_extension_proposal.py": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
+    "scripts/proposal_helpers.py": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
+    "revisions/redesigns-2026-09-25/original-object-index.json": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595"
+  },
+  "native": "output-redesign-i3/Ashley Heights \u2014 I3 Garden principal.blend",
+  "objects": 13632,
+  "new_rooms": 2,
+  "alterations": 806,
+  "original_preserved": {
+    "output-walkthrough/Ashley Heights.blend": true,
+    "output-walkthrough/Ashley Heights.glb": true,
+    "output-walkthrough/geometry.json": true,
+    "walkthrough/public/house.glb": true,
+    "walkthrough/public/navigation.json": true
+  },
+  "outputs": {
+    "output-redesign-i3/Ashley Heights \u2014 I3 Garden principal.blend": "0545b394e54ee634c904d3a02a60e79c3670bf14f220f8e7e444d21a3f10878a",
+    "output-redesign-i3/redesign-i3.glb": "503c300b98a40472477f9907e9b41862748c783c4862cfe6d0e1c605c677110b",
+    "output-redesign-i3/navigation.json": "5a2c0ba9ae3ac4e22c2ae7de98233b594bfb3b21376c97b73d758dd3c0b659f0",
+    "output-redesign-i3/geometry.json": "c1bfdb25f438e9367a1227fbce737e84cd49c422d91e6eca415448477b0d371b"
+  }
+}

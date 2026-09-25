@@ -1,0 +1,22 @@
+import test from 'node:test';import assert from 'node:assert/strict';import * as THREE from 'three';
+import {CombatState,WEAPONS,waveSpec} from '../src/combat-state.js';import {combatOccluders} from '../src/combat-occlusion.js';
+test('bow charge consumes one arrow, empty weapons cannot fire, supplies recover',()=>{const s=new CombatState();assert.equal(s.shoot(),null);s.acquire('bow');s.firing=true;s.tick(1.1);assert.equal(s.charge,1);assert.equal(s.shoot().charge,1);assert.equal(s.inventory.bow.reserve,17);assert.equal(s.shoot(),null);s.inventory.bow.reserve=0;s.tick(1);assert.equal(s.shoot(),null);s.supply();assert.equal(s.inventory.bow.reserve,8);});
+test('gun magazine, timed reload, switching cancels reload without losing reserve',()=>{const s=new CombatState();s.acquire('pistol');s.inventory.pistol.loaded=0;assert.equal(s.shoot(),null);assert(s.reloading>0);s.tick(1);assert.equal(s.inventory.pistol.loaded,0);s.tick(.5);assert.equal(s.inventory.pistol.loaded,12);assert.equal(s.inventory.pistol.reserve,36);s.acquire('bow');s.switch('pistol');s.inventory.pistol.loaded=3;s.reload();s.switch('bow');s.tick(3);assert.equal(s.inventory.pistol.loaded,3);assert.equal(s.inventory.pistol.reserve,36);});
+for(const id of ['pistol','shotgun','carbine'])test(`${id} automatically reloads immediately after its last round, at the normal speed`,()=>{
+ const s=new CombatState();s.acquire(id);const a=s.inventory[id],w=WEAPONS[id];a.loaded=1;a.reserve=w.magazine+3;s.firing=true;
+ const shot=s.shoot();assert.equal(shot.id,id);assert.equal(a.loaded,0);assert.equal(a.reserve,w.magazine+3);assert.equal(s.reloading,w.reload);assert.equal(s.firing,false);
+ assert.equal(s.shoot(),null);s.tick(w.reload-.001);assert.equal(a.loaded,0);assert(s.reloading>0);assert.equal(s.shoot(),null);
+ s.tick(.002);assert.equal(s.reloading,0);assert.equal(a.loaded,w.magazine);assert.equal(a.reserve,3);assert.equal(s.shoot().id,id);assert.equal(a.loaded,w.magazine-1);
+});
+test('automatic reload conserves a partial reserve and stays idle when ammunition is exhausted',()=>{
+ const s=new CombatState();s.acquire('shotgun');const a=s.inventory.shotgun;a.loaded=1;a.reserve=2;
+ assert(s.shoot());s.tick(2.2);assert.deepEqual(a,{loaded:2,reserve:0});assert(s.shoot());s.tick(1);assert(s.shoot());assert.deepEqual(a,{loaded:0,reserve:0});assert.equal(s.reloading,0);s.tick(3);assert.equal(s.shoot(),null);assert.equal(s.reloading,0);
+});
+test('switching away cancels an automatic reload without moving ammunition, and bows never reload',()=>{
+ const s=new CombatState();s.acquire('bow');s.acquire('pistol');s.inventory.pistol.loaded=1;assert(s.shoot());assert(s.reloading>0);const reserve=s.inventory.pistol.reserve;s.switch('bow');s.tick(3);
+ assert.deepEqual(s.inventory.pistol,{loaded:0,reserve});s.inventory.bow.reserve=1;s.charge=1;assert.equal(s.shoot().charge,1);assert.equal(s.inventory.bow.reserve,0);assert.equal(s.reloading,0);s.tick(3);assert.equal(s.shoot(),null);assert.equal(s.reloading,0);
+});
+test('successive waves, recovery rewards, headshots and zero-health end',()=>{const s=new CombatState();const first=s.nextWave();assert.equal(first.total,6);s.hurt(45);s.kill(true);s.finishWave();assert.equal(s.health,67);assert.equal(s.phase,'rest');assert.equal(s.score,250);assert.equal(s.nextWave().total,8);assert(waveSpec(3).total>waveSpec(2).total);assert(s.hurt(100));assert.equal(s.health,0);s.reset();assert.equal(s.health,100);assert.equal(s.wave,0);});
+test('combat rays stop at walls, above door heads and between floors, pass real door aperture',()=>{const data={levelHeight:2.8,walls:[{a:[0,0],b:[5,0],floor:0,height_m:2.6,thickness_m:.2,openings:[[2.5,1,0,2.1]]}],segments:[],obstacles:[],surfaces:[{polygon:[[0,-3],[5,-3],[5,3],[0,3]],z:2.8}]};const objects=combatOccluders(data);const cast=(x,z)=>new THREE.Raycaster(new THREE.Vector3(x,z,2),new THREE.Vector3(0,0,-1),0,4).intersectObjects(objects).length;assert(cast(1,1)>0);assert.equal(cast(2.5,1),0);assert(cast(2.5,2.4)>0);assert(new THREE.Raycaster(new THREE.Vector3(2,1,0),new THREE.Vector3(0,1,0),0,3).intersectObjects(objects).length>0);});
+
+test('an empty equipped gun starts reloading automatically after supplies arrive or switching back',()=>{const s=new CombatState();s.acquire('pistol');s.inventory.pistol.loaded=0;s.inventory.pistol.reserve=0;s.tick(.1);assert.equal(s.reloading,0);s.supply();s.tick(.1);assert(s.reloading>0);s.acquire('bow');s.tick(3);s.switch('pistol');s.tick(.1);assert(s.reloading>0);s.tick(2);assert.equal(s.inventory.pistol.loaded,12);});

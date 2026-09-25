@@ -1,0 +1,46 @@
+{
+  "option": "e2",
+  "inputs": {
+    "output-walkthrough/Ashley Heights.blend": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
+    "walkthrough/public/navigation.json": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf",
+    "output-walkthrough/geometry.json": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
+    "proposal/redesigns/e2.json": "68c199ce0edb5aa43648b18cb1df6e4000985c234d9dc72ad9758b5aa3cd2654",
+    "scripts/build_redesign.py": "7b7bb6a78717c30ce72ef5dccb98a851a46f1bc3313ef32b09fa5ea3fbb457a3",
+    "scripts/redesign_layouts.py": "09e64d7a608a3e540d33f1fbbce5ba4482f050b2abafd772bd90f6316a0a3d39",
+    "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+    "scripts/build_extension_proposal.py": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
+    "scripts/proposal_helpers.py": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
+    "revisions/redesigns-2026-09-25/original-object-index.json": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595",
+    "scripts/redesign_e3.py": "365a7b9ee3e09d12745be0bf3a9ec4211c3c3201291f627543661523c882eae1",
+    "scripts/redesign_roof_join.py": "324840661fa4696e2c53d4835c3a2a1e3b053e8e39db0f8c8eda4a6e66040e09",
+    "scripts/redesign_levels.py": "098ec995bf4f8e8d7612a21b5fb07862e0c3c356942087a2b917d104a6a644da",
+    "proposal/redesigns/original-drive-outline.json": "9ce30d7696fa0f76c0801ae11d514f7807d32397e38cee0cf45814c248d7a175",
+    "scripts/redesign_external.py": "6fd2e935c573a15138c090264f8ffdd2e05eabf0c07f765e956af94a0353d95e",
+    "scripts/redesign_site.py": "31b52c824421a16877fd8ec97db9d00946f9df854a6798620cdd3c86c33e75fb",
+    "scripts/redesign_e2.py": "bdd7e40010f412a15ef4f139fad23c235fca48b8a9866c8c091afb79ce234cf3",
+    "scripts/redesign_appearance.py": "d34679ef1f3ca7ec7597f5504034c6c2f4df1ce811cb3a5723a13a98e20135d2",
+    "scripts/exterior_exposure.py": "943c00a6c0d92df0fb48b7b0649d33f74bcaeb15952722cc6abcb85e7de94284",
+    "scripts/proposal_roofs.py": "e81b76b3db044e0ef8b63ad4524bd660e46ae1dbabadc3d6bce5116ff12b241c",
+    "scripts/proposal_loft.py": "3f4029e5c7b12b3bde1d182fc16fdecae51c57f6b91d53a3a7110b1cc30a7104",
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "a0a99af60e725b8f76bb3c68d323706125911ef88092d1a41d0ee86b0b5d1b74",
+    "output-proposed-compact/navigation.json": "a7aab138beb832170a62eb342bf774e3a8991e47a4f90c70c1665b22a907c8d6",
+    "revisions/redesigns-2026-09-25/compact-object-index.json": "e1dfce96af982c5d548da216e51aa03f611b707dd091e4a8703917eab7bcbad5"
+  },
+  "native": "output-redesign-e2/Ashley Heights \u2014 E2 Garden courtyard.blend",
+  "objects": 9477,
+  "new_rooms": 16,
+  "alterations": 3017,
+  "original_preserved": {
+    "output-walkthrough/Ashley Heights.blend": true,
+    "output-walkthrough/Ashley Heights.glb": true,
+    "output-walkthrough/geometry.json": true,
+    "walkthrough/public/house.glb": true,
+    "walkthrough/public/navigation.json": true
+  },
+  "outputs": {
+    "output-redesign-e2/Ashley Heights \u2014 E2 Garden courtyard.blend": "ba510dae738e44a7a7a34dcd8d96e4d92c5ab2118536dcc6ac9cd7fa4d12b420",
+    "output-redesign-e2/redesign-e2.glb": "ee8b5abe4ae48217fbe0921cc055e0a6988cd3995541b66896f147d8e7c3ab82",
+    "output-redesign-e2/navigation.json": "d95d388ee615129715ab96115408b18869cef61ab6840fe80351ff9eb27ed9d7",
+    "output-redesign-e2/geometry.json": "5df2188668eeb29d1e2a71ef7dc2771aa4a52bb786649d509c45f321bf9d05f9"
+  }
+}

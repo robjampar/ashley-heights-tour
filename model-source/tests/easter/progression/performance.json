@@ -1,0 +1,46 @@
+[
+  {
+    "mobile": false,
+    "alive": 12,
+    "medianMs": 16.700000047683716,
+    "p95Ms": 24.899999856948853,
+    "lighting": {
+      "toneMapping": "AgX",
+      "exposure": 1.08,
+      "sky": "precomputed analytic daylight",
+      "skyCubeSize": 256,
+      "localBounceLights": 2,
+      "castShadows": true,
+      "ambientOcclusion": "off",
+      "antialiasing": "FXAA",
+      "environmentReflections": true,
+      "shadowMapSize": 2048,
+      "touchDevice": false,
+      "actionMode": true
+    },
+    "errors": [],
+    "limitation": "Browser on this Mac; not physical phone hardware."
+  },
+  {
+    "mobile": true,
+    "alive": 7,
+    "medianMs": 16.699999809265137,
+    "p95Ms": 18.40000009536743,
+    "lighting": {
+      "toneMapping": "AgX",
+      "exposure": 1.08,
+      "sky": "precomputed analytic daylight",
+      "skyCubeSize": 128,
+      "localBounceLights": 2,
+      "castShadows": true,
+      "ambientOcclusion": "off",
+      "antialiasing": "FXAA",
+      "environmentReflections": true,
+      "shadowMapSize": 2048,
+      "touchDevice": true,
+      "actionMode": true
+    },
+    "errors": [],
+    "limitation": "Browser on this Mac; not physical phone hardware."
+  }
+]

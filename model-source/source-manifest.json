@@ -1,0 +1,1819 @@
+{
+  "files": {
+    "WORKSPACE-README.md": {
+      "source": "README.md",
+      "sha256": "3444faa6db34528dda38231e1df59363d974a79476d50defd24d8b1a54c02cbf",
+      "bytes": 9655
+    },
+    "proposal/P4_parking-validated.json": {
+      "source": "proposal/P4_parking-validated.json",
+      "sha256": "592d2c8cfdeace5f7d7a3bf1fc7ad420a9b8f08db565c2ada56cbc6a29655b13",
+      "bytes": 29147
+    },
+    "proposal/P4_site-feasibility.json": {
+      "source": "proposal/P4_site-feasibility.json",
+      "sha256": "3e4516ebf09a91ca8ab74f39e40c3c10ff0a671c78b5992f66e51c807bd17ccc",
+      "bytes": 10628
+    },
+    "proposal/P5_internal-garden-area.json": {
+      "source": "proposal/P5_internal-garden-area.json",
+      "sha256": "f821a2319d3a43633dc57f437c01b45a1c43496417fe022aa09e86245d458c95",
+      "bytes": 2057
+    },
+    "proposal/design-spec-compact.json": {
+      "source": "proposal/design-spec-compact.json",
+      "sha256": "ea9c3b784b966ff5329ff44ba58c6440a02a7ea8e0d835cca0fa0b3fdee4013a",
+      "bytes": 35512
+    },
+    "proposal/design-spec-planning.json": {
+      "source": "proposal/design-spec-planning.json",
+      "sha256": "02f239fe2eba7d974312c5b34039f67270684d59bd39275869a3d500ca471d85",
+      "bytes": 1434
+    },
+    "proposal/design-spec.json": {
+      "source": "proposal/design-spec.json",
+      "sha256": "e24aed14d4bac81eb394340556e6c3739a2274697a826096e9e9223ff5fa0708",
+      "bytes": 10930
+    },
+    "proposal/neighbours/site-trees.json": {
+      "source": "proposal/neighbours/site-trees.json",
+      "sha256": "b097e78982fd155578b55e78224ea174ee3c5d9503fd54c9f2bcac4f44a2fc9e",
+      "bytes": 2981
+    },
+    "proposal/original-preservation.json": {
+      "source": "proposal/original-preservation.json",
+      "sha256": "9971c88ecd0e6fe59cda187c0a308604d94c1e3b42e29c36e77c74964dee2e43",
+      "bytes": 678
+    },
+    "proposal/redesigns/CONCEPTS.md": {
+      "source": "proposal/redesigns/CONCEPTS.md",
+      "sha256": "18aefa724f21ce9eda36ff0c3c7dabd8ad016c202c1448c46b56a222fb65f2f8",
+      "bytes": 4657
+    },
+    "proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md": {
+      "source": "proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md",
+      "sha256": "bc014c2955f5945b99aebd619685c1a97095ceecd633cf1af11328e6001c16dd",
+      "bytes": 6964
+    },
+    "proposal/redesigns/e1.json": {
+      "source": "proposal/redesigns/e1.json",
+      "sha256": "1a8af3d78cc8889d7ceb415186aa35a406b0baafa45bfed637ab0d64621456da",
+      "bytes": 1291
+    },
+    "proposal/redesigns/e2.json": {
+      "source": "proposal/redesigns/e2.json",
+      "sha256": "68c199ce0edb5aa43648b18cb1df6e4000985c234d9dc72ad9758b5aa3cd2654",
+      "bytes": 1177
+    },
+    "proposal/redesigns/e3.json": {
+      "source": "proposal/redesigns/e3.json",
+      "sha256": "5107cfe16987cf4fb9ecc4044bf6d644c1527164b92cde469004abd00ed9e673",
+      "bytes": 1164
+    },
+    "proposal/redesigns/i1.json": {
+      "source": "proposal/redesigns/i1.json",
+      "sha256": "bb3c83488ffd1720e03a47e911535376a8237e34bf77769d6d68c09137f07f2c",
+      "bytes": 881
+    },
+    "proposal/redesigns/i2.json": {
+      "source": "proposal/redesigns/i2.json",
+      "sha256": "fd6fa5fc1e0b0847e700e7e37ef4aab44fbc6432885d17f771db43fdb26cc55d",
+      "bytes": 1001
+    },
+    "proposal/redesigns/i3.json": {
+      "source": "proposal/redesigns/i3.json",
+      "sha256": "05ad314d60b4794f90ecb46244fcc44db159eb9514e1ba7f3f0aef02be09a4e0",
+      "bytes": 956
+    },
+    "proposal/redesigns/original-drive-outline.json": {
+      "source": "proposal/redesigns/original-drive-outline.json",
+      "sha256": "9ce30d7696fa0f76c0801ae11d514f7807d32397e38cee0cf45814c248d7a175",
+      "bytes": 296
+    },
+    "proposal/redesigns/research/RESEARCH.md": {
+      "source": "proposal/redesigns/research/RESEARCH.md",
+      "sha256": "97254ac0b6cd34c97900f3cfe0ad57fa0ee5b02ea6e5b98d108bd7716226a30c",
+      "bytes": 4534
+    },
+    "proposal/redesigns/review-notes.json": {
+      "source": "proposal/redesigns/review-notes.json",
+      "sha256": "40972eb2ba066f9d04e117ee37ddee2c0a764d7b44ee52cea2f97aa29147484a",
+      "bytes": 8933
+    },
+    "proposal/reference/roof-tile-colour-reference.png": {
+      "source": "proposal/reference/roof-tile-colour-reference.png",
+      "sha256": "f8608d1fcd92718b4336eafa054118eed6494b4e79e444789d4f2194a48a6e40",
+      "bytes": 31148
+    },
+    "proposal/site-terrain.json": {
+      "source": "proposal/site-terrain.json",
+      "sha256": "870de1bd489c140c91c5fd001b8c793e16c55bc57ace34f6be1e938d2c2752a2",
+      "bytes": 585288
+    },
+    "revisions/redesigns-2026-09-25/compact-object-index.json": {
+      "source": "revisions/redesigns-2026-09-25/compact-object-index.json",
+      "sha256": "e1dfce96af982c5d548da216e51aa03f611b707dd091e4a8703917eab7bcbad5",
+      "bytes": 3538037
+    },
+    "revisions/redesigns-2026-09-25/original-object-index.json": {
+      "source": "revisions/redesigns-2026-09-25/original-object-index.json",
+      "sha256": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595",
+      "bytes": 2372750
+    },
+    "scripts/align_outbuilding.py": {
+      "source": "scripts/align_outbuilding.py",
+      "sha256": "74542e24b0be40e490d9f38c246c2670215ceccc71a0d1673999c79a3439630e",
+      "bytes": 1296
+    },
+    "scripts/apply_detail_pass_v2.py": {
+      "source": "scripts/apply_detail_pass_v2.py",
+      "sha256": "993870f488f6993a79df094f5f4c5d0d7406c241e275d74f62ad4910ee72a29a",
+      "bytes": 2847
+    },
+    "scripts/apply_gate_finial_revision.py": {
+      "source": "scripts/apply_gate_finial_revision.py",
+      "sha256": "679443a54256804bcde438e22279d6a3982346aa7a9fa10874f64c201831b4fb",
+      "bytes": 2327
+    },
+    "scripts/apply_selected_door_revision.py": {
+      "source": "scripts/apply_selected_door_revision.py",
+      "sha256": "1817d1bf25b8bfe37bc362062f960c0ae5af10f7d99c3006cfb95d5cfab56d9e",
+      "bytes": 3635
+    },
+    "scripts/apply_site_revision.py": {
+      "source": "scripts/apply_site_revision.py",
+      "sha256": "9471dd0a9bdfe78e6a39243bc1b67645ddae20a2c43bcd743a20224028853e26",
+      "bytes": 2173
+    },
+    "scripts/apply_site_terrain.py": {
+      "source": "scripts/apply_site_terrain.py",
+      "sha256": "705a47882991cdb501384022e2fc54355b263d35ce51e82465c900aa6cfe6667",
+      "bytes": 10335
+    },
+    "scripts/area_geometry.py": {
+      "source": "scripts/area_geometry.py",
+      "sha256": "485c8087034be861c25687774e079f078d3ba0030ac63634a58470e7a21e1640",
+      "bytes": 1981
+    },
+    "scripts/audit_bedroom4_ceiling.py": {
+      "source": "scripts/audit_bedroom4_ceiling.py",
+      "sha256": "8986e6c837013bb671ab480800c21564b148a85ff84e2e4aae8c93426519d995",
+      "bytes": 6663
+    },
+    "scripts/audit_circulation.py": {
+      "source": "scripts/audit_circulation.py",
+      "sha256": "e92cf4d7cd72f50b0bc66841e99d14417d20c8f444a075ae15620a8fe1df80e1",
+      "bytes": 2799
+    },
+    "scripts/audit_depth.py": {
+      "source": "scripts/audit_depth.py",
+      "sha256": "6630be05a54074f5c7c1d312398d4e2926065488a92cab5b3b07b66b57e4ab5c",
+      "bytes": 12467
+    },
+    "scripts/audit_dimensions.py": {
+      "source": "scripts/audit_dimensions.py",
+      "sha256": "631997013808e9590df4b2788974d90b8ea877d3a6bc9fa93be35a177ae7b2a4",
+      "bytes": 10639
+    },
+    "scripts/audit_exterior_finishes.py": {
+      "source": "scripts/audit_exterior_finishes.py",
+      "sha256": "f9157bc0b9af91ef9f8219962ef54b770a46cb64858762254ba1cbbc363c641e",
+      "bytes": 5321
+    },
+    "scripts/audit_ground_under_floors.py": {
+      "source": "scripts/audit_ground_under_floors.py",
+      "sha256": "c63075ebe6f6b710f8927d79c70546335ef0835fc5f599068afb66a675671615",
+      "bytes": 3349
+    },
+    "scripts/audit_plan_openings.py": {
+      "source": "scripts/audit_plan_openings.py",
+      "sha256": "7ba3fc531d1f201338ec0c62253e703e6aada934a89310908c7afa243807165a",
+      "bytes": 1904
+    },
+    "scripts/audit_proposal_fit.py": {
+      "source": "scripts/audit_proposal_fit.py",
+      "sha256": "d0ab534650001d87acd1248ac23f2741323d3288e48fedf035a2368c32ff2c16",
+      "bytes": 11323
+    },
+    "scripts/audit_proposal_headroom.py": {
+      "source": "scripts/audit_proposal_headroom.py",
+      "sha256": "4ae28349b50abce14fda55bdf125199691a101d1782f56bcb1b92d498c5be44d",
+      "bytes": 10247
+    },
+    "scripts/audit_proposal_kitchen_connection.py": {
+      "source": "scripts/audit_proposal_kitchen_connection.py",
+      "sha256": "10290ca735052e17eda6a135cd4b264c2515402d23727f9a1de22296fabe17ba",
+      "bytes": 3667
+    },
+    "scripts/audit_redesign_headroom.py": {
+      "source": "scripts/audit_redesign_headroom.py",
+      "sha256": "b449fa811eebd5a4d2108f2049c724e3e818be0704f9bd24eace685d3778648f",
+      "bytes": 3868
+    },
+    "scripts/audit_roof_joins.py": {
+      "source": "scripts/audit_roof_joins.py",
+      "sha256": "e01d3dc8d953d0a88de7aa2bc1856898bcb8fd318e028e68178c573db1566196",
+      "bytes": 13275
+    },
+    "scripts/audit_saved_proposal_kitchen.py": {
+      "source": "scripts/audit_saved_proposal_kitchen.py",
+      "sha256": "4f694af30f49d45943d64ec6aac3010dd5fa8fda5f2363f8dd994d8d5f51ba2c",
+      "bytes": 3369
+    },
+    "scripts/blender_collections.py": {
+      "source": "scripts/blender_collections.py",
+      "sha256": "c258b2361a2082941251cf76d6afd9e4e5f98d65efbe781a1a0e4292c4f90cdc",
+      "bytes": 996
+    },
+    "scripts/build_extension_proposal.py": {
+      "source": "scripts/build_extension_proposal.py",
+      "sha256": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
+      "bytes": 11826
+    },
+    "scripts/build_model.py": {
+      "source": "scripts/build_model.py",
+      "sha256": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+      "bytes": 51385
+    },
+    "scripts/build_redesign.py": {
+      "source": "scripts/build_redesign.py",
+      "sha256": "7b7bb6a78717c30ce72ef5dccb98a851a46f1bc3313ef32b09fa5ea3fbb457a3",
+      "bytes": 24693
+    },
+    "scripts/build_redesign_pdf.py": {
+      "source": "scripts/build_redesign_pdf.py",
+      "sha256": "a13168139cd832b28eaa63ff0d9d04741494ad7cba6fd0b927bc848af5759d97",
+      "bytes": 10430
+    },
+    "scripts/build_support.py": {
+      "source": "scripts/build_support.py",
+      "sha256": "1c487df317046ee8ee5147293d8792b49ac886fa4ab3277f60269314b2422c1c",
+      "bytes": 7661
+    },
+    "scripts/check_bedroom4_window_height.py": {
+      "source": "scripts/check_bedroom4_window_height.py",
+      "sha256": "4c3171de44bdb01a306a75a53c96b383754155ee2caa20ec7a7daf1241694bf7",
+      "bytes": 6112
+    },
+    "scripts/check_family_helper.py": {
+      "source": "scripts/check_family_helper.py",
+      "sha256": "0d4fbe739aacddc52e040dbf47ef9807d3cf8720eabd44eeb231038794723a62",
+      "bytes": 2270
+    },
+    "scripts/check_site_area.py": {
+      "source": "scripts/check_site_area.py",
+      "sha256": "37c09fe70326b5e93dbda3f1bb4387d1b3d7fb869833dc0b01de338a78bd11b0",
+      "bytes": 2022
+    },
+    "scripts/circulation_geometry.py": {
+      "source": "scripts/circulation_geometry.py",
+      "sha256": "fb4a722ad39e23bb81527bb5359d1d12b1d46b66b4d3f0b24331df14d14f16c4",
+      "bytes": 3421
+    },
+    "scripts/create_rendered_walkthrough.py": {
+      "source": "scripts/create_rendered_walkthrough.py",
+      "sha256": "9dd0af9c46e33a7b39f5d724c0b3a1320bbbad39534d56a20efb84c7fb7eb54a",
+      "bytes": 5212
+    },
+    "scripts/create_walkthrough_revision.py": {
+      "source": "scripts/create_walkthrough_revision.py",
+      "sha256": "8e2a2392b098c80f80630fcdfff2fe7663dd2c5d865d54ca8080c364288d9cfc",
+      "bytes": 1678
+    },
+    "scripts/detail_sweep.py": {
+      "source": "scripts/detail_sweep.py",
+      "sha256": "7f96be4defe95cebdfae3260629de896b2cb1370585865b9446bc7c40cb0061f",
+      "bytes": 2545
+    },
+    "scripts/dimension_allowances.py": {
+      "source": "scripts/dimension_allowances.py",
+      "sha256": "98008b2d8d72bf72a8b493796fcbc45b252f8ed676b9cfc0ae242b2bbce7853c",
+      "bytes": 2148
+    },
+    "scripts/dimension_spec.py": {
+      "source": "scripts/dimension_spec.py",
+      "sha256": "15fb0ec197e4ac5d58881cdbf7b81bfb3038f5837ff6e28c0d2b6ac021a5c29b",
+      "bytes": 5044
+    },
+    "scripts/draw_redesign_plans.py": {
+      "source": "scripts/draw_redesign_plans.py",
+      "sha256": "8a535f6896913a827f11694a4d81a6c950b27c27e33d5bdb38ee859d51e2bd87",
+      "bytes": 10456
+    },
+    "scripts/draw_redesign_sites.py": {
+      "source": "scripts/draw_redesign_sites.py",
+      "sha256": "289a84606c550bcf12c2bd25325e13977e18275812ce9c50fcf7584008839c26",
+      "bytes": 8023
+    },
+    "scripts/draw_scaled_plan.py": {
+      "source": "scripts/draw_scaled_plan.py",
+      "sha256": "13d22ad12ce86c0ff17383accb352954f9ab3a136a0c9fd7f091f4cf86ef6e16",
+      "bytes": 9994
+    },
+    "scripts/editable_origins.py": {
+      "source": "scripts/editable_origins.py",
+      "sha256": "39f6c50623ea619dd11a57fdd0ec1d6865cf72030a30a3db72c8630b5e786b15",
+      "bytes": 3447
+    },
+    "scripts/estimate_proposal_b_costs.py": {
+      "source": "scripts/estimate_proposal_b_costs.py",
+      "sha256": "054e70d3342a6d6e0b4ef9f27f099ddedf8df30e5cc538c23b263c475dcb8c72",
+      "bytes": 140564
+    },
+    "scripts/export_mac_preview.py": {
+      "source": "scripts/export_mac_preview.py",
+      "sha256": "d04f6e6cbd52de3b79055acb7f8b5c092e05c5d471e6593420ebb08aea9aaba3",
+      "bytes": 1364
+    },
+    "scripts/export_proposal_mac_preview.py": {
+      "source": "scripts/export_proposal_mac_preview.py",
+      "sha256": "c58d90fda82b7b9aa871f7d476f8d1d0f3ba32168d21a328b96a561657fc7a11",
+      "bytes": 10151
+    },
+    "scripts/export_sketchup.py": {
+      "source": "scripts/export_sketchup.py",
+      "sha256": "cbc327b5e3db7a14db8795e71450f969a519711badab26035145027cd7567db4",
+      "bytes": 13001
+    },
+    "scripts/exterior_exposure.py": {
+      "source": "scripts/exterior_exposure.py",
+      "sha256": "943c00a6c0d92df0fb48b7b0649d33f74bcaeb15952722cc6abcb85e7de94284",
+      "bytes": 5972
+    },
+    "scripts/finalize_owner_revision.py": {
+      "source": "scripts/finalize_owner_revision.py",
+      "sha256": "5b147b5b55a27aabe5ab940c2d06df99c0349bb4a6fc85d5803cd549f0d0fa45",
+      "bytes": 3264
+    },
+    "scripts/finish_extension_proposal.py": {
+      "source": "scripts/finish_extension_proposal.py",
+      "sha256": "1b9cba5c9fa4769a1ef4f31b281f5b8b60d1a1afe513f6cafe42d1788150ec37",
+      "bytes": 6989
+    },
+    "scripts/finish_walkthrough_revision.py": {
+      "source": "scripts/finish_walkthrough_revision.py",
+      "sha256": "111402eb9593bd24396d3b6cad8a23606de77531c090a263a9604252ca786b9c",
+      "bytes": 9725
+    },
+    "scripts/fit_bedroom4_combined_window.py": {
+      "source": "scripts/fit_bedroom4_combined_window.py",
+      "sha256": "99135774ab0790ef13bd46a30251cf1cff3656324af23a954d695834f92b937f",
+      "bytes": 4156
+    },
+    "scripts/fit_bedroom4_pose.py": {
+      "source": "scripts/fit_bedroom4_pose.py",
+      "sha256": "938b86c5e1fbd0aeccf8516fc91bf06003259053a0fc4d971b4fd4ea459b1081",
+      "bytes": 10407
+    },
+    "scripts/fit_gate_pose.py": {
+      "source": "scripts/fit_gate_pose.py",
+      "sha256": "538982f7af900f10671ef4ed7ad523d200f49548a49666fefcee51e318336e02",
+      "bytes": 5990
+    },
+    "scripts/fit_listing_views.py": {
+      "source": "scripts/fit_listing_views.py",
+      "sha256": "5819a669d2676cc2302aa24f094c6eaffd4c6bf30aa13bb84429194db1ec2619",
+      "bytes": 2054
+    },
+    "scripts/floor_finishes.py": {
+      "source": "scripts/floor_finishes.py",
+      "sha256": "91744ac442773696a2881b16aae4368f50a37e76cbe176cf96dd19cd5c76a5e2",
+      "bytes": 595
+    },
+    "scripts/height_spec.py": {
+      "source": "scripts/height_spec.py",
+      "sha256": "a5a02ea89b4f2fce3bf01a8d5a502c742a08e7b459a0c682061d33be7012cfe4",
+      "bytes": 230
+    },
+    "scripts/make_alignment_overlays.py": {
+      "source": "scripts/make_alignment_overlays.py",
+      "sha256": "894e2e9e8351c7605e3d66b7a8277cab85ae43e2efa0ec776ea50c73629c4faf",
+      "bytes": 2892
+    },
+    "scripts/make_bedroom4_ceiling_review.py": {
+      "source": "scripts/make_bedroom4_ceiling_review.py",
+      "sha256": "497107b6e6d4faba953d24351e100c0812d6122ed7040f2d42bad4eebaee7dfe",
+      "bytes": 7841
+    },
+    "scripts/make_detail_pass_v2_report.py": {
+      "source": "scripts/make_detail_pass_v2_report.py",
+      "sha256": "029c44700f368cf07f60040906d61ea6f5d3f8d18f5602a68f6eb8cb41fc6fdb",
+      "bytes": 1546
+    },
+    "scripts/make_detail_review.py": {
+      "source": "scripts/make_detail_review.py",
+      "sha256": "027d82edb9c66c12676da9d70fc41e325788b3a5f82e8acf05e207509256c412",
+      "bytes": 5032
+    },
+    "scripts/make_owner_corrections_review.py": {
+      "source": "scripts/make_owner_corrections_review.py",
+      "sha256": "af3f67b49bf505c4a279884bff45f683a4514c3b6f3b27687d226991a4342eff",
+      "bytes": 7178
+    },
+    "scripts/make_photo_report.py": {
+      "source": "scripts/make_photo_report.py",
+      "sha256": "173bad5bcb880db9291a2e0f34cea4f6b33e3f4ea1033f7d216d0a9fe180d33a",
+      "bytes": 3594
+    },
+    "scripts/make_proposal_design_book.py": {
+      "source": "scripts/make_proposal_design_book.py",
+      "sha256": "e335ae7c425991911b28a5c8734b084333247824efc6269a47a579484b1c2837",
+      "bytes": 11546
+    },
+    "scripts/make_proposal_review.py": {
+      "source": "scripts/make_proposal_review.py",
+      "sha256": "e0d7429f61f3674e38ca4c42ee38258fc07eea3cbd569c35829b278980dbad71",
+      "bytes": 14837
+    },
+    "scripts/make_rendering_comparison.py": {
+      "source": "scripts/make_rendering_comparison.py",
+      "sha256": "457c621e15188a714d6cdf12683a516c73aad1de324003875b1877f3f5e361aa",
+      "bytes": 1523
+    },
+    "scripts/make_room_gallery.py": {
+      "source": "scripts/make_room_gallery.py",
+      "sha256": "36b3f1e861d55c7b65079435d92afe6e73d011986274416a8e8d883dfb46effc",
+      "bytes": 4813
+    },
+    "scripts/make_site_plan.py": {
+      "source": "scripts/make_site_plan.py",
+      "sha256": "1dd259d7e2e17211c43bf77b8059f264db27c524bbbf74189867b16f72cb79b6",
+      "bytes": 2580
+    },
+    "scripts/make_walkthrough_report.py": {
+      "source": "scripts/make_walkthrough_report.py",
+      "sha256": "9df0b5fa3ebfa6ef328255d5209216be3bcf984b5eceb995a9f88d903eb7542b",
+      "bytes": 2512
+    },
+    "scripts/make_window_decision_boards.py": {
+      "source": "scripts/make_window_decision_boards.py",
+      "sha256": "9dbe450be3af91b73e5a2e1ca08e530206f2ef806cf634b9008191b2e6b0f550",
+      "bytes": 4193
+    },
+    "scripts/organize_latest.py": {
+      "source": "scripts/organize_latest.py",
+      "sha256": "ada72cc3fab1177c869ead7fddb3298039e27fb2a2716b8015eb0426c71fb283",
+      "bytes": 1299
+    },
+    "scripts/package_redesign_review.py": {
+      "source": "scripts/package_redesign_review.py",
+      "sha256": "10ae285ac355e026137e7652b2dfab8604a3474dc626c8347d4d2475a05a44ec",
+      "bytes": 2181
+    },
+    "scripts/planning_drawings/__init__.py": {
+      "source": "scripts/planning_drawings/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "scripts/planning_drawings/build_pack.py": {
+      "source": "scripts/planning_drawings/build_pack.py",
+      "sha256": "5037ddaeb03e57bd9a2fbc7d82fc9505c00cb2acfe3893daac2e70ac9f68dfe2",
+      "bytes": 21387
+    },
+    "scripts/planning_drawings/checks.py": {
+      "source": "scripts/planning_drawings/checks.py",
+      "sha256": "02fcf0899fe2b40454f6341c317bf7b53892cc9a751af277acd0df0ed0835fe3",
+      "bytes": 3167
+    },
+    "scripts/planning_drawings/context.py": {
+      "source": "scripts/planning_drawings/context.py",
+      "sha256": "8f12f8560239ecbb3ac7627c1d93ae9dafb7810891cfbe24dd6d401a489359ae",
+      "bytes": 3385
+    },
+    "scripts/planning_drawings/dims.py": {
+      "source": "scripts/planning_drawings/dims.py",
+      "sha256": "25efcd3b7c293edac22650f5199a9be06289d8db9b1bf17a80ac7997c1e5b561",
+      "bytes": 3696
+    },
+    "scripts/planning_drawings/docs.py": {
+      "source": "scripts/planning_drawings/docs.py",
+      "sha256": "0cf0ace8d13b62f6d936bf2febb2ea3c27d2c1f86778496ebfec6a27765f5515",
+      "bytes": 15952
+    },
+    "scripts/planning_drawings/footprints.py": {
+      "source": "scripts/planning_drawings/footprints.py",
+      "sha256": "e91a72f567515e191478723045e5da7240ac8dd0e17b6cefd9f67c2ba1eb58e8",
+      "bytes": 6212
+    },
+    "scripts/planning_drawings/model.py": {
+      "source": "scripts/planning_drawings/model.py",
+      "sha256": "bb8f448527f1c4db040d0264c6f53c29c697e8dabe78f3211698019bb750f48b",
+      "bytes": 10129
+    },
+    "scripts/planning_drawings/openings.py": {
+      "source": "scripts/planning_drawings/openings.py",
+      "sha256": "8916d242fc0f6fc16b647b6fcfb788c92e83f209b456544faa2f9e0fb3e50ec3",
+      "bytes": 12609
+    },
+    "scripts/planning_drawings/plans.py": {
+      "source": "scripts/planning_drawings/plans.py",
+      "sha256": "d124a1b3ad0c520ee67050bbc34d4dddb0cb967436f36aa24be3060d79cc8f6a",
+      "bytes": 14561
+    },
+    "scripts/planning_drawings/readiness.py": {
+      "source": "scripts/planning_drawings/readiness.py",
+      "sha256": "2baf6084d9ddd421a9b2d4c653819c7f69b52f02948dcda4f4b3e25978d6ebc9",
+      "bytes": 6152
+    },
+    "scripts/planning_drawings/release.py": {
+      "source": "scripts/planning_drawings/release.py",
+      "sha256": "77d42a6ab30b987d3bc15c24c0848a7c15786668e61eb810ad9a527eca0db889",
+      "bytes": 3760
+    },
+    "scripts/planning_drawings/risks.py": {
+      "source": "scripts/planning_drawings/risks.py",
+      "sha256": "bc0a3210477fbe55e1d0642e5a68239b5a349648a2f5154c29729a9eed056ed0",
+      "bytes": 14980
+    },
+    "scripts/planning_drawings/sections.py": {
+      "source": "scripts/planning_drawings/sections.py",
+      "sha256": "240c384d3940de67516a843085689ba092244c7461a2d8412001ec3120e4138f",
+      "bytes": 4942
+    },
+    "scripts/planning_drawings/sheet.py": {
+      "source": "scripts/planning_drawings/sheet.py",
+      "sha256": "ddf6426517f32cab692375772140738ed00fdbeacc64bd49a1d9a8faabaa46ad",
+      "bytes": 15201
+    },
+    "scripts/planning_drawings/sheets.py": {
+      "source": "scripts/planning_drawings/sheets.py",
+      "sha256": "4356a2b9c07c7af36199b42f60bb69f04738b049bbe6d00a60251d3b44d85b3b",
+      "bytes": 32892
+    },
+    "scripts/planning_drawings/site.py": {
+      "source": "scripts/planning_drawings/site.py",
+      "sha256": "17b63a0c1e2cf0fc1fbd4e8a5a4e5f5eebde5f7b9b64b12156db9b1540815b7f",
+      "bytes": 14052
+    },
+    "scripts/planning_drawings/statement.py": {
+      "source": "scripts/planning_drawings/statement.py",
+      "sha256": "48440aa96670fb395ea4bdab0dca7181fc83a513f1050a087b3403888b2489c7",
+      "bytes": 18999
+    },
+    "scripts/planning_drawings/views.py": {
+      "source": "scripts/planning_drawings/views.py",
+      "sha256": "ec102c3b5c07c5e5fbf40622c4084a4cd26173cbe00ca452e4fa2710b6e3e072",
+      "bytes": 10386
+    },
+    "scripts/prepare_photo_views.py": {
+      "source": "scripts/prepare_photo_views.py",
+      "sha256": "780d924c5eac3e97963b3d27d75f341be6298055379b0cb344bc0c3bea48e3c3",
+      "bytes": 3014
+    },
+    "scripts/prepare_walkthrough.py": {
+      "source": "scripts/prepare_walkthrough.py",
+      "sha256": "90a996357a0f21b24798e8265cfe1c53f28c2e7b7dcecdcab24b2b5c4bf091ed",
+      "bytes": 25361
+    },
+    "scripts/proof_drawing_rear_doors.py": {
+      "source": "scripts/proof_drawing_rear_doors.py",
+      "sha256": "983b38c3bc4cc71faf02c39d96acf2aec27d6d65209fae43b855864ae510caa3",
+      "bytes": 7288
+    },
+    "scripts/proof_entrance_height.py": {
+      "source": "scripts/proof_entrance_height.py",
+      "sha256": "27a231ad16b003476df7e12d5c1aefc7975b36a1b4f63486865c7ff90e351949",
+      "bytes": 2191
+    },
+    "scripts/proof_front_arch_windows.py": {
+      "source": "scripts/proof_front_arch_windows.py",
+      "sha256": "9ff316da89b41b8f9ee3c12ef03cfb0b5ec2024076602bd91afd59ce37392250",
+      "bytes": 2924
+    },
+    "scripts/proof_front_bays.py": {
+      "source": "scripts/proof_front_bays.py",
+      "sha256": "82e8c521ddc13b295d674ae80d6edbc4236940fcc16cf2e5c5db9aaaddbca372",
+      "bytes": 5179
+    },
+    "scripts/proof_lower_porch_option.py": {
+      "source": "scripts/proof_lower_porch_option.py",
+      "sha256": "45fd579cd2393af197b2615119fd1868c0a44ea9965cca4d9f01530b69a3ec62",
+      "bytes": 1424
+    },
+    "scripts/proof_porch_width.py": {
+      "source": "scripts/proof_porch_width.py",
+      "sha256": "6c50a78570104614da9d02de86189fc56eb107672e9b4105c592ddb950b99e0e",
+      "bytes": 3128
+    },
+    "scripts/proposal_appearance.py": {
+      "source": "scripts/proposal_appearance.py",
+      "sha256": "6ea95ab400a36e171b26be219c3bc124e024b9e0e9e17d14d0ec44e6cee801b6",
+      "bytes": 7745
+    },
+    "scripts/proposal_architectural_lighting.py": {
+      "source": "scripts/proposal_architectural_lighting.py",
+      "sha256": "63cd83e47844fb3219b27dd35dfda02e242cb852dc1ada894352dad631f418f2",
+      "bytes": 5483
+    },
+    "scripts/proposal_basement.py": {
+      "source": "scripts/proposal_basement.py",
+      "sha256": "10450209b9c72d86fe9cbfa57daca247fd0d06e1ffc1f6dbdfbbfef6816ac3a4",
+      "bytes": 30006
+    },
+    "scripts/proposal_boundary_foliage.py": {
+      "source": "scripts/proposal_boundary_foliage.py",
+      "sha256": "ecaf97f24ea2fd949eeb2e129740ee53c42f2b7b8b118408107198d01c1d821c",
+      "bytes": 12730
+    },
+    "scripts/proposal_courtyard.py": {
+      "source": "scripts/proposal_courtyard.py",
+      "sha256": "e491b00e40eeeeb857e761f2b966f3955816f43f349be612a5b843dc4c0f627e",
+      "bytes": 6757
+    },
+    "scripts/proposal_edit_views.py": {
+      "source": "scripts/proposal_edit_views.py",
+      "sha256": "f5646639921685f284834cd1a4f96b73e60a5991741452643f5784a9abdfa7bf",
+      "bytes": 3076
+    },
+    "scripts/proposal_editability.py": {
+      "source": "scripts/proposal_editability.py",
+      "sha256": "efc0f2a7a36c8fe63a5fe859aac95736445a3cba452141bdeb593dcd2a015e8d",
+      "bytes": 9133
+    },
+    "scripts/proposal_envelope_details.py": {
+      "source": "scripts/proposal_envelope_details.py",
+      "sha256": "cfb03b93aefef93e8b4eee99f2ed0851ca452be2cfc0e0d1a39eca8130c0010a",
+      "bytes": 10392
+    },
+    "scripts/proposal_facade.py": {
+      "source": "scripts/proposal_facade.py",
+      "sha256": "c55f8b228f177eadc31c1caf25017ff771d2acbe6dbbe6bc66ff9ba17801dfc1",
+      "bytes": 10137
+    },
+    "scripts/proposal_foliage_detail.py": {
+      "source": "scripts/proposal_foliage_detail.py",
+      "sha256": "2388e45249604797324f162a586f11f6d770787f3e25898d99c2d25801fcb7da",
+      "bytes": 12065
+    },
+    "scripts/proposal_forecourt.py": {
+      "source": "scripts/proposal_forecourt.py",
+      "sha256": "c3aec22ac749751032b13b0032e671844dc655f8124bf6ab34271777864a1d5b",
+      "bytes": 7643
+    },
+    "scripts/proposal_front.py": {
+      "source": "scripts/proposal_front.py",
+      "sha256": "36ac89b6add6186ee8c1b8dc66d13ceab939f412e3f455ae6746e60bf988b97f",
+      "bytes": 80578
+    },
+    "scripts/proposal_frontage.py": {
+      "source": "scripts/proposal_frontage.py",
+      "sha256": "7b8cd2ccc874c44229d83f561121c7cdabe4fec1fd9d32aaa54c66ad8171b7f8",
+      "bytes": 5841
+    },
+    "scripts/proposal_garden_levels.py": {
+      "source": "scripts/proposal_garden_levels.py",
+      "sha256": "c64733f7b343792c4e88e10673477301752ba396227a695791d7b41f9a4c4aae",
+      "bytes": 27596
+    },
+    "scripts/proposal_helpers.py": {
+      "source": "scripts/proposal_helpers.py",
+      "sha256": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
+      "bytes": 9453
+    },
+    "scripts/proposal_housekeeping.py": {
+      "source": "scripts/proposal_housekeeping.py",
+      "sha256": "f1227223b390de206f7de65c03db06d114e4e6298e359d95f34d66ab86fa724d",
+      "bytes": 5529
+    },
+    "scripts/proposal_interior_details.py": {
+      "source": "scripts/proposal_interior_details.py",
+      "sha256": "6b193e6cae8ac7cd54de3d5c8eb7f0613bacff2a46fb983497202ec91979904a",
+      "bytes": 19017
+    },
+    "scripts/proposal_kitchen_connection.py": {
+      "source": "scripts/proposal_kitchen_connection.py",
+      "sha256": "606f846aa9e0b9f41671504f70592bab1a0b1ea6625cf1d51e44c1859f393af4",
+      "bytes": 16321
+    },
+    "scripts/proposal_lifestyle.py": {
+      "source": "scripts/proposal_lifestyle.py",
+      "sha256": "54d886ae8e17d0fb7fdba5ebd8bb29073d6b5a73fcaf8dc6498cdc74e24bfa15",
+      "bytes": 14794
+    },
+    "scripts/proposal_loft.py": {
+      "source": "scripts/proposal_loft.py",
+      "sha256": "3f4029e5c7b12b3bde1d182fc16fdecae51c57f6b91d53a3a7110b1cc30a7104",
+      "bytes": 27126
+    },
+    "scripts/proposal_loft_roof_trim.py": {
+      "source": "scripts/proposal_loft_roof_trim.py",
+      "sha256": "036cad00094fb33d6eeec7a5db085e73cc1277c198b8ca9d110f888626cca778",
+      "bytes": 2624
+    },
+    "scripts/proposal_materials.py": {
+      "source": "scripts/proposal_materials.py",
+      "sha256": "48e4a37e8b4d460c14590a48dedaaae8288d0589ca2c17b4d92e2dd9c2e23336",
+      "bytes": 3027
+    },
+    "scripts/proposal_original_rooms.py": {
+      "source": "scripts/proposal_original_rooms.py",
+      "sha256": "df3b8b55b86440bc92021f8413157b36bf74022b6dd113076eb59654cd76c1b5",
+      "bytes": 17711
+    },
+    "scripts/proposal_planning.py": {
+      "source": "scripts/proposal_planning.py",
+      "sha256": "ec6987e6bb9063186f0b064ca59da4b368d5d7d62e07b7bcb2cb79222868796f",
+      "bytes": 27939
+    },
+    "scripts/proposal_rear.py": {
+      "source": "scripts/proposal_rear.py",
+      "sha256": "2d4bb154e7326bb2565df7ce22ac32c885c81aadee67af512aa6647fdef40887",
+      "bytes": 9162
+    },
+    "scripts/proposal_rear_finishes.py": {
+      "source": "scripts/proposal_rear_finishes.py",
+      "sha256": "17ffcf6a96cc0a7c1f12ad29091ee066f8758eb674709895cdbff82a19b15a14",
+      "bytes": 6107
+    },
+    "scripts/proposal_roof_terrace.py": {
+      "source": "scripts/proposal_roof_terrace.py",
+      "sha256": "b9376e0db3b859f3163b069ebb4ee1ff6d06e8d9ecd57fe520e01430264e914a",
+      "bytes": 21561
+    },
+    "scripts/proposal_roof_weathering.py": {
+      "source": "scripts/proposal_roof_weathering.py",
+      "sha256": "2e49f93e61d9b6a4b753874a04496c359c1ff55960a79531086e0acca25d0573",
+      "bytes": 30949
+    },
+    "scripts/proposal_roofs.py": {
+      "source": "scripts/proposal_roofs.py",
+      "sha256": "e81b76b3db044e0ef8b63ad4524bd660e46ae1dbabadc3d6bce5116ff12b241c",
+      "bytes": 38162
+    },
+    "scripts/proposal_shared_lounge.py": {
+      "source": "scripts/proposal_shared_lounge.py",
+      "sha256": "bd96ffa734702403c0e3d84b673165810509cb0de7fed0f07d8ea8af91507485",
+      "bytes": 4026
+    },
+    "scripts/proposal_side_bathroom.py": {
+      "source": "scripts/proposal_side_bathroom.py",
+      "sha256": "57e1498d1a93b0b4dcb8ec4ab259a32a639f65d78f632adb2da4c21f07758409",
+      "bytes": 6337
+    },
+    "scripts/proposal_side_wing.py": {
+      "source": "scripts/proposal_side_wing.py",
+      "sha256": "0158b6b534133277a9c1e170ac88e6ca54a40b27d21a41009e264d206f31d464",
+      "bytes": 31953
+    },
+    "scripts/proposal_site.py": {
+      "source": "scripts/proposal_site.py",
+      "sha256": "7cab534f25428899a45664b7fc0b62784a880835cfbdf04f185371acdf5e1aee",
+      "bytes": 13948
+    },
+    "scripts/proposal_storey_closures.py": {
+      "source": "scripts/proposal_storey_closures.py",
+      "sha256": "eb84dcb35792f2bf72d75448b94c0dc879da6f778d66dff6c55c7be604400609",
+      "bytes": 4152
+    },
+    "scripts/proposal_surface_junctions.py": {
+      "source": "scripts/proposal_surface_junctions.py",
+      "sha256": "c39d0721eed61ee2a299f5eb8054f773c172b11ac3458eef4c1436ac983253c0",
+      "bytes": 4819
+    },
+    "scripts/proposal_vegetation_clearance.py": {
+      "source": "scripts/proposal_vegetation_clearance.py",
+      "sha256": "1cbaddbf17c065911228d793282f8651153ec1be53c99e7642dcf236f7931ffd",
+      "bytes": 9388
+    },
+    "scripts/proposal_workshop.py": {
+      "source": "scripts/proposal_workshop.py",
+      "sha256": "32d5fa3744921415ce2d2cb0179428cbb75456d71d9b7772f3d77c12ab4f546d",
+      "bytes": 11870
+    },
+    "scripts/prove_rear_bay_selected_b.py": {
+      "source": "scripts/prove_rear_bay_selected_b.py",
+      "sha256": "0d8cd2c2768fb0f41429a1de50b5cb4d78a476d26521b60adfa68173bd02ddcc",
+      "bytes": 4641
+    },
+    "scripts/prune_pages_assets.py": {
+      "source": "scripts/prune_pages_assets.py",
+      "sha256": "d9b05d2627203bef0a77fb3ddf31b0606b2079a08a3dd77df9cdc787f8174517",
+      "bytes": 1113
+    },
+    "scripts/redesign_appearance.py": {
+      "source": "scripts/redesign_appearance.py",
+      "sha256": "d34679ef1f3ca7ec7597f5504034c6c2f4df1ce811cb3a5723a13a98e20135d2",
+      "bytes": 4579
+    },
+    "scripts/redesign_e2.py": {
+      "source": "scripts/redesign_e2.py",
+      "sha256": "bdd7e40010f412a15ef4f139fad23c235fca48b8a9866c8c091afb79ce234cf3",
+      "bytes": 7162
+    },
+    "scripts/redesign_e3.py": {
+      "source": "scripts/redesign_e3.py",
+      "sha256": "365a7b9ee3e09d12745be0bf3a9ec4211c3c3201291f627543661523c882eae1",
+      "bytes": 12266
+    },
+    "scripts/redesign_external.py": {
+      "source": "scripts/redesign_external.py",
+      "sha256": "6fd2e935c573a15138c090264f8ffdd2e05eabf0c07f765e956af94a0353d95e",
+      "bytes": 25270
+    },
+    "scripts/redesign_layouts.py": {
+      "source": "scripts/redesign_layouts.py",
+      "sha256": "09e64d7a608a3e540d33f1fbbce5ba4482f050b2abafd772bd90f6316a0a3d39",
+      "bytes": 14744
+    },
+    "scripts/redesign_levels.py": {
+      "source": "scripts/redesign_levels.py",
+      "sha256": "098ec995bf4f8e8d7612a21b5fb07862e0c3c356942087a2b917d104a6a644da",
+      "bytes": 3035
+    },
+    "scripts/redesign_roof_join.py": {
+      "source": "scripts/redesign_roof_join.py",
+      "sha256": "324840661fa4696e2c53d4835c3a2a1e3b053e8e39db0f8c8eda4a6e66040e09",
+      "bytes": 2803
+    },
+    "scripts/redesign_site.py": {
+      "source": "scripts/redesign_site.py",
+      "sha256": "31b52c824421a16877fd8ec97db9d00946f9df854a6798620cdd3c86c33e75fb",
+      "bytes": 9982
+    },
+    "scripts/redesign_walk_masks.py": {
+      "source": "scripts/redesign_walk_masks.py",
+      "sha256": "63dc7eb18ee2086df2bf849c85a713ace0a39770ab362befe396a478550766ef",
+      "bytes": 1142
+    },
+    "scripts/refine_balcony_surface.py": {
+      "source": "scripts/refine_balcony_surface.py",
+      "sha256": "cd82c6903b28ea33083a26cad82703ec78044fcac0a56a74e84c34efb035c617",
+      "bytes": 2487
+    },
+    "scripts/refine_circulation.py": {
+      "source": "scripts/refine_circulation.py",
+      "sha256": "9836718f8906d405a456184fe9a1a5bbfab1c899ea8a534b105219e2fc874512",
+      "bytes": 10119
+    },
+    "scripts/refine_dining_small_details.py": {
+      "source": "scripts/refine_dining_small_details.py",
+      "sha256": "d1faa18d4e8d4ff66f39795437fc569bd6832d0a260f45d738cb614203db5d41",
+      "bytes": 6536
+    },
+    "scripts/refine_dining_wall_v2.py": {
+      "source": "scripts/refine_dining_wall_v2.py",
+      "sha256": "fed7fb1b8dff8ce5ee8d86d4559473e676d18d5e789fdda303c2f63a6331b9e7",
+      "bytes": 14428
+    },
+    "scripts/refine_drawing_comparison.py": {
+      "source": "scripts/refine_drawing_comparison.py",
+      "sha256": "f8de5c8cf225ecd4f3b487c4342a553c3af1e3da8a655855f2a5b77192393781",
+      "bytes": 3780
+    },
+    "scripts/refine_drawing_doors.py": {
+      "source": "scripts/refine_drawing_doors.py",
+      "sha256": "83ac01968850151f196da81661b4b463a4fd3b64376feabb0fd6e42fa189cf4d",
+      "bytes": 7775
+    },
+    "scripts/refine_drawing_opening.py": {
+      "source": "scripts/refine_drawing_opening.py",
+      "sha256": "cb0c29bdf24e3b7d9bd22c1a2dd2e023010947ce091fa1dec7d21852a9d09d00",
+      "bytes": 1806
+    },
+    "scripts/refine_drawing_rear_doors.py": {
+      "source": "scripts/refine_drawing_rear_doors.py",
+      "sha256": "6e4bc782a5f873c1c8d778d6799b68a5a7788aa6814fcd6d130cccf2bc91cbe0",
+      "bytes": 7109
+    },
+    "scripts/refine_entrance_details_v2.py": {
+      "source": "scripts/refine_entrance_details_v2.py",
+      "sha256": "a9479db095f2e0e08fbd76861c76ee23c37308fab96da675439276582863503c",
+      "bytes": 9854
+    },
+    "scripts/refine_entrance_exterior.py": {
+      "source": "scripts/refine_entrance_exterior.py",
+      "sha256": "31b761adda1b4caf4db27e8cc735a99721ba4528de127e9a7ac87eee9b90e999",
+      "bytes": 10713
+    },
+    "scripts/refine_entrance_height.py": {
+      "source": "scripts/refine_entrance_height.py",
+      "sha256": "f9e2d40dc9f6b3e8313bd9b3bec6f41e09bc0c061be6f6ef3d7474974e930df2",
+      "bytes": 8191
+    },
+    "scripts/refine_exterior_feedback.py": {
+      "source": "scripts/refine_exterior_feedback.py",
+      "sha256": "a71fcb4918f095bb1ca867dbcbc711fb804e286f350b9719e5194eca5710f08b",
+      "bytes": 4241
+    },
+    "scripts/refine_family_comparison.py": {
+      "source": "scripts/refine_family_comparison.py",
+      "sha256": "b9f23da3f40d96eceb90324d52bb7735d53f93df6b220bb24c837ffcd9ab1040",
+      "bytes": 8568
+    },
+    "scripts/refine_fitted_details.py": {
+      "source": "scripts/refine_fitted_details.py",
+      "sha256": "dc8a58accdaeb5128735f90cdf6214fb3b000860f1ba981642e4774b9062693e",
+      "bytes": 18131
+    },
+    "scripts/refine_front_arch_windows.py": {
+      "source": "scripts/refine_front_arch_windows.py",
+      "sha256": "1bdddf8da2636c8739053b86391b820059410a7a4574bf3027526bef013f7a64",
+      "bytes": 11692
+    },
+    "scripts/refine_front_bays.py": {
+      "source": "scripts/refine_front_bays.py",
+      "sha256": "97d8d19f0379a853e9d7db45f21a5443367cc921dd76071bc0e2c8ade2d2c634",
+      "bytes": 10428
+    },
+    "scripts/refine_garage_moving_details.py": {
+      "source": "scripts/refine_garage_moving_details.py",
+      "sha256": "4bbdfaa05a8fadd6311eb96766a708cb9a1cccd0843f7ca89a05cc1894e7fdfd",
+      "bytes": 1437
+    },
+    "scripts/refine_garden_flat_roof.py": {
+      "source": "scripts/refine_garden_flat_roof.py",
+      "sha256": "55d33f2726c6981bde6b0ffadf87dda0ad66fe66f5aaeb72d43cd5ab59e23c48",
+      "bytes": 2076
+    },
+    "scripts/refine_gate_wings.py": {
+      "source": "scripts/refine_gate_wings.py",
+      "sha256": "7f85d4b2024cf375dca2384750a1cb08f3f68834899bb301527f820c99c88fbb",
+      "bytes": 9373
+    },
+    "scripts/refine_hall_fittings.py": {
+      "source": "scripts/refine_hall_fittings.py",
+      "sha256": "c2f33f6b85f47db25ee550ee483d3c30a2259c0db1916a799e9c27a4f05580f0",
+      "bytes": 14165
+    },
+    "scripts/refine_kitchen_comparison.py": {
+      "source": "scripts/refine_kitchen_comparison.py",
+      "sha256": "42c7a099a79fdda3f7687b86d97ca8ef050172dbc12adf73f0908f7c6ec3111e",
+      "bytes": 19155
+    },
+    "scripts/refine_kitchen_small_details.py": {
+      "source": "scripts/refine_kitchen_small_details.py",
+      "sha256": "0f9acee4840cf1bb3d58ede1588acbc0e717cd30486211553e66d5c6ca96b098",
+      "bytes": 15475
+    },
+    "scripts/refine_layout.py": {
+      "source": "scripts/refine_layout.py",
+      "sha256": "a246d3f2fc33e0355eeb7195e1a2adc98a8c7d3c5dfce7d3f060307351c5cfa4",
+      "bytes": 9575
+    },
+    "scripts/refine_lift.py": {
+      "source": "scripts/refine_lift.py",
+      "sha256": "d96fc399df5041a76c5edae77efdfdb6d8ea8a170c158781baa59c5c3d7c0686",
+      "bytes": 10015
+    },
+    "scripts/refine_oven_orientation.py": {
+      "source": "scripts/refine_oven_orientation.py",
+      "sha256": "9e03933e7155aed189a19bfa1e637ac1b2360570c71695f8fedb3967f92e3c7f",
+      "bytes": 6773
+    },
+    "scripts/refine_photo_feedback.py": {
+      "source": "scripts/refine_photo_feedback.py",
+      "sha256": "ee59418e3bfab5d1238bf2274822c749a927a67af2c86ae93d83273be7c57b7e",
+      "bytes": 4690
+    },
+    "scripts/refine_plan_openings.py": {
+      "source": "scripts/refine_plan_openings.py",
+      "sha256": "515fcead85faa7268629578c517da2cf8b2a599238c15da93a306d46af686a7f",
+      "bytes": 5960
+    },
+    "scripts/refine_porch_width.py": {
+      "source": "scripts/refine_porch_width.py",
+      "sha256": "058ba49ec329d2515b41384995e4c0b1b3b026e09a3c83b9949b7ad872cf35b9",
+      "bytes": 2117
+    },
+    "scripts/refine_rear_bay_alignment.py": {
+      "source": "scripts/refine_rear_bay_alignment.py",
+      "sha256": "e0623fcb66e568f440174f1d0f0d130b4aed45b6be40bd38e76042d657b1209f",
+      "bytes": 16158
+    },
+    "scripts/refine_review.py": {
+      "source": "scripts/refine_review.py",
+      "sha256": "58acf2b8eafe85b7fff57da1cac205c417c466582faf552627bb59b29a9a964f",
+      "bytes": 20195
+    },
+    "scripts/refine_roof_joins.py": {
+      "source": "scripts/refine_roof_joins.py",
+      "sha256": "46463174c82bcabdacb58bd9b5d359bce0a591840ca4f782d08c6397722f3018",
+      "bytes": 11128
+    },
+    "scripts/refine_side_annex.py": {
+      "source": "scripts/refine_side_annex.py",
+      "sha256": "69bb06c2c44299b4a3e736202cfb8247fbacc904c402e561f73986d2c1e80bb1",
+      "bytes": 9548
+    },
+    "scripts/refine_site.py": {
+      "source": "scripts/refine_site.py",
+      "sha256": "68d6f2d932f1b2ea2e3db2611aebed2ce059daa735019173ffafde1591f5d205",
+      "bytes": 15369
+    },
+    "scripts/refine_small_placements.py": {
+      "source": "scripts/refine_small_placements.py",
+      "sha256": "62505492ee1ab3be25c249eb99ce2626dbfc4cf7d359fb4c4c6da8c3053c2bc5",
+      "bytes": 5585
+    },
+    "scripts/refine_stair_dining_owner.py": {
+      "source": "scripts/refine_stair_dining_owner.py",
+      "sha256": "e23cedda91c87ab43c54909663f932c615f886240e808abaf3281f0dfaf4faf2",
+      "bytes": 12977
+    },
+    "scripts/refine_stair_ironwork.py": {
+      "source": "scripts/refine_stair_ironwork.py",
+      "sha256": "7f47692a36ed42f6105dd8998501703737d2de982b62187d40c8977317efd7ab",
+      "bytes": 8745
+    },
+    "scripts/refine_stair_landing_join.py": {
+      "source": "scripts/refine_stair_landing_join.py",
+      "sha256": "653cefe74c0289ca913502ed8875a84fdbba9ddd47a5097f683048e75f6be571",
+      "bytes": 2877
+    },
+    "scripts/refine_stair_trim.py": {
+      "source": "scripts/refine_stair_trim.py",
+      "sha256": "c44f57e7afedf70251f4fcda8fe0097379154992978e97aff397d3b9c46d4e87",
+      "bytes": 4497
+    },
+    "scripts/refine_surface_joins.py": {
+      "source": "scripts/refine_surface_joins.py",
+      "sha256": "b55f92c34d3f13f3a3b06cbf6d66aacea2ea5df4941e33084a6887d6a02de21d",
+      "bytes": 3649
+    },
+    "scripts/refine_trim_comparison.py": {
+      "source": "scripts/refine_trim_comparison.py",
+      "sha256": "4143b23c25892805dcca70894089c1eb05e9a240c2a876168fc8b27a9c5ab736",
+      "bytes": 14082
+    },
+    "scripts/refine_upstairs_comparison.py": {
+      "source": "scripts/refine_upstairs_comparison.py",
+      "sha256": "dc78c83587d82fcedebac6da5eb8f8996d69c912c8e77a986f475593bda313ab",
+      "bytes": 16686
+    },
+    "scripts/refine_user_feedback.py": {
+      "source": "scripts/refine_user_feedback.py",
+      "sha256": "ceb369114b1d7582b86ea13373b8d04d7dda44e1eadef2c22b93450c875cc21d",
+      "bytes": 6717
+    },
+    "scripts/refinement_details.py": {
+      "source": "scripts/refinement_details.py",
+      "sha256": "01a848fd12946372681e661dd86ffcfdf7db355b961866dc3f9ebdb791964134",
+      "bytes": 48420
+    },
+    "scripts/refresh_exterior_appearance.py": {
+      "source": "scripts/refresh_exterior_appearance.py",
+      "sha256": "546ddcc796ef1bd32e5248cb8de52f1a747696bbc49eded866943a6745323269",
+      "bytes": 9320
+    },
+    "scripts/refresh_proposal_paper_material.py": {
+      "source": "scripts/refresh_proposal_paper_material.py",
+      "sha256": "172d0660bad356c68e5c97197cff1efc3a783af9a2a048b92c6c9b4a44b88e90",
+      "bytes": 7555
+    },
+    "scripts/regenerate_design_outputs.py": {
+      "source": "scripts/regenerate_design_outputs.py",
+      "sha256": "102c9fa6e14beaf3be407cd34f61a5e7002bee745a444a31523182af99530628",
+      "bytes": 4818
+    },
+    "scripts/register_annotated_aerial.py": {
+      "source": "scripts/register_annotated_aerial.py",
+      "sha256": "f0069f8b150a82f8a9c14476caeeb538e749e2861c1eea6dc73dc69f5fe07b5e",
+      "bytes": 3296
+    },
+    "scripts/register_site_plan.py": {
+      "source": "scripts/register_site_plan.py",
+      "sha256": "ee93e98f6a918f06d3fba2eedc7105cc0ec65a5bc22e32bb9f424eba102ee1fe",
+      "bytes": 3983
+    },
+    "scripts/render_balcony_surface_candidate.py": {
+      "source": "scripts/render_balcony_surface_candidate.py",
+      "sha256": "a95f7e08877133f368aa3831e87c619b913cbad04ae1b05145136a311ef78dcc",
+      "bytes": 3835
+    },
+    "scripts/render_bedroom4_ceiling_trials.py": {
+      "source": "scripts/render_bedroom4_ceiling_trials.py",
+      "sha256": "4c459deb0b539c2e862d6aabbe5a6f004b99b05ab876266e5a2b8729b7c0155d",
+      "bytes": 5521
+    },
+    "scripts/render_bedroom4_pose_trials.py": {
+      "source": "scripts/render_bedroom4_pose_trials.py",
+      "sha256": "309cc56b5ac857b6727fb1b9d06e258ef0cb1a3f250d86db4e4891766744dd2c",
+      "bytes": 1703
+    },
+    "scripts/render_bedroom4_storey_trial.py": {
+      "source": "scripts/render_bedroom4_storey_trial.py",
+      "sha256": "2a78aa0486eb5f17589957a6ceb9d539b2a23a37a5cbcf584ae7e243a751b709",
+      "bytes": 3845
+    },
+    "scripts/render_cost_plan_page.py": {
+      "source": "scripts/render_cost_plan_page.py",
+      "sha256": "91df9b29abd86d9b4d2fcbce8a70517b819d13738b264ab0143822db006bdcaa",
+      "bytes": 40958
+    },
+    "scripts/render_family_candidate.py": {
+      "source": "scripts/render_family_candidate.py",
+      "sha256": "4b0e7c8e560d12133e3c0c02d33dad721c5d2414bef1361f610bbf2d9863ad3c",
+      "bytes": 2309
+    },
+    "scripts/render_front_arch_upview.py": {
+      "source": "scripts/render_front_arch_upview.py",
+      "sha256": "57c027c5a76c407c50dce3bfe2a9ab91925b1430f6287313a978b73627d3231a",
+      "bytes": 948
+    },
+    "scripts/render_gate_pose_candidate.py": {
+      "source": "scripts/render_gate_pose_candidate.py",
+      "sha256": "fe7e9deb3c6d291a17885214e4d37cb3bff0d0ac85ae9f47e0adbd04bf8f47fc",
+      "bytes": 1161
+    },
+    "scripts/render_photo_views.py": {
+      "source": "scripts/render_photo_views.py",
+      "sha256": "058efe57b8185e65b861de8a48e40c1daef23b82ad3e98c21f35a9882d17b704",
+      "bytes": 3496
+    },
+    "scripts/render_proposal.py": {
+      "source": "scripts/render_proposal.py",
+      "sha256": "341e972d4d7463e53d1bae36b370a7ff4ec5da391281785a0174d458e5382098",
+      "bytes": 10959
+    },
+    "scripts/render_roof_inspections.py": {
+      "source": "scripts/render_roof_inspections.py",
+      "sha256": "2d454ac0e824619573501b6dce515bef647073af348a98b65d389c6e2cb9da59",
+      "bytes": 2108
+    },
+    "scripts/render_side_annex_proof.py": {
+      "source": "scripts/render_side_annex_proof.py",
+      "sha256": "f4de12eef8241263dd44035a4431c4436dec9bcb174250f33828492b2dd9244c",
+      "bytes": 4754
+    },
+    "scripts/render_window_decision_options.py": {
+      "source": "scripts/render_window_decision_options.py",
+      "sha256": "b6e135853cd96813527569494e3eeb9b02764b35912f0fff433b625331536208",
+      "bytes": 5319
+    },
+    "scripts/repair_rounding.py": {
+      "source": "scripts/repair_rounding.py",
+      "sha256": "a0e6d01fbc658815eff0ab6bb29578c82a9c78ba6bb089f705e63ad6fb526268",
+      "bytes": 2672
+    },
+    "scripts/restore_shower_partition.py": {
+      "source": "scripts/restore_shower_partition.py",
+      "sha256": "a584e8f7b7ecc432ad3397f1cf9b28491f07af2487d60d5748a0e5628cfc912b",
+      "bytes": 1552
+    },
+    "scripts/review_family_candidate.py": {
+      "source": "scripts/review_family_candidate.py",
+      "sha256": "241b64a1691b1d465ad2124ae9ee270025da958623fb279804737248481fb80a",
+      "bytes": 6432
+    },
+    "scripts/site_tree_forms.py": {
+      "source": "scripts/site_tree_forms.py",
+      "sha256": "dc9a6cfb9a2c5782f657ae05e635bee2eda7458f4cdc96806d5d41605b34b845",
+      "bytes": 7629
+    },
+    "scripts/smoke_rendered_walkthrough_gui.py": {
+      "source": "scripts/smoke_rendered_walkthrough_gui.py",
+      "sha256": "7abee26409a08aab77ca9c679f6d2c6375738c699ab9fa685a76702f9787999f",
+      "bytes": 4877
+    },
+    "scripts/stage_github_pages.py": {
+      "source": "scripts/stage_github_pages.py",
+      "sha256": "d8f6f5bf22a4593ef597fb3248288577b0d1842574a931ad7ab32a7c38bb96f2",
+      "bytes": 7999
+    },
+    "scripts/stage_redesign_sources.py": {
+      "source": "scripts/stage_redesign_sources.py",
+      "sha256": "ee0e7d3d6172c39e1b388367acb526b48dde610d254fbcdc8680ea28efc648ca",
+      "bytes": 4671
+    },
+    "scripts/start_rendered_walkthrough.py": {
+      "source": "scripts/start_rendered_walkthrough.py",
+      "sha256": "b2f3188db1f0b929beba6dd3930479f96dd50112ab043918359d6c8cdf62364f",
+      "bytes": 2438
+    },
+    "scripts/sync_site_references.py": {
+      "source": "scripts/sync_site_references.py",
+      "sha256": "7b49c49e4fdeab99f611a5308bbcd64f2eb52ec1462ff4613468f2364ddfb4b3",
+      "bytes": 1753
+    },
+    "scripts/test_area_geometry.py": {
+      "source": "scripts/test_area_geometry.py",
+      "sha256": "9b34dbcadbd28db7c65f53bf0e8b8664e36d059900ef6d772fea5c16f30c655d",
+      "bytes": 1356
+    },
+    "scripts/update_boundary_hedges.py": {
+      "source": "scripts/update_boundary_hedges.py",
+      "sha256": "ee2a1303af5f1a9cb837231e804f7dec4c818248b56ea8a171f2722a9ad64901",
+      "bytes": 2779
+    },
+    "scripts/update_front_walls.py": {
+      "source": "scripts/update_front_walls.py",
+      "sha256": "21f694dc59c4b90f8fd055fe93a2ab00e14df66a0b6cacd41e299933da35e611",
+      "bytes": 2848
+    },
+    "scripts/update_remove_site_objects.py": {
+      "source": "scripts/update_remove_site_objects.py",
+      "sha256": "97362408df445f4e31d440356ede2bbed4dc1254d3f9860aff4e124c2c9c48d8",
+      "bytes": 2108
+    },
+    "scripts/update_site_trees.py": {
+      "source": "scripts/update_site_trees.py",
+      "sha256": "740029c091a38218c7ed6c79fee069d5d277c36cee70b3ccf1d1581853c077dc",
+      "bytes": 4070
+    },
+    "scripts/validate_model.py": {
+      "source": "scripts/validate_model.py",
+      "sha256": "299b43f8f2432979605e4e64f5854d5d5f51ebd66865ccc4f18611cbc10441a2",
+      "bytes": 5619
+    },
+    "scripts/validate_rendered_walkthrough.py": {
+      "source": "scripts/validate_rendered_walkthrough.py",
+      "sha256": "767a556e5f17c375f104f0605fc69c10458f67407aae7af272dc782db20b3be1",
+      "bytes": 8140
+    },
+    "scripts/verify_release.py": {
+      "source": "scripts/verify_release.py",
+      "sha256": "01d5a1eb14427dab74d750b085593b129726e3d5722d5c1dd9b58aecce3a59af",
+      "bytes": 8239
+    },
+    "tests/easter/progression/performance.json": {
+      "source": "tests/easter/progression/performance.json",
+      "sha256": "3b9305b2061245ac646d4847d74f26828c5bf3572a1a1e29da2cc973838e8fca",
+      "bytes": 1184
+    },
+    "tests/test_build_pipeline.py": {
+      "source": "tests/test_build_pipeline.py",
+      "sha256": "bc121c9019d0ad0ab15059fe479474cd258a0887ebba42e123fc3dab66e4d628",
+      "bytes": 10503
+    },
+    "tests/test_entrance_gable.py": {
+      "source": "tests/test_entrance_gable.py",
+      "sha256": "5d48025d2f823fe912caf32f0bdb5f88f25d6f7724dd9aecea8ccad1a8100495",
+      "bytes": 2118
+    },
+    "tests/test_planning_pack.py": {
+      "source": "tests/test_planning_pack.py",
+      "sha256": "0ee4e44791a8c3364e9e92e649ce93360a3e010eb01f1a29976a1e7086ac1f49",
+      "bytes": 6442
+    },
+    "tests/test_planning_variant.py": {
+      "source": "tests/test_planning_variant.py",
+      "sha256": "3beb27bf7aef83893bdd715f002b4eff79b0d7df663f4ebfef4b5ef4ecd84032",
+      "bytes": 8505
+    },
+    "walkthrough/build.mjs": {
+      "source": "walkthrough/build.mjs",
+      "sha256": "b40fc5a6ab3584d684de54e746100198ec93732bd5a5ea6a22ac448f41d0d23d",
+      "bytes": 3555
+    },
+    "walkthrough/index.html": {
+      "source": "walkthrough/index.html",
+      "sha256": "de74f4cc2dd47028a967ee60e23dfe1396e2621cb98b6f6dcd3dc8c86bda83fb",
+      "bytes": 7221
+    },
+    "walkthrough/package-lock.json": {
+      "source": "walkthrough/package-lock.json",
+      "sha256": "05aa69c41744f5def12e97b29397aff0608c92926b025ebd0e80159b870ccfbd",
+      "bytes": 16187
+    },
+    "walkthrough/package.json": {
+      "source": "walkthrough/package.json",
+      "sha256": "5ec923c44808ea3f563440d4472d4300724dce1b6f74727dc222ccf7db6673b8",
+      "bytes": 615
+    },
+    "walkthrough/public/navigation.json": {
+      "source": "walkthrough/public/navigation.json",
+      "sha256": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf",
+      "bytes": 531449
+    },
+    "walkthrough/public/redesigns/index.html": {
+      "source": "walkthrough/public/redesigns/index.html",
+      "sha256": "61b698f0724cd05d909b864cb3eb3f124113ac4a81577db6b2498936e6afe9ba",
+      "bytes": 6903
+    },
+    "walkthrough/public/redesigns/options.json": {
+      "source": "walkthrough/public/redesigns/options.json",
+      "sha256": "08648c68eff40939af618964295bd703f3f7a7fa7efa3046d149ef61cf930b11",
+      "bytes": 56554
+    },
+    "walkthrough/public/redesigns/review.css": {
+      "source": "walkthrough/public/redesigns/review.css",
+      "sha256": "b628de54dbb856ec9cdf7c89a4ccbad96ee21a2c5b04568938f79286cc0b2f1d",
+      "bytes": 11302
+    },
+    "walkthrough/public/redesigns/review.js": {
+      "source": "walkthrough/public/redesigns/review.js",
+      "sha256": "ad2ee9437dc14d9d32365942166c2daac316992cdd964ced141ad817f9ef56d4",
+      "bytes": 6365
+    },
+    "walkthrough/src/combat-audio.js": {
+      "source": "walkthrough/src/combat-audio.js",
+      "sha256": "004317cf778ffae44e65725a57d125cb673101ad683c6ea295a28d7900f2ff9a",
+      "bytes": 1765
+    },
+    "walkthrough/src/combat-occlusion.js": {
+      "source": "walkthrough/src/combat-occlusion.js",
+      "sha256": "0b4d6b483531a418c12b0ea8f52a7723f1907ffe44216ad928a5f9a2635ee560",
+      "bytes": 2023
+    },
+    "walkthrough/src/combat-state.js": {
+      "source": "walkthrough/src/combat-state.js",
+      "sha256": "4dc0e4ecaeba8cba6e290c219c115b20737ba07860ad8769d20b622753509dd4",
+      "bytes": 3141
+    },
+    "walkthrough/src/design-assets.js": {
+      "source": "walkthrough/src/design-assets.js",
+      "sha256": "ffd905cb8e61cb2ea369e6af87796c769d7bcc3bea6988689524f4059767103a",
+      "bytes": 1120
+    },
+    "walkthrough/src/design-comparison.js": {
+      "source": "walkthrough/src/design-comparison.js",
+      "sha256": "883e155947ea04ff436a3a95ff0692d99051da0543b86aa84fa3ef4f66f1cd8a",
+      "bytes": 2430
+    },
+    "walkthrough/src/doors.js": {
+      "source": "walkthrough/src/doors.js",
+      "sha256": "fc8dd1dd27e95e4051109821e9ef033c5f546cc278ceff39854c83d013276cd5",
+      "bytes": 5412
+    },
+    "walkthrough/src/drive.js": {
+      "source": "walkthrough/src/drive.js",
+      "sha256": "d6924002f25843e03d130906e674a27f5f0f83b2610e373579bbd9fd25d86687",
+      "bytes": 12993
+    },
+    "walkthrough/src/easter-session.js": {
+      "source": "walkthrough/src/easter-session.js",
+      "sha256": "38f7c63ee34342e69f2340ecb98acf418840908ed4bc6299da46e040991a1f39",
+      "bytes": 1434
+    },
+    "walkthrough/src/exterior-appearance.js": {
+      "source": "walkthrough/src/exterior-appearance.js",
+      "sha256": "ca0bc4815412f0927d8d3926a9afa5b06dc65ae60759dfea3c40daf0ad8157d6",
+      "bytes": 3102
+    },
+    "walkthrough/src/flight.js": {
+      "source": "walkthrough/src/flight.js",
+      "sha256": "e106f0a52f3cf717e2177491a6b9ddb77f1bab845886f0a93d999f1470dc171d",
+      "bytes": 1800
+    },
+    "walkthrough/src/horde.js": {
+      "source": "walkthrough/src/horde.js",
+      "sha256": "d409f5bb495f8a6cba29e5e6f8060135f5cada3667b8adec6d24cf10cc626873",
+      "bytes": 20329
+    },
+    "walkthrough/src/inspect.js": {
+      "source": "walkthrough/src/inspect.js",
+      "sha256": "dc50c1b1697f57dc8ac1105a7ed4852b2622ecfe8d6ee7ec79323ee1bd2c206d",
+      "bytes": 4650
+    },
+    "walkthrough/src/life.js": {
+      "source": "walkthrough/src/life.js",
+      "sha256": "7239ff19b8cf01781d370ddd3e9ce67158fb99cf2fb9b4dc89ca58e68914d592",
+      "bytes": 20509
+    },
+    "walkthrough/src/lighting.js": {
+      "source": "walkthrough/src/lighting.js",
+      "sha256": "63662df95abe7644b9a7201706236bde270fc79c902dc0e726a564763a03450c",
+      "bytes": 6763
+    },
+    "walkthrough/src/main.js": {
+      "source": "walkthrough/src/main.js",
+      "sha256": "4b69ea4aae5dc462a80feb1e6a3e3a8a18e89f5b4cf6bf4dbd762718b0447abc",
+      "bytes": 36131
+    },
+    "walkthrough/src/materials.js": {
+      "source": "walkthrough/src/materials.js",
+      "sha256": "3b4d8e09d9064363e72a5f84dc9fd602281629595236a1313bd70f87c4096524",
+      "bytes": 9178
+    },
+    "walkthrough/src/navigation.js": {
+      "source": "walkthrough/src/navigation.js",
+      "sha256": "f7a897106fc251e4471802c9182e6a9d9812f6eae0ba3913efa6e6b048756a00",
+      "bytes": 6014
+    },
+    "walkthrough/src/pursuit.js": {
+      "source": "walkthrough/src/pursuit.js",
+      "sha256": "02eaaff975e5f68d5a1f6273dd074f49a47612a1e90f923d5e2b33c74de4e159",
+      "bytes": 10931
+    },
+    "walkthrough/src/render-budget.js": {
+      "source": "walkthrough/src/render-budget.js",
+      "sha256": "0355b9a1dcf953708e04472f08b1f088dfa1427cdd9edcf392b17262990d9966",
+      "bytes": 1012
+    },
+    "walkthrough/src/residents.js": {
+      "source": "walkthrough/src/residents.js",
+      "sha256": "14c420a22ea58fc3daa6ecca069b3c2651b7e74ace7d312fe5428a03e7ee5df0",
+      "bytes": 8751
+    },
+    "walkthrough/src/room-lights.js": {
+      "source": "walkthrough/src/room-lights.js",
+      "sha256": "ebc2638e212aefff3f98ad6783fc9323b23a47fa3c7d44d50c39f1850938abff",
+      "bytes": 2414
+    },
+    "walkthrough/src/spatial-batches.js": {
+      "source": "walkthrough/src/spatial-batches.js",
+      "sha256": "b0717d13985ef7186b668a897153a7c82e7e208fd2f8284e6f844f8cdc17862d",
+      "bytes": 12202
+    },
+    "walkthrough/src/spawn-visibility.js": {
+      "source": "walkthrough/src/spawn-visibility.js",
+      "sha256": "0ebbb65ab45b2dcf8369adb01a6d5d6a154d6cd9942c42f91ac3f495cb7b10d5",
+      "bytes": 1820
+    },
+    "walkthrough/src/street-context-data.js": {
+      "source": "walkthrough/src/street-context-data.js",
+      "sha256": "e2965191ea72dd644d66c38504d47cba4d8f39da04e68410e11ea37b53f68cdb",
+      "bytes": 19177
+    },
+    "walkthrough/src/street-context.js": {
+      "source": "walkthrough/src/street-context.js",
+      "sha256": "5557182dcc76d89c50429e49860e6da5169d0c6cbbe243f3e9523c0b52bdedaa",
+      "bytes": 21175
+    },
+    "walkthrough/src/touch.js": {
+      "source": "walkthrough/src/touch.js",
+      "sha256": "66f0b732da54ac410768228dfec0118d903e4407948ea04d6d41b911ef67c91a",
+      "bytes": 4148
+    },
+    "walkthrough/src/vegetation.js": {
+      "source": "walkthrough/src/vegetation.js",
+      "sha256": "48e210f438704739dafb620f5a609d47e1c7298c8ea1f2f803f548bf9e310f73",
+      "bytes": 26135
+    },
+    "walkthrough/src/wave-game.js": {
+      "source": "walkthrough/src/wave-game.js",
+      "sha256": "b216f6ad634fad98c7658e1c03d3523edf9366939415b4ae5a38445d33b7325c",
+      "bytes": 20549
+    },
+    "walkthrough/src/weapon-models.js": {
+      "source": "walkthrough/src/weapon-models.js",
+      "sha256": "57ad972f36187c0d8bbcffd5c56f3e249e33d456fdb32189e06e7827d18fddc2",
+      "bytes": 8579
+    },
+    "walkthrough/src/zombies.js": {
+      "source": "walkthrough/src/zombies.js",
+      "sha256": "b27a726ff33d9171824fcf13e1b9506410c9a924d02fb33f7923b3a299ac9c63",
+      "bytes": 15696
+    },
+    "walkthrough/style.css": {
+      "source": "walkthrough/style.css",
+      "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a",
+      "bytes": 25871
+    },
+    "walkthrough/tests/automatic-bow.mjs": {
+      "source": "walkthrough/tests/automatic-bow.mjs",
+      "sha256": "a544c2529fd059a68a6e18496b8417a854f06f0bd2c272a2a26e0af2202a8ec8",
+      "bytes": 6366
+    },
+    "walkthrough/tests/browser.mjs": {
+      "source": "walkthrough/tests/browser.mjs",
+      "sha256": "90092d261a52c91ec3a9d7a8797a32deefc7065cb64bd6181503b44fcc2392be",
+      "bytes": 2530
+    },
+    "walkthrough/tests/capture-redesign-interiors.mjs": {
+      "source": "walkthrough/tests/capture-redesign-interiors.mjs",
+      "sha256": "2b6b2e4e3529f4c8db426d97ece29c56bd1121f2d515dd47da0b844ad09f81e7",
+      "bytes": 1785
+    },
+    "walkthrough/tests/capture-redesigns.mjs": {
+      "source": "walkthrough/tests/capture-redesigns.mjs",
+      "sha256": "6a37f7bbef7b388cf9eb506fae2c7c559e8163eeb4cda7a69ad2f551cf319719",
+      "bytes": 1676
+    },
+    "walkthrough/tests/circulation.mjs": {
+      "source": "walkthrough/tests/circulation.mjs",
+      "sha256": "86ee4fbc63beed3cf2793a76e75809d32efc8df4f97054653771c37b54b78e93",
+      "bytes": 4253
+    },
+    "walkthrough/tests/combat-performance.mjs": {
+      "source": "walkthrough/tests/combat-performance.mjs",
+      "sha256": "ed53336c1a2b9f3208328ac7a30cbb5288b5987a15889eb2c059151839860f22",
+      "bytes": 2431
+    },
+    "walkthrough/tests/combat-progression.mjs": {
+      "source": "walkthrough/tests/combat-progression.mjs",
+      "sha256": "bc0687b9746f52074c5f6394ea2698aa80f13170eeff44cb87bcb8550d9b76d0",
+      "bytes": 5587
+    },
+    "walkthrough/tests/combat.test.mjs": {
+      "source": "walkthrough/tests/combat.test.mjs",
+      "sha256": "d951a6d735cb7c923bfca99905757e6915ea6af971c03be0e7824a3de2230c32",
+      "bytes": 4541
+    },
+    "walkthrough/tests/derived-cache.test.mjs": {
+      "source": "walkthrough/tests/derived-cache.test.mjs",
+      "sha256": "fd53cba68e221394cb5ef4ae88ffc69a89cb9ef99392cf80a32d5187d5085461",
+      "bytes": 2035
+    },
+    "walkthrough/tests/design-variants.test.mjs": {
+      "source": "walkthrough/tests/design-variants.test.mjs",
+      "sha256": "2c305541e175eb31a6ef6334d8655eb52f28082d183b732c5d1fc4573ccb1b9e",
+      "bytes": 1352
+    },
+    "walkthrough/tests/detail-captures.mjs": {
+      "source": "walkthrough/tests/detail-captures.mjs",
+      "sha256": "e714f2b2900f5a694d146fa09a5b77ee3f3bb821b21e15975508d11f9ee455ee",
+      "bytes": 1822
+    },
+    "walkthrough/tests/doors-visitors.test.mjs": {
+      "source": "walkthrough/tests/doors-visitors.test.mjs",
+      "sha256": "f4be39be7cd778c2a04b6ad4331006a95734c95b2aa712165954c71297b6da4c",
+      "bytes": 2009
+    },
+    "walkthrough/tests/doors.mjs": {
+      "source": "walkthrough/tests/doors.mjs",
+      "sha256": "19f76a359fad013f6c70c121eda97b0b08f3a01b6030b39ae18ca05227b88872",
+      "bytes": 5682
+    },
+    "walkthrough/tests/doors/index.html": {
+      "source": "walkthrough/tests/doors/index.html",
+      "sha256": "8db83f22adb12d78779354d7b1730bb51ebf676a325e9e0bf3602902106786bc",
+      "bytes": 1728
+    },
+    "walkthrough/tests/drawing-rear-doors.mjs": {
+      "source": "walkthrough/tests/drawing-rear-doors.mjs",
+      "sha256": "2cbdf473aba9dd83accfea5196ea053b832b9976e2a3a9963e4f5ccc6d7c78c2",
+      "bytes": 4825
+    },
+    "walkthrough/tests/easter-session.test.mjs": {
+      "source": "walkthrough/tests/easter-session.test.mjs",
+      "sha256": "12a51c657e0279f114be2a3dad1413fe0d9e29b76d05ea6e9ce340a56a90a600",
+      "bytes": 2032
+    },
+    "walkthrough/tests/easter.mjs": {
+      "source": "walkthrough/tests/easter.mjs",
+      "sha256": "1d864fe6a081650af8b0d5148b086f78886dc56d3bff1cbd5116bb3d7f6736a8",
+      "bytes": 9295
+    },
+    "walkthrough/tests/exterior-appearance-browser.mjs": {
+      "source": "walkthrough/tests/exterior-appearance-browser.mjs",
+      "sha256": "21f5fa2aded273f6538d4e86235d8eda1aa014eb68147aa6695521540c7dc7b8",
+      "bytes": 5888
+    },
+    "walkthrough/tests/exterior-appearance.test.mjs": {
+      "source": "walkthrough/tests/exterior-appearance.test.mjs",
+      "sha256": "f58bdf9e1af894e65a2fb9870de5b2e38276c1d69f2a9c1c05f4fffec4606de5",
+      "bytes": 4978
+    },
+    "walkthrough/tests/flight-browser.mjs": {
+      "source": "walkthrough/tests/flight-browser.mjs",
+      "sha256": "21d27c35e50a4cf525c0e0782122e955730fa61c52d6b58d42ba84d6897ac1eb",
+      "bytes": 6228
+    },
+    "walkthrough/tests/flight.test.mjs": {
+      "source": "walkthrough/tests/flight.test.mjs",
+      "sha256": "da4f28d891422d2adaa98ecae8f7c43ed890a8b7aed82edddd948d2dbeca4081",
+      "bytes": 2336
+    },
+    "walkthrough/tests/garage-door.mjs": {
+      "source": "walkthrough/tests/garage-door.mjs",
+      "sha256": "414d7327b9f0abd686d1e4693e15b67f46629bdcae60c24880c6a35d283003a9",
+      "bytes": 5263
+    },
+    "walkthrough/tests/gate-doors.mjs": {
+      "source": "walkthrough/tests/gate-doors.mjs",
+      "sha256": "00aed92ff15af5526aaa658d70b07c3cab1dbe3c444483d44191d5a74ea6933d",
+      "bytes": 4474
+    },
+    "walkthrough/tests/gate-preparation.py": {
+      "source": "walkthrough/tests/gate-preparation.py",
+      "sha256": "dd5b825d02f379c85b10b8d2ca2146e09076a67ad407d430137c2eb09c0db672",
+      "bytes": 2331
+    },
+    "walkthrough/tests/hidden-spawns.mjs": {
+      "source": "walkthrough/tests/hidden-spawns.mjs",
+      "sha256": "6a5db1f49f68fa9e36b4f81773c6aa8a29f92afc1051d958541f52caafc30131",
+      "bytes": 3403
+    },
+    "walkthrough/tests/horde-figures.mjs": {
+      "source": "walkthrough/tests/horde-figures.mjs",
+      "sha256": "e851a7dd31b7557388716ffeaaf65cfbb836ca0114d8fc386052490d70cd93dd",
+      "bytes": 2801
+    },
+    "walkthrough/tests/horde.test.mjs": {
+      "source": "walkthrough/tests/horde.test.mjs",
+      "sha256": "4f5f47144a09d9f2d52265dca9e19e08b57beb1f2b7406ecbd9ab399aba3f3c6",
+      "bytes": 10318
+    },
+    "walkthrough/tests/life.test.mjs": {
+      "source": "walkthrough/tests/life.test.mjs",
+      "sha256": "faac9efd9878abbe008a9a09bb70c87277827590f743e8a8f3d46e1604aba1f5",
+      "bytes": 6753
+    },
+    "walkthrough/tests/lighting.mjs": {
+      "source": "walkthrough/tests/lighting.mjs",
+      "sha256": "04fd36c3ab73ecf3f664b20d3c1bba6d5358029f5f5917bbb545022b2706f767",
+      "bytes": 1986
+    },
+    "walkthrough/tests/live-release.mjs": {
+      "source": "walkthrough/tests/live-release.mjs",
+      "sha256": "ca4b0403a44e31f559b4d388b3d55cf9ef96bb8eff174cbf1968d020d3a9783f",
+      "bytes": 4021
+    },
+    "walkthrough/tests/mobile-tap-fire.mjs": {
+      "source": "walkthrough/tests/mobile-tap-fire.mjs",
+      "sha256": "a643e3445906ce4d76a56a40f4777b43653a146d4c3fc375700958be5e935475",
+      "bytes": 8542
+    },
+    "walkthrough/tests/mobile.mjs": {
+      "source": "walkthrough/tests/mobile.mjs",
+      "sha256": "dcebe2aa2551c2c1b1d6608b20bb781c27a537a6ed6ba9471ff0d6a82c7e940a",
+      "bytes": 9968
+    },
+    "walkthrough/tests/navigation.test.mjs": {
+      "source": "walkthrough/tests/navigation.test.mjs",
+      "sha256": "b6220cbdfc22ee01879b335a8425425649976b37fd6ac8189f428dd32a88880e",
+      "bytes": 4396
+    },
+    "walkthrough/tests/planning-variants-browser.mjs": {
+      "source": "walkthrough/tests/planning-variants-browser.mjs",
+      "sha256": "237588a9c8832f45f4d710aab11c42389258b7ab10052883c9403e15650d02a6",
+      "bytes": 2691
+    },
+    "walkthrough/tests/proposal-browser.mjs": {
+      "source": "walkthrough/tests/proposal-browser.mjs",
+      "sha256": "784c3b0f6f8d976c42be1aec0cc41eac0b4a217666e0c0a3eeb2f47631fbbb52",
+      "bytes": 3526
+    },
+    "walkthrough/tests/proposal-circulation.mjs": {
+      "source": "walkthrough/tests/proposal-circulation.mjs",
+      "sha256": "e5374f86d753568ed826179641b0d576d2f436abd4eb9d603064dc1152632da0",
+      "bytes": 9504
+    },
+    "walkthrough/tests/proposal-pursuit.test.mjs": {
+      "source": "walkthrough/tests/proposal-pursuit.test.mjs",
+      "sha256": "f1aa61b3e52cf7b173539f2c36c6769be31d7de0ee28509f150459c92126f25b",
+      "bytes": 2184
+    },
+    "walkthrough/tests/proposal-room-access.mjs": {
+      "source": "walkthrough/tests/proposal-room-access.mjs",
+      "sha256": "b9cc3faaaa817ab4fd62945f1d7e7e9cbaeb2618d34b8b5572d2f1faf41553f6",
+      "bytes": 3409
+    },
+    "walkthrough/tests/published-tour.mjs": {
+      "source": "walkthrough/tests/published-tour.mjs",
+      "sha256": "a0628878b9ce178d71378f6b8fcea005cd9abde42e821d6fa05a3d3472b8dc15",
+      "bytes": 2143
+    },
+    "walkthrough/tests/pursuit.test.mjs": {
+      "source": "walkthrough/tests/pursuit.test.mjs",
+      "sha256": "5e849ce18ae233823cb8e5788dc51a1d2c7f4c66dc9e7d2b95fbd1ca2a868557",
+      "bytes": 4823
+    },
+    "walkthrough/tests/redesign-appearance-browser.mjs": {
+      "source": "walkthrough/tests/redesign-appearance-browser.mjs",
+      "sha256": "70d633d8cd8df58d493b1f01aa527372a91148f8c1b8e4d11954a746ee6b09e2",
+      "bytes": 2881
+    },
+    "walkthrough/tests/redesign-browser.mjs": {
+      "source": "walkthrough/tests/redesign-browser.mjs",
+      "sha256": "b16516961c5292aa17c2b7d4bfd1629cdee1b908fd75345dd8622e88407b0bf2",
+      "bytes": 2439
+    },
+    "walkthrough/tests/redesign-circulation.mjs": {
+      "source": "walkthrough/tests/redesign-circulation.mjs",
+      "sha256": "ec692ee849df5e79c45eb69417dc203b01c013b9f1f5e8244285f69fd9dc0d32",
+      "bytes": 3689
+    },
+    "walkthrough/tests/redesign-parking.mjs": {
+      "source": "walkthrough/tests/redesign-parking.mjs",
+      "sha256": "95755a04bde56f0029923ae4e3d99c19bbfcdaadb6665d7186c2111b8c938b8b",
+      "bytes": 2563
+    },
+    "walkthrough/tests/redesign-review-browser.mjs": {
+      "source": "walkthrough/tests/redesign-review-browser.mjs",
+      "sha256": "07f38b92a0dbe93a6e20a0bf45ccf30302c90b9716d1570d95d59c61f2901d36",
+      "bytes": 4248
+    },
+    "walkthrough/tests/redesign-stairs.mjs": {
+      "source": "walkthrough/tests/redesign-stairs.mjs",
+      "sha256": "4105f8aa057e85c3e92dddde649691d813609ad2252a9994a1571fdbe753fd17",
+      "bytes": 2537
+    },
+    "walkthrough/tests/render-budget.test.mjs": {
+      "source": "walkthrough/tests/render-budget.test.mjs",
+      "sha256": "8d68cdf42c62cddc4dbe7de27ddc070f282421886c13bf204fe7650d2ba37274",
+      "bytes": 884
+    },
+    "walkthrough/tests/rendering-comparison.mjs": {
+      "source": "walkthrough/tests/rendering-comparison.mjs",
+      "sha256": "5466d05a3099cba35fe9d58f7f0326e5d59f50aed59a0ce6343183ceaad3a400",
+      "bytes": 1993
+    },
+    "walkthrough/tests/room-lights.test.mjs": {
+      "source": "walkthrough/tests/room-lights.test.mjs",
+      "sha256": "66755026be4780e0be54f19ea93efd4715e844cb314e8da52988aca6116e40f5",
+      "bytes": 1415
+    },
+    "walkthrough/tests/spatial-assets.mjs": {
+      "source": "walkthrough/tests/spatial-assets.mjs",
+      "sha256": "48be161bba53ffe4ae09e67b6c99fa65129f94061b70254c16fe003b3b4fcd8e",
+      "bytes": 4757
+    },
+    "walkthrough/tests/spatial-batches.test.mjs": {
+      "source": "walkthrough/tests/spatial-batches.test.mjs",
+      "sha256": "685030881b92f425c978702c791206d34dddb63a6ba73c547ed65d22254d7c1a",
+      "bytes": 8141
+    },
+    "walkthrough/tests/spawn-visibility.test.mjs": {
+      "source": "walkthrough/tests/spawn-visibility.test.mjs",
+      "sha256": "5e9964376205edf3137a168663d8bb9922784d58aae9f75f4b22dfff3123e7e5",
+      "bytes": 5335
+    },
+    "walkthrough/tests/stair-landing.mjs": {
+      "source": "walkthrough/tests/stair-landing.mjs",
+      "sha256": "d45401b420fc679d7305322ad26ddfad349b4a352694c35f13d9679e8b7837c0",
+      "bytes": 2118
+    },
+    "walkthrough/tests/street-context.test.mjs": {
+      "source": "walkthrough/tests/street-context.test.mjs",
+      "sha256": "36b4a8a58d58fe6686d147e34e1341cdcdcc4745fce00e5eadb1f321a3401df9",
+      "bytes": 5954
+    },
+    "walkthrough/tests/street-context/browser.mjs": {
+      "source": "walkthrough/tests/street-context/browser.mjs",
+      "sha256": "854fabd6ab9cc42d58afacfc39897d78b596422f2974a6eb937a08d8fe25bae4",
+      "bytes": 8055
+    },
+    "walkthrough/tests/surface-materials.test.mjs": {
+      "source": "walkthrough/tests/surface-materials.test.mjs",
+      "sha256": "89e1cdbc990869872756231ff63979cfe93d02cf2004dc205c9bd9d97982eeef",
+      "bytes": 1142
+    },
+    "walkthrough/tests/tour-performance.mjs": {
+      "source": "walkthrough/tests/tour-performance.mjs",
+      "sha256": "28a844bdccad53d1dd652b440f6c0ea126ede3d586dcdee25d5c3542cffb7f73",
+      "bytes": 3084
+    },
+    "walkthrough/tests/viewpoints.mjs": {
+      "source": "walkthrough/tests/viewpoints.mjs",
+      "sha256": "f9fb9792476e6032326815095671bd86d119e951b86dc119b703dedf7ba0fccb",
+      "bytes": 1663
+    },
+    "walkthrough/tests/weapon-figures.mjs": {
+      "source": "walkthrough/tests/weapon-figures.mjs",
+      "sha256": "5527d6f013f8d8417e0db77dcd57899022028e0079becdf245e5bed1caff5856",
+      "bytes": 2476
+    },
+    "walkthrough/tests/weapon-models.test.mjs": {
+      "source": "walkthrough/tests/weapon-models.test.mjs",
+      "sha256": "333630042c7a4d4daf6020538f7de9db3aab0f5bd1f5bfaf8a062c81d608267b",
+      "bytes": 4148
+    },
+    "walkthrough/tests/zombie-animation.test.mjs": {
+      "source": "walkthrough/tests/zombie-animation.test.mjs",
+      "sha256": "20607f7b94e74b9370ce6fd63302650f4326ed01dc0952b99de15e5ddf950cf4",
+      "bytes": 6484
+    },
+    "walkthrough/tests/zombie-figures.mjs": {
+      "source": "walkthrough/tests/zombie-figures.mjs",
+      "sha256": "d1212c037f2790a76d2c4b4d1acf594df5967370b3cc57a4519664f07103147e",
+      "bytes": 2565
+    },
+    "walkthrough/tests/zombie-motion-proof.mjs": {
+      "source": "walkthrough/tests/zombie-motion-proof.mjs",
+      "sha256": "32f379e0c6ae76e4eb522fe9136077d58e0d83c65c509baadc850538c355e227",
+      "bytes": 4257
+    },
+    "walkthrough/tools/derived-cache.mjs": {
+      "source": "walkthrough/tools/derived-cache.mjs",
+      "sha256": "59c2c7c979365f48aea53103116ea330085e505fc4cc7bfa3546874254659c39",
+      "bytes": 1610
+    },
+    "walkthrough/tools/lossless-glb.mjs": {
+      "source": "walkthrough/tools/lossless-glb.mjs",
+      "sha256": "94a48e1293c3f9bfc56952f49623d78b126e72fa3d613fffd6312b2697b2dbec",
+      "bytes": 7249
+    },
+    "walkthrough/tools/plan-drive.mjs": {
+      "source": "walkthrough/tools/plan-drive.mjs",
+      "sha256": "16b4b67061d93c7881aaf51fd3e794a4627e9514e3591f097e5d69bd4f075a3d",
+      "bytes": 2291
+    },
+    "walkthrough/tools/verify-compressed-glbs.mjs": {
+      "source": "walkthrough/tools/verify-compressed-glbs.mjs",
+      "sha256": "caee66c54965bce305ab4fc47a5b917a10064a008fe79f7dc517ea89f0c41b53",
+      "bytes": 1174
+    }
+  },
+  "required_local_baselines": {
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
+      "sha256": "a0a99af60e725b8f76bb3c68d323706125911ef88092d1a41d0ee86b0b5d1b74",
+      "bytes": 189961915
+    },
+    "output-proposed-compact/geometry.json": {
+      "sha256": "0121ff49b184485d2bf69c284c6784a1f8f8190d03aa37dabffff98b53289e88",
+      "bytes": 66347538
+    },
+    "output-proposed-compact/navigation.json": {
+      "sha256": "a7aab138beb832170a62eb342bf774e3a8991e47a4f90c70c1665b22a907c8d6",
+      "bytes": 1782046
+    },
+    "output-walkthrough/Ashley Heights.blend": {
+      "sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
+      "bytes": 114555278
+    },
+    "output-walkthrough/Ashley Heights.glb": {
+      "sha256": "2b7f086fa70c041989595a9859d93c92b2e159f4eccae41d6c9bcd04a3df59d9",
+      "bytes": 32481260
+    },
+    "output-walkthrough/geometry.json": {
+      "sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
+      "bytes": 48302111
+    },
+    "walkthrough/public/house.glb": {
+      "sha256": "2b7f086fa70c041989595a9859d93c92b2e159f4eccae41d6c9bcd04a3df59d9",
+      "bytes": 32481260
+    }
+  }
+}

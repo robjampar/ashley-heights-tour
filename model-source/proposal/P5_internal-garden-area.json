@@ -1,0 +1,116 @@
+{
+  "revision": "P5",
+  "original_target": {
+    "published_approximate_ground_floor_m2": 166,
+    "model_internal_envelope_m2": 168.1343735526366,
+    "model_external_envelope_m2": 181.43667508650933,
+    "rectangle_only_m2": 175.47950000000003,
+    "centreline_perimeter_m": 57.83610460984041
+  },
+  "new_outer_polygon": [
+    [
+      13.98,
+      -4.0
+    ],
+    [
+      13.98,
+      -20.40606211322894
+    ],
+    [
+      4.93,
+      -20.40606211322894
+    ],
+    [
+      4.93,
+      -4.0
+    ],
+    [
+      5.5,
+      -4.0
+    ],
+    [
+      5.5,
+      -0.7
+    ],
+    [
+      5.5,
+      -0.115
+    ],
+    [
+      9.815,
+      -0.115
+    ],
+    [
+      9.815,
+      -0.7
+    ],
+    [
+      10.465,
+      -0.7
+    ],
+    [
+      10.465,
+      -4.0
+    ],
+    [
+      13.98,
+      -4.0
+    ]
+  ],
+  "new_internal_comparison_polygon": [
+    [
+      13.75,
+      -4.23
+    ],
+    [
+      13.75,
+      -20.17606211322894
+    ],
+    [
+      5.16,
+      -20.17606211322894
+    ],
+    [
+      5.16,
+      -4.23
+    ],
+    [
+      5.73,
+      -4.23
+    ],
+    [
+      5.73,
+      -0.34500000000000003
+    ],
+    [
+      9.584999999999999,
+      -0.34500000000000003
+    ],
+    [
+      9.584999999999999,
+      -0.9299999999999999
+    ],
+    [
+      10.235,
+      -0.9299999999999999
+    ],
+    [
+      10.235,
+      -4.23
+    ],
+    [
+      13.75,
+      -4.23
+    ]
+  ],
+  "comparison": {
+    "basis": "Same230mm inward-offset isolated envelope comparison as P3; conservative fixed allowance for new glazed boundary, not measured net habitable floor area. Main wing and parking unchanged.",
+    "previousM2": 168.13437355263656,
+    "proposedM2": 154.09834855263657,
+    "reductionM2": 14.036024999999995,
+    "newOuterFootprintM2": 167.38363712472193,
+    "outerFootprintReductionM2": 14.036024999999995
+  },
+  "room_programme_decrement_m2": 12.136,
+  "note": "The lost anteroom room programme and whole-envelope comparison decrement differ because the new garden-facing boundary changes the external wall allowance and has a return around the original bay."
+}

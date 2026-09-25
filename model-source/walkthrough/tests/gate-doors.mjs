@@ -1,0 +1,37 @@
+import {chromium} from 'playwright';
+import {build} from 'esbuild';
+import fs from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {Navigation,pointInPolygon} from '../src/navigation.js';
+const root=fileURLToPath(new URL('../../',import.meta.url)),out=root+'walkthrough/tests/gates/';
+const data=JSON.parse(await fs.readFile(out+'navigation-candidate.json'));
+const nav=new Navigation(data),arrival=data.rooms.find(r=>r.id==='arrival'),gates=data.interactiveDoors.filter(d=>d.wall==='Entrance driveway gates');
+const [cx,cy]=gates[0].openingCenter,[nx,ny]=arrival.direction;
+nav.position={x:arrival.position[0],y:arrival.position[1],z:0};
+for(let i=0;i<180;i++){nav.move(nx*.04,ny*.04);if(nav.position.x>cx+nx*1.5)break;}
+if(Math.hypot(nav.position.x-cx,nav.position.y-cy)<1||nav.position.x<cx)throw Error('Road-to-gate route blocked');
+for(const obstacle of data.obstacles.filter(o=>o.name.startsWith('Entrance gate brick pier ')||o.name.endsWith('outer terminal pier'))){const [a,b,c,d]=obstacle.box;if(!nav.blocked((a+c)/2,(b+d)/2,0))throw Error('Pier collision missing');}
+if(nav.support(arrival.position[0]-nx*3,arrival.position[1]-ny*3,0)!==null)throw Error('Outside road apron is unbounded');
+const bundle=await build({entryPoints:[root+'walkthrough/src/main.js'],bundle:true,write:false,format:'esm'});
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
+const page=await browser.newPage({viewport:{width:1365,height:950}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.route('http://127.0.0.1:8765/',r=>r.fulfill({path:root+'walkthrough/index.html',contentType:'text/html'}));
+await page.route('**/style.css',r=>r.fulfill({path:root+'walkthrough/style.css',contentType:'text/css'}));
+await page.route('**/app.js',r=>r.fulfill({body:bundle.outputFiles[0].text,contentType:'text/javascript'}));
+await page.route('**/navigation.json',r=>r.fulfill({body:JSON.stringify(data),contentType:'application/json'}));
+await page.route('**/house.glb',r=>r.fulfill({path:root+'output-walkthrough/Ashley Heights.glb',contentType:'model/gltf-binary'}));
+await page.goto('http://127.0.0.1:8765/');await page.waitForFunction(()=>window.walkthrough?.ready,null,{timeout:120000});await page.click('#drag');
+const initial=await page.evaluate(()=>({position:{...walkthrough.nav.position},gates:walkthrough.doors.status().filter(d=>d.wall==='Entrance driveway gates')}));
+if(Math.hypot(initial.position.x-arrival.position[0],initial.position.y-arrival.position[1])>.001)errors.push('Start is not outside gates');
+if(initial.gates.some(d=>d.open||!d.closedPoseRestored||d.meshCount!==483))errors.push('Closed gate assembly incorrect');
+await page.screenshot({path:out+'arrival-closed.png'});
+await page.evaluate(async({cx,cy,nx,ny})=>{for(let i=0;i<230;i++){walkthrough.nav.move(nx*.032,ny*.032);await new Promise(requestAnimationFrame);if((walkthrough.nav.position.x-cx)*nx+(walkthrough.nav.position.y-cy)*ny>2)break;}},{cx,cy,nx,ny});
+await page.waitForFunction(()=>walkthrough.doors.status().filter(d=>d.wall==='Entrance driveway gates').every(d=>d.open&&Math.abs(d.angle)<.002),null,{timeout:15000});
+const opened=await page.evaluate(()=>({position:{...walkthrough.nav.position},gates:walkthrough.doors.status().filter(d=>d.wall==='Entrance driveway gates')}));
+if((opened.position.x-cx)*nx+(opened.position.y-cy)*ny<1.8)errors.push('Could not cross complete approach and gate threshold');
+await page.evaluate(({cx,cy,nx,ny})=>walkthrough.setView([cx+nx*2,cy+ny*2,0],[-nx,-ny,0]),{cx,cy,nx,ny});await page.screenshot({path:out+'inside-open.png'});
+await page.evaluate(p=>{walkthrough.nav.position={x:p[0],y:p[1],z:0};},arrival.position);
+await page.waitForFunction(()=>walkthrough.doors.status().filter(d=>d.wall==='Entrance driveway gates').every(d=>!d.open&&d.closedPoseRestored),null,{timeout:15000});
+const closed=await page.evaluate(()=>walkthrough.doors.status().filter(d=>d.wall==='Entrance driveway gates'));
+const report={assemblies:data.interactiveDoors.length,initial,opened,closed,routeError:0,fixedPiersBlocked:4,errors};
+await fs.writeFile(out+'browser-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({assemblies:report.assemblies,gateMeshes:opened.gates.map(d=>d.meshCount),fixedPiersBlocked:4,errors},null,2));await browser.close();if(errors.length)process.exit(1);

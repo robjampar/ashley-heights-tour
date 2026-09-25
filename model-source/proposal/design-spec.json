@@ -1,0 +1,408 @@
+{
+  "name": "Ashley Heights — additive proposal",
+  "revision": "P8",
+  "loftFloor": 5.55,
+  "loftCeiling": 7.8,
+  "frontWing": [
+    4.93,
+    -20.40606211322894,
+    13.98,
+    -4.0
+  ],
+  "frontLink": [
+    5.5,
+    -4,
+    10.465,
+    -0.115
+  ],
+  "frontLoftStudio": [
+    8.1,
+    -17.5,
+    10.3,
+    -11.86
+  ],
+  "loftConnector": [
+    7.45,
+    -9,
+    10.35,
+    4.5
+  ],
+  "rearDormer": [
+    -1.75,
+    4.45,
+    9.69,
+    8.05
+  ],
+  "entranceBay": {
+    "projection_m": 1.67,
+    "y": [
+      -11.71,
+      -6.35
+    ],
+    "glazing_y": [
+      -11.21,
+      -6.85
+    ],
+    "wall_thickness_m": 0.35,
+    "pier_width_m": 0.5,
+    "pier_depth_m": 0.55,
+    "glass_inset_m": 0.5,
+    "eave_z": 5.35,
+    "ridge_z": 6.897,
+    "pitch_degrees": 30.0,
+    "verge_overhang_m": 0.0,
+    "rake_band_m": 0.303,
+    "basis": "Owner: entrance gable protrudes further with rendered walls and piers, a rake band as wide as the piers, no roof overhang, and the glazing inset 500 mm, after the front inspiration image; owner (P8 review): the roof stays at the wing eaves (a raised trial looked too tall); above the door-head transom the glazing is trapezoid panes rising to the rake, and the fascia band under the new roofs is as deep as the walls; owner: the rake band is exactly the roof package deep (0.35 m, measured square to the rake), the upper glazing frame sits 120 mm below the soffit behind a white head packer so it shows from outside, and every frame member in the entrance is 55 mm",
+    "glazing_head_inset_m": 0.12,
+    "frame_member_m": 0.055
+  },
+  "garageBay": {
+    "projection_m": 1.67,
+    "y": [
+      -20.19,
+      -13.89
+    ],
+    "wall_thickness_m": 0.23,
+    "eave_z": 3.0,
+    "ridge_z": 5.199,
+    "pitch_degrees": 34.0,
+    "verge_overhang_m": 0.22,
+    "first_floor_z": 2.8,
+    "gable_window_y": [
+      -17.69,
+      -16.39
+    ],
+    "gable_window_z": [
+      3.0,
+      4.05
+    ],
+    "door_y": [
+      -19.76,
+      -14.32
+    ],
+    "upper_space": "Vaulted window alcove open to the principal suite through the full gable section at floor level; the gable window lights it. Headroom is 2.15 m under the ridge only, so the low sides of the vault are kept off the walking route.",
+    "store_window_y": [
+      -13.2,
+      -12.2
+    ],
+    "basis": "Owner: the double garage becomes a lower 1.5-storey wing across the whole south end of the front wing, projecting forward under a wide 30° gable with a window in it, after the front inspiration image"
+  },
+  "forecourt": {
+    "surface": "resin-bound gravel",
+    "planters": "raised rendered planters with clipped box and olive trees flanking the entrance",
+    "basis": "Owner: make the forecourt look like the front inspiration image"
+  },
+  "frontage": {
+    "gate": "sliding",
+    "gate_clear_width_m": 4.8,
+    "wall_top_z": 1.95,
+    "basis": "Owner: replace the brick piers, plinths and iron railings with a straight boundary wall and a sliding gate flat in the wall line"
+  },
+  "rearGardenRoom": [
+    -4.9,
+    8.92,
+    4.5,
+    14.1
+  ],
+  "pavilion": [
+    12.1,
+    19.59,
+    14.32,
+    26.28
+  ],
+  "pool": [
+    6.5,
+    16.0,
+    10.0,
+    24.0
+  ],
+  "stairs": {
+    "x": [
+      7.845,
+      8.885
+    ],
+    "y": [
+      0.575,
+      3.5
+    ],
+    "bottom": 2.8,
+    "top": 5.55,
+    "risers": 14,
+    "going": 0.225,
+    "clearWidth": 0.94
+  },
+  "parkingBaySize": [
+    2.5,
+    5.0
+  ],
+  "fountain": "remove entire fountain and planted island",
+  "parkingCount": {
+    "driveway": 4,
+    "newDoubleGarage": 2
+  },
+  "workDeadline": "2026-09-17T08:00:00+01:00",
+  "frontWingBasis": "P5 keeps the P4 main-wing footprint but replaces the east attached anteroom with an open internal garden, reducing the comparison enclosed ground-floor area; original168.134m² target is retained for comparison only and is no longer matched.",
+  "areaTargetInternal": 168.134,
+  "courtyard": {
+    "openSide": "west",
+    "bounds": [
+      -0.1,
+      -4,
+      5.5,
+      0
+    ]
+  },
+  "structuralChanges": "Original front wall/opening alterations allowed by owner; other original rooms/walls/stairs retained. Local loft floor/roof/stair openings necessarily explicit. Original separate model unchanged.",
+  "newWingRoof": {
+    "ridge": 8.7,
+    "eave": 5.35,
+    "pitch_degrees": 36.82,
+    "basis": "Owner: extension about 10% smaller; east wall in 0.5 m, eaves to the original 5.35 m, ridge 8.7 m"
+  },
+  "frontCentralDemolition": {
+    "scope": "Remove original front door, porch, arched landing window and central front wall; direct continuous entrance/landing connection",
+    "preserved": "Existing remaining room walls, stair and floor positions"
+  },
+  "roofBrief": "Conventional pitched new wing and central connector with continuous trimmed valleys to original roof. No flat loft bridge; the owner added a flat east dormer over the new-wing loft studio (P8 review). Original rear dormer/pool pavilion/garden living roof remain separate reference-led elements.",
+  "frontLinkPreviousP4": [
+    5.5,
+    -4.0,
+    13.98,
+    -0.115
+  ],
+  "frontLinkFloorRects": [
+    [
+      5.5,
+      -4,
+      9.815,
+      -0.115
+    ]
+  ],
+  "frontLinkOuterPolygon": [
+    [
+      10.465,
+      -0.7
+    ],
+    [
+      10.465,
+      -4.0
+    ],
+    [
+      5.5,
+      -4.0
+    ],
+    [
+      5.5,
+      -0.7
+    ],
+    [
+      5.5,
+      -0.115
+    ],
+    [
+      9.815,
+      -0.115
+    ],
+    [
+      9.815,
+      -0.7
+    ]
+  ],
+  "frontLinkInteriorPolygon": [
+    [
+      5.73,
+      -4
+    ],
+    [
+      9.585,
+      -4
+    ],
+    [
+      9.585,
+      -0.115
+    ],
+    [
+      5.73,
+      -0.115
+    ]
+  ],
+  "internalGarden": {
+    "basis": "P5 owner request: open-to-sky garden immediately outside the retained original drawing-room bay. Complete bay window, masonry, roof and curtains retained. Former east anteroom no longer enclosed floor area.",
+    "previousRoomBounds": [
+      10.47,
+      -3.85,
+      13.75,
+      -0.15
+    ],
+    "bounds": [
+      9.815,
+      -4,
+      13.98,
+      -0.115
+    ],
+    "glazedBoundaryCenterline": [
+      [
+        9.7,
+        -4
+      ],
+      [
+        9.7,
+        -0.115
+      ]
+    ],
+    "bayClearanceReason": "Straight X10.35 glazing would cut the original western angled bay pane; returned boundary clears its shallow roof by approximately65mm and masonry by more.",
+    "newWingDoors": {
+      "jambs": [
+        [
+          10.745,
+          -4.115
+        ],
+        [
+          13.145,
+          -4.115
+        ]
+      ],
+      "width": 2.4,
+      "height": 2.35,
+      "leaves": 2,
+      "swing": "north into garden"
+    },
+    "pathBounds": [
+      11.27,
+      -4.0,
+      12.62,
+      -0.8
+    ],
+    "eastPlantingBounds": [
+      13.35,
+      -2.5,
+      13.89,
+      -0.75
+    ],
+    "formerRoomAreaM2": 12.136,
+    "enclosedAreaComparison": {
+      "basis": "Same230mm inward-offset isolated envelope comparison as P3; conservative fixed allowance for new glazed boundary, not measured net habitable floor area. Main wing and parking unchanged.",
+      "previousM2": 168.13437355263656,
+      "proposedM2": 154.09834855263657,
+      "reductionM2": 14.036024999999995,
+      "newOuterFootprintM2": 167.38363712472193,
+      "outerFootprintReductionM2": 14.036024999999995
+    },
+    "floorPolygon": [
+      [
+        13.98,
+        -4.0
+      ],
+      [
+        9.815,
+        -4.0
+      ],
+      [
+        9.815,
+        -0.115
+      ],
+      [
+        9.89113402116571,
+        -0.115
+      ],
+      [
+        10.493058587284882,
+        -0.35524499387249986
+      ],
+      [
+        10.938559052788456,
+        -0.45000001311302185
+      ],
+      [
+        11.899170401252071,
+        -0.45000001311302185
+      ],
+      [
+        12.34394085529593,
+        -0.35540026250916207
+      ],
+      [
+        12.968561785494297,
+        -0.115
+      ],
+      [
+        13.98,
+        -0.115
+      ]
+    ],
+    "usableGroundFootprintM2": 13.310739505906417,
+    "glazingBasis": "Owner: the gallery glazing runs straight at x 9.7 instead of returning round the bay; the first floor above is unchanged"
+  },
+  "areaTargetStatus": "Superseded by user-directed internal garden; do not enlarge wing or parking footprint to force equal area.",
+  "refinementBrief": "Remove secondary dining-bay glass vestibule; former garage becomes open garden living, gym relocated into front wing; continue new-wing roof into original roof; remove orphan rear utility window frames; unify side-wing facade finishes.",
+  "bedroomBrief": "Six main bedrooms. Repurpose garden-facing north side-wing bedroom as a shared upstairs family lounge with fitted storage and a window-side work table. Preserve all four remaining original bedrooms, the new front principal suite and the south side bedroom.",
+  "entertainmentBasement": {
+    "outerBounds": [
+      4.93,
+      -12.20303105661447,
+      13.98,
+      -4.0
+    ],
+    "fractionOfMainWingFootprint": 0.5,
+    "floorZ": -2.8,
+    "wallThickness": 0.23,
+    "programme": [
+      "Cinema",
+      "Games room"
+    ],
+    "stairVoid": [
+      5.35,
+      -6.68,
+      8.1,
+      -4.28
+    ],
+    "basis": "New northern half of front wing; original wine cellar remains separate. New stair replaces only the ground-floor reading alcove, retaining the entrance/gallery route, gym and garage parking."
+  },
+  "frontWingUpperEastX": 13.48,
+  "frontWingUpperBasis": "Owner: the ground floor and garage stay as they are; the first floor and loft come 0.5 m in from the east under a lower roof",
+  "wingDormer": {
+    "bounds": [
+      9.51,
+      -16.0,
+      12.1,
+      -11.86
+    ],
+    "ceiling_z": 8.12,
+    "roof_top_z": 8.34,
+    "basis": "Owner: a second flat-roofed dormer on the east slope of the new wing gives the loft studio standing headroom beyond the 2.4 m ridge band. It starts where the east slope soffit meets its 8.12 m ceiling (x 9.51), stops at the studio partition, and its south cheek sits inside the ridge run north of the south hip start (y -16.0)."
+  },
+  "pavilionBasis": "Owner: the glazed pavilion runs the full length of the existing outbuilding row, back to the north end of the outside WC brickwork, and projects 2.22 m (was 2.82 m) in front of it. The tool store and WC doors now open into it.",
+  "hotTub": {
+    "bounds": [
+      11.46,
+      16.0,
+      14.86,
+      18.3
+    ],
+    "basis": "Owner: a double-width 3.4 x 2.3 m unit in place of the 2.3 m square tub; the access stair, timber skirt and pad follow it east."
+  },
+  "terraceWalkOnLanterns": {
+    "rects": [
+      [
+        -1.0,
+        10.1,
+        0.0,
+        11.1
+      ],
+      [
+        0.7,
+        10.1,
+        1.7,
+        11.1
+      ],
+      [
+        2.4,
+        10.1,
+        3.4,
+        11.1
+      ]
+    ],
+    "basis": "Owner: three flush walk-on glass roof lanterns in the terrace over the glazed rear extension, in a row deep in the room clear of the door sweeps and the cafe group."
+  },
+  "variantLabel": "Proposal A"
+}
