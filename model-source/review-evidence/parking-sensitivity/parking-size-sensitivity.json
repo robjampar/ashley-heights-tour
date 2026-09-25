@@ -1,0 +1,341 @@
+{
+  "scenario": {
+    "body_m": [
+      4.8,
+      1.95
+    ],
+    "centre_turning_radius_m": 5.4,
+    "search_margin_m": 0.12,
+    "body_margin_m": 0.03,
+    "max_search_expansions": 100000
+  },
+  "limitations": "Generic larger-car scenario, not a manufacturer vehicle or highway assessment. All other parked car boxes use the larger dimensions. Fixed issued parked headings. A missing route is an inconclusive bounded-search result, not proof no manoeuvre exists. Static fit is only body clearance, with no mirror or door-opening allowance. Main compact-car issue and audits remain unchanged.",
+  "reports": [
+    {
+      "id": "e1",
+      "modelUpdatedAt": "2026-09-25T05:48:45.337703+00:00",
+      "results": [
+        {
+          "bay": "N1",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 208,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 342,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "N2",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 217,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "E1",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 338,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 367,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "E2",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 338,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "G1",
+          "garage": true,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 282,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 316,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "G2",
+          "garage": true,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 337,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "modelUpdatedAt": "2026-09-25T05:48:46.475973+00:00",
+      "results": [
+        {
+          "bay": "S1",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 267,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "N1",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 212,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "N2",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 208,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 378,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "N3",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 217,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "G1",
+          "garage": true,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 238,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 289,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "G2",
+          "garage": true,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 239,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 274,
+            "firstCollision": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "modelUpdatedAt": "2026-09-25T05:50:02.805234+00:00",
+      "results": [
+        {
+          "bay": "N1",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 207,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 357,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "N2",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 212,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "S1",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 223,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 298,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "S2",
+          "garage": false,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 332,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": false,
+            "sweptClear": false,
+            "samples": 0,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "G1",
+          "garage": true,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 322,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 267,
+            "firstCollision": null
+          }
+        },
+        {
+          "bay": "G2",
+          "garage": true,
+          "staticFit": true,
+          "arrive": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 237,
+            "firstCollision": null
+          },
+          "exit": {
+            "routeFound": true,
+            "sweptClear": true,
+            "samples": 298,
+            "firstCollision": null
+          }
+        }
+      ]
+    }
+  ],
+  "checker_sha256": "e111259b91e427ac3015b1208e2d1e91ed6ff2c9d49b7ff596d1b6a88ca40cc0",
+  "script_sha256": "81f3a2242f2a59f41f4b574d47d47ffae070599b0c4d6eb67b919ed7f7736baf"
+}

@@ -18,8 +18,8 @@
       "bay": "S1",
       "outside": true,
       "journey": "arrive",
-      "poses": 41,
-      "swept_samples": 199,
+      "poses": 46,
+      "swept_samples": 222,
       "required_heading_radians": null,
       "pass": true,
       "failure": null
@@ -28,8 +28,8 @@
       "bay": "S1",
       "outside": true,
       "journey": "exit",
-      "poses": 52,
-      "swept_samples": 252,
+      "poses": 53,
+      "swept_samples": 257,
       "required_heading_radians": null,
       "pass": true,
       "failure": null
@@ -68,8 +68,8 @@
       "bay": "N2",
       "outside": true,
       "journey": "exit",
-      "poses": 61,
-      "swept_samples": 298,
+      "poses": 66,
+      "swept_samples": 322,
       "required_heading_radians": null,
       "pass": true,
       "failure": null
@@ -108,8 +108,8 @@
       "bay": "G1",
       "outside": false,
       "journey": "exit",
-      "poses": 75,
-      "swept_samples": 366,
+      "poses": 56,
+      "swept_samples": 273,
       "required_heading_radians": null,
       "pass": true,
       "failure": null
@@ -119,7 +119,7 @@
       "outside": false,
       "journey": "arrive",
       "poses": 48,
-      "swept_samples": 233,
+      "swept_samples": 232,
       "required_heading_radians": null,
       "pass": true,
       "failure": null
@@ -129,7 +129,7 @@
       "outside": false,
       "journey": "exit",
       "poses": 61,
-      "swept_samples": 297,
+      "swept_samples": 298,
       "required_heading_radians": null,
       "pass": true,
       "failure": null

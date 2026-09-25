@@ -42,13 +42,15 @@ export class DriveWorld {
   this.dynamic=[];   // boxes of parked cars the current search must respect
   this.cells=new Map();
  }
- bucket(x,y){
-  const ix=Math.floor(x/3),iy=Math.floor(y/3),key=ix+','+iy;
+ bucket(x,y,reach=1){
+  // Include the full queried body, even when its centre sits at a cell edge.
+  const pad=Math.max(1,Math.ceil(reach));
+  const ix=Math.floor(x/3),iy=Math.floor(y/3),key=ix+','+iy+','+pad;
   if(this.cells.has(key))return this.cells.get(key);
-  const x0=ix*3-1,y0=iy*3-1,x1=ix*3+4,y1=iy*3+4;
+  const x0=ix*3-pad,y0=iy*3-pad,x1=ix*3+3+pad,y1=iy*3+3+pad;
   const lines=this.lines.filter(l=>Math.min(l.a[0],l.b[0])-l.r<x1&&Math.max(l.a[0],l.b[0])+l.r>x0&&Math.min(l.a[1],l.b[1])-l.r<y1&&Math.max(l.a[1],l.b[1])+l.r>y0);
   const boxes=this.boxes.filter(b=>b[0]<x1&&b[2]>x0&&b[1]<y1&&b[3]>y0);
-  const polygons=this.polygons.filter(p=>p.some(q=>q[0]>x0-6&&q[0]<x1+6&&q[1]>y0-6&&q[1]<y1+6));
+  const polygons=this.polygons.filter(p=>Math.min(...p.map(q=>q[0]))<=x1&&Math.max(...p.map(q=>q[0]))>=x0&&Math.min(...p.map(q=>q[1]))<=y1&&Math.max(...p.map(q=>q[1]))>=y0);
   const value={lines,boxes,polygons};this.cells.set(key,value);return value;
  }
  blockedPoint(x,y,clearance=.15){
@@ -85,7 +87,7 @@ export class DriveWorld {
    if(this.site&&!pointInPolygon(px,py,this.site)&&!(this.apron&&pointInPolygon(px,py,this.apron))&&!pointInPolygon(px,py,this.road))return false;
    if(this.drivable&&this.site&&pointInPolygon(px,py,this.site)&&!this.drivable.some(p=>pointInPolygon(px,py,p))&&!(this.apron&&pointInPolygon(px,py,this.apron)))return false;
   }
-  const b=this.bucket(x,y);
+  const b=this.bucket(x,y,Math.hypot(hl,hw));
   for(const box of [...b.boxes,...this.dynamic]){
    if(box[0]>x+hl+1||box[2]<x-hl-1||box[1]>y+hl+1||box[3]<y-hl-1)continue;
    for(const [px,py] of outline)if(px>box[0]&&px<box[2]&&py>box[1]&&py<box[3])return false;

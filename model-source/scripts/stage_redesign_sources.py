@@ -11,7 +11,7 @@ for directory in ('walkthrough/src','walkthrough/tools','tests'):
  paths.update(str(p.relative_to(ROOT))for p in (ROOT/directory).rglob('*')if p.is_file()and p.suffix in('.js','.mjs','.py','.html','.css','.json','.svg'))
 paths.update(str(p.relative_to(ROOT))for p in (ROOT/'walkthrough/tests').rglob('*')if p.is_file()and p.suffix in('.js','.mjs','.py')and 'site'not in p.relative_to(ROOT/'walkthrough/tests').parts)
 paths.add('walkthrough/tests/doors/index.html')
-paths.update(('Regenerate Six Options.command','README.md','walkthrough/build.mjs','walkthrough/index.html','walkthrough/style.css','walkthrough/package.json','walkthrough/package-lock.json','proposal/redesigns/review-notes.json','proposal/redesigns/research/RESEARCH.md','proposal/redesigns/CONCEPTS.md','proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md','proposal/START-HERE.md','proposal/CURRENT-BRIEF.md','proposal/planning/README.md','proposal/proposed/README.md','revisions/planning-cleanup-2026-09-23/CLEANUP.md','proposal/planning-context.json','proposal/planning-context-proposed.json'))
+paths.update(('Regenerate Six Options.command','README.md','walkthrough/build.mjs','walkthrough/index.html','walkthrough/style.css','walkthrough/package.json','walkthrough/package-lock.json','proposal/redesigns/review-notes.json','proposal/redesigns/research/RESEARCH.md','proposal/redesigns/CONCEPTS.md','proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md','proposal/redesigns/PARKING-SENSITIVITY.md','proposal/START-HERE.md','proposal/CURRENT-BRIEF.md','proposal/planning/README.md','proposal/proposed/README.md','revisions/planning-cleanup-2026-09-23/CLEANUP.md','proposal/planning-context.json','proposal/planning-context-proposed.json'))
 paths.update(str(p.relative_to(ROOT))for p in (ROOT/'walkthrough/public/redesigns').glob('*')if p.is_file()and p.suffix in('.html','.css','.js','.json'))
 manifest={};baseline={}
 for name in sorted(paths):
@@ -36,6 +36,9 @@ for id in ('i1','i2','i3','e1','e2','e3'):
   source=ROOT/f'walkthrough/public/redesigns/images/{id}-{view}.jpg.capture.json'
   if source.exists():
    target=DEST/'review-evidence'/id/'captures'/(view+'.json');target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+for suffix in ('mjs','json'):
+ source=ROOT/'revisions/redesigns-2026-09-25'/('parking-size-sensitivity.'+suffix)
+ target=DEST/'review-evidence/parking-sensitivity'/source.name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
 previous_path=DEST/'source-manifest.json'
 if previous_path.exists():
  for name in json.loads(previous_path.read_text())['files'].keys()-manifest.keys():

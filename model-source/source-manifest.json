@@ -2,8 +2,8 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "9a8c5324f2b5bcab714890036cbdcbef17e9ca4fb3ae5977e45883cc0f3b2a44",
-      "bytes": 14609
+      "sha256": "2ee2168885ec635e7c8dfd016e52eb68dc6c365d8c26764c7e0b2ec8a5cd8c14",
+      "bytes": 15637
     },
     "Regenerate Six Options.command": {
       "source": "Regenerate Six Options.command",
@@ -89,6 +89,11 @@
       "source": "proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md",
       "sha256": "66b9062da0ed9914648f78793a7ed8e707dea0fd3202a64180c761f56dc51692",
       "bytes": 7994
+    },
+    "proposal/redesigns/PARKING-SENSITIVITY.md": {
+      "source": "proposal/redesigns/PARKING-SENSITIVITY.md",
+      "sha256": "ae3d019ed398079303ffaaa0817cde953730f053c3ed4ce42bf8258be84efda9",
+      "bytes": 2038
     },
     "proposal/redesigns/e1.json": {
       "source": "proposal/redesigns/e1.json",
@@ -297,8 +302,8 @@
     },
     "scripts/build_redesign_pdf.py": {
       "source": "scripts/build_redesign_pdf.py",
-      "sha256": "24b9f12e62cdff0fa962a400bf77214a265a392f6cb5a2220a94535ffc7b2752",
-      "bytes": 19961
+      "sha256": "d10be07b55b0258b913634a18adf3e02c4fbabd8594d95eadf18c38c5276b0b6",
+      "bytes": 19973
     },
     "scripts/build_support.py": {
       "source": "scripts/build_support.py",
@@ -1242,8 +1247,8 @@
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "41718198be3c9ea3ccd7ab4cd7fffed63fb097297a83a7b6e032bf5f0b284780",
-      "bytes": 5474
+      "sha256": "5dc6a8b007ec378c3724ec4de53fad5d5116792c6ba5f6373542a977e547fc2c",
+      "bytes": 5773
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1417,8 +1422,8 @@
     },
     "walkthrough/src/drive.js": {
       "source": "walkthrough/src/drive.js",
-      "sha256": "d6924002f25843e03d130906e674a27f5f0f83b2610e373579bbd9fd25d86687",
-      "bytes": 12993
+      "sha256": "e111259b91e427ac3015b1208e2d1e91ed6ff2c9d49b7ff596d1b6a88ca40cc0",
+      "bytes": 13236
     },
     "walkthrough/src/easter-session.js": {
       "source": "walkthrough/src/easter-session.js",
@@ -1619,6 +1624,11 @@
       "source": "walkthrough/tests/drive-input.test.mjs",
       "sha256": "e0c78fa74eb14b2913feff43100d80957f84985f482ff9b947a3ccc21c5dbfe4",
       "bytes": 2704
+    },
+    "walkthrough/tests/drive-spatial.test.mjs": {
+      "source": "walkthrough/tests/drive-spatial.test.mjs",
+      "sha256": "638fdade1878fb6b8c67c9d537be215cf0b189d304404d581330509d403491ce",
+      "bytes": 1070
     },
     "walkthrough/tests/easter-session.test.mjs": {
       "source": "walkthrough/tests/easter-session.test.mjs",

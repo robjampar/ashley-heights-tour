@@ -18,7 +18,7 @@ for name,file in [('ReviewSans','DejaVuSans.ttf'),('ReviewBold','DejaVuSans-Bold
 pdfmetrics.registerFontFamily('ReviewSans',normal='ReviewSans',bold='ReviewBold')
 W,H=A3;M=44;INK=HexColor('#203e3a');MUTED=HexColor('#677970');PAPER=HexColor('#fffdf7');LINE=HexColor('#d7ddd1')
 data=json.loads((ROOT/'walkthrough/public/redesigns/options.json').read_text());options=data['options']
-path=DEST/'Ashley Heights - Six design options.pdf';c=canvas.Canvas(str(path),pagesize=A3,pageCompression=1)
+path=DEST/'Ashley Heights - Six design options.pdf';c=canvas.Canvas(str(path),pagesize=A3,pageCompression=1,invariant=1)
 c.setTitle('Ashley Heights - Six design options');c.setAuthor('Ashley Heights design study');c.setSubject('Six concept alternatives with floor plans, site arrangements and design trade-offs')
 page=0
 
