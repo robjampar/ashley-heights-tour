@@ -283,7 +283,7 @@ async function load(){
  const roomParameter=new URLSearchParams(location.search).get('room');
  const requestedRoom=data.rooms.some(r=>r.id===roomParameter)?roomParameter:null;
  goTo(requestedRoom??'arrival');
- $('review-link').href='./redesigns/'+(data.redesign?'#'+currentDesign:'');
+ $('review-link').href='./redesigns/'+(['i1','i2','i3','e1','e2','e3'].includes(currentDesign)?'#'+currentDesign:'');
  if(readLifePreference('people'))setLife('people',true,{persist:false});
  try{if(localStorage.getItem('ashley-heights-inspect')==='1')setInspect(true,{persist:false});}catch{}
  if(readLifePreference('cars')&&life.cars.length)setLife('cars',true,{persist:false});
