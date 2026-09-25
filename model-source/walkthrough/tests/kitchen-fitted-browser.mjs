@@ -23,10 +23,10 @@ try{for(const design of ['proposed','planning']){
    ovenControls:names.filter(n=>/rotary.dial|illuminated.digit|touch.control/i.test(n)).length,
    sink:hit?{name:w.inspector.resolve(hit).name,z:hit.point.y}:null};
  },design);
- assert.equal(proof.scheme.scheme,'01 Quiet oak');assert.equal(proof.textures.length,3);
+ assert.equal(proof.scheme.scheme,'01 Quiet oak');assert(proof.scheme.revision>=2);assert.equal(proof.textures.length,5);
  for(const m of proof.textures){assert.equal(m.normalMap,false,m.name);assert(m.bumpScale>0&&m.bumpScale<.0001);assert(m.uvMeshes>0);}
  assert.equal(proof.ovenControls,46);assert(proof.sink);assert.match(proof.sink.name,/Sink.(drain|basin)/i);assert(proof.sink.z>.72&&proof.sink.z<.75);
  await page.addStyleTag({content:'body > :not(#view) {visibility:hidden !important} #view {visibility:visible !important}'});
  await page.waitForTimeout(500);await page.screenshot({path:new URL(`fitted-${design}.png`,out).pathname});
  assert.deepEqual(errors,[]);checks.push(proof);await page.close();
-}await fs.writeFile(new URL('fitted-browser-checks.json',out),JSON.stringify({base,checks},null,2));console.log('PASS: both full fitted rooms, 46 oven control meshes each, 3 faithful textured materials, open sinks, no errors');}finally{await browser.close();}
+}await fs.writeFile(new URL('fitted-browser-checks.json',out),JSON.stringify({base,checks},null,2));console.log('PASS: both full fitted rooms, 46 oven control meshes each, 5 faithful textured materials, open sinks, no errors');}finally{await browser.close();}

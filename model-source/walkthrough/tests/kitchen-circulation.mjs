@@ -6,7 +6,7 @@ const reports=[];
 for(const variant of ['compact','planning']){
  const data=JSON.parse(fs.readFileSync(new URL(`../public/proposal-${variant}-navigation.json`,import.meta.url)));
  const nav=new Navigation(data);nav.radius=.25;
- const x0=-4.5,y0=4.15,step=.075,nx=124,ny=variant==='compact'?126:63;
+ const x0=-4.8,y0=1.2,step=.075,nx=129,ny=variant==='compact'?169:105;
  const point=i=>({x:x0+i%nx*step,y:y0+Math.floor(i/nx)*step,z:0});
  const free=new Uint8Array(nx*ny),seen=new Uint8Array(nx*ny);
  for(let i=0;i<free.length;i++){const p=point(i);free[i]=Math.abs(nav.support(p.x,p.y,0)??99)<.02&&!nav.blocked(p.x,p.y,0);}
@@ -20,7 +20,7 @@ for(const variant of ['compact','planning']){
    if(Math.hypot(nav.position.x-target.x,nav.position.y-target.y)<.001){seen[j]=1;queue.push(j);}
   }
  }
- const targets=[['south entry',3.5,4.7],['west side of furniture',.65,6.25],['side living opening',-.5,6.2],['rear work aisle',3.35,7.65]];
+ const targets=[['south entry',3.5,4.7],['west side of furniture',.65,6.25],['side living opening',-.5,6.2],['rear work aisle',3.35,7.65],['TV sofa approach',-3.0,7.1],['TV console approach',-4.3,7.1],['behind sofa to garden',-1.25,7.9],['cellar landing',-2.7,3.5],['west door approach',-4.5,2.0]];
  if(variant==='compact')targets.push(['garden threshold',3.3,9.2],['garden dining east aisle',3.95,12.1],['garden dining west aisle',-.40,12.1]);
  for(const [label,x,y]of targets)assert(seen[nearest([x,y])],variant+' '+label+' is disconnected');
  const spawn=data.rooms.find(r=>r.label==='Kitchen').position;assert(!nav.blocked(...spawn),variant+' Kitchen viewpoint blocked');

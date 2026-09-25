@@ -1,26 +1,45 @@
 [
   {
     "design": "compact",
-    "textureCount": 10,
-    "uvCount": 10,
+    "revision": 2,
+    "textureCount": 15,
+    "uvCount": 15,
     "ovenControls": 46,
-    "names": 1158,
+    "names": 1038,
+    "loungeDetails": [
+      {
+        "term": "TV inset glass",
+        "count": 1
+      },
+      {
+        "term": "Sofa scatter cushion",
+        "count": 2
+      },
+      {
+        "term": "Remote button",
+        "count": 9
+      },
+      {
+        "term": "olive leaves",
+        "count": 14
+      }
+    ],
     "batches": {
-      "sourceMeshes": 1983,
-      "sourceVertices": 454665,
-      "sourceTriangles": 151555,
+      "sourceMeshes": 2663,
+      "sourceVertices": 1397271,
+      "sourceTriangles": 465757,
       "emptySourceMeshes": 0,
-      "batches": 60,
-      "opaqueBatches": 56,
-      "transparentBatches": 4,
+      "batches": 93,
+      "opaqueBatches": 88,
+      "transparentBatches": 5,
       "spanBatches": 0,
-      "globalBatches": 60,
-      "outputVertices": 213309,
-      "outputTriangles": 151555,
-      "indexedBatches": 60,
+      "globalBatches": 72,
+      "outputVertices": 491413,
+      "outputTriangles": 465757,
+      "indexedBatches": 93,
       "oversizedSourceMeshes": 0,
-      "inputStoredVertices": 213309,
-      "inputIndexEntries": 454665,
+      "inputStoredVertices": 491413,
+      "inputIndexEntries": 1397271,
       "cellSize": 6,
       "floorHeight": 2.8,
       "transparentCellSize": 3,
@@ -31,26 +50,45 @@
   },
   {
     "design": "planning",
-    "textureCount": 9,
-    "uvCount": 9,
+    "revision": 2,
+    "textureCount": 14,
+    "uvCount": 14,
     "ovenControls": 46,
-    "names": 848,
+    "names": 928,
+    "loungeDetails": [
+      {
+        "term": "TV inset glass",
+        "count": 1
+      },
+      {
+        "term": "Sofa scatter cushion",
+        "count": 2
+      },
+      {
+        "term": "Remote button",
+        "count": 9
+      },
+      {
+        "term": "olive leaves",
+        "count": 12
+      }
+    ],
     "batches": {
-      "sourceMeshes": 1363,
-      "sourceVertices": 373263,
-      "sourceTriangles": 124421,
+      "sourceMeshes": 2174,
+      "sourceVertices": 1199877,
+      "sourceTriangles": 399959,
       "emptySourceMeshes": 0,
-      "batches": 54,
-      "opaqueBatches": 51,
-      "transparentBatches": 3,
+      "batches": 76,
+      "opaqueBatches": 72,
+      "transparentBatches": 4,
       "spanBatches": 0,
-      "globalBatches": 54,
-      "outputVertices": 185576,
-      "outputTriangles": 124421,
-      "indexedBatches": 54,
+      "globalBatches": 66,
+      "outputVertices": 435979,
+      "outputTriangles": 399959,
+      "indexedBatches": 76,
       "oversizedSourceMeshes": 0,
-      "inputStoredVertices": 185576,
-      "inputIndexEntries": 373263,
+      "inputStoredVertices": 435979,
+      "inputIndexEntries": 1199877,
       "cellSize": 6,
       "floorHeight": 2.8,
       "transparentCellSize": 3,

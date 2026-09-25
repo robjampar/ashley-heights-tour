@@ -2,21 +2,31 @@
   {
     "variant": "compact",
     "original_preserved": true,
-    "unchanged_previous_meshes": 13883,
+    "unchanged_previous_meshes": 13861,
     "maximum_vertex_difference_m": 0,
-    "interior_meshes": 1158,
-    "collision_items": 13,
+    "interior_meshes": 1028,
+    "collision_items": 19,
     "unintended_furniture_overlaps": [],
-    "visible_detail_checks": 11
+    "visible_detail_checks": 19,
+    "plant_connections": {
+      "branch_roots": 252,
+      "leaf_roots": 2460,
+      "maximum_gap_m": 8.459295811745695e-07
+    }
   },
   {
     "variant": "planning",
     "original_preserved": true,
-    "unchanged_previous_meshes": 13177,
+    "unchanged_previous_meshes": 13155,
     "maximum_vertex_difference_m": 0,
-    "interior_meshes": 848,
-    "collision_items": 8,
+    "interior_meshes": 919,
+    "collision_items": 14,
     "unintended_furniture_overlaps": [],
-    "visible_detail_checks": 11
+    "visible_detail_checks": 19,
+    "plant_connections": {
+      "branch_roots": 219,
+      "leaf_roots": 2130,
+      "maximum_gap_m": 7.604226644221613e-07
+    }
   }
 ]

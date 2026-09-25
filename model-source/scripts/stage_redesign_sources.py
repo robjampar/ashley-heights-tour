@@ -16,6 +16,7 @@ paths.update(str(p.relative_to(ROOT))for p in (ROOT/'walkthrough/public/redesign
 manifest={};baseline={}
 paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'walkthrough/public/interiors').rglob('*') if p.is_file() and p.suffix in ('.html','.css','.js','.json','.md'))
 paths.add('revisions/interiors-kitchen-2026-09-25/REVIEW-DESIGN.md')
+paths.update('revisions/interiors-lounge-2026-09-25/'+name for name in ('REVIEW-DESIGN.md','STATUS.md'))
 paths.update('revisions/interiors-kitchen-2026-09-25/'+name for name in ('STATUS.md','native-audit.json','kitchen-circulation.json','fitted-browser-checks.json','model-browser-checks.json'))
 paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/kitchen').rglob('*') if p.is_file())
 for name in sorted(paths):

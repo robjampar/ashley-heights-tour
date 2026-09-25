@@ -41,6 +41,11 @@ routes[0]={name:'New entrance via original stairs to first floor and joined loft
  for(const [name,points] of Object.entries(data.proposalSideWing?.clear_routes_m??{})){
   // (the planning design's rear door is the 2.40 m pair at x -3.79..-1.39)
   const corrected=['gym_to_garden','side_living_to_garden'].includes(name)?(data.planningApplication&&name==='side_living_to_garden'?[[-3.50,3.50,0],[-3.30,4.63,0],[-2.0,4.63,0],[-2.0,6.25,0],[-2.0,9.10,0],[-2.0,10.1,0]]:[[-3.50,3.50,0],[-3.30,4.63,0],[-1.05,4.63,0],[-1.05,6.25,0],[-1.05,9.10,0],[-.80,10.1,0]]):name==='south_bedroom'?[[-2.0,4.40,2.8],[-1.90,3.70,2.8],[-1.85,3.10,2.8]]:points;
+  // The fitted TV sofa occupies the old diagonal across the living room.
+  // Keep the route on the generous kitchen side, clear of the floor olive.
+  if(data.interiorDesign?.revision>=2&&['gym_to_garden','side_living_to_garden'].includes(name)){
+   corrected.splice(0,corrected.length,[-3.50,3.50,0],[-3.30,4.63,0],[-1.23,4.63,0],[-1.23,6.25,0],[-1.23,9.10,0],[-.80,10.1,0]);
+  }
   routes.push({name:'Side wing · '+name,start:corrected[0],points:corrected.slice(1)});
  }
  routes.push({name:'Internal garden from new wing',start:[11.95,-5.2,0],points:[[11.95,-4.1,0],[11.95,-2.5,0],[11.95,-1.3,0]]});

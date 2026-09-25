@@ -5,8 +5,8 @@
     "options": 10,
     "images": 20,
     "engine": "Built-in image_gen",
-    "html_sha256": "8ec0368f94fd7c8d56e445b94ffc1b539d0a831f46506cb9893bb7ed6790f392",
-    "model_html_sha256": "4bd3a7d40f491c9ba266aafac616011727c66a128e962b8d29af44a7d93b6ee3",
+    "html_sha256": "a79e43910cd3e499da452bd4fd871744813b6682b1042c27b95657e7e0912409",
+    "model_html_sha256": "bb3d8486f1802680f73d09fed24ca5490f6fc67728e7b8174cf7b14875a74ad9",
     "assets": {
       "images/01-planning.da95d4f435a5ebe2.png": {
         "source": "images/01-planning.png",
@@ -108,35 +108,35 @@
         "bytes": 2214251,
         "sha256": "25dfdf1c072a396ec7d2aa7868449df69ad671a8a6099fa955ff6a089609fd10"
       },
-      "models/compact-kitchen.514b0c03834ca395.glb": {
+      "models/compact-kitchen.f12f0384efff6372.glb": {
         "source": "models/compact-kitchen.glb",
-        "bytes": 13242536,
-        "sha256": "514b0c03834ca39518b3928094b52c74b0a878c409fb8f3ffbd51004c0b06cf6"
+        "bytes": 19595948,
+        "sha256": "f12f0384efff637239151857424fd603a5b0a2aecb6675d6dc35b8947aa4309a"
       },
-      "models/compact-kitchen.cf5f2fea2c85ed66.json": {
+      "models/compact-kitchen.90b55baccd61b292.json": {
         "source": "models/compact-kitchen.json",
-        "bytes": 53122,
-        "sha256": "cf5f2fea2c85ed663a7c7bced6d6a9569859375a0fe694b89e50e0ee17444c89"
+        "bytes": 54174,
+        "sha256": "90b55baccd61b2929e8f7616909a7884631102aa966a75c3710f77da24b5115e"
       },
-      "models/compact-render.417c088c3798e2a4.png": {
+      "models/compact-render.3208c5edee00fa9e.png": {
         "source": "models/compact-render.png",
-        "bytes": 2061581,
-        "sha256": "417c088c3798e2a494ef014c12eb21b60cb0e02d5818d87e12df09814ede2f43"
+        "bytes": 2055762,
+        "sha256": "3208c5edee00fa9e55d22d5f2235e1e8d6b99b3786dea89ced2869228cfc276e"
       },
-      "models/planning-kitchen.3405210be21c9fa4.glb": {
+      "models/planning-kitchen.d6c2c1d030fc34a2.glb": {
         "source": "models/planning-kitchen.glb",
-        "bytes": 12122020,
-        "sha256": "3405210be21c9fa409ec909fcf47a9e6bca9a76c4d3f3ee77a1e0e08ce8a5c2c"
+        "bytes": 17961780,
+        "sha256": "d6c2c1d030fc34a2dc4c7122521a51ea557dd3690da69eab03c56a225ff0e58d"
       },
-      "models/planning-kitchen.07c429a32de81cde.json": {
+      "models/planning-kitchen.8f053540b129ecf3.json": {
         "source": "models/planning-kitchen.json",
-        "bytes": 47944,
-        "sha256": "07c429a32de81cde050551efefdde9dc98709818025aaf64a146df948887e55d"
+        "bytes": 48996,
+        "sha256": "8f053540b129ecf3dcfa4bbb759311b5e2f8949f04f72a215addb8530fb19df7"
       },
-      "models/planning-render.856bf54ca29abe43.png": {
+      "models/planning-render.100c35d74fb6f8e6.png": {
         "source": "models/planning-render.png",
-        "bytes": 2099988,
-        "sha256": "856bf54ca29abe4380abe0c7b074c89cf144b2def461fb5b21a3a4bc593d7697"
+        "bytes": 2078808,
+        "sha256": "100c35d74fb6f8e6e71a64650838ec7d961e73b9216d314d41f6b40e4cc69906"
       },
       "options.4827b8f804e259a7.json": {
         "source": "options.json",
@@ -208,54 +208,131 @@
         "bytes": 228,
         "sha256": "982a4c163a07423699cf5aabfd38c22c4362b9e84c5a0f63837bf4058d44a0ec"
       },
-      "room-model.78345b7051008bb8.js": {
+      "room-model.a8ac8bc71cf83d72.js": {
         "source": "room-model.js",
-        "bytes": 4787145,
-        "sha256": "78345b7051008bb8039c72df977bc4e54bcb719e66edba5d04b8b9d728f96085"
+        "bytes": 4787449,
+        "sha256": "a8ac8bc71cf83d7277e9d960d442b1e053ba78b8772def08955d9ce160d058b1"
       },
       "studio.53ef1e5b1b574299.css": {
         "source": "studio.css",
         "bytes": 8996,
         "sha256": "53ef1e5b1b574299afb9171d6d3320e6cc85015107375cc8a999b5f46ff7f0f1"
       },
-      "studio.bac55dbec0cf539f.js": {
+      "studio.87288678ee2649b8.js": {
         "source": "studio.js",
         "bytes": 17982,
-        "sha256": "bac55dbec0cf539ff4b3411b824e5a323971039ba1048a1de692f61acea103e5"
+        "sha256": "87288678ee2649b8a464a6759e9408fdeee2d02604c102162c0eaaefb3858201"
       }
     },
     "previous_assets": {
-      "studio.1e003d1081c59d7d.js": {
-        "source": "studio.js",
-        "bytes": 21542,
-        "sha256": "1e003d1081c59d7d4e130f76d2ea354051146579b067d0d298cbba97116e98ac",
-        "retired_at_epoch": 1790345985.952008,
-        "retain_until_epoch": 1790353185.952008
+      "models/compact-kitchen.514b0c03834ca395.glb": {
+        "source": "models/compact-kitchen.glb",
+        "bytes": 13242536,
+        "sha256": "514b0c03834ca39518b3928094b52c74b0a878c409fb8f3ffbd51004c0b06cf6",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
       },
-      "studio.d7cf6a2b1d8e4252.js": {
-        "source": "studio.js",
-        "bytes": 20520,
-        "sha256": "d7cf6a2b1d8e425253e0626f75437149b755e783e03621402607d4b3e23f257e",
-        "retired_at_epoch": 1790346336.996829,
-        "retain_until_epoch": 1790353536.996829
+      "models/compact-kitchen.cf5f2fea2c85ed66.json": {
+        "source": "models/compact-kitchen.json",
+        "bytes": 53122,
+        "sha256": "cf5f2fea2c85ed663a7c7bced6d6a9569859375a0fe694b89e50e0ee17444c89",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
       },
-      "room-model.d06082638e7849ce.js": {
+      "models/compact-render.417c088c3798e2a4.png": {
+        "source": "models/compact-render.png",
+        "bytes": 2061581,
+        "sha256": "417c088c3798e2a494ef014c12eb21b60cb0e02d5818d87e12df09814ede2f43",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
+      },
+      "models/planning-kitchen.3405210be21c9fa4.glb": {
+        "source": "models/planning-kitchen.glb",
+        "bytes": 12122020,
+        "sha256": "3405210be21c9fa409ec909fcf47a9e6bca9a76c4d3f3ee77a1e0e08ce8a5c2c",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
+      },
+      "models/planning-kitchen.07c429a32de81cde.json": {
+        "source": "models/planning-kitchen.json",
+        "bytes": 47944,
+        "sha256": "07c429a32de81cde050551efefdde9dc98709818025aaf64a146df948887e55d",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
+      },
+      "models/planning-render.856bf54ca29abe43.png": {
+        "source": "models/planning-render.png",
+        "bytes": 2099988,
+        "sha256": "856bf54ca29abe4380abe0c7b074c89cf144b2def461fb5b21a3a4bc593d7697",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
+      },
+      "room-model.78345b7051008bb8.js": {
         "source": "room-model.js",
-        "bytes": 4787032,
-        "sha256": "d06082638e7849ce67a6d4e3c936c0eb951b9c53c68ed2a7b4711a0a1e556bcb",
-        "retired_at_epoch": 1790346533.315981,
-        "retain_until_epoch": 1790353733.315981
+        "bytes": 4787145,
+        "sha256": "78345b7051008bb8039c72df977bc4e54bcb719e66edba5d04b8b9d728f96085",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
       },
-      "studio.0e67be461dbb4b6e.js": {
+      "studio.bac55dbec0cf539f.js": {
         "source": "studio.js",
-        "bytes": 17897,
-        "sha256": "0e67be461dbb4b6ef52b1dee2ae039eb0602749a51b64766a40813bcc94369b6",
-        "retired_at_epoch": 1790346533.315981,
-        "retain_until_epoch": 1790353733.315981
+        "bytes": 17982,
+        "sha256": "bac55dbec0cf539ff4b3411b824e5a323971039ba1048a1de692f61acea103e5",
+        "retired_at_epoch": 1790360594.053239,
+        "retain_until_epoch": 1790367794.053239
+      },
+      "models/compact-kitchen.2b6877cb194f2b33.glb": {
+        "source": "models/compact-kitchen.glb",
+        "bytes": 19596352,
+        "sha256": "2b6877cb194f2b3331082b81b6439bac2c8e9b4a246c9bbe2692fc0d60b8e31c",
+        "retired_at_epoch": 1790361350.403521,
+        "retain_until_epoch": 1790368550.403521
+      },
+      "models/compact-kitchen.bf242ba49f333fe9.json": {
+        "source": "models/compact-kitchen.json",
+        "bytes": 54174,
+        "sha256": "bf242ba49f333fe9187e3156254b1154560e67d8816ca73aa0e03879cb840dcc",
+        "retired_at_epoch": 1790361350.403521,
+        "retain_until_epoch": 1790368550.403521
+      },
+      "models/compact-render.7d046b8cfdaf9564.png": {
+        "source": "models/compact-render.png",
+        "bytes": 2062395,
+        "sha256": "7d046b8cfdaf95646a85d3383e385eae6e50d5dc15d1301001699e3bccb58175",
+        "retired_at_epoch": 1790361350.403521,
+        "retain_until_epoch": 1790368550.403521
+      },
+      "models/planning-kitchen.c7585cbaa9253e7c.glb": {
+        "source": "models/planning-kitchen.glb",
+        "bytes": 17959356,
+        "sha256": "c7585cbaa9253e7ceffab997ea9337728fc456ce28f453cbe33a393df4a4d2c7",
+        "retired_at_epoch": 1790361350.403521,
+        "retain_until_epoch": 1790368550.403521
+      },
+      "models/planning-kitchen.c34bf433fe8d40ee.json": {
+        "source": "models/planning-kitchen.json",
+        "bytes": 48996,
+        "sha256": "c34bf433fe8d40eea3f2d06f7080154cb2f7917336ac90a5178e587875c7b8ba",
+        "retired_at_epoch": 1790361350.403521,
+        "retain_until_epoch": 1790368550.403521
+      },
+      "models/planning-render.e8e64a2da89de629.png": {
+        "source": "models/planning-render.png",
+        "bytes": 2085311,
+        "sha256": "e8e64a2da89de629f5d534f068e2d727ba9a250a80cce01b81c3f34291e478b0",
+        "retired_at_epoch": 1790361350.403521,
+        "retain_until_epoch": 1790368550.403521
+      },
+      "studio.c5c25b7f44dc3390.js": {
+        "source": "studio.js",
+        "bytes": 17982,
+        "sha256": "c5c25b7f44dc339032e11beb0181a4bda09c814ff926f05787bef149b5ab99b3",
+        "retired_at_epoch": 1790361350.403521,
+        "retain_until_epoch": 1790368550.403521
       }
     }
   },
-  "published_utc": "2026-09-25T14:28:53.733704+00:00",
+  "published_utc": "2026-09-25T18:35:50.906806+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -268,21 +345,21 @@
       "bytes": 531449,
       "sha256": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
     },
-    "proposal-compact.6a51055d5d36ec35.glb": {
-      "bytes": 41725100,
-      "sha256": "6a51055d5d36ec35b1ab4e61231f1a97fece1f4ea91940eec1e178bf81a17c1b"
+    "proposal-compact.f8711952f9f24663.glb": {
+      "bytes": 47200848,
+      "sha256": "f8711952f9f24663d0bbc5742ddad5469c59ef4df4b25d05b0938a8a49c8420d"
     },
-    "proposal-compact-navigation.5452076f00c33cdd.json": {
-      "bytes": 1802273,
-      "sha256": "5452076f00c33cddb401097f2963c7ffee73ad1a5b7a3345da906ee284ebb7c6"
+    "proposal-compact-navigation.24b305a7d28a9bac.json": {
+      "bytes": 1809466,
+      "sha256": "24b305a7d28a9bac016a94cdd6729d0ee60b7db8b526b0e033e48543c4f4fc31"
     },
-    "proposal-planning.042088de968d5d2e.glb": {
-      "bytes": 40286792,
-      "sha256": "042088de968d5d2e65a47474583ade284e7685577cb87908a4cec7a855fde7e6"
+    "proposal-planning.195ea771087ebadf.glb": {
+      "bytes": 45305880,
+      "sha256": "195ea771087ebadfb3c290eb894d1860b9f2e95dae99d9f901a02166421b923b"
     },
-    "proposal-planning-navigation.78637e76bd53223a.json": {
-      "bytes": 1520068,
-      "sha256": "78637e76bd53223afdb30da4d4274f739426766058db644d7de0d0a09f4425dc"
+    "proposal-planning-navigation.dd13d4f22d52a2c7.json": {
+      "bytes": 1527261,
+      "sha256": "dd13d4f22d52a2c7bca7053ceccca1b3542aa16f488a4102089370f98ce1f5f0"
     },
     "redesign-i1.5eb0c2a9c90443f1.glb": {
       "bytes": 30706732,
@@ -344,9 +421,9 @@
       "bytes": 25871,
       "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a"
     },
-    "app.813aa2a66d985b28.js": {
+    "app.8557fe3d8cd40fa4.js": {
       "bytes": 5374727,
-      "sha256": "813aa2a66d985b28248f9cd3b35820cd9249da7b99d19be903ef5cf9bd229842"
+      "sha256": "8557fe3d8cd40fa41dd152c18fbd3a09b13ccd32958ed35ad2dbcc7002b06db9"
     }
   },
   "previous_assets": {
@@ -380,53 +457,65 @@
       "retain_until_epoch": 1790528406.9848409,
       "retired_at_epoch": 1790521206.9848409
     },
-    "proposal-planning.44b88f1a64b13b21.glb": {
-      "bytes": 30929960,
-      "sha256": "44b88f1a64b13b21501c7f8bdbdb62adae8d7feb17091130e58bb0f8c249080e",
-      "retired_at_epoch": 1790341799.260894,
-      "retain_until_epoch": 1790348999.260894
+    "proposal-compact.6a51055d5d36ec35.glb": {
+      "bytes": 41725100,
+      "sha256": "6a51055d5d36ec35b1ab4e61231f1a97fece1f4ea91940eec1e178bf81a17c1b",
+      "retired_at_epoch": 1790360594.053239,
+      "retain_until_epoch": 1790367794.053239
     },
-    "proposal-planning-navigation.e33b60cd518cad09.json": {
-      "bytes": 1475449,
-      "sha256": "e33b60cd518cad095b6119fcfc541b8aa02cede0c567c5c009d2adb25fcd0485",
-      "retired_at_epoch": 1790341799.260894,
-      "retain_until_epoch": 1790348999.260894
+    "proposal-compact-navigation.5452076f00c33cdd.json": {
+      "bytes": 1802273,
+      "sha256": "5452076f00c33cddb401097f2963c7ffee73ad1a5b7a3345da906ee284ebb7c6",
+      "retired_at_epoch": 1790360594.053239,
+      "retain_until_epoch": 1790367794.053239
     },
-    "app.78ef7d759ffdf1cf.js": {
-      "bytes": 5374150,
-      "sha256": "78ef7d759ffdf1cfe09d0a041aed738ea27b4748a48c25289c543d4ba8585056",
-      "retired_at_epoch": 1790341799.260894,
-      "retain_until_epoch": 1790348999.260894
+    "proposal-planning.042088de968d5d2e.glb": {
+      "bytes": 40286792,
+      "sha256": "042088de968d5d2e65a47474583ade284e7685577cb87908a4cec7a855fde7e6",
+      "retired_at_epoch": 1790360594.053239,
+      "retain_until_epoch": 1790367794.053239
     },
-    "proposal-compact.d1af6243bb851e22.glb": {
-      "bytes": 31365892,
-      "sha256": "d1af6243bb851e2247180262d5e194adef200ea45c90aaaa2c1119580128df44",
-      "retired_at_epoch": 1790345850.511151,
-      "retain_until_epoch": 1790353050.511151
+    "proposal-planning-navigation.78637e76bd53223a.json": {
+      "bytes": 1520068,
+      "sha256": "78637e76bd53223afdb30da4d4274f739426766058db644d7de0d0a09f4425dc",
+      "retired_at_epoch": 1790360594.053239,
+      "retain_until_epoch": 1790367794.053239
     },
-    "proposal-compact-navigation.3af512b658cbae29.json": {
-      "bytes": 1790176,
-      "sha256": "3af512b658cbae29355985c03286f8e8295c148ddb230a4fbe48dc285515dd00",
-      "retired_at_epoch": 1790345850.511151,
-      "retain_until_epoch": 1790353050.511151
+    "app.813aa2a66d985b28.js": {
+      "bytes": 5374727,
+      "sha256": "813aa2a66d985b28248f9cd3b35820cd9249da7b99d19be903ef5cf9bd229842",
+      "retired_at_epoch": 1790360594.053239,
+      "retain_until_epoch": 1790367794.053239
     },
-    "proposal-planning.f1d2abc2242f6488.glb": {
-      "bytes": 30927960,
-      "sha256": "f1d2abc2242f6488b56e17ddb23d29ef1f62a6995dcf5d865dac5def13fc761d",
-      "retired_at_epoch": 1790345850.511151,
-      "retain_until_epoch": 1790353050.511151
+    "proposal-compact.91982a79dcd8a89e.glb": {
+      "bytes": 47201232,
+      "sha256": "91982a79dcd8a89ef3433a1813e7b36fc1bdddf5b7d811977ed4d6680290ca64",
+      "retired_at_epoch": 1790361350.403521,
+      "retain_until_epoch": 1790368550.403521
     },
-    "proposal-planning-navigation.ce1f7f4f9ff8954e.json": {
-      "bytes": 1475253,
-      "sha256": "ce1f7f4f9ff8954ed335842a97a1fd24cd0169070ea8314623b4fa5f48119b23",
-      "retired_at_epoch": 1790345850.511151,
-      "retain_until_epoch": 1790353050.511151
+    "proposal-compact-navigation.4eb47e1a9342d4e4.json": {
+      "bytes": 1809466,
+      "sha256": "4eb47e1a9342d4e498daca4fe0e4cde0e792d7a9af7001ffc90f739fe88bde0b",
+      "retired_at_epoch": 1790361350.403521,
+      "retain_until_epoch": 1790368550.403521
     },
-    "app.30f8644e54fc4feb.js": {
-      "bytes": 5374150,
-      "sha256": "30f8644e54fc4feb4a09dd75f097cc450fa9bdd027ea70a5ff257547a9d86ea3",
-      "retired_at_epoch": 1790345850.511151,
-      "retain_until_epoch": 1790353050.511151
+    "proposal-planning.8522e8820f2a6408.glb": {
+      "bytes": 45303380,
+      "sha256": "8522e8820f2a6408d624542c5e53b9d04f283b82d6350d64eba5d48c697f117f",
+      "retired_at_epoch": 1790361350.403521,
+      "retain_until_epoch": 1790368550.403521
+    },
+    "proposal-planning-navigation.be0f9ab57a85177a.json": {
+      "bytes": 1527261,
+      "sha256": "be0f9ab57a85177ab7465ce52c4ec265d5f4d3da16ab69dbe666932fb6c209fc",
+      "retired_at_epoch": 1790361350.403521,
+      "retain_until_epoch": 1790368550.403521
+    },
+    "app.f2a29f0c09a684d8.js": {
+      "bytes": 5374727,
+      "sha256": "f2a29f0c09a684d8669f386d0418d630af83e470ff9437c73db32b6a200659cc",
+      "retired_at_epoch": 1790361350.403521,
+      "retain_until_epoch": 1790368550.403521
     }
   },
   "easter": {
@@ -459,15 +548,15 @@
     "planning": "./?design=planning",
     "proposal_label": "Proposed",
     "proposal_revision": "P8",
-    "proposal_updated_at": "2026-09-25T14:11:40.384784+00:00",
-    "proposal_native_sha256": "555a6eb5703db5bca2761c0b0e884f78b494211c646090241521e07ef07f13eb",
-    "proposal_geometry_sha256": "aa0b6ba9c30b67a78fbd67fbfa7c5368a104de7fbd2ff9cd408380ca7129e9a7",
+    "proposal_updated_at": "2026-09-25T18:31:01.503809+00:00",
+    "proposal_native_sha256": "a1c092484e282cf560ad0f2780e3ec473723d10d260a42b8b65b54e34ef22b1d",
+    "proposal_geometry_sha256": "08eea6f9991f37b436079adf9ae2ab25ef2370eb07d82b61c5de16e06dd6a36a",
     "gate_aligned": "./?design=g1",
     "gate_aligned_updated_at": "2026-09-25T09:13:00.386616+00:00",
     "planning_label": "Proposed (planning application)",
-    "planning_updated_at": "2026-09-25T14:10:23.998694+00:00",
-    "planning_native_sha256": "7027741a81d376ebdc0e52609264809bb129d829fa5173ceae8ebc1eb87b3c4c",
-    "planning_geometry_sha256": "b286612c2c2e1b20334d72900732581887360adb3a1163642ce5aabe7dd5303e"
+    "planning_updated_at": "2026-09-25T18:29:43.700575+00:00",
+    "planning_native_sha256": "c1fc68443f57d2c6cf381cb3b14b1685523b37898b963cf028d35aed9b3f5714",
+    "planning_geometry_sha256": "c8f98bfaebf686ab45350db2952ee0f216d8b31e6ab60ee8a34647c80a790563"
   },
   "exterior_finishes": {
     "scope": "house-and-extensions",

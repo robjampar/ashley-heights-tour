@@ -11,7 +11,7 @@ import {STREET_DATA} from './street-context-data.js';
 const asset=path=>globalThis.INTERIOR_ASSETS?.[path]??path;
 const $=id=>document.getElementById(id),canvas=$('room-model'),frame=canvas.parentElement;
 const variant=new URLSearchParams(location.search).get('design')==='planning'?'planning':'compact';
-$('model-design').value=variant;$('model-design').onchange=()=>{location.search='?design='+$('model-design').value;};
+$('model-design').value=variant;$('model-design').onchange=()=>{location.search='?design='+$('model-design').value+'&view='+activeCamera;};
 $('full-house').href='../../?design='+(variant==='compact'?'proposed':'planning');
 document.querySelectorAll('[data-reference]').forEach(a=>a.href='./#01-'+(variant==='compact'?'proposed':'planning'));
 $('selected-concept').src=asset('images/01-'+(variant==='compact'?'proposed':'planning')+'.png');$('native-render').src=asset('models/'+variant+'-render.png');
@@ -21,14 +21,16 @@ const lighting=daylight(renderer,scene,camera),controls=new OrbitControls(camera
 let activeCamera='kitchen',fills,vegetation,ready=false;
 const views={
  kitchen:{position:[3.8,5.25,1.65],target:[2,8.35,1.49],fov:72},
+ lounge:{position:[-.62,4.52,1.61],target:[-4.08,7.0,1.17],fov:62},
+ plants:{position:[-2.82,4.63,1.45],target:[-4.60,5.23,1.12],fov:52},
  reverse:{position:[.7,7.95,1.65],target:[3.7,4.95,1.49],fov:72},
  oven:{position:[1.20,6.85,1.40],target:[.46,8.015,1.27],fov:48},
  table:variant==='planning'?{position:[3.45,5.15,1.35],target:[2.071,6.13,.75],fov:58}:{position:[3.6,10.5,1.55],target:[1.7,12.1,.76],fov:62},
  sink:variant==='planning'?{position:[3.00,7.0,1.45],target:[2.48,8.36,.88],fov:50}:{position:[3.20,7.05,1.50],target:[4.63,7.82,.88],fov:52}
 };
-function setView(id){activeCamera=id;const v=views[id];camera.position.set(v.position[0],v.position[2],-v.position[1]);controls.target.set(v.target[0],v.target[2],-v.target[1]);camera.fov=v.fov;camera.updateProjectionMatrix();controls.update();document.querySelectorAll('[data-camera]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.camera===id)));}
+function setView(id){if(!views[id])id='kitchen';activeCamera=id;const url=new URL(location.href);url.searchParams.set('view',id);history.replaceState(null,'',url);const v=views[id];camera.position.set(v.position[0],v.position[2],-v.position[1]);controls.target.set(v.target[0],v.target[2],-v.target[1]);camera.fov=v.fov;camera.updateProjectionMatrix();controls.update();document.querySelectorAll('[data-camera]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.camera===id)));}
 document.querySelectorAll('[data-camera]').forEach(b=>b.onclick=()=>setView(b.dataset.camera));$('reset-model').onclick=()=>setView(activeCamera);
-function resize(){const w=frame.clientWidth,h=frame.clientHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false);lighting.resize(w,h);}new ResizeObserver(resize).observe(frame);resize();setView('kitchen');
+function resize(){const w=frame.clientWidth,h=frame.clientHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false);lighting.resize(w,h);}new ResizeObserver(resize).observe(frame);resize();setView(new URLSearchParams(location.search).get('view')||'kitchen');
 try{
  const info=await fetch(asset('models/'+variant+'-kitchen.json')).then(r=>{if(!r.ok)throw Error('Room metadata unavailable');return r.json();});
  const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(asset('models/'+variant+'-kitchen.glb'),e=>{$('model-status').textContent=e.total?'Loading your room · '+Math.round(100*e.loaded/e.total)+'%':'Loading your room…';});

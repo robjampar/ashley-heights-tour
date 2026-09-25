@@ -63,7 +63,7 @@ def apply_quiet_oak(ns):
         'Photo detail | Kitchen east ', 'Breakfast chair', 'Breakfast table', 'Kitchen detail | Kitchen paper pendant')
     proposal_prefixes = ('Proposal | Kitchen east working run', 'Proposal | Kitchen fridge', 'Proposal | Kitchen hob',
         'Proposal | Kitchen sink', 'Proposal | Kitchen island', 'Proposal | Kitchen retained',
-        'Proposal | Kitchen south working run ceiling', 'Proposal | Kitchen north working run ceiling', 'Proposal | Garden dining')
+        'Proposal | Kitchen south working run ceiling', 'Proposal | Kitchen north working run ceiling', 'Proposal | Garden dining', 'Proposal | Side living sofa', 'Proposal | Side living coffee table', 'Proposal | Side living table foot', 'Proposal | Side living ceiling fitting', 'Proposal | Side living ceiling diffuser')
     explicit = ('Kitchen swan-neck mixer', 'Kitchen gas hob', 'Kitchen wall clock', 'Kitchen mug')
     for ob in list(scene.objects):
         if ob.get('interior_room') == 'kitchen':
@@ -92,7 +92,7 @@ def apply_quiet_oak(ns):
     collision_prefixes = ('Kitchen oven tower', 'Kitchen sink cabinets', 'Photo detail | Kitchen east ',
         'Photo detail | Kitchen rear corner infill', 'Breakfast chair', 'Breakfast table',
         'Proposal | Kitchen east working run', 'Proposal | Kitchen fridge', 'Proposal | Kitchen island',
-        'Proposal | Garden dining', prefix)
+        'Proposal | Garden dining', 'Proposal | Side living sofa', 'Proposal | Side living coffee table', prefix)
     for items in (nav['obstacles'], ns['new_obstacles']):
         items[:] = [o for o in items if not o['name'].startswith(collision_prefixes)]
     nav['proposalLights'] = [v for v in nav.get('proposalLights', []) if not v['name'].startswith(('Kitchen', 'Quiet oak'))]
@@ -129,21 +129,23 @@ def apply_quiet_oak(ns):
         m['interior_room'] = 'kitchen'; ns['materials'][name] = m; ns['PALETTE'][name] = list(color)
         return m
 
-    oak = material('pale natural oak', (.78,.62,.43,1), .43, texture=config['textures']['oak'])
-    stone = material('honed limestone', (1,1,1,1), .66, texture=config['textures']['limestone'])
+    oak = material('pale natural oak', (.55,.52,.46,1), .48, texture=config['textures']['oak'])
+    stone = material('honed limestone', (.98,.95,.88,1), .55, texture=config['textures']['limestone'])
+    floor_stone = material('beige limestone floor', (.79,.74,.66,1), .7, texture=config['textures']['limestone'])
+    grout = material('limestone grout', (.70,.66,.59,1), .9)
     fabric = material('cream upholstery', (1,1,1,1), .9, texture=config['textures']['upholstery'])
-    seam = material('upholstery piping', (.72,.675,.565,1), .88)
+    seam = material('upholstery piping', (.60,.56,.49,1), .88)
     dark = material('shadow joints', (.027,.024,.018,1), .8)
     appliance = material('obsidian enamel', (.012,.015,.018,1), .24, .28)
     oven_window = material('smoked oven window', (.020,.025,.028,1), .13, .34)
     bronze = material('brushed champagne bronze', (.52,.38,.20,1), .31, .78)
     steel = material('satin steel', (.40,.43,.43,1), .28, .85)
-    opal = material('opal diffuser', (.93,.83,.65,1), .47, emission=1.15)
-    ceramic = material('ivory ceramic', (.71,.655,.535,1), .66)
-    green = material('olive leaf', (.14,.205,.075,1), .81)
-    green_back = material('olive leaf underside', (.26,.31,.145,1), .87)
+    opal = material('opal diffuser', (1,.75,.43,1), .47, emission=1.3)
+    ceramic = material('ivory ceramic', (.47,.425,.34,1), .76)
+    green = material('olive leaf', (.055,.090,.023,1), .68)
+    green_back = material('olive leaf underside', (.13,.165,.075,1), .78)
     branch = material('olive branch', (.18,.11,.055,1), .8)
-    fruit = material('green pear', (.36,.43,.055,1), .45)
+    fruit = material('green pear', (.235,.28,.035,1), .52)
     display = material('oven display', (.49,.77,.78,1), .45, emission=.3)
     white = material('warm ivory painted ceiling', (.82,.79,.71,1), .9)
     metal_dark = material('oven dial edge', (.16,.175,.18,1), .31, .8)
@@ -221,12 +223,12 @@ def apply_quiet_oak(ns):
             if grip:box(label+' recessed top grip',(x0+.006,(y0+y1)/2,z1-.014),(.017,y1-y0-.03,.022),dark,group,.003)
 
     # Floor copies receive real UVs. Source floor meshes remain unchanged.
-    floor_names={'Kitchen breakfast room | floor'}
+    floor_names={'Kitchen breakfast room | floor','Proposal | Side wing ground floor','Proposal | Side living garden threshold'}
     if not planning: floor_names.update(('Proposal | Garden room floor', 'Proposal | Kitchen garden flush threshold'))
     for name in floor_names:
         existing=next((o for o in scene.objects if o.get('interior_floor_source')==name),None)
         if existing:
-            existing.data.materials.clear();existing.data.materials.append(stone);owned.append(existing)
+            existing.data.materials.clear();existing.data.materials.append(floor_stone);owned.append(existing)
             continue
         source=next((o for o in scene.objects if o.type=='MESH' and o.get('source_name',o.name)==name),None)
         if source is None:
@@ -235,11 +237,11 @@ def apply_quiet_oak(ns):
         copy=source.copy();copy.data=source.data.copy();copy.name=prefix+name;copy['source_name']=copy.name
         copy['interior_room']='kitchen';copy['interior_assembly']='Floor and finishes';collection.objects.link(copy)
         copy['interior_floor_source']=name
-        copy.data.materials.clear();copy.data.materials.append(stone)
+        copy.data.materials.clear();copy.data.materials.append(floor_stone)
         for p in copy.data.polygons:p.material_index=0
         uv_project(copy,1.4);owned.append(copy);omit(source)
     # Exact thin grout lines sit on the room surface; no raised tile overlay.
-    areas=[([0.13,5.17,4.92,8.69],0),([.13,4.13,4.19,5.17],0)]
+    areas=[([0.13,5.17,4.92,8.69],0),([.13,4.13,4.19,5.17],0),([-5.04,3.24,-.14,8.69],0),([-5.04,1.04,-2.15,3.24],0)]
     if not planning:areas.append(([-4.78,8.97,4.44,14.05],0))
     for bi,(b,z) in enumerate(areas):
         for axis in (0,1):
@@ -248,7 +250,7 @@ def apply_quiet_oak(ns):
                 value=j*.9
                 center=(value,(b[1]+b[3])/2,z+.0005) if axis==0 else ((b[0]+b[2])/2,value,z+.0005)
                 size=(.002,b[3]-b[1],.001) if axis==0 else (b[2]-b[0],.002,.001)
-                box(f'Floor grout {bi}-{axis}-{j}',center,size,ceramic,'Floor and finishes',0)
+                box(f'Floor grout {bi}-{axis}-{j}',center,size,grout,'Floor and finishes',0)
 
     # Oven tower with inset twin appliances, open handle clearances and controls.
     x0,y0,x1,y1=config['ovenTower']['bounds'];cx=(x0+x1)/2;depth=y1-y0
@@ -412,7 +414,7 @@ def apply_quiet_oak(ns):
             seam_points.append(transform((.28*cos(a),.28*sin(a),(top+.493)/2+(top-.493)/2*taper)))
         faces=[tuple(reversed(range(cross))),tuple(n*cross+j for j in range(cross))]
         faces.extend((i*cross+j,i*cross+(j+1)%cross,(i+1)*cross+(j+1)%cross,(i+1)*cross+j)for i in range(n)for j in range(cross))
-        mesh(label+' curved upholstered back',verts,faces,fabric,g,True,uvscale=.6)
+        mesh(label+' curved upholstered back',verts,faces,fabric,g,True,uvscale=.25)
         tube(label+' back seam',seam_points,.0022,seam,g,8)
         for dx in (-.18,.18):
             for dy in (-.17,.17):
@@ -431,21 +433,58 @@ def apply_quiet_oak(ns):
         polygon=[(cx+w/2*cos(i*tau/64),cy+d/2*sin(i*tau/64))for i in range(64)]
         obstacle(label,None,.763,polygon)
 
+    def leaf_geometry(start, direction, length, width, twist=0):
+        # Smooth, cupped elliptical leaf with a curved midrib. No diamond cards.
+        start=Vector(start);d=Vector(direction).normalized()
+        side=d.cross(Vector((0,0,1)))
+        if side.length<.01:side=Vector((1,0,0))
+        side.normalize();up=side.cross(d).normalized()
+        side2=side*cos(twist)+up*sin(twist);up2=-side*sin(twist)+up*cos(twist)
+        vs=[];faces=[]
+        for i in range(11):
+            t=i/10;centre=start+d*length*t+up2*(sin(pi*t)*length*.10-t*t*length*.13)
+            w=width*(sin(pi*t)**.85)
+            for j in range(5):
+                u=(j-2)/2;vs.append(tuple(centre+side2*w*u+up2*(1-abs(u))*.003*sin(pi*t)))
+        for i in range(10):
+            for j in range(4):
+                a=i*5+j;faces.append((a,a+1,a+6,a+5))
+        return vs,faces
+
+    def along_stem(points,t):
+        # Match the actual piecewise tube centreline, including its bends.
+        u=t*(len(points)-1);i=min(int(u),len(points)-2)
+        return Vector(points[i]).lerp(Vector(points[i+1]),u-i)
+
+    def leaf_spray(label,base,height,spread,group,shoots=10):
+        leaf_vertices=[];leaf_faces=[]
+        for j in range(shoots):
+            a=j*tau/shoots+rng.uniform(-.35,.35)
+            start=Vector(base);end=start+Vector((cos(a)*spread*rng.uniform(.60,1),sin(a)*spread*rng.uniform(.60,1),height*rng.uniform(.65,1)))
+            mid=start+(end-start)*.50+Vector((-.035*cos(a),-.035*sin(a),.03))
+            tube(label+' olive twig',[start,mid,end],(.0035,.001),branch,group,7)
+            for k in range(3):
+                t=.35+k*.20;p=along_stem([start,mid,end],t)
+                aa=a+(-1 if k%2 else 1)*rng.uniform(.6,1.2)
+                tip=p+Vector((cos(aa)*spread*.38,sin(aa)*spread*.38,height*.24))
+                fine=[p,(p+tip)/2+Vector((0,0,.018)),tip]
+                tube(label+' fine stem',fine,(.0018,.0005),branch,group,6)
+                for l in range(5):
+                    center=along_stem(fine,.14+l*.17)
+                    for side in (-1,1):
+                        direction=Vector((cos(aa+side*1.0),sin(aa+side*1.0),rng.uniform(.2,.7)))
+                        vs,fs=leaf_geometry(center,direction,rng.uniform(.065,.105)*height/.46,.017*height/.46,rng.uniform(-.55,.55))
+                        offset=len(leaf_vertices);leaf_vertices.extend(vs);leaf_faces.extend(tuple(i+offset for i in f)for f in fs)
+        ob=mesh(label+' olive leaves',leaf_vertices,leaf_faces,green,group,True)
+        ob.data.materials.append(green_back)
+        for face in ob.data.polygons:face.material_index=(face.index//40)%5==0
+        return ob
+
     def vase(label,x,y,z,scale=1):
         g=label
-        profile=[(0,0),(.070,0),(.080,.022),(.100,.095),(.095,.16),(.052,.22),(.047,.272),(.043,.28),(.035,.279),(.035,.262),(.044,.218),(.082,.151),(.082,.040),(0,.030)]
+        profile=[(0,0),(.082,0),(.102,.024),(.112,.095),(.104,.15),(.072,.184),(.067,.220),(.060,.226),(.051,.223),(.052,.205),(.063,.182),(.090,.147),(.090,.040),(0,.030)]
         lathe(label+' handmade ceramic vase',(x,y,z),[(r*scale,h*scale)for r,h in profile],ceramic,g,64)
-        for j in range(13):
-            a=j*tau/13+.2;length=(.25+rng.random()*.27)*scale
-            start=Vector((x,y,z+.20*scale));end=start+Vector((cos(a)*(.21+.1*rng.random())*scale,sin(a)*(.21+.1*rng.random())*scale,length))
-            mid=start+(end-start)*.52+Vector((.025*cos(a),.025*sin(a),0))*scale
-            tube(label+' olive twig',[start,mid,end],.0025*scale,branch,g,7)
-            for k in range(3,12):
-                t=k/12;p=start+(end-start)*t
-                for side in (-1,1):
-                    direction=Vector((cos(a+side*1.1),sin(a+side*1.1),.40)).normalized();q=p+direction*(.075+rng.random()*.015)*scale
-                    width=Vector((-direction.y,direction.x,0))*.018*scale;center=(p+q)/2+Vector((0,0,.004))*scale
-                    leaf=mesh(label+' olive leaf',[tuple(p),tuple(center+width),tuple(q),tuple(center-width),tuple(center+Vector((0,0,.004*scale)))],[(0,1,4),(1,2,4),(2,3,4),(3,0,4)],green if (k+j)%3 else green_back,g,True)
+        leaf_spray(label,(x,y,z+.19*scale),.46*scale,.31*scale,g,11)
 
     def bowl(label,x,y,z,with_fruit=True):
         profile=[(0,0),(.06,0),(.065,.012),(.14,.035),(.17,.075),(.172,.087),(.163,.088),(.155,.068),(.07,.024),(0,.022)]
@@ -457,18 +496,23 @@ def apply_quiet_oak(ns):
                 tube(label+' pear stem',[(x+dx,y+dy,zz+.065),(x+dx+.003,y+dy-.004,zz+.085)],.002,branch,label,6)
 
     def pendant(label,x,y,z,radius=.16,ribbed=False,ceiling=2.598):
-        g=label
+        g=label;shade_height=radius*(.65 if ribbed else 1)
         lathe(label+' ceiling rose',(x,y,ceiling-.018),[(0,0),(.042,0),(.046,.010),(.046,.020),(0,.02)],bronze,g,48)
-        tube(label+' suspension',[(x,y,z+radius),(x,y,ceiling-.012)],.0035,bronze,g)
-        lathe(label+' shade cap',(x,y,z+radius-.015),[(0,0),(.028,0),(.029,.019),(.024,.032),(0,.032)],bronze,g,32)
-        if not ribbed:ellipsoid(label+' opal globe',(x,y,z),(radius*2,radius*2,radius*2),opal,g,28,56)
+        tube(label+' suspension',[(x,y,z+shade_height),(x,y,ceiling-.012)],.0035,bronze,g)
+        lathe(label+' shade cap',(x,y,z+shade_height-.015),[(0,0),(.028,0),(.029,.019),(.024,.032),(0,.032)],bronze,g,32)
+        if not ribbed:
+            angles=[j*(pi-.32)/32 for j in range(33)]
+            profile=[(radius*sin(t),radius*cos(t))for t in angles]+[((radius-.003)*sin(t),(radius-.003)*cos(t))for t in reversed(angles)]
+            lathe(label+' opal globe',(x,y,z),profile,opal,g,64)
+            ellipsoid(label+' internal lamp',(x,y,z-.04),(.045,.045,.07),opal,g,16,24)
         else:
             vs=[];segs=128;rings=32
             for j in range(rings+1):
-                t=j*pi/rings
+                t=.06+j*(pi-.35-.06)/rings
                 for i in range(segs):
                     a=i*tau/segs;rad=radius*sin(t)*(1+.022*cos(a*32))
-                    vs.append((x+rad*cos(a),y+rad*sin(a),z+radius*.82*cos(t)))
+                    vs.append((x+rad*cos(a),y+rad*sin(a),z+shade_height*cos(t)))
+            lathe(label+' lower diffuser rim',(x,y,z-shade_height*cos(.35)),[(radius*sin(.35)-.005,0),(radius*sin(.35)+.004,0),(radius*sin(.35)+.004,.004),(radius*sin(.35)-.005,.004),(radius*sin(.35)-.005,0)],opal,g,64)
             mesh(label+' ribbed opal shade',vs,[(j*segs+i,j*segs+(i+1)%segs,(j+1)*segs+(i+1)%segs,(j+1)*segs+i)for j in range(rings)for i in range(segs)],opal,g,True)
         ld=bpy.data.lights.new(prefix+label,'POINT');ld.energy=24;ld.color=(1,.86,.69);ld.shadow_soft_size=radius*.8
         lo=bpy.data.objects.new(ld.name,ld);collection.objects.link(lo);lo.location=(x,y,z);lo['interior_room']='kitchen';lo['interior_assembly']=g
@@ -482,7 +526,7 @@ def apply_quiet_oak(ns):
             xx=cx+config['breakfast']['chairRadius']*cos(a);yy=cy+config['breakfast']['chairRadius']*sin(a)
             chair('Breakfast chair '+str(i+1),xx,yy,a+pi/2)
         vase('Breakfast olive vase',cx-.17,cy+.13,.763,.85);bowl('Breakfast fruit',cx+.21,cy-.09,.763)
-        pendant('Breakfast pendant',cx,cy,1.97,.235,True)
+        pendant('Breakfast pendant',cx,cy,1.97,.285,True)
     else:
         cx,cy=config['gardenDining']['center'];w,d=config['gardenDining']['size'];table('Garden dining table',cx,cy,w,d)
         for i,dx in enumerate((-.78,0,.78)):
@@ -535,6 +579,149 @@ def apply_quiet_oak(ns):
     for i in range(33):
         a=i*tau/32;eye.append((bx+.02*cos(a),by,1.375+.02*sin(a)) if planning else (bx,by+.02*cos(a),1.375+.02*sin(a)))
     tube('Chopping board hanging eye',eye,.009,oak,'Counter accessories',12)
+    # The adjoining living area uses the same reference palette. Furniture
+    # stays north of the cellar stairs and leaves the kitchen-side route open.
+    lg='TV lounge';lc=config['lounge'];tvx,tvy,tvz=lc['tvCenter']
+    warm_plaster=material('warm chalk media plaster',(.64,.598,.51,1),.86)
+    screen=material('TV anti-reflective screen',(.008,.011,.012,1),.20,.18)
+    soil=material('planting soil',(.045,.027,.013,1),.98)
+    linen=material('oatmeal linen',(.73,.70,.63,1),.91,texture=config['textures']['upholstery'])
+    box('TV plaster panel',(-5.023,tvy,1.40),(.064,2.48,2.14),warm_plaster,lg,.032)
+    # 75-inch-class screen: thin metal bezel, inset glass, wall mount and LED.
+    box('TV wall bracket',(-4.972,tvy,tvz),(.048,.56,.34),metal_dark,lg,.01)
+    box('TV thin aluminium body',(tvx,tvy,tvz),(.042,1.675,.950),appliance,lg,.009)
+    box('TV inset glass',(tvx+.024,tvy,tvz+.003),(.006,1.655,.930),screen,lg,.006)
+    ellipsoid('TV standby LED',(tvx+.029,tvy+.66,tvz-.466),(.0015,.003,.002),display,lg,6,8)
+    for j in range(22):box('TV rear ventilation slot',(tvx-.024,tvy-.55+j*.05,tvz+.30),(.004,.024,.045),dark,lg,.002)
+    a,b,c,d=lc['consoleBounds'];cx=(a+c)/2;cy=(b+d)/2
+    box('Media console carcass',(cx,cy,.37),(c-a,d-b-.048,.30),dark,lg,.01)
+    box('Media console oak top',(cx,cy,.534),(c-a+.014,d-b+.008,.028),oak,lg,.006)
+    box('Media console oak underside',(cx,cy,.212),(c-a,d-b,.024),oak,lg,.004)
+    for y in (b+.012,d-.012):box('Media console end',(cx,y,.373),(c-a,.024,.31),oak,lg,.004)
+    for j in range(4):
+        ya=b+.027+j*(d-b-.054)/4;yb=b+.027+(j+1)*(d-b-.054)/4
+        box('Media console push drawer '+str(j),(c+.009,(ya+yb)/2,.377),(.022,yb-ya-.004,.285),oak,lg,.003)
+    box('Media console recessed light',(-4.71,cy,.202),(.017,d-b-.18,.008),opal,lg,.002)
+    obstacle('TV media console',[a,b,c+.025,d],.55)
+    box('Soundbar acoustic body',(-4.72,tvy,.584),(.12,1.03,.064),appliance,lg,.025)
+    for j in range(64):
+        box('Soundbar grille slot',(-4.657,tvy-.475+j*.015,.584),(.003,.003,.034),metal_dark,lg,.001)
+    for j in range(4):
+        ellipsoid('Soundbar touch key',(-4.70,tvy-.06+j*.04,.618),(.013,.010,.001),metal_dark,lg,6,10)
+    # Rounded superellipsoid upholstery keeps soft volumes at close distance.
+    def padded(label,center,size,mat,group,lean=0,exponent=.42):
+        def signed(x,p):return (1 if x>=0 else -1)*abs(x)**p
+        vs=[];rings=24;segments=48
+        for j in range(rings+1):
+            v=-pi/2+j*pi/rings
+            for i in range(segments):
+                u=i*tau/segments
+                x=size[0]/2*signed(cos(v),exponent)*signed(cos(u),exponent)
+                y=size[1]/2*signed(cos(v),exponent)*signed(sin(u),exponent)
+                z=size[2]/2*signed(sin(v),exponent)
+                vs.append((center[0]+x*cos(lean)+z*sin(lean),center[1]+y,center[2]-x*sin(lean)+z*cos(lean)))
+        faces=[(j*segments+i,j*segments+(i+1)%segments,(j+1)*segments+(i+1)%segments,(j+1)*segments+i)for j in range(rings)for i in range(segments)]
+        return mesh(label,vs,faces,mat,group,True,uvscale=.25)
+    def piping(label,x,y,z,w,d,group):
+        pts=[]
+        for j in range(97):
+            a=j*tau/96;pts.append((x+w/2*_ki_math.copysign(abs(cos(a))**.35,cos(a)),y+d/2*_ki_math.copysign(abs(sin(a))**.35,sin(a)),z))
+        tube(label,pts,.002,seam,group,8)
+    sx,sy=lc['sofaCenter'];sw,sd=lc['sofaSize']
+    box('Lounge rug',(sx-.72,sy,.009),(2.85,2.96,.014),linen,lg,.006,uvscale=.65)
+    piping('Lounge rug bound edge',sx-.72,sy,.016,2.83,2.94,lg)
+    box('Sofa recessed oak plinth',(sx,sy,.09),(sw-.18,sd-.16,.14),oak,lg,.024)
+    padded('Sofa upholstered base',(sx,sy,.235),(sw,sd,.22),fabric,lg)
+    padded('Sofa low wraparound back',(sx+.355,sy,.575),(.26,sd,.73),fabric,lg)
+    for yy in (sy-sd/2+.12,sy+sd/2-.12):padded('Sofa rounded arm',(sx-.01,yy,.46),(sw-.07,.24,.56),fabric,lg)
+    for j in range(3):
+        yy=sy-.74+j*.74
+        padded('Sofa seat cushion '+str(j),(sx-.105,yy,.424),(.71,.73,.18),fabric,lg)
+        piping('Sofa seat welt '+str(j),sx-.105,yy,.414,.694,.714,lg)
+        padded('Sofa back cushion '+str(j),(sx+.229,yy,.695),(.18,.72,.50),fabric,lg,-.12)
+        tube('Sofa back cushion top seam',[(sx+.211,yy-.29,.927),(sx+.222,yy,.939),(sx+.211,yy+.29,.927)],.002,seam,lg,8)
+    for j,(yy,zz,mat)in enumerate(((sy-.89,.69,linen),(sy+.86,.72,fabric))):
+        padded('Sofa scatter cushion '+str(j),(sx+.055,yy,zz),(.16,.43,.44),mat,lg,-.28, .55)
+        tube('Scatter cushion stitched edge',[(sx-.027,yy-.17,zz-.16),(sx-.025,yy-.19,zz+.14),(sx-.02,yy,zz+.22),(sx-.025,yy+.19,zz+.14),(sx-.027,yy+.17,zz-.16)],.002,seam,lg,8)
+    obstacle('Lounge sofa',[sx-sw/2,sy-sd/2,sx+sw/2,sy+sd/2],.98)
+    # Draped linen throw with rolled edge and short tassels over the south arm.
+    verts=[];nr,nc=34,24
+    for j in range(nr+1):
+        t=j/nr
+        for i in range(nc+1):
+            u=(i/nc-.5)*.42;wave=.008*sin(i*.8+t*2)
+            y=sy-sd/2+.32-t*.47
+            z=.737+wave if t<.47 else .737-(t-.47)*.91+wave
+            verts.append((sx+u-.08,y,z))
+    throw=mesh('Sofa draped linen throw',verts,[(j*(nc+1)+i,j*(nc+1)+i+1,(j+1)*(nc+1)+i+1,(j+1)*(nc+1)+i)for j in range(nr)for i in range(nc)],linen,lg,True,uvscale=.5)
+    mod=throw.modifiers.new('Linen thickness','SOLIDIFY');mod.thickness=.0015
+    tube('Throw rolled hem',verts[-nc-1:],.002,seam,lg,7)
+    for i in range(0,nc+1,2):
+        p=Vector(verts[-nc-1+i]);tube('Throw tassel',[p,p+Vector((.001,.006,-.033))],.0011,seam,lg,5)
+    # Honed stone oval table, recessed oak pedestal and a smaller side table.
+    tx,ty=lc['coffeeCenter']
+    lathe('Lounge limestone coffee top',(tx,ty,0),[(0,.334),(.94,.334),(1,.345),(1,.366),(.96,.376),(0,.376)],stone,lg,96,(.34,.62))
+    lathe('Lounge coffee oak pedestal',(tx,ty,0),[(0,.026),(.23,.026),(.24,.04),(.22,.328),(0,.328)],oak,lg,64,(.70,1.5))
+    obstacle('Lounge coffee table',None,.38,[(tx+.34*cos(j*tau/48),ty+.62*sin(j*tau/48))for j in range(48)])
+    stx,sty=sx-.10,5.30
+    lathe('Lounge side table stone top',(stx,sty,0),[(0,.505),(.215,.505),(.23,.516),(.23,.535),(.215,.543),(0,.543)],stone,lg,64)
+    lathe('Lounge side table bronze base',(stx,sty,0),[(0,.02),(.17,.02),(.17,.03),(.028,.035),(.024,.507),(0,.507)],bronze,lg,48)
+    obstacle('Lounge side table',None,.55,[(stx+.23*cos(j*tau/40),sty+.23*sin(j*tau/40))for j in range(40)])
+    # Books have separate covers, paper leaves, spine and blind embossed lines.
+    paper=material('book paper',(.70,.66,.56,1),.93)
+    for j,(x,y,z,w,d,mat)in enumerate(((tx,ty+.16,.392,.25,.34,linen),(tx+.013,ty+.145,.421,.22,.29,oak))):
+        box('Coffee book pages '+str(j),(x,y,z),(w-.007,d-.012,.024),paper,lg,.001)
+        for dz in (-.014,.014):box('Coffee book cover '+str(j),(x,y,z+dz),(w,d,.003),mat,lg,.001)
+        box('Coffee book spine '+str(j),(x-w/2,y,z),(.004,d,.030),mat,lg,.001)
+        for dz in (-.007,-.003,.002,.006):box('Book leaf edge',(x+w/2-.003,y,z+dz),(.001,d-.02,.00045),seam,lg,0)
+    box('TV remote body',(tx-.035,ty-.29,.390),(.052,.174,.022),appliance,lg,.011)
+    lathe('Remote navigation ring',(tx-.035,ty-.275,.402),[(.011,0),(.016,0),(.016,.0018),(.011,.0018),(.011,0)],metal_dark,lg,32)
+    for j in range(3):
+        for k in range(3):ellipsoid('Remote button',(tx-.048+k*.013,ty-.31-j*.018,.403),(.008,.011,.0025),metal_dark,lg,6,10)
+    ellipsoid('Remote power button',(tx-.035,ty-.224,.403),(.009,.009,.002),ceramic,lg,8,12)
+    lathe('Stone coaster',(stx,sty,.544),[(0,0),(.058,0),(.058,.007),(0,.007)],ceramic,lg,40)
+    lathe('Lounge tea cup',(stx,sty,.551),[(0,0),(.033,0),(.041,.065),(.040,.077),(.035,.078),(.032,.014),(0,.013)],ceramic,lg,48)
+    tube('Lounge tea cup handle',[(stx+.037+.024*sin(j*pi/20),sty,.565+.051*(1-cos(j*pi/20))/2)for j in range(21)],.004,ceramic,lg,10)
+    # Sculptural ceramic pots, soil, pebbles and organically branching olives.
+    def floor_olive(label,x,y,h=1.85,pot_radius=.19):
+        g=label;ph=.40
+        lathe(label+' planter',(x,y,0),[(0,.014),(pot_radius*.72,.014),(pot_radius*.92,.05),(pot_radius,.31),(pot_radius*.97,ph),(pot_radius*.86,ph+.004),(pot_radius*.85,.07),(0,.06)],ceramic,g,64)
+        lathe(label+' dark soil',(x,y,.357),[(0,0),(pot_radius*.86,0),(0,-.008)],soil,g,48)
+        for j in range(21):
+            a=rng.random()*tau;r=pot_radius*.78*rng.random()**.5
+            ellipsoid(label+' soil pebble',(x+r*cos(a),y+r*sin(a),.361),(.011,.016,.008),warm_plaster,g,6,10)
+        trunk=[Vector(p)for p in ((x,y,.355),(x-.035,y+.012,.75),(x+.025,y+.025,1.13),(x-.007,y+.016,h-.36))]
+        tube(label+' olive trunk',trunk,(.025,.006),branch,g,12)
+        for j in range(3):
+            a=j*tau/3
+            z=.86+j*.14
+            lo,hi=next((lo,hi)for lo,hi in zip(trunk,trunk[1:])if lo.z<=z<=hi.z)
+            base=lo.lerp(hi,(z-lo.z)/(hi.z-lo.z));tip=base+Vector((.16*cos(a),.16*sin(a),.34))
+            tube(label+' secondary trunk',[base,tip],(.010,.004),branch,g,10)
+            leaf_spray(label+' crown '+str(j),tip,(h-tip.z)*.95,.26,g,7)
+        obstacle(label,None,h,[(x+(pot_radius+.06)*cos(j*tau/40),y+(pot_radius+.06)*sin(j*tau/40))for j in range(40)])
+    floor_olive('Lounge window olive',-4.60,5.23,1.87)
+    floor_olive('Kitchen corner olive',-.62,8.03,1.70,.165)
+    # A small rosemary pot adds greenery at the worktop without hiding glazing.
+    rx,ry=(1.0,8.53)if planning else(4.73,6.98)
+    lathe('Counter herb pot',(rx,ry,.95),[(0,0),(.043,0),(.055,.09),(.052,.10),(.044,.10),(.04,.022),(0,.02)],ceramic,'Counter herbs',48)
+    lathe('Counter herb soil',(rx,ry,1.041),[(0,0),(.046,0),(0,-.003)],soil,'Counter herbs',32)
+    leaf_spray('Counter herb',(rx,ry,1.039),.17,.09,'Counter herbs',7)
+    # Fine ceiling trim follows the existing room perimeter above openings.
+    poly=[(.13,4.13),(4.19,4.13),(4.19,5.17),(4.92,5.17),(4.92,8.69),(.13,8.69)]
+    for j,(p,q) in enumerate(zip(poly,poly[1:]+poly[:1])):
+        length=_ki_math.dist(p,q);angle=_ki_math.atan2(q[1]-p[1],q[0]-p[0])
+        for k,(z,width,height)in enumerate(((2.542,.028,.022),(2.562,.043,.009))):
+            box(f'Fine cornice {j}-{k}',((p[0]+q[0])/2,(p[1]+q[1])/2,z),(length,width,height),white,'Floor and finishes',.003,angle)
+    # Native wall wash and ceiling apertures; bounded lights in the tour.
+    for i,(x,y)in enumerate(((-3.9,6.30),(-3.9,7.80),(-1.12,7.18))):
+        lathe('Lounge downlight trim '+str(i),(x,y,2.549),[(0,0),(.042,0),(.042,.009),(0,.009)],white,lg,32)
+        lathe('Lounge downlight lens '+str(i),(x,y,2.547),[(0,0),(.033,0),(.033,.003),(0,.003)],opal,lg,32)
+        ld=bpy.data.lights.new(prefix+'Lounge task '+str(i),'AREA');ld.energy=23;ld.shape='DISK';ld.size=.20;ld.color=(1,.89,.77)
+        lo=bpy.data.objects.new(ld.name,ld);collection.objects.link(lo);lo.location=(x,y,2.53);lo['interior_room']='kitchen'
+    nav['proposalLights'].append({'name':'Quiet oak TV lounge','position':[-3.12,7.1,2.18],'range':3.6,'intensity':1.8})
+
+    nav['proposalLights'].append({'name':'Quiet oak lounge garden bounce','position':[-2.8,8.03,1.7],'range':3.7,'intensity':1.35})
     # Task-light apertures, lens and dark trim are separate native pieces.
     for i,(x,y)in enumerate(((3.82,6.15),(3.82,7.70),(1.05,5.28))):
         lathe('Downlight trim '+str(i),(x,y,2.588),[(0,0),(.046,0),(.048,.008),(0,.008)],white,'Ceiling lighting',32)
@@ -547,10 +734,10 @@ def apply_quiet_oak(ns):
     ])
     if not planning:nav['proposalLights'].append({'name':'Quiet oak dining daylight','position':[1.7,12.1,2.15],'range':4.0,'intensity':1.25})
     # Preserve all architectural room definitions and door controls.
-    nav['interiorDesign']={'room':'kitchen-and-informal-dining','scheme':'01 Quiet oak','revision':config['revision'],'reference':config['referenceImages'][ns['VARIANT']]}
+    nav['interiorDesign']={'room':'kitchen-dining-and-tv-lounge','scheme':'01 Quiet oak','revision':config['revision'],'reference':config['referenceImages'][ns['VARIANT']]}
     report={'scheme':'01 Quiet oak','variant':ns['VARIANT'],'mesh_count':len(owned),'removed_objects':removed,
         'furniture':furniture,'fixtures':fixtures,'configuration':config,'original_objects_modified':False,
-        'materials':[m.name for m in (oak,stone,fabric)],'texture_sources':config['textures']}
+        'materials':[m.name for m in (oak,stone,fabric,floor_stone)],'texture_sources':config['textures']}
     (ns['OUT']/'kitchen-interior-report.json').write_text(_ki_json.dumps(report,indent=2)+'\n')
     print('QUIET_OAK_INTERIOR',len(owned),'meshes',len(furniture),'collision objects',flush=True)
     return report

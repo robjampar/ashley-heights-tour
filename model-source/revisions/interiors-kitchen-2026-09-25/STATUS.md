@@ -1,3 +1,7 @@
+# First fitted issue — historical record
+
+The current room has since been refined and extended with the TV lounge. See `../interiors-lounge-2026-09-25/STATUS.md` for revision 2. The audit JSONs in this folder are updated by the current verification tools.
+
 # Quiet oak kitchen — fitted in both current designs
 
 Owner selected concept 01 and requested native detail down to oven buttons. Completed the kitchen and informal/garden dining furniture in Proposed and Proposed (planning application). The existing reconstruction, six additional alternatives and G1 remain separate.

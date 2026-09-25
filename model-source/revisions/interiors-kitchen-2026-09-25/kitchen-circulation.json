@@ -8,12 +8,17 @@
       "west side of furniture",
       "side living opening",
       "rear work aisle",
+      "TV sofa approach",
+      "TV console approach",
+      "behind sofa to garden",
+      "cellar landing",
+      "west door approach",
       "garden threshold",
       "garden dining east aisle",
       "garden dining west aisle"
     ],
     "kitchen_viewpoint_clear": true,
-    "reachable_samples": 9956
+    "reachable_samples": 12809
   },
   {
     "variant": "planning",
@@ -23,9 +28,14 @@
       "south entry",
       "west side of furniture",
       "side living opening",
-      "rear work aisle"
+      "rear work aisle",
+      "TV sofa approach",
+      "TV console approach",
+      "behind sofa to garden",
+      "cellar landing",
+      "west door approach"
     ],
     "kitchen_viewpoint_clear": true,
-    "reachable_samples": 4289
+    "reachable_samples": 6802
   }
 ]
