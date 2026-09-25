@@ -1,0 +1,87 @@
+{
+  "option": "i2",
+  "modelUpdatedAt": "2026-09-25T04:31:30.979245+00:00",
+  "passed": true,
+  "ensuite_bedrooms": 5,
+  "body_width_m": 0.44,
+  "doorway_polygon_margin_m": 0.2,
+  "results": [
+    {
+      "bedroom": "Bedroom 4",
+      "bathroom": "Bedroom 4 en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Bedroom 4 en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Garden guest suite",
+      "bathroom": "Garden guest en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Garden guest en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Ground-floor guest suite",
+      "bathroom": "Ground-floor guest en suite",
+      "floor": 0,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Ground-floor guest en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "New principal suite",
+      "bathroom": "New principal bathroom",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "New principal bathroom",
+          "passed": true
+        },
+        {
+          "room": "New dressing room",
+          "passed": true
+        },
+        {
+          "room": "Principal study",
+          "passed": true
+        },
+        {
+          "room": "Principal WC",
+          "passed": true
+        },
+        {
+          "room": "Principal window alcove",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "New loft bedroom",
+      "bathroom": "Loft ensuite",
+      "floor": 5.55,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Loft ensuite",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "limitations": "Checks collision-grid connectivity within each named suite, with 20 cm room-boundary allowance for doorway gaps. Does not establish plumbing, ventilation, door privacy or building-regulations compliance."
+}

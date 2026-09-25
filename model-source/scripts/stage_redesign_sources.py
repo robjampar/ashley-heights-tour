@@ -11,7 +11,7 @@ for directory in ('walkthrough/src','walkthrough/tools','tests'):
  paths.update(str(p.relative_to(ROOT))for p in (ROOT/directory).rglob('*')if p.is_file()and p.suffix in('.js','.mjs','.py','.html','.css','.json','.svg'))
 paths.update(str(p.relative_to(ROOT))for p in (ROOT/'walkthrough/tests').rglob('*')if p.is_file()and p.suffix in('.js','.mjs','.py')and 'site'not in p.relative_to(ROOT/'walkthrough/tests').parts)
 paths.add('walkthrough/tests/doors/index.html')
-paths.update(('README.md','walkthrough/build.mjs','walkthrough/index.html','walkthrough/style.css','walkthrough/package.json','walkthrough/package-lock.json','proposal/redesigns/review-notes.json','proposal/redesigns/research/RESEARCH.md','proposal/redesigns/CONCEPTS.md','proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md','proposal/planning-context.json','proposal/planning-context-proposed.json'))
+paths.update(('Regenerate Six Options.command','README.md','walkthrough/build.mjs','walkthrough/index.html','walkthrough/style.css','walkthrough/package.json','walkthrough/package-lock.json','proposal/redesigns/review-notes.json','proposal/redesigns/research/RESEARCH.md','proposal/redesigns/CONCEPTS.md','proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md','proposal/planning-context.json','proposal/planning-context-proposed.json'))
 paths.update(str(p.relative_to(ROOT))for p in (ROOT/'walkthrough/public/redesigns').glob('*')if p.is_file()and p.suffix in('.html','.css','.js','.json'))
 manifest={};baseline={}
 for name in sorted(paths):
@@ -24,12 +24,18 @@ for name in sorted(paths):
  if not source.is_file():raise FileNotFoundError(source)
  staged_name='WORKSPACE-README.md'if name=='README.md'else name
  target=DEST/staged_name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+ if source.suffix=='.command':shutil.copymode(source,target)
  manifest[staged_name]={'source':name,'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'bytes':source.stat().st_size}
 for id in ('i1','i2','i3','e1','e2','e3'):
- for file in ('build-report.json','circulation-audit.json','private-access-audit.json','stairs-navigation-audit.json','stair-headroom-audit.json','parking-audit.json','pool-navigation-audit.json','site-clearance-audit.json'):
+ for file in ('build-report.json','circulation-audit.json','private-access-audit.json','ensuite-access-audit.json','stairs-navigation-audit.json','stair-headroom-audit.json','parking-audit.json','pool-navigation-audit.json','site-clearance-audit.json'):
   source=ROOT/f'output-redesign-{id}'/file
   if source.is_file():
    target=DEST/'review-evidence'/id/file;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+for id in ('i1','i2','i3','e1','e2','e3'):
+ for view in ('front','rear','interior'):
+  source=ROOT/f'walkthrough/public/redesigns/images/{id}-{view}.jpg.capture.json'
+  if source.exists():
+   target=DEST/'review-evidence'/id/'captures'/(view+'.json');target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
 previous_path=DEST/'source-manifest.json'
 if previous_path.exists():
  for name in json.loads(previous_path.read_text())['files'].keys()-manifest.keys():

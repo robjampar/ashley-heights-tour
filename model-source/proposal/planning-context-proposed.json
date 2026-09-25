@@ -30,13 +30,16 @@
     "tpo": null,
     "flood_zone": "1",
     "article_4_direction": false,
-    "basis": "Green Belt: owner confirms the site is outside. Read-only Sevenoaks public GIS screening on 25 September 2026, using the existing approximate model-to-BNG registration, shows no plot overlap with The Vine conservation area or nearby Article 4 areas. These are map checks, not formal land-charge verification. TPO 19/1987 (T4 cherry and G1 group) is mapped beside the east/rear boundary; legal coverage, surviving tree identity and root protection require survey and council/arboricultural confirmation. Heritage, AONB and flood assumptions remain unverified. See proposal/redesigns/research/RESEARCH.md.",
+    "basis": "Green Belt: owner confirms the site is outside. Read-only Sevenoaks public GIS screening on 25 September 2026, using the existing approximate model-to-BNG registration, shows no plot overlap with The Vine conservation area or nearby Article 4 areas. These are map checks, not formal land-charge verification. TPO 19/1987 (T4 cherry and G1 group) is mapped beside the east/rear boundary; legal coverage, surviving tree identity and root protection require survey and council/arboricultural confirmation. Historic England NHLE screening finds no listed-building point/polygon on the reconstructed plot; this does not determine curtilage, setting or local listing. Current Environment Agency flood-zone data returns no Zone 2/3 polygon within the plot plus 100 m, supporting river/sea Flood Zone 1 map screening. Natural England boundary screening places the plot outside Kent Downs National Landscape, about 675 m away; setting effects are not assessed. Local-list status, surface water, groundwater and other flood sources remain unverified. See proposal/redesigns/research/RESEARCH.md.",
     "confirmed": [
       "green_belt"
     ],
     "map_screened": [
       "conservation_area",
-      "article_4_direction"
+      "article_4_direction",
+      "listed_building",
+      "flood_zone",
+      "aonb"
     ]
   },
   "original_dwelling": {
@@ -101,7 +104,7 @@
     {
       "id": "ARB",
       "title": "BS5837:2012 arboricultural impact assessment and tree protection plan",
-      "trigger": "Mature trees within 15 m of the works; TPO status unknown",
+      "trigger": "Mature trees close to the works; confirmed TPO 19/1987 mapped beside the site, with surveyed tree identity, legal coverage and root protection to verify",
       "status": "required"
     },
     {
@@ -125,8 +128,8 @@
     {
       "id": "FRA",
       "title": "Flood risk assessment",
-      "trigger": "Only if the site is in flood zone 2/3 or at surface-water risk",
-      "status": "not expected (flood zone 1 assumed)"
+      "trigger": "Confirm the need against all flood sources, basement proposals and current validation requirements",
+      "status": "River/sea Zone 1 map screening; surface water, groundwater and basement risk not assessed"
     },
     {
       "id": "NOISE",
@@ -137,8 +140,8 @@
     {
       "id": "HER",
       "title": "Heritage statement",
-      "trigger": "Only if within or adjoining a conservation area",
-      "status": "not expected"
+      "trigger": "Confirm heritage/setting effects, local-list status and any historic curtilage against current validation requirements",
+      "status": "Conservation and NHLE map screening completed; local-list and setting assessment remain open"
     },
     {
       "id": "HWY",

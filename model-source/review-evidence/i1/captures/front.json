@@ -1,0 +1,35 @@
+{
+  "state": {
+    "schema": 1,
+    "option": "i1",
+    "modelUpdatedAt": "2026-09-25T04:31:27.446974+00:00",
+    "inputs": {
+      "walkthrough/public/redesign-i1.glb": "68e60d4cc51994d8fbd0ee1ecd4b2afdcb71bd5af80188796fb1a7932f822159",
+      "walkthrough/public/redesign-i1-navigation.json": "d0a1b9ce1bb84c1673fc09f780a192c6085fe59f5bd27cb42449754dea862908",
+      "walkthrough/dist/redesign-i1.glb": "5eb0c2a9c90443f1b0d662d0b05192e3de4e32eb93636372e4c0ddfd44619d9a",
+      "walkthrough/dist/redesign-i1-navigation.json": "b70e8f74868c7490fde21b3aeaac527eb005157c54ef0be4d4627410af9ecff7",
+      "walkthrough/dist/app.js": "56326724cd455c1b77afddc834c47047286421876684243d8263d7cba2b3f4e7",
+      "walkthrough/dist/style.css": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a",
+      "walkthrough/dist/index.html": "de74f4cc2dd47028a967ee60e23dfe1396e2621cb98b6f6dcd3dc8c86bda83fb",
+      "walkthrough/tests/capture-redesigns.mjs": "05ee1ff710a6f447328b7e23dbe0d2937f62cd3599f4fcf670679ffca2610edc",
+      "walkthrough/tools/review-captures.mjs": "8bc251f20ffdb21a04fe7167d6676ba95fb79a5735e4ef7b687acfdbd3fa353d"
+    }
+  },
+  "view": {
+    "p": [
+      -17,
+      -29,
+      14
+    ],
+    "target": [
+      4,
+      -1,
+      2.8
+    ],
+    "fov": 48,
+    "walls": "brick",
+    "roof": "light"
+  },
+  "imageSHA256": "15dc3294d81d24d22881ebf4677018398ff7675ac799e260a102a245d743a56b",
+  "capturedAt": "2026-09-25T05:10:18.023Z"
+}

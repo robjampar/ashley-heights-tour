@@ -1,0 +1,87 @@
+{
+  "option": "i3",
+  "modelUpdatedAt": "2026-09-25T04:32:44.260921+00:00",
+  "passed": true,
+  "ensuite_bedrooms": 6,
+  "body_width_m": 0.44,
+  "doorway_polygon_margin_m": 0.2,
+  "results": [
+    {
+      "bedroom": "Bedroom 4",
+      "bathroom": "Bedroom 4 en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Bedroom 4 en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Garden principal bedroom",
+      "bathroom": "Principal en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Principal en suite",
+          "passed": true
+        },
+        {
+          "room": "Principal study and walk-through dressing",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Front guest suite A",
+      "bathroom": "Guest A bathroom",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Guest A bathroom",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Front guest suite B",
+      "bathroom": "Guest B en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Guest B en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "New loft bedroom",
+      "bathroom": "Loft ensuite",
+      "floor": 5.55,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Loft ensuite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Side wing south bedroom",
+      "bathroom": "Side south ensuite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Side south ensuite",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "limitations": "Checks collision-grid connectivity within each named suite, with 20 cm room-boundary allowance for doorway gaps. Does not establish plumbing, ventilation, door privacy or building-regulations compliance."
+}

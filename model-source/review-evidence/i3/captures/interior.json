@@ -1,0 +1,33 @@
+{
+  "state": {
+    "schema": 1,
+    "option": "i3",
+    "modelUpdatedAt": "2026-09-25T04:32:44.260921+00:00",
+    "inputs": {
+      "walkthrough/public/redesign-i3.glb": "ab3fe05759446848074269e8b5e74083550976fe37e388995888bb8c16a6ee60",
+      "walkthrough/public/redesign-i3-navigation.json": "23458ebe64db696237fa083e62e002e8473ed773463b31dc05bf62fb986543db",
+      "walkthrough/dist/redesign-i3.glb": "a87df23f20f2bf5603445a0cc85bc8d682e43b1d69a8507f73cc8b59b1a56c88",
+      "walkthrough/dist/redesign-i3-navigation.json": "4c044909a8e6c4eef3643295adbc59c1d220a97ccd50f53a6a58bc41f5828021",
+      "walkthrough/dist/app.js": "56326724cd455c1b77afddc834c47047286421876684243d8263d7cba2b3f4e7",
+      "walkthrough/dist/style.css": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a",
+      "walkthrough/dist/index.html": "de74f4cc2dd47028a967ee60e23dfe1396e2621cb98b6f6dcd3dc8c86bda83fb",
+      "walkthrough/tests/capture-redesign-interiors.mjs": "d46a82fdc69d6d8c647eb80fe8bb027e95cd8db754daaefa02694377b0256477",
+      "walkthrough/tools/review-captures.mjs": "8bc251f20ffdb21a04fe7167d6676ba95fb79a5735e4ef7b687acfdbd3fa353d"
+    }
+  },
+  "view": {
+    "room": "Garden principal bedroom",
+    "p": [
+      10.1,
+      5,
+      2.8
+    ],
+    "d": [
+      0.45,
+      1,
+      -0.13
+    ]
+  },
+  "imageSHA256": "64633297e7901e938136b7cd5661d05dce44fecac08f32e5e9f48ca55027cdba",
+  "capturedAt": "2026-09-25T05:10:39.365Z"
+}

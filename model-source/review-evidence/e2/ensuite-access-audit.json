@@ -1,0 +1,79 @@
+{
+  "option": "e2",
+  "modelUpdatedAt": "2026-09-25T04:34:46.117936+00:00",
+  "passed": true,
+  "ensuite_bedrooms": 5,
+  "body_width_m": 0.44,
+  "doorway_polygon_margin_m": 0.2,
+  "results": [
+    {
+      "bedroom": "Bedroom 4",
+      "bathroom": "Bedroom 4 en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Bedroom 4 en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Garden guest bedroom",
+      "bathroom": "Garden guest en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Garden guest en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Loft guest bedroom",
+      "bathroom": "Loft guest en suite",
+      "floor": 5.55,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Loft guest en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Side principal bedroom",
+      "bathroom": "Principal bathroom",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Principal bathroom",
+          "passed": true
+        },
+        {
+          "room": "Walk-through principal wardrobe",
+          "passed": true
+        },
+        {
+          "room": "Principal study and entry",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Ground guest bedroom",
+      "bathroom": "Ground guest en suite",
+      "floor": 0,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Ground guest en suite",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "limitations": "Checks collision-grid connectivity within each named suite, with 20 cm room-boundary allowance for doorway gaps. Does not establish plumbing, ventilation, door privacy or building-regulations compliance."
+}

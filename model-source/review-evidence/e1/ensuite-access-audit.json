@@ -1,0 +1,87 @@
+{
+  "option": "e1",
+  "modelUpdatedAt": "2026-09-25T04:33:34.186775+00:00",
+  "passed": true,
+  "ensuite_bedrooms": 6,
+  "body_width_m": 0.44,
+  "doorway_polygon_margin_m": 0.2,
+  "results": [
+    {
+      "bedroom": "Bedroom 4",
+      "bathroom": "Bedroom 4 en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Bedroom 4 en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Garden principal bedroom",
+      "bathroom": "Principal en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Principal en suite",
+          "passed": true
+        },
+        {
+          "room": "Principal study and walk-through dressing",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Loft guest bedroom",
+      "bathroom": "Loft guest en suite",
+      "floor": 5.55,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Loft guest en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Side south bedroom",
+      "bathroom": "Side south en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Side south en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Side north bedroom",
+      "bathroom": "Side north en suite",
+      "floor": 2.8,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Side north en suite",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "bedroom": "Ground guest bedroom",
+      "bathroom": "Ground guest en suite",
+      "floor": 0,
+      "passed": true,
+      "connected": [
+        {
+          "room": "Ground guest en suite",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "limitations": "Checks collision-grid connectivity within each named suite, with 20 cm room-boundary allowance for doorway gaps. Does not establish plumbing, ventilation, door privacy or building-regulations compliance."
+}
