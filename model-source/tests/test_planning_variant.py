@@ -30,8 +30,11 @@ class PlanningVariantTests(unittest.TestCase):
   self.assertFalse(any('Proposal | Limestone render' in o['materials'] for o in proposed))
   self.assertGreater(sum('Red brown brick' in o['materials'] for o in proposed),100)
   doors=[d for d in self.nav['interactiveDoors'] if 'Side living rear' in d['id']]
-  self.assertEqual(len(doors),2)
-  for d in doors:self.assertEqual(d['structuralOpening'],[-3.79,8.705,0,-1.39,8.935,2.25])
+  # Owner, 24 September: two French pairs spanning the full side-wing width.
+  self.assertEqual(len(doors),4)
+  self.assertEqual(len({d['id'] for d in doors}),4)
+  self.assertEqual(sorted(d['openDelta']>0 for d in doors),[False,False,True,True])
+  for d in doors:np.testing.assert_allclose(d['structuralOpening'],[-5.065,8.705,0,-.115,8.935,2.25],atol=1e-8,rtol=0)
   upper=[o for o in proposed if o['name']=='Proposal | Side bedrooms rear window 0 glass']
   self.assertEqual(len(upper),1)
   self.assertAlmostEqual(min(v[2] for v in upper[0]['vertices']),3.655,places=3)
@@ -52,7 +55,7 @@ class PlanningVariantTests(unittest.TestCase):
    if 'Red brown brick' not in ob['materials']:continue
    for f,m in zip(ob['faces'],ob['face_materials']):
     v=np.asarray([ob['vertices'][i]for i in f])
-    if np.max(np.abs(v[:,1]-.565))<2e-5 and np.ptp(v[:,2])>.05 and np.ptp(v[:,0])>.05:
+    if np.max(np.abs(v[:,1]-1.015))<2e-5 and np.ptp(v[:,2])>.05 and np.ptp(v[:,0])>.05:
      self.assertEqual(ob['materials'][m],white,ob['name']);front_inside+=1
   self.assertGreater(front_inside,5)
   for side,y in [('south',-8.9),('north',-5.5)]:
@@ -97,29 +100,30 @@ class PlanningVariantTests(unittest.TestCase):
   self.assertNotIn('frontWing',overlay);self.assertNotIn('entertainmentBasement',overlay)
  def test_side_extension_front_and_roof_are_set_back_in_both_options(self):
   original_roof=next(o for o in self.ex['objects']if o['name']=='Main hipped roof')
-  expected_roof_y=original_roof['vertices'][0][1]+.45
+  expected_roof_y=original_roof['vertices'][0][1]+.90
   for variant in ('planning','compact'):
    data=self.g if variant=='planning' else json.loads((ROOT/'output-proposed-compact/geometry.json').read_text())
    nav=self.nav if variant=='planning' else self.full
-   self.assertEqual(nav['proposalSideWing']['front_setback_m'],.45)
+   # CURRENT-BRIEF, 24 September: setback doubled from 450 to 900 mm.
+   self.assertEqual(nav['proposalSideWing']['front_setback_m'],.90)
    self.assertEqual(nav['proposalSideWing']['wall_centrelines_m']['rear'],8.82)
    facing=next(o for o in data['objects']if o['name'] in ('Proposal | Side wing front brick facing','Proposal | Side wing front oak cladding'))
-   self.assertAlmostEqual(min(v[1]for v in facing['vertices']),.45-.131,places=4)
+   self.assertAlmostEqual(min(v[1]for v in facing['vertices']),.90-.131,places=4)
    roofs=[o for o in data['objects']if 'Side wing continued front slope' in o['name']and 'lining'not in o['name']]
    self.assertTrue(roofs)
    self.assertAlmostEqual(min(v[1]for o in roofs for v in o['vertices']),expected_roof_y,places=4)
    room=next(r for r in nav['planRooms']if r['name']=='Side garden living')
-   self.assertAlmostEqual(min(v[1]for v in room['polygon_m']),.565,places=4)
+   self.assertAlmostEqual(min(v[1]for v in room['polygon_m']),1.015,places=4)
  def test_attached_rear_room_fits_the_house_area_region(self):
   from scripts.planning_drawings.model import load_proposed
   from scripts.planning_drawings.footprints import level_envelope,room_envelope,HOUSE_REGION
   for variant in ('planning','compact'):
    model=load_proposed(variant);walls=level_envelope(model,0,HOUSE_REGION);rooms,_=room_envelope(model,0,HOUSE_REGION)
    self.assertLess(abs(walls.area-rooms.area)/rooms.area,.05,variant)
- def test_wide_door_is_scheduled_as_one_glazed_pair(self):
+ def test_four_leaf_rear_door_is_scheduled_as_one_structural_opening(self):
   from scripts.planning_drawings.model import load_proposed
   from scripts.planning_drawings.openings import extract
   rows=[r for r in extract(load_proposed('planning')) if 'Side living rear' in r.wall]
   self.assertEqual(len(rows),1)
-  self.assertEqual((rows[0].kind,rows[0].width,rows[0].height),('french',2.4,2.25))
+  self.assertEqual((rows[0].kind,rows[0].width,rows[0].height),('french',4.95,2.25))
 if __name__=='__main__':unittest.main()

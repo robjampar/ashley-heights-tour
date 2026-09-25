@@ -2,13 +2,18 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "e65fed93c5cc5f76eae89104c9008c453d18455cd3f0e0b58cdf207074118ba2",
-      "bytes": 13714
+      "sha256": "9a8c5324f2b5bcab714890036cbdcbef17e9ca4fb3ae5977e45883cc0f3b2a44",
+      "bytes": 14609
     },
     "Regenerate Six Options.command": {
       "source": "Regenerate Six Options.command",
       "sha256": "dce90a15f5641db9d93aab02dc5c1328c9a7012e785b54f3708380466e6bac39",
       "bytes": 108
+    },
+    "proposal/CURRENT-BRIEF.md": {
+      "source": "proposal/CURRENT-BRIEF.md",
+      "sha256": "863200909b25c01237d0783c88ee2959ea0abd9b3a207cec4779cad119dfc733",
+      "bytes": 38366
     },
     "proposal/P4_parking-validated.json": {
       "source": "proposal/P4_parking-validated.json",
@@ -24,6 +29,11 @@
       "source": "proposal/P5_internal-garden-area.json",
       "sha256": "f821a2319d3a43633dc57f437c01b45a1c43496417fe022aa09e86245d458c95",
       "bytes": 2057
+    },
+    "proposal/START-HERE.md": {
+      "source": "proposal/START-HERE.md",
+      "sha256": "d21fab5706d3c86f36c6e3aee07ba0c0f3854847f8ac332e74240fdc7689f951",
+      "bytes": 2621
     },
     "proposal/design-spec-compact.json": {
       "source": "proposal/design-spec-compact.json",
@@ -59,6 +69,16 @@
       "source": "proposal/planning-context.json",
       "sha256": "fb3d7d6bb2114355630befe37327a1adecfc5263f3d6ed9f0270998982612628",
       "bytes": 16150
+    },
+    "proposal/planning/README.md": {
+      "source": "proposal/planning/README.md",
+      "sha256": "642b6b19e2bf10153e74834e8071949712da99432df78ecf7c3322732ee68325",
+      "bytes": 3873
+    },
+    "proposal/proposed/README.md": {
+      "source": "proposal/proposed/README.md",
+      "sha256": "9f09f12ce8d06bf7a0c5c7db87b3a888c9c6b4997ba66d29f240dc42a67e5acb",
+      "bytes": 420
     },
     "proposal/redesigns/CONCEPTS.md": {
       "source": "proposal/redesigns/CONCEPTS.md",
@@ -124,6 +144,11 @@
       "source": "proposal/site-terrain.json",
       "sha256": "870de1bd489c140c91c5fd001b8c793e16c55bc57ace34f6be1e938d2c2752a2",
       "bytes": 585288
+    },
+    "revisions/planning-cleanup-2026-09-23/CLEANUP.md": {
+      "source": "revisions/planning-cleanup-2026-09-23/CLEANUP.md",
+      "sha256": "6b82ea4e5a1aa5ecea990d25a8b080f66b83bb1706fb11572d932f081dc21b38",
+      "bytes": 3106
     },
     "revisions/redesigns-2026-09-25/compact-object-index.json": {
       "source": "revisions/redesigns-2026-09-25/compact-object-index.json",
@@ -1217,8 +1242,8 @@
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "33f7c48bc6872a65ebcab333a650c26b5020ca8354d2492573f656e70239f1db",
-      "bytes": 5310
+      "sha256": "41718198be3c9ea3ccd7ab4cd7fffed63fb097297a83a7b6e032bf5f0b284780",
+      "bytes": 5474
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1287,8 +1312,8 @@
     },
     "tests/test_entrance_gable.py": {
       "source": "tests/test_entrance_gable.py",
-      "sha256": "5d48025d2f823fe912caf32f0bdb5f88f25d6f7724dd9aecea8ccad1a8100495",
-      "bytes": 2118
+      "sha256": "a208eec2f98a6f24f95ac0ca82e051c80785b65e16d79b66d8b5722574f826ee",
+      "bytes": 2416
     },
     "tests/test_planning_model_cache.py": {
       "source": "tests/test_planning_model_cache.py",
@@ -1302,8 +1327,8 @@
     },
     "tests/test_planning_variant.py": {
       "source": "tests/test_planning_variant.py",
-      "sha256": "3beb27bf7aef83893bdd715f002b4eff79b0d7df663f4ebfef4b5ef4ecd84032",
-      "bytes": 8505
+      "sha256": "baee05c2fc4521c67fca4bb7e4a01d0a0f25b1c514effa611d976b4a283b1ac4",
+      "bytes": 8836
     },
     "tests/test_redesign_cache.py": {
       "source": "tests/test_redesign_cache.py",

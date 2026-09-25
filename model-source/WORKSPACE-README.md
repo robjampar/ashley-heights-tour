@@ -71,7 +71,7 @@ See [the editing guide](proposal/START-HERE.md), [planning issue guide](proposal
 
 The walkthrough also contains **I1 Garden kitchen**, **I2 Social east**, **I3 Garden principal**, **E1 Retained front**, **E2 Garden courtyard** and **E3 Short forecourt wing**. I1–I3 keep the current Proposed envelope; E1–E3 start from the original house. They preserve the full seven-bedroom/leisure/pool/parking brief with the compromises set out in the review. They are concept alternatives, not replacements for the three current designs or approved planning proposals.
 
-Open `walkthrough/dist/redesigns/index.html` through a local HTTP server, or use the **Compare six options** link in the tour. The review has actual model images, floor/site plans, approximate room schedules and a 37-page drawing pack. [Built concepts](proposal/redesigns/CONCEPTS.md) and [external layout notes](proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md) describe the issue. The same house-only wall/roof finish switches work on every new option.
+Open `walkthrough/dist/redesigns/index.html` through a local HTTP server, or use the **Compare six options** link in the tour. The review has actual model images, floor/site plans, approximate room schedules and a 38-page drawing pack. [Built concepts](proposal/redesigns/CONCEPTS.md) and [external layout notes](proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md) describe the issue. The same house-only wall/roof finish switches work on every new option.
 
 Regenerate the complete review, including current models, drawings, route checks, photographs, PDF and viewer:
 
@@ -98,3 +98,9 @@ The deployment repository is `deployment/ashley-heights-tour`. `scripts/stage_gi
 Before the loft optimisation below, both current native models built in parallel in **418.3 s** (about 7 minutes), versus **702.8 s** for the earlier sequential builds. Verified reuse of both took **0.62 s**. The six additional native models built together in **237.9 s** with two workers; verifying and reusing all six took **2.02 s**. These times exclude drawings and viewer processing. Model vertices, topology, room polygons and wall metadata for both current designs were checked against the preserved pre-parallel baseline and are unchanged.
 
 The exact loft-wall Boolean cuts now run on temporary copies in a small Blender work scene. A real-model comparison reduced this stage from **65–67 s to 7–8 s** with identical mesh vertices, topology and materials; the complete parallel rebuild of both current designs took **344.9 s**. Every exported object record, room and wall remained exactly equal to the prior build. Targets with existing modifiers, constraints or animation use the original scene; failure cleanup preserves the source and removes temporary work data.
+
+## Validation
+
+Run `.venv/bin/python -m unittest discover -s tests` for the Python pipeline, drawing-cache and current-model geometry checks. The final 25 September issue passes all **65 tests**. The current-model checks include the owner's 24 September 900 mm side-wing setback, four-leaf rear opening and planning tiled verge; front-face overlap and internal/external material checks remain active. The viewer's `npm test` suite passes **111 tests**.
+
+Use the six-option review runner with `--browser-check` to validate the model-linked drawings and photographs, tour handoff, phone layout and PDF download. These software checks do not certify planning compliance, construction details or surveyed dimensions. The final printed pack includes the public planning-history and aquifer-screening notes, with the limitations recorded in [research notes](proposal/redesigns/research/RESEARCH.md).
