@@ -6,7 +6,7 @@ const browser=await chromium.launch({executablePath:'/Applications/Google Chrome
 const checks=[],errors=[];
 try{
  const page=await browser.newPage({viewport:{width:1440,height:960}});page.on('pageerror',e=>errors.push(e.message));
- for(const id of ['i1','i2','i3','e1','e2','e3']){
+ for(const id of (process.argv.slice(2).length?process.argv.slice(2):['i1','i2','i3','e1','e2','e3'])){
   await page.goto('http://127.0.0.1:8776/?design='+id);await page.waitForFunction(()=>window.walkthrough?.ready,null,{timeout:120000});
   const counts=await page.evaluate(()=>walkthrough.appearance.counts);for(const role of ['wall','oak-panel','roof'])assert(counts[role]>0,id+' missing '+role);if(id!=='e3')assert(counts.dormer>0,id+' missing dormer');
   const triangles=await page.evaluate(()=>walkthrough.stats.spatial.outputTriangles);

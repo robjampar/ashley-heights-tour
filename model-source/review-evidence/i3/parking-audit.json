@@ -1,0 +1,127 @@
+{
+  "option": "i3",
+  "modelUpdatedAt": "2026-09-25T03:52:12.715561+00:00",
+  "passed": true,
+  "positions": 6,
+  "vehicle_m": [
+    4.4,
+    1.8
+  ],
+  "turning_radius_m": 4.3,
+  "search_margin_m": 0.22,
+  "swept_sample_interval_m": 0.1,
+  "body_margin_m": 0.03,
+  "other_cars_occupied": true,
+  "drivable_surface_constrained": false,
+  "results": [
+    {
+      "bay": "N1",
+      "outside": true,
+      "journey": "arrive",
+      "poses": 54,
+      "swept_samples": 263,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "N1",
+      "outside": true,
+      "journey": "exit",
+      "poses": 62,
+      "swept_samples": 303,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "N2",
+      "outside": true,
+      "journey": "arrive",
+      "poses": 47,
+      "swept_samples": 229,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "N2",
+      "outside": true,
+      "journey": "exit",
+      "poses": 59,
+      "swept_samples": 287,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "S1",
+      "outside": true,
+      "journey": "arrive",
+      "poses": 40,
+      "swept_samples": 192,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "S1",
+      "outside": true,
+      "journey": "exit",
+      "poses": 45,
+      "swept_samples": 218,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "G1",
+      "outside": false,
+      "journey": "arrive",
+      "poses": 43,
+      "swept_samples": 207,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "G1",
+      "outside": false,
+      "journey": "exit",
+      "poses": 64,
+      "swept_samples": 312,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "G2",
+      "outside": false,
+      "journey": "arrive",
+      "poses": 44,
+      "swept_samples": 212,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "G2",
+      "outside": false,
+      "journey": "exit",
+      "poses": 64,
+      "swept_samples": 311,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "N3",
+      "outside": true,
+      "journey": "arrive",
+      "poses": 45,
+      "swept_samples": 217,
+      "pass": true,
+      "failure": null
+    },
+    {
+      "bay": "N3",
+      "outside": true,
+      "journey": "exit",
+      "poses": 65,
+      "swept_samples": 316,
+      "pass": true,
+      "failure": null
+    }
+  ],
+  "limitations": "Concept vehicle tracking of a compact-car body. Does not establish door-opening clearance, gradient, visibility, SUV fit or a surveyed highway design."
+}

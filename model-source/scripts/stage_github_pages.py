@@ -63,6 +63,11 @@ if (DIST / 'MESHOPT-LICENSE.txt').exists():
 review_source = DIST / 'redesigns'
 review_dest = DEST / 'redesigns'
 review_dest.mkdir(exist_ok=True)
+review_options = json.loads((review_source / 'options.json').read_text())['options']
+assert {option['id'] for option in review_options} == set(redesign_ids)
+for option in review_options:
+    candidate_nav = json.loads((DIST / ('redesign-' + option['id'] + '-navigation.json')).read_text())
+    assert option['modelUpdatedAt'] == candidate_nav['modelUpdatedAt'], option['id'] + ' review/model issue mismatch'
 review_map, review_manifest = {}, {}
 for source in sorted(review_source.rglob('*')):
     if not source.is_file() or source.name in ('index.html', 'review.js'):

@@ -1,0 +1,21 @@
+{
+  "option": "e1",
+  "modelUpdatedAt": "2026-09-25T03:56:24.478052+00:00",
+  "passed": true,
+  "clearances": {
+    "Side upper roof": {
+      "minimum_boundary_gap_m": 1.385,
+      "within_title_polygon": true,
+      "closest_roof_xy": [
+        -5.429999828338623,
+        10.09000015258789
+      ],
+      "closest_boundary_xy": [
+        -6.8140684168400085,
+        10.132156774428726
+      ],
+      "highest_point_m": 7.05
+    }
+  },
+  "limitations": "Distances are measured to the reconstructed title polygon using the outer roof vertices, including eaves. They are not surveyed boundary or neighbour distances and do not establish planning compliance, access rights, tree clearances, daylight or privacy."
+}

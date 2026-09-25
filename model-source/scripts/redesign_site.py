@@ -30,12 +30,28 @@ def flatten_ground(rect,z=0):
                 if rect[0]<=x<=rect[2]:t['z'][iy*t['nx']+ix]=z
 
 
+def relocate_garden_fountain(y):
+    # Keep the full planted island west of the widened pool walk. Set the
+    # fountain at the reconstructed garden level instead of excavating a second
+    # isolated sunken lawn next to the pool.
+    x=1.2;z=surveyed_ground(x,y)
+    translate_assembly(['Fountain'],[x-7.36824,y+12.18207,z],'Relocate the retained fountain and planted island to the garden at its local ground level')
+    bpy.context.view_layer.update()
+    for ob in scene.objects:
+        if ob.type!='MESH' or not ob.name.endswith('Fountain island soil'):continue
+        inverse=ob.matrix_world.inverted_safe()
+        for vertex in ob.data.vertices:
+            p=ob.matrix_world@vertex.co;p.z=surveyed_ground(p.x,p.y)+.035;vertex.co=inverse@p
+        ob.data.update()
+    nav['proposalSite']['fountain']={'centre_m':[x,y],'base_z':z,'basis':'Retained fountain placed at reconstructed local garden level; planted soil follows the existing terrain.'}
+
+
 def make_pool():
-    r=[6.5,16.0,10.0,24.0];x0,y0,x1,y1=r;terrace=[5.3,15.1,11.25,24.9]
+    r=[6.5,15.7,10.0,23.7];x0,y0,x1,y1=r;terrace=[4.55,14.5,11.25,24.9]
     flatten_ground(terrace)
     # Retaining edges follow the existing garden heights. Leave a flush south
     # entrance and a northern stair to the higher lawn.
-    for name,a,b in [('south',[5.3,15.1],[11.25,15.1]),('north',[5.3,24.9],[11.25,24.9]),('west',[5.3,15.1],[5.3,24.9]),('east',[11.25,15.1],[11.25,24.9])]:
+    for name,a,b in [('south',[terrace[0],terrace[1]],[terrace[2],terrace[1]]),('north',[terrace[0],terrace[3]],[terrace[2],terrace[3]]),('west',[terrace[0],terrace[1]],[terrace[0],terrace[3]]),('east',[terrace[2],terrace[1]],[terrace[2],terrace[3]])]:
         count=math.ceil(math.dist(a,b)/.45)
         for i in range(count):
             p=[a[k]+(b[k]-a[k])*i/count for k in(0,1)];q=[a[k]+(b[k]-a[k])*(i+1)/count for k in(0,1)]
@@ -46,6 +62,7 @@ def make_pool():
             if h>.15:segment(spec['code']+' | Pool retaining edge '+name+' '+str(i),p,q,0,h,.18)
     for i,patch in enumerate(_loft_patches([terrace],[r])):
         slab(spec['code']+' | Pool terrace '+str(i),patch,0,.14,stone,S)
+        new_surfaces[-1]['overridesTerrain']=True
     slab(spec['code']+' | Pool bottom',r,-1.35,.20,pooltile,P,False)
     for label,a,b in [('west',[x0,y0],[x0,y1]),('east',[x1,y0],[x1,y1]),('south',[x0,y0],[x1,y0]),('north',[x0,y1],[x1,y1])]:wall(spec['code']+' | Pool shell '+label,a,b,-1.35,-.02,pooltile,P,.20,False)
     box(spec['code']+' | Swimming pool water',((x0+x1)/2,(y0+y1)/2,-.105),(x1-x0-.12,y1-y0-.12,.025),water,P)
@@ -54,12 +71,12 @@ def make_pool():
     obstacle(spec['code']+' | Swimming pool exclusion',[x0-.16,y0-.16,x1+.16,y1+.16],-1.5,.15)
     nav.setdefault('groundOpenings',[]).append({'name':spec['code']+' | Swimming pool excavation','polygon':rect_polygon(r)})
     for y in (18.0,21.0):
-        box(spec['code']+' | Pool lounger',(5.85,y,.30),(.65,1.80,.15),oak,F)
-        box(spec['code']+' | Pool lounger cushion',(5.85,y,.41),(.60,1.70,.12),fabric,F)
-        obstacle(spec['code']+' | Pool lounger',[5.50,y-.90,6.20,y+.90],0,.55)
+        box(spec['code']+' | Pool lounger',(5.05,y,.30),(.65,1.80,.15),oak,F)
+        box(spec['code']+' | Pool lounger cushion',(5.05,y,.41),(.60,1.70,.12),fabric,F)
+        obstacle(spec['code']+' | Pool lounger',[4.70,y-.90,5.40,y+.90],0,.55)
     nav['pool']={'water_size_m':[3.5,8.0],'bounds_m':r,'depth_m':1.35,'terrace_m':terrace,'status':'Concept geometry; pool structure, equipment, drainage and local retaining levels need detailed design.'}
     room('Pool terrace',terrace,0,2,'Garden',view=[10.65,17.0,0,0,1,0])
-    path=[6.35,10.18,7.65,15.10]
+    path=[6.35,10.18,7.65,terrace[1]]
     carve_existing(path,-2,2,['50 Site'],'A flush route from the original rear doors to the pool',True)
     slab(spec['code']+' | Pool approach path',path,0,.14,stone,S)
     new_surfaces[-1]['overridesTerrain']=True
@@ -117,11 +134,7 @@ def e2_site():
     nav['proposalSite']={'parking_count':{'driveway':4,'retained_double_garage':0,'new_double_garage':2},'driveway_bay_bounds_m':[],'cars':[],'pedestrianCourtyards':[[[5.65,-10.4],[6.85,-10.4],[6.85,-1.0],[5.65,-1.0]]], 'garage_fit':{'clear_width_m':6.97,'clear_depth_m':6.67,'car_size_m':[4.4,1.8]}}
     # Move the original fountain/planting assembly as a whole into the garden.
     # Its old forecourt location is required for the new low double garage.
-    translate_assembly(['Fountain'],[2.0-7.36824,22.7+12.18207,0],'Relocate the existing fountain and planted island to the rear garden')
-    island=[-1.10,20.05,5.10,25.35]
-    flatten_ground(island)
-    grass=mat('Redesign garden grass',(.19,.27,.09,1),1.0)
-    slab(spec['code']+' | Relocated fountain garden',island,0,.18,grass,S)
+    relocate_garden_fountain(22.7)
     garage=[7.30,-18.0,14.20,-10.80];x0,y0,x1,y1=garage
     flatten_ground(garage)
     slab(spec['code']+' | Detached garage floor',garage,0,.20,'Concrete',S)

@@ -2,8 +2,8 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "3444faa6db34528dda38231e1df59363d974a79476d50defd24d8b1a54c02cbf",
-      "bytes": 9655
+      "sha256": "4807da50967138c463f90328fa8acc79298a3289674942b9342d9b48a67ff9e0",
+      "bytes": 10551
     },
     "proposal/P4_parking-validated.json": {
       "source": "proposal/P4_parking-validated.json",
@@ -52,8 +52,8 @@
     },
     "proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md": {
       "source": "proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md",
-      "sha256": "bc014c2955f5945b99aebd619685c1a97095ceecd633cf1af11328e6001c16dd",
-      "bytes": 6964
+      "sha256": "af8ea42fe241e4fbb297e08de625953c2dab4d30091b99ed7839a33a1500d5e0",
+      "bytes": 7232
     },
     "proposal/redesigns/e1.json": {
       "source": "proposal/redesigns/e1.json",
@@ -207,8 +207,13 @@
     },
     "scripts/audit_redesign_headroom.py": {
       "source": "scripts/audit_redesign_headroom.py",
-      "sha256": "b449fa811eebd5a4d2108f2049c724e3e818be0704f9bd24eace685d3778648f",
-      "bytes": 3868
+      "sha256": "1900d74306f56e2866fd1ee2a71981dc4808779de2659dde15f9f16509a0dd37",
+      "bytes": 3951
+    },
+    "scripts/audit_redesign_site.py": {
+      "source": "scripts/audit_redesign_site.py",
+      "sha256": "c448bc657c595d5a535488c288f540f5ea8a4e2f8f0976722d443c25a9d3ccf7",
+      "bytes": 2526
     },
     "scripts/audit_roof_joins.py": {
       "source": "scripts/audit_roof_joins.py",
@@ -237,13 +242,18 @@
     },
     "scripts/build_redesign.py": {
       "source": "scripts/build_redesign.py",
-      "sha256": "7b7bb6a78717c30ce72ef5dccb98a851a46f1bc3313ef32b09fa5ea3fbb457a3",
-      "bytes": 24693
+      "sha256": "69bdfbdb9507cd3ef756ca6dd98913fc6ebabec72df2829a30364b837f69a3a6",
+      "bytes": 23862
+    },
+    "scripts/build_redesign_options.py": {
+      "source": "scripts/build_redesign_options.py",
+      "sha256": "9ef6fdf246c9d2f6909b88d5b7ca964762fac9b56081723cd70a9c0b674a8ad2",
+      "bytes": 4047
     },
     "scripts/build_redesign_pdf.py": {
       "source": "scripts/build_redesign_pdf.py",
-      "sha256": "a13168139cd832b28eaa63ff0d9d04741494ad7cba6fd0b927bc848af5759d97",
-      "bytes": 10430
+      "sha256": "ed292fb228be9fe9511060ff2bb4d92d137420e6c8aecbe38dd077eaff053aaa",
+      "bytes": 10553
     },
     "scripts/build_support.py": {
       "source": "scripts/build_support.py",
@@ -457,8 +467,8 @@
     },
     "scripts/package_redesign_review.py": {
       "source": "scripts/package_redesign_review.py",
-      "sha256": "10ae285ac355e026137e7652b2dfab8604a3474dc626c8347d4d2475a05a44ec",
-      "bytes": 2181
+      "sha256": "06da6b7c8e49fe500f88e3498ca322b602823162315acf06e9624f0243c87c56",
+      "bytes": 2953
     },
     "scripts/planning_drawings/__init__.py": {
       "source": "scripts/planning_drawings/__init__.py",
@@ -737,8 +747,8 @@
     },
     "scripts/proposal_roofs.py": {
       "source": "scripts/proposal_roofs.py",
-      "sha256": "e81b76b3db044e0ef8b63ad4524bd660e46ae1dbabadc3d6bce5116ff12b241c",
-      "bytes": 38162
+      "sha256": "33a4af6083b519a5fc084b52b2292177a965dc1864607f208a5b949c9ccad219",
+      "bytes": 38149
     },
     "scripts/proposal_shared_lounge.py": {
       "source": "scripts/proposal_shared_lounge.py",
@@ -802,8 +812,8 @@
     },
     "scripts/redesign_e3.py": {
       "source": "scripts/redesign_e3.py",
-      "sha256": "365a7b9ee3e09d12745be0bf3a9ec4211c3c3201291f627543661523c882eae1",
-      "bytes": 12266
+      "sha256": "072696ace50916210aeded1e684047405935688c6878287d2fdde0af856fc737",
+      "bytes": 11987
     },
     "scripts/redesign_external.py": {
       "source": "scripts/redesign_external.py",
@@ -812,8 +822,8 @@
     },
     "scripts/redesign_layouts.py": {
       "source": "scripts/redesign_layouts.py",
-      "sha256": "09e64d7a608a3e540d33f1fbbce5ba4482f050b2abafd772bd90f6316a0a3d39",
-      "bytes": 14744
+      "sha256": "35080daa7c6899714b0ec4b865feb9324204236a367398f5d1cdbc83e195ae96",
+      "bytes": 14803
     },
     "scripts/redesign_levels.py": {
       "source": "scripts/redesign_levels.py",
@@ -827,8 +837,13 @@
     },
     "scripts/redesign_site.py": {
       "source": "scripts/redesign_site.py",
-      "sha256": "31b52c824421a16877fd8ec97db9d00946f9df854a6798620cdd3c86c33e75fb",
-      "bytes": 9982
+      "sha256": "4e46331d05cd7f0d560b1736e4e85fe848d45ec7648300e640e929ef55ebb4b3",
+      "bytes": 10792
+    },
+    "scripts/redesign_support.py": {
+      "source": "scripts/redesign_support.py",
+      "sha256": "5d95544d2dd284124a6d1446ec0456c0d330146f33420ae95c55ae18f29484c8",
+      "bytes": 3803
     },
     "scripts/redesign_walk_masks.py": {
       "source": "scripts/redesign_walk_masks.py",
@@ -1062,8 +1077,8 @@
     },
     "scripts/regenerate_design_outputs.py": {
       "source": "scripts/regenerate_design_outputs.py",
-      "sha256": "102c9fa6e14beaf3be407cd34f61a5e7002bee745a444a31523182af99530628",
-      "bytes": 4818
+      "sha256": "16d25e93b26f33b8827c8f0dcbe209d311e503e8b81e5bd749ad6cd5494f1569",
+      "bytes": 8278
     },
     "scripts/register_annotated_aerial.py": {
       "source": "scripts/register_annotated_aerial.py",
@@ -1167,13 +1182,13 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "d8f6f5bf22a4593ef597fb3248288577b0d1842574a931ad7ab32a7c38bb96f2",
-      "bytes": 7999
+      "sha256": "ae2f4df3c274e36a9d200a85c872eb16c2a7a8aa8755890b74af21e21a7dcb88",
+      "bytes": 8407
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "ee0e7d3d6172c39e1b388367acb526b48dde610d254fbcdc8680ea28efc648ca",
-      "bytes": 4671
+      "sha256": "5a1e63af6499cbd273e4d96c5924b2ea5681206483997714c8af8ea80cf2ace1",
+      "bytes": 4728
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1232,8 +1247,8 @@
     },
     "tests/test_build_pipeline.py": {
       "source": "tests/test_build_pipeline.py",
-      "sha256": "bc121c9019d0ad0ab15059fe479474cd258a0887ebba42e123fc3dab66e4d628",
-      "bytes": 10503
+      "sha256": "ef7ad61963d7c139031d50d1a85bd61ee20ebda8e0286e1fcff1bd63017b2dec",
+      "bytes": 12839
     },
     "tests/test_entrance_gable.py": {
       "source": "tests/test_entrance_gable.py",
@@ -1249,6 +1264,11 @@
       "source": "tests/test_planning_variant.py",
       "sha256": "3beb27bf7aef83893bdd715f002b4eff79b0d7df663f4ebfef4b5ef4ecd84032",
       "bytes": 8505
+    },
+    "tests/test_redesign_cache.py": {
+      "source": "tests/test_redesign_cache.py",
+      "sha256": "fa6c38d1234ef708bf76c5dc26420b068cd4d02c9edbdcaa892a7aa5ff11e7b1",
+      "bytes": 3583
     },
     "walkthrough/build.mjs": {
       "source": "walkthrough/build.mjs",
@@ -1282,8 +1302,8 @@
     },
     "walkthrough/public/redesigns/options.json": {
       "source": "walkthrough/public/redesigns/options.json",
-      "sha256": "08648c68eff40939af618964295bd703f3f7a7fa7efa3046d149ef61cf930b11",
-      "bytes": 56554
+      "sha256": "c49e1e325fac19154e63bbb07e9f06062cad3d6b54ec3f86b1ac972f110a66d8",
+      "bytes": 62883
     },
     "walkthrough/public/redesigns/review.css": {
       "source": "walkthrough/public/redesigns/review.css",
@@ -1292,8 +1312,8 @@
     },
     "walkthrough/public/redesigns/review.js": {
       "source": "walkthrough/public/redesigns/review.js",
-      "sha256": "ad2ee9437dc14d9d32365942166c2daac316992cdd964ced141ad817f9ef56d4",
-      "bytes": 6365
+      "sha256": "6c92ec4c6565078503cc6587145191e11b6f3565899b43edf02f0501e08fdaa4",
+      "bytes": 7190
     },
     "walkthrough/src/combat-audio.js": {
       "source": "walkthrough/src/combat-audio.js",
@@ -1492,8 +1512,8 @@
     },
     "walkthrough/tests/derived-cache.test.mjs": {
       "source": "walkthrough/tests/derived-cache.test.mjs",
-      "sha256": "fd53cba68e221394cb5ef4ae88ffc69a89cb9ef99392cf80a32d5187d5085461",
-      "bytes": 2035
+      "sha256": "4ac4b5472978277ba29a3945f1e566f3e6c10b11cb96691653fc04c292d4a743",
+      "bytes": 2842
     },
     "walkthrough/tests/design-variants.test.mjs": {
       "source": "walkthrough/tests/design-variants.test.mjs",
@@ -1652,8 +1672,8 @@
     },
     "walkthrough/tests/redesign-appearance-browser.mjs": {
       "source": "walkthrough/tests/redesign-appearance-browser.mjs",
-      "sha256": "70d633d8cd8df58d493b1f01aa527372a91148f8c1b8e4d11954a746ee6b09e2",
-      "bytes": 2881
+      "sha256": "8fa3baa71543393173e48ba042dbc8e293980bc6537bccb2fad2f9e354dd6f00",
+      "bytes": 2934
     },
     "walkthrough/tests/redesign-browser.mjs": {
       "source": "walkthrough/tests/redesign-browser.mjs",
@@ -1662,13 +1682,18 @@
     },
     "walkthrough/tests/redesign-circulation.mjs": {
       "source": "walkthrough/tests/redesign-circulation.mjs",
-      "sha256": "ec692ee849df5e79c45eb69417dc203b01c013b9f1f5e8244285f69fd9dc0d32",
-      "bytes": 3689
+      "sha256": "d709ed682198c004ace1ea1684943efca18c14f95c16d06c1dc2ad3148eae3c8",
+      "bytes": 3724
     },
     "walkthrough/tests/redesign-parking.mjs": {
       "source": "walkthrough/tests/redesign-parking.mjs",
-      "sha256": "95755a04bde56f0029923ae4e3d99c19bbfcdaadb6665d7186c2111b8c938b8b",
-      "bytes": 2563
+      "sha256": "28ce62bd8ca7d7a56d88cf08421406841f920adc9611ffe3c86a2c681e1dfccb",
+      "bytes": 2620
+    },
+    "walkthrough/tests/redesign-pool.mjs": {
+      "source": "walkthrough/tests/redesign-pool.mjs",
+      "sha256": "1dcf896c92026993ba8057d009f4f93f8791e2195879e34c8e8c8af65e4d6329",
+      "bytes": 3034
     },
     "walkthrough/tests/redesign-review-browser.mjs": {
       "source": "walkthrough/tests/redesign-review-browser.mjs",
@@ -1767,8 +1792,8 @@
     },
     "walkthrough/tools/derived-cache.mjs": {
       "source": "walkthrough/tools/derived-cache.mjs",
-      "sha256": "59c2c7c979365f48aea53103116ea330085e505fc4cc7bfa3546874254659c39",
-      "bytes": 1610
+      "sha256": "45250a7ca4c66d5fe21bc938ce5b9584e7397f387eaaca18b59cc09aacc3120f",
+      "bytes": 1787
     },
     "walkthrough/tools/lossless-glb.mjs": {
       "source": "walkthrough/tools/lossless-glb.mjs",
@@ -1788,15 +1813,15 @@
   },
   "required_local_baselines": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
-      "sha256": "a0a99af60e725b8f76bb3c68d323706125911ef88092d1a41d0ee86b0b5d1b74",
-      "bytes": 189961915
+      "sha256": "520ac9bd5a2d144a09cbb954d99faa437c471ea79e5362c57c9453f2de5a51c9",
+      "bytes": 190054488
     },
     "output-proposed-compact/geometry.json": {
-      "sha256": "0121ff49b184485d2bf69c284c6784a1f8f8190d03aa37dabffff98b53289e88",
-      "bytes": 66347538
+      "sha256": "4871e75a5cfa46a46ddf8087171c067b9fa49bb05de50d4c30e8ef8635ee1a3b",
+      "bytes": 66346298
     },
     "output-proposed-compact/navigation.json": {
-      "sha256": "a7aab138beb832170a62eb342bf774e3a8991e47a4f90c70c1665b22a907c8d6",
+      "sha256": "392b0e02d671d777e67f4ad817fa229a588e95455c740746caad43d688142aef",
       "bytes": 1782046
     },
     "output-walkthrough/Ashley Heights.blend": {

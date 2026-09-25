@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import subprocess
 import tempfile
+import threading
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
@@ -187,6 +188,48 @@ class RunnerTests(unittest.TestCase):
         report = json.loads((self.root / 'regenerate-planning-timings.json').read_text())
         self.assertFalse(report['success'])
         self.assertFalse(report['stages'][-1]['success'])
+
+    def test_both_models_overlap_and_viewer_waits_for_both(self):
+        barrier = threading.Barrier(2)
+        completed = set()
+        def execute(command, env=None, cwd=None, log=None):
+            if command[0] == 'npm':
+                self.assertEqual(completed, {'compact', 'planning'})
+            else:
+                barrier.wait(timeout=2)
+                completed.add(env['PROPOSAL_VARIANT'])
+        with patch.object(runner, 'current_build', return_value=(False, 'changed')), patch.object(runner, 'run', side_effect=execute) as run:
+            runner.main(['--viewer-only'])
+        self.assertEqual(run.call_count, 3)
+        report = json.loads((self.root / 'regenerate-all-timings.json').read_text())
+        self.assertTrue(report['success'])
+        self.assertEqual({r['variant'] for r in report['model_results']}, completed)
+
+    def test_parallel_failure_waits_for_peer_and_never_builds_viewer(self):
+        barrier = threading.Barrier(2)
+        completed = set()
+        def execute(command, env=None, cwd=None, log=None):
+            self.assertNotEqual(command[0], 'npm')
+            barrier.wait(timeout=2)
+            completed.add(env['PROPOSAL_VARIANT'])
+            if env['PROPOSAL_VARIANT'] == 'planning':
+                raise subprocess.CalledProcessError(1, 'Blender')
+        with patch.object(runner, 'current_build', return_value=(False, 'changed')), patch.object(runner, 'run', side_effect=execute):
+            with self.assertRaises(subprocess.CalledProcessError):
+                runner.main(['--viewer-only'])
+        self.assertEqual(completed, {'compact', 'planning'})
+        self.assertFalse(json.loads((self.root / 'regenerate-all-timings.json').read_text())['success'])
+
+    def test_overlapping_runner_is_rejected_without_replacing_outputs(self):
+        with runner.selected_build_lock(('planning',)):
+            with self.assertRaisesRegex(RuntimeError, 'already being regenerated'):
+                with runner.selected_build_lock(('compact', 'planning')):
+                    self.fail('Overlapping runner acquired a lock')
+            # Failed multi-lock acquisition releases its non-conflicting lock.
+            with runner.selected_build_lock(('compact',)):
+                pass
+        with runner.selected_build_lock(('planning',)):
+            pass
 
 
 class CollectionIndexTests(unittest.TestCase):

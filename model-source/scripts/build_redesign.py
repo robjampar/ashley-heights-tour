@@ -11,7 +11,8 @@ from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from build_support import Timings, sha256, atomic_json
+from build_support import Timings, sha256, atomic_json, blender_identity
+from redesign_support import input_paths, required_outputs
 from blender_collections import collection_memberships
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -22,7 +23,7 @@ INTERNAL = OPTION.startswith('i')
 OUT = ROOT / ('output-redesign-' + OPTION)
 OUT.mkdir(exist_ok=True)
 (OUT/'build-report.json').unlink(missing_ok=True)
-for stale in ('circulation-audit.json','stair-headroom-audit.json','stairs-navigation-audit.json','parking-audit.json','parking-paths.json','walk-masks.json'):
+for stale in ('circulation-audit.json','stair-headroom-audit.json','stairs-navigation-audit.json','parking-audit.json','parking-paths.json','pool-navigation-audit.json','site-clearance-audit.json','walk-masks.json'):
     (OUT/stale).unlink(missing_ok=True)
 PUBLIC = ROOT / 'walkthrough/public'
 SPEC_PATH = ROOT / 'proposal/redesigns' / (OPTION + '.json')
@@ -30,17 +31,7 @@ spec = json.loads(SPEC_PATH.read_text())
 BASE = ROOT / ('output-proposed-compact' if INTERNAL else 'output-walkthrough')
 BASE_NATIVE = BASE / ('Ashley Heights — Proposed (compact).blend' if INTERNAL else 'Ashley Heights.blend')
 BASE_NAV = BASE / 'navigation.json' if INTERNAL else PUBLIC / 'navigation.json'
-INPUT_FILES = [BASE_NATIVE, BASE_NAV, BASE / 'geometry.json', SPEC_PATH,
-               Path(__file__), ROOT / 'scripts/redesign_layouts.py',
-               ROOT / 'scripts/build_model.py', ROOT / 'scripts/build_extension_proposal.py',
-               ROOT / 'scripts/proposal_helpers.py',
-               ROOT / 'revisions/redesigns-2026-09-25/original-object-index.json']
-if not INTERNAL:
-    INPUT_FILES.append(ROOT/'scripts/redesign_e3.py')
-    INPUT_FILES.append(ROOT/'scripts/redesign_roof_join.py')
-    INPUT_FILES.append(ROOT/'scripts/redesign_levels.py')
-    INPUT_FILES.append(ROOT/'proposal/redesigns/original-drive-outline.json')
-    INPUT_FILES += [ROOT/'scripts/redesign_external.py',ROOT/'scripts/redesign_site.py',ROOT/'scripts/redesign_e2.py',ROOT/'scripts/redesign_appearance.py',ROOT/'scripts/exterior_exposure.py',ROOT/'scripts/proposal_roofs.py',ROOT/'scripts/proposal_loft.py',ROOT/'output-proposed-compact/Ashley Heights — Proposed (compact).blend',ROOT/'output-proposed-compact/navigation.json',ROOT/'revisions/redesigns-2026-09-25/compact-object-index.json']
+INPUT_FILES = input_paths(ROOT, OPTION)
 inputs = {str(p.relative_to(ROOT)): sha256(p) for p in INPUT_FILES}
 timer = build_timer = Timings(OUT / 'build-timings.json', option=OPTION)
 g = json.loads((BASE / 'geometry.json').read_text())
@@ -410,7 +401,7 @@ with timer.phase('export'):
     original_hashes=json.loads((ROOT/'proposal/original-preservation.json').read_text())['files']
     preserved={name:sha256(ROOT/name)==digest for name,digest in original_hashes.items()}
     assert all(preserved.values()), 'Original files changed'
-    report={'option':OPTION,'inputs':inputs,'native':str(native.relative_to(ROOT)),'objects':len(objects),'new_rooms':len(new_rooms),'alterations':len(changes),'original_preserved':preserved,'outputs':{str(p.relative_to(ROOT)):sha256(p) for p in (native,glb,OUT/'navigation.json',OUT/'geometry.json')}}
+    report={'cache_schema':1,'blender':blender_identity(bpy.app.binary_path),'option':OPTION,'modelUpdatedAt':nav['modelUpdatedAt'],'inputs':inputs,'native':str(native.relative_to(ROOT)),'objects':len(objects),'new_rooms':len(new_rooms),'alterations':len(changes),'original_preserved':preserved,'outputs':{str(p.relative_to(ROOT)):sha256(p) for p in required_outputs(ROOT,OPTION)}}
     assert inputs == {str(p.relative_to(ROOT)):sha256(p) for p in INPUT_FILES}, 'Build inputs changed before export finished'
     atomic_json(OUT/'build-report.json',report)
 timer.write(success=True)

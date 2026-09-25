@@ -161,10 +161,7 @@ def e3_rooms():
 
 def e3_site():
     nav['proposalSite']={'parking_count':{'driveway':4,'retained_double_garage':0,'new_double_garage':2},'driveway_bay_bounds_m':[],'cars':[],'pedestrianCourtyards':[[[5.6,-3.4],[5.6,-.7],[8.9,-.7],[8.9,-3.4]]],'garage_fit':{'clear_width_m':6.405,'clear_depth_m':6.325,'car_size_m':[4.4,1.8]}}
-    translate_assembly(['Fountain'],[2.0-7.36824,22.0+12.18207,0],'Relocate the retained fountain and planted island to the garden')
-    island=[-1.1,19.35,5.1,24.65];flatten_ground(island)
-    grass=mat('Redesign garden grass',(.19,.27,.09,1),1.0)
-    slab(spec['code']+' | Fountain garden',island,0,.18,grass,S)
+    relocate_garden_fountain(22.0)
     bays={'N1':[-.2,-6,2.4,-1],'N2':[-2.75,-6,-.15,-1],'S1':[2.7,-20,7.7,-17.4],'S2':[10.75,-19,13.35,-14]}
     for bay,r in bays.items():
         flatten_ground(r);slab(spec['code']+' | Permeable parking '+bay,r,0,.14,gravel,S);parked_car(bay,r)

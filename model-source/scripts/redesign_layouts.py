@@ -168,7 +168,8 @@ if not INTERNAL:
     exec(compile((ROOT/'scripts/redesign_roof_join.py').read_text(),'redesign_roof_join.py','exec'))
     if OPTION in('e2','e3'):
         nav['rooms']=[v for v in nav['rooms']if v['label']!='Driveway fountain']
-        view('Garden fountain',4.6,20.3 if OPTION=='e2'else 19.6,0,(-.6,1))
+        fountain_y=20.3 if OPTION=='e2'else 19.6
+        view('Garden fountain',4.0,fountain_y,surveyed_ground(4.0,fountain_y),(-1,1))
     drive=json.loads((ROOT/'proposal/redesigns/original-drive-outline.json').read_text())['coordinates'][0]
     nav['proposalSite']['drivablePolygons']=[drive]
     if OPTION=='e1':nav['proposalSite']['drivablePolygons'].append(rect_polygon([-5.18,-.15,0,5.94]))

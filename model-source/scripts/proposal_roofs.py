@@ -674,5 +674,5 @@ proposal_roof_report={
     'dormer_front_closures':dormer_front_closures,
     'dormer_chimney_penetration':list(loft_chimney_roof_cut),
 }
-(ROOT/'proposal/P4-roof-envelope.json').write_text(json.dumps(proposal_roof_report,indent=2))
+(OUT/'roof-envelope.json').write_text(json.dumps(proposal_roof_report,indent=2))
 print('P4_ROOF_ENVELOPE',json.dumps(proposal_roof_report),flush=True)

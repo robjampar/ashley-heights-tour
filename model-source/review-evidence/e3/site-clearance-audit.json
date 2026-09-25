@@ -1,0 +1,38 @@
+{
+  "option": "e3",
+  "modelUpdatedAt": "2026-09-25T03:57:41.363673+00:00",
+  "passed": true,
+  "clearances": {
+    "Side upper roof": {
+      "minimum_boundary_gap_m": 1.415,
+      "within_title_polygon": true,
+      "closest_roof_xy": [
+        -5.429999828338623,
+        9.09000015258789
+      ],
+      "closest_boundary_xy": [
+        -6.844498663539591,
+        9.133083633410493
+      ],
+      "highest_point_m": 7.05
+    },
+    "Front wing roof": {
+      "minimum_boundary_gap_m": 2.643,
+      "within_title_polygon": true,
+      "closest_roof_xy": [
+        14.25,
+        -3.2300000190734863
+      ],
+      "closest_boundary_xy": [
+        16.892579139947998,
+        -3.194115268922477
+      ],
+      "highest_point_m": 7.4
+    },
+    "Fountain island to pool terrace": {
+      "minimum_gap_m": 0.3,
+      "does_not_overlap": true
+    }
+  },
+  "limitations": "Distances are measured to the reconstructed title polygon using the outer roof vertices, including eaves. They are not surveyed boundary or neighbour distances and do not establish planning compliance, access rights, tree clearances, daylight or privacy."
+}

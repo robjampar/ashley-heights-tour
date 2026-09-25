@@ -1,9 +1,12 @@
-import {createHash} from 'node:crypto';
-import {mkdir,readFile,writeFile,rename} from 'node:fs/promises';
+import {createHash,randomUUID} from 'node:crypto';
+import {mkdir,readFile,writeFile,rename,unlink} from 'node:fs/promises';
 export const digest=bytes=>createHash('sha256').update(bytes).digest('hex');
-export async function signature(paths){return digest(Buffer.concat(await Promise.all(paths.map(path=>readFile(path)))));}
+export async function signature(paths){return digest(JSON.stringify(await Promise.all(paths.map(async path=>[String(path),digest(await readFile(path))]))));}
 export async function readJson(path){try{return JSON.parse(await readFile(path,'utf8'));}catch{return null;}}
-export async function atomicWrite(path,bytes){const temp=path+'.tmp';await writeFile(temp,bytes);await rename(temp,path);}
+export async function atomicWrite(path,bytes){
+ const temp=path+`.${process.pid}.${randomUUID()}.tmp`;
+ try{await writeFile(temp,bytes);await rename(temp,path);}finally{await unlink(temp).catch(error=>{if(error.code!=='ENOENT')throw error;});}
+}
 export async function cachedJson(directory,key,compute){
  await mkdir(directory,{recursive:true});const path=directory+'/'+key+'.json';
  const prior=await readJson(path);

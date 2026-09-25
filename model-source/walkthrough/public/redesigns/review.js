@@ -23,12 +23,16 @@ function choose(id,{scroll=false,updateHash=true}={}){
  $('facts').innerHTML=`<span><strong>7 bedrooms</strong>${selected.id==='e3'?'All on the first floor':'Including a loft guest'}</span><span><strong>${selected.ensuites} en suites</strong>Private bathrooms for most bedrooms</span><span><strong>Pool + leisure</strong>Gym · cinema · wine bar</span><span><strong>6 car spaces</strong>Double garage + 4 outside</span>`;
  $('best-for').textContent=selected.bestFor;$('why').innerHTML=selected.why.map(t=>`<li>${esc(t)}</li>`).join('');$('compromises').innerHTML=selected.compromises.map(t=>`<li>${esc(t)}</li>`).join('');$('principal').textContent=selected.principal;
  $('retained').textContent=selected.retained;$('construction').textContent=selected.construction;$('planning-focus').textContent=selected.planningFocus;
+ if(selected.id.startsWith('e')&&selected.footprint?.added_ground_footprint_m2!==undefined)$('construction').textContent+=' The plan indicates about '+Math.round(selected.footprint.added_ground_footprint_m2)+' m² of added ground footprint compared with the original house (approximate room envelopes, not surveyed floor area).';
  $('floor-buttons').innerHTML=selected.plans.map(p=>`<button data-floor="${esc(p.title)}" aria-pressed="false">${esc(p.title)}</button>`).join('');
  $('floor-buttons').querySelectorAll('button').forEach(b=>b.onclick=()=>floorPlan(b.dataset.floor));
  const checks=[];
  if(selected.checks.circulation?.passed)checks.push('Every scheduled room has a connected walking route in the model at a 44 cm body width; saved room viewpoints are clear.');
  if(selected.checks.stairs?.passed)checks.push('New stairs tested continuously up and down at a 50 cm body width.');
- if(selected.checks.parking?.passed)checks.push('All six compact-car parking positions tested on arrival and exit with the other cars occupied. Swept-body samples taken every 10 cm.');
+ if(selected.checks.pool?.passed)checks.push('A continuous 50 cm-wide walking test passes both sides of the pool, past the loungers and up/down the garden steps.');
+ if(selected.checks.parking?.passed)checks.push((selected.checks.parking.positions??6)+' compact-car parking positions tested on arrival and exit with the other cars occupied. Swept-body samples taken every 10 cm.');
+ const sideGap=selected.checks.site?.clearances?.['Side upper roof']?.minimum_boundary_gap_m;
+ if(sideGap!==undefined)checks.push('The side roof eaves are about '+sideGap.toFixed(2)+' m from the drawn title boundary at their closest point. Boundary position and neighbour distances need survey.');
  if(selected.id.startsWith('i'))checks.push('The four outside compact-car bays were tracked with the other outside cars occupied. The current house envelope and existing stairs are retained.');
  checks.push('Original source files preserved. Room schedules and plans come from this option’s model.');
  $('check-results').innerHTML='<ul>'+checks.map(t=>'<li>'+esc(t)+'</li>').join('')+'</ul>';

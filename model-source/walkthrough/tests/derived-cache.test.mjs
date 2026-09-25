@@ -3,7 +3,18 @@ import assert from 'node:assert/strict';
 import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
-import {cachedJson,cachedGlb,digest} from '../tools/derived-cache.mjs';
+import {cachedJson,cachedGlb,digest,signature,atomicWrite} from '../tools/derived-cache.mjs';
+
+test('source signatures distinguish file boundaries and concurrent writes remain complete',async()=>{
+ const root=await mkdtemp(join(tmpdir(),'ashley-cache-signature-'));
+ try{
+  const paths=[join(root,'a'),join(root,'b')];await writeFile(paths[0],'ab');await writeFile(paths[1],'c');const before=await signature(paths);
+  await writeFile(paths[0],'a');await writeFile(paths[1],'bc');assert.notEqual(await signature(paths),before);
+  const target=join(root,'published'),values=Array.from({length:12},(_,i)=>Buffer.alloc(50000,i));
+  await Promise.all(values.map(value=>atomicWrite(target,value)));const result=await readFile(target);
+  assert(values.some(value=>value.equals(result)),'an entire writer result is published');
+ }finally{await rm(root,{recursive:true,force:true});}
+});
 
 test('navigation cache rejects corrupt results and changed input signatures',async()=>{
  const root=await mkdtemp(join(tmpdir(),'ashley-drive-cache-'));let builds=0;

@@ -1,16 +1,27 @@
 {
+  "cache_schema": 1,
+  "blender": {
+    "path": "/Users/r.parker/Applications/Blender.app/Contents/MacOS/Blender",
+    "size": 175689264,
+    "mtime_ns": 1789436253000000000
+  },
   "option": "i1",
+  "modelUpdatedAt": "2026-09-25T03:50:56.784327+00:00",
   "inputs": {
-    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "a0a99af60e725b8f76bb3c68d323706125911ef88092d1a41d0ee86b0b5d1b74",
-    "output-proposed-compact/navigation.json": "a7aab138beb832170a62eb342bf774e3a8991e47a4f90c70c1665b22a907c8d6",
-    "output-proposed-compact/geometry.json": "0121ff49b184485d2bf69c284c6784a1f8f8190d03aa37dabffff98b53289e88",
+    "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "520ac9bd5a2d144a09cbb954d99faa437c471ea79e5362c57c9453f2de5a51c9",
+    "output-proposed-compact/geometry.json": "4871e75a5cfa46a46ddf8087171c067b9fa49bb05de50d4c30e8ef8635ee1a3b",
+    "output-proposed-compact/navigation.json": "392b0e02d671d777e67f4ad817fa229a588e95455c740746caad43d688142aef",
+    "proposal/original-preservation.json": "9971c88ecd0e6fe59cda187c0a308604d94c1e3b42e29c36e77c74964dee2e43",
     "proposal/redesigns/i1.json": "bb3c83488ffd1720e03a47e911535376a8237e34bf77769d6d68c09137f07f2c",
-    "scripts/build_redesign.py": "1ec785e04111f5a999c955621e5e52695a4a35592b103595b7a46f1217ba252b",
-    "scripts/redesign_layouts.py": "000c32a3c8af4b469806d3a96891f6ac5527c2115244e359aedb5d87fa8ab310",
-    "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+    "revisions/redesigns-2026-09-25/original-object-index.json": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595",
+    "scripts/blender_collections.py": "c258b2361a2082941251cf76d6afd9e4e5f98d65efbe781a1a0e4292c4f90cdc",
     "scripts/build_extension_proposal.py": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
+    "scripts/build_model.py": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+    "scripts/build_redesign.py": "69bdfbdb9507cd3ef756ca6dd98913fc6ebabec72df2829a30364b837f69a3a6",
+    "scripts/build_support.py": "1c487df317046ee8ee5147293d8792b49ac886fa4ab3277f60269314b2422c1c",
     "scripts/proposal_helpers.py": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
-    "revisions/redesigns-2026-09-25/original-object-index.json": "d9f9b192056adb937357a6037e40ace71ffe528a3777922c9f017abbf2de9595"
+    "scripts/redesign_layouts.py": "35080daa7c6899714b0ec4b865feb9324204236a367398f5d1cdbc83e195ae96",
+    "scripts/redesign_support.py": "5d95544d2dd284124a6d1446ec0456c0d330146f33420ae95c55ae18f29484c8"
   },
   "native": "output-redesign-i1/Ashley Heights \u2014 I1 Garden kitchen.blend",
   "objects": 14057,
@@ -24,9 +35,11 @@
     "walkthrough/public/navigation.json": true
   },
   "outputs": {
-    "output-redesign-i1/Ashley Heights \u2014 I1 Garden kitchen.blend": "1c65deced07591f0d6a3f068950acda2c5bff0f92ee8b33a6363bdd6986da830",
-    "output-redesign-i1/redesign-i1.glb": "09b0c2f350845d1bfbb299ec3203132b9ec27d4cdced87414d79905100dc0b33",
-    "output-redesign-i1/navigation.json": "61cd63abc626949547b1dc0be393158cc3e478eb85136d2499a4b07b02bf98cf",
-    "output-redesign-i1/geometry.json": "93806b1f0ccd5517866d82f82606b3cbc5524b046322888581c485b060313322"
+    "output-redesign-i1/Ashley Heights \u2014 I1 Garden kitchen.blend": "636b1bbcf580fd8354782556e42db42a7e5f38200cc1f555cb04caf8c4ed8e9b",
+    "output-redesign-i1/redesign-i1.glb": "8d652bac85d3833664d198b87979e5c9f161c3dfab57760573b0262f3b2e04bf",
+    "output-redesign-i1/navigation.json": "68f5cb2b8dfc36482484087196432eb9536c62dec4f6818677483032f0695688",
+    "output-redesign-i1/geometry.json": "effd44efb31a4a8689ddf263e9e7148db4824fd01ee3d2998c795ccde21864fe",
+    "walkthrough/public/redesign-i1.glb": "8d652bac85d3833664d198b87979e5c9f161c3dfab57760573b0262f3b2e04bf",
+    "walkthrough/public/redesign-i1-navigation.json": "68f5cb2b8dfc36482484087196432eb9536c62dec4f6818677483032f0695688"
   }
 }

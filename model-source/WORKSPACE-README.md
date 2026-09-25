@@ -24,7 +24,7 @@ Regenerate from the current existing model:
 .venv/bin/python scripts/regenerate_design_outputs.py --exchange --renders
 ```
 
-Or double-click **Regenerate All Outputs.command**. The order is full Proposed model, derived planning model, exchange formats, two drawing packs, then the local three-option viewer. This does not rebuild the existing reconstruction or publish the online tour. Save manual Blender edits separately: generated models are replaced on rebuild.
+Or double-click **Regenerate All Outputs.command**. The two selected native models build concurrently, followed by exchange formats, drawing packs and the local viewer. Use `--jobs 1` to run the native builds sequentially and reduce memory load. Each model has its own output directory and log; an overlapping runner is rejected, and the viewer is built only after every selected model succeeds. This does not rebuild the existing reconstruction or publish the online tour. Save manual Blender edits separately: generated models are replaced on rebuild.
 
 For day-to-day planning edits, build just that design and the local viewer:
 
@@ -73,10 +73,10 @@ The walkthrough also contains **I1 Garden kitchen**, **I2 Social east**, **I3 Ga
 
 Open `walkthrough/dist/redesigns/index.html` through a local HTTP server, or use the **Compare six options** link in the tour. The review has actual model images, floor/site plans, approximate room schedules and a 36-page drawing pack. [Built concepts](proposal/redesigns/CONCEPTS.md) and [external layout notes](proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md) describe the issue. The same house-only wall/roof finish switches work on every new option.
 
-Build one option with Blender 4.5 LTS, then regenerate its walk masks and drawings:
+Build selected options with the verified runner (defaults to all six, two at a time), then regenerate their walk masks and drawings:
 
 ```sh
-~/Applications/Blender.app/Contents/MacOS/Blender --background --python-exit-code 1 --python scripts/build_redesign.py -- e1
+.venv/bin/python scripts/build_redesign_options.py e1
 .venv/bin/python scripts/redesign_walk_masks.py e1
 .venv/bin/python scripts/draw_redesign_plans.py e1
 .venv/bin/python scripts/draw_redesign_sites.py e1
@@ -84,8 +84,10 @@ Build one option with Blender 4.5 LTS, then regenerate its walk masks and drawin
 .venv/bin/python scripts/build_redesign_pdf.py
 ```
 
-Each option writes `output-redesign-<id>/` with its own native `.blend`, GLB, geometry, navigation and build report. The builder checks that the source model is unchanged and that borrowed visible mesh objects are present in the GLB. Do not change shared builder inputs during a native build. Run circulation, stair/headroom and parking audits after rebuilding; stale audits are cleared by the builder. Browser captures and the public PDF are refreshed separately after model validation.
+Each option writes `output-redesign-<id>/` with its own native `.blend`, GLB, geometry, navigation and build report. Unchanged options are reused only when source hashes, Blender identity and all native/public output checksums match. `--force` bypasses reuse; `--jobs 1` uses less memory. The builder checks that the source model is unchanged and that borrowed visible mesh objects are present in the GLB. Do not change shared builder inputs during a native build. Run circulation, stair/headroom and parking audits after rebuilding; stale audits are cleared by the builder. Browser captures and the public PDF are refreshed separately after model validation.
 
-The viewer caches derived driving paths and lossless GLB packing by source/code hashes and verifies cached output checksums. Measured here, the nine-design viewer took **93.6 s cold and 1.07 s unchanged**. The garden step fell from about **202 s to 2.36 s** and the same exterior-finish audit from **1008.5 s to 5.60 s**. These are individual measured operations, not a claim that every cold end-to-end build is ten times faster. Unchanged completed model builds are reused; intermediate Blender checkpoints are not yet implemented.
+The viewer caches derived driving paths and lossless GLB packing by source/code hashes and verifies cached output checksums. Measured here, the nine-design viewer took **93.6 s cold and 1.07 s unchanged**. The planning garden-levels step fell from about **202 s to 2.36 s** and the same exterior-finish audit from **1008.5 s to 5.60 s**. These are individual measured operations, not a claim that every cold end-to-end build is ten times faster. Unchanged completed model builds are reused; intermediate Blender checkpoints are not yet implemented.
 
 The deployment repository is `deployment/ashley-heights-tour`. `scripts/stage_github_pages.py` stages immutable browser/review assets, and `scripts/stage_redesign_sources.py` stages a curated editable source snapshot plus check evidence. Large native baseline models remain in this workspace with their checksums recorded in the snapshot. Staging does not commit or push.
+
+Both current native models now build in parallel in **418.3 s** (about 7 minutes), versus **702.8 s** for the earlier sequential builds. Verified reuse of both took **0.62 s**. The six additional native models built together in **237.9 s** with two workers; verifying and reusing all six took **2.02 s**. These times exclude drawings and viewer processing. Model vertices, topology, room polygons and wall metadata for both current designs were checked against the preserved pre-parallel baseline and are unchanged.

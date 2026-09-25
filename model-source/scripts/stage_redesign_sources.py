@@ -26,7 +26,7 @@ for name in sorted(paths):
  target=DEST/staged_name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
  manifest[staged_name]={'source':name,'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'bytes':source.stat().st_size}
 for id in ('i1','i2','i3','e1','e2','e3'):
- for file in ('build-report.json','circulation-audit.json','stairs-navigation-audit.json','stair-headroom-audit.json','parking-audit.json'):
+ for file in ('build-report.json','circulation-audit.json','stairs-navigation-audit.json','stair-headroom-audit.json','parking-audit.json','pool-navigation-audit.json','site-clearance-audit.json'):
   source=ROOT/f'output-redesign-{id}'/file
   if source.is_file():
    target=DEST/'review-evidence'/id/file;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)

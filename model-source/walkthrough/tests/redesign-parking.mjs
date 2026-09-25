@@ -38,7 +38,7 @@ for(const id of process.argv.slice(2)){
  }
  const passed=results.every(r=>r.pass);success&&=passed;
  fs.writeFileSync(new URL('parking-paths.json',root),JSON.stringify(paths));
- fs.writeFileSync(new URL('parking-audit.json',root),JSON.stringify({option:id,passed,vehicle_m:[4.4,1.8],turning_radius_m:4.3,search_margin_m:planningMargin,swept_sample_interval_m:.10,body_margin_m:.03,other_cars_occupied:true,drivable_surface_constrained:!!data.proposalSite.drivablePolygons,results,limitations:'Concept vehicle tracking of a compact-car body. Does not establish door-opening clearance, gradient, visibility, SUV fit or a surveyed highway design.'},null,2));
+ fs.writeFileSync(new URL('parking-audit.json',root),JSON.stringify({option:id,modelUpdatedAt:data.modelUpdatedAt,passed,positions:cars.length,vehicle_m:[4.4,1.8],turning_radius_m:4.3,search_margin_m:planningMargin,swept_sample_interval_m:.10,body_margin_m:.03,other_cars_occupied:true,drivable_surface_constrained:!!data.proposalSite.drivablePolygons,results,limitations:'Concept vehicle tracking of a compact-car body. Does not establish door-opening clearance, gradient, visibility, SUV fit or a surveyed highway design.'},null,2));
  console.log(id,passed?'PASS':'FAIL',results.filter(r=>!r.pass));
 }
 if(!success)process.exitCode=1;
