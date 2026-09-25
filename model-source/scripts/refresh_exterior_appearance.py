@@ -77,7 +77,18 @@ def main():
                 restored = False
                 for index, material in enumerate(obj.data.materials):
                     if material and material.get('appearance_role'):
-                        obj.data.materials[index] = bpy.data.materials[material['appearance_source_material']]
+                        source_name = material['appearance_source_material']
+                        source = bpy.data.materials.get(source_name)
+                        if source is None:
+                            # Blender drops unused source materials when reopening
+                            # the saved scene (e.g. compact's hanging tiles, whose
+                            # faces are all tagged). The tagged copy retains the
+                            # complete source shader, so reconstruct it losslessly.
+                            source = material.copy()
+                            source.name = source_name
+                            del source['appearance_role']
+                            del source['appearance_source_material']
+                        obj.data.materials[index] = source
                         restored = True
                 if not restored:
                     continue

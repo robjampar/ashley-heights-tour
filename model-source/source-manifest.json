@@ -2,8 +2,8 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "2ee2168885ec635e7c8dfd016e52eb68dc6c365d8c26764c7e0b2ec8a5cd8c14",
-      "bytes": 15637
+      "sha256": "5b110e33ae9f4e9f5c6ab6a85657a7625de571f11b602306d28508bcaa444660",
+      "bytes": 15829
     },
     "Regenerate Six Options.command": {
       "source": "Regenerate Six Options.command",
@@ -657,8 +657,8 @@
     },
     "scripts/proposal_appearance.py": {
       "source": "scripts/proposal_appearance.py",
-      "sha256": "6ea95ab400a36e171b26be219c3bc124e024b9e0e9e17d14d0ec44e6cee801b6",
-      "bytes": 7745
+      "sha256": "028d45cb89eb85b593b8e4232161edf26c7e94327cd7a57ef3990d856e394440",
+      "bytes": 11837
     },
     "scripts/proposal_architectural_lighting.py": {
       "source": "scripts/proposal_architectural_lighting.py",
@@ -1122,8 +1122,8 @@
     },
     "scripts/refresh_exterior_appearance.py": {
       "source": "scripts/refresh_exterior_appearance.py",
-      "sha256": "546ddcc796ef1bd32e5248cb8de52f1a747696bbc49eded866943a6745323269",
-      "bytes": 9320
+      "sha256": "793285f389aff5a11f8a34dbd03da684306656094ecd6ba91ceb3a751704181b",
+      "bytes": 10022
     },
     "scripts/refresh_proposal_paper_material.py": {
       "source": "scripts/refresh_proposal_paper_material.py",
@@ -1242,8 +1242,8 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "556ecedffc0042fcec4006182c50a64949dafde2d62cc2c2bbc4f47d862eb256",
-      "bytes": 9584
+      "sha256": "44d8ac3366199a1641210926719e6e3244fccd396688b50f638bdcfcf4807f0a",
+      "bytes": 9981
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
@@ -1319,6 +1319,11 @@
       "source": "tests/test_entrance_gable.py",
       "sha256": "a208eec2f98a6f24f95ac0ca82e051c80785b65e16d79b66d8b5722574f826ee",
       "bytes": 2416
+    },
+    "tests/test_exterior_finish_faces.py": {
+      "source": "tests/test_exterior_finish_faces.py",
+      "sha256": "f271986d38c47039a8e3d79fe72d134f3592860ffe26501d9796e8e79005c9c4",
+      "bytes": 4977
     },
     "tests/test_planning_model_cache.py": {
       "source": "tests/test_planning_model_cache.py",
@@ -1650,6 +1655,11 @@
       "sha256": "f58bdf9e1af894e65a2fb9870de5b2e38276c1d69f2a9c1c05f4fffec4606de5",
       "bytes": 4978
     },
+    "walkthrough/tests/exterior-faces-browser.mjs": {
+      "source": "walkthrough/tests/exterior-faces-browser.mjs",
+      "sha256": "b216d06afe19dfce575d8284db8d1e671088b04e6809f3885ecaca7c64cad19c",
+      "bytes": 4552
+    },
     "walkthrough/tests/flight-browser.mjs": {
       "source": "walkthrough/tests/flight-browser.mjs",
       "sha256": "21d27c35e50a4cf525c0e0782122e955730fa61c52d6b58d42ba84d6897ac1eb",
@@ -1923,16 +1933,16 @@
   },
   "required_local_baselines": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
-      "sha256": "f02d6b7419867aac3bb719d1ec720d05ab3b6abc700715a22a6e1aae30775990",
-      "bytes": 190054488
+      "sha256": "edd3e7594f1b6511a9cd2c0c85a4acb1639201a3e8dbd310e5875e0b8d836ebb",
+      "bytes": 190055596
     },
     "output-proposed-compact/geometry.json": {
-      "sha256": "4871e75a5cfa46a46ddf8087171c067b9fa49bb05de50d4c30e8ef8635ee1a3b",
-      "bytes": 66346298
+      "sha256": "554548517350d5f186a20483043bd947344715fe1cd5797533c527c3f7a89f4d",
+      "bytes": 66350500
     },
     "output-proposed-compact/navigation.json": {
-      "sha256": "ed2ffec2e3b40aeebd5656252af7e72aada9a54b432e9f49f65f04ed9eae4896",
-      "bytes": 1782046
+      "sha256": "34322858fcd7f6889ca734b27c37010d892a5e679d7a430f58584e637c4a2671",
+      "bytes": 1782114
     },
     "output-walkthrough/Ashley Heights.blend": {
       "sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",

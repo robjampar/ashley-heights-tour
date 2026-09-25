@@ -36,8 +36,19 @@ for name in ('app.js', 'style.css'):
     html = html.replace('./' + name, './' + assets[name][0])
 
 DEST.mkdir(parents=True, exist_ok=True)
-# Keep superseded assets for a day while cached HTML ages out. Re-staging an
+# Keep superseded assets for two hours while cached HTML ages out (Pages serves
+# HTML with a ten-minute max-age). A full day of repeated native builds exceeds
+# the Pages site-size limit. Re-staging an
 # unchanged candidate must not evict the still-published generation.
+RETAIN_SECONDS = 2 * 3600
+
+
+def retirement(info, now):
+    # Migrate the old 24-hour manifest without restarting every asset's clock.
+    retired = info.get('retired_at_epoch', info.get('retain_until_epoch', now + 86400) - 86400)
+    return {**info, 'retired_at_epoch': retired, 'retain_until_epoch': retired + RETAIN_SECONDS}
+
+
 manifest_path = DEST / 'release.json'
 previous = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
 new_names = {name for name, _ in assets.values()}
@@ -47,9 +58,9 @@ for name, info in {**previous.get('previous_assets', {}), **previous.get('assets
     assert Path(name).name == name
     if name in new_names:
         continue
-    expiry = info.get('retain_until_epoch', now + 86400)
-    if expiry > now:
-        retained[name] = {**info, 'retain_until_epoch': expiry}
+    retired = retirement(info, now)
+    if retired['retain_until_epoch'] > now:
+        retained[name] = retired
     else:
         (DEST / name).unlink(missing_ok=True)
 for name, data in assets.values():
@@ -102,9 +113,9 @@ for name, info in {**prior_review.get('previous_assets', {}), **prior_review.get
     assert candidate.is_relative_to(review_dest.resolve()), name
     if name in review_manifest:
         continue
-    expiry = info.get('retain_until_epoch', now + 86400)
-    if expiry > now:
-        review_retained[name] = {**info, 'retain_until_epoch': expiry}
+    retired = retirement(info, now)
+    if retired['retain_until_epoch'] > now:
+        review_retained[name] = retired
     else:
         candidate.unlink(missing_ok=True)
 review_html = (review_source / 'index.html').read_text().replace('src="review.js"', 'src="'+review_name+'"')
