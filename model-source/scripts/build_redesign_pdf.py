@@ -121,4 +121,28 @@ for text,url in [
 y=para('Mapping: © Historic England 2026; © Natural England copyright; © Environment Agency copyright/database right 2025, all rights reserved; contains OS data © Crown copyright and database right 2026.',M,y-8,W-2*M,8)
 assert y>60,('site constraints overflow',y)
 footer('Map screening - surveyed tree and legal checks remain necessary');finish()
+start('Historic permissions and groundworks')
+label('PUBLIC PLANNING RECORDS / 25 SEPTEMBER 2026',M,H-51)
+title('The history needs careful reading',M,H-99,31)
+y=para('The council associates four historic planning applications with Ashley Heights. An address link alone does not establish which present plot or building a permission covers. The scanned decisions provide the following leads; approved site drawings and condition-discharge records still need to be obtained.',M,H-139,W-2*M,12)-32
+for heading,body in [
+ ('1976 - two houses on a wider site','76/01087/HIST was granted on 25 November 1976 for two houses with garages on the southern part of the former 61 Hitchen Hatch Lane site. The register links four current properties, including Ashley Heights. Conditions address retained trees, landscaping, turning-head details and external materials. This may identify the original development, but the approved drawings are needed to match it to the current house and determine which conditions remain relevant.'),
+ ('1983-84 - adjoining land','83/01218/HIST was granted on 16 November 1983 for a house and double garage; 84/00546/HIST approved reserved matters on 16 July 1984. Both notices describe land adjoining Ashley Heights. They should not be cited as proof that the present house was approved in 1984, or that their conditions necessarily apply to this title.'),
+ ('1983 refusal - useful context, not a current ruling','83/01336/HIST was refused on 7 December 1983 for a chalet bungalow, garage and access on adjoining land. The council objected to its relationship with the street, its scale and mass, and excessive floor area for the plot. This reinforces the value of testing retained-front schemes, but does not determine the acceptability of these six concepts.'),
+ ('Property flags and groundworks','The council property record flags Sevenoaks Urban Confines, an Aquifer Protection Zone (AQCZ/08) and an Airfield Safeguarding Zone. The aquifer code does not establish an Environment Agency source-protection category or groundwater level. Clarify its implications for drainage, the pool and any basement with the planning and ground-engineering advisers. A missing tree-order row on this property page does not override the TPO found in the separate council map.'),
+ ('Next evidence to obtain','Match the approved original site and house drawings to the present title; check amendments and discharge records; establish any continuing conditions and current permitted-development rights. Combine that with the topographical, tree and neighbour-window surveys before fixing the preferred scheme. No application, paid search or enquiry has been submitted as part of this study.'),
+]:
+ label(heading.upper(),M,y);y=para(body,M,y-18,W-2*M,11)-27
+label('PRIMARY RECORDS',M,y);y-=21
+for text,url in [
+ ('Council property history: four historic planning applications','https://pa.sevenoaks.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=000VKWBKLI000'),
+ ('1976 decision: 76/01087/HIST','https://pa.sevenoaks.gov.uk/online-applications/files/9C9EBF3259E08803F805DCDFF9A99B9B/pdf/76_01087_HIST-DECISION-185573.pdf'),
+ ('1983 outline approval: 83/01218/HIST','https://pa.sevenoaks.gov.uk/online-applications/files/0F31D1958F1352380B470CA360B7F1EA/pdf/83_01218_HIST-DECISION-197825.pdf'),
+ ('1984 reserved-matters decision: 84/00546/HIST','https://pa.sevenoaks.gov.uk/online-applications/files/7EE27B6C26644F055A80E951212A4C7E/pdf/84_00546_HIST-DECISION-198894.pdf'),
+ ('1983 refusal: 83/01336/HIST','https://pa.sevenoaks.gov.uk/online-applications/files/D716AC06408129746DCDC0525EC553AA/pdf/83_01336_HIST-DECISION-197948.pdf'),
+ ('Council property constraints','https://pa.sevenoaks.gov.uk/online-applications/propertyDetails.do?activeTab=constraints&keyVal=000VKWBKLI000'),
+]:
+ y=para('<link href="'+html.escape(url,quote=True)+'" color="#2a6a5c">'+html.escape(text)+'</link>',M,y,W-2*M,10)-11
+assert y>60,('planning history overflow',y)
+footer('Historic record review - approved drawings and conditions still to verify');finish()
 c.save();print(path);print(page,'pages')

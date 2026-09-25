@@ -1,5 +1,5 @@
 {
-  "published_utc": "2026-09-25T06:16:38.819472+00:00",
+  "published_utc": "2026-09-25T06:33:51.655684+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -745,13 +745,13 @@
         "bytes": 11302,
         "sha256": "b628de54dbb856ec9cdf7c89a4ccbad96ee21a2c5b04568938f79286cc0b2f1d"
       },
-      "six-options.740e2f68ec319df1.pdf": {
-        "bytes": 5705332,
-        "sha256": "740e2f68ec319df1a9515abaa36ae55550782a0a9782bab22d37b3c09ae8a250"
+      "six-options.acc2b4029a725109.pdf": {
+        "bytes": 5710090,
+        "sha256": "acc2b4029a725109891108c0a82950fe8f0f633f4e50a1fb40f2b25a222f53c3"
       },
-      "review.9204f50854375b86.js": {
+      "review.0dcd5fe408884a8f.js": {
         "bytes": 13607,
-        "sha256": "9204f50854375b867cd8b5be2eaef653e39fb8f5fe15a2580f8d8a7b7301bb66"
+        "sha256": "0dcd5fe408884a8f569d7cbe5ff0d7bb036a9b3e9ceae6a23e8daa6495dc2591"
       }
     },
     "previous_assets": {
@@ -2144,6 +2144,16 @@
         "bytes": 13607,
         "sha256": "0c04b7a7761755dddabf09193003bf3c91f17c7f697d964621ccf1c9714c044e",
         "retain_until_epoch": 1790403398.546726
+      },
+      "six-options.740e2f68ec319df1.pdf": {
+        "bytes": 5705332,
+        "sha256": "740e2f68ec319df1a9515abaa36ae55550782a0a9782bab22d37b3c09ae8a250",
+        "retain_until_epoch": 1790404431.35876
+      },
+      "review.9204f50854375b86.js": {
+        "bytes": 13607,
+        "sha256": "9204f50854375b867cd8b5be2eaef653e39fb8f5fe15a2580f8d8a7b7301bb66",
+        "retain_until_epoch": 1790404431.35876
       }
     }
   },
