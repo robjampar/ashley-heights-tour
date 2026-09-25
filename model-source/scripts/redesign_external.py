@@ -45,7 +45,17 @@ def ceiling(name,rect,z):
 
 
 def external_wall(name,a,b,z=0,holes=(),top=None,layer=None):
-    perforated_wall(spec['code']+' | '+name,a,b,z,top if top is not None else z+2.60,list(holes),brick,layer or L,.23)
+    # Wide garden openings use a pair of normal-sized leaves with fixed
+    # sidelights, rather than one unrealistic 2.8 m swinging glass leaf.
+    ordered=sorted(holes)
+    masonry=[[*h[:4],'open' if h[4]=='glassdoor' and h[1]>1.5 else h[4]] for h in ordered]
+    perforated_wall(spec['code']+' | '+name,a,b,z,top if top is not None else z+2.60,masonry,brick,layer or L,.23)
+    length=math.dist(a,b);u=[(b[k]-a[k])/length for k in (0,1)]
+    for i,(center,width,sill,head,kind) in enumerate(ordered):
+        if kind!='glassdoor' or width<=1.5:continue
+        left=[a[k]+u[k]*(center-width/2) for k in (0,1)]
+        right=[a[k]+u[k]*(center+width/2) for k in (0,1)]
+        glazed_wall(spec['code']+' | '+name+' glazed door '+str(i),left,right,z+sill,z+head,layer or L,door_at=width/2,door_width=1.8)
 
 
 def carve_existing(rect,z0,z1,layers,reason,surface=False):

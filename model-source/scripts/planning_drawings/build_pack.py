@@ -176,6 +176,7 @@ def main(argv=None):
     parser.add_argument('--sheets', default='')
     parser.add_argument('--no-docs', action='store_true')
     parser.add_argument('--check', action='store_true')
+    parser.add_argument('--force', action='store_true', help='Redraw a complete pack even when verified inputs and outputs match')
     parser.add_argument('--out', default=None)
     args = parser.parse_args(argv)
     out = Path(args.out or (OUT if args.variant == "planning" else ROOT / "proposal/proposed")).resolve()
@@ -201,6 +202,14 @@ def main(argv=None):
             print('Another planning build is running; no outputs changed.', file=sys.stderr)
             return 2
         inputs = release.input_fingerprints(args.variant)
+        if not args.force and not only and not args.no_docs and not release.freshness(out, inputs):
+            manifest = json.loads((out / 'manifest.json').read_text())
+            if manifest['variant'] == args.variant:
+                if release.input_fingerprints(args.variant) != inputs:
+                    print('Inputs changed during reuse verification; run again.', file=sys.stderr)
+                    return 2
+                print('REUSE verified ' + args.variant + ' drawing pack (technical freshness only)')
+                return 0
         with tempfile.TemporaryDirectory(prefix='.' + out.name + '-build-', dir=out.parent) as tmp:
             staging = Path(tmp)
             for name in ('opening-tags.json', 'manifest.json', 'CHANGELOG.md'):

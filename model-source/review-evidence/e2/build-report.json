@@ -6,7 +6,7 @@
     "mtime_ns": 1789436253000000000
   },
   "option": "e2",
-  "modelUpdatedAt": "2026-09-25T04:34:46.117936+00:00",
+  "modelUpdatedAt": "2026-09-25T05:48:46.475973+00:00",
   "inputs": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "f02d6b7419867aac3bb719d1ec720d05ab3b6abc700715a22a6e1aae30775990",
     "output-proposed-compact/navigation.json": "ed2ffec2e3b40aeebd5656252af7e72aada9a54b432e9f49f65f04ed9eae4896",
@@ -28,11 +28,11 @@
     "scripts/proposal_roofs.py": "33a4af6083b519a5fc084b52b2292177a965dc1864607f208a5b949c9ccad219",
     "scripts/redesign_appearance.py": "d34679ef1f3ca7ec7597f5504034c6c2f4df1ce811cb3a5723a13a98e20135d2",
     "scripts/redesign_e2.py": "bdd7e40010f412a15ef4f139fad23c235fca48b8a9866c8c091afb79ce234cf3",
-    "scripts/redesign_external.py": "6fd2e935c573a15138c090264f8ffdd2e05eabf0c07f765e956af94a0353d95e",
+    "scripts/redesign_external.py": "6b9e7dcd932a7a5781a4bed29636b280275defc0e766b0bfc395c26eddc49199",
     "scripts/redesign_layouts.py": "35080daa7c6899714b0ec4b865feb9324204236a367398f5d1cdbc83e195ae96",
     "scripts/redesign_levels.py": "098ec995bf4f8e8d7612a21b5fb07862e0c3c356942087a2b917d104a6a644da",
     "scripts/redesign_roof_join.py": "324840661fa4696e2c53d4835c3a2a1e3b053e8e39db0f8c8eda4a6e66040e09",
-    "scripts/redesign_site.py": "4e46331d05cd7f0d560b1736e4e85fe848d45ec7648300e640e929ef55ebb4b3",
+    "scripts/redesign_site.py": "3b8bb1dfcf4ddc3df08f1bb0c3ca2c5280238237d0a7a479dbcb099a31506325",
     "scripts/redesign_support.py": "5d95544d2dd284124a6d1446ec0456c0d330146f33420ae95c55ae18f29484c8",
     "walkthrough/public/navigation.json": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
   },
@@ -48,11 +48,11 @@
     "walkthrough/public/navigation.json": true
   },
   "outputs": {
-    "output-redesign-e2/Ashley Heights \u2014 E2 Garden courtyard.blend": "ee90555d1d71f14e96bf2111b83c57e77283d317749d6fbc328d4aa6cebe686c",
+    "output-redesign-e2/Ashley Heights \u2014 E2 Garden courtyard.blend": "0793a6857afe9512f5123fd258642917e79fe2272f7683382d019ed7cafc94a8",
     "output-redesign-e2/redesign-e2.glb": "fe8003342a501f0882040698174a3b399ddb322c81f0c75c4857bf84c8edc35a",
-    "output-redesign-e2/navigation.json": "436d7fb315a6b4d550a453de8e4f507a2db3550f09e0cf21cb8d1ec48d1d981f",
+    "output-redesign-e2/navigation.json": "4e5069f1b15e0ea54d0cfeb1fce81412f1af63b324128c0851c4de29000df85b",
     "output-redesign-e2/geometry.json": "371456df7f692e4138b4e63555145f720bdbba0b50c5b59bd63eabe1a50923f5",
     "walkthrough/public/redesign-e2.glb": "fe8003342a501f0882040698174a3b399ddb322c81f0c75c4857bf84c8edc35a",
-    "walkthrough/public/redesign-e2-navigation.json": "436d7fb315a6b4d550a453de8e4f507a2db3550f09e0cf21cb8d1ec48d1d981f"
+    "walkthrough/public/redesign-e2-navigation.json": "4e5069f1b15e0ea54d0cfeb1fce81412f1af63b324128c0851c4de29000df85b"
   }
 }

@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import {DriveWorld,DriveTrack} from '../src/drive.js';
+import {DriveWorld,DriveTrack,HybridPlanner,gateGeometry} from '../src/drive.js';
 import {planDrivePaths} from '../tools/plan-drive.mjs';
 
 let success=true;
@@ -19,10 +19,18 @@ for(const id of process.argv.slice(2)){
  const planningMargin=Number(process.env.PARKING_MARGIN??.22);
  const paths=planDrivePaths(data,{log:line=>console.log(id,line),planningMargin});
  const name=id=>'Proposal | Compact car '+id;
- const world=new DriveWorld(data,{ignore:o=>bays.some(b=>o.name===name(b.id))});
+ const world=new DriveWorld(data,{ignore:o=>bays.some(b=>o.name===name(b.id)),planningMargin});
  const results=[];
  for(const bay of bays){
   world.dynamic=data.obstacles.filter(o=>bays.some(b=>b.id!==bay.id&&o.name===name(b.id))).map(o=>o.box);
+  const car=cars.find(c=>c.bay===bay.id);
+  if(car.parking_heading_fixed){
+   const planner=new HybridPlanner(world,{reverseCost:4,changeCost:2}),g=gateGeometry(data);
+   const road=k=>({x:g.centre[0]+g.out[0]*k,y:g.centre[1]+g.out[1]*k});
+   const arrival=planner.path({...road(8.5),t:g.inward},{x:car.centre_m[0],y:car.centre_m[1],t:car.heading_radians},{eitherWay:false,maxExpansions:300000});
+   const departure=arrival&&planner.path(arrival.at(-1),{...road(6),t:g.inward+Math.PI},{maxExpansions:300000});
+   paths[bay.id]={arrive:arrival,exit:departure};
+  }
   for(const journey of['arrive','exit']){
    const path=paths?.[bay.id]?.[journey];let checked=0,failure=null;
    if(!path)failure='No route found';
@@ -33,7 +41,11 @@ for(const id of process.argv.slice(2)){
      if(!world.carClear(p.x,p.y,p.t,{margin:.03})){failure={distance:s,pose:p};break;}
     }
    }
-   results.push({bay:bay.id,outside:cars.find(c=>c.bay===bay.id).outside!==false,journey,poses:path?.length??0,swept_samples:checked,pass:failure===null,failure});
+   if(path&&car.parking_heading_fixed){
+    const parked=journey==='arrive'?path.at(-1):path[0];
+    if(Math.abs(Math.atan2(Math.sin(parked.t-car.heading_radians),Math.cos(parked.t-car.heading_radians)))>.02)failure='Parked heading does not match the required driver-access arrangement';
+   }
+   results.push({bay:bay.id,outside:car.outside!==false,journey,poses:path?.length??0,swept_samples:checked,required_heading_radians:car.parking_heading_fixed?car.heading_radians:null,pass:failure===null,failure});
   }
  }
  const passed=results.every(r=>r.pass);success&&=passed;

@@ -1,6 +1,8 @@
 """Input fingerprints and integrity checks for a complete planning issue."""
 import hashlib
 import json
+import sys
+from importlib.metadata import version
 from pathlib import Path
 from .context import ROOT
 
@@ -22,21 +24,24 @@ def input_fingerprints(variant="planning"):
         'walkthrough/src/street-context-data.js', 'proposal/reference/street-site-plan.png')]
     paths += sorted((ROOT / 'scripts/planning_drawings').glob('*.py'))
     paths += sorted(p for p in (ROOT / 'source/listing-photos').iterdir() if p.is_file())
-    if variant == 'planning':
-        model_inputs = ROOT / 'output-proposed-planning/build-inputs.json'
-        if model_inputs.exists():
-            paths.append(model_inputs)
-            paths += [ROOT / p for p in json.loads(model_inputs.read_text())]
-    return {str(p.relative_to(ROOT)): sha(p) for p in paths}
+    model_inputs = ROOT / f'output-proposed-{variant}/build-inputs.json'
+    if model_inputs.exists():
+        paths.append(model_inputs)
+        paths += [ROOT / p for p in json.loads(model_inputs.read_text())]
+    inputs = {str(p.relative_to(ROOT)): sha(p) for p in paths}
+    runtime = {'python': sys.version, 'packages': {p: version(p) for p in
+               ('numpy', 'shapely', 'matplotlib', 'PyMuPDF', 'Pillow')}}
+    inputs['@render-runtime'] = hashlib.sha256(json.dumps(runtime, sort_keys=True).encode()).hexdigest()
+    return inputs
 
 
 def model_source_issues(variant):
-    if variant != 'planning':
-        return []
-    manifest = ROOT / 'output-proposed-planning/build-inputs.json'
+    if variant not in ('planning', 'compact'):
+        return ['Unknown model variant']
+    manifest = ROOT / f'output-proposed-{variant}/build-inputs.json'
     if not manifest.exists():
-        return ['Planning model has not been built with source tracking']
-    return ['Planning model needs rebuilding: ' + name
+        return [variant + ' model has not been built with source tracking']
+    return [variant + ' model needs rebuilding: ' + name
             for name, digest in json.loads(manifest.read_text()).items()
             if not (ROOT / name).is_file() or sha(ROOT / name) != digest]
 
@@ -53,7 +58,12 @@ def freshness(out, current_inputs=None):
     path = out / 'manifest.json'
     if not path.exists():
         return ['No build manifest']
-    manifest = json.loads(path.read_text())
+    try:
+        manifest = json.loads(path.read_text())
+        if not isinstance(manifest, dict):
+            return ['Unreadable build manifest']
+    except (OSError, ValueError):
+        return ['Unreadable build manifest']
     reasons = []
     if current_inputs is None:
         reasons += model_source_issues(manifest.get('variant'))

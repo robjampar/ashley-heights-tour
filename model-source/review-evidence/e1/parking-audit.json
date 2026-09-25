@@ -1,6 +1,6 @@
 {
   "option": "e1",
-  "modelUpdatedAt": "2026-09-25T04:33:34.186775+00:00",
+  "modelUpdatedAt": "2026-09-25T05:48:45.337703+00:00",
   "passed": true,
   "positions": 6,
   "vehicle_m": [
@@ -20,6 +20,7 @@
       "journey": "arrive",
       "poses": 52,
       "swept_samples": 251,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -29,6 +30,7 @@
       "journey": "exit",
       "poses": 65,
       "swept_samples": 316,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -38,6 +40,7 @@
       "journey": "arrive",
       "poses": 46,
       "swept_samples": 222,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -47,6 +50,7 @@
       "journey": "exit",
       "poses": 63,
       "swept_samples": 308,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -56,6 +60,7 @@
       "journey": "arrive",
       "poses": 77,
       "swept_samples": 378,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -65,6 +70,7 @@
       "journey": "exit",
       "poses": 72,
       "swept_samples": 352,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -74,6 +80,7 @@
       "journey": "arrive",
       "poses": 65,
       "swept_samples": 316,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -83,6 +90,7 @@
       "journey": "exit",
       "poses": 71,
       "swept_samples": 346,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -92,6 +100,7 @@
       "journey": "arrive",
       "poses": 63,
       "swept_samples": 307,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -101,6 +110,7 @@
       "journey": "exit",
       "poses": 69,
       "swept_samples": 338,
+      "required_heading_radians": null,
       "pass": true,
       "failure": null
     },
@@ -108,8 +118,9 @@
       "bay": "G2",
       "outside": false,
       "journey": "arrive",
-      "poses": 62,
-      "swept_samples": 301,
+      "poses": 78,
+      "swept_samples": 383,
+      "required_heading_radians": 4.71238898038469,
       "pass": true,
       "failure": null
     },
@@ -117,8 +128,9 @@
       "bay": "G2",
       "outside": false,
       "journey": "exit",
-      "poses": 65,
-      "swept_samples": 317,
+      "poses": 59,
+      "swept_samples": 288,
+      "required_heading_radians": 4.71238898038469,
       "pass": true,
       "failure": null
     }

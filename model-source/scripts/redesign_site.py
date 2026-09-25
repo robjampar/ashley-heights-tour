@@ -94,22 +94,24 @@ def make_pool():
     view('Back garden',3.8,16.5,surveyed_ground(3.8,16.5),(1,.5))
 
 
-def parked_car(bay,rect,inside=False):
+def parked_car(bay,rect,inside=False,reverse=False):
     source_nav=json.loads((ROOT/'output-proposed-compact/navigation.json').read_text())
     source=next(c for c in source_nav['proposalSite']['cars']if c['bay']=='N1')
     objects=borrow_objects(source['objects'],S)
     target=[(rect[0]+rect[2])/2,(rect[1]+rect[3])/2]
     heading=math.pi/2 if rect[3]-rect[1]>rect[2]-rect[0]else 0
+    if reverse:heading+=math.pi
     rotation=heading-source['heading_radians']
     transform=Matrix.Translation(Vector((*target,0)))@Matrix.Rotation(rotation,4,'Z')@Matrix.Translation(Vector((-source['centre_m'][0],-source['centre_m'][1],0)))
     members=[]
     for ob in objects:
         ob.matrix_world=transform@ob.matrix_world
         ob.name=ob.name.replace('car N1','car '+bay);ob['source_name']=ob.name;members.append(ob.name)
-    dx,dy=(.9,2.2)if heading==math.pi/2 else(2.2,.9)
+    dx,dy=(.9,2.2)if abs(math.sin(heading))>.5 else(2.2,.9)
     b=[target[0]-dx,target[1]-dy,target[0]+dx,target[1]+dy]
     obstacle('Proposal | Compact car '+bay,b,0,1.5)
     car={'bay':bay,'outside':not inside,'centre_m':target,'heading_radians':heading,'audited_size_m':[4.4,1.8],'objects':members}
+    if reverse:car['parking_heading_fixed']=True
     nav['proposalSite']['cars'].append(car)
     if not inside:nav['proposalSite']['driveway_bay_bounds_m'].append({'id':bay,'bounds_m':rect})
     for x in (rect[0],rect[2]):
@@ -125,7 +127,10 @@ def e1_site():
         parked_car(bay,rect)
     # The garage front door is 4.596 m wide in the original measured model.
     parked_car('G1',[-5.065,.20,-2.61,5.70],True)
-    parked_car('G2',[-2.61,.20,-.215,5.70],True)
+    # Opposite headings put both right-hand-drive seats beside the shared
+    # 625 mm central aisle; the east wall is too close for a driver's exit.
+    parked_car('G2',[-2.61,.20,-.215,5.70],True,reverse=True)
+    nav['proposalSite']['garage_fit']['parking_arrangement']='G1 nose in, G2 reverse in; both right-hand-drive seats face the 0.625 m central aisle. Actual door opening remains vehicle-specific.'
     nav['proposalSite']['retained_features']=['Original garage','Original fountain and island','Original entrance and main stair']
     make_pool()
 

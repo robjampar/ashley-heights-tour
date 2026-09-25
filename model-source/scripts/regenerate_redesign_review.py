@@ -27,7 +27,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 COMMON_CHECKS = ('circulation', 'private-access', 'ensuite-access', 'parking')
-EXTERNAL_CHECKS = ('stairs-navigation', 'stair-headroom', 'pool-navigation', 'site-clearance')
+EXTERNAL_CHECKS = ('stairs-navigation', 'stair-headroom', 'pool-navigation', 'site-clearance', 'garage-access')
 
 
 def fingerprints(root, names):
@@ -95,7 +95,7 @@ def option_inputs(option, runtime):
     names = [out + '/' + name for name in ('navigation.json', 'geometry.json', 'build-report.json')]
     if option.startswith('e'):
         scripts += ['scripts/audit_redesign_headroom.py', 'scripts/audit_redesign_site.py',
-                    'walkthrough/tests/redesign-stairs.mjs', 'walkthrough/tests/redesign-pool.mjs']
+                    'walkthrough/tests/redesign-stairs.mjs', 'walkthrough/tests/redesign-pool.mjs', 'walkthrough/tests/redesign-garage-access.mjs']
         names.append(report['native'])
     return {'runtime': runtime, 'files': fingerprints(ROOT, names + scripts), 'parking_margin': .12 if option == 'e1' else .22}
 
@@ -136,7 +136,7 @@ def validate_option(option, blender, runtime, force):
         run(['node', 'walkthrough/tests/redesign-' + name + '.mjs', option], log,
             env={'PARKING_MARGIN': str(inputs['parking_margin'])})
     if option.startswith('e'):
-        for name in ('stairs', 'pool'):
+        for name in ('stairs', 'pool', 'garage-access'):
             run(['node', 'walkthrough/tests/redesign-' + name + '.mjs', option], log)
         run([py, 'scripts/audit_redesign_site.py', option], log)
         run([blender, '--background', '--python-exit-code', '1', '--python', 'scripts/audit_redesign_headroom.py', '--', option], log)

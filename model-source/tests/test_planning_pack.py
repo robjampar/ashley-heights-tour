@@ -50,6 +50,43 @@ class PackIntegrityTests(unittest.TestCase):
         self.save()
         self.assertTrue(release.freshness(self.out, self.inputs))
 
+    def test_corrupt_manifest_is_stale(self):
+        (self.out / 'manifest.json').write_text('{interrupted')
+        self.assertEqual(release.freshness(self.out, self.inputs), ['Unreadable build manifest'])
+
+    def test_renderer_change_is_stale(self):
+        self.inputs['@render-runtime'] = 'previous-renderer'
+        self.manifest['source_files'] = dict(self.inputs)
+        self.save()
+        self.assertIn('Input changed: @render-runtime', release.freshness(
+            self.out, self.inputs | {'@render-runtime': 'updated-renderer'}))
+
+    def test_default_reuse_preserves_the_complete_issue(self):
+        from unittest.mock import patch
+        from scripts.planning_drawings import build_pack
+        previous = (self.out / 'manifest.json').read_bytes()
+        with patch.object(release, 'model_source_issues', return_value=[]), \
+             patch.object(release, 'input_fingerprints', return_value=self.inputs), \
+             patch.object(build_pack, 'build') as generate:
+            self.assertEqual(build_pack.main(['--variant', 'compact', '--out', str(self.out)]), 0)
+            generate.assert_not_called()
+        self.assertEqual((self.out / 'manifest.json').read_bytes(), previous)
+        self.assertEqual((self.out / 'drawings.pdf').read_bytes(), b'fixture')
+
+    def test_force_or_changed_output_requires_redrawing(self):
+        from unittest.mock import patch
+        from scripts.planning_drawings import build_pack
+        for force in (True, False):
+            with self.subTest(force=force):
+                if not force:
+                    (self.out / 'drawings.pdf').write_bytes(b'changed')
+                with patch.object(release, 'model_source_issues', return_value=[]), \
+                     patch.object(release, 'input_fingerprints', return_value=self.inputs), \
+                     patch.object(build_pack, 'build', return_value=1) as generate:
+                    args = ['--variant', 'compact', '--out', str(self.out)] + (['--force'] if force else [])
+                    self.assertEqual(build_pack.main(args), 1)
+                    generate.assert_called_once()
+
     def test_input_change_during_build_preserves_previous_issue(self):
         from unittest.mock import patch
         from scripts.planning_drawings import build_pack

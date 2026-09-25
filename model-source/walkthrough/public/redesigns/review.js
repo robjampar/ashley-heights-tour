@@ -32,6 +32,7 @@ function choose(id,{scroll=false,updateHash=true}={}){
  if(selected.checks.privateAccess?.passed)checks.push('All seven bedrooms and shared rooms have routes that avoid the other sleeping rooms.');
  if(selected.checks.stairs?.passed)checks.push('New stairs tested continuously up and down at a 50 cm body width.');
  if(selected.checks.pool?.passed)checks.push('A continuous 50 cm-wide walking test passes both sides of the pool, past the loungers and up/down the garden steps.');
+ if(selected.checks.garageAccess?.passed)checks.push('A 50 cm-wide pedestrian can reach the forecourt from each nominal right-hand-drive seat position with both garage cars parked. Actual car-door opening still needs checking.');
  if(selected.checks.parking?.passed)checks.push((selected.checks.parking.positions??6)+' compact-car parking positions tested on arrival and exit with the other cars occupied. Swept-body samples taken every 10 cm.');
  const sideGap=selected.checks.site?.clearances?.['Side upper roof']?.minimum_boundary_gap_m;
  if(sideGap!==undefined)checks.push('The side roof eaves are about '+sideGap.toFixed(2)+' m from the drawn title boundary at their closest point. Boundary position and neighbour distances need survey.');

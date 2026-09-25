@@ -142,7 +142,7 @@ def main(argv=None):
             if not args.models_only and not args.viewer_only:
                 for variant in variants:
                     command = [python, '-m', 'scripts.planning_drawings.build_pack', '--variant', variant]
-                    timed(variant + '.drawings', command)
+                    timed(variant + '.drawings', command + (['--force'] if args.force else []))
                     timed(variant + '.check_drawings', command + ['--check'])
             if not args.models_only:
                 timed('viewer', ['npm', 'run', 'build'], cwd=ROOT / 'walkthrough')

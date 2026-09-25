@@ -1,0 +1,186 @@
+{
+  "option": "e2",
+  "modelUpdatedAt": "2026-09-25T05:48:46.475973+00:00",
+  "plans": [
+    {
+      "title": "Ground floor",
+      "file": "ground-floor.svg",
+      "detail": "ground-floor-detail.svg",
+      "rooms": [
+        {
+          "number": 1,
+          "name": "New double garage",
+          "area_m2": 46.5
+        },
+        {
+          "number": 2,
+          "name": "Drawing room",
+          "area_m2": 45.7
+        },
+        {
+          "number": 3,
+          "name": "Open-plan family living",
+          "area_m2": 42.5
+        },
+        {
+          "number": 4,
+          "name": "Family kitchen",
+          "area_m2": 23.6
+        },
+        {
+          "number": 5,
+          "name": "Entrance hall",
+          "area_m2": 19.1
+        },
+        {
+          "number": 6,
+          "name": "Wine bar room",
+          "area_m2": 18.6
+        },
+        {
+          "number": 7,
+          "name": "Ground guest bedroom",
+          "area_m2": 17.9
+        },
+        {
+          "number": 8,
+          "name": "Gym",
+          "area_m2": 17.7
+        },
+        {
+          "number": 9,
+          "name": "Cinema",
+          "area_m2": 17.2
+        },
+        {
+          "number": 10,
+          "name": "Garden link and changing",
+          "area_m2": 11.6
+        },
+        {
+          "number": 11,
+          "name": "Garden leisure gallery",
+          "area_m2": 8.3
+        },
+        {
+          "number": 12,
+          "name": "Ground guest en suite",
+          "area_m2": 3.5
+        },
+        {
+          "number": 13,
+          "name": "Pool changing and visitor shower",
+          "area_m2": 3.3
+        }
+      ]
+    },
+    {
+      "title": "First floor",
+      "file": "first-floor.svg",
+      "detail": "first-floor-detail.svg",
+      "rooms": [
+        {
+          "number": 1,
+          "name": "Side principal bedroom",
+          "area_m2": 23.8
+        },
+        {
+          "number": 2,
+          "name": "Garden guest bedroom",
+          "area_m2": 23.8
+        },
+        {
+          "number": 3,
+          "name": "Bedroom 2",
+          "area_m2": 18.5
+        },
+        {
+          "number": 4,
+          "name": "Side connection and loft stair",
+          "area_m2": 14.1
+        },
+        {
+          "number": 5,
+          "name": "Landing",
+          "area_m2": 15.4
+        },
+        {
+          "number": 6,
+          "name": "Bedroom 3",
+          "area_m2": 13.2
+        },
+        {
+          "number": 7,
+          "name": "Bedroom 4",
+          "area_m2": 12.7
+        },
+        {
+          "number": 8,
+          "name": "Walk-through principal wardrobe",
+          "area_m2": 11.9
+        },
+        {
+          "number": 9,
+          "name": "Principal study and entry",
+          "area_m2": 8.6
+        },
+        {
+          "number": 10,
+          "name": "Bathroom",
+          "area_m2": 8.0
+        },
+        {
+          "number": 11,
+          "name": "Principal bathroom",
+          "area_m2": 7.6
+        },
+        {
+          "number": 12,
+          "name": "Garden guest en suite",
+          "area_m2": 4.4
+        },
+        {
+          "number": 13,
+          "name": "Bedroom 4 en suite",
+          "area_m2": 4.3
+        }
+      ]
+    },
+    {
+      "title": "Loft",
+      "file": "loft.svg",
+      "detail": "loft-detail.svg",
+      "rooms": [
+        {
+          "number": 1,
+          "name": "Loft guest bedroom",
+          "area_m2": 9.6
+        },
+        {
+          "number": 2,
+          "name": "Loft landing",
+          "area_m2": 4.9
+        },
+        {
+          "number": 3,
+          "name": "Loft guest en suite",
+          "area_m2": 3.7
+        },
+        {
+          "number": 4,
+          "name": "Loft workspace",
+          "area_m2": 2.9
+        }
+      ]
+    },
+    {
+      "title": "Site",
+      "file": "site.svg",
+      "detail": "site-detail.svg",
+      "rooms": []
+    }
+  ],
+  "footprint_basis": "Approximate room envelopes including 115 mm perimeter allowance",
+  "original_ground_footprint_m2": 181.4,
+  "added_ground_footprint_m2": 113.4
+}
