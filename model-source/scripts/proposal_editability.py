@@ -29,6 +29,10 @@ def assembly(label,members,pivot=None):
   ob.parent=parent;ob.matrix_parent_inverse=Matrix.Translation(-centre);ob.matrix_basis=Matrix.Translation(centres[ob.name]);ob['assembly']=label;assigned.add(ob.name)
  edit_report['assemblies'].append({'name':label,'parts':len(members),'pivot_m':list(centre)})
 
+# Owner-selected room furniture keeps its independently editable assemblies.
+for label in sorted({o.get('interior_assembly') for o in new_meshes if o.get('interior_assembly')}):
+ assembly('Editable interior | '+label,[o for o in new_meshes if o.get('interior_assembly')==label])
+
 # Door parents use hinges; static furniture/vehicles use their actual centres.
 for door in proposed_doors:
  assembly('Editable door | '+door['id'].replace('Proposal | ',''),[o for o in new_meshes if o.name in door['members']],door['hinge'])

@@ -1,0 +1,10 @@
+{
+ "id":"quiet-oak-01", "selectedByOwner":"2026-09-25", "revision":1,
+ "kitchenCeiling":2.598,
+ "island":{"center":[1.925,6.55],"size":[1.05,1.60],"height":0.95},
+ "breakfast":{"center":[2.071,6.13],"diameter":1.35,"height":0.76,"chairRadius":0.86},
+ "gardenDining":{"center":[1.70,12.10],"size":[2.40,1.00],"height":0.76},
+ "ovenTower":{"bounds":[0.15,8.025,0.77,8.675],"height":2.24},
+ "textures":{"oak":"pale-oak.png","limestone":"warm-limestone.png","upholstery":"cream-upholstery.png"},
+ "referenceImages":{"compact":"walkthrough/public/interiors/kitchen/images/01-proposed.png","planning":"walkthrough/public/interiors/kitchen/images/01-planning.png"}
+}

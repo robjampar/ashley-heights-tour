@@ -25,7 +25,7 @@ MODULES = (
     'proposal_lifestyle.py', 'proposal_shared_lounge.py', 'proposal_housekeeping.py',
     'proposal_side_bathroom.py', 'proposal_original_rooms.py', 'proposal_basement.py',
     'proposal_roof_terrace.py', 'proposal_workshop.py', 'proposal_garden_levels.py',
-    'proposal_appearance.py', 'proposal_editability.py', 'proposal_edit_views.py', 'finish_extension_proposal.py',
+    'proposal_appearance.py', 'proposal_kitchen_interiors.py', 'proposal_editability.py', 'proposal_edit_views.py', 'finish_extension_proposal.py',
 )
 PLANNING_OMISSIONS = {
     'proposal_rear.py', 'proposal_kitchen_connection.py',
@@ -62,6 +62,8 @@ def source_hashes(root, variant):
     if variant == 'planning':
         paths.add('proposal/design-spec-compact.json')
     paths.update('scripts/' + name for name in modules_for(variant))
+    paths.update(str(p.relative_to(root)) for p in (root / 'proposal/interiors/kitchen').rglob('*')
+                 if p.is_file() and p.suffix in ('.json', '.png'))
     # These are optional in legacy reconstructions. Their appearance/disappearance
     # still changes the mapping and therefore invalidates the build.
     for name in ('proposal/P5_internal-garden-area.json',

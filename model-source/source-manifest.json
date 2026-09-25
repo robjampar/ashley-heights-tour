@@ -2,8 +2,8 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "2097ad09af2bff392b980c678773b0a236605514d0b66e73d3616aea08fa4871",
-      "bytes": 16329
+      "sha256": "1b6b3b2639cd163b28457d951208f14d859b1b998b5b2a3a182e51c74cdf9716",
+      "bytes": 18330
     },
     "Regenerate Gate-aligned Option.command": {
       "source": "Regenerate Gate-aligned Option.command",
@@ -54,6 +54,41 @@
       "source": "proposal/design-spec.json",
       "sha256": "e24aed14d4bac81eb394340556e6c3739a2274697a826096e9e9223ff5fa0708",
       "bytes": 10930
+    },
+    "proposal/interiors/kitchen/ASSETS.md": {
+      "source": "proposal/interiors/kitchen/ASSETS.md",
+      "sha256": "274954c1a03decdd332d8c733c9ea203a10a61c39bb3206946bb86296a713b90",
+      "bytes": 1722
+    },
+    "proposal/interiors/kitchen/DECISION.md": {
+      "source": "proposal/interiors/kitchen/DECISION.md",
+      "sha256": "f5499fbf91f4143342de172a46ceafe9a32efedc7ba4c8d514af25de1f4ebe83",
+      "bytes": 1625
+    },
+    "proposal/interiors/kitchen/quiet-oak.json": {
+      "source": "proposal/interiors/kitchen/quiet-oak.json",
+      "sha256": "13387a84a19f6948eace432b01aa774cf2e1bc579a7c3337bcd0248a676542b8",
+      "bytes": 660
+    },
+    "proposal/interiors/kitchen/texture-prompts.json": {
+      "source": "proposal/interiors/kitchen/texture-prompts.json",
+      "sha256": "5bbf812a51cca7f8c9eb61f41decd775a761339de2dc2dc19c47d6ac25a058cc",
+      "bytes": 1825
+    },
+    "proposal/interiors/kitchen/textures/cream-upholstery.png": {
+      "source": "proposal/interiors/kitchen/textures/cream-upholstery.png",
+      "sha256": "f566ca179a97b6bf43b1e803fbc11aacdc1c345342ec2865cbeea837fcf0841e",
+      "bytes": 2670416
+    },
+    "proposal/interiors/kitchen/textures/pale-oak.png": {
+      "source": "proposal/interiors/kitchen/textures/pale-oak.png",
+      "sha256": "ee9fa499b8e87edfe8e4abf56c06ff87e4fa3ec42bac8d3c075ff2cf161fa244",
+      "bytes": 2032830
+    },
+    "proposal/interiors/kitchen/textures/warm-limestone.png": {
+      "source": "proposal/interiors/kitchen/textures/warm-limestone.png",
+      "sha256": "7eb3b0129821084a86d3adb57fa377321ce82141eece46c3ffd4c4a8104c5098",
+      "bytes": 2778824
     },
     "proposal/neighbours/site-trees.json": {
       "source": "proposal/neighbours/site-trees.json",
@@ -165,6 +200,36 @@
       "sha256": "870de1bd489c140c91c5fd001b8c793e16c55bc57ace34f6be1e938d2c2752a2",
       "bytes": 585288
     },
+    "revisions/interiors-kitchen-2026-09-25/REVIEW-DESIGN.md": {
+      "source": "revisions/interiors-kitchen-2026-09-25/REVIEW-DESIGN.md",
+      "sha256": "d00ec058fec0bcd5d58bfd585afa075f79854ae6a7c9f563c1995dbfe4696824",
+      "bytes": 4375
+    },
+    "revisions/interiors-kitchen-2026-09-25/STATUS.md": {
+      "source": "revisions/interiors-kitchen-2026-09-25/STATUS.md",
+      "sha256": "1ba0044628a470414ab308ab63e7d1ea6b4d298372af84542dcd6611cbc0a947",
+      "bytes": 3292
+    },
+    "revisions/interiors-kitchen-2026-09-25/fitted-browser-checks.json": {
+      "source": "revisions/interiors-kitchen-2026-09-25/fitted-browser-checks.json",
+      "sha256": "68a3382a9f1f502ba99da86386b31d1d420afa8626b91f161ef7d2d81a60d14d",
+      "bytes": 2008
+    },
+    "revisions/interiors-kitchen-2026-09-25/kitchen-circulation.json": {
+      "source": "revisions/interiors-kitchen-2026-09-25/kitchen-circulation.json",
+      "sha256": "1c3c19f62d35876817a2f49c7a220a1e0684b391c2f40064d91e78b4ede9a4cd",
+      "bytes": 683
+    },
+    "revisions/interiors-kitchen-2026-09-25/model-browser-checks.json": {
+      "source": "revisions/interiors-kitchen-2026-09-25/model-browser-checks.json",
+      "sha256": "a970b27d4adcbbe901f7454212a7ea018f74b3196ed19e7e5cb0d10a6d24ca05",
+      "bytes": 1538
+    },
+    "revisions/interiors-kitchen-2026-09-25/native-audit.json": {
+      "source": "revisions/interiors-kitchen-2026-09-25/native-audit.json",
+      "sha256": "0a184538375d7965a7d72addd86ba26d8113a59cac1d5bf5b941ccbe4d79f95a",
+      "bytes": 550
+    },
     "revisions/planning-cleanup-2026-09-23/CLEANUP.md": {
       "source": "revisions/planning-cleanup-2026-09-23/CLEANUP.md",
       "sha256": "6b82ea4e5a1aa5ecea990d25a8b080f66b83bb1706fb11572d932f081dc21b38",
@@ -255,6 +320,11 @@
       "sha256": "c63075ebe6f6b710f8927d79c70546335ef0835fc5f599068afb66a675671615",
       "bytes": 3349
     },
+    "scripts/audit_kitchen_interiors.py": {
+      "source": "scripts/audit_kitchen_interiors.py",
+      "sha256": "a73f098c09f2e2bfadfaca3f7d3f1942c7f9c0f8cd69c373217f13b10960f5d7",
+      "bytes": 3112
+    },
     "scripts/audit_plan_openings.py": {
       "source": "scripts/audit_plan_openings.py",
       "sha256": "7ba3fc531d1f201338ec0c62253e703e6aada934a89310908c7afa243807165a",
@@ -332,8 +402,8 @@
     },
     "scripts/build_support.py": {
       "source": "scripts/build_support.py",
-      "sha256": "2ab6c3fa55957db3dd506b82e9cf79fe95d63d56aea627a07db435e4a0ee45f3",
-      "bytes": 7692
+      "sha256": "6f3b077945ba3ac54d1af679a1e1dd40c6079e05b4a609a2399456f56a1d0491",
+      "bytes": 7892
     },
     "scripts/check_bedroom4_window_height.py": {
       "source": "scripts/check_bedroom4_window_height.py",
@@ -432,8 +502,8 @@
     },
     "scripts/finish_extension_proposal.py": {
       "source": "scripts/finish_extension_proposal.py",
-      "sha256": "1b9cba5c9fa4769a1ef4f31b281f5b8b60d1a1afe513f6cafe42d1788150ec37",
-      "bytes": 6989
+      "sha256": "bc8104aadae4383d61df32c39028962c359d2b241f171d9a784dff16f408a0db",
+      "bytes": 7047
     },
     "scripts/finish_walkthrough_revision.py": {
       "source": "scripts/finish_walkthrough_revision.py",
@@ -660,6 +730,11 @@
       "sha256": "90a996357a0f21b24798e8265cfe1c53f28c2e7b7dcecdcab24b2b5c4bf091ed",
       "bytes": 25361
     },
+    "scripts/preview_kitchen_interiors.py": {
+      "source": "scripts/preview_kitchen_interiors.py",
+      "sha256": "d916b75ba9f24e2fbbec62d47724a51b89d2c2125cc3733994f197379330a091",
+      "bytes": 5175
+    },
     "scripts/proof_drawing_rear_doors.py": {
       "source": "scripts/proof_drawing_rear_doors.py",
       "sha256": "983b38c3bc4cc71faf02c39d96acf2aec27d6d65209fae43b855864ae510caa3",
@@ -722,8 +797,8 @@
     },
     "scripts/proposal_editability.py": {
       "source": "scripts/proposal_editability.py",
-      "sha256": "efc0f2a7a36c8fe63a5fe859aac95736445a3cba452141bdeb593dcd2a015e8d",
-      "bytes": 9133
+      "sha256": "f373fe48a27c462341b34c2d200787ec0bd08f88efd961830e671c0a28641dfb",
+      "bytes": 9413
     },
     "scripts/proposal_envelope_details.py": {
       "source": "scripts/proposal_envelope_details.py",
@@ -779,6 +854,11 @@
       "source": "scripts/proposal_kitchen_connection.py",
       "sha256": "606f846aa9e0b9f41671504f70592bab1a0b1ea6625cf1d51e44c1859f393af4",
       "bytes": 16321
+    },
+    "scripts/proposal_kitchen_interiors.py": {
+      "source": "scripts/proposal_kitchen_interiors.py",
+      "sha256": "eb90cd236b4d89537bae6125660896bb3e5df83d92a27102b1791971411a3f50",
+      "bytes": 38191
     },
     "scripts/proposal_lifestyle.py": {
       "source": "scripts/proposal_lifestyle.py",
@@ -1260,6 +1340,11 @@
       "sha256": "a0e6d01fbc658815eff0ab6bb29578c82a9c78ba6bb089f705e63ad6fb526268",
       "bytes": 2672
     },
+    "scripts/restore_interior_assets.py": {
+      "source": "scripts/restore_interior_assets.py",
+      "sha256": "59cc9a11762a117a08f4a1e64e69b6840d9f9048d3f71b1e759b90e04a76ad7c",
+      "bytes": 1184
+    },
     "scripts/restore_shower_partition.py": {
       "source": "scripts/restore_shower_partition.py",
       "sha256": "a584e8f7b7ecc432ad3397f1cf9b28491f07af2487d60d5748a0e5628cfc912b",
@@ -1282,13 +1367,18 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "548bd442f8256afe6e6556a7ad121d68efbd4893a1e7bc396f62dde429ca4972",
-      "bytes": 10142
+      "sha256": "3acb05f31d44f03b76bcc55192bae8536a2a6c36a9854e526682aed54a2e79bb",
+      "bytes": 10477
+    },
+    "scripts/stage_interior_studio.py": {
+      "source": "scripts/stage_interior_studio.py",
+      "sha256": "83a474c3304fa9c5d16df3e13cfe3563a5c2f11c7248c5c938ce14c3b4716801",
+      "bytes": 3963
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "077d2fa219dca6dc8d72bb615835ede907eef2170b69ddf4bccbebeb44f32556",
-      "bytes": 5937
+      "sha256": "fc4b82a1dfe61c7e02af7454ac382e7c7640de26accda1a3189ce03b74bd5c15",
+      "bytes": 6472
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1397,8 +1487,8 @@
     },
     "walkthrough/build.mjs": {
       "source": "walkthrough/build.mjs",
-      "sha256": "97d111ac2cc56d20ab51730de561d2e638689627dde6f03da0b6d060abdf3c0c",
-      "bytes": 3608
+      "sha256": "a824cc41ba5fa151bb092aa3d0b6e9a51889f110c717643c2393dc392532aff0",
+      "bytes": 4482
     },
     "walkthrough/index.html": {
       "source": "walkthrough/index.html",
@@ -1414,6 +1504,76 @@
       "source": "walkthrough/package.json",
       "sha256": "5ec923c44808ea3f563440d4472d4300724dce1b6f74727dc222ccf7db6673b8",
       "bytes": 615
+    },
+    "walkthrough/public/interiors/kitchen/index.html": {
+      "source": "walkthrough/public/interiors/kitchen/index.html",
+      "sha256": "2ec2fde6e6f0ba60138d5caa482f8b01e4440a85fcd26017f1b79e74e29b9b81",
+      "bytes": 5312
+    },
+    "walkthrough/public/interiors/kitchen/model.html": {
+      "source": "walkthrough/public/interiors/kitchen/model.html",
+      "sha256": "6a561e0c1892ab6e9b420f8801feb2ba97993291e6e442cb734c4074a3e9bc20",
+      "bytes": 3583
+    },
+    "walkthrough/public/interiors/kitchen/models/compact-kitchen.json": {
+      "source": "walkthrough/public/interiors/kitchen/models/compact-kitchen.json",
+      "sha256": "cf5f2fea2c85ed663a7c7bced6d6a9569859375a0fe694b89e50e0ee17444c89",
+      "bytes": 53122
+    },
+    "walkthrough/public/interiors/kitchen/models/planning-kitchen.json": {
+      "source": "walkthrough/public/interiors/kitchen/models/planning-kitchen.json",
+      "sha256": "07c429a32de81cde050551efefdde9dc98709818025aaf64a146df948887e55d",
+      "bytes": 47944
+    },
+    "walkthrough/public/interiors/kitchen/options.json": {
+      "source": "walkthrough/public/interiors/kitchen/options.json",
+      "sha256": "4827b8f804e259a74e758fb83ef98259a940da4b924e736267ec79f4edd0ca81",
+      "bytes": 6205
+    },
+    "walkthrough/public/interiors/kitchen/prompts.json": {
+      "source": "walkthrough/public/interiors/kitchen/prompts.json",
+      "sha256": "1d9ca2ba962169d10ade54f31b08e7ea1d4af2521ed12378894a1aa5ae3ad8db",
+      "bytes": 54075
+    },
+    "walkthrough/public/interiors/kitchen/references/planning-dining.png.json": {
+      "source": "walkthrough/public/interiors/kitchen/references/planning-dining.png.json",
+      "sha256": "829cff63b09abd82ff701b1de9075525812a75f3dbc531c52386d7c59cdac912",
+      "bytes": 221
+    },
+    "walkthrough/public/interiors/kitchen/references/planning-kitchen-reverse.png.json": {
+      "source": "walkthrough/public/interiors/kitchen/references/planning-kitchen-reverse.png.json",
+      "sha256": "e298a068bf3fc9c1e1e81f17800b75827952ac4da5feb9935c4076bb1becbb69",
+      "bytes": 240
+    },
+    "walkthrough/public/interiors/kitchen/references/planning-kitchen.png.json": {
+      "source": "walkthrough/public/interiors/kitchen/references/planning-kitchen.png.json",
+      "sha256": "367259ce309f32c6f899ad48e4a78d354d443f4c1407d4d32f975f8df3395252",
+      "bytes": 228
+    },
+    "walkthrough/public/interiors/kitchen/references/proposed-dining.png.json": {
+      "source": "walkthrough/public/interiors/kitchen/references/proposed-dining.png.json",
+      "sha256": "29495e3629313e445318578b0201b19e2a614eab93d3a7f53a881a035c167821",
+      "bytes": 221
+    },
+    "walkthrough/public/interiors/kitchen/references/proposed-kitchen-reverse.png.json": {
+      "source": "walkthrough/public/interiors/kitchen/references/proposed-kitchen-reverse.png.json",
+      "sha256": "506ffcbb6f029345b46bdff07a9e457f1861519401be91435fb36cebaddc777a",
+      "bytes": 240
+    },
+    "walkthrough/public/interiors/kitchen/references/proposed-kitchen.png.json": {
+      "source": "walkthrough/public/interiors/kitchen/references/proposed-kitchen.png.json",
+      "sha256": "982a4c163a07423699cf5aabfd38c22c4362b9e84c5a0f63837bf4058d44a0ec",
+      "bytes": 228
+    },
+    "walkthrough/public/interiors/kitchen/studio.css": {
+      "source": "walkthrough/public/interiors/kitchen/studio.css",
+      "sha256": "53ef1e5b1b574299afb9171d6d3320e6cc85015107375cc8a999b5f46ff7f0f1",
+      "bytes": 8996
+    },
+    "walkthrough/public/interiors/kitchen/studio.js": {
+      "source": "walkthrough/public/interiors/kitchen/studio.js",
+      "sha256": "b0d65c78e20c404224e3244bc2872b5087af2a9b46b429e860bfd4501ce44e08",
+      "bytes": 14667
     },
     "walkthrough/public/navigation.json": {
       "source": "walkthrough/public/navigation.json",
@@ -1500,6 +1660,11 @@
       "sha256": "dc50c1b1697f57dc8ac1105a7ed4852b2622ecfe8d6ee7ec79323ee1bd2c206d",
       "bytes": 4650
     },
+    "walkthrough/src/interior-preview.js": {
+      "source": "walkthrough/src/interior-preview.js",
+      "sha256": "8da5c276962b5a6c430797ce057f78f5f48c93eeb495457accbec6a167fa5ae7",
+      "bytes": 5743
+    },
     "walkthrough/src/life.js": {
       "source": "walkthrough/src/life.js",
       "sha256": "7239ff19b8cf01781d370ddd3e9ce67158fb99cf2fb9b4dc89ca58e68914d592",
@@ -1512,13 +1677,13 @@
     },
     "walkthrough/src/main.js": {
       "source": "walkthrough/src/main.js",
-      "sha256": "cd18049376ff09b8a47c580c865ea1cef678846b2673a0eac25df4bd1c3ff7b4",
-      "bytes": 36173
+      "sha256": "ce1de85416c67226fb333f28b3c0f685222a6b2413f1320131c7683453be80b0",
+      "bytes": 36290
     },
     "walkthrough/src/materials.js": {
       "source": "walkthrough/src/materials.js",
-      "sha256": "3b4d8e09d9064363e72a5f84dc9fd602281629595236a1313bd70f87c4096524",
-      "bytes": 9178
+      "sha256": "934d4f95cc1e5fb86df2c86e91dc012f1c311718dc8be31b6bb98cda3e99568d",
+      "bytes": 9445
     },
     "walkthrough/src/navigation.js": {
       "source": "walkthrough/src/navigation.js",
@@ -1547,8 +1712,8 @@
     },
     "walkthrough/src/spatial-batches.js": {
       "source": "walkthrough/src/spatial-batches.js",
-      "sha256": "b0717d13985ef7186b668a897153a7c82e7e208fd2f8284e6f844f8cdc17862d",
-      "bytes": 12202
+      "sha256": "bda99a750ff895d13c470880b9ba7ee8880fa6442aef42987b4d5f3a3deebebf",
+      "bytes": 12657
     },
     "walkthrough/src/spawn-visibility.js": {
       "source": "walkthrough/src/spawn-visibility.js",
@@ -1755,6 +1920,26 @@
       "sha256": "4f5f47144a09d9f2d52265dca9e19e08b57beb1f2b7406ecbd9ab399aba3f3c6",
       "bytes": 10318
     },
+    "walkthrough/tests/interior-model-browser.mjs": {
+      "source": "walkthrough/tests/interior-model-browser.mjs",
+      "sha256": "600f9b22414be067e92d6a7eacdd41e346d720902802f48afca5ba7f3715ac4f",
+      "bytes": 2727
+    },
+    "walkthrough/tests/interior-studio-browser.mjs": {
+      "source": "walkthrough/tests/interior-studio-browser.mjs",
+      "sha256": "92ec94b358860f74f20148d5f0c45c2676bc50f9672ffbb3acd2b95c80074aba",
+      "bytes": 4206
+    },
+    "walkthrough/tests/kitchen-circulation.mjs": {
+      "source": "walkthrough/tests/kitchen-circulation.mjs",
+      "sha256": "a760d10095b240a9af877e91beb476d603d89936339c7734744de710e9a7a31c",
+      "bytes": 2333
+    },
+    "walkthrough/tests/kitchen-fitted-browser.mjs": {
+      "source": "walkthrough/tests/kitchen-fitted-browser.mjs",
+      "sha256": "05fdb0967c8ee9550e27144e97b222252906eb58c60909802419da973843e564",
+      "bytes": 3014
+    },
     "walkthrough/tests/kitchen-opening-browser.mjs": {
       "source": "walkthrough/tests/kitchen-opening-browser.mjs",
       "sha256": "0882667a784c111bdc6c839d9204e01f7a5c70b0d1bd3dc98b04890df4256d94",
@@ -1807,8 +1992,8 @@
     },
     "walkthrough/tests/proposal-circulation.mjs": {
       "source": "walkthrough/tests/proposal-circulation.mjs",
-      "sha256": "e5374f86d753568ed826179641b0d576d2f436abd4eb9d603064dc1152632da0",
-      "bytes": 9504
+      "sha256": "78d2e012bd523a9818719c68726e09ac012ccc2df198a7c5f67cb90dd5904d63",
+      "bytes": 9932
     },
     "walkthrough/tests/proposal-pursuit.test.mjs": {
       "source": "walkthrough/tests/proposal-pursuit.test.mjs",
@@ -1907,8 +2092,8 @@
     },
     "walkthrough/tests/spatial-batches.test.mjs": {
       "source": "walkthrough/tests/spatial-batches.test.mjs",
-      "sha256": "685030881b92f425c978702c791206d34dddb63a6ba73c547ed65d22254d7c1a",
-      "bytes": 8141
+      "sha256": "9a19e0a212ca2876198d58198e2ea0c1052f4508381ebda6e2c726a833d244f1",
+      "bytes": 8949
     },
     "walkthrough/tests/spawn-visibility.test.mjs": {
       "source": "walkthrough/tests/spawn-visibility.test.mjs",
@@ -1932,8 +2117,8 @@
     },
     "walkthrough/tests/surface-materials.test.mjs": {
       "source": "walkthrough/tests/surface-materials.test.mjs",
-      "sha256": "89e1cdbc990869872756231ff63979cfe93d02cf2004dc205c9bd9d97982eeef",
-      "bytes": 1142
+      "sha256": "e5d535259c4c92fe4614aa9aaf2b579b933139517b992e70e2be583b6f9c1c6c",
+      "bytes": 1983
     },
     "walkthrough/tests/tour-performance.mjs": {
       "source": "walkthrough/tests/tour-performance.mjs",
@@ -1970,6 +2155,11 @@
       "sha256": "32f379e0c6ae76e4eb522fe9136077d58e0d83c65c509baadc850538c355e227",
       "bytes": 4257
     },
+    "walkthrough/tools/capture-kitchen.mjs": {
+      "source": "walkthrough/tools/capture-kitchen.mjs",
+      "sha256": "0408a7fbd16b2e5b22ff696c1c0486a18d3f75d31bf0c1be7c3838a29a223b4d",
+      "bytes": 1917
+    },
     "walkthrough/tools/derived-cache.mjs": {
       "source": "walkthrough/tools/derived-cache.mjs",
       "sha256": "45250a7ca4c66d5fe21bc938ce5b9584e7397f387eaaca18b59cc09aacc3120f",
@@ -1998,16 +2188,16 @@
   },
   "required_local_baselines": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
-      "sha256": "96913bb714657167d2db0b0ad1f0cce6fd0ead9b65c89ced469c8d22f0916dce",
-      "bytes": 190080854
+      "sha256": "555a6eb5703db5bca2761c0b0e884f78b494211c646090241521e07ef07f13eb",
+      "bytes": 209430257
     },
     "output-proposed-compact/geometry.json": {
-      "sha256": "9e08c76259b8ba40bb1482355db70a65c91e98d33d6f940beecaee9cd6ef4923",
-      "bytes": 66349261
+      "sha256": "aa0b6ba9c30b67a78fbd67fbfa7c5368a104de7fbd2ff9cd408380ca7129e9a7",
+      "bytes": 69983876
     },
     "output-proposed-compact/navigation.json": {
-      "sha256": "90f950c1049fd59fc96a94b60aaf7568e4a2711feb8a0027bce3f558d702fbc1",
-      "bytes": 1782335
+      "sha256": "7af196fc85150f1be4e20597a90da91440bf65f264e2666ce59df82cb2558570",
+      "bytes": 1794448
     },
     "output-walkthrough/Ashley Heights.blend": {
       "sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",

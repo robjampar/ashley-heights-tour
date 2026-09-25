@@ -94,7 +94,7 @@ test('reject unsupported data explicitly and make source disposal opt-in',()=>{
  buildSpatialBatches([{geometry,material}]);assert.equal(disposed,0);
  buildSpatialBatches([{geometry,material},{geometry,material}],{disposeSources:true});assert.equal(disposed,1);
  assert.throws(()=>createSpatialBatcher({floorHeight:0}),/positive/);
- const extra=triangle();extra.setAttribute('uv',new Float32BufferAttribute([0,0,1,0,0,1],2));
+ const extra=triangle();extra.setAttribute('color',new Float32BufferAttribute([1,0,0,0,1,0,0,0,1],3));
  assert.throws(()=>buildSpatialBatches([{geometry:extra,material}]),/unsupported/);
  const batcher=createSpatialBatcher();batcher.finish();assert.throws(()=>batcher.add(geometry,material),/finished/);
 });
@@ -109,4 +109,14 @@ test('only heavy materials split spatially; low triangle materials retain one gl
  const global=meshes.find(m=>m.material===light);assert(global.userData.spatialBatch.global);
  assert.deepEqual(global.userData.spatialBatch.sourceNames,['small negative','small positive']);
  assert.deepEqual(meshes.flatMap(m=>triangles(m.geometry)).sort(),entries.flatMap(e=>triangles(e.geometry)).sort());
+});
+
+test('authored UVs survive mixed indexed geometry batching without moving seams',()=>{
+ const material=new MeshBasicMaterial();
+ const a=new BoxGeometry(1,1,1),b=new BoxGeometry(1,1,1).toNonIndexed();b.translate(2,0,0);
+ const expected=[a,b].flatMap(g=>Array.from({length:g.index?.count??g.getAttribute('position').count},(_,i)=>{const j=g.index?g.index.getX(i):i;return[g.getAttribute('uv').getX(j),g.getAttribute('uv').getY(j)];}));
+ const result=buildSpatialBatches([{geometry:a,material,name:'a'},{geometry:b,material,name:'b'}]);
+ assert.equal(result.meshes.length,1);const g=result.meshes[0].geometry;
+ const actual=Array.from({length:g.index.count},(_,i)=>{const j=g.index.getX(i);return[g.getAttribute('uv').getX(j),g.getAttribute('uv').getY(j)];});
+ assert.deepEqual(actual,expected);
 });

@@ -3,10 +3,18 @@
 // Surface relief is measured in metres and fades once smaller than a pixel.
 // Lawns use a photographic grass texture handed in by the browser build (setLawnTexture);
 // without one (tests, fallbacks) they keep the procedural mottling.
+import {NoColorSpace} from 'three';
 let lawnTexture=null;
 export function setLawnTexture(texture){lawnTexture=texture;}
 export function surfaceDetail(material,name){
  name=name.replaceAll('_',' ');
+ if(name.startsWith('Proposal | Quiet oak')){
+  if(material.map){
+   material.bumpMap=material.map.clone();material.bumpMap.colorSpace=NoColorSpace;
+   material.bumpScale=name.includes('limestone')?.000048:.00008;
+  }
+  return;
+ }
  if(/Mirror/i.test(name))return;
  const stippled=/Entrance stippled glass/i.test(name);
  const water=/water/i.test(name);

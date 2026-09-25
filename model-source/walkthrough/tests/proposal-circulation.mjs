@@ -27,6 +27,11 @@ const routes=[
  {name:'Original shed to expanded pavilion and deck',start:[15.1,21.5,0],points:[[12.3,21.5,0],[10.8,21.5,0],[10.8,17,0]]},
  {name:'Dining bay to new rear living',start:[5.85,9.55,0],points:[[5.25,10.55,0],[3.8,10.55,0],[2.8,11.0,0]]},
 ];
+// Quiet oak's eight-place table has a real chair envelope. Follow the clear
+// east aisle instead of ending the old six-chair route inside a new chair.
+if(data.variant==='compact'&&data.interiorDesign?.scheme==='01 Quiet oak'){
+ routes.find(r=>r.name==='Dining bay to new rear living').points=[[5.25,10.55,0],[3.8,10.55,0],[3.8,11.0,0]];
+}
 if(['P5','P6','P7','P8'].includes(data.designRevision)){
  const gs=data.proposalBasement?.stair?.type==='straight'?[[6,-8.2,0],[gw,-8.4,0]]:[[6,-8.9,0],[gw,-8.9,0]];   // the straight basement flight's void lies along the garage wall
 routes[0]={name:'New entrance via original stairs to first floor and joined loft',start:gs[0],points:[gs[1],[gw,-5.2,0],[gw,-3.2,0],[7,-2,0],[7,4.0,0],[8.37,3.9,0],[8.37,.55,2.53],[7.45,.55,2.8],[7.1,3.9,2.8],[lw,sIn,2.8],[sx,sIn,3.0],[sx,stop,5.55],[sx,sOut,5.55],...(dormerLoft?loftIn:[[px,sOut,5.55],[bx,-6.0,5.55],[bx,lpy+.7,5.55],[sdx,lpy+.7,5.55],[sdx,lpy-.7,5.55],[dbx,dby,5.55]])]};
@@ -41,7 +46,7 @@ routes[0]={name:'New entrance via original stairs to first floor and joined loft
  routes.push({name:'Internal garden from new wing',start:[11.95,-5.2,0],points:[[11.95,-4.1,0],[11.95,-2.5,0],[11.95,-1.3,0]]});
 }
 if(['P6','P7','P8'].includes(data.designRevision)){
- if(data.walls.find(w=>w.name==='Kitchen rear')?.openings[0]?.[2]===0)routes.push({name:'Direct kitchen to garden dining',start:[3.3,6.8,0],points:[[3.3,8.8,0],[3.3,10.5,0],[3.6,12.7,0]]});
+ if(data.walls.find(w=>w.name==='Kitchen rear')?.openings[0]?.[2]===0)routes.push({name:'Direct kitchen to garden dining',start:[3.3,6.8,0],points:data.interiorDesign?.scheme==='01 Quiet oak'?[[3.3,8.8,0],[3.95,10.5,0],[3.95,12.7,0]]:[[3.3,8.8,0],[3.3,10.5,0],[3.6,12.7,0]]});
  const lix=vr.laundryInsideX??ex(12.35);
  if(data.planRooms.some(r=>r.name==='Laundry and linen'))routes.push({name:'Shared gallery to laundry',start:[gx,ldy,2.8],points:[[ex(11.1),ldy,2.8],[lix,ldy,2.8],[lix,ldy+.55,2.8]]});
  // Through the partition door, down the west strip past the treadmills' front ends, then between the dumbbell rack and the bench into the south bay.

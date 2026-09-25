@@ -1,0 +1,31 @@
+[
+  {
+    "variant": "compact",
+    "body_width_m": 0.5,
+    "grid_step_m": 0.075,
+    "reachable_targets": [
+      "south entry",
+      "west side of furniture",
+      "side living opening",
+      "rear work aisle",
+      "garden threshold",
+      "garden dining east aisle",
+      "garden dining west aisle"
+    ],
+    "kitchen_viewpoint_clear": true,
+    "reachable_samples": 9956
+  },
+  {
+    "variant": "planning",
+    "body_width_m": 0.5,
+    "grid_step_m": 0.075,
+    "reachable_targets": [
+      "south entry",
+      "west side of furniture",
+      "side living opening",
+      "rear work aisle"
+    ],
+    "kitchen_viewpoint_clear": true,
+    "reachable_samples": 4289
+  }
+]

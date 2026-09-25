@@ -1,0 +1,75 @@
+{
+  "base": "http://127.0.0.1:8776/",
+  "checks": [
+    {
+      "design": "proposed",
+      "scheme": {
+        "room": "kitchen-and-informal-dining",
+        "scheme": "01 Quiet oak",
+        "revision": 1,
+        "reference": "walkthrough/public/interiors/kitchen/images/01-proposed.png"
+      },
+      "modelUpdatedAt": "2026-09-25T14:11:40.384784+00:00",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "normalMap": false,
+          "bumpScale": 0.00008,
+          "uvMeshes": 1
+        },
+        {
+          "name": "Proposal | Quiet oak cream upholstery",
+          "normalMap": false,
+          "bumpScale": 0.00008,
+          "uvMeshes": 1
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "normalMap": false,
+          "bumpScale": 0.000048,
+          "uvMeshes": 1
+        }
+      ],
+      "ovenControls": 46,
+      "sink": {
+        "name": "Proposal | Quiet oak | Sink drain",
+        "z": 0.7440000176429749
+      }
+    },
+    {
+      "design": "planning",
+      "scheme": {
+        "room": "kitchen-and-informal-dining",
+        "scheme": "01 Quiet oak",
+        "revision": 1,
+        "reference": "walkthrough/public/interiors/kitchen/images/01-planning.png"
+      },
+      "modelUpdatedAt": "2026-09-25T14:10:23.998694+00:00",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak cream upholstery",
+          "normalMap": false,
+          "bumpScale": 0.00008,
+          "uvMeshes": 1
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "normalMap": false,
+          "bumpScale": 0.00008,
+          "uvMeshes": 1
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "normalMap": false,
+          "bumpScale": 0.000048,
+          "uvMeshes": 1
+        }
+      ],
+      "ovenControls": 46,
+      "sink": {
+        "name": "Proposal | Quiet oak | Sink drain",
+        "z": 0.7440000176429749
+      }
+    }
+  ]
+}

@@ -31,7 +31,10 @@ export function createSpatialBatcher({cellSize=6,floorHeight=2.8,
   if(!geometry?.isBufferGeometry||!material?.isMaterial)throw new TypeError('A BufferGeometry and single Material are required');
   const position=geometry.getAttribute('position'),normal=geometry.getAttribute('normal');
   if(!position||!normal||position.itemSize!==3||normal.itemSize!==3||normal.count!==position.count)throw new Error('Spatial batching requires matching position/normal vec3 attributes');
-  if(Object.keys(geometry.attributes).some(name=>name!=='position'&&name!=='normal')||Object.values(geometry.morphAttributes).some(list=>list.length))throw new Error('Strip unsupported attributes before static spatial batching');
+  if(Object.keys(geometry.attributes).some(name=>!['position','normal','uv'].includes(name))||Object.values(geometry.morphAttributes).some(list=>list.length))throw new Error('Strip unsupported attributes before static spatial batching');
+  const uv=geometry.getAttribute('uv');
+  if(uv&&(uv.itemSize!==2||uv.count!==position.count||uv.isInterleavedBufferAttribute))throw new Error('Spatial batching requires matching non-interleaved UV vec2 attributes');
+  if(uv&&indexVertices)throw new Error('Exact position/normal indexing does not support textured geometry');
   if(position.isInterleavedBufferAttribute||normal.isInterleavedBufferAttribute)throw new Error('Deinterleave geometry before static spatial batching');
   const count=geometry.index?.count??position.count;
   if(count%3!==0||geometry.drawRange.start!==0||(Number.isFinite(geometry.drawRange.count)&&geometry.drawRange.count<count))throw new Error('Spatial batching expects the complete triangle draw range');
@@ -55,7 +58,7 @@ export function createSpatialBatcher({cellSize=6,floorHeight=2.8,
   }else cell=[Math.floor(center.x/horizontal),Math.floor(center.y/floorHeight),Math.floor(center.z/horizontal)];
   if(!materials.has(material))materials.set(material,materials.size);
   // Different typed attributes must not be coerced merely to share a batch.
-  const schema=[position,normal].map(a=>`${a.array.constructor.name}:${a.normalized}:${a.gpuType}`).join('/');
+  const schema=[position,normal,...(uv?[uv]:[])].map(a=>`${a.itemSize}:${a.array.constructor.name}:${a.normalized}:${a.gpuType}`).join('/');
   const key=`${materials.get(material)}|${schema}|${span?'span':'cell'}|${cell.join(',')}`;
   let bucket=buckets.get(key);
   if(!bucket){bucket={key,schema,cell,span,transparent,material,chunks:[]};buckets.set(key,bucket);}
@@ -95,6 +98,7 @@ export function createSpatialBatcher({cellSize=6,floorHeight=2.8,
     const indexed=new BufferGeometry(),count=geometry.getAttribute('position').count;
     indexed.setAttribute('position',geometry.getAttribute('position'));
     indexed.setAttribute('normal',geometry.getAttribute('normal'));
+    if(geometry.hasAttribute('uv'))indexed.setAttribute('uv',geometry.getAttribute('uv'));
     const indices=count<=65535?new Uint16Array(count):new Uint32Array(count);
     for(let i=0;i<count;i++)indices[i]=i;
     indexed.setIndex(new BufferAttribute(indices,1));return indexed;

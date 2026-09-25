@@ -54,7 +54,8 @@ build_timer.lap('export.prepare_native')
 with build_timer.phase('export.save_blend'):
  bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(_native_name+'.blend')))
 with build_timer.phase('export.glb'):
- bpy.ops.export_scene.gltf(filepath=str(OUT/(_native_name+'.glb')),export_format='GLB',use_active_scene=True,use_visible=True,export_cameras=False,export_lights=False,export_apply=True)
+ from proposal_kitchen_interiors import export_quiet_oak_gltf
+ export_quiet_oak_gltf(filepath=str(OUT/(_native_name+'.glb')),export_format='GLB',use_active_scene=True,use_visible=True,export_cameras=False,export_lights=False,export_apply=True)
 import shutil
 shutil.copyfile(OUT/(_native_name+'.glb'),ROOT/('walkthrough/public/proposal%s.glb'%VARIANT_SUFFIX))
 # Preservation is checked against the baseline captured before any proposal work.

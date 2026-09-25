@@ -12,6 +12,7 @@ await mkdir('dist',{recursive:true});
 const meshoptNotice='meshoptimizer decoder\nCopyright (C) 2016-2026 Arseny Kapoulkine\n\n'+await readFile('node_modules/meshoptimizer/LICENSE.md','utf8');
 await build({entryPoints:['src/main.js'],outfile:'dist/app.js',bundle:true,minify:true,format:'esm',target:['safari17','chrome120'],sourcemap:true,loader:{'.jpg':'dataurl','.png':'dataurl'},banner:{js:'/*!\n'+meshoptNotice+'\n*/'}});
 await cp('public','dist',{recursive:true,filter:source=>!modelNames.has(path.basename(source))});
+await build({entryPoints:['src/interior-preview.js'],outfile:'dist/interiors/kitchen/room-model.js',bundle:true,minify:true,format:'esm',target:['safari17','chrome120'],loader:{'.jpg':'dataurl','.png':'dataurl'}});
 // The "Cars" setting plays drive paths planned here against each design's
 // navigation data, so the browser never runs the planner.
 const {planDrivePaths,drivePlanningInput}=await import('./tools/plan-drive.mjs');
@@ -32,6 +33,15 @@ for(const {model:name} of assets){
  console.log(`${name}: ${(metadata.sourceBytes/1e6).toFixed(2)} MB → ${(metadata.packedBytes/1e6).toFixed(2)} MB; ${hit?'verified cache reused':'decoded buffers verified byte-exact'}`);
 }
 await writeFile('dist/compression.json',JSON.stringify(compression,null,2)+'\n');
+// Room-only iteration keeps the full house untouched and uses the same
+// byte-exact geometry packing as the tour, including authored UV seams.
+for(const variant of ['compact','planning']){
+ const name=`interiors/kitchen/models/${variant}-kitchen.glb`;
+ const original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
+ const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);
+ await atomicWrite('dist/'+name,packed);
+ console.log(`${variant} isolated room: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
+}
 await cp('index.html','dist/index.html');
 performanceReport.seconds=(performance.now()-started)/1000;
 await writeFile('dist/build-performance.json',JSON.stringify(performanceReport,null,2)+'\n');

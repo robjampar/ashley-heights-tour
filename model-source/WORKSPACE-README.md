@@ -112,3 +112,13 @@ A full review refresh after the driving-checker change, including regenerated ro
 ### Gate-aligned frontage alternative
 
 **G1 · Gate-aligned frontage** is a separate option based on Proposed, available at `?design=g1`. Its entrance and double-garage frontage follow the main-gate angle, narrowing the southern end while retaining the entrance link's position and angle. See [the option notes](proposal/redesigns/GATE-ALIGNED.md) for its room changes and validation scope. Run `Regenerate Gate-aligned Option.command` to rebuild and check it independently of the six-option study.
+
+### Selected kitchen interior: 01 Quiet oak
+
+The owner selected the first generated kitchen concept for **Proposed and Proposed (planning application)**. The fitted native room includes oak cabinetry, limestone worktops and flooring, upholstered chairs and tables, sink and tap, appliance controls and displays, pendant fittings, tableware, linen and foliage. The existing reconstruction, six alternatives and G1 remain separate. The formal dining bay and adjoining lounge are later room sessions.
+
+Open `interiors/kitchen/model.html` in the tour for the isolated room and detail cameras, or `interiors/kitchen/` for the twenty concept images (ten schemes in both designs) with circle/freehand annotations. Feedback saves in that browser; export the marked images or review file to share it. Concepts were created with built-in `image_gen`; prompts and original camera references are recorded alongside them. Native renders are labelled separately and show the actual measured model geometry.
+
+Edit `proposal/interiors/kitchen/quiet-oak.json` and `scripts/proposal_kitchen_interiors.py`. Run `Blender --background --python-exit-code 1 --python scripts/preview_kitchen_interiors.py -- planning --render` for a room-only experiment from a completed house. It writes only isolated review assets and evidence; it does not replace the completed native house. Use `compact` for Proposed. After a verified full build, add `--native-current` to export the completed fitted model without applying the room module again.
+
+Publish native changes through `.venv/bin/python scripts/regenerate_design_outputs.py --variant all --viewer-only`. Check `.venv/bin/python scripts/audit_kitchen_interiors.py`, `node walkthrough/tests/kitchen-circulation.mjs` and the interior browser checks. Native Blender bump nodes remain editable; glTF export omits their unsupported normal-map connection and the viewer applies the same small height relief in metres. This avoids interpreting a colour image as a tangent normal map.

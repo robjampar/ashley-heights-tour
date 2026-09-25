@@ -242,9 +242,11 @@ async function load(){
   {const vname=ob.userData.name||ob.name,vmat=(Array.isArray(ob.material)?ob.material[0]:ob.material).name,vk=!door&&vegetationClaims(vname,vmat);if(vk){vegetation.collect(vk,ob,vmat);stats.vegetationSources=(stats.vegetationSources||0)+1;return;}}
   const geom=ob.geometry.clone();geom.applyMatrix4(ob.matrixWorld);
   if(!geom.attributes.normal)geom.computeVertexNormals();
-  // Only position and normal are needed for the original model's plain GLB materials.
-  for(const attr of Object.keys(geom.attributes))if(!['position','normal'].includes(attr))geom.deleteAttribute(attr);
   const sourceMaterial=Array.isArray(ob.material)?ob.material[0]:ob.material;
+  // Keep authored UVs for the fitted interiors; original untextured pieces
+  // still carry only position/normal into the static batches.
+  const keep=sourceMaterial.map?['position','normal','uv']:['position','normal'];
+  for(const attr of Object.keys(geom.attributes))if(!keep.includes(attr))geom.deleteAttribute(attr);
   const material=displayMaterial(sourceMaterial);
   if(door){doors.add(door,geom,material);return;}
   const car=/^Proposal \| Compact car (\w+)/.exec(ob.userData.name||ob.name);
