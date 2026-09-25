@@ -10,7 +10,8 @@ from shapely.ops import unary_union
 
 ROOT=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser();parser.add_argument('options',nargs='+');args=parser.parse_args()
-plt.rcParams.update({'font.family':'DejaVu Sans','font.size':8,'svg.fonttype':'path'})
+# Stable SVG IDs and omitted build timestamps keep unchanged drawings byte-identical.
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':8,'svg.fonttype':'path','svg.hashsalt':'ashley-heights-design-study-v1'})
 COL={'ink':'#203e3a','retained':'#e4e7e2','new':'#c6ded0','changed':'#ecd5bc','wall':'#2d4741','furniture':'#b7a58c','paper':'#fffdf7','garden':'#e3ebd4','glass':'#6d9fab'}
 
 def drawshape(ax, geom, **kwargs):
@@ -129,7 +130,7 @@ for option in args.options:
         fig.text(.06,.077,'\n'.join(textwrap.wrap('Room areas follow the model polygons, with nested room overlaps removed for this schedule. They are approximate, not surveyed GIA. Furniture blocks and door swings show concept fit; structure, fire strategy and services require detailed design.',108)),fontsize=8,color='#637870',linespacing=1.4)
         fig.text(.06,.035,'Ashley Heights · 25 September 2026 · '+spec['code']+' · '+title,fontsize=8,color='#637870')
         slug=title.lower().replace(' ','-')
-        fig.savefig(dest/(slug+'.svg'));fig.savefig(dest/(slug+'.png'),dpi=150)
+        fig.savefig(dest/(slug+'.svg'),metadata={'Date':None});fig.savefig(dest/(slug+'.png'),dpi=150)
         # Web detail omits the sheet's duplicate title/schedule and frames this
         # floor closely. The labelled scale bar remains explicit.
         for artist in list(ax.texts)+list(ax.lines):
@@ -138,7 +139,7 @@ for option in args.options:
         ax.plot([ex0,ex0+5],[ey0-1.25,ey0-1.25],color=COL['ink'],lw=2)
         ax.text(ex0+2.5,ey0-1.6,'5 m',ha='center',fontsize=8,color=COL['ink'])
         fig.canvas.draw()
-        fig.savefig(dest/(slug+'-detail.svg'),bbox_inches=ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted()))
+        fig.savefig(dest/(slug+'-detail.svg'),metadata={'Date':None},bbox_inches=ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted()))
         plt.close(fig)
         manifest['plans'].append({'title':title,'file':slug+'.svg','detail':slug+'-detail.svg','rooms':schedule})
     (dest/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

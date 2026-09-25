@@ -8,7 +8,8 @@ from matplotlib.patches import Polygon as Patch, Circle
 from shapely.geometry import Polygon,box,MultiPoint
 from shapely.ops import unary_union
 ROOT=Path(__file__).resolve().parents[1]
-plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'svg.fonttype':'path'})
+# Stable SVG IDs and omitted build timestamps keep unchanged drawings byte-identical.
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'svg.fonttype':'path','svg.hashsalt':'ashley-heights-design-study-v1'})
 INK='#203e3a';PAPER='#fffdf7'
 original=json.loads((ROOT/'walkthrough/public/navigation.json').read_text())
 old=unary_union([Polygon(r['polygon_m']).buffer(.115,join_style=2)for r in original['planRooms']if r['floor']==0])
@@ -89,8 +90,8 @@ for id in sys.argv[1:]:
  fig.text(.065,.086,'Boundary and levels follow the reconstructed project. Tree positions, root protection, drainage and road tie-in require survey.',fontsize=8,color='#637870')
  fig.text(.065,.062,'All plans use the same site extent. Footprints are approximate room envelopes, not surveyed gross floor areas.',fontsize=8,color='#637870')
  fig.text(.065,.035,'Ashley Heights · 25 September 2026 · '+spec['code']+' · Site',fontsize=8,color='#637870')
- fig.savefig(dest/'site.svg');fig.savefig(dest/'site.png',dpi=150)
- fig.savefig(dest/'site-detail.svg',bbox_inches=ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted()))
+ fig.savefig(dest/'site.svg',metadata={'Date':None});fig.savefig(dest/'site.png',dpi=150)
+ fig.savefig(dest/'site-detail.svg',metadata={'Date':None},bbox_inches=ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted()))
  plt.close(fig)
  m=json.loads((dest/'manifest.json').read_text());m['plans']=[p for p in m['plans']if p['title']!='Site']+[{'title':'Site','file':'site.svg','detail':'site-detail.svg','rooms':[]}];m['footprint_basis']='Approximate room envelopes including 115 mm perimeter allowance';m['original_ground_footprint_m2']=round(old.area,1);m['added_ground_footprint_m2']=round(house.difference(old).area,1);(dest/'manifest.json').write_text(json.dumps(m,indent=2)+'\n')
  print(id,'site written',flush=True)

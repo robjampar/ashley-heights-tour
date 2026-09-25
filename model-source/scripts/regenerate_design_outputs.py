@@ -58,12 +58,32 @@ def build_model(variant, command, env):
         print('MODEL_' + ('DONE' if success else 'FAILED'), variant, flush=True)
 
 
+def build_drawings(variant, python, force):
+    """Each drawing process owns its variant folder, staging area and pack lock."""
+    out = ROOT / ('output-proposed-' + variant)
+    out.mkdir(parents=True, exist_ok=True)
+    timing = Timings(out / 'runner-drawings-timings.json', variant=variant)
+    log_path = out / 'regenerate-drawings.log'
+    command = [python, '-m', 'scripts.planning_drawings.build_pack', '--variant', variant]
+    success = False
+    print(f'DRAWINGS_START {variant} — log: {log_path}', flush=True)
+    try:
+        with log_path.open('w') as log, timing.phase(variant + '.drawing_pack'):
+            run(command + (['--force'] if force else []), log=log)
+            run(command + ['--check'], log=log)
+        success = True
+        return {'variant': variant, 'seconds': timing.events[-1]['seconds'], 'log': str(log_path)}
+    finally:
+        timing.write(success=success)
+        print('DRAWINGS_' + ('DONE' if success else 'FAILED'), variant, flush=True)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--variant', choices=('compact', 'planning', 'all'), default='all',
                         help='Build only this design (default: both)')
     parser.add_argument('--jobs', type=int, choices=(1, 2), default=2,
-                        help='Maximum concurrent native model builds (default: 2; use 1 to reduce memory load)')
+                        help='Maximum concurrent model or drawing-pack builds (default: 2; use 1 to reduce memory load)')
     parser.add_argument('--appearance-only', action='store_true', help='Refresh exterior finishes from a verified completed model; refuse architecture changes')
     parser.add_argument('--force', action='store_true', help='Rebuild even when checksums match')
     mode = parser.add_mutually_exclusive_group()
@@ -140,10 +160,19 @@ def main(argv=None):
                                         'PROPOSAL_VIEWS': 'aerial-southwest,rear-house',
                                         'PROPOSAL_SAMPLES': '12', 'PROPOSAL_WIDTH': '1000'})
             if not args.models_only and not args.viewer_only:
-                for variant in variants:
-                    command = [python, '-m', 'scripts.planning_drawings.build_pack', '--variant', variant]
-                    timed(variant + '.drawings', command + (['--force'] if args.force else []))
-                    timed(variant + '.check_drawings', command + ['--check'])
+                with timings.phase('drawing_packs'):
+                    drawing_results, errors = [], []
+                    with ThreadPoolExecutor(max_workers=args.jobs) as pool:
+                        futures = {pool.submit(build_drawings, v, python, args.force): v for v in variants}
+                        for future in as_completed(futures):
+                            try:
+                                drawing_results.append(future.result())
+                            except Exception as error:
+                                errors.append(error)
+                                print('DRAWINGS_ERROR', futures[future], str(error), flush=True)
+                    timings.metadata['drawing_results'] = drawing_results
+                    if errors:
+                        raise errors[0]
             if not args.models_only:
                 timed('viewer', ['npm', 'run', 'build'], cwd=ROOT / 'walkthrough')
             succeeded = True

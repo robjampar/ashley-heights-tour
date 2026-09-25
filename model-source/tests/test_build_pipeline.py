@@ -220,6 +220,63 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(completed, {'compact', 'planning'})
         self.assertFalse(json.loads((self.root / 'regenerate-all-timings.json').read_text())['success'])
 
+    def test_drawing_packs_overlap_and_viewer_waits_for_both_checks(self):
+        barrier = threading.Barrier(2)
+        built, checked = set(), set()
+        def execute(command, env=None, cwd=None, log=None):
+            if command[0] == 'npm':
+                self.assertEqual(checked, {'compact', 'planning'})
+                return
+            variant = command[command.index('--variant') + 1]
+            if '--check' in command:
+                self.assertIn(variant, built)
+                checked.add(variant)
+            else:
+                barrier.wait(timeout=2)
+                built.add(variant)
+        with patch.object(runner, 'current_build', return_value=(True, 'current')), patch.object(runner, 'run', side_effect=execute):
+            runner.main([])
+        report = json.loads((self.root / 'regenerate-all-timings.json').read_text())
+        self.assertTrue(report['success'])
+        self.assertEqual({r['variant'] for r in report['drawing_results']}, checked)
+
+    def test_failed_drawing_check_waits_for_peer_and_blocks_viewer(self):
+        barrier = threading.Barrier(2)
+        checked = set()
+        def execute(command, env=None, cwd=None, log=None):
+            self.assertNotEqual(command[0], 'npm')
+            if '--check' not in command:
+                barrier.wait(timeout=2)
+                return
+            variant = command[command.index('--variant') + 1]
+            checked.add(variant)
+            if variant == 'planning':
+                raise subprocess.CalledProcessError(1, 'drawing check')
+        with patch.object(runner, 'current_build', return_value=(True, 'current')), patch.object(runner, 'run', side_effect=execute):
+            with self.assertRaises(subprocess.CalledProcessError):
+                runner.main([])
+        self.assertEqual(checked, {'compact', 'planning'})
+        self.assertFalse(json.loads((self.root / 'regenerate-all-timings.json').read_text())['success'])
+        failed = json.loads((self.root / 'output-proposed-planning/runner-drawings-timings.json').read_text())
+        self.assertFalse(failed['success'])
+
+    def test_jobs_one_keeps_drawing_packs_sequential(self):
+        with patch.object(runner, 'current_build', return_value=(True, 'current')), patch.object(runner, 'run') as run:
+            runner.main(['--jobs', '1'])
+        calls = [call.args[0] for call in run.call_args_list]
+        self.assertEqual([(c[c.index('--variant') + 1], '--check' in c) for c in calls[:-1]],
+                         [('compact', False), ('compact', True), ('planning', False), ('planning', True)])
+        self.assertEqual(calls[-1], ['npm', 'run', 'build'])
+
+    def test_force_applies_to_drawing_build_but_not_check(self):
+        with patch.object(runner, 'current_build'), patch.object(runner, 'run') as run:
+            runner.main(['--variant', 'compact', '--force'])
+        packs = [call.args[0] for call in run.call_args_list if 'scripts.planning_drawings.build_pack' in call.args[0]]
+        self.assertEqual(len(packs), 2)
+        self.assertIn('--force', packs[0])
+        self.assertIn('--check', packs[1])
+        self.assertNotIn('--force', packs[1])
+
     def test_overlapping_runner_is_rejected_without_replacing_outputs(self):
         with runner.selected_build_lock(('planning',)):
             with self.assertRaisesRegex(RuntimeError, 'already being regenerated'):

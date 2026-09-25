@@ -2,8 +2,8 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "dfa59056ad8abc8f56d3900c1c405e2744cdf91631d6565dce40e999730fca20",
-      "bytes": 13183
+      "sha256": "e65fed93c5cc5f76eae89104c9008c453d18455cd3f0e0b58cdf207074118ba2",
+      "bytes": 13714
     },
     "Regenerate Six Options.command": {
       "source": "Regenerate Six Options.command",
@@ -67,8 +67,8 @@
     },
     "proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md": {
       "source": "proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md",
-      "sha256": "af8ea42fe241e4fbb297e08de625953c2dab4d30091b99ed7839a33a1500d5e0",
-      "bytes": 7232
+      "sha256": "66b9062da0ed9914648f78793a7ed8e707dea0fd3202a64180c761f56dc51692",
+      "bytes": 7994
     },
     "proposal/redesigns/e1.json": {
       "source": "proposal/redesigns/e1.json",
@@ -107,13 +107,13 @@
     },
     "proposal/redesigns/research/RESEARCH.md": {
       "source": "proposal/redesigns/research/RESEARCH.md",
-      "sha256": "f1ecf1934ea067a9b5de210acd9d5e0521bbf25294bad1eb03e73a4a3705dd0c",
-      "bytes": 11183
+      "sha256": "91935ed94db7f4bfb90ffe9bc6ca84c930dce4272662a311d3b4d6d321498980",
+      "bytes": 12345
     },
     "proposal/redesigns/review-notes.json": {
       "source": "proposal/redesigns/review-notes.json",
-      "sha256": "c02bb12c735250bb18a63869cf9bd9ba6763f886ba1aa3745700981a0c3297f8",
-      "bytes": 9445
+      "sha256": "85d9953942cda8b4885060d58cf249abbe221b2a0a83c4d1531af4b3a372dd3a",
+      "bytes": 9584
     },
     "proposal/reference/roof-tile-colour-reference.png": {
       "source": "proposal/reference/roof-tile-colour-reference.png",
@@ -327,13 +327,13 @@
     },
     "scripts/draw_redesign_plans.py": {
       "source": "scripts/draw_redesign_plans.py",
-      "sha256": "8a535f6896913a827f11694a4d81a6c950b27c27e33d5bdb38ee859d51e2bd87",
-      "bytes": 10456
+      "sha256": "df213ffe3cfddb7b37e950187645f9ba4d248e7a4d534bef7d4034364690d566",
+      "bytes": 10636
     },
     "scripts/draw_redesign_sites.py": {
       "source": "scripts/draw_redesign_sites.py",
-      "sha256": "289a84606c550bcf12c2bd25325e13977e18275812ce9c50fcf7584008839c26",
-      "bytes": 8023
+      "sha256": "b28b1d1f3e72b2357e4325d2134905edc95a573486048aae81a87fa04e5653fa",
+      "bytes": 8203
     },
     "scripts/draw_scaled_plan.py": {
       "source": "scripts/draw_scaled_plan.py",
@@ -527,8 +527,8 @@
     },
     "scripts/planning_drawings/model.py": {
       "source": "scripts/planning_drawings/model.py",
-      "sha256": "bb8f448527f1c4db040d0264c6f53c29c697e8dabe78f3211698019bb750f48b",
-      "bytes": 10129
+      "sha256": "7d199d3fb12768489dc2269f78e4d9b5aa576c41a919ed57c0180e33d81aa3a1",
+      "bytes": 11195
     },
     "scripts/planning_drawings/openings.py": {
       "source": "scripts/planning_drawings/openings.py",
@@ -1102,8 +1102,8 @@
     },
     "scripts/regenerate_design_outputs.py": {
       "source": "scripts/regenerate_design_outputs.py",
-      "sha256": "bf1b6642c54a437bac46e560dfcad10060aa3970cede2a2e92ec067910fe22a8",
-      "bytes": 8316
+      "sha256": "0fb43e3db265078f0468ac7b011558029685ca8483c6b146b4ae95a21ab85229",
+      "bytes": 9797
     },
     "scripts/regenerate_redesign_review.py": {
       "source": "scripts/regenerate_redesign_review.py",
@@ -1282,13 +1282,18 @@
     },
     "tests/test_build_pipeline.py": {
       "source": "tests/test_build_pipeline.py",
-      "sha256": "d2f765d5a1d473aef6859d6b6b4fc49781f3eb9766bfcffb2bff715ac51030ed",
-      "bytes": 12870
+      "sha256": "eef4c48131dfc828ee107bb2e2dce4c552d40fad4a7fa333a4a1eb51349ea9ff",
+      "bytes": 16022
     },
     "tests/test_entrance_gable.py": {
       "source": "tests/test_entrance_gable.py",
       "sha256": "5d48025d2f823fe912caf32f0bdb5f88f25d6f7724dd9aecea8ccad1a8100495",
       "bytes": 2118
+    },
+    "tests/test_planning_model_cache.py": {
+      "source": "tests/test_planning_model_cache.py",
+      "sha256": "4ac401028d2acc50fcc11faa258d50fc2da65031c79d905a01de1927900a73e3",
+      "bytes": 3630
     },
     "tests/test_planning_pack.py": {
       "source": "tests/test_planning_pack.py",
@@ -1342,8 +1347,8 @@
     },
     "walkthrough/public/redesigns/options.json": {
       "source": "walkthrough/public/redesigns/options.json",
-      "sha256": "86423b64bbb4dc1d8bce863acb4d9301112b44e144d119381dbd39c627f6ab72",
-      "bytes": 68326
+      "sha256": "e75444cd178d5176a8baefc2dbf9527e36d321e928cc7ac6e5aa5b6c8ffbf94d",
+      "bytes": 68449
     },
     "walkthrough/public/redesigns/review.css": {
       "source": "walkthrough/public/redesigns/review.css",

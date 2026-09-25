@@ -6,7 +6,7 @@ Proposal:       output-proposed[-compact]/{geometry,navigation}.json
 
 Coordinates are model metres: x east(ish), y towards the rear garden, z up.
 """
-import json, re, hashlib, pickle, datetime
+import json, re, hashlib, pickle, datetime, os, tempfile
 from pathlib import Path
 import numpy as np
 from shapely.geometry import Polygon, MultiPoint, box
@@ -79,14 +79,33 @@ class SourceModel:
         self.nav = json.loads(self.navigation_path.read_text())
         CACHE.mkdir(parents=True, exist_ok=True)
         cache = CACHE / f'{tag}-{self.geometry_sha[:16]}-{_sha(__file__)[:8]}.pkl'
-        if cache.exists():
-            self.g, self.objects = pickle.loads(cache.read_bytes())
+        cached = None
+        try:
+            candidate = pickle.loads(cache.read_bytes())
+            if (isinstance(candidate, tuple) and len(candidate) == 2
+                    and isinstance(candidate[0], dict) and isinstance(candidate[1], list)
+                    and all(isinstance(obj, Obj) for obj in candidate[1])):
+                cached = candidate
+        except (OSError, EOFError, pickle.UnpicklingError, ValueError, AttributeError):
+            pass  # A missing or interrupted legacy cache is rebuilt from source.
+        if cached is not None:
+            self.g, self.objects = cached
         else:
             g = json.loads(self.geometry_path.read_text())
             self.objects = [Obj(o, self._category(o)) for o in g['objects'] if o.get('vertices')]
             g = {k: v for k, v in g.items() if k != 'objects'}
             self.g = g
-            cache.write_bytes(pickle.dumps((g, self.objects), protocol=pickle.HIGHEST_PROTOCOL))
+            # Both variant processes may populate the same existing-house cache.
+            # Readers see a complete file, even while another process is writing.
+            temporary = None
+            try:
+                with tempfile.NamedTemporaryFile(dir=CACHE, prefix=cache.name + '.', suffix='.tmp', delete=False) as stream:
+                    temporary = Path(stream.name)
+                    pickle.dump((g, self.objects), stream, protocol=pickle.HIGHEST_PROTOCOL)
+                os.replace(temporary, cache)
+            finally:
+                if temporary is not None:
+                    temporary.unlink(missing_ok=True)
         self.by_name = {o.name: o for o in self.objects}
         self.site = self.g.get('site') or self.nav.get('site')
         self.site_polygon = Polygon(self.site['outline_m'])
