@@ -85,6 +85,8 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
         (destination / 'arrangements.html').write_text(arrangements_html)
         result['arrangements_html_sha256'] = sha(arrangements_html.encode())
         arrangements = json.loads((source / 'arrangements/options.json').read_text())
-        assert len(arrangements['options']) == 3
-        result['arrangements'] = {'path': 'arrangements.html', 'options': 3, 'session': arrangements['session'], 'method': 'Measured furniture relationship studies'}
+        withdrawn = arrangements.get('reviewStatus') == 'withdrawn'
+        result['arrangements'] = {'path': 'arrangements.html', 'options': 0 if withdrawn else len(arrangements['options']),
+                                  'working_studies': len(arrangements['options']), 'status': arrangements.get('reviewStatus', 'review'),
+                                  'session': arrangements['session'], 'method': 'Measured furniture studies; separate design review required'}
     return result

@@ -2,6 +2,8 @@
 
 Current design arrangement: [START-HERE.md](START-HERE.md). The notes below are chronological; later instructions supersede earlier ones.
 
+26 September 2026, latest interior-layout correction: bed headboards must sit against proper walls. Pivoting/rotating TVs are rejected. Research the broader rules of good room planning before offering another selection. The expanded [design principles](interiors/DESIGN-PRINCIPLES.md) and [room review template](interiors/ROOM-REVIEW-TEMPLATE.md) distinguish owner requirements, design judgment and geometric/building verification. The furniture review board is withdrawn; corrected working sketches do not constitute selected or completed suite layouts. Fixed screens and existing suitable bed walls are the starting point.
+
 26 September 2026, room-planning research: apply the lessons throughout the house, not only in the principal suite. Follow [the shared design principles](interiors/DESIGN-PRINCIPLES.md) for proportions, circulation with occupied furniture and open doors/drawers, daylight, privacy, storage and adjoining-room routines. Continue one room at a time. The owner rejected the five principal-suite plans, particularly the awkward bed/sofa/TV arrangement; reconsider those furniture relationships before fitting the supporting rooms. A single shared TV is an option, not a fixed requirement. No replacement suite layout has been selected.
 
 25 September 2026, loft-bedroom clarification: removing the banister means restoring the solid white plastered wall along the west eaves in both current Proposed designs. Keep its existing alignment and fit its top to the roof underside; the loft stair and bedroom access remain unchanged. This supersedes the 24 September open-balustrade instruction below.

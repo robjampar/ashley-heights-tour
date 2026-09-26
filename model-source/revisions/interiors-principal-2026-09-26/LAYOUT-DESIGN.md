@@ -2,6 +2,12 @@
 
 ## Current direction: furniture relationships and whole-house principles
 
+Owner correction, 26 September: headboards must sit against a proper wall; the pivoting TV is rejected. The first furniture round failed to turn bedroom composition into an actual constraint. Replace it with two conventional arrangements using existing solid north/south headboard walls and separate fixed screens. Do not add an arbitrary wall behind the same floating bed merely to pass a check. Existing door/window positions, vault access and adjoining-room space remain constraints.
+
+Before this correction's UI edits: reuse the same annotated-plan comparison pattern documented below. Sketch: `[A Existing north headboard wall] [B Existing south headboard wall] → measured plan with highlighted backing wall and fixed TV locations → notes/circles → resolve supporting rooms`. Two candidates are sufficient; no third filler option. Explain the compact bedsides in A and new bathroom/dressing return carrying B's bed TV. Use a new feedback session so old circles and selections cannot be misapplied to changed plans. This is a correction of unselected studies, not a full-house fit.
+
+Latest steering: research more rules before asking for another selection. The corrected north-wall sketch passes geometry but fails the generous-suite composition review (small bedsides, bed beside entry); reject it. The south-wall sketch remains unselected and unresolved. Publish a clear withdrawal notice on the existing review route, with links to the expanded rules and materials reference, instead of another premature selection board. Preserve local browser feedback and Git history. Journey: old review link → understand that it is withdrawn and why → read the new rules → return to house/materials. No shortlist controls while there are no recommended choices.
+
 The owner identified the bed/sofa/TV arrangement as particularly awkward, and asked that the research guide every room. `proposal/interiors/DESIGN-PRINCIPLES.md` records the shared approach. The previous studies below remain history, not selected directions.
 
 Before UI changes: use the existing same-scale drawing, circle/notes and shortlist pattern already researched for this studio. This round is a furniture arrangement comparison, not another completed set of suite floorplans. Keep the measured envelope, entrances and windows. Shade the provisional area for adjoining functions and state that bathroom, wardrobe and study fitting is unresolved. Show each furniture group's facing direction, screen ownership and the trade-off, rather than claiming a clear ray makes viewing comfortable.
@@ -9,7 +15,7 @@ Before UI changes: use the existing same-scale drawing, circle/notes and shortli
 Sketch and journey:
 ```
 Make the bed and sofa work together.
-[A Parallel furniture / one screen] [B Pivot / alternating use] [C Separate views / two screens]
+[Previous round: A Parallel / B Pivot / C Separate views — superseded]
 [Measured arrangement and clearance notes] [Benefit / compromise / circle / notes]
 Whole-house design principles · Previous five plans
 ```

@@ -1,189 +1,55 @@
 {
-  "status": "Furniture relationship studies; supporting rooms unresolved",
+  "status": "Withdrawn from selection; A rejected on design quality, B unresolved working candidate",
   "options": [
     {
       "id": "A",
-      "title": "Parallel furniture \u00b7 one fixed TV",
-      "subtitle": "One shared screen; the bed and sofa stay square to the room.",
+      "title": "North headboard wall \u00b7 east lounge",
+      "design_review": "REJECT: compact bedsides and weak entry composition for this brief",
+      "subtitle": "Bed against the existing north wall; a separate sitting area to the east.",
       "bed": [
-        7.3,
-        -14.17,
-        90
-      ],
-      "sofa": [
-        7.8,
-        -11.0,
+        7.0,
+        -9.85,
         0
       ],
-      "screens": [
-        {
-          "id": "shared",
-          "center": [
-            11.0,
-            -12.5
-          ],
-          "normal": 180,
-          "width": 1.882,
-          "height": 1.059,
-          "z": 1.32
-        }
-      ],
-      "media": [
-        [
-          10.9,
-          -13.65,
-          11.15,
-          -11.35
-        ]
-      ],
-      "desk": [
-        12.9,
-        -15.9,
-        13.6,
-        -14.1
-      ],
-      "chair": [
-        12.2,
-        -15.0
-      ],
-      "targets": {
-        "bed north side": [
-          7.3,
-          -12.7
-        ],
-        "bed south side": [
-          7.3,
-          -15.6
-        ],
-        "bed foot": [
-          8.9,
-          -14.17
-        ],
-        "sofa approach": [
-          8.95,
-          -11.0
-        ],
-        "study approach": [
-          11.4,
-          -15.0
-        ],
-        "retained window alcove": [
-          4.75,
-          -12.94
-        ]
-      },
-      "benefit": "Keeps one fixed TV and avoids diagonal furniture.",
-      "compromise": "Still requires head turning. Compare this with the direct-view options.",
-      "note": "Freestanding headboard and media joinery; adjoining rooms still to resolve."
-    },
-    {
-      "id": "B",
-      "title": "Pivoting TV \u00b7 two direct views",
-      "subtitle": "The bed and sofa face each other across a rotating screen.",
-      "bed": [
-        7.3,
-        -12.85,
-        90
-      ],
-      "sofa": [
-        12.4,
-        -12.85,
-        180
-      ],
-      "screens": [
-        {
-          "id": "bed",
-          "center": [
-            10.2,
-            -12.85
-          ],
-          "normal": 180,
-          "width": 1.66,
-          "height": 0.934,
-          "z": 1.32
-        },
-        {
-          "id": "sofa",
-          "center": [
-            10.2,
-            -12.85
-          ],
-          "normal": 0,
-          "width": 1.66,
-          "height": 0.934,
-          "z": 1.32
-        }
-      ],
-      "media": [],
-      "pivot": [
-        10.2,
-        -12.85,
-        0.88
-      ],
-      "desk": [
-        5.3,
-        -16.0,
-        6.0,
-        -14.35
-      ],
-      "chair": [
-        6.65,
-        -15.15
-      ],
-      "targets": {
-        "bed north side": [
-          7.3,
-          -11.4
-        ],
-        "bed south side": [
-          7.3,
-          -14.3
-        ],
-        "bed foot": [
-          8.85,
-          -12.85
-        ],
-        "sofa approach": [
-          11.5,
-          -12.85
-        ],
-        "study approach": [
-          7.45,
-          -15.15
-        ],
-        "retained window alcove": [
-          4.75,
-          -12.94
-        ]
-      },
-      "benefit": "Straight-on viewing from either area with one physical TV.",
-      "compromise": "Turn the screen between bed and sofa; both cannot watch at once.",
-      "note": "Rotation space is reserved. Mounting, cables and mechanism need design."
-    },
-    {
-      "id": "C",
-      "title": "Separate lounge \u00b7 two direct views",
-      "subtitle": "A south-facing bed and an east-facing sofa each have their own TV.",
-      "bed": [
-        7.1,
-        -11.7,
-        0
+      "bed_size": [
+        1.9,
+        2.18
       ],
       "sofa": [
         10.8,
         -12.95,
         0
       ],
+      "headwall": [
+        [
+          5.16,
+          -8.76
+        ],
+        [
+          8.35,
+          -8.76
+        ]
+      ],
+      "headwall_label": [
+        6.7,
+        -8.25
+      ],
+      "bedside_size": [
+        0.36,
+        0.4
+      ],
+      "bedside_offset": 1.15,
+      "partitions": [],
       "screens": [
         {
           "id": "bed",
           "center": [
-            7.1,
-            -13.9
+            7.0,
+            -13.45
           ],
           "normal": 90,
-          "width": 1.44,
-          "height": 0.81,
+          "width": 1.66,
+          "height": 0.934,
           "z": 1.3
         },
         {
@@ -201,9 +67,9 @@
       "media": [
         [
           5.3,
-          -14.2,
+          -13.85,
           8.8,
-          -13.95
+          -13.5
         ],
         [
           13.52,
@@ -222,18 +88,34 @@
         6.65,
         -15.1
       ],
+      "screen_labels": [
+        [
+          [
+            7.0,
+            -13.15
+          ],
+          "Fixed bed TV"
+        ],
+        [
+          [
+            12.8,
+            -14.3
+          ],
+          "Fixed sofa TV"
+        ]
+      ],
       "targets": {
         "bed west side": [
-          5.65,
-          -11.7
+          5.6,
+          -10.25
         ],
         "bed east side": [
-          8.55,
-          -11.7
+          8.5,
+          -10.35
         ],
         "bed foot": [
-          7.1,
-          -13.3
+          7.04,
+          -11.55
         ],
         "sofa approach": [
           11.9,
@@ -248,9 +130,149 @@
           -12.94
         ]
       },
-      "benefit": "Direct views and independent use; furniture has a clear orientation.",
-      "compromise": "Two screens and a low media divider; check daylight in the next stage.",
-      "note": "The desk sits behind the bed media divider, beside the south-window zone."
+      "benefit": "Two fixed TVs; the bed is backed by the existing north wall.",
+      "compromise": "Compact 360 mm bedsides beside the entrance; west bed access is tighter.",
+      "note": "1.90 m bed frame assumed; fixed TV cabinet separates the south-window desk."
+    },
+    {
+      "id": "B",
+      "title": "South headboard wall \u00b7 west lounge",
+      "design_review": "UNRESOLVED: full-suite routines, daylight and occupied eye-level views required",
+      "subtitle": "Bed against the solid south wall; sitting and study areas to the west.",
+      "bed": [
+        11.1,
+        -14.986,
+        180
+      ],
+      "bed_size": [
+        2,
+        2.18
+      ],
+      "sofa": [
+        6.98,
+        -11.15,
+        90
+      ],
+      "headwall": [
+        [
+          8.29,
+          -16.076
+        ],
+        [
+          13.75,
+          -16.076
+        ]
+      ],
+      "headwall_label": [
+        11.1,
+        -16.62
+      ],
+      "bedside_size": [
+        0.5,
+        0.45
+      ],
+      "bedside_offset": 1.3,
+      "partitions": [
+        [
+          10.4,
+          -10.32,
+          13.75,
+          -10.2
+        ]
+      ],
+      "screens": [
+        {
+          "id": "bed",
+          "center": [
+            11.1,
+            -10.72
+          ],
+          "normal": 270,
+          "width": 1.66,
+          "height": 0.934,
+          "z": 1.3
+        },
+        {
+          "id": "sofa",
+          "center": [
+            6.98,
+            -9.2
+          ],
+          "normal": 270,
+          "width": 1.44,
+          "height": 0.81,
+          "z": 1.25
+        }
+      ],
+      "media": [
+        [
+          10.4,
+          -10.67,
+          12.8,
+          -10.32
+        ],
+        [
+          5.3,
+          -9.16,
+          8.15,
+          -8.76
+        ]
+      ],
+      "desk": [
+        6.2,
+        -15.976,
+        8.0,
+        -15.276
+      ],
+      "chair": [
+        7.1,
+        -14.63
+      ],
+      "screen_labels": [
+        [
+          [
+            11.5,
+            -11.15
+          ],
+          "Fixed bed TV"
+        ],
+        [
+          [
+            6.98,
+            -9.58
+          ],
+          "Fixed sofa TV"
+        ]
+      ],
+      "targets": {
+        "bed west side": [
+          9.65,
+          -14.7
+        ],
+        "bed east side": [
+          12.6,
+          -14.7
+        ],
+        "bed foot": [
+          11.1,
+          -13.25
+        ],
+        "sofa approach": [
+          6.98,
+          -9.95
+        ],
+        "study approach": [
+          7.1,
+          -13.8
+        ],
+        "retained window alcove": [
+          4.75,
+          -12.94
+        ]
+      },
+      "benefit": "A wider headboard setting with 500 mm bedsides and two fixed TVs.",
+      "compromise": "Bed TV needs a new return wall for the adjoining dressing / ensuite area.",
+      "note": "The 1.8 m desk uses the south-window bay; entrance stays clear."
     }
   ]
 }

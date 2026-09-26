@@ -2,26 +2,70 @@
 
 Owner direction, 26 September 2026: apply the research everywhere. The principal bedroom's bed/sofa/TV arrangement was particularly awkward, but the lessons are not confined to that room. Continue one room or area at a time, while checking its relationships with the rest of the house.
 
+Expanded after the owner's correction about headboards and rejection of a pivoting TV. The previous advice was too general to prevent poor arrangements. The rules below are now the working design brief; a clearance pass alone cannot qualify a layout for recommendation.
+
+## Firm requirements for this project
+
+- **Beds have their headboards against a proper wall.** Prefer existing suitable solid walls. A new full-height partition needs a purpose in the suite layout; do not add a token wall behind a floating bed. Show its extent, thickness, openings and effect on daylight.
+- **No pivoting or rotating TV arrangement.** Use fixed screens integrated into the room. A shared screen is optional. Two screens are acceptable to explore; they are not an owner-selected specification.
+- Keep the bedroom, sitting area, useful study, substantial but proportionate dressing space and generous ensuite. Preserve the approved warm oak, ivory and limestone direction when detailing.
+- Preserve the wider brief and aim for limited changes to the existing house. Furniture must not obstruct the entrance or retained openings. Internal partitions may change; their structural and service implications are not assumed away.
+
+These are owner requirements and project decisions, not claims that every good home follows the same formula.
+
+## More specific rules for judging a layout
+
+The following rules combine the sources linked beside them with our application to Ashley Heights. Words such as “prefer” indicate design judgment; they are not building regulations.
+
+### Composition and usable space
+
+1. **Choose the main furniture wall before subdividing the room.** Reserve the whole composition: bed, headboard, usable bedsides, lighting and curtain returns. A wall long enough for a mattress may still be too short for a good bedroom. Housing Design Matters explicitly discusses the bed wall, full furniture dimensions and entry view. Its US bed sizes and preferred dimensions are examples, not our specification. [Architect's bed-placement guide](https://www.housingdesignmatters.com/bed-wall/).
+2. **Design the first view through the door.** Draw what is actually visible as the door opens. For this suite, prefer an intentional view of the bed/headboard or a pleasant sitting area. Reject a pinched approach beside a pillow, exposed WC, screen back or distracting work clutter. This is our composition/privacy test, not an absolute rule that a bed must face the door.
+3. **Preserve useful wall lengths.** Count uninterrupted finished wall, after doors, glazing, curtain stacks and service access. Avoid spreading doorways across every wall and then discovering there is nowhere for the bed, storage or TV. Test whether moving an internal doorway can improve the arrangement before moving an external window.
+4. **Use real furniture sizes and complete groups.** Include arms, upholstery, headboard, handles, chair movement and bedside use. Do not shrink generic furniture repeatedly until a weak plan passes. A sofa needs places for a drink, lighting and access; a desk needs equipment and a working chair. Studio McGee emphasises scale, adequate seating and walkability rather than simply reducing furniture. [Living-room guidance](https://www.studio-mcgee.com/read/what-weve-learned-about-designing-living-rooms).
+5. **Give each activity a coherent zone.** Keep the sofa and its tables together; the dining table and occupied chairs together; the desk and storage together. Use sensible alignment with the room and its openings. Symmetry can help a bed wall, but do not centre furniture on the bounding rectangle of an irregular room at the expense of its usable space.
+6. **Make empty space intentional.** Clear floor should support movement, standing, views or a sense of openness. Identify awkward slots, inaccessible corners and excessively long routes. More area is not automatically more generous if it is scattered into fragments. HAPPI links space, flexibility and positive use of circulation; it concerns older people's housing, and we are borrowing those useful principles rather than its programme. [Housing LIN / HAPPI](https://www.housinglin.org.uk/Topics/browse/Design-building/HAPPI/).
+
+### Movement and everyday use
+
+7. **Draw the likely route, not just a possible route.** People should not need a detour around furniture to reach the next door. Put main movement around sitting, sleeping and working zones where possible. In the kitchen, NKBA explicitly advises keeping major traffic outside the work triangle. [NKBA, guideline 5](https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf).
+8. **Separate passing space from operating space.** A person seated at a desk, an open drawer or an open dishwasher uses space. Show that state and any simultaneous passing route. One empty strip cannot be counted twice when both activities must happen together. CEUD distinguishes access and activity requirements in its furnished examples. [CEUD internal-layout checklist](https://universaldesign.ie/uploads/publications/UDH-checklist-Accessible-PDF-May-2025.pdf).
+9. **Test two people and different times of day.** For a suite: one sleeps while the other dresses; one showers while the other uses the vanity; either gets to the WC at night. For a kitchen: two prepare food while someone accesses the fridge. Record which activities cannot happen comfortably together instead of disguising the conflict with a larger room label.
+10. **Make doors part of the design.** Check the approach, handle access, open leaf, adjacent switches, furniture and privacy when open. A pocket door needs a real pocket clear of conflicting services and joinery. Do not use it as a symbol that magically removes a spatial problem.
+11. **Provide a resting place for everyday objects.** Check where glasses, a phone, water, towels, bags, shoes, laundry and a laptop actually go. Judge a bedside by whether those objects fit and remain reachable. Count usable storage frontage and contents, not only the area of a room labelled “wardrobe”.
+
+### Light, outlook, privacy and comfort
+
+12. **Allocate windows to occupied positions deliberately.** Draw the outlook from the chair, sofa, desk and bed, not just an arrow through the glass. Preserve access to windows, curtains and opening handles. Tall joinery must earn the daylight it removes. HAPPI places daylight alongside storage and flexibility rather than treating these independently. [Housing LIN / HAPPI](https://www.housinglin.org.uk/Topics/browse/Design-building/HAPPI/).
+13. **Design daylight and screens together.** Check daytime reflections, bright backgrounds and evening lighting. Side light is a useful starting point for a desk; blinds and actual screen orientation still matter. HSE advises arranging desk/screen positions to avoid glare and reflections. Its guidance is for workstations, not a prescription for watching television in bed. [HSE, printed pp. 2–3](https://www.hse.gov.uk/pubns/indg36.pdf).
+14. **Design viewing from the person outward.** Establish the natural body direction, seated/reclined eye height, screen position and full visible screen. A clear line to its centre is insufficient. Test both bed occupants and all intended sofa seats, including people or furniture in front. Treat screen size/distance, head turn and screen off-axis angle separately. Samsung's 40° recommendation concerns screen field of view, not neck rotation. [Samsung viewing-distance guidance](https://www.samsung.com/ae/support/tv-audio-video/recommended-viewing-distance-for-your-tv/).
+15. **Protect privacy without creating unnecessary corridors.** Offset bathroom/WC views; consider a short return or carefully placed door. Keep a useful dry arrival and a practical route between bathing and dressing. Duravit discusses services, partitioned bathroom zones and avoiding a WC directly opposite the entrance. [Bathroom planning](https://www.duravit.com/en-en/planning-inspiration/magazine/ideas-design/bathroom-floor-plans/).
+16. **Distinguish visual separation from acoustic separation.** A rug, open shelving or slatted screen can identify a zone but does not make it a private room. For this house, examine cinema/gym/plant adjacency to bedrooms and the sound/light conflict between work, TV and sleep. Two screens in one open room do not establish simultaneous quiet use. Flag the needed enclosure and acoustic design as unresolved until designed.
+17. **Check the room vertically.** Plan a section through sloping ceilings, windows, headboards, screens, shower positions and tall storage. Standing access and sitting headroom differ. A floor polygon under the vault must not count as full-height usable space. Include curtain tracks, lighting, ventilation and service access before detailed furnishing.
+
+### Restraint and verification
+
+18. **Prefer a simple arrangement that works without adjustment.** In this project, normal TV use should not require rotating hardware, moving seats or closing a circulation route. Built-in cabinetry should support a sensible arrangement, not conceal its faults. This is our design response to the owner's preferences.
+19. **Earn every building change.** State what a moved partition or bathroom improves, what existing elements it preserves and what must be checked. Avoid relocating wet rooms solely because the empty plan looks cleaner. Duravit's planning process starts with dimensions, openings and connections. [Duravit planning workflow](https://www.duravit.com/en-gb/service/bathroom-planner/).
+20. **Review the ordinary room, not only the flattering view.** Before recommending a complete layout, show the plan, entrance view and actual occupied views with ordinary lens settings. Review doors, drawers and chairs in use, and day/evening conditions. A persuasive image is not proof of fit; a geometric pass is not proof of a good composition. Use the [room review template](ROOM-REVIEW-TEMPLATE.md) to record evidence and unresolved issues.
+
+## Reject, develop or verify
+
+**Reject or redesign** when an owner requirement fails, the entrance is obstructed, furniture has been shrunk to force fit, a normal routine requires a workaround, or the main furniture has a visibly weak setting. Extra points elsewhere cannot compensate for those failures.
+
+**Develop** when the organisation is credible but details such as cabinetry, lighting or soft furnishings are still being designed. Record the actual trade-offs; do not mark a whole room “approved”.
+
+**Verify** unresolved building facts such as roof/headroom, drainage, structure and ventilation before representing the layout as buildable. Record measured, observed, assumed and unresolved separately. Owner selection, design quality, geometric fit and construction feasibility are separate decisions.
+
+The new north-wall principal-bed sketch demonstrates the distinction: its plan checks pass, but compact bedsides and a weak entrance relationship make it a poor recommendation for this generous-suite brief. The south-wall sketch has a better-sized setting, but remains a working candidate pending full-suite and eye-level review. Neither is selected or fitted.
+
 ## Design from use, then space, then detail
 
 Every room starts with activities and people: what happens here, who uses it together, what needs privacy, and what must be stored. Establish the main furniture and operating space before settling partitions. Judge the entrance view and the views from the positions people actually occupy. Detailed fittings, finishes and photoreal images follow a successful spatial arrangement.
 
 The National Design Guide treats usability, comfort, privacy, accessibility and adaptability as parts of good design, together with daylight, ventilation, storage and noise. It supports evaluating these qualities together, rather than optimising floor area alone. [National Design Guide, paragraphs 124–126](https://www.gov.uk/government/publications/national-design-guide/national-design-guide-accessible-version).
 
-## Principles to carry into every room
-
-1. **Give the room a clear purpose and composition.** Establish its main activity and focal element. Test alternative orientations rather than keeping the first furniture arrangement fixed while moving everything else.
-2. **Draw operating space.** Include occupied chairs, open drawers, door leaves, appliance doors, exercise movements, curtains and access for cleaning. Empty-model connectivity is only an initial check.
-3. **Keep circulation away from activity where possible.** Avoid the route through a kitchen's working area, through a conversation group, across a cinema screen or between a bed and its TV. Identify which routes must remain usable while another person is working or sitting.
-4. **Use the best daylight and outlook deliberately.** Consider sitting, eating and working positions before allocating windows to cupboards or service spaces. Check glare, privacy, shading and useful headroom; more glazing is not automatically a better room.
-5. **Arrange neighbouring functions around routines.** Consider groceries to food storage, cooking to dining, showering to dressing, bedrooms to laundry, and swimming to changing. Record which relationships are desirable and which create noise, moisture or privacy conflicts.
-6. **Choose openness selectively.** Furniture, joinery and broad openings can define related activities. Enclosures remain useful where sound, light, smells, humidity or privacy require control. A glass or slatted screen is not acoustic separation.
-7. **Size storage by contents and access.** Measure usable hanging, shelving and drawer capacity. Place everyday storage where the items are used. Avoid oversized rooms with poor storage frontage and inaccessible corners.
-8. **Choose proportions before adding area.** A room should accommodate its intended arrangement with coherent usable space. Extra floor area in a narrow tail or unnecessary corridor may add little value.
-9. **Respect the existing building.** Record known fixed elements, potentially movable elements and unknowns separately. Test service routes, structural implications, roof/headroom and openings before developing a relocation in detail. Keep the owner's preference for realistic, limited changes visible in decisions.
-10. **Review at human scale.** Present the plan with operating clearances and at least the entrance view and main occupied view. A successful geometric audit does not establish beauty, comfort or construction feasibility.
-
-These principles are project design criteria. The international dimensional references below are useful benchmarks, not a substitute for the applicable English requirements or a project-specific accessible design.
+The specific rules above replace the earlier ten broad principles. International dimensions below are benchmarks, not a substitute for applicable English requirements or a complete accessible design.
 
 ## What the principles mean in each area
 

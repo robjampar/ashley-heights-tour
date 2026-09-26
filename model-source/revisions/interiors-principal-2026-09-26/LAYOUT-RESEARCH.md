@@ -8,6 +8,8 @@ Owner clarification: the bed, sofa and TV arrangement was the particular problem
 
 Keep a generous principal bedroom, comfortable TV viewing in bed, a proper sofa area, a walk-in/walk-through wardrobe, a useful but subordinate study, and a generous ensuite. The wardrobe should not dominate. The bed must not obstruct the entrance. Internal partitions may change. Investigate an ensuite at the former study end, but treat that as a hypothesis rather than a fixed instruction. One TV shared by bed and sofa was a possibility in the owner's brief, not an absolute requirement. Preserve the wider preference for realistic changes to the existing house.
 
+Latest owner correction: every bed headboard must be against a proper wall; pivoting/rotating TVs are rejected. These are firm project requirements. The expanded house-wide rules and review template are in `proposal/interiors/DESIGN-PRINCIPLES.md` and `proposal/interiors/ROOM-REVIEW-TEMPLATE.md`.
+
 The immediate job is spatial design. The warm oak, ivory and limestone palette can follow a successful layout; it cannot resolve circulation or proportion problems.
 
 ## What went wrong in the five studies
@@ -42,7 +44,7 @@ McGee & Co.'s bedroom guide begins with the actual positions of doors, windows a
 
 In the architects' description of MAS Apartment, large joinery panels manage privacy; the principal bed is centred to allow wardrobes along the wall behind it. This is a useful built example of storage and furniture defining space. It is not evidence that a floating bed will necessarily fit Ashley Heights. [AL7's project description and photographs, published by ArchDaily](https://www.archdaily.com/1084785/mas-apartment-al7-architecture-and-interiors).
 
-**Our application:** test a headboard/joinery screen or a broad opening as alternatives to another full enclosure. A screen must have a purpose, retain daylight and leave generous routes around its ends. A wardrobe behind a bed needs two usable spaces, not a narrow leftover slot.
+**Current application:** use the precedent only to study zoning. The owner has rejected a floating bed: choose a proper headboard wall. Any new partition must organise actual adjoining space and preserve daylight and access; a token screen behind the original floating position is not an adequate response.
 
 ### 4. Openness and privacy can coexist
 
@@ -70,7 +72,7 @@ Duravit's planning guidance addresses water/drain connections, structure, slopin
 
 Samsung's immersive viewing recommendation is a screen occupying roughly 40° of the viewer's field of view, with an example of a 75-inch TV at about 2.3 m. That 40° is **not** permission to watch the screen 40° off its face and is not a neck-turn target. [Samsung viewing-distance guidance](https://www.samsung.com/ae/support/tv-audio-video/recommended-viewing-distance-for-your-tv/).
 
-**Our application:** evaluate (1) screen size/distance, (2) the viewer's head direction and eye height, and (3) viewing angle relative to the screen. Test both bed occupants, the sofa ends, seated/reclined positions and possible obstructions. Compare a fixed shared screen, a swivelling screen and separate discreet screens only as design alternatives. Do not force the room into a diagonal furniture arrangement simply to retain one screen. A swivelling screen also needs a credible mounting, cable and swept-volume solution.
+**Our application:** evaluate (1) screen size/distance, (2) the viewer's head direction and eye height, and (3) viewing angle relative to the screen. Test both bed occupants, the sofa ends, seated/reclined positions and possible obstructions. Consider fixed screens only. Do not force the room into a diagonal furniture arrangement simply to retain one shared screen. The owner has rejected the swivelling-screen suggestion; it is removed from the current design direction.
 
 ### 8. Give the desk a usable setting
 
@@ -100,9 +102,17 @@ The ensuite area and wardrobe area should emerge from those requirements. There 
 
 1. **Record constraints first.** Separate known fixed features, movable partitions and unknowns. Show existing openings, door operation, full-height/low-headroom zones and possible service routes. Treat a wall's structural role as unknown unless established.
 2. **Map routines.** Entry to bed; either bedside to WC at night; shower to dressing; one person getting ready while the other sleeps; working while the other watches TV; laundry and cleaning. Identify crossings and light/noise spill.
-3. **Compare truly different organisations.** Test a conventional headboard wall with a connected lounge, a bedroom organised around a joinery screen, and a more distinct sitting bay. Each must change the actual experience of the main room, not just swap labels on adjoining rooms. Do not promise that all three fit before checking them.
+3. **Compare truly different organisations.** Test suitable existing headboard walls and, only if it improves the whole suite, a purposeful new full-height partition. Compare connected and more distinct sitting areas with fixed screens. Each must change the actual experience of the main room, not just swap labels on adjoining rooms. Do not promise that all three fit before checking them.
 4. **Draw furniture and activity spaces before final partitions.** Keep the desirable daylight and views for occupied spaces. Avoid isolated fragments of floor and excessive corridors.
 5. **Review in plan and at eye level.** Show the entrance view, view from bed, view from sofa and night bathroom route. Use plain geometry first so materials do not distract from spatial weaknesses.
 6. **Reject poor candidates before detailing.** Judge arrival, bedroom proportions, TV comfort, two-person operation, privacy, daylight, storage usefulness and extent of building changes. A collision test is a baseline, not a quality score.
 
 The next candidate should feel like one coherent bedroom suite with supporting spaces. Moving the ensuite to the old study may help, but only if the resulting bedroom, sitting area and circulation become better. Research is complete for this first pass; the next design step is a small set of genuinely different spatial sketches, not further polishing of the five rejected plans.
+
+## Expanded research after the furniture review
+
+The first research pass did not translate composition into an enforceable design review. All three furniture options were therefore withdrawn after the headboard and TV feedback. New checks must record the whole furniture group, entrance view, uninterrupted wall lengths, occupied scenarios, usable storage, daylight, privacy, sound and vertical fit.
+
+An additional architect-authored [bed-placement article](https://www.housingdesignmatters.com/bed-wall/) considers the bed/headboard focal wall, its relationship to entry, full furniture sizes and practical bedside surfaces. This is professional design advice, not a universal regulation. It supports rejecting the corrected north-wall sketch even though that sketch passes geometry: shrinking the bedsides and putting the head beside entry does not meet this brief well. The south-wall working sketch remains unresolved.
+
+Further sources now incorporated in the shared rules: [Studio McGee on furniture scale and walkability](https://www.studio-mcgee.com/read/what-weve-learned-about-designing-living-rooms), [Housing LIN HAPPI principles](https://www.housinglin.org.uk/Topics/browse/Design-building/HAPPI/), and [Duravit planning from dimensions, openings and connections](https://www.duravit.com/en-gb/service/bathroom-planner/). Existing CEUD, NKBA and HSE sources were rechecked for their actual scope. Rounded project comfort targets are kept distinct from those source recommendations.

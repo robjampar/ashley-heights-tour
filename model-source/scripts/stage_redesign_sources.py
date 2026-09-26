@@ -21,6 +21,7 @@ paths.update('revisions/interiors-principal-2026-09-26/'+name for name in ('REVI
 paths.add('revisions/interiors-principal-2026-09-26/LAYOUT-DESIGN.md')
 paths.add('revisions/interiors-principal-2026-09-26/LAYOUT-RESEARCH.md')
 paths.add('proposal/interiors/DESIGN-PRINCIPLES.md')
+paths.add('proposal/interiors/ROOM-REVIEW-TEMPLATE.md')
 paths.update('revisions/interiors-principal-2026-09-26/arrangements/'+name for name in ('audit.json','browser-checks.json'))
 paths.update('revisions/interiors-principal-2026-09-26/floorplans/'+name for name in ('audit.json','browser-checks.json'))
 paths.update('revisions/interiors-principal-2026-09-26/layout/'+name for name in ('measurements.json','circulation.json','browser-checks.json','compact/report.json','planning/report.json','compact/Principal suite — layout study.blend','planning/Principal suite — layout study.blend'))
