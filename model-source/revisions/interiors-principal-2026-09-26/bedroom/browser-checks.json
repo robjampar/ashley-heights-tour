@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "designs": [
+    {
+      "revision": 2,
+      "variant": "compact",
+      "authored": 382,
+      "features": [
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 1
+        },
+        {
+          "term": "bed mattress",
+          "count": 1
+        },
+        {
+          "term": "bedside floating cabinet",
+          "count": 2
+        },
+        {
+          "term": "sofa seat",
+          "count": 2
+        },
+        {
+          "term": "desk top",
+          "count": 1
+        },
+        {
+          "term": "bed TV screen",
+          "count": 1
+        },
+        {
+          "term": "sofa TV screen",
+          "count": 1
+        }
+      ],
+      "views": [
+        "entrance",
+        "overview",
+        "bed",
+        "sofa",
+        "desk",
+        "reverse",
+        "alcove"
+      ],
+      "cutawayObjects": 14,
+      "batches": {
+        "sourceMeshes": 500,
+        "sourceVertices": 506208,
+        "sourceTriangles": 168736,
+        "emptySourceMeshes": 0,
+        "batches": 34,
+        "opaqueBatches": 33,
+        "transparentBatches": 1,
+        "spanBatches": 0,
+        "globalBatches": 22,
+        "outputVertices": 263226,
+        "outputTriangles": 168736,
+        "indexedBatches": 34,
+        "oversizedSourceMeshes": 0,
+        "inputStoredVertices": 263226,
+        "inputIndexEntries": 506208,
+        "cellSize": 6,
+        "floorHeight": 2.8,
+        "transparentCellSize": 3,
+        "maxVertices": 200000,
+        "indexVertices": false,
+        "minMaterialTriangles": 20000
+      }
+    },
+    {
+      "revision": 2,
+      "variant": "planning",
+      "authored": 382,
+      "features": [
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 1
+        },
+        {
+          "term": "bed mattress",
+          "count": 1
+        },
+        {
+          "term": "bedside floating cabinet",
+          "count": 2
+        },
+        {
+          "term": "sofa seat",
+          "count": 2
+        },
+        {
+          "term": "desk top",
+          "count": 1
+        },
+        {
+          "term": "bed TV screen",
+          "count": 1
+        },
+        {
+          "term": "sofa TV screen",
+          "count": 1
+        }
+      ],
+      "views": [
+        "entrance",
+        "overview",
+        "bed",
+        "sofa",
+        "desk",
+        "reverse",
+        "alcove"
+      ],
+      "cutawayObjects": 14,
+      "batches": {
+        "sourceMeshes": 501,
+        "sourceVertices": 508884,
+        "sourceTriangles": 169628,
+        "emptySourceMeshes": 0,
+        "batches": 33,
+        "opaqueBatches": 32,
+        "transparentBatches": 1,
+        "spanBatches": 0,
+        "globalBatches": 21,
+        "outputVertices": 263946,
+        "outputTriangles": 169628,
+        "indexedBatches": 33,
+        "oversizedSourceMeshes": 0,
+        "inputStoredVertices": 263946,
+        "inputIndexEntries": 508884,
+        "cellSize": 6,
+        "floorHeight": 2.8,
+        "transparentCellSize": 3,
+        "maxVertices": 200000,
+        "indexVertices": false,
+        "minMaterialTriangles": 20000
+      }
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "ceilingPresentExceptCutaway": true,
+  "errors": [],
+  "failed": []
+}

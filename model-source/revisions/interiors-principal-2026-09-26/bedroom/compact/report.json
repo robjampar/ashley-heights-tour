@@ -1,0 +1,6031 @@
+{
+  "variant": "compact",
+  "configuration": {
+    "revision": 2,
+    "status": "Furnished bedroom development; adjoining dressing and ensuite remain to be fitted",
+    "floor_z": 2.8,
+    "ceiling_z": 5.28,
+    "bedroom_polygon": [
+      [
+        5.16,
+        -16.076
+      ],
+      [
+        13.75,
+        -16.076
+      ],
+      [
+        13.75,
+        -10.2
+      ],
+      [
+        9.96,
+        -10.2
+      ],
+      [
+        9.96,
+        -8.76
+      ],
+      [
+        5.16,
+        -8.76
+      ]
+    ],
+    "alcove_polygon": [
+      [
+        3.49,
+        -15.86
+      ],
+      [
+        5.16,
+        -15.86
+      ],
+      [
+        5.16,
+        -10.02
+      ],
+      [
+        3.49,
+        -10.02
+      ]
+    ],
+    "reserved_polygon": [
+      [
+        9.96,
+        -10.2
+      ],
+      [
+        13.75,
+        -10.2
+      ],
+      [
+        13.75,
+        -3.259
+      ],
+      [
+        10.47,
+        -3.259
+      ],
+      [
+        10.47,
+        -6.71
+      ],
+      [
+        9.96,
+        -6.71
+      ]
+    ],
+    "bed": {
+      "center": [
+        11.15,
+        -14.886
+      ],
+      "frame_m": [
+        2.04,
+        2.08
+      ],
+      "mattress_m": [
+        1.8,
+        2.0
+      ],
+      "headboard_wall_y": -16.076,
+      "headboard_front_y": -15.926
+    },
+    "bedsides": {
+      "centers": [
+        [
+          9.78,
+          -15.64
+        ],
+        [
+          12.52,
+          -15.64
+        ]
+      ],
+      "size_m": [
+        0.6,
+        0.5
+      ]
+    },
+    "sofa": {
+      "center": [
+        6.98,
+        -11.15
+      ],
+      "size_m": [
+        2.3,
+        0.95
+      ]
+    },
+    "coffee_table": {
+      "center": [
+        6.98,
+        -10.025
+      ],
+      "size_m": [
+        1.1,
+        0.5
+      ]
+    },
+    "desk": {
+      "bounds": [
+        5.4,
+        -15.86,
+        6.1,
+        -14.06
+      ],
+      "chair_center": [
+        6.75,
+        -14.96
+      ],
+      "chair_operation": [
+        6.1,
+        -15.86,
+        7.0,
+        -14.06
+      ]
+    },
+    "tvs": [
+      {
+        "id": "bed",
+        "center": [
+          11.15,
+          -10.39
+        ],
+        "screen_m": [
+          1.882,
+          1.059
+        ],
+        "height_m": 1.3,
+        "eyes": [
+          [
+            10.7,
+            -15.55,
+            3.93
+          ],
+          [
+            11.6,
+            -15.55,
+            3.93
+          ]
+        ],
+        "cabinet_center_y": -10.55
+      },
+      {
+        "id": "sofa",
+        "center": [
+          6.98,
+          -8.83
+        ],
+        "screen_m": [
+          1.218,
+          0.685
+        ],
+        "height_m": 1.2,
+        "eyes": [
+          [
+            6.52,
+            -11.25,
+            3.9
+          ],
+          [
+            7.44,
+            -11.25,
+            3.9
+          ]
+        ],
+        "cabinet_center_y": -9.03
+      }
+    ],
+    "entry": {
+      "hinge": [
+        8.47,
+        -8.7
+      ],
+      "width_m": 0.95
+    },
+    "dressing_door": {
+      "x": 9.9,
+      "center_y": -9.5,
+      "width_m": 0.95
+    },
+    "retained": [
+      "Existing south headboard wall",
+      "All external openings",
+      "Entry position and width",
+      "West vaulted window alcove"
+    ],
+    "changed": [
+      "Bedroom absorbs the former south-east bathroom and dressing area",
+      "Dressing and ensuite reserved in the north wing",
+      "Full-height return separates that wing",
+      "Separate fixed TVs face bed and sofa",
+      "Side-lit 1.8 m desk in bedroom"
+    ],
+    "unresolved": [
+      "Detailed north-wing dressing and ensuite fit",
+      "Drainage, ventilation and structural checks for bathroom relocation",
+      "Survey and final furniture specifications"
+    ]
+  },
+  "exported_objects": 477,
+  "authored_objects": 385,
+  "new_obstacles": [
+    {
+      "name": "Bedroom 02 | entry open door",
+      "box": [
+        8.448,
+        -9.65,
+        8.492,
+        -8.7
+      ],
+      "bottom": 2.8,
+      "top": 5.05
+    },
+    {
+      "name": "Bedroom 02 | dressing open door",
+      "box": [
+        9.9,
+        -9.997,
+        10.85,
+        -9.953
+      ],
+      "bottom": 2.8,
+      "top": 5.05
+    },
+    {
+      "name": "Bedroom 02 | bed",
+      "box": [
+        10.13,
+        -15.926,
+        12.17,
+        -13.846
+      ],
+      "bottom": 2.8,
+      "top": 3.6999999999999997
+    },
+    {
+      "name": "Bedroom 02 | bedside 0",
+      "box": [
+        9.475,
+        -15.895000000000001,
+        10.084999999999999,
+        -15.385
+      ],
+      "bottom": 2.8,
+      "top": 3.46
+    },
+    {
+      "name": "Bedroom 02 | bedside 1",
+      "box": [
+        12.215,
+        -15.895000000000001,
+        12.825,
+        -15.385
+      ],
+      "bottom": 2.8,
+      "top": 3.46
+    },
+    {
+      "name": "Bedroom 02 | bed end bench",
+      "box": [
+        10.325,
+        -13.36,
+        11.975,
+        -12.94
+      ],
+      "bottom": 2.8,
+      "top": 3.315
+    },
+    {
+      "name": "Bedroom 02 | sofa",
+      "box": [
+        5.83,
+        -11.625,
+        8.13,
+        -10.675
+      ],
+      "bottom": 2.8,
+      "top": 3.86
+    },
+    {
+      "name": "Bedroom 02 | coffee table",
+      "box": [
+        6.43,
+        -10.275,
+        7.53,
+        -9.775
+      ],
+      "bottom": 2.8,
+      "top": 3.215
+    },
+    {
+      "name": "Bedroom 02 | side table",
+      "box": [
+        5.24,
+        -11.54,
+        5.68,
+        -11.1
+      ],
+      "bottom": 2.8,
+      "top": 3.33
+    },
+    {
+      "name": "Bedroom 02 | bed media cabinet",
+      "box": [
+        9.950000000000001,
+        -10.760000000000002,
+        12.35,
+        -10.350000000000001
+      ],
+      "bottom": 2.8,
+      "top": 3.4099999999999997
+    },
+    {
+      "name": "Bedroom 02 | sofa media cabinet",
+      "box": [
+        5.58,
+        -9.24,
+        8.38,
+        -8.83
+      ],
+      "bottom": 2.8,
+      "top": 3.4099999999999997
+    },
+    {
+      "name": "Bedroom 02 | desk",
+      "box": [
+        5.4,
+        -15.86,
+        6.1,
+        -14.06
+      ],
+      "bottom": 2.8,
+      "top": 3.5999999999999996
+    },
+    {
+      "name": "Bedroom 02 | desk chair",
+      "box": [
+        6.48,
+        -15.3,
+        7.02,
+        -14.620000000000001
+      ],
+      "bottom": 2.8,
+      "top": 3.8099999999999996
+    },
+    {
+      "name": "Bedroom 02 | planter and canopy",
+      "box": [
+        13.009,
+        -12.91,
+        13.74,
+        -12.168
+      ],
+      "bottom": 2.8,
+      "top": 4.51
+    }
+  ],
+  "removed_objects": [
+    "Proposal | Principal suite north partition door 0 leaf",
+    "Proposal | Principal suite north partition door 0 face rail",
+    "Proposal | Principal suite north partition door 0 face rail",
+    "Proposal | Principal dressing north wall",
+    "Proposal | Principal east partition pier 0",
+    "Proposal | Principal east partition head 0",
+    "Proposal | Principal east partition door 0 leaf",
+    "Proposal | Principal east partition door 0 face rail",
+    "Proposal | Principal east partition door 0 face rail",
+    "Proposal | Principal east partition end pier",
+    "Proposal | Principal bathroom partition pier 0",
+    "Proposal | Principal bathroom partition head 0",
+    "Proposal | Principal bathroom partition end pier",
+    "Proposal | Principal bathroom inward door leaf",
+    "Proposal | Principal bathroom inward door face rail",
+    "Proposal | Principal bathroom inward door face rail",
+    "Proposal | Principal bathroom west wall",
+    "Proposal | Principal WC compartment north",
+    "Proposal | Principal WC compartment west pier 0",
+    "Proposal | Principal WC compartment west head 0",
+    "Proposal | Principal WC compartment west door 0 leaf",
+    "Proposal | Principal WC compartment west door 0 face rail",
+    "Proposal | Principal WC compartment west door 0 face rail",
+    "Proposal | Principal WC compartment west end pier",
+    "Proposal | Principal suite north partition door 0 lever rose",
+    "Proposal | Principal suite north partition door 0 lever",
+    "Proposal | Principal suite north partition door 0 lever rose",
+    "Proposal | Principal suite north partition door 0 lever",
+    "Proposal | Principal east partition door 0 lever rose",
+    "Proposal | Principal east partition door 0 lever",
+    "Proposal | Principal east partition door 0 lever rose",
+    "Proposal | Principal east partition door 0 lever",
+    "Proposal | Principal bathroom inward door lever rose",
+    "Proposal | Principal bathroom inward door lever",
+    "Proposal | Principal bathroom inward door lever rose",
+    "Proposal | Principal bathroom inward door lever",
+    "Proposal | Principal WC compartment west door 0 lever rose",
+    "Proposal | Principal WC compartment west door 0 lever",
+    "Proposal | Principal WC compartment west door 0 lever rose",
+    "Proposal | Principal WC compartment west door 0 lever",
+    "Proposal | Principal bed base",
+    "Proposal | Principal bed recessed foot",
+    "Proposal | Principal bed recessed foot",
+    "Proposal | Principal bed recessed foot",
+    "Proposal | Principal bed recessed foot",
+    "Proposal | Principal bed mattress",
+    "Proposal | Principal bed headboard",
+    "Proposal | Principal bed pillow",
+    "Proposal | Principal bed pillow",
+    "Proposal | Principal bed bedside",
+    "Proposal | Principal bed bedside plinth",
+    "Proposal | Principal bed bedside",
+    "Proposal | Principal bed bedside plinth",
+    "Proposal | Principal sitting sofa oak underframe",
+    "Proposal | Principal sitting sofa foot",
+    "Proposal | Principal sitting sofa foot",
+    "Proposal | Principal sitting sofa foot",
+    "Proposal | Principal sitting sofa foot",
+    "Proposal | Principal sitting sofa seat cushion",
+    "Proposal | Principal sitting sofa seat cushion",
+    "Proposal | Principal sitting sofa seat cushion",
+    "Proposal | Principal sitting sofa back cushion",
+    "Proposal | Principal sitting sofa back cushion",
+    "Proposal | Principal sitting sofa back cushion",
+    "Proposal | Principal sitting sofa arm",
+    "Proposal | Principal sitting sofa arm",
+    "Proposal | Principal dressing east",
+    "Proposal | Principal dressing north",
+    "Proposal | Principal dressing west",
+    "Proposal | Principal bathroom shower tray",
+    "Proposal | Principal bathroom shower south screen glass",
+    "Proposal | Principal bathroom shower south screen horizontal frame",
+    "Proposal | Principal bathroom shower south screen horizontal frame",
+    "Proposal | Principal bathroom shower south screen mullion",
+    "Proposal | Principal bathroom shower south screen mullion",
+    "Proposal | Principal bathroom shower east screen glass",
+    "Proposal | Principal bathroom shower east screen horizontal frame",
+    "Proposal | Principal bathroom shower east screen horizontal frame",
+    "Proposal | Principal bathroom shower east screen mullion",
+    "Proposal | Principal bathroom shower east screen mullion",
+    "Proposal | Principal bathroom shower riser",
+    "Proposal | Principal bathroom shower arm",
+    "Proposal | Principal bathroom rainfall head",
+    "Proposal | Principal freestanding bath",
+    "Proposal | Principal bath filler",
+    "Proposal | Principal bath spout",
+    "Proposal | Principal bathroom vanity",
+    "Proposal | Principal bathroom basin 1",
+    "Proposal | Principal bathroom basin 2",
+    "Proposal | Principal bathroom mirror",
+    "Proposal | Principal WC pedestal",
+    "Proposal | Principal WC cistern",
+    "Proposal | Principal WC basin",
+    "Proposal | Principal WC basin stand",
+    "Proposal | Principal nook dressing table",
+    "Proposal | Principal nook dressing table leg",
+    "Proposal | Principal nook dressing table leg",
+    "Proposal | Principal nook dressing table leg",
+    "Proposal | Principal nook dressing table leg",
+    "Proposal | Principal nook stool",
+    "Proposal | Principal study desk",
+    "Proposal | Principal study bookcase",
+    "Proposal | Principal bathroom stone floor",
+    "Proposal | Principal study desk support",
+    "Proposal | Principal study desk support",
+    "Proposal | Principal study desk support",
+    "Proposal | Principal study desk support",
+    "Proposal | Principal study desk chair seat",
+    "Proposal | Principal study desk chair back",
+    "Proposal | Principal study desk chair leg",
+    "Proposal | Principal study desk chair leg",
+    "Proposal | Principal study desk chair leg",
+    "Proposal | Principal study desk chair leg",
+    "Proposal | Principal study desk writing pad",
+    "Proposal | Principal dressing east cabinet door",
+    "Proposal | Principal dressing east cabinet pull",
+    "Proposal | Principal dressing east cabinet door",
+    "Proposal | Principal dressing east cabinet pull",
+    "Proposal | Principal dressing east cabinet door",
+    "Proposal | Principal dressing east cabinet pull",
+    "Proposal | Principal dressing east cabinet door",
+    "Proposal | Principal dressing east cabinet pull",
+    "Proposal | Principal dressing north cabinet door",
+    "Proposal | Principal dressing north cabinet pull",
+    "Proposal | Principal dressing north cabinet door",
+    "Proposal | Principal dressing north cabinet pull",
+    "Proposal | Principal dressing north cabinet door",
+    "Proposal | Principal dressing north cabinet pull",
+    "Proposal | Principal dressing north cabinet door",
+    "Proposal | Principal dressing north cabinet pull",
+    "Proposal | Principal bed bedside lamp bronze base",
+    "Proposal | Principal bed bedside lamp warm lens",
+    "Proposal | Principal bed bedside lamp bronze base",
+    "Proposal | Principal bed bedside lamp warm lens",
+    "Proposal | Principal bedroom downlight trim",
+    "Proposal | Principal bedroom downlight lens",
+    "Proposal | Principal bedroom downlight trim",
+    "Proposal | Principal bedroom downlight lens",
+    "Proposal | Principal bedroom downlight trim",
+    "Proposal | Principal bedroom downlight lens",
+    "Proposal | Principal bedroom downlight trim",
+    "Proposal | Principal bedroom downlight lens",
+    "Proposal | Principal bathroom downlight trim",
+    "Proposal | Principal bathroom downlight lens",
+    "Proposal | Principal bathroom downlight trim",
+    "Proposal | Principal bathroom downlight lens",
+    "Proposal | Principal bathroom downlight trim",
+    "Proposal | Principal bathroom downlight lens",
+    "Proposal | Principal bathroom downlight trim",
+    "Proposal | Principal bathroom downlight lens"
+  ],
+  "native_tv_sightlines": [
+    {
+      "group": "bed",
+      "seat": 0,
+      "sample": [
+        0,
+        0
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.177
+    },
+    {
+      "group": "bed",
+      "seat": 0,
+      "sample": [
+        -0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.179
+    },
+    {
+      "group": "bed",
+      "seat": 0,
+      "sample": [
+        -0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.211
+    },
+    {
+      "group": "bed",
+      "seat": 0,
+      "sample": [
+        0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.324
+    },
+    {
+      "group": "bed",
+      "seat": 0,
+      "sample": [
+        0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.355
+    },
+    {
+      "group": "bed",
+      "seat": 1,
+      "sample": [
+        0,
+        0
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.177
+    },
+    {
+      "group": "bed",
+      "seat": 1,
+      "sample": [
+        -0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.324
+    },
+    {
+      "group": "bed",
+      "seat": 1,
+      "sample": [
+        -0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.355
+    },
+    {
+      "group": "bed",
+      "seat": 1,
+      "sample": [
+        0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.179
+    },
+    {
+      "group": "bed",
+      "seat": 1,
+      "sample": [
+        0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | bed TV screen",
+      "distance_m": 5.211
+    },
+    {
+      "group": "sofa",
+      "seat": 0,
+      "sample": [
+        0,
+        0
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.46
+    },
+    {
+      "group": "sofa",
+      "seat": 0,
+      "sample": [
+        -0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.426
+    },
+    {
+      "group": "sofa",
+      "seat": 0,
+      "sample": [
+        -0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.451
+    },
+    {
+      "group": "sofa",
+      "seat": 0,
+      "sample": [
+        0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.625
+    },
+    {
+      "group": "sofa",
+      "seat": 0,
+      "sample": [
+        0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.649
+    },
+    {
+      "group": "sofa",
+      "seat": 1,
+      "sample": [
+        0,
+        0
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.46
+    },
+    {
+      "group": "sofa",
+      "seat": 1,
+      "sample": [
+        -0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.625
+    },
+    {
+      "group": "sofa",
+      "seat": 1,
+      "sample": [
+        -0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.649
+    },
+    {
+      "group": "sofa",
+      "seat": 1,
+      "sample": [
+        0.45,
+        -0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.426
+    },
+    {
+      "group": "sofa",
+      "seat": 1,
+      "sample": [
+        0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 2.451
+    }
+  ],
+  "shell_objects": [
+    {
+      "name": "Proposal | Garage wing front band pier 0",
+      "bounds": [
+        3.259999990463257,
+        -16.09000015258789,
+        2.5999999046325684,
+        3.490000009536743,
+        -13.59000015258789,
+        3.0
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing front band sill 0",
+      "bounds": [
+        3.259999990463257,
+        -13.59000015258789,
+        2.5999999046325684,
+        3.490000009536743,
+        -12.289999961853027,
+        3.0
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing front band end pier",
+      "bounds": [
+        3.259999990463257,
+        -12.289999961853027,
+        2.5999999046325684,
+        3.490000009536743,
+        -9.789999961853027,
+        3.0
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window glass",
+      "bounds": [
+        3.36299991607666,
+        -13.59000015258789,
+        3.055000066757202,
+        3.38700008392334,
+        -12.289999961853027,
+        3.994999885559082
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window horizontal frame",
+      "bounds": [
+        3.3475000858306885,
+        -13.59000015258789,
+        3.007499933242798,
+        3.4024999141693115,
+        -12.290000915527344,
+        3.062500238418579
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window horizontal frame",
+      "bounds": [
+        3.3475000858306885,
+        -13.59000015258789,
+        3.987499713897705,
+        3.4024999141693115,
+        -12.290000915527344,
+        4.042500019073486
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window mullion",
+      "bounds": [
+        3.3510000705718994,
+        -13.61400032043457,
+        3.0,
+        3.3989999294281006,
+        -13.565999984741211,
+        4.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window mullion",
+      "bounds": [
+        3.3510000705718994,
+        -13.18066692352295,
+        3.0,
+        3.3989999294281006,
+        -13.13266658782959,
+        4.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window mullion",
+      "bounds": [
+        3.3510000705718994,
+        -12.747333526611328,
+        3.0,
+        3.3989999294281006,
+        -12.699333190917969,
+        4.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window mullion",
+      "bounds": [
+        3.3510000705718994,
+        -12.314000129699707,
+        3.0,
+        3.3989999294281006,
+        -12.265999794006348,
+        4.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing gable window cill",
+      "bounds": [
+        3.3324999809265137,
+        -13.660000801086426,
+        2.932499885559082,
+        3.4175000190734863,
+        -12.220000267028809,
+        3.0174999237060547
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing south return",
+      "bounds": [
+        3.259999990463257,
+        -16.09000015258789,
+        0.0,
+        5.159999847412109,
+        -15.859999656677246,
+        3.0
+      ]
+    },
+    {
+      "name": "Proposal | Garage wing north return",
+      "bounds": [
+        3.259999990463257,
+        -10.020000457763672,
+        0.0,
+        5.159999847412109,
+        -9.789999961853027,
+        3.0
+      ]
+    },
+    {
+      "name": "Proposal | Entrance bay south return",
+      "bounds": [
+        3.809999942779541,
+        -9.399999618530273,
+        0.0,
+        5.159999847412109,
+        -9.050000190734863,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Continued roof garage wing gable south head 0",
+      "bounds": [
+        3.259999990463257,
+        -16.09000015258789,
+        3.0,
+        3.490000009536743,
+        -13.59000015258789,
+        4.516569137573242
+      ]
+    },
+    {
+      "name": "Proposal | Continued roof garage wing gable window head head 0",
+      "bounds": [
+        3.259999990463257,
+        -13.59000015258789,
+        4.050000190734863,
+        3.490000009536743,
+        -12.9399995803833,
+        4.955000400543213
+      ]
+    },
+    {
+      "name": "Proposal | Continued roof garage wing gable window head head 1",
+      "bounds": [
+        3.259999990463257,
+        -12.9399995803833,
+        4.050000190734863,
+        3.490000009536743,
+        -12.289999961853027,
+        4.955000400543213
+      ]
+    },
+    {
+      "name": "Proposal | Continued roof garage wing gable north head 0",
+      "bounds": [
+        3.259999990463257,
+        -12.289999961853027,
+        3.0,
+        3.490000009536743,
+        -9.789999961853027,
+        4.5165696144104
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper pier 0",
+      "bounds": [
+        5.045000076293945,
+        -16.305999755859375,
+        2.799999952316284,
+        6.34499979019165,
+        -16.076000213623047,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper sill 0",
+      "bounds": [
+        6.34499979019165,
+        -16.305999755859375,
+        2.799999952316284,
+        8.145000457763672,
+        -16.076000213623047,
+        3.6500000953674316
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper head 0",
+      "bounds": [
+        6.34499979019165,
+        -16.305999755859375,
+        5.050000190734863,
+        8.145000457763672,
+        -16.076000213623047,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper window 0 glass",
+      "bounds": [
+        6.34499979019165,
+        -16.202999114990234,
+        3.7049999237060547,
+        8.145000457763672,
+        -16.179000854492188,
+        4.994999885559082
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper window 0 horizontal frame",
+      "bounds": [
+        6.344999313354492,
+        -16.2185001373291,
+        3.6574997901916504,
+        8.145000457763672,
+        -16.16349983215332,
+        3.7125000953674316
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper window 0 horizontal frame",
+      "bounds": [
+        6.344999313354492,
+        -16.2185001373291,
+        4.987499713897705,
+        8.145000457763672,
+        -16.16349983215332,
+        5.042500019073486
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper window 0 mullion",
+      "bounds": [
+        6.320999622344971,
+        -16.21500015258789,
+        3.6500003337860107,
+        6.36899995803833,
+        -16.16699981689453,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper window 0 mullion",
+      "bounds": [
+        7.220999717712402,
+        -16.21500015258789,
+        3.6500003337860107,
+        7.269000053405762,
+        -16.16699981689453,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper window 0 mullion",
+      "bounds": [
+        8.121000289916992,
+        -16.21500015258789,
+        3.6500003337860107,
+        8.169000625610352,
+        -16.16699981689453,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper window cill 0",
+      "bounds": [
+        6.274999618530273,
+        -16.23349952697754,
+        3.5824999809265137,
+        8.21500015258789,
+        -16.148500442504883,
+        3.6675000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing south upper end pier",
+      "bounds": [
+        8.145000457763672,
+        -16.305999755859375,
+        2.799999952316284,
+        13.864999771118164,
+        -16.076000213623047,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper pier 0",
+      "bounds": [
+        13.75,
+        -16.19099998474121,
+        2.799999952316284,
+        13.979999542236328,
+        -15.324999809265137,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper sill 0",
+      "bounds": [
+        13.75,
+        -15.324999809265137,
+        2.799999952316284,
+        13.979999542236328,
+        -13.875,
+        3.6500000953674316
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper head 0",
+      "bounds": [
+        13.75,
+        -15.324999809265137,
+        5.050000190734863,
+        13.979999542236328,
+        -13.875,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 0 glass",
+      "bounds": [
+        13.852999687194824,
+        -15.324999809265137,
+        3.7049999237060547,
+        13.876999855041504,
+        -13.875,
+        4.994999885559082
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 0 horizontal frame",
+      "bounds": [
+        13.837499618530273,
+        -15.325000762939453,
+        3.6574997901916504,
+        13.892499923706055,
+        -13.875,
+        3.7125000953674316
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 0 horizontal frame",
+      "bounds": [
+        13.837499618530273,
+        -15.325000762939453,
+        4.987499713897705,
+        13.892499923706055,
+        -13.875,
+        5.042500019073486
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 0 mullion",
+      "bounds": [
+        13.840999603271484,
+        -15.348999977111816,
+        3.6500003337860107,
+        13.888999938964844,
+        -15.300999641418457,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 0 mullion",
+      "bounds": [
+        13.840999603271484,
+        -14.624000549316406,
+        3.6500003337860107,
+        13.888999938964844,
+        -14.576000213623047,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 0 mullion",
+      "bounds": [
+        13.840999603271484,
+        -13.89900016784668,
+        3.6500003337860107,
+        13.888999938964844,
+        -13.85099983215332,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window cill 0",
+      "bounds": [
+        13.822500228881836,
+        -15.395000457763672,
+        3.5824999809265137,
+        13.907499313354492,
+        -13.805000305175781,
+        3.6675000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper pier 1",
+      "bounds": [
+        13.75,
+        -13.875,
+        2.799999952316284,
+        13.979999542236328,
+        -12.119999885559082,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper sill 1",
+      "bounds": [
+        13.75,
+        -12.119999885559082,
+        2.799999952316284,
+        13.979999542236328,
+        -10.520000457763672,
+        3.5
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper head 1",
+      "bounds": [
+        13.75,
+        -12.119999885559082,
+        5.050000190734863,
+        13.979999542236328,
+        -10.520000457763672,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 1 glass",
+      "bounds": [
+        13.852999687194824,
+        -12.119999885559082,
+        3.555000066757202,
+        13.876999855041504,
+        -10.520000457763672,
+        4.994999885559082
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 1 horizontal frame",
+      "bounds": [
+        13.837499618530273,
+        -12.119999885559082,
+        3.507500171661377,
+        13.892499923706055,
+        -10.519999504089355,
+        3.5625
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 1 horizontal frame",
+      "bounds": [
+        13.837499618530273,
+        -12.119999885559082,
+        4.987499713897705,
+        13.892499923706055,
+        -10.519999504089355,
+        5.042500019073486
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 1 mullion",
+      "bounds": [
+        13.840999603271484,
+        -12.144000053405762,
+        3.5,
+        13.888999938964844,
+        -12.095999717712402,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 1 mullion",
+      "bounds": [
+        13.840999603271484,
+        -11.343999862670898,
+        3.5,
+        13.888999938964844,
+        -11.295999526977539,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 1 mullion",
+      "bounds": [
+        13.840999603271484,
+        -10.544000625610352,
+        3.5,
+        13.888999938964844,
+        -10.496000289916992,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window cill 1",
+      "bounds": [
+        13.822500228881836,
+        -12.1899995803833,
+        3.432499885559082,
+        13.907499313354492,
+        -10.449999809265137,
+        3.5174999237060547
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper pier 2",
+      "bounds": [
+        13.75,
+        -10.520000457763672,
+        2.799999952316284,
+        13.979999542236328,
+        -8.890000343322754,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper sill 2",
+      "bounds": [
+        13.75,
+        -8.890000343322754,
+        2.799999952316284,
+        13.979999542236328,
+        -7.090000152587891,
+        3.549999952316284
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper head 2",
+      "bounds": [
+        13.75,
+        -8.890000343322754,
+        5.050000190734863,
+        13.979999542236328,
+        -7.090000152587891,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 2 glass",
+      "bounds": [
+        13.852999687194824,
+        -8.890000343322754,
+        3.6050000190734863,
+        13.876999855041504,
+        -7.090000152587891,
+        4.994999885559082
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 2 horizontal frame",
+      "bounds": [
+        13.837499618530273,
+        -8.890000343322754,
+        3.557499885559082,
+        13.892499923706055,
+        -7.090000152587891,
+        3.6125001907348633
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 2 horizontal frame",
+      "bounds": [
+        13.837499618530273,
+        -8.890000343322754,
+        4.987499713897705,
+        13.892499923706055,
+        -7.090000152587891,
+        5.042500019073486
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 2 mullion",
+      "bounds": [
+        13.840999603271484,
+        -8.914000511169434,
+        3.5500001907348633,
+        13.888999938964844,
+        -8.866000175476074,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 2 mullion",
+      "bounds": [
+        13.840999603271484,
+        -8.013999938964844,
+        3.5500001907348633,
+        13.888999938964844,
+        -7.965999603271484,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window 2 mullion",
+      "bounds": [
+        13.840999603271484,
+        -7.11400032043457,
+        3.5500001907348633,
+        13.888999938964844,
+        -7.065999984741211,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper window cill 2",
+      "bounds": [
+        13.822500228881836,
+        -8.960000038146973,
+        3.4825000762939453,
+        13.907499313354492,
+        -7.0199995040893555,
+        3.567500114440918
+      ]
+    },
+    {
+      "name": "Proposal | New wing east upper end pier",
+      "bounds": [
+        13.75,
+        -7.090000152587891,
+        2.799999952316284,
+        13.979999542236328,
+        -3.1440000534057617,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Courtyard upper return",
+      "bounds": [
+        10.350000381469727,
+        -4.114999771118164,
+        2.799999952316284,
+        10.46500015258789,
+        -3.0290000438690186,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east pier 0",
+      "bounds": [
+        10.350000381469727,
+        -3.259000062942505,
+        2.799999952316284,
+        10.704999923706055,
+        -3.0290000438690186,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east sill 0",
+      "bounds": [
+        10.704999923706055,
+        -3.259000062942505,
+        2.799999952316284,
+        11.704999923706055,
+        -3.0290000438690186,
+        3.6500000953674316
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east head 0",
+      "bounds": [
+        10.704999923706055,
+        -3.259000062942505,
+        5.099999904632568,
+        11.704999923706055,
+        -3.0290000438690186,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 0 glass",
+      "bounds": [
+        10.704999923706055,
+        -3.1559998989105225,
+        3.7049999237060547,
+        11.704999923706055,
+        -3.131999969482422,
+        5.045000076293945
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 0 horizontal frame",
+      "bounds": [
+        10.704999923706055,
+        -3.1714999675750732,
+        3.6574997901916504,
+        11.704999923706055,
+        -3.11650013923645,
+        3.7125000953674316
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 0 horizontal frame",
+      "bounds": [
+        10.704999923706055,
+        -3.1714999675750732,
+        5.037499904632568,
+        11.704999923706055,
+        -3.11650013923645,
+        5.09250020980835
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 0 mullion",
+      "bounds": [
+        10.680999755859375,
+        -3.1679999828338623,
+        3.6500000953674316,
+        10.729000091552734,
+        -3.120000123977661,
+        5.099999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 0 mullion",
+      "bounds": [
+        11.680999755859375,
+        -3.1679999828338623,
+        3.6500000953674316,
+        11.729000091552734,
+        -3.120000123977661,
+        5.099999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window cill 0",
+      "bounds": [
+        10.635000228881836,
+        -3.186500072479248,
+        3.5824999809265137,
+        11.774999618530273,
+        -3.1015000343322754,
+        3.6675000190734863
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east pier 1",
+      "bounds": [
+        11.704999923706055,
+        -3.259000062942505,
+        2.799999952316284,
+        12.1850004196167,
+        -3.0290000438690186,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east sill 1",
+      "bounds": [
+        12.1850004196167,
+        -3.259000062942505,
+        2.799999952316284,
+        13.1850004196167,
+        -3.0290000438690186,
+        3.6500000953674316
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east head 1",
+      "bounds": [
+        12.1850004196167,
+        -3.259000062942505,
+        5.099999904632568,
+        13.1850004196167,
+        -3.0290000438690186,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 1 glass",
+      "bounds": [
+        12.1850004196167,
+        -3.1559998989105225,
+        3.7049999237060547,
+        13.1850004196167,
+        -3.131999969482422,
+        5.045000076293945
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 1 horizontal frame",
+      "bounds": [
+        12.1850004196167,
+        -3.1714999675750732,
+        3.6574997901916504,
+        13.1850004196167,
+        -3.11650013923645,
+        3.7125000953674316
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 1 horizontal frame",
+      "bounds": [
+        12.1850004196167,
+        -3.1714999675750732,
+        5.037499904632568,
+        13.1850004196167,
+        -3.11650013923645,
+        5.09250020980835
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 1 mullion",
+      "bounds": [
+        12.16100025177002,
+        -3.1679999828338623,
+        3.6500000953674316,
+        12.209000587463379,
+        -3.120000123977661,
+        5.099999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window 1 mullion",
+      "bounds": [
+        13.16100025177002,
+        -3.1679999828338623,
+        3.6500000953674316,
+        13.209000587463379,
+        -3.120000123977661,
+        5.099999904632568
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east window cill 1",
+      "bounds": [
+        12.114999771118164,
+        -3.186500072479248,
+        3.5824999809265137,
+        13.254999160766602,
+        -3.1015000343322754,
+        3.6675000190734863
+      ]
+    },
+    {
+      "name": "Proposal | North upper facade east end pier",
+      "bounds": [
+        13.1850004196167,
+        -3.259000062942505,
+        2.799999952316284,
+        13.864999771118164,
+        -3.0290000438690186,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | West recess upper facade",
+      "bounds": [
+        4.929999828338623,
+        -9.789999961853027,
+        2.799999952316284,
+        5.159999847412109,
+        -8.640000343322754,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | West upper store facade",
+      "bounds": [
+        4.929999828338623,
+        -16.19099998474121,
+        2.799999952316284,
+        5.159999847412109,
+        -16.09000015258789,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | West upper principal facade above vault",
+      "bounds": [
+        4.929999828338623,
+        -16.09000015258789,
+        2.824298143386841,
+        5.159999847412109,
+        -9.789999961853027,
+        5.198999881744385
+      ]
+    },
+    {
+      "name": "Proposal | West upper principal facade above wing roof",
+      "bounds": [
+        4.929999828338623,
+        -16.09000015258789,
+        3.074298143386841,
+        5.159999847412109,
+        -9.789999961853027,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Principal suite north partition pier 0",
+      "bounds": [
+        5.045000076293945,
+        -8.760000228881836,
+        2.799999952316284,
+        8.470000267028809,
+        -8.640000343322754,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Principal suite north partition head 0",
+      "bounds": [
+        8.470000267028809,
+        -8.760000228881836,
+        5.050000190734863,
+        9.420000076293945,
+        -8.640000343322754,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Principal suite north partition pier 1",
+      "bounds": [
+        9.420000076293945,
+        -8.760000228881836,
+        2.799999952316284,
+        9.960000038146973,
+        -8.640000343322754,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Guest bathroom west",
+      "bounds": [
+        10.350000381469727,
+        -6.650000095367432,
+        2.799999952316284,
+        10.470000267028809,
+        -3.1440000534057617,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Guest bathroom south enclosure",
+      "bounds": [
+        9.899999618530273,
+        -6.710000038146973,
+        2.799999952316284,
+        10.470000267028809,
+        -6.590000152587891,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Principal study west wall",
+      "bounds": [
+        9.84000015258789,
+        -8.760000228881836,
+        2.799999952316284,
+        9.960000038146973,
+        -6.650000095367432,
+        5.349999904632568
+      ]
+    },
+    {
+      "name": "Proposal | Principal window seat base",
+      "bounds": [
+        3.5399999618530273,
+        -13.59000015258789,
+        2.799999952316284,
+        4.059999942779541,
+        -12.289999961853027,
+        3.200000047683716
+      ]
+    },
+    {
+      "name": "Proposal | Principal window seat cushion",
+      "bounds": [
+        3.549999952316284,
+        -13.569999694824219,
+        3.200000047683716,
+        4.050000190734863,
+        -12.3100004196167,
+        3.299999952316284
+      ]
+    }
+  ],
+  "cutaway_objects": [
+    "Bedroom 02 | ceiling 0",
+    "Bedroom 02 | ceiling 2",
+    "Bedroom 02 | retained vault soffit",
+    "Bedroom 02 | retained vault soffit.001",
+    "Bedroom 02 | downlight bezel",
+    "Bedroom 02 | downlight lens",
+    "Bedroom 02 | downlight bezel.001",
+    "Bedroom 02 | downlight lens.001",
+    "Bedroom 02 | downlight bezel.002",
+    "Bedroom 02 | downlight lens.002",
+    "Bedroom 02 | downlight bezel.003",
+    "Bedroom 02 | downlight lens.003",
+    "Bedroom 02 | downlight bezel.004",
+    "Bedroom 02 | downlight lens.004"
+  ],
+  "authored_bounds": [
+    {
+      "name": "Bedroom 02 | floor 0",
+      "bounds": [
+        5.159999847412109,
+        -16.076000213623047,
+        2.802000045776367,
+        13.75,
+        -8.760000228881836,
+        2.802000045776367
+      ]
+    },
+    {
+      "name": "Bedroom 02 | ceiling 0",
+      "bounds": [
+        5.159999847412109,
+        -16.076000213623047,
+        5.28000020980835,
+        13.75,
+        -8.760000228881836,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | floor 1",
+      "bounds": [
+        3.490000009536743,
+        -15.859999656677246,
+        2.802000045776367,
+        5.159999847412109,
+        -10.020000457763672,
+        2.802000045776367
+      ]
+    },
+    {
+      "name": "Bedroom 02 | floor 2",
+      "bounds": [
+        9.960000038146973,
+        -10.199999809265137,
+        2.802000045776367,
+        13.75,
+        -3.259000062942505,
+        2.802000045776367
+      ]
+    },
+    {
+      "name": "Bedroom 02 | ceiling 2",
+      "bounds": [
+        9.960000038146973,
+        -10.199999809265137,
+        5.28000020980835,
+        13.75,
+        -3.259000062942505,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | retained vault soffit",
+      "bounds": [
+        3.490000009536743,
+        -16.09000015258789,
+        2.824298143386841,
+        5.159999847412109,
+        -12.9399995803833,
+        4.948999881744385
+      ]
+    },
+    {
+      "name": "Bedroom 02 | retained vault soffit.001",
+      "bounds": [
+        3.490000009536743,
+        -12.9399995803833,
+        2.824298143386841,
+        5.159999847412109,
+        -9.789999961853027,
+        4.948999881744385
+      ]
+    },
+    {
+      "name": "Bedroom 02 | north media partition",
+      "bounds": [
+        9.899999618530273,
+        -10.319999694824219,
+        2.799999952316284,
+        13.75,
+        -10.199999809265137,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dressing return pier",
+      "bounds": [
+        9.84000015258789,
+        -10.260000228881836,
+        2.799999952316284,
+        9.960000038146973,
+        -9.975000381469727,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dressing return pier.001",
+      "bounds": [
+        9.84000015258789,
+        -9.024999618530273,
+        2.799999952316284,
+        9.960000038146973,
+        -8.699999809265137,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dressing doorway header",
+      "bounds": [
+        9.84000015258789,
+        -9.975000381469727,
+        5.050000190734863,
+        9.960000038146973,
+        -9.024999618530273,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | entry door open",
+      "bounds": [
+        8.447999954223633,
+        -9.649999618530273,
+        2.8299999237060547,
+        8.491999626159668,
+        -8.699999809265137,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | entry door handle",
+      "bounds": [
+        8.475000381469727,
+        -9.550000190734863,
+        3.822000026702881,
+        8.545000076293945,
+        -9.430000305175781,
+        3.8380000591278076
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dressing door open",
+      "bounds": [
+        9.899999618530273,
+        -9.996999740600586,
+        2.8299999237060547,
+        10.850000381469727,
+        -9.95300006866455,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dressing door handle",
+      "bounds": [
+        10.630000114440918,
+        -9.96500015258789,
+        3.822000026702881,
+        10.75,
+        -9.895000457763672,
+        3.8380000591278076
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dressing door jamb",
+      "bounds": [
+        9.827500343322754,
+        -10.010499954223633,
+        2.799999952316284,
+        9.97249984741211,
+        -9.98550033569336,
+        5.059999942779541
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dressing door jamb.001",
+      "bounds": [
+        9.827500343322754,
+        -9.01449966430664,
+        2.799999952316284,
+        9.97249984741211,
+        -8.989500045776367,
+        5.059999942779541
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard oak wall panel 0",
+      "bounds": [
+        9.344499588012695,
+        -16.076000213623047,
+        2.799999952316284,
+        9.855500221252441,
+        -16.035999298095703,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard oak wall panel 1",
+      "bounds": [
+        9.86050033569336,
+        -16.076000213623047,
+        2.799999952316284,
+        10.371500015258789,
+        -16.035999298095703,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard oak wall panel 2",
+      "bounds": [
+        10.376500129699707,
+        -16.076000213623047,
+        2.799999952316284,
+        10.887499809265137,
+        -16.035999298095703,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard oak wall panel 3",
+      "bounds": [
+        10.892499923706055,
+        -16.076000213623047,
+        2.799999952316284,
+        11.403499603271484,
+        -16.035999298095703,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard oak wall panel 4",
+      "bounds": [
+        11.408499717712402,
+        -16.076000213623047,
+        2.799999952316284,
+        11.919500350952148,
+        -16.035999298095703,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard oak wall panel 5",
+      "bounds": [
+        11.924500465393066,
+        -16.076000213623047,
+        2.799999952316284,
+        12.435500144958496,
+        -16.035999298095703,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard oak wall panel 6",
+      "bounds": [
+        12.440500259399414,
+        -16.076000213623047,
+        2.799999952316284,
+        12.951499938964844,
+        -16.035999298095703,
+        5.28000020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | wall-backed upholstered headboard",
+      "bounds": [
+        10.09000015258789,
+        -16.035999298095703,
+        2.8399999141693115,
+        12.210000038146973,
+        -15.925999641418457,
+        4.159999847412109
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed recessed plinth",
+      "bounds": [
+        10.234999656677246,
+        -15.85099983215332,
+        2.815000057220459,
+        12.0649995803833,
+        -13.920999526977539,
+        3.015000104904175
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed upholstered frame",
+      "bounds": [
+        10.130000114440918,
+        -15.925999641418457,
+        2.950000047683716,
+        12.170000076293945,
+        -13.845999717712402,
+        3.25
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed mattress",
+      "bounds": [
+        10.25,
+        -15.88599967956543,
+        3.190000057220459,
+        12.050000190734863,
+        -13.88599967956543,
+        3.430000066757202
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed duvet",
+      "bounds": [
+        10.15999984741211,
+        -15.456000328063965,
+        3.4110000133514404,
+        12.140000343322754,
+        -13.916000366210938,
+        3.5209999084472656
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed folded duvet edge",
+      "bounds": [
+        10.170000076293945,
+        -15.496000289916992,
+        3.4725000858306885,
+        12.130000114440918,
+        -15.276000022888184,
+        3.547499895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed pillow 0",
+      "bounds": [
+        10.289999961853027,
+        -15.821000099182129,
+        3.4200000762939453,
+        11.09000015258789,
+        -15.390999794006348,
+        3.5799999237060547
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed linen cushion 0",
+      "bounds": [
+        10.399999618530273,
+        -15.425999641418457,
+        3.434999942779541,
+        10.979999542236328,
+        -15.22599983215332,
+        3.7249999046325684
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed pillow 1",
+      "bounds": [
+        11.210000038146973,
+        -15.821000099182129,
+        3.4200000762939453,
+        12.010000228881836,
+        -15.390999794006348,
+        3.5799999237060547
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed linen cushion 1",
+      "bounds": [
+        11.319999694824219,
+        -15.425999641418457,
+        3.434999942779541,
+        11.899999618530273,
+        -15.22599983215332,
+        3.7249999046325684
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed foot throw",
+      "bounds": [
+        10.149999618530273,
+        -14.390999794006348,
+        3.5174999237060547,
+        12.149999618530273,
+        -13.901000022888184,
+        3.552500009536743
+      ]
+    },
+    {
+      "name": "Bedroom 02 | throw drape",
+      "bounds": [
+        10.145999908447266,
+        -14.390999794006348,
+        3.125,
+        10.180000305175781,
+        -13.901000022888184,
+        3.5350000858306885
+      ]
+    },
+    {
+      "name": "Bedroom 02 | throw drape.001",
+      "bounds": [
+        12.119999885559082,
+        -14.390999794006348,
+        3.125,
+        12.154000282287598,
+        -13.901000022888184,
+        3.5350000858306885
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed wool rug",
+      "bounds": [
+        9.399999618530273,
+        -15.899999618530273,
+        2.802000045776367,
+        12.899999618530273,
+        -12.720000267028809,
+        2.8359999656677246
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside floating cabinet 0",
+      "bounds": [
+        9.479999542236328,
+        -15.890000343322754,
+        3.0450000762939453,
+        10.079999923706055,
+        -15.390000343322754,
+        3.4149999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside limestone top 0",
+      "bounds": [
+        9.475000381469727,
+        -15.895000457763672,
+        3.4124999046325684,
+        10.085000038146973,
+        -15.385000228881836,
+        3.447499990463257
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside drawer 0",
+      "bounds": [
+        9.494000434875488,
+        -15.394499778747559,
+        3.071000099182129,
+        10.065999984741211,
+        -15.379500389099121,
+        3.2290000915527344
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside drawer 0.001",
+      "bounds": [
+        9.494000434875488,
+        -15.394499778747559,
+        3.246000051498413,
+        10.065999984741211,
+        -15.379500389099121,
+        3.4040000438690186
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside shadow pull 0",
+      "bounds": [
+        9.539999961853027,
+        -15.381999969482422,
+        3.2300000190734863,
+        10.020000457763672,
+        -15.369999885559082,
+        3.242000102996826
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside lamp foot 0",
+      "bounds": [
+        9.585000038146973,
+        -15.734999656677246,
+        3.4544999599456787,
+        9.734999656677246,
+        -15.585000038146973,
+        3.499500036239624
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside lamp stem 0",
+      "bounds": [
+        9.645999908447266,
+        -15.673999786376953,
+        3.490000009536743,
+        9.673999786376953,
+        -15.645999908447266,
+        3.7100000381469727
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside lamp shade 0",
+      "bounds": [
+        9.520405769348145,
+        -15.79959487915039,
+        3.690000057220459,
+        9.79959487915039,
+        -15.520405769348145,
+        3.9100000858306885
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside book 0",
+      "bounds": [
+        9.803793907165527,
+        -15.723061561584473,
+        3.448499917984009,
+        10.016206741333008,
+        -15.456938743591309,
+        3.4835000038146973
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside switches 0",
+      "bounds": [
+        9.704999923706055,
+        -16.02400016784668,
+        3.684000015258789,
+        9.854999542236328,
+        -16.006000518798828,
+        3.75600004196167
+      ]
+    },
+    {
+      "name": "Bedroom 02 | switch rocker",
+      "bounds": [
+        9.718500137329102,
+        -16.00749969482422,
+        3.691499948501587,
+        9.755499839782715,
+        -15.998499870300293,
+        3.748500108718872
+      ]
+    },
+    {
+      "name": "Bedroom 02 | switch rocker.001",
+      "bounds": [
+        9.761500358581543,
+        -16.00749969482422,
+        3.691499948501587,
+        9.798500061035156,
+        -15.998499870300293,
+        3.748500108718872
+      ]
+    },
+    {
+      "name": "Bedroom 02 | switch rocker.002",
+      "bounds": [
+        9.804499626159668,
+        -16.00749969482422,
+        3.691499948501587,
+        9.841500282287598,
+        -15.998499870300293,
+        3.748500108718872
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading light mount",
+      "bounds": [
+        9.734999656677246,
+        -16.030500411987305,
+        4.150000095367432,
+        9.824999809265137,
+        -15.98550033569336,
+        4.25
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading light arm",
+      "bounds": [
+        9.769000053405762,
+        -16.010000228881836,
+        4.178999900817871,
+        9.791000366210938,
+        -15.829999923706055,
+        4.201000213623047
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading light lens",
+      "bounds": [
+        9.755000114440918,
+        -15.845999717712402,
+        4.147500038146973,
+        9.805000305175781,
+        -15.795999526977539,
+        4.182499885559082
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside floating cabinet 1",
+      "bounds": [
+        12.220000267028809,
+        -15.890000343322754,
+        3.0450000762939453,
+        12.819999694824219,
+        -15.390000343322754,
+        3.4149999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside limestone top 1",
+      "bounds": [
+        12.21500015258789,
+        -15.895000457763672,
+        3.4124999046325684,
+        12.824999809265137,
+        -15.385000228881836,
+        3.447499990463257
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside drawer 1",
+      "bounds": [
+        12.234000205993652,
+        -15.394499778747559,
+        3.071000099182129,
+        12.805999755859375,
+        -15.379500389099121,
+        3.2290000915527344
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside drawer 1.001",
+      "bounds": [
+        12.234000205993652,
+        -15.394499778747559,
+        3.246000051498413,
+        12.805999755859375,
+        -15.379500389099121,
+        3.4040000438690186
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside shadow pull 1",
+      "bounds": [
+        12.279999732971191,
+        -15.381999969482422,
+        3.2300000190734863,
+        12.760000228881836,
+        -15.369999885559082,
+        3.242000102996826
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside lamp foot 1",
+      "bounds": [
+        12.324999809265137,
+        -15.734999656677246,
+        3.4544999599456787,
+        12.475000381469727,
+        -15.585000038146973,
+        3.499500036239624
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside lamp stem 1",
+      "bounds": [
+        12.38599967956543,
+        -15.673999786376953,
+        3.490000009536743,
+        12.413999557495117,
+        -15.645999908447266,
+        3.7100000381469727
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside lamp shade 1",
+      "bounds": [
+        12.260405540466309,
+        -15.79959487915039,
+        3.690000057220459,
+        12.539594650268555,
+        -15.520405769348145,
+        3.9100000858306885
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside book 1",
+      "bounds": [
+        12.543793678283691,
+        -15.723061561584473,
+        3.448499917984009,
+        12.756206512451172,
+        -15.456938743591309,
+        3.4835000038146973
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bedside switches 1",
+      "bounds": [
+        12.444999694824219,
+        -16.02400016784668,
+        3.684000015258789,
+        12.595000267028809,
+        -16.006000518798828,
+        3.75600004196167
+      ]
+    },
+    {
+      "name": "Bedroom 02 | switch rocker.003",
+      "bounds": [
+        12.458499908447266,
+        -16.00749969482422,
+        3.691499948501587,
+        12.495499610900879,
+        -15.998499870300293,
+        3.748500108718872
+      ]
+    },
+    {
+      "name": "Bedroom 02 | switch rocker.004",
+      "bounds": [
+        12.501500129699707,
+        -16.00749969482422,
+        3.691499948501587,
+        12.53849983215332,
+        -15.998499870300293,
+        3.748500108718872
+      ]
+    },
+    {
+      "name": "Bedroom 02 | switch rocker.005",
+      "bounds": [
+        12.544500350952148,
+        -16.00749969482422,
+        3.691499948501587,
+        12.581500053405762,
+        -15.998499870300293,
+        3.748500108718872
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading light mount.001",
+      "bounds": [
+        12.475000381469727,
+        -16.030500411987305,
+        4.150000095367432,
+        12.5649995803833,
+        -15.98550033569336,
+        4.25
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading light arm.001",
+      "bounds": [
+        12.508999824523926,
+        -16.010000228881836,
+        4.178999900817871,
+        12.531000137329102,
+        -15.829999923706055,
+        4.201000213623047
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading light lens.001",
+      "bounds": [
+        12.494999885559082,
+        -15.845999717712402,
+        4.147500038146973,
+        12.545000076293945,
+        -15.795999526977539,
+        4.182499885559082
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed end bench",
+      "bounds": [
+        10.324999809265137,
+        -13.359999656677246,
+        3.125,
+        11.975000381469727,
+        -12.9399995803833,
+        3.315000057220459
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bench oak support",
+      "bounds": [
+        10.46500015258789,
+        -13.3149995803833,
+        2.799999952316284,
+        10.53499984741211,
+        -12.984999656677246,
+        3.1600000858306885
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bench oak support.001",
+      "bounds": [
+        11.765000343322754,
+        -13.3149995803833,
+        2.799999952316284,
+        11.835000038146973,
+        -12.984999656677246,
+        3.1600000858306885
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa recessed plinth",
+      "bounds": [
+        5.914999961853027,
+        -11.550000190734863,
+        2.869999885559082,
+        8.045000076293945,
+        -10.75,
+        3.069999933242798
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa seat 0",
+      "bounds": [
+        6.986499786376953,
+        -11.460000038146973,
+        3.1050000190734863,
+        7.953499794006348,
+        -10.699999809265137,
+        3.3550000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa back 0",
+      "bounds": [
+        6.980000019073486,
+        -11.59000015258789,
+        3.200000047683716,
+        7.960000038146973,
+        -11.369999885559082,
+        3.859999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa seat 1",
+      "bounds": [
+        6.006499767303467,
+        -11.460000038146973,
+        3.1050000190734863,
+        6.973499774932861,
+        -10.699999809265137,
+        3.3550000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa back 1",
+      "bounds": [
+        6.0,
+        -11.59000015258789,
+        3.200000047683716,
+        6.980000019073486,
+        -11.369999885559082,
+        3.859999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa arm",
+      "bounds": [
+        7.940000057220459,
+        -11.625,
+        3.0250000953674316,
+        8.130000114440918,
+        -10.675000190734863,
+        3.674999952316284
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa loose cushion",
+      "bounds": [
+        7.570000171661377,
+        -11.350000381469727,
+        3.325000047683716,
+        7.96999979019165,
+        -11.170000076293945,
+        3.755000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa arm.001",
+      "bounds": [
+        5.829999923706055,
+        -11.625,
+        3.0250000953674316,
+        6.019999980926514,
+        -10.675000190734863,
+        3.674999952316284
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa loose cushion.001",
+      "bounds": [
+        5.989999771118164,
+        -11.350000381469727,
+        3.325000047683716,
+        6.389999866485596,
+        -11.170000076293945,
+        3.755000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa wool rug",
+      "bounds": [
+        5.389999866485596,
+        -11.829999923706055,
+        2.802000045776367,
+        8.489999771118164,
+        -9.210000038146973,
+        2.8320000171661377
+      ]
+    },
+    {
+      "name": "Bedroom 02 | coffee table limestone",
+      "bounds": [
+        6.429999828338623,
+        -10.274999618530273,
+        3.1549999713897705,
+        7.53000020980835,
+        -9.774999618530273,
+        3.2149999141693115
+      ]
+    },
+    {
+      "name": "Bedroom 02 | coffee table oak base",
+      "bounds": [
+        6.53000020980835,
+        -10.154999732971191,
+        2.805000066757202,
+        6.789999961853027,
+        -9.895000457763672,
+        3.1549999713897705
+      ]
+    },
+    {
+      "name": "Bedroom 02 | coffee table oak base.001",
+      "bounds": [
+        7.170000076293945,
+        -10.154999732971191,
+        2.805000066757202,
+        7.429999828338623,
+        -9.895000457763672,
+        3.1549999713897705
+      ]
+    },
+    {
+      "name": "Bedroom 02 | coffee table book",
+      "bounds": [
+        7.034956932067871,
+        -10.13448429107666,
+        3.2174999713897705,
+        7.325042724609375,
+        -9.905515670776367,
+        3.252500057220459
+      ]
+    },
+    {
+      "name": "Bedroom 02 | coffee cup",
+      "bounds": [
+        6.73199987411499,
+        -10.038000106811523,
+        3.2179999351501465,
+        6.808000087738037,
+        -9.961999893188477,
+        3.303999900817871
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa side table",
+      "bounds": [
+        5.239999771118164,
+        -11.539999961853027,
+        3.2674999237060547,
+        5.679999828338623,
+        -11.100000381469727,
+        3.3125
+      ]
+    },
+    {
+      "name": "Bedroom 02 | side table pedestal",
+      "bounds": [
+        5.360000133514404,
+        -11.420000076293945,
+        2.809999942779541,
+        5.559999942779541,
+        -11.220000267028809,
+        3.2699999809265137
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading floor lamp base",
+      "bounds": [
+        5.340000152587891,
+        -10.90999984741211,
+        2.799999952316284,
+        5.639999866485596,
+        -10.609999656677246,
+        2.8399999141693115
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading floor lamp stem",
+      "bounds": [
+        5.478000164031982,
+        -10.772000312805176,
+        2.819999933242798,
+        5.501999855041504,
+        -10.748000144958496,
+        4.21999979019165
+      ]
+    },
+    {
+      "name": "Bedroom 02 | reading floor lamp shade",
+      "bounds": [
+        5.3106584548950195,
+        -10.939340591430664,
+        4.150000095367432,
+        5.669341564178467,
+        -10.580658912658691,
+        4.349999904632568
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed media cabinet",
+      "bounds": [
+        9.949999809265137,
+        -10.75,
+        3.0,
+        12.350000381469727,
+        -10.350000381469727,
+        3.380000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed media limestone top",
+      "bounds": [
+        9.9399995803833,
+        -10.755000114440918,
+        3.380000114440918,
+        12.359999656677246,
+        -10.345000267028809,
+        3.4079999923706055
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed media drawer 0",
+      "bounds": [
+        9.956000328063965,
+        -10.767000198364258,
+        3.0199999809265137,
+        10.543999671936035,
+        -10.746999740600586,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed media drawer 1",
+      "bounds": [
+        10.555999755859375,
+        -10.767000198364258,
+        3.0199999809265137,
+        11.144000053405762,
+        -10.746999740600586,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed media drawer 2",
+      "bounds": [
+        11.156000137329102,
+        -10.767000198364258,
+        3.0199999809265137,
+        11.744000434875488,
+        -10.746999740600586,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed media drawer 3",
+      "bounds": [
+        11.755999565124512,
+        -10.767000198364258,
+        3.0199999809265137,
+        12.343999862670898,
+        -10.746999740600586,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed TV fixed case",
+      "bounds": [
+        10.194000244140625,
+        -10.387499809265137,
+        3.555500030517578,
+        12.105999946594238,
+        -10.322500228881836,
+        4.644499778747559
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed TV screen",
+      "bounds": [
+        10.208999633789062,
+        -10.394499778747559,
+        3.570499897003174,
+        12.090999603271484,
+        -10.385499954223633,
+        4.629499912261963
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed TV status light",
+      "bounds": [
+        11.898300170898438,
+        -10.399999618530273,
+        3.561000108718872,
+        11.907299995422363,
+        -10.394000053405762,
+        3.563999891281128
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar",
+      "bounds": [
+        10.6899995803833,
+        -10.756999969482422,
+        3.430000066757202,
+        11.609999656677246,
+        -10.666999816894531,
+        3.490000009536743
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille",
+      "bounds": [
+        10.737000465393066,
+        -10.761500358581543,
+        3.442500114440918,
+        10.743000030517578,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.001",
+      "bounds": [
+        10.770999908447266,
+        -10.761500358581543,
+        3.442500114440918,
+        10.777000427246094,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.002",
+      "bounds": [
+        10.805000305175781,
+        -10.761500358581543,
+        3.442500114440918,
+        10.810999870300293,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.003",
+      "bounds": [
+        10.83899974822998,
+        -10.761500358581543,
+        3.442500114440918,
+        10.845000267028809,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.004",
+      "bounds": [
+        10.873000144958496,
+        -10.761500358581543,
+        3.442500114440918,
+        10.878999710083008,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.005",
+      "bounds": [
+        10.906999588012695,
+        -10.761500358581543,
+        3.442500114440918,
+        10.913000106811523,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.006",
+      "bounds": [
+        10.940999984741211,
+        -10.761500358581543,
+        3.442500114440918,
+        10.946999549865723,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.007",
+      "bounds": [
+        10.975000381469727,
+        -10.761500358581543,
+        3.442500114440918,
+        10.980999946594238,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.008",
+      "bounds": [
+        11.008999824523926,
+        -10.761500358581543,
+        3.442500114440918,
+        11.015000343322754,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.009",
+      "bounds": [
+        11.043000221252441,
+        -10.761500358581543,
+        3.442500114440918,
+        11.048999786376953,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.010",
+      "bounds": [
+        11.07699966430664,
+        -10.761500358581543,
+        3.442500114440918,
+        11.083000183105469,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.011",
+      "bounds": [
+        11.111000061035156,
+        -10.761500358581543,
+        3.442500114440918,
+        11.116999626159668,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.012",
+      "bounds": [
+        11.145000457763672,
+        -10.761500358581543,
+        3.442500114440918,
+        11.151000022888184,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.013",
+      "bounds": [
+        11.178999900817871,
+        -10.761500358581543,
+        3.442500114440918,
+        11.1850004196167,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.014",
+      "bounds": [
+        11.213000297546387,
+        -10.761500358581543,
+        3.442500114440918,
+        11.218999862670898,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.015",
+      "bounds": [
+        11.246999740600586,
+        -10.761500358581543,
+        3.442500114440918,
+        11.253000259399414,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.016",
+      "bounds": [
+        11.281000137329102,
+        -10.761500358581543,
+        3.442500114440918,
+        11.286999702453613,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.017",
+      "bounds": [
+        11.3149995803833,
+        -10.761500358581543,
+        3.442500114440918,
+        11.321000099182129,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.018",
+      "bounds": [
+        11.348999977111816,
+        -10.761500358581543,
+        3.442500114440918,
+        11.354999542236328,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.019",
+      "bounds": [
+        11.383000373840332,
+        -10.761500358581543,
+        3.442500114440918,
+        11.388999938964844,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.020",
+      "bounds": [
+        11.416999816894531,
+        -10.761500358581543,
+        3.442500114440918,
+        11.42300033569336,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.021",
+      "bounds": [
+        11.451000213623047,
+        -10.761500358581543,
+        3.442500114440918,
+        11.456999778747559,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.022",
+      "bounds": [
+        11.484999656677246,
+        -10.761500358581543,
+        3.442500114440918,
+        11.491000175476074,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.023",
+      "bounds": [
+        11.519000053405762,
+        -10.761500358581543,
+        3.442500114440918,
+        11.524999618530273,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | bed soundbar grille.024",
+      "bounds": [
+        11.553000450134277,
+        -10.761500358581543,
+        3.442500114440918,
+        11.559000015258789,
+        -10.756500244140625,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa media cabinet",
+      "bounds": [
+        5.579999923706055,
+        -9.229999542236328,
+        3.0,
+        8.380000114440918,
+        -8.829999923706055,
+        3.380000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa media limestone top",
+      "bounds": [
+        5.570000171661377,
+        -9.234999656677246,
+        3.380000114440918,
+        8.390000343322754,
+        -8.824999809265137,
+        3.4079999923706055
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa media drawer 0",
+      "bounds": [
+        5.585999965667725,
+        -9.246999740600586,
+        3.0199999809265137,
+        6.27400016784668,
+        -9.22700023651123,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa media drawer 1",
+      "bounds": [
+        6.285999774932861,
+        -9.246999740600586,
+        3.0199999809265137,
+        6.973999977111816,
+        -9.22700023651123,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa media drawer 2",
+      "bounds": [
+        6.986000061035156,
+        -9.246999740600586,
+        3.0199999809265137,
+        7.673999786376953,
+        -9.22700023651123,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa media drawer 3",
+      "bounds": [
+        7.685999870300293,
+        -9.246999740600586,
+        3.0199999809265137,
+        8.37399959564209,
+        -9.22700023651123,
+        3.359999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa TV fixed case",
+      "bounds": [
+        6.355999946594238,
+        -8.827500343322754,
+        3.6424999237060547,
+        7.604000091552734,
+        -8.762499809265137,
+        4.357500076293945
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa TV screen",
+      "bounds": [
+        6.370999813079834,
+        -8.834500312805176,
+        3.6575000286102295,
+        7.589000225067139,
+        -8.825499534606934,
+        4.34250020980835
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa TV status light",
+      "bounds": [
+        7.462699890136719,
+        -8.84000015258789,
+        3.6480000019073486,
+        7.471700191497803,
+        -8.833999633789062,
+        3.6510000228881836
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar",
+      "bounds": [
+        6.519999980926514,
+        -9.237000465393066,
+        3.430000066757202,
+        7.440000057220459,
+        -9.147000312805176,
+        3.490000009536743
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille",
+      "bounds": [
+        6.566999912261963,
+        -9.241499900817871,
+        3.442500114440918,
+        6.572999954223633,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.001",
+      "bounds": [
+        6.60099983215332,
+        -9.241499900817871,
+        3.442500114440918,
+        6.60699987411499,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.002",
+      "bounds": [
+        6.635000228881836,
+        -9.241499900817871,
+        3.442500114440918,
+        6.640999794006348,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.003",
+      "bounds": [
+        6.669000148773193,
+        -9.241499900817871,
+        3.442500114440918,
+        6.675000190734863,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.004",
+      "bounds": [
+        6.703000068664551,
+        -9.241499900817871,
+        3.442500114440918,
+        6.709000110626221,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.005",
+      "bounds": [
+        6.736999988555908,
+        -9.241499900817871,
+        3.442500114440918,
+        6.743000030517578,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.006",
+      "bounds": [
+        6.770999908447266,
+        -9.241499900817871,
+        3.442500114440918,
+        6.7769999504089355,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.007",
+      "bounds": [
+        6.804999828338623,
+        -9.241499900817871,
+        3.442500114440918,
+        6.810999870300293,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.008",
+      "bounds": [
+        6.839000225067139,
+        -9.241499900817871,
+        3.442500114440918,
+        6.84499979019165,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.009",
+      "bounds": [
+        6.873000144958496,
+        -9.241499900817871,
+        3.442500114440918,
+        6.879000186920166,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.010",
+      "bounds": [
+        6.9070000648498535,
+        -9.241499900817871,
+        3.442500114440918,
+        6.913000106811523,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.011",
+      "bounds": [
+        6.940999984741211,
+        -9.241499900817871,
+        3.442500114440918,
+        6.947000026702881,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.012",
+      "bounds": [
+        6.974999904632568,
+        -9.241499900817871,
+        3.442500114440918,
+        6.980999946594238,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.013",
+      "bounds": [
+        7.008999824523926,
+        -9.241499900817871,
+        3.442500114440918,
+        7.014999866485596,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.014",
+      "bounds": [
+        7.043000221252441,
+        -9.241499900817871,
+        3.442500114440918,
+        7.048999786376953,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.015",
+      "bounds": [
+        7.077000141143799,
+        -9.241499900817871,
+        3.442500114440918,
+        7.083000183105469,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.016",
+      "bounds": [
+        7.111000061035156,
+        -9.241499900817871,
+        3.442500114440918,
+        7.117000102996826,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.017",
+      "bounds": [
+        7.144999980926514,
+        -9.241499900817871,
+        3.442500114440918,
+        7.151000022888184,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.018",
+      "bounds": [
+        7.178999900817871,
+        -9.241499900817871,
+        3.442500114440918,
+        7.184999942779541,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.019",
+      "bounds": [
+        7.2129998207092285,
+        -9.241499900817871,
+        3.442500114440918,
+        7.218999862670898,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.020",
+      "bounds": [
+        7.247000217437744,
+        -9.241499900817871,
+        3.442500114440918,
+        7.252999782562256,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.021",
+      "bounds": [
+        7.281000137329102,
+        -9.241499900817871,
+        3.442500114440918,
+        7.2870001792907715,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.022",
+      "bounds": [
+        7.315000057220459,
+        -9.241499900817871,
+        3.442500114440918,
+        7.321000099182129,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.023",
+      "bounds": [
+        7.348999977111816,
+        -9.241499900817871,
+        3.442500114440918,
+        7.355000019073486,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | sofa soundbar grille.024",
+      "bounds": [
+        7.382999897003174,
+        -9.241499900817871,
+        3.442500114440918,
+        7.388999938964844,
+        -9.236499786376953,
+        3.4774999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk top",
+      "bounds": [
+        5.400000095367432,
+        -15.859999656677246,
+        3.5174999237060547,
+        6.099999904632568,
+        -14.0600004196167,
+        3.572499990463257
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk panel leg",
+      "bounds": [
+        5.440000057220459,
+        -15.832500457763672,
+        2.799999952316284,
+        6.059999942779541,
+        -15.767499923706055,
+        3.5199999809265137
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk panel leg.001",
+      "bounds": [
+        5.440000057220459,
+        -14.15250015258789,
+        2.799999952316284,
+        6.059999942779541,
+        -14.087499618530273,
+        3.5199999809265137
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk drawer",
+      "bounds": [
+        5.449999809265137,
+        -15.779999732971191,
+        3.3450000286102295,
+        6.050000190734863,
+        -15.34000015258789,
+        3.505000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk drawer pull",
+      "bounds": [
+        6.098999977111816,
+        -15.6899995803833,
+        3.4375,
+        6.117000102996826,
+        -15.430000305175781,
+        3.4625000953674316
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk laptop base",
+      "bounds": [
+        5.635000228881836,
+        -15.079999923706055,
+        3.5789999961853027,
+        5.885000228881836,
+        -14.720000267028809,
+        3.5929999351501465
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk laptop display",
+      "bounds": [
+        5.642499923706055,
+        -15.069999694824219,
+        3.5899999141693115,
+        5.65749979019165,
+        -14.729999542236328,
+        3.8299999237060547
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk notebook",
+      "bounds": [
+        5.677007675170898,
+        -14.54851245880127,
+        3.577500104904175,
+        5.942992210388184,
+        -14.231488227844238,
+        3.6024999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk lamp base",
+      "bounds": [
+        5.559999942779541,
+        -15.640000343322754,
+        3.5824999809265137,
+        5.71999979019165,
+        -15.479999542236328,
+        3.617500066757202
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk lamp stem",
+      "bounds": [
+        5.627999782562256,
+        -15.571999549865723,
+        3.5999999046325684,
+        5.6519999504089355,
+        -15.54800033569336,
+        3.940000057220459
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk lamp shade",
+      "bounds": [
+        5.525000095367432,
+        -15.675000190734863,
+        3.9149999618530273,
+        5.755000114440918,
+        -15.444999694824219,
+        3.984999895095825
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair seat",
+      "bounds": [
+        6.489999771118164,
+        -15.225000381469727,
+        3.194999933242798,
+        7.010000228881836,
+        -14.694999694824219,
+        3.325000047683716
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair back",
+      "bounds": [
+        6.932499885559082,
+        -15.225000381469727,
+        3.2750000953674316,
+        7.007500171661377,
+        -14.694999694824219,
+        3.805000066757202
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair leg",
+      "bounds": [
+        6.542500019073486,
+        -15.167499542236328,
+        2.799999952316284,
+        6.577499866485596,
+        -15.132499694824219,
+        3.240000009536743
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair leg.001",
+      "bounds": [
+        6.542500019073486,
+        -14.787500381469727,
+        2.799999952316284,
+        6.577499866485596,
+        -14.7524995803833,
+        3.240000009536743
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair leg.002",
+      "bounds": [
+        6.922500133514404,
+        -15.167499542236328,
+        2.799999952316284,
+        6.957499980926514,
+        -15.132499694824219,
+        3.240000009536743
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair leg.003",
+      "bounds": [
+        6.922500133514404,
+        -14.787500381469727,
+        2.799999952316284,
+        6.957499980926514,
+        -14.7524995803833,
+        3.240000009536743
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair armrest",
+      "bounds": [
+        6.525000095367432,
+        -15.287500381469727,
+        3.447499990463257,
+        6.925000190734863,
+        -15.232500076293945,
+        3.512500047683716
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair arm support",
+      "bounds": [
+        6.855000019073486,
+        -15.272500038146973,
+        3.244999885559082,
+        6.885000228881836,
+        -15.2475004196167,
+        3.4749999046325684
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair armrest.001",
+      "bounds": [
+        6.525000095367432,
+        -14.6875,
+        3.447499990463257,
+        6.925000190734863,
+        -14.632499694824219,
+        3.512500047683716
+      ]
+    },
+    {
+      "name": "Bedroom 02 | desk chair arm support.001",
+      "bounds": [
+        6.855000019073486,
+        -14.672499656677246,
+        3.244999885559082,
+        6.885000228881836,
+        -14.647500038146973,
+        3.4749999046325684
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 0",
+      "bounds": [
+        5.945000171661377,
+        -15.959500312805176,
+        2.825000047683716,
+        5.988999843597412,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 1",
+      "bounds": [
+        5.979000091552734,
+        -15.995499610900879,
+        2.825000047683716,
+        6.0229997634887695,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 2",
+      "bounds": [
+        6.013000011444092,
+        -15.959500312805176,
+        2.825000047683716,
+        6.057000160217285,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 3",
+      "bounds": [
+        6.046999931335449,
+        -15.995499610900879,
+        2.825000047683716,
+        6.091000080108643,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 4",
+      "bounds": [
+        6.080999851226807,
+        -15.959500312805176,
+        2.825000047683716,
+        6.125,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 5",
+      "bounds": [
+        6.114999771118164,
+        -15.995499610900879,
+        2.825000047683716,
+        6.158999919891357,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 6",
+      "bounds": [
+        6.14900016784668,
+        -15.959500312805176,
+        2.825000047683716,
+        6.192999839782715,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 7",
+      "bounds": [
+        6.183000087738037,
+        -15.995499610900879,
+        2.825000047683716,
+        6.2270002365112305,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 8",
+      "bounds": [
+        6.2170000076293945,
+        -15.959500312805176,
+        2.825000047683716,
+        6.261000156402588,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 9",
+      "bounds": [
+        6.250999927520752,
+        -15.995499610900879,
+        2.825000047683716,
+        6.295000076293945,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 0.001",
+      "bounds": [
+        8.194999694824219,
+        -15.959500312805176,
+        2.825000047683716,
+        8.23900032043457,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 1.001",
+      "bounds": [
+        8.229000091552734,
+        -15.995499610900879,
+        2.825000047683716,
+        8.27299976348877,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 2.001",
+      "bounds": [
+        8.262999534606934,
+        -15.959500312805176,
+        2.825000047683716,
+        8.307000160217285,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 3.001",
+      "bounds": [
+        8.29699993133545,
+        -15.995499610900879,
+        2.825000047683716,
+        8.340999603271484,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 4.001",
+      "bounds": [
+        8.331000328063965,
+        -15.959500312805176,
+        2.825000047683716,
+        8.375,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 5.001",
+      "bounds": [
+        8.364999771118164,
+        -15.995499610900879,
+        2.825000047683716,
+        8.409000396728516,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 6.001",
+      "bounds": [
+        8.39900016784668,
+        -15.959500312805176,
+        2.825000047683716,
+        8.442999839782715,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 7.001",
+      "bounds": [
+        8.432999610900879,
+        -15.995499610900879,
+        2.825000047683716,
+        8.47700023651123,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 8.001",
+      "bounds": [
+        8.467000007629395,
+        -15.959500312805176,
+        2.825000047683716,
+        8.51099967956543,
+        -15.884499549865723,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south linen curtain fold 9.001",
+      "bounds": [
+        8.50100040435791,
+        -15.995499610900879,
+        2.825000047683716,
+        8.545000076293945,
+        -15.920499801635742,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 0",
+      "bounds": [
+        13.554499626159668,
+        -15.725000381469727,
+        2.825000047683716,
+        13.629500389099121,
+        -15.6850004196167,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 1",
+      "bounds": [
+        13.590499877929688,
+        -15.694999694824219,
+        2.825000047683716,
+        13.665499687194824,
+        -15.654999732971191,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 2",
+      "bounds": [
+        13.554499626159668,
+        -15.664999961853027,
+        2.825000047683716,
+        13.629500389099121,
+        -15.625,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 3",
+      "bounds": [
+        13.590499877929688,
+        -15.635000228881836,
+        2.825000047683716,
+        13.665499687194824,
+        -15.595000267028809,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 4",
+      "bounds": [
+        13.554499626159668,
+        -15.604999542236328,
+        2.825000047683716,
+        13.629500389099121,
+        -15.5649995803833,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 5",
+      "bounds": [
+        13.590499877929688,
+        -15.574999809265137,
+        2.825000047683716,
+        13.665499687194824,
+        -15.53499984741211,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 6",
+      "bounds": [
+        13.554499626159668,
+        -15.545000076293945,
+        2.825000047683716,
+        13.629500389099121,
+        -15.505000114440918,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 7",
+      "bounds": [
+        13.590499877929688,
+        -15.515000343322754,
+        2.825000047683716,
+        13.665499687194824,
+        -15.475000381469727,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 8",
+      "bounds": [
+        13.554499626159668,
+        -15.484999656677246,
+        2.825000047683716,
+        13.629500389099121,
+        -15.444999694824219,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 9",
+      "bounds": [
+        13.590499877929688,
+        -15.454999923706055,
+        2.825000047683716,
+        13.665499687194824,
+        -15.414999961853027,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 0.001",
+      "bounds": [
+        13.554499626159668,
+        -13.795000076293945,
+        2.825000047683716,
+        13.629500389099121,
+        -13.755000114440918,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 1.001",
+      "bounds": [
+        13.590499877929688,
+        -13.765000343322754,
+        2.825000047683716,
+        13.665499687194824,
+        -13.725000381469727,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 2.001",
+      "bounds": [
+        13.554499626159668,
+        -13.734999656677246,
+        2.825000047683716,
+        13.629500389099121,
+        -13.694999694824219,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 3.001",
+      "bounds": [
+        13.590499877929688,
+        -13.704999923706055,
+        2.825000047683716,
+        13.665499687194824,
+        -13.664999961853027,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 4.001",
+      "bounds": [
+        13.554499626159668,
+        -13.675000190734863,
+        2.825000047683716,
+        13.629500389099121,
+        -13.635000228881836,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 5.001",
+      "bounds": [
+        13.590499877929688,
+        -13.645000457763672,
+        2.825000047683716,
+        13.665499687194824,
+        -13.604999542236328,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 6.001",
+      "bounds": [
+        13.554499626159668,
+        -13.614999771118164,
+        2.825000047683716,
+        13.629500389099121,
+        -13.574999809265137,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 7.001",
+      "bounds": [
+        13.590499877929688,
+        -13.585000038146973,
+        2.825000047683716,
+        13.665499687194824,
+        -13.545000076293945,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 8.001",
+      "bounds": [
+        13.554499626159668,
+        -13.555000305175781,
+        2.825000047683716,
+        13.629500389099121,
+        -13.515000343322754,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 9.001",
+      "bounds": [
+        13.590499877929688,
+        -13.524999618530273,
+        2.825000047683716,
+        13.665499687194824,
+        -13.484999656677246,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 0.002",
+      "bounds": [
+        13.554499626159668,
+        -12.505000114440918,
+        2.825000047683716,
+        13.629500389099121,
+        -12.46500015258789,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 1.002",
+      "bounds": [
+        13.590499877929688,
+        -12.475000381469727,
+        2.825000047683716,
+        13.665499687194824,
+        -12.4350004196167,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 2.002",
+      "bounds": [
+        13.554499626159668,
+        -12.444999694824219,
+        2.825000047683716,
+        13.629500389099121,
+        -12.404999732971191,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 3.002",
+      "bounds": [
+        13.590499877929688,
+        -12.414999961853027,
+        2.825000047683716,
+        13.665499687194824,
+        -12.375,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 4.002",
+      "bounds": [
+        13.554499626159668,
+        -12.385000228881836,
+        2.825000047683716,
+        13.629500389099121,
+        -12.345000267028809,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 5.002",
+      "bounds": [
+        13.590499877929688,
+        -12.354999542236328,
+        2.825000047683716,
+        13.665499687194824,
+        -12.3149995803833,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 6.002",
+      "bounds": [
+        13.554499626159668,
+        -12.324999809265137,
+        2.825000047683716,
+        13.629500389099121,
+        -12.28499984741211,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 7.002",
+      "bounds": [
+        13.590499877929688,
+        -12.295000076293945,
+        2.825000047683716,
+        13.665499687194824,
+        -12.255000114440918,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 8.002",
+      "bounds": [
+        13.554499626159668,
+        -12.265000343322754,
+        2.825000047683716,
+        13.629500389099121,
+        -12.225000381469727,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east linen curtain fold 9.002",
+      "bounds": [
+        13.590499877929688,
+        -12.234999656677246,
+        2.825000047683716,
+        13.665499687194824,
+        -12.194999694824219,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 0",
+      "bounds": [
+        13.554499626159668,
+        -10.510000228881836,
+        2.825000047683716,
+        13.629500389099121,
+        -10.484000205993652,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 1",
+      "bounds": [
+        13.590499877929688,
+        -10.494000434875488,
+        2.825000047683716,
+        13.665499687194824,
+        -10.468000411987305,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 2",
+      "bounds": [
+        13.554499626159668,
+        -10.477999687194824,
+        2.825000047683716,
+        13.629500389099121,
+        -10.45199966430664,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 3",
+      "bounds": [
+        13.590499877929688,
+        -10.461999893188477,
+        2.825000047683716,
+        13.665499687194824,
+        -10.435999870300293,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 4",
+      "bounds": [
+        13.554499626159668,
+        -10.446000099182129,
+        2.825000047683716,
+        13.629500389099121,
+        -10.420000076293945,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 5",
+      "bounds": [
+        13.590499877929688,
+        -10.430000305175781,
+        2.825000047683716,
+        13.665499687194824,
+        -10.404000282287598,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 6",
+      "bounds": [
+        13.554499626159668,
+        -10.413999557495117,
+        2.825000047683716,
+        13.629500389099121,
+        -10.387999534606934,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 7",
+      "bounds": [
+        13.590499877929688,
+        -10.39799976348877,
+        2.825000047683716,
+        13.665499687194824,
+        -10.371999740600586,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 8",
+      "bounds": [
+        13.554499626159668,
+        -10.381999969482422,
+        2.825000047683716,
+        13.629500389099121,
+        -10.355999946594238,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east north linen curtain fold 9",
+      "bounds": [
+        13.590499877929688,
+        -10.366000175476074,
+        2.825000047683716,
+        13.665499687194824,
+        -10.34000015258789,
+        5.255000114440918
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster jamb",
+      "bounds": [
+        13.75,
+        -15.324999809265137,
+        3.6500000953674316,
+        13.84000015258789,
+        -15.3149995803833,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster jamb.001",
+      "bounds": [
+        13.75,
+        -13.885000228881836,
+        3.6500000953674316,
+        13.84000015258789,
+        -13.875,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster head",
+      "bounds": [
+        13.75,
+        -15.324999809265137,
+        5.039999961853027,
+        13.84000015258789,
+        -13.875,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window limestone sill",
+      "bounds": [
+        13.729999542236328,
+        -15.324999809265137,
+        3.6500000953674316,
+        13.84000015258789,
+        -13.875,
+        3.6679999828338623
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster jamb.002",
+      "bounds": [
+        13.75,
+        -12.119999885559082,
+        3.5,
+        13.84000015258789,
+        -12.109999656677246,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster jamb.003",
+      "bounds": [
+        13.75,
+        -10.529999732971191,
+        3.5,
+        13.84000015258789,
+        -10.520000457763672,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster head.001",
+      "bounds": [
+        13.75,
+        -12.119999885559082,
+        5.039999961853027,
+        13.84000015258789,
+        -10.520000457763672,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window limestone sill.001",
+      "bounds": [
+        13.729999542236328,
+        -12.119999885559082,
+        3.5,
+        13.84000015258789,
+        -10.520000457763672,
+        3.5179998874664307
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster jamb.004",
+      "bounds": [
+        13.75,
+        -8.890000343322754,
+        3.549999952316284,
+        13.84000015258789,
+        -8.880000114440918,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster jamb.005",
+      "bounds": [
+        13.75,
+        -7.099999904632568,
+        3.549999952316284,
+        13.84000015258789,
+        -7.090000152587891,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window plaster head.002",
+      "bounds": [
+        13.75,
+        -8.890000343322754,
+        5.039999961853027,
+        13.84000015258789,
+        -7.090000152587891,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | east window limestone sill.002",
+      "bounds": [
+        13.729999542236328,
+        -8.890000343322754,
+        3.549999952316284,
+        13.84000015258789,
+        -7.090000152587891,
+        3.568000078201294
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south window plaster jamb",
+      "bounds": [
+        6.34499979019165,
+        -16.166000366210938,
+        3.6500000953674316,
+        6.355000019073486,
+        -16.076000213623047,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south window plaster jamb.001",
+      "bounds": [
+        8.135000228881836,
+        -16.166000366210938,
+        3.6500000953674316,
+        8.145000457763672,
+        -16.076000213623047,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south window plaster head",
+      "bounds": [
+        6.34499979019165,
+        -16.166000366210938,
+        5.039999961853027,
+        8.145000457763672,
+        -16.076000213623047,
+        5.050000190734863
+      ]
+    },
+    {
+      "name": "Bedroom 02 | south window limestone sill",
+      "bounds": [
+        6.34499979019165,
+        -16.166000366210938,
+        3.6500000953674316,
+        8.145000457763672,
+        -16.055999755859375,
+        3.6679999828338623
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight bezel",
+      "bounds": [
+        8.975000381469727,
+        -11.545000076293945,
+        5.264999866485596,
+        9.0649995803833,
+        -11.454999923706055,
+        5.2769999504089355
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight lens",
+      "bounds": [
+        8.986000061035156,
+        -11.534000396728516,
+        5.256999969482422,
+        9.053999900817871,
+        -11.465999603271484,
+        5.267000198364258
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight bezel.001",
+      "bounds": [
+        8.975000381469727,
+        -14.194999694824219,
+        5.264999866485596,
+        9.0649995803833,
+        -14.104999542236328,
+        5.2769999504089355
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight lens.001",
+      "bounds": [
+        8.986000061035156,
+        -14.184000015258789,
+        5.256999969482422,
+        9.053999900817871,
+        -14.116000175476074,
+        5.267000198364258
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight bezel.002",
+      "bounds": [
+        12.854999542236328,
+        -12.694999694824219,
+        5.264999866485596,
+        12.944999694824219,
+        -12.604999542236328,
+        5.2769999504089355
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight lens.002",
+      "bounds": [
+        12.866000175476074,
+        -12.684000015258789,
+        5.256999969482422,
+        12.934000015258789,
+        -12.616000175476074,
+        5.267000198364258
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight bezel.003",
+      "bounds": [
+        6.605000019073486,
+        -13.345000267028809,
+        5.264999866485596,
+        6.695000171661377,
+        -13.255000114440918,
+        5.2769999504089355
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight lens.003",
+      "bounds": [
+        6.616000175476074,
+        -13.333999633789062,
+        5.256999969482422,
+        6.684000015258789,
+        -13.265999794006348,
+        5.267000198364258
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight bezel.004",
+      "bounds": [
+        6.934999942779541,
+        -10.145000457763672,
+        5.264999866485596,
+        7.025000095367432,
+        -10.055000305175781,
+        5.2769999504089355
+      ]
+    },
+    {
+      "name": "Bedroom 02 | downlight lens.004",
+      "bounds": [
+        6.946000099182129,
+        -10.133999824523926,
+        5.256999969482422,
+        7.013999938964844,
+        -10.065999984741211,
+        5.267000198364258
+      ]
+    },
+    {
+      "name": "Bedroom 02 | headboard concealed light",
+      "bounds": [
+        9.345000267028809,
+        -16.040000915527344,
+        5.212500095367432,
+        12.954999923706055,
+        -16.010000228881836,
+        5.227499961853027
+      ]
+    },
+    {
+      "name": "Bedroom 02 | planter",
+      "bounds": [
+        13.199999809265137,
+        -12.76500129699707,
+        2.814000129699707,
+        13.529999732971191,
+        -12.435001373291016,
+        3.2039999961853027
+      ]
+    },
+    {
+      "name": "Bedroom 02 | dark soil",
+      "bounds": [
+        13.223099708557129,
+        -12.741901397705078,
+        3.1489999294281006,
+        13.5068998336792,
+        -12.458101272583008,
+        3.1569998264312744
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble",
+      "bounds": [
+        13.414856910705566,
+        -12.690924644470215,
+        3.1570000648498535,
+        13.425856590270996,
+        -12.675707817077637,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.001",
+      "bounds": [
+        13.260660171508789,
+        -12.604486465454102,
+        3.1570000648498535,
+        13.271659851074219,
+        -12.589268684387207,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.002",
+      "bounds": [
+        13.470536231994629,
+        -12.568634033203125,
+        3.1570000648498535,
+        13.481535911560059,
+        -12.553417205810547,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.003",
+      "bounds": [
+        13.436702728271484,
+        -12.656371116638184,
+        3.1570000648498535,
+        13.447702407836914,
+        -12.641154289245605,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.004",
+      "bounds": [
+        13.3475980758667,
+        -12.61172103881836,
+        3.1570000648498535,
+        13.358597755432129,
+        -12.596504211425781,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.005",
+      "bounds": [
+        13.276923179626465,
+        -12.613200187683105,
+        3.1570000648498535,
+        13.287922859191895,
+        -12.597983360290527,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.006",
+      "bounds": [
+        13.34517765045166,
+        -12.517936706542969,
+        3.1570000648498535,
+        13.35617733001709,
+        -12.50271987915039,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.007",
+      "bounds": [
+        13.43378734588623,
+        -12.705401420593262,
+        3.1570000648498535,
+        13.44478702545166,
+        -12.690183639526367,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.008",
+      "bounds": [
+        13.473596572875977,
+        -12.646320343017578,
+        3.1570000648498535,
+        13.484596252441406,
+        -12.631103515625,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.009",
+      "bounds": [
+        13.347042083740234,
+        -12.543083190917969,
+        3.1570000648498535,
+        13.358041763305664,
+        -12.52786636352539,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.010",
+      "bounds": [
+        13.430819511413574,
+        -12.584098815917969,
+        3.1570000648498535,
+        13.441819190979004,
+        -12.56888198852539,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.011",
+      "bounds": [
+        13.319523811340332,
+        -12.568599700927734,
+        3.1570000648498535,
+        13.330523490905762,
+        -12.553382873535156,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.012",
+      "bounds": [
+        13.301370620727539,
+        -12.495630264282227,
+        3.1570000648498535,
+        13.312370300292969,
+        -12.480413436889648,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.013",
+      "bounds": [
+        13.331677436828613,
+        -12.534576416015625,
+        3.1570000648498535,
+        13.342677116394043,
+        -12.519359588623047,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.014",
+      "bounds": [
+        13.385981559753418,
+        -12.557271957397461,
+        3.1570000648498535,
+        13.396981239318848,
+        -12.542054176330566,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.015",
+      "bounds": [
+        13.279208183288574,
+        -12.658348083496094,
+        3.1570000648498535,
+        13.290207862854004,
+        -12.643131256103516,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.016",
+      "bounds": [
+        13.46441650390625,
+        -12.610053062438965,
+        3.1570000648498535,
+        13.47541618347168,
+        -12.594836235046387,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.017",
+      "bounds": [
+        13.263607025146484,
+        -12.543440818786621,
+        3.1570000648498535,
+        13.274606704711914,
+        -12.528223991394043,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.018",
+      "bounds": [
+        13.272635459899902,
+        -12.552999496459961,
+        3.1570000648498535,
+        13.283635139465332,
+        -12.537782669067383,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.019",
+      "bounds": [
+        13.384309768676758,
+        -12.520781517028809,
+        3.1570000648498535,
+        13.395309448242188,
+        -12.50556468963623,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | soil pebble.020",
+      "bounds": [
+        13.321850776672363,
+        -12.541542053222656,
+        3.1570000648498535,
+        13.332850456237793,
+        -12.526324272155762,
+        3.1649999618530273
+      ]
+    },
+    {
+      "name": "Bedroom 02 | olive trunk",
+      "bounds": [
+        13.311975479125977,
+        -12.624518394470215,
+        3.1526682376861572,
+        13.40219497680664,
+        -12.56279182434082,
+        4.140937805175781
+      ]
+    },
+    {
+      "name": "Bedroom 02 | secondary trunk",
+      "bounds": [
+        13.338763236999512,
+        -12.59423828125,
+        3.6559503078460693,
+        13.510809898376465,
+        -12.574237823486328,
+        4.001619815826416
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive twig",
+      "bounds": [
+        13.504225730895996,
+        -12.611159324645996,
+        3.999396800994873,
+        13.663193702697754,
+        -12.580853462219238,
+        4.426327228546143
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem",
+      "bounds": [
+        13.535735130310059,
+        -12.59178352355957,
+        4.169177055358887,
+        13.624728202819824,
+        -12.543055534362793,
+        4.284374237060547
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.001",
+      "bounds": [
+        13.55966567993164,
+        -12.687759399414062,
+        4.260340213775635,
+        13.59538459777832,
+        -12.592964172363281,
+        4.375537395477295
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.002",
+      "bounds": [
+        13.604715347290039,
+        -12.603042602539062,
+        4.333502292633057,
+        13.65919303894043,
+        -12.517422676086426,
+        4.448699474334717
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive twig.001",
+      "bounds": [
+        13.503914833068848,
+        -12.587413787841797,
+        3.9987573623657227,
+        13.599438667297363,
+        -12.369003295898438,
+        4.358222007751465
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.003",
+      "bounds": [
+        13.479004859924316,
+        -12.532746315002441,
+        4.1452765464782715,
+        13.530077934265137,
+        -12.445062637329102,
+        4.260473728179932
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.004",
+      "bounds": [
+        13.542315483093262,
+        -12.501540184020996,
+        4.222782611846924,
+        13.642544746398926,
+        -12.492757797241211,
+        4.337979793548584
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.005",
+      "bounds": [
+        13.502751350402832,
+        -12.440644264221191,
+        4.282288074493408,
+        13.569584846496582,
+        -12.364230155944824,
+        4.397485256195068
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive twig.002",
+      "bounds": [
+        13.504149436950684,
+        -12.587422370910645,
+        3.9988861083984375,
+        13.519261360168457,
+        -12.37739086151123,
+        4.335662841796875
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.006",
+      "bounds": [
+        13.420931816101074,
+        -12.538147926330566,
+        4.137382507324219,
+        13.511216163635254,
+        -12.491898536682129,
+        4.252579689025879
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.007",
+      "bounds": [
+        13.509808540344238,
+        -12.503793716430664,
+        4.210377216339111,
+        13.594061851501465,
+        -12.44722843170166,
+        4.3255743980407715
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.008",
+      "bounds": [
+        13.431350708007812,
+        -12.448598861694336,
+        4.265371322631836,
+        13.516027450561523,
+        -12.39266586303711,
+        4.380568504333496
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive twig.003",
+      "bounds": [
+        13.30138874053955,
+        -12.587651252746582,
+        3.9990577697753906,
+        13.510449409484863,
+        -12.52623462677002,
+        4.438642501831055
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.009",
+      "bounds": [
+        13.391887664794922,
+        -12.645490646362305,
+        4.173462867736816,
+        13.460325241088867,
+        -12.57050895690918,
+        4.288660049438477
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.010",
+      "bounds": [
+        13.365509033203125,
+        -12.564480781555176,
+        4.267074108123779,
+        13.425880432128906,
+        -12.482894897460938,
+        4.3822712898254395
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.011",
+      "bounds": [
+        13.30228328704834,
+        -12.619606971740723,
+        4.342686176300049,
+        13.371626853942871,
+        -12.545463562011719,
+        4.457883358001709
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive twig.004",
+      "bounds": [
+        13.356016159057617,
+        -12.738489151000977,
+        3.999075412750244,
+        13.510692596435547,
+        -12.580820083618164,
+        4.456905841827393
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.012",
+      "bounds": [
+        13.455595016479492,
+        -12.719711303710938,
+        4.179860591888428,
+        13.475225448608398,
+        -12.62070083618164,
+        4.295057773590088
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.013",
+      "bounds": [
+        13.349770545959473,
+        -12.650104522705078,
+        4.277127742767334,
+        13.450064659118652,
+        -12.642680168151855,
+        4.392324924468994
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.014",
+      "bounds": [
+        13.406153678894043,
+        -12.784844398498535,
+        4.356395244598389,
+        13.429421424865723,
+        -12.686527252197266,
+        4.471592426300049
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive twig.005",
+      "bounds": [
+        13.493877410888672,
+        -12.830602645874023,
+        3.9987335205078125,
+        13.510576248168945,
+        -12.581103324890137,
+        4.3809661865234375
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.015",
+      "bounds": [
+        13.503288269042969,
+        -12.700334548950195,
+        4.15324068069458,
+        13.587886810302734,
+        -12.64428424835205,
+        4.26843786239624
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.016",
+      "bounds": [
+        13.432202339172363,
+        -12.7576904296875,
+        4.235297203063965,
+        13.504467964172363,
+        -12.68638801574707,
+        4.350494384765625
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.017",
+      "bounds": [
+        13.497818946838379,
+        -12.827966690063477,
+        4.299353122711182,
+        13.562167167663574,
+        -12.749455451965332,
+        4.414550304412842
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive twig.006",
+      "bounds": [
+        13.504045486450195,
+        -12.747028350830078,
+        3.998915195465088,
+        13.653547286987305,
+        -12.58115005493164,
+        4.383282661437988
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.018",
+      "bounds": [
+        13.538118362426758,
+        -12.626617431640625,
+        4.154064655303955,
+        13.632389068603516,
+        -12.589470863342285,
+        4.269261837005615
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.019",
+      "bounds": [
+        13.554642677307129,
+        -12.751498222351074,
+        4.236591339111328,
+        13.565203666687012,
+        -12.651383399963379,
+        4.351788520812988
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 fine stem.020",
+      "bounds": [
+        13.601625442504883,
+        -12.696039199829102,
+        4.30111837387085,
+        13.700157165527344,
+        -12.67382526397705,
+        4.41631555557251
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 0 olive leaves",
+      "bounds": [
+        13.21389102935791,
+        -12.901954650878906,
+        4.159239768981934,
+        13.739638328552246,
+        -12.280800819396973,
+        4.496708869934082
+      ]
+    },
+    {
+      "name": "Bedroom 02 | secondary trunk.001",
+      "bounds": [
+        13.285606384277344,
+        -12.588446617126465,
+        3.795950412750244,
+        13.379138946533203,
+        -12.437285423278809,
+        4.141619682312012
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive twig",
+      "bounds": [
+        13.286223411560059,
+        -12.444024085998535,
+        4.1389265060424805,
+        13.470301628112793,
+        -12.36081600189209,
+        4.463973045349121
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem",
+      "bounds": [
+        13.327876091003418,
+        -12.422727584838867,
+        4.2731475830078125,
+        13.385825157165527,
+        -12.339580535888672,
+        4.356620788574219
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.001",
+      "bounds": [
+        13.357267379760742,
+        -12.464083671569824,
+        4.343803405761719,
+        13.440475463867188,
+        -12.406222343444824,
+        4.427276611328125
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.002",
+      "bounds": [
+        13.406434059143066,
+        -12.38877010345459,
+        4.396459579467773,
+        13.456830024719238,
+        -12.300867080688477,
+        4.47993278503418
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive twig.001",
+      "bounds": [
+        13.286516189575195,
+        -12.444083213806152,
+        4.13850212097168,
+        13.461557388305664,
+        -12.316513061523438,
+        4.370099067687988
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.003",
+      "bounds": [
+        13.3281831741333,
+        -12.413820266723633,
+        4.240242004394531,
+        13.349455833435059,
+        -12.315293312072754,
+        4.3237152099609375
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.004",
+      "bounds": [
+        13.3572998046875,
+        -12.412626266479492,
+        4.2920942306518555,
+        13.455610275268555,
+        -12.390243530273438,
+        4.375567436218262
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.005",
+      "bounds": [
+        13.402304649353027,
+        -12.360161781311035,
+        4.3259477615356445,
+        13.420689582824707,
+        -12.261137008666992,
+        4.409420013427734
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive twig.002",
+      "bounds": [
+        13.278556823730469,
+        -12.443893432617188,
+        4.138339996337891,
+        13.292970657348633,
+        -12.202855110168457,
+        4.382071495056152
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.006",
+      "bounds": [
+        13.222018241882324,
+        -12.38370418548584,
+        4.2444305419921875,
+        13.288695335388184,
+        -12.307332992553711,
+        4.327903747558594
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.007",
+      "bounds": [
+        13.284114837646484,
+        -12.343181610107422,
+        4.298677444458008,
+        13.353738784790039,
+        -12.269471168518066,
+        4.382149696350098
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.008",
+      "bounds": [
+        13.19529914855957,
+        -12.281793594360352,
+        4.33492374420166,
+        13.284345626831055,
+        -12.233481407165527,
+        4.41839599609375
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive twig.003",
+      "bounds": [
+        13.04863166809082,
+        -12.444250106811523,
+        4.138373374938965,
+        13.292287826538086,
+        -12.383947372436523,
+        4.406802177429199
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.009",
+      "bounds": [
+        13.143766403198242,
+        -12.478585243225098,
+        4.253094673156738,
+        13.230504989624023,
+        -12.426186561584473,
+        4.336566925048828
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.010",
+      "bounds": [
+        13.139586448669434,
+        -12.41986083984375,
+        4.312291145324707,
+        13.18929386138916,
+        -12.331571578979492,
+        4.395764350891113
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.011",
+      "bounds": [
+        13.038248062133789,
+        -12.44958782196045,
+        4.353488922119141,
+        13.127630233764648,
+        -12.401912689208984,
+        4.4369611740112305
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive twig.004",
+      "bounds": [
+        13.100018501281738,
+        -12.472249031066895,
+        4.138938903808594,
+        13.29279613494873,
+        -12.437423706054688,
+        4.451433181762695
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.012",
+      "bounds": [
+        13.19830322265625,
+        -12.5333890914917,
+        4.268754959106445,
+        13.249061584472656,
+        -12.44569206237793,
+        4.352228164672852
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.013",
+      "bounds": [
+        13.129989624023438,
+        -12.45358943939209,
+        4.33690071105957,
+        13.218103408813477,
+        -12.403568267822266,
+        4.420373916625977
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.014",
+      "bounds": [
+        13.132506370544434,
+        -12.554285049438477,
+        4.387046813964844,
+        13.166783332824707,
+        -12.459168434143066,
+        4.47052001953125
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive twig.005",
+      "bounds": [
+        13.256104469299316,
+        -12.671642303466797,
+        4.13846492767334,
+        13.29276180267334,
+        -12.437947273254395,
+        4.403635025024414
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.015",
+      "bounds": [
+        13.281304359436035,
+        -12.58484935760498,
+        4.251988410949707,
+        13.329867362976074,
+        -12.49593734741211,
+        4.335461616516113
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.016",
+      "bounds": [
+        13.196589469909668,
+        -12.593724250793457,
+        4.310553550720215,
+        13.279269218444824,
+        -12.535112380981445,
+        4.394026756286621
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.017",
+      "bounds": [
+        13.267123222351074,
+        -12.676729202270508,
+        4.351119041442871,
+        13.326859474182129,
+        -12.594861030578613,
+        4.434591293334961
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive twig.006",
+      "bounds": [
+        13.286083221435547,
+        -12.5632963180542,
+        4.138960838317871,
+        13.443841934204102,
+        -12.437479972839355,
+        4.4755659103393555
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.018",
+      "bounds": [
+        13.323938369750977,
+        -12.468437194824219,
+        4.277210235595703,
+        13.421056747436523,
+        -12.440855979919434,
+        4.360683441162109
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.019",
+      "bounds": [
+        13.349148750305176,
+        -12.583895683288574,
+        4.350188255310059,
+        13.367732048034668,
+        -12.484902381896973,
+        4.433660507202148
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 fine stem.020",
+      "bounds": [
+        13.390439987182617,
+        -12.52181625366211,
+        4.405165672302246,
+        13.485816955566406,
+        -12.488317489624023,
+        4.488638877868652
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 1 olive leaves",
+      "bounds": [
+        13.008915901184082,
+        -12.708002090454102,
+        4.2577738761901855,
+        13.5230073928833,
+        -12.167928695678711,
+        4.5093159675598145
+      ]
+    },
+    {
+      "name": "Bedroom 02 | secondary trunk.002",
+      "bounds": [
+        13.304609298706055,
+        -12.7175931930542,
+        3.93595027923584,
+        13.398141860961914,
+        -12.566431999206543,
+        4.281620025634766
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive twig",
+      "bounds": [
+        13.305499076843262,
+        -12.770716667175293,
+        4.278362274169922,
+        13.493054389953613,
+        -12.710579872131348,
+        4.4450249671936035
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem",
+      "bounds": [
+        13.347721099853516,
+        -12.729214668273926,
+        4.357266426086426,
+        13.413095474243164,
+        -12.651934623718262,
+        4.409029960632324
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.001",
+      "bounds": [
+        13.37747573852539,
+        -12.827963829040527,
+        4.396090507507324,
+        13.419501304626465,
+        -12.736085891723633,
+        4.447854042053223
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.002",
+      "bounds": [
+        13.428237915039062,
+        -12.753323554992676,
+        4.416913986206055,
+        13.515003204345703,
+        -12.70127010345459,
+        4.468677520751953
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive twig.001",
+      "bounds": [
+        13.30529499053955,
+        -12.717296600341797,
+        4.2786078453063965,
+        13.446629524230957,
+        -12.6011962890625,
+        4.4629693031311035
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.003",
+      "bounds": [
+        13.334156036376953,
+        -12.689105987548828,
+        4.363558769226074,
+        13.368490219116211,
+        -12.594261169433594,
+        4.415322303771973
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.004",
+      "bounds": [
+        13.356109619140625,
+        -12.714435577392578,
+        4.405977725982666,
+        13.445709228515625,
+        -12.667571067810059,
+        4.4577412605285645
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.005",
+      "bounds": [
+        13.384954452514648,
+        -12.640454292297363,
+        4.430396556854248,
+        13.39857292175293,
+        -12.541095733642578,
+        4.4821600914001465
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive twig.002",
+      "bounds": [
+        13.22098159790039,
+        -12.716962814331055,
+        4.278214454650879,
+        13.311656951904297,
+        -12.536659240722656,
+        4.427863121032715
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.006",
+      "bounds": [
+        13.191601753234863,
+        -12.68429183959961,
+        4.351253032684326,
+        13.291069984436035,
+        -12.67177963256836,
+        4.403016567230225
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.007",
+      "bounds": [
+        13.2743558883667,
+        -12.645635604858398,
+        4.3866400718688965,
+        13.31609058380127,
+        -12.553631782531738,
+        4.438403606414795
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.008",
+      "bounds": [
+        13.153284072875977,
+        -12.603914260864258,
+        4.404027462005615,
+        13.25301742553711,
+        -12.594904899597168,
+        4.455790996551514
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive twig.003",
+      "bounds": [
+        13.10073184967041,
+        -12.717370986938477,
+        4.278107643127441,
+        13.311511039733887,
+        -12.60789680480957,
+        4.464686393737793
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.009",
+      "bounds": [
+        13.163230895996094,
+        -12.715312957763672,
+        4.364149570465088,
+        13.25949478149414,
+        -12.68558406829834,
+        4.415913105010986
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.010",
+      "bounds": [
+        13.185995101928711,
+        -12.670454025268555,
+        4.4069061279296875,
+        13.224864959716797,
+        -12.577265739440918,
+        4.458669662475586
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.011",
+      "bounds": [
+        13.0751371383667,
+        -12.674101829528809,
+        4.4316630363464355,
+        13.170266151428223,
+        -12.64062786102295,
+        4.483426570892334
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive twig.004",
+      "bounds": [
+        13.115336418151855,
+        -12.762701034545898,
+        4.2782673835754395,
+        13.31151294708252,
+        -12.710569381713867,
+        4.439425468444824
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.012",
+      "bounds": [
+        13.248706817626953,
+        -12.820989608764648,
+        4.355303764343262,
+        13.266138076782227,
+        -12.722108840942383,
+        4.40706729888916
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.013",
+      "bounds": [
+        13.141363143920898,
+        -12.732342720031738,
+        4.393005847930908,
+        13.23377799987793,
+        -12.691571235656738,
+        4.444769382476807
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.014",
+      "bounds": [
+        13.14125919342041,
+        -12.835533142089844,
+        4.412707805633545,
+        13.182259559631348,
+        -12.74321460723877,
+        4.464471340179443
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive twig.005",
+      "bounds": [
+        13.305026054382324,
+        -12.882169723510742,
+        4.27874755859375,
+        13.334507942199707,
+        -12.710733413696289,
+        4.473445892333984
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.015",
+      "bounds": [
+        13.313104629516602,
+        -12.785858154296875,
+        4.367232799530029,
+        13.406177520751953,
+        -12.746692657470703,
+        4.418996334075928
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.016",
+      "bounds": [
+        13.253129959106445,
+        -12.849615097045898,
+        4.4117512702941895,
+        13.319948196411133,
+        -12.773590087890625,
+        4.463514804840088
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.017",
+      "bounds": [
+        13.323895454406738,
+        -12.883451461791992,
+        4.438270092010498,
+        13.403552055358887,
+        -12.820979118347168,
+        4.4900336265563965
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive twig.006",
+      "bounds": [
+        13.305418968200684,
+        -12.81258773803711,
+        4.278249263763428,
+        13.478461265563965,
+        -12.710586547851562,
+        4.432953357696533
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.018",
+      "bounds": [
+        13.347456932067871,
+        -12.734783172607422,
+        4.353036403656006,
+        13.44704532623291,
+        -12.723655700683594,
+        4.404799938201904
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.019",
+      "bounds": [
+        13.368745803833008,
+        -12.846771240234375,
+        4.3894429206848145,
+        13.378744125366211,
+        -12.747100830078125,
+        4.441206455230713
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 fine stem.020",
+      "bounds": [
+        13.420639038085938,
+        -12.77821159362793,
+        4.4078497886657715,
+        13.519319534301758,
+        -12.759477615356445,
+        4.45961332321167
+      ]
+    },
+    {
+      "name": "Bedroom 02 | crown 2 olive leaves",
+      "bounds": [
+        13.056816101074219,
+        -12.910083770751953,
+        4.364490032196045,
+        13.53550910949707,
+        -12.53322982788086,
+        4.505011081695557
+      ]
+    }
+  ],
+  "source_house_overwritten": false
+}

@@ -1,3 +1,13 @@
+# Current: furnished south-wall bedroom — revision 02
+
+The owner's instruction to apply the shared principles is implemented as `interiors/principal/bedroom.html`, with separate native models derived from Proposed and Planning. Wall-backed 1.8 m bed, 600 mm bedsides, separate fixed bed/sofa TVs, 2.3 m sofa group, 1.8 m side-lit desk, curtains, lighting, limestone details and the approved kitchen's detailed olive tree. External openings and the original vaulted window seat remain.
+
+Six walking envelopes, actual generated furniture bounds, door sweep, headboard contact and 40 native viewing rays are checked. Seven cameras per design include the actual ceiling except in the labelled cutaway; desktop/mobile and existing kitchen/old-suite regressions pass. See `bedroom/ROOM-REVIEW.md` for the design judgment, distances and limitations.
+
+The northern 24.5 m² is reserved for dressing and the relocated ensuite. Those rooms and their services are not fitted yet, so neither whole-house file has been overwritten. The new bedroom is ready for owner review; final product choices and full-suite integration remain separate work.
+
+---
+
 # Principal suite — layout research
 
 The owner has rejected the five alternatives and requested research into better room planning. No option is selected. See `LAYOUT-RESEARCH.md` for the sourced study, critique of the previous method and dimensional targets for the next sketches. In particular, the shared-TV arrangement and the bed position must be reconsidered, and 500 mm route connectivity must not be presented as proof of comfort. The five published plans remain a record of that unselected study.

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "variants": [
+    {
+      "variant": "compact",
+      "routes": [
+        {
+          "route": "main spine",
+          "width_m": 1.2,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "bed left",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "bed right",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "desk approach with chair occupied",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "vault window seat approach",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "sofa east approach",
+          "width_m": 0.9,
+          "native_mesh_hits": []
+        }
+      ],
+      "fixed_screens": [
+        {
+          "screen": "bed",
+          "back_to_wall_m": 0.0025,
+          "centre_view_distance_m": 5.16
+        },
+        {
+          "screen": "sofa",
+          "back_to_wall_m": 0.0025,
+          "centre_view_distance_m": 2.42
+        }
+      ],
+      "headboard_wall_contact": true,
+      "native_sightlines": 20,
+      "vault_route_min_headroom_m": 1.812,
+      "vault_centre_headroom_m": 2.149,
+      "retained_gable_panels": 4
+    },
+    {
+      "variant": "planning",
+      "routes": [
+        {
+          "route": "main spine",
+          "width_m": 1.2,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "bed left",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "bed right",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "desk approach with chair occupied",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "vault window seat approach",
+          "width_m": 1.0,
+          "native_mesh_hits": []
+        },
+        {
+          "route": "sofa east approach",
+          "width_m": 0.9,
+          "native_mesh_hits": []
+        }
+      ],
+      "fixed_screens": [
+        {
+          "screen": "bed",
+          "back_to_wall_m": 0.0025,
+          "centre_view_distance_m": 5.16
+        },
+        {
+          "screen": "sofa",
+          "back_to_wall_m": 0.0025,
+          "centre_view_distance_m": 2.42
+        }
+      ],
+      "headboard_wall_contact": true,
+      "native_sightlines": 20,
+      "vault_route_min_headroom_m": 1.812,
+      "vault_centre_headroom_m": 2.149,
+      "retained_gable_panels": 4
+    }
+  ],
+  "limitations": [
+    "Vault approach is low at its sides: 1.81 m minimum over a 1 m wide route; centre is 2.15 m. Review against occupant heights.",
+    "Native object bounds are conservative plan envelopes. This is not a measured-building or construction certification."
+  ]
+}

@@ -5,7 +5,7 @@
     "options": 10,
     "images": 20,
     "engine": "Built-in image_gen",
-    "html_sha256": "a8cde84a155e9484edeac5eac2a55fc4a711b3fb29d8b8bc2374fb442142bb32",
+    "html_sha256": "2da90b0ec7674bcab6ac4dcf83a3cd029d78f5e1baa6c420be16184be3c7e147",
     "assets": {
       "images/01-planning.da95d4f435a5ebe2.png": {
         "source": "images/01-planning.png",
@@ -207,24 +207,39 @@
         "bytes": 228,
         "sha256": "982a4c163a07423699cf5aabfd38c22c4362b9e84c5a0f63837bf4058d44a0ec"
       },
-      "room-model.d652519fb37a9374.js": {
+      "room-model.04d559b1c05d9198.js": {
         "source": "room-model.js",
-        "bytes": 4787828,
-        "sha256": "d652519fb37a9374568aaef9629692be0246f7a254c54681d497b4ab0f3d8946"
+        "bytes": 4788099,
+        "sha256": "04d559b1c05d91981ccfe8744b9839326c24436c499dc04db2bef7c6a1b69f67"
       },
       "studio.fcd9fe47725a433e.css": {
         "source": "studio.css",
         "bytes": 9096,
         "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
       },
+      "studio.693feac2c375affc.js": {
+        "source": "studio.js",
+        "bytes": 18390,
+        "sha256": "693feac2c375affc46532123b5cfecfa350786dfc9050808a52d743fb9a0df6c"
+      }
+    },
+    "previous_assets": {
+      "room-model.d652519fb37a9374.js": {
+        "source": "room-model.js",
+        "bytes": 4787828,
+        "sha256": "d652519fb37a9374568aaef9629692be0246f7a254c54681d497b4ab0f3d8946",
+        "retired_at_epoch": 1790437898.247526,
+        "retain_until_epoch": 1790445098.247526
+      },
       "studio.886a4d3939160640.js": {
         "source": "studio.js",
         "bytes": 18390,
-        "sha256": "886a4d3939160640eed8d76964d61755952a4cad3bf59a1c31ec4f16845600d3"
+        "sha256": "886a4d3939160640eed8d76964d61755952a4cad3bf59a1c31ec4f16845600d3",
+        "retired_at_epoch": 1790437898.247526,
+        "retain_until_epoch": 1790445098.247526
       }
     },
-    "previous_assets": {},
-    "model_html_sha256": "dd38c62bdc97138c17e7ee57c327c77fade43ea05e2ee2ec0083c353c2550a81"
+    "model_html_sha256": "277797ecd6cad1a123e695490ccdd37e0ad82a9c39c7d8b400ed6d74c0997ea8"
   },
   "principal_studio": {
     "path": "./interiors/principal/",
@@ -232,7 +247,7 @@
     "options": 10,
     "images": 10,
     "engine": "Built-in image_gen",
-    "html_sha256": "5892850b31880488c94c710e970deaf2a38c43e1dcf5dc3b21244f1d4375104f",
+    "html_sha256": "34929589ef4389f81c5b22d9ef6d910468a8d0c8666e7639252141570d031fe5",
     "assets": {
       "arrangements/A.212c9812a028e8c2.svg": {
         "source": "arrangements/A.svg",
@@ -248,6 +263,11 @@
         "source": "arrangements/options.json",
         "bytes": 1437,
         "sha256": "5e17cb328d763f32285f3cf2144ddcb8bf1249f0e04f4fd4af2cc30f19e91984"
+      },
+      "bedroom-plan.0f9e1f9e7d8e439d.svg": {
+        "source": "bedroom-plan.svg",
+        "bytes": 7754,
+        "sha256": "0f9e1f9e7d8e439d118fa50faa8ca204f67c446943555cdf429ca81c71879df0"
       },
       "floorplans/01.bb1c00680cfe3f19.svg": {
         "source": "floorplans/01.svg",
@@ -339,6 +359,16 @@
         "bytes": 12967,
         "sha256": "c6466fe644d4a4c8145284d100a6f6214c35a0fe0e61169b6f10c36aa6ca62ec"
       },
+      "models/compact-bedroom.76da4abd2d806dae.glb": {
+        "source": "models/compact-bedroom.glb",
+        "bytes": 13533744,
+        "sha256": "76da4abd2d806dae887dcaae7ec2eeecca37a39bd2e85b71d7b9f0541b0d1ad5"
+      },
+      "models/compact-bedroom.ca649feee75a295e.json": {
+        "source": "models/compact-bedroom.json",
+        "bytes": 30272,
+        "sha256": "ca649feee75a295e17102f869d121b7de48cc448afd97b6feda283bffb7fe6e1"
+      },
       "models/compact-suite.d221520001ce8bf6.glb": {
         "source": "models/compact-suite.glb",
         "bytes": 11965896,
@@ -348,6 +378,16 @@
         "source": "models/compact-suite.json",
         "bytes": 31136,
         "sha256": "c6bd92d39d53226795c70932777a8b3132af75edfa5d6a91d202ff7bf3fd456e"
+      },
+      "models/planning-bedroom.1bfa4959cc04a569.glb": {
+        "source": "models/planning-bedroom.glb",
+        "bytes": 13550148,
+        "sha256": "1bfa4959cc04a569676158b71387a344f09450c9a3cf3cb402538e7bbc5f8217"
+      },
+      "models/planning-bedroom.44838da14eed00e8.json": {
+        "source": "models/planning-bedroom.json",
+        "bytes": 27773,
+        "sha256": "44838da14eed00e856ec107758909ef47aa56c30be2646b738dcb83538045f73"
       },
       "models/planning-suite.9921d79df8f8b434.glb": {
         "source": "models/planning-suite.glb",
@@ -404,20 +444,20 @@
         "bytes": 628369,
         "sha256": "e77eb6bafc270fab979f468b6b31f7af4916275f90158ffc41f6de76330e9c22"
       },
-      "room-model.d652519fb37a9374.js": {
+      "room-model.04d559b1c05d9198.js": {
         "source": "room-model.js",
-        "bytes": 4787828,
-        "sha256": "d652519fb37a9374568aaef9629692be0246f7a254c54681d497b4ab0f3d8946"
+        "bytes": 4788099,
+        "sha256": "04d559b1c05d91981ccfe8744b9839326c24436c499dc04db2bef7c6a1b69f67"
       },
       "studio.fcd9fe47725a433e.css": {
         "source": "studio.css",
         "bytes": 9096,
         "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
       },
-      "studio.e139c0032049a750.js": {
+      "studio.cc646924ef6fdc18.js": {
         "source": "studio.js",
-        "bytes": 17460,
-        "sha256": "e139c0032049a7506c56d22f9aba1b1306d23983ce03e40299e9bef7b1338783"
+        "bytes": 17833,
+        "sha256": "cc646924ef6fdc1801683376b83aeb1e1a983b4a5d06f422ce06778712f0e8d1"
       }
     },
     "previous_assets": {
@@ -455,17 +495,32 @@
         "sha256": "22e42aeebb4b186772701c49f99068f0277ce94f0952830b659144eca3daee5a",
         "retired_at_epoch": 1790431152.415721,
         "retain_until_epoch": 1790438352.415721
+      },
+      "room-model.d652519fb37a9374.js": {
+        "source": "room-model.js",
+        "bytes": 4787828,
+        "sha256": "d652519fb37a9374568aaef9629692be0246f7a254c54681d497b4ab0f3d8946",
+        "retired_at_epoch": 1790437898.247526,
+        "retain_until_epoch": 1790445098.247526
+      },
+      "studio.e139c0032049a750.js": {
+        "source": "studio.js",
+        "bytes": 17460,
+        "sha256": "e139c0032049a7506c56d22f9aba1b1306d23983ce03e40299e9bef7b1338783",
+        "retired_at_epoch": 1790437898.247526,
+        "retain_until_epoch": 1790445098.247526
       }
     },
-    "model_html_sha256": "96ebc4aa79d65712bb825176dd91ca1aa5b9063dd52135702d0ed8cfd400ab58",
-    "plans_html_sha256": "7c5212ec821e4129bb17594432ff8eb7da65b4e74468cd7ac264f72b6cdb3f7c",
+    "model_html_sha256": "d9b8ab504dea739b882d1e2eefa2540fb6ebbaf5b71bc14bd116dc00e53f3efd",
+    "bedroom_html_sha256": "9a2f5b14cecc4c0faf315599088e9d2ed8a8553c0fd7e5ae7c26193620914a89",
+    "plans_html_sha256": "ad3e9a25bb8c26e88955f007f133862b35c6d05935d096a2bb4dac360e451da2",
     "floorplans": {
       "path": "plans.html",
       "options": 5,
       "session": "principal-floorplans-2026-09-26-v1",
       "method": "Measured model-based SVG floorplans"
     },
-    "arrangements_html_sha256": "73f793c270082c6a19f0301d8451f273cc71c396a37ca187ff881972b4d1309d",
+    "arrangements_html_sha256": "efa8795abe611cd8678c0a1620609aeae6b68da19e36a36a2a19ca80a604fe69",
     "arrangements": {
       "path": "arrangements.html",
       "options": 0,
@@ -475,7 +530,7 @@
       "method": "Measured furniture studies; separate design review required"
     }
   },
-  "published_utc": "2026-09-26T13:59:13.089015+00:00",
+  "published_utc": "2026-09-26T15:51:39.024784+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",

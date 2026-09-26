@@ -1,0 +1,175 @@
+{
+  "revision": 2,
+  "status": "PASS",
+  "routes": [
+    {
+      "route": "main spine",
+      "width_m": 1.2,
+      "points": [
+        [
+          9.1,
+          -10.5
+        ],
+        [
+          9.1,
+          -12.1
+        ],
+        [
+          8.6,
+          -13.05
+        ],
+        [
+          8.6,
+          -14.75
+        ]
+      ],
+      "obstructions": [],
+      "outside_walkable_m2": 0.0,
+      "pass": true
+    },
+    {
+      "route": "bed left",
+      "width_m": 1.0,
+      "points": [
+        [
+          9.1,
+          -12.1
+        ],
+        [
+          9.4,
+          -13.85
+        ],
+        [
+          9.4,
+          -14.75
+        ]
+      ],
+      "obstructions": [],
+      "outside_walkable_m2": 0.0,
+      "pass": true
+    },
+    {
+      "route": "bed right",
+      "width_m": 1.0,
+      "points": [
+        [
+          9.1,
+          -12.05
+        ],
+        [
+          12.495,
+          -12.05
+        ],
+        [
+          12.495,
+          -13.4
+        ],
+        [
+          12.8,
+          -13.75
+        ],
+        [
+          12.8,
+          -14.75
+        ]
+      ],
+      "obstructions": [],
+      "outside_walkable_m2": 0.0,
+      "pass": true
+    },
+    {
+      "route": "desk approach with chair occupied",
+      "width_m": 1.0,
+      "points": [
+        [
+          8.6,
+          -13.1
+        ],
+        [
+          7.6,
+          -13.3
+        ],
+        [
+          7.6,
+          -14.96
+        ]
+      ],
+      "obstructions": [],
+      "outside_walkable_m2": 0.0,
+      "pass": true
+    },
+    {
+      "route": "vault window seat approach",
+      "width_m": 1.0,
+      "points": [
+        [
+          8.6,
+          -12.94
+        ],
+        [
+          4.65,
+          -12.94
+        ]
+      ],
+      "obstructions": [],
+      "outside_walkable_m2": 0.0,
+      "pass": true
+    },
+    {
+      "route": "sofa east approach",
+      "width_m": 0.9,
+      "points": [
+        [
+          9.1,
+          -10.5
+        ],
+        [
+          8.63,
+          -10.5
+        ]
+      ],
+      "obstructions": [],
+      "outside_walkable_m2": 0.0,
+      "pass": true
+    }
+  ],
+  "entry": {
+    "opening_m": 0.95,
+    "estimated_clear_at_90_deg_m": 0.928,
+    "furniture_hits": []
+  },
+  "bed": {
+    "headboard_contacts_wall_through_panel": true,
+    "mattress_m": [
+      1.8,
+      2.0
+    ],
+    "frame_m": [
+      2.04,
+      2.08
+    ],
+    "bedside_width_m": 0.6,
+    "east_access_below_bedside_to_curtains_m": 1.38,
+    "main_foot_route_m": 1.2,
+    "bench_gap_to_bed_m": 0.486
+  },
+  "seating": {
+    "coffee_table_gap_m": 0.4,
+    "sofa_width_m": 2.3,
+    "fixed_screens": 2
+  },
+  "desk": {
+    "top_m": [
+      1.8,
+      0.7
+    ],
+    "chair_operation_depth_m": 0.9,
+    "separate_passing_route_m": 1.0
+  },
+  "reserved_north_wing_m2": 24.55,
+  "limitations": [
+    "Clearances derive from the current design model, not a measured site survey",
+    "Detailed dressing and ensuite fit remains unresolved",
+    "Native ray tests are reported separately for each variant"
+  ]
+}

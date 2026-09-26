@@ -46,10 +46,10 @@ for(const variant of ['compact','planning']){
  await atomicWrite('dist/'+name,packed);
  console.log(`${variant} isolated room: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }
-for(const variant of ['compact','planning']){
- const name=`interiors/principal/models/${variant}-suite.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
+for(const variant of ['compact','planning'])for(const stem of ['suite','bedroom']){
+ const name=`interiors/principal/models/${variant}-${stem}.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
  const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await atomicWrite('dist/'+name,packed);
- console.log(`${variant} suite study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
+ console.log(`${variant} ${stem} study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }
 await cp('index.html','dist/index.html');
 performanceReport.seconds=(performance.now()-started)/1000;

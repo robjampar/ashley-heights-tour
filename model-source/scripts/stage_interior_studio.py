@@ -50,6 +50,12 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
             model_html = model_html.replace('="' + name + '"', '="' + asset_map[name] + '"')
         model_html = model_html.replace('<script type="module"', '<script>window.INTERIOR_ASSETS=' + json.dumps(asset_map) + ';</script><script type="module"')
         (destination / 'model.html').write_text(model_html)
+    if (authored / 'bedroom.html').is_file():
+        bedroom_html = (source / 'bedroom.html').read_text()
+        for name in ('studio.css', 'room-model.js'):
+            bedroom_html = bedroom_html.replace('="' + name + '"', '="' + asset_map[name] + '"')
+        bedroom_html = bedroom_html.replace('<script type="module"', '<script>window.INTERIOR_ASSETS=' + json.dumps(asset_map) + ';</script><script type="module"')
+        (destination / 'bedroom.html').write_text(bedroom_html)
     retained = {}
     for name, info in {**previous.get('previous_assets', {}), **previous.get('assets', {})}.items():
         candidate = (destination / name).resolve()
@@ -71,6 +77,7 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
               'images': len(selected_images), 'engine': 'Built-in image_gen', 'html_sha256': sha(html.encode()),
               'assets': manifest, 'previous_assets': retained}
     if model_html is not None: result['model_html_sha256'] = sha(model_html.encode())
+    if (authored / 'bedroom.html').is_file(): result['bedroom_html_sha256'] = sha(bedroom_html.encode())
     if (authored / 'plans.html').is_file():
         plans_html = (source / 'plans.html').read_text().replace('src="studio.js"', 'src="'+code_name+'"')
         plans_html = plans_html.replace('href="studio.css"', 'href="'+asset_map['studio.css']+'"')

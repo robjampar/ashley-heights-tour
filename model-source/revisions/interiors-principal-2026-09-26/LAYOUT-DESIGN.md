@@ -60,3 +60,21 @@ Five ways to arrange your suite.
 [Comparison of all five options]
 ```
 Choose a plan → inspect entry and TV lines → compare room proportions → circle changes / shortlist → export feedback. Use a separate feedback session so bedroom colour selections survive. Plans are alternatives, not changes already applied to either whole-house model.
+
+## Bedroom development — south headboard wall
+
+Owner instruction: make the bedroom using the principles. Develop one furnished room, using the existing studio camera/plan review pattern above. This is a new native bedroom iteration, not an approval of the unresolved B sketch. The existing south wall supplies the headboard backing; the east bedroom TV is fixed to a full-height return that genuinely separates the future dressing/bathroom wing. A separate fixed screen serves the north-west sofa. Keep the entry and window positions. Relocating the old south-east bathroom is a real consequence, explicitly unresolved for services.
+
+Pre-implementation sketch:
+```
+                   Existing entry → reserved dressing / ensuite
+[fixed sofa TV]         ↓              [fixed bed TV]
+[table + sofa]     clear central route
+[west window seat]                      open foot route
+[side-lit desk]       [bedside | 1.8 m bed | bedside]
+     south window        existing solid headboard wall
+```
+
+Journey: open current bedroom → see doorway view first → review bed, sofa, desk and reverse at eye level → use cutaway overview and measured plan → discuss this room before fitting adjoining rooms. Camera buttons are the only new controls. The ceiling is present in eye-level views and removed only in the explicitly labelled cutaway. Both proposal selectors load their own saved-house shell. Keep the prior study accessible as history; do not redirect it silently.
+
+Checks: full-size furniture and complete groups; 600 mm bedsides; wall-backed padded headboard; occupied desk separate from main route; retained 950 mm entry; new 950 mm connection to reserved wing; sofa table within reach; fixed-screen visibility from both actual bed/sofa eye positions; real window/vault geometry; curtains parked outside opening widths. Do not claim bathroom fit or construction approval from this bedroom test.
