@@ -7,7 +7,7 @@ Expanded after the owner's correction about headboards and rejection of a pivoti
 ## Firm requirements for this project
 
 - **Beds have their headboards against a proper wall.** Prefer existing suitable solid walls. A new full-height partition needs a purpose in the suite layout; do not add a token wall behind a floating bed. Show its extent, thickness, openings and effect on daylight.
-- **No pivoting or rotating TV arrangement.** Use fixed screens integrated into the room. A shared screen is optional. Two screens are acceptable to explore; they are not an owner-selected specification.
+- **No pivoting or rotating TV arrangement.** Use fixed screens integrated into the room. A shared screen is optional. The owner subsequently accepted the developed south-wall bedroom, with separate fixed bed and sofa screens.
 - Keep the bedroom, sitting area, useful study, substantial but proportionate dressing space and generous ensuite. Preserve the approved warm oak, ivory and limestone direction when detailing.
 - Preserve the wider brief and aim for limited changes to the existing house. Furniture must not obstruct the entrance or retained openings. Internal partitions may change; their structural and service implications are not assumed away.
 
@@ -57,7 +57,7 @@ The following rules combine the sources linked beside them with our application 
 
 **Verify** unresolved building facts such as roof/headroom, drainage, structure and ventilation before representing the layout as buildable. Record measured, observed, assumed and unresolved separately. Owner selection, design quality, geometric fit and construction feasibility are separate decisions.
 
-The new north-wall principal-bed sketch demonstrates the distinction: its plan checks pass, but compact bedsides and a weak entrance relationship make it a poor recommendation for this generous-suite brief. The south-wall sketch has a better-sized setting, but remains a working candidate pending full-suite and eye-level review. Neither is selected or fitted.
+The earlier north-wall principal-bed sketch demonstrates the distinction: its plan checks passed, but compact bedsides and a weak entrance relationship made it a poor recommendation. The south-wall bedroom was subsequently furnished, reviewed at eye level and accepted by the owner as the direction for adjoining bathroom and wardrobe development. This is room-design acceptance, not construction approval.
 
 ## Design from use, then space, then detail
 
@@ -86,7 +86,7 @@ The specific rules above replace the earlier ten broad principles. International
 | Garage / parking | Vehicle movement, doors, unloading and pedestrian access all fit | Actual vehicle sizes, doors open and groceries carried into the house |
 | Pool / garden rooms | Wet/dry transitions, changing, storage and routes support use | Swimmers, occupied loungers and movement between pool, house and changing |
 
-No existing room is declared to pass or fail this expanded review yet. The principal suite is the first application; the completed kitchen and later rooms should be reviewed as they come up, preserving the owner's approved design choices.
+The principal suite is the first application: the south-wall bedroom has a recorded room review and the bathroom/dressing extension is being checked in the same way. Review the completed kitchen and later rooms as they come up, preserving the owner's approved choices.
 
 ## Useful benchmarks and their limits
 

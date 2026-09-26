@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "designs": [
+    {
+      "revision": 1,
+      "variant": "compact",
+      "authored": 455,
+      "features": [
+        {
+          "term": "oval bath hollow shell",
+          "count": 1
+        },
+        {
+          "term": "basin hollow bowl",
+          "count": 2
+        },
+        {
+          "term": "shower thermostatic control",
+          "count": 2
+        },
+        {
+          "term": "WC privacy return",
+          "count": 1
+        },
+        {
+          "term": "hanging garment",
+          "count": 35
+        },
+        {
+          "term": "window drawer front",
+          "count": 4
+        },
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 1
+        },
+        {
+          "term": "bed TV screen",
+          "count": 1
+        }
+      ],
+      "mirrors": 3,
+      "views": [
+        "entrance",
+        "vanity",
+        "shower",
+        "bath",
+        "dressing",
+        "wardrobes",
+        "overview",
+        "wc"
+      ],
+      "cutawayObjects": 32,
+      "batches": {
+        "sourceMeshes": 936,
+        "sourceVertices": 858048,
+        "sourceTriangles": 286016,
+        "emptySourceMeshes": 0,
+        "batches": 58,
+        "opaqueBatches": 55,
+        "transparentBatches": 3,
+        "spanBatches": 1,
+        "globalBatches": 31,
+        "outputVertices": 407804,
+        "outputTriangles": 286016,
+        "indexedBatches": 58,
+        "oversizedSourceMeshes": 0,
+        "inputStoredVertices": 407804,
+        "inputIndexEntries": 858048,
+        "cellSize": 6,
+        "floorHeight": 2.8,
+        "transparentCellSize": 3,
+        "maxVertices": 200000,
+        "indexVertices": false,
+        "minMaterialTriangles": 20000
+      }
+    },
+    {
+      "revision": 1,
+      "variant": "planning",
+      "authored": 455,
+      "features": [
+        {
+          "term": "oval bath hollow shell",
+          "count": 1
+        },
+        {
+          "term": "basin hollow bowl",
+          "count": 2
+        },
+        {
+          "term": "shower thermostatic control",
+          "count": 2
+        },
+        {
+          "term": "WC privacy return",
+          "count": 1
+        },
+        {
+          "term": "hanging garment",
+          "count": 35
+        },
+        {
+          "term": "window drawer front",
+          "count": 4
+        },
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 1
+        },
+        {
+          "term": "bed TV screen",
+          "count": 1
+        }
+      ],
+      "mirrors": 3,
+      "views": [
+        "entrance",
+        "vanity",
+        "shower",
+        "bath",
+        "dressing",
+        "wardrobes",
+        "overview",
+        "wc"
+      ],
+      "cutawayObjects": 32,
+      "batches": {
+        "sourceMeshes": 937,
+        "sourceVertices": 860724,
+        "sourceTriangles": 286908,
+        "emptySourceMeshes": 0,
+        "batches": 57,
+        "opaqueBatches": 54,
+        "transparentBatches": 3,
+        "spanBatches": 1,
+        "globalBatches": 30,
+        "outputVertices": 408524,
+        "outputTriangles": 286908,
+        "indexedBatches": 57,
+        "oversizedSourceMeshes": 0,
+        "inputStoredVertices": 408524,
+        "inputIndexEntries": 860724,
+        "cellSize": 6,
+        "floorHeight": 2.8,
+        "transparentCellSize": 3,
+        "maxVertices": 200000,
+        "indexVertices": false,
+        "minMaterialTriangles": 20000
+      }
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "ceilingPresentExceptCutaway": true,
+  "errors": [],
+  "failed": []
+}

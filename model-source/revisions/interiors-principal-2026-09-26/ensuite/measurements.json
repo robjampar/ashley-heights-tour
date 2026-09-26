@@ -1,0 +1,279 @@
+{
+  "status": "PASS",
+  "model_based": true,
+  "areas_m2": {
+    "bathroom": 12.0,
+    "dressing": 12.09
+  },
+  "checks": [
+    {
+      "name": "Dressing turn",
+      "obstructions": [],
+      "outside_m2": 0.0,
+      "pass": true
+    },
+    {
+      "name": "Bathroom doorway and aisle",
+      "obstructions": [],
+      "outside_m2": 0.0,
+      "pass": true
+    },
+    {
+      "name": "WC side approach",
+      "obstructions": [],
+      "outside_m2": 0.0,
+      "pass": true
+    },
+    {
+      "name": "Shower approach",
+      "obstructions": [],
+      "outside_m2": 0.0,
+      "pass": true
+    },
+    {
+      "name": "Bath long-side approach",
+      "obstructions": [],
+      "outside_m2": 0.0,
+      "pass": true
+    },
+    {
+      "name": "Bathroom door sweep",
+      "obstructions": [],
+      "pass": true
+    },
+    {
+      "name": "Bedroom to dressing door sweep",
+      "obstructions": [],
+      "pass": true
+    },
+    {
+      "name": "Two occupied basins and 1 m passing lane",
+      "pass": true
+    },
+    {
+      "name": "West drawer open with 1 m passing",
+      "pass": true
+    },
+    {
+      "name": "Window drawer open with 1 m passing",
+      "pass": true
+    }
+  ],
+  "native": [
+    {
+      "variant": "compact",
+      "check": "bath actual mesh matches specified footprint",
+      "measured": [
+        12.760000228881836,
+        -5.199999809265137,
+        13.5600004196167,
+        -3.4000000953674316
+      ],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "check": "vanity actual mesh matches specified footprint",
+      "measured": [
+        10.470000267028809,
+        -6.840000152587891,
+        11.020000457763672,
+        -5.039999961853027
+      ],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "check": "window_drawers actual mesh matches specified footprint",
+      "measured": [
+        13.149999618530273,
+        -8.800000190734863,
+        13.75,
+        -7.199999809265137
+      ],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "check": "wc_screen actual mesh matches specified footprint",
+      "measured": [
+        12.65999984741211,
+        -6.889999866485596,
+        12.739999771118164,
+        -6.114999771118164
+      ],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "check": "continuous floor through bathroom doorway",
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "route": "Dressing turn",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "route": "Bathroom doorway and aisle",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "route": "WC side approach",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "route": "Shower approach",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "route": "Bath long-side approach",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "check": "accepted bedroom and shell unchanged",
+      "objects": 476,
+      "pass": true
+    },
+    {
+      "variant": "compact",
+      "check": "entrance WC privacy rays",
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "check": "bath actual mesh matches specified footprint",
+      "measured": [
+        12.760000228881836,
+        -5.199999809265137,
+        13.5600004196167,
+        -3.4000000953674316
+      ],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "check": "vanity actual mesh matches specified footprint",
+      "measured": [
+        10.470000267028809,
+        -6.840000152587891,
+        11.020000457763672,
+        -5.039999961853027
+      ],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "check": "window_drawers actual mesh matches specified footprint",
+      "measured": [
+        13.149999618530273,
+        -8.800000190734863,
+        13.75,
+        -7.199999809265137
+      ],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "check": "wc_screen actual mesh matches specified footprint",
+      "measured": [
+        12.65999984741211,
+        -6.889999866485596,
+        12.739999771118164,
+        -6.114999771118164
+      ],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "check": "continuous floor through bathroom doorway",
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "route": "Dressing turn",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "route": "Bathroom doorway and aisle",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "route": "WC side approach",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "route": "Shower approach",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "route": "Bath long-side approach",
+      "hits": [],
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "check": "accepted bedroom and shell unchanged",
+      "objects": 476,
+      "pass": true
+    },
+    {
+      "variant": "planning",
+      "check": "entrance WC privacy rays",
+      "pass": true
+    }
+  ],
+  "clearances_m": {
+    "bath": [
+      1.8,
+      0.8
+    ],
+    "shower_footprint": [
+      1.43,
+      1.701
+    ],
+    "shower_clear_opening": 0.895,
+    "wc_side_entry": 0.915,
+    "bathroom_opening": 0.95,
+    "door_clear_before_hardware": 0.928,
+    "vanity_front_to_WC_screen": 1.64,
+    "vanity_occupied_passing": 1.04,
+    "wardrobe_main_aisle": 2.54,
+    "bath_east_cleaning_gap": 0.19,
+    "bath_north_cleaning_gap": 0.141
+  },
+  "storage": {
+    "tall_frontage_m": 3.9,
+    "carcass_depth_m": 0.65,
+    "low_window_frontage_m": 1.6,
+    "window_sill_above_floor_m": 0.75,
+    "drawer_top_above_floor_m": 0.62,
+    "inventory": "Six tall bays: two double-hanging, one long-hanging, two hanging/drawer, one shoes/knitwear; six overhead boxes and four low window drawers"
+  },
+  "limitations": [
+    "Door handle/lining final clearances require product specification",
+    "Main door approach and a person at the nearest basin may briefly share space; the separate 1 m lane begins inside the room",
+    "Freestanding bath cleaning/product access needs confirmation",
+    "Visual WC screen, not acoustic enclosure",
+    "Shower splash, drainage falls and waterproofing require detailed design",
+    "Whole-house integration outstanding during isolated review"
+  ]
+}

@@ -8,6 +8,7 @@ import {surfaceDetail} from './materials.js';
 import {createSpatialBatcher} from './spatial-batches.js';
 import {Vegetation,claims as vegetationClaims} from './vegetation.js';
 import {STREET_DATA} from './street-context-data.js';
+import {Reflector} from 'three/addons/objects/Reflector.js';
 const asset=path=>globalThis.INTERIOR_ASSETS?.[path]??path;
 const roomConfig=globalThis.INTERIOR_PREVIEW_CONFIG??{},modelStem=roomConfig.modelStem??'kitchen';
 const $=id=>document.getElementById(id),canvas=$('room-model'),frame=canvas.parentElement;
@@ -47,8 +48,17 @@ try{
   const g=ob.geometry.clone();g.applyMatrix4(ob.matrixWorld);const keep=m.map?['position','normal','uv']:['position','normal'];for(const name of Object.keys(g.attributes))if(!keep.includes(name))g.deleteAttribute(name);if(!g.hasAttribute('normal'))g.computeVertexNormals();const sourceName=ob.userData.source_name||ob.userData.name||ob.name;if((info.cutawayObjects??[]).includes(sourceName)){const mesh=new THREE.Mesh(g,m);mesh.castShadow=true;mesh.receiveShadow=true;mesh.userData.source_name=sourceName;mesh.visible=!views[activeCamera]?.cutaway;cutawayMeshes.push(mesh);scene.add(mesh);}else batcher.add(g,m,sourceName);
  });
  const batches=batcher.finish({disposeSources:true});scene.add(...batches.meshes);
+ // Room metadata declares the physical mirror planes. Hide other reflectors
+ // during each reflection pass to bound render cost and avoid recursive mirrors.
+ const mirrors=(info.mirrors??[]).map(spec=>{
+  const mirror=new Reflector(new THREE.PlaneGeometry(spec.width,spec.height),{color:0xc8c8c8,textureWidth:768,textureHeight:768,clipBias:.00001,multisample:0});
+  mirror.name=spec.name;mirror.position.set(spec.position[0],spec.position[2],-spec.position[1]);
+  mirror.quaternion.setFromUnitVectors(new THREE.Vector3(0,0,1),new THREE.Vector3(spec.normal[0],spec.normal[2],-spec.normal[1]));
+  scene.add(mirror);return mirror;
+ });
+ for(const mirror of mirrors){const render=mirror.onBeforeRender;mirror.onBeforeRender=function(...args){const visibility=mirrors.map(m=>m.visible);for(const other of mirrors)if(other!==mirror)other.visible=false;try{render.apply(this,args);}finally{mirrors.forEach((m,i)=>m.visible=visibility[i]);}};}
  fills=roomLights(scene,[...(roomConfig.noGarden?[]:[{name:'Kitchen daylight bounce',position:[2.15,6.40,1.55],range:4.2,intensity:1.65}]),...(info.proposalLights??[])],{budget:6});lighting.updateShadows();ready=true;$('model-status').hidden=true;
  if(!roomConfig.noGarden)await vegetation.buildSite(STREET_DATA.siteTrees.filter(t=>t.kind!=='row'||(t.from?.[1]>8&&t.to?.[1]>8)));lighting.updateShadows();
- window.interiorPreview={ready,scene,camera,renderer,controls,info,views,setView,cutawayMeshes,batches:batches.stats};
+ window.interiorPreview={ready,scene,camera,renderer,controls,info,views,setView,cutawayMeshes,mirrors,batches:batches.stats};
 }catch(error){$('model-status').textContent='The room could not load. Please refresh the page.';console.error(error);}
 renderer.setAnimationLoop(time=>{controls.update();fills?.update(camera);vegetation?.tick(time/1000);lighting.render();});

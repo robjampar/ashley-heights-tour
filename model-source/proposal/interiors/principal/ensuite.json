@@ -1,0 +1,260 @@
+{
+  "revision": 1,
+  "status": "Bathroom and walk-through wardrobe development with accepted bedroom retained; isolated room review",
+  "floor_z": 2.8,
+  "ceiling_z": 5.28,
+  "bathroom_polygon": [
+    [
+      9.96,
+      -6.89
+    ],
+    [
+      13.75,
+      -6.89
+    ],
+    [
+      13.75,
+      -3.259
+    ],
+    [
+      10.47,
+      -3.259
+    ],
+    [
+      10.47,
+      -6.71
+    ],
+    [
+      9.96,
+      -6.71
+    ]
+  ],
+  "dressing_polygon": [
+    [
+      9.96,
+      -10.2
+    ],
+    [
+      13.75,
+      -10.2
+    ],
+    [
+      13.75,
+      -7.01
+    ],
+    [
+      9.96,
+      -7.01
+    ]
+  ],
+  "partition": {
+    "y": -6.95,
+    "thickness_m": 0.12,
+    "opening": [
+      11.45,
+      12.4
+    ],
+    "hinge": [
+      12.4,
+      -6.95
+    ],
+    "width_m": 0.95,
+    "swing": "outward into dressing"
+  },
+  "fixtures": {
+    "bath": [
+      12.76,
+      -5.2,
+      13.56,
+      -3.4
+    ],
+    "shower": [
+      10.47,
+      -4.96,
+      11.9,
+      -3.259
+    ],
+    "vanity": [
+      10.47,
+      -6.84,
+      11.02,
+      -5.04
+    ],
+    "wc": [
+      13.045,
+      -6.68,
+      13.445,
+      -6.12
+    ],
+    "wc_screen": [
+      12.66,
+      -6.89,
+      12.74,
+      -6.115
+    ],
+    "cistern": [
+      12.74,
+      -6.89,
+      13.75,
+      -6.68
+    ],
+    "west_wardrobe": [
+      9.96,
+      -9.0,
+      10.61,
+      -7.1
+    ],
+    "south_wardrobe": [
+      11.7,
+      -10.2,
+      13.7,
+      -9.55
+    ],
+    "window_drawers": [
+      13.15,
+      -8.8,
+      13.75,
+      -7.2
+    ]
+  },
+  "use_zones": {
+    "vanity_person_south": [
+      11.02,
+      -6.75,
+      11.62,
+      -6.05
+    ],
+    "vanity_person_north": [
+      11.02,
+      -5.85,
+      11.62,
+      -5.15
+    ],
+    "wc_front": [
+      12.845,
+      -6.12,
+      13.645,
+      -5.37
+    ],
+    "vanity_drawer_open": [
+      11.02,
+      -6.81,
+      11.42,
+      -6.0
+    ],
+    "west_drawer_open": [
+      10.61,
+      -8.99,
+      11.06,
+      -8.4
+    ],
+    "window_drawer_open": [
+      12.7,
+      -8.77,
+      13.15,
+      -8.0
+    ]
+  },
+  "routes": [
+    {
+      "name": "Dressing turn",
+      "width_m": 1.0,
+      "points": [
+        [
+          10.95,
+          -9.53
+        ],
+        [
+          11.16,
+          -9.53
+        ],
+        [
+          11.16,
+          -8.35
+        ],
+        [
+          11.8,
+          -7.55
+        ]
+      ]
+    },
+    {
+      "name": "Bathroom doorway and aisle",
+      "width_m": 0.9,
+      "points": [
+        [
+          11.91,
+          -7.65
+        ],
+        [
+          11.91,
+          -6.65
+        ],
+        [
+          12.13,
+          -6.25
+        ],
+        [
+          12.13,
+          -5.48
+        ]
+      ]
+    },
+    {
+      "name": "WC side approach",
+      "width_m": 0.9,
+      "points": [
+        [
+          12.14,
+          -5.6575
+        ],
+        [
+          13.245,
+          -5.6575
+        ]
+      ]
+    },
+    {
+      "name": "Shower approach",
+      "width_m": 0.84,
+      "points": [
+        [
+          12.13,
+          -5.6
+        ],
+        [
+          11.47,
+          -5.6
+        ],
+        [
+          11.47,
+          -4.4
+        ]
+      ]
+    },
+    {
+      "name": "Bath long-side approach",
+      "width_m": 0.8,
+      "points": [
+        [
+          12.13,
+          -5.48
+        ],
+        [
+          12.32,
+          -5.25
+        ],
+        [
+          12.32,
+          -4.0
+        ]
+      ]
+    }
+  ],
+  "unresolved": [
+    "Survey and final product installation clearances",
+    "Structural floor loading and drainage/soil route",
+    "Extraction, waterproofing, window privacy and electrical design",
+    "Main-house integration after room review"
+  ]
+}

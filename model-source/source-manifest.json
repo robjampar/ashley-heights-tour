@@ -57,8 +57,8 @@
     },
     "proposal/interiors/DESIGN-PRINCIPLES.md": {
       "source": "proposal/interiors/DESIGN-PRINCIPLES.md",
-      "sha256": "4ad09dc9172f62fd901d69f3b41efe4f9eda54cb79bcc6b034456e315ed27a35",
-      "bytes": 17579
+      "sha256": "0626a7563ae5a5c780e3c318685b6d1e6c53df02e1ca081ab286f8141cb44713",
+      "bytes": 17678
     },
     "proposal/interiors/ROOM-REVIEW-TEMPLATE.md": {
       "source": "proposal/interiors/ROOM-REVIEW-TEMPLATE.md",
@@ -109,6 +109,11 @@
       "source": "proposal/interiors/principal/bedroom.json",
       "sha256": "ce92d77c6b754e8835ea3aa850c9c928f9ed882d16390d257e05a98f5787ff52",
       "bytes": 3235
+    },
+    "proposal/interiors/principal/ensuite.json": {
+      "source": "proposal/interiors/principal/ensuite.json",
+      "sha256": "0e6863c0f5bd7cfbb3314e30df0a81bf06f526bf4ff9314a099b27973d66a78c",
+      "bytes": 3668
     },
     "proposal/interiors/principal/floorplans.json": {
       "source": "proposal/interiors/principal/floorplans.json",
@@ -275,6 +280,11 @@
       "sha256": "4d064b26233c6e5ec003b6a578ab172641fc2f9bbf2f1fe2718bc12a9d00fbce",
       "bytes": 4097
     },
+    "revisions/interiors-principal-2026-09-26/ENSUITE-DESIGN.md": {
+      "source": "revisions/interiors-principal-2026-09-26/ENSUITE-DESIGN.md",
+      "sha256": "fe90101e09ca3ee19ec38b79e2086def00d38aba7f0f26bfcf03b1f95e1191c2",
+      "bytes": 4413
+    },
     "revisions/interiors-principal-2026-09-26/LAYOUT-DESIGN.md": {
       "source": "revisions/interiors-principal-2026-09-26/LAYOUT-DESIGN.md",
       "sha256": "83f7c6813816bd7071928cc164325197139223e7f0519f67cf55f524416abbdb",
@@ -292,8 +302,8 @@
     },
     "revisions/interiors-principal-2026-09-26/STATUS.md": {
       "source": "revisions/interiors-principal-2026-09-26/STATUS.md",
-      "sha256": "bbd2d4c13e42ba5fd5a06fd00af4d715b2eaefed7a0fe5ac9c63bed5aa226a42",
-      "bytes": 9589
+      "sha256": "ef2a9da62b047091b266e95759046d7ac7cfc1fcb22c966cc72a1b91bfe5caea",
+      "bytes": 10795
     },
     "revisions/interiors-principal-2026-09-26/arrangements/audit.json": {
       "source": "revisions/interiors-principal-2026-09-26/arrangements/audit.json",
@@ -339,6 +349,31 @@
       "source": "revisions/interiors-principal-2026-09-26/browser-checks.json",
       "sha256": "c9bf4c42729a9933009a1fe026a9a1593692263e12145dd20953ec019a1c8e3b",
       "bytes": 5090
+    },
+    "revisions/interiors-principal-2026-09-26/ensuite/ROOM-REVIEW.md": {
+      "source": "revisions/interiors-principal-2026-09-26/ensuite/ROOM-REVIEW.md",
+      "sha256": "581b1322fa3c9200f6c858dfa1144142a5230f9ab9ab70ec536a206693d125d1",
+      "bytes": 5679
+    },
+    "revisions/interiors-principal-2026-09-26/ensuite/browser-checks.json": {
+      "source": "revisions/interiors-principal-2026-09-26/ensuite/browser-checks.json",
+      "sha256": "f62c066833e07d31749a1b4aa3cfd048df82c0bcd9133008cb038119736a6833",
+      "bytes": 3581
+    },
+    "revisions/interiors-principal-2026-09-26/ensuite/compact/report.json": {
+      "source": "revisions/interiors-principal-2026-09-26/ensuite/compact/report.json",
+      "sha256": "6b9198877811104e849cc091d8504bb641d1940a5ad8b4a179173a4711833d2f",
+      "bytes": 261372
+    },
+    "revisions/interiors-principal-2026-09-26/ensuite/measurements.json": {
+      "source": "revisions/interiors-principal-2026-09-26/ensuite/measurements.json",
+      "sha256": "0689f8152b4e5cac2563836b3a8fb498458d41d501cb4aa5e361ca52ce4c896a",
+      "bytes": 6474
+    },
+    "revisions/interiors-principal-2026-09-26/ensuite/planning/report.json": {
+      "source": "revisions/interiors-principal-2026-09-26/ensuite/planning/report.json",
+      "sha256": "3d476dbeb9f315ff4fdf433d6f84b6e00ef27ddc7e6b25d40e2ea300694b8aa3",
+      "bytes": 261368
     },
     "revisions/interiors-principal-2026-09-26/floorplans/audit.json": {
       "source": "revisions/interiors-principal-2026-09-26/floorplans/audit.json",
@@ -609,6 +644,11 @@
       "source": "scripts/draw_principal_bedroom.py",
       "sha256": "800234e1779b4b1ecb353817e5b04fe2564c8ea5788ac2ea1b6bc7942e9884e7",
       "bytes": 8560
+    },
+    "scripts/draw_principal_ensuite.py": {
+      "source": "scripts/draw_principal_ensuite.py",
+      "sha256": "3eb1d160e62a4848bd2b8e9dd7d769f0ba33ec2cc5fdfa26ef9813d512f535ac",
+      "bytes": 9910
     },
     "scripts/draw_principal_floorplans.py": {
       "source": "scripts/draw_principal_floorplans.py",
@@ -909,6 +949,11 @@
       "source": "scripts/preview_principal_bedroom.py",
       "sha256": "a2d030b14d558ed17bd975a490ef1827d59fa65050d5da10b11a7f64a2f25e94",
       "bytes": 20176
+    },
+    "scripts/preview_principal_ensuite.py": {
+      "source": "scripts/preview_principal_ensuite.py",
+      "sha256": "074e987c67a279833612378b82d1a68dd13df581513230a6434fb2c998b13a0b",
+      "bytes": 21979
     },
     "scripts/preview_principal_layout.py": {
       "source": "scripts/preview_principal_layout.py",
@@ -1552,13 +1597,13 @@
     },
     "scripts/stage_interior_studio.py": {
       "source": "scripts/stage_interior_studio.py",
-      "sha256": "90c41033e74ee1b08c7e9311414a2df731b9b9c166776550537fe21de957398c",
-      "bytes": 6473
+      "sha256": "7b86986179ce38ea6d8b506fa2736f6b8e9b1ece6405ea02cce9cdf96e5bfd3b",
+      "bytes": 7063
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "d99724dcbf16a54dc32a3c88c95185cede4acb272435ef988dd968d4ada5a75b",
-      "bytes": 7924
+      "sha256": "48b9e74a6bafe1e7d87bbc9a249a60d7512ec08d0b61361253b63ceda5b67da2",
+      "bytes": 8302
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1667,8 +1712,8 @@
     },
     "walkthrough/build.mjs": {
       "source": "walkthrough/build.mjs",
-      "sha256": "91f56dbc619f6baca2dbf6f0c8ba3269192857dc3658eec55f74efd2397a0059",
-      "bytes": 5385
+      "sha256": "d54606f9be2f53a9248adea361c0497934d78fb93034de2e78e141a78b83b13a",
+      "bytes": 5395
     },
     "walkthrough/index.html": {
       "source": "walkthrough/index.html",
@@ -1782,8 +1827,18 @@
     },
     "walkthrough/public/interiors/principal/bedroom.html": {
       "source": "walkthrough/public/interiors/principal/bedroom.html",
-      "sha256": "6937df1c2d1d30589c495482453f367e4ec362cf85273a95cd0d288f87160851",
-      "bytes": 5746
+      "sha256": "db1b349ea7db434cb9cbc21368609cb5d40444a6455e12018239780d882679b5",
+      "bytes": 6104
+    },
+    "walkthrough/public/interiors/principal/ensuite-plan.svg": {
+      "source": "walkthrough/public/interiors/principal/ensuite-plan.svg",
+      "sha256": "8e1b8937a90dc39d0b7c96ab6e4a24157130d2dcb48762014fdb0921a59f6fc2",
+      "bytes": 9919
+    },
+    "walkthrough/public/interiors/principal/ensuite.html": {
+      "source": "walkthrough/public/interiors/principal/ensuite.html",
+      "sha256": "3f2388cd5a268923f2fa629707494a53a4aa0b28c05f4a32b3af1b96149e4ef8",
+      "bytes": 6177
     },
     "walkthrough/public/interiors/principal/floorplans/01.svg": {
       "source": "walkthrough/public/interiors/principal/floorplans/01.svg",
@@ -1840,6 +1895,11 @@
       "sha256": "ca649feee75a295e17102f869d121b7de48cc448afd97b6feda283bffb7fe6e1",
       "bytes": 30272
     },
+    "walkthrough/public/interiors/principal/models/compact-ensuite.json": {
+      "source": "walkthrough/public/interiors/principal/models/compact-ensuite.json",
+      "sha256": "dc6f5f17a86080b358aa92983faa2af8b839d2830b1ed4ce0be378acdd5d5c6e",
+      "bytes": 12826
+    },
     "walkthrough/public/interiors/principal/models/compact-suite.json": {
       "source": "walkthrough/public/interiors/principal/models/compact-suite.json",
       "sha256": "c6bd92d39d53226795c70932777a8b3132af75edfa5d6a91d202ff7bf3fd456e",
@@ -1849,6 +1909,11 @@
       "source": "walkthrough/public/interiors/principal/models/planning-bedroom.json",
       "sha256": "44838da14eed00e856ec107758909ef47aa56c30be2646b738dcb83538045f73",
       "bytes": 27773
+    },
+    "walkthrough/public/interiors/principal/models/planning-ensuite.json": {
+      "source": "walkthrough/public/interiors/principal/models/planning-ensuite.json",
+      "sha256": "2eb0fcab7fe4a50e0d391bf269e408601699c734a0dac4741a85140efc9d9c95",
+      "bytes": 12961
     },
     "walkthrough/public/interiors/principal/models/planning-suite.json": {
       "source": "walkthrough/public/interiors/principal/models/planning-suite.json",
@@ -1962,8 +2027,8 @@
     },
     "walkthrough/src/interior-preview.js": {
       "source": "walkthrough/src/interior-preview.js",
-      "sha256": "d70ba9aba39044e334c8f72b327386a464a31e562475aa1273b63c6e99759020",
-      "bytes": 7089
+      "sha256": "52ed5afe8603a1f2e5bfa742c23b834ec8257846f2442978862e78295b26f5e2",
+      "bytes": 8096
     },
     "walkthrough/src/life.js": {
       "source": "walkthrough/src/life.js",
@@ -2295,6 +2360,11 @@
       "sha256": "4fc6ce1b1d1099814f337266799856ae874197cef07cdbde78ca82890088cbc8",
       "bytes": 4275
     },
+    "walkthrough/tests/principal-ensuite-browser.mjs": {
+      "source": "walkthrough/tests/principal-ensuite-browser.mjs",
+      "sha256": "71db75155e3dfaffb3e53152141d2535d513b02165d5781b63079683a3a76933",
+      "bytes": 4526
+    },
     "walkthrough/tests/principal-floorplans-browser.mjs": {
       "source": "walkthrough/tests/principal-floorplans-browser.mjs",
       "sha256": "38138ae19846379469e3f1c260ba0a9887912315f700b33e0d072aa62597eb62",
@@ -2553,6 +2623,14 @@
     "revisions/interiors-principal-2026-09-26/bedroom/planning/Principal bedroom \u2014 south wall.blend": {
       "sha256": "87683bd48a6723c42bfe89e24e641066a710b52abfcb6416bdaa881e6351656f",
       "bytes": 14893068
+    },
+    "revisions/interiors-principal-2026-09-26/ensuite/compact/Principal suite \u2014 bathroom and wardrobe.blend": {
+      "sha256": "4583ecdfb9a5b8c88c3f3228df0552a7c93362342ded5311009ff4cee0ba8734",
+      "bytes": 19505114
+    },
+    "revisions/interiors-principal-2026-09-26/ensuite/planning/Principal suite \u2014 bathroom and wardrobe.blend": {
+      "sha256": "63652094f4e9d3eedb1a575fb3304b0e54aa136d8e8abee343b05e576f6bbecb",
+      "bytes": 19617196
     },
     "revisions/interiors-principal-2026-09-26/layout/compact/Principal suite \u2014 layout study.blend": {
       "sha256": "71ab83e63157175f44264a3e00d6917109bd9f86384d4734b68e65cf6f95ea29",
