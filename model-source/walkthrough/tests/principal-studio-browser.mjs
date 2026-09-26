@@ -10,9 +10,10 @@ try{
  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push([r.status(),r.url()]);});
  await page.goto(root+'interiors/principal/');
  const ready=()=>page.waitForFunction(()=>document.querySelectorAll('.option').length===10&&document.querySelector('#image-loading').hidden);
- await ready();assert.equal(await page.locator('h1').textContent(),'Principal bedroom.');assert.equal(await page.locator('#view-model').count(),0);
+ await ready();assert.equal(await page.locator('h1').textContent(),'Principal bedroom.');assert.equal(await page.locator('#view-model').count(),1);
  for(const design of ['proposed','planning']){
   await page.locator('#design').selectOption(design);
+  assert.equal(await page.locator('#view-model').getAttribute('href'),'model.html?design='+(design==='proposed'?'compact':'planning'));
   for(let i=1;i<=10;i++){
    const id=String(i).padStart(2,'0');await page.locator(`.option[data-id="${id}"]`).click();await ready();
    const image=await page.locator('#room-image').evaluate(el=>({width:el.naturalWidth,height:el.naturalHeight,alt:el.alt}));

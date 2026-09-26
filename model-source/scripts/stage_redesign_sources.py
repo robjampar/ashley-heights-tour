@@ -14,12 +14,15 @@ paths.add('walkthrough/tests/doors/index.html')
 paths.update(('Regenerate Six Options.command','Regenerate Gate-aligned Option.command','proposal/redesigns/GATE-ALIGNED.md','README.md','walkthrough/build.mjs','walkthrough/index.html','walkthrough/style.css','walkthrough/package.json','walkthrough/package-lock.json','proposal/redesigns/review-notes.json','proposal/redesigns/research/RESEARCH.md','proposal/redesigns/CONCEPTS.md','proposal/redesigns/EXTERNAL-LAYOUT-NOTES.md','proposal/redesigns/PARKING-SENSITIVITY.md','proposal/START-HERE.md','proposal/CURRENT-BRIEF.md','proposal/planning/README.md','proposal/proposed/README.md','revisions/planning-cleanup-2026-09-23/CLEANUP.md','proposal/planning-context.json','proposal/planning-context-proposed.json'))
 paths.update(str(p.relative_to(ROOT))for p in (ROOT/'walkthrough/public/redesigns').glob('*')if p.is_file()and p.suffix in('.html','.css','.js','.json'))
 manifest={};baseline={}
-paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'walkthrough/public/interiors').rglob('*') if p.is_file() and p.suffix in ('.html','.css','.js','.json','.md'))
+paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'walkthrough/public/interiors').rglob('*') if p.is_file() and p.suffix in ('.html','.css','.js','.json','.md','.svg'))
 paths.add('revisions/interiors-kitchen-2026-09-25/REVIEW-DESIGN.md')
 paths.update('revisions/interiors-lounge-2026-09-25/'+name for name in ('REVIEW-DESIGN.md','STATUS.md'))
 paths.update('revisions/interiors-principal-2026-09-26/'+name for name in ('REVIEW-DESIGN.md','STATUS.md','browser-checks.json'))
+paths.add('revisions/interiors-principal-2026-09-26/LAYOUT-DESIGN.md')
+paths.update('revisions/interiors-principal-2026-09-26/layout/'+name for name in ('measurements.json','circulation.json','browser-checks.json','compact/report.json','planning/report.json','compact/Principal suite — layout study.blend','planning/Principal suite — layout study.blend'))
 paths.update('revisions/interiors-kitchen-2026-09-25/'+name for name in ('STATUS.md','native-audit.json','kitchen-circulation.json','fitted-browser-checks.json','model-browser-checks.json'))
 paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/kitchen').rglob('*') if p.is_file())
+paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/principal').rglob('*') if p.is_file())
 for name in sorted(paths):
  source=ROOT/name
  if name.startswith(('output-','walkthrough/public/house','walkthrough/public/proposal'))or source.suffix in('.blend','.glb'):

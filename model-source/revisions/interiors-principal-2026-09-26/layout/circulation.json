@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "variant": "compact",
+      "bodyWidth_m": 0.5,
+      "grid_m": 0.05,
+      "reachableTargets": [
+        "bed north side",
+        "bed south side",
+        "bed foot",
+        "TV approach",
+        "sofa approach",
+        "window alcove",
+        "dressing doorway",
+        "bathroom doorway",
+        "bathroom centre",
+        "west island aisle",
+        "east island aisle",
+        "north dressing",
+        "desk approach"
+      ],
+      "connectedSamples": 18432,
+      "nativeScreenSamples": [
+        {
+          "seat": "bed",
+          "screen_sample": [
+            0,
+            0
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.628
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            -0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.166
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            -0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.228
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.215
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.294
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            0,
+            0
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.242
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            -0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.826
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            -0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.88
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.777
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.82
+        }
+      ]
+    },
+    {
+      "variant": "planning",
+      "bodyWidth_m": 0.5,
+      "grid_m": 0.05,
+      "reachableTargets": [
+        "bed north side",
+        "bed south side",
+        "bed foot",
+        "TV approach",
+        "sofa approach",
+        "window alcove",
+        "dressing doorway",
+        "bathroom doorway",
+        "bathroom centre",
+        "west island aisle",
+        "east island aisle",
+        "north dressing",
+        "desk approach"
+      ],
+      "connectedSamples": 18432,
+      "nativeScreenSamples": [
+        {
+          "seat": "bed",
+          "screen_sample": [
+            0,
+            0
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.628
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            -0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.166
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            -0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.228
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.215
+        },
+        {
+          "seat": "bed",
+          "screen_sample": [
+            0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.294
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            0,
+            0
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.242
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            -0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.826
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            -0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 3.88
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            0.45,
+            -0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.777
+        },
+        {
+          "seat": "sofa",
+          "screen_sample": [
+            0.45,
+            0.45
+          ],
+          "hit": "Suite layout | TV screen",
+          "clear": true,
+          "distance_m": 4.82
+        }
+      ]
+    }
+  ]
+}

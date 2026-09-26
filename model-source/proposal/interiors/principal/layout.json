@@ -1,0 +1,164 @@
+{
+  "revision": 1,
+  "status": "Isolated layout study; current whole-house models remain the previous issue",
+  "brief": "TV visible from bed and a separate sofa, larger walk-in wardrobe and a compact desk, within the current suite envelope",
+  "floor_z": 2.8,
+  "bed": {
+    "center": [
+      9.1,
+      -10.32
+    ],
+    "mattress_m": [
+      1.8,
+      2.0
+    ],
+    "angle_deg": -90
+  },
+  "sofa": {
+    "center": [
+      7.0,
+      -14.0
+    ],
+    "width_m": 2.3,
+    "depth_m": 0.95
+  },
+  "tv": {
+    "center": [
+      6.0,
+      -9.85
+    ],
+    "screen_m": [
+      1.882,
+      1.059
+    ],
+    "normal_angle_deg": -42,
+    "screen_center_height_m": 1.33
+  },
+  "desk": {
+    "bounds": [
+      11.86,
+      -3.93,
+      13.36,
+      -3.33
+    ],
+    "chair": [
+      12.61,
+      -4.52
+    ],
+    "zone": [
+      10.47,
+      -4.7,
+      13.75,
+      -3.259
+    ]
+  },
+  "island": {
+    "bounds": [
+      11.55,
+      -8.35,
+      12.15,
+      -7.25
+    ],
+    "height_m": 0.9
+  },
+  "bedroom_partition": {
+    "x": 10.35,
+    "south": -12.64,
+    "north": -8.7,
+    "door_center_y": -12.1,
+    "door_width_m": 0.9
+  },
+  "wardrobes": [
+    {
+      "id": "west south",
+      "bounds": [
+        10.41,
+        -11.57,
+        11.01,
+        -8.9
+      ],
+      "front": "east",
+      "height_m": 2.3
+    },
+    {
+      "id": "west central",
+      "bounds": [
+        9.96,
+        -8.56,
+        10.56,
+        -6.84
+      ],
+      "front": "east",
+      "height_m": 2.3
+    },
+    {
+      "id": "west north",
+      "bounds": [
+        10.47,
+        -6.49,
+        11.07,
+        -4.78
+      ],
+      "front": "east",
+      "height_m": 2.3
+    },
+    {
+      "id": "east central",
+      "bounds": [
+        13.15,
+        -10.39,
+        13.75,
+        -9.05
+      ],
+      "front": "west",
+      "height_m": 2.3
+    },
+    {
+      "id": "east north",
+      "bounds": [
+        13.15,
+        -6.9,
+        13.75,
+        -4.1
+      ],
+      "front": "west",
+      "height_m": 2.3
+    },
+    {
+      "id": "south window drawers",
+      "bounds": [
+        13.2,
+        -12.01,
+        13.75,
+        -10.63
+      ],
+      "front": "west",
+      "height_m": 0.63
+    },
+    {
+      "id": "central window drawers",
+      "bounds": [
+        13.2,
+        -8.78,
+        13.75,
+        -7.2
+      ],
+      "front": "west",
+      "height_m": 0.67
+    }
+  ],
+  "retained": [
+    "All external windows and walls",
+    "South-east bathroom, separate WC and plumbing positions",
+    "Suite entrance and shared landing",
+    "West vaulted window alcove"
+  ],
+  "changed": [
+    "Bed moved to the north-east sleeping zone",
+    "Sofa moved to the south window end",
+    "Angled shared TV at the north-west corner",
+    "Dressing north partition removed",
+    "Bedroom east partition extended and its door moved south",
+    "Former office fitted as walk-in dressing with a compact window desk"
+  ]
+}

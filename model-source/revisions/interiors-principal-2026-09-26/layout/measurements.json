@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "units": "metres",
+  "areas_before_m2": {
+    "New dressing room": 7.6152,
+    "Principal study": 24.03198
+  },
+  "areas_after_m2": {
+    "Principal window alcove": 9.7528,
+    "New principal suite": 31.86168,
+    "New dressing room": 27.3215,
+    "New principal bathroom": 14.31084,
+    "Principal WC": 2.0584,
+    "Compact principal desk": 4.72648
+  },
+  "island_aisles_m": {
+    "west": 0.99,
+    "east": 1.05
+  },
+  "dressing_door_width_m": 0.9,
+  "desk_size_m": [
+    1.5,
+    0.6
+  ],
+  "tv_sightlines": [
+    {
+      "seat": "bed",
+      "eye_m": [
+        9.62,
+        -10.32,
+        3.86
+      ],
+      "distance_m": 3.66,
+      "horizontal_off_axis_degrees": 34.6
+    },
+    {
+      "seat": "sofa",
+      "eye_m": [
+        7,
+        -14,
+        3.91
+      ],
+      "distance_m": 4.274,
+      "horizontal_off_axis_degrees": 34.5
+    }
+  ],
+  "east_window_checks": [
+    {
+      "run": "east central",
+      "height_m": 2.3,
+      "overlapping_window_sills_m": [],
+      "clear": true
+    },
+    {
+      "run": "east north",
+      "height_m": 2.3,
+      "overlapping_window_sills_m": [],
+      "clear": true
+    },
+    {
+      "run": "south window drawers",
+      "height_m": 0.63,
+      "overlapping_window_sills_m": [
+        0.7
+      ],
+      "clear": true
+    },
+    {
+      "run": "central window drawers",
+      "height_m": 0.67,
+      "overlapping_window_sills_m": [
+        0.75
+      ],
+      "clear": true
+    }
+  ],
+  "area_note": "Dressing and desk zone areas include circulation; these are model dimensions, not site-survey measurements."
+}

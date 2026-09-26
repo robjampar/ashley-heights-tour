@@ -19,7 +19,7 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
     for path in sorted(source.rglob('*')):
         if not path.is_file() or path.name in ('index.html', 'model.html', 'studio.js'):
             continue
-        if path.suffix not in ('.png', '.jpg', '.webp', '.css', '.json', '.glb', '.js'):
+        if path.suffix not in ('.png', '.jpg', '.webp', '.svg', '.css', '.json', '.glb', '.js'):
             continue
         relative = path.relative_to(source)
         if relative.as_posix() not in declared:

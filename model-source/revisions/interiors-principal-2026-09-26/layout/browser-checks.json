@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "designs": [
+    {
+      "revision": 1,
+      "variant": "compact",
+      "authored": 338,
+      "features": [
+        {
+          "term": "TV screen",
+          "count": 1
+        },
+        {
+          "term": "bed mattress",
+          "count": 1
+        },
+        {
+          "term": "sofa seat",
+          "count": 3
+        },
+        {
+          "term": "wardrobe",
+          "count": 232
+        },
+        {
+          "term": "desk top",
+          "count": 1
+        },
+        {
+          "term": "dressing island",
+          "count": 2
+        }
+      ],
+      "views": [
+        "overview",
+        "bedroom",
+        "bed",
+        "sofa",
+        "wardrobe",
+        "desk",
+        "ensuite"
+      ],
+      "batches": {
+        "sourceMeshes": 510,
+        "sourceVertices": 301284,
+        "sourceTriangles": 100428,
+        "emptySourceMeshes": 0,
+        "batches": 32,
+        "opaqueBatches": 30,
+        "transparentBatches": 2,
+        "spanBatches": 2,
+        "globalBatches": 16,
+        "outputVertices": 200766,
+        "outputTriangles": 100428,
+        "indexedBatches": 32,
+        "oversizedSourceMeshes": 0,
+        "inputStoredVertices": 200766,
+        "inputIndexEntries": 301284,
+        "cellSize": 6,
+        "floorHeight": 2.8,
+        "transparentCellSize": 3,
+        "maxVertices": 200000,
+        "indexVertices": false,
+        "minMaterialTriangles": 20000
+      }
+    },
+    {
+      "revision": 1,
+      "variant": "planning",
+      "authored": 338,
+      "features": [
+        {
+          "term": "TV screen",
+          "count": 1
+        },
+        {
+          "term": "bed mattress",
+          "count": 1
+        },
+        {
+          "term": "sofa seat",
+          "count": 3
+        },
+        {
+          "term": "wardrobe",
+          "count": 232
+        },
+        {
+          "term": "desk top",
+          "count": 1
+        },
+        {
+          "term": "dressing island",
+          "count": 2
+        }
+      ],
+      "views": [
+        "overview",
+        "bedroom",
+        "bed",
+        "sofa",
+        "wardrobe",
+        "desk",
+        "ensuite"
+      ],
+      "batches": {
+        "sourceMeshes": 511,
+        "sourceVertices": 303708,
+        "sourceTriangles": 101236,
+        "emptySourceMeshes": 0,
+        "batches": 31,
+        "opaqueBatches": 29,
+        "transparentBatches": 2,
+        "spanBatches": 2,
+        "globalBatches": 15,
+        "outputVertices": 201399,
+        "outputTriangles": 101236,
+        "indexedBatches": 31,
+        "oversizedSourceMeshes": 0,
+        "inputStoredVertices": 201399,
+        "inputIndexEntries": 303708,
+        "cellSize": 6,
+        "floorHeight": 2.8,
+        "transparentCellSize": 3,
+        "maxVertices": 200000,
+        "indexVertices": false,
+        "minMaterialTriangles": 20000
+      }
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}
