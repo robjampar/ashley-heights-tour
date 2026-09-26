@@ -1,0 +1,169 @@
+{
+  "options": [
+    {
+      "id": "A",
+      "geometry_status": "PASS",
+      "route_body_width_m": 0.8,
+      "route_grid_m": 0.025,
+      "scope": "Furniture-only 2D containment, overlaps, door sweep, occupied-chair and 800 mm route checks; assumed eye positions for screen geometry. Supporting rooms, 3D/headroom, acoustics, daylight and construction are not resolved.",
+      "viewing": [
+        {
+          "position": "bed -1",
+          "screen": "shared",
+          "distance_m": 4.9,
+          "head_turn_deg": 25.6,
+          "screen_off_axis_deg": 25.6,
+          "vertical_to_screen_centre_deg": 2.0,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "bed 1",
+          "screen": "shared",
+          "distance_m": 4.59,
+          "head_turn_deg": 15.4,
+          "screen_off_axis_deg": 15.4,
+          "vertical_to_screen_centre_deg": 2.1,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa -1",
+          "screen": "shared",
+          "distance_m": 3.48,
+          "head_turn_deg": 15.8,
+          "screen_off_axis_deg": 15.8,
+          "vertical_to_screen_centre_deg": 3.6,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa 0",
+          "screen": "shared",
+          "distance_m": 3.67,
+          "head_turn_deg": 24.1,
+          "screen_off_axis_deg": 24.1,
+          "vertical_to_screen_centre_deg": 3.4,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa 1",
+          "screen": "shared",
+          "distance_m": 3.93,
+          "head_turn_deg": 31.5,
+          "screen_off_axis_deg": 31.5,
+          "vertical_to_screen_centre_deg": 3.2,
+          "plan_ray_clear": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "B",
+      "geometry_status": "PASS",
+      "route_body_width_m": 0.8,
+      "route_grid_m": 0.025,
+      "scope": "Furniture-only 2D containment, overlaps, door sweep, occupied-chair and 800 mm route checks; assumed eye positions for screen geometry. Supporting rooms, 3D/headroom, acoustics, daylight and construction are not resolved.",
+      "viewing": [
+        {
+          "position": "bed -1",
+          "screen": "bed",
+          "distance_m": 3.65,
+          "head_turn_deg": 7.1,
+          "screen_off_axis_deg": 7.1,
+          "vertical_to_screen_centre_deg": 2.7,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "bed 1",
+          "screen": "bed",
+          "distance_m": 3.65,
+          "head_turn_deg": 7.1,
+          "screen_off_axis_deg": 7.1,
+          "vertical_to_screen_centre_deg": 2.7,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa -1",
+          "screen": "sofa",
+          "distance_m": 2.41,
+          "head_turn_deg": 13.2,
+          "screen_off_axis_deg": 13.2,
+          "vertical_to_screen_centre_deg": 5.2,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa 0",
+          "screen": "sofa",
+          "distance_m": 2.35,
+          "head_turn_deg": 0.0,
+          "screen_off_axis_deg": 0.0,
+          "vertical_to_screen_centre_deg": 5.3,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa 1",
+          "screen": "sofa",
+          "distance_m": 2.41,
+          "head_turn_deg": 13.2,
+          "screen_off_axis_deg": 13.2,
+          "vertical_to_screen_centre_deg": 5.2,
+          "plan_ray_clear": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "C",
+      "geometry_status": "PASS",
+      "route_body_width_m": 0.8,
+      "route_grid_m": 0.025,
+      "scope": "Furniture-only 2D containment, overlaps, door sweep, occupied-chair and 800 mm route checks; assumed eye positions for screen geometry. Supporting rooms, 3D/headroom, acoustics, daylight and construction are not resolved.",
+      "viewing": [
+        {
+          "position": "bed -1",
+          "screen": "bed",
+          "distance_m": 2.95,
+          "head_turn_deg": 8.8,
+          "screen_off_axis_deg": 8.8,
+          "vertical_to_screen_centre_deg": 2.9,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "bed 1",
+          "screen": "bed",
+          "distance_m": 2.95,
+          "head_turn_deg": 8.8,
+          "screen_off_axis_deg": 8.8,
+          "vertical_to_screen_centre_deg": 2.9,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa -1",
+          "screen": "sofa",
+          "distance_m": 2.99,
+          "head_turn_deg": 9.6,
+          "screen_off_axis_deg": 9.6,
+          "vertical_to_screen_centre_deg": 2.9,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa 0",
+          "screen": "sofa",
+          "distance_m": 2.95,
+          "head_turn_deg": 1.0,
+          "screen_off_axis_deg": 1.0,
+          "vertical_to_screen_centre_deg": 2.9,
+          "plan_ray_clear": true
+        },
+        {
+          "position": "sofa 1",
+          "screen": "sofa",
+          "distance_m": 3.01,
+          "head_turn_deg": 11.5,
+          "screen_off_axis_deg": 11.5,
+          "vertical_to_screen_centre_deg": 2.9,
+          "plan_ray_clear": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

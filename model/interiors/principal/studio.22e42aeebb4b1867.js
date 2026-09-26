@@ -1,4 +1,4 @@
-const assets={"image-manifest.json": "image-manifest.1a852bff56b5e71f.json", "images/01.png": "images/01.9c0f6e21bc213fee.png", "images/02.png": "images/02.0ce8f8e9852d0566.png", "images/03.png": "images/03.b8acaba8eade305a.png", "images/04.png": "images/04.006f7ebe643f5049.png", "images/05.png": "images/05.0da3ae66d6989ed6.png", "images/06.png": "images/06.4adbec965434b604.png", "images/07.png": "images/07.8e15da701f4f15b1.png", "images/08.png": "images/08.1f382642a9abd83d.png", "images/09.png": "images/09.a1a694a66a30d610.png", "images/10.png": "images/10.abbd0009a3c3c852.png", "layout-plan.svg": "layout-plan.c6466fe644d4a4c8.svg", "models/compact-suite.glb": "models/compact-suite.d221520001ce8bf6.glb", "models/compact-suite.json": "models/compact-suite.c6bd92d39d532267.json", "models/planning-suite.glb": "models/planning-suite.9921d79df8f8b434.glb", "models/planning-suite.json": "models/planning-suite.a756fe5054e68e7e.json", "options.json": "options.f67a961f5dc61645.json", "prompts.json": "prompts.c23afe02429ca187.json", "references/captures.json": "references/captures.b9a63a8390eeadb2.json", "references/planning-bedroom.png": "references/planning-bedroom.232183cc920eea4d.png", "references/planning-sitting.png": "references/planning-sitting.5f48e7bf88276bbc.png", "references/planning-study.png": "references/planning-study.3c52fa7173f8c05e.png", "references/proposed-bedroom.png": "references/proposed-bedroom.e9a355bdcbdf2fb8.png", "references/proposed-sitting.png": "references/proposed-sitting.29274e0085e2bbb6.png", "references/proposed-study.png": "references/proposed-study.e77eb6bafc270fab.png", "room-model.js": "room-model.d652519fb37a9374.js", "studio.css": "studio.fcd9fe47725a433e.css"};const asset=path=>assets[path]??path;
+const assets={"arrangements/A.svg": "arrangements/A.7c6746bb730cc165.svg", "arrangements/B.svg": "arrangements/B.dd4280f734d6aec3.svg", "arrangements/C.svg": "arrangements/C.83aacdd997a56ab4.svg", "arrangements/options.json": "arrangements/options.dde055338778950d.json", "floorplans/01.svg": "floorplans/01.bb1c00680cfe3f19.svg", "floorplans/02.svg": "floorplans/02.7f5b44ffaa653f88.svg", "floorplans/03.svg": "floorplans/03.916508bdb2dd1ae4.svg", "floorplans/04.svg": "floorplans/04.43935adb6826b7e6.svg", "floorplans/05.svg": "floorplans/05.e306b1560570187c.svg", "floorplans/options.json": "floorplans/options.8e98d3013e2a2871.json", "image-manifest.json": "image-manifest.1a852bff56b5e71f.json", "images/01.png": "images/01.9c0f6e21bc213fee.png", "images/02.png": "images/02.0ce8f8e9852d0566.png", "images/03.png": "images/03.b8acaba8eade305a.png", "images/04.png": "images/04.006f7ebe643f5049.png", "images/05.png": "images/05.0da3ae66d6989ed6.png", "images/06.png": "images/06.4adbec965434b604.png", "images/07.png": "images/07.8e15da701f4f15b1.png", "images/08.png": "images/08.1f382642a9abd83d.png", "images/09.png": "images/09.a1a694a66a30d610.png", "images/10.png": "images/10.abbd0009a3c3c852.png", "layout-plan.svg": "layout-plan.c6466fe644d4a4c8.svg", "models/compact-suite.glb": "models/compact-suite.d221520001ce8bf6.glb", "models/compact-suite.json": "models/compact-suite.c6bd92d39d532267.json", "models/planning-suite.glb": "models/planning-suite.9921d79df8f8b434.glb", "models/planning-suite.json": "models/planning-suite.a756fe5054e68e7e.json", "options.json": "options.f67a961f5dc61645.json", "prompts.json": "prompts.c23afe02429ca187.json", "references/captures.json": "references/captures.b9a63a8390eeadb2.json", "references/planning-bedroom.png": "references/planning-bedroom.232183cc920eea4d.png", "references/planning-sitting.png": "references/planning-sitting.5f48e7bf88276bbc.png", "references/planning-study.png": "references/planning-study.3c52fa7173f8c05e.png", "references/proposed-bedroom.png": "references/proposed-bedroom.e9a355bdcbdf2fb8.png", "references/proposed-sitting.png": "references/proposed-sitting.29274e0085e2bbb6.png", "references/proposed-study.png": "references/proposed-study.e77eb6bafc270fab.png", "room-model.js": "room-model.d652519fb37a9374.js", "studio.css": "studio.fcd9fe47725a433e.css"};const asset=path=>assets[path]??path;
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const label=design=>design==='planning'?'Proposed · planning application':'Proposed';
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -19,7 +19,7 @@ function readState(){
 }
 function updateBadges(){
  document.querySelectorAll('.option').forEach(button=>{button.querySelector('b').hidden=!state.shortlist.includes(button.dataset.id);});
- $('shortlist-count').textContent=state.shortlist.length?`${state.shortlist.length} of 10 ideas shortlisted`:'Shortlist as many ideas as you like.';
+ $('shortlist-count').textContent=state.shortlist.length?`${state.shortlist.length} of ${data.options.length} ideas shortlisted`:'Shortlist as many ideas as you like.';
 }
 function pathFor(mark){return mark.points.map((p,i)=>(i?'L':'M')+(p[0]*1000).toFixed(2)+','+(p[1]*1000).toFixed(2)).join(' ');}
 function svgMarkup(marks,withLabels=true){
@@ -60,14 +60,15 @@ function hash(){history.replaceState(null,'','#'+option.id+'-'+design);if($('vie
 async function render(){
  draft=null;hash();
  document.querySelectorAll('.option').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.id===option.id)));
- $('option-number').textContent='IDEA '+option.id+' / 10';$('option-title').textContent=option.title;$('description').textContent=option.description;
+ $('option-number').textContent='IDEA '+option.id+' / '+data.options.length;$('option-title').textContent=option.title;$('description').textContent=option.description;
  $('notes').value=entry().notes;$('notes').setAttribute('aria-label',`Notes for ${option.title}, ${label(design)}`);
- $('counter').textContent=option.id+' / 10';$('house-link').href='../../?design='+design;
- $('image-caption').textContent=(showCurrent?'Current model':'AI concept')+' · '+label(design);
+ $('counter').textContent=option.id+' / '+data.options.length;$('house-link').href='../../?design='+design;
+ $('image-caption').textContent=(showCurrent?'Current model':data.imageKind??'AI concept')+' · '+label(design);
+ if($('full-size-plan'))$('full-size-plan').href=asset(option.images[design]);
  $('current-toggle').textContent=showCurrent?'Return to concept':'Show current room';$('current-toggle').setAttribute('aria-pressed',String(showCurrent));
  $('stage').classList.toggle('current',showCurrent);renderShortlist();renderMarks();setTool(tool);
- const references=data.referenceViews??['kitchen-reverse','kitchen','dining'];
- ['reference-main','reference-reverse','reference-dining'].forEach((id,i)=>$(id).src=asset(`references/${design}-${references[i]}.png`));
+ const references=data.referenceViews===false?[]:data.referenceViews??['kitchen-reverse','kitchen','dining'];
+ ['reference-main','reference-reverse','reference-dining'].forEach((id,i)=>{if($(id)&&references[i])$(id).src=asset(`references/${design}-${references[i]}.png`);});
  document.querySelectorAll('.option').forEach(button=>{const o=data.options.find(o=>o.id===button.dataset.id);button.querySelector('img').src=asset(o.images[design]);});
  const version=++loadVersion;$('image-loading').hidden=false;
  $('room-image').alt=showCurrent?`Current ${label(design)} ${data.title}`:`${option.title}: ${option.description} ${label(design)} ${data.title} concept.`;
@@ -106,7 +107,7 @@ $('save-image').onclick=async()=>{
  }catch{$('saved').textContent='Image export failed. Your marks remain saved; use Export feedback.';}finally{button.disabled=false;}
 };
 try{
- const response=await fetch(asset('options.json'));if(!response.ok)throw Error('Unable to load design ideas');data=await response.json();readState();
+ const response=await fetch(asset(globalThis.INTERIOR_STUDIO_OPTIONS??'options.json'));if(!response.ok)throw Error('Unable to load design ideas');data=await response.json();readState();
  for(const o of data.options){const button=document.createElement('button');button.className='option';button.dataset.id=o.id;button.setAttribute('aria-pressed','false');button.setAttribute('aria-label',o.id+' '+o.title);button.innerHTML=`<img alt="" loading="lazy"><span><strong>${esc(o.id)}</strong>${esc(o.title)}</span><b hidden aria-label="Shortlisted">★</b>`;button.onclick=()=>select(o.id);$('options').append(button);}
  const parts=location.hash.slice(1).split('-');design=parts[1]==='planning'?'planning':'proposed';$('design').value=design;option=data.options.find(o=>o.id===parts[0])??data.options[0];updateBadges();await render();if(!storageOK)$('saved').textContent='Browser storage is unavailable. Export your feedback before closing.';
 }catch(error){$('error').hidden=false;$('error').textContent='The design board could not load. Please refresh the page.';console.error(error);}

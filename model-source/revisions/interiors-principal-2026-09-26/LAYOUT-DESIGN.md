@@ -1,5 +1,22 @@
 # Suite layout rethink — 26 September
 
+## Current direction: furniture relationships and whole-house principles
+
+The owner identified the bed/sofa/TV arrangement as particularly awkward, and asked that the research guide every room. `proposal/interiors/DESIGN-PRINCIPLES.md` records the shared approach. The previous studies below remain history, not selected directions.
+
+Before UI changes: use the existing same-scale drawing, circle/notes and shortlist pattern already researched for this studio. This round is a furniture arrangement comparison, not another completed set of suite floorplans. Keep the measured envelope, entrances and windows. Shade the provisional area for adjoining functions and state that bathroom, wardrobe and study fitting is unresolved. Show each furniture group's facing direction, screen ownership and the trade-off, rather than claiming a clear ray makes viewing comfortable.
+
+Sketch and journey:
+```
+Make the bed and sofa work together.
+[A Parallel furniture / one screen] [B Pivot / alternating use] [C Separate views / two screens]
+[Measured arrangement and clearance notes] [Benefit / compromise / circle / notes]
+Whole-house design principles · Previous five plans
+```
+Compare the actual viewing arrangement → understand its compromise → annotate → develop supporting rooms around the preferred composition. No option is a fitted or approved full-house change. Preserve the feedback stored on previous boards.
+
+## Previous directions
+
 Owner priority: TV in bed and from a separate sofa; much larger walk-in wardrobe; smaller office. Stop extending the first ten bedroom photographs: their furniture arrangement is superseded by this layout study. Their material choices remain useful.
 
 The two current proposals share this suite envelope. Retain bathroom/WC, external walls, windows, entrance and vaulted west alcove. Move the bed to the north-east bay facing west. An angled screen in the north-west corner can be seen from bed and the sofa at the south end simultaneously. Check both viewing cones against furniture and wall geometry. The TV must not cover a window. Move the dressing door south and extend the bedroom/dressing wall behind the bed. Remove the dressing/study dividing wall and fit the former office with storage; leave a 1.5 × 0.6 m window desk. The widened central bay can accept a slim drawer island with roughly 1 m each side; the narrower northern bay cannot.

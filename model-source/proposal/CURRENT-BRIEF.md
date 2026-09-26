@@ -2,6 +2,8 @@
 
 Current design arrangement: [START-HERE.md](START-HERE.md). The notes below are chronological; later instructions supersede earlier ones.
 
+26 September 2026, room-planning research: apply the lessons throughout the house, not only in the principal suite. Follow [the shared design principles](interiors/DESIGN-PRINCIPLES.md) for proportions, circulation with occupied furniture and open doors/drawers, daylight, privacy, storage and adjoining-room routines. Continue one room at a time. The owner rejected the five principal-suite plans, particularly the awkward bed/sofa/TV arrangement; reconsider those furniture relationships before fitting the supporting rooms. A single shared TV is an option, not a fixed requirement. No replacement suite layout has been selected.
+
 25 September 2026, loft-bedroom clarification: removing the banister means restoring the solid white plastered wall along the west eaves in both current Proposed designs. Keep its existing alignment and fit its top to the roof underside; the loft stair and bedroom access remain unchanged. This supersedes the 24 September open-balustrade instruction below.
 
 23 September, side-extension setback: the owner confirmed that both proposed designs recess the former-garage front wall and roof edge by 450 mm (approximately two brick lengths with joints). The rear alignment and original house remain fixed. Front glazing, rainwater goods, floors, room outlines and bedroom furniture follow the setback. This is a shared compact-specification change, inherited by the planning option.

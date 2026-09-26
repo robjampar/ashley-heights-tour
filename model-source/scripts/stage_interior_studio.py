@@ -17,7 +17,7 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
         for design in ('proposed', 'planning'):
             assert (source / option['images'][design]).is_file()
     for path in sorted(source.rglob('*')):
-        if not path.is_file() or path.name in ('index.html', 'model.html', 'plans.html', 'studio.js'):
+        if not path.is_file() or path.name in ('index.html', 'model.html', 'plans.html', 'arrangements.html', 'studio.js'):
             continue
         if path.suffix not in ('.png', '.jpg', '.webp', '.svg', '.css', '.json', '.glb', '.js'):
             continue
@@ -79,4 +79,12 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
         floorplans = json.loads((source / 'floorplans/options.json').read_text())
         assert len(floorplans['options']) == 5
         result['floorplans'] = {'path': 'plans.html', 'options': 5, 'session': floorplans['session'], 'method': 'Measured model-based SVG floorplans'}
+    if (authored / 'arrangements.html').is_file():
+        arrangements_html = (source / 'arrangements.html').read_text().replace('src="studio.js"', 'src="'+code_name+'"')
+        arrangements_html = arrangements_html.replace('href="studio.css"', 'href="'+asset_map['studio.css']+'"')
+        (destination / 'arrangements.html').write_text(arrangements_html)
+        result['arrangements_html_sha256'] = sha(arrangements_html.encode())
+        arrangements = json.loads((source / 'arrangements/options.json').read_text())
+        assert len(arrangements['options']) == 3
+        result['arrangements'] = {'path': 'arrangements.html', 'options': 3, 'session': arrangements['session'], 'method': 'Measured furniture relationship studies'}
     return result

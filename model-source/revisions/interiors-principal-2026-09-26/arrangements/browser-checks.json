@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "options": [
+    {
+      "design": "proposed",
+      "id": "A",
+      "width": 840,
+      "height": 1120,
+      "src": "http://127.0.0.1:8778/model/interiors/principal/arrangements/A.7c6746bb730cc165.svg"
+    },
+    {
+      "design": "proposed",
+      "id": "B",
+      "width": 840,
+      "height": 1120,
+      "src": "http://127.0.0.1:8778/model/interiors/principal/arrangements/B.dd4280f734d6aec3.svg"
+    },
+    {
+      "design": "proposed",
+      "id": "C",
+      "width": 840,
+      "height": 1120,
+      "src": "http://127.0.0.1:8778/model/interiors/principal/arrangements/C.83aacdd997a56ab4.svg"
+    },
+    {
+      "design": "planning",
+      "id": "A",
+      "width": 840,
+      "height": 1120,
+      "src": "http://127.0.0.1:8778/model/interiors/principal/arrangements/A.7c6746bb730cc165.svg"
+    },
+    {
+      "design": "planning",
+      "id": "B",
+      "width": 840,
+      "height": 1120,
+      "src": "http://127.0.0.1:8778/model/interiors/principal/arrangements/B.dd4280f734d6aec3.svg"
+    },
+    {
+      "design": "planning",
+      "id": "C",
+      "width": 840,
+      "height": 1120,
+      "src": "http://127.0.0.1:8778/model/interiors/principal/arrangements/C.83aacdd997a56ab4.svg"
+    }
+  ],
+  "annotationPersistence": true,
+  "separateDesignFeedback": true,
+  "correctExportSession": true,
+  "markedSvgToPngExport": true,
+  "responsiveWidths": [
+    1440,
+    768,
+    390
+  ],
+  "errors": [],
+  "failed": []
+}

@@ -1,4 +1,10 @@
-# Principal suite — five floorplan alternatives
+# Principal suite — layout research
+
+The owner has rejected the five alternatives and requested research into better room planning. No option is selected. See `LAYOUT-RESEARCH.md` for the sourced study, critique of the previous method and dimensional targets for the next sketches. In particular, the shared-TV arrangement and the bed position must be reconsidered, and 500 mm route connectivity must not be presented as proof of comfort. The five published plans remain a record of that unselected study.
+
+The owner clarified that the bed, sofa and TV arrangement was particularly awkward and that the principles must apply everywhere. `proposal/interiors/DESIGN-PRINCIPLES.md` is the shared room-design framework. Three focused studies at `interiors/principal/arrangements.html` compare one fixed screen, one pivoting screen and two separate screens. Their furniture clears the entrance sweep and an 800 mm route check with the desk chair present. Sampled head-turn angles are about 15–32° for A and 0–14° for B/C. B serves only one area at a time. The 26.4 m² adjoining zone is reserved, not a resolved bathroom/wardrobe design; headroom, daylight, mounting, acoustics and native fitting remain to be checked after selecting a direction.
+
+## Previous five floorplan alternatives
 
 The latest review requests a clear entrance, less wardrobe space, a larger desk and ensuite, and exploration of a north ensuite before choosing a layout. Five measured SVG alternatives are published at `interiors/principal/plans.html`. The old native study is explicitly labelled as the previous issue and retained for reference. No alternative has yet been fitted into a whole-house model.
 

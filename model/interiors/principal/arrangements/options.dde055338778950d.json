@@ -1,0 +1,36 @@
+{
+  "session": "principal-arrangements-2026-09-26-v1",
+  "slug": "principal-arrangements",
+  "title": "Bed, sofa and TV arrangements",
+  "imageKind": "Furniture arrangement",
+  "referenceViews": false,
+  "options": [
+    {
+      "id": "A",
+      "title": "Parallel furniture \u00b7 one fixed TV",
+      "description": "Keeps one fixed TV and avoids diagonal furniture. Still requires head turning. Compare this with the direct-view options. Estimated maximum head turn across the sampled seats: bed 26\u00b0, sofa 32\u00b0. Freestanding headboard and media joinery; adjoining rooms still to resolve.",
+      "images": {
+        "proposed": "arrangements/A.svg",
+        "planning": "arrangements/A.svg"
+      }
+    },
+    {
+      "id": "B",
+      "title": "Pivoting TV \u00b7 two direct views",
+      "description": "Straight-on viewing from either area with one physical TV. Turn the screen between bed and sofa; both cannot watch at once. Estimated maximum head turn across the sampled seats: bed 7\u00b0, sofa 13\u00b0. Rotation space is reserved. Mounting, cables and mechanism need design.",
+      "images": {
+        "proposed": "arrangements/B.svg",
+        "planning": "arrangements/B.svg"
+      }
+    },
+    {
+      "id": "C",
+      "title": "Separate lounge \u00b7 two direct views",
+      "description": "Direct views and independent use; furniture has a clear orientation. Two screens and a low media divider; check daylight in the next stage. Estimated maximum head turn across the sampled seats: bed 9\u00b0, sofa 12\u00b0. The desk sits behind the bed media divider, beside the south-window zone.",
+      "images": {
+        "proposed": "arrangements/C.svg",
+        "planning": "arrangements/C.svg"
+      }
+    }
+  ]
+}

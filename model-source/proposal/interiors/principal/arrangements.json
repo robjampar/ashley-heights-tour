@@ -1,0 +1,256 @@
+{
+  "status": "Furniture relationship studies; supporting rooms unresolved",
+  "options": [
+    {
+      "id": "A",
+      "title": "Parallel furniture \u00b7 one fixed TV",
+      "subtitle": "One shared screen; the bed and sofa stay square to the room.",
+      "bed": [
+        7.3,
+        -14.17,
+        90
+      ],
+      "sofa": [
+        7.8,
+        -11.0,
+        0
+      ],
+      "screens": [
+        {
+          "id": "shared",
+          "center": [
+            11.0,
+            -12.5
+          ],
+          "normal": 180,
+          "width": 1.882,
+          "height": 1.059,
+          "z": 1.32
+        }
+      ],
+      "media": [
+        [
+          10.9,
+          -13.65,
+          11.15,
+          -11.35
+        ]
+      ],
+      "desk": [
+        12.9,
+        -15.9,
+        13.6,
+        -14.1
+      ],
+      "chair": [
+        12.2,
+        -15.0
+      ],
+      "targets": {
+        "bed north side": [
+          7.3,
+          -12.7
+        ],
+        "bed south side": [
+          7.3,
+          -15.6
+        ],
+        "bed foot": [
+          8.9,
+          -14.17
+        ],
+        "sofa approach": [
+          8.95,
+          -11.0
+        ],
+        "study approach": [
+          11.4,
+          -15.0
+        ],
+        "retained window alcove": [
+          4.75,
+          -12.94
+        ]
+      },
+      "benefit": "Keeps one fixed TV and avoids diagonal furniture.",
+      "compromise": "Still requires head turning. Compare this with the direct-view options.",
+      "note": "Freestanding headboard and media joinery; adjoining rooms still to resolve."
+    },
+    {
+      "id": "B",
+      "title": "Pivoting TV \u00b7 two direct views",
+      "subtitle": "The bed and sofa face each other across a rotating screen.",
+      "bed": [
+        7.3,
+        -12.85,
+        90
+      ],
+      "sofa": [
+        12.4,
+        -12.85,
+        180
+      ],
+      "screens": [
+        {
+          "id": "bed",
+          "center": [
+            10.2,
+            -12.85
+          ],
+          "normal": 180,
+          "width": 1.66,
+          "height": 0.934,
+          "z": 1.32
+        },
+        {
+          "id": "sofa",
+          "center": [
+            10.2,
+            -12.85
+          ],
+          "normal": 0,
+          "width": 1.66,
+          "height": 0.934,
+          "z": 1.32
+        }
+      ],
+      "media": [],
+      "pivot": [
+        10.2,
+        -12.85,
+        0.88
+      ],
+      "desk": [
+        5.3,
+        -16.0,
+        6.0,
+        -14.35
+      ],
+      "chair": [
+        6.65,
+        -15.15
+      ],
+      "targets": {
+        "bed north side": [
+          7.3,
+          -11.4
+        ],
+        "bed south side": [
+          7.3,
+          -14.3
+        ],
+        "bed foot": [
+          8.85,
+          -12.85
+        ],
+        "sofa approach": [
+          11.5,
+          -12.85
+        ],
+        "study approach": [
+          7.45,
+          -15.15
+        ],
+        "retained window alcove": [
+          4.75,
+          -12.94
+        ]
+      },
+      "benefit": "Straight-on viewing from either area with one physical TV.",
+      "compromise": "Turn the screen between bed and sofa; both cannot watch at once.",
+      "note": "Rotation space is reserved. Mounting, cables and mechanism need design."
+    },
+    {
+      "id": "C",
+      "title": "Separate lounge \u00b7 two direct views",
+      "subtitle": "A south-facing bed and an east-facing sofa each have their own TV.",
+      "bed": [
+        7.1,
+        -11.7,
+        0
+      ],
+      "sofa": [
+        10.8,
+        -12.95,
+        0
+      ],
+      "screens": [
+        {
+          "id": "bed",
+          "center": [
+            7.1,
+            -13.9
+          ],
+          "normal": 90,
+          "width": 1.44,
+          "height": 0.81,
+          "z": 1.3
+        },
+        {
+          "id": "sofa",
+          "center": [
+            13.6,
+            -13.0
+          ],
+          "normal": 180,
+          "width": 1.44,
+          "height": 0.81,
+          "z": 1.25
+        }
+      ],
+      "media": [
+        [
+          5.3,
+          -14.2,
+          8.8,
+          -13.95
+        ],
+        [
+          13.52,
+          -13.75,
+          13.68,
+          -12.25
+        ]
+      ],
+      "desk": [
+        5.3,
+        -15.98,
+        6.0,
+        -14.28
+      ],
+      "chair": [
+        6.65,
+        -15.1
+      ],
+      "targets": {
+        "bed west side": [
+          5.65,
+          -11.7
+        ],
+        "bed east side": [
+          8.55,
+          -11.7
+        ],
+        "bed foot": [
+          7.1,
+          -13.3
+        ],
+        "sofa approach": [
+          11.9,
+          -12.95
+        ],
+        "study approach": [
+          7.5,
+          -15.1
+        ],
+        "retained window alcove": [
+          4.75,
+          -12.94
+        ]
+      },
+      "benefit": "Direct views and independent use; furniture has a clear orientation.",
+      "compromise": "Two screens and a low media divider; check daylight in the next stage.",
+      "note": "The desk sits behind the bed media divider, beside the south-window zone."
+    }
+  ]
+}
