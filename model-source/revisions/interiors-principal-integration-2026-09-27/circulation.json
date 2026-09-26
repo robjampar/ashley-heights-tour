@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "variant": "compact",
+      "bodyWidthM": 0.5,
+      "gridStepM": 0.075,
+      "reachableTargets": [
+        "bed left",
+        "bed right",
+        "bed foot",
+        "desk passing",
+        "sofa approach",
+        "vault seat approach",
+        "wardrobe",
+        "bathroom threshold",
+        "vanity",
+        "bath",
+        "shower",
+        "WC"
+      ],
+      "reachableSamples": 8863,
+      "viewsClear": true
+    },
+    {
+      "variant": "planning",
+      "bodyWidthM": 0.5,
+      "gridStepM": 0.075,
+      "reachableTargets": [
+        "bed left",
+        "bed right",
+        "bed foot",
+        "desk passing",
+        "sofa approach",
+        "vault seat approach",
+        "wardrobe",
+        "bathroom threshold",
+        "vanity",
+        "bath",
+        "shower",
+        "WC"
+      ],
+      "reachableSamples": 8863,
+      "viewsClear": true
+    }
+  ]
+}

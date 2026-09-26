@@ -9,19 +9,19 @@
         "revision": 2,
         "reference": "walkthrough/public/interiors/kitchen/images/01-proposed.png"
       },
-      "modelUpdatedAt": "2026-09-25T18:31:01.503809+00:00",
+      "modelUpdatedAt": "2026-09-26T23:22:31.450827+00:00",
       "textures": [
         {
           "name": "Proposal | Quiet oak pale natural oak",
           "normalMap": false,
           "bumpScale": 0.00008,
-          "uvMeshes": 1
+          "uvMeshes": 17
         },
         {
           "name": "Proposal | Quiet oak cream upholstery",
           "normalMap": false,
           "bumpScale": 0.00008,
-          "uvMeshes": 4
+          "uvMeshes": 10
         },
         {
           "name": "Proposal | Quiet oak beige limestone floor",
@@ -56,19 +56,19 @@
         "revision": 2,
         "reference": "walkthrough/public/interiors/kitchen/images/01-planning.png"
       },
-      "modelUpdatedAt": "2026-09-25T18:29:43.700575+00:00",
+      "modelUpdatedAt": "2026-09-26T23:21:00.791895+00:00",
       "textures": [
-        {
-          "name": "Proposal | Quiet oak cream upholstery",
-          "normalMap": false,
-          "bumpScale": 0.00008,
-          "uvMeshes": 4
-        },
         {
           "name": "Proposal | Quiet oak pale natural oak",
           "normalMap": false,
           "bumpScale": 0.00008,
-          "uvMeshes": 1
+          "uvMeshes": 16
+        },
+        {
+          "name": "Proposal | Quiet oak cream upholstery",
+          "normalMap": false,
+          "bumpScale": 0.00008,
+          "uvMeshes": 10
         },
         {
           "name": "Proposal | Quiet oak beige limestone floor",

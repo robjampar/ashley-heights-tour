@@ -1,6 +1,6 @@
 # Principal bathroom and walk-through wardrobe — development 02
 
-Disposition: **furnished isolated suite ready for owner review**, for Proposed and Proposed Planning. The owner accepted the developed south-wall bedroom and requested both adjoining spaces. This study retains all 500 mesh signatures from the updated bedroom revision 03, including its L desk and changed window shell; the adjoining floor is fitted with dressing oak and bathroom limestone. Neither whole-house baseline is overwritten.
+Disposition: **furnished isolated suite ready for owner review**, for Proposed and Proposed Planning. The owner accepted the developed south-wall bedroom and requested both adjoining spaces. This study retains all 500 mesh signatures from the updated bedroom revision 03, including its L desk and changed window shell; the adjoining floor is fitted with dressing oak and bathroom limestone. The accepted version is now integrated in both complete proposals; prior whole-house baselines are preserved separately.
 
 The bathroom divider and the whole wardrobe move 750 mm south, towards the bed. Dressing remains about 12.09 m² and bathroom grows from 12.00 to 14.84 m². The sequence is bedroom → dry walk-through wardrobe → closable bathroom. The middle east bedroom and wardrobe windows move 750 mm south. A new 1800 mm wide east window is centred behind the bath, with its sill 1100 mm above the floor and separate obscure glazing. The other original openings retain their positions.
 

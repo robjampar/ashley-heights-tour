@@ -27,6 +27,9 @@ class BuildCacheTests(unittest.TestCase):
             'proposal/P4_parking-validated.json', 'scripts/build_model.py',
             'scripts/build_extension_proposal.py', 'scripts/build_support.py',
             'scripts/blender_collections.py', 'scripts/blender_booleans.py', 'scripts/exterior_exposure.py',
+            'proposal/interiors/principal/accepted/manifest.json',
+            'proposal/interiors/principal/accepted/compact/suite.blend',
+            'proposal/interiors/principal/accepted/planning/suite.blend',
         }
         names.update('scripts/' + name for v in ('compact', 'planning') for name in build.modules_for(v))
         for name in names:
@@ -51,6 +54,11 @@ class BuildCacheTests(unittest.TestCase):
 
     def test_no_change_reuses_both_models(self):
         self.assertTrue(self.fresh())
+        self.assertTrue(self.fresh('compact'))
+
+    def test_accepted_room_asset_invalidates_its_design(self):
+        self.put('proposal/interiors/principal/accepted/planning/suite.blend', 'updated room')
+        self.assertFalse(self.fresh())
         self.assertTrue(self.fresh('compact'))
 
     def test_planning_overlay_does_not_invalidate_compact(self):

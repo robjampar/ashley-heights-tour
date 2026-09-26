@@ -14,6 +14,11 @@ from principal_room_geometry import desk_outline,revise_east_windows
 variant=sys.argv[sys.argv.index('--')+1];assert variant in ('compact','planning')
 cfg=json.loads((ROOT/'proposal/interiors/principal/bedroom.json').read_text())
 base=ROOT/('output-proposed-'+variant);nav=json.loads((base/'navigation.json').read_text())
+# Continue room experiments from the preserved pre-integration shell, not from
+# the already shifted/furnished full model (which would apply the changes twice).
+if nav.get('principalInterior',{}).get('integrated'):
+ base=ROOT/'revisions/interiors-principal-integration-2026-09-27'/(variant+'-before')
+ nav=json.loads((base/'navigation.json').read_text())
 out=ROOT/'walkthrough/public/interiors/principal/models';out.mkdir(parents=True,exist_ok=True)
 evidence=ROOT/'revisions/interiors-principal-2026-09-26/bedroom'/variant;evidence.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(base/(native_name(variant)+'.blend')))

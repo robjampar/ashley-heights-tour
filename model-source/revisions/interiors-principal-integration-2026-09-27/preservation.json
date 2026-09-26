@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "variant": "compact",
+      "unchanged_previous_meshes": 14704,
+      "unchanged_kitchen_lounge_meshes": 1028,
+      "maximum_vertex_difference_m": 0,
+      "source_reconstruction_preserved": true,
+      "replaced_old_suite_meshes": 197
+    },
+    {
+      "variant": "planning",
+      "unchanged_previous_meshes": 13889,
+      "unchanged_kitchen_lounge_meshes": 919,
+      "maximum_vertex_difference_m": 0,
+      "source_reconstruction_preserved": true,
+      "replaced_old_suite_meshes": 197
+    }
+  ]
+}

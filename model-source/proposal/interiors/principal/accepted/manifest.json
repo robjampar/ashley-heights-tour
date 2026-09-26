@@ -1,0 +1,24 @@
+{
+  "bedroom_revision": 3,
+  "ensuite_revision": 2,
+  "variants": {
+    "compact": {
+      "directory": "proposal/interiors/principal/accepted/compact",
+      "sha256": {
+        "suite.blend": "5162cc885ba7a137c77b58469a4bd14f762e3ecf97bec80e7be44a535387ac9f",
+        "bedroom-report.json": "5960441bab911aabfb837186fa3e2a74e678feb7abf9a775c59ea393dd60ee39",
+        "ensuite-report.json": "53950480cdfa03b3f97c3a6d9f3d1b57b966ca7f92496697be971574bcdac225",
+        "metadata.json": "845ac1d2d7dbafc7df381223e401ffe036dd1d713708348311e7673170aa21b5"
+      }
+    },
+    "planning": {
+      "directory": "proposal/interiors/principal/accepted/planning",
+      "sha256": {
+        "suite.blend": "aee2e9c751536e56c89bf3c07532f838582d0ef79a4352c7a95e9a78d5c22247",
+        "bedroom-report.json": "d812b657d1c9814cb5278d5b795a6a9f27093cbc3e4dfde9163e342ad5da482b",
+        "ensuite-report.json": "a653152e49ba2d225204a873affcb638e1df2d537c4707be18bd57cf94defe87",
+        "metadata.json": "f6f7eca56355bfbf32b5dcac2e752ecc31a4c801a4ad8157460bacd3ded84bb3"
+      }
+    }
+  }
+}

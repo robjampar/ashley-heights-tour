@@ -1,0 +1,390 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "interior": {
+        "bedroomRevision": 3,
+        "ensuiteRevision": 2,
+        "nativeAssetSHA256": "5162cc885ba7a137c77b58469a4bd14f762e3ecf97bec80e7be44a535387ac9f",
+        "integrated": true,
+        "rooms": [
+          "proposal-new-principal-suite",
+          "proposal-principal-study",
+          "proposal-new-dressing-room",
+          "proposal-new-principal-bathroom"
+        ]
+      },
+      "kitchen": {
+        "room": "kitchen-dining-and-tv-lounge",
+        "scheme": "01 Quiet oak",
+        "revision": 2,
+        "reference": "walkthrough/public/interiors/kitchen/images/01-proposed.png"
+      },
+      "mirrors": 3,
+      "mirrorGroups": 2,
+      "features": [
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 1
+        },
+        {
+          "term": "desk top rounded L",
+          "count": 1
+        },
+        {
+          "term": "oval bath hollow shell",
+          "count": 1
+        },
+        {
+          "term": "window drawer front",
+          "count": 4
+        },
+        {
+          "term": "bath window obscure pane",
+          "count": 1
+        },
+        {
+          "term": "TV inset glass",
+          "count": 1
+        },
+        {
+          "term": "rotary dial",
+          "count": 4
+        }
+      ],
+      "rooms": [
+        "proposal-new-principal-suite",
+        "proposal-principal-study",
+        "proposal-new-dressing-room",
+        "proposal-new-principal-bathroom"
+      ],
+      "design": "proposed",
+      "doorChecks": {
+        "closed": [
+          {
+            "id": "Principal suite entrance",
+            "wall": "Principal suite entrance",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": false,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "position": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Principal wardrobe door",
+            "wall": "Principal wardrobe door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": false,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "position": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Principal bathroom door",
+            "wall": "Principal bathroom door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": false,
+            "meshCount": 3,
+            "batches": 2,
+            "hinge": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "position": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": true
+          }
+        ],
+        "open": [
+          {
+            "id": "Principal suite entrance",
+            "wall": "Principal suite entrance",
+            "motion": "hinged",
+            "angle": 0,
+            "open": true,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "position": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": false
+          },
+          {
+            "id": "Principal wardrobe door",
+            "wall": "Principal wardrobe door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": true,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "position": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": false
+          },
+          {
+            "id": "Principal bathroom door",
+            "wall": "Principal bathroom door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": true,
+            "meshCount": 3,
+            "batches": 2,
+            "hinge": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "position": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": false
+          }
+        ]
+      }
+    },
+    {
+      "interior": {
+        "bedroomRevision": 3,
+        "ensuiteRevision": 2,
+        "nativeAssetSHA256": "aee2e9c751536e56c89bf3c07532f838582d0ef79a4352c7a95e9a78d5c22247",
+        "integrated": true,
+        "rooms": [
+          "proposal-new-principal-suite",
+          "proposal-principal-study",
+          "proposal-new-dressing-room",
+          "proposal-new-principal-bathroom"
+        ]
+      },
+      "kitchen": {
+        "room": "kitchen-dining-and-tv-lounge",
+        "scheme": "01 Quiet oak",
+        "revision": 2,
+        "reference": "walkthrough/public/interiors/kitchen/images/01-planning.png"
+      },
+      "mirrors": 3,
+      "mirrorGroups": 2,
+      "features": [
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 1
+        },
+        {
+          "term": "desk top rounded L",
+          "count": 1
+        },
+        {
+          "term": "oval bath hollow shell",
+          "count": 1
+        },
+        {
+          "term": "window drawer front",
+          "count": 4
+        },
+        {
+          "term": "bath window obscure pane",
+          "count": 1
+        },
+        {
+          "term": "TV inset glass",
+          "count": 1
+        },
+        {
+          "term": "rotary dial",
+          "count": 4
+        }
+      ],
+      "rooms": [
+        "proposal-new-principal-suite",
+        "proposal-principal-study",
+        "proposal-new-dressing-room",
+        "proposal-new-principal-bathroom"
+      ],
+      "design": "planning",
+      "doorChecks": {
+        "closed": [
+          {
+            "id": "Principal suite entrance",
+            "wall": "Principal suite entrance",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": false,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "position": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Principal wardrobe door",
+            "wall": "Principal wardrobe door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": false,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "position": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Principal bathroom door",
+            "wall": "Principal bathroom door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": false,
+            "meshCount": 3,
+            "batches": 2,
+            "hinge": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "position": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": true
+          }
+        ],
+        "open": [
+          {
+            "id": "Principal suite entrance",
+            "wall": "Principal suite entrance",
+            "motion": "hinged",
+            "angle": 0,
+            "open": true,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "position": [
+              8.47,
+              -8.7,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": false
+          },
+          {
+            "id": "Principal wardrobe door",
+            "wall": "Principal wardrobe door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": true,
+            "meshCount": 2,
+            "batches": 2,
+            "hinge": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "position": [
+              9.9,
+              -10.725,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": false
+          },
+          {
+            "id": "Principal bathroom door",
+            "wall": "Principal bathroom door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": true,
+            "meshCount": 3,
+            "batches": 2,
+            "hinge": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "position": [
+              12.4,
+              -7.7,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": false
+          }
+        ]
+      }
+    }
+  ],
+  "mobileWidth": 390,
+  "errors": [],
+  "failed": []
+}

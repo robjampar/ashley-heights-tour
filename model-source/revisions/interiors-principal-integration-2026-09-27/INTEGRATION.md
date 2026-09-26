@@ -1,0 +1,9 @@
+# Publish the accepted room designs in both complete proposals
+
+Owner explicitly requested full-model publication of the principal suite and the prior kitchen/lounge. The kitchen/lounge revision 2 is already in both complete saved models and will be verified geometrically. Principal bedroom revision 3 and bathroom/wardrobe revision 2 are frozen under `proposal/interiors/principal/accepted/`, with hashes for the editable assets and their measured reports. Full builds consume those accepted assets; subsequent isolated experiments cannot silently change the published design.
+
+Integrate the exact authored native furnishings and revised east-wall cells. Remove the superseded suite furniture, partitions, doorway leaves and collision records; keep unaffected shell, stair, gallery and original reconstruction. Update room polygons, viewpoints, navigation walls and three automatic doors. Keep the familiar house tour and room selector. Journey: open Proposed or Planning → select principal bedroom, desk, dressing or bathroom → walk between them → continue down to Kitchen / Side garden living. Mirrors use the existing room-view reflection method, activated locally to limit full-model rendering cost. No new settings are required.
+
+Sketch: existing landing → bedroom entrance → central bedroom route → shifted walk-through wardrobe → longer bathroom; bed on south wall, L desk southwest, separate sofa TV west. East windows follow the accepted 750 mm revision and new bath opening.
+
+Validation: native geometry match to accepted suite and unchanged kitchen/lounge; no obsolete suite walls/obstacles; physical door/view checks; connected full-house walking routes; exterior finish and earlier loft/kitchen regressions; browser desktop/mobile review and deployment verification. Retain prior complete native/geometry/navigation files in the variant-before folders.

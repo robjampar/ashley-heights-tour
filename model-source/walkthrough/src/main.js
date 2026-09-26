@@ -7,6 +7,7 @@ import {ExteriorAppearance} from './exterior-appearance.js';
 import lawnImage from '../node_modules/@dgreenheck/ez-tree/src/app/public/grass.jpg';   // MIT (ez-tree)
 import {daylight} from './lighting.js';
 import {roomLights} from './room-lights.js';
+import {roomMirrors} from './room-mirrors.js';
 import {RenderBudget} from './render-budget.js';
 import {DoorMotion} from './doors.js';
 import {Navigation,pointInPolygon} from './navigation.js';
@@ -31,6 +32,7 @@ let renderer,nav,data,doors,easter=null,yaw=0,pitch=0,ready=false,active=false,d
 const keys=new Set();const stats={sourceMeshes:0,batches:0,hiddenMeshes:0};
 let flying=false,lastWalkingPosition=null,takeoffTime=0;const verticalPointers=new Map();
 let localLights=null;
+let mirrors=null;
 let appearance=null,appearanceBatches=[];
 let vegetation=null,pendingStreetGroup=null,streetContext=null,settingsPrevious=null,life=null,lifeShadowTime=0,inspector=null,pressPoint=null;
 const LIFE_KEYS={people:'ashley-heights-life-people',cars:'ashley-heights-life-cars'};
@@ -216,6 +218,7 @@ async function load(){
  $('load-status').textContent='Preparing the rooms…';$('progress').style.width='85%';await new Promise(r=>setTimeout(r,20));
  gltf.scene.updateMatrixWorld(true);const hide=new Set(data.hiddenObjects),batches=createSpatialBatcher({cellSize:6,floorHeight:2.8,minMaterialTriangles:20000,indexVertices:false}),materials=new Map();
  doors=new DoorMotion(scene,data.interactiveDoors);
+ mirrors=roomMirrors(scene,data.mirrors);
  vegetation=new Vegetation(scene,{mobile:touch.enabled});
  // Trees stop at the building: every room's volume (0.15 m out for the walls) clips the canopy.
  vegetation.setClipBoxes((data.planRooms??[]).filter(r=>r.floor!==2&&r.polygon_m?.length>2).map(r=>{
@@ -294,7 +297,7 @@ async function load(){
 $('start').disabled=false;$('drag').disabled=false;$('settings-toggle').disabled=false;$('start').textContent=flying?'Start flying':'Start walking';$('load-status').textContent=data.redesign?`${DESIGN_LABELS[currentDesign]} · ${data.redesign.group} · Concept`:currentDesign==='planning'?'Proposed (planning application) · House and forecourt':currentDesign==='proposed'?'Proposed · New wing · Loft · Pool':'Existing · Start at the gates · Both floors · Garden';$('progress').style.width='100%';document.body.classList.remove('loading');
  if(!active)start(false);   // straight into the model: no welcome card
  // Exposed only for local validation / reproducible viewpoint screenshots.
- window.walkthrough={ready:true,stats,appearance,setExteriorAppearance,nav,data,doors,camera,renderer,lighting:lighting.info,touch,easter,life,setLife,inspector,setInspect,inspectAt,goTo,setFlying,setStreetVisible,setView(p,d){touch.reset();nav.position={x:p[0],y:p[1],z:p[2]};setDirection(d);if(doors.snap(nav.position))lighting.updateShadows();syncCamera();updateMap();},getState(){return {...nav.position,yaw,pitch,active,flying,room:roomLabel(),streetContext:data.streetContext.enabled,calls:renderer.info.render.calls};},startDrag:()=>start(false)};
+ window.walkthrough={ready:true,stats,appearance,setExteriorAppearance,nav,data,doors,mirrors:mirrors.mirrors,camera,renderer,lighting:lighting.info,touch,easter,life,setLife,inspector,setInspect,inspectAt,goTo,setFlying,setStreetVisible,setView(p,d){touch.reset();nav.position={x:p[0],y:p[1],z:p[2]};setDirection(d);if(doors.snap(nav.position))lighting.updateShadows();syncCamera();updateMap();},getState(){return {...nav.position,yaw,pitch,active,flying,room:roomLabel(),streetContext:data.streetContext.enabled,calls:renderer.info.render.calls};},startDrag:()=>start(false)};
 }
 function frame(time){
  requestAnimationFrame(frame);const elapsed=Math.max(0,(time-lastTime)/1000),dt=Math.min(elapsed,.04);lastTime=time;
@@ -327,6 +330,7 @@ function frame(time){
   if(time-mapTime>160){updateMap();if(easter?.clock.phase==='chasing')$('chase-time').textContent=(running?'Keep moving':'Paused')+' · '+duration(easter.clock.survived);mapTime=time;}
  }
  if(localLights)localLights.update(camera,time);
+ mirrors?.update(camera);
  lighting.render();
 }
 load().catch(e=>{console.error(e);$('start').textContent='Try again';$('start').disabled=false;$('start').onclick=()=>location.reload();$('load-status').textContent='The house could not load. Check your connection and try again.';$('progress').style.width='0';});requestAnimationFrame(frame);
