@@ -5,7 +5,7 @@
     "options": 10,
     "images": 20,
     "engine": "Built-in image_gen",
-    "html_sha256": "03eaf464d327803a95adfcd1955f03f2cf987014547f927c72cc7d88fb69e684",
+    "html_sha256": "a8cde84a155e9484edeac5eac2a55fc4a711b3fb29d8b8bc2374fb442142bb32",
     "assets": {
       "images/01-planning.da95d4f435a5ebe2.png": {
         "source": "images/01-planning.png",
@@ -217,10 +217,10 @@
         "bytes": 9096,
         "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
       },
-      "studio.e2524b4f022909c8.js": {
+      "studio.886a4d3939160640.js": {
         "source": "studio.js",
-        "bytes": 18145,
-        "sha256": "e2524b4f022909c8d082f3c4f733a3d1e9d447754e30669036d5e8609a042244"
+        "bytes": 18390,
+        "sha256": "886a4d3939160640eed8d76964d61755952a4cad3bf59a1c31ec4f16845600d3"
       }
     },
     "previous_assets": {
@@ -265,6 +265,13 @@
         "sha256": "28b6efd07391562285b77afa09250e1f500991477639d9e07961e6636bf060ac",
         "retired_at_epoch": 1790383462.536682,
         "retain_until_epoch": 1790390662.536682
+      },
+      "studio.e2524b4f022909c8.js": {
+        "source": "studio.js",
+        "bytes": 18145,
+        "sha256": "e2524b4f022909c8d082f3c4f733a3d1e9d447754e30669036d5e8609a042244",
+        "retired_at_epoch": 1790385797.681851,
+        "retain_until_epoch": 1790392997.681851
       }
     },
     "model_html_sha256": "dd38c62bdc97138c17e7ee57c327c77fade43ea05e2ee2ec0083c353c2550a81"
@@ -275,8 +282,38 @@
     "options": 10,
     "images": 10,
     "engine": "Built-in image_gen",
-    "html_sha256": "1b551e1bb0bba2e0c02869dbe4490001751931ea09085e9c4c440a532fd6f867",
+    "html_sha256": "74f54d484e584077d14f22373e2385c8c8af57915d4639cf156b320e8325cd76",
     "assets": {
+      "floorplans/01.bb1c00680cfe3f19.svg": {
+        "source": "floorplans/01.svg",
+        "bytes": 11459,
+        "sha256": "bb1c00680cfe3f196b84f95313f76019aade797da337b2618a86dcd9946f18a6"
+      },
+      "floorplans/02.7f5b44ffaa653f88.svg": {
+        "source": "floorplans/02.svg",
+        "bytes": 11968,
+        "sha256": "7f5b44ffaa653f8877a0878aa904337f4354bd8ecac9a1e7a30df69a27f82ef1"
+      },
+      "floorplans/03.916508bdb2dd1ae4.svg": {
+        "source": "floorplans/03.svg",
+        "bytes": 11585,
+        "sha256": "916508bdb2dd1ae43b17f0d96a31ba024c8b552cd1012f5a0c574a340ba1a2cb"
+      },
+      "floorplans/04.43935adb6826b7e6.svg": {
+        "source": "floorplans/04.svg",
+        "bytes": 12946,
+        "sha256": "43935adb6826b7e6b2633d6b81865ec00c0b30665b1036cf767e0a27b7f8c334"
+      },
+      "floorplans/05.e306b1560570187c.svg": {
+        "source": "floorplans/05.svg",
+        "bytes": 12371,
+        "sha256": "e306b1560570187cfb4903131e271bcbc3fa14d763176c40aea0cf6f2ca5289d"
+      },
+      "floorplans/options.8e98d3013e2a2871.json": {
+        "source": "floorplans/options.json",
+        "bytes": 3995,
+        "sha256": "8e98d3013e2a28716a519825b06f712c8a9de02fb18987300e7f49f5fb581ea7"
+      },
       "image-manifest.1a852bff56b5e71f.json": {
         "source": "image-manifest.json",
         "bytes": 1583,
@@ -412,10 +449,10 @@
         "bytes": 9096,
         "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
       },
-      "studio.f638dad79ee34e08.js": {
+      "studio.5b319b69fc907fbe.js": {
         "source": "studio.js",
-        "bytes": 16652,
-        "sha256": "f638dad79ee34e086b3107bd4e1fd788eb17e3d684922f7bf0fdb63d3239ec77"
+        "bytes": 17263,
+        "sha256": "5b319b69fc907fbee4fce930fce9c9e439d1012f6241d5aa70d93f8f0d54ff81"
       }
     },
     "previous_assets": {
@@ -453,11 +490,25 @@
         "sha256": "6fb65337d9d0d08fda4413ceb9d02cf134d7aad4f1bd5ba7b956666ec032ffd6",
         "retired_at_epoch": 1790383581.129114,
         "retain_until_epoch": 1790390781.129114
+      },
+      "studio.f638dad79ee34e08.js": {
+        "source": "studio.js",
+        "bytes": 16652,
+        "sha256": "f638dad79ee34e086b3107bd4e1fd788eb17e3d684922f7bf0fdb63d3239ec77",
+        "retired_at_epoch": 1790385797.681851,
+        "retain_until_epoch": 1790392997.681851
       }
     },
-    "model_html_sha256": "b04b112b3adc7dfc79cead2ac0e66e19b4947c2e466937bf22b9cd3943b7d09a"
+    "model_html_sha256": "aa0665dd8703eae33d76ea749ed3bb4dcc84964ffaff70a7995f22c749f02240",
+    "plans_html_sha256": "45b534821e3331d231e0d69db9dd4bf5476f1c5e90c6e75a543379722b571172",
+    "floorplans": {
+      "path": "plans.html",
+      "options": 5,
+      "session": "principal-floorplans-2026-09-26-v1",
+      "method": "Measured model-based SVG floorplans"
+    }
   },
-  "published_utc": "2026-09-26T00:46:21.730093+00:00",
+  "published_utc": "2026-09-26T01:23:18.313564+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",

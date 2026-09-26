@@ -1,4 +1,21 @@
-# Principal suite — revised layout study
+# Principal suite — five floorplan alternatives
+
+The latest review requests a clear entrance, less wardrobe space, a larger desk and ensuite, and exploration of a north ensuite before choosing a layout. Five measured SVG alternatives are published at `interiors/principal/plans.html`. The old native study is explicitly labelled as the previous issue and retained for reference. No alternative has yet been fitted into a whole-house model.
+
+1. North spa through dressing: 20.0 m² ensuite/WC, 13.6 m² dressing, 8.5 m² enclosed south-east study.
+2. North spa with direct access: 20.0 m² ensuite/WC, 12.6 m² south dressing, 7.6 m² separate study.
+3. North spa and open studio: 20.0 m² ensuite/WC, 10.9 m² dressing, 7.9 m² open work zone.
+4. Central spa: 17.3 m² ensuite/WC, 8.9 m² dressing, 11.8 m² private north study.
+5. Enlarged south spa: 23.8 m² ensuite/WC, 16.5 m² dressing, 7.5 m² north study.
+
+The plans share the measured envelope, external openings, vaulted alcove and 950 mm entrance. Each moves the bed west and retains one shared bed/sofa screen. The first three relocate the ensuite to the former north office, with different dressing/study connections. Option 4 relocates wet functions along the east wall; Option 5 retains the wet-room position and moves its WC partition clear of the existing east glazing. Bathroom relocation needs plumbing-route and structural feasibility checks; these are layout studies, not surveyed or construction documents.
+
+Source: `proposal/interiors/principal/floorplans.json`. Reproduce with `.venv/bin/python scripts/draw_principal_floorplans.py`. The audit reproduces the previous bed/entrance-sweep overlap, then checks every new plan for room/furniture containment and overlaps, all hinged sweeps, the arrival area, walls through furniture, partition/glazing conflicts, 500 mm body routes and 2D TV sightlines. All five pass. This does not claim native 3D/headroom/plumbing verification of these unselected alternatives.
+
+The shared annotation engine now handles variable option counts, optional current-room references and a per-page options source. Existing kitchen/bedroom boards retain their sessions, image labels and references. The five floorplans have their own feedback session and allow independent notes/marks by proposal, shortlist and SVG-to-PNG/JSON/HTML exports. Browser checks cover all ten option/design combinations, persistence, exported feedback identity and 1440/768/390 px layouts. Existing kitchen annotation and principal colour-board tests pass.
+
+## Previous layout 01 (superseded for layout selection)
+
 
 The owner replaced the original furnishing-only brief with a layout rethink: TV visible from bed and a separate sofa, more walk-in wardrobe and a smaller desk. The native candidate at `interiors/principal/model.html` addresses that brief in the common suite envelope of Proposed and Planning. It is deliberately a separate editable study; neither completed house has been overwritten.
 

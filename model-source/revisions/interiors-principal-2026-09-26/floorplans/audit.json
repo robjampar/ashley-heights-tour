@@ -1,0 +1,343 @@
+{
+  "status": "PASS",
+  "scope": "2D model-envelope, furniture, entrance sweep, 500 mm body routes and TV sightlines; plumbing/structure not evaluated",
+  "previous_layout_entrance_overlap_m2": 0.1933,
+  "options": [
+    {
+      "option": "01",
+      "status": "PASS",
+      "areas_m2": {
+        "bath": 20.0,
+        "wardrobe": 13.6,
+        "study": 8.5,
+        "bath_total": 20.0
+      },
+      "door_sweep_clear": true,
+      "arrival_clear": true,
+      "body_width_m": 0.5,
+      "grid_m": 0.05,
+      "targets": {
+        "bed north side": [
+          6.7,
+          -9.6
+        ],
+        "bed south side": [
+          6.7,
+          -12.24
+        ],
+        "bed foot": [
+          7.8,
+          -10.92
+        ],
+        "west window alcove": [
+          4.75,
+          -12.94
+        ],
+        "dressing": [
+          11.7,
+          -10.6
+        ],
+        "study": [
+          12,
+          -14.0
+        ],
+        "bathroom": [
+          12,
+          -7.6
+        ],
+        "bath WC": [
+          10.8,
+          -8.2
+        ],
+        "sofa approach": [
+          7.65162949552527,
+          -13.113783886085633
+        ]
+      },
+      "tv": [
+        {
+          "seat": "bed",
+          "distance_m": 3.17,
+          "screen_off_axis_deg": 30.1,
+          "clear_in_plan": true
+        },
+        {
+          "seat": "sofa",
+          "distance_m": 3.38,
+          "screen_off_axis_deg": 30.1,
+          "clear_in_plan": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "option": "02",
+      "status": "PASS",
+      "areas_m2": {
+        "bath": 20.0,
+        "wardrobe": 12.6,
+        "study": 7.6,
+        "bath_total": 20.0
+      },
+      "door_sweep_clear": true,
+      "arrival_clear": true,
+      "body_width_m": 0.5,
+      "grid_m": 0.05,
+      "targets": {
+        "bed north side": [
+          6.7,
+          -9.6
+        ],
+        "bed south side": [
+          6.7,
+          -12.24
+        ],
+        "bed foot": [
+          7.8,
+          -10.92
+        ],
+        "west window alcove": [
+          4.75,
+          -12.94
+        ],
+        "dressing": [
+          11.7,
+          -14.2
+        ],
+        "study": [
+          12.45,
+          -11.5
+        ],
+        "bathroom": [
+          12,
+          -7.6
+        ],
+        "bath WC": [
+          10.8,
+          -8.2
+        ],
+        "sofa approach": [
+          7.752335241769463,
+          -13.197509075445906
+        ]
+      },
+      "tv": [
+        {
+          "seat": "bed",
+          "distance_m": 3.72,
+          "screen_off_axis_deg": 26.2,
+          "clear_in_plan": true
+        },
+        {
+          "seat": "sofa",
+          "distance_m": 3.73,
+          "screen_off_axis_deg": 26.2,
+          "clear_in_plan": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "option": "03",
+      "status": "PASS",
+      "areas_m2": {
+        "bath": 20.0,
+        "wardrobe": 10.9,
+        "study": 7.9,
+        "bath_total": 20.0
+      },
+      "door_sweep_clear": true,
+      "arrival_clear": true,
+      "body_width_m": 0.5,
+      "grid_m": 0.05,
+      "targets": {
+        "bed north side": [
+          6.7,
+          -9.6
+        ],
+        "bed south side": [
+          6.7,
+          -12.24
+        ],
+        "bed foot": [
+          7.8,
+          -10.92
+        ],
+        "west window alcove": [
+          4.75,
+          -12.94
+        ],
+        "dressing": [
+          12,
+          -14.2
+        ],
+        "study": [
+          11.55,
+          -11.5
+        ],
+        "bathroom": [
+          12,
+          -7.6
+        ],
+        "bath WC": [
+          10.8,
+          -8.2
+        ],
+        "sofa approach": [
+          8.544617264300978,
+          -13.044284542646025
+        ]
+      },
+      "tv": [
+        {
+          "seat": "bed",
+          "distance_m": 3.72,
+          "screen_off_axis_deg": 32.9,
+          "clear_in_plan": true
+        },
+        {
+          "seat": "sofa",
+          "distance_m": 3.13,
+          "screen_off_axis_deg": 32.9,
+          "clear_in_plan": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "option": "04",
+      "status": "PASS",
+      "areas_m2": {
+        "bath": 17.3,
+        "wardrobe": 8.9,
+        "study": 11.8,
+        "bath_total": 17.3
+      },
+      "door_sweep_clear": true,
+      "arrival_clear": true,
+      "body_width_m": 0.5,
+      "grid_m": 0.05,
+      "targets": {
+        "bed north side": [
+          6.7,
+          -9.6
+        ],
+        "bed south side": [
+          6.7,
+          -12.24
+        ],
+        "bed foot": [
+          7.8,
+          -10.92
+        ],
+        "west window alcove": [
+          4.75,
+          -12.94
+        ],
+        "dressing": [
+          11.4,
+          -14.6
+        ],
+        "study": [
+          11.65,
+          -5.4
+        ],
+        "bathroom": [
+          12.4,
+          -10.7
+        ],
+        "bath WC": [
+          12.0,
+          -8.2
+        ],
+        "sofa approach": [
+          7.752335241769463,
+          -13.197509075445906
+        ]
+      },
+      "tv": [
+        {
+          "seat": "bed",
+          "distance_m": 3.72,
+          "screen_off_axis_deg": 26.2,
+          "clear_in_plan": true
+        },
+        {
+          "seat": "sofa",
+          "distance_m": 3.73,
+          "screen_off_axis_deg": 26.2,
+          "clear_in_plan": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "option": "05",
+      "status": "PASS",
+      "areas_m2": {
+        "bath": 20.9,
+        "wc": 2.9,
+        "wardrobe": 16.5,
+        "study": 7.5,
+        "bath_total": 23.8
+      },
+      "door_sweep_clear": true,
+      "arrival_clear": true,
+      "body_width_m": 0.5,
+      "grid_m": 0.05,
+      "targets": {
+        "bed north side": [
+          6.7,
+          -9.6
+        ],
+        "bed south side": [
+          6.7,
+          -12.24
+        ],
+        "bed foot": [
+          7.8,
+          -10.92
+        ],
+        "west window alcove": [
+          4.75,
+          -12.94
+        ],
+        "dressing": [
+          12,
+          -8.0
+        ],
+        "study": [
+          11.6,
+          -4.7
+        ],
+        "bathroom": [
+          11.7,
+          -12.0
+        ],
+        "bath WC": [
+          13.05,
+          -14.85
+        ],
+        "sofa approach": [
+          7.752335241769463,
+          -13.197509075445906
+        ]
+      },
+      "tv": [
+        {
+          "seat": "bed",
+          "distance_m": 3.72,
+          "screen_off_axis_deg": 26.2,
+          "clear_in_plan": true
+        },
+        {
+          "seat": "sofa",
+          "distance_m": 3.73,
+          "screen_off_axis_deg": 26.2,
+          "clear_in_plan": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

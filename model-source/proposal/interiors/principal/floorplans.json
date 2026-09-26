@@ -1,0 +1,2201 @@
+{
+  "revision": 1,
+  "brief": "Five alternative floorplans, not yet fitted to the full-house models",
+  "envelope": [
+    [
+      5.16,
+      -16.076
+    ],
+    [
+      13.75,
+      -16.076
+    ],
+    [
+      13.75,
+      -3.259
+    ],
+    [
+      10.47,
+      -3.259
+    ],
+    [
+      10.47,
+      -6.71
+    ],
+    [
+      9.96,
+      -6.71
+    ],
+    [
+      9.96,
+      -8.76
+    ],
+    [
+      5.16,
+      -8.76
+    ]
+  ],
+  "alcove": [
+    [
+      3.49,
+      -15.86
+    ],
+    [
+      5.16,
+      -15.86
+    ],
+    [
+      5.16,
+      -10.02
+    ],
+    [
+      3.49,
+      -10.02
+    ]
+  ],
+  "entry": {
+    "id": "suite entrance",
+    "center": [
+      8.945,
+      -8.7
+    ],
+    "axis": [
+      1,
+      0
+    ],
+    "width": 0.95,
+    "kind": "hinged",
+    "hinge": [
+      8.47,
+      -8.7
+    ],
+    "angle": -90
+  },
+  "arrival": [
+    [
+      8.35,
+      -10.0
+    ],
+    [
+      9.78,
+      -10.0
+    ],
+    [
+      9.78,
+      -8.76
+    ],
+    [
+      8.35,
+      -8.76
+    ]
+  ],
+  "windows": [
+    [
+      [
+        6.345,
+        -16.191
+      ],
+      [
+        8.145,
+        -16.191
+      ]
+    ],
+    [
+      [
+        13.865,
+        -15.325
+      ],
+      [
+        13.865,
+        -13.875
+      ]
+    ],
+    [
+      [
+        13.865,
+        -12.12
+      ],
+      [
+        13.865,
+        -10.52
+      ]
+    ],
+    [
+      [
+        13.865,
+        -8.89
+      ],
+      [
+        13.865,
+        -7.09
+      ]
+    ],
+    [
+      [
+        10.705,
+        -3.144
+      ],
+      [
+        11.705,
+        -3.144
+      ]
+    ],
+    [
+      [
+        12.185,
+        -3.144
+      ],
+      [
+        13.185,
+        -3.144
+      ]
+    ],
+    [
+      [
+        3.375,
+        -13.59
+      ],
+      [
+        3.375,
+        -12.29
+      ]
+    ]
+  ],
+  "options": [
+    {
+      "id": "01",
+      "title": "North spa \u00b7 walk-through dressing",
+      "rooms": [
+        {
+          "id": "bath",
+          "title": "Ensuite + WC",
+          "polygon": [
+            [
+              9.96,
+              -8.99
+            ],
+            [
+              13.75,
+              -8.99
+            ],
+            [
+              13.75,
+              -3.259
+            ],
+            [
+              10.47,
+              -3.259
+            ],
+            [
+              10.47,
+              -6.71
+            ],
+            [
+              9.96,
+              -6.71
+            ]
+          ],
+          "label": [
+            12.5,
+            -7.5
+          ],
+          "open": false
+        },
+        {
+          "id": "wardrobe",
+          "title": "Walk-in dressing",
+          "polygon": [
+            [
+              9.96,
+              -12.7
+            ],
+            [
+              13.75,
+              -12.7
+            ],
+            [
+              13.75,
+              -9.11
+            ],
+            [
+              9.96,
+              -9.11
+            ]
+          ],
+          "label": [
+            11.8,
+            -11.8
+          ],
+          "open": false
+        },
+        {
+          "id": "study",
+          "title": "Window study",
+          "polygon": [
+            [
+              11.15,
+              -16.076
+            ],
+            [
+              13.75,
+              -16.076
+            ],
+            [
+              13.75,
+              -12.82
+            ],
+            [
+              11.15,
+              -12.82
+            ]
+          ],
+          "label": [
+            12.38,
+            -14.1
+          ],
+          "open": false
+        }
+      ],
+      "walls": [
+        {
+          "a": [
+            9.9,
+            -9.05
+          ],
+          "b": [
+            13.865,
+            -9.05
+          ]
+        },
+        {
+          "a": [
+            11.4,
+            -8.99
+          ],
+          "b": [
+            11.4,
+            -6.77
+          ]
+        },
+        {
+          "a": [
+            9.96,
+            -6.77
+          ],
+          "b": [
+            11.4,
+            -6.77
+          ]
+        },
+        {
+          "a": [
+            9.9,
+            -12.76
+          ],
+          "b": [
+            9.9,
+            -9.05
+          ]
+        },
+        {
+          "a": [
+            9.9,
+            -12.76
+          ],
+          "b": [
+            13.865,
+            -12.76
+          ]
+        },
+        {
+          "a": [
+            11.09,
+            -16.076
+          ],
+          "b": [
+            11.09,
+            -12.76
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "ensuite",
+          "center": [
+            12.1,
+            -9.05
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "private WC",
+          "center": [
+            11.4,
+            -8.08
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.75,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "dressing",
+          "center": [
+            9.9,
+            -9.72
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "study",
+          "center": [
+            11.09,
+            -14.05
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        }
+      ],
+      "items": [
+        {
+          "kind": "bath",
+          "bounds": [
+            11.35,
+            -4.55,
+            13.25,
+            -3.6
+          ],
+          "label": "Bath",
+          "height": 0.9
+        },
+        {
+          "kind": "shower",
+          "bounds": [
+            12.15,
+            -6.7,
+            13.75,
+            -5.1
+          ],
+          "label": "1.6 m shower",
+          "height": 2
+        },
+        {
+          "kind": "vanity",
+          "bounds": [
+            10.47,
+            -6.45,
+            11.1,
+            -4.95
+          ],
+          "label": "Double vanity",
+          "height": 0.9
+        },
+        {
+          "kind": "wc",
+          "bounds": [
+            10.3,
+            -7.55,
+            10.96,
+            -6.98
+          ],
+          "label": "WC",
+          "height": 0.9
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            9.96,
+            -12.54,
+            10.56,
+            -10.3
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            13.15,
+            -10.38,
+            13.75,
+            -9.3
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "drawers",
+          "bounds": [
+            13.2,
+            -12.08,
+            13.75,
+            -10.62
+          ],
+          "label": "drawers",
+          "height": 0.6
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            11.46,
+            -15.99,
+            13.46,
+            -15.29
+          ],
+          "label": "2 m desk",
+          "height": 0.9
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            12.17,
+            -15.04,
+            12.73,
+            -14.48
+          ],
+          "label": "chair",
+          "height": 0.9
+        }
+      ],
+      "targets": {
+        "dressing": [
+          11.7,
+          -10.6
+        ],
+        "study": [
+          12,
+          -14.0
+        ],
+        "bathroom": [
+          12,
+          -7.6
+        ],
+        "bath WC": [
+          10.8,
+          -8.2
+        ]
+      },
+      "notes": [
+        "Best match for the north-ensuite idea.",
+        "Bedroom \u2192 dressing \u2192 north spa.",
+        "Study tucked into the south-east corner."
+      ],
+      "bed": {
+        "center": [
+          6.37,
+          -10.92
+        ],
+        "angle_deg": 90,
+        "size": [
+          2.0,
+          2.18
+        ]
+      },
+      "sofa": {
+        "center": [
+          7.0,
+          -14.0
+        ],
+        "size": [
+          2.3,
+          0.95
+        ]
+      },
+      "tv": {
+        "center": [
+          9.0,
+          -11.28
+        ],
+        "size": [
+          1.9,
+          0.12
+        ]
+      },
+      "eyes": {
+        "bed": [
+          5.85,
+          -10.92
+        ],
+        "sofa": [
+          7.0,
+          -14.0
+        ]
+      },
+      "recommended": true
+    },
+    {
+      "id": "02",
+      "title": "North spa \u00b7 direct bathroom access",
+      "rooms": [
+        {
+          "id": "bath",
+          "title": "Ensuite + WC",
+          "polygon": [
+            [
+              9.96,
+              -8.99
+            ],
+            [
+              13.75,
+              -8.99
+            ],
+            [
+              13.75,
+              -3.259
+            ],
+            [
+              10.47,
+              -3.259
+            ],
+            [
+              10.47,
+              -6.71
+            ],
+            [
+              9.96,
+              -6.71
+            ]
+          ],
+          "label": [
+            12.5,
+            -7.5
+          ],
+          "open": false
+        },
+        {
+          "id": "wardrobe",
+          "title": "Walk-in dressing",
+          "polygon": [
+            [
+              9.96,
+              -16.076
+            ],
+            [
+              13.75,
+              -16.076
+            ],
+            [
+              13.75,
+              -12.76
+            ],
+            [
+              9.96,
+              -12.76
+            ]
+          ],
+          "label": [
+            11.7,
+            -14.1
+          ],
+          "open": false
+        },
+        {
+          "id": "study",
+          "title": "Separate study",
+          "polygon": [
+            [
+              10.41,
+              -12.64
+            ],
+            [
+              13.75,
+              -12.64
+            ],
+            [
+              13.75,
+              -10.36
+            ],
+            [
+              10.41,
+              -10.36
+            ]
+          ],
+          "label": [
+            11.55,
+            -11.6
+          ],
+          "open": false
+        }
+      ],
+      "walls": [
+        {
+          "a": [
+            9.9,
+            -9.05
+          ],
+          "b": [
+            13.865,
+            -9.05
+          ]
+        },
+        {
+          "a": [
+            11.4,
+            -8.99
+          ],
+          "b": [
+            11.4,
+            -6.77
+          ]
+        },
+        {
+          "a": [
+            9.96,
+            -6.77
+          ],
+          "b": [
+            11.4,
+            -6.77
+          ]
+        },
+        {
+          "a": [
+            9.9,
+            -16.076
+          ],
+          "b": [
+            9.9,
+            -12.7
+          ]
+        },
+        {
+          "a": [
+            9.9,
+            -12.7
+          ],
+          "b": [
+            13.865,
+            -12.7
+          ]
+        },
+        {
+          "a": [
+            10.35,
+            -12.7
+          ],
+          "b": [
+            10.35,
+            -10.3
+          ]
+        },
+        {
+          "a": [
+            10.35,
+            -10.3
+          ],
+          "b": [
+            13.865,
+            -10.3
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "ensuite",
+          "center": [
+            12.1,
+            -9.05
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "private WC",
+          "center": [
+            11.4,
+            -8.08
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.75,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "dressing",
+          "center": [
+            9.9,
+            -13.45
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "study",
+          "center": [
+            11.8,
+            -10.3
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        }
+      ],
+      "items": [
+        {
+          "kind": "bath",
+          "bounds": [
+            11.35,
+            -4.55,
+            13.25,
+            -3.6
+          ],
+          "label": "Bath",
+          "height": 0.9
+        },
+        {
+          "kind": "shower",
+          "bounds": [
+            12.15,
+            -6.7,
+            13.75,
+            -5.1
+          ],
+          "label": "1.6 m shower",
+          "height": 2
+        },
+        {
+          "kind": "vanity",
+          "bounds": [
+            10.47,
+            -6.45,
+            11.1,
+            -4.95
+          ],
+          "label": "Double vanity",
+          "height": 0.9
+        },
+        {
+          "kind": "wc",
+          "bounds": [
+            10.3,
+            -7.55,
+            10.96,
+            -6.98
+          ],
+          "label": "WC",
+          "height": 0.9
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            9.96,
+            -15.94,
+            10.56,
+            -14.1
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            10.65,
+            -16.076,
+            13.0,
+            -15.476
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            13.15,
+            -13.68,
+            13.75,
+            -12.9
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "drawers",
+          "bounds": [
+            13.2,
+            -15.22,
+            13.75,
+            -13.99
+          ],
+          "label": "drawers",
+          "height": 0.6
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            10.85,
+            -12.58,
+            12.85,
+            -11.88
+          ],
+          "label": "2 m desk",
+          "height": 0.9
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            11.57,
+            -11.63,
+            12.13,
+            -11.07
+          ],
+          "label": "chair",
+          "height": 0.9
+        }
+      ],
+      "targets": {
+        "dressing": [
+          11.7,
+          -14.2
+        ],
+        "study": [
+          12.45,
+          -11.5
+        ],
+        "bathroom": [
+          12,
+          -7.6
+        ],
+        "bath WC": [
+          10.8,
+          -8.2
+        ]
+      },
+      "notes": [
+        "Bathroom reached without crossing wardrobes.",
+        "An enclosed study beside its own window.",
+        "Smaller dressing room at the south-east."
+      ],
+      "bed": {
+        "center": [
+          6.37,
+          -10.92
+        ],
+        "angle_deg": 90,
+        "size": [
+          2.0,
+          2.18
+        ]
+      },
+      "sofa": {
+        "center": [
+          7.0,
+          -14.0
+        ],
+        "size": [
+          2.3,
+          0.95
+        ]
+      },
+      "tv": {
+        "center": [
+          9.55,
+          -11.28
+        ],
+        "size": [
+          1.9,
+          0.12
+        ]
+      },
+      "eyes": {
+        "bed": [
+          5.85,
+          -10.92
+        ],
+        "sofa": [
+          7.0,
+          -14.0
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "title": "North spa \u00b7 open studio suite",
+      "rooms": [
+        {
+          "id": "bath",
+          "title": "Ensuite + WC",
+          "polygon": [
+            [
+              9.96,
+              -8.99
+            ],
+            [
+              13.75,
+              -8.99
+            ],
+            [
+              13.75,
+              -3.259
+            ],
+            [
+              10.47,
+              -3.259
+            ],
+            [
+              10.47,
+              -6.71
+            ],
+            [
+              9.96,
+              -6.71
+            ]
+          ],
+          "label": [
+            12.5,
+            -7.5
+          ],
+          "open": false
+        },
+        {
+          "id": "wardrobe",
+          "title": "Walk-in dressing",
+          "polygon": [
+            [
+              10.41,
+              -16.076
+            ],
+            [
+              13.75,
+              -16.076
+            ],
+            [
+              13.75,
+              -12.8
+            ],
+            [
+              10.41,
+              -12.8
+            ]
+          ],
+          "label": [
+            11.9,
+            -14.25
+          ],
+          "open": false
+        },
+        {
+          "id": "study",
+          "title": "Open study zone",
+          "polygon": [
+            [
+              11.15,
+              -12.3
+            ],
+            [
+              13.75,
+              -12.3
+            ],
+            [
+              13.75,
+              -9.25
+            ],
+            [
+              11.15,
+              -9.25
+            ]
+          ],
+          "label": [
+            12.35,
+            -11.6
+          ],
+          "open": true
+        }
+      ],
+      "walls": [
+        {
+          "a": [
+            9.9,
+            -9.05
+          ],
+          "b": [
+            13.865,
+            -9.05
+          ]
+        },
+        {
+          "a": [
+            11.4,
+            -8.99
+          ],
+          "b": [
+            11.4,
+            -6.77
+          ]
+        },
+        {
+          "a": [
+            9.96,
+            -6.77
+          ],
+          "b": [
+            11.4,
+            -6.77
+          ]
+        },
+        {
+          "a": [
+            10.35,
+            -16.076
+          ],
+          "b": [
+            10.35,
+            -12.74
+          ]
+        },
+        {
+          "a": [
+            10.35,
+            -12.74
+          ],
+          "b": [
+            13.865,
+            -12.74
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "ensuite",
+          "center": [
+            12.1,
+            -9.05
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "private WC",
+          "center": [
+            11.4,
+            -8.08
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.75,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "dressing",
+          "center": [
+            10.35,
+            -13.5
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        }
+      ],
+      "items": [
+        {
+          "kind": "bath",
+          "bounds": [
+            11.35,
+            -4.55,
+            13.25,
+            -3.6
+          ],
+          "label": "Bath",
+          "height": 0.9
+        },
+        {
+          "kind": "shower",
+          "bounds": [
+            12.15,
+            -6.7,
+            13.75,
+            -5.1
+          ],
+          "label": "1.6 m shower",
+          "height": 2
+        },
+        {
+          "kind": "vanity",
+          "bounds": [
+            10.47,
+            -6.45,
+            11.1,
+            -4.95
+          ],
+          "label": "Double vanity",
+          "height": 0.9
+        },
+        {
+          "kind": "wc",
+          "bounds": [
+            10.3,
+            -7.55,
+            10.96,
+            -6.98
+          ],
+          "label": "WC",
+          "height": 0.9
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            10.41,
+            -15.96,
+            11.01,
+            -14.1
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            11.1,
+            -16.076,
+            13.0,
+            -15.476
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            13.15,
+            -13.68,
+            13.75,
+            -12.92
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "drawers",
+          "bounds": [
+            13.2,
+            -15.22,
+            13.75,
+            -13.99
+          ],
+          "label": "drawers",
+          "height": 0.6
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            11.45,
+            -10.56,
+            13.45,
+            -9.86
+          ],
+          "label": "2 m desk",
+          "height": 0.9
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            12.17,
+            -11.4,
+            12.73,
+            -10.84
+          ],
+          "label": "chair",
+          "height": 0.9
+        }
+      ],
+      "targets": {
+        "dressing": [
+          12,
+          -14.2
+        ],
+        "study": [
+          11.55,
+          -11.5
+        ],
+        "bathroom": [
+          12,
+          -7.6
+        ],
+        "bath WC": [
+          10.8,
+          -8.2
+        ]
+      },
+      "notes": [
+        "Most open bedroom and lounge arrangement.",
+        "Open study behind the shared media screen.",
+        "Less acoustic separation around the desk."
+      ],
+      "bed": {
+        "center": [
+          6.37,
+          -10.92
+        ],
+        "angle_deg": 90,
+        "size": [
+          2.0,
+          2.18
+        ]
+      },
+      "sofa": {
+        "center": [
+          8.0,
+          -14.0
+        ],
+        "size": [
+          2.3,
+          0.95
+        ]
+      },
+      "tv": {
+        "center": [
+          9.55,
+          -11.28
+        ],
+        "size": [
+          1.9,
+          0.12
+        ]
+      },
+      "eyes": {
+        "bed": [
+          5.85,
+          -10.92
+        ],
+        "sofa": [
+          8,
+          -14
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "title": "Central spa \u00b7 private north study",
+      "rooms": [
+        {
+          "id": "bath",
+          "title": "Central ensuite + WC",
+          "polygon": [
+            [
+              11.15,
+              -13.6
+            ],
+            [
+              13.75,
+              -13.6
+            ],
+            [
+              13.75,
+              -6.96
+            ],
+            [
+              11.15,
+              -6.96
+            ]
+          ],
+          "label": [
+            12.6,
+            -10.15
+          ],
+          "open": false
+        },
+        {
+          "id": "wardrobe",
+          "title": "Walk-in dressing",
+          "polygon": [
+            [
+              9.96,
+              -16.076
+            ],
+            [
+              13.75,
+              -16.076
+            ],
+            [
+              13.75,
+              -13.72
+            ],
+            [
+              9.96,
+              -13.72
+            ]
+          ],
+          "label": [
+            11.75,
+            -14.6
+          ],
+          "open": false
+        },
+        {
+          "id": "study",
+          "title": "North study",
+          "polygon": [
+            [
+              9.96,
+              -6.84
+            ],
+            [
+              13.75,
+              -6.84
+            ],
+            [
+              13.75,
+              -3.259
+            ],
+            [
+              10.47,
+              -3.259
+            ],
+            [
+              10.47,
+              -6.71
+            ],
+            [
+              9.96,
+              -6.71
+            ]
+          ],
+          "label": [
+            11.65,
+            -5.4
+          ],
+          "open": false
+        }
+      ],
+      "walls": [
+        {
+          "a": [
+            9.9,
+            -16.076
+          ],
+          "b": [
+            9.9,
+            -13.66
+          ]
+        },
+        {
+          "a": [
+            9.9,
+            -13.66
+          ],
+          "b": [
+            13.865,
+            -13.66
+          ]
+        },
+        {
+          "a": [
+            11.09,
+            -13.66
+          ],
+          "b": [
+            11.09,
+            -6.9
+          ]
+        },
+        {
+          "a": [
+            9.9,
+            -6.9
+          ],
+          "b": [
+            13.865,
+            -6.9
+          ]
+        },
+        {
+          "a": [
+            12.55,
+            -8.7
+          ],
+          "b": [
+            12.55,
+            -6.96
+          ]
+        },
+        {
+          "a": [
+            11.15,
+            -8.7
+          ],
+          "b": [
+            12.55,
+            -8.7
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "dressing",
+          "center": [
+            9.9,
+            -14.45
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "ensuite",
+          "center": [
+            11.09,
+            -10.7
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "study",
+          "center": [
+            10.525,
+            -6.9
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 1.05,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "private WC",
+          "center": [
+            12.025,
+            -8.7
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 0.75,
+          "kind": "hinged",
+          "hinge": [
+            11.65,
+            -8.7
+          ],
+          "angle": 90
+        }
+      ],
+      "items": [
+        {
+          "kind": "bath",
+          "bounds": [
+            11.5,
+            -13.45,
+            13.4,
+            -12.5
+          ],
+          "label": "Bath",
+          "height": 0.9
+        },
+        {
+          "kind": "wc",
+          "bounds": [
+            11.45,
+            -7.75,
+            12.12,
+            -7.03
+          ],
+          "label": "WC",
+          "height": 0.9
+        },
+        {
+          "kind": "shower",
+          "bounds": [
+            12.63,
+            -8.6,
+            13.75,
+            -6.96
+          ],
+          "label": "Shower",
+          "height": 2
+        },
+        {
+          "kind": "vanity",
+          "bounds": [
+            11.15,
+            -10.2,
+            11.75,
+            -8.85
+          ],
+          "label": "Double vanity",
+          "height": 0.9
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            10.75,
+            -16.076,
+            13,
+            -15.476
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "drawers",
+          "bounds": [
+            13.2,
+            -15.2,
+            13.75,
+            -13.93
+          ],
+          "label": "drawers",
+          "height": 0.6
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            11.5,
+            -4.01,
+            13.5,
+            -3.31
+          ],
+          "label": "2 m desk",
+          "height": 0.9
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            12.22,
+            -4.85,
+            12.78,
+            -4.29
+          ],
+          "label": "chair",
+          "height": 0.9
+        },
+        {
+          "kind": "books",
+          "bounds": [
+            10.47,
+            -5.55,
+            10.82,
+            -4.0
+          ],
+          "label": "Books",
+          "height": 1.2
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            9.96,
+            -15.95,
+            10.56,
+            -14.95
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        }
+      ],
+      "targets": {
+        "dressing": [
+          11.4,
+          -14.6
+        ],
+        "study": [
+          11.65,
+          -5.4
+        ],
+        "bathroom": [
+          12.4,
+          -10.7
+        ],
+        "bath WC": [
+          12.0,
+          -8.2
+        ]
+      },
+      "notes": [
+        "A central bathroom beside both east windows.",
+        "Largest, most private north study.",
+        "Longer internal route; a narrower spa room."
+      ],
+      "bed": {
+        "center": [
+          6.37,
+          -10.92
+        ],
+        "angle_deg": 90,
+        "size": [
+          2.0,
+          2.18
+        ]
+      },
+      "sofa": {
+        "center": [
+          7.0,
+          -14.0
+        ],
+        "size": [
+          2.3,
+          0.95
+        ]
+      },
+      "tv": {
+        "center": [
+          9.55,
+          -11.28
+        ],
+        "size": [
+          1.9,
+          0.12
+        ]
+      },
+      "eyes": {
+        "bed": [
+          5.85,
+          -10.92
+        ],
+        "sofa": [
+          7.0,
+          -14.0
+        ]
+      }
+    },
+    {
+      "id": "05",
+      "title": "South spa \u00b7 retain wet-room position",
+      "rooms": [
+        {
+          "id": "bath",
+          "title": "South ensuite",
+          "polygon": [
+            [
+              8.76,
+              -16.076
+            ],
+            [
+              12.39,
+              -16.076
+            ],
+            [
+              12.39,
+              -13.64
+            ],
+            [
+              13.75,
+              -13.64
+            ],
+            [
+              13.75,
+              -10.46
+            ],
+            [
+              10.41,
+              -10.46
+            ],
+            [
+              10.41,
+              -12.76
+            ],
+            [
+              8.76,
+              -12.76
+            ]
+          ],
+          "label": [
+            11.35,
+            -14.1
+          ],
+          "open": false
+        },
+        {
+          "id": "wc",
+          "title": "Separate WC",
+          "polygon": [
+            [
+              12.51,
+              -16.076
+            ],
+            [
+              13.75,
+              -16.076
+            ],
+            [
+              13.75,
+              -13.76
+            ],
+            [
+              12.51,
+              -13.76
+            ]
+          ],
+          "label": [
+            13.1,
+            -15.25
+          ],
+          "open": false
+        },
+        {
+          "id": "wardrobe",
+          "title": "Walk-in dressing",
+          "polygon": [
+            [
+              10.41,
+              -10.34
+            ],
+            [
+              13.75,
+              -10.34
+            ],
+            [
+              13.75,
+              -5.66
+            ],
+            [
+              10.47,
+              -5.66
+            ],
+            [
+              10.47,
+              -6.71
+            ],
+            [
+              9.96,
+              -6.71
+            ],
+            [
+              9.96,
+              -8.76
+            ],
+            [
+              10.41,
+              -8.76
+            ]
+          ],
+          "label": [
+            11.7,
+            -9.4
+          ],
+          "open": false
+        },
+        {
+          "id": "study",
+          "title": "Window study",
+          "polygon": [
+            [
+              10.47,
+              -5.54
+            ],
+            [
+              13.75,
+              -5.54
+            ],
+            [
+              13.75,
+              -3.259
+            ],
+            [
+              10.47,
+              -3.259
+            ]
+          ],
+          "label": [
+            11.3,
+            -4.45
+          ],
+          "open": false
+        }
+      ],
+      "walls": [
+        {
+          "a": [
+            10.35,
+            -12.7
+          ],
+          "b": [
+            10.35,
+            -8.7
+          ]
+        },
+        {
+          "a": [
+            9.96,
+            -8.7
+          ],
+          "b": [
+            10.35,
+            -8.7
+          ]
+        },
+        {
+          "a": [
+            8.7,
+            -16.076
+          ],
+          "b": [
+            8.7,
+            -12.7
+          ]
+        },
+        {
+          "a": [
+            8.7,
+            -12.7
+          ],
+          "b": [
+            10.35,
+            -12.7
+          ]
+        },
+        {
+          "a": [
+            10.35,
+            -10.4
+          ],
+          "b": [
+            13.865,
+            -10.4
+          ]
+        },
+        {
+          "a": [
+            10.41,
+            -5.6
+          ],
+          "b": [
+            13.865,
+            -5.6
+          ]
+        },
+        {
+          "a": [
+            12.45,
+            -16.076
+          ],
+          "b": [
+            12.45,
+            -13.7
+          ]
+        },
+        {
+          "a": [
+            12.45,
+            -13.7
+          ],
+          "b": [
+            13.75,
+            -13.7
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "dressing",
+          "center": [
+            10.35,
+            -9.42
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.95,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "ensuite",
+          "center": [
+            12.15,
+            -10.4
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 0.9,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "study",
+          "center": [
+            11.625,
+            -5.6
+          ],
+          "axis": [
+            1,
+            0
+          ],
+          "width": 0.95,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        },
+        {
+          "id": "private WC",
+          "center": [
+            12.45,
+            -15.16
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "width": 0.75,
+          "kind": "pocket",
+          "hinge": null,
+          "angle": 0
+        }
+      ],
+      "items": [
+        {
+          "kind": "bath",
+          "bounds": [
+            8.8,
+            -15.79,
+            9.62,
+            -14.03
+          ],
+          "label": "Bath",
+          "height": 0.9
+        },
+        {
+          "kind": "shower",
+          "bounds": [
+            8.76,
+            -13.96,
+            9.76,
+            -12.76
+          ],
+          "label": "Shower",
+          "height": 2
+        },
+        {
+          "kind": "vanity",
+          "bounds": [
+            10.41,
+            -12.35,
+            11.03,
+            -10.55
+          ],
+          "label": "Double vanity",
+          "height": 0.9
+        },
+        {
+          "kind": "wc",
+          "bounds": [
+            12.92,
+            -15.99,
+            13.64,
+            -15.29
+          ],
+          "label": "WC",
+          "height": 0.9
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            9.96,
+            -8.56,
+            10.56,
+            -6.84
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            10.47,
+            -6.49,
+            11.07,
+            -5.8
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            13.15,
+            -10.2,
+            13.75,
+            -9.05
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "wardrobe",
+          "bounds": [
+            13.15,
+            -6.9,
+            13.75,
+            -5.8
+          ],
+          "label": "wardrobe",
+          "height": 2.3
+        },
+        {
+          "kind": "drawers",
+          "bounds": [
+            13.2,
+            -8.78,
+            13.75,
+            -7.2
+          ],
+          "label": "drawers",
+          "height": 0.6
+        },
+        {
+          "kind": "desk",
+          "bounds": [
+            11.55,
+            -4.04,
+            13.55,
+            -3.34
+          ],
+          "label": "2 m desk",
+          "height": 0.9
+        },
+        {
+          "kind": "chair",
+          "bounds": [
+            12.27,
+            -4.98,
+            12.83,
+            -4.42
+          ],
+          "label": "chair",
+          "height": 0.9
+        }
+      ],
+      "targets": {
+        "dressing": [
+          12,
+          -8.0
+        ],
+        "study": [
+          11.6,
+          -4.7
+        ],
+        "bathroom": [
+          11.7,
+          -12.0
+        ],
+        "bath WC": [
+          13.05,
+          -14.85
+        ]
+      },
+      "notes": [
+        "Enlarge the existing south bathroom northwards.",
+        "Keep the bath, shower and WC close to today.",
+        "Least plumbing relocation; least open bedroom."
+      ],
+      "bed": {
+        "center": [
+          6.37,
+          -10.92
+        ],
+        "angle_deg": 90,
+        "size": [
+          2.0,
+          2.18
+        ]
+      },
+      "sofa": {
+        "center": [
+          7.0,
+          -14.0
+        ],
+        "size": [
+          2.3,
+          0.95
+        ]
+      },
+      "tv": {
+        "center": [
+          9.55,
+          -11.28
+        ],
+        "size": [
+          1.9,
+          0.12
+        ]
+      },
+      "eyes": {
+        "bed": [
+          5.85,
+          -10.92
+        ],
+        "sofa": [
+          7.0,
+          -14.0
+        ]
+      }
+    }
+  ]
+}

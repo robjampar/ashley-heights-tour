@@ -17,7 +17,7 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
         for design in ('proposed', 'planning'):
             assert (source / option['images'][design]).is_file()
     for path in sorted(source.rglob('*')):
-        if not path.is_file() or path.name in ('index.html', 'model.html', 'studio.js'):
+        if not path.is_file() or path.name in ('index.html', 'model.html', 'plans.html', 'studio.js'):
             continue
         if path.suffix not in ('.png', '.jpg', '.webp', '.svg', '.css', '.json', '.glb', '.js'):
             continue
@@ -71,4 +71,12 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
               'images': len(selected_images), 'engine': 'Built-in image_gen', 'html_sha256': sha(html.encode()),
               'assets': manifest, 'previous_assets': retained}
     if model_html is not None: result['model_html_sha256'] = sha(model_html.encode())
+    if (authored / 'plans.html').is_file():
+        plans_html = (source / 'plans.html').read_text().replace('src="studio.js"', 'src="'+code_name+'"')
+        plans_html = plans_html.replace('href="studio.css"', 'href="'+asset_map['studio.css']+'"')
+        (destination / 'plans.html').write_text(plans_html)
+        result['plans_html_sha256'] = sha(plans_html.encode())
+        floorplans = json.loads((source / 'floorplans/options.json').read_text())
+        assert len(floorplans['options']) == 5
+        result['floorplans'] = {'path': 'plans.html', 'options': 5, 'session': floorplans['session'], 'method': 'Measured model-based SVG floorplans'}
     return result

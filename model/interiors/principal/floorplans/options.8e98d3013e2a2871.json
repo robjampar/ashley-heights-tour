@@ -1,0 +1,115 @@
+{
+  "session": "principal-floorplans-2026-09-26-v1",
+  "slug": "principal-floorplans",
+  "title": "Principal suite floorplans",
+  "imageKind": "Measured floorplan",
+  "referenceViews": false,
+  "options": [
+    {
+      "id": "01",
+      "title": "North spa \u00b7 walk-through dressing",
+      "description": "Best match for the north-ensuite idea. Bedroom \u2192 dressing \u2192 north spa. Study tucked into the south-east corner. Ensuite + WC 20.0 m\u00b2; dressing 13.6 m\u00b2; study 8.5 m\u00b2.",
+      "images": {
+        "proposed": "floorplans/01.svg",
+        "planning": "floorplans/01.svg"
+      },
+      "areas": {
+        "bath": 20.0,
+        "wardrobe": 13.6,
+        "study": 8.5,
+        "bath_total": 20.0
+      },
+      "notes": [
+        "Best match for the north-ensuite idea.",
+        "Bedroom \u2192 dressing \u2192 north spa.",
+        "Study tucked into the south-east corner."
+      ],
+      "recommended": true
+    },
+    {
+      "id": "02",
+      "title": "North spa \u00b7 direct bathroom access",
+      "description": "Bathroom reached without crossing wardrobes. An enclosed study beside its own window. Smaller dressing room at the south-east. Ensuite + WC 20.0 m\u00b2; dressing 12.6 m\u00b2; study 7.6 m\u00b2.",
+      "images": {
+        "proposed": "floorplans/02.svg",
+        "planning": "floorplans/02.svg"
+      },
+      "areas": {
+        "bath": 20.0,
+        "wardrobe": 12.6,
+        "study": 7.6,
+        "bath_total": 20.0
+      },
+      "notes": [
+        "Bathroom reached without crossing wardrobes.",
+        "An enclosed study beside its own window.",
+        "Smaller dressing room at the south-east."
+      ],
+      "recommended": false
+    },
+    {
+      "id": "03",
+      "title": "North spa \u00b7 open studio suite",
+      "description": "Most open bedroom and lounge arrangement. Open study behind the shared media screen. Less acoustic separation around the desk. Ensuite + WC 20.0 m\u00b2; dressing 10.9 m\u00b2; study 7.9 m\u00b2.",
+      "images": {
+        "proposed": "floorplans/03.svg",
+        "planning": "floorplans/03.svg"
+      },
+      "areas": {
+        "bath": 20.0,
+        "wardrobe": 10.9,
+        "study": 7.9,
+        "bath_total": 20.0
+      },
+      "notes": [
+        "Most open bedroom and lounge arrangement.",
+        "Open study behind the shared media screen.",
+        "Less acoustic separation around the desk."
+      ],
+      "recommended": false
+    },
+    {
+      "id": "04",
+      "title": "Central spa \u00b7 private north study",
+      "description": "A central bathroom beside both east windows. Largest, most private north study. Longer internal route; a narrower spa room. Ensuite + WC 17.3 m\u00b2; dressing 8.9 m\u00b2; study 11.8 m\u00b2.",
+      "images": {
+        "proposed": "floorplans/04.svg",
+        "planning": "floorplans/04.svg"
+      },
+      "areas": {
+        "bath": 17.3,
+        "wardrobe": 8.9,
+        "study": 11.8,
+        "bath_total": 17.3
+      },
+      "notes": [
+        "A central bathroom beside both east windows.",
+        "Largest, most private north study.",
+        "Longer internal route; a narrower spa room."
+      ],
+      "recommended": false
+    },
+    {
+      "id": "05",
+      "title": "South spa \u00b7 retain wet-room position",
+      "description": "Enlarge the existing south bathroom northwards. Keep the bath, shower and WC close to today. Least plumbing relocation; least open bedroom. Ensuite + WC 23.8 m\u00b2; dressing 16.5 m\u00b2; study 7.5 m\u00b2.",
+      "images": {
+        "proposed": "floorplans/05.svg",
+        "planning": "floorplans/05.svg"
+      },
+      "areas": {
+        "bath": 20.9,
+        "wc": 2.9,
+        "wardrobe": 16.5,
+        "study": 7.5,
+        "bath_total": 23.8
+      },
+      "notes": [
+        "Enlarge the existing south bathroom northwards.",
+        "Keep the bath, shower and WC close to today.",
+        "Least plumbing relocation; least open bedroom."
+      ],
+      "recommended": false
+    }
+  ]
+}
