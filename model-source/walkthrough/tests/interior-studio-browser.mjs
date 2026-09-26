@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const base=process.env.STUDIO_URL??'http://127.0.0.1:8776/interiors/kitchen/';
-const out=new URL('../../revisions/interiors-kitchen-2026-09-25/',import.meta.url);
+const out=process.env.STUDIO_EVIDENCE?new URL(process.env.STUDIO_EVIDENCE):new URL('../../revisions/interiors-kitchen-2026-09-25/',import.meta.url);
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
 try{
  const page=await browser.newPage({viewport:{width:1440,height:1100},acceptDownloads:true});const errors=[],requests=[];

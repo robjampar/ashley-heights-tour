@@ -14,6 +14,7 @@ const variant=new URLSearchParams(location.search).get('design')==='planning'?'p
 $('model-design').value=variant;$('model-design').onchange=()=>{location.search='?design='+$('model-design').value+'&view='+activeCamera;};
 $('full-house').href='../../?design='+(variant==='compact'?'proposed':'planning');
 document.querySelectorAll('[data-reference]').forEach(a=>a.href='./#01-'+(variant==='compact'?'proposed':'planning'));
+document.querySelectorAll('[data-room-link]').forEach(a=>a.href=a.dataset.roomLink+'#01-'+(variant==='compact'?'proposed':'planning'));
 $('selected-concept').src=asset('images/01-'+(variant==='compact'?'proposed':'planning')+'.png');$('native-render').src=asset('models/'+variant+'-render.png');
 const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(72,1,.025,200);
 const renderer=new THREE.WebGLRenderer({canvas,antialias:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;

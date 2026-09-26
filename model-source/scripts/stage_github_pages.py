@@ -134,8 +134,12 @@ planning_nav = json.loads((DIST / 'proposal-planning-navigation.json').read_text
 interior_studio = stage_studio(DIST / 'interiors/kitchen', DEST / 'interiors/kitchen',
                               previous.get('interior_studio', {}), now, retirement,
                               ROOT / 'walkthrough/public/interiors/kitchen')
+principal_studio = stage_studio(DIST / 'interiors/principal', DEST / 'interiors/principal',
+                              previous.get('principal_studio', {}), now, retirement,
+                              ROOT / 'walkthrough/public/interiors/principal', room='principal')
 manifest = {
     'interior_studio': interior_studio,
+    'principal_studio': principal_studio,
     'published_utc': datetime.now(timezone.utc).isoformat(),
     'model_updated_at': nav.get('modelUpdatedAt'),
     'source_native_sha256': sha((OUT / 'Ashley Heights.blend').read_bytes()),

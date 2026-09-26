@@ -2,8 +2,8 @@
   "files": {
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "1ee42a5bc98ec8aa94149b62d3d36c63af54b3dd720e16056c32e8f28cad5e91",
-      "bytes": 18873
+      "sha256": "1fcf73fec390b9bc4e85483d43da5dc349498a6d6f5e72fabcb8d616045bc7e2",
+      "bytes": 20018
     },
     "Regenerate Gate-aligned Option.command": {
       "source": "Regenerate Gate-aligned Option.command",
@@ -239,6 +239,21 @@
       "source": "revisions/interiors-lounge-2026-09-25/STATUS.md",
       "sha256": "4d064b26233c6e5ec003b6a578ab172641fc2f9bbf2f1fe2718bc12a9d00fbce",
       "bytes": 4097
+    },
+    "revisions/interiors-principal-2026-09-26/REVIEW-DESIGN.md": {
+      "source": "revisions/interiors-principal-2026-09-26/REVIEW-DESIGN.md",
+      "sha256": "f22642756f4f55bd6fd3c335366200094092c4d60f7afa4458f210ec5b5aa097",
+      "bytes": 3372
+    },
+    "revisions/interiors-principal-2026-09-26/STATUS.md": {
+      "source": "revisions/interiors-principal-2026-09-26/STATUS.md",
+      "sha256": "6ed471a5d83414c0b83116ea0c0f329a7f1aa9f43e03b4fbb190e05a5b924e5e",
+      "bytes": 2046
+    },
+    "revisions/interiors-principal-2026-09-26/browser-checks.json": {
+      "source": "revisions/interiors-principal-2026-09-26/browser-checks.json",
+      "sha256": "c9bf4c42729a9933009a1fe026a9a1593692263e12145dd20953ec019a1c8e3b",
+      "bytes": 5090
     },
     "revisions/planning-cleanup-2026-09-23/CLEANUP.md": {
       "source": "revisions/planning-cleanup-2026-09-23/CLEANUP.md",
@@ -1352,8 +1367,8 @@
     },
     "scripts/restore_interior_assets.py": {
       "source": "scripts/restore_interior_assets.py",
-      "sha256": "59cc9a11762a117a08f4a1e64e69b6840d9f9048d3f71b1e759b90e04a76ad7c",
-      "bytes": 1184
+      "sha256": "64123c5b0b972196698b0593fb152b188750b55bcaaaa8726955a13514ac90d9",
+      "bytes": 1409
     },
     "scripts/restore_shower_partition.py": {
       "source": "scripts/restore_shower_partition.py",
@@ -1377,18 +1392,18 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "3acb05f31d44f03b76bcc55192bae8536a2a6c36a9854e526682aed54a2e79bb",
-      "bytes": 10477
+      "sha256": "b27b3258ccbc652c5dc4a6160e8d00e7390a7642cbe5bd5358cfac9725cd2d34",
+      "bytes": 10793
     },
     "scripts/stage_interior_studio.py": {
       "source": "scripts/stage_interior_studio.py",
-      "sha256": "83a474c3304fa9c5d16df3e13cfe3563a5c2f11c7248c5c938ce14c3b4716801",
-      "bytes": 3963
+      "sha256": "a6d2cbd3be80c460fa19011748676ab4bb6f3f8900b7f07706bb92507ed1e301",
+      "bytes": 4193
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "1e6453302b7fa9e47f54c1ef0e0b44491bb5d168590f7d8bc981a8385ba60591",
-      "bytes": 6577
+      "sha256": "976f5892dd7873a5382ee1b3c2d3bd415e2caf79332e5b690ca0248e56de5118",
+      "bytes": 6707
     },
     "scripts/start_rendered_walkthrough.py": {
       "source": "scripts/start_rendered_walkthrough.py",
@@ -1497,8 +1512,8 @@
     },
     "walkthrough/build.mjs": {
       "source": "walkthrough/build.mjs",
-      "sha256": "a824cc41ba5fa151bb092aa3d0b6e9a51889f110c717643c2393dc392532aff0",
-      "bytes": 4482
+      "sha256": "1315d3ca41d02026488892ed0375e8d0374108e2cefa96f976533f13587fb302",
+      "bytes": 4750
     },
     "walkthrough/index.html": {
       "source": "walkthrough/index.html",
@@ -1517,13 +1532,13 @@
     },
     "walkthrough/public/interiors/kitchen/index.html": {
       "source": "walkthrough/public/interiors/kitchen/index.html",
-      "sha256": "1d44a1bf67e63344107e42e8af3f42b82673351653ce695628409a047cd18381",
-      "bytes": 5328
+      "sha256": "9e39f636487fccdd53d32f0973823231ba505ad00816e32d83baeb28a3484ba7",
+      "bytes": 5464
     },
     "walkthrough/public/interiors/kitchen/model.html": {
       "source": "walkthrough/public/interiors/kitchen/model.html",
-      "sha256": "7b0949b5a57344b8367bc02fa7428f9f8b11afd6573e833e31e2cacd42205150",
-      "bytes": 3813
+      "sha256": "9a8dd4ecad00d2dcc6020e95783dbde93dd53c6a6c4b90b2bf8155628bd0e2bd",
+      "bytes": 3949
     },
     "walkthrough/public/interiors/kitchen/models/compact-kitchen.json": {
       "source": "walkthrough/public/interiors/kitchen/models/compact-kitchen.json",
@@ -1577,13 +1592,38 @@
     },
     "walkthrough/public/interiors/kitchen/studio.css": {
       "source": "walkthrough/public/interiors/kitchen/studio.css",
-      "sha256": "53ef1e5b1b574299afb9171d6d3320e6cc85015107375cc8a999b5f46ff7f0f1",
-      "bytes": 8996
+      "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72",
+      "bytes": 9096
     },
     "walkthrough/public/interiors/kitchen/studio.js": {
       "source": "walkthrough/public/interiors/kitchen/studio.js",
-      "sha256": "92e71875f71ed296ad24a0319b83122152f197835f3e3881bf155e768c8dc9c4",
-      "bytes": 14752
+      "sha256": "137411472dbf865bfc08bd1e4d22e779a6d2029f8d3d7519d69bde108e4d75b9",
+      "bytes": 14915
+    },
+    "walkthrough/public/interiors/principal/image-manifest.json": {
+      "source": "walkthrough/public/interiors/principal/image-manifest.json",
+      "sha256": "1a852bff56b5e71fc2fd928aa48a688be82ca866a7f346d02c35ae1b75b07605",
+      "bytes": 1583
+    },
+    "walkthrough/public/interiors/principal/index.html": {
+      "source": "walkthrough/public/interiors/principal/index.html",
+      "sha256": "c79eb06ff7a8607d11fb69f72869947b61ce3285da6850a88daaea79cc690d9c",
+      "bytes": 5413
+    },
+    "walkthrough/public/interiors/principal/options.json": {
+      "source": "walkthrough/public/interiors/principal/options.json",
+      "sha256": "f67a961f5dc6164569ef557d8643e3909af83b8de6798263880a9e38fcd97043",
+      "bytes": 6573
+    },
+    "walkthrough/public/interiors/principal/prompts.json": {
+      "source": "walkthrough/public/interiors/principal/prompts.json",
+      "sha256": "c23afe02429ca187bf50ff8ff2d07a518e88be6a4f7e85af51a85457da00ce18",
+      "bytes": 19364
+    },
+    "walkthrough/public/interiors/principal/references/captures.json": {
+      "source": "walkthrough/public/interiors/principal/references/captures.json",
+      "sha256": "b9a63a8390eeadb254a2081f1893dc9caee2f34bcfec1b55834dc64fef498a42",
+      "bytes": 1738
     },
     "walkthrough/public/navigation.json": {
       "source": "walkthrough/public/navigation.json",
@@ -1672,8 +1712,8 @@
     },
     "walkthrough/src/interior-preview.js": {
       "source": "walkthrough/src/interior-preview.js",
-      "sha256": "4139c0835f9c0c637074d98f86cb6eb344e4e73be3d767ecac46ee8dee3b2ed8",
-      "bytes": 6198
+      "sha256": "49d3124c51997bcb72d1cedabca4fa94fa9edd6ec683d2e590f798d2726fdb79",
+      "bytes": 6334
     },
     "walkthrough/src/life.js": {
       "source": "walkthrough/src/life.js",
@@ -1937,8 +1977,8 @@
     },
     "walkthrough/tests/interior-studio-browser.mjs": {
       "source": "walkthrough/tests/interior-studio-browser.mjs",
-      "sha256": "92ec94b358860f74f20148d5f0c45c2676bc50f9672ffbb3acd2b95c80074aba",
-      "bytes": 4206
+      "sha256": "c6bb74094872e5de77d7c9a93ad01e86c599d1a43c4cbc52ecc5395a7fe4459a",
+      "bytes": 4271
     },
     "walkthrough/tests/kitchen-circulation.mjs": {
       "source": "walkthrough/tests/kitchen-circulation.mjs",
@@ -1994,6 +2034,11 @@
       "source": "walkthrough/tests/planning-variants-browser.mjs",
       "sha256": "237588a9c8832f45f4d710aab11c42389258b7ab10052883c9403e15650d02a6",
       "bytes": 2691
+    },
+    "walkthrough/tests/principal-studio-browser.mjs": {
+      "source": "walkthrough/tests/principal-studio-browser.mjs",
+      "sha256": "943d1953304d901af71b7ec676fba5f43fee6ffa052285939936b4c38e98e5e2",
+      "bytes": 3712
     },
     "walkthrough/tests/proposal-browser.mjs": {
       "source": "walkthrough/tests/proposal-browser.mjs",
@@ -2169,6 +2214,11 @@
       "source": "walkthrough/tools/capture-kitchen.mjs",
       "sha256": "0408a7fbd16b2e5b22ff696c1c0486a18d3f75d31bf0c1be7c3838a29a223b4d",
       "bytes": 1917
+    },
+    "walkthrough/tools/capture-principal-room.mjs": {
+      "source": "walkthrough/tools/capture-principal-room.mjs",
+      "sha256": "cce759ec99beca9315659117ce1d45de404ed53e3ad3ccd67b04ba229d654fe6",
+      "bytes": 2031
     },
     "walkthrough/tools/derived-cache.mjs": {
       "source": "walkthrough/tools/derived-cache.mjs",

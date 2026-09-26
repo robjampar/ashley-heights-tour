@@ -5,14 +5,14 @@ import json
 import re
 
 
-def stage_studio(source, destination, previous, now, retirement, authored):
+def stage_studio(source, destination, previous, now, retirement, authored, room='kitchen'):
     destination.mkdir(parents=True, exist_ok=True)
     sha = lambda value: hashlib.sha256(value).hexdigest()
     asset_map, manifest = {}, {}
     options = json.loads((source / 'options.json').read_text())
     assert len(options['options']) == 10
     selected_images={path for option in options['options'] for path in option['images'].values()}
-    declared={p.relative_to(authored).as_posix() for p in authored.rglob('*') if p.is_file()}|{'room-model.js'}
+    declared={p.relative_to(authored).as_posix() for p in authored.rglob('*') if p.is_file()}|{'room-model.js','studio.js','studio.css'}
     for option in options['options']:
         for design in ('proposed', 'planning'):
             assert (source / option['images'][design]).is_file()
@@ -43,11 +43,13 @@ def stage_studio(source, destination, previous, now, retirement, authored):
     for name in ('studio.css', 'prompts.json'):
         html = html.replace('href="' + name + '"', 'href="' + asset_map[name] + '"')
     (destination / 'index.html').write_text(html)
-    model_html = (source / 'model.html').read_text()
-    for name in ('studio.css', 'room-model.js'):
-        model_html = model_html.replace('="' + name + '"', '="' + asset_map[name] + '"')
-    model_html = model_html.replace('<script type="module"', '<script>window.INTERIOR_ASSETS=' + json.dumps(asset_map) + ';</script><script type="module"')
-    (destination / 'model.html').write_text(model_html)
+    model_html = None
+    if (authored / 'model.html').is_file():
+        model_html = (source / 'model.html').read_text()
+        for name in ('studio.css', 'room-model.js'):
+            model_html = model_html.replace('="' + name + '"', '="' + asset_map[name] + '"')
+        model_html = model_html.replace('<script type="module"', '<script>window.INTERIOR_ASSETS=' + json.dumps(asset_map) + ';</script><script type="module"')
+        (destination / 'model.html').write_text(model_html)
     retained = {}
     for name, info in {**previous.get('previous_assets', {}), **previous.get('assets', {})}.items():
         candidate = (destination / name).resolve()
@@ -65,6 +67,8 @@ def stage_studio(source, destination, previous, now, retirement, authored):
             retained[name] = retired
         else:
             candidate.unlink(missing_ok=True)
-    return {'path': './interiors/kitchen/', 'session': options['session'], 'options': 10,
-            'images': 20, 'engine': 'Built-in image_gen', 'html_sha256': sha(html.encode()),
-            'model_html_sha256': sha(model_html.encode()), 'assets': manifest, 'previous_assets': retained}
+    result = {'path': './interiors/'+room+'/', 'session': options['session'], 'options': len(options['options']),
+              'images': len(selected_images), 'engine': 'Built-in image_gen', 'html_sha256': sha(html.encode()),
+              'assets': manifest, 'previous_assets': retained}
+    if model_html is not None: result['model_html_sha256'] = sha(model_html.encode())
+    return result

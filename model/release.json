@@ -5,8 +5,7 @@
     "options": 10,
     "images": 20,
     "engine": "Built-in image_gen",
-    "html_sha256": "a79e43910cd3e499da452bd4fd871744813b6682b1042c27b95657e7e0912409",
-    "model_html_sha256": "bb3d8486f1802680f73d09fed24ca5490f6fc67728e7b8174cf7b14875a74ad9",
+    "html_sha256": "d44f708f544d876048d49c37a50f3ddb0c0ed7b7883ffae3591c8d27842ecec6",
     "assets": {
       "images/01-planning.da95d4f435a5ebe2.png": {
         "source": "images/01-planning.png",
@@ -208,131 +207,191 @@
         "bytes": 228,
         "sha256": "982a4c163a07423699cf5aabfd38c22c4362b9e84c5a0f63837bf4058d44a0ec"
       },
+      "room-model.c1c91a09a87de799.js": {
+        "source": "room-model.js",
+        "bytes": 4787579,
+        "sha256": "c1c91a09a87de7998fd4f3c0ce32364396f4fb62ce1472cc49bbbd255e288680"
+      },
+      "studio.fcd9fe47725a433e.css": {
+        "source": "studio.css",
+        "bytes": 9096,
+        "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
+      },
+      "studio.28b6efd073915622.js": {
+        "source": "studio.js",
+        "bytes": 18145,
+        "sha256": "28b6efd07391562285b77afa09250e1f500991477639d9e07961e6636bf060ac"
+      }
+    },
+    "previous_assets": {
       "room-model.a8ac8bc71cf83d72.js": {
         "source": "room-model.js",
         "bytes": 4787449,
-        "sha256": "a8ac8bc71cf83d7277e9d960d442b1e053ba78b8772def08955d9ce160d058b1"
-      },
-      "studio.53ef1e5b1b574299.css": {
-        "source": "studio.css",
-        "bytes": 8996,
-        "sha256": "53ef1e5b1b574299afb9171d6d3320e6cc85015107375cc8a999b5f46ff7f0f1"
+        "sha256": "a8ac8bc71cf83d7277e9d960d442b1e053ba78b8772def08955d9ce160d058b1",
+        "retired_at_epoch": 1790381370.763544,
+        "retain_until_epoch": 1790388570.763544
       },
       "studio.87288678ee2649b8.js": {
         "source": "studio.js",
         "bytes": 17982,
-        "sha256": "87288678ee2649b8a464a6759e9408fdeee2d02604c102162c0eaaefb3858201"
+        "sha256": "87288678ee2649b8a464a6759e9408fdeee2d02604c102162c0eaaefb3858201",
+        "retired_at_epoch": 1790381370.763544,
+        "retain_until_epoch": 1790388570.763544
+      },
+      "studio.53ef1e5b1b574299.css": {
+        "source": "studio.css",
+        "bytes": 8996,
+        "sha256": "53ef1e5b1b574299afb9171d6d3320e6cc85015107375cc8a999b5f46ff7f0f1",
+        "retired_at_epoch": 1790381455.391697,
+        "retain_until_epoch": 1790388655.391697
+      },
+      "studio.4c1f619eb008a844.js": {
+        "source": "studio.js",
+        "bytes": 18145,
+        "sha256": "4c1f619eb008a8447b16f795e59a5df45f7accd1e900defe7e2e37c285a76564",
+        "retired_at_epoch": 1790381455.391697,
+        "retain_until_epoch": 1790388655.391697
+      }
+    },
+    "model_html_sha256": "1cd2360909cb890c9e356010d57f89dd28f2f25228f1e12cb6a491857b70e8a2"
+  },
+  "principal_studio": {
+    "path": "./interiors/principal/",
+    "session": "principal-2026-09-26-v1",
+    "options": 10,
+    "images": 10,
+    "engine": "Built-in image_gen",
+    "html_sha256": "b870214e706340bc3b9ea673c3bb3dc58cd7f952ae03bd41a07fa74efb5003c4",
+    "assets": {
+      "image-manifest.1a852bff56b5e71f.json": {
+        "source": "image-manifest.json",
+        "bytes": 1583,
+        "sha256": "1a852bff56b5e71fc2fd928aa48a688be82ca866a7f346d02c35ae1b75b07605"
+      },
+      "images/01.9c0f6e21bc213fee.png": {
+        "source": "images/01.png",
+        "bytes": 2477141,
+        "sha256": "9c0f6e21bc213feea90f7542faf37f37f566686866256c0b1957a7b4ae4ebe78"
+      },
+      "images/02.0ce8f8e9852d0566.png": {
+        "source": "images/02.png",
+        "bytes": 2560579,
+        "sha256": "0ce8f8e9852d0566c576bb1769df65ed61e5016ffdd7728575dc08895da34e59"
+      },
+      "images/03.b8acaba8eade305a.png": {
+        "source": "images/03.png",
+        "bytes": 2502652,
+        "sha256": "b8acaba8eade305aadb19ea79277f4ee56baeaeacbdadbfe352fe9f532f08110"
+      },
+      "images/04.006f7ebe643f5049.png": {
+        "source": "images/04.png",
+        "bytes": 2489498,
+        "sha256": "006f7ebe643f5049034bd8c21f2d4ebc2ef01b1ad2896c74037632f9363f4007"
+      },
+      "images/05.0da3ae66d6989ed6.png": {
+        "source": "images/05.png",
+        "bytes": 2417260,
+        "sha256": "0da3ae66d6989ed69fc64f567a2279b985d4d56c71ac76c090422d8979d26fd3"
+      },
+      "images/06.4adbec965434b604.png": {
+        "source": "images/06.png",
+        "bytes": 2508487,
+        "sha256": "4adbec965434b60457a3760e523ce4ebfe81692b49df9599f9a7ced455165301"
+      },
+      "images/07.8e15da701f4f15b1.png": {
+        "source": "images/07.png",
+        "bytes": 2716411,
+        "sha256": "8e15da701f4f15b1f4c80f3ed6f7b77b4d2f74c2a3202012de7cd4c24f9b2af9"
+      },
+      "images/08.1f382642a9abd83d.png": {
+        "source": "images/08.png",
+        "bytes": 2434162,
+        "sha256": "1f382642a9abd83d6ccbb5903245c69b43b61dcdc56eb3769165821f3319ab8c"
+      },
+      "images/09.a1a694a66a30d610.png": {
+        "source": "images/09.png",
+        "bytes": 2514380,
+        "sha256": "a1a694a66a30d610a1fc96a48ce1db4138fead8704112f59c7614af3154d7a83"
+      },
+      "images/10.abbd0009a3c3c852.png": {
+        "source": "images/10.png",
+        "bytes": 2455670,
+        "sha256": "abbd0009a3c3c85296ef90bf655007a0d18c4f6dc0ec792f5764e3c338f3eb95"
+      },
+      "options.f67a961f5dc61645.json": {
+        "source": "options.json",
+        "bytes": 6573,
+        "sha256": "f67a961f5dc6164569ef557d8643e3909af83b8de6798263880a9e38fcd97043"
+      },
+      "prompts.c23afe02429ca187.json": {
+        "source": "prompts.json",
+        "bytes": 19364,
+        "sha256": "c23afe02429ca187bf50ff8ff2d07a518e88be6a4f7e85af51a85457da00ce18"
+      },
+      "references/captures.b9a63a8390eeadb2.json": {
+        "source": "references/captures.json",
+        "bytes": 1738,
+        "sha256": "b9a63a8390eeadb254a2081f1893dc9caee2f34bcfec1b55834dc64fef498a42"
+      },
+      "references/planning-bedroom.232183cc920eea4d.png": {
+        "source": "references/planning-bedroom.png",
+        "bytes": 372344,
+        "sha256": "232183cc920eea4dcdb6c598e54faa7f025b5bb4475ce4016b96da7044e9bb99"
+      },
+      "references/planning-sitting.5f48e7bf88276bbc.png": {
+        "source": "references/planning-sitting.png",
+        "bytes": 309991,
+        "sha256": "5f48e7bf88276bbce43c6ef3f065e4f45b82b61269ec2600582a457ee1e433dc"
+      },
+      "references/planning-study.3c52fa7173f8c05e.png": {
+        "source": "references/planning-study.png",
+        "bytes": 622501,
+        "sha256": "3c52fa7173f8c05ecda9f757bdb5b337dd73ef31c10dc4d4472f0abe12cff478"
+      },
+      "references/proposed-bedroom.e9a355bdcbdf2fb8.png": {
+        "source": "references/proposed-bedroom.png",
+        "bytes": 368182,
+        "sha256": "e9a355bdcbdf2fb8aaf240b427615722ba9a2e9fbe6a7a51b7e17d2bf9f28123"
+      },
+      "references/proposed-sitting.29274e0085e2bbb6.png": {
+        "source": "references/proposed-sitting.png",
+        "bytes": 312794,
+        "sha256": "29274e0085e2bbb60743ae6d1099df10a4c2eaeee1f2cba3edf4571f45110db5"
+      },
+      "references/proposed-study.e77eb6bafc270fab.png": {
+        "source": "references/proposed-study.png",
+        "bytes": 628369,
+        "sha256": "e77eb6bafc270fab979f468b6b31f7af4916275f90158ffc41f6de76330e9c22"
+      },
+      "studio.fcd9fe47725a433e.css": {
+        "source": "studio.css",
+        "bytes": 9096,
+        "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
+      },
+      "studio.1821a42de4a4c9a5.js": {
+        "source": "studio.js",
+        "bytes": 16246,
+        "sha256": "1821a42de4a4c9a5ef82dc56be0560edcfcab72a9aa1b4782bdbee386115a573"
       }
     },
     "previous_assets": {
-      "models/compact-kitchen.514b0c03834ca395.glb": {
-        "source": "models/compact-kitchen.glb",
-        "bytes": 13242536,
-        "sha256": "514b0c03834ca39518b3928094b52c74b0a878c409fb8f3ffbd51004c0b06cf6",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
+      "studio.53ef1e5b1b574299.css": {
+        "source": "studio.css",
+        "bytes": 8996,
+        "sha256": "53ef1e5b1b574299afb9171d6d3320e6cc85015107375cc8a999b5f46ff7f0f1",
+        "retired_at_epoch": 1790381455.391697,
+        "retain_until_epoch": 1790388655.391697
       },
-      "models/compact-kitchen.cf5f2fea2c85ed66.json": {
-        "source": "models/compact-kitchen.json",
-        "bytes": 53122,
-        "sha256": "cf5f2fea2c85ed663a7c7bced6d6a9569859375a0fe694b89e50e0ee17444c89",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
-      },
-      "models/compact-render.417c088c3798e2a4.png": {
-        "source": "models/compact-render.png",
-        "bytes": 2061581,
-        "sha256": "417c088c3798e2a494ef014c12eb21b60cb0e02d5818d87e12df09814ede2f43",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
-      },
-      "models/planning-kitchen.3405210be21c9fa4.glb": {
-        "source": "models/planning-kitchen.glb",
-        "bytes": 12122020,
-        "sha256": "3405210be21c9fa409ec909fcf47a9e6bca9a76c4d3f3ee77a1e0e08ce8a5c2c",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
-      },
-      "models/planning-kitchen.07c429a32de81cde.json": {
-        "source": "models/planning-kitchen.json",
-        "bytes": 47944,
-        "sha256": "07c429a32de81cde050551efefdde9dc98709818025aaf64a146df948887e55d",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
-      },
-      "models/planning-render.856bf54ca29abe43.png": {
-        "source": "models/planning-render.png",
-        "bytes": 2099988,
-        "sha256": "856bf54ca29abe4380abe0c7b074c89cf144b2def461fb5b21a3a4bc593d7697",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
-      },
-      "room-model.78345b7051008bb8.js": {
-        "source": "room-model.js",
-        "bytes": 4787145,
-        "sha256": "78345b7051008bb8039c72df977bc4e54bcb719e66edba5d04b8b9d728f96085",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
-      },
-      "studio.bac55dbec0cf539f.js": {
+      "studio.560c5c673a36b274.js": {
         "source": "studio.js",
-        "bytes": 17982,
-        "sha256": "bac55dbec0cf539ff4b3411b824e5a323971039ba1048a1de692f61acea103e5",
-        "retired_at_epoch": 1790360594.053239,
-        "retain_until_epoch": 1790367794.053239
-      },
-      "models/compact-kitchen.2b6877cb194f2b33.glb": {
-        "source": "models/compact-kitchen.glb",
-        "bytes": 19596352,
-        "sha256": "2b6877cb194f2b3331082b81b6439bac2c8e9b4a246c9bbe2692fc0d60b8e31c",
-        "retired_at_epoch": 1790361350.403521,
-        "retain_until_epoch": 1790368550.403521
-      },
-      "models/compact-kitchen.bf242ba49f333fe9.json": {
-        "source": "models/compact-kitchen.json",
-        "bytes": 54174,
-        "sha256": "bf242ba49f333fe9187e3156254b1154560e67d8816ca73aa0e03879cb840dcc",
-        "retired_at_epoch": 1790361350.403521,
-        "retain_until_epoch": 1790368550.403521
-      },
-      "models/compact-render.7d046b8cfdaf9564.png": {
-        "source": "models/compact-render.png",
-        "bytes": 2062395,
-        "sha256": "7d046b8cfdaf95646a85d3383e385eae6e50d5dc15d1301001699e3bccb58175",
-        "retired_at_epoch": 1790361350.403521,
-        "retain_until_epoch": 1790368550.403521
-      },
-      "models/planning-kitchen.c7585cbaa9253e7c.glb": {
-        "source": "models/planning-kitchen.glb",
-        "bytes": 17959356,
-        "sha256": "c7585cbaa9253e7ceffab997ea9337728fc456ce28f453cbe33a393df4a4d2c7",
-        "retired_at_epoch": 1790361350.403521,
-        "retain_until_epoch": 1790368550.403521
-      },
-      "models/planning-kitchen.c34bf433fe8d40ee.json": {
-        "source": "models/planning-kitchen.json",
-        "bytes": 48996,
-        "sha256": "c34bf433fe8d40eea3f2d06f7080154cb2f7917336ac90a5178e587875c7b8ba",
-        "retired_at_epoch": 1790361350.403521,
-        "retain_until_epoch": 1790368550.403521
-      },
-      "models/planning-render.e8e64a2da89de629.png": {
-        "source": "models/planning-render.png",
-        "bytes": 2085311,
-        "sha256": "e8e64a2da89de629f5d534f068e2d727ba9a250a80cce01b81c3f34291e478b0",
-        "retired_at_epoch": 1790361350.403521,
-        "retain_until_epoch": 1790368550.403521
-      },
-      "studio.c5c25b7f44dc3390.js": {
-        "source": "studio.js",
-        "bytes": 17982,
-        "sha256": "c5c25b7f44dc339032e11beb0181a4bda09c814ff926f05787bef149b5ab99b3",
-        "retired_at_epoch": 1790361350.403521,
-        "retain_until_epoch": 1790368550.403521
+        "bytes": 16246,
+        "sha256": "560c5c673a36b274831a46b5b5ed1e35583b90ca6dc8361400edc613bdd4a4e7",
+        "retired_at_epoch": 1790381455.391697,
+        "retain_until_epoch": 1790388655.391697
       }
     }
   },
-  "published_utc": "2026-09-25T18:35:50.906806+00:00",
+  "published_utc": "2026-09-26T00:10:56.288227+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -456,66 +515,6 @@
       "sha256": "3244861fb6d5ed168597ef7aa8202ca6f3259ee379fcf15f2795f85892b2b309",
       "retain_until_epoch": 1790528406.9848409,
       "retired_at_epoch": 1790521206.9848409
-    },
-    "proposal-compact.6a51055d5d36ec35.glb": {
-      "bytes": 41725100,
-      "sha256": "6a51055d5d36ec35b1ab4e61231f1a97fece1f4ea91940eec1e178bf81a17c1b",
-      "retired_at_epoch": 1790360594.053239,
-      "retain_until_epoch": 1790367794.053239
-    },
-    "proposal-compact-navigation.5452076f00c33cdd.json": {
-      "bytes": 1802273,
-      "sha256": "5452076f00c33cddb401097f2963c7ffee73ad1a5b7a3345da906ee284ebb7c6",
-      "retired_at_epoch": 1790360594.053239,
-      "retain_until_epoch": 1790367794.053239
-    },
-    "proposal-planning.042088de968d5d2e.glb": {
-      "bytes": 40286792,
-      "sha256": "042088de968d5d2e65a47474583ade284e7685577cb87908a4cec7a855fde7e6",
-      "retired_at_epoch": 1790360594.053239,
-      "retain_until_epoch": 1790367794.053239
-    },
-    "proposal-planning-navigation.78637e76bd53223a.json": {
-      "bytes": 1520068,
-      "sha256": "78637e76bd53223afdb30da4d4274f739426766058db644d7de0d0a09f4425dc",
-      "retired_at_epoch": 1790360594.053239,
-      "retain_until_epoch": 1790367794.053239
-    },
-    "app.813aa2a66d985b28.js": {
-      "bytes": 5374727,
-      "sha256": "813aa2a66d985b28248f9cd3b35820cd9249da7b99d19be903ef5cf9bd229842",
-      "retired_at_epoch": 1790360594.053239,
-      "retain_until_epoch": 1790367794.053239
-    },
-    "proposal-compact.91982a79dcd8a89e.glb": {
-      "bytes": 47201232,
-      "sha256": "91982a79dcd8a89ef3433a1813e7b36fc1bdddf5b7d811977ed4d6680290ca64",
-      "retired_at_epoch": 1790361350.403521,
-      "retain_until_epoch": 1790368550.403521
-    },
-    "proposal-compact-navigation.4eb47e1a9342d4e4.json": {
-      "bytes": 1809466,
-      "sha256": "4eb47e1a9342d4e498daca4fe0e4cde0e792d7a9af7001ffc90f739fe88bde0b",
-      "retired_at_epoch": 1790361350.403521,
-      "retain_until_epoch": 1790368550.403521
-    },
-    "proposal-planning.8522e8820f2a6408.glb": {
-      "bytes": 45303380,
-      "sha256": "8522e8820f2a6408d624542c5e53b9d04f283b82d6350d64eba5d48c697f117f",
-      "retired_at_epoch": 1790361350.403521,
-      "retain_until_epoch": 1790368550.403521
-    },
-    "proposal-planning-navigation.be0f9ab57a85177a.json": {
-      "bytes": 1527261,
-      "sha256": "be0f9ab57a85177ab7465ce52c4ec265d5f4d3da16ab69dbe666932fb6c209fc",
-      "retired_at_epoch": 1790361350.403521,
-      "retain_until_epoch": 1790368550.403521
-    },
-    "app.f2a29f0c09a684d8.js": {
-      "bytes": 5374727,
-      "sha256": "f2a29f0c09a684d8669f386d0418d630af83e470ff9437c73db32b6a200659cc",
-      "retired_at_epoch": 1790361350.403521,
-      "retain_until_epoch": 1790368550.403521
     }
   },
   "easter": {
