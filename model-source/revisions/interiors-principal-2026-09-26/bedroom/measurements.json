@@ -1,5 +1,5 @@
 {
-  "revision": 2,
+  "revision": 3,
   "status": "PASS",
   "routes": [
     {
@@ -86,12 +86,12 @@
           -13.1
         ],
         [
-          7.6,
+          7.75,
           -13.3
         ],
         [
-          7.6,
-          -14.96
+          7.75,
+          -14.65
         ]
       ],
       "obstructions": [],
@@ -159,17 +159,20 @@
     "fixed_screens": 2
   },
   "desk": {
-    "top_m": [
+    "side_lengths_m": [
       1.8,
-      0.7
+      1.8
     ],
-    "chair_operation_depth_m": 0.9,
+    "depth_m": 0.7,
+    "inner_corner_radius_m": 0.3,
+    "outer_corner_radius_m": 0.25,
+    "chair_operation_depth_m": 1.1,
     "separate_passing_route_m": 1.0
   },
-  "reserved_north_wing_m2": 24.55,
+  "reserved_north_wing_m2": 27.39,
   "limitations": [
     "Clearances derive from the current design model, not a measured site survey",
-    "Detailed dressing and ensuite fit remains unresolved",
+    "Revised adjoining bathroom and wardrobe have their own furnished review; services remain unresolved",
     "Native ray tests are reported separately for each variant"
   ]
 }

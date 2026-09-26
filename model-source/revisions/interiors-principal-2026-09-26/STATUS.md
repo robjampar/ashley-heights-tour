@@ -1,18 +1,14 @@
 # Principal suite — current room development
 
-## Bathroom and walk-through wardrobe
+## Revision 03 bedroom / revision 02 bathroom and wardrobe
 
-The owner accepted the furnished south-wall bedroom and asked to develop the bathroom and walk-through wardrobe. `interiors/principal/ensuite.html` now presents both together, using each accepted bedroom native study. It retains 476 bedroom/shell meshes per design, fits the roughly 12 m² bathroom and 12 m² dressing room, and preserves all external openings. The divider lands beyond the east window. Full-height 650 mm wardrobe carcasses provide 3.9 m of frontage plus 1.6 m of low window drawers; the bathroom has a double vanity, 1800 × 800 bath, separate shower and screened WC.
+Both Proposed and Planning room studies now implement the owner's confirmed 750 mm move towards the bed. The middle east bedroom window and wardrobe window shift south together; the wardrobe, its furniture, its entrance door and bed TV wall shift by the same amount. The wardrobe remains 12.09 m². The bathroom gains 750 mm of length and becomes 14.84 m², with a new east window centred behind the bath. Bath, shower and vanity retain their positions; the WC and privacy return move with the longer room's south divider.
 
-Native privacy rays, connected circulation envelopes, complete door sweeps and occupied/open-drawer states are recorded in `ensuite/`. The viewer has eye-level views, actual mirror reflections, a measured plan and a ceiling-off overview for both proposals. `ENSUITE-DESIGN.md` records the preimplementation layout, research and review journey; `ensuite/ROOM-REVIEW.md` records compromises and remaining service/construction checks. This is an isolated furnished room development; whole-house integration is still outstanding during this room-by-room review.
+The bedroom retains the accepted bed, sofa and two fixed screens. Its side-lit desk now has two equal 1.8 m sides, 700 mm worktops, a 300 mm inner curve, 250 mm outer corner and rounded exposed ends. A modelled swivel chair turns towards the sitting TV; raising that TV 150 mm clears the sofa back. The new “TV from desk” camera shows the actual seated view. Desk-to-screen distance is about 5.82 m; this is a secondary viewing position, with the sofa still providing the closer view.
 
-## Accepted south-wall bedroom — revision 02
+Both native builds pass 25 TV rays, nine WC privacy rays, window-opening/old-opening-closure checks, door sweeps and connected circulation checks. A separate revision audit confirms the full 750 mm wardrobe translation, unchanged wardrobe area, bathroom area gain, native window positions, equal desk sides and retention of all 500 updated bedroom/shell meshes in each furnished suite. Desktop/mobile browser checks cover all eight bedroom and eight bathroom cameras, design changes, mirrors, plans, camera persistence and failed requests.
 
-The owner's instruction to apply the shared principles is implemented as `interiors/principal/bedroom.html`, with separate native models derived from Proposed and Planning. Wall-backed 1.8 m bed, 600 mm bedsides, separate fixed bed/sofa TVs, 2.3 m sofa group, 1.8 m side-lit desk, curtains, lighting, limestone details and the approved kitchen's detailed olive tree. External openings and the original vaulted window seat remain.
-
-Six walking envelopes, actual generated furniture bounds, door sweep, headboard contact and 40 native viewing rays are checked. Seven cameras per design include the actual ceiling except in the labelled cutaway; desktop/mobile and existing kitchen/old-suite regressions pass. See `bedroom/ROOM-REVIEW.md` for the design judgment, distances and limitations.
-
-The bedroom was subsequently accepted as the direction. Its previously reserved northern wing is now furnished in the adjoining bathroom/wardrobe study above. Neither whole-house file has been overwritten; final products, services and full-suite integration remain separate work.
+The published room pages are `interiors/principal/bedroom.html` and `interiors/principal/ensuite.html`. These remain isolated room studies; full-house integration is outstanding. Window changes require elevation/planning and structural review, and final plumbing, ventilation, waterproofing and products remain to be resolved. Evidence and design judgment are in the two `ROOM-REVIEW.md` files. `shift-075/before/` preserves the previous four native room models and two configuration files; source staging records native checksums. `shift-075/audit.json` records the requested changes.
 
 ---
 

@@ -1,6 +1,6 @@
 {
-  "revision": 3,
-  "status": "Bedroom and window revision with shifted dressing room and longer ensuite; isolated room review",
+  "revision": 2,
+  "status": "Furnished bedroom development; adjoining dressing and ensuite remain to be fitted",
   "floor_z": 2.8,
   "ceiling_z": 5.28,
   "bedroom_polygon": [
@@ -14,11 +14,11 @@
     ],
     [
       13.75,
-      -10.95
+      -10.2
     ],
     [
       9.96,
-      -10.95
+      -10.2
     ],
     [
       9.96,
@@ -50,11 +50,11 @@
   "reserved_polygon": [
     [
       9.96,
-      -10.95
+      -10.2
     ],
     [
       13.75,
-      -10.95
+      -10.2
     ],
     [
       13.75,
@@ -134,42 +134,21 @@
     ],
     "chair_center": [
       6.75,
-      -14.65
+      -14.96
     ],
     "chair_operation": [
       6.1,
-      -15.16,
-      7.2,
-      -14.06
-    ],
-    "shape": "equal-sided rounded L",
-    "return_bounds": [
-      5.4,
       -15.86,
-      7.2,
-      -15.16
-    ],
-    "side_lengths_m": [
-      1.8,
-      1.8
-    ],
-    "depth_m": 0.7,
-    "inner_radius_m": 0.3,
-    "outer_radius_m": 0.25,
-    "end_corner_radius_m": 0.1,
-    "tv_eye": [
-      6.75,
-      -14.65,
-      3.97
-    ],
-    "tv": "sofa"
+      7.0,
+      -14.06
+    ]
   },
   "tvs": [
     {
       "id": "bed",
       "center": [
         11.15,
-        -11.14
+        -10.39
       ],
       "screen_m": [
         1.882,
@@ -188,7 +167,7 @@
           3.93
         ]
       ],
-      "cabinet_center_y": -11.3
+      "cabinet_center_y": -10.55
     },
     {
       "id": "sofa",
@@ -200,7 +179,7 @@
         1.218,
         0.685
       ],
-      "height_m": 1.35,
+      "height_m": 1.2,
       "eyes": [
         [
           6.52,
@@ -225,13 +204,13 @@
   },
   "dressing_door": {
     "x": 9.9,
-    "center_y": -10.25,
+    "center_y": -9.5,
     "width_m": 0.95
   },
   "retained": [
-    "Existing south headboard wall and bed position",
-    "Original south and west openings and southern east window",
-    "Suite entry position",
+    "Existing south headboard wall",
+    "All external openings",
+    "Entry position and width",
     "West vaulted window alcove"
   ],
   "changed": [
@@ -239,59 +218,11 @@
     "Dressing and ensuite reserved in the north wing",
     "Full-height return separates that wing",
     "Separate fixed TVs face bed and sofa",
-    "Side-lit 1.8 m desk in bedroom",
-    "Dressing and bed TV wall shifted 750 mm toward bed",
-    "Middle east and wardrobe windows moved 750 mm toward bed",
-    "New east window behind bath",
-    "Equal 1.8 m L desk with curved inner/outer corners and swivel chair",
-    "Sitting TV raised 150 mm to clear sofa back from desk"
+    "Side-lit 1.8 m desk in bedroom"
   ],
   "unresolved": [
-    "Survey, structural and planning review of altered openings",
-    "Drainage and ventilation for relocated ensuite",
-    "Final furniture/products and whole-house integration"
-  ],
-  "suite_shift_m": 0.75,
-  "east_windows": [
-    {
-      "id": 0,
-      "y": [
-        -15.325,
-        -13.875
-      ],
-      "sill": 3.65,
-      "head": 5.05
-    },
-    {
-      "id": 1,
-      "y": [
-        -12.87,
-        -11.27
-      ],
-      "sill": 3.5,
-      "head": 5.05,
-      "shift_m": -0.75
-    },
-    {
-      "id": 2,
-      "y": [
-        -9.64,
-        -7.84
-      ],
-      "sill": 3.55,
-      "head": 5.05,
-      "shift_m": -0.75
-    },
-    {
-      "id": 3,
-      "y": [
-        -5.2,
-        -3.4
-      ],
-      "sill": 3.9,
-      "head": 5.05,
-      "new": true,
-      "purpose": "Bath long-side window"
-    }
+    "Detailed north-wing dressing and ensuite fit",
+    "Drainage, ventilation and structural checks for bathroom relocation",
+    "Survey and final furniture specifications"
   ]
 }

@@ -2,7 +2,7 @@
   "status": "PASS",
   "model_based": true,
   "areas_m2": {
-    "bathroom": 12.0,
+    "bathroom": 14.84,
     "dressing": 12.09
   },
   "checks": [
@@ -87,9 +87,9 @@
       "check": "window_drawers actual mesh matches specified footprint",
       "measured": [
         13.149999618530273,
-        -8.800000190734863,
+        -9.550000190734863,
         13.75,
-        -7.199999809265137
+        -7.949999809265137
       ],
       "pass": true
     },
@@ -98,9 +98,9 @@
       "check": "wc_screen actual mesh matches specified footprint",
       "measured": [
         12.65999984741211,
-        -6.889999866485596,
+        -7.639999866485596,
         12.739999771118164,
-        -6.114999771118164
+        -6.864999771118164
       ],
       "pass": true
     },
@@ -141,8 +141,8 @@
     },
     {
       "variant": "compact",
-      "check": "accepted bedroom and shell unchanged",
-      "objects": 476,
+      "check": "updated source bedroom and shell retained",
+      "objects": 500,
       "pass": true
     },
     {
@@ -177,9 +177,9 @@
       "check": "window_drawers actual mesh matches specified footprint",
       "measured": [
         13.149999618530273,
-        -8.800000190734863,
+        -9.550000190734863,
         13.75,
-        -7.199999809265137
+        -7.949999809265137
       ],
       "pass": true
     },
@@ -188,9 +188,9 @@
       "check": "wc_screen actual mesh matches specified footprint",
       "measured": [
         12.65999984741211,
-        -6.889999866485596,
+        -7.639999866485596,
         12.739999771118164,
-        -6.114999771118164
+        -6.864999771118164
       ],
       "pass": true
     },
@@ -231,8 +231,8 @@
     },
     {
       "variant": "planning",
-      "check": "accepted bedroom and shell unchanged",
-      "objects": 476,
+      "check": "updated source bedroom and shell retained",
+      "objects": 500,
       "pass": true
     },
     {
@@ -251,7 +251,7 @@
       1.701
     ],
     "shower_clear_opening": 0.895,
-    "wc_side_entry": 0.915,
+    "wc_side_entry": 1.665,
     "bathroom_opening": 0.95,
     "door_clear_before_hardware": 0.928,
     "vanity_front_to_WC_screen": 1.64,
@@ -270,7 +270,6 @@
   },
   "limitations": [
     "Door handle/lining final clearances require product specification",
-    "Main door approach and a person at the nearest basin may briefly share space; the separate 1 m lane begins inside the room",
     "Freestanding bath cleaning/product access needs confirmation",
     "Visual WC screen, not acoustic enclosure",
     "Shower splash, drainage falls and waterproofing require detailed design",

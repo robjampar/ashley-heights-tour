@@ -8,7 +8,7 @@ from mathutils.geometry import tessellate_polygon
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from proposal_kitchen_interiors import export_quiet_oak_gltf
 variant=sys.argv[sys.argv.index('--')+1];assert variant in ('compact','planning')
-cfg=json.loads((ROOT/'proposal/interiors/principal/ensuite.json').read_text());z=cfg['floor_z'];ceiling=cfg['ceiling_z']
+cfg=json.loads((ROOT/'proposal/interiors/principal/ensuite.json').read_text());z=cfg['floor_z'];ceiling=cfg['ceiling_z'];shift=cfg.get('suite_shift_m',0);model_y_offset=0
 evidence=ROOT/'revisions/interiors-principal-2026-09-26/ensuite'/variant;evidence.mkdir(parents=True,exist_ok=True)
 out=ROOT/'walkthrough/public/interiors/principal/models'
 base=ROOT/'revisions/interiors-principal-2026-09-26/bedroom'/variant/'Principal bedroom — south wall.blend'
@@ -32,13 +32,14 @@ s=opal.node_tree.nodes.get('Principled BSDF');s.inputs['Emission Color'].default
 privacy=material('obscure privacy pane',(.76,.82,.77,.85),.8)
 
 def mesh(label,verts,faces,mat,smooth=False):
+ verts=[(v[0],v[1]+model_y_offset,v[2])for v in verts]
  me=bpy.data.meshes.new(prefix+label);me.from_pydata(verts,[],faces);me.update();uv=me.uv_layers.new(name='UVMap')
  for p in me.polygons:
   axes=(0,1)if abs(p.normal.z)>.6 else(1,2)if abs(p.normal.x)>abs(p.normal.y)else(0,2)
   for l in p.loop_indices:
    v=me.vertices[me.loops[l].vertex_index].co;uv.data[l].uv=(v[axes[0]],v[axes[1]])
   p.use_smooth=smooth
- ob=bpy.data.objects.new(prefix+label,me);coll.objects.link(ob);me.materials.append(mat);ob['source_name']=ob.name;ob['ensuite_revision']=1;owned.append(ob);return ob
+ ob=bpy.data.objects.new(prefix+label,me);coll.objects.link(ob);me.materials.append(mat);ob['source_name']=ob.name;ob['ensuite_revision']=cfg['revision'];owned.append(ob);return ob
 
 def box(label,c,size,mat=oak,angle=0,bevel=.006):
  x,y,h=c;a,b,d=[v/2 for v in size];co,si=math.cos(angle),math.sin(angle)
@@ -70,12 +71,13 @@ def bounds(ob):
  pts=[ob.matrix_world@Vector(v)for v in ob.bound_box];return[min(p[i]for p in pts)for i in range(3)]+[max(p[i]for p in pts)for i in range(3)]
 def register(label,keys):obstacles.append({'name':label,'objects':[o.name for o in owned if any(o.name.startswith(prefix+k)for k in keys)]})
 def block(label,rect,h,mat=oak,bottom=0):
- xa,ya,xb,yb=rect;return box(label,((xa+xb)/2,(ya+yb)/2,z+(bottom+h)/2),(xb-xa,yb-ya,h-bottom),mat)
+ xa,ya,xb,yb=rect;return box(label,((xa+xb)/2,(ya+yb)/2-model_y_offset,z+(bottom+h)/2),(xb-xa,yb-ya,h-bottom),mat)
 f=cfg['fixtures'];slab('limestone floor',cfg['bathroom_polygon'],z+.006,stone);slab('dressing oak floor',cfg['dressing_polygon'],z+.004,oak)
-slab('bathroom stone threshold',[(11.45,-7.01),(12.40,-7.01),(12.40,-6.89),(11.45,-6.89)],z+.005,stone)
+slab('bathroom stone threshold',[(11.45,-7.01-shift),(12.40,-7.01-shift),(12.40,-6.89-shift),(11.45,-6.89-shift)],z+.005,stone)
 # Large-format floor joints remain fine and flush.
-for xx in(10.50,11.10,11.70,12.30,12.90,13.50):box('floor tile joint',(xx,-5.07,z+.0065),(.0018,3.61,.0008),grout,bevel=0)
-for yy in(-6.86,-6.26,-5.66,-5.06,-4.46,-3.86):box('floor cross joint',(12.11,yy,z+.0065),(3.27,.0018,.0008),grout,bevel=0)
+for xx in(10.50,11.10,11.70,12.30,12.90,13.50):box('floor tile joint',(xx,-5.07-shift/2,z+.0065),(.0018,3.61+shift,.0008),grout,bevel=0)
+for yy in(-7.46,-6.86,-6.26,-5.66,-5.06,-4.46,-3.86):box('floor cross joint',(12.11,yy,z+.0065),(3.27,.0018,.0008),grout,bevel=0)
+model_y_offset=-shift
 for xa,xb in((9.96,11.45),(12.40,13.75)):box('bathroom dividing wall',((xa+xb)/2,-6.95,z+1.24),(xb-xa,.12,2.48),white,bevel=0)
 box('bathroom doorway header',(11.925,-6.95,5.165),(.95,.12,.23),white,bevel=0)
 for xx in(11.4375,12.4125):box('bathroom door jamb',(xx,-6.95,z+1.13),(.025,.145,2.26),oak)
@@ -83,9 +85,18 @@ box('bathroom door open',(12.40,-7.425,z+1.14),(.044,.95,2.22),oak)
 for xx in(12.36,12.44):tube('bathroom lever handle',[(xx,-7.7,z+1.02),(xx,-7.82,z+1.02)],.009,bronze)
 for h in(.25,1.1,1.95):tube('bathroom hinge',[(12.40,-6.95,z+h),(12.40,-6.95,z+h+.08)],.009,bronze)
 register('Bathroom open leaf',['bathroom door open','bathroom lever handle'])
+model_y_offset=0
 # Thin interior stone linings retain the actual north openings.
 box('west stone lining',(10.478,-5.015,z+1.24),(.016,3.45,2.48),stone,bevel=.001)
-box('east stone lining',(13.742,-5.075,z+1.24),(.016,3.63,2.48),stone,bevel=.001)
+# Stone lining follows the new opening; no opaque wall remains behind the glass.
+for ya,yb in((-6.89-shift,-5.2),(-3.4,-3.259)):
+ box('east stone window pier',(13.742,(ya+yb)/2,z+1.24),(.016,yb-ya,2.48),stone,bevel=.001)
+box('east stone below bath window',(13.742,-4.3,z+.55),(.016,1.8,1.10),stone,bevel=.001)
+box('east stone above bath window',(13.742,-4.3,5.165),(.016,1.8,.23),stone,bevel=.001)
+for yy in(-5.195,-3.405):box('bath window stone jamb',(13.790,yy,4.475),(.10,.012,1.15),stone,bevel=.001)
+box('bath window stone sill',(13.78,-4.3,3.912),(.12,1.8,.024),stone,bevel=.002)
+box('bath window stone head',(13.79,-4.3,5.093),(.10,1.8,.012),stone,bevel=.001)
+box('bath window obscure pane',(13.827,-4.3,4.475),(.006,1.69,1.04),privacy,bevel=0)
 for xa,xb in((10.47,10.705),(11.705,12.185),(13.185,13.75)):box('north stone pier',((xa+xb)/2,-3.268,z+1.24),(xb-xa,.018,2.48),stone,bevel=.001)
 for xa,xb in((10.705,11.705),(12.185,13.185)):
  box('north stone below window',((xa+xb)/2,-3.268,z+.425),(xb-xa,.018,.85),stone,bevel=.001)
@@ -149,6 +160,7 @@ for i in range(30):box('drain slot',(10.64+i*.035,-3.35,z+.014),(.012,.035,.002)
 box('shower stone shelf',(10.55,-3.95,z+1.11),(.14,.49,.028),stone)
 for j in range(3):tube('shower bottle',[(10.56,-4.12+j*.16,z+1.135),(10.56,-4.12+j*.16,z+1.29+j*.022)],.034,ceramic if j!=1 else taupe,24)
 register('Shower glass',['shower east fixed Glass','shower south fixed Glass','shower west glass channel'])
+model_y_offset=-shift
 # Privacy return and concealed cistern; WC faces north into a generous front zone.
 block('WC privacy return',f['wc_screen'],1.72,stone)
 block('WC cistern boxing',f['cistern'],1.16,stone)
@@ -163,10 +175,12 @@ tube('toilet roll holder',[(13.70,-6.43,z+.68),(13.63,-6.43,z+.68),(13.63,-6.28,
 tube('toilet roll',[(13.63,-6.405,z+.68),(13.63,-6.30,z+.68)],.056,linen,40)
 tube('WC brush canister',[(13.65,-6.72,z+.01),(13.65,-6.72,z+.28)],.052,bronze,40)
 register('WC screen',['WC privacy return']);register('WC bowl',['WC hollow bowl','WC seat ring','WC rear mount','WC raised lid']);register('Cistern',['WC cistern boxing'])
+model_y_offset=0
 # Towel warmer on the east wall below the window-free middle section.
 for yy in(-6.02,-5.48):tube('towel rail upright',[(13.69,yy,z+.64),(13.69,yy,z+1.67)],.012,bronze)
 for h in(.69,.86,1.03,1.30,1.47,1.64):tube('towel warmer rung',[(13.69,-6.02,z+h),(13.69,-5.48,z+h)],.009,bronze)
 box('hanging bath towel',(13.668,-5.76,z+1.10),(.025,.36,.69),linen,bevel=.01)
+model_y_offset=-shift
 # Wardrobe modules in local coordinates: u across the bay, v from back to front.
 def wardrobe(label,origin,width,angle,kind):
  ox,oy=origin;co,si=math.cos(angle),math.sin(angle)
@@ -217,22 +231,23 @@ register('Window drawers',['window drawers carcass','window drawer stone top','w
 # Full-length mirror faces into the dressing room from the bathroom divider.
 box('dressing mirror bronze surround',(10.99,-7.036,z+1.18),(.69,.03,1.98),bronze)
 box('dressing mirror face',(10.99,-7.056,z+1.18),(.66,.01,1.95),mirror)
-mirrors.append({'name':'Dressing mirror','position':[10.99,-7.063,z+1.18],'normal':[0,-1,0],'width':.66,'height':1.95})
+mirrors.append({'name':'Dressing mirror','position':[10.99,-7.063-shift,z+1.18],'normal':[0,-1,0],'width':.66,'height':1.95})
 # A shallow valet tray leaves the window ledge useful; no furniture in the route.
 box('dressing jewellery tray',(13.43,-7.48,z+.64),(.30,.37,.035),taupe,bevel=.012)
 for yy in(-7.61,-7.36):box('tray compartment',(13.43,yy,z+.66),(.27,.014,.025),oak)
-for yy in(-7.0,-9.2):
- box('wardrobe switchplate',(12.66 if yy==-7 else 9.977,yy,z+1.05),(.08 if yy==-7 else .014,.014 if yy==-7 else .08,.10),bronze)
+box('wardrobe bathroom switchplate',(12.66,-7.025,z+1.05),(.08,.014,.10),bronze)
+box('wardrobe entrance switchplate',(11.25,-10.182,z+1.05),(.08,.014,.10),bronze)
+model_y_offset=0
 # Ceiling lights and extraction faceplates; duct routes not asserted by this model.
-for xx,yy in((11.62,-6.16),(12.36,-4.50),(11.3,-8.25),(12.35,-9.0)):
+for xx,yy in((11.62,-6.16),(12.36,-4.50),(11.3,-8.25-shift),(12.35,-9.0-shift)):
  cutaway.append(tube('ceiling downlight trim',[(xx,yy,ceiling-.018),(xx,yy,ceiling-.01)],.045,bronze,40).name)
  cutaway.append(tube('ceiling downlight lens',[(xx,yy,ceiling-.023),(xx,yy,ceiling-.019)],.034,opal,32).name)
-cutaway.append(box('extract grille',(12.4,-6.45,ceiling-.014),(.23,.23,.022),white).name)
-for i in range(9):cutaway.append(box('extract slot',(12.4,-6.53+i*.02,ceiling-.027),(.18,.008,.003),dark,bevel=.001).name)
+cutaway.append(box('extract grille',(12.4,-6.45-shift,ceiling-.014),(.23,.23,.022),white).name)
+for i in range(9):cutaway.append(box('extract slot',(12.4,-6.53-shift+i*.02,ceiling-.027),(.18,.008,.003),dark,bevel=.001).name)
 study.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get();rays=[]
-for eye in((11.80,-7.18,z+1.6),(11.90,-7.55,z+1.65),(11.55,-6.95,z+1.6)):
+for eye in((11.80,-7.18-shift,z+1.6),(11.90,-7.55-shift,z+1.65),(11.55,-6.95-shift,z+1.6)):
  for target_h in(.43,1.15,1.30):
-  target=Vector((13.245,-6.40,z+target_h));delta=target-Vector(eye);hit,loc,n,face,ob,mat=study.ray_cast(deps,Vector(eye),delta.normalized(),distance=delta.length)
+  target=Vector((13.245,-6.40-shift,z+target_h));delta=target-Vector(eye);hit,loc,n,face,ob,mat=study.ray_cast(deps,Vector(eye),delta.normalized(),distance=delta.length)
   ok=hit and any(ob.get('source_name',ob.name).startswith(prefix+k) for k in ('WC privacy return','bathroom door open','bathroom dividing wall'));rays.append({'eye':eye,'target':list(target),'screened':ok,'hit':ob.name if hit else None});assert ok,rays[-1]
 
 assert all(signature(study.objects[name])==digest for name,digest in retained.items()),'Accepted bedroom/shell changed'
@@ -240,7 +255,7 @@ visible=[o for o in study.objects if o.type=='MESH'];bpy.ops.object.select_all(a
 for ob in visible:ob.select_set(True)
 export_quiet_oak_gltf(filepath=str(out/(variant+'-ensuite.glb')),export_format='GLB',use_selection=True,use_active_scene=True,export_apply=True,export_cameras=False,export_lights=False)
 bpy.data.libraries.write(str(evidence/'Principal suite — bathroom and wardrobe.blend'),{study},fake_user=True)
-meta.update({'room':'Principal bathroom and walk-through wardrobe','status':cfg['status'],'layoutRevision':1,'configuration':cfg,'materials':{m.name:list(m.diffuse_color)for m in bpy.data.materials},'cutawayObjects':cutaway,'mirrors':mirrors,'objects':len(visible),'authored_objects':len(owned),'proposalLights':meta['proposalLights']+[{'name':'Vanity light bounce','position':[11.30,-5.9,4.6],'range':3,'intensity':1.65},{'name':'Bath daylight bounce','position':[12.40,-4.0,4.6],'range':3,'intensity':1.4},{'name':'Dressing light bounce','position':[11.90,-8.5,4.8],'range':4,'intensity':1.6}]})
+meta.update({'room':'Principal bathroom and walk-through wardrobe','status':cfg['status'],'layoutRevision':cfg['revision'],'configuration':cfg,'materials':{m.name:list(m.diffuse_color)for m in bpy.data.materials},'cutawayObjects':cutaway,'mirrors':mirrors,'objects':len(visible),'authored_objects':len(owned),'proposalLights':meta['proposalLights']+[{'name':'Vanity light bounce','position':[11.30,-5.9,4.6],'range':3,'intensity':1.65},{'name':'Bath daylight bounce','position':[12.40,-4.0,4.6],'range':3,'intensity':1.4},{'name':'Dressing light bounce','position':[11.90,-8.5-shift,4.8],'range':4,'intensity':1.6}]})
 (out/(variant+'-ensuite.json')).write_text(json.dumps(meta,indent=2)+'\n')
 report={'variant':variant,'authored_objects':len(owned),'exported_objects':len(visible),'configuration':cfg,'native_privacy_rays':rays,'accepted_objects_preserved':len(retained),'source_bedroom_sha256':hashlib.sha256(base.read_bytes()).hexdigest(),'source_house_overwritten':False,'obstacle_groups':obstacles,'authored_bounds':[{'name':o.name,'bounds':bounds(o)}for o in owned],'retained_bounds':[{'name':o.get('source_name',o.name),'bounds':bounds(o)}for o in visible if o not in owned]}
 (evidence/'report.json').write_text(json.dumps(report,indent=2)+'\n');print('ENSUITE_EXPORTED',variant,len(owned),'new editable meshes;',len(retained),'accepted objects preserved',flush=True)

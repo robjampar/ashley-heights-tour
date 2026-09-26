@@ -2,9 +2,9 @@
   "status": "PASS",
   "designs": [
     {
-      "revision": 1,
+      "revision": 2,
       "variant": "compact",
-      "authored": 455,
+      "authored": 464,
       "features": [
         {
           "term": "oval bath hollow shell",
@@ -31,6 +31,10 @@
           "count": 4
         },
         {
+          "term": "bath window obscure pane",
+          "count": 1
+        },
+        {
           "term": "wall-backed upholstered headboard",
           "count": 1
         },
@@ -52,21 +56,21 @@
       ],
       "cutawayObjects": 32,
       "batches": {
-        "sourceMeshes": 936,
-        "sourceVertices": 858048,
-        "sourceTriangles": 286016,
+        "sourceMeshes": 972,
+        "sourceVertices": 888828,
+        "sourceTriangles": 296276,
         "emptySourceMeshes": 0,
         "batches": 58,
         "opaqueBatches": 55,
         "transparentBatches": 3,
         "spanBatches": 1,
         "globalBatches": 31,
-        "outputVertices": 407804,
-        "outputTriangles": 286016,
+        "outputVertices": 424835,
+        "outputTriangles": 296276,
         "indexedBatches": 58,
         "oversizedSourceMeshes": 0,
-        "inputStoredVertices": 407804,
-        "inputIndexEntries": 858048,
+        "inputStoredVertices": 424835,
+        "inputIndexEntries": 888828,
         "cellSize": 6,
         "floorHeight": 2.8,
         "transparentCellSize": 3,
@@ -76,9 +80,9 @@
       }
     },
     {
-      "revision": 1,
+      "revision": 2,
       "variant": "planning",
-      "authored": 455,
+      "authored": 464,
       "features": [
         {
           "term": "oval bath hollow shell",
@@ -105,6 +109,10 @@
           "count": 4
         },
         {
+          "term": "bath window obscure pane",
+          "count": 1
+        },
+        {
           "term": "wall-backed upholstered headboard",
           "count": 1
         },
@@ -126,21 +134,21 @@
       ],
       "cutawayObjects": 32,
       "batches": {
-        "sourceMeshes": 937,
-        "sourceVertices": 860724,
-        "sourceTriangles": 286908,
+        "sourceMeshes": 973,
+        "sourceVertices": 891504,
+        "sourceTriangles": 297168,
         "emptySourceMeshes": 0,
         "batches": 57,
         "opaqueBatches": 54,
         "transparentBatches": 3,
         "spanBatches": 1,
         "globalBatches": 30,
-        "outputVertices": 408524,
-        "outputTriangles": 286908,
+        "outputVertices": 425555,
+        "outputTriangles": 297168,
         "indexedBatches": 57,
         "oversizedSourceMeshes": 0,
-        "inputStoredVertices": 408524,
-        "inputIndexEntries": 860724,
+        "inputStoredVertices": 425555,
+        "inputIndexEntries": 891504,
         "cellSize": 6,
         "floorHeight": 2.8,
         "transparentCellSize": 3,

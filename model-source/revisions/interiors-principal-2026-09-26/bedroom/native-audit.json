@@ -39,7 +39,7 @@
         {
           "screen": "bed",
           "back_to_wall_m": 0.0025,
-          "centre_view_distance_m": 5.16
+          "centre_view_distance_m": 4.41
         },
         {
           "screen": "sofa",
@@ -48,7 +48,87 @@
         }
       ],
       "headboard_wall_contact": true,
-      "native_sightlines": 20,
+      "native_sightlines": 25,
+      "desk_side_lengths_m": [
+        1.8,
+        1.8
+      ],
+      "desk_corner_radii_m": [
+        0.3,
+        0.25
+      ],
+      "window_checks": [
+        {
+          "window": 1,
+          "position": [
+            13.744999885559082,
+            -12.470000267028809,
+            4.275000095367432
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 1 glass"
+        },
+        {
+          "window": 1,
+          "position": [
+            13.744999885559082,
+            -11.670000076293945,
+            4.275000095367432
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 1 glass"
+        },
+        {
+          "window": 2,
+          "position": [
+            13.744999885559082,
+            -9.1899995803833,
+            4.300000190734863
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 2 glass"
+        },
+        {
+          "window": 2,
+          "position": [
+            13.744999885559082,
+            -8.289999961853027,
+            4.300000190734863
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 2 glass"
+        },
+        {
+          "window": 3,
+          "position": [
+            13.744999885559082,
+            -4.75,
+            4.474999904632568
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 3 glass"
+        },
+        {
+          "window": 3,
+          "position": [
+            13.744999885559082,
+            -3.8499999046325684,
+            4.474999904632568
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 3 glass"
+        },
+        {
+          "closed_old_opening_y": -10.8,
+          "closed": true,
+          "hit": "Proposal | New wing east upper pier 2"
+        },
+        {
+          "closed_old_opening_y": -7.4,
+          "closed": true,
+          "hit": "Proposal | New wing east upper end pier"
+        }
+      ],
       "vault_route_min_headroom_m": 1.812,
       "vault_centre_headroom_m": 2.149,
       "retained_gable_panels": 4
@@ -91,7 +171,7 @@
         {
           "screen": "bed",
           "back_to_wall_m": 0.0025,
-          "centre_view_distance_m": 5.16
+          "centre_view_distance_m": 4.41
         },
         {
           "screen": "sofa",
@@ -100,7 +180,87 @@
         }
       ],
       "headboard_wall_contact": true,
-      "native_sightlines": 20,
+      "native_sightlines": 25,
+      "desk_side_lengths_m": [
+        1.8,
+        1.8
+      ],
+      "desk_corner_radii_m": [
+        0.3,
+        0.25
+      ],
+      "window_checks": [
+        {
+          "window": 1,
+          "position": [
+            13.744999885559082,
+            -12.470000267028809,
+            4.275000095367432
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 1 glass"
+        },
+        {
+          "window": 1,
+          "position": [
+            13.744999885559082,
+            -11.670000076293945,
+            4.275000095367432
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 1 glass"
+        },
+        {
+          "window": 2,
+          "position": [
+            13.744999885559082,
+            -9.1899995803833,
+            4.300000190734863
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 2 glass"
+        },
+        {
+          "window": 2,
+          "position": [
+            13.744999885559082,
+            -8.289999961853027,
+            4.300000190734863
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 2 glass"
+        },
+        {
+          "window": 3,
+          "position": [
+            13.744999885559082,
+            -4.75,
+            4.474999904632568
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 3 glass"
+        },
+        {
+          "window": 3,
+          "position": [
+            13.744999885559082,
+            -3.8499999046325684,
+            4.474999904632568
+          ],
+          "clear_opening": true,
+          "hit": "Proposal | New wing east upper window 3 glass"
+        },
+        {
+          "closed_old_opening_y": -10.8,
+          "closed": true,
+          "hit": "Proposal | New wing east upper pier 2"
+        },
+        {
+          "closed_old_opening_y": -7.4,
+          "closed": true,
+          "hit": "Proposal | New wing east upper end pier"
+        }
+      ],
       "vault_route_min_headroom_m": 1.812,
       "vault_centre_headroom_m": 2.149,
       "retained_gable_panels": 4

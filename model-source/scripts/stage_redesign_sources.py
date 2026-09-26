@@ -20,6 +20,7 @@ paths.update('revisions/interiors-lounge-2026-09-25/'+name for name in ('REVIEW-
 paths.update('revisions/interiors-principal-2026-09-26/'+name for name in ('REVIEW-DESIGN.md','STATUS.md','browser-checks.json'))
 paths.add('revisions/interiors-principal-2026-09-26/LAYOUT-DESIGN.md')
 paths.add('revisions/interiors-principal-2026-09-26/ENSUITE-DESIGN.md')
+paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'revisions/interiors-principal-2026-09-26/shift-075').rglob('*') if p.is_file() and p.suffix in ('.json','.blend','.md'))
 paths.update('revisions/interiors-principal-2026-09-26/ensuite/'+name for name in ('ROOM-REVIEW.md','measurements.json','browser-checks.json','compact/report.json','planning/report.json','compact/Principal suite — bathroom and wardrobe.blend','planning/Principal suite — bathroom and wardrobe.blend'))
 paths.add('revisions/interiors-principal-2026-09-26/LAYOUT-RESEARCH.md')
 paths.add('proposal/interiors/DESIGN-PRINCIPLES.md')

@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "wardrobe_shift_m": 0.75,
+  "wardrobe_area_unchanged_m2": 12.0901,
+  "bathroom_area_gained_m2": 2.8425,
+  "variants": [
+    {
+      "variant": "compact",
+      "window_bounds": [
+        {
+          "id": 0,
+          "native_y_bounds": [
+            -15.324999809265137,
+            -13.875
+          ]
+        },
+        {
+          "id": 1,
+          "native_y_bounds": [
+            -12.869999885559082,
+            -11.270000457763672
+          ]
+        },
+        {
+          "id": 2,
+          "native_y_bounds": [
+            -9.639999389648438,
+            -7.839999675750732
+          ]
+        },
+        {
+          "id": 3,
+          "native_y_bounds": [
+            -5.199999809265137,
+            -3.3999996185302734
+          ]
+        }
+      ],
+      "desk_sides_m": [
+        1.8,
+        1.8
+      ],
+      "native_tv_rays": 25,
+      "native_privacy_rays": 9,
+      "updated_bedroom_objects_retained": 500
+    },
+    {
+      "variant": "planning",
+      "window_bounds": [
+        {
+          "id": 0,
+          "native_y_bounds": [
+            -15.324999809265137,
+            -13.875
+          ]
+        },
+        {
+          "id": 1,
+          "native_y_bounds": [
+            -12.869999885559082,
+            -11.270000457763672
+          ]
+        },
+        {
+          "id": 2,
+          "native_y_bounds": [
+            -9.639999389648438,
+            -7.839999675750732
+          ]
+        },
+        {
+          "id": 3,
+          "native_y_bounds": [
+            -5.199999809265137,
+            -3.3999996185302734
+          ]
+        }
+      ],
+      "desk_sides_m": [
+        1.8,
+        1.8
+      ],
+      "native_tv_rays": 25,
+      "native_privacy_rays": 9,
+      "updated_bedroom_objects_retained": 500
+    }
+  ]
+}

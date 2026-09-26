@@ -16,10 +16,10 @@ try{
    const names=[];interiorPreview.scene.traverse(o=>{if(o.isMesh)names.push(...o.userData.spatialBatch?.sourceNames??[],o.userData.source_name??'');});
    return{revision:interiorPreview.info.layoutRevision,variant:interiorPreview.info.variant,
     authored:names.filter(n=>n.startsWith('Bedroom 02 |')).length,
-    features:['wall-backed upholstered headboard','bed mattress','bedside floating cabinet','sofa seat','desk top','bed TV screen','sofa TV screen'].map(term=>({term,count:names.filter(n=>n.includes(term)).length})),
+    features:['wall-backed upholstered headboard','bed mattress','bedside floating cabinet','sofa seat','desk top','swivel chair','New wing east upper window 3 glass','bed TV screen','sofa TV screen'].map(term=>({term,count:names.filter(n=>n.includes(term)).length})),
     views:Object.keys(interiorPreview.views),cutawayObjects:interiorPreview.cutawayMeshes.length,batches:interiorPreview.batches};
   });
-  assert.equal(result.revision,2);assert.equal(result.variant,design);assert(result.authored>250);assert(result.features.every(f=>f.count>0));assert(result.cutawayObjects>=4);
+  assert.equal(result.revision,3);assert.equal(result.variant,design);assert(result.authored>250);assert(result.features.every(f=>f.count>0));assert(result.cutawayObjects>=4);
   for(const view of result.views){
    await page.locator(`[data-camera=${view}]`).click();await page.waitForTimeout(700);
    assert.equal(new URL(page.url()).searchParams.get('view'),view);
@@ -45,5 +45,5 @@ try{
  await page.screenshot({path:new URL('plan.png',out).pathname});
  assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
  await fs.writeFile(new URL('browser-checks.json',out),JSON.stringify({status:'PASS',designs:checks,mobileWidth:390,retainedCameraAcrossDesigns:true,ceilingPresentExceptCutaway:true,errors,failed},null,2)+'\n');
- console.log('PASS: both bedrooms, all seven cameras, ceiling/cutaway, fixed screens, retained camera, measured plan, mobile layout, no browser errors.');
+ console.log('PASS: both bedrooms, all eight cameras, ceiling/cutaway, fixed screens, retained camera, measured plan, mobile layout, no browser errors.');
 }finally{await browser.close();}

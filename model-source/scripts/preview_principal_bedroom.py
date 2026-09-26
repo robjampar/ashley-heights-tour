@@ -10,6 +10,7 @@ from mathutils.geometry import tessellate_polygon
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from build_support import native_name
 from proposal_kitchen_interiors import export_quiet_oak_gltf
+from principal_room_geometry import desk_outline,revise_east_windows
 variant=sys.argv[sys.argv.index('--')+1];assert variant in ('compact','planning')
 cfg=json.loads((ROOT/'proposal/interiors/principal/bedroom.json').read_text())
 base=ROOT/('output-proposed-'+variant);nav=json.loads((base/'navigation.json').read_text())
@@ -20,7 +21,7 @@ source=bpy.data.scenes['08 Proposed extensions'];source.view_layers[0].update()
 study=bpy.data.scenes.new('Principal bedroom — south wall');bpy.context.window.scene=study
 prefix='Bedroom 02 | ';owned=[];shell=[];removed=[];cutaway=[];obstacles=[]
 coll=bpy.data.collections.new('Principal bedroom — furniture and partitions');study.collection.children.link(coll)
-z=cfg['floor_z'];ceiling=cfg['ceiling_z']
+z=cfg['floor_z'];ceiling=cfg['ceiling_z'];shift=cfg.get('suite_shift_m',0)
 
 def material(name,color,rough=.5,metal=0):
  m=bpy.data.materials.new(prefix+name);m.diffuse_color=color;m.use_nodes=True
@@ -38,7 +39,7 @@ def mesh(label,verts,faces,mat):
   axes=(0,1)if abs(p.normal.z)>.6 else(1,2)if abs(p.normal.x)>abs(p.normal.y)else(0,2)
   for l in p.loop_indices:
    v=me.vertices[me.loops[l].vertex_index].co;uv.data[l].uv=(v[axes[0]],v[axes[1]])
- ob=bpy.data.objects.new(prefix+label,me);coll.objects.link(ob);me.materials.append(mat);ob['source_name']=ob.name;ob['bedroom_revision']=2;owned.append(ob);return ob
+ ob=bpy.data.objects.new(prefix+label,me);coll.objects.link(ob);me.materials.append(mat);ob['source_name']=ob.name;ob['bedroom_revision']=cfg['revision'];owned.append(ob);return ob
 
 def box(label,center,size,mat=oak,angle=0,bevel=.008):
  x,y,h=center;a,b,c=[v/2 for v in size];co,si=math.cos(angle),math.sin(angle)
@@ -95,6 +96,8 @@ for ob in source.objects:
   # Copy shell objects so the room's native file is independent of scene parents.
   duplicate=ob.copy();duplicate.data=ob.data.copy();duplicate.parent=None;duplicate.matrix_world=ob.matrix_world.copy();study.collection.objects.link(duplicate);shell.append(duplicate)
 
+revise_east_windows(shell,study.collection)
+
 def slab(label,poly,height,mat):
  vs=[Vector((x,y,height))for x,y in poly];lookup={tuple(v):j for j,v in enumerate(vs)};tris=tessellate_polygon([vs]);return mesh(label,vs,[tuple(v if isinstance(v,int)else lookup[tuple(v)]for v in tri)for tri in tris],mat)
 for i,poly in enumerate(polys):
@@ -110,17 +113,17 @@ assert len(section)==3,section
 for (ya,za),(yb,zb) in zip(section,section[1:]):
  ob=mesh('retained vault soffit',[(3.49,ya,za),(5.16,ya,za),(5.16,yb,zb),(3.49,yb,zb)],[(0,1,2,3)],white);cutaway.append(ob.name)
 # Genuine room boundary. Door in the western return leads to the reserved wing.
-box('north media partition',(11.825,-10.26,z+1.24),(3.85,.12,2.48),white,bevel=0)
-for ya,yb in[(-10.26,-9.975),(-9.025,-8.70)]:box('dressing return pier',(9.90,(ya+yb)/2,z+1.24),(.12,yb-ya,2.48),white,bevel=0)
-box('dressing doorway header',(9.90,-9.50,5.165),(.12,.95,.23),white,bevel=0)
+box('north media partition',(11.825,-10.26-shift,z+1.24),(3.85,.12,2.48),white,bevel=0)
+for ya,yb in[(-10.26-shift,-9.975-shift),(-9.025-shift,-8.70)]:box('dressing return pier',(9.90,(ya+yb)/2,z+1.24),(.12,yb-ya,2.48),white,bevel=0)
+box('dressing doorway header',(9.90,-9.50-shift,5.165),(.12,.95,.23),white,bevel=0)
 # Entry and dressing doors shown at 90 degrees with native handles and stops.
 box('entry door open',(8.47,-9.175,z+1.14),(.044,.95,2.22),oak)
 box('entry door handle',(8.51,-9.49,z+1.03),(.07,.12,.016),bronze)
-box('dressing door open',(10.375,-9.975,z+1.14),(.95,.044,2.22),oak)
-box('dressing door handle',(10.69,-9.93,z+1.03),(.12,.07,.016),bronze)
-for yy in(-9.998,-9.002):box('dressing door jamb',(9.90,yy,z+1.13),(.145,.025,2.26),oak)
+box('dressing door open',(10.375,-9.975-shift,z+1.14),(.95,.044,2.22),oak)
+box('dressing door handle',(10.69,-9.93-shift,z+1.03),(.12,.07,.016),bronze)
+for yy in(-9.998-shift,-9.002-shift):box('dressing door jamb',(9.90,yy,z+1.13),(.145,.025,2.26),oak)
 obstacle('entry open door',[8.448,-9.65,8.492,-8.7],2.25)
-obstacle('dressing open door',[9.9,-9.997,10.85,-9.953],2.25)
+obstacle('dressing open door',[9.9,-9.997-shift,10.85,-9.953-shift],2.25)
 # Full headboard composition, backed continuously by the existing solid wall.
 c=cfg['bed']['center']
 for j in range(7):box('headboard oak wall panel '+str(j),(9.6+j*.516,-16.056,z+1.24),(.511,.04,2.48),oak,bevel=.002)
@@ -190,39 +193,52 @@ for tv in cfg['tvs']:
  box(label+' soundbar',(x,my-.162,z+.66),(.92,.09,.06),dark,bevel=.018)
  for j in range(25):box(label+' soundbar grille',(x-.41+j*.034,my-.209,z+.66),(.006,.005,.035),bronze,bevel=.001)
  obstacle(label+' media cabinet',[x-width/2,my-.21,x+width/2,my+.20],.61)
-# Side-lit 1.8 m desk: occupied chair and passing space are separate.
-x0,y0,x1,y1=cfg['desk']['bounds'];cx,cy=(x0+x1)/2,(y0+y1)/2
-box('desk top',(cx,cy,z+.745),(.70,1.8,.055),oak,bevel=.018)
-for yy in(y0+.06,y1-.06):box('desk panel leg',(cx,yy,z+.36),(.62,.065,.72),oak)
-box('desk drawer',(cx,y0+.30,z+.625),(.60,.44,.16),oak)
-box('desk drawer pull',(x1+.008,y0+.30,z+.65),(.018,.26,.025),bronze)
-box('desk laptop base',(5.76,-14.90,z+.786),(.25,.36,.014),dark)
-box('desk laptop display',(5.65,-14.90,z+.91),(.015,.34,.24),dark)
-box('desk notebook',(5.81,-14.39,z+.79),(.23,.29,.025),linen,angle=-.14)
-cylinder('desk lamp base',(5.64,-15.56,z+.8),.08,.035,bronze)
-cylinder('desk lamp stem',(5.64,-15.56,z+.97),.012,.34,bronze)
-cylinder('desk lamp shade',(5.64,-15.56,z+1.15),.115,.07,white)
-obstacle('desk',[x0,y0,x1,y1],.80)
+# Equal-sided L desk with a genuine curved concave/convex outline.
+outline=desk_outline();n=len(outline);verts=[(x,y,z+h)for h in(.7175,.7725)for x,y in outline]
+vs=[Vector((x,y,0))for x,y in outline];lookup={tuple(v):i for i,v in enumerate(vs)}
+triangles=[tuple(v if isinstance(v,int)else lookup[tuple(v)]for v in tri)for tri in tessellate_polygon([vs])]
+faces=[tuple(reversed(tri))for tri in triangles]+[tuple(i+n for i in tri)for tri in triangles]+[(i,(i+1)%n,(i+1)%n+n,i+n)for i in range(n)]
+desk=mesh('desk top rounded L',verts,faces,oak);m=desk.modifiers.new('Soft worktop edges','BEVEL');m.width=.007;m.segments=4;desk.modifiers.new('Worktop normals','WEIGHTED_NORMAL')
+# End supports leave the curved inside corner and knee space open.
+box('desk west end support',(5.75,-14.14,z+.36),(.58,.055,.715),oak)
+box('desk return end support',(7.12,-15.51,z+.36),(.055,.58,.715),oak)
+box('desk outer corner support',(5.50,-15.70,z+.36),(.055,.12,.715),oak)
+box('desk drawer',(5.74,-15.03,z+.625),(.56,.50,.16),oak)
+box('desk drawer pull',(6.028,-15.03,z+.65),(.018,.30,.025),bronze)
+box('desk laptop base',(5.76,-14.65,z+.786),(.25,.36,.014),dark)
+box('desk laptop display',(5.65,-14.65,z+.91),(.015,.34,.24),dark)
+box('desk notebook',(6.67,-15.49,z+.79),(.29,.23,.025),linen,angle=-.14)
+box('desk pen',(6.87,-15.43,z+.784),(.010,.15,.010),bronze,angle=-.14,bevel=.003)
+cylinder('desk cable grommet',(5.58,-14.42,z+.775),.026,.004,bronze)
+cylinder('desk lamp base',(5.69,-15.51,z+.8),.08,.035,bronze)
+cylinder('desk lamp stem',(5.69,-15.51,z+.97),.012,.34,bronze)
+cylinder('desk lamp shade',(5.69,-15.51,z+1.15),.115,.07,white)
+obstacle('desk west run',cfg['desk']['bounds'],.80);obstacle('desk return',cfg['desk']['return_bounds'],.80)
 cx,cy=cfg['desk']['chair_center']
-box('desk chair seat',(cx,cy,z+.46),(.52,.53,.13),fabric,bevel=.052)
-box('desk chair back',(cx+.22,cy,z+.74),(.075,.53,.53),fabric,bevel=.029)
-for dx in(-.19,.19):
- for dy in(-.19,.19):box('desk chair leg',(cx+dx,cy+dy,z+.22),(.035,.035,.44),oak)
+# Chair shown rotated north to the fixed sitting-area screen; column and five-star base permit swivel.
+box('desk swivel chair seat',(cx,cy,z+.47),(.53,.52,.12),fabric,bevel=.052)
+box('desk swivel chair back',(cx,cy-.23,z+.76),(.53,.075,.52),fabric,bevel=.03)
+cylinder('desk chair swivel column',(cx,cy,z+.26),.032,.35,bronze)
+for i in range(5):
+ angle=2*math.pi*i/5;dx,dy=.16*math.cos(angle),.16*math.sin(angle)
+ box('desk chair star spoke',(cx+dx,cy+dy,z+.095),(.34,.025,.025),bronze,angle,bevel=.008)
+ box('desk chair caster',(cx+dx*2,cy+dy*2,z+.047),(.065,.045,.067),dark,angle,bevel=.018)
 for side in(-1,1):
- box('desk chair armrest',(cx-.025,cy+side*.30,z+.68),(.40,.055,.065),fabric,bevel=.018)
- box('desk chair arm support',(cx+.12,cy+side*.30,z+.56),(.03,.025,.23),bronze)
-obstacle('desk chair',[cx-.27,cy-.34,cx+.27,cy+.34],1.01)
+ box('desk chair armrest',(cx+side*.30,cy+.015,z+.68),(.055,.40,.065),fabric,bevel=.018)
+ box('desk chair arm support',(cx+side*.30,cy-.13,z+.56),(.025,.03,.23),bronze)
+obstacle('desk swivel chair',[cx-.36,cy-.36,cx+.36,cy+.36],1.02)
 # Curtains park beside the actual window openings, never across the headboard.
 def curtain(label,x,y,width,angle=0):
  for j in range(10):
   t=(j+.5)*width/10-width/2
   part(label+' fold '+str(j),(x,y),(t,(-1 if j%2 else 1)*.018,1.24),(width/10+.010,.075,2.43),fabric,angle,.018)
 for x in(6.12,8.37):curtain('south linen curtain',x,-15.94,.34)
-for y in(-15.57,-13.64,-12.35):curtain('east linen curtain',13.61,y,.30,math.pi/2)
+for y in(-15.57,-13.64,-12.35-shift):curtain('east linen curtain',13.61,y,.30,math.pi/2)
 curtain('east north linen curtain',13.61,-10.425,.16,math.pi/2)
 # Interior plaster returns cover the room-side half of each window reveal.
 # The retained planning shell otherwise exposes narrow exterior-brick edges here.
-for ya,yb,sill in[(-15.325,-13.875,3.65),(-12.12,-10.52,3.50),(-8.89,-7.09,3.55)]:
+for window in cfg['east_windows']:
+ ya,yb=window['y'];sill=window['sill']
  for yy in(ya+.005,yb-.005):box('east window plaster jamb',(13.795,yy,(sill+5.05)/2),(.09,.010,5.05-sill),white,bevel=.001)
  box('east window plaster head',(13.795,(ya+yb)/2,5.045),(.09,yb-ya,.01),white,bevel=.001)
  box('east window limestone sill',(13.785,(ya+yb)/2,sill+.009),(.11,yb-ya,.018),stone,bevel=.003)
@@ -241,26 +257,38 @@ for ob in source.objects:
  if not name.startswith('Proposal | Quiet oak | Kitchen corner olive'):continue
  duplicate=ob.copy();duplicate.data=ob.data.copy();duplicate.parent=None
  duplicate.matrix_world=ob.matrix_world.copy();duplicate.matrix_world.translation+=plant_target-plant_origin
- duplicate.name=prefix+name.split('Kitchen corner olive',1)[1].strip();duplicate['source_name']=duplicate.name;duplicate['bedroom_revision']=2
+ duplicate.name=prefix+name.split('Kitchen corner olive',1)[1].strip();duplicate['source_name']=duplicate.name;duplicate['bedroom_revision']=cfg['revision']
  coll.objects.link(duplicate);owned.append(duplicate)
 obstacle('planter and canopy',[13.009,-12.910,13.740,-12.168],1.71)
 # Exposed, full-height architectural walls retain the actual glazing and openings.
 study.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get();rays=[]
 for tv in cfg['tvs']:
- for seat,eye in enumerate(tv['eyes']):
+ eyes=tv['eyes']+([cfg['desk']['tv_eye']]if tv['id']==cfg['desk']['tv']else[])
+ for seat,eye in enumerate(eyes):
   for u,v in[(0,0),(-.45,-.45),(-.45,.45),(.45,-.45),(.45,.45)]:
    target=Vector((tv['center'][0]+u*tv['screen_m'][0],tv['center'][1]-.005,z+tv['height_m']+v*tv['screen_m'][1]));delta=target-Vector(eye)
    hit,location,norm,face,ob,matrix=study.ray_cast(deps,Vector(eye),delta.normalized(),distance=delta.length+.03)
    ok=hit and ob.get('source_name',ob.name)==prefix+tv['id']+' TV screen'
    rays.append({'group':tv['id'],'seat':seat,'sample':[u,v],'clear':ok,'hit':ob.name if hit else None,'distance_m':round(delta.length,3)})
    assert ok,(tv['id'],seat,u,v,ob.name if hit else None)
+window_checks=[]
+for window in cfg['east_windows']:
+ if window['id']==0:continue
+ ya,yb=window['y'];h=(window['sill']+window['head'])/2
+ for fraction in(.25,.75):
+  eye=Vector((13.745,ya+(yb-ya)*fraction,h));hit,loc,norm,face,ob,matrix=study.ray_cast(deps,eye,Vector((1,0,0)),distance=.4)
+  ok=hit and 'window '+str(window['id'])+' glass' in ob.get('source_name',ob.name)
+  window_checks.append({'window':window['id'],'position':list(eye),'clear_opening':ok,'hit':ob.get('source_name',ob.name)if hit else None});assert ok,window_checks[-1]
+for yy in(-10.8,-7.4):
+ eye=Vector((13.745,yy,4.25));hit,loc,norm,face,ob,matrix=study.ray_cast(deps,eye,Vector((1,0,0)),distance=.4)
+ ok=hit and 'pier' in ob.get('source_name',ob.name);window_checks.append({'closed_old_opening_y':yy,'closed':ok,'hit':ob.get('source_name',ob.name)if hit else None});assert ok,window_checks[-1]
 visible=shell+owned
 bpy.ops.object.select_all(action='DESELECT')
 for ob in visible:ob.select_set(True)
 export_quiet_oak_gltf(filepath=str(out/(variant+'-bedroom.glb')),export_format='GLB',use_selection=True,use_active_scene=True,export_apply=True,export_cameras=False,export_lights=False)
 bpy.data.libraries.write(str(evidence/'Principal bedroom — south wall.blend'),{study},fake_user=True)
-meta={'variant':variant,'room':'Principal bedroom','status':cfg['status'],'layoutRevision':2,'materials':{m.name:list(m.diffuse_color)for m in bpy.data.materials},'planRooms':[{'name':'Bedroom','floor':1,'polygon_m':cfg['bedroom_polygon']}],'cutawayObjects':cutaway,'configuration':cfg,'objects':len(visible),'authored_objects':len(owned),'proposalLights':[{'name':'Bedroom bounce','position':[11.15,-14.0,4.7],'range':5,'intensity':2.0},{'name':'Sitting bounce','position':[7,-10.5,4.7],'range':4,'intensity':1.8},{'name':'Desk bounce','position':[6.7,-14.7,4.6],'range':4,'intensity':1.2}],'sourceModelUpdatedAt':nav['modelUpdatedAt']}
+meta={'variant':variant,'room':'Principal bedroom','status':cfg['status'],'layoutRevision':cfg['revision'],'materials':{m.name:list(m.diffuse_color)for m in bpy.data.materials},'planRooms':[{'name':'Bedroom','floor':1,'polygon_m':cfg['bedroom_polygon']}],'cutawayObjects':cutaway,'configuration':cfg,'objects':len(visible),'authored_objects':len(owned),'proposalLights':[{'name':'Bedroom bounce','position':[11.15,-14.0,4.7],'range':5,'intensity':2.0},{'name':'Sitting bounce','position':[7,-10.5,4.7],'range':4,'intensity':1.8},{'name':'Desk bounce','position':[6.7,-14.7,4.6],'range':4,'intensity':1.2}],'sourceModelUpdatedAt':nav['modelUpdatedAt']}
 (out/(variant+'-bedroom.json')).write_text(json.dumps(meta,indent=2)+'\n')
-report={'variant':variant,'configuration':cfg,'exported_objects':len(visible),'authored_objects':len(owned),'new_obstacles':obstacles,'removed_objects':removed,'native_tv_sightlines':rays,'shell_objects':[{'name':o.get('source_name',o.name),'bounds':bounds(o)}for o in shell],'cutaway_objects':cutaway,'authored_bounds':[{'name':o.name,'bounds':bounds(o)}for o in owned],'source_house_overwritten':False}
+report={'variant':variant,'configuration':cfg,'exported_objects':len(visible),'authored_objects':len(owned),'new_obstacles':obstacles,'removed_objects':removed,'native_tv_sightlines':rays,'native_window_checks':window_checks,'desk_outline_world':[list(v.co)[:2]for v in desk.data.vertices[:len(outline)]],'shell_objects':[{'name':o.get('source_name',o.name),'bounds':bounds(o)}for o in shell],'cutaway_objects':cutaway,'authored_bounds':[{'name':o.name,'bounds':bounds(o)}for o in owned],'source_house_overwritten':False}
 (evidence/'report.json').write_text(json.dumps(report,indent=2)+'\n')
-print('BEDROOM_EXPORTED',variant,len(visible),'meshes',len(owned),'authored; 20 native viewing rays clear',flush=True)
+print('BEDROOM_EXPORTED',variant,len(visible),'meshes',len(owned),'authored; 25 native viewing rays clear',flush=True)
