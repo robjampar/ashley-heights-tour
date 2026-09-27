@@ -27,6 +27,8 @@ class BuildCacheTests(unittest.TestCase):
             'proposal/P4_parking-validated.json', 'scripts/build_model.py',
             'scripts/build_extension_proposal.py', 'scripts/build_support.py',
             'scripts/blender_collections.py', 'scripts/blender_booleans.py', 'scripts/exterior_exposure.py',
+            'scripts/interior_furnishing.py', 'scripts/proposal_bar_interiors.py',
+            'proposal/interiors/leisure/cinema.json', 'proposal/interiors/leisure/bar.json',
             'proposal/interiors/principal/accepted/manifest.json',
             'proposal/interiors/principal/accepted/compact/suite.blend',
             'proposal/interiors/principal/accepted/planning/suite.blend',
@@ -60,6 +62,13 @@ class BuildCacheTests(unittest.TestCase):
         self.put('proposal/interiors/principal/accepted/planning/suite.blend', 'updated room')
         self.assertFalse(self.fresh())
         self.assertTrue(self.fresh('compact'))
+
+    def test_leisure_geometry_helpers_and_layouts_invalidate_both_designs(self):
+        for name in ('scripts/interior_furnishing.py','scripts/proposal_bar_interiors.py','proposal/interiors/leisure/cinema.json','proposal/interiors/leisure/bar.json'):
+            with self.subTest(name=name):
+                original=(self.root/name).read_text();self.put(name,'changed room geometry')
+                self.assertFalse(self.fresh('compact'));self.assertFalse(self.fresh('planning'))
+                self.put(name,original)
 
     def test_planning_overlay_does_not_invalidate_compact(self):
         self.put('proposal/design-spec-planning.json', '{"changed": true}')

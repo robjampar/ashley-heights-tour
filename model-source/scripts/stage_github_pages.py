@@ -5,6 +5,7 @@ import hashlib
 import json
 import re
 from stage_interior_studio import stage_studio
+from stage_room_studies import stage_room_studies
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'walkthrough/dist'
@@ -137,7 +138,10 @@ interior_studio = stage_studio(DIST / 'interiors/kitchen', DEST / 'interiors/kit
 principal_studio = stage_studio(DIST / 'interiors/principal', DEST / 'interiors/principal',
                               previous.get('principal_studio', {}), now, retirement,
                               ROOT / 'walkthrough/public/interiors/principal', room='principal')
+leisure_studio = stage_room_studies(DIST/'interiors/leisure',DEST/'interiors/leisure',
+                                  previous.get('leisure_studio',{}),now,retirement,('cinema','bar'))
 manifest = {
+    'leisure_studio': leisure_studio,
     'interior_studio': interior_studio,
     'principal_studio': principal_studio,
     'published_utc': datetime.now(timezone.utc).isoformat(),

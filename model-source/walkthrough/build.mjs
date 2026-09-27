@@ -17,6 +17,9 @@ await cp('public','dist',{recursive:true,filter:source=>!modelNames.has(path.bas
 for(const name of ['studio.js','studio.css'])await cp('public/interiors/kitchen/'+name,'dist/interiors/principal/'+name);
 await build({entryPoints:['src/interior-preview.js'],outfile:'dist/interiors/kitchen/room-model.js',bundle:true,minify:true,format:'esm',target:['safari17','chrome120'],loader:{'.jpg':'dataurl','.png':'dataurl'}});
 await cp('dist/interiors/kitchen/room-model.js','dist/interiors/principal/room-model.js');
+await mkdir('dist/interiors/leisure',{recursive:true});
+await cp('dist/interiors/kitchen/room-model.js','dist/interiors/leisure/room-model.js');
+await cp('public/interiors/kitchen/studio.css','dist/interiors/leisure/studio.css');
 // The "Cars" setting plays drive paths planned here against each design's
 // navigation data, so the browser never runs the planner.
 const {planDrivePaths,drivePlanningInput}=await import('./tools/plan-drive.mjs');
@@ -48,6 +51,11 @@ for(const variant of ['compact','planning']){
 }
 for(const variant of ['compact','planning'])for(const stem of ['suite','bedroom','ensuite']){
  const name=`interiors/principal/models/${variant}-${stem}.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
+ const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await atomicWrite('dist/'+name,packed);
+ console.log(`${variant} ${stem} study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
+}
+for(const variant of ['compact','planning'])for(const stem of ['cinema','bar']){
+ const name=`interiors/leisure/models/${variant}-${stem}.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
  const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await atomicWrite('dist/'+name,packed);
  console.log(`${variant} ${stem} study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }

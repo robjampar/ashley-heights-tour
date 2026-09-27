@@ -34,9 +34,11 @@ paths.update('revisions/interiors-principal-2026-09-26/layout/'+name for name in
 paths.update('revisions/interiors-kitchen-2026-09-25/'+name for name in ('STATUS.md','native-audit.json','kitchen-circulation.json','fitted-browser-checks.json','model-browser-checks.json'))
 paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/kitchen').rglob('*') if p.is_file())
 paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/principal').rglob('*') if p.is_file())
+paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/leisure').rglob('*') if p.is_file())
+paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'revisions/interiors-overnight-2026-09-27').rglob('*') if p.is_file() and (p.suffix in ('.md','.json','.blend') or p.name in ('arrangements.svg','layout-plan.svg')))
 for name in sorted(paths):
  source=ROOT/name
- if name.startswith(('output-','walkthrough/public/house','walkthrough/public/proposal'))or source.suffix in('.blend','.glb'):
+ if name.startswith(('output-','walkthrough/public/house','walkthrough/public/proposal','revisions/interiors-overnight-2026-09-27/before/'))or source.suffix in('.blend','.glb'):
   if source.is_file():
    with source.open('rb')as handle:digest=hashlib.file_digest(handle,'sha256').hexdigest()
    baseline[name]={'sha256':digest,'bytes':source.stat().st_size}

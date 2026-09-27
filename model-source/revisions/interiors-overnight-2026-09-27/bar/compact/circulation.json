@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "clearServingAisleM": 1.3019999999999996,
+  "cueEnvelope": [
+    8.924999999999999,
+    -8.19,
+    13.575000000000001,
+    -4.3100000000000005
+  ],
+  "dartsEnvelope": [
+    10.15,
+    -12.2,
+    13.7,
+    -9.7
+  ],
+  "checks": [
+    {
+      "variant": "compact",
+      "state": "ordinary",
+      "bodyWidthM": 0.6,
+      "gridStepM": 0.02,
+      "reachableTargets": [
+        "cinema entrance",
+        "west bar approach",
+        "host position",
+        "wine cooler",
+        "glass storage",
+        "AV cupboard approach",
+        "media left seat",
+        "media centre seat",
+        "media right seat",
+        "left stool approach",
+        "middle stool approach",
+        "right stool approach",
+        "pool south player",
+        "pool north player",
+        "pool east player",
+        "pool west player",
+        "darts player"
+      ],
+      "reachableSamples": 118188
+    },
+    {
+      "variant": "compact",
+      "state": "occupied",
+      "bodyWidthM": 0.6,
+      "gridStepM": 0.02,
+      "reachableTargets": [
+        "cinema entrance",
+        "west bar approach",
+        "host position",
+        "wine cooler",
+        "glass storage",
+        "AV cupboard approach",
+        "media left seat",
+        "media centre seat",
+        "media right seat"
+      ],
+      "reachableSamples": 54055
+    },
+    {
+      "variant": "compact",
+      "state": "coolerOpen",
+      "bodyWidthM": 0.6,
+      "gridStepM": 0.02,
+      "reachableTargets": [
+        "cinema entrance",
+        "west bar approach",
+        "host position",
+        "wine cooler",
+        "glass storage",
+        "AV cupboard approach",
+        "media left seat",
+        "media centre seat",
+        "media right seat"
+      ],
+      "reachableSamples": 116573
+    }
+  ],
+  "limitation": "Geometric 600 mm body routes and defined equipment envelopes; selected equipment, construction and access strategy require detailed review."
+}

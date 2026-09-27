@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "variant": "compact",
+      "unchanged_previous_meshes": 13145,
+      "unchanged_kitchen_lounge_meshes": 1028,
+      "unchanged_principal_suite_meshes": 862,
+      "maximum_vertex_difference_m": 0,
+      "source_reconstruction_preserved": true,
+      "declared_replaced_parts": 2467,
+      "rooms": [
+        {
+          "area": "cinema",
+          "mesh_objects": 156,
+          "lights": 2
+        },
+        {
+          "area": "bar",
+          "mesh_objects": 505,
+          "lights": 5
+        }
+      ]
+    },
+    {
+      "variant": "planning",
+      "unchanged_previous_meshes": 12330,
+      "unchanged_kitchen_lounge_meshes": 919,
+      "unchanged_principal_suite_meshes": 862,
+      "maximum_vertex_difference_m": 0,
+      "source_reconstruction_preserved": true,
+      "declared_replaced_parts": 2467,
+      "rooms": [
+        {
+          "area": "cinema",
+          "mesh_objects": 156,
+          "lights": 2
+        },
+        {
+          "area": "bar",
+          "mesh_objects": 505,
+          "lights": 5
+        }
+      ]
+    }
+  ]
+}

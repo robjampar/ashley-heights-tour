@@ -2,6 +2,15 @@
 
 Current design arrangement: [START-HERE.md](START-HERE.md). The notes below are chronological; later instructions supersede earlier ones.
 
+27 September 2026: the developed south-wall principal suite, curved equal-arm
+corner desk, enlarged bathroom, shifted walk-through wardrobe and revised windows
+are accepted and published in both complete models, together with the Quiet oak
+kitchen and TV lounge. The owner authorises autonomous development of additional
+rooms until 08:00, applying the established layout principles and modern palette.
+Work through coherent rooms/areas, preserve the full brief and accepted interiors,
+and publish validated improvements. See the overnight room-development plan in
+`revisions/interiors-overnight-2026-09-27/PLAN.md`.
+
 26 September 2026, latest interior-layout correction: bed headboards must sit against proper walls. Pivoting/rotating TVs are rejected. Research the broader rules of good room planning before offering another selection. The expanded [design principles](interiors/DESIGN-PRINCIPLES.md) and [room review template](interiors/ROOM-REVIEW-TEMPLATE.md) distinguish owner requirements, design judgment and geometric/building verification. The furniture review board is withdrawn; corrected working sketches do not constitute selected or completed suite layouts. Fixed screens and existing suitable bed walls are the starting point.
 
 26 September 2026, room-planning research: apply the lessons throughout the house, not only in the principal suite. Follow [the shared design principles](interiors/DESIGN-PRINCIPLES.md) for proportions, circulation with occupied furniture and open doors/drawers, daylight, privacy, storage and adjoining-room routines. Continue one room at a time. The owner rejected the five principal-suite plans, particularly the awkward bed/sofa/TV arrangement; reconsider those furniture relationships before fitting the supporting rooms. A single shared TV is an option, not a fixed requirement. No replacement suite layout has been selected.

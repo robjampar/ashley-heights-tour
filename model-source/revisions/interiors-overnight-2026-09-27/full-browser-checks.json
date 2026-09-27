@@ -1,0 +1,281 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "design": "proposed",
+      "rooms": {
+        "cinema": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 158
+        },
+        "bar": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 510
+        }
+      },
+      "principal": true,
+      "kitchen": 2,
+      "cinema": 156,
+      "bar": 505,
+      "details": [
+        {
+          "term": "fixed projection screen",
+          "count": 1
+        },
+        {
+          "term": "front piping",
+          "count": 4
+        },
+        {
+          "term": "USB-C port",
+          "count": 2
+        },
+        {
+          "term": "pool pocket leather well",
+          "count": 6
+        },
+        {
+          "term": "dartboard ring wire",
+          "count": 5
+        },
+        {
+          "term": "wine cooler touch control",
+          "count": 2
+        }
+      ],
+      "doors": {
+        "closed": [
+          {
+            "id": "Proposal | Basement AV cupboard door",
+            "wall": "Proposal | Cinema east wall door 0",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Basement cinema door",
+            "wall": "Proposal | Basement cinema door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          }
+        ],
+        "open": [
+          {
+            "id": "Proposal | Basement AV cupboard door",
+            "wall": "Proposal | Cinema east wall door 0",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Basement cinema door",
+            "wall": "Proposal | Basement cinema door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          }
+        ]
+      }
+    },
+    {
+      "design": "planning",
+      "rooms": {
+        "cinema": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 158
+        },
+        "bar": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 510
+        }
+      },
+      "principal": true,
+      "kitchen": 2,
+      "cinema": 156,
+      "bar": 505,
+      "details": [
+        {
+          "term": "fixed projection screen",
+          "count": 1
+        },
+        {
+          "term": "front piping",
+          "count": 4
+        },
+        {
+          "term": "USB-C port",
+          "count": 2
+        },
+        {
+          "term": "pool pocket leather well",
+          "count": 6
+        },
+        {
+          "term": "dartboard ring wire",
+          "count": 5
+        },
+        {
+          "term": "wine cooler touch control",
+          "count": 2
+        }
+      ],
+      "doors": {
+        "closed": [
+          {
+            "id": "Proposal | Basement AV cupboard door",
+            "wall": "Proposal | Cinema east wall door 0",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Basement cinema door",
+            "wall": "Proposal | Basement cinema door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          }
+        ],
+        "open": [
+          {
+            "id": "Proposal | Basement AV cupboard door",
+            "wall": "Proposal | Cinema east wall door 0",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -15.950000000000001,
+              -2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Basement cinema door",
+            "wall": "Proposal | Basement cinema door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 4,
+            "batches": 2,
+            "hinge": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "position": [
+              9.16,
+              -10,
+              -2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

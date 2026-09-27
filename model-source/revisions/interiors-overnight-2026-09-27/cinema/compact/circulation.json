@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "variant": "compact",
+      "bodyWidthM": 0.5,
+      "gridStepM": 0.025,
+      "reachableTargets": [
+        "seat 1 approach",
+        "seat 2 approach",
+        "seat 3 approach",
+        "seat 4 approach",
+        "rear storage",
+        "east aisle"
+      ],
+      "reachableSamples": 12652
+    },
+    {
+      "variant": "compact",
+      "bodyWidthM": 0.6,
+      "gridStepM": 0.025,
+      "reachableTargets": [
+        "seat 1 approach",
+        "seat 2 approach",
+        "seat 3 approach",
+        "seat 4 approach",
+        "rear storage",
+        "east aisle"
+      ],
+      "reachableSamples": 10009
+    }
+  ],
+  "doorClear": true,
+  "seatApproachM": 0.65,
+  "limitation": "600 mm body passage is a geometric check; the 650 mm seat approach does not allow passing in front of occupied knees."
+}

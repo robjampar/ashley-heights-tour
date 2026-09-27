@@ -14,7 +14,7 @@ const roomConfig=globalThis.INTERIOR_PREVIEW_CONFIG??{},modelStem=roomConfig.mod
 const $=id=>document.getElementById(id),canvas=$('room-model'),frame=canvas.parentElement;
 const variant=new URLSearchParams(location.search).get('design')==='planning'?'planning':'compact';
 $('model-design').value=variant;$('model-design').onchange=()=>{location.search='?design='+$('model-design').value+'&view='+activeCamera;};
-$('full-house').href='../../?design='+(variant==='compact'?'proposed':'planning')+'&room='+(modelStem==='bedroom'?'proposal-new-principal-suite':modelStem==='ensuite'?'proposal-new-principal-bathroom':'2445662-0');
+$('full-house').href='../../?design='+(variant==='compact'?'proposed':'planning')+'&room='+(roomConfig.fullHouseRoom??(modelStem==='bedroom'?'proposal-new-principal-suite':modelStem==='ensuite'?'proposal-new-principal-bathroom':'2445662-0'));
 document.querySelectorAll('[data-reference]').forEach(a=>a.href='./#01-'+(variant==='compact'?'proposed':'planning'));
 document.querySelectorAll('[data-room-link]').forEach(a=>a.href=a.dataset.roomLink+'#01-'+(variant==='compact'?'proposed':'planning'));
 if($('selected-concept'))$('selected-concept').src=asset('images/01-'+(variant==='compact'?'proposed':'planning')+'.png');if($('native-render'))$('native-render').src=asset('models/'+variant+'-render.png');

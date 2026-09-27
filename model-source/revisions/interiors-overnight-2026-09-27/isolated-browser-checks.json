@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "cinema",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "left-seat",
+        "right-seat",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 171,
+      "cutaway": 28,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-basement-cinema"
+    },
+    {
+      "area": "cinema",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "left-seat",
+        "right-seat",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 171,
+      "cutaway": 28,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-basement-cinema"
+    },
+    {
+      "area": "bar",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bar",
+        "serving",
+        "games",
+        "sofa",
+        "reverse",
+        "darts",
+        "overview"
+      ],
+      "objects": 576,
+      "cutaway": 14,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-basement-bar"
+    },
+    {
+      "area": "bar",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bar",
+        "serving",
+        "games",
+        "sofa",
+        "reverse",
+        "darts",
+        "overview"
+      ],
+      "objects": 576,
+      "cutaway": 14,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-basement-bar"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

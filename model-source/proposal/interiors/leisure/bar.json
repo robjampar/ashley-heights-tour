@@ -1,0 +1,26 @@
+{
+  "revision": 1,
+  "room": "Basement bar and games room",
+  "status": "development",
+  "bounds": [5.16, -16.076, 13.75, -4.23],
+  "floorZ": -2.8,
+  "ceilingZ": -0.247,
+  "counter": [10.55, -14.03, 12.55, -13.31],
+  "backCabinet": [10.20, -16.025, 13.60, -15.43],
+  "stoolCenters": [[10.90, -12.83], [11.55, -12.83], [12.20, -12.83]],
+  "servingAisleM": 1.30,
+  "sofa": [7.02, -7.70, 8.02, -5.30],
+  "coffeeTable": [5.87, -7.05, 6.39, -5.95],
+  "pool": {"center": [11.25, -6.25], "outer": [1.88, 1.11], "playfield": [1.60, 0.83], "cueClearanceM": 1.525, "sizeBasis": "6 ft British table; dimensions of Supreme Match 6 ft published by Liberty Games. Oak/stone styling is a design concept, not a product replica."},
+  "darts": {"face": [13.669, -10.95, -1.058], "ocheX": 11.299, "activityBounds": [10.15, -12.20, 13.70, -9.70]},
+  "views": {
+    "entrance": {"position": [9.65,-10.25,-1.20], "target": [11.70,-15.80,-1.35], "fov": 66},
+    "bar": {"position": [11.55,-11.45,-1.20], "target": [11.65,-15.90,-1.40], "fov": 62},
+    "serving": {"position": [10.0,-14.78,-1.20], "target": [12.9,-14.80,-1.40], "fov": 68},
+    "games": {"position": [9.30,-8.50,-1.20], "target": [10.70,-5.60,-1.65], "fov": 70},
+    "sofa": {"position": [7.52,-6.50,-1.67], "target": [5.21,-6.50,-1.42], "fov": 62},
+    "reverse": {"position": [12.90,-4.75,-1.20], "target": [8.1,-7.60,-1.65], "fov": 68},
+    "darts": {"position": [10.80,-10.95,-1.20], "target": [13.70,-10.95,-1.07], "fov": 62},
+    "overview": {"position": [19,-19,11], "target": [10,-9,-1.6], "fov": 52, "cutaway": true}
+  }
+}

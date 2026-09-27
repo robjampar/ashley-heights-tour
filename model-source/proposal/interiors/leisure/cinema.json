@@ -1,0 +1,102 @@
+{
+  "revision": 1,
+  "room": "Basement cinema",
+  "status": "development",
+  "basis": "Autonomous room development authorised 27 September 2026; preserve shell, east doorway and adjacent AV cupboard.",
+  "bounds": [
+    5.16,
+    -15.17,
+    9.1,
+    -10.027
+  ],
+  "floorZ": -2.8,
+  "ceilingZ": -0.247,
+  "screen": {
+    "center": [
+      6.76,
+      -15.035,
+      -1.45
+    ],
+    "size": [
+      2.6,
+      1.4625
+    ]
+  },
+  "sofa": {
+    "bounds": [
+      5.25,
+      -12.77,
+      8.11,
+      -11.52
+    ],
+    "seatHeight": 0.45,
+    "backHeight": 1.04,
+    "seats": 4
+  },
+  "eyes": [
+    [
+      5.66,
+      -11.94,
+      -1.7
+    ],
+    [
+      6.28,
+      -11.94,
+      -1.7
+    ],
+    [
+      7.08,
+      -11.94,
+      -1.7
+    ],
+    [
+      7.7,
+      -11.94,
+      -1.7
+    ]
+  ],
+  "ottomans": [],
+  "rearCabinet": [
+    5.39,
+    -10.34,
+    7.85,
+    -10.075
+  ],
+  "door": {
+    "opening": [
+      [
+        9.1,
+        -10.85
+      ],
+      [
+        9.1,
+        -10.0
+      ]
+    ],
+    "retained": true
+  },
+  "view": {
+    "id": "proposal-basement-cinema",
+    "position": [
+      8.62,
+      -10.5,
+      -2.8
+    ],
+    "direction": [
+      -1.86,
+      -4.53,
+      -0.25
+    ]
+  },
+  "tradeoffs": [
+    "Four main seats instead of the previous six; chosen to avoid a second row obstructing sightlines and a raised platform in the low basement.",
+    "Fixed deep seats with a low coffee table and integrated drinks console; a 650 mm approach is clear in front of the sofa without moving furniture.",
+    "Speaker, projector, ventilation and acoustic isolation specifications remain to be resolved; this is a furnished concept, not an acoustic certification."
+  ],
+  "coffeeTable": [
+    5.8,
+    -14.08,
+    7.54,
+    -13.42
+  ]
+}

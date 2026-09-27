@@ -1,0 +1,51 @@
+"""Read-only full-house checks: developed room geometry and occupied screen views."""
+import bpy,json,sys,hashlib
+from pathlib import Path
+from mathutils import Vector
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
+from build_support import native_name
+variant=sys.argv[sys.argv.index('--')+1]
+base=ROOT/f'output-proposed-{variant}';native=base/(native_name(variant)+'.blend')
+digest=hashlib.sha256(native.read_bytes()).hexdigest()
+bpy.ops.wm.open_mainfile(filepath=str(native));scene=bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene
+scene.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get();reports=[]
+def signature(ob):
+    evaluated=ob.evaluated_get(deps);mesh=evaluated.to_mesh()
+    try:
+        # Compare actual evaluated world vertices and faces, including bevels and handles.
+        data={'vertices':[[round(v,5)for v in ob.matrix_world@p.co]for p in mesh.vertices],
+              'faces':[list(p.vertices)for p in mesh.polygons]}
+        return hashlib.sha256(json.dumps(data,separators=(',',':')).encode()).hexdigest()
+    finally:evaluated.to_mesh_clear()
+def inventory(active,prefix):
+    groups={}
+    for ob in active.objects:
+        name=ob.get('source_name',ob.name)
+        if ob.type=='MESH' and name.startswith(prefix):groups.setdefault(name,[]).append(signature(ob))
+    return {name:sorted(items)for name,items in groups.items()}
+for area in ('cinema','bar'):
+    prefix=area.title()+' 01 | '
+    full=inventory(scene,prefix)
+    study_path=ROOT/f'revisions/interiors-overnight-2026-09-27/{area}/{variant}'/(area.title()+' — interior study.blend')
+    with bpy.data.libraries.load(str(study_path),link=False)as(src,dst):dst.scenes=[s for s in src.scenes if 'interior study' in s]
+    study=dst.scenes[0];bpy.context.window.scene=study;study.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get()
+    isolated=inventory(study,prefix)
+    assert full.keys()==isolated.keys(),(area,full.keys()-isolated.keys(),isolated.keys()-full.keys())
+    assert full==isolated,(area,[name for name in full if full[name]!=isolated[name]])
+    bpy.context.window.scene=scene;scene.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get()
+    cfg=json.loads((ROOT/f'proposal/interiors/leisure/{area}.json').read_text());rays=[]
+    if area=='cinema':eyes=cfg['eyes'];sx,sy,sz=cfg['screen']['center'];sw,sh=cfg['screen']['size']
+    else:eyes=[(7.52,y,-1.67)for y in(-7.26,-6.50,-5.74)]
+    for seat,eye in enumerate(eyes):
+        for u,v in((0,0),(-.46,-.46),(-.46,.46),(.46,-.46),(.46,.46)):
+            target=Vector((sx+u*sw,sy+.009,sz+v*sh)if area=='cinema'else(5.255,-6.50+u*1.44,-1.42+v*.81));delta=target-Vector(eye)
+            hit,loc,n,f,ob,m=scene.ray_cast(deps,Vector(eye),delta.normalized(),distance=delta.length+.03)
+            name=ob.get('source_name',ob.name)if hit else None
+            expected=prefix+('fixed projection screen'if area=='cinema'else'fixed media TV screen')
+            assert hit and name.startswith(expected),(area,seat,list(target),name)
+            rays.append({'seat':seat+1,'target':list(target),'hit':name})
+    reports.append({'area':area,'exact_study_meshes':sum(map(len,full.values())),'screen_rays':rays})
+assert hashlib.sha256(native.read_bytes()).hexdigest()==digest
+out=ROOT/f'revisions/interiors-overnight-2026-09-27/native-{variant}.json'
+out.write_text(json.dumps({'status':'PASS','variant':variant,'source_sha256':digest,'source_unchanged':True,'reports':reports},indent=2)+'\n')
+print('PASS native leisure rooms',variant,[(r['area'],r['exact_study_meshes'],len(r['screen_rays']))for r in reports],flush=True)

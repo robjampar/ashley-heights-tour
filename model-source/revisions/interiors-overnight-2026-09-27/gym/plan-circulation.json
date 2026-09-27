@@ -1,0 +1,112 @@
+[
+  {
+    "state": "ordinary",
+    "bodyWidth": 0.6,
+    "reachable": 55242,
+    "checks": [
+      {
+        "label": "courtyard",
+        "distance": 0.004999999999999005,
+        "reachable": true
+      },
+      {
+        "label": "utility",
+        "distance": 0.007071067811866581,
+        "reachable": true
+      },
+      {
+        "label": "water",
+        "distance": 0.005000000000000782,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "state": "running",
+    "bodyWidth": 0.6,
+    "reachable": 31124,
+    "checks": [
+      {
+        "label": "courtyard",
+        "distance": 0.004999999999999005,
+        "reachable": true
+      },
+      {
+        "label": "utility",
+        "distance": 0.007071067811866581,
+        "reachable": true
+      },
+      {
+        "label": "water",
+        "distance": 0.005000000000000782,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "state": "rowing",
+    "bodyWidth": 0.6,
+    "reachable": 33278,
+    "checks": [
+      {
+        "label": "courtyard",
+        "distance": 0.004999999999999005,
+        "reachable": true
+      },
+      {
+        "label": "utility",
+        "distance": 0.007071067811866581,
+        "reachable": true
+      },
+      {
+        "label": "water",
+        "distance": 0.005000000000000782,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "state": "cycling",
+    "bodyWidth": 0.6,
+    "reachable": 51151,
+    "checks": [
+      {
+        "label": "courtyard",
+        "distance": 0.004999999999999005,
+        "reachable": true
+      },
+      {
+        "label": "utility",
+        "distance": 0.007071067811866581,
+        "reachable": true
+      },
+      {
+        "label": "water",
+        "distance": 0.005000000000000782,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "state": "cable",
+    "bodyWidth": 0.6,
+    "reachable": 55176,
+    "checks": [
+      {
+        "label": "courtyard",
+        "distance": 0.004999999999999005,
+        "reachable": true
+      },
+      {
+        "label": "utility",
+        "distance": 0.007071067811866581,
+        "reachable": true
+      },
+      {
+        "label": "water",
+        "distance": 0.005000000000000782,
+        "reachable": true
+      }
+    ]
+  }
+]

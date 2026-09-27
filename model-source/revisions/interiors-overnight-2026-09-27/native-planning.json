@@ -1,0 +1,335 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source_sha256": "d0d5d731a45723410f135ee57e703e3538f7ce1205e1a5236107139af86b9c25",
+  "source_unchanged": true,
+  "reports": [
+    {
+      "area": "cinema",
+      "exact_study_meshes": 156,
+      "screen_rays": [
+        {
+          "seat": 1,
+          "target": [
+            6.760000228881836,
+            -15.026000022888184,
+            -1.4500000476837158
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            6.760000228881836,
+            -15.026000022888184,
+            -1.4500000476837158
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            6.760000228881836,
+            -15.026000022888184,
+            -1.4500000476837158
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 4,
+          "target": [
+            6.760000228881836,
+            -15.026000022888184,
+            -1.4500000476837158
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 4,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 4,
+          "target": [
+            5.564000129699707,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 4,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -2.1227500438690186
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        },
+        {
+          "seat": 4,
+          "target": [
+            7.955999851226807,
+            -15.026000022888184,
+            -0.7772499918937683
+          ],
+          "hit": "Cinema 01 | fixed projection screen"
+        }
+      ]
+    },
+    {
+      "area": "bar",
+      "exact_study_meshes": 505,
+      "screen_rays": [
+        {
+          "seat": 1,
+          "target": [
+            5.255000114440918,
+            -6.5,
+            -1.4199999570846558
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            5.255000114440918,
+            -7.162399768829346,
+            -1.7926000356674194
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            5.255000114440918,
+            -7.162399768829346,
+            -1.0473999977111816
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            5.255000114440918,
+            -5.837600231170654,
+            -1.7926000356674194
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            5.255000114440918,
+            -5.837600231170654,
+            -1.0473999977111816
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            5.255000114440918,
+            -6.5,
+            -1.4199999570846558
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            5.255000114440918,
+            -7.162399768829346,
+            -1.7926000356674194
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            5.255000114440918,
+            -7.162399768829346,
+            -1.0473999977111816
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            5.255000114440918,
+            -5.837600231170654,
+            -1.7926000356674194
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            5.255000114440918,
+            -5.837600231170654,
+            -1.0473999977111816
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            5.255000114440918,
+            -6.5,
+            -1.4199999570846558
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            5.255000114440918,
+            -7.162399768829346,
+            -1.7926000356674194
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            5.255000114440918,
+            -7.162399768829346,
+            -1.0473999977111816
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            5.255000114440918,
+            -5.837600231170654,
+            -1.7926000356674194
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        },
+        {
+          "seat": 3,
+          "target": [
+            5.255000114440918,
+            -5.837600231170654,
+            -1.0473999977111816
+          ],
+          "hit": "Bar 01 | fixed media TV screen"
+        }
+      ]
+    }
+  ]
+}

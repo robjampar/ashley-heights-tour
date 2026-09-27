@@ -1,0 +1,1133 @@
+{
+  "area": "cinema",
+  "revision": 1,
+  "objects": 158,
+  "mesh_objects": 156,
+  "lights": 2,
+  "removed_objects": [
+    {
+      "name": "Cinema 01 | fitted carpet",
+      "object_name": "Cinema 01 | fitted carpet"
+    },
+    {
+      "name": "Cinema 01 | acoustic ceiling lining",
+      "object_name": "Cinema 01 | acoustic ceiling lining"
+    },
+    {
+      "name": "Cinema 01 | screen wall fabric backing",
+      "object_name": "Cinema 01 | screen wall fabric backing"
+    },
+    {
+      "name": "Cinema 01 | west acoustic lining",
+      "object_name": "Cinema 01 | west acoustic lining"
+    },
+    {
+      "name": "Cinema 01 | east acoustic lining",
+      "object_name": "Cinema 01 | east acoustic lining"
+    },
+    {
+      "name": "Cinema 01 | rear acoustic lining",
+      "object_name": "Cinema 01 | rear acoustic lining"
+    },
+    {
+      "name": "Cinema 01 | west acoustic pad 0",
+      "object_name": "Cinema 01 | west acoustic pad 0"
+    },
+    {
+      "name": "Cinema 01 | west oak panel joint 0",
+      "object_name": "Cinema 01 | west oak panel joint 0"
+    },
+    {
+      "name": "Cinema 01 | west oak panel joint 0",
+      "object_name": "Cinema 01 | west oak panel joint 0.001"
+    },
+    {
+      "name": "Cinema 01 | west acoustic pad 1",
+      "object_name": "Cinema 01 | west acoustic pad 1"
+    },
+    {
+      "name": "Cinema 01 | west oak panel joint 1",
+      "object_name": "Cinema 01 | west oak panel joint 1"
+    },
+    {
+      "name": "Cinema 01 | west oak panel joint 1",
+      "object_name": "Cinema 01 | west oak panel joint 1.001"
+    },
+    {
+      "name": "Cinema 01 | west acoustic pad 2",
+      "object_name": "Cinema 01 | west acoustic pad 2"
+    },
+    {
+      "name": "Cinema 01 | west oak panel joint 2",
+      "object_name": "Cinema 01 | west oak panel joint 2"
+    },
+    {
+      "name": "Cinema 01 | west oak panel joint 2",
+      "object_name": "Cinema 01 | west oak panel joint 2.001"
+    },
+    {
+      "name": "Cinema 01 | west skirting",
+      "object_name": "Cinema 01 | west skirting"
+    },
+    {
+      "name": "Cinema 01 | west aisle light recess",
+      "object_name": "Cinema 01 | west aisle light recess"
+    },
+    {
+      "name": "Cinema 01 | west aisle light opal",
+      "object_name": "Cinema 01 | west aisle light opal"
+    },
+    {
+      "name": "Cinema 01 | west aisle light recess",
+      "object_name": "Cinema 01 | west aisle light recess.001"
+    },
+    {
+      "name": "Cinema 01 | west aisle light opal",
+      "object_name": "Cinema 01 | west aisle light opal.001"
+    },
+    {
+      "name": "Cinema 01 | west aisle light recess",
+      "object_name": "Cinema 01 | west aisle light recess.002"
+    },
+    {
+      "name": "Cinema 01 | west aisle light opal",
+      "object_name": "Cinema 01 | west aisle light opal.002"
+    },
+    {
+      "name": "Cinema 01 | east acoustic pad 0",
+      "object_name": "Cinema 01 | east acoustic pad 0"
+    },
+    {
+      "name": "Cinema 01 | east oak panel joint 0",
+      "object_name": "Cinema 01 | east oak panel joint 0"
+    },
+    {
+      "name": "Cinema 01 | east oak panel joint 0",
+      "object_name": "Cinema 01 | east oak panel joint 0.001"
+    },
+    {
+      "name": "Cinema 01 | east acoustic pad 1",
+      "object_name": "Cinema 01 | east acoustic pad 1"
+    },
+    {
+      "name": "Cinema 01 | east oak panel joint 1",
+      "object_name": "Cinema 01 | east oak panel joint 1"
+    },
+    {
+      "name": "Cinema 01 | east oak panel joint 1",
+      "object_name": "Cinema 01 | east oak panel joint 1.001"
+    },
+    {
+      "name": "Cinema 01 | east acoustic pad 2",
+      "object_name": "Cinema 01 | east acoustic pad 2"
+    },
+    {
+      "name": "Cinema 01 | east oak panel joint 2",
+      "object_name": "Cinema 01 | east oak panel joint 2"
+    },
+    {
+      "name": "Cinema 01 | east oak panel joint 2",
+      "object_name": "Cinema 01 | east oak panel joint 2.001"
+    },
+    {
+      "name": "Cinema 01 | east skirting",
+      "object_name": "Cinema 01 | east skirting"
+    },
+    {
+      "name": "Cinema 01 | east aisle light recess",
+      "object_name": "Cinema 01 | east aisle light recess"
+    },
+    {
+      "name": "Cinema 01 | east aisle light opal",
+      "object_name": "Cinema 01 | east aisle light opal"
+    },
+    {
+      "name": "Cinema 01 | east aisle light recess",
+      "object_name": "Cinema 01 | east aisle light recess.001"
+    },
+    {
+      "name": "Cinema 01 | east aisle light opal",
+      "object_name": "Cinema 01 | east aisle light opal.001"
+    },
+    {
+      "name": "Cinema 01 | east aisle light recess",
+      "object_name": "Cinema 01 | east aisle light recess.002"
+    },
+    {
+      "name": "Cinema 01 | east aisle light opal",
+      "object_name": "Cinema 01 | east aisle light opal.002"
+    },
+    {
+      "name": "Cinema 01 | screen shadow surround",
+      "object_name": "Cinema 01 | screen shadow surround"
+    },
+    {
+      "name": "Cinema 01 | fixed projection screen",
+      "object_name": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "name": "Cinema 01 | front speaker cabinet",
+      "object_name": "Cinema 01 | front speaker cabinet"
+    },
+    {
+      "name": "Cinema 01 | front speaker plinth",
+      "object_name": "Cinema 01 | front speaker plinth"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver trim",
+      "object_name": "Cinema 01 | front speaker driver trim"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver cone",
+      "object_name": "Cinema 01 | front speaker driver cone"
+    },
+    {
+      "name": "Cinema 01 | front speaker dust cap",
+      "object_name": "Cinema 01 | front speaker dust cap"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver trim",
+      "object_name": "Cinema 01 | front speaker driver trim.001"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver cone",
+      "object_name": "Cinema 01 | front speaker driver cone.001"
+    },
+    {
+      "name": "Cinema 01 | front speaker dust cap",
+      "object_name": "Cinema 01 | front speaker dust cap.001"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver trim",
+      "object_name": "Cinema 01 | front speaker driver trim.002"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver cone",
+      "object_name": "Cinema 01 | front speaker driver cone.002"
+    },
+    {
+      "name": "Cinema 01 | front speaker dust cap",
+      "object_name": "Cinema 01 | front speaker dust cap.002"
+    },
+    {
+      "name": "Cinema 01 | front speaker cabinet",
+      "object_name": "Cinema 01 | front speaker cabinet.001"
+    },
+    {
+      "name": "Cinema 01 | front speaker plinth",
+      "object_name": "Cinema 01 | front speaker plinth.001"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver trim",
+      "object_name": "Cinema 01 | front speaker driver trim.003"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver cone",
+      "object_name": "Cinema 01 | front speaker driver cone.003"
+    },
+    {
+      "name": "Cinema 01 | front speaker dust cap",
+      "object_name": "Cinema 01 | front speaker dust cap.003"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver trim",
+      "object_name": "Cinema 01 | front speaker driver trim.004"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver cone",
+      "object_name": "Cinema 01 | front speaker driver cone.004"
+    },
+    {
+      "name": "Cinema 01 | front speaker dust cap",
+      "object_name": "Cinema 01 | front speaker dust cap.004"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver trim",
+      "object_name": "Cinema 01 | front speaker driver trim.005"
+    },
+    {
+      "name": "Cinema 01 | front speaker driver cone",
+      "object_name": "Cinema 01 | front speaker driver cone.005"
+    },
+    {
+      "name": "Cinema 01 | front speaker dust cap",
+      "object_name": "Cinema 01 | front speaker dust cap.005"
+    },
+    {
+      "name": "Cinema 01 | centre speaker cabinet",
+      "object_name": "Cinema 01 | centre speaker cabinet"
+    },
+    {
+      "name": "Cinema 01 | centre speaker driver",
+      "object_name": "Cinema 01 | centre speaker driver"
+    },
+    {
+      "name": "Cinema 01 | centre speaker driver",
+      "object_name": "Cinema 01 | centre speaker driver.001"
+    },
+    {
+      "name": "Cinema 01 | centre speaker driver",
+      "object_name": "Cinema 01 | centre speaker driver.002"
+    },
+    {
+      "name": "Cinema 01 | subwoofer cabinet",
+      "object_name": "Cinema 01 | subwoofer cabinet"
+    },
+    {
+      "name": "Cinema 01 | subwoofer driver",
+      "object_name": "Cinema 01 | subwoofer driver"
+    },
+    {
+      "name": "Cinema 01 | sofa recessed plinth",
+      "object_name": "Cinema 01 | sofa recessed plinth"
+    },
+    {
+      "name": "Cinema 01 | sofa upholstered base",
+      "object_name": "Cinema 01 | sofa upholstered base"
+    },
+    {
+      "name": "Cinema 01 | seat 1 cushion",
+      "object_name": "Cinema 01 | seat 1 cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 1 back cushion",
+      "object_name": "Cinema 01 | seat 1 back cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 1 lumbar cushion",
+      "object_name": "Cinema 01 | seat 1 lumbar cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 2 cushion",
+      "object_name": "Cinema 01 | seat 2 cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 2 back cushion",
+      "object_name": "Cinema 01 | seat 2 back cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 2 lumbar cushion",
+      "object_name": "Cinema 01 | seat 2 lumbar cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 3 cushion",
+      "object_name": "Cinema 01 | seat 3 cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 3 back cushion",
+      "object_name": "Cinema 01 | seat 3 back cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 3 lumbar cushion",
+      "object_name": "Cinema 01 | seat 3 lumbar cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 4 cushion",
+      "object_name": "Cinema 01 | seat 4 cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 4 back cushion",
+      "object_name": "Cinema 01 | seat 4 back cushion"
+    },
+    {
+      "name": "Cinema 01 | seat 4 lumbar cushion",
+      "object_name": "Cinema 01 | seat 4 lumbar cushion"
+    },
+    {
+      "name": "Cinema 01 | sofa outer arm",
+      "object_name": "Cinema 01 | sofa outer arm"
+    },
+    {
+      "name": "Cinema 01 | sofa arm oak tray",
+      "object_name": "Cinema 01 | sofa arm oak tray"
+    },
+    {
+      "name": "Cinema 01 | sofa outer arm",
+      "object_name": "Cinema 01 | sofa outer arm.001"
+    },
+    {
+      "name": "Cinema 01 | sofa arm oak tray",
+      "object_name": "Cinema 01 | sofa arm oak tray.001"
+    },
+    {
+      "name": "Cinema 01 | centre console carcass",
+      "object_name": "Cinema 01 | centre console carcass"
+    },
+    {
+      "name": "Cinema 01 | centre console stone top",
+      "object_name": "Cinema 01 | centre console stone top"
+    },
+    {
+      "name": "Cinema 01 | centre console cup rim",
+      "object_name": "Cinema 01 | centre console cup rim"
+    },
+    {
+      "name": "Cinema 01 | centre console cup well",
+      "object_name": "Cinema 01 | centre console cup well"
+    },
+    {
+      "name": "Cinema 01 | centre console cup rim",
+      "object_name": "Cinema 01 | centre console cup rim.001"
+    },
+    {
+      "name": "Cinema 01 | centre console cup well",
+      "object_name": "Cinema 01 | centre console cup well.001"
+    },
+    {
+      "name": "Cinema 01 | centre console charging pad",
+      "object_name": "Cinema 01 | centre console charging pad"
+    },
+    {
+      "name": "Cinema 01 | USB-C port",
+      "object_name": "Cinema 01 | USB-C port"
+    },
+    {
+      "name": "Cinema 01 | USB-C port",
+      "object_name": "Cinema 01 | USB-C port.001"
+    },
+    {
+      "name": "Cinema 01 | coffee table recessed support",
+      "object_name": "Cinema 01 | coffee table recessed support"
+    },
+    {
+      "name": "Cinema 01 | coffee table limestone top",
+      "object_name": "Cinema 01 | coffee table limestone top"
+    },
+    {
+      "name": "Cinema 01 | coffee table leather tray",
+      "object_name": "Cinema 01 | coffee table leather tray"
+    },
+    {
+      "name": "Cinema 01 | remote control",
+      "object_name": "Cinema 01 | remote control"
+    },
+    {
+      "name": "Cinema 01 | remote dial",
+      "object_name": "Cinema 01 | remote dial"
+    },
+    {
+      "name": "Cinema 01 | remote button",
+      "object_name": "Cinema 01 | remote button"
+    },
+    {
+      "name": "Cinema 01 | remote button",
+      "object_name": "Cinema 01 | remote button.001"
+    },
+    {
+      "name": "Cinema 01 | remote button",
+      "object_name": "Cinema 01 | remote button.002"
+    },
+    {
+      "name": "Cinema 01 | remote button",
+      "object_name": "Cinema 01 | remote button.003"
+    },
+    {
+      "name": "Cinema 01 | remote button",
+      "object_name": "Cinema 01 | remote button.004"
+    },
+    {
+      "name": "Cinema 01 | remote button",
+      "object_name": "Cinema 01 | remote button.005"
+    },
+    {
+      "name": "Cinema 01 | rear storage carcass",
+      "object_name": "Cinema 01 | rear storage carcass"
+    },
+    {
+      "name": "Cinema 01 | rear storage drawer 0",
+      "object_name": "Cinema 01 | rear storage drawer 0"
+    },
+    {
+      "name": "Cinema 01 | rear storage finger pull 0",
+      "object_name": "Cinema 01 | rear storage finger pull 0"
+    },
+    {
+      "name": "Cinema 01 | rear storage drawer 1",
+      "object_name": "Cinema 01 | rear storage drawer 1"
+    },
+    {
+      "name": "Cinema 01 | rear storage finger pull 1",
+      "object_name": "Cinema 01 | rear storage finger pull 1"
+    },
+    {
+      "name": "Cinema 01 | rear storage drawer 2",
+      "object_name": "Cinema 01 | rear storage drawer 2"
+    },
+    {
+      "name": "Cinema 01 | rear storage finger pull 2",
+      "object_name": "Cinema 01 | rear storage finger pull 2"
+    },
+    {
+      "name": "Cinema 01 | rear storage drawer 3",
+      "object_name": "Cinema 01 | rear storage drawer 3"
+    },
+    {
+      "name": "Cinema 01 | rear storage finger pull 3",
+      "object_name": "Cinema 01 | rear storage finger pull 3"
+    },
+    {
+      "name": "Cinema 01 | rear storage limestone top",
+      "object_name": "Cinema 01 | rear storage limestone top"
+    },
+    {
+      "name": "Cinema 01 | surround speaker",
+      "object_name": "Cinema 01 | surround speaker"
+    },
+    {
+      "name": "Cinema 01 | surround woven grille",
+      "object_name": "Cinema 01 | surround woven grille"
+    },
+    {
+      "name": "Cinema 01 | surround speaker",
+      "object_name": "Cinema 01 | surround speaker.001"
+    },
+    {
+      "name": "Cinema 01 | surround woven grille",
+      "object_name": "Cinema 01 | surround woven grille.001"
+    },
+    {
+      "name": "Cinema 01 | ceiling speaker bezel",
+      "object_name": "Cinema 01 | ceiling speaker bezel"
+    },
+    {
+      "name": "Cinema 01 | ceiling speaker grille",
+      "object_name": "Cinema 01 | ceiling speaker grille"
+    },
+    {
+      "name": "Cinema 01 | ceiling speaker bezel",
+      "object_name": "Cinema 01 | ceiling speaker bezel.001"
+    },
+    {
+      "name": "Cinema 01 | ceiling speaker grille",
+      "object_name": "Cinema 01 | ceiling speaker grille.001"
+    },
+    {
+      "name": "Cinema 01 | projector body",
+      "object_name": "Cinema 01 | projector body"
+    },
+    {
+      "name": "Cinema 01 | projector lens rim",
+      "object_name": "Cinema 01 | projector lens rim"
+    },
+    {
+      "name": "Cinema 01 | projector lens glass",
+      "object_name": "Cinema 01 | projector lens glass"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.001"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.002"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.003"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.004"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.005"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.006"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.007"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.008"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.009"
+    },
+    {
+      "name": "Cinema 01 | projector vent",
+      "object_name": "Cinema 01 | projector vent.010"
+    },
+    {
+      "name": "Cinema 01 | projector status LED",
+      "object_name": "Cinema 01 | projector status LED"
+    },
+    {
+      "name": "Cinema 01 | projector mounting plate",
+      "object_name": "Cinema 01 | projector mounting plate"
+    },
+    {
+      "name": "Cinema 01 | projector mounting stem",
+      "object_name": "Cinema 01 | projector mounting stem"
+    },
+    {
+      "name": "Cinema 01 | ceiling concealed light rail",
+      "object_name": "Cinema 01 | ceiling concealed light rail"
+    },
+    {
+      "name": "Cinema 01 | ceiling concealed light opal",
+      "object_name": "Cinema 01 | ceiling concealed light opal"
+    },
+    {
+      "name": "Cinema 01 | ceiling concealed light rail",
+      "object_name": "Cinema 01 | ceiling concealed light rail.001"
+    },
+    {
+      "name": "Cinema 01 | ceiling concealed light opal",
+      "object_name": "Cinema 01 | ceiling concealed light opal.001"
+    },
+    {
+      "name": "Cinema 01 | front soft wash",
+      "object_name": "Cinema 01 | front soft wash"
+    },
+    {
+      "name": "Cinema 01 | rear soft wash",
+      "object_name": "Cinema 01 | rear soft wash"
+    },
+    {
+      "name": "Cinema 01 | seat 1 front piping",
+      "object_name": "Cinema 01 | seat 1 front piping"
+    },
+    {
+      "name": "Cinema 01 | seat 1 back seam",
+      "object_name": "Cinema 01 | seat 1 back seam"
+    },
+    {
+      "name": "Cinema 01 | seat 2 front piping",
+      "object_name": "Cinema 01 | seat 2 front piping"
+    },
+    {
+      "name": "Cinema 01 | seat 2 back seam",
+      "object_name": "Cinema 01 | seat 2 back seam"
+    },
+    {
+      "name": "Cinema 01 | seat 3 front piping",
+      "object_name": "Cinema 01 | seat 3 front piping"
+    },
+    {
+      "name": "Cinema 01 | seat 3 back seam",
+      "object_name": "Cinema 01 | seat 3 back seam"
+    },
+    {
+      "name": "Cinema 01 | seat 4 front piping",
+      "object_name": "Cinema 01 | seat 4 front piping"
+    },
+    {
+      "name": "Cinema 01 | seat 4 back seam",
+      "object_name": "Cinema 01 | seat 4 back seam"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Cinema 01 | west lining",
+      "box": [
+        5.16,
+        -15.17,
+        5.212,
+        -10.027
+      ],
+      "bottom": -2.8,
+      "top": -0.2799999999999998
+    },
+    {
+      "name": "Cinema 01 | east lining",
+      "box": [
+        9.048,
+        -15.17,
+        9.1,
+        -10.91
+      ],
+      "bottom": -2.8,
+      "top": -0.2799999999999998
+    },
+    {
+      "name": "Cinema 01 | rear lining",
+      "box": [
+        5.16,
+        -10.066999999999998,
+        8.26,
+        -10.027
+      ],
+      "bottom": -2.8,
+      "top": -0.2799999999999998
+    },
+    {
+      "name": "Cinema 01 | screen wall lining",
+      "box": [
+        5.16,
+        -15.17,
+        9.1,
+        -15.137
+      ],
+      "bottom": -2.8,
+      "top": -0.2799999999999998
+    },
+    {
+      "name": "Cinema 01 | screen surround",
+      "box": [
+        5.41,
+        -15.096,
+        8.110000000000001,
+        -15.022
+      ],
+      "bottom": -2.2312499999999997,
+      "top": -0.66875
+    },
+    {
+      "name": "Cinema 01 | front speaker",
+      "box": [
+        5.21,
+        -15.105,
+        5.409999999999999,
+        -14.87
+      ],
+      "bottom": -2.8,
+      "top": -1.66
+    },
+    {
+      "name": "Cinema 01 | front speaker",
+      "box": [
+        8.15,
+        -15.105,
+        8.35,
+        -14.87
+      ],
+      "bottom": -2.8,
+      "top": -1.66
+    },
+    {
+      "name": "Cinema 01 | subwoofer",
+      "box": [
+        8.48,
+        -14.985,
+        8.84,
+        -14.585
+      ],
+      "bottom": -2.8,
+      "top": -2.34
+    },
+    {
+      "name": "Cinema 01 | four-place sofa",
+      "box": [
+        5.25,
+        -12.77,
+        8.11,
+        -11.52
+      ],
+      "bottom": -2.8,
+      "top": -1.7449999999999999
+    },
+    {
+      "name": "Cinema 01 | low coffee table",
+      "box": [
+        5.8,
+        -14.08,
+        7.54,
+        -13.42
+      ],
+      "bottom": -2.8,
+      "top": -2.42
+    },
+    {
+      "name": "Cinema 01 | rear storage",
+      "box": [
+        5.39,
+        -10.37,
+        7.85,
+        -10.075
+      ],
+      "bottom": -2.8,
+      "top": -2.09
+    }
+  ],
+  "configuration": {
+    "revision": 1,
+    "room": "Basement cinema",
+    "status": "development",
+    "basis": "Autonomous room development authorised 27 September 2026; preserve shell, east doorway and adjacent AV cupboard.",
+    "bounds": [
+      5.16,
+      -15.17,
+      9.1,
+      -10.027
+    ],
+    "floorZ": -2.8,
+    "ceilingZ": -0.247,
+    "screen": {
+      "center": [
+        6.76,
+        -15.035,
+        -1.45
+      ],
+      "size": [
+        2.6,
+        1.4625
+      ]
+    },
+    "sofa": {
+      "bounds": [
+        5.25,
+        -12.77,
+        8.11,
+        -11.52
+      ],
+      "seatHeight": 0.45,
+      "backHeight": 1.04,
+      "seats": 4
+    },
+    "eyes": [
+      [
+        5.66,
+        -11.94,
+        -1.7
+      ],
+      [
+        6.28,
+        -11.94,
+        -1.7
+      ],
+      [
+        7.08,
+        -11.94,
+        -1.7
+      ],
+      [
+        7.7,
+        -11.94,
+        -1.7
+      ]
+    ],
+    "ottomans": [],
+    "rearCabinet": [
+      5.39,
+      -10.34,
+      7.85,
+      -10.075
+    ],
+    "door": {
+      "opening": [
+        [
+          9.1,
+          -10.85
+        ],
+        [
+          9.1,
+          -10.0
+        ]
+      ],
+      "retained": true
+    },
+    "view": {
+      "id": "proposal-basement-cinema",
+      "position": [
+        8.62,
+        -10.5,
+        -2.8
+      ],
+      "direction": [
+        -1.86,
+        -4.53,
+        -0.25
+      ]
+    },
+    "tradeoffs": [
+      "Four main seats instead of the previous six; chosen to avoid a second row obstructing sightlines and a raised platform in the low basement.",
+      "Fixed deep seats with a low coffee table and integrated drinks console; a 650 mm approach is clear in front of the sofa without moving furniture.",
+      "Speaker, projector, ventilation and acoustic isolation specifications remain to be resolved; this is a furnished concept, not an acoustic certification."
+    ],
+    "coffeeTable": [
+      5.8,
+      -14.08,
+      7.54,
+      -13.42
+    ]
+  },
+  "native_screen_rays": [
+    {
+      "seat": 1,
+      "target": [
+        6.760000228881836,
+        -15.026000022888184,
+        -1.4500000476837158
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 1,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 1,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 1,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 1,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 2,
+      "target": [
+        6.760000228881836,
+        -15.026000022888184,
+        -1.4500000476837158
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 2,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 2,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 2,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 2,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 3,
+      "target": [
+        6.760000228881836,
+        -15.026000022888184,
+        -1.4500000476837158
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 3,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 3,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 3,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 3,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 4,
+      "target": [
+        6.760000228881836,
+        -15.026000022888184,
+        -1.4500000476837158
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 4,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 4,
+      "target": [
+        5.564000129699707,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 4,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -2.1227500438690186
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    },
+    {
+      "seat": 4,
+      "target": [
+        7.955999851226807,
+        -15.026000022888184,
+        -0.7772499918937683
+      ],
+      "hit": "Cinema 01 | fixed projection screen"
+    }
+  ],
+  "source_house_sha256": "a9d84742926354b07e0ad11f085a8844b8220854a5e02456561ff778f92580bb",
+  "source_house_unchanged": true,
+  "isolated_objects": 171,
+  "views": {
+    "entrance": {
+      "position": [
+        8.62,
+        -10.5,
+        -1.1999999999999997
+      ],
+      "target": [
+        6.76,
+        -14.15,
+        -1.5999999999999999
+      ],
+      "fov": 65
+    },
+    "seated": {
+      "position": [
+        6.68,
+        -11.94,
+        -1.6999999999999997
+      ],
+      "target": [
+        6.76,
+        -15.035,
+        -1.45
+      ],
+      "fov": 62
+    },
+    "left-seat": {
+      "position": [
+        5.66,
+        -11.94,
+        -1.7
+      ],
+      "target": [
+        6.76,
+        -15.035,
+        -1.45
+      ],
+      "fov": 62
+    },
+    "right-seat": {
+      "position": [
+        7.7,
+        -11.94,
+        -1.7
+      ],
+      "target": [
+        6.76,
+        -15.035,
+        -1.45
+      ],
+      "fov": 62
+    },
+    "reverse": {
+      "position": [
+        6.78,
+        -14.65,
+        -1.15
+      ],
+      "target": [
+        6.68,
+        -11.6,
+        -2.0199999999999996
+      ],
+      "fov": 64
+    },
+    "details": {
+      "position": [
+        8.48,
+        -13.37,
+        -1.3499999999999999
+      ],
+      "target": [
+        6.68,
+        -12.05,
+        -2.2199999999999998
+      ],
+      "fov": 56
+    },
+    "overview": {
+      "position": [
+        12.5,
+        -17.5,
+        5.6
+      ],
+      "target": [
+        7.1,
+        -12.6,
+        -1.4999999999999998
+      ],
+      "fov": 50,
+      "cutaway": true
+    }
+  }
+}
