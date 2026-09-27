@@ -23,6 +23,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 314
+        },
+        "guest": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 240
+        },
+        "guestbath": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 174
         }
       },
       "principal": true,
@@ -31,6 +41,8 @@
       "bar": 505,
       "gym": 306,
       "utility": 311,
+      "guest": 220,
+      "guestbath": 159,
       "details": [
         {
           "term": "fixed projection screen",
@@ -83,6 +95,26 @@
         {
           "term": "curved sink mixer",
           "count": 1
+        },
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 2
+        },
+        {
+          "term": "pillow stitched edge",
+          "count": 2
+        },
+        {
+          "term": "hollow inset ceramic basin",
+          "count": 1
+        },
+        {
+          "term": "rain head nozzle",
+          "count": 48
+        },
+        {
+          "term": "shower control index",
+          "count": 2
         }
       ],
       "doors": {
@@ -167,6 +199,69 @@
               9.16,
               -10,
               -2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Guest 01 | entrance door",
+            "wall": "Guest 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "position": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Guest 01 | ensuite door",
+            "wall": "Guest 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "position": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Guestbath 01 | shower door",
+            "wall": "Guestbath 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 12,
+            "batches": 3,
+            "hinge": [
+              8.987,
+              6.3,
+              2.834
+            ],
+            "position": [
+              8.987,
+              6.3,
+              2.834
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
@@ -260,6 +355,72 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Guest 01 | entrance door",
+            "wall": "Guest 01 | entrance door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "position": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Guest 01 | ensuite door",
+            "wall": "Guest 01 | ensuite door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "position": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Guestbath 01 | shower door",
+            "wall": "Guestbath 01 | shower door",
+            "motion": "hinged",
+            "angle": 1.4835298641951802,
+            "open": true,
+            "meshCount": 12,
+            "batches": 3,
+            "hinge": [
+              8.987,
+              6.3,
+              2.834
+            ],
+            "position": [
+              8.987,
+              6.3,
+              2.834
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.4835298641951802
           }
         ]
       }
@@ -286,6 +447,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 314
+        },
+        "guest": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 240
+        },
+        "guestbath": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 174
         }
       },
       "principal": true,
@@ -294,6 +465,8 @@
       "bar": 505,
       "gym": 306,
       "utility": 311,
+      "guest": 220,
+      "guestbath": 159,
       "details": [
         {
           "term": "fixed projection screen",
@@ -346,6 +519,26 @@
         {
           "term": "curved sink mixer",
           "count": 1
+        },
+        {
+          "term": "wall-backed upholstered headboard",
+          "count": 2
+        },
+        {
+          "term": "pillow stitched edge",
+          "count": 2
+        },
+        {
+          "term": "hollow inset ceramic basin",
+          "count": 1
+        },
+        {
+          "term": "rain head nozzle",
+          "count": 48
+        },
+        {
+          "term": "shower control index",
+          "count": 2
         }
       ],
       "doors": {
@@ -430,6 +623,69 @@
               9.16,
               -10,
               -2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Guest 01 | entrance door",
+            "wall": "Guest 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "position": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Guest 01 | ensuite door",
+            "wall": "Guest 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "position": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Guestbath 01 | shower door",
+            "wall": "Guestbath 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 12,
+            "batches": 3,
+            "hinge": [
+              8.987,
+              6.3,
+              2.834
+            ],
+            "position": [
+              8.987,
+              6.3,
+              2.834
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
@@ -523,6 +779,72 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Guest 01 | entrance door",
+            "wall": "Guest 01 | entrance door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "position": [
+              9.205,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Guest 01 | ensuite door",
+            "wall": "Guest 01 | ensuite door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "position": [
+              9.08,
+              6.47,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Guestbath 01 | shower door",
+            "wall": "Guestbath 01 | shower door",
+            "motion": "hinged",
+            "angle": 1.4835298641951802,
+            "open": true,
+            "meshCount": 12,
+            "batches": 3,
+            "hinge": [
+              8.987,
+              6.3,
+              2.834
+            ],
+            "position": [
+              8.987,
+              6.3,
+              2.834
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.4835298641951802
           }
         ]
       }

@@ -1,1805 +1,969 @@
 {
   "area": "guest",
   "revision": 1,
-  "objects": 202,
-  "mesh_objects": 198,
+  "objects": 240,
+  "mesh_objects": 236,
   "lights": 4,
   "removed_objects": [
     {
-      "name": "Principal rear curtain pole",
-      "object_name": "Principal rear curtain pole"
+      "name": "Guest 01 | warm wool carpet",
+      "object_name": "Guest 01 | warm wool carpet"
     },
     {
-      "name": "Principal rear pleated curtain",
-      "object_name": "Principal rear pleated curtain"
+      "name": "Guest 01 | ivory ceiling finish",
+      "object_name": "Guest 01 | ivory ceiling finish"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring"
+      "name": "Guest 01 | headwall oak panel",
+      "object_name": "Guest 01 | headwall oak panel"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.001"
+      "name": "Guest 01 | headwall oak panel",
+      "object_name": "Guest 01 | headwall oak panel.001"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.002"
+      "name": "Guest 01 | headwall oak panel",
+      "object_name": "Guest 01 | headwall oak panel.002"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.003"
+      "name": "Guest 01 | headwall oak panel",
+      "object_name": "Guest 01 | headwall oak panel.003"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.004"
+      "name": "Guest 01 | headwall oak panel",
+      "object_name": "Guest 01 | headwall oak panel.004"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.005"
+      "name": "Guest 01 | headwall oak panel",
+      "object_name": "Guest 01 | headwall oak panel.005"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.006"
+      "name": "Guest 01 | headwall top light",
+      "object_name": "Guest 01 | headwall top light"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.007"
+      "name": "Guest 01 | wall-backed upholstered headboard",
+      "object_name": "Guest 01 | wall-backed upholstered headboard"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.008"
+      "name": "Guest 01 | bed recessed base",
+      "object_name": "Guest 01 | bed recessed base"
     },
     {
-      "name": "Principal rear pleated curtain",
-      "object_name": "Principal rear pleated curtain.001"
+      "name": "Guest 01 | bed upholstered frame",
+      "object_name": "Guest 01 | bed upholstered frame"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.009"
+      "name": "Guest 01 | super-king mattress",
+      "object_name": "Guest 01 | super-king mattress"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.010"
+      "name": "Guest 01 | draped cotton duvet",
+      "object_name": "Guest 01 | draped cotton duvet"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.011"
+      "name": "Guest 01 | folded duvet edge",
+      "object_name": "Guest 01 | folded duvet edge"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.012"
+      "name": "Guest 01 | woven bed throw",
+      "object_name": "Guest 01 | woven bed throw"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.013"
+      "name": "Guest 01 | sleeping pillow",
+      "object_name": "Guest 01 | sleeping pillow"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.014"
+      "name": "Guest 01 | small linen cushion",
+      "object_name": "Guest 01 | small linen cushion"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.015"
+      "name": "Guest 01 | sleeping pillow",
+      "object_name": "Guest 01 | sleeping pillow.001"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.016"
+      "name": "Guest 01 | small linen cushion",
+      "object_name": "Guest 01 | small linen cushion.001"
     },
     {
-      "name": "Principal rear curtain ring",
-      "object_name": "Principal rear curtain ring.017"
+      "name": "Guest 01 | bedside floating drawer",
+      "object_name": "Guest 01 | bedside floating drawer"
     },
     {
-      "name": "Principal bed frame",
-      "object_name": "Principal bed frame"
+      "name": "Guest 01 | bedside recessed drawer line",
+      "object_name": "Guest 01 | bedside recessed drawer line"
     },
     {
-      "name": "Principal bed mattress",
-      "object_name": "Principal bed mattress"
+      "name": "Guest 01 | bedside stone top",
+      "object_name": "Guest 01 | bedside stone top"
     },
     {
-      "name": "Principal bed duvet",
-      "object_name": "Principal bed duvet"
+      "name": "Guest 01 | wall light backplate",
+      "object_name": "Guest 01 | wall light backplate"
     },
     {
-      "name": "Principal bed pillow",
-      "object_name": "Principal bed pillow"
+      "name": "Guest 01 | reading light shade",
+      "object_name": "Guest 01 | reading light shade"
     },
     {
-      "name": "Principal bed pillow",
-      "object_name": "Principal bed pillow.001"
+      "name": "Guest 01 | reading light lens",
+      "object_name": "Guest 01 | reading light lens"
     },
     {
-      "name": "Principal bed headboard post",
-      "object_name": "Principal bed headboard post"
+      "name": "Guest 01 | bedside control plate",
+      "object_name": "Guest 01 | bedside control plate"
     },
     {
-      "name": "Principal bed headboard post",
-      "object_name": "Principal bed headboard post.001"
+      "name": "Guest 01 | bedside switch button",
+      "object_name": "Guest 01 | bedside switch button"
     },
     {
-      "name": "Principal bed headboard top",
-      "object_name": "Principal bed headboard top"
+      "name": "Guest 01 | bedside switch button",
+      "object_name": "Guest 01 | bedside switch button.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle"
+      "name": "Guest 01 | bedside USB C slot",
+      "object_name": "Guest 01 | bedside USB C slot"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.001"
+      "name": "Guest 01 | bedside glow 1",
+      "object_name": "Guest 01 | bedside glow 1"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.002"
+      "name": "Guest 01 | bedside floating drawer",
+      "object_name": "Guest 01 | bedside floating drawer.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.003"
+      "name": "Guest 01 | bedside recessed drawer line",
+      "object_name": "Guest 01 | bedside recessed drawer line.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.004"
+      "name": "Guest 01 | bedside stone top",
+      "object_name": "Guest 01 | bedside stone top.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.005"
+      "name": "Guest 01 | wall light backplate",
+      "object_name": "Guest 01 | wall light backplate.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.006"
+      "name": "Guest 01 | reading light shade",
+      "object_name": "Guest 01 | reading light shade.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.007"
+      "name": "Guest 01 | reading light lens",
+      "object_name": "Guest 01 | reading light lens.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.008"
+      "name": "Guest 01 | bedside control plate",
+      "object_name": "Guest 01 | bedside control plate.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.009"
+      "name": "Guest 01 | bedside switch button",
+      "object_name": "Guest 01 | bedside switch button.002"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.010"
+      "name": "Guest 01 | bedside switch button",
+      "object_name": "Guest 01 | bedside switch button.003"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.011"
+      "name": "Guest 01 | bedside USB C slot",
+      "object_name": "Guest 01 | bedside USB C slot.001"
     },
     {
-      "name": "Principal bed headboard spindle",
-      "object_name": "Principal bed headboard spindle.012"
+      "name": "Guest 01 | bedside glow 2",
+      "object_name": "Guest 01 | bedside glow 2"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe"
+      "name": "Guest 01 | bedside book lower",
+      "object_name": "Guest 01 | bedside book lower"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.001"
+      "name": "Guest 01 | bedside book upper",
+      "object_name": "Guest 01 | bedside book upper"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.002"
+      "name": "Guest 01 | wardrobe recessed plinth",
+      "object_name": "Guest 01 | wardrobe recessed plinth"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.003"
+      "name": "Guest 01 | wardrobe back",
+      "object_name": "Guest 01 | wardrobe back"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.004"
+      "name": "Guest 01 | wardrobe bottom or top",
+      "object_name": "Guest 01 | wardrobe bottom or top"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.005"
+      "name": "Guest 01 | wardrobe bottom or top",
+      "object_name": "Guest 01 | wardrobe bottom or top.001"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.006"
+      "name": "Guest 01 | wardrobe vertical carcass",
+      "object_name": "Guest 01 | wardrobe vertical carcass"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.007"
+      "name": "Guest 01 | wardrobe vertical carcass",
+      "object_name": "Guest 01 | wardrobe vertical carcass.001"
     },
     {
-      "name": "Principal bed duvet woven stripe",
-      "object_name": "Principal bed duvet woven stripe.008"
+      "name": "Guest 01 | wardrobe vertical carcass",
+      "object_name": "Guest 01 | wardrobe vertical carcass.002"
     },
     {
-      "name": "Principal bed duvet cross stripe",
-      "object_name": "Principal bed duvet cross stripe"
+      "name": "Guest 01 | wardrobe vertical carcass",
+      "object_name": "Guest 01 | wardrobe vertical carcass.003"
     },
     {
-      "name": "Principal bed duvet cross stripe",
-      "object_name": "Principal bed duvet cross stripe.001"
+      "name": "Guest 01 | wardrobe vertical carcass",
+      "object_name": "Guest 01 | wardrobe vertical carcass.004"
     },
     {
-      "name": "Principal bed duvet cross stripe",
-      "object_name": "Principal bed duvet cross stripe.002"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf"
     },
     {
-      "name": "Principal bed duvet cross stripe",
-      "object_name": "Principal bed duvet cross stripe.003"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf.001"
     },
     {
-      "name": "Principal bed duvet cross stripe",
-      "object_name": "Principal bed duvet cross stripe.004"
+      "name": "Guest 01 | wardrobe shelving",
+      "object_name": "Guest 01 | wardrobe shelving"
     },
     {
-      "name": "Principal bed duvet cross stripe",
-      "object_name": "Principal bed duvet cross stripe.005"
+      "name": "Guest 01 | wardrobe shelving",
+      "object_name": "Guest 01 | wardrobe shelving.001"
     },
     {
-      "name": "Principal bed duvet cross stripe",
-      "object_name": "Principal bed duvet cross stripe.006"
+      "name": "Guest 01 | wardrobe shelving",
+      "object_name": "Guest 01 | wardrobe shelving.002"
     },
     {
-      "name": "Principal right drawers carcass",
-      "object_name": "Principal right drawers carcass"
+      "name": "Guest 01 | wardrobe folded linen",
+      "object_name": "Guest 01 | wardrobe folded linen"
     },
     {
-      "name": "Principal right drawers top",
-      "object_name": "Principal right drawers top"
+      "name": "Guest 01 | wardrobe folded linen",
+      "object_name": "Guest 01 | wardrobe folded linen.001"
     },
     {
-      "name": "Principal right drawers drawer",
-      "object_name": "Principal right drawers drawer"
+      "name": "Guest 01 | wardrobe folded linen",
+      "object_name": "Guest 01 | wardrobe folded linen.002"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob"
+      "name": "Guest 01 | sliding wardrobe door",
+      "object_name": "Guest 01 | sliding wardrobe door"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob.001"
+      "name": "Guest 01 | sliding wardrobe recessed pull",
+      "object_name": "Guest 01 | sliding wardrobe recessed pull"
     },
     {
-      "name": "Principal right drawers drawer",
-      "object_name": "Principal right drawers drawer.001"
+      "name": "Guest 01 | sliding wardrobe pull inset",
+      "object_name": "Guest 01 | sliding wardrobe pull inset"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob.002"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob.003"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track.001"
     },
     {
-      "name": "Principal right drawers drawer",
-      "object_name": "Principal right drawers drawer.002"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf.002"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob.004"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf.003"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob.005"
+      "name": "Guest 01 | wardrobe hanging rail",
+      "object_name": "Guest 01 | wardrobe hanging rail"
     },
     {
-      "name": "Principal right drawers drawer",
-      "object_name": "Principal right drawers drawer.003"
+      "name": "Guest 01 | sliding wardrobe door",
+      "object_name": "Guest 01 | sliding wardrobe door.001"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob.006"
+      "name": "Guest 01 | sliding wardrobe recessed pull",
+      "object_name": "Guest 01 | sliding wardrobe recessed pull.001"
     },
     {
-      "name": "Principal right drawers drawer knob",
-      "object_name": "Principal right drawers drawer knob.007"
+      "name": "Guest 01 | sliding wardrobe pull inset",
+      "object_name": "Guest 01 | sliding wardrobe pull inset.001"
     },
     {
-      "name": "Principal left bedside carcass",
-      "object_name": "Principal left bedside carcass"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track.002"
     },
     {
-      "name": "Principal left bedside top",
-      "object_name": "Principal left bedside top"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track.003"
     },
     {
-      "name": "Principal left bedside drawer",
-      "object_name": "Principal left bedside drawer"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf.004"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf.005"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob.001"
+      "name": "Guest 01 | wardrobe hanging rail",
+      "object_name": "Guest 01 | wardrobe hanging rail.001"
     },
     {
-      "name": "Principal left bedside drawer",
-      "object_name": "Principal left bedside drawer.001"
+      "name": "Guest 01 | sliding wardrobe door",
+      "object_name": "Guest 01 | sliding wardrobe door.002"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob.002"
+      "name": "Guest 01 | sliding wardrobe recessed pull",
+      "object_name": "Guest 01 | sliding wardrobe recessed pull.002"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob.003"
+      "name": "Guest 01 | sliding wardrobe pull inset",
+      "object_name": "Guest 01 | sliding wardrobe pull inset.002"
     },
     {
-      "name": "Principal left bedside drawer",
-      "object_name": "Principal left bedside drawer.002"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track.004"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob.004"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track.005"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob.005"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf.006"
     },
     {
-      "name": "Principal left bedside drawer",
-      "object_name": "Principal left bedside drawer.003"
+      "name": "Guest 01 | wardrobe interior shelf",
+      "object_name": "Guest 01 | wardrobe interior shelf.007"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob.006"
+      "name": "Guest 01 | wardrobe shelving",
+      "object_name": "Guest 01 | wardrobe shelving.003"
     },
     {
-      "name": "Principal left bedside drawer knob",
-      "object_name": "Principal left bedside drawer knob.007"
+      "name": "Guest 01 | wardrobe shelving",
+      "object_name": "Guest 01 | wardrobe shelving.004"
     },
     {
-      "name": "Principal pine wardrobe carcass",
-      "object_name": "Principal pine wardrobe carcass"
+      "name": "Guest 01 | wardrobe shelving",
+      "object_name": "Guest 01 | wardrobe shelving.005"
     },
     {
-      "name": "Principal pine wardrobe plinth",
-      "object_name": "Principal pine wardrobe plinth"
+      "name": "Guest 01 | wardrobe folded linen",
+      "object_name": "Guest 01 | wardrobe folded linen.003"
     },
     {
-      "name": "Principal television black bezel",
-      "object_name": "Principal television black bezel"
+      "name": "Guest 01 | wardrobe folded linen",
+      "object_name": "Guest 01 | wardrobe folded linen.004"
     },
     {
-      "name": "Principal television screen",
-      "object_name": "Principal television screen"
+      "name": "Guest 01 | wardrobe folded linen",
+      "object_name": "Guest 01 | wardrobe folded linen.005"
     },
     {
-      "name": "Principal television stand top",
-      "object_name": "Principal television stand top"
+      "name": "Guest 01 | sliding wardrobe door",
+      "object_name": "Guest 01 | sliding wardrobe door.003"
     },
     {
-      "name": "Principal television stand shelf",
-      "object_name": "Principal television stand shelf"
+      "name": "Guest 01 | sliding wardrobe recessed pull",
+      "object_name": "Guest 01 | sliding wardrobe recessed pull.003"
     },
     {
-      "name": "Principal television stand leg",
-      "object_name": "Principal television stand leg"
+      "name": "Guest 01 | sliding wardrobe pull inset",
+      "object_name": "Guest 01 | sliding wardrobe pull inset.003"
     },
     {
-      "name": "Principal television stand leg",
-      "object_name": "Principal television stand leg.001"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track.006"
     },
     {
-      "name": "Principal television stand leg",
-      "object_name": "Principal television stand leg.002"
+      "name": "Guest 01 | sliding wardrobe track",
+      "object_name": "Guest 01 | sliding wardrobe track.007"
     },
     {
-      "name": "Principal television stand leg",
-      "object_name": "Principal television stand leg.003"
+      "name": "Guest 01 | TV wall mount",
+      "object_name": "Guest 01 | TV wall mount"
     },
     {
-      "name": "Principal framed print backing",
-      "object_name": "Principal framed print backing"
+      "name": "Guest 01 | fixed TV chassis",
+      "object_name": "Guest 01 | fixed TV chassis"
     },
     {
-      "name": "Principal framed print mount",
-      "object_name": "Principal framed print mount"
+      "name": "Guest 01 | fixed TV screen",
+      "object_name": "Guest 01 | fixed TV screen"
     },
     {
-      "name": "Principal framed print print",
-      "object_name": "Principal framed print print"
+      "name": "Guest 01 | TV standby light",
+      "object_name": "Guest 01 | TV standby light"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame"
+      "name": "Guest 01 | floating TV console",
+      "object_name": "Guest 01 | floating TV console"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.001"
+      "name": "Guest 01 | TV console top",
+      "object_name": "Guest 01 | TV console top"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.002"
+      "name": "Guest 01 | TV console drawer reveal",
+      "object_name": "Guest 01 | TV console drawer reveal"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.003"
+      "name": "Guest 01 | TV remote",
+      "object_name": "Guest 01 | TV remote"
     },
     {
-      "name": "Principal framed print backing",
-      "object_name": "Principal framed print backing.001"
+      "name": "Guest 01 | remote button",
+      "object_name": "Guest 01 | remote button"
     },
     {
-      "name": "Principal framed print mount",
-      "object_name": "Principal framed print mount.001"
+      "name": "Guest 01 | remote button",
+      "object_name": "Guest 01 | remote button.001"
     },
     {
-      "name": "Principal framed print print",
-      "object_name": "Principal framed print print.001"
+      "name": "Guest 01 | remote button",
+      "object_name": "Guest 01 | remote button.002"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.004"
+      "name": "Guest 01 | remote button",
+      "object_name": "Guest 01 | remote button.003"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.005"
+      "name": "Guest 01 | remote button",
+      "object_name": "Guest 01 | remote button.004"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.006"
+      "name": "Guest 01 | remote button",
+      "object_name": "Guest 01 | remote button.005"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.007"
+      "name": "Guest 01 | reading chair foot",
+      "object_name": "Guest 01 | reading chair foot"
     },
     {
-      "name": "Principal framed print backing",
-      "object_name": "Principal framed print backing.002"
+      "name": "Guest 01 | reading chair foot",
+      "object_name": "Guest 01 | reading chair foot.001"
     },
     {
-      "name": "Principal framed print mount",
-      "object_name": "Principal framed print mount.002"
+      "name": "Guest 01 | reading chair foot",
+      "object_name": "Guest 01 | reading chair foot.002"
     },
     {
-      "name": "Principal framed print print",
-      "object_name": "Principal framed print print.002"
+      "name": "Guest 01 | reading chair foot",
+      "object_name": "Guest 01 | reading chair foot.003"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.008"
+      "name": "Guest 01 | reading chair seat",
+      "object_name": "Guest 01 | reading chair seat"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.009"
+      "name": "Guest 01 | curved upholstered reading chair back",
+      "object_name": "Guest 01 | curved upholstered reading chair back"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.010"
+      "name": "Guest 01 | reading chair rounded arm",
+      "object_name": "Guest 01 | reading chair rounded arm"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.011"
+      "name": "Guest 01 | reading chair rounded arm",
+      "object_name": "Guest 01 | reading chair rounded arm.001"
     },
     {
-      "name": "Principal framed print backing",
-      "object_name": "Principal framed print backing.003"
+      "name": "Guest 01 | reading chair lumbar cushion",
+      "object_name": "Guest 01 | reading chair lumbar cushion"
     },
     {
-      "name": "Principal framed print mount",
-      "object_name": "Principal framed print mount.003"
+      "name": "Guest 01 | reading table pedestal",
+      "object_name": "Guest 01 | reading table pedestal"
     },
     {
-      "name": "Principal framed print print",
-      "object_name": "Principal framed print print.003"
+      "name": "Guest 01 | reading table stone top",
+      "object_name": "Guest 01 | reading table stone top"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.012"
+      "name": "Guest 01 | reading table book",
+      "object_name": "Guest 01 | reading table book"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.013"
+      "name": "Guest 01 | reading cup",
+      "object_name": "Guest 01 | reading cup"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.014"
+      "name": "Guest 01 | rear curtain track",
+      "object_name": "Guest 01 | rear curtain track"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.015"
+      "name": "Guest 01 | full-height linen curtain",
+      "object_name": "Guest 01 | full-height linen curtain"
     },
     {
-      "name": "Principal framed print backing",
-      "object_name": "Principal framed print backing.004"
+      "name": "Guest 01 | full-height linen curtain",
+      "object_name": "Guest 01 | full-height linen curtain.001"
     },
     {
-      "name": "Principal framed print mount",
-      "object_name": "Principal framed print mount.004"
+      "name": "Guest 01 | plant ceramic pot",
+      "object_name": "Guest 01 | plant ceramic pot"
     },
     {
-      "name": "Principal framed print print",
-      "object_name": "Principal framed print print.004"
+      "name": "Guest 01 | plant soil",
+      "object_name": "Guest 01 | plant soil"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.016"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.017"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.001"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.018"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.002"
     },
     {
-      "name": "Principal framed print frame",
-      "object_name": "Principal framed print frame.019"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.003"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 backing"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.004"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 stile"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.005"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 stile.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.006"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 rail"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.007"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 rail.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.008"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 rail.002"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.009"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 lower inset"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.010"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 shaped upper panel",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 shaped upper "
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.011"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 upper panel b"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.012"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 1 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 1 paired knob"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.013"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 backing"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.014"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 stile"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.015"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 stile.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.016"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 rail"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.017"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 rail.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.018"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 rail.002"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.019"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 lower inset"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.020"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 shaped upper panel",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 shaped upper "
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.021"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 upper panel b"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.022"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 2 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 2 paired knob"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.023"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 backing"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.024"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 stile"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.025"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 stile.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.026"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 rail"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.027"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 rail.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.028"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 rail.002"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.029"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 lower inset"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.030"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 shaped upper panel",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 shaped upper "
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.031"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 upper panel b"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.032"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 3 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 3 paired knob"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.033"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 backing"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.034"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 stile"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.035"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 stile.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.036"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 rail"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.037"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 rail.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.038"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 rail.002"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.039"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 lower inset"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.040"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 visible upper mirror",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 visible upper"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.041"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 upper panel b"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.042"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 4 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 4 paired knob"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.043"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 backing"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.044"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 stile"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.045"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 stile.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.046"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 rail"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.047"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 rail.001"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.048"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 rail.002"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.049"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 lower inset"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.050"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 visible upper mirror",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 visible upper"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.051"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 upper panel b"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.052"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 5 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 5 paired knob"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.053"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 backing"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.054"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 stile"
+      "name": "Guest 01 | plant leaf",
+      "object_name": "Guest 01 | plant leaf.055"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 stile.001"
+      "name": "Guest 01 | entrance door leaf",
+      "object_name": "Guest 01 | entrance door leaf"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 rail"
+      "name": "Guest 01 | entrance door handle rose -1",
+      "object_name": "Guest 01 | entrance door handle rose -1"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 rail.001"
+      "name": "Guest 01 | entrance door handle rose 1",
+      "object_name": "Guest 01 | entrance door handle rose 1"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 rail.002"
+      "name": "Guest 01 | entrance door hinge barrel 3.02",
+      "object_name": "Guest 01 | entrance door hinge barrel 3.02"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 lower inset"
+      "name": "Guest 01 | entrance door hinge barrel 3.88",
+      "object_name": "Guest 01 | entrance door hinge barrel 3.88"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 shaped upper panel",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 shaped upper "
+      "name": "Guest 01 | entrance door hinge barrel 4.6899999999999995",
+      "object_name": "Guest 01 | entrance door hinge barrel 4.6899999999999995"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 upper panel b"
+      "name": "Guest 01 | ensuite door leaf",
+      "object_name": "Guest 01 | ensuite door leaf"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 6 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 6 paired knob"
+      "name": "Guest 01 | ensuite door handle rose -1",
+      "object_name": "Guest 01 | ensuite door handle rose -1"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 backing"
+      "name": "Guest 01 | ensuite door handle rose 1",
+      "object_name": "Guest 01 | ensuite door handle rose 1"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 stile"
+      "name": "Guest 01 | ensuite door hinge barrel 3.02",
+      "object_name": "Guest 01 | ensuite door hinge barrel 3.02"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 stile.001"
+      "name": "Guest 01 | ensuite door hinge barrel 3.88",
+      "object_name": "Guest 01 | ensuite door hinge barrel 3.88"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 rail"
+      "name": "Guest 01 | ensuite door hinge barrel 4.6899999999999995",
+      "object_name": "Guest 01 | ensuite door hinge barrel 4.6899999999999995"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 rail.001"
+      "name": "Guest 01 | ceiling light trim",
+      "object_name": "Guest 01 | ceiling light trim"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 rail.002"
+      "name": "Guest 01 | ceiling light diffuser",
+      "object_name": "Guest 01 | ceiling light diffuser"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 lower inset"
+      "name": "Guest 01 | ceiling glow",
+      "object_name": "Guest 01 | ceiling glow"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 shaped upper panel",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 shaped upper "
+      "name": "Guest 01 | ceiling light trim",
+      "object_name": "Guest 01 | ceiling light trim.001"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 upper panel b"
+      "name": "Guest 01 | ceiling light diffuser",
+      "object_name": "Guest 01 | ceiling light diffuser.001"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 7 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 7 paired knob"
+      "name": "Guest 01 | ceiling glow",
+      "object_name": "Guest 01 | ceiling glow.001"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 backing",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 backing"
+      "name": "Guest 01 | pillow stitched edge",
+      "object_name": "Guest 01 | pillow stitched edge"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 stile"
+      "name": "Guest 01 | pillow stitched edge",
+      "object_name": "Guest 01 | pillow stitched edge.001"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 stile",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 stile.001"
+      "name": "Guest 01 | reading light arm",
+      "object_name": "Guest 01 | reading light arm"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 rail"
+      "name": "Guest 01 | reading light arm",
+      "object_name": "Guest 01 | reading light arm.001"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 rail.001"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 rail",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 rail.002"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 lower inset",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 lower inset"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.001"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 shaped upper panel",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 shaped upper "
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.001"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 upper panel bead",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 upper panel b"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.002"
     },
     {
-      "name": "Upstairs photo detail | Principal wardrobe door 8 paired knob",
-      "object_name": "Upstairs photo detail | Principal wardrobe door 8 paired knob"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.002"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower side",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower side"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.003"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower metal upright",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower metal upright"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.003"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower metal upright",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower metal uprigh"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.004"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower side",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower side.001"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.004"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower metal upright",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower metal uprig"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.005"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower metal upright",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower metal upri"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.005"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower shelf",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower shelf"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.006"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.006"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.001"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.007"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.002"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.007"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.003"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.008"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.004"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.008"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.005"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.009"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.006"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.009"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.007"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.010"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.008"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.010"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.009"
+      "name": "Guest 01 | wooden clothes hanger",
+      "object_name": "Guest 01 | wooden clothes hanger.011"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.010"
+      "name": "Guest 01 | hanger hook",
+      "object_name": "Guest 01 | hanger hook.011"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.011"
+      "name": "Guest 01 | plant branch",
+      "object_name": "Guest 01 | plant branch"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.012"
+      "name": "Guest 01 | plant branch",
+      "object_name": "Guest 01 | plant branch.001"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.013"
+      "name": "Guest 01 | plant branch",
+      "object_name": "Guest 01 | plant branch.002"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.014"
+      "name": "Guest 01 | plant branch",
+      "object_name": "Guest 01 | plant branch.003"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.015"
+      "name": "Guest 01 | plant branch",
+      "object_name": "Guest 01 | plant branch.004"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.016"
+      "name": "Guest 01 | plant branch",
+      "object_name": "Guest 01 | plant branch.005"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower shelf",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower shelf.001"
+      "name": "Guest 01 | plant branch",
+      "object_name": "Guest 01 | plant branch.006"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.017"
+      "name": "Guest 01 | entrance door lever -1",
+      "object_name": "Guest 01 | entrance door lever -1"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.018"
+      "name": "Guest 01 | entrance door lever 1",
+      "object_name": "Guest 01 | entrance door lever 1"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.019"
+      "name": "Guest 01 | ensuite door lever -1",
+      "object_name": "Guest 01 | ensuite door lever -1"
     },
     {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.020"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.021"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.022"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.023"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.024"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.025"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.026"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.027"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.028"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.029"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.030"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.031"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.032"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.033"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower shelf",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower shelf.002"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.034"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.035"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.036"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.037"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.038"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.039"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.040"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.041"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.042"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.043"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.044"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.045"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.046"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.047"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.048"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.049"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.050"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower shelf",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower shelf.003"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.051"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.052"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.053"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.054"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.055"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.056"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.057"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.058"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.059"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.060"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.061"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.062"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.063"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.064"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.065"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.066"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.067"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.068"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower shelf",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower shelf.004"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.069"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.070"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.071"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.072"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.073"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.074"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.075"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.076"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.077"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.078"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.079"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.080"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.081"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.082"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.083"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.084"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower DVD case",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower DVD case.085"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower shelf",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower shelf.005"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper books"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper book"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.001"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.002"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.003"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.004"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.005"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.006"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.007"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.008"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.009"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.010"
-    },
-    {
-      "name": "Upstairs photo detail | Principal narrow CD tower upper books",
-      "object_name": "Upstairs photo detail | Principal narrow CD tower upper boo.011"
-    },
-    {
-      "name": "Principal en suite east panelled leaf",
-      "object_name": "Principal en suite east panelled leaf"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.001"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.002"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.003"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.001"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.004"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.005"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.006"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.007"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.002"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.008"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.009"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.010"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.011"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.003"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.012"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.013"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.014"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.015"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.004"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.016"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.017"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.018"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.019"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.005"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.020"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.021"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.022"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.023"
-    },
-    {
-      "name": "Principal en suite east brass knob",
-      "object_name": "Principal en suite east brass knob"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.006"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.024"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.025"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.026"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.027"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.007"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.028"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.029"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.030"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.031"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.008"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.032"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.033"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.034"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.035"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.009"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.036"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.037"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.038"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.039"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.010"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.040"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.041"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.042"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.043"
-    },
-    {
-      "name": "Principal en suite east raised door panel",
-      "object_name": "Principal en suite east raised door panel.011"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.044"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.045"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.046"
-    },
-    {
-      "name": "Principal en suite east panel bead",
-      "object_name": "Principal en suite east panel bead.047"
-    },
-    {
-      "name": "Principal en suite east brass knob",
-      "object_name": "Principal en suite east brass knob.001"
-    },
-    {
-      "name": "Principal hall entrance panelled leaf",
-      "object_name": "Principal hall entrance panelled leaf"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.001"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.002"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.003"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.001"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.004"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.005"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.006"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.007"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.002"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.008"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.009"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.010"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.011"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.003"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.012"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.013"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.014"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.015"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.004"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.016"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.017"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.018"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.019"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.005"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.020"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.021"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.022"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.023"
-    },
-    {
-      "name": "Principal hall entrance brass knob",
-      "object_name": "Principal hall entrance brass knob"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.006"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.024"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.025"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.026"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.027"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.007"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.028"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.029"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.030"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.031"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.008"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.032"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.033"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.034"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.035"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.009"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.036"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.037"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.038"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.039"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.010"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.040"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.041"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.042"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.043"
-    },
-    {
-      "name": "Principal hall entrance raised door panel",
-      "object_name": "Principal hall entrance raised door panel.011"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.044"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.045"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.046"
-    },
-    {
-      "name": "Principal hall entrance panel bead",
-      "object_name": "Principal hall entrance panel bead.047"
-    },
-    {
-      "name": "Principal hall entrance brass knob",
-      "object_name": "Principal hall entrance brass knob.001"
+      "name": "Guest 01 | ensuite door lever 1",
+      "object_name": "Guest 01 | ensuite door lever 1"
     }
   ],
   "collision_records": [

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "nativeSha256": "db54bdefafc5c0c783e8607a8fa3a5887f980541b34e3b5e3fa984251d4747e1",
+  "sourceUnchanged": true,
+  "showerDoorMembers": 12,
+  "sweepAnglesChecked": 91,
+  "standingPosition": [
+    8.15,
+    5.85
+  ],
+  "bodyWidth": 0.6,
+  "minimumBodyToMovingPartClearance": 0.024298693864898413,
+  "sweeps": [
+    {
+      "degrees": 0.0,
+      "standingBodyClearance": 0.19282414928212538,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": 14.166666666666668,
+      "standingBodyClearance": 0.07285043873416619,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": 28.333333333333336,
+      "standingBodyClearance": 0.024298693864898413,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": 42.5,
+      "standingBodyClearance": 0.0737683675529136,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": 56.66666666666667,
+      "standingBodyClearance": 0.19418932220164303,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": 70.83333333333334,
+      "standingBodyClearance": 0.3154493426359963,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": 85.0,
+      "standingBodyClearance": 0.4407729800037918,
+      "fixtureClashes": []
+    }
+  ],
+  "basinDepth": 0.1830000877380371,
+  "doorBottom": 2.8340001106262207,
+  "note": "Concept geometry, not a selected enclosure or construction clearance approval."
+}

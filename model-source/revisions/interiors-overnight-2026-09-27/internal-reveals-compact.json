@@ -272,6 +272,46 @@
         -4.410241603851318,
         1.1749999523162842
       ]
+    },
+    {
+      "expected": "Guestbath 01 | retained north window internal head",
+      "hit": "Guestbath 01 | retained north window internal head",
+      "material": "Interior | Guestbath warm ivory",
+      "position": [
+        8.325550079345703,
+        7.7769999504089355,
+        4.8379998207092285
+      ]
+    },
+    {
+      "expected": "Guestbath 01 | retained north window internal first jamb",
+      "hit": "Guestbath 01 | retained north window internal first jamb",
+      "material": "Interior | Guestbath warm ivory",
+      "position": [
+        7.822000026702881,
+        7.7769999504089355,
+        4.400000095367432
+      ]
+    },
+    {
+      "expected": "Guestbath 01 | retained north window internal second jamb",
+      "hit": "Guestbath 01 | retained north window internal second jamb",
+      "material": "Interior | Guestbath warm ivory",
+      "position": [
+        8.829099655151367,
+        7.7769999504089355,
+        4.400000095367432
+      ]
+    },
+    {
+      "expected": "En suite balcony window board",
+      "hit": "En suite balcony window board",
+      "material": "White joinery",
+      "position": [
+        8.325550079345703,
+        7.7769999504089355,
+        3.9630000591278076
+      ]
     }
   ]
 }

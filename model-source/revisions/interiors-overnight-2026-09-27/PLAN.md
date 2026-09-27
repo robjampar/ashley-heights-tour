@@ -44,3 +44,5 @@ eye-level/cutaway buttons. The room navigation expands to the next areas.
 Journey: choose a room → examine entry and occupied views → compare its measured
 activity plan → switch proposal if needed → return to the full house. The gym
 plan shows running and rowing separately; no extra animation controls are added.
+
+Guest-suite review follows the same cards → doorway/bed/basin views → measured plan → full-house journey. Reuse the existing controls and mirror renderer. The bedroom and ensuite publish together so the outward ensuite door is reviewed with both sides of the opening.

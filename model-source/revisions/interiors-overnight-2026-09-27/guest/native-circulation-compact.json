@@ -1,8 +1,8 @@
 {
   "status": "PASS",
   "variant": "compact",
-  "source": "revisions/interiors-overnight-2026-09-27/guest/compact/preview-navigation.json",
-  "sourceSha256": "3224b9c73f273ce18a1847233fe7b919467dacc7dd4455ddc8a80c6af5769a0a",
+  "source": "output-proposed-compact/navigation.json",
+  "sourceSha256": "b752dd7ed39f54c3ea862c54ad37f5fa491c6d92af02e9662e574b6b09b8ea82",
   "southBedAisle": 0.8550000000000004,
   "note": "A person using the wardrobe or dressing beside the bed occupies that side aisle; routes to the other side, ensuite and balcony are checked.",
   "results": [
@@ -12,13 +12,13 @@
       "crop": {
         "before": {
           "segments": 132,
-          "obstacles": 121,
-          "surfaces": 29
+          "obstacles": 123,
+          "surfaces": 30
         },
         "after": {
           "segments": 27,
-          "obstacles": 22,
-          "surfaces": 6
+          "obstacles": 24,
+          "surfaces": 7
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -77,13 +77,13 @@
       "crop": {
         "before": {
           "segments": 132,
-          "obstacles": 122,
-          "surfaces": 29
+          "obstacles": 124,
+          "surfaces": 30
         },
         "after": {
           "segments": 27,
-          "obstacles": 23,
-          "surfaces": 6
+          "obstacles": 25,
+          "surfaces": 7
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -137,13 +137,13 @@
       "crop": {
         "before": {
           "segments": 132,
-          "obstacles": 122,
-          "surfaces": 29
+          "obstacles": 124,
+          "surfaces": 30
         },
         "after": {
           "segments": 27,
-          "obstacles": 23,
-          "surfaces": 6
+          "obstacles": 25,
+          "surfaces": 7
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -202,13 +202,13 @@
       "crop": {
         "before": {
           "segments": 132,
-          "obstacles": 122,
-          "surfaces": 29
+          "obstacles": 124,
+          "surfaces": 30
         },
         "after": {
           "segments": 27,
-          "obstacles": 23,
-          "surfaces": 6
+          "obstacles": 25,
+          "surfaces": 7
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -262,13 +262,13 @@
       "crop": {
         "before": {
           "segments": 132,
-          "obstacles": 122,
-          "surfaces": 29
+          "obstacles": 124,
+          "surfaces": 30
         },
         "after": {
           "segments": 27,
-          "obstacles": 23,
-          "surfaces": 6
+          "obstacles": 25,
+          "surfaces": 7
         },
         "equivalentProbes": 441,
         "margin": 1

@@ -1,12 +1,13 @@
 {
   "status": "PASS",
   "variant": "planning",
-  "source_sha256": "c7a2f5b169b82c40c6b62386607196337099c84ed6e3f5c268f0ce2fe62f84b4",
+  "source_sha256": "3ebe362537efe10026806ec27c9481bbcba6b56c6841a2093aa3d2f23b125f2a",
   "source_unchanged": true,
   "reports": [
     {
       "area": "cinema",
       "matching_study_meshes": 156,
+      "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": [
         {
@@ -194,6 +195,7 @@
     {
       "area": "bar",
       "matching_study_meshes": 505,
+      "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": [
         {
@@ -336,12 +338,122 @@
     {
       "area": "gym",
       "matching_study_meshes": 306,
+      "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 1.9073486328125e-06,
       "screen_rays": []
     },
     {
       "area": "utility",
       "matching_study_meshes": 311,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    },
+    {
+      "area": "guest",
+      "matching_study_meshes": 236,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": [
+        {
+          "seat": 1,
+          "target": [
+            9.19849967956543,
+            5.800000190734863,
+            4.03000020980835
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            9.19849967956543,
+            5.362080097198486,
+            3.783440113067627
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            9.19849967956543,
+            5.362080097198486,
+            4.276559829711914
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            9.19849967956543,
+            6.237919807434082,
+            3.783440113067627
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 1,
+          "target": [
+            9.19849967956543,
+            6.237919807434082,
+            4.276559829711914
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            9.19849967956543,
+            5.800000190734863,
+            4.03000020980835
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            9.19849967956543,
+            5.362080097198486,
+            3.783440113067627
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            9.19849967956543,
+            5.362080097198486,
+            4.276559829711914
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            9.19849967956543,
+            6.237919807434082,
+            3.783440113067627
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        },
+        {
+          "seat": 2,
+          "target": [
+            9.19849967956543,
+            6.237919807434082,
+            4.276559829711914
+          ],
+          "hit": "Guest 01 | fixed TV screen"
+        }
+      ]
+    },
+    {
+      "area": "guestbath",
+      "matching_study_meshes": 171,
+      "preserved_context_parts_outside_room": [
+        "Guestbath 01 | retained skirting outside ensuite Bathroom east | skirting end1",
+        "Guestbath 01 | retained skirting outside ensuite Principal en suite east | skirting end-1"
+      ],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": []
     }

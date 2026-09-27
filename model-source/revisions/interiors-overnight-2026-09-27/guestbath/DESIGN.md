@@ -26,6 +26,8 @@ the inward leaf does not strike them.
 [Inward-opening installation manual](https://www.matki.co.uk/wp-content/uploads/2017/10/INWARD-EPW-INSTRUCTION-BOOKLET-10735-AF-03-25.pdf),
 [EPW1200 RH dimensional drawing](https://www.matki.co.uk/wp-content/uploads/2017/10/EPW-1200-RH.pdf).
 
-Next: confirm every retained wall face and window, draw fixtures and both door
-sweeps, then check entry, basin use, WC knee space and shower access. The narrow
-shower opening is a real constraint to disclose. No fixtures are integrated yet.
+The wall faces, window and door opening have been checked against the source model. The retained compact arrangement now has a native study and separate room-use/shower-entry circulation checks. The narrow shower opening is disclosed in the review page; integration follows the native and browser checks.
+
+The developed double-sided handle touches the east lining at a full 90 degrees. An 85-degree opening stop clears the wall, and the 600 mm navigation body still passes through the open leaf. Ninety-one intermediate positions, including the full handles, clear the fittings and the standing body at (8.15, 5.85), with about 24 mm additional body clearance. This is a geometry check, not a guarantee that a particular off-the-shelf enclosure has the required stop or clearances.
+
+The native model includes an open recessed basin, open WC pan and seat, mixer controls, shower nozzles, smooth hanging hose, drain slots, towel warmer, mirror, blind and concealed cistern. Timber skirting is removed only inside this wet room. Two shared strips continue outside the bathroom and are reconstructed from their evaluated source geometry. The new white window returns stop before the retained frame’s inner face.

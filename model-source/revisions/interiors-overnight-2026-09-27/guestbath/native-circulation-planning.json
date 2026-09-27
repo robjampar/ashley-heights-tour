@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source": "output-proposed-planning/navigation.json",
+  "sourceSha256": "8d0ec2336d05fe2c3f24a131a211836a9c59040f3e2ee559f10f40eae0af7c88",
+  "showerClearEntry": 0.612,
+  "note": "Retained compact single-user ensuite. Shower opening is a narrow 612 mm concept; site measurement and final product selection are needed.",
+  "results": [
+    {
+      "state": "roomUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 130,
+          "obstacles": 116,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 18,
+          "obstacles": 13,
+          "surfaces": 12
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "room threshold",
+          "distance": 0.00353553390593329,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0.0025495097567958505,
+          "reachable": true
+        },
+        {
+          "label": "WC",
+          "distance": 0.0035355339059320347,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "showerEntry",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 130,
+          "obstacles": 117,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 18,
+          "obstacles": 14,
+          "surfaces": 12
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "room threshold",
+          "distance": 0.00353553390593329,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0.0025495097567958505,
+          "reachable": true
+        },
+        {
+          "label": "WC",
+          "distance": 0.0035355339059320347,
+          "reachable": true
+        },
+        {
+          "label": "shower entry",
+          "distance": 0.0035355339059320347,
+          "reachable": true
+        },
+        {
+          "label": "standing inside shower",
+          "distance": 0.0035355339059320347,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

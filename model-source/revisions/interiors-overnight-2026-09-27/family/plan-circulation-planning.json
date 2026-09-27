@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source": "plan fixtures",
+  "sourceSha256": "8d0ec2336d05fe2c3f24a131a211836a9c59040f3e2ee559f10f40eae0af7c88",
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 116,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 28,
+          "obstacles": 15,
+          "surfaces": 13
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north outlook",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "left sofa approach",
+          "distance": 0.0070710678118646965,
+          "reachable": true
+        },
+        {
+          "label": "middle sofa approach",
+          "distance": 0.007071067811865638,
+          "reachable": true
+        },
+        {
+          "label": "right sofa approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "desk approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "deskInUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 117,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 28,
+          "obstacles": 16,
+          "surfaces": 13
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north outlook",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "left sofa approach",
+          "distance": 0.0070710678118646965,
+          "reachable": true
+        },
+        {
+          "label": "middle sofa approach",
+          "distance": 0.007071067811865638,
+          "reachable": true
+        },
+        {
+          "label": "right sofa approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "desk approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "chairPulledBack",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 116,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 28,
+          "obstacles": 15,
+          "surfaces": 13
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north outlook",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "left sofa approach",
+          "distance": 0.0070710678118646965,
+          "reachable": true
+        },
+        {
+          "label": "middle sofa approach",
+          "distance": 0.007071067811865638,
+          "reachable": true
+        },
+        {
+          "label": "right sofa approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "desk approach",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "sofaOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 117,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 28,
+          "obstacles": 16,
+          "surfaces": 13
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north outlook",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "desk approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "storageUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 117,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 28,
+          "obstacles": 16,
+          "surfaces": 13
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north outlook",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "left sofa approach",
+          "distance": 0.0070710678118646965,
+          "reachable": true
+        },
+        {
+          "label": "middle sofa approach",
+          "distance": 0.007071067811865638,
+          "reachable": true
+        },
+        {
+          "label": "right sofa approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "desk approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "deskAndSofa",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 118,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 28,
+          "obstacles": 17,
+          "surfaces": 13
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north outlook",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

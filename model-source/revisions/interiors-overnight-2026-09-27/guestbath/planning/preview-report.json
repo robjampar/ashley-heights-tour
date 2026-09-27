@@ -1,0 +1,698 @@
+{
+  "area": "guestbath",
+  "revision": 1,
+  "objects": 174,
+  "mesh_objects": 171,
+  "lights": 3,
+  "removed_objects": [
+    {
+      "name": "Principal en suite toilet cistern",
+      "object_name": "Principal en suite toilet cistern"
+    },
+    {
+      "name": "Principal en suite toilet pedestal",
+      "object_name": "Principal en suite toilet pedestal"
+    },
+    {
+      "name": "Principal en suite toilet hollow pan",
+      "object_name": "Principal en suite toilet hollow pan"
+    },
+    {
+      "name": "Principal en suite toilet seat",
+      "object_name": "Principal en suite toilet seat"
+    },
+    {
+      "name": "Principal west-wall vanity carcass",
+      "object_name": "Principal west-wall vanity carcass"
+    },
+    {
+      "name": "Principal west-wall vanity plinth",
+      "object_name": "Principal west-wall vanity plinth"
+    },
+    {
+      "name": "Principal west-wall vanity door",
+      "object_name": "Principal west-wall vanity door"
+    },
+    {
+      "name": "Principal west-wall vanity raised panel",
+      "object_name": "Principal west-wall vanity raised panel"
+    },
+    {
+      "name": "Principal west-wall vanity stile",
+      "object_name": "Principal west-wall vanity stile"
+    },
+    {
+      "name": "Principal west-wall vanity stile",
+      "object_name": "Principal west-wall vanity stile.001"
+    },
+    {
+      "name": "Principal west-wall vanity door knob",
+      "object_name": "Principal west-wall vanity door knob"
+    },
+    {
+      "name": "Principal west-wall vanity door",
+      "object_name": "Principal west-wall vanity door.001"
+    },
+    {
+      "name": "Principal west-wall vanity raised panel",
+      "object_name": "Principal west-wall vanity raised panel.001"
+    },
+    {
+      "name": "Principal west-wall vanity stile",
+      "object_name": "Principal west-wall vanity stile.002"
+    },
+    {
+      "name": "Principal west-wall vanity stile",
+      "object_name": "Principal west-wall vanity stile.003"
+    },
+    {
+      "name": "Principal west-wall vanity door knob",
+      "object_name": "Principal west-wall vanity door knob.001"
+    },
+    {
+      "name": "Principal west-wall vanity counter",
+      "object_name": "Principal west-wall vanity counter"
+    },
+    {
+      "name": "Principal west-wall vanity inset basin",
+      "object_name": "Principal west-wall vanity inset basin"
+    },
+    {
+      "name": "Principal west-wall vanity tap",
+      "object_name": "Principal west-wall vanity tap"
+    },
+    {
+      "name": "Principal west-wall vanity tap",
+      "object_name": "Principal west-wall vanity tap.001"
+    },
+    {
+      "name": "Principal south shower tray",
+      "object_name": "Principal south shower tray"
+    },
+    {
+      "name": "Principal south shower glass door",
+      "object_name": "Principal south shower glass door"
+    },
+    {
+      "name": "Principal south shower frame",
+      "object_name": "Principal south shower frame"
+    },
+    {
+      "name": "Principal south shower frame",
+      "object_name": "Principal south shower frame.001"
+    },
+    {
+      "name": "Principal south shower door rail",
+      "object_name": "Principal south shower door rail"
+    },
+    {
+      "name": "Principal south shower door rail",
+      "object_name": "Principal south shower door rail.001"
+    },
+    {
+      "name": "Principal south shower handle",
+      "object_name": "Principal south shower handle"
+    },
+    {
+      "name": "Principal south shower electric shower unit",
+      "object_name": "Principal south shower electric shower unit"
+    },
+    {
+      "name": "Principal south shower shower hose",
+      "object_name": "Principal south shower shower hose"
+    },
+    {
+      "name": "Principal south shower shower head",
+      "object_name": "Principal south shower shower head"
+    },
+    {
+      "name": "Principal shower-room curtain pole",
+      "object_name": "Principal shower-room curtain pole"
+    },
+    {
+      "name": "Principal shower-room pleated curtain",
+      "object_name": "Principal shower-room pleated curtain"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.001"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.002"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.003"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.004"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.005"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.006"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.007"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.008"
+    },
+    {
+      "name": "Principal shower-room pleated curtain",
+      "object_name": "Principal shower-room pleated curtain.001"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.009"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.010"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.011"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.012"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.013"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.014"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.015"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.016"
+    },
+    {
+      "name": "Principal shower-room curtain ring",
+      "object_name": "Principal shower-room curtain ring.017"
+    },
+    {
+      "name": "Photo detail | Principal mirror backboard",
+      "object_name": "Photo detail | Principal mirror backboard"
+    },
+    {
+      "name": "Photo detail | Principal oval mirror",
+      "object_name": "Photo detail | Principal oval mirror"
+    },
+    {
+      "name": "Photo detail | Principal oval rim",
+      "object_name": "Photo detail | Principal oval rim"
+    },
+    {
+      "name": "Photo detail | Principal mirror cabinet side",
+      "object_name": "Photo detail | Principal mirror cabinet side"
+    },
+    {
+      "name": "Photo detail | Principal mirror cabinet side",
+      "object_name": "Photo detail | Principal mirror cabinet side.001"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf.001"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf.002"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf.003"
+    },
+    {
+      "name": "Photo detail | Principal mirror drawer face",
+      "object_name": "Photo detail | Principal mirror drawer face"
+    },
+    {
+      "name": "Photo detail | Principal mirror drawer knob",
+      "object_name": "Photo detail | Principal mirror drawer knob"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle",
+      "object_name": "Photo detail | Principal shelf spindle"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle turning",
+      "object_name": "Photo detail | Principal shelf spindle turning"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle",
+      "object_name": "Photo detail | Principal shelf spindle.001"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle turning",
+      "object_name": "Photo detail | Principal shelf spindle turning.001"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle",
+      "object_name": "Photo detail | Principal shelf spindle.002"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle turning",
+      "object_name": "Photo detail | Principal shelf spindle turning.002"
+    },
+    {
+      "name": "Photo detail | Principal shelf gallery",
+      "object_name": "Photo detail | Principal shelf gallery"
+    },
+    {
+      "name": "Photo detail | Principal mirror cabinet side",
+      "object_name": "Photo detail | Principal mirror cabinet side.002"
+    },
+    {
+      "name": "Photo detail | Principal mirror cabinet side",
+      "object_name": "Photo detail | Principal mirror cabinet side.003"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf.004"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf.005"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf.006"
+    },
+    {
+      "name": "Photo detail | Principal mirror shelf",
+      "object_name": "Photo detail | Principal mirror shelf.007"
+    },
+    {
+      "name": "Photo detail | Principal mirror drawer face",
+      "object_name": "Photo detail | Principal mirror drawer face.001"
+    },
+    {
+      "name": "Photo detail | Principal mirror drawer knob",
+      "object_name": "Photo detail | Principal mirror drawer knob.001"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle",
+      "object_name": "Photo detail | Principal shelf spindle.003"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle turning",
+      "object_name": "Photo detail | Principal shelf spindle turning.003"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle",
+      "object_name": "Photo detail | Principal shelf spindle.004"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle turning",
+      "object_name": "Photo detail | Principal shelf spindle turning.004"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle",
+      "object_name": "Photo detail | Principal shelf spindle.005"
+    },
+    {
+      "name": "Photo detail | Principal shelf spindle turning",
+      "object_name": "Photo detail | Principal shelf spindle turning.005"
+    },
+    {
+      "name": "Photo detail | Principal shelf gallery",
+      "object_name": "Photo detail | Principal shelf gallery.001"
+    },
+    {
+      "name": "En suite balcony | skirting pier 0-1",
+      "object_name": "En suite balcony | skirting pier 0-1"
+    },
+    {
+      "name": "En suite balcony | skirting below 0-1",
+      "object_name": "En suite balcony | skirting below 0-1"
+    },
+    {
+      "name": "En suite balcony | skirting end-1",
+      "object_name": "En suite balcony | skirting end-1"
+    },
+    {
+      "name": "Bathroom en suite | skirting end1",
+      "object_name": "Bathroom en suite | skirting end1"
+    },
+    {
+      "name": "Bathroom jog | skirting end1",
+      "object_name": "Bathroom jog | skirting end1"
+    },
+    {
+      "name": "Bathroom east | skirting end1",
+      "object_name": "Bathroom east | skirting end1"
+    },
+    {
+      "name": "Principal en suite south | skirting end1",
+      "object_name": "Principal en suite south | skirting end1"
+    },
+    {
+      "name": "Principal en suite east | skirting pier 0-1",
+      "object_name": "Principal en suite east | skirting pier 0-1"
+    },
+    {
+      "name": "Principal en suite east | skirting end-1",
+      "object_name": "Principal en suite east | skirting end-1"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Guestbath 01 | floating vanity",
+      "box": [
+        7.202,
+        6.29,
+        7.672,
+        7.19
+      ],
+      "bottom": 2.8,
+      "top": 3.6879999999999997
+    },
+    {
+      "name": "Guestbath 01 | WC pan",
+      "box": [
+        8.215,
+        7.065,
+        8.605,
+        7.605
+      ],
+      "bottom": 2.8,
+      "top": 3.253
+    },
+    {
+      "name": "Guestbath 01 | cistern",
+      "box": [
+        7.985,
+        7.605,
+        8.835,
+        7.765
+      ],
+      "bottom": 2.8,
+      "top": 3.93
+    },
+    {
+      "name": "Guestbath 01 | fixed shower glass",
+      "box": [
+        7.813,
+        6.295,
+        8.351,
+        6.305
+      ],
+      "bottom": 2.8,
+      "top": 4.837
+    },
+    {
+      "name": "Guestbath 01 | shallow towel warmer",
+      "box": [
+        7.2,
+        7.28,
+        7.269,
+        7.69
+      ],
+      "bottom": 2.8,
+      "top": 4.35
+    }
+  ],
+  "configuration": {
+    "revision": 1,
+    "room": "Garden guest en suite",
+    "floorZ": 2.8,
+    "ceilingZ": 5.25,
+    "bounds": [
+      7.185,
+      5.505,
+      9.015,
+      7.775
+    ],
+    "polygon": [
+      [
+        7.185,
+        6.165
+      ],
+      [
+        7.805,
+        6.165
+      ],
+      [
+        7.805,
+        5.505
+      ],
+      [
+        9.015,
+        5.505
+      ],
+      [
+        9.015,
+        7.775
+      ],
+      [
+        7.185,
+        7.775
+      ]
+    ],
+    "shower": {
+      "tray": [
+        7.813,
+        5.517,
+        9.003,
+        6.317
+      ],
+      "glassY": 6.3,
+      "hinge": [
+        8.987,
+        6.3,
+        2.834
+      ],
+      "leafWidth": 0.626,
+      "fixedEdgeX": 8.351,
+      "clearEntry": 0.612,
+      "height": 2.003,
+      "openDelta": 1.4835298641951802,
+      "openingStopDegrees": 85
+    },
+    "vanity": [
+      7.202,
+      6.29,
+      7.672,
+      7.19
+    ],
+    "wc": {
+      "centerX": 8.41,
+      "panBounds": [
+        8.215,
+        7.065,
+        8.605,
+        7.605
+      ],
+      "cistern": [
+        7.985,
+        7.605,
+        8.835,
+        7.765
+      ]
+    },
+    "notes": [
+      "Working layout only; retained north window and wall faces checked against source walls.",
+      "Retain the service-wall arrangement and existing doorway.",
+      "Inward shower door layout referenced to Matki EPW1200; product selection and site dimensions remain unresolved.",
+      "The concept inward leaf stops at 85 degrees to keep its double-sided handle clear of the east lining."
+    ],
+    "window": {
+      "axis": "y",
+      "inside": 7.775,
+      "frame": 7.813,
+      "a": 7.82,
+      "d": 8.8311,
+      "sill": 3.96,
+      "head": 4.84
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          8.86,
+          6.93,
+          4.36
+        ],
+        "target": [
+          7.57,
+          6.59,
+          3.8
+        ],
+        "fov": 74
+      },
+      "vanity": {
+        "position": [
+          8.48,
+          6.69,
+          4.2
+        ],
+        "target": [
+          7.27,
+          6.74,
+          4.02
+        ],
+        "fov": 67
+      },
+      "shower": {
+        "position": [
+          8.61,
+          7.18,
+          4.31
+        ],
+        "target": [
+          8.25,
+          5.68,
+          3.86
+        ],
+        "fov": 70
+      },
+      "window": {
+        "position": [
+          7.94,
+          6.37,
+          4.28
+        ],
+        "target": [
+          8.42,
+          7.69,
+          3.99
+        ],
+        "fov": 74
+      },
+      "details": {
+        "position": [
+          8.08,
+          6.2,
+          4.08
+        ],
+        "target": [
+          7.43,
+          6.74,
+          3.67
+        ],
+        "fov": 59
+      },
+      "overview": {
+        "position": [
+          10.89,
+          9.73,
+          8.05
+        ],
+        "target": [
+          8.12,
+          6.59,
+          3.38
+        ],
+        "fov": 47,
+        "cutaway": true
+      }
+    }
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "c7a2f5b169b82c40c6b62386607196337099c84ed6e3f5c268f0ce2fe62f84b4",
+  "source_house_unchanged": true,
+  "isolated_objects": 263,
+  "views": {
+    "entrance": {
+      "position": [
+        8.86,
+        6.93,
+        4.36
+      ],
+      "target": [
+        7.57,
+        6.59,
+        3.8
+      ],
+      "fov": 74
+    },
+    "vanity": {
+      "position": [
+        8.48,
+        6.69,
+        4.2
+      ],
+      "target": [
+        7.27,
+        6.74,
+        4.02
+      ],
+      "fov": 67
+    },
+    "shower": {
+      "position": [
+        8.61,
+        7.18,
+        4.31
+      ],
+      "target": [
+        8.25,
+        5.68,
+        3.86
+      ],
+      "fov": 70
+    },
+    "window": {
+      "position": [
+        7.94,
+        6.37,
+        4.28
+      ],
+      "target": [
+        8.42,
+        7.69,
+        3.99
+      ],
+      "fov": 74
+    },
+    "details": {
+      "position": [
+        8.08,
+        6.2,
+        4.08
+      ],
+      "target": [
+        7.43,
+        6.74,
+        3.67
+      ],
+      "fov": 59
+    },
+    "overview": {
+      "position": [
+        10.89,
+        9.73,
+        8.05
+      ],
+      "target": [
+        8.12,
+        6.59,
+        3.38
+      ],
+      "fov": 47,
+      "cutaway": true
+    }
+  }
+}

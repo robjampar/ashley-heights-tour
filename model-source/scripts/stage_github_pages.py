@@ -139,7 +139,7 @@ principal_studio = stage_studio(DIST / 'interiors/principal', DEST / 'interiors/
                               previous.get('principal_studio', {}), now, retirement,
                               ROOT / 'walkthrough/public/interiors/principal', room='principal')
 leisure_studio = stage_room_studies(DIST/'interiors/leisure',DEST/'interiors/leisure',
-                                  previous.get('leisure_studio',{}),now,retirement,('cinema','bar','gym','utility'))
+                                  previous.get('leisure_studio',{}),now,retirement,('cinema','bar','gym','utility','guest','guestbath'))
 manifest = {
     'leisure_studio': leisure_studio,
     'interior_studio': interior_studio,

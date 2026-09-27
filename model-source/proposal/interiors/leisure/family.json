@@ -1,0 +1,229 @@
+{
+  "revision": 1,
+  "room": "Upstairs family lounge",
+  "bounds": [
+    -5.065,
+    3.46,
+    -0.115,
+    8.705
+  ],
+  "polygon": [
+    [
+      -5.065,
+      5.16
+    ],
+    [
+      -2.47,
+      5.16
+    ],
+    [
+      -2.47,
+      3.76
+    ],
+    [
+      -1.29,
+      3.76
+    ],
+    [
+      -1.29,
+      3.46
+    ],
+    [
+      -0.115,
+      3.46
+    ],
+    [
+      -0.115,
+      8.705
+    ],
+    [
+      -5.065,
+      8.705
+    ]
+  ],
+  "floorZ": 2.8,
+  "ceilingZ": 5.158,
+  "sofa": [
+    -4.98,
+    5.19,
+    -2.58,
+    6.21
+  ],
+  "coffee": [
+    -3.245,
+    6.86,
+    -2.105,
+    7.48
+  ],
+  "desk": [
+    -5.02,
+    8.08,
+    -3.88,
+    8.68
+  ],
+  "chair": [
+    -4.76,
+    7.38,
+    -4.14,
+    8.04
+  ],
+  "chairPullback": -0.4,
+  "sideTable": [
+    -2.46,
+    5.33,
+    -2.08,
+    5.71
+  ],
+  "storage": [
+    -0.515,
+    6.29,
+    -0.14,
+    8.63
+  ],
+  "westWindow": {
+    "axis": "x",
+    "inside": -5.065,
+    "frame": -5.151,
+    "a": 6.375,
+    "d": 7.625,
+    "sill": 3.65,
+    "head": 5.05
+  },
+  "view": {
+    "id": "proposal-upstairs-family-lounge",
+    "position": [
+      -1.4,
+      5.65,
+      2.8
+    ],
+    "direction": [
+      -1.8,
+      1.5,
+      -0.1
+    ]
+  },
+  "views": {
+    "entrance": {
+      "position": [
+        -1.12,
+        5.14,
+        4.39
+      ],
+      "target": [
+        -3.47,
+        6.9,
+        3.48
+      ],
+      "fov": 67
+    },
+    "seated": {
+      "position": [
+        -3.78,
+        5.54,
+        3.94
+      ],
+      "target": [
+        -3.03,
+        8.31,
+        3.75
+      ],
+      "fov": 64
+    },
+    "desk": {
+      "position": [
+        -2.95,
+        6.97,
+        4.36
+      ],
+      "target": [
+        -4.43,
+        8.3,
+        3.65
+      ],
+      "fov": 65
+    },
+    "storage": {
+      "position": [
+        -3.15,
+        6.31,
+        4.3
+      ],
+      "target": [
+        -0.31,
+        7.39,
+        3.91
+      ],
+      "fov": 67
+    },
+    "reverse": {
+      "position": [
+        -2.22,
+        8.21,
+        4.41
+      ],
+      "target": [
+        -3.51,
+        5.6,
+        3.45
+      ],
+      "fov": 68
+    },
+    "details": {
+      "position": [
+        -2.35,
+        6.25,
+        4.01
+      ],
+      "target": [
+        -3.93,
+        5.68,
+        3.24
+      ],
+      "fov": 56
+    },
+    "overview": {
+      "position": [
+        -8.0,
+        11.5,
+        10.3
+      ],
+      "target": [
+        -2.78,
+        6.5,
+        3.3
+      ],
+      "fov": 49,
+      "cutaway": true
+    }
+  },
+  "notes": [
+    "Quiet shared reading, conversation, games and a compact homework desk.",
+    "Proposed retains the terrace doors; Planning retains its north window and no terrace.",
+    "The 1.14 m writing desk is shorter than the old 1.6 m desk; its new position receives west-window light from the side.",
+    "The sofa is 2.4 m wide, fully against the 2.595 m solid south wall."
+  ],
+  "tables": [
+    {
+      "center": [
+        -2.82,
+        7.135
+      ],
+      "radii": [
+        0.425,
+        0.275
+      ],
+      "height": 0.4
+    },
+    {
+      "center": [
+        -2.31,
+        7.275
+      ],
+      "radii": [
+        0.205,
+        0.205
+      ],
+      "height": 0.49
+    }
+  ]
+}

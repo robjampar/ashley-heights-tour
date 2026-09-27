@@ -3,13 +3,25 @@
   "reports": [
     {
       "variant": "compact",
-      "unchanged_previous_meshes": 13034,
+      "unchanged_previous_meshes": 12492,
       "unchanged_kitchen_lounge_meshes": 1028,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 2574,
+      "declared_replaced_parts": 3116,
       "exactly_verified_rehung_door_parts": 7,
+      "retained_shared_skirtings": [
+        {
+          "source": "Bathroom east | skirting end1",
+          "verified_retained_source_vertices": 28,
+          "cut_plane_y": 5.505
+        },
+        {
+          "source": "Principal en suite east | skirting end-1",
+          "verified_retained_source_vertices": 4,
+          "cut_plane_y": 5.505
+        }
+      ],
       "rooms": [
         {
           "area": "cinema",
@@ -29,19 +41,41 @@
         {
           "area": "utility",
           "mesh_objects": 311,
+          "lights": 3
+        },
+        {
+          "area": "guest",
+          "mesh_objects": 236,
+          "lights": 4
+        },
+        {
+          "area": "guestbath",
+          "mesh_objects": 171,
           "lights": 3
         }
       ]
     },
     {
       "variant": "planning",
-      "unchanged_previous_meshes": 12219,
+      "unchanged_previous_meshes": 11677,
       "unchanged_kitchen_lounge_meshes": 919,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 2574,
+      "declared_replaced_parts": 3116,
       "exactly_verified_rehung_door_parts": 7,
+      "retained_shared_skirtings": [
+        {
+          "source": "Bathroom east | skirting end1",
+          "verified_retained_source_vertices": 28,
+          "cut_plane_y": 5.505
+        },
+        {
+          "source": "Principal en suite east | skirting end-1",
+          "verified_retained_source_vertices": 4,
+          "cut_plane_y": 5.505
+        }
+      ],
       "rooms": [
         {
           "area": "cinema",
@@ -61,6 +95,16 @@
         {
           "area": "utility",
           "mesh_objects": 311,
+          "lights": 3
+        },
+        {
+          "area": "guest",
+          "mesh_objects": 236,
+          "lights": 4
+        },
+        {
+          "area": "guestbath",
+          "mesh_objects": 171,
           "lights": 3
         }
       ]

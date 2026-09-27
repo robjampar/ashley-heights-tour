@@ -156,11 +156,11 @@ def apply_guest(ns):
     px,py=cfg['plant']['center']
     b.lathe('plant ceramic pot',(px,py,z+.015),[(.12,0),(.15,.035),(.17,.30),(.155,.32),(.145,.30),(.115,.035)],ivory,40)
     b.cylinder('plant soil',(px,py,z+.306),.145,.012,soil,sides=40)
-    for branch in range(5):
-        angle=branch*math.tau/5;ex=px+.16*math.cos(angle);ey=py+.16*math.sin(angle);ez=z+.96+.11*(branch%3)
+    for branch in range(7):
+        angle=branch*math.tau/7;ex=px+.16*math.cos(angle);ey=py+.16*math.sin(angle);ez=z+.96+.11*(branch%3)
         b.tube('plant branch',[(px,py,z+.29),(px+.04*math.cos(angle),py+.04*math.sin(angle),z+.66),(ex,ey,ez)],.006,oak,2)
-        for k in range(4):
-            u=.38+k*.15;cx=px+(ex-px)*u;cyy=py+(ey-py)*u;cz=z+.45+(ez-z-.45)*u;dx=.085*math.cos(angle+(-1)**k);dy=.085*math.sin(angle+(-1)**k)
+        for k in range(8):
+            u=.20+k*.10;cx=px+(ex-px)*u;cyy=py+(ey-py)*u;cz=z+.45+(ez-z-.45)*u;dx=.085*math.cos(angle+(-1)**k);dy=.085*math.sin(angle+(-1)**k)
             b.mesh('plant leaf',[(cx,cyy,cz),(cx+dx*.6-dy*.27,cyy+dy*.6+dx*.27,cz+.045),(cx+dx,cyy+dy,cz+.04),(cx+dx*.6+dy*.27,cyy+dy*.6-dx*.27,cz+.025)],[(0,1,2),(0,2,3)],leaf,True)
     b.obstacle('plant pot',cfg['plant']['footprint'],z,z+.36)
     # Replace only proposal door leaves. The existing opening, casing and source house remain.
@@ -179,6 +179,14 @@ def apply_guest(ns):
         b.cylinder('ceiling light trim',(xx,yy,5.232),.054,.006,ivory,sides=36)
         b.cylinder('ceiling light diffuser',(xx,yy,5.227),.040,.005,light,sides=32)
         b.light('ceiling glow',(xx,yy,5.12),.29,29,3.1)
+    # Upholstery needs a continuous soft edge rather than the three-sided bevel
+    # used for small cabinet corners. Weighted normals keep the broad faces calm.
+    for ob in b.objects:
+        if ob.type=='MESH'and any(m in (linen,white)for m in ob.data.materials):
+            bevel=next((m for m in ob.modifiers if m.type=='BEVEL'),None)
+            if bevel:
+                bevel.segments=8
+                for face in ob.data.polygons:face.use_smooth=True
     for room in nav['rooms']+ns.get('new_views',[]):
         if room['id']==cfg['view']['id']:room.update(position=cfg['view']['position'],direction=cfg['view']['direction'])
     return b.finish(cfg)

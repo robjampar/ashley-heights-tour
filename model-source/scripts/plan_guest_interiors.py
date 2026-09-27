@@ -18,6 +18,7 @@ for i in range(2):
     for a,b in(((9.195,8.005),(9.195,8.665)),((9.145,6.453),(9.145,7.200)),((9.20,4.595),(9.93,4.595))):line(a,b,'#faf9f4',7)
     line((9.205,4.53),(9.205,5.248))
     line((9.08,6.47),(9.797,6.47))
+    line((9.08,7.970),(8.35,7.970))
     line((10.345,8.705),(13.014,8.705),'#6c9cac',7)
     rect([10.93,8.628,12.43,8.70],'storage','radiator')
     if i==0:
@@ -32,6 +33,8 @@ for i in range(2):
         for box in cfg['bedsides']:rect(box,'storage','bedside')
         rect(cfg['tvConsole'],'storage');sx,sy,sz=cfg['screen']['center'];rect([sx-.014,sy-.486,sx+.025,sy+.486],'screen')
         rect(cfg['readingChair'],'chair','reading');rect(cfg['readingTable'],'storage')
+        for box in cfg['curtains']:rect(box,'bed')
+        rect(cfg['plant']['footprint'],'chair')
         for a,b in(((9.64,4.91),(10.18,5.24)),((10.18,5.24),(10.47,6.71)),((10.47,6.71),(9.64,6.83)),((10.47,6.71),(9.69,8.33))):line(a,b,'#759684',2,'6 5')
         notes=['Headboard on an uninterrupted solid wall.','Fixed TV between door leaves; garden glazing stays clear.','Check the wardrobe aisle, occupied bed sides and balcony.']
     for row,note in enumerate(notes):svg.append(f'<text x="{ox}" y="{755+row*25}" class="body">{html.escape(note)}</text>')

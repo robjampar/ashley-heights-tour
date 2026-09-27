@@ -4,9 +4,9 @@ import fs from 'node:fs/promises';
 const root=process.env.LEISURE_URL??'http://127.0.0.1:8776/',out=new URL('../../revisions/interiors-overnight-2026-09-27/',import.meta.url);
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
 const checks=[],errors=[],failed=[];
-const areas=process.env.LEISURE_AREAS?.split(',')??['cinema','bar','gym','utility'];
-const roomIds={cinema:'proposal-basement-cinema',bar:'proposal-basement-bar',gym:'proposal-gym',utility:'proposal-utility'};
-const details={utility:['washer start pause button','dryer drum perforation','undermount sink bowl','curved sink mixer','soap pump spout'],cinema:['fixed projection screen','remote button','USB-C port','front piping','rear storage drawer'],bar:['wine cooler touch control','continuous bronze footrail','pool pocket leather well','dartboard ring wire','controller face button','dried sculptural branch'],gym:['treadmill 1 stop button','stored rower grille spoke','bike monitor button','dumbbell hex head','blind pull loop','rolled exercise mat']};
+const areas=process.env.LEISURE_AREAS?.split(',')??['cinema','bar','gym','utility','guest','guestbath'];
+const roomIds={cinema:'proposal-basement-cinema',bar:'proposal-basement-bar',gym:'proposal-gym',utility:'proposal-utility',guest:'2445673-0',guestbath:'2445675-0'};
+const details={guest:['wall-backed upholstered headboard','pillow stitched edge','bedside USB C slot','curved upholstered reading chair back','plant leaf'],guestbath:['hollow inset ceramic basin','open WC seat','shower door handle','rain head nozzle','shower control index'],utility:['washer start pause button','dryer drum perforation','undermount sink bowl','curved sink mixer','soap pump spout'],cinema:['fixed projection screen','remote button','USB-C port','front piping','rear storage drawer'],bar:['wine cooler touch control','continuous bronze footrail','pool pocket leather well','dartboard ring wire','controller face button','dried sculptural branch'],gym:['treadmill 1 stop button','stored rower grille spoke','bike monitor button','dumbbell hex head','blind pull loop','rolled exercise mat']};
 try{
  for(const area of areas)for(const design of ['compact','planning']){
   const page=await browser.newPage({viewport:{width:1440,height:1050}});
@@ -19,13 +19,15 @@ try{
   });
   assert.equal(info.variant,design);assert.equal(info.revision,1);assert(info.objects>150);assert(info.cutaway>0);assert(info.fullHouse.includes('room='+roomIds[area]));
   for(const term of details[area])assert(info.names.some(n=>n.includes(term)),term);
+  if(area==='guestbath')assert(await page.evaluate(()=>interiorPreview.info.mirrors.length===1));
   if(area==='gym')assert(await page.evaluate(()=>interiorPreview.info.mirrors.length===0));
   for(const view of info.views){
    await page.locator(`[data-camera=${view}]`).click();await page.waitForTimeout(400);
    assert(await page.evaluate(()=>interiorPreview.cutawayMeshes.every(o=>o.visible===!interiorPreview.views[new URL(location.href).searchParams.get('view')].cutaway)));
    await page.locator('#room-model').screenshot({path:new URL(`${area}/${design}/${view}-browser.png`,out).pathname});
   }
-  await page.locator('[data-camera=reverse]').click();await page.locator('#model-design').selectOption(design==='compact'?'planning':'compact');await page.waitForFunction(()=>window.interiorPreview?.ready,null,{timeout:120000});assert.equal(await page.locator('[data-camera=reverse]').getAttribute('aria-pressed'),'true');
+  const retainedView=info.views.includes('reverse')?'reverse':info.views.find(v=>v!=='entrance'&&v!=='overview');
+  await page.locator(`[data-camera=${retainedView}]`).click();await page.locator('#model-design').selectOption(design==='compact'?'planning':'compact');await page.waitForFunction(()=>window.interiorPreview?.ready,null,{timeout:120000});assert.equal(await page.locator(`[data-camera=${retainedView}]`).getAttribute('aria-pressed'),'true');
   checks.push({area,design,...info,names:undefined});await page.close();
  }
  for(const area of areas){

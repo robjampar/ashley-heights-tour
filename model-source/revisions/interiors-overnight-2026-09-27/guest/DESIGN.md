@@ -27,9 +27,7 @@ immersive target is a screen-size benchmark, not a rule for allowable head
 turn. Do not claim these are the same measure.
 [Manufacturer viewing guidance](https://www.samsung.com/uk/tvs/tv-buying-guide/what-size-tv-should-i-get/).
 
-Next: draw the two layouts and actual door leaves, check bed sides, wardrobe
-use, radiator/window access and the balcony route, then review at eye level.
-This is a working study, not integrated or owner-approved.
+The comparison plan and eye-level studies now test both bedroom sides, wardrobe use, radiator/window access and the retained balcony opening. The developed room is being checked for integration; it has not yet had owner review.
 
 The refined door arrangement puts the ensuite leaf on its south jamb, opening
 out into the bedroom's clear foot zone. This avoids both the WC and the shower

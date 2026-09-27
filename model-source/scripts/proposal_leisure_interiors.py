@@ -4,6 +4,8 @@ from interior_furnishing import RoomBuilder
 from proposal_bar_interiors import apply_bar
 from proposal_gym_interiors import apply_gym
 from proposal_utility_interiors import apply_utility
+from proposal_guest_interiors import apply_guest
+from proposal_guestbath_interiors import apply_guestbath
 
 
 def apply_cinema(ns):
@@ -142,9 +144,9 @@ def apply_cinema(ns):
     return b.finish(cfg)
 
 
-def apply_leisure(ns,areas=('cinema','bar','gym','utility')):
+def apply_leisure(ns,areas=('cinema','bar','gym','utility','guest','guestbath')):
     if ns.get('VARIANT') not in ('compact','planning'):return {}
-    return {area:{'cinema':apply_cinema,'bar':apply_bar,'gym':apply_gym,'utility':apply_utility}[area](ns)for area in areas}
+    return {area:{'cinema':apply_cinema,'bar':apply_bar,'gym':apply_gym,'utility':apply_utility,'guest':apply_guest,'guestbath':apply_guestbath}[area](ns)for area in areas}
 
 
 if 'scene' in globals() and 'nav' in globals():

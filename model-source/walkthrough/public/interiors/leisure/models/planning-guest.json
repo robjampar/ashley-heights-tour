@@ -1896,6 +1896,66 @@
       0.046,
       0.031,
       1
+    ],
+    "Interior | Guestbath natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Guestbath honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Guestbath warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Guestbath ivory ceramic": [
+      0.96,
+      0.945,
+      0.9,
+      1
+    ],
+    "Interior | Guestbath satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Guestbath ivory towels": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Guestbath recess and drain": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Guestbath mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Guestbath clear shower glass": [
+      0.91,
+      0.97,
+      0.95,
+      1
+    ],
+    "Interior | Guestbath warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
     ]
   },
   "planRooms": [
@@ -2019,10 +2079,11 @@
     "Guest 01 | ceiling light trim",
     "Guest 01 | ceiling light diffuser",
     "Guest 01 | ceiling light trim",
-    "Guest 01 | ceiling light diffuser"
+    "Guest 01 | ceiling light diffuser",
+    "Guestbath 01 | ivory ceiling"
   ],
   "mirrors": [],
-  "objects": 405,
+  "objects": 451,
   "views": {
     "entrance": {
       "position": [
@@ -2104,5 +2165,5 @@
       "cutaway": true
     }
   },
-  "sourceModelUpdatedAt": "2026-09-27T02:28:54.682151+00:00"
+  "sourceModelUpdatedAt": "2026-09-27T03:27:22.066024+00:00"
 }

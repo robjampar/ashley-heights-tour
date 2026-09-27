@@ -25,7 +25,7 @@ for(const[state,extra]of Object.entries(states)){
  function nearest(x,y){let best=-1,d=Infinity;for(let i=0;i<free.length;i++)if(free[i]){const p=point(i),v=Math.hypot(p.x-x,p.y-y);if(v<d){d=v;best=i;}}return{index:best,distance:d};}
  const origin=nearest(9.58,4.25);assert(origin.distance<.04,'hall approach blocked');const queue=[origin.index];seen[origin.index]=1;
  for(let q=0;q<queue.length;q++){const i=queue[q],p=point(i),ix=i%nx,iy=Math.floor(i/nx);for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){const x=ix+dx,y=iy+dy,j=x+y*nx;if(x<0||y<0||x>=nx||y>=ny||seen[j]||!free[j])continue;const t=point(j);nav.position={...p};nav.move(t.x-p.x,t.y-p.y);if(Math.hypot(nav.position.x-t.x,nav.position.y-t.y)<.001){seen[j]=1;queue.push(j);}}}
- let targets=[['south bedside',12.85,5.01],['north bedside',12.85,7.85],['ensuite entrance',8.79,6.86],['balcony approach',9.65,8.33],['balcony doorway',9.08,8.375],['balcony landing',8.65,8.375],['window approach',11.98,8.20],['west wardrobe',10.65,4.99],['bed foot',11.1,6.4]];
+ let targets=[['south bedside',12.85,5.01],['north bedside',12.85,7.85],['ensuite entrance',8.80,6.81],['balcony approach',9.65,8.33],['balcony doorway',9.08,8.375],['balcony landing',8.65,8.375],['window approach',11.98,8.20],['west wardrobe',10.65,4.99],['bed foot',11.1,6.4]];
  if(['wardrobeUse','southBedOccupied'].includes(state))targets=targets.filter(t=>t[0]!=='south bedside');
  if(state==='northBedOccupied')targets=targets.filter(t=>t[0]!=='north bedside');
  const checks=targets.map(([label,x,y])=>{const n=nearest(x,y);return{label,distance:n.distance,reachable:!!seen[n.index]};});
