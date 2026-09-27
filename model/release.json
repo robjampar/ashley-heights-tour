@@ -10,20 +10,22 @@
       "guestbath",
       "family",
       "cloakroom",
-      "bedroom2"
+      "bedroom2",
+      "bedroom3"
     ],
     "method": "Measured native room geometry; developed concepts for review",
     "pages": {
-      "index.html": "59b271e64e2f906fb9433039dd658d77f477806f32045fe1a139fc93245922f3",
-      "cinema.html": "844a7bbc8e699ff2794fd09b48435749a402bd4fb0b5ae84c628ced8c78b8b06",
-      "bar.html": "15a835770fc8984858cee474f8fdb1e38ce19ff32d2f829950657696ce7b6258",
-      "gym.html": "0d85f1583506b2165b8ad52ee84a00c3d39fb3f4acb955f1b0ea3a5ac0fbed29",
-      "utility.html": "2e391d52b104695fb923d51c077fa80eca658e9af5a3c7f743c72cc1607406d5",
-      "guest.html": "69b0ea25ab9e60409492f2048f2b75e9cacfa864c88464ea99044fc91a14d090",
-      "guestbath.html": "3de404fd4d32ced090af024ef87139c078db07a720570bd4962477af74f1ceec",
-      "family.html": "fd618a41db7633ed0d391d3ba4c126b0f3ca8aff7bcbf3d7aa0d1841d3afc47f",
-      "cloakroom.html": "82a961759f8443c89162e21ff4de7a85205177ad1c7c50cc32ba6bc6ab452dd5",
-      "bedroom2.html": "e313f8ba40ee746049b19ff53f25e8b6e845e035397aedf3b2cff3befb71b0d3"
+      "index.html": "71c38e2293bf00e6121ac60f691a1ea3284f0b170e802e43e0787ffa5f01d94b",
+      "cinema.html": "0fe4e7136abaac12c5861cf9d5aa669606baaca0af2a6ed51115b669286a252a",
+      "bar.html": "3e56250d6cf9c25265e5dfe3f104213d06f96f0109f58d7ca854e8b5053982ab",
+      "gym.html": "17105e6bf15c4c01cea161eece08156525cce17ebb94505c934ba538943d8961",
+      "utility.html": "1d555809e7d8e6890acb813ebd16679ae957fcc3806fa249f683651dd3822fcf",
+      "guest.html": "e2266be97f5fa55f845d812fdc9a4ff2706c799548c66ba489e94c72900d36b7",
+      "guestbath.html": "46306ac66c7985068c38421f3710d874f39e0f81d760084a4325e20e0cf0c78f",
+      "family.html": "2b69cb17a895fcfae7ac3bd90ca8d6fea0a3bba911bebeb2c6df0b62513e11a0",
+      "cloakroom.html": "0a7ea97661dd53a1726171c2f3edf8f24657b211604fbab687dcbe08a51ea637",
+      "bedroom2.html": "9f255acd830393987100b3c0841b902eb48b287b4d36e26db077faffcfad678f",
+      "bedroom3.html": "a062651b7a6cce3d17d23d9acf80846d1489c33a86e6d96a9e3d5a8a57ca27e0"
     },
     "assets": {
       "bar-plan.6a5c25df5fdf5d11.svg": {
@@ -35,6 +37,11 @@
         "source": "bedroom2-plan.svg",
         "bytes": 5042,
         "sha256": "fda821c9b9d581082934e96d455b767c2722c2ad49394b403c4641c0dcfafa05"
+      },
+      "bedroom3-plan.2d86ac96f71eadb4.svg": {
+        "source": "bedroom3-plan.svg",
+        "bytes": 5227,
+        "sha256": "2d86ac96f71eadb45a4adba41baa36c741169450f37f05609450c758b117e618"
       },
       "cinema-plan.f9256867c48649bc.svg": {
         "source": "cinema-plan.svg",
@@ -85,6 +92,16 @@
         "source": "models/compact-bedroom2.json",
         "bytes": 37320,
         "sha256": "a3be336fe8498058d3faadedf53821ca93d8064d4051312e9a9ac1705a71cb4c"
+      },
+      "models/compact-bedroom3.acd65642f1defcaf.glb": {
+        "source": "models/compact-bedroom3.glb",
+        "bytes": 8742116,
+        "sha256": "acd65642f1defcaf6ba4cac790bea16ebd0caca73fc694e640b1dc4cab5505cc"
+      },
+      "models/compact-bedroom3.fbca26b23c3ace1a.json": {
+        "source": "models/compact-bedroom3.json",
+        "bytes": 38104,
+        "sha256": "fbca26b23c3ace1ad395ed3b3872fab7f8690d85b499476428bc36a10e7e3161"
       },
       "models/compact-cinema.96431164752ac666.glb": {
         "source": "models/compact-cinema.glb",
@@ -176,6 +193,16 @@
         "bytes": 35806,
         "sha256": "42cf4140d8188d31b1621f675c6f406e9bd84bb819b23bd43a6e7e65d9d5d4e9"
       },
+      "models/planning-bedroom3.084099844749a330.glb": {
+        "source": "models/planning-bedroom3.glb",
+        "bytes": 8743972,
+        "sha256": "084099844749a330516288508f010d71b201087b1b9f556defe9aa02146ab981"
+      },
+      "models/planning-bedroom3.f2010b18721ec343.json": {
+        "source": "models/planning-bedroom3.json",
+        "bytes": 36606,
+        "sha256": "f2010b18721ec34393b29c60a1db12e5d86ecca3c0be1eeda977cccbe0eb1d28"
+      },
       "models/planning-cinema.bb1e3f0b28b80c15.glb": {
         "source": "models/planning-cinema.glb",
         "bytes": 8530884,
@@ -262,36 +289,7 @@
         "sha256": "b2c4e717767d6696bb52a96a84abde5dae493bcb29a5dd0c1160da5947c5ba50"
       }
     },
-    "previous_assets": {
-      "models/compact-guest.d93615dd66e15151.glb": {
-        "source": "models/compact-guest.glb",
-        "bytes": 9072488,
-        "sha256": "d93615dd66e15151a27387e7a766d76f8b54897b0e813e85734fa5863ddd734c",
-        "retired_at_epoch": 1790485492.659587,
-        "retain_until_epoch": 1790487292.659587
-      },
-      "models/compact-guest.dcc9f1cc1f9d98d6.json": {
-        "source": "models/compact-guest.json",
-        "bytes": 35646,
-        "sha256": "dcc9f1cc1f9d98d6029030b8d8a435c201b621bd972fd665cafe4091091af12f",
-        "retired_at_epoch": 1790485492.659587,
-        "retain_until_epoch": 1790487292.659587
-      },
-      "models/planning-guest.bfddb6fefab51961.glb": {
-        "source": "models/planning-guest.glb",
-        "bytes": 9079456,
-        "sha256": "bfddb6fefab519616340c4fe1922968ee48a4abcb8323eff1c064ee133530b17",
-        "retired_at_epoch": 1790485492.659587,
-        "retain_until_epoch": 1790487292.659587
-      },
-      "models/planning-guest.527b832c71718c56.json": {
-        "source": "models/planning-guest.json",
-        "bytes": 34168,
-        "sha256": "527b832c71718c563e50663d33a2f868b397c05b3e3ff6f7ce791e4401d53a22",
-        "retired_at_epoch": 1790485492.659587,
-        "retain_until_epoch": 1790487292.659587
-      }
-    }
+    "previous_assets": {}
   },
   "interior_studio": {
     "path": "./interiors/kitchen/",
@@ -785,7 +783,7 @@
       "method": "Measured furniture studies; separate design review required"
     }
   },
-  "published_utc": "2026-09-27T05:04:53.787982+00:00",
+  "published_utc": "2026-09-27T05:35:38.721160+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -798,21 +796,21 @@
       "bytes": 531449,
       "sha256": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
     },
-    "proposal-compact.2b3c24d3463064b5.glb": {
-      "bytes": 63907816,
-      "sha256": "2b3c24d3463064b5a212d957b4aa91857baa0c9a27c50de127dc29d5e3b8aa9d"
+    "proposal-compact.e8a477c2127971ca.glb": {
+      "bytes": 64568372,
+      "sha256": "e8a477c2127971caa79f6aa14a58f41fe9c650b9863320db49dcc53b6c92b99b"
     },
-    "proposal-compact-navigation.316e1656e8d22505.json": {
-      "bytes": 1825017,
-      "sha256": "316e1656e8d225059687999efa37c63a15001b46c4bccfe78ab8662f260bb20f"
+    "proposal-compact-navigation.78dab6543195faf8.json": {
+      "bytes": 1826853,
+      "sha256": "78dab6543195faf86e2c1ccc3c458231d5f50195cd61b56158b83dcb53b56c2f"
     },
-    "proposal-planning.8ee0cf4e6f122efb.glb": {
-      "bytes": 62012620,
-      "sha256": "8ee0cf4e6f122efbac8d07698638eed84b3fa73b7f6690a32a20e22106b0c777"
+    "proposal-planning.a7c29ec2ea19cb21.glb": {
+      "bytes": 62673056,
+      "sha256": "a7c29ec2ea19cb217d9531b2654f4596b94dbf0da4f2bb6d379dd964d13f5981"
     },
-    "proposal-planning-navigation.91cc23dbcc5dfd5c.json": {
-      "bytes": 1542460,
-      "sha256": "91cc23dbcc5dfd5ce06bf6c47a04dfc1fa6536f0eae72d32f286d5bc6bec120f"
+    "proposal-planning-navigation.50fbd7206a5e9b9b.json": {
+      "bytes": 1544296,
+      "sha256": "50fbd7206a5e9b9b179c169cb3e0d223499ee66c0440142fd412eab22d368ba9"
     },
     "redesign-i1.5eb0c2a9c90443f1.glb": {
       "bytes": 30706732,
@@ -874,41 +872,41 @@
       "bytes": 25871,
       "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a"
     },
-    "app.3edb90ba4419c1a7.js": {
+    "app.ae3c6cfb6053dacd.js": {
       "bytes": 5380153,
-      "sha256": "3edb90ba4419c1a77843d7c76de579c184112f9f439f2514546191ff61bf4074"
+      "sha256": "ae3c6cfb6053dacd605458f4fc57ccabaf3ea0768b546088d1fbff48c1b91eee"
     }
   },
   "previous_assets": {
-    "proposal-compact.57b9ce3243998488.glb": {
-      "bytes": 63167652,
-      "sha256": "57b9ce324399848843665a24cb956f32c1ea379eb24e26f955a1af93760fe70e",
-      "retired_at_epoch": 1790485492.659587,
-      "retain_until_epoch": 1790487292.659587
+    "proposal-compact.2b3c24d3463064b5.glb": {
+      "bytes": 63907816,
+      "sha256": "2b3c24d3463064b5a212d957b4aa91857baa0c9a27c50de127dc29d5e3b8aa9d",
+      "retired_at_epoch": 1790487291.147734,
+      "retain_until_epoch": 1790489091.147734
     },
-    "proposal-compact-navigation.7b0c5767986ebe64.json": {
-      "bytes": 1823029,
-      "sha256": "7b0c5767986ebe642e57d61b71f86c2c00df22f3bfd1dfec6fff5f95776b89c8",
-      "retired_at_epoch": 1790485492.659587,
-      "retain_until_epoch": 1790487292.659587
+    "proposal-compact-navigation.316e1656e8d22505.json": {
+      "bytes": 1825017,
+      "sha256": "316e1656e8d225059687999efa37c63a15001b46c4bccfe78ab8662f260bb20f",
+      "retired_at_epoch": 1790487291.147734,
+      "retain_until_epoch": 1790489091.147734
     },
-    "proposal-planning.ee8acf1e5f87c7e7.glb": {
-      "bytes": 61272428,
-      "sha256": "ee8acf1e5f87c7e7e1f6a5aa394df49d28dbbf97d27f0feeeae72956ddad8f18",
-      "retired_at_epoch": 1790485492.659587,
-      "retain_until_epoch": 1790487292.659587
+    "proposal-planning.8ee0cf4e6f122efb.glb": {
+      "bytes": 62012620,
+      "sha256": "8ee0cf4e6f122efbac8d07698638eed84b3fa73b7f6690a32a20e22106b0c777",
+      "retired_at_epoch": 1790487291.147734,
+      "retain_until_epoch": 1790489091.147734
     },
-    "proposal-planning-navigation.d84a08b25b678144.json": {
-      "bytes": 1540472,
-      "sha256": "d84a08b25b67814494fa77122013f433609cbdec6a48014f5ae6f2bd558896f0",
-      "retired_at_epoch": 1790485492.659587,
-      "retain_until_epoch": 1790487292.659587
+    "proposal-planning-navigation.91cc23dbcc5dfd5c.json": {
+      "bytes": 1542460,
+      "sha256": "91cc23dbcc5dfd5ce06bf6c47a04dfc1fa6536f0eae72d32f286d5bc6bec120f",
+      "retired_at_epoch": 1790487291.147734,
+      "retain_until_epoch": 1790489091.147734
     },
-    "app.bc7b417d46d4c97a.js": {
+    "app.3edb90ba4419c1a7.js": {
       "bytes": 5380153,
-      "sha256": "bc7b417d46d4c97a6c0cee953b3e80bcdbe34546f8b50db31dbd6069803d6f16",
-      "retired_at_epoch": 1790485492.659587,
-      "retain_until_epoch": 1790487292.659587
+      "sha256": "3edb90ba4419c1a77843d7c76de579c184112f9f439f2514546191ff61bf4074",
+      "retired_at_epoch": 1790487291.147734,
+      "retain_until_epoch": 1790489091.147734
     }
   },
   "easter": {
@@ -941,15 +939,15 @@
     "planning": "./?design=planning",
     "proposal_label": "Proposed",
     "proposal_revision": "P8",
-    "proposal_updated_at": "2026-09-27T05:02:46.779537+00:00",
-    "proposal_native_sha256": "2054bc5806852027f1b9abd8147ee4fc3c6fa7892b547a2bb76b77250f79d45a",
-    "proposal_geometry_sha256": "8a32a8450b3de3763ea14e45c5892c20bd3285df6459a0be92e5c7c548b15314",
+    "proposal_updated_at": "2026-09-27T05:30:15.713153+00:00",
+    "proposal_native_sha256": "4e455592e32849830704498ecfdd81335193c11b27473499def76db5631a7720",
+    "proposal_geometry_sha256": "dfe626fbf6832beae8eebd335c0b98e9171668fdc0640dcf554f8294351ead78",
     "gate_aligned": "./?design=g1",
     "gate_aligned_updated_at": "2026-09-25T09:13:00.386616+00:00",
     "planning_label": "Proposed (planning application)",
-    "planning_updated_at": "2026-09-27T05:01:18.206613+00:00",
-    "planning_native_sha256": "1da104cea59a9e853341a449fa2bb8f52365fa5a2bdc17519f55867d795e96cd",
-    "planning_geometry_sha256": "a6cca761dada660b9c1116f65ef74576c20855d62b089745bc3baa76283b5b39"
+    "planning_updated_at": "2026-09-27T05:29:02.540258+00:00",
+    "planning_native_sha256": "d4859c0ca764e8bdbb2bdadd1e319e9fc5f8c37336db1941fdf46a71f608ad28",
+    "planning_geometry_sha256": "e2facf526238fd858c5c1bf42bc2870a88f98c4e743693a1e1c1195180dc0759"
   },
   "exterior_finishes": {
     "scope": "house-and-extensions",
@@ -1341,5 +1339,5 @@
     "basis": "Approximate road and low-detail neighbouring buildings from supplied site images"
   },
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates.",
-  "staged_site_bytes": 967251937
+  "staged_site_bytes": 976733907
 }

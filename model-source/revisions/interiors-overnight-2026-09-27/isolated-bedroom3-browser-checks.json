@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "bedroom3",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 323,
+      "cutaway": 17,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=proposed&room=2445679-0"
+    },
+    {
+      "area": "bedroom3",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 323,
+      "cutaway": 17,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=planning&room=2445679-0"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

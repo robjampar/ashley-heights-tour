@@ -110,6 +110,11 @@
       "sha256": "59354fb15e0031c58e0e43c65493b603fdc387a3604ffda2ab95b2b7c0872d12",
       "bytes": 3017
     },
+    "proposal/interiors/leisure/bedroom3.json": {
+      "source": "proposal/interiors/leisure/bedroom3.json",
+      "sha256": "e7b5f16413a0911a56589035c40e429736a6db1e5ed5d664c3646587e5c01624",
+      "bytes": 1523
+    },
     "proposal/interiors/leisure/cinema.json": {
       "source": "proposal/interiors/leisure/cinema.json",
       "sha256": "b8c01f3c336acac7cbec7e8f97ee15458d71ffed7532a523e811d8f439d67a91",
@@ -124,6 +129,11 @@
       "source": "proposal/interiors/leisure/family.json",
       "sha256": "20d9adb37594764568c8657ce41057c7680bba542a57e9c53743e4a909fdbda5",
       "bytes": 3182
+    },
+    "proposal/interiors/leisure/familybath.json": {
+      "source": "proposal/interiors/leisure/familybath.json",
+      "sha256": "4b9c6c57209d2c57dc3d495c3eea8feb8dbe423782fcc68d2bf358ba89665c9f",
+      "bytes": 2701
     },
     "proposal/interiors/leisure/guest.json": {
       "source": "proposal/interiors/leisure/guest.json",
@@ -362,8 +372,8 @@
     },
     "revisions/interiors-overnight-2026-09-27/NEXT-ROOMS.md": {
       "source": "revisions/interiors-overnight-2026-09-27/NEXT-ROOMS.md",
-      "sha256": "543c59e1a1b07a28c82519104205dd4eff2a538e6b270275ad1c016299095f2f",
-      "bytes": 2227
+      "sha256": "ae97ae3b2b323e0a0c59a87e8a1cdbb940383284da85f06cae7039904a7011a2",
+      "bytes": 2421
     },
     "revisions/interiors-overnight-2026-09-27/PLAN.md": {
       "source": "revisions/interiors-overnight-2026-09-27/PLAN.md",
@@ -377,8 +387,8 @@
     },
     "revisions/interiors-overnight-2026-09-27/STATUS.md": {
       "source": "revisions/interiors-overnight-2026-09-27/STATUS.md",
-      "sha256": "98eeae7572ee791414ffd59b516c1f6609f33676e3cebee7f89f8f5e4e907d44",
-      "bytes": 6520
+      "sha256": "1a5cbeb0798815fe5b800ddcdfb52100cf7742deee53f38bee9822d9c7b8209d",
+      "bytes": 7445
     },
     "revisions/interiors-overnight-2026-09-27/bar/DESIGN.md": {
       "source": "revisions/interiors-overnight-2026-09-27/bar/DESIGN.md",
@@ -524,6 +534,96 @@
       "source": "revisions/interiors-overnight-2026-09-27/bedroom2/planning/reveal-audit.json",
       "sha256": "c1f13559129cb1eccd21931052f0b3a6479b2d318a48b2467bc8788ed01a056c",
       "bytes": 1295
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/DESIGN.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/DESIGN.md",
+      "sha256": "e09ceeabbc1bd4caed80c2121f00113fa4526679d50d07ba45bd1dbe9cd7645d",
+      "bytes": 2077
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/ROOM-REVIEW.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/ROOM-REVIEW.md",
+      "sha256": "e4abd2f14b372a007f377151413b11469fe3566cf45ac869f75404dec812c808",
+      "bytes": 2383
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/compact/bedroom3-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/compact/bedroom3-interior-report.json",
+      "sha256": "ffa5a42267b570241860e5d7eb82dfee0f9599b10228061ef6ac68a9d4a8c251",
+      "bytes": 16926
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/compact/details-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/compact/details-audit.json",
+      "sha256": "c8936a549b89750be44707ff4940fb843681577bfeece234d0f18870ecfd9f8f",
+      "bytes": 28180
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/compact/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/compact/preview-navigation.json",
+      "sha256": "ca4bbbb04a78c12766c2e81a56b146ba71bc6ac7e1f4ac97d296bdcc38ba1276",
+      "bytes": 1818425
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/compact/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/compact/preview-report.json",
+      "sha256": "214e65fd47984b53d99fb6bd2b074b6278e4441d8a0b7704387b5004ae4047d4",
+      "bytes": 18204
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/compact/reveal-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/compact/reveal-audit.json",
+      "sha256": "7245ebb7d4ca491814434955f2fa4aac8cd8101f2cf82264a8445fe562ceccc4",
+      "bytes": 1246
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/layout-plan.svg": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/layout-plan.svg",
+      "sha256": "2d86ac96f71eadb45a4adba41baa36c741169450f37f05609450c758b117e618",
+      "bytes": 5227
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/native-circulation-compact.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/native-circulation-compact.json",
+      "sha256": "8d588e1cf8ca6f2f2bca5f2f10f5d1336ffc0e0f9013e7f5dc0ec73fcb4a934a",
+      "bytes": 7240
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/native-circulation-planning.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/native-circulation-planning.json",
+      "sha256": "ca785afee9824fddcce3357864c13efd5fc5a7f370bcdd48d99be263258ad408",
+      "bytes": 7236
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/plan-circulation-compact.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/plan-circulation-compact.json",
+      "sha256": "8c610b62f1ba415a3d6d5f00bebb95427935ce3b158dc10882ec4c59cb15b4cc",
+      "bytes": 7214
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/plan-circulation-planning.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/plan-circulation-planning.json",
+      "sha256": "129820f1333bfd63b7f70c4303736fc61f4be90fa4b7286ac72e39a17736e6cb",
+      "bytes": 7209
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/planning/bedroom3-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/planning/bedroom3-interior-report.json",
+      "sha256": "ffa5a42267b570241860e5d7eb82dfee0f9599b10228061ef6ac68a9d4a8c251",
+      "bytes": 16926
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/planning/details-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/planning/details-audit.json",
+      "sha256": "aba88bc44f39c6ab0a61212ca68724b7858fbc1aece4660c7a9187fb97fb64a0",
+      "bytes": 28181
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/planning/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/planning/preview-navigation.json",
+      "sha256": "b5823d8173e00863c133d27859cae816bdee303106d5427066efdc0c8b70b05e",
+      "bytes": 1534574
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/planning/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/planning/preview-report.json",
+      "sha256": "2d717f1817ff1026cf32af3c824a60267ff2db203f95c959b8cd4990f914a0cc",
+      "bytes": 18204
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/planning/reveal-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom3/planning/reveal-audit.json",
+      "sha256": "c5a7a727165cfbcbf403c6890cf184832663e8436c71f00f619d4ae8f933694a",
+      "bytes": 1247
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom4/MEASURED-REVIEW.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/bedroom4/MEASURED-REVIEW.md",
+      "sha256": "0785583a3960c77f4ea117781735d2747d018efd1c5ef2aab413926d9612a781",
+      "bytes": 1745
     },
     "revisions/interiors-overnight-2026-09-27/cinema/DESIGN.md": {
       "source": "revisions/interiors-overnight-2026-09-27/cinema/DESIGN.md",
@@ -750,10 +850,30 @@
       "sha256": "7cbe85558be05b03d9ae27ead11959ff215da9788cb84eecba690208f21f44c2",
       "bytes": 2410
     },
+    "revisions/interiors-overnight-2026-09-27/familybath/DESIGN.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/familybath/DESIGN.md",
+      "sha256": "b157337371ea9733aa4b9f16003b1dfd32b7d62772bd3cba1fb51e29db321ef3",
+      "bytes": 1536
+    },
+    "revisions/interiors-overnight-2026-09-27/familybath/layout-plan.svg": {
+      "source": "revisions/interiors-overnight-2026-09-27/familybath/layout-plan.svg",
+      "sha256": "97933ba5fa19bf86b9365b83fad85413101c27963084a444ea5464682b1be138",
+      "bytes": 4638
+    },
+    "revisions/interiors-overnight-2026-09-27/familybath/plan-circulation-compact.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/familybath/plan-circulation-compact.json",
+      "sha256": "52b71fae97d7c1c0a0606d20d4f59a56dd8f7c0a70920fa0c983115c40b2376e",
+      "bytes": 4846
+    },
+    "revisions/interiors-overnight-2026-09-27/familybath/plan-circulation-planning.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/familybath/plan-circulation-planning.json",
+      "sha256": "d424568cd51b8b11434be731bfed68736625cd9dc0ae002448c97ceb725a17bd",
+      "bytes": 4841
+    },
     "revisions/interiors-overnight-2026-09-27/full-browser-checks.json": {
       "source": "revisions/interiors-overnight-2026-09-27/full-browser-checks.json",
-      "sha256": "a31ac382e8b4f3c65f88dab7d1c67c2120a3ea91d822fb9094addd936048eaa9",
-      "bytes": 30021
+      "sha256": "0e93e29ce2dd1ac97b2a1935b82a4450106f8d0d43cc392ef5fbe5021788d349",
+      "bytes": 35223
     },
     "revisions/interiors-overnight-2026-09-27/guest/DESIGN.md": {
       "source": "revisions/interiors-overnight-2026-09-27/guest/DESIGN.md",
@@ -982,18 +1102,23 @@
     },
     "revisions/interiors-overnight-2026-09-27/internal-reveals-compact.json": {
       "source": "revisions/interiors-overnight-2026-09-27/internal-reveals-compact.json",
-      "sha256": "87c8535e4fc7f6feba79b2183ddbf9064ca0f606719879b7577efaa85c03193c",
-      "bytes": 12424
+      "sha256": "6f7f9c6b3b139dd817d42e0a8c07c8c17f1e4fbf5b3a12a3a2a404ff56c7dff0",
+      "bytes": 13579
     },
     "revisions/interiors-overnight-2026-09-27/internal-reveals-planning.json": {
       "source": "revisions/interiors-overnight-2026-09-27/internal-reveals-planning.json",
-      "sha256": "9f0d950d506b1704b1b1a8977ecf5c07f75e853fa5067b40b853fa2b27a54ffa",
-      "bytes": 12720
+      "sha256": "04a4cf7e27cd2113ecaeaa221a69a32590149591dfbbdf3630ff165a426a79fa",
+      "bytes": 13875
     },
     "revisions/interiors-overnight-2026-09-27/isolated-bedroom2-guest-browser-checks.json": {
       "source": "revisions/interiors-overnight-2026-09-27/isolated-bedroom2-guest-browser-checks.json",
       "sha256": "869924c39e00454105bda551ec3a0f5b792696b72fd1c52d9b530c6f21855853",
       "bytes": 1676
+    },
+    "revisions/interiors-overnight-2026-09-27/isolated-bedroom3-browser-checks.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/isolated-bedroom3-browser-checks.json",
+      "sha256": "7aa7b4f658e7186d8e1ee41d457d8576e52ba28f1c2562f83c76d17a15db9449",
+      "bytes": 890
     },
     "revisions/interiors-overnight-2026-09-27/isolated-browser-checks.json": {
       "source": "revisions/interiors-overnight-2026-09-27/isolated-browser-checks.json",
@@ -1032,18 +1157,23 @@
     },
     "revisions/interiors-overnight-2026-09-27/native-compact.json": {
       "source": "revisions/interiors-overnight-2026-09-27/native-compact.json",
-      "sha256": "3d5164ffc23fa9de724637a53ccc161a84948ebdad49c8ce41bf94af83d363d7",
-      "bytes": 12138
+      "sha256": "6f1c15994a55ea9c4dfd1039436f18f6e2b80a567134977d6b134b04c778c2b2",
+      "bytes": 12333
     },
     "revisions/interiors-overnight-2026-09-27/native-planning.json": {
       "source": "revisions/interiors-overnight-2026-09-27/native-planning.json",
-      "sha256": "7316e18b54878470e525e4035cdb56588ac37e7021468e42eb9ee17785b87b37",
-      "bytes": 12139
+      "sha256": "ab3afeca67e6645d53409f5c20b178444bfd42b0a18dc405061bec7834ef0b14",
+      "bytes": 12334
     },
     "revisions/interiors-overnight-2026-09-27/preservation.json": {
       "source": "revisions/interiors-overnight-2026-09-27/preservation.json",
-      "sha256": "94299a7188038538e006bc1251d6db836dc678a8731972e1b4964827e3b0fdf8",
-      "bytes": 3420
+      "sha256": "92209359598310607afa30d2e3c3d84624f3b318b34aa2fedbab1d9e11976585",
+      "bytes": 3628
+    },
+    "revisions/interiors-overnight-2026-09-27/publication-bedroom2.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/publication-bedroom2.json",
+      "sha256": "d3136210183531660472bcb1db8783d0c5b23ae6f2246fd67a86b99bda994e3d",
+      "bytes": 11825
     },
     "revisions/interiors-overnight-2026-09-27/publication-cinema-bar.json": {
       "source": "revisions/interiors-overnight-2026-09-27/publication-cinema-bar.json",
@@ -1400,6 +1530,11 @@
       "sha256": "4ebb484a0f453fbd0c0b9f957da3598e2277926e881cfc6881a776e16a2937d7",
       "bytes": 4382
     },
+    "scripts/audit_bedroom3_details.py": {
+      "source": "scripts/audit_bedroom3_details.py",
+      "sha256": "9c3c7cb3a9fc0ee5ab77e8f7b6b77f3510616066d00e2b323643b7d49c315242",
+      "bytes": 5049
+    },
     "scripts/audit_bedroom4_ceiling.py": {
       "source": "scripts/audit_bedroom4_ceiling.py",
       "sha256": "8986e6c837013bb671ab480800c21564b148a85ff84e2e4aae8c93426519d995",
@@ -1472,8 +1607,8 @@
     },
     "scripts/audit_internal_reveals.py": {
       "source": "scripts/audit_internal_reveals.py",
-      "sha256": "6ec57957fe28f0eca545305097535ced9d2abd3b0b6a89590f0a13ea57caebcd",
-      "bytes": 4668
+      "sha256": "8c24f438c83f991e2992ab966a3e53282cd3e9d02d9f7704b28d44afc30e8e47",
+      "bytes": 5139
     },
     "scripts/audit_kitchen_interiors.py": {
       "source": "scripts/audit_kitchen_interiors.py",
@@ -1482,13 +1617,13 @@
     },
     "scripts/audit_leisure_native.py": {
       "source": "scripts/audit_leisure_native.py",
-      "sha256": "d2a5f269d3d4b8de5c735f9495b0e813b45d3ef78316cd273a4e735fbc5e2022",
-      "bytes": 5038
+      "sha256": "14273cc078c671046080cd33331d117fd3be63896515db0029433973a7565cd3",
+      "bytes": 5049
     },
     "scripts/audit_overnight_preservation.py": {
       "source": "scripts/audit_overnight_preservation.py",
-      "sha256": "93b6320f5c9a9114295ff157618ec7306eb6526ed4e67d701fe2788eda1c5817",
-      "bytes": 5212
+      "sha256": "13a4e83f8c2ede413e586c94523b0ee19f5bd3d5a8b2a4ade785e71c07c1c0a1",
+      "bytes": 5223
     },
     "scripts/audit_plan_openings.py": {
       "source": "scripts/audit_plan_openings.py",
@@ -1562,8 +1697,8 @@
     },
     "scripts/build_leisure_review.py": {
       "source": "scripts/build_leisure_review.py",
-      "sha256": "876cb941fe1de7869c26676c0deac6a2b286457e7e478d8d8eb1cdd458f249b5",
-      "bytes": 16546
+      "sha256": "b4d32b8a044d861a1d3403f06602d35e1b21bbdfb0c46292386d365ec0371561",
+      "bytes": 17889
     },
     "scripts/build_model.py": {
       "source": "scripts/build_model.py",
@@ -1587,8 +1722,8 @@
     },
     "scripts/build_support.py": {
       "source": "scripts/build_support.py",
-      "sha256": "ae3782d8c7ceee30cc744e30f98a88f48f7bede96443aee4ac2c1ec12d1b6969",
-      "bytes": 8748
+      "sha256": "d5c562ebb4f5191fea20767729a7438930d82fbc6f87cf72adecfeb48fdbcd6d",
+      "bytes": 8800
     },
     "scripts/check_bedroom4_window_height.py": {
       "source": "scripts/check_bedroom4_window_height.py",
@@ -1850,6 +1985,11 @@
       "sha256": "4aad1edd340f58d63a1507e7a0545b48939a9a84e7fda947d6cb3eae0e54ade4",
       "bytes": 3564
     },
+    "scripts/plan_bedroom3_interiors.py": {
+      "source": "scripts/plan_bedroom3_interiors.py",
+      "sha256": "7c14b794b8ea97a52f4f0cf69aa6109d6b1c3d127cc9d28f9cea30f26f8ecb39",
+      "bytes": 3688
+    },
     "scripts/plan_cinema_interiors.py": {
       "source": "scripts/plan_cinema_interiors.py",
       "sha256": "5693fd4b59dda43a97d2a1d31b43986771c63430c5ba7258f85d9522f6ba483f",
@@ -1864,6 +2004,11 @@
       "source": "scripts/plan_family_interiors.py",
       "sha256": "cda5506e1c1191c3fe4101b38397fdc91f9aff23bbbedb5b51e719fb397545fd",
       "bytes": 4474
+    },
+    "scripts/plan_familybath_interiors.py": {
+      "source": "scripts/plan_familybath_interiors.py",
+      "sha256": "21caf3c87b8fa55b33de9135b97de7de84c540ecc343ada61bffb2721718eceb",
+      "bytes": 3380
     },
     "scripts/plan_guest_interiors.py": {
       "source": "scripts/plan_guest_interiors.py",
@@ -1997,8 +2142,8 @@
     },
     "scripts/preview_leisure_interiors.py": {
       "source": "scripts/preview_leisure_interiors.py",
-      "sha256": "c5099dbd2787665906fd386cfcce1b56ce5696ed556dab165642ee09ab5c1b0d",
-      "bytes": 13327
+      "sha256": "4014396bccc0b66d14fb946e8434e6ca4fc705969af100aa72a700ebaeda9d4d",
+      "bytes": 13522
     },
     "scripts/preview_principal_bedroom.py": {
       "source": "scripts/preview_principal_bedroom.py",
@@ -2074,6 +2219,11 @@
       "source": "scripts/proposal_bedroom2_interiors.py",
       "sha256": "b27dbd6d894e544a723643e9f066bd5ba391ddca62d4b0e1ad1a2e3fe31cd4de",
       "bytes": 12296
+    },
+    "scripts/proposal_bedroom3_interiors.py": {
+      "source": "scripts/proposal_bedroom3_interiors.py",
+      "sha256": "22cebe089c8842a7f22c61e89e54e5e5db9a7139d4f2e62ead251839568e1735",
+      "bytes": 10816
     },
     "scripts/proposal_boundary_foliage.py": {
       "source": "scripts/proposal_boundary_foliage.py",
@@ -2182,8 +2332,8 @@
     },
     "scripts/proposal_leisure_interiors.py": {
       "source": "scripts/proposal_leisure_interiors.py",
-      "sha256": "7a73067b4c34302b70263a2cb5411acfb50d18a38d706530b16c728ddf486df3",
-      "bytes": 11498
+      "sha256": "79ef2139387063173426255488a29dc3214a06a8e77597f32283c2a66de423f7",
+      "bytes": 11590
     },
     "scripts/proposal_lifestyle.py": {
       "source": "scripts/proposal_lifestyle.py",
@@ -2707,8 +2857,8 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "e464efc108e200c5faa27d2e663fa887989b2e3c87c77ed1840dfd2df3448581",
-      "bytes": 11285
+      "sha256": "856a008cda8a1d96d712c79f9200f798e0dea2316cb91eae6c4ea31011ddded1",
+      "bytes": 11296
     },
     "scripts/stage_interior_studio.py": {
       "source": "scripts/stage_interior_studio.py",
@@ -2792,8 +2942,8 @@
     },
     "tests/test_build_pipeline.py": {
       "source": "tests/test_build_pipeline.py",
-      "sha256": "15fbb57dfef79eefe4e6a1f0969e357eb4f422ae4f4b29c786f7804a13cae9a6",
-      "bytes": 18326
+      "sha256": "d7941e0037221ca50a8de5d0a47f1615e3b7dd745f0bed675ac569b5bc752ac1",
+      "bytes": 18494
     },
     "tests/test_entrance_gable.py": {
       "source": "tests/test_entrance_gable.py",
@@ -2847,8 +2997,8 @@
     },
     "walkthrough/build.mjs": {
       "source": "walkthrough/build.mjs",
-      "sha256": "5f90fce8e1e61cd3c1f4d1c2005ddf4ec98698118c3a8db892fc3f08c7546d91",
-      "bytes": 6232
+      "sha256": "e48410e4a7513c774e6ab467ba3bf66616b341bcc4f8a77adb453886f43138c2",
+      "bytes": 6243
     },
     "walkthrough/index.html": {
       "source": "walkthrough/index.html",
@@ -2942,8 +3092,8 @@
     },
     "walkthrough/public/interiors/leisure/bar.html": {
       "source": "walkthrough/public/interiors/leisure/bar.html",
-      "sha256": "46a6b17d40539b2a538aeecd013aca8afafb68aaa258b09dc04f1942e0f0c299",
-      "bytes": 6139
+      "sha256": "ef76c4f4addf3335814438c5c0c8d42b52f633c90b6987bd58fc2ca959cc792e",
+      "bytes": 6203
     },
     "walkthrough/public/interiors/leisure/bedroom2-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/bedroom2-plan.svg",
@@ -2952,8 +3102,18 @@
     },
     "walkthrough/public/interiors/leisure/bedroom2.html": {
       "source": "walkthrough/public/interiors/leisure/bedroom2.html",
-      "sha256": "90b57fd365323f1a964fa02bba624606b47e735c34aab86c87864418bbc1cdc6",
-      "bytes": 6018
+      "sha256": "15291761f9a7b33e7d3114041ab006676d02cfa9c4d464fcf121a848ce65dff2",
+      "bytes": 6082
+    },
+    "walkthrough/public/interiors/leisure/bedroom3-plan.svg": {
+      "source": "walkthrough/public/interiors/leisure/bedroom3-plan.svg",
+      "sha256": "2d86ac96f71eadb45a4adba41baa36c741169450f37f05609450c758b117e618",
+      "bytes": 5227
+    },
+    "walkthrough/public/interiors/leisure/bedroom3.html": {
+      "source": "walkthrough/public/interiors/leisure/bedroom3.html",
+      "sha256": "58abddb73ec6b209e7e720873fe6dcee2f2720cc38b89bed60f0e74b6ae0ad59",
+      "bytes": 5970
     },
     "walkthrough/public/interiors/leisure/cinema-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/cinema-plan.svg",
@@ -2962,8 +3122,8 @@
     },
     "walkthrough/public/interiors/leisure/cinema.html": {
       "source": "walkthrough/public/interiors/leisure/cinema.html",
-      "sha256": "d69a163444eaab52306b7ec2f681dd065b09e2c0e85ee69579ac5442e67def2c",
-      "bytes": 5829
+      "sha256": "c71658d1d2637f0a79aac604a16cb63dc402c25aa8f68c3a80e830e640ac56f5",
+      "bytes": 5893
     },
     "walkthrough/public/interiors/leisure/cloakroom-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/cloakroom-plan.svg",
@@ -2972,8 +3132,8 @@
     },
     "walkthrough/public/interiors/leisure/cloakroom.html": {
       "source": "walkthrough/public/interiors/leisure/cloakroom.html",
-      "sha256": "64fbf3b9bc42be7df4a8ee584093770fea7dbceeebc5c8504375062ffd5b8713",
-      "bytes": 5757
+      "sha256": "7e913b4127e6b8648384cb191e3497d35180df8b7e9367600bac5b380024defb",
+      "bytes": 5821
     },
     "walkthrough/public/interiors/leisure/family-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/family-plan.svg",
@@ -2982,8 +3142,8 @@
     },
     "walkthrough/public/interiors/leisure/family.html": {
       "source": "walkthrough/public/interiors/leisure/family.html",
-      "sha256": "5e49a00fda836177606352cf9b6a30a5a10d7adb94155f5745a58189cfeb7d57",
-      "bytes": 6038
+      "sha256": "ae36e1305e12789c67b285dec5d9559208b5dee3d89e2bcee694a3b2fabd5e5d",
+      "bytes": 6102
     },
     "walkthrough/public/interiors/leisure/guest-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/guest-plan.svg",
@@ -2992,8 +3152,8 @@
     },
     "walkthrough/public/interiors/leisure/guest.html": {
       "source": "walkthrough/public/interiors/leisure/guest.html",
-      "sha256": "20cd62535a4ee1d773a17175c930a01669b6d08380263166ee96958f9a439884",
-      "bytes": 5802
+      "sha256": "b5c2aa03fbb93f319a476ba2ceb8365bd2ffbad6d810ed62e1ab22ca9b58e5f3",
+      "bytes": 5866
     },
     "walkthrough/public/interiors/leisure/guestbath-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/guestbath-plan.svg",
@@ -3002,8 +3162,8 @@
     },
     "walkthrough/public/interiors/leisure/guestbath.html": {
       "source": "walkthrough/public/interiors/leisure/guestbath.html",
-      "sha256": "ca216778077281e7c7136c0880fc996fa2cb00df8d21a75873a128b7ddeb198f",
-      "bytes": 5776
+      "sha256": "57ac6db80293ca6d8c1d24d7d393a367ffc49d8754f9dcf43f39334a4eef4081",
+      "bytes": 5840
     },
     "walkthrough/public/interiors/leisure/gym-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/gym-plan.svg",
@@ -3012,13 +3172,13 @@
     },
     "walkthrough/public/interiors/leisure/gym.html": {
       "source": "walkthrough/public/interiors/leisure/gym.html",
-      "sha256": "dac614ebda23021e26a9466a46bf6b620b836f9dd8d6dde042b5ca0d1f2654ef",
-      "bytes": 5893
+      "sha256": "50c1baa14db07bae0f5f90f4e737615068abff887be4ed9e7dc578d62c56b41e",
+      "bytes": 5957
     },
     "walkthrough/public/interiors/leisure/index.html": {
       "source": "walkthrough/public/interiors/leisure/index.html",
-      "sha256": "bdbdf07e45da03dff8c83b9f38b2589fb3f9bb9408f157f0358db04224f54afb",
-      "bytes": 3558
+      "sha256": "772a9e9433fc09919c0b2cb7c136c978640b00c223d3d4b46833a02558dd9535",
+      "bytes": 3742
     },
     "walkthrough/public/interiors/leisure/models/compact-bar.json": {
       "source": "walkthrough/public/interiors/leisure/models/compact-bar.json",
@@ -3029,6 +3189,11 @@
       "source": "walkthrough/public/interiors/leisure/models/compact-bedroom2.json",
       "sha256": "a3be336fe8498058d3faadedf53821ca93d8064d4051312e9a9ac1705a71cb4c",
       "bytes": 37320
+    },
+    "walkthrough/public/interiors/leisure/models/compact-bedroom3.json": {
+      "source": "walkthrough/public/interiors/leisure/models/compact-bedroom3.json",
+      "sha256": "fbca26b23c3ace1ad395ed3b3872fab7f8690d85b499476428bc36a10e7e3161",
+      "bytes": 38104
     },
     "walkthrough/public/interiors/leisure/models/compact-cinema.json": {
       "source": "walkthrough/public/interiors/leisure/models/compact-cinema.json",
@@ -3075,6 +3240,11 @@
       "sha256": "42cf4140d8188d31b1621f675c6f406e9bd84bb819b23bd43a6e7e65d9d5d4e9",
       "bytes": 35806
     },
+    "walkthrough/public/interiors/leisure/models/planning-bedroom3.json": {
+      "source": "walkthrough/public/interiors/leisure/models/planning-bedroom3.json",
+      "sha256": "f2010b18721ec34393b29c60a1db12e5d86ecca3c0be1eeda977cccbe0eb1d28",
+      "bytes": 36606
+    },
     "walkthrough/public/interiors/leisure/models/planning-cinema.json": {
       "source": "walkthrough/public/interiors/leisure/models/planning-cinema.json",
       "sha256": "be913b506ceed2223789bf666f6d2ae96450cf12f2c31d8c1d574b6215a887b2",
@@ -3117,8 +3287,8 @@
     },
     "walkthrough/public/interiors/leisure/utility.html": {
       "source": "walkthrough/public/interiors/leisure/utility.html",
-      "sha256": "079e635bea2c4bd8ca5aec6134b1b0bab89ecb508dca17e8dd922c4b2be9c90c",
-      "bytes": 5793
+      "sha256": "6c5a742970fdce7d45ce4ecd63dbe88fb3f629d56981cf963d8331896d8ab483",
+      "bytes": 5857
     },
     "walkthrough/public/interiors/principal/arrangements.html": {
       "source": "walkthrough/public/interiors/principal/arrangements.html",
@@ -3465,6 +3635,11 @@
       "sha256": "ff52702e6ccb669de53e269481b56af37bc79bcb5624d837571bc48e3cd13114",
       "bytes": 4085
     },
+    "walkthrough/tests/bedroom3-layout.mjs": {
+      "source": "walkthrough/tests/bedroom3-layout.mjs",
+      "sha256": "d08a52d6be023b2c8899a3f6c1ced336b5602e69551d3f4ca65485e06b4b11d9",
+      "bytes": 3996
+    },
     "walkthrough/tests/browser.mjs": {
       "source": "walkthrough/tests/browser.mjs",
       "sha256": "90092d261a52c91ec3a9d7a8797a32deefc7065cb64bd6181503b44fcc2392be",
@@ -3580,6 +3755,11 @@
       "sha256": "75cfc7661d060fd3110531737456943d40e1b9547ca0c88cc8fdf367db6eb780",
       "bytes": 4745
     },
+    "walkthrough/tests/familybath-layout.mjs": {
+      "source": "walkthrough/tests/familybath-layout.mjs",
+      "sha256": "23ea297707acd0ca305773d5fcf18b669b82647c9ff9e979e41d2419b9bd21b2",
+      "bytes": 3756
+    },
     "walkthrough/tests/flight-browser.mjs": {
       "source": "walkthrough/tests/flight-browser.mjs",
       "sha256": "21d27c35e50a4cf525c0e0782122e955730fa61c52d6b58d42ba84d6897ac1eb",
@@ -3672,8 +3852,8 @@
     },
     "walkthrough/tests/leisure-browser.mjs": {
       "source": "walkthrough/tests/leisure-browser.mjs",
-      "sha256": "bbc39cc89fd3c9653479402cf5acd429cd7b6166602af9e715ddd766529575b6",
-      "bytes": 5427
+      "sha256": "8236edfc9cf3b2276f99d328ec6598493add0e769ec3db32e028b6157e36ad4b",
+      "bytes": 5605
     },
     "walkthrough/tests/leisure-circulation.mjs": {
       "source": "walkthrough/tests/leisure-circulation.mjs",
@@ -3682,8 +3862,8 @@
     },
     "walkthrough/tests/leisure-full-browser.mjs": {
       "source": "walkthrough/tests/leisure-full-browser.mjs",
-      "sha256": "70b4b67fb8ffe77175e3803b8d11aec8af962ae29fe01550c4a64e88e3b19789",
-      "bytes": 6636
+      "sha256": "c79dd10d97da676d180b3a9e3772e641d7ba3e557ebfe58ccda9a79744dfdf3b",
+      "bytes": 6859
     },
     "walkthrough/tests/life.test.mjs": {
       "source": "walkthrough/tests/life.test.mjs",
@@ -3988,16 +4168,16 @@
   },
   "required_local_baselines": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
-      "sha256": "2054bc5806852027f1b9abd8147ee4fc3c6fa7892b547a2bb76b77250f79d45a",
-      "bytes": 249053285
+      "sha256": "4e455592e32849830704498ecfdd81335193c11b27473499def76db5631a7720",
+      "bytes": 250336710
     },
     "output-proposed-compact/geometry.json": {
-      "sha256": "8a32a8450b3de3763ea14e45c5892c20bd3285df6459a0be92e5c7c548b15314",
-      "bytes": 103309204
+      "sha256": "dfe626fbf6832beae8eebd335c0b98e9171668fdc0640dcf554f8294351ead78",
+      "bytes": 104180125
     },
     "output-proposed-compact/navigation.json": {
-      "sha256": "b08fd7d0851dbf2ac2f36f75b49e6b67d709cd95d24c7820a2098c732dc690f5",
-      "bytes": 1817202
+      "sha256": "6af99dde013f4cf127a5d43992396c20e607612473608088786e68b4630be476",
+      "bytes": 1819034
     },
     "output-proposed-compact/principal-interior-report.json": {
       "sha256": "788b3f9b7cd1e07413a8fde32147bd170c4784391bc90b957162f36cb7f63370",
@@ -4042,6 +4222,14 @@
     "revisions/interiors-overnight-2026-09-27/bedroom2/planning/Bedroom2 \u2014 interior study.blend": {
       "sha256": "5fdf03129e32615e09c4028354a1e64fee9083b0001e2fceed5e31cd383d7316",
       "bytes": 10385014
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/compact/Bedroom3 \u2014 interior study.blend": {
+      "sha256": "1e11836bb078dce16475426b26b10af38b0ab4b58229160c824cf6cf2da4fe1f",
+      "bytes": 11171408
+    },
+    "revisions/interiors-overnight-2026-09-27/bedroom3/planning/Bedroom3 \u2014 interior study.blend": {
+      "sha256": "0ffcaa82c86eba0a6320111fc344caa50afae36a9ed3a47b3bc7c33575d310b2",
+      "bytes": 11071538
     },
     "revisions/interiors-overnight-2026-09-27/before/compact/Ashley Heights \u2014 Proposed (compact).blend": {
       "sha256": "000bf377eaad1271131610540c09a82dfd223adc755fd32f5e690e890f89e99d",

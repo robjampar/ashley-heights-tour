@@ -48,10 +48,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 145
+        },
+        "bedroom3": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 122
         }
       },
       "principal": true,
       "kitchen": 2,
+      "bedroom3": 110,
       "bedroom2": 133,
       "cloakroom": 71,
       "cinema": 156,
@@ -116,11 +122,11 @@
         },
         {
           "term": "wall-backed upholstered headboard",
-          "count": 3
+          "count": 4
         },
         {
           "term": "pillow stitched edge",
-          "count": 4
+          "count": 6
         },
         {
           "term": "hollow inset ceramic basin",
@@ -136,7 +142,7 @@
         }
       ],
       "finishSwitch": {
-        "materials": 113,
+        "materials": 123,
         "allInterior": true,
         "states": [
           {
@@ -212,6 +218,27 @@
       "doors": {
         "closed": [
           {
+            "id": "Rear bay detail | Bedroom 3 hinge",
+            "wall": "Bedroom 3 balcony door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 29,
+            "batches": 3,
+            "hinge": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "position": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
             "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
             "wall": "Cloakroom hall door",
             "motion": "hinged",
@@ -399,9 +426,52 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom3 01 | entrance door",
+            "wall": "Bedroom3 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "position": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
+          {
+            "id": "Rear bay detail | Bedroom 3 hinge",
+            "wall": "Bedroom 3 balcony door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 29,
+            "batches": 3,
+            "hinge": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "position": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
           {
             "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
             "wall": "Cloakroom hall door",
@@ -599,6 +669,28 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Bedroom3 01 | entrance door",
+            "wall": "Bedroom3 01 | entrance door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "position": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
           }
         ]
       }
@@ -650,10 +742,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 145
+        },
+        "bedroom3": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 122
         }
       },
       "principal": true,
       "kitchen": 2,
+      "bedroom3": 110,
       "bedroom2": 133,
       "cloakroom": 71,
       "cinema": 156,
@@ -718,11 +816,11 @@
         },
         {
           "term": "wall-backed upholstered headboard",
-          "count": 3
+          "count": 4
         },
         {
           "term": "pillow stitched edge",
-          "count": 4
+          "count": 6
         },
         {
           "term": "hollow inset ceramic basin",
@@ -738,7 +836,7 @@
         }
       ],
       "finishSwitch": {
-        "materials": 113,
+        "materials": 123,
         "allInterior": true,
         "states": [
           {
@@ -766,6 +864,27 @@
       "terrace": [],
       "doors": {
         "closed": [
+          {
+            "id": "Rear bay detail | Bedroom 3 hinge",
+            "wall": "Bedroom 3 balcony door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 29,
+            "batches": 3,
+            "hinge": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "position": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
           {
             "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
             "wall": "Cloakroom hall door",
@@ -954,9 +1073,52 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom3 01 | entrance door",
+            "wall": "Bedroom3 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "position": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
+          {
+            "id": "Rear bay detail | Bedroom 3 hinge",
+            "wall": "Bedroom 3 balcony door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 29,
+            "batches": 3,
+            "hinge": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "position": [
+              5.039999961853027,
+              8.699804306030273,
+              2.825000047683716
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
           {
             "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
             "wall": "Cloakroom hall door",
@@ -1154,6 +1316,28 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Bedroom3 01 | entrance door",
+            "wall": "Bedroom3 01 | entrance door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "position": [
+              4.015,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
           }
         ]
       }

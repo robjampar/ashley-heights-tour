@@ -1,0 +1,338 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source": "plan fixtures",
+  "sourceSha256": "b08fd7d0851dbf2ac2f36f75b49e6b67d709cd95d24c7820a2098c732dc690f5",
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 126,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 26,
+          "obstacles": 13,
+          "surfaces": 21
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "perch approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "doorClosed",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 126,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 26,
+          "obstacles": 13,
+          "surfaces": 21
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "perch approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "wardrobeUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 127,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 26,
+          "obstacles": 14,
+          "surfaces": 21
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "perch approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "perchUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 127,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 26,
+          "obstacles": 14,
+          "surfaces": 21
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "westBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 127,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 26,
+          "obstacles": 14,
+          "surfaces": 21
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "perch approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "eastBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 127,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 26,
+          "obstacles": 14,
+          "surfaces": 21
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "perch approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

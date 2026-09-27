@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source_unchanged": true,
+  "rays": [
+    {
+      "expected": "Bedroom3 01 | north window internal head",
+      "hit": "Bedroom3 01 | north window internal head",
+      "material": "Interior | Bedroom3 warm ivory",
+      "position": [
+        1.2120000123977661,
+        8.711999893188477,
+        4.978000164031982
+      ]
+    },
+    {
+      "expected": "Bedroom3 01 | north window internal first jamb",
+      "hit": "Bedroom3 01 | north window internal first jamb",
+      "material": "Interior | Bedroom3 warm ivory",
+      "position": [
+        1.194000005722046,
+        8.711999893188477,
+        4.289999961853027
+      ]
+    },
+    {
+      "expected": "Bedroom3 01 | north window internal second jamb",
+      "hit": "Bedroom3 01 | north window internal second jamb",
+      "material": "Interior | Bedroom3 warm ivory",
+      "position": [
+        3.6168999671936035,
+        8.711999893188477,
+        4.289999961853027
+      ]
+    },
+    {
+      "expected": "Bedroom 3 rear window board",
+      "hit": "Bedroom 3 rear window board",
+      "material": "White joinery",
+      "position": [
+        2.4054501056671143,
+        8.711999893188477,
+        3.6029999256134033
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source": "plan fixtures",
+  "sourceSha256": "256d671b8e35abae65be65a3b08a3ff02fb2e80ce470d18ba4ea6a5396f2eb75",
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 121,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 25,
+          "obstacles": 12,
+          "surfaces": 15
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath mixer",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "doorClosed",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 121,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 25,
+          "obstacles": 12,
+          "surfaces": 15
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath mixer",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "vanityUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 122,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 25,
+          "obstacles": 13,
+          "surfaces": 15
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath mixer",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "wcUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 122,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 25,
+          "obstacles": 13,
+          "surfaces": 15
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        },
+        {
+          "label": "bath approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath mixer",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bathDrying",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 122,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 25,
+          "obstacles": 13,
+          "surfaces": 15
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath mixer",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "drawerOpen",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 131,
+          "obstacles": 122,
+          "surfaces": 79
+        },
+        "after": {
+          "segments": 25,
+          "obstacles": 13,
+          "surfaces": 15
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bath mixer",
+          "distance": 8.881784197001252e-16,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "variant": "compact",
-  "source_sha256": "2054bc5806852027f1b9abd8147ee4fc3c6fa7892b547a2bb76b77250f79d45a",
+  "source_sha256": "4e455592e32849830704498ecfdd81335193c11b27473499def76db5631a7720",
   "source_unchanged": true,
   "reports": [
     {
@@ -474,6 +474,13 @@
     {
       "area": "bedroom2",
       "matching_study_meshes": 141,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    },
+    {
+      "area": "bedroom3",
+      "matching_study_meshes": 118,
       "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": []
