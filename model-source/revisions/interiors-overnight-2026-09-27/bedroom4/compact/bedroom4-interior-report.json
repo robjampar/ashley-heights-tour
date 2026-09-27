@@ -1,0 +1,1492 @@
+{
+  "area": "bedroom4",
+  "revision": 1,
+  "objects": 286,
+  "mesh_objects": 279,
+  "lights": 7,
+  "removed_objects": [
+    {
+      "name": "Bedroom 4 front curtain pole",
+      "object_name": "Bedroom 4 front curtain pole"
+    },
+    {
+      "name": "Bedroom 4 front pleated curtain",
+      "object_name": "Bedroom 4 front pleated curtain"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.001"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.002"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.003"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.004"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.005"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.006"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.007"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.008"
+    },
+    {
+      "name": "Bedroom 4 front pleated curtain",
+      "object_name": "Bedroom 4 front pleated curtain.001"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.009"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.010"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.011"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.012"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.013"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.014"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.015"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.016"
+    },
+    {
+      "name": "Bedroom 4 front curtain ring",
+      "object_name": "Bedroom 4 front curtain ring.017"
+    },
+    {
+      "name": "Bedroom 4 bed frame",
+      "object_name": "Bedroom 4 bed frame"
+    },
+    {
+      "name": "Bedroom 4 bed mattress",
+      "object_name": "Bedroom 4 bed mattress"
+    },
+    {
+      "name": "Bedroom 4 bed duvet",
+      "object_name": "Bedroom 4 bed duvet"
+    },
+    {
+      "name": "Bedroom 4 bed pillow",
+      "object_name": "Bedroom 4 bed pillow"
+    },
+    {
+      "name": "Bedroom 4 bed pillow",
+      "object_name": "Bedroom 4 bed pillow.001"
+    },
+    {
+      "name": "Bedroom 4 bed headboard post",
+      "object_name": "Bedroom 4 bed headboard post"
+    },
+    {
+      "name": "Bedroom 4 bed headboard post",
+      "object_name": "Bedroom 4 bed headboard post.001"
+    },
+    {
+      "name": "Bedroom 4 bed headboard top",
+      "object_name": "Bedroom 4 bed headboard top"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.001"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.002"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.003"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.004"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.005"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.006"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.007"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.008"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.009"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.010"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.011"
+    },
+    {
+      "name": "Bedroom 4 bed headboard spindle",
+      "object_name": "Bedroom 4 bed headboard spindle.012"
+    },
+    {
+      "name": "Bedroom 4 bedside carcass",
+      "object_name": "Bedroom 4 bedside carcass"
+    },
+    {
+      "name": "Bedroom 4 bedside top",
+      "object_name": "Bedroom 4 bedside top"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer",
+      "object_name": "Bedroom 4 bedside drawer"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob.001"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer",
+      "object_name": "Bedroom 4 bedside drawer.001"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob.002"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob.003"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer",
+      "object_name": "Bedroom 4 bedside drawer.002"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob.004"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob.005"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer",
+      "object_name": "Bedroom 4 bedside drawer.003"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob.006"
+    },
+    {
+      "name": "Bedroom 4 bedside drawer knob",
+      "object_name": "Bedroom 4 bedside drawer knob.007"
+    },
+    {
+      "name": "Bedroom 4 wardrobe carcass",
+      "object_name": "Bedroom 4 wardrobe carcass"
+    },
+    {
+      "name": "Bedroom 4 wardrobe plinth",
+      "object_name": "Bedroom 4 wardrobe plinth"
+    },
+    {
+      "name": "Bedroom 4 en suite toilet cistern",
+      "object_name": "Bedroom 4 en suite toilet cistern"
+    },
+    {
+      "name": "Bedroom 4 en suite toilet pedestal",
+      "object_name": "Bedroom 4 en suite toilet pedestal"
+    },
+    {
+      "name": "Bedroom 4 en suite toilet hollow pan",
+      "object_name": "Bedroom 4 en suite toilet hollow pan"
+    },
+    {
+      "name": "Bedroom 4 en suite toilet seat",
+      "object_name": "Bedroom 4 en suite toilet seat"
+    },
+    {
+      "name": "Bedroom 4 front vanity carcass",
+      "object_name": "Bedroom 4 front vanity carcass"
+    },
+    {
+      "name": "Bedroom 4 front vanity plinth",
+      "object_name": "Bedroom 4 front vanity plinth"
+    },
+    {
+      "name": "Bedroom 4 front vanity door",
+      "object_name": "Bedroom 4 front vanity door"
+    },
+    {
+      "name": "Bedroom 4 front vanity raised panel",
+      "object_name": "Bedroom 4 front vanity raised panel"
+    },
+    {
+      "name": "Bedroom 4 front vanity stile",
+      "object_name": "Bedroom 4 front vanity stile"
+    },
+    {
+      "name": "Bedroom 4 front vanity stile",
+      "object_name": "Bedroom 4 front vanity stile.001"
+    },
+    {
+      "name": "Bedroom 4 front vanity door knob",
+      "object_name": "Bedroom 4 front vanity door knob"
+    },
+    {
+      "name": "Bedroom 4 front vanity door",
+      "object_name": "Bedroom 4 front vanity door.001"
+    },
+    {
+      "name": "Bedroom 4 front vanity raised panel",
+      "object_name": "Bedroom 4 front vanity raised panel.001"
+    },
+    {
+      "name": "Bedroom 4 front vanity stile",
+      "object_name": "Bedroom 4 front vanity stile.002"
+    },
+    {
+      "name": "Bedroom 4 front vanity stile",
+      "object_name": "Bedroom 4 front vanity stile.003"
+    },
+    {
+      "name": "Bedroom 4 front vanity door knob",
+      "object_name": "Bedroom 4 front vanity door knob.001"
+    },
+    {
+      "name": "Bedroom 4 front vanity door",
+      "object_name": "Bedroom 4 front vanity door.002"
+    },
+    {
+      "name": "Bedroom 4 front vanity raised panel",
+      "object_name": "Bedroom 4 front vanity raised panel.002"
+    },
+    {
+      "name": "Bedroom 4 front vanity stile",
+      "object_name": "Bedroom 4 front vanity stile.004"
+    },
+    {
+      "name": "Bedroom 4 front vanity stile",
+      "object_name": "Bedroom 4 front vanity stile.005"
+    },
+    {
+      "name": "Bedroom 4 front vanity door knob",
+      "object_name": "Bedroom 4 front vanity door knob.002"
+    },
+    {
+      "name": "Bedroom 4 front vanity counter",
+      "object_name": "Bedroom 4 front vanity counter"
+    },
+    {
+      "name": "Bedroom 4 front vanity inset basin",
+      "object_name": "Bedroom 4 front vanity inset basin"
+    },
+    {
+      "name": "Bedroom 4 front vanity tap",
+      "object_name": "Bedroom 4 front vanity tap"
+    },
+    {
+      "name": "Bedroom 4 front vanity tap",
+      "object_name": "Bedroom 4 front vanity tap.001"
+    },
+    {
+      "name": "Bedroom 4 recessed shower tray",
+      "object_name": "Bedroom 4 recessed shower tray"
+    },
+    {
+      "name": "Bedroom 4 recessed shower glass door",
+      "object_name": "Bedroom 4 recessed shower glass door"
+    },
+    {
+      "name": "Bedroom 4 recessed shower frame",
+      "object_name": "Bedroom 4 recessed shower frame"
+    },
+    {
+      "name": "Bedroom 4 recessed shower frame",
+      "object_name": "Bedroom 4 recessed shower frame.001"
+    },
+    {
+      "name": "Bedroom 4 recessed shower door rail",
+      "object_name": "Bedroom 4 recessed shower door rail"
+    },
+    {
+      "name": "Bedroom 4 recessed shower door rail",
+      "object_name": "Bedroom 4 recessed shower door rail.001"
+    },
+    {
+      "name": "Bedroom 4 recessed shower handle",
+      "object_name": "Bedroom 4 recessed shower handle"
+    },
+    {
+      "name": "Bedroom 4 recessed shower electric shower unit",
+      "object_name": "Bedroom 4 recessed shower electric shower unit"
+    },
+    {
+      "name": "Bedroom 4 recessed shower shower hose",
+      "object_name": "Bedroom 4 recessed shower shower hose"
+    },
+    {
+      "name": "Bedroom 4 recessed shower shower head",
+      "object_name": "Bedroom 4 recessed shower shower head"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain pole",
+      "object_name": "Bedroom 4 shower-room curtain pole"
+    },
+    {
+      "name": "Bedroom 4 shower-room pleated curtain",
+      "object_name": "Bedroom 4 shower-room pleated curtain"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.001"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.002"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.003"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.004"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.005"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.006"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.007"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.008"
+    },
+    {
+      "name": "Bedroom 4 shower-room pleated curtain",
+      "object_name": "Bedroom 4 shower-room pleated curtain.001"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.009"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.010"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.011"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.012"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.013"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.014"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.015"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.016"
+    },
+    {
+      "name": "Bedroom 4 shower-room curtain ring",
+      "object_name": "Bedroom 4 shower-room curtain ring.017"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 upper cupboard",
+      "object_name": "Upstairs photo detail | Bedroom 4 upper cupboard"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 upper cupboard knob",
+      "object_name": "Upstairs photo detail | Bedroom 4 upper cupboard knob"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 backing",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 backing"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 stile",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 stile"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 stile",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 stile.001"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail.001"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail.002"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 rail.003"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 upper visible mirror",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 upper visible"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 lower visible mirror",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 lower visible"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 drawer front",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 drawer front"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 handle boss",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 handle boss"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 handle boss",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 handle bos"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 1 drawer pull",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 1 drawer pull"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 backing",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 backing"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 stile",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 stile"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 stile",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 stile.001"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail.001"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail.002"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 rail.003"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 upper visible mirror",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 upper visible"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 lower visible mirror",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 lower visible"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 drawer front",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 drawer front"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 handle boss",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 handle boss"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 handle boss",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 handle bos"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 mirrored door 2 drawer pull",
+      "object_name": "Upstairs photo detail | Bedroom 4 mirrored door 2 drawer pull"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 upper folding ornament",
+      "object_name": "Upstairs photo detail | Bedroom 4 upper folding ornament"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 upper folding ornament",
+      "object_name": "Upstairs photo detail | Bedroom 4 upper folding ornament.001"
+    },
+    {
+      "name": "Upstairs photo detail | Bedroom 4 upper folding ornament",
+      "object_name": "Upstairs photo detail | Bedroom 4 upper folding ornament.002"
+    },
+    {
+      "name": "Bedroom 4 en suite jog | end",
+      "object_name": "Bedroom 4 en suite jog | end"
+    },
+    {
+      "name": "Bedroom 4 shower return | end",
+      "object_name": "Bedroom 4 shower return | end"
+    },
+    {
+      "name": "Linen cupboard back | skirting end-1",
+      "object_name": "Linen cupboard back | skirting end-1"
+    },
+    {
+      "name": "Bedroom 4 en suite jog | skirting end-1",
+      "object_name": "Bedroom 4 en suite jog | skirting end-1"
+    },
+    {
+      "name": "Bedroom 4 en suite jog | skirting end1",
+      "object_name": "Bedroom 4 en suite jog | skirting end1"
+    },
+    {
+      "name": "Bedroom 4 en suite hall | skirting end-1",
+      "object_name": "Bedroom 4 en suite hall | skirting end-1"
+    },
+    {
+      "name": "Bedroom 4 shower return | restored skirting -1",
+      "object_name": "Bedroom 4 shower return | restored skirting -1"
+    },
+    {
+      "name": "Bedroom 4 shower return | restored skirting 1",
+      "object_name": "Bedroom 4 shower return | restored skirting 1"
+    },
+    {
+      "name": "Bedroom 4 hall panelled leaf",
+      "object_name": "Bedroom 4 hall panelled leaf"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.001"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.002"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.003"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.001"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.004"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.005"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.006"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.007"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.002"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.008"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.009"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.010"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.011"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.003"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.012"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.013"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.014"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.015"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.004"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.016"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.017"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.018"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.019"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.005"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.020"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.021"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.022"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.023"
+    },
+    {
+      "name": "Bedroom 4 hall brass knob",
+      "object_name": "Bedroom 4 hall brass knob"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.006"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.024"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.025"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.026"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.027"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.007"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.028"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.029"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.030"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.031"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.008"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.032"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.033"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.034"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.035"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.009"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.036"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.037"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.038"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.039"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.010"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.040"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.041"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.042"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.043"
+    },
+    {
+      "name": "Bedroom 4 hall raised door panel",
+      "object_name": "Bedroom 4 hall raised door panel.011"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.044"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.045"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.046"
+    },
+    {
+      "name": "Bedroom 4 hall panel bead",
+      "object_name": "Bedroom 4 hall panel bead.047"
+    },
+    {
+      "name": "Bedroom 4 hall brass knob",
+      "object_name": "Bedroom 4 hall brass knob.001"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panelled leaf",
+      "object_name": "Bedroom 4 en suite divider panelled leaf"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.001"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.002"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.003"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.001"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.004"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.005"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.006"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.007"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.002"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.008"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.009"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.010"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.011"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.003"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.012"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.013"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.014"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.015"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.004"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.016"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.017"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.018"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.019"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.005"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.020"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.021"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.022"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.023"
+    },
+    {
+      "name": "Bedroom 4 en suite divider brass knob",
+      "object_name": "Bedroom 4 en suite divider brass knob"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.006"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.024"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.025"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.026"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.027"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.007"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.028"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.029"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.030"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.031"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.008"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.032"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.033"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.034"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.035"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.009"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.036"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.037"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.038"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.039"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.010"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.040"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.041"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.042"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.043"
+    },
+    {
+      "name": "Bedroom 4 en suite divider raised door panel",
+      "object_name": "Bedroom 4 en suite divider raised door panel.011"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.044"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.045"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.046"
+    },
+    {
+      "name": "Bedroom 4 en suite divider panel bead",
+      "object_name": "Bedroom 4 en suite divider panel bead.047"
+    },
+    {
+      "name": "Bedroom 4 en suite divider brass knob",
+      "object_name": "Bedroom 4 en suite divider brass knob.001"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Bedroom4 01 | full upholstered double bed",
+      "box": [
+        1.435,
+        1.02,
+        2.925,
+        3.08
+      ],
+      "bottom": 2.8,
+      "top": 4.1739999999999995
+    },
+    {
+      "name": "Bedroom4 01 | bedside 0",
+      "box": [
+        0.9,
+        2.758,
+        1.38,
+        3.075
+      ],
+      "bottom": 2.8,
+      "top": 3.3779999999999997
+    },
+    {
+      "name": "Bedroom4 01 | bedside 1",
+      "box": [
+        2.98,
+        2.758,
+        3.46,
+        3.075
+      ],
+      "bottom": 2.8,
+      "top": 3.3779999999999997
+    },
+    {
+      "name": "Bedroom4 01 | west sliding wardrobe",
+      "box": [
+        0.145,
+        0.22,
+        0.795,
+        2.22
+      ],
+      "bottom": 2.8,
+      "top": 5.109999999999999
+    },
+    {
+      "name": "Bedroom4 01 | floating vanity",
+      "box": [
+        4.6,
+        0.14,
+        5.5,
+        0.54
+      ],
+      "bottom": 2.8,
+      "top": 3.6639999999999997
+    },
+    {
+      "name": "Bedroom4 01 | WC pan",
+      "box": [
+        4.52,
+        1.435,
+        4.9,
+        1.925
+      ],
+      "bottom": 2.8,
+      "top": 3.246
+    },
+    {
+      "name": "Bedroom4 01 | WC cistern",
+      "box": [
+        4.435,
+        1.925,
+        4.985,
+        2.115
+      ],
+      "bottom": 2.8,
+      "top": 3.88
+    },
+    {
+      "name": "Bedroom4 01 | short shower side glass",
+      "box": [
+        5.018,
+        2.028,
+        5.044,
+        2.201
+      ],
+      "bottom": 2.8,
+      "top": 4.79
+    }
+  ],
+  "configuration": {
+    "status": "developed concept for review",
+    "bed": {
+      "centerX": 2.18,
+      "headY": 3.08,
+      "mattress": [
+        1.35,
+        1.9
+      ],
+      "envelope": [
+        1.435,
+        1.02,
+        2.925,
+        3.08
+      ]
+    },
+    "bedsides": [
+      [
+        0.9,
+        2.76,
+        1.38,
+        3.075
+      ],
+      [
+        2.98,
+        2.76,
+        3.46,
+        3.075
+      ]
+    ],
+    "wardrobe": [
+      0.145,
+      0.22,
+      0.795,
+      2.22
+    ],
+    "bathVanity": [
+      4.6,
+      0.14,
+      5.5,
+      0.54
+    ],
+    "wcPan": [
+      4.52,
+      1.435,
+      4.9,
+      1.925
+    ],
+    "cistern": [
+      4.435,
+      1.925,
+      4.985,
+      2.115
+    ],
+    "shower": [
+      5.023,
+      2.04,
+      5.823,
+      2.94
+    ],
+    "showerReturnShiftX": -0.113,
+    "hallDoor": {
+      "hinge": [
+        4.756,
+        3.19,
+        2.8
+      ],
+      "width": 0.7264,
+      "axis": [
+        -1,
+        0
+      ],
+      "openAngle": 1.5707963267948966
+    },
+    "bathDoor": {
+      "hinge": [
+        4.28,
+        0.7804,
+        2.8
+      ],
+      "width": 0.7398,
+      "axis": [
+        0,
+        1
+      ],
+      "openAngle": 1.5707963267948966
+    },
+    "showerDoor": {
+      "hinge": [
+        5.045,
+        2.04,
+        2.8
+      ],
+      "width": 0.74,
+      "axis": [
+        1,
+        0
+      ],
+      "openAngle": 1.4835298641951802
+    },
+    "notes": [
+      "A full-size double retains the original mattress size; the complete bed envelope and storage leave single-file routes.",
+      "The shower return moves 113 mm west with a rebuilt back-wall junction and shortened jog.",
+      "Both original doorway apertures and the bedroom window remain; the ensuite former front window is already blocked in both proposals.",
+      "Seven separate circulation states, three complete door sweeps, drawer travel and the wall junction have been checked in the isolated native study. Full integration is checked separately."
+    ],
+    "wcBasis": {
+      "product": "Duravit D-Neo Compact 258809",
+      "ceramicSize": [
+        0.37,
+        0.48
+      ],
+      "allowanceFootprint": [
+        0.38,
+        0.49
+      ],
+      "cisternDepth": 0.19,
+      "frameBasis": "155 mm installation element plus lining and allowance",
+      "source": "https://pro.duravit.co.uk/pro/content/homepage/products/categories/overview/products~402880943a1b6e1b013a1bd2494e0047.uk-en.html?ncat=toilets&nser=0998&product=6661051"
+    },
+    "revision": 1,
+    "room": "Bedroom 4 and ensuite",
+    "bounds": [
+      0.115,
+      0.115,
+      5.835,
+      3.125
+    ],
+    "polygon": [
+      [
+        0.115,
+        0.115
+      ],
+      [
+        4.215,
+        0.115
+      ],
+      [
+        4.215,
+        2.255
+      ],
+      [
+        4.883,
+        2.255
+      ],
+      [
+        4.883,
+        3.125
+      ],
+      [
+        0.115,
+        3.125
+      ]
+    ],
+    "floorZ": 2.8,
+    "ceilingZ": 5.25,
+    "view": {
+      "id": "2445676-0",
+      "position": [
+        3.66,
+        2.27,
+        2.8
+      ],
+      "direction": [
+        -0.66,
+        -0.75,
+        -0.12
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          3.85,
+          2.4,
+          4.4
+        ],
+        "target": [
+          2.07,
+          1.99,
+          3.56
+        ],
+        "fov": 66
+      },
+      "bed": {
+        "position": [
+          2.18,
+          2.6,
+          3.98
+        ],
+        "target": [
+          2.2,
+          0.1,
+          4.04
+        ],
+        "fov": 66
+      },
+      "wardrobe": {
+        "position": [
+          3.68,
+          1.02,
+          4.35
+        ],
+        "target": [
+          0.46,
+          1.42,
+          3.92
+        ],
+        "fov": 64
+      },
+      "bathroom": {
+        "position": [
+          5.5,
+          1.46,
+          4.4
+        ],
+        "target": [
+          4.92,
+          0.3,
+          3.72
+        ],
+        "fov": 70
+      },
+      "shower": {
+        "position": [
+          5.34,
+          0.89,
+          4.4
+        ],
+        "target": [
+          5.4,
+          2.47,
+          4.04
+        ],
+        "fov": 62
+      },
+      "details": {
+        "position": [
+          3.4,
+          2.12,
+          4.06
+        ],
+        "target": [
+          3.22,
+          2.92,
+          3.47
+        ],
+        "fov": 52
+      },
+      "reverse": {
+        "position": [
+          1.15,
+          0.57,
+          4.4
+        ],
+        "target": [
+          2.87,
+          2.79,
+          3.68
+        ],
+        "fov": 66
+      },
+      "overview": {
+        "position": [
+          8.8,
+          -3.9,
+          11.0
+        ],
+        "target": [
+          2.96,
+          1.63,
+          3.44
+        ],
+        "fov": 48,
+        "cutaway": true
+      }
+    }
+  }
+}

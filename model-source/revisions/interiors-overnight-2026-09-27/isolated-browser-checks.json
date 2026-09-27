@@ -4,6 +4,53 @@
     {
       "area": "cinema",
       "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Cinema charcoal acoustic fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema charcoal acoustic fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema warm charcoal woven carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema charcoal acoustic fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema smoked oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema warm taupe upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
       "variant": "compact",
       "revision": 1,
       "views": [
@@ -22,6 +69,53 @@
     {
       "area": "cinema",
       "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Cinema charcoal acoustic fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema charcoal acoustic fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema warm charcoal woven carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema charcoal acoustic fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema smoked oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema warm taupe upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cinema honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
       "variant": "planning",
       "revision": 1,
       "views": [
@@ -40,6 +134,33 @@
     {
       "area": "bar",
       "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Bar honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar smoked oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar oatmeal carpet",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
       "variant": "compact",
       "revision": 1,
       "views": [
@@ -59,6 +180,33 @@
     {
       "area": "bar",
       "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Bar honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar smoked oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bar oatmeal carpet",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
       "variant": "planning",
       "revision": 1,
       "views": [
@@ -74,6 +222,846 @@
       "objects": 576,
       "cutaway": 14,
       "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-basement-bar"
+    },
+    {
+      "area": "gym",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Gym natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym ivory terry fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility natural oak",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 412,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-gym"
+    },
+    {
+      "area": "gym",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Gym natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym ivory terry fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility natural oak",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 412,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-gym"
+    },
+    {
+      "area": "utility",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Utility honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility ivory linen",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "laundry",
+        "sink",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 355,
+      "cutaway": 5,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-utility"
+    },
+    {
+      "area": "utility",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Utility honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility ivory linen",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "laundry",
+        "sink",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 355,
+      "cutaway": 5,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-utility"
+    },
+    {
+      "area": "guest",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "garden",
+        "wardrobe",
+        "details",
+        "overview"
+      ],
+      "objects": 451,
+      "cutaway": 18,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445673-0"
+    },
+    {
+      "area": "guest",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "garden",
+        "wardrobe",
+        "details",
+        "overview"
+      ],
+      "objects": 451,
+      "cutaway": 18,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445673-0"
+    },
+    {
+      "area": "guestbath",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath ivory towels",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath natural oak",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "shower",
+        "window",
+        "details",
+        "overview"
+      ],
+      "objects": 263,
+      "cutaway": 27,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445675-0"
+    },
+    {
+      "area": "guestbath",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath ivory towels",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guestbath natural oak",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "shower",
+        "window",
+        "details",
+        "overview"
+      ],
+      "objects": 263,
+      "cutaway": 27,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445675-0"
+    },
+    {
+      "area": "family",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family warm taupe linen",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "desk",
+        "storage",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 470,
+      "cutaway": 15,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-upstairs-family-lounge"
+    },
+    {
+      "area": "family",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family warm taupe linen",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "desk",
+        "storage",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 459,
+      "cutaway": 15,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-upstairs-family-lounge"
+    },
+    {
+      "area": "cloakroom",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Cloakroom honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cloakroom natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cloakroom ivory towels",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "wc",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 202,
+      "cutaway": 12,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445660-0"
+    },
+    {
+      "area": "cloakroom",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Cloakroom honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cloakroom natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Cloakroom ivory towels",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "wc",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 202,
+      "cutaway": 12,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445660-0"
+    },
+    {
+      "area": "bedroom2",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Bedroom2 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "reading",
+        "wardrobe",
+        "details",
+        "overview",
+        "reverse"
+      ],
+      "objects": 239,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445672-0"
+    },
+    {
+      "area": "bedroom2",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Bedroom2 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "reading",
+        "wardrobe",
+        "details",
+        "overview",
+        "reverse"
+      ],
+      "objects": 239,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445672-0"
+    },
+    {
+      "area": "bedroom3",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Bedroom3 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 323,
+      "cutaway": 17,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445679-0"
+    },
+    {
+      "area": "bedroom3",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Bedroom3 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 323,
+      "cutaway": 17,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445679-0"
+    },
+    {
+      "area": "familybath",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Guestbath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath ivory towels",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "bath",
+        "wc",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 341,
+      "cutaway": 29,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445671-0"
+    },
+    {
+      "area": "familybath",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Guestbath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath ivory towels",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "bath",
+        "wc",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 341,
+      "cutaway": 29,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445671-0"
+    },
+    {
+      "area": "bedroom4",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Bedroom4 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "shower",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 452,
+      "cutaway": 21,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445676-0"
+    },
+    {
+      "area": "bedroom4",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Bedroom4 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "shower",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 454,
+      "cutaway": 21,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445676-0"
     }
   ],
   "mobileWidth": 390,

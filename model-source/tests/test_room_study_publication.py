@@ -25,3 +25,17 @@ class RoomStudyPublicationTests(unittest.TestCase):
             third=stage_room_studies(source,destination,second,7400,retire,('cinema',))
             self.assertFalse((destination/old).exists());self.assertTrue((destination/new).exists())
             self.assertEqual(hashlib.sha256((destination/new).read_bytes()).hexdigest(),third['assets'][new]['sha256'])
+
+    def test_shared_texture_keeps_its_hash_url_and_cached_images_survive(self):
+        with tempfile.TemporaryDirectory()as folder:
+            source=Path(folder)/'source';destination=Path(folder)/'published';(source/'models').mkdir(parents=True);(source/'textures').mkdir()
+            for name in ('studio.css','room-model.js','cinema-plan.svg'):(source/name).write_text(name)
+            for variant in ('compact','planning'):
+                (source/'models'/(variant+'-cinema.glb')).write_bytes(b'geometry')
+                (source/'models'/(variant+'-cinema.json')).write_text('{}')
+            (source/'index.html').write_text('<link href="studio.css">');(source/'cinema.html').write_text('<script type="module" src="room-model.js"></script>')
+            payload=b'exact image bytes';name='textures/'+hashlib.sha256(payload).hexdigest()+'.png';(source/name).write_bytes(payload);(source/'shared-textures.json').write_text(json.dumps([name]))
+            retire=lambda info,now:{**info,'retain_until_epoch':info.get('retain_until_epoch',now+1800)}
+            first=stage_room_studies(source,destination,{},10,retire,('cinema',));self.assertEqual((destination/name).read_bytes(),payload);self.assertIn(name,first['assets'])
+            (source/'shared-textures.json').write_text('[]');second=stage_room_studies(source,destination,first,11,retire,('cinema',));self.assertIn(name,second['previous_assets']);self.assertTrue((destination/name).exists())
+            stage_room_studies(source,destination,second,1812,retire,('cinema',));self.assertFalse((destination/name).exists())

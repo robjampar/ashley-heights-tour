@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "variant": "planning",
+  "audit": "audit_leisure_native.py",
+  "area": "bedroom4",
+  "reason": "Full model contains vanity part names absent from isolated study inventory",
+  "missing_from_study": [
+    "Bedroom4 01 | vanity finger recess 0",
+    "Bedroom4 01 | vanity base",
+    "Bedroom4 01 | vanity back",
+    "Bedroom4 01 | vanity end",
+    "Bedroom4 01 | vanity drawer front 0"
+  ],
+  "publication_blocked": true
+}

@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'revisions/interiors-overnight
 for variant in ('compact','planning'):
     before=json.loads((OUT/'before'/variant/'geometry.json').read_text())
     after=json.loads((ROOT/f'output-proposed-{variant}/geometry.json').read_text())
-    areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath')
+    areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4')
     room_reports=[json.loads((ROOT/f'output-proposed-{variant}'/(area+'-interior-report.json')).read_text())for area in areas]
     removed={o['object_name']for report in room_reports for o in report['removed_objects']}
     transforms={name:t for report in room_reports for t in report.get('declared_transforms',[])for name in t['object_names']}
@@ -51,7 +51,7 @@ for variant in ('compact','planning'):
     assert utility_room['polygon_m']==[[x0,y0],[x1,y0],[x1,y1],[x0,y1]],('Utility plan footprint',utility_room)
     bath_cfg=json.loads((ROOT/'proposal/interiors/leisure/guestbath.json').read_text())
     assert next(r for r in nav['planRooms']if r['name']==bath_cfg['room'])['polygon_m']==bath_cfg['polygon']
-    assert len(nav['mirrors'])==6 and any(m['name']=='Guestbath 01 | basin mirror'for m in nav['mirrors'])
+    assert len(nav['mirrors'])==7 and any(m['name']=='Guestbath 01 | basin mirror'for m in nav['mirrors'])
     original=json.loads((ROOT/f'output-proposed-{variant}/original-preservation-check.json').read_text());assert all(original.values())
     reports.append({'variant':variant,'unchanged_previous_meshes':unchanged,'unchanged_kitchen_lounge_meshes':kitchen,'unchanged_principal_suite_meshes':suite,'maximum_expected_vertex_difference_m':maximum,'source_reconstruction_preserved':True,'declared_replaced_parts':len(removed),'exactly_verified_rehung_door_parts':len(transforms),'retained_shared_skirtings':retained_profiles,'rooms':[{k:r[k]for k in ('area','mesh_objects','lights')}for r in room_reports]})
 (OUT/'preservation.json').write_text(json.dumps({'status':'PASS','reports':reports},indent=2)+'\n')

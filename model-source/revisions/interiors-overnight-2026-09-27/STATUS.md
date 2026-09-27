@@ -1,9 +1,20 @@
-# Overnight interiors — publication checkpoint
+# Overnight interiors — stopped at usage boundary
 
-Cinema, wine bar/games, gym, utility, garden guest bedroom, its ensuite, upstairs family lounge, downstairs cloakroom, Bedroom 2, Bedroom 3 and the family bathroom are developed for review in both Proposed
+**Live:** eleven developed areas, through the family bathroom, in both designs.
+Verified release: `3ecc538e74fe27b56d907bf7f40fc67d1e1e2cf3`.
+**Draft only:** Bedroom 4 with its ensuite, the refined vanity fronts and shared
+room-texture delivery. These are saved locally and in the source snapshot.
+The new full models built successfully, but their Bedroom 4 vanity inventories
+differ from the isolated studies. Do not publish this candidate until resolved.
+See STOP-CHECKPOINT.md for exact validation status and next steps.
+
+The room descriptions below include the saved draft; they do not imply that
+Bedroom 4 has been published or that the full candidate passed all checks.
+
+Cinema, wine bar/games, gym, utility, garden guest bedroom, its ensuite, upstairs family lounge, downstairs cloakroom, Bedroom 2, Bedroom 3 the family bathroom, and Bedroom 4 with its ensuite are developed for review in both Proposed
 and Proposed Planning. The accepted kitchen/lounge and principal suite are
-unchanged. The full native models, walkthrough exports and isolated room studies
-agree. The original reconstruction remains intact.
+unchanged. The live eleven-room release was verified against its native models and studies.
+The twelve-room candidate has the vanity mismatch described above. The original reconstruction remains intact.
 
 - Cinema: 156 new mesh parts and two lights; four deep seats in one row.
 - Bar/games: 505 mesh parts and five lights; a usable serving aisle, three stools,
@@ -38,10 +49,13 @@ agree. The original reconstruction remains intact.
   bathing well, 1.20 m floating oak vanity, concealed-cistern WC, privacy-window
   returns, towel warmer and detailed brassware. The existing walls, window and
   main service positions remain; a right-hinged hall leaf clears the WC route.
-- Native comparison: every authored room mesh matches its isolated study to
+- Bedroom 4 and ensuite: 279 mesh parts and seven lights; a wall-backed double,
+  2 m sliding wardrobe, floating oak vanity and 800 × 900 mm shower. The shower
+  return moves 113 mm west; the existing bedroom window and door apertures remain.
+- Live eleven-room native comparison: every authored room mesh matched its isolated study to
   within 0.003 mm, excluding two explicitly cropped retained skirting profiles.
-  All 45 cinema/bar/guest TV rays pass in each full design, with 50 Proposed
-  and 51 Planning internal-reveal rays. Internal window returns are ivory; outside finishes remain.
+  All 45 cinema/bar/guest TV rays pass in each full design, with 54 Proposed
+  and 55 Planning internal-reveal rays. Internal window returns are ivory; outside finishes remain.
 - Navigation: all six gym activity states and six utility working states pass
   with a 600 mm body against the final full-house navigation. Previous cinema,
   bar and principal-suite checks remain valid; their retained geometry agrees.
@@ -64,16 +78,18 @@ agree. The original reconstruction remains intact.
   hall leaf clears fittings at 91 angles; the service-cutout drawer clears the
   basin and trap over 31 positions. Five bath-well rays reach the hollow basin,
   and all 96 flexible-hose parts clear the bathing well.
-- Browser: both designs, room cameras, detail parts, cutaway, mobile,
-  full-house room views and twelve room/bedroom-balcony doors plus two Proposed terrace leaves pass. The staged,
+- Browser: all 24 candidate isolated studies pass both designs, room cameras,
+  detail parts, cutaway and mobile. The live eleven-room full-house check passed
+  its twelve room/bedroom-balcony doors plus two Proposed terrace leaves.
+  The twelve-room full-house browser check is not complete. The staged,
   content-addressed pages also load without page or asset errors.
   All new interior materials remain unchanged through the four exterior
   wall/roof finish combinations in both full designs.
-- Preservation: 12,070 retained Proposed meshes and 11,255 Planning meshes are
+- Preservation: 11,791 retained Proposed meshes and 10,978 Planning meshes are
   unchanged. The seven rehung garage-door parts match their declared rotation.
   Kitchen/lounge meshes (1,028/919) and principal-suite meshes (862 each) agree.
   Two shared skirting runs retain their original geometry outside the ensuite.
-- Pipeline/publication checks: 32 Python tests pass. PDF drawing packs have not
+- Pipeline/publication checks: 33 Python tests pass. PDF drawing packs have not
   been regenerated as part of this furniture and walkthrough update.
 
 Trade-offs are explicit in the room reviews. Four cinema places replace six;
@@ -110,10 +126,23 @@ arrival when occupied; its final position is 500 mm farther north.
 The family bathroom uses separate fixture-use states and remains a compact,
 single-user room. Its shorter vanity prioritises bathing and circulation.
 
-Bedroom 4 and its ensuite have a paired working plan with seven circulation
-states. The draft retains a full-size double and proposes moving the shower
-return 113 mm west for an 800 × 900 mm enclosure. Native geometry and door
-clearances are not yet verified; this draft is not in the published full model.
+Bedroom 4 and its ensuite pass seven full-house circulation states and native
+checks of three complete moving door assemblies, the vanity drawer and rebuilt
+wall junction. The double deliberately retains the existing mattress size;
+a king blocked the bathroom door. The west wardrobe/bed aisle is about 640 mm,
+single-file. The ensuite remains a compact room for one person at a time.
+
+The 24 isolated room models share identical oak, stone and fabric image bytes.
+Their combined model and texture payload is about 45.6 MB instead of 217.7 MB;
+encoded geometry and image bytes are checked unchanged. All 24 isolated browser
+views pass, including loaded textures. Full-house model downloads are unchanged
+by this optimisation.
+
+Current checkpoint: the twelve-room candidate passed preservation, internal
+returns, Bedroom 4 native-detail and circulation checks. The full native
+comparison FAILED on Bedroom 4 vanity inventory differences in both designs.
+The exported full-house browser check and publication were not attempted after
+that failure. The verified eleven-room release remains live at commit 3ecc538.
 
 Other remaining rooms are unchanged; see NEXT-ROOMS.md for their design sequence.
 PDF drawing packs remain the previous issue.

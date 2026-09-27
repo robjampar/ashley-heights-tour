@@ -13,6 +13,7 @@ windows.extend([('Family','west window','x',-4.95,-5.14,6.375,7.625,3.65,5.05),(
 windows.append(('Bedroom2','front window','y',.15,.10,10.5292,12.9165,3.55,5.0))
 windows.append(('Bedroom3','north window','y',8.68,8.72,1.192,3.6189,3.6,4.98))
 windows.append(('Familybath','north window','y',7.76,7.793,5.3354,6.8474,4.02,4.82))
+windows.append(('Bedroom4','south bedroom window','y',.15,.105,1.1276,3.3827,3.55,5.0))
 if area:windows=[w for w in windows if w[0].lower()==area]
 rays=[]
 for area,label,axis,inside,frame,a,d,sill,head in windows:
@@ -28,8 +29,8 @@ for area,label,axis,inside,frame,a,d,sill,head in windows:
             elif surface=='sill':origin=Vector(point(depth,mid,sill+.020));target=Vector(point(depth,mid,sill+.001))
             elif surface=='first jamb':origin=Vector(point(depth,a+.040,z));target=Vector(point(depth,a+.001,z))
             else:origin=Vector(point(depth,d-.040,z));target=Vector(point(depth,d-.001,z))
-        elif area in('Family','Bedroom2','Bedroom3','Familybath'):
-            depth=7.793 if area=='Familybath'else 8.712 if area=='Bedroom3'else .105 if area=='Bedroom2'else -5.067 if axis=='x'else 8.707
+        elif area in('Family','Bedroom2','Bedroom3','Familybath','Bedroom4'):
+            depth=7.793 if area=='Familybath'else 8.712 if area=='Bedroom3'else .105 if area in('Bedroom2','Bedroom4')else -5.067 if axis=='x'else 8.707
             if surface=='head':origin=Vector(point(depth,mid,head-.020));target=Vector(point(depth,mid,head-.001))
             elif surface=='sill':origin=Vector(point(depth,mid,sill+.020));target=Vector(point(depth,mid,sill+.001))
             elif surface=='first jamb':origin=Vector(point(depth,a+.020,z));target=Vector(point(depth,a+.001,z))

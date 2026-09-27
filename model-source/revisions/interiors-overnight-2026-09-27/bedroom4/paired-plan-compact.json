@@ -1,8 +1,9 @@
 {
   "status": "PASS",
   "variant": "compact",
-  "source": "working plan with declared shower-return movement",
-  "sourceSha256": "77615673320795528bf01dd021eaba8c10581dec91e4312455e78679634f0a0c",
+  "source": "output-proposed-compact/navigation.json",
+  "doorGeometry": "evaluated complete native door and handle bounds",
+  "sourceSha256": "77d35a12e6a245bf1469d34e72fa896eb02fde5531ea52e2842df552c9284523",
   "results": [
     {
       "state": "ordinary",
@@ -10,13 +11,13 @@
       "crop": {
         "before": {
           "segments": 133,
-          "obstacles": 135,
-          "surfaces": 124
+          "obstacles": 163,
+          "surfaces": 125
         },
         "after": {
           "segments": 23,
-          "obstacles": 13,
-          "surfaces": 20
+          "obstacles": 41,
+          "surfaces": 21
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -64,7 +65,7 @@
         },
         {
           "label": "inside shower",
-          "distance": 0.009999999999999787,
+          "distance": 0,
           "reachable": true
         }
       ]
@@ -75,13 +76,13 @@
       "crop": {
         "before": {
           "segments": 133,
-          "obstacles": 135,
-          "surfaces": 124
+          "obstacles": 163,
+          "surfaces": 125
         },
         "after": {
           "segments": 23,
-          "obstacles": 13,
-          "surfaces": 20
+          "obstacles": 41,
+          "surfaces": 21
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -129,7 +130,7 @@
         },
         {
           "label": "inside shower",
-          "distance": 0.009999999999999787,
+          "distance": 0,
           "reachable": true
         }
       ]
@@ -140,13 +141,13 @@
       "crop": {
         "before": {
           "segments": 133,
-          "obstacles": 135,
-          "surfaces": 124
+          "obstacles": 163,
+          "surfaces": 125
         },
         "after": {
           "segments": 23,
-          "obstacles": 13,
-          "surfaces": 20
+          "obstacles": 41,
+          "surfaces": 21
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -169,7 +170,7 @@
         },
         {
           "label": "inside shower",
-          "distance": 0.009999999999999787,
+          "distance": 0,
           "reachable": true
         }
       ]
@@ -180,13 +181,13 @@
       "crop": {
         "before": {
           "segments": 133,
-          "obstacles": 135,
-          "surfaces": 124
+          "obstacles": 163,
+          "surfaces": 125
         },
         "after": {
           "segments": 23,
-          "obstacles": 13,
-          "surfaces": 20
+          "obstacles": 41,
+          "surfaces": 21
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -229,7 +230,7 @@
         },
         {
           "label": "shower approach",
-          "distance": 0.029999999999999805,
+          "distance": 0,
           "reachable": true
         }
       ]
@@ -240,13 +241,13 @@
       "crop": {
         "before": {
           "segments": 133,
-          "obstacles": 136,
-          "surfaces": 124
+          "obstacles": 164,
+          "surfaces": 125
         },
         "after": {
           "segments": 23,
-          "obstacles": 14,
-          "surfaces": 20
+          "obstacles": 42,
+          "surfaces": 21
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -279,7 +280,7 @@
         },
         {
           "label": "inside shower",
-          "distance": 0.009999999999999787,
+          "distance": 0,
           "reachable": true
         }
       ]
@@ -290,13 +291,13 @@
       "crop": {
         "before": {
           "segments": 133,
-          "obstacles": 136,
-          "surfaces": 124
+          "obstacles": 164,
+          "surfaces": 125
         },
         "after": {
           "segments": 23,
-          "obstacles": 14,
-          "surfaces": 20
+          "obstacles": 42,
+          "surfaces": 21
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -329,7 +330,7 @@
         },
         {
           "label": "inside shower",
-          "distance": 0.009999999999999787,
+          "distance": 0,
           "reachable": true
         }
       ]
@@ -340,13 +341,13 @@
       "crop": {
         "before": {
           "segments": 133,
-          "obstacles": 136,
-          "surfaces": 124
+          "obstacles": 164,
+          "surfaces": 125
         },
         "after": {
           "segments": 23,
-          "obstacles": 14,
-          "surfaces": 20
+          "obstacles": 42,
+          "surfaces": 21
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -389,7 +390,7 @@
         },
         {
           "label": "inside shower",
-          "distance": 0.009999999999999787,
+          "distance": 0,
           "reachable": true
         }
       ]

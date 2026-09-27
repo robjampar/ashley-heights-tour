@@ -38,7 +38,7 @@ paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/leisure
 paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'revisions/interiors-overnight-2026-09-27').rglob('*') if p.is_file() and (p.suffix in ('.md','.json','.blend') or p.name in ('arrangements.svg','layout-plan.svg')))
 for name in sorted(paths):
  source=ROOT/name
- if name.startswith(('output-','walkthrough/public/house','walkthrough/public/proposal','revisions/interiors-overnight-2026-09-27/before/'))or source.suffix in('.blend','.glb') or source.name=='preview-navigation.json':
+ if name.startswith(('output-','walkthrough/public/house','walkthrough/public/proposal','revisions/interiors-overnight-2026-09-27/before/'))or source.suffix in('.blend','.glb') or source.name=='preview-navigation.json' or name in ('revisions/redesigns-2026-09-25/compact-object-index.json','revisions/redesigns-2026-09-25/original-object-index.json','revisions/interiors-principal-integration-2026-09-27/compact-before/navigation.json','revisions/interiors-principal-integration-2026-09-27/planning-before/navigation.json'):
   if source.is_file():
    with source.open('rb')as handle:digest=hashlib.file_digest(handle,'sha256').hexdigest()
    baseline[name]={'sha256':digest,'bytes':source.stat().st_size}

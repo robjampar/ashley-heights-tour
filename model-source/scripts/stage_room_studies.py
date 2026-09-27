@@ -10,10 +10,15 @@ def stage_room_studies(source,destination,previous,now,retirement,rooms):
     for room in rooms:
         names.add(room+'-plan.svg')
         names.update('models/'+variant+'-'+room+suffix for variant in ('compact','planning')for suffix in ('.glb','.json'))
+    shared=source/'shared-textures.json'
+    if shared.exists():names.update(json.loads(shared.read_text()))
     mapping,manifest={},{}
     for name in sorted(names):
         payload=(source/name).read_bytes();relative=Path(name)
-        target=relative.with_name(relative.stem+'.'+sha(payload)[:16]+relative.suffix)
+        if relative.parts[0]=='textures':
+            assert len(relative.parts)==2 and relative.stem==sha(payload), 'Shared texture name must match exact image bytes'
+            target=relative
+        else:target=relative.with_name(relative.stem+'.'+sha(payload)[:16]+relative.suffix)
         mapping[name]=target.as_posix();out=destination/target;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(payload)
         manifest[target.as_posix()]={'source':name,'bytes':len(payload),'sha256':sha(payload)}
     pages={}

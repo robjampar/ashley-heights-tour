@@ -1,13 +1,17 @@
-# Remaining room sequence
+# Remaining room sequence — owner scope expanded this morning
 
-These areas retain their previous furniture in the published checkpoint. This is a sequence for further design, not a claim that their arrangements have been validated.
+The next priorities are the formal lounge/dining room, the side-wing bedroom and ensuite, and the bedroom/ensuite above the principal suite. The original-house dormer becomes a generous hobby/multifunction room. Its sloping roof, bridge, eaves storage and landings must be designed together.
 
-1. **Bedroom 2 — developed.** The ninth room keeps its east-wall bed, with a complete king frame, 2.0 m west wardrobe and a quiet reading corner. Six use states and the inward entrance leaf are checked. Bedroom 3 is now developed too.
-2. **Bedroom 3 — developed.** The tenth room retains its south bed wall, with a complete slim king frame, 2.10 m wardrobe and arrival perch. Six use states, both complete door sweeps and full-house preservation are checked. The foot and wardrobe routes remain single-file.
-3. **Bedroom 4 and ensuite together.** Measured review is recorded in bedroom4/MEASURED-REVIEW.md. These are smaller, irregular rooms. Review them as a pair so the entrance and bathroom leaves, wardrobe access and full bed footprint work together. Keep the current bedroom count and service positions where feasible.
-4. **Family bathroom — developed.** The eleventh area retains its walls, north window and main service positions, with a fitted bath, 1.20 m floating oak vanity and concealed-cistern WC. Six use states, full door and drawer travel, genuine basin/bath wells and window returns are checked in both full models. A right-hinged inward hall leaf avoids the WC approach.
-5. **Entrance arrival.** The cloakroom is now developed and integrated separately, with a shorter vanity and checked door/drawer use. Next review coats, shoes, bags and the onward route in the entrance hall. Preserve the existing entrance-link position and angle.
-6. **Loft and landing library.** Retain the requested solid bedroom wall. Draw the actual sloping headroom, stair arrivals and doors before changing furniture. Separate a usable work place from the through route and shared lounge.
-7. **Pool and changing / garage arrival.** Treat wet/dry movement and equipment/service access as specific activities. Preserve the required pool, double garage and four outside parking places; furniture changes must not consume those clearances.
+1. **Formal lounge and dining room.** Begin with the existing fireplace, both hall entrances, kitchen serving hatch and garden French doors. Owner confirmed: six regular dining places with an extending table for eight to ten. Check both the everyday and fully extended table, occupied chairs and clear routes to the garden. Use the accepted warm oak, ivory, limestone and bronze palette.
+2. **Side-wing south bedroom and ensuite.** A separate paired room from Bedroom 4. Test the full bed, wardrobe, two door movements and bathroom use within its narrow shell.
+3. **Bedroom and ensuite above the principal suite.** Keep the requested solid bedroom wall. Measure roof slopes and usable standing height before placing the bed, wardrobe, basin or shower. Include the hip store.
+4. **Original-house loft / dormer hobby room.** Flexible making/work tables, concealed storage and a relaxed sitting area. Preserve a clear route through the bridge and landings; keep seated and standing headroom distinct. Avoid turning the whole loft into fixed desks.
+5. **Roof terrace.** Outdoor dining, sitting and planting with clear door routes. Preserve each proposal’s envelope; Planning currently has no shared terrace here. Check guardrail zones, maintenance, drainage and realistic furniture sizes before fitting it out.
+6. **Main entrance and hallways.** Arrival with coats, shoes and bags; onward views and privacy; gallery, library and landing storage. Preserve the existing entrance-link position and angle, stair geometry and routes.
+7. **Double garage.** Use the actual modelled vehicles with doors open, unloading, storage and utility access. Keep both parking spaces and the four outside spaces.
+8. **Pool and garden.** Pool terrace, hot tub, pavilion/changing, outside WC and storage, loungers and wet/dry routes. Keep the pool as a required feature. Review the garden workshop and wider paths too.
+9. **Other spaces found in the inventory.** Original ground-floor office, side garden living room, linen/eaves cupboards, balconies and connecting spaces.
 
-The accepted kitchen/lounge and principal bedroom, bathroom and walk-through wardrobe remain the reference palette and owner-approved layout. New room studies remain proposals for review. Existing drawing packs have not been reissued for the overnight furnishing work.
+`remaining/room-inventory.json` maps these to the current tour views. A space on this list is not yet redesigned or validated. Existing PDF drawing packs have not been reissued.
+
+The accepted kitchen/lounge and principal suite remain the reference. Twelve developed room studies now include the paired Bedroom 4 and ensuite; final publication status is recorded in STATUS.md.

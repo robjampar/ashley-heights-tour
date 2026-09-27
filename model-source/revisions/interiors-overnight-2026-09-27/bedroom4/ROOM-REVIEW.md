@@ -1,0 +1,11 @@
+# Bedroom 4 and ensuite — developed paired concept
+
+The smaller bedroom keeps a proper 1.35 × 1.90 m double, now backed against the solid north wall. The complete 1.49 × 2.06 m upholstered frame, floating bedsides, reading lights, switches and charging points sit against an oak backdrop. A 2 m long, 650 mm deep sliding wardrobe provides real hanging and shelf space. The window, radiator and both door apertures stay in place. The original upper cupboard and ornaments are removed.
+
+The compact ensuite retains its service positions, with a 900 × 400 mm floating oak vanity, genuine hollow basin, service-cutout upper drawer, mirror and face lighting. The WC has a modelled open pan and seat, compact dimensions and a 190 mm cistern enclosure. The former front window is already blocked in both source proposals; its inside is finished in limestone.
+
+The shower grows from approximately 680 × 710 mm to an 800 × 900 mm tray. Its short return moves 113 mm west, with a shortened jog and solid infill at the linen-cupboard back. The glass leaf opens inward to an 85-degree stop. The oak hall door opens into the bedroom; the bathroom door also opens into the bedroom, leaving its standing area clear.
+
+Seven 600 mm-body circulation states check ordinary use, each relevant door closed, wardrobe use and each occupied bedside. The full bed, wardrobe and compact WC match their declared envelopes. Complete hall, ensuite and shower assemblies clear the new fittings over 91 angles each; the U-shaped drawer clears the basin and trap over 31 positions. Native rays confirm the rebuilt wall junction and white internal window returns. The final full-house comparison and browser checks are recorded in the overnight audit files.
+
+A king bed did not work with the bathroom door open, so the double deliberately retains the existing mattress size. The complete bed leaves approximately 819 mm to the radiator; the west bed/wardrobe aisle is about 640 mm, single-file. The ensuite is for one person at a time. The wider shower is an explicit local partition change. Final products, glass support and stop, waterproofing, plumbing, ventilation and measured site clearances remain detailed-design work. No planning or construction approval is asserted.

@@ -15,7 +15,7 @@ for ob in scene.objects:
  ev=ob.evaluated_get(deps);mesh=ev.to_mesh()
  try:v=[ev.matrix_world@p.co for p in mesh.vertices];f=[tuple(p.vertices)for p in mesh.polygons]
  finally:ev.to_mesh_clear()
- info={**shape(v,f),'name':ob.get('source_name',ob.name),'authored':ob.get('interior_room')=='familybath','drawer':ob.get('familybath_pullout')=='upper drawer'};items.append(info);by_model[ob.get('model_object_name',info['name'])]=info
+ info={**shape(v,f),'name':ob.get('source_name',ob.name),'authored':ob.get('interior_room')=='familybath','drawer':ob.get('familybath_pullout')=='upper drawer'};items.append(info);by_model[ob.get('model_object_name',info['name'])]=info;by_model[info['name']]=info
 nav=json.loads((out/'preview-navigation.json').read_text());door=next(d for d in nav['interactiveDoors']if d['id']=='Familybath 01 | entrance door');fixed=[p for p in items if p['authored']and p['name']not in door['members']];hinge=Vector(door['hinge']);sweeps=[]
 for step in range(91):
  angle=door['openDelta']*step/90;transform=Matrix.Translation(hinge)@Matrix.Rotation(angle,4,'Z')@Matrix.Translation(-hinge);hits=[]

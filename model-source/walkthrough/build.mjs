@@ -1,5 +1,6 @@
 import {build} from 'esbuild';
 import {mkdir,cp,readFile,writeFile} from 'node:fs/promises';
+import {shareRoomTextures} from './tools/shared-room-textures.mjs';
 import {packGlbLosslessly} from './tools/lossless-glb.mjs';
 import path from 'node:path';
 import {DESIGN_ASSETS} from './src/design-assets.js';
@@ -54,11 +55,16 @@ for(const variant of ['compact','planning'])for(const stem of ['suite','bedroom'
  const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await atomicWrite('dist/'+name,packed);
  console.log(`${variant} ${stem} study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }
-for(const variant of ['compact','planning'])for(const stem of ['cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath']){
+const sharedTextures=new Set(),sharedReports=[];await mkdir('dist/interiors/leisure/textures',{recursive:true});
+for(const variant of ['compact','planning'])for(const stem of ['cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4']){
  const name=`interiors/leisure/models/${variant}-${stem}.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
- const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await atomicWrite('dist/'+name,packed);
+ const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);const shared=shareRoomTextures(packed);await atomicWrite('dist/'+name,shared.packed);
+ for(const [file,bytes]of shared.textures){await atomicWrite('dist/interiors/leisure/textures/'+file,bytes);sharedTextures.add('textures/'+file);}
+ sharedReports.push({name,...shared.verification});
  console.log(`${variant} ${stem} study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }
+await writeFile('dist/interiors/leisure/shared-textures.json',JSON.stringify([...sharedTextures].sort()));
+await writeFile('dist/room-texture-sharing.json',JSON.stringify(sharedReports,null,2)+'\n');
 await cp('index.html','dist/index.html');
 performanceReport.seconds=(performance.now()-started)/1000;
 await writeFile('dist/build-performance.json',JSON.stringify(performanceReport,null,2)+'\n');

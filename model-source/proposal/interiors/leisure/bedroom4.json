@@ -1,0 +1,277 @@
+{
+  "status": "developed concept for review",
+  "bed": {
+    "centerX": 2.18,
+    "headY": 3.08,
+    "mattress": [
+      1.35,
+      1.9
+    ],
+    "envelope": [
+      1.435,
+      1.02,
+      2.925,
+      3.08
+    ]
+  },
+  "bedsides": [
+    [
+      0.9,
+      2.76,
+      1.38,
+      3.075
+    ],
+    [
+      2.98,
+      2.76,
+      3.46,
+      3.075
+    ]
+  ],
+  "wardrobe": [
+    0.145,
+    0.22,
+    0.795,
+    2.22
+  ],
+  "bathVanity": [
+    4.6,
+    0.14,
+    5.5,
+    0.54
+  ],
+  "wcPan": [
+    4.52,
+    1.435,
+    4.9,
+    1.925
+  ],
+  "cistern": [
+    4.435,
+    1.925,
+    4.985,
+    2.115
+  ],
+  "shower": [
+    5.023,
+    2.04,
+    5.823,
+    2.94
+  ],
+  "showerReturnShiftX": -0.113,
+  "hallDoor": {
+    "hinge": [
+      4.756,
+      3.19,
+      2.8
+    ],
+    "width": 0.7264,
+    "axis": [
+      -1,
+      0
+    ],
+    "openAngle": 1.5707963267948966
+  },
+  "bathDoor": {
+    "hinge": [
+      4.28,
+      0.7804,
+      2.8
+    ],
+    "width": 0.7398,
+    "axis": [
+      0,
+      1
+    ],
+    "openAngle": 1.5707963267948966
+  },
+  "showerDoor": {
+    "hinge": [
+      5.045,
+      2.04,
+      2.8
+    ],
+    "width": 0.74,
+    "axis": [
+      1,
+      0
+    ],
+    "openAngle": 1.4835298641951802
+  },
+  "notes": [
+    "A full-size double retains the original mattress size; the complete bed envelope and storage leave single-file routes.",
+    "The shower return moves 113 mm west with a rebuilt back-wall junction and shortened jog.",
+    "Both original doorway apertures and the bedroom window remain; the ensuite former front window is already blocked in both proposals.",
+    "Seven separate circulation states, three complete door sweeps, drawer travel and the wall junction have been checked in the isolated native study. Full integration is checked separately."
+  ],
+  "wcBasis": {
+    "product": "Duravit D-Neo Compact 258809",
+    "ceramicSize": [
+      0.37,
+      0.48
+    ],
+    "allowanceFootprint": [
+      0.38,
+      0.49
+    ],
+    "cisternDepth": 0.19,
+    "frameBasis": "155 mm installation element plus lining and allowance",
+    "source": "https://pro.duravit.co.uk/pro/content/homepage/products/categories/overview/products~402880943a1b6e1b013a1bd2494e0047.uk-en.html?ncat=toilets&nser=0998&product=6661051"
+  },
+  "revision": 1,
+  "room": "Bedroom 4 and ensuite",
+  "bounds": [
+    0.115,
+    0.115,
+    5.835,
+    3.125
+  ],
+  "polygon": [
+    [
+      0.115,
+      0.115
+    ],
+    [
+      4.215,
+      0.115
+    ],
+    [
+      4.215,
+      2.255
+    ],
+    [
+      4.883,
+      2.255
+    ],
+    [
+      4.883,
+      3.125
+    ],
+    [
+      0.115,
+      3.125
+    ]
+  ],
+  "floorZ": 2.8,
+  "ceilingZ": 5.25,
+  "view": {
+    "id": "2445676-0",
+    "position": [
+      3.66,
+      2.27,
+      2.8
+    ],
+    "direction": [
+      -0.66,
+      -0.75,
+      -0.12
+    ]
+  },
+  "views": {
+    "entrance": {
+      "position": [
+        3.85,
+        2.4,
+        4.4
+      ],
+      "target": [
+        2.07,
+        1.99,
+        3.56
+      ],
+      "fov": 66
+    },
+    "bed": {
+      "position": [
+        2.18,
+        2.6,
+        3.98
+      ],
+      "target": [
+        2.2,
+        0.1,
+        4.04
+      ],
+      "fov": 66
+    },
+    "wardrobe": {
+      "position": [
+        3.68,
+        1.02,
+        4.35
+      ],
+      "target": [
+        0.46,
+        1.42,
+        3.92
+      ],
+      "fov": 64
+    },
+    "bathroom": {
+      "position": [
+        5.5,
+        1.46,
+        4.4
+      ],
+      "target": [
+        4.92,
+        0.3,
+        3.72
+      ],
+      "fov": 70
+    },
+    "shower": {
+      "position": [
+        5.34,
+        0.89,
+        4.4
+      ],
+      "target": [
+        5.4,
+        2.47,
+        4.04
+      ],
+      "fov": 62
+    },
+    "details": {
+      "position": [
+        3.4,
+        2.12,
+        4.06
+      ],
+      "target": [
+        3.22,
+        2.92,
+        3.47
+      ],
+      "fov": 52
+    },
+    "reverse": {
+      "position": [
+        1.15,
+        0.57,
+        4.4
+      ],
+      "target": [
+        2.87,
+        2.79,
+        3.68
+      ],
+      "fov": 66
+    },
+    "overview": {
+      "position": [
+        8.8,
+        -3.9,
+        11.0
+      ],
+      "target": [
+        2.96,
+        1.63,
+        3.44
+      ],
+      "fov": 48,
+      "cutaway": true
+    }
+  }
+}

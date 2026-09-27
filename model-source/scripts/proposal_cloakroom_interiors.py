@@ -18,9 +18,9 @@ def apply_cloakroom(ns):
     for yy in(s+.011,n-.011):b.box('vanity end',((a+c-.027)/2,yy,.56),(c-a-.027,.022,.50),oak,.005)
     b.box('vanity base',((a+c)/2,cy,.32),(c-a,n-s,.024),oak,.004)
     for j in range(2):
-        start=len(b.objects);zz=.450+j*.226
-        b.box('vanity drawer front '+str(j),(c-.012,cy,zz),(.024,n-s-.032,.213),oak,.008)
-        b.box('vanity finger recess '+str(j),(c+.001,cy,zz+.104),(.001,n-s-.065,.010),dark,.002)
+        start=len(b.objects);zz=.450 if j==0 else .696
+        b.box('vanity drawer front '+str(j),(c-.012,cy,zz),(.024,n-s-.032,.213 if j==0 else .260),oak,.008)
+        b.box('vanity finger recess '+str(j),(c+.001,cy,zz+(.104 if j==0 else .126)),(.001,n-s-.065,.010),dark,.002)
         if j==1:
             # U-shaped drawer clears the basin waste and compact trap.
             for y0,y1 in((s+.038,cy-.26),(cy+.26,n-.038)):

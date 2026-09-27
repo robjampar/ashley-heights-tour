@@ -11,6 +11,7 @@ from proposal_cloakroom_interiors import apply_cloakroom
 from proposal_bedroom2_interiors import apply_bedroom2
 from proposal_bedroom3_interiors import apply_bedroom3
 from proposal_familybath_interiors import apply_familybath
+from proposal_bedroom4_interiors import apply_bedroom4
 
 
 def apply_cinema(ns):
@@ -149,9 +150,9 @@ def apply_cinema(ns):
     return b.finish(cfg)
 
 
-def apply_leisure(ns,areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath')):
+def apply_leisure(ns,areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4')):
     if ns.get('VARIANT') not in ('compact','planning'):return {}
-    return {area:{'cinema':apply_cinema,'bar':apply_bar,'gym':apply_gym,'utility':apply_utility,'guest':apply_guest,'guestbath':apply_guestbath,'family':apply_family,'cloakroom':apply_cloakroom,'bedroom2':apply_bedroom2,'bedroom3':apply_bedroom3,'familybath':apply_familybath}[area](ns)for area in areas}
+    return {area:{'cinema':apply_cinema,'bar':apply_bar,'gym':apply_gym,'utility':apply_utility,'guest':apply_guest,'guestbath':apply_guestbath,'family':apply_family,'cloakroom':apply_cloakroom,'bedroom2':apply_bedroom2,'bedroom3':apply_bedroom3,'familybath':apply_familybath,'bedroom4':apply_bedroom4}[area](ns)for area in areas}
 
 
 if 'scene' in globals() and 'nav' in globals():

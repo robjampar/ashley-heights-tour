@@ -1,0 +1,605 @@
+{
+  "owner_scope_updated": "2026-09-27 morning",
+  "areas": [
+    {
+      "key": "formal",
+      "title": "Formal lounge and dining room",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "2445659-0",
+          "label": "Formal dining and lounge \u00b7 dining end",
+          "group": "Ground floor",
+          "position": [
+            6.2,
+            9.6,
+            0.0
+          ],
+          "direction": [
+            0.35,
+            -1
+          ]
+        },
+        {
+          "id": "2445666-0",
+          "label": "Formal dining and lounge \u00b7 lounge end",
+          "group": "Ground floor",
+          "position": [
+            11.417438963152719,
+            1.7388538429854843,
+            0.0
+          ],
+          "direction": [
+            0.08286678745968175,
+            0.9965606331458774
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sidebedroom",
+      "title": "Side-wing south bedroom and ensuite",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-side-wing-south-bedroom",
+          "label": "Side wing south bedroom",
+          "group": "Proposal \u00b7 First floor",
+          "position": [
+            -2.2,
+            3.1,
+            2.8
+          ],
+          "direction": [
+            0.35,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "proposal-side-south-ensuite",
+          "label": "Side south ensuite",
+          "group": "Proposal \u00b7 First floor",
+          "position": [
+            -3.35,
+            4.38,
+            2.8
+          ],
+          "direction": [
+            -1,
+            -0.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "key": "upperbedroom",
+      "title": "Bedroom and ensuite above the principal suite",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-new-loft-studio",
+          "label": "New loft bedroom",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            11.7,
+            -6.1499999999999995,
+            5.55
+          ],
+          "direction": [
+            -0.3,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "proposal-loft-ensuite",
+          "label": "Loft ensuite",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            10.75,
+            -10.3,
+            5.55
+          ],
+          "direction": [
+            0.6,
+            -0.8,
+            0
+          ]
+        },
+        {
+          "id": "proposal-loft-hip-store",
+          "label": "Loft hip store",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            9.35,
+            -12.299999999999999,
+            5.55
+          ],
+          "direction": [
+            -0.35,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "key": "hobbyloft",
+      "title": "Original-house dormer hobby / multifunction room",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-loft-studio-and-lounge",
+          "label": "Loft studio and lounge",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            8.0,
+            4.95,
+            5.55
+          ],
+          "direction": [
+            -1,
+            0.35
+          ]
+        },
+        {
+          "id": "proposal-loft-creative-studio",
+          "label": "Loft \u00b7 creative workbench",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            1.2,
+            5.0,
+            5.55
+          ],
+          "direction": [
+            -0.55,
+            0.85
+          ]
+        },
+        {
+          "id": "proposal-loft-shared-lounge",
+          "label": "Loft \u00b7 shared lounge",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            6.7,
+            5.1,
+            5.55
+          ],
+          "direction": [
+            -1,
+            0.45
+          ]
+        },
+        {
+          "id": "proposal-loft-quiet-work",
+          "label": "Loft \u00b7 quiet work area",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            7.9,
+            6.3,
+            5.55
+          ],
+          "direction": [
+            1,
+            0.15
+          ]
+        },
+        {
+          "id": "proposal-loft-east-eaves-store",
+          "label": "Loft east eaves store",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            10.87,
+            4.7,
+            5.55
+          ],
+          "direction": [
+            0.55,
+            0.8
+          ]
+        },
+        {
+          "id": "proposal-loft-west-eaves-store",
+          "label": "Loft west eaves store",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            -2.115,
+            4.7,
+            5.55
+          ],
+          "direction": [
+            -0.55,
+            0.8
+          ]
+        }
+      ]
+    },
+    {
+      "key": "loftlinks",
+      "title": "Loft landings and bridge",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-loft-landing",
+          "label": "Loft landing",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            11.885,
+            -4.6,
+            5.55
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "proposal-new-loft-landing",
+          "label": "New loft passage",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            8.9,
+            -3.6,
+            5.55
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "proposal-original-loft-bridge",
+          "label": "Original loft bridge",
+          "group": "Proposal \u00b7 Loft",
+          "position": [
+            8.4,
+            -0.7,
+            5.55
+          ],
+          "direction": [
+            0,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "key": "roofterrace",
+      "title": "Shared roof terrace",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-shared-roof-terrace",
+          "label": "Shared roof terrace",
+          "group": "Proposal \u00b7 First floor",
+          "position": [
+            -2.59,
+            10.15,
+            2.8
+          ],
+          "direction": [
+            0.2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "key": "arrival",
+      "title": "Main entrance and galleries",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-new-entrance-gallery",
+          "label": "New entrance gallery",
+          "group": "Proposal \u00b7 Ground floor",
+          "position": [
+            6.0,
+            -8.0,
+            0.0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "2445658-3",
+          "label": "Entrance Hall",
+          "group": "Ground floor",
+          "position": [
+            6.98,
+            4.1,
+            0.0
+          ],
+          "direction": [
+            0.023606183428497237,
+            -0.9997213352249417
+          ]
+        }
+      ]
+    },
+    {
+      "key": "landings",
+      "title": "House landings, library and stairs",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "2445670-3",
+          "label": "Landing",
+          "group": "First floor",
+          "position": [
+            6.84,
+            4.24,
+            2.8
+          ],
+          "direction": [
+            -0.031594741179901756,
+            -0.9995007615453703
+          ]
+        },
+        {
+          "id": "2445678-0",
+          "label": "Side-wing connecting landing",
+          "group": "Proposal \u00b7 First floor",
+          "position": [
+            2.4,
+            4.2,
+            2.8
+          ],
+          "direction": [
+            -1,
+            -0.15,
+            0
+          ]
+        },
+        {
+          "id": "proposal-joined-first-floor-landing",
+          "label": "Joined first-floor landing",
+          "group": "Proposal \u00b7 First floor",
+          "position": [
+            7.0,
+            -2.0,
+            2.8
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "proposal-landing-library",
+          "label": "Landing library",
+          "group": "Proposal \u00b7 First floor",
+          "position": [
+            9.5,
+            -5.6,
+            2.8
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "proposal-new-stair-gallery",
+          "label": "New upper gallery",
+          "group": "Proposal \u00b7 First floor",
+          "position": [
+            8.35,
+            -7.9,
+            2.8
+          ],
+          "direction": [
+            1,
+            0.4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "key": "garage",
+      "title": "Double garage and unloading route",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-new-double-garage",
+          "label": "New double garage",
+          "group": "Proposal \u00b7 Ground floor",
+          "position": [
+            4.0,
+            -12.94,
+            0.0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "key": "poolgarden",
+      "title": "Pool, hot tub, terrace and garden pavilion",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-pool-terrace",
+          "label": "Pool terrace",
+          "group": "Proposal \u00b7 Garden",
+          "position": [
+            10.85,
+            17.0,
+            0.2
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "proposal-pool-hot-tub-area",
+          "label": "Pool hot tub area",
+          "group": "Proposal \u00b7 Garden",
+          "position": [
+            11.0,
+            16.3,
+            0.2
+          ],
+          "direction": [
+            1,
+            0.15,
+            0
+          ]
+        },
+        {
+          "id": "proposal-expanded-garden-pavilion",
+          "label": "Expanded garden pavilion",
+          "group": "Proposal \u00b7 Garden",
+          "position": [
+            12.2,
+            21.6,
+            0.2
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "2445694-0",
+          "label": "Summer House",
+          "group": "Garden",
+          "position": [
+            15.25999896177807,
+            21.449999319099348,
+            0.572
+          ],
+          "direction": [
+            0.02940310805371039,
+            0.9995676351487086
+          ]
+        }
+      ]
+    },
+    {
+      "key": "office",
+      "title": "Original ground-floor office",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "2445661-0",
+          "label": "Office",
+          "group": "Ground floor",
+          "position": [
+            3.8,
+            3.0,
+            0.0
+          ],
+          "direction": [
+            -0.8,
+            -0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sideliving",
+      "title": "Side garden living room",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "2445664-0",
+          "label": "Side garden living",
+          "group": "Proposal \u00b7 Ground floor",
+          "position": [
+            -3.6,
+            3.45,
+            0.0
+          ],
+          "direction": [
+            0.2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gardenancillary",
+      "title": "Garden workshop, tool store, outside WC and garden routes",
+      "status": "remaining; current furniture not yet redesigned",
+      "views": [
+        {
+          "id": "proposal-garden-workshop",
+          "label": "Garden workshop",
+          "group": "Proposal \u00b7 Garden",
+          "position": [
+            -20.045,
+            23.4,
+            -0.459
+          ],
+          "direction": [
+            -0.7,
+            0.5,
+            0
+          ]
+        },
+        {
+          "id": "outbuildings",
+          "label": "Garden building",
+          "group": "Garden",
+          "position": [
+            10.6,
+            21.5,
+            0.2
+          ],
+          "direction": [
+            1,
+            0
+          ]
+        },
+        {
+          "id": "rearstrip",
+          "label": "Rear garden strip",
+          "group": "Garden",
+          "position": [
+            -13,
+            23.4,
+            -0.533
+          ],
+          "direction": [
+            -1,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "preserve": [
+    "accepted kitchen and lounge",
+    "accepted principal suite",
+    "gym, cinema, wine bar and pool",
+    "double garage and four external parking spaces",
+    "entrance-link position and angle",
+    "solid wall restored to loft bedroom"
+  ],
+  "notes": [
+    "The original-house dormer is to become a generous hobby/multifunction room, with a clear through route and measured sloping headroom.",
+    "The bedroom and ensuite above the principal suite are a separate paired room from the original-house hobby loft.",
+    "The side-wing south bedroom and ensuite are another separate pair.",
+    "Preserve each design\u2019s existing envelope. The shared roof terrace is present in Proposed; do not introduce it into Planning without a specific design decision."
+  ]
+}

@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from build_support import native_name
 from proposal_leisure_interiors import apply_leisure
 from proposal_kitchen_interiors import export_quiet_oak_gltf
-parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
+parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);VARIANT=args.variant;area=args.area
 OUT=ROOT/'revisions/interiors-overnight-2026-09-27'/area/VARIANT;OUT.mkdir(parents=True,exist_ok=True)
 PUBLIC=ROOT/'walkthrough/public/interiors/leisure/models';PUBLIC.mkdir(parents=True,exist_ok=True)
@@ -14,7 +14,10 @@ BASE=args.baseline.resolve()if args.baseline else ROOT/f'output-proposed-{VARIAN
 nav=json.loads((BASE/'navigation.json').read_text());g=json.loads((BASE/'geometry.json').read_text())
 bpy.ops.wm.open_mainfile(filepath=str(native));scene=bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene
 materials={m.name:m for m in bpy.data.materials};PALETTE=dict(g['materials']);new_obstacles=[];new_surfaces=[];new_segments=[];new_views=[]
-if area=='familybath':
+if area=='bedroom4':
+    from proposal_bedroom4_interiors import apply_bedroom4
+    report=apply_bedroom4(globals())
+elif area=='familybath':
     from proposal_familybath_interiors import apply_familybath
     report=apply_familybath(globals())
 elif area=='bedroom3':
@@ -74,7 +77,7 @@ def bounds(ob):
     return [min(v[i]for v in p)for i in range(3)]+[max(v[i]for v in p)for i in range(3)]
 
 x0,y0,x1,y1=cfg['bounds'];z=cfg['floorZ'];ceiling=cfg['ceilingZ']
-crop=[x0-(.24 if area=='utility'else .17 if area=='guest'else .13),y0-.13,z-.04,x1+.15,y1+(.25 if area=='family'else .23 if area=='cloakroom'else .10),ceiling+.08]
+crop=[x0-(.24 if area=='utility'else .17 if area=='guest'else .13),y0-.13,z-.04,x1+.15,y1+(.25 if area in('family','bedroom4')else .23 if area=='cloakroom'else .10),ceiling+.08]
 study=bpy.data.scenes.new(area.title()+' — interior study');coll=bpy.data.collections.new(area.title()+' study geometry');study.collection.children.link(coll)
 hidden=set(nav.get('hiddenObjects',[]));cutaway=[];copied=[]
 for ob in list(scene.objects):
@@ -123,7 +126,7 @@ views=cfg.get('views')or{
     'details':{'position':[8.48,-13.37,z+1.45],'target':[6.68,-12.05,z+.58],'fov':56},
     'overview':{'position':[12.5,-17.5,5.6],'target':[7.1,-12.6,z+1.3],'fov':50,'cutaway':True},
 }
-meta={'variant':VARIANT,'room':cfg['room'],'layoutRevision':cfg['revision'],'configuration':cfg,'materials':PALETTE,'planRooms':[r for r in nav['planRooms']if r['name']==cfg['room']],'proposalLights':[l for l in nav['proposalLights']if l['name'].startswith(area.title()+' 01 | ')],'cutawayObjects':cutaway,'mirrors':[m for m in nav.get('mirrors',[])if m['name'].startswith(area.title()+' 01 | ')],'objects':len(copied),'views':views,'sourceModelUpdatedAt':nav['modelUpdatedAt']}
+meta={'variant':VARIANT,'room':cfg['room'],'layoutRevision':cfg['revision'],'configuration':cfg,'materials':PALETTE,'planRooms':[r for r in nav['planRooms']if r['name']==cfg['room']or(area=='bedroom4'and r['name']in('Bedroom 4','Bedroom 4 en suite'))],'proposalLights':[l for l in nav['proposalLights']if l['name'].startswith(area.title()+' 01 | ')],'cutawayObjects':cutaway,'mirrors':[m for m in nav.get('mirrors',[])if m['name'].startswith(area.title()+' 01 | ')],'objects':len(copied),'views':views,'sourceModelUpdatedAt':nav['modelUpdatedAt']}
 if not args.render_only:
     export_quiet_oak_gltf(filepath=str(PUBLIC/(VARIANT+'-'+area+'.glb')),export_format='GLB',use_active_scene=True,export_apply=True,export_cameras=False,export_lights=False,export_extras=True)
     (PUBLIC/(VARIANT+'-'+area+'.json')).write_text(json.dumps(meta,indent=2)+'\n')
