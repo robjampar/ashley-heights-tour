@@ -1,0 +1,464 @@
+{
+  "area": "cloakroom",
+  "revision": 1,
+  "objects": 74,
+  "mesh_objects": 71,
+  "lights": 3,
+  "removed_objects": [
+    {
+      "name": "Cloakroom toilet cistern",
+      "object_name": "Cloakroom toilet cistern"
+    },
+    {
+      "name": "Cloakroom toilet pedestal",
+      "object_name": "Cloakroom toilet pedestal"
+    },
+    {
+      "name": "Cloakroom toilet hollow pan",
+      "object_name": "Cloakroom toilet hollow pan"
+    },
+    {
+      "name": "Cloakroom toilet seat",
+      "object_name": "Cloakroom toilet seat"
+    },
+    {
+      "name": "Cloakroom fitted vanity carcass",
+      "object_name": "Cloakroom fitted vanity carcass"
+    },
+    {
+      "name": "Cloakroom fitted vanity plinth",
+      "object_name": "Cloakroom fitted vanity plinth"
+    },
+    {
+      "name": "Cloakroom fitted vanity door",
+      "object_name": "Cloakroom fitted vanity door"
+    },
+    {
+      "name": "Cloakroom fitted vanity raised panel",
+      "object_name": "Cloakroom fitted vanity raised panel"
+    },
+    {
+      "name": "Cloakroom fitted vanity stile",
+      "object_name": "Cloakroom fitted vanity stile"
+    },
+    {
+      "name": "Cloakroom fitted vanity stile",
+      "object_name": "Cloakroom fitted vanity stile.001"
+    },
+    {
+      "name": "Cloakroom fitted vanity door knob",
+      "object_name": "Cloakroom fitted vanity door knob"
+    },
+    {
+      "name": "Cloakroom fitted vanity door",
+      "object_name": "Cloakroom fitted vanity door.001"
+    },
+    {
+      "name": "Cloakroom fitted vanity raised panel",
+      "object_name": "Cloakroom fitted vanity raised panel.001"
+    },
+    {
+      "name": "Cloakroom fitted vanity stile",
+      "object_name": "Cloakroom fitted vanity stile.002"
+    },
+    {
+      "name": "Cloakroom fitted vanity stile",
+      "object_name": "Cloakroom fitted vanity stile.003"
+    },
+    {
+      "name": "Cloakroom fitted vanity door knob",
+      "object_name": "Cloakroom fitted vanity door knob.001"
+    },
+    {
+      "name": "Cloakroom fitted vanity door",
+      "object_name": "Cloakroom fitted vanity door.002"
+    },
+    {
+      "name": "Cloakroom fitted vanity raised panel",
+      "object_name": "Cloakroom fitted vanity raised panel.002"
+    },
+    {
+      "name": "Cloakroom fitted vanity stile",
+      "object_name": "Cloakroom fitted vanity stile.004"
+    },
+    {
+      "name": "Cloakroom fitted vanity stile",
+      "object_name": "Cloakroom fitted vanity stile.005"
+    },
+    {
+      "name": "Cloakroom fitted vanity door knob",
+      "object_name": "Cloakroom fitted vanity door knob.002"
+    },
+    {
+      "name": "Cloakroom fitted vanity counter",
+      "object_name": "Cloakroom fitted vanity counter"
+    },
+    {
+      "name": "Cloakroom fitted vanity inset basin",
+      "object_name": "Cloakroom fitted vanity inset basin"
+    },
+    {
+      "name": "Cloakroom fitted vanity tap",
+      "object_name": "Cloakroom fitted vanity tap"
+    },
+    {
+      "name": "Cloakroom fitted vanity tap",
+      "object_name": "Cloakroom fitted vanity tap.001"
+    },
+    {
+      "name": "Cloakroom curtain pole",
+      "object_name": "Cloakroom curtain pole"
+    },
+    {
+      "name": "Cloakroom pleated curtain",
+      "object_name": "Cloakroom pleated curtain"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.001"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.002"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.003"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.004"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.005"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.006"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.007"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.008"
+    },
+    {
+      "name": "Cloakroom pleated curtain",
+      "object_name": "Cloakroom pleated curtain.001"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.009"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.010"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.011"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.012"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.013"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.014"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.015"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.016"
+    },
+    {
+      "name": "Cloakroom curtain ring",
+      "object_name": "Cloakroom curtain ring.017"
+    },
+    {
+      "name": "Photo detail | Cloakroom visible mirror",
+      "object_name": "Photo detail | Cloakroom visible mirror"
+    },
+    {
+      "name": "Photo detail | Cloakroom mirror stile",
+      "object_name": "Photo detail | Cloakroom mirror stile"
+    },
+    {
+      "name": "Photo detail | Cloakroom mirror stile",
+      "object_name": "Photo detail | Cloakroom mirror stile.001"
+    },
+    {
+      "name": "Photo detail | Cloakroom mirror rail",
+      "object_name": "Photo detail | Cloakroom mirror rail"
+    },
+    {
+      "name": "Photo detail | Cloakroom mirror rail",
+      "object_name": "Photo detail | Cloakroom mirror rail.001"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Cloakroom 01 | floating vanity",
+      "box": [
+        4.403,
+        0.99,
+        4.813,
+        1.89
+      ],
+      "bottom": 0,
+      "top": 0.864
+    },
+    {
+      "name": "Cloakroom 01 | WC pan",
+      "box": [
+        5.2,
+        0.29,
+        5.6,
+        0.83
+      ],
+      "bottom": 0,
+      "top": 0.446
+    },
+    {
+      "name": "Cloakroom 01 | cistern",
+      "box": [
+        4.96,
+        0.122,
+        5.84,
+        0.302
+      ],
+      "bottom": 0,
+      "top": 1.08
+    }
+  ],
+  "configuration": {
+    "revision": 1,
+    "room": "Cloakroom",
+    "bounds": [
+      4.385,
+      0.11,
+      5.855,
+      2.525
+    ],
+    "floorZ": 0,
+    "ceilingZ": 2.598,
+    "vanity": [
+      4.403,
+      0.99,
+      4.813,
+      1.89
+    ],
+    "wc": {
+      "panBounds": [
+        5.2,
+        0.29,
+        5.6,
+        0.83
+      ],
+      "cistern": [
+        4.96,
+        0.122,
+        5.84,
+        0.302
+      ]
+    },
+    "view": {
+      "id": "2445660-0",
+      "position": [
+        5.53,
+        2.04,
+        0
+      ],
+      "direction": [
+        -0.35,
+        -1,
+        -0.18
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          5.54,
+          2.23,
+          1.63
+        ],
+        "target": [
+          4.97,
+          1.12,
+          0.98
+        ],
+        "fov": 70
+      },
+      "vanity": {
+        "position": [
+          5.51,
+          1.48,
+          1.52
+        ],
+        "target": [
+          4.43,
+          1.45,
+          1.16
+        ],
+        "fov": 71
+      },
+      "wc": {
+        "position": [
+          5.57,
+          1.84,
+          1.58
+        ],
+        "target": [
+          5.4,
+          0.42,
+          0.86
+        ],
+        "fov": 66
+      },
+      "reverse": {
+        "position": [
+          5.54,
+          0.94,
+          1.55
+        ],
+        "target": [
+          4.97,
+          2.1,
+          1.15
+        ],
+        "fov": 72
+      },
+      "details": {
+        "position": [
+          5.05,
+          1.85,
+          1.2
+        ],
+        "target": [
+          4.61,
+          1.46,
+          0.8
+        ],
+        "fov": 61
+      },
+      "overview": {
+        "position": [
+          8.1,
+          4.6,
+          5.5
+        ],
+        "target": [
+          5.12,
+          1.35,
+          0.8
+        ],
+        "fov": 48,
+        "cutaway": true
+      }
+    },
+    "notes": [
+      "Retain the existing doorway and WC service wall.",
+      "The former south window is already bricked up in both proposals; remove its obsolete curtains.",
+      "Shorter 900 mm vanity replaces the 1.68 m cabinet run; this is a single-user cloakroom."
+    ]
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "a1e8e93dfe712ec98bb38942caec5bb35e6e960c5029a42156eb8720943b9176",
+  "source_house_unchanged": true,
+  "isolated_objects": 202,
+  "views": {
+    "entrance": {
+      "position": [
+        5.54,
+        2.23,
+        1.63
+      ],
+      "target": [
+        4.97,
+        1.12,
+        0.98
+      ],
+      "fov": 70
+    },
+    "vanity": {
+      "position": [
+        5.51,
+        1.48,
+        1.52
+      ],
+      "target": [
+        4.43,
+        1.45,
+        1.16
+      ],
+      "fov": 71
+    },
+    "wc": {
+      "position": [
+        5.57,
+        1.84,
+        1.58
+      ],
+      "target": [
+        5.4,
+        0.42,
+        0.86
+      ],
+      "fov": 66
+    },
+    "reverse": {
+      "position": [
+        5.54,
+        0.94,
+        1.55
+      ],
+      "target": [
+        4.97,
+        2.1,
+        1.15
+      ],
+      "fov": 72
+    },
+    "details": {
+      "position": [
+        5.05,
+        1.85,
+        1.2
+      ],
+      "target": [
+        4.61,
+        1.46,
+        0.8
+      ],
+      "fov": 61
+    },
+    "overview": {
+      "position": [
+        8.1,
+        4.6,
+        5.5
+      ],
+      "target": [
+        5.12,
+        1.35,
+        0.8
+      ],
+      "fov": 48,
+      "cutaway": true
+    }
+  }
+}

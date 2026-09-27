@@ -20,7 +20,7 @@ for i in range(2):
  rect([4.405,.63,4.982,2.328]if i==0 else cfg['vanity'],'oak','1.68 m'if i==0 else'900 mm')
  rect([5.17,.215,5.63,.805]if i==0 else cfg['wc']['panBounds'],'white','WC')
  if i==1:
-  rect(cfg['wc']['cistern'],'oak');rect([4.813,1.045,5.113,1.835],'use');rect([5.10,1.21,5.70,1.81],'use')
+  rect(cfg['wc']['cistern'],'oak');rect([4.813,1.045,5.113,1.835],'use');rect([5.15,1.14,5.75,1.74],'use')
  for part in poses['open']:rect(part['box'],'white')
  hx,hy,_=door['hinge'];pts=[point(hx+.643623*math.cos(j*math.pi/36),hy-.643623*math.sin(j*math.pi/36))for j in range(19)];svg.append('<polyline points="'+' '.join(f'{x},{y}'for x,y in pts)+'" fill="none" stroke="#6e9280" stroke-dasharray="4 4"/>')
  notes=['Old curtains remain in front of an already blocked window.','The long cabinet reaches close to the open door.','Its knobs project further into the room than the worktop.']if i==0 else['Shorter, shallower joinery gives a clearer arrival.','A recessed basin and lit mirror remain on the west wall.','The drawer and retained leaf require separate use checks.']

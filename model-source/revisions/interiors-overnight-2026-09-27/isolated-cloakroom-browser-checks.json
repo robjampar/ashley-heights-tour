@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "cloakroom",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "wc",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 202,
+      "cutaway": 12,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=proposed&room=2445660-0"
+    },
+    {
+      "area": "cloakroom",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "wc",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 202,
+      "cutaway": 12,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=planning&room=2445660-0"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

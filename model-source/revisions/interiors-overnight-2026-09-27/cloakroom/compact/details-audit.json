@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "nativeSha256": "77c800c9584e96752760b273aca43df750f672722bb27c57b56d4bdc2dc00590",
+  "sourceUnchanged": true,
+  "doorMembers": 35,
+  "doorSweepAngles": 91,
+  "drawerParts": 11,
+  "drawerExtensions": 31,
+  "sweeps": [
+    {
+      "degrees": -0.0,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -14.999999999999998,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -29.999999999999996,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -45.0,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -59.99999999999999,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -75.0,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -90.0,
+      "fixtureClashes": []
+    }
+  ],
+  "drawerChecks": [
+    {
+      "extension": 0.0,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.05,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.1,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.15,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.2,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.25,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.3,
+      "fixtureClashes": []
+    }
+  ],
+  "basinDepth": 0.15700000524520874,
+  "method": "Evaluated triangle intersection after world-space broad bounds; assembled moving drawer members checked against fixed fittings."
+}

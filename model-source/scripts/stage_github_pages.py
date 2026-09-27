@@ -6,6 +6,7 @@ import json
 import re
 from stage_interior_studio import stage_studio
 from stage_room_studies import stage_room_studies
+from publication_retention import retirement
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'walkthrough/dist'
@@ -38,19 +39,8 @@ for name in ('app.js', 'style.css'):
     html = html.replace('./' + name, './' + assets[name][0])
 
 DEST.mkdir(parents=True, exist_ok=True)
-# Keep superseded assets for two hours while cached HTML ages out (Pages serves
-# HTML with a ten-minute max-age). A full day of repeated native builds exceeds
-# the Pages site-size limit. Re-staging an
-# unchanged candidate must not evict the still-published generation.
-RETAIN_SECONDS = 2 * 3600
-
-
-def retirement(info, now):
-    # Migrate the old 24-hour manifest without restarting every asset's clock.
-    retired = info.get('retired_at_epoch', info.get('retain_until_epoch', now + 86400) - 86400)
-    return {**info, 'retired_at_epoch': retired, 'retain_until_epoch': retired + RETAIN_SECONDS}
-
-
+# Keep superseded files for three observed HTML cache lifetimes. The helper
+# preserves the original retirement time across repeated staging.
 manifest_path = DEST / 'release.json'
 previous = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
 new_names = {name for name, _ in assets.values()}
@@ -139,7 +129,7 @@ principal_studio = stage_studio(DIST / 'interiors/principal', DEST / 'interiors/
                               previous.get('principal_studio', {}), now, retirement,
                               ROOT / 'walkthrough/public/interiors/principal', room='principal')
 leisure_studio = stage_room_studies(DIST/'interiors/leisure',DEST/'interiors/leisure',
-                                  previous.get('leisure_studio',{}),now,retirement,('cinema','bar','gym','utility','guest','guestbath','family'))
+                                  previous.get('leisure_studio',{}),now,retirement,('cinema','bar','gym','utility','guest','guestbath','family','cloakroom'))
 manifest = {
     'leisure_studio': leisure_studio,
     'interior_studio': interior_studio,
@@ -172,5 +162,13 @@ manifest = {
         'basis': 'Approximate road and low-detail neighbouring buildings from supplied site images'},
     'accuracy_note': 'Photo and plan reconstruction; unmeasured details remain estimates.'
 }
+manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
+# Include the source snapshot and landing page in the limit, but never Git's
+# object database. Refuse publication instead of dropping recent cached assets.
+site_bytes = sum(p.stat().st_size for p in DEST.parent.rglob('*')
+                 if p.is_file() and '.git' not in p.relative_to(DEST.parent).parts)
+if site_bytes > 1_000_000_000:
+    raise RuntimeError(f'Staged site is {site_bytes:,} bytes; wait for retained assets to expire before publishing')
+manifest['staged_site_bytes'] = site_bytes
 manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
 print(json.dumps(manifest, indent=2))

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source": "plan fixtures",
+  "sourceSha256": "216e0106a1b5041a819e160c6b65dde53262d1eed03fefc9209eeeaf0ff63928",
+  "results": [
+    {
+      "state": "doorOpen",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 159,
+          "obstacles": 139,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 14,
+          "obstacles": 43,
+          "surfaces": 14
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin or drawer approach",
+          "distance": 0.0024999999999999467,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.003535533905932976,
+          "reachable": true
+        },
+        {
+          "label": "inside arrival",
+          "distance": 0.0035355339059323482,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "doorClosed",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 159,
+          "obstacles": 139,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 14,
+          "obstacles": 43,
+          "surfaces": 14
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin or drawer approach",
+          "distance": 0.0024999999999999467,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.003535533905932976,
+          "reachable": true
+        },
+        {
+          "label": "inside arrival",
+          "distance": 0.0035355339059323482,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "drawerOpen",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 159,
+          "obstacles": 140,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 14,
+          "obstacles": 44,
+          "surfaces": 14
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin or drawer approach",
+          "distance": 0.0024999999999999467,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.020155644370745945,
+          "reachable": true
+        },
+        {
+          "label": "inside arrival",
+          "distance": 0.0035355339059323482,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

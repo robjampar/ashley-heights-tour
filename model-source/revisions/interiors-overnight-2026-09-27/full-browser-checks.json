@@ -38,10 +38,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 400
+        },
+        "cloakroom": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 74
         }
       },
       "principal": true,
       "kitchen": 2,
+      "cloakroom": 71,
       "cinema": 156,
       "bar": 505,
       "gym": 306,
@@ -123,6 +129,32 @@
           "count": 2
         }
       ],
+      "finishSwitch": {
+        "materials": 102,
+        "allInterior": true,
+        "states": [
+          {
+            "walls": "render-oak",
+            "roof": "dark",
+            "unchanged": true
+          },
+          {
+            "walls": "render-oak",
+            "roof": "light",
+            "unchanged": true
+          },
+          {
+            "walls": "brick",
+            "roof": "dark",
+            "unchanged": true
+          },
+          {
+            "walls": "brick",
+            "roof": "light",
+            "unchanged": true
+          }
+        ]
+      },
       "terrace": [
         {
           "id": "Proposal | Terrace access left glazed leaf",
@@ -173,6 +205,27 @@
       ],
       "doors": {
         "closed": [
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Cloakroom hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 35,
+            "batches": 2,
+            "hinge": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "position": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
           {
             "id": "Proposal | Garage east separation door 0",
             "wall": "Proposal | Garage east separation door 0",
@@ -322,6 +375,28 @@
           }
         ],
         "open": [
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Cloakroom hall door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 35,
+            "batches": 2,
+            "hinge": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "position": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
           {
             "id": "Proposal | Garage east separation door 0",
             "wall": "Proposal | Garage east separation door 0",
@@ -516,10 +591,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 395
+        },
+        "cloakroom": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 74
         }
       },
       "principal": true,
       "kitchen": 2,
+      "cloakroom": 71,
       "cinema": 156,
       "bar": 505,
       "gym": 306,
@@ -601,9 +682,56 @@
           "count": 2
         }
       ],
+      "finishSwitch": {
+        "materials": 102,
+        "allInterior": true,
+        "states": [
+          {
+            "walls": "render-oak",
+            "roof": "dark",
+            "unchanged": true
+          },
+          {
+            "walls": "render-oak",
+            "roof": "light",
+            "unchanged": true
+          },
+          {
+            "walls": "brick",
+            "roof": "dark",
+            "unchanged": true
+          },
+          {
+            "walls": "brick",
+            "roof": "light",
+            "unchanged": true
+          }
+        ]
+      },
       "terrace": [],
       "doors": {
         "closed": [
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Cloakroom hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 35,
+            "batches": 2,
+            "hinge": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "position": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
           {
             "id": "Proposal | Garage east separation door 0",
             "wall": "Proposal | Garage east separation door 0",
@@ -753,6 +881,28 @@
           }
         ],
         "open": [
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Cloakroom hall door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 35,
+            "batches": 2,
+            "hinge": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "position": [
+              5.0261406898498535,
+              2.5899999141693115,
+              0.017499923706054688
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
           {
             "id": "Proposal | Garage east separation door 0",
             "wall": "Proposal | Garage east separation door 0",

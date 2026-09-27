@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from build_support import native_name
 from proposal_leisure_interiors import apply_leisure
 from proposal_kitchen_interiors import export_quiet_oak_gltf
-parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
+parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);VARIANT=args.variant;area=args.area
 OUT=ROOT/'revisions/interiors-overnight-2026-09-27'/area/VARIANT;OUT.mkdir(parents=True,exist_ok=True)
 PUBLIC=ROOT/'walkthrough/public/interiors/leisure/models';PUBLIC.mkdir(parents=True,exist_ok=True)
@@ -14,7 +14,10 @@ BASE=args.baseline.resolve()if args.baseline else ROOT/f'output-proposed-{VARIAN
 nav=json.loads((BASE/'navigation.json').read_text());g=json.loads((BASE/'geometry.json').read_text())
 bpy.ops.wm.open_mainfile(filepath=str(native));scene=bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene
 materials={m.name:m for m in bpy.data.materials};PALETTE=dict(g['materials']);new_obstacles=[];new_surfaces=[];new_segments=[];new_views=[]
-if area=='family':
+if area=='cloakroom':
+    from proposal_cloakroom_interiors import apply_cloakroom
+    report=apply_cloakroom(globals())
+elif area=='family':
     from proposal_family_interiors import apply_family
     report=apply_family(globals())
 elif area in('guest','guestbath'):
@@ -62,7 +65,7 @@ def bounds(ob):
     return [min(v[i]for v in p)for i in range(3)]+[max(v[i]for v in p)for i in range(3)]
 
 x0,y0,x1,y1=cfg['bounds'];z=cfg['floorZ'];ceiling=cfg['ceilingZ']
-crop=[x0-(.24 if area=='utility'else .17 if area=='guest'else .13),y0-.13,z-.04,x1+.15,y1+(.25 if area=='family'else .10),ceiling+.08]
+crop=[x0-(.24 if area=='utility'else .17 if area=='guest'else .13),y0-.13,z-.04,x1+.15,y1+(.25 if area=='family'else .23 if area=='cloakroom'else .10),ceiling+.08]
 study=bpy.data.scenes.new(area.title()+' — interior study');coll=bpy.data.collections.new(area.title()+' study geometry');study.collection.children.link(coll)
 hidden=set(nav.get('hiddenObjects',[]));cutaway=[];copied=[]
 for ob in list(scene.objects):
@@ -117,7 +120,10 @@ if not args.render_only:
 report.update({'native_screen_rays':rays,'source_house_sha256':source_hash,'source_house_unchanged':hashlib.sha256(native.read_bytes()).hexdigest()==source_hash,'isolated_objects':len(copied),'views':views})
 assert report['source_house_unchanged'];(OUT/'preview-report.json').write_text(json.dumps(report,indent=2)+'\n')
 if args.render:
-    if args.working and area=='guestbath':
+    if args.working and area=='cloakroom':
+        for ob in study.objects:
+            if ob.get('cloakroom_pullout')=='upper drawer':ob.matrix_world=Matrix.Translation(Vector((.30,0,0)))@ob.matrix_world
+    elif args.working and area=='guestbath':
         for spec in nav['interactiveDoors']:
             if spec['id']!='Guestbath 01 | shower door':continue
             hinge=Vector(spec['hinge']);transform=Matrix.Translation(hinge)@Matrix.Rotation(spec['openDelta'],4,'Z')@Matrix.Translation(-hinge)

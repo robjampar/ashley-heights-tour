@@ -4,9 +4,9 @@ import fs from 'node:fs/promises';
 const root=process.env.LEISURE_URL??'http://127.0.0.1:8776/',out=new URL('../../revisions/interiors-overnight-2026-09-27/',import.meta.url);
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
 const checks=[],errors=[],failed=[];
-const areas=process.env.LEISURE_AREAS?.split(',')??['cinema','bar','gym','utility','guest','guestbath','family'];
-const roomIds={cinema:'proposal-basement-cinema',bar:'proposal-basement-bar',gym:'proposal-gym',utility:'proposal-utility',guest:'2445673-0',guestbath:'2445675-0',family:'proposal-upstairs-family-lounge'};
-const details={family:['writing desk oak top','desk USB C slot','chess king body','carved knight head','shelf plant leaf','sofa seat piping'],guest:['wall-backed upholstered headboard','pillow stitched edge','bedside USB C slot','curved upholstered reading chair back','plant leaf'],guestbath:['hollow inset ceramic basin','open WC seat','shower door handle','rain head nozzle','shower control index'],utility:['washer start pause button','dryer drum perforation','undermount sink bowl','curved sink mixer','soap pump spout'],cinema:['fixed projection screen','remote button','USB-C port','front piping','rear storage drawer'],bar:['wine cooler touch control','continuous bronze footrail','pool pocket leather well','dartboard ring wire','controller face button','dried sculptural branch'],gym:['treadmill 1 stop button','stored rower grille spoke','bike monitor button','dumbbell hex head','blind pull loop','rolled exercise mat']};
+const areas=process.env.LEISURE_AREAS?.split(',')??['cinema','bar','gym','utility','guest','guestbath','family','cloakroom'];
+const roomIds={cinema:'proposal-basement-cinema',bar:'proposal-basement-bar',gym:'proposal-gym',utility:'proposal-utility',guest:'2445673-0',guestbath:'2445675-0',family:'proposal-upstairs-family-lounge',cloakroom:'2445660-0'};
+const details={cloakroom:['hollow ceramic basin','open WC seat','mixer control index','hollow paper roll','basin compact trap','drawer service cutout side'],family:['writing desk oak top','desk USB C slot','chess king body','carved knight head','shelf plant leaf','sofa seat piping'],guest:['wall-backed upholstered headboard','pillow stitched edge','bedside USB C slot','curved upholstered reading chair back','plant leaf'],guestbath:['hollow inset ceramic basin','open WC seat','shower door handle','rain head nozzle','shower control index'],utility:['washer start pause button','dryer drum perforation','undermount sink bowl','curved sink mixer','soap pump spout'],cinema:['fixed projection screen','remote button','USB-C port','front piping','rear storage drawer'],bar:['wine cooler touch control','continuous bronze footrail','pool pocket leather well','dartboard ring wire','controller face button','dried sculptural branch'],gym:['treadmill 1 stop button','stored rower grille spoke','bike monitor button','dumbbell hex head','blind pull loop','rolled exercise mat']};
 try{
  for(const area of areas)for(const design of ['compact','planning']){
   const page=await browser.newPage({viewport:{width:1440,height:1050}});
@@ -19,7 +19,7 @@ try{
   });
   assert.equal(info.variant,design);assert.equal(info.revision,1);assert(info.objects>150);assert(info.cutaway>0);assert(info.fullHouse.includes('room='+roomIds[area]));
   for(const term of details[area])assert(info.names.some(n=>n.includes(term)),term);
-  if(area==='guestbath')assert(await page.evaluate(()=>interiorPreview.info.mirrors.length===1));
+  if(['guestbath','cloakroom'].includes(area))assert(await page.evaluate(()=>interiorPreview.info.mirrors.length===1));
   if(area==='gym')assert(await page.evaluate(()=>interiorPreview.info.mirrors.length===0));
   for(const view of info.views){
    await page.locator(`[data-camera=${view}]`).click();await page.waitForTimeout(400);
