@@ -21,3 +21,5 @@ Check total staged site bytes before pushing against the
 [GitHub Pages size limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
 The deployment and exact live asset/page verification are recorded separately
 in the publication JSON files after each successful release.
+
+Generated `preview-navigation.json` files repeat the complete house in every room study. These remain in the local workspace and their checksums/byte sizes are recorded as required local baselines in `model-source/source-manifest.json`. The source repository retains their earlier versions; new source snapshots omit the repeated payloads. Running the room preview reconstructs them. The final size guard also runs after source/evidence staging.
