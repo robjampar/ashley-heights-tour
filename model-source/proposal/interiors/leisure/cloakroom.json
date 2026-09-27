@@ -1,0 +1,19 @@
+{
+  "revision": 1,
+  "room": "Cloakroom",
+  "bounds": [4.385,0.11,5.855,2.525],
+  "floorZ": 0,
+  "ceilingZ": 2.598,
+  "vanity": [4.403,0.99,4.813,1.89],
+  "wc": {"panBounds":[5.20,0.29,5.60,0.83],"cistern":[4.96,0.122,5.84,0.302]},
+  "view": {"id":"2445660-0","position":[5.53,2.04,0],"direction":[-0.35,-1,-0.18]},
+  "views": {
+    "entrance":{"position":[5.54,2.23,1.63],"target":[4.97,1.12,0.98],"fov":70},
+    "vanity":{"position":[5.51,1.48,1.52],"target":[4.43,1.45,1.16],"fov":71},
+    "wc":{"position":[5.57,1.84,1.58],"target":[5.40,0.42,0.86],"fov":66},
+    "reverse":{"position":[5.54,0.94,1.55],"target":[4.97,2.10,1.15],"fov":72},
+    "details":{"position":[5.05,1.85,1.20],"target":[4.61,1.46,0.80],"fov":61},
+    "overview":{"position":[8.1,4.6,5.5],"target":[5.12,1.35,0.8],"fov":48,"cutaway":true}
+  },
+  "notes":["Retain the existing doorway and WC service wall.","The former south window is already bricked up in both proposals; remove its obsolete curtains.","Shorter 900 mm vanity replaces the 1.68 m cabinet run; this is a single-user cloakroom."]
+}

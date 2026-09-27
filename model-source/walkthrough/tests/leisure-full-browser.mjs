@@ -12,7 +12,7 @@ try{
    const w=walkthrough;w.startDrag();w.setLife('people',false);w.setLife('cars',false);w.setStreetVisible(false);
    const names=w.inspector.pickables().flatMap(m=>m.userData.spatialBatch?.sourceNames??[]).map(n=>n.replaceAll('_',' '));
    return {rooms:w.data.interiorRooms,principal:w.data.principalInterior.integrated,kitchen:w.data.interiorDesign.revision,
-    cinema:names.filter(n=>n.startsWith('Cinema 01 |')).length,bar:names.filter(n=>n.startsWith('Bar 01 |')).length,gym:names.filter(n=>n.startsWith('Gym 01 |')).length,utility:names.filter(n=>n.startsWith('Utility 01 |')).length,guest:names.filter(n=>n.startsWith('Guest 01 |')).length,guestbath:names.filter(n=>n.startsWith('Guestbath 01 |')).length,
+    cinema:names.filter(n=>n.startsWith('Cinema 01 |')).length,bar:names.filter(n=>n.startsWith('Bar 01 |')).length,gym:names.filter(n=>n.startsWith('Gym 01 |')).length,utility:names.filter(n=>n.startsWith('Utility 01 |')).length,guest:names.filter(n=>n.startsWith('Guest 01 |')).length,guestbath:names.filter(n=>n.startsWith('Guestbath 01 |')).length,family:names.filter(n=>n.startsWith('Family 01 |')).length,
     details:['fixed projection screen','front piping','USB-C port','pool pocket leather well','dartboard ring wire','wine cooler touch control','treadmill 1 stop button','stored rower grille spoke','bike monitor button','washer start pause button','hamper bin side','undermount sink bowl','curved sink mixer','wall-backed upholstered headboard','pillow stitched edge','hollow inset ceramic basin','rain head nozzle','shower control index'].map(term=>({term,count:names.filter(n=>n.includes(term)).length}))};
   });
   assert.equal(record.rooms.cinema.revision,1);assert.equal(record.rooms.bar.revision,1);assert(record.principal);assert.equal(record.kitchen,2);assert(record.cinema>140&&record.bar>400);assert(record.details.every(d=>d.count>0),JSON.stringify(record.details));
@@ -20,7 +20,8 @@ try{
   // The 16 guest-door and 12 shower-door parts are owned by DoorMotion,
   // separately from the static spatial batches counted above.
   assert.equal(record.rooms.guest.revision,1);assert.equal(record.rooms.guestbath.revision,1);assert(record.guest>=220&&record.guestbath>=159);
-  for(const id of ['2445673-0','2445675-0','proposal-basement-cinema','proposal-basement-bar','proposal-basement-bar-and-games-room','proposal-gym','proposal-utility']){
+  assert.equal(record.rooms.family.revision,1);assert(record.family>=380);
+  for(const id of ['proposal-upstairs-family-lounge','2445673-0','2445675-0','proposal-basement-cinema','proposal-basement-bar','proposal-basement-bar-and-games-room','proposal-gym','proposal-utility']){
    await page.locator('#rooms').selectOption(id);assert(await page.evaluate(()=>{const w=walkthrough,p=w.nav.position;return!w.nav.blocked(p.x,p.y,p.z);}));await page.waitForTimeout(600);await page.locator('#view').screenshot({path:new URL(`full-${design}-${id}.png`,out).pathname});
   }
   const doors=await page.evaluate(()=>{
@@ -30,6 +31,8 @@ try{
   });
   assert.equal(doors.closed.length,7);assert(doors.closed.every(d=>d.meshCount>0));assert(doors.closed.every(d=>d.closedPoseRestored&&!d.open));assert(doors.open.every(d=>d.open&&Math.abs(d.angle-d.expectedOpenAngle)<.0002));
   const rehung=doors.open.find(d=>d.id.endsWith('Garage east separation door 0'));assert.deepEqual(rehung.hinge,[11.315,-12.95,0]);assert(Math.abs(rehung.angle-Math.PI/2)<.0002);
+  const terrace=await page.evaluate(()=>{const w=walkthrough,specs=w.data.interactiveDoors.filter(d=>d.id.startsWith('Proposal | Terrace access '));return specs.map(spec=>{w.setView(spec.openingCenter,[0,1,0]);const state=w.doors.status().find(d=>d.id===spec.id);return{...state,expectedAngle:spec.openDelta,handleMembers:spec.members.filter(n=>n.startsWith('Family 01 |')).length};});});
+  assert.equal(terrace.length,design==='proposed'?2:0);assert(terrace.every(d=>d.handleMembers===4&&d.meshCount>=9&&d.open&&Math.abs(d.angle-d.expectedAngle)<.0002));record.terrace=terrace;
   checks.push({design,...record,doors});await page.close();
  }
  assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);await fs.writeFile(new URL('full-browser-checks.json',out),JSON.stringify({status:'PASS',checks,errors,failed},null,2)+'\n');console.log('PASS: full-model leisure rooms, detailed geometry, room views, original doors and accepted interiors');

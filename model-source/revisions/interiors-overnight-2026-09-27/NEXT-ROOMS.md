@@ -1,0 +1,13 @@
+# Remaining room sequence
+
+These areas retain their previous furniture in the published checkpoint. This is a sequence for further design, not a claim that their arrangements have been validated.
+
+1. **Bedroom 2.** Retain its existing east-wall bed position as the first comparison. Check the complete upholstered bed envelope, both bedside approaches, north-wall storage and the entry recess before replacing the present furniture. Do not assume a new television is required in every secondary bedroom.
+2. **Bedroom 3.** The current south-backed bed and rear outlook are promising. Its irregular entrance corner and balcony route need occupied-bed and wardrobe-use checks. Preserve the window/radiator relationship and give storage a realistic hanging depth.
+3. **Bedroom 4 and ensuite together.** These are smaller, irregular rooms. Review them as a pair so the entrance and bathroom leaves, wardrobe access and full bed footprint work together. Keep the current bedroom count and service positions where feasible.
+4. **Family bathroom.** Preserve the north window and inspect the existing service walls. Compare separate fixture-use and drying spaces before choosing new vanity/bath details. A measured internal shell is needed; the current plan polygon includes wall centreline geometry.
+5. **Cloakroom and arrival.** The current cloakroom is approximately 1.47 × 2.41 m internally according to its published dimensions. Its broad vanity occupies most of the west wall. Compare a shorter floating basin unit while retaining the WC service wall and doorway. Native inspection confirms the former window is already bricked up in the proposals; check the moving door and hand-washing space. Then review coats, shoes, bags and the onward route in the entrance hall.
+6. **Loft and landing library.** Retain the requested solid bedroom wall. Draw the actual sloping headroom, stair arrivals and doors before changing furniture. Separate a usable work place from the through route and shared lounge.
+7. **Pool and changing / garage arrival.** Treat wet/dry movement and equipment/service access as specific activities. Preserve the required pool, double garage and four outside parking places; furniture changes must not consume those clearances.
+
+The accepted kitchen/lounge and principal bedroom, bathroom and walk-through wardrobe remain the reference palette and owner-approved layout. New room studies remain proposals for review. Existing drawing packs have not been reissued for the overnight furnishing work.

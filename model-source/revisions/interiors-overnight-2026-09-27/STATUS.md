@@ -1,6 +1,6 @@
 # Overnight interiors — publication checkpoint
 
-Cinema, wine bar/games, gym, utility, garden guest bedroom and its ensuite are developed for review in both Proposed
+Cinema, wine bar/games, gym, utility, garden guest bedroom, its ensuite and upstairs family lounge are developed for review in both Proposed
 and Proposed Planning. The accepted kitchen/lounge and principal suite are
 unchanged. The full native models, walkthrough exports and isolated room studies
 agree. The original reconstruction remains intact.
@@ -17,20 +17,27 @@ agree. The original reconstruction remains intact.
   bed, fixed TV, 3.675 m sliding wardrobe, reading chair and usable balcony route.
 - Guest ensuite: 171 mesh parts and three lights; a 900 mm floating vanity,
   recessed basin, concealed-cistern WC and inward-opening shower enclosure.
+- Family lounge: 394 Proposed / 389 Planning mesh parts and six lights; three
+  sofa places, a compact writing desk, shallow books/game storage, nested tables
+  and detailed chess pieces. Proposed retains moving terrace leaves with handles;
+  Planning retains its window and no terrace.
 - Native comparison: every authored room mesh matches its isolated study to
   within 0.003 mm, excluding two explicitly cropped retained skirting profiles.
-  All 45 cinema/bar/guest TV rays and 31 internal-reveal rays pass in
-  each full design. Internal window returns are ivory; outside finishes remain.
+  All 45 cinema/bar/guest TV rays pass in each full design, with 38 Proposed
+  and 39 Planning internal-reveal rays. Internal window returns are ivory; outside finishes remain.
 - Navigation: all six gym activity states and six utility working states pass
   with a 600 mm body against the final full-house navigation. Previous cinema,
   bar and principal-suite checks remain valid; their retained geometry agrees.
 - Guest navigation: five bedroom use states and two bathroom states pass in
   both full models with a 600 mm body. The shower leaf, both handles and hinges
   clear the fixed fittings through 91 sampled angles to an 85-degree stop.
-- Browser: both designs, all guest/ensuite cameras, detail parts, cutaway, mobile,
-  full-house room views and seven interactive doors pass. The staged,
+- Family navigation: all six use states pass against each final full model.
+  The retained terrace leaves clear the new fixtures and rug through 91 sampled
+  angles per leaf. Their four new handles move with the existing door parts.
+- Browser: both designs, family-lounge cameras, detail parts, cutaway, mobile,
+  full-house room views and seven room doors plus two Proposed terrace leaves pass. The staged,
   content-addressed pages also load without page or asset errors.
-- Preservation: 12,492 retained Proposed meshes and 11,677 Planning meshes are
+- Preservation: 12,432 retained Proposed meshes and 11,617 Planning meshes are
   unchanged. The seven rehung garage-door parts match their declared rotation.
   Kitchen/lounge meshes (1,028/919) and principal-suite meshes (862 each) agree.
   Two shared skirting runs retain their original geometry outside the ensuite.
@@ -52,6 +59,9 @@ has a modest view at this distance. The compact ensuite is for one person at a
 time; the 612 mm shower entry and inward leaf require final product, stop and
 site verification. The 85-degree stop protects the handle from the tiled return.
 
-The upstairs family lounge is a separate working study. Its files preserve
-ongoing design work; it is not integrated into this six-room checkpoint.
+The family-lounge desk is reduced from 1.60 m to 1.14 m frontage, with a deeper
+600 mm surface and side daylight. Its storage-front passage is single-user.
+
+The downstairs cloakroom is a separate working study. Its files preserve
+ongoing design work; it is not integrated into this seven-area checkpoint.
 Other remaining rooms are unchanged. PDF drawing packs remain the previous issue.

@@ -30,10 +30,11 @@ def overlap(a,b):
    aa=[(v[0]*axis[0]+v[1]*axis[1])/mag for v in a];bb=[(v[0]*axis[0]+v[1]*axis[1])/mag for v in b]
    if min(max(aa),max(bb))-max(min(aa),min(bb))<.0005:return False
  return True
-parts={};authored=set()
+parts={};model_parts={};authored=set()
 for ob in scene.objects:
  if ob.type!='MESH':continue
- name=ob.get('source_name',ob.name);parts.setdefault(name,[]).extend(vertices(ob))
+ name=ob.get('source_name',ob.name);vv=vertices(ob);parts.setdefault(name,[]).extend(vv)
+ model_parts[ob.get('model_object_name',name)]=vv
  if ob.get('interior_room')=='family':authored.add(name)
 nav=json.loads((out/'preview-navigation.json').read_text());doors=[d for d in nav['interactiveDoors']if d['id'].startswith('Proposal | Terrace access ')];assert len(doors)==(2 if variant=='compact'else 0)
 moving=set(n for d in doors for n in d['members']);fixed={n:(bb(v),hull(v))for n,v in parts.items()if n in authored and n not in moving};sweeps=[];opened=[]
@@ -43,7 +44,7 @@ for d in doors:
  for step in range(91):
   angle=d['openDelta']*step/90;transform=Matrix.Translation(hinge)@Matrix.Rotation(angle,4,'Z')@Matrix.Translation(-hinge);clashes=[]
   for name in d['members']:
-   vv=[transform@p for p in parts[name]];bounds=bb(vv);poly=hull(vv)
+   vv=[transform@p for p in model_parts.get(name,parts.get(name,[]))];bounds=bb(vv);poly=hull(vv)
    for n,(other,outline)in fixed.items():
     if all(min(bounds[i+3],other[i+3])-max(bounds[i],other[i])>.0005 for i in range(3))and overlap(poly,outline):clashes.append((name,n))
    if step==90:opened.append({'name':name,'box':[bounds[0],bounds[1],bounds[3],bounds[4]],'bottom':bounds[2],'top':bounds[5]})

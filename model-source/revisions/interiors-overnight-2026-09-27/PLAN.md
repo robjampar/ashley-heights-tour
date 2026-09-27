@@ -46,3 +46,5 @@ activity plan → switch proposal if needed → return to the full house. The gy
 plan shows running and rowing separately; no extra animation controls are added.
 
 Guest-suite review follows the same cards → doorway/bed/basin views → measured plan → full-house journey. Reuse the existing controls and mirror renderer. The bedroom and ensuite publish together so the outward ensuite door is reviewed with both sides of the opening.
+
+Family-lounge review reuses the same room cards, design selector and camera buttons. Journey: enter from the hall → inspect the seated outlook, desk and storage → compare the existing and refined plan → switch to Planning to see its retained window → open the room in the full house. The paired layout sketch records the desk/sofa comparison before adding this page. No new interaction pattern is needed.

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source_unchanged": true,
+  "rays": [
+    {
+      "expected": "Family 01 | west window internal head",
+      "hit": "Family 01 | west window internal head",
+      "material": "Interior | Family warm ivory",
+      "position": [
+        -5.066999912261963,
+        7.0,
+        5.047999858856201
+      ]
+    },
+    {
+      "expected": "Family 01 | west window internal first jamb",
+      "hit": "Family 01 | west window internal first jamb",
+      "material": "Interior | Family warm ivory",
+      "position": [
+        -5.066999912261963,
+        6.376999855041504,
+        4.349999904632568
+      ]
+    },
+    {
+      "expected": "Family 01 | west window internal second jamb",
+      "hit": "Family 01 | west window internal second jamb",
+      "material": "Interior | Family warm ivory",
+      "position": [
+        -5.066999912261963,
+        7.623000144958496,
+        4.349999904632568
+      ]
+    },
+    {
+      "expected": "Family 01 | west window internal sill",
+      "hit": "Family 01 | west window internal sill",
+      "material": "Interior | Family warm ivory",
+      "position": [
+        -5.066999912261963,
+        7.0,
+        3.6519999504089355
+      ]
+    },
+    {
+      "expected": "Family 01 | north doors internal head",
+      "hit": "Family 01 | north doors internal head",
+      "material": "Interior | Family warm ivory",
+      "position": [
+        -2.5899999141693115,
+        8.706999778747559,
+        5.047999858856201
+      ]
+    },
+    {
+      "expected": "Family 01 | north doors internal first jamb",
+      "hit": "Family 01 | north doors internal first jamb",
+      "material": "Interior | Family warm ivory",
+      "position": [
+        -3.7880001068115234,
+        8.706999778747559,
+        3.924999952316284
+      ]
+    },
+    {
+      "expected": "Family 01 | north doors internal second jamb",
+      "hit": "Family 01 | north doors internal second jamb",
+      "material": "Interior | Family warm ivory",
+      "position": [
+        -1.3919999599456787,
+        8.706999778747559,
+        3.924999952316284
+      ]
+    }
+  ]
+}

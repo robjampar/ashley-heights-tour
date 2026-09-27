@@ -17,7 +17,8 @@ def apply_family(ns):
     light=b.material('warm diffuser',(1,.84,.65,1),.6,emission=1.2);leaf=b.material('living foliage',(.17,.25,.14,1),.85)
     p=cfg['polygon'];v=[Vector((x,y,z+.012))for x,y in p];index={tuple(q):i for i,q in enumerate(v)};tris=tessellate_polygon([v]);ff=[tuple(q if isinstance(q,int)else index[tuple(q)]for q in tri)for tri in tris]
     b.mesh('wide oak floor',v,ff,oak);b.mesh('ivory ceiling',[(x,y,cfg['ceilingZ']-.008)for x,y in p],[tuple(reversed(f))for f in ff],ivory)
-    b.box('soft wool seating rug',(-3.40,6.47,z+.020),(3.21,2.55,.014),linen,.006)
+    b.box('soft wool seating rug',(-3.40,6.405,z+.020),(3.21,2.40,.014),linen,.006)
+    b.box('south sofa wall ivory finish',(-3.7675,5.162,(z+cfg['ceilingZ'])/2),(2.595,.003,cfg['ceilingZ']-z),ivory)
     # Thin inner faces and returns correct the existing exposed interior brick.
     for label,a,c in(('west pier',-5.065,-3.79),('east pier',-1.39,-.115)):
         b.box('north '+label+' ivory finish',((a+c)/2,8.703,(z+cfg['ceilingZ'])/2),(c-a,.003,cfg['ceilingZ']-z),ivory)
@@ -25,6 +26,10 @@ def apply_family(ns):
     if planning:b.box('north window sill wall ivory',(-2.59,8.703,3.20),(2.4,.003,.80),ivory)
     b.window_reveal('west window',**cfg['westWindow'],mat=ivory)
     b.window_reveal('north '+('window'if planning else'doors'),axis='y',inside=8.705,frame=8.791,a=-3.79,d=-1.39,sill=3.6 if planning else 2.8,head=5.05,mat=ivory)
+    if not planning:
+        threshold=next(ob for ob in b.objects if ob.get('source_name')=='Family 01 | north doors internal sill')
+        for vertex in threshold.data.vertices:vertex.co.z-=.003
+        threshold.data.update()
     b.box('west recessed blind cassette',(-5.114,7.0,5.075),(.054,1.31,.067),ivory,.012)
     b.box('west linen blind upper drop',(-5.090,7.0,4.93),(.006,1.244,.24),linen,.002)
     b.box('west blind lower hem',(-5.085,7.0,4.808),(.015,1.247,.014),bronze,.004)
@@ -165,7 +170,7 @@ def apply_family(ns):
     for h in(.11,.695,1.15,1.56,1.99):b.box('book and games shelf',((a+c)/2,(s+n)/2,z+h),(c-a,w,.024),oak,.004)
     for j in range(4):
         yy=s+(j+.5)*w/4
-        b.box('sliding low storage front',(a+.018+(j%2)*.022,yy,z+.40),(.022,w/4+.010,.545),ivory,.005)
+        b.box('sliding low storage front',(a+.018+(j%2)*.022,yy,z+.40),(.022,w/4-.006,.545),ivory,.005)
         b.box('storage recessed pull',(a+.004+(j%2)*.022,yy+.205,z+.41),(.002,.017,.21),bronze,.003)
     for yy in(s+w/3,s+2*w/3):b.box('storage upper divider',((a+c)/2,yy,z+1.34),(c-a-.02,.018,1.28),oak)
     b.box('storage stone counter',((a+c)/2,(s+n)/2,z+.73),(c-a+.001,w,.032),stone,.007)

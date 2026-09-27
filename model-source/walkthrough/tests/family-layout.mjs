@@ -6,7 +6,9 @@ const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/n
 const item=(name,box,top=4.5)=>({name,box,bottom:2.8,top});
 const table=(t,i)=>({name:'nesting table '+i,polygon:Array.from({length:64},(_,j)=>[t.center[0]+t.radii[0]*Math.cos(j*Math.PI/32),t.center[1]+t.radii[1]*Math.sin(j*Math.PI/32)]),bottom:2.8,top:2.8+t.height});
 const furniture=[...['sofa','desk','chair','sideTable','storage'].map(k=>item('Family 01 | '+k,cfg[k])),...cfg.tables.map(table)];
-const terrace=variant==='compact'?[item('open left terrace door',[-3.78,7.65,-3.72,8.85],5.05),item('open right terrace door',[-1.46,7.65,-1.40,8.85],5.05)]:[];
+const doorAudit=JSON.parse(fs.readFileSync(new URL('../../revisions/interiors-overnight-2026-09-27/family/'+variant+'/details-audit.json',import.meta.url)));
+assert.equal(doorAudit.status,'PASS');
+const terrace=doorAudit.openDoorParts;
 const states={ordinary:[],deskInUse:[item('desk user',[ -4.755,7.46,-4.145,8.03])],chairPulledBack:[item('pulled-back chair',[cfg.chair[0],cfg.chair[1]-.40,cfg.chair[2],cfg.chair[3]-.40])],sofaOccupied:[item('seated feet',[-4.80,6.22,-2.74,6.60],3.36)],storageUse:[item('storage user',[-1.135,6.75,-.525,7.35])],deskAndSofa:[item('desk user',[-4.755,7.46,-4.145,8.03]),item('seated feet',[-4.80,6.22,-2.74,6.60],3.36)]};
 const results=[];
 for(const[state,extra]of Object.entries(states)){

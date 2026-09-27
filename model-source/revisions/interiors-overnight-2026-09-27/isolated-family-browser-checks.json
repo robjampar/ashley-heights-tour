@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "family",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "desk",
+        "storage",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 470,
+      "cutaway": 15,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=proposed&room=proposal-upstairs-family-lounge"
+    },
+    {
+      "area": "family",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "desk",
+        "storage",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 459,
+      "cutaway": 15,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=planning&room=proposal-upstairs-family-lounge"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

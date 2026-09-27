@@ -7,3 +7,5 @@ Compare the present west-facing table and overlong sofa with a north-facing comp
 The Proposed design has two inward terrace leaves. Planning retains the north window and no terrace. Both versions retain the same room shell and use the same furniture footprint. Check the true open leaves and the activity envelopes before native furnishing. Preserve the south bedroom door and the shared open landing.
 
 The existing native view also shows brick on the inner face of the north wall. The new room finish should cover only the inner wall face and returns in ivory, preserving the chosen exterior finish.
+
+The final table pair uses an 850 × 550 mm oval at 400 mm high and a 410 mm round top at 490 mm. The earlier round main table restricted desk access with an occupied sofa and the terrace leaf open. The oval creates the required corner clearance. The rug was shortened to clear the complete door swing. The 600 mm body checks use the evaluated leaf/frame/handle bounds and preserve each part separately.

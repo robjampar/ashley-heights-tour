@@ -27,7 +27,7 @@ for i in range(2):
    x,y=p(*table['center']);svg.append(f'<ellipse cx="{x}" cy="{y}" rx="{table["radii"][0]*S}" ry="{table["radii"][1]*S}" class="oak"/>')
   a,s,d,n=c['chair'];rect([a,s-.40,d,n-.40],'use');rect([-.98,6.72,-.53,7.32],'use')
   for xx in(-4.50,-3.78,-3.06):rect([xx-.27,6.22,xx+.27,6.60],'use')
-  pts=[p(x,y)for x,y in((.15,4.7),(-1.02,5.2),(-1.30,6.10),(-2.30,7.30),(-2.30,8.82))];svg.append('<polyline points="'+' '.join(f'{x},{y}'for x,y in pts)+'" stroke="#638f7b" stroke-width="3" stroke-dasharray="7 5" fill="none"/>')
+  pts=[p(x,y)for x,y in((.15,4.7),(-1.02,5.2),(-1.20,6.25),(-1.78,6.90),(-1.78,7.85),(-2.30,8.20),(-2.30,8.82))];svg.append('<polyline points="'+' '.join(f'{x},{y}'for x,y in pts)+'" stroke="#638f7b" stroke-width="3" stroke-dasharray="7 5" fill="none"/>')
   notes=['Sofa fully supported by the existing 2.595 m south wall.','The north-facing desk gets side light from the west window.','Open room and terrace routes remain east of the seating.']
  for row,note in enumerate(notes):svg.append(f'<text x="{ox}" y="{856+row*28}" class="body">{html.escape(note)}</text>')
 for i,line in enumerate(['Proposed has inward terrace doors. Planning retains its north window, with no terrace or new external change.',

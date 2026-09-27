@@ -33,6 +33,11 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 174
+        },
+        "family": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 400
         }
       },
       "principal": true,
@@ -43,6 +48,7 @@
       "utility": 311,
       "guest": 220,
       "guestbath": 159,
+      "family": 386,
       "details": [
         {
           "term": "fixed projection screen",
@@ -115,6 +121,54 @@
         {
           "term": "shower control index",
           "count": 2
+        }
+      ],
+      "terrace": [
+        {
+          "id": "Proposal | Terrace access left glazed leaf",
+          "wall": "Proposal | Terrace access left glazed leaf",
+          "motion": "hinged",
+          "angle": -1.5707963267948966,
+          "open": true,
+          "meshCount": 9,
+          "batches": 3,
+          "hinge": [
+            -3.75,
+            8.82,
+            2.8
+          ],
+          "position": [
+            -3.75,
+            8.82,
+            2.8
+          ],
+          "nativePoseRestored": false,
+          "closedPoseRestored": false,
+          "expectedAngle": -1.5707963267948966,
+          "handleMembers": 4
+        },
+        {
+          "id": "Proposal | Terrace access right glazed leaf",
+          "wall": "Proposal | Terrace access right glazed leaf",
+          "motion": "hinged",
+          "angle": 1.5707963267948966,
+          "open": true,
+          "meshCount": 9,
+          "batches": 3,
+          "hinge": [
+            -1.43,
+            8.82,
+            2.8
+          ],
+          "position": [
+            -1.43,
+            8.82,
+            2.8
+          ],
+          "nativePoseRestored": false,
+          "closedPoseRestored": false,
+          "expectedAngle": 1.5707963267948966,
+          "handleMembers": 4
         }
       ],
       "doors": {
@@ -457,6 +511,11 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 174
+        },
+        "family": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 395
         }
       },
       "principal": true,
@@ -467,6 +526,7 @@
       "utility": 311,
       "guest": 220,
       "guestbath": 159,
+      "family": 389,
       "details": [
         {
           "term": "fixed projection screen",
@@ -541,6 +601,7 @@
           "count": 2
         }
       ],
+      "terrace": [],
       "doors": {
         "closed": [
           {

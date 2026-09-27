@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "variant": "compact",
-  "source_sha256": "9462615ab76fa8de37efd7d15d14fa89d8b6c19f4c916be2fabf81c3c0f6043c",
+  "source_sha256": "595d0034b7876baeb7e4810a69fc9e8269ed60f559630df65b175d084a612b0f",
   "source_unchanged": true,
   "reports": [
     {
@@ -454,6 +454,13 @@
         "Guestbath 01 | retained skirting outside ensuite Bathroom east | skirting end1",
         "Guestbath 01 | retained skirting outside ensuite Principal en suite east | skirting end-1"
       ],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    },
+    {
+      "area": "family",
+      "matching_study_meshes": 394,
+      "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": []
     }

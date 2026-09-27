@@ -9,12 +9,13 @@ native=ROOT/f'revisions/interiors-overnight-2026-09-27/{area}/{variant}'/(area.t
 bpy.ops.wm.open_mainfile(filepath=str(native));scene=next(s for s in bpy.data.scenes if'interior study'in s.name)if area else bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene;scene.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get()
 windows=[('Utility','east window','x',13.60,13.79,-15.75,-14.75,1.20,2.30),('Utility','south window','y',-15.94,-16.12,12.195,13.195,1.40,2.35),('Gym','east window -10.9','x',13.60,13.79,-11.90,-9.90,.55,2.35),('Gym','east window -8.49','x',13.60,13.79,-9.49,-7.49,.55,2.35),('Gym','west window -9.505','x',9.40,9.245,-9.505,-8.105,.60,2.40),('Gym','west window -6.405','x',9.40,9.245,-6.405,-4.605,.60,2.40),('Gym','courtyard doors','y',-4.70,-4.41,10.745,13.145,0,2.35)]
 windows.append(('Guestbath','retained north window','y',7.793,7.807,7.82,8.8311,3.96,4.84))
+windows.extend([('Family','west window','x',-4.95,-5.14,6.375,7.625,3.65,5.05),('Family','north '+('window'if variant=='planning'else'doors'),'y',8.55,8.78,-3.79,-1.39,3.6 if variant=='planning'else 2.8,5.05)])
 if area:windows=[w for w in windows if w[0].lower()==area]
 rays=[]
 for area,label,axis,inside,frame,a,d,sill,head in windows:
     mid=(a+d)/2;z=(sill+head)/2
     point=lambda depth,u,h:(depth,u,h)if axis=='x'else(u,depth,h)
-    for surface,u,h in [('head',mid,head-.001),('first jamb',a+.001,z),('second jamb',d-.001,z)]+([('sill',mid,sill+.001)]if sill>0 else[]):
+    for surface,u,h in [('head',mid,head-.001),('first jamb',a+.001,z),('second jamb',d-.001,z)]+([('sill',mid,sill+.001)]if sill>0 and not(area=='Family'and label=='north doors')else[]):
         origin=Vector(point(inside,mid,z));target=Vector(point(frame,u,h))
         if area=='Guestbath':
             # The retained blind and latch obstruct room-centre rays. Inspect
@@ -24,6 +25,12 @@ for area,label,axis,inside,frame,a,d,sill,head in windows:
             elif surface=='sill':origin=Vector(point(depth,mid,sill+.020));target=Vector(point(depth,mid,sill+.001))
             elif surface=='first jamb':origin=Vector(point(depth,a+.040,z));target=Vector(point(depth,a+.001,z))
             else:origin=Vector(point(depth,d-.040,z));target=Vector(point(depth,d-.001,z))
+        elif area=='Family':
+            depth=-5.067 if axis=='x'else 8.707
+            if surface=='head':origin=Vector(point(depth,mid,head-.020));target=Vector(point(depth,mid,head-.001))
+            elif surface=='sill':origin=Vector(point(depth,mid,sill+.020));target=Vector(point(depth,mid,sill+.001))
+            elif surface=='first jamb':origin=Vector(point(depth,a+.020,z));target=Vector(point(depth,a+.001,z))
+            else:origin=Vector(point(depth,d-.020,z));target=Vector(point(depth,d-.001,z))
         delta=target-origin
         hit,loc,normal,face,ob,matrix=scene.ray_cast(deps,origin,delta.normalized(),distance=delta.length+.01)
         name=ob.get('source_name',ob.name)if hit else None

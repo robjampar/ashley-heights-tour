@@ -1,0 +1,17 @@
+// A small single-user room: retain the entrance leaf and check the drawer separately.
+import fs from'node:fs';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
+const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/cloakroom.json',import.meta.url))),variant=process.env.CLOAK_VARIANT??'compact',native=process.env.CLOAK_NAV;
+const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),door=JSON.parse(fs.readFileSync(new URL('../../revisions/interiors-overnight-2026-09-27/cloakroom/retained-door-poses.json',import.meta.url)));
+const item=(name,box,top=1.3)=>({name,box,bottom:0,top}),furniture=[item('Cloakroom 01 | vanity',cfg.vanity),item('Cloakroom 01 | WC',cfg.wc.panBounds),item('Cloakroom 01 | cistern',cfg.wc.cistern)];const results=[];
+for(const state of['doorOpen','doorClosed','drawerOpen']){
+ const extra=state==='drawerOpen'?[item('open vanity drawer',[cfg.vanity[2],cfg.vanity[1]+.025,cfg.vanity[2]+.30,cfg.vanity[3]-.025],.75)]:[];
+ const obstacles=base.obstacles.filter(o=>o.bottom<1.7&&o.top>.05&&(native||!o.name.startsWith('Cloakroom fitted vanity')&&!o.name.startsWith('Cloakroom toilet')));
+ const nav=new Navigation({...base,obstacles:[...obstacles,...(native?[]:furniture),...door.poses[state==='doorClosed'?'closed':'open'],...extra]});nav.radius=.3;nav.segments=nav.segments.filter(s=>s.bottom<1.7&&s.top>.05);
+ const x0=4.28,y0=.04,step=.0075,nx=237,ny=437,point=i=>({x:x0+i%nx*step,y:y0+Math.floor(i/nx)*step,z:0});const crop=restrictNavigation(nav,[x0,y0,x0+(nx-1)*step,y0+(ny-1)*step],0);
+ const free=new Uint8Array(nx*ny),seen=new Uint8Array(nx*ny);for(let i=0;i<free.length;i++){const p=point(i);free[i]=Math.abs(nav.support(p.x,p.y,0)??99)<.035&&!nav.blocked(p.x,p.y,0);}
+ function nearest(x,y){let index=-1,distance=Infinity;for(let i=0;i<free.length;i++)if(free[i]){const p=point(i),d=Math.hypot(p.x-x,p.y-y);if(d<distance){distance=d;index=i;}}return{index,distance};}
+ const origin=nearest(...(state==='doorClosed'?[5.45,2.07]:[5.365,2.98]));assert(origin.distance<.025,'arrival blocked');const queue=[origin.index];seen[origin.index]=1;
+ for(let q=0;q<queue.length;q++){const i=queue[q],p=point(i),ix=i%nx,iy=Math.floor(i/nx);for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){const x=ix+dx,y=iy+dy,j=x+y*nx;if(x<0||y<0||x>=nx||y>=ny||seen[j]||!free[j])continue;const t=point(j);nav.position={...p};nav.move(t.x-p.x,t.y-p.y);if(Math.hypot(nav.position.x-t.x,nav.position.y-t.y)<.001){seen[j]=1;queue.push(j);}}}
+ const checks=[['basin or drawer approach',state==='drawerOpen'?5.45:5.135,1.44],['WC approach',5.40,1.145],['inside arrival',5.46,2.13]].map(([label,x,y])=>{const n=nearest(x,y);return{label,distance:n.distance,reachable:!!seen[n.index]};});results.push({state,bodyWidth:.6,crop,checks});console.log(JSON.stringify(results.at(-1)));
+}
+const status=results.every(r=>r.checks.every(c=>c.distance<.025&&c.reachable))?'PASS':'FAIL';fs.writeFileSync(new URL('../../revisions/interiors-overnight-2026-09-27/cloakroom/'+(native?'native':'plan')+'-circulation-'+variant+'.json',import.meta.url),JSON.stringify({status,variant,source:native??'plan fixtures',sourceSha256:createHash('sha256').update(bytes).digest('hex'),results},null,2)+'\n');assert.equal(status,'PASS');

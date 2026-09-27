@@ -78,8 +78,10 @@ for ob in list(scene.objects):
     if any(bb[i+3]<=crop[i] or bb[i]>=crop[i+3] for i in range(3)):continue
     if area=='bar' and bb[3]<9.12 and bb[4]<-9.85:continue
     if area=='gym' and bb[3]<11.43 and bb[4]<-9.85:continue
-    if area=='family' and bb[3]<-2.47 and bb[4]<5.16:continue
-    copy=ob.copy();copy.data=ob.data.copy();coll.objects.link(copy);copy.name=name;copy['source_name']=name
+    # Keep walls that meet the L-shaped boundary; float rounding must not
+    # remove the shared south wall or its return from the isolated study.
+    if area=='family' and bb[3]<-2.48 and bb[4]<5.15:continue
+    copy=ob.copy();copy.data=ob.data.copy();coll.objects.link(copy);copy.name=name;copy['source_name']=name;copy['model_object_name']=ob.name
     copy.parent=None;copy.matrix_world=ob.matrix_world.copy()
     # Long shared retaining walls are cut only in this isolated study, never in the source house.
     if any(bb[i]<crop[i]-.001 or bb[i+3]>crop[i+3]+.001 for i in range(3)):
