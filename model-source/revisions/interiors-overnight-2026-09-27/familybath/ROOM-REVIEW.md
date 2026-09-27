@@ -1,0 +1,13 @@
+# Family bathroom — developed room review
+
+The room retains its walls, north privacy window, bath location, west basin service wall, east WC service wall and south hall opening. The previous 1.73 m cabinet becomes a 1.20 m floating oak vanity, with a 510 mm-deep counter and a properly recessed ceramic basin. Limestone surfaces, ivory, bronze fittings and a lit mirror follow the accepted palette. The old vanity arches, posts and shelves are removed.
+
+The fitted bath is 1.88 × 0.78 m, with a continuous rectangular rim, a hollow well, waste, overflow and thin limestone apron. The front has a service-panel joint. Its bronze mixer and hand shower are on the east wall near the approach. The curved flexible hose has 95 individual ribs and clears the well. The original privacy glass and white window board remain. The concealed-cistern WC has an open pan and seat, hinge hardware, two flush buttons, paper holder and brush. Towels sit near the bath without consuming the basin approach.
+
+Each design has 245 authored mesh parts and three lights; the isolated study has 341 objects including the retained shell. Six separate uses pass with a 600 mm body: ordinary arrival, closed door, basin use, WC use, drying and the upper drawer extended. A left-hinged hall leaf pinched the route against the WC; the final right-hinged leaf uses the same approximately 832 mm opening. Fixture-use checks are separate scenarios, not a claim that every activity can happen simultaneously.
+
+The complete eight-part hall door clears fixed fittings through 91 sampled angles. The upper drawer's U-shaped service cutout clears the basin and trap at 31 positions across its 300 mm extension. The basin is 157 mm deep. Five native rays confirm that the bath has an open well, rather than a solid top. Native triangle checks confirm the flexible hose clears that well. The bath's complete rim and apron fit their declared envelope. Four short rays verify the internal window returns and retained white board.
+
+Normal entrance and bath views and an extended-drawer detail were inspected. Both designs pass all review cameras, detail parts, the ceiling cutaway, retained camera when switching designs and a 390 px mobile view. Full-house integration and publication evidence are recorded in the session reports.
+
+The shorter vanity reduces storage. The service cutout further limits the upper drawer's centre. Final product dimensions, water supply, waste routes, waterproofing, bath access panel and ventilation need detailed selection and site verification. This is a developed concept for review, not a construction issue or accessibility certification.

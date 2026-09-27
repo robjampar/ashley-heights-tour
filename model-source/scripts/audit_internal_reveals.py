@@ -12,6 +12,7 @@ windows.append(('Guestbath','retained north window','y',7.793,7.807,7.82,8.8311,
 windows.extend([('Family','west window','x',-4.95,-5.14,6.375,7.625,3.65,5.05),('Family','north '+('window'if variant=='planning'else'doors'),'y',8.55,8.78,-3.79,-1.39,3.6 if variant=='planning'else 2.8,5.05)])
 windows.append(('Bedroom2','front window','y',.15,.10,10.5292,12.9165,3.55,5.0))
 windows.append(('Bedroom3','north window','y',8.68,8.72,1.192,3.6189,3.6,4.98))
+windows.append(('Familybath','north window','y',7.76,7.793,5.3354,6.8474,4.02,4.82))
 if area:windows=[w for w in windows if w[0].lower()==area]
 rays=[]
 for area,label,axis,inside,frame,a,d,sill,head in windows:
@@ -27,8 +28,8 @@ for area,label,axis,inside,frame,a,d,sill,head in windows:
             elif surface=='sill':origin=Vector(point(depth,mid,sill+.020));target=Vector(point(depth,mid,sill+.001))
             elif surface=='first jamb':origin=Vector(point(depth,a+.040,z));target=Vector(point(depth,a+.001,z))
             else:origin=Vector(point(depth,d-.040,z));target=Vector(point(depth,d-.001,z))
-        elif area in('Family','Bedroom2','Bedroom3'):
-            depth=8.712 if area=='Bedroom3'else .105 if area=='Bedroom2'else -5.067 if axis=='x'else 8.707
+        elif area in('Family','Bedroom2','Bedroom3','Familybath'):
+            depth=7.793 if area=='Familybath'else 8.712 if area=='Bedroom3'else .105 if area=='Bedroom2'else -5.067 if axis=='x'else 8.707
             if surface=='head':origin=Vector(point(depth,mid,head-.020));target=Vector(point(depth,mid,head-.001))
             elif surface=='sill':origin=Vector(point(depth,mid,sill+.020));target=Vector(point(depth,mid,sill+.001))
             elif surface=='first jamb':origin=Vector(point(depth,a+.020,z));target=Vector(point(depth,a+.001,z))
@@ -43,6 +44,7 @@ for area,label,axis,inside,frame,a,d,sill,head in windows:
         expected_material=f'Interior | {area} warm ivory'
         if area=='Guestbath'and surface=='sill':expected='En suite balcony window board';expected_material='White joinery'
         if area=='Bedroom3'and surface=='sill':expected='Bedroom 3 rear window board';expected_material='White joinery'
+        if area=='Familybath'and surface=='sill':expected='Bathroom balcony window board';expected_material='White joinery'
         assert hit and name==expected,(variant,expected,name,list(loc))
         evaluated=ob.evaluated_get(deps);material=evaluated.data.materials[evaluated.data.polygons[face].material_index].name
         assert material==expected_material,(expected,material)

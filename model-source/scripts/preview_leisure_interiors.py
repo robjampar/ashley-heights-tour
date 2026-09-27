@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from build_support import native_name
 from proposal_leisure_interiors import apply_leisure
 from proposal_kitchen_interiors import export_quiet_oak_gltf
-parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
+parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);VARIANT=args.variant;area=args.area
 OUT=ROOT/'revisions/interiors-overnight-2026-09-27'/area/VARIANT;OUT.mkdir(parents=True,exist_ok=True)
 PUBLIC=ROOT/'walkthrough/public/interiors/leisure/models';PUBLIC.mkdir(parents=True,exist_ok=True)
@@ -14,7 +14,10 @@ BASE=args.baseline.resolve()if args.baseline else ROOT/f'output-proposed-{VARIAN
 nav=json.loads((BASE/'navigation.json').read_text());g=json.loads((BASE/'geometry.json').read_text())
 bpy.ops.wm.open_mainfile(filepath=str(native));scene=bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene
 materials={m.name:m for m in bpy.data.materials};PALETTE=dict(g['materials']);new_obstacles=[];new_surfaces=[];new_segments=[];new_views=[]
-if area=='bedroom3':
+if area=='familybath':
+    from proposal_familybath_interiors import apply_familybath
+    report=apply_familybath(globals())
+elif area=='bedroom3':
     from proposal_bedroom3_interiors import apply_bedroom3
     report=apply_bedroom3(globals())
 elif area=='bedroom2':
@@ -89,6 +92,7 @@ for ob in list(scene.objects):
     if area=='gym' and bb[3]<11.43 and bb[4]<-9.85:continue
     # Keep walls that meet the L-shaped boundary; float rounding must not
     # remove the shared south wall or its return from the isolated study.
+    if area=='familybath' and bb[0]>7.185 and bb[1]>6.165:continue
     if area=='bedroom3' and bb[3]<3.715 and bb[4]<5.615:continue
     if area=='family' and bb[3]<-2.48 and bb[4]<5.15:continue
     copy=ob.copy();copy.data=ob.data.copy();coll.objects.link(copy);copy.name=name;copy['source_name']=name;copy['model_object_name']=ob.name
@@ -127,7 +131,10 @@ if not args.render_only:
 report.update({'native_screen_rays':rays,'source_house_sha256':source_hash,'source_house_unchanged':hashlib.sha256(native.read_bytes()).hexdigest()==source_hash,'isolated_objects':len(copied),'views':views})
 assert report['source_house_unchanged'];(OUT/'preview-report.json').write_text(json.dumps(report,indent=2)+'\n')
 if args.render:
-    if args.working and area=='cloakroom':
+    if args.working and area=='familybath':
+        for ob in study.objects:
+            if ob.get('familybath_pullout')=='upper drawer':ob.matrix_world=Matrix.Translation(Vector((.30,0,0)))@ob.matrix_world
+    elif args.working and area=='cloakroom':
         for ob in study.objects:
             if ob.get('cloakroom_pullout')=='upper drawer':ob.matrix_world=Matrix.Translation(Vector((.30,0,0)))@ob.matrix_world
     elif args.working and area=='guestbath':

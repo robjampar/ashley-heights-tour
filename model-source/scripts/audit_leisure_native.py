@@ -39,7 +39,7 @@ def compare_meshes(full,isolated,area):
             error,i=min(matches);assert error<.00003,(area,name,'world-vertex difference',error)
             maximum=max(maximum,error);candidates.pop(i)
     return maximum
-for area in ('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3'):
+for area in ('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath'):
     prefix=area.title()+' 01 | '
     full=inventory(scene,prefix)
     study_path=ROOT/f'revisions/interiors-overnight-2026-09-27/{area}/{variant}'/(area.title()+' — interior study.blend')

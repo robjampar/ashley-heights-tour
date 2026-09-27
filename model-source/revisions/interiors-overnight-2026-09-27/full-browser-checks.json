@@ -53,10 +53,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 122
+        },
+        "familybath": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 248
         }
       },
       "principal": true,
       "kitchen": 2,
+      "familybath": 237,
       "bedroom3": 110,
       "bedroom2": 133,
       "cloakroom": 71,
@@ -142,7 +148,7 @@
         }
       ],
       "finishSwitch": {
-        "materials": 123,
+        "materials": 134,
         "allInterior": true,
         "states": [
           {
@@ -447,6 +453,27 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Familybath 01 | entrance door",
+            "wall": "Familybath 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "position": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
@@ -691,6 +718,28 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Familybath 01 | entrance door",
+            "wall": "Familybath 01 | entrance door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "position": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
           }
         ]
       }
@@ -747,10 +796,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 122
+        },
+        "familybath": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 248
         }
       },
       "principal": true,
       "kitchen": 2,
+      "familybath": 237,
       "bedroom3": 110,
       "bedroom2": 133,
       "cloakroom": 71,
@@ -836,7 +891,7 @@
         }
       ],
       "finishSwitch": {
-        "materials": 123,
+        "materials": 134,
         "allInterior": true,
         "states": [
           {
@@ -1094,6 +1149,27 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Familybath 01 | entrance door",
+            "wall": "Familybath 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "position": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
@@ -1338,6 +1414,28 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Familybath 01 | entrance door",
+            "wall": "Familybath 01 | entrance door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "position": [
+              7.1289,
+              4.53,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
           }
         ]
       }

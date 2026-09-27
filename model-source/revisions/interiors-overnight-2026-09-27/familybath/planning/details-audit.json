@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "nativeSha256": "144782c74dd69d4b5c2696299528df5cad20f32c1e12426e53f9d980b66c6d43",
+  "sourceUnchanged": true,
+  "doorMembers": 8,
+  "doorSweepAngles": 91,
+  "drawerParts": 11,
+  "drawerExtensions": 31,
+  "sweeps": [
+    {
+      "degrees": -0.0,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -14.999999999999998,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -29.999999999999996,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -45.0,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -59.99999999999999,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -75.0,
+      "fixtureClashes": []
+    },
+    {
+      "degrees": -90.0,
+      "fixtureClashes": []
+    }
+  ],
+  "drawerChecks": [
+    {
+      "extension": 0.0,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.05,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.1,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.15,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.2,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.25,
+      "fixtureClashes": []
+    },
+    {
+      "extension": 0.3,
+      "fixtureClashes": []
+    }
+  ],
+  "basinDepth": 0.15700006484985352,
+  "bathBounds": [
+    5.144999980926514,
+    6.963500022888184,
+    2.809999942779541,
+    7.025000095367432,
+    7.744999885559082,
+    3.4200000762939453
+  ],
+  "bathWellRays": [
+    {
+      "origin": [
+        6.085,
+        7.355,
+        3.65
+      ],
+      "hit": "Familybath 01 | hollow fitted bath well",
+      "height": 2.9526429176330566,
+      "depthBelowRim": 0.4673570823669433
+    },
+    {
+      "origin": [
+        5.785,
+        7.355,
+        3.65
+      ],
+      "hit": "Familybath 01 | hollow fitted bath well",
+      "height": 2.956730365753174,
+      "depthBelowRim": 0.4632696342468261
+    },
+    {
+      "origin": [
+        6.385,
+        7.355,
+        3.65
+      ],
+      "hit": "Familybath 01 | hollow fitted bath well",
+      "height": 2.9485559463500977,
+      "depthBelowRim": 0.4714440536499023
+    },
+    {
+      "origin": [
+        6.085,
+        7.23,
+        3.65
+      ],
+      "hit": "Familybath 01 | hollow fitted bath well",
+      "height": 2.9555208683013916,
+      "depthBelowRim": 0.4644791316986083
+    },
+    {
+      "origin": [
+        6.085,
+        7.48,
+        3.65
+      ],
+      "hit": "Familybath 01 | hollow fitted bath well",
+      "height": 2.9555277824401855,
+      "depthBelowRim": 0.4644722175598144
+    }
+  ],
+  "hoseParts": 96,
+  "hoseBathClash": false,
+  "method": "Evaluated triangle intersection after world-space broad bounds; assembled moving drawer members checked against fixed fittings."
+}

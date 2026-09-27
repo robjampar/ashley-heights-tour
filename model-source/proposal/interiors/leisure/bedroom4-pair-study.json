@@ -1,0 +1,113 @@
+{
+  "status": "working plan study, not integrated",
+  "bed": [
+    1.435,
+    1.02,
+    2.925,
+    3.08
+  ],
+  "bedsides": [
+    [
+      0.9,
+      2.76,
+      1.38,
+      3.075
+    ],
+    [
+      2.98,
+      2.76,
+      3.46,
+      3.075
+    ]
+  ],
+  "wardrobe": [
+    0.145,
+    0.22,
+    0.795,
+    2.22
+  ],
+  "bathVanity": [
+    4.6,
+    0.14,
+    5.5,
+    0.54
+  ],
+  "wcPan": [
+    4.52,
+    1.435,
+    4.9,
+    1.925
+  ],
+  "cistern": [
+    4.435,
+    1.925,
+    4.985,
+    2.115
+  ],
+  "shower": [
+    5.023,
+    2.04,
+    5.823,
+    2.94
+  ],
+  "showerReturnShiftX": -0.113,
+  "hallDoor": {
+    "hinge": [
+      4.756,
+      3.19,
+      2.8
+    ],
+    "width": 0.7264,
+    "axis": [
+      -1,
+      0
+    ],
+    "openAngle": 1.5707963267948966
+  },
+  "bathDoor": {
+    "hinge": [
+      4.28,
+      0.7804,
+      2.8
+    ],
+    "width": 0.7398,
+    "axis": [
+      0,
+      1
+    ],
+    "openAngle": 1.5707963267948966
+  },
+  "showerDoor": {
+    "hinge": [
+      5.045,
+      2.04,
+      2.8
+    ],
+    "width": 0.74,
+    "axis": [
+      1,
+      0
+    ],
+    "openAngle": 1.4835298641951802
+  },
+  "notes": [
+    "A 113 mm movement of the shower return needs a rebuilt junction to the linen-cupboard back wall.",
+    "Both retained bedroom and ensuite openings remain. The shallow bedside drawers preserve the entrance turn.",
+    "The ensuite is for one person at a time; door sweeps and real product dimensions still require native verification.",
+    "Use a 1.35 \u00d7 1.90 m standard double in a complete 1.49 \u00d7 2.06 m frame; this matches the existing double mattress size."
+  ],
+  "wcBasis": {
+    "product": "Duravit D-Neo Compact 258809",
+    "ceramicSize": [
+      0.37,
+      0.48
+    ],
+    "allowanceFootprint": [
+      0.38,
+      0.49
+    ],
+    "cisternDepth": 0.19,
+    "frameBasis": "155 mm installation element plus lining and allowance",
+    "source": "https://pro.duravit.co.uk/pro/content/homepage/products/categories/overview/products~402880943a1b6e1b013a1bd2494e0047.uk-en.html?ncat=toilets&nser=0998&product=6661051"
+  }
+}

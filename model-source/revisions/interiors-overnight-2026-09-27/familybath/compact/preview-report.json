@@ -1,0 +1,916 @@
+{
+  "area": "familybath",
+  "revision": 1,
+  "objects": 248,
+  "mesh_objects": 245,
+  "lights": 3,
+  "removed_objects": [
+    {
+      "name": "Bath mixer spout",
+      "object_name": "Bath mixer spout"
+    },
+    {
+      "name": "Family bathroom toilet cistern",
+      "object_name": "Family bathroom toilet cistern"
+    },
+    {
+      "name": "Family bathroom toilet pedestal",
+      "object_name": "Family bathroom toilet pedestal"
+    },
+    {
+      "name": "Family bathroom toilet hollow pan",
+      "object_name": "Family bathroom toilet hollow pan"
+    },
+    {
+      "name": "Family bathroom toilet seat",
+      "object_name": "Family bathroom toilet seat"
+    },
+    {
+      "name": "Family bathroom fitted vanity carcass",
+      "object_name": "Family bathroom fitted vanity carcass"
+    },
+    {
+      "name": "Family bathroom fitted vanity plinth",
+      "object_name": "Family bathroom fitted vanity plinth"
+    },
+    {
+      "name": "Family bathroom fitted vanity door",
+      "object_name": "Family bathroom fitted vanity door"
+    },
+    {
+      "name": "Family bathroom fitted vanity raised panel",
+      "object_name": "Family bathroom fitted vanity raised panel"
+    },
+    {
+      "name": "Family bathroom fitted vanity stile",
+      "object_name": "Family bathroom fitted vanity stile"
+    },
+    {
+      "name": "Family bathroom fitted vanity stile",
+      "object_name": "Family bathroom fitted vanity stile.001"
+    },
+    {
+      "name": "Family bathroom fitted vanity door knob",
+      "object_name": "Family bathroom fitted vanity door knob"
+    },
+    {
+      "name": "Family bathroom fitted vanity door",
+      "object_name": "Family bathroom fitted vanity door.001"
+    },
+    {
+      "name": "Family bathroom fitted vanity raised panel",
+      "object_name": "Family bathroom fitted vanity raised panel.001"
+    },
+    {
+      "name": "Family bathroom fitted vanity stile",
+      "object_name": "Family bathroom fitted vanity stile.002"
+    },
+    {
+      "name": "Family bathroom fitted vanity stile",
+      "object_name": "Family bathroom fitted vanity stile.003"
+    },
+    {
+      "name": "Family bathroom fitted vanity door knob",
+      "object_name": "Family bathroom fitted vanity door knob.001"
+    },
+    {
+      "name": "Family bathroom fitted vanity door",
+      "object_name": "Family bathroom fitted vanity door.002"
+    },
+    {
+      "name": "Family bathroom fitted vanity raised panel",
+      "object_name": "Family bathroom fitted vanity raised panel.002"
+    },
+    {
+      "name": "Family bathroom fitted vanity stile",
+      "object_name": "Family bathroom fitted vanity stile.004"
+    },
+    {
+      "name": "Family bathroom fitted vanity stile",
+      "object_name": "Family bathroom fitted vanity stile.005"
+    },
+    {
+      "name": "Family bathroom fitted vanity door knob",
+      "object_name": "Family bathroom fitted vanity door knob.002"
+    },
+    {
+      "name": "Family bathroom fitted vanity counter",
+      "object_name": "Family bathroom fitted vanity counter"
+    },
+    {
+      "name": "Family bathroom fitted vanity inset basin",
+      "object_name": "Family bathroom fitted vanity inset basin"
+    },
+    {
+      "name": "Family bathroom fitted vanity tap",
+      "object_name": "Family bathroom fitted vanity tap"
+    },
+    {
+      "name": "Family bathroom fitted vanity tap",
+      "object_name": "Family bathroom fitted vanity tap.001"
+    },
+    {
+      "name": "Family fitted bathtub",
+      "object_name": "Family fitted bathtub"
+    },
+    {
+      "name": "Family bath front apron",
+      "object_name": "Family bath front apron"
+    },
+    {
+      "name": "Family bath mixer",
+      "object_name": "Family bath mixer"
+    },
+    {
+      "name": "Family towel rail",
+      "object_name": "Family towel rail"
+    },
+    {
+      "name": "Photo detail | Family arched mirror",
+      "object_name": "Photo detail | Family arched mirror"
+    },
+    {
+      "name": "Photo detail | Family vanity front arch",
+      "object_name": "Photo detail | Family vanity front arch"
+    },
+    {
+      "name": "Photo detail | Family vanity post",
+      "object_name": "Photo detail | Family vanity post"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.001"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.002"
+    },
+    {
+      "name": "Photo detail | Family vanity post",
+      "object_name": "Photo detail | Family vanity post.001"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.003"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.004"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.005"
+    },
+    {
+      "name": "Photo detail | Family vanity side arch",
+      "object_name": "Photo detail | Family vanity side arch"
+    },
+    {
+      "name": "Photo detail | Family vanity shelf return",
+      "object_name": "Photo detail | Family vanity shelf return"
+    },
+    {
+      "name": "Photo detail | Family vanity post",
+      "object_name": "Photo detail | Family vanity post.002"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.006"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.007"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.008"
+    },
+    {
+      "name": "Photo detail | Family vanity post",
+      "object_name": "Photo detail | Family vanity post.003"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.009"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.010"
+    },
+    {
+      "name": "Photo detail | Family vanity capital",
+      "object_name": "Photo detail | Family vanity capital.011"
+    },
+    {
+      "name": "Photo detail | Family vanity side arch",
+      "object_name": "Photo detail | Family vanity side arch.001"
+    },
+    {
+      "name": "Photo detail | Family vanity shelf return",
+      "object_name": "Photo detail | Family vanity shelf return.001"
+    },
+    {
+      "name": "Photo detail | Family mirror side shelf",
+      "object_name": "Photo detail | Family mirror side shelf"
+    },
+    {
+      "name": "Photo detail | Family mirror side shelf",
+      "object_name": "Photo detail | Family mirror side shelf.001"
+    },
+    {
+      "name": "Photo detail | Family mirror side shelf",
+      "object_name": "Photo detail | Family mirror side shelf.002"
+    },
+    {
+      "name": "Photo detail | Family mirror side shelf",
+      "object_name": "Photo detail | Family mirror side shelf.003"
+    },
+    {
+      "name": "Bathroom balcony | skirting pier 0-1",
+      "object_name": "Bathroom balcony | skirting pier 0-1"
+    },
+    {
+      "name": "Bathroom balcony | skirting below 0-1",
+      "object_name": "Bathroom balcony | skirting below 0-1"
+    },
+    {
+      "name": "Bathroom balcony | skirting end-1",
+      "object_name": "Bathroom balcony | skirting end-1"
+    },
+    {
+      "name": "Bathroom bedroom 3 | skirting end1",
+      "object_name": "Bathroom bedroom 3 | skirting end1"
+    },
+    {
+      "name": "Bathroom en suite | skirting end-1",
+      "object_name": "Bathroom en suite | skirting end-1"
+    },
+    {
+      "name": "Bathroom jog | skirting end-1",
+      "object_name": "Bathroom jog | skirting end-1"
+    },
+    {
+      "name": "Bathroom east | skirting end-1",
+      "object_name": "Bathroom east | skirting end-1"
+    },
+    {
+      "name": "Bathroom hall | skirting pier 01",
+      "object_name": "Bathroom hall | skirting pier 01"
+    },
+    {
+      "name": "Bathroom hall | skirting end1",
+      "object_name": "Bathroom hall | skirting end1"
+    },
+    {
+      "name": "Bathroom hall panelled leaf",
+      "object_name": "Bathroom hall panelled leaf"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.001"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.002"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.003"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.001"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.004"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.005"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.006"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.007"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.002"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.008"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.009"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.010"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.011"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.003"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.012"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.013"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.014"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.015"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.004"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.016"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.017"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.018"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.019"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.005"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.020"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.021"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.022"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.023"
+    },
+    {
+      "name": "Bathroom hall brass knob",
+      "object_name": "Bathroom hall brass knob"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.006"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.024"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.025"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.026"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.027"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.007"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.028"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.029"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.030"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.031"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.008"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.032"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.033"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.034"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.035"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.009"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.036"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.037"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.038"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.039"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.010"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.040"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.041"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.042"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.043"
+    },
+    {
+      "name": "Bathroom hall raised door panel",
+      "object_name": "Bathroom hall raised door panel.011"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.044"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.045"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.046"
+    },
+    {
+      "name": "Bathroom hall panel bead",
+      "object_name": "Bathroom hall panel bead.047"
+    },
+    {
+      "name": "Bathroom hall brass knob",
+      "object_name": "Bathroom hall brass knob.001"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Familybath 01 | thin wall finish",
+      "box": [
+        5.105,
+        4.595,
+        5.111,
+        7.775
+      ],
+      "bottom": 2.8,
+      "top": 5.24
+    },
+    {
+      "name": "Familybath 01 | thin wall finish",
+      "box": [
+        7.669,
+        4.595,
+        7.675,
+        6.035
+      ],
+      "bottom": 2.8,
+      "top": 5.24
+    },
+    {
+      "name": "Familybath 01 | thin wall finish",
+      "box": [
+        7.049,
+        6.035,
+        7.055,
+        7.775
+      ],
+      "bottom": 2.8,
+      "top": 5.24
+    },
+    {
+      "name": "Familybath 01 | floating vanity",
+      "box": [
+        5.145,
+        5.05,
+        5.655,
+        6.25
+      ],
+      "bottom": 2.8,
+      "top": 3.6639999999999997
+    },
+    {
+      "name": "Familybath 01 | WC pan",
+      "box": [
+        6.94,
+        5.43,
+        7.48,
+        5.83
+      ],
+      "bottom": 2.8,
+      "top": 3.246
+    },
+    {
+      "name": "Familybath 01 | cistern",
+      "box": [
+        7.48,
+        5.285,
+        7.65,
+        5.975
+      ],
+      "bottom": 2.8,
+      "top": 3.88
+    },
+    {
+      "name": "Familybath 01 | brush pot",
+      "box": [
+        7.557,
+        4.896,
+        7.645,
+        4.984
+      ],
+      "bottom": 2.8,
+      "top": 3.29
+    },
+    {
+      "name": "Familybath 01 | complete fitted bath",
+      "box": [
+        5.145,
+        6.965,
+        7.025,
+        7.745
+      ],
+      "bottom": 2.8,
+      "top": 3.424
+    },
+    {
+      "name": "Familybath 01 | towel warmer and towel",
+      "box": [
+        6.972,
+        6.289,
+        7.026,
+        6.811
+      ],
+      "bottom": 3.4499999999999997,
+      "top": 4.39
+    }
+  ],
+  "configuration": {
+    "revision": 1,
+    "room": "Bathroom",
+    "bounds": [
+      5.105,
+      4.595,
+      7.675,
+      7.775
+    ],
+    "polygon": [
+      [
+        5.105,
+        4.595
+      ],
+      [
+        7.675,
+        4.595
+      ],
+      [
+        7.675,
+        6.035
+      ],
+      [
+        7.055,
+        6.035
+      ],
+      [
+        7.055,
+        7.775
+      ],
+      [
+        5.105,
+        7.775
+      ]
+    ],
+    "floorZ": 2.8,
+    "ceilingZ": 5.25,
+    "vanity": [
+      5.145,
+      5.05,
+      5.655,
+      6.25
+    ],
+    "bath": [
+      5.145,
+      6.965,
+      7.025,
+      7.745
+    ],
+    "wc": {
+      "cistern": [
+        7.48,
+        5.285,
+        7.65,
+        5.975
+      ],
+      "panBounds": [
+        6.94,
+        5.43,
+        7.48,
+        5.83
+      ]
+    },
+    "door": {
+      "id": "Familybath 01 | entrance door",
+      "hinge": [
+        7.1289,
+        4.53,
+        2.8
+      ],
+      "width": 0.7819,
+      "axis": [
+        -1,
+        0
+      ],
+      "openDelta": -1.5707963267948966,
+      "openingCenter": [
+        6.73795,
+        4.53,
+        2.8
+      ],
+      "openingWidth": 0.8319
+    },
+    "view": {
+      "id": "2445671-0",
+      "position": [
+        6.46,
+        5.65,
+        2.8
+      ],
+      "direction": [
+        -0.25,
+        0.96,
+        -0.15
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          6.8,
+          4.98,
+          4.4
+        ],
+        "target": [
+          6.02,
+          6.75,
+          3.73
+        ],
+        "fov": 68
+      },
+      "vanity": {
+        "position": [
+          6.59,
+          5.96,
+          4.35
+        ],
+        "target": [
+          5.28,
+          5.65,
+          3.89
+        ],
+        "fov": 62
+      },
+      "bath": {
+        "position": [
+          6.35,
+          6.55,
+          4.4
+        ],
+        "target": [
+          6.12,
+          7.36,
+          3.24
+        ],
+        "fov": 65
+      },
+      "wc": {
+        "position": [
+          6.33,
+          5.0,
+          4.2
+        ],
+        "target": [
+          7.44,
+          5.6,
+          3.5
+        ],
+        "fov": 58
+      },
+      "details": {
+        "position": [
+          6.25,
+          5.15,
+          4.1
+        ],
+        "target": [
+          5.42,
+          5.64,
+          3.58
+        ],
+        "fov": 56
+      },
+      "reverse": {
+        "position": [
+          6.51,
+          6.62,
+          4.4
+        ],
+        "target": [
+          6.12,
+          5.03,
+          3.78
+        ],
+        "fov": 67
+      },
+      "overview": {
+        "position": [
+          10.9,
+          2.1,
+          10.5
+        ],
+        "target": [
+          6.4,
+          6.2,
+          3.4
+        ],
+        "fov": 48,
+        "cutaway": true
+      }
+    },
+    "notes": [
+      "Retain the walls, privacy window, service walls and hall opening.",
+      "Compare the shorter floating vanity with the retained long cabinet before detailing.",
+      "Fixture-use checks describe separate activities, not simultaneous occupancy or accessibility certification."
+    ]
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "4e455592e32849830704498ecfdd81335193c11b27473499def76db5631a7720",
+  "source_house_unchanged": true,
+  "isolated_objects": 341,
+  "views": {
+    "entrance": {
+      "position": [
+        6.8,
+        4.98,
+        4.4
+      ],
+      "target": [
+        6.02,
+        6.75,
+        3.73
+      ],
+      "fov": 68
+    },
+    "vanity": {
+      "position": [
+        6.59,
+        5.96,
+        4.35
+      ],
+      "target": [
+        5.28,
+        5.65,
+        3.89
+      ],
+      "fov": 62
+    },
+    "bath": {
+      "position": [
+        6.35,
+        6.55,
+        4.4
+      ],
+      "target": [
+        6.12,
+        7.36,
+        3.24
+      ],
+      "fov": 65
+    },
+    "wc": {
+      "position": [
+        6.33,
+        5.0,
+        4.2
+      ],
+      "target": [
+        7.44,
+        5.6,
+        3.5
+      ],
+      "fov": 58
+    },
+    "details": {
+      "position": [
+        6.25,
+        5.15,
+        4.1
+      ],
+      "target": [
+        5.42,
+        5.64,
+        3.58
+      ],
+      "fov": 56
+    },
+    "reverse": {
+      "position": [
+        6.51,
+        6.62,
+        4.4
+      ],
+      "target": [
+        6.12,
+        5.03,
+        3.78
+      ],
+      "fov": 67
+    },
+    "overview": {
+      "position": [
+        10.9,
+        2.1,
+        10.5
+      ],
+      "target": [
+        6.4,
+        6.2,
+        3.4
+      ],
+      "fov": 48,
+      "cutaway": true
+    }
+  }
+}

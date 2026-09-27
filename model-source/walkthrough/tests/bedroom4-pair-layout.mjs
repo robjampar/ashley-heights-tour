@@ -1,0 +1,26 @@
+// Working paired-room plan: a full king, proper storage and a widened shower return.
+import fs from'node:fs';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
+const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/bedroom4-pair-study.json',import.meta.url))),variant=process.env.BED4_VARIANT??'compact';
+const bytes=fs.readFileSync(new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
+for(const w of base.walls){if(w.name==='Bedroom 4 shower return'){w.a[0]+=cfg.showerReturnShiftX;w.b[0]+=cfg.showerReturnShiftX;}if(w.name==='Linen cupboard back')w.a[0]+=cfg.showerReturnShiftX;}
+const furniture=[item('complete double bed',cfg.bed),...cfg.bedsides.map(b=>item('bedside',b)),item('full-depth wardrobe',cfg.wardrobe,5.10),item('basin cabinet',cfg.bathVanity),item('WC pan',cfg.wcPan),item('cistern',cfg.cistern)];
+function leaf(name,d,closed){const[hx,hy]=d.hinge,[ax,ay]=d.axis,angle=closed?0:d.openAngle,c=Math.cos(angle),s=Math.sin(angle),p=(u,v)=>{const x=ax*u-ay*v,y=ay*u+ax*v;return[hx+x*c-y*s,hy+x*s+y*c];};return{name,polygon:[p(0,-.06),p(d.width,-.06),p(d.width,.06),p(0,.06)],bottom:2.8,top:4.92};}
+const states={ordinary:[],hallClosed:[],bathClosed:[],showerClosed:[],wardrobeUse:[item('person choosing clothes',[.805,.80,1.405,1.40])],westBedOccupied:[item('person at west bed side',[.86,1.55,1.46,2.15])],eastBedOccupied:[item('person at east bed side',[2.94,1.65,3.54,2.25])]};
+const results=[];
+for(const[state,extra]of Object.entries(states)){
+ const obstacles=base.obstacles.filter(o=>o.bottom<4.5&&o.top>2.84&&!o.name.startsWith('Bedroom 4 bed')&&!o.name.startsWith('Bedroom 4 wardrobe')&&!o.name.startsWith('Bedroom 4 en suite toilet')&&!o.name.startsWith('Bedroom 4 front vanity')&&!o.name.startsWith('Bedroom 4 recessed shower'));
+ const doors=[leaf('hall door',cfg.hallDoor,state==='hallClosed'),leaf('ensuite door',cfg.bathDoor,state==='bathClosed'),leaf('shower glass and handles',cfg.showerDoor,state==='showerClosed')];
+ const nav=new Navigation({...base,obstacles:[...obstacles,...furniture,...doors,...extra]});nav.radius=.3;nav.segments=nav.segments.filter(s=>s.bottom<4.5&&s.top>2.84);
+ const x0=.05,y0=.02,step=.01,nx=592,ny=370,point=i=>({x:x0+i%nx*step,y:y0+Math.floor(i/nx)*step,z:2.8});const crop=restrictNavigation(nav,[x0,y0,x0+(nx-1)*step,y0+(ny-1)*step],2.8);
+ const free=new Uint8Array(nx*ny),seen=new Uint8Array(nx*ny);for(let i=0;i<free.length;i++){const p=point(i);free[i]=Math.abs((nav.support(p.x,p.y,2.8)??99)-2.8)<.025&&!nav.blocked(p.x,p.y,2.8);}
+ function nearest(x,y){let index=-1,distance=Infinity;for(let i=0;i<free.length;i++)if(free[i]){const p=point(i),d=Math.hypot(p.x-x,p.y-y);if(d<distance){distance=d;index=i;}}return{index,distance};}
+ const origin=nearest(...(state==='bathClosed'?[5.43,1.30]:state==='hallClosed'?[3.86,2.34]:[4.345,3.55]));assert(origin.distance<.025,'arrival blocked '+state);const queue=[origin.index];seen[origin.index]=1;
+ for(let q=0;q<queue.length;q++){const i=queue[q],p=point(i),ix=i%nx,iy=Math.floor(i/nx);for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){const x=ix+dx,y=iy+dy,j=x+y*nx;if(x<0||y<0||x>=nx||y>=ny||seen[j]||!free[j])continue;const t=point(j);nav.position={...p};nav.move(t.x-p.x,t.y-p.y);if(Math.hypot(nav.position.x-t.x,nav.position.y-t.y)<.001){seen[j]=1;queue.push(j);}}}
+ let targets=[['west bedside',1.12,2.42],['east bedside',3.32,2.42],['window',2.18,.60],['wardrobe lower bay',1.12,.70],['wardrobe upper bay',1.12,1.96],['basin',5.05,.88],['WC approach',4.71,1.11],['shower approach',5.45,1.70],['inside shower',5.45,2.58]];
+ if(state==='westBedOccupied'||state==='wardrobeUse')targets=targets.filter(t=>!['west bedside','wardrobe lower bay','wardrobe upper bay'].includes(t[0]));
+ if(state==='eastBedOccupied')targets=targets.filter(t=>t[0]!=='east bedside');
+ if(state==='bathClosed')targets=targets.filter(t=>['basin','WC approach','shower approach','inside shower'].includes(t[0]));
+ if(state==='showerClosed')targets=targets.filter(t=>t[0]!=='inside shower');
+ const checks=targets.map(([label,x,y])=>{const n=nearest(x,y);return{label,distance:n.distance,reachable:!!seen[n.index]};});results.push({state,bodyWidth:.6,crop,checks});console.log(JSON.stringify(results.at(-1)));
+}
+const status=results.every(r=>r.checks.every(c=>c.distance<.035&&c.reachable))?'PASS':'FAIL';fs.writeFileSync(new URL('../../revisions/interiors-overnight-2026-09-27/bedroom4/paired-plan-'+variant+'.json',import.meta.url),JSON.stringify({status,variant,source:'working plan with declared shower-return movement',sourceSha256:createHash('sha256').update(bytes).digest('hex'),results},null,2)+'\n');assert.equal(status,'PASS');

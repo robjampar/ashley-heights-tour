@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "variant": "compact",
-  "source_sha256": "4e455592e32849830704498ecfdd81335193c11b27473499def76db5631a7720",
+  "source_sha256": "fb42bf1076e6bedfa4b84f3472d630ddd4ee82921b6cb7e1176523d8784593f2",
   "source_unchanged": true,
   "reports": [
     {
@@ -481,6 +481,13 @@
     {
       "area": "bedroom3",
       "matching_study_meshes": 118,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    },
+    {
+      "area": "familybath",
+      "matching_study_meshes": 245,
       "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": []

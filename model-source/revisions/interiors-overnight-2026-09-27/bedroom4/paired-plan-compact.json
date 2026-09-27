@@ -1,0 +1,398 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source": "working plan with declared shower-return movement",
+  "sourceSha256": "77615673320795528bf01dd021eaba8c10581dec91e4312455e78679634f0a0c",
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 135,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 23,
+          "obstacles": 13,
+          "surfaces": 20
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 4.440892098500626e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "hallClosed",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 135,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 23,
+          "obstacles": 13,
+          "surfaces": 20
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 4.440892098500626e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bathClosed",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 135,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 23,
+          "obstacles": 13,
+          "surfaces": 20
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "basin",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "showerClosed",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 135,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 23,
+          "obstacles": 13,
+          "surfaces": 20
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 4.440892098500626e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.029999999999999805,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "wardrobeUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 136,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 23,
+          "obstacles": 14,
+          "surfaces": 20
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 4.440892098500626e-16,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "westBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 136,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 23,
+          "obstacles": 14,
+          "surfaces": 20
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "east bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 4.440892098500626e-16,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "eastBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 136,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 23,
+          "obstacles": 14,
+          "surfaces": 20
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "west bedside",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 4.440892098500626e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

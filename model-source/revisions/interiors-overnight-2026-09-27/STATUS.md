@@ -1,6 +1,6 @@
 # Overnight interiors — publication checkpoint
 
-Cinema, wine bar/games, gym, utility, garden guest bedroom, its ensuite, upstairs family lounge, downstairs cloakroom, Bedroom 2 and Bedroom 3 are developed for review in both Proposed
+Cinema, wine bar/games, gym, utility, garden guest bedroom, its ensuite, upstairs family lounge, downstairs cloakroom, Bedroom 2, Bedroom 3 and the family bathroom are developed for review in both Proposed
 and Proposed Planning. The accepted kitchen/lounge and principal suite are
 unchanged. The full native models, walkthrough exports and isolated room studies
 agree. The original reconstruction remains intact.
@@ -34,10 +34,14 @@ agree. The original reconstruction remains intact.
   2.10 m sliding wardrobe, floating bedsides and an upholstered luggage perch.
   The existing window/radiator, hall opening and outward balcony door remain.
   The new hall leaf opens inward within the retained 778 mm opening.
+- Family bathroom: 245 mesh parts and three lights; a fitted bath with a genuine
+  bathing well, 1.20 m floating oak vanity, concealed-cistern WC, privacy-window
+  returns, towel warmer and detailed brassware. The existing walls, window and
+  main service positions remain; a right-hinged hall leaf clears the WC route.
 - Native comparison: every authored room mesh matches its isolated study to
   within 0.003 mm, excluding two explicitly cropped retained skirting profiles.
-  All 45 cinema/bar/guest TV rays pass in each full design, with 46 Proposed
-  and 47 Planning internal-reveal rays. Internal window returns are ivory; outside finishes remain.
+  All 45 cinema/bar/guest TV rays pass in each full design, with 50 Proposed
+  and 51 Planning internal-reveal rays. Internal window returns are ivory; outside finishes remain.
 - Navigation: all six gym activity states and six utility working states pass
   with a 600 mm body against the final full-house navigation. Previous cinema,
   bar and principal-suite checks remain valid; their retained geometry agrees.
@@ -56,12 +60,16 @@ agree. The original reconstruction remains intact.
 - Bedroom 3: all six use states pass in both full models. Both complete door
   assemblies clear the fixtures at 91 angles each; the full bed, wardrobe and
   perch match their envelopes. The four perch legs reach the underframe.
+- Family bathroom: six separate use states pass in both full models. The complete
+  hall leaf clears fittings at 91 angles; the service-cutout drawer clears the
+  basin and trap over 31 positions. Five bath-well rays reach the hollow basin,
+  and all 96 flexible-hose parts clear the bathing well.
 - Browser: both designs, room cameras, detail parts, cutaway, mobile,
-  full-house room views and eleven room/bedroom-balcony doors plus two Proposed terrace leaves pass. The staged,
+  full-house room views and twelve room/bedroom-balcony doors plus two Proposed terrace leaves pass. The staged,
   content-addressed pages also load without page or asset errors.
   All new interior materials remain unchanged through the four exterior
   wall/roof finish combinations in both full designs.
-- Preservation: 12,198 retained Proposed meshes and 11,383 Planning meshes are
+- Preservation: 12,070 retained Proposed meshes and 11,255 Planning meshes are
   unchanged. The seven rehung garage-door parts match their declared rotation.
   Kitchen/lounge meshes (1,028/919) and principal-suite meshes (862 each) agree.
   Two shared skirting runs retain their original geometry outside the ensuite.
@@ -99,8 +107,13 @@ Bedroom 3 retains a single-file foot route of about 679 mm to the radiator.
 The wardrobe approach is also single-file. The initial perch position blocked
 arrival when occupied; its final position is 500 mm farther north.
 
-The family bathroom has a measured plan study, and Bedroom 4/ensuite have a
-read-only measured review. Neither is included in this full-model checkpoint.
+The family bathroom uses separate fixture-use states and remains a compact,
+single-user room. Its shorter vanity prioritises bathing and circulation.
+
+Bedroom 4 and its ensuite have a paired working plan with seven circulation
+states. The draft retains a full-size double and proposes moving the shower
+return 113 mm west for an 800 × 900 mm enclosure. Native geometry and door
+clearances are not yet verified; this draft is not in the published full model.
 
 Other remaining rooms are unchanged; see NEXT-ROOMS.md for their design sequence.
 PDF drawing packs remain the previous issue.

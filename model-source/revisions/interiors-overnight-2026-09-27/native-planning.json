@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "variant": "planning",
-  "source_sha256": "d4859c0ca764e8bdbb2bdadd1e319e9fc5f8c37336db1941fdf46a71f608ad28",
+  "source_sha256": "19134cf1378df2ddc1ed9ade4d0e57523833bd2ba8b7016071a9b56fec629b17",
   "source_unchanged": true,
   "reports": [
     {
@@ -481,6 +481,13 @@
     {
       "area": "bedroom3",
       "matching_study_meshes": 118,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    },
+    {
+      "area": "familybath",
+      "matching_study_meshes": 245,
       "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": []

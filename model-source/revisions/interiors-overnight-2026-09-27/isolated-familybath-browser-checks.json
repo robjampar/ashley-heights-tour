@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "familybath",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "bath",
+        "wc",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 341,
+      "cutaway": 29,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=proposed&room=2445671-0"
+    },
+    {
+      "area": "familybath",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "vanity",
+        "bath",
+        "wc",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 341,
+      "cutaway": 29,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=planning&room=2445671-0"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

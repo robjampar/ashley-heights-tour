@@ -3,12 +3,12 @@
   "reports": [
     {
       "variant": "compact",
-      "unchanged_previous_meshes": 12198,
+      "unchanged_previous_meshes": 12070,
       "unchanged_kitchen_lounge_meshes": 1028,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 3415,
+      "declared_replaced_parts": 3543,
       "exactly_verified_rehung_door_parts": 7,
       "retained_shared_skirtings": [
         {
@@ -72,17 +72,22 @@
           "area": "bedroom3",
           "mesh_objects": 118,
           "lights": 4
+        },
+        {
+          "area": "familybath",
+          "mesh_objects": 245,
+          "lights": 3
         }
       ]
     },
     {
       "variant": "planning",
-      "unchanged_previous_meshes": 11383,
+      "unchanged_previous_meshes": 11255,
       "unchanged_kitchen_lounge_meshes": 919,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 3415,
+      "declared_replaced_parts": 3543,
       "exactly_verified_rehung_door_parts": 7,
       "retained_shared_skirtings": [
         {
@@ -146,6 +151,11 @@
           "area": "bedroom3",
           "mesh_objects": 118,
           "lights": 4
+        },
+        {
+          "area": "familybath",
+          "mesh_objects": 245,
+          "lights": 3
         }
       ]
     }

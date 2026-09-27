@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source_unchanged": true,
+  "rays": [
+    {
+      "expected": "Familybath 01 | north window internal head",
+      "hit": "Familybath 01 | north window internal head",
+      "material": "Interior | Familybath warm ivory",
+      "position": [
+        6.091400146484375,
+        7.793000221252441,
+        4.817999839782715
+      ]
+    },
+    {
+      "expected": "Familybath 01 | north window internal first jamb",
+      "hit": "Familybath 01 | north window internal first jamb",
+      "material": "Interior | Familybath warm ivory",
+      "position": [
+        5.337399959564209,
+        7.793000221252441,
+        4.420000076293945
+      ]
+    },
+    {
+      "expected": "Familybath 01 | north window internal second jamb",
+      "hit": "Familybath 01 | north window internal second jamb",
+      "material": "Interior | Familybath warm ivory",
+      "position": [
+        6.845399856567383,
+        7.793000221252441,
+        4.420000076293945
+      ]
+    },
+    {
+      "expected": "Bathroom balcony window board",
+      "hit": "Bathroom balcony window board",
+      "material": "White joinery",
+      "position": [
+        6.091400146484375,
+        7.793000221252441,
+        4.0229997634887695
+      ]
+    }
+  ]
+}
