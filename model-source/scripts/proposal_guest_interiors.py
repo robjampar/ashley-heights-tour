@@ -122,7 +122,7 @@ def apply_guest(ns):
     # Compact reading chair, with its table moved back clear of the north bed route.
     a,s,c,n=cfg['readingChair'];mx=(a+c)/2;my=(s+n)/2
     for xx in(a+.15,c-.15):
-        for yy in(s+.14,n-.14):b.cylinder('reading chair foot',(xx,yy,z+.12),.016,.20,bronze,sides=24)
+        for yy in(s+.14,n-.14):b.cylinder('reading chair foot',(xx,yy,z+.15),.016,.28,bronze,sides=24)
     b.box('reading chair seat',(mx,my-.05,z+.37),(.74,.70,.18),linen,.073)
     vertices=[];steps=36
     for height,rr in((.35,.405),(.70,.415),(.82,.375),(.74,.318),(.42,.313)):

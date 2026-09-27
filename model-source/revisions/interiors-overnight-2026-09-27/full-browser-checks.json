@@ -43,10 +43,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 74
+        },
+        "bedroom2": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 145
         }
       },
       "principal": true,
       "kitchen": 2,
+      "bedroom2": 133,
       "cloakroom": 71,
       "cinema": 156,
       "bar": 505,
@@ -110,11 +116,11 @@
         },
         {
           "term": "wall-backed upholstered headboard",
-          "count": 2
+          "count": 3
         },
         {
           "term": "pillow stitched edge",
-          "count": 2
+          "count": 4
         },
         {
           "term": "hollow inset ceramic basin",
@@ -130,7 +136,7 @@
         }
       ],
       "finishSwitch": {
-        "materials": 102,
+        "materials": 113,
         "allInterior": true,
         "states": [
           {
@@ -372,6 +378,27 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom2 01 | entrance door",
+            "wall": "Bedroom2 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "position": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
@@ -550,6 +577,28 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": 1.4835298641951802
+          },
+          {
+            "id": "Bedroom2 01 | entrance door",
+            "wall": "Bedroom2 01 | entrance door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "position": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
           }
         ]
       }
@@ -596,10 +645,16 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 74
+        },
+        "bedroom2": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 145
         }
       },
       "principal": true,
       "kitchen": 2,
+      "bedroom2": 133,
       "cloakroom": 71,
       "cinema": 156,
       "bar": 505,
@@ -663,11 +718,11 @@
         },
         {
           "term": "wall-backed upholstered headboard",
-          "count": 2
+          "count": 3
         },
         {
           "term": "pillow stitched edge",
-          "count": 2
+          "count": 4
         },
         {
           "term": "hollow inset ceramic basin",
@@ -683,7 +738,7 @@
         }
       ],
       "finishSwitch": {
-        "materials": 102,
+        "materials": 113,
         "allInterior": true,
         "states": [
           {
@@ -878,6 +933,27 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom2 01 | entrance door",
+            "wall": "Bedroom2 01 | entrance door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "position": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
@@ -1056,6 +1132,28 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": 1.4835298641951802
+          },
+          {
+            "id": "Bedroom2 01 | entrance door",
+            "wall": "Bedroom2 01 | entrance door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "position": [
+              9.175,
+              3.078,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
           }
         ]
       }

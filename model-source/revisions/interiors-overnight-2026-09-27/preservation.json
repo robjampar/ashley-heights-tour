@@ -3,12 +3,12 @@
   "reports": [
     {
       "variant": "compact",
-      "unchanged_previous_meshes": 12381,
+      "unchanged_previous_meshes": 12300,
       "unchanged_kitchen_lounge_meshes": 1028,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 3228,
+      "declared_replaced_parts": 3311,
       "exactly_verified_rehung_door_parts": 7,
       "retained_shared_skirtings": [
         {
@@ -62,17 +62,22 @@
           "area": "cloakroom",
           "mesh_objects": 71,
           "lights": 3
+        },
+        {
+          "area": "bedroom2",
+          "mesh_objects": 141,
+          "lights": 4
         }
       ]
     },
     {
       "variant": "planning",
-      "unchanged_previous_meshes": 11566,
+      "unchanged_previous_meshes": 11485,
       "unchanged_kitchen_lounge_meshes": 919,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 3228,
+      "declared_replaced_parts": 3311,
       "exactly_verified_rehung_door_parts": 7,
       "retained_shared_skirtings": [
         {
@@ -126,6 +131,11 @@
           "area": "cloakroom",
           "mesh_objects": 71,
           "lights": 3
+        },
+        {
+          "area": "bedroom2",
+          "mesh_objects": 141,
+          "lights": 4
         }
       ]
     }

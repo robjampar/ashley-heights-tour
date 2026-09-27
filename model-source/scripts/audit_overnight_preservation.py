@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'revisions/interiors-overnight
 for variant in ('compact','planning'):
     before=json.loads((OUT/'before'/variant/'geometry.json').read_text())
     after=json.loads((ROOT/f'output-proposed-{variant}/geometry.json').read_text())
-    areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom')
+    areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2')
     room_reports=[json.loads((ROOT/f'output-proposed-{variant}'/(area+'-interior-report.json')).read_text())for area in areas]
     removed={o['object_name']for report in room_reports for o in report['removed_objects']}
     transforms={name:t for report in room_reports for t in report.get('declared_transforms',[])for name in t['object_names']}

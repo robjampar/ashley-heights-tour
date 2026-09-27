@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source_unchanged": true,
+  "rays": [
+    {
+      "expected": "Bedroom2 01 | front window internal head",
+      "hit": "Bedroom2 01 | front window internal head",
+      "material": "Interior | Bedroom2 warm ivory",
+      "position": [
+        11.72284984588623,
+        0.10499999672174454,
+        4.998000144958496
+      ]
+    },
+    {
+      "expected": "Bedroom2 01 | front window internal first jamb",
+      "hit": "Bedroom2 01 | front window internal first jamb",
+      "material": "Interior | Bedroom2 warm ivory",
+      "position": [
+        10.531200408935547,
+        0.10499999672174454,
+        4.275000095367432
+      ]
+    },
+    {
+      "expected": "Bedroom2 01 | front window internal second jamb",
+      "hit": "Bedroom2 01 | front window internal second jamb",
+      "material": "Interior | Bedroom2 warm ivory",
+      "position": [
+        12.91450023651123,
+        0.10499999672174454,
+        4.275000095367432
+      ]
+    },
+    {
+      "expected": "Bedroom2 01 | front window internal sill",
+      "hit": "Bedroom2 01 | front window internal sill",
+      "material": "Interior | Bedroom2 warm ivory",
+      "position": [
+        11.72284984588623,
+        0.10499999672174454,
+        3.552000045776367
+      ]
+    }
+  ]
+}

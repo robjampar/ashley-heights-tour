@@ -1,0 +1,313 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source": "plan fixtures",
+  "sourceSha256": "9a0b7f8feccaea91a21225da1a35a00d2a4afb655b66836481a3c04b1c1ffcee",
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 125,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 20,
+          "obstacles": 10,
+          "surfaces": 17
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "north bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "doorClosed",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 125,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 20,
+          "obstacles": 10,
+          "surfaces": 17
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "north bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "wardrobeUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 126,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 20,
+          "obstacles": 11,
+          "surfaces": 17
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "north bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "reading",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 126,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 20,
+          "obstacles": 11,
+          "surfaces": 17
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "north bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "southBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 126,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 20,
+          "obstacles": 11,
+          "surfaces": 17
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "northBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 133,
+          "obstacles": 126,
+          "surfaces": 124
+        },
+        "after": {
+          "segments": 20,
+          "obstacles": 11,
+          "surfaces": 17
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "window",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe lower bay",
+          "distance": 1.1102230246251565e-16,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe upper bay",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 2.220446049250313e-16,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

@@ -35,6 +35,7 @@ for eye in cfg['eyes']:
     dx=eye[0]-(sx+.0135);dy=sy-eye[1];distance=math.hypot(dx,dy)
     views.append({'eye':eye,'screenDistance':distance,'centreHeadTurnDegrees':math.degrees(math.atan2(abs(dy),dx)),'horizontalFieldOfViewDegrees':math.degrees(math.atan2(dy+sw/2,dx)-math.atan2(dy-sw/2,dx)),'centreElevationDegrees':math.degrees(math.atan2(sz-eye[2],distance))})
 assert max(v['centreHeadTurnDegrees']for v in views)<16
+seat=bb(flat['Guest 01 | reading chair seat']);feet=parts['Guest 01 | reading chair foot'];assert len(feet)==4 and all(bb(p)[5]>=seat[2]for p in feet),'Chair legs must reach the seat'
 assert hashlib.sha256(native.read_bytes()).hexdigest()==digest
 report={'status':'PASS','variant':variant,'source_unchanged':True,'native_sha256':digest,'door_sweeps':sweeps,'bed_bounds':bed,'viewing':views,'note':'A fixed 43-inch TV fits the short wall. Its roughly 13-degree field of view is modest at this distance; this is not an immersive cinema screen.'}
 (out/'details-audit.json').write_text(json.dumps(report,indent=2)+'\n');print('PASS guest bed envelope, two door sweeps and fixed screen angles',variant)
