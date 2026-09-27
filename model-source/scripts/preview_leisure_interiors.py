@@ -6,15 +6,19 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from build_support import native_name
 from proposal_leisure_interiors import apply_leisure
 from proposal_kitchen_interiors import export_quiet_oak_gltf
-parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true')
+parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);VARIANT=args.variant;area=args.area
 OUT=ROOT/'revisions/interiors-overnight-2026-09-27'/area/VARIANT;OUT.mkdir(parents=True,exist_ok=True)
 PUBLIC=ROOT/'walkthrough/public/interiors/leisure/models';PUBLIC.mkdir(parents=True,exist_ok=True)
-BASE=ROOT/f'output-proposed-{VARIANT}';native=BASE/(native_name(VARIANT)+'.blend');source_hash=hashlib.sha256(native.read_bytes()).hexdigest()
+BASE=args.baseline.resolve()if args.baseline else ROOT/f'output-proposed-{VARIANT}';native=BASE/(native_name(VARIANT)+'.blend');source_hash=hashlib.sha256(native.read_bytes()).hexdigest()
 nav=json.loads((BASE/'navigation.json').read_text());g=json.loads((BASE/'geometry.json').read_text())
 bpy.ops.wm.open_mainfile(filepath=str(native));scene=bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene
 materials={m.name:m for m in bpy.data.materials};PALETTE=dict(g['materials']);new_obstacles=[];new_surfaces=[];new_segments=[];new_views=[]
-report=apply_leisure(globals(),(area,))[area];cfg=report['configuration']
+if area=='guest':
+    from proposal_guest_interiors import apply_guest
+    report=apply_guest(globals())
+else:report=apply_leisure(globals(),(area,))[area]
+cfg=report['configuration']
 for key,pending in (('obstacles',new_obstacles),('surfaces',new_surfaces),('segments',new_segments)):nav[key].extend(pending)
 nav['rooms'].extend(new_views);(OUT/'preview-navigation.json').write_text(json.dumps(nav,separators=(',',':')))
 scene.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get();rays=[]
@@ -37,12 +41,22 @@ elif area=='bar':
             assert hit and name.startswith('Bar 01 | fixed media TV screen'),(seat,list(target),name)
             rays.append({'seat':seat+1,'target':list(target),'hit':name})
 
+elif area=='guest':
+    sx,sy,sz=cfg['screen']['center'];sw,sh=cfg['screen']['size']
+    for seat,eye in enumerate(cfg['eyes']):
+        for u,v in((0,0),(-.46,-.46),(-.46,.46),(.46,-.46),(.46,.46)):
+            target=Vector((sx+.0135,sy+u*sw,sz+v*sh));delta=target-Vector(eye)
+            hit,loc,n,f,ob,m=scene.ray_cast(deps,Vector(eye),delta.normalized(),distance=delta.length+.03)
+            name=ob.get('source_name',ob.name)if hit else None
+            assert hit and name=='Guest 01 | fixed TV screen',(seat,list(target),name)
+            rays.append({'seat':seat+1,'target':list(target),'hit':name})
+
 def bounds(ob):
     p=[ob.matrix_world@Vector(v)for v in ob.bound_box]
     return [min(v[i]for v in p)for i in range(3)]+[max(v[i]for v in p)for i in range(3)]
 
 x0,y0,x1,y1=cfg['bounds'];z=cfg['floorZ'];ceiling=cfg['ceilingZ']
-crop=[x0-.13,y0-.13,z-.04,x1+.15,y1+.10,ceiling+.08]
+crop=[x0-(.24 if area=='utility'else .13),y0-.13,z-.04,x1+.15,y1+.10,ceiling+.08]
 study=bpy.data.scenes.new(area.title()+' — interior study');coll=bpy.data.collections.new(area.title()+' study geometry');study.collection.children.link(coll)
 hidden=set(nav.get('hiddenObjects',[]));cutaway=[];copied=[]
 for ob in list(scene.objects):
@@ -52,9 +66,11 @@ for ob in list(scene.objects):
         continue
     if ob.type not in ('MESH','CURVE') or ob.name in hidden or name in hidden:continue
     if name in('Proposal | Entertainment basement floor','Proposal | Entertainment basement ceiling'):continue
+    if area in('gym','utility') and name.startswith(('Proposal | New wing ground floor','Proposal | Wing Ground ceiling','Proposal | Wing first floor')):continue
     bb=bounds(ob)
     if any(bb[i+3]<=crop[i] or bb[i]>=crop[i+3] for i in range(3)):continue
     if area=='bar' and bb[3]<9.12 and bb[4]<-9.85:continue
+    if area=='gym' and bb[3]<11.43 and bb[4]<-9.85:continue
     copy=ob.copy();copy.data=ob.data.copy();coll.objects.link(copy);copy.name=name;copy['source_name']=name
     copy.parent=None;copy.matrix_world=ob.matrix_world.copy()
     # Long shared retaining walls are cut only in this isolated study, never in the source house.
@@ -72,7 +88,7 @@ for ob in list(scene.objects):
             bm.free();bpy.data.objects.remove(copy,do_unlink=True);continue
         bm.to_mesh(mesh);bm.free();copy.modifiers.clear();copy.data=mesh;copy.matrix_world=Matrix.Identity(4)
     copied.append(copy)
-    if bb[2]>ceiling-.05 or any(t in name for t in('acoustic ceiling','ceiling speaker','projector','ceiling concealed','ivory ceiling','pendant cable','pendant shade','pendant diffuser','pool overhead','pool light suspension')):cutaway.append(name)
+    if bb[2]>ceiling-.05 or any(t in name for t in('acoustic ceiling','ceiling speaker','projector','ceiling concealed','ivory ceiling','pendant cable','pendant shade','pendant diffuser','pool overhead','pool light suspension','linear ceiling','strength ceiling','ceiling light')):cutaway.append(name)
 bpy.context.window.scene=study;study.view_layers[0].update()
 views=cfg.get('views')or{
     'entrance':{'position':[8.62,-10.50,z+1.60],'target':[6.76,-14.15,z+1.20],'fov':65},
@@ -91,6 +107,17 @@ if not args.render_only:
 report.update({'native_screen_rays':rays,'source_house_sha256':source_hash,'source_house_unchanged':hashlib.sha256(native.read_bytes()).hexdigest()==source_hash,'isolated_objects':len(copied),'views':views})
 assert report['source_house_unchanged'];(OUT/'preview-report.json').write_text(json.dumps(report,indent=2)+'\n')
 if args.render:
+    if args.working:
+        assert area=='utility','Working illustration is defined only for the utility'
+        for ob in study.objects:
+            if ob.get('appliance_door'):
+                hinge=Vector(ob['appliance_hinge']);ob.matrix_world=Matrix.Translation(hinge)@Matrix.Rotation(ob['appliance_open_angle'],4,'Z')@Matrix.Translation(-hinge)@ob.matrix_world
+            if ob.get('utility_pullout')=='hamper':ob.matrix_world=Matrix.Translation(Vector((-.52,0,0)))@ob.matrix_world
+        for spec in nav['interactiveDoors']:
+            if spec['id'] not in ('Proposal | Garage east separation door 0','Proposal | Boot utility inward door'):continue
+            hinge=Vector(spec['hinge']);transform=Matrix.Translation(hinge)@Matrix.Rotation(spec['openDelta'],4,'Z')@Matrix.Translation(-hinge)
+            for ob in study.objects:
+                if ob.get('source_name',ob.name).startswith(spec['id']):ob.matrix_world=transform@ob.matrix_world
     study.render.engine='CYCLES';study.cycles.samples=args.samples;study.cycles.use_denoising=True;study.cycles.max_bounces=8
     try:
         prefs=bpy.context.preferences.addons['cycles'].preferences;prefs.compute_device_type='METAL';prefs.get_devices()
@@ -105,5 +132,5 @@ if args.render:
             if ob.get('source_name',ob.name)in cutaway:ob.hide_render=True
     study.render.resolution_x=1440;study.render.resolution_y=1000;study.render.resolution_percentage=100
     study.view_settings.view_transform='AgX';study.view_settings.look='AgX - Medium High Contrast';study.view_settings.exposure=.3
-    study.render.filepath=str(OUT/(args.view+'-native.png'));bpy.ops.render.render(write_still=True)
+    study.render.filepath=str(OUT/(args.view+('-working'if args.working else'')+'-native.png'));bpy.ops.render.render(write_still=True)
 print('ROOM_PREVIEW_COMPLETE',VARIANT,area,len(copied),'objects',len(rays),'screen rays',flush=True)

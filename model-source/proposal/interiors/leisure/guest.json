@@ -1,0 +1,292 @@
+{
+  "revision": 1,
+  "room": "Garden guest suite",
+  "bounds": [
+    9.145,
+    3.915,
+    13.865,
+    8.705
+  ],
+  "polygon": [
+    [
+      10.095,
+      3.915
+    ],
+    [
+      13.865,
+      3.915
+    ],
+    [
+      13.865,
+      8.705
+    ],
+    [
+      9.195,
+      8.705
+    ],
+    [
+      9.195,
+      7.89
+    ],
+    [
+      9.145,
+      7.89
+    ],
+    [
+      9.145,
+      4.595
+    ],
+    [
+      10.095,
+      4.595
+    ]
+  ],
+  "floorZ": 2.8,
+  "ceilingZ": 5.25,
+  "bed": {
+    "headX": 13.825,
+    "centerY": 6.4,
+    "mattress": [
+      1.8,
+      2.0
+    ],
+    "envelope": [
+      11.585,
+      5.44,
+      13.825,
+      7.36
+    ]
+  },
+  "wardrobe": [
+    10.13,
+    3.935,
+    13.805,
+    4.585
+  ],
+  "bedsides": [
+    [
+      13.245,
+      4.88,
+      13.805,
+      5.38
+    ],
+    [
+      13.245,
+      7.42,
+      13.805,
+      7.92
+    ]
+  ],
+  "screen": {
+    "center": [
+      9.185,
+      5.8,
+      4.03
+    ],
+    "size": [
+      0.952,
+      0.536
+    ],
+    "diagonal_inches": 43
+  },
+  "tvConsole": [
+    9.17,
+    5.29,
+    9.48,
+    6.31
+  ],
+  "readingChair": [
+    10.08,
+    7.57,
+    10.91,
+    8.43
+  ],
+  "readingTable": [
+    11.1,
+    8.1,
+    11.43,
+    8.43
+  ],
+  "view": {
+    "id": "2445673-0",
+    "position": [
+      9.85,
+      5.5,
+      2.8
+    ],
+    "direction": [
+      1,
+      0.24,
+      -0.1
+    ]
+  },
+  "notes": [
+    "Develop east-wall bed against a real solid wall; no windows or room partitions move.",
+    "Retain both existing door openings and the west balcony opening.",
+    "Replace the old east wardrobe with 3.675 m of sliding-front storage on the south wall.",
+    "A fixed 43-inch screen fits the west wall between the open entry leaf and ensuite casing. Verify both bed positions.",
+    "Retain the radiator under the north window; keep access to the window, curtains and balcony.",
+    "Ensuite leaf opens out into the bedroom on the south jamb, leaving the compact bathroom usable and avoiding the fixed TV."
+  ],
+  "doors": [
+    {
+      "id": "Guest 01 | entrance door",
+      "hinge": [
+        9.205,
+        4.53,
+        2.8
+      ],
+      "width": 0.718,
+      "axis": [
+        1,
+        0
+      ],
+      "openDelta": 1.5707963267948966,
+      "openingCenter": [
+        9.5639,
+        4.53,
+        2.8
+      ],
+      "openingWidth": 0.7377
+    },
+    {
+      "id": "Guest 01 | ensuite door",
+      "hinge": [
+        9.08,
+        6.47,
+        2.8
+      ],
+      "width": 0.717,
+      "axis": [
+        0,
+        1
+      ],
+      "openDelta": -1.5707963267948966,
+      "openingCenter": [
+        9.08,
+        6.8264,
+        2.8
+      ],
+      "openingWidth": 0.747
+    }
+  ],
+  "eyes": [
+    [
+      13.29,
+      5.95,
+      3.93
+    ],
+    [
+      13.29,
+      6.85,
+      3.93
+    ]
+  ],
+  "views": {
+    "entrance": {
+      "position": [
+        9.79,
+        5.13,
+        4.4
+      ],
+      "target": [
+        13.47,
+        6.42,
+        3.81
+      ],
+      "fov": 64
+    },
+    "bed": {
+      "position": [
+        13.27,
+        6.4,
+        3.94
+      ],
+      "target": [
+        9.185,
+        5.8,
+        4.03
+      ],
+      "fov": 65
+    },
+    "garden": {
+      "position": [
+        11.14,
+        6.45,
+        4.4
+      ],
+      "target": [
+        11.58,
+        8.48,
+        3.9
+      ],
+      "fov": 70
+    },
+    "wardrobe": {
+      "position": [
+        10.93,
+        7.07,
+        4.4
+      ],
+      "target": [
+        11.98,
+        4.21,
+        4.08
+      ],
+      "fov": 66
+    },
+    "details": {
+      "position": [
+        12.36,
+        5.0,
+        4.09
+      ],
+      "target": [
+        13.53,
+        5.13,
+        3.45
+      ],
+      "fov": 53
+    },
+    "overview": {
+      "position": [
+        7.0,
+        1.7,
+        11.1
+      ],
+      "target": [
+        11.51,
+        6.3,
+        3.4
+      ],
+      "fov": 46,
+      "cutaway": true
+    }
+  },
+  "curtains": [
+    [
+      9.9,
+      8.514,
+      10.31,
+      8.588
+    ],
+    [
+      13.05,
+      8.514,
+      13.64,
+      8.588
+    ]
+  ],
+  "plant": {
+    "center": [
+      13.49,
+      8.27
+    ],
+    "footprint": [
+      13.31,
+      8.09,
+      13.67,
+      8.45
+    ]
+  }
+}

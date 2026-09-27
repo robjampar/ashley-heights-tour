@@ -38,3 +38,9 @@ Bar sketch: wine display and working counter form one composition; serving and
 occupied stools leave a separate route to the games room. Gym sketch: cardio,
 strength and open floor exercise have distinct operating zones, with access to
 the courtyard and doors kept clear.
+
+Gym and utility review pages reuse the same room cards, design selector and
+eye-level/cutaway buttons. The room navigation expands to the next areas.
+Journey: choose a room → examine entry and occupied views → compare its measured
+activity plan → switch proposal if needed → return to the full house. The gym
+plan shows running and rowing separately; no extra animation controls are added.

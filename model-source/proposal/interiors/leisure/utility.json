@@ -1,0 +1,164 @@
+{
+  "revision": 1,
+  "room": "Utility",
+  "bounds": [
+    11.43,
+    -16.076,
+    13.75,
+    -12.61
+  ],
+  "floorZ": 0,
+  "ceilingZ": 2.545,
+  "run": {
+    "frontX": 13.025,
+    "backX": 13.73,
+    "southY": -15.92,
+    "northY": -12.72,
+    "worktopZ": 0.935
+  },
+  "appliance": {
+    "backX": 13.69,
+    "width": 0.596,
+    "height": 0.85,
+    "depth": 0.643,
+    "openDepth": 1.077
+  },
+  "modules": [
+    {
+      "kind": "washer",
+      "south": -15.92,
+      "north": -15.32
+    },
+    {
+      "kind": "dryer",
+      "south": -15.32,
+      "north": -14.72
+    },
+    {
+      "kind": "hamper",
+      "south": -14.72,
+      "north": -14.22
+    },
+    {
+      "kind": "sink",
+      "south": -14.22,
+      "north": -13.42
+    },
+    {
+      "kind": "tall",
+      "south": -13.42,
+      "north": -12.72
+    }
+  ],
+  "view": {
+    "id": "proposal-utility",
+    "position": [
+      12.0,
+      -14.25,
+      0
+    ],
+    "direction": [
+      1,
+      -0.65,
+      -0.25
+    ]
+  },
+  "notes": [
+    "Preserve both door openings and the east window. Rehang the garage leaf at its north jamb. No WC.",
+    "Appliances face west into a 1.595 m aisle measured to the actual modelled wall face; previous machines faced the wall.",
+    "Sink remains on the east service wall, adjusted 550 mm south.",
+    "Manufacturer dimensions are examples; final products and installation must be checked."
+  ],
+  "sinkCenterY": -13.95,
+  "garageDoor": {
+    "id": "Proposal | Garage east separation door 0",
+    "hinge": [
+      11.315,
+      -12.95,
+      0
+    ],
+    "openDelta": 1.5707963267948966,
+    "note": "Rehang at the north jamb of the unchanged opening; leaf continues to open into utility."
+  },
+  "views": {
+    "entrance": {
+      "position": [
+        11.83,
+        -13.1,
+        1.6
+      ],
+      "target": [
+        13.39,
+        -14.9,
+        1.05
+      ],
+      "fov": 64
+    },
+    "laundry": {
+      "position": [
+        11.83,
+        -15.1,
+        1.51
+      ],
+      "target": [
+        13.35,
+        -15.26,
+        0.72
+      ],
+      "fov": 65
+    },
+    "sink": {
+      "position": [
+        11.95,
+        -14.18,
+        1.53
+      ],
+      "target": [
+        13.38,
+        -13.94,
+        1.12
+      ],
+      "fov": 58
+    },
+    "reverse": {
+      "position": [
+        12.12,
+        -15.58,
+        1.62
+      ],
+      "target": [
+        12.55,
+        -13.1,
+        1.24
+      ],
+      "fov": 62
+    },
+    "details": {
+      "position": [
+        12.32,
+        -15.24,
+        1.15
+      ],
+      "target": [
+        13.21,
+        -15.31,
+        0.7
+      ],
+      "fov": 54
+    },
+    "overview": {
+      "position": [
+        7.9,
+        -18.8,
+        7.6
+      ],
+      "target": [
+        12.59,
+        -14.4,
+        1.0
+      ],
+      "fov": 49,
+      "cutaway": true
+    }
+  }
+}

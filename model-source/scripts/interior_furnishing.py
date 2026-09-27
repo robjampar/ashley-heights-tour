@@ -119,6 +119,18 @@ class RoomBuilder:
         item={'name':self.prefix+label,'box':list(bounds),'bottom':bottom,'top':top}
         self.ns['new_obstacles'].append(item);self.obstacles.append(item)
 
+    def window_reveal(self,label,axis,inside,frame,a,d,sill,head,mat):
+        """Thin internal plaster returns, ending at the inside of the frame."""
+        mid=(inside+frame)/2;depth=abs(inside-frame)
+        for name,zz in(('sill',sill+.001),('head',head-.001)):
+            center=(mid,(a+d)/2,zz)if axis=='x'else((a+d)/2,mid,zz)
+            size=(depth,d-a,.002)if axis=='x'else(d-a,depth,.002)
+            self.box(label+' internal '+name,center,size,mat)
+        for name,v in(('first jamb',a+.001),('second jamb',d-.001)):
+            center=(mid,v,(sill+head)/2)if axis=='x'else(v,mid,(sill+head)/2)
+            size=(depth,.002,head-sill)if axis=='x'else(.002,depth,head-sill)
+            self.box(label+' internal '+name,center,size,mat)
+
     def light(self,label,position,intensity=.35,power=35,range_m=3.5):
         import bpy
         name=self.prefix+label;light=bpy.data.lights.new(name,'POINT');light.energy=power;light.color=(1,.83,.65);light.shadow_soft_size=.28

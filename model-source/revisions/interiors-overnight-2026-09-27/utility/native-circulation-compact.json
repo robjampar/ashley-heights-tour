@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source": "output-proposed-compact/navigation.json",
+  "sourceSha256": "a90221eae257af9c4708d15abcacb1d17a3dc202ee97822065d2859485bb0815",
+  "aisleWidth": 1.5950000000000006,
+  "openMachineToWall": 1.1829999999999998,
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gym doorway",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "washer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "dryer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "hamper approach",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "sink approach",
+          "distance": 0.004999999999997229,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 2.5121479338940403e-15,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "appliancesOpen",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gym doorway",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "washer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "dryer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "hamper approach",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "sink approach",
+          "distance": 0.004999999999997229,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 2.5121479338940403e-15,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "hamperOpen",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gym doorway",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "washer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "dryer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "hamper approach",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "sink approach",
+          "distance": 0.004999999999997229,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 2.5121479338940403e-15,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "sorting",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gym doorway",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "washer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "dryer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "hamper approach",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "sink approach",
+          "distance": 0.004999999999997229,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 2.5121479338940403e-15,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "folding",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gym doorway",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "washer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "dryer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "hamper approach",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "sink approach",
+          "distance": 0.004999999999997229,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 2.5121479338940403e-15,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "sinkUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gym doorway",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "washer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "dryer approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "hamper approach",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "sink approach",
+          "distance": 0.004999999999997229,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 2.5121479338940403e-15,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

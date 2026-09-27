@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "gym",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 412,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=proposed&room=proposal-gym"
+    },
+    {
+      "area": "gym",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 412,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=planning&room=proposal-gym"
+    },
+    {
+      "area": "utility",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "laundry",
+        "sink",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 355,
+      "cutaway": 5,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=proposed&room=proposal-utility"
+    },
+    {
+      "area": "utility",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "laundry",
+        "sink",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 355,
+      "cutaway": 5,
+      "fullHouse": "http://127.0.0.1:8778/model/?design=planning&room=proposal-utility"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

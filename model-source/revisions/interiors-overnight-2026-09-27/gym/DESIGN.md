@@ -1,4 +1,4 @@
-# Gym — spatial development, not yet integrated
+# Gym — developed room study
 
 Keep both west-facing treadmills and the explicit no-mirror brief. Preserve the
 west gallery door, courtyard doors, utility door and all windows. The northern
@@ -33,11 +33,24 @@ universal operating clearance.
 
 Carry the palette through oak storage, warm ivory walls, bronze details, simple
 linear light and a quieter warm-grey rubber floor. Keep the machinery graphite.
-Provide towel and water storage and a proper home for the mat and ball. No
+Provide towel and water storage and a proper home for the mat. No
 mirror, extra screen or unneeded moving partition.
 
-Plan-stage checks now pass for ordinary use, running, rowing, cycling and
-cable work: a 600 mm body can reach the courtyard, utility and water storage
-with the gallery and utility leaves open. This checks the drawn boxes only.
-Next: model the furniture, verify actual geometry and operating/strength
-access, and review eye-level views before integration.
+The final arrangement removes the barbell rack and loose stability ball: their
+working space competed with storage access and the entrance. An upholstered
+dumbbell bench, eight pairs of hex weights, the cable station and a west-facing
+bike retain useful strength and conditioning equipment. The two-part rower
+stores beside the utility return. The bench stays in place for rowing.
+
+Plan and native-collision checks now pass in both designs for ordinary use,
+running, rowing, cycling, limited cable work and dumbbell strength work. A
+600 mm body reaches the courtyard, utility and water station with the gallery
+and utility door leaves open. Ordinary use additionally checks both bench
+sides and each dumbbell column. These are separate operating states, not a
+claim that all stations work simultaneously.
+
+The study has 306 authored meshes and three lights. Six browser camera views
+per design, the cutaway, camera retention when switching designs and a
+390 px mobile view pass. Native entrance/reverse images were visually reviewed.
+The complete-house files were unchanged while these studies were developed.
+Full-house integration and its independent preservation audit are the next step.

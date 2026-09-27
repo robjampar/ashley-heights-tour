@@ -1,0 +1,1585 @@
+{
+  "area": "gym",
+  "revision": 1,
+  "objects": 309,
+  "mesh_objects": 306,
+  "lights": 3,
+  "removed_objects": [
+    {
+      "name": "Gym 01 | continuous rubber floor",
+      "object_name": "Gym 01 | continuous rubber floor"
+    },
+    {
+      "name": "Gym 01 | ivory ceiling finish",
+      "object_name": "Gym 01 | ivory ceiling finish"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.001"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.002"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.003"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.004"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.005"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.006"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.007"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.008"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.009"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.010"
+    },
+    {
+      "name": "Gym 01 | rubber tile fine joint",
+      "object_name": "Gym 01 | rubber tile fine joint.011"
+    },
+    {
+      "name": "Gym 01 | west oak skirting",
+      "object_name": "Gym 01 | west oak skirting"
+    },
+    {
+      "name": "Gym 01 | west oak skirting",
+      "object_name": "Gym 01 | west oak skirting.001"
+    },
+    {
+      "name": "Gym 01 | east oak skirting",
+      "object_name": "Gym 01 | east oak skirting"
+    },
+    {
+      "name": "Gym 01 | south return skirting",
+      "object_name": "Gym 01 | south return skirting"
+    },
+    {
+      "name": "Gym 01 | utility return skirting",
+      "object_name": "Gym 01 | utility return skirting"
+    },
+    {
+      "name": "Gym 01 | linear ceiling light housing",
+      "object_name": "Gym 01 | linear ceiling light housing"
+    },
+    {
+      "name": "Gym 01 | linear ceiling light diffuser",
+      "object_name": "Gym 01 | linear ceiling light diffuser"
+    },
+    {
+      "name": "Gym 01 | linear ceiling light housing",
+      "object_name": "Gym 01 | linear ceiling light housing.001"
+    },
+    {
+      "name": "Gym 01 | linear ceiling light diffuser",
+      "object_name": "Gym 01 | linear ceiling light diffuser.001"
+    },
+    {
+      "name": "Gym 01 | strength ceiling light housing",
+      "object_name": "Gym 01 | strength ceiling light housing"
+    },
+    {
+      "name": "Gym 01 | strength ceiling light diffuser",
+      "object_name": "Gym 01 | strength ceiling light diffuser"
+    },
+    {
+      "name": "Gym 01 | soft room light",
+      "object_name": "Gym 01 | soft room light"
+    },
+    {
+      "name": "Gym 01 | soft room light",
+      "object_name": "Gym 01 | soft room light.001"
+    },
+    {
+      "name": "Gym 01 | soft room light",
+      "object_name": "Gym 01 | soft room light.002"
+    },
+    {
+      "name": "Gym 01 | east window blind cassette",
+      "object_name": "Gym 01 | east window blind cassette"
+    },
+    {
+      "name": "Gym 01 | blind roller",
+      "object_name": "Gym 01 | blind roller"
+    },
+    {
+      "name": "Gym 01 | rolled blind fabric edge",
+      "object_name": "Gym 01 | rolled blind fabric edge"
+    },
+    {
+      "name": "Gym 01 | east window blind cassette",
+      "object_name": "Gym 01 | east window blind cassette.001"
+    },
+    {
+      "name": "Gym 01 | blind roller",
+      "object_name": "Gym 01 | blind roller.001"
+    },
+    {
+      "name": "Gym 01 | rolled blind fabric edge",
+      "object_name": "Gym 01 | rolled blind fabric edge.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 chassis",
+      "object_name": "Gym 01 | treadmill 1 chassis"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 running belt",
+      "object_name": "Gym 01 | treadmill 1 running belt"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 front motor cover",
+      "object_name": "Gym 01 | treadmill 1 front motor cover"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 landing rail",
+      "object_name": "Gym 01 | treadmill 1 landing rail"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.002"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.003"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.004"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.005"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.006"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 side fixing",
+      "object_name": "Gym 01 | treadmill 1 side fixing"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 side fixing",
+      "object_name": "Gym 01 | treadmill 1 side fixing.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rear adjustment screw",
+      "object_name": "Gym 01 | treadmill 1 rear adjustment screw"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 landing rail",
+      "object_name": "Gym 01 | treadmill 1 landing rail.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.007"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.008"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.009"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.010"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.011"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.012"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rail grip rib",
+      "object_name": "Gym 01 | treadmill 1 rail grip rib.013"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 side fixing",
+      "object_name": "Gym 01 | treadmill 1 side fixing.002"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 side fixing",
+      "object_name": "Gym 01 | treadmill 1 side fixing.003"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 rear adjustment screw",
+      "object_name": "Gym 01 | treadmill 1 rear adjustment screw.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 console",
+      "object_name": "Gym 01 | treadmill 1 console"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 display glass",
+      "object_name": "Gym 01 | treadmill 1 display glass"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 display data mark",
+      "object_name": "Gym 01 | treadmill 1 display data mark"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 display data mark",
+      "object_name": "Gym 01 | treadmill 1 display data mark.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 display data mark",
+      "object_name": "Gym 01 | treadmill 1 display data mark.002"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 start button",
+      "object_name": "Gym 01 | treadmill 1 start button"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 stop button",
+      "object_name": "Gym 01 | treadmill 1 stop button"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 safety key",
+      "object_name": "Gym 01 | treadmill 1 safety key"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 chassis",
+      "object_name": "Gym 01 | treadmill 2 chassis"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 running belt",
+      "object_name": "Gym 01 | treadmill 2 running belt"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 front motor cover",
+      "object_name": "Gym 01 | treadmill 2 front motor cover"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 landing rail",
+      "object_name": "Gym 01 | treadmill 2 landing rail"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.002"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.003"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.004"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.005"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.006"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 side fixing",
+      "object_name": "Gym 01 | treadmill 2 side fixing"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 side fixing",
+      "object_name": "Gym 01 | treadmill 2 side fixing.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rear adjustment screw",
+      "object_name": "Gym 01 | treadmill 2 rear adjustment screw"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 landing rail",
+      "object_name": "Gym 01 | treadmill 2 landing rail.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.007"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.008"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.009"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.010"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.011"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.012"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rail grip rib",
+      "object_name": "Gym 01 | treadmill 2 rail grip rib.013"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 side fixing",
+      "object_name": "Gym 01 | treadmill 2 side fixing.002"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 side fixing",
+      "object_name": "Gym 01 | treadmill 2 side fixing.003"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 rear adjustment screw",
+      "object_name": "Gym 01 | treadmill 2 rear adjustment screw.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 console",
+      "object_name": "Gym 01 | treadmill 2 console"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 display glass",
+      "object_name": "Gym 01 | treadmill 2 display glass"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 display data mark",
+      "object_name": "Gym 01 | treadmill 2 display data mark"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 display data mark",
+      "object_name": "Gym 01 | treadmill 2 display data mark.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 display data mark",
+      "object_name": "Gym 01 | treadmill 2 display data mark.002"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 start button",
+      "object_name": "Gym 01 | treadmill 2 start button"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 stop button",
+      "object_name": "Gym 01 | treadmill 2 stop button"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 safety key",
+      "object_name": "Gym 01 | treadmill 2 safety key"
+    },
+    {
+      "name": "Gym 01 | bench back pad",
+      "object_name": "Gym 01 | bench back pad"
+    },
+    {
+      "name": "Gym 01 | bench seat pad",
+      "object_name": "Gym 01 | bench seat pad"
+    },
+    {
+      "name": "Gym 01 | bench floor foot",
+      "object_name": "Gym 01 | bench floor foot"
+    },
+    {
+      "name": "Gym 01 | bench rubber floor cap",
+      "object_name": "Gym 01 | bench rubber floor cap"
+    },
+    {
+      "name": "Gym 01 | bench rubber floor cap",
+      "object_name": "Gym 01 | bench rubber floor cap.001"
+    },
+    {
+      "name": "Gym 01 | bench floor foot",
+      "object_name": "Gym 01 | bench floor foot.001"
+    },
+    {
+      "name": "Gym 01 | bench rubber floor cap",
+      "object_name": "Gym 01 | bench rubber floor cap.002"
+    },
+    {
+      "name": "Gym 01 | bench rubber floor cap",
+      "object_name": "Gym 01 | bench rubber floor cap.003"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack oak upright",
+      "object_name": "Gym 01 | dumbbell rack oak upright"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack oak upright",
+      "object_name": "Gym 01 | dumbbell rack oak upright.001"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack shelf",
+      "object_name": "Gym 01 | dumbbell rack shelf"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack soft tray",
+      "object_name": "Gym 01 | dumbbell rack soft tray"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.001"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.001"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.002"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.003"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.002"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.004"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.005"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.003"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.006"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.007"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack shelf",
+      "object_name": "Gym 01 | dumbbell rack shelf.001"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack soft tray",
+      "object_name": "Gym 01 | dumbbell rack soft tray.001"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.004"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.008"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.009"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.005"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.010"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.011"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.006"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.012"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.013"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.007"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.014"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.015"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack shelf",
+      "object_name": "Gym 01 | dumbbell rack shelf.002"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack soft tray",
+      "object_name": "Gym 01 | dumbbell rack soft tray.002"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.008"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.016"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.017"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.009"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.018"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.019"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.010"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.020"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.021"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.011"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.022"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.023"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack shelf",
+      "object_name": "Gym 01 | dumbbell rack shelf.003"
+    },
+    {
+      "name": "Gym 01 | dumbbell rack soft tray",
+      "object_name": "Gym 01 | dumbbell rack soft tray.003"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.012"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.024"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.025"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.013"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.026"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.027"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.014"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.028"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.029"
+    },
+    {
+      "name": "Gym 01 | dumbbell knurled handle",
+      "object_name": "Gym 01 | dumbbell knurled handle.015"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.030"
+    },
+    {
+      "name": "Gym 01 | dumbbell hex head",
+      "object_name": "Gym 01 | dumbbell hex head.031"
+    },
+    {
+      "name": "Gym 01 | cable tower oak body",
+      "object_name": "Gym 01 | cable tower oak body"
+    },
+    {
+      "name": "Gym 01 | cable tower weight recess",
+      "object_name": "Gym 01 | cable tower weight recess"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.001"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.002"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.003"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.004"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.005"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.006"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.007"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.008"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.009"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.010"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.011"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.012"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.013"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.014"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.015"
+    },
+    {
+      "name": "Gym 01 | cable weight plate",
+      "object_name": "Gym 01 | cable weight plate.016"
+    },
+    {
+      "name": "Gym 01 | cable tower guide rail",
+      "object_name": "Gym 01 | cable tower guide rail"
+    },
+    {
+      "name": "Gym 01 | cable tower guide rail",
+      "object_name": "Gym 01 | cable tower guide rail.001"
+    },
+    {
+      "name": "Gym 01 | cable pulley carriage",
+      "object_name": "Gym 01 | cable pulley carriage"
+    },
+    {
+      "name": "Gym 01 | cable pulley wheel",
+      "object_name": "Gym 01 | cable pulley wheel"
+    },
+    {
+      "name": "Gym 01 | cable pulley wheel",
+      "object_name": "Gym 01 | cable pulley wheel.001"
+    },
+    {
+      "name": "Gym 01 | cable adjustment knob",
+      "object_name": "Gym 01 | cable adjustment knob"
+    },
+    {
+      "name": "Gym 01 | bike stabiliser",
+      "object_name": "Gym 01 | bike stabiliser"
+    },
+    {
+      "name": "Gym 01 | bike levelling foot",
+      "object_name": "Gym 01 | bike levelling foot"
+    },
+    {
+      "name": "Gym 01 | bike levelling foot",
+      "object_name": "Gym 01 | bike levelling foot.001"
+    },
+    {
+      "name": "Gym 01 | bike stabiliser",
+      "object_name": "Gym 01 | bike stabiliser.001"
+    },
+    {
+      "name": "Gym 01 | bike levelling foot",
+      "object_name": "Gym 01 | bike levelling foot.002"
+    },
+    {
+      "name": "Gym 01 | bike levelling foot",
+      "object_name": "Gym 01 | bike levelling foot.003"
+    },
+    {
+      "name": "Gym 01 | bike saddle",
+      "object_name": "Gym 01 | bike saddle"
+    },
+    {
+      "name": "Gym 01 | bike saddle adjustment",
+      "object_name": "Gym 01 | bike saddle adjustment"
+    },
+    {
+      "name": "Gym 01 | bike flywheel",
+      "object_name": "Gym 01 | bike flywheel"
+    },
+    {
+      "name": "Gym 01 | bike flywheel hub",
+      "object_name": "Gym 01 | bike flywheel hub"
+    },
+    {
+      "name": "Gym 01 | bike pedal",
+      "object_name": "Gym 01 | bike pedal"
+    },
+    {
+      "name": "Gym 01 | bike flywheel hub",
+      "object_name": "Gym 01 | bike flywheel hub.001"
+    },
+    {
+      "name": "Gym 01 | bike pedal",
+      "object_name": "Gym 01 | bike pedal.001"
+    },
+    {
+      "name": "Gym 01 | bike monitor",
+      "object_name": "Gym 01 | bike monitor"
+    },
+    {
+      "name": "Gym 01 | bike monitor screen",
+      "object_name": "Gym 01 | bike monitor screen"
+    },
+    {
+      "name": "Gym 01 | bike monitor button",
+      "object_name": "Gym 01 | bike monitor button"
+    },
+    {
+      "name": "Gym 01 | bike monitor button",
+      "object_name": "Gym 01 | bike monitor button.001"
+    },
+    {
+      "name": "Gym 01 | bike monitor button",
+      "object_name": "Gym 01 | bike monitor button.002"
+    },
+    {
+      "name": "Gym 01 | stored rower fan housing",
+      "object_name": "Gym 01 | stored rower fan housing"
+    },
+    {
+      "name": "Gym 01 | stored rower front feet",
+      "object_name": "Gym 01 | stored rower front feet"
+    },
+    {
+      "name": "Gym 01 | stored rower upright monorail",
+      "object_name": "Gym 01 | stored rower upright monorail"
+    },
+    {
+      "name": "Gym 01 | stored rower rail running surface",
+      "object_name": "Gym 01 | stored rower rail running surface"
+    },
+    {
+      "name": "Gym 01 | stored rower saddle",
+      "object_name": "Gym 01 | stored rower saddle"
+    },
+    {
+      "name": "Gym 01 | stored rower footplate",
+      "object_name": "Gym 01 | stored rower footplate"
+    },
+    {
+      "name": "Gym 01 | stored rower foot strap",
+      "object_name": "Gym 01 | stored rower foot strap"
+    },
+    {
+      "name": "Gym 01 | stored rower footplate",
+      "object_name": "Gym 01 | stored rower footplate.001"
+    },
+    {
+      "name": "Gym 01 | stored rower foot strap",
+      "object_name": "Gym 01 | stored rower foot strap.001"
+    },
+    {
+      "name": "Gym 01 | stored rower folded monitor",
+      "object_name": "Gym 01 | stored rower folded monitor"
+    },
+    {
+      "name": "Gym 01 | stored rower display",
+      "object_name": "Gym 01 | stored rower display"
+    },
+    {
+      "name": "Gym 01 | stored rower monitor button",
+      "object_name": "Gym 01 | stored rower monitor button"
+    },
+    {
+      "name": "Gym 01 | stored rower monitor button",
+      "object_name": "Gym 01 | stored rower monitor button.001"
+    },
+    {
+      "name": "Gym 01 | stored rower monitor button",
+      "object_name": "Gym 01 | stored rower monitor button.002"
+    },
+    {
+      "name": "Gym 01 | towel station oak back",
+      "object_name": "Gym 01 | towel station oak back"
+    },
+    {
+      "name": "Gym 01 | towel station shelf",
+      "object_name": "Gym 01 | towel station shelf"
+    },
+    {
+      "name": "Gym 01 | towel station shelf",
+      "object_name": "Gym 01 | towel station shelf.001"
+    },
+    {
+      "name": "Gym 01 | towel station shelf",
+      "object_name": "Gym 01 | towel station shelf.002"
+    },
+    {
+      "name": "Gym 01 | towel station stone top",
+      "object_name": "Gym 01 | towel station stone top"
+    },
+    {
+      "name": "Gym 01 | folded towel",
+      "object_name": "Gym 01 | folded towel"
+    },
+    {
+      "name": "Gym 01 | folded towel",
+      "object_name": "Gym 01 | folded towel.001"
+    },
+    {
+      "name": "Gym 01 | folded towel",
+      "object_name": "Gym 01 | folded towel.002"
+    },
+    {
+      "name": "Gym 01 | folded towel",
+      "object_name": "Gym 01 | folded towel.003"
+    },
+    {
+      "name": "Gym 01 | water bottle",
+      "object_name": "Gym 01 | water bottle"
+    },
+    {
+      "name": "Gym 01 | water bottle cap",
+      "object_name": "Gym 01 | water bottle cap"
+    },
+    {
+      "name": "Gym 01 | water bottle",
+      "object_name": "Gym 01 | water bottle.001"
+    },
+    {
+      "name": "Gym 01 | water bottle cap",
+      "object_name": "Gym 01 | water bottle cap.001"
+    },
+    {
+      "name": "Gym 01 | rolled exercise mat",
+      "object_name": "Gym 01 | rolled exercise mat"
+    },
+    {
+      "name": "Gym 01 | mat storage strap",
+      "object_name": "Gym 01 | mat storage strap"
+    },
+    {
+      "name": "Gym 01 | mat storage strap",
+      "object_name": "Gym 01 | mat storage strap.001"
+    },
+    {
+      "name": "Gym 01 | towel wall hook",
+      "object_name": "Gym 01 | towel wall hook"
+    },
+    {
+      "name": "Gym 01 | towel wall hook",
+      "object_name": "Gym 01 | towel wall hook.001"
+    },
+    {
+      "name": "Gym 01 | blind pull loop",
+      "object_name": "Gym 01 | blind pull loop"
+    },
+    {
+      "name": "Gym 01 | blind pull loop",
+      "object_name": "Gym 01 | blind pull loop.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 console upright",
+      "object_name": "Gym 01 | treadmill 1 console upright"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 hand rail",
+      "object_name": "Gym 01 | treadmill 1 hand rail"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 console upright",
+      "object_name": "Gym 01 | treadmill 1 console upright.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 hand rail",
+      "object_name": "Gym 01 | treadmill 1 hand rail.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 1 safety lanyard",
+      "object_name": "Gym 01 | treadmill 1 safety lanyard"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 console upright",
+      "object_name": "Gym 01 | treadmill 2 console upright"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 hand rail",
+      "object_name": "Gym 01 | treadmill 2 hand rail"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 console upright",
+      "object_name": "Gym 01 | treadmill 2 console upright.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 hand rail",
+      "object_name": "Gym 01 | treadmill 2 hand rail.001"
+    },
+    {
+      "name": "Gym 01 | treadmill 2 safety lanyard",
+      "object_name": "Gym 01 | treadmill 2 safety lanyard"
+    },
+    {
+      "name": "Gym 01 | bench upholstery seam",
+      "object_name": "Gym 01 | bench upholstery seam"
+    },
+    {
+      "name": "Gym 01 | bench upholstery seam",
+      "object_name": "Gym 01 | bench upholstery seam.001"
+    },
+    {
+      "name": "Gym 01 | bench lower spine",
+      "object_name": "Gym 01 | bench lower spine"
+    },
+    {
+      "name": "Gym 01 | bench upright",
+      "object_name": "Gym 01 | bench upright"
+    },
+    {
+      "name": "Gym 01 | bench upright",
+      "object_name": "Gym 01 | bench upright.001"
+    },
+    {
+      "name": "Gym 01 | cable steel rope",
+      "object_name": "Gym 01 | cable steel rope"
+    },
+    {
+      "name": "Gym 01 | cable handle",
+      "object_name": "Gym 01 | cable handle"
+    },
+    {
+      "name": "Gym 01 | cable steel rope",
+      "object_name": "Gym 01 | cable steel rope.001"
+    },
+    {
+      "name": "Gym 01 | cable handle",
+      "object_name": "Gym 01 | cable handle.001"
+    },
+    {
+      "name": "Gym 01 | bike main frame",
+      "object_name": "Gym 01 | bike main frame"
+    },
+    {
+      "name": "Gym 01 | bike saddle post",
+      "object_name": "Gym 01 | bike saddle post"
+    },
+    {
+      "name": "Gym 01 | bike crank",
+      "object_name": "Gym 01 | bike crank"
+    },
+    {
+      "name": "Gym 01 | bike pedal strap",
+      "object_name": "Gym 01 | bike pedal strap"
+    },
+    {
+      "name": "Gym 01 | bike crank",
+      "object_name": "Gym 01 | bike crank.001"
+    },
+    {
+      "name": "Gym 01 | bike pedal strap",
+      "object_name": "Gym 01 | bike pedal strap.001"
+    },
+    {
+      "name": "Gym 01 | bike handlebar post",
+      "object_name": "Gym 01 | bike handlebar post"
+    },
+    {
+      "name": "Gym 01 | bike handlebars",
+      "object_name": "Gym 01 | bike handlebars"
+    },
+    {
+      "name": "Gym 01 | stored rower fan grille",
+      "object_name": "Gym 01 | stored rower fan grille"
+    },
+    {
+      "name": "Gym 01 | stored rower fan grille",
+      "object_name": "Gym 01 | stored rower fan grille.001"
+    },
+    {
+      "name": "Gym 01 | stored rower fan grille",
+      "object_name": "Gym 01 | stored rower fan grille.002"
+    },
+    {
+      "name": "Gym 01 | stored rower fan grille",
+      "object_name": "Gym 01 | stored rower fan grille.003"
+    },
+    {
+      "name": "Gym 01 | stored rower fan grille",
+      "object_name": "Gym 01 | stored rower fan grille.004"
+    },
+    {
+      "name": "Gym 01 | stored rower fan grille",
+      "object_name": "Gym 01 | stored rower fan grille.005"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.001"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.002"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.003"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.004"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.005"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.006"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.007"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.008"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.009"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.010"
+    },
+    {
+      "name": "Gym 01 | stored rower grille spoke",
+      "object_name": "Gym 01 | stored rower grille spoke.011"
+    },
+    {
+      "name": "Gym 01 | stored rower front frame",
+      "object_name": "Gym 01 | stored rower front frame"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Gym 01 | treadmill 1 complete machine",
+      "box": [
+        9.33,
+        -6.048,
+        11.09,
+        -5.252000000000001
+      ],
+      "bottom": 0,
+      "top": 1.26
+    },
+    {
+      "name": "Gym 01 | treadmill 2 complete machine",
+      "box": [
+        9.33,
+        -7.098,
+        11.09,
+        -6.3020000000000005
+      ],
+      "bottom": 0,
+      "top": 1.26
+    },
+    {
+      "name": "Gym 01 | weights bench",
+      "box": [
+        11.72,
+        -9.53,
+        12.38,
+        -7.99
+      ],
+      "bottom": 0,
+      "top": 0.59
+    },
+    {
+      "name": "Gym 01 | dumbbell storage",
+      "box": [
+        10.45,
+        -9.835,
+        11.17,
+        -9.395
+      ],
+      "bottom": 0,
+      "top": 1.22
+    },
+    {
+      "name": "Gym 01 | cable tower",
+      "box": [
+        9.295,
+        -9.84,
+        9.705,
+        -9.555
+      ],
+      "bottom": 0,
+      "top": 2.18
+    },
+    {
+      "name": "Gym 01 | exercise bike",
+      "box": [
+        11.76,
+        -10.565,
+        12.979999999999999,
+        -9.935
+      ],
+      "bottom": 0,
+      "top": 1.27
+    },
+    {
+      "name": "Gym 01 | two-part rower storage",
+      "box": [
+        11.455,
+        -12.385,
+        12.09,
+        -11.547
+      ],
+      "bottom": 0,
+      "top": 1.372
+    },
+    {
+      "name": "Gym 01 | water and towel station",
+      "box": [
+        11.44,
+        -11.254,
+        11.684,
+        -10.346
+      ],
+      "bottom": 0,
+      "top": 1.67
+    }
+  ],
+  "configuration": {
+    "revision": 1,
+    "room": "Gym",
+    "bounds": [
+      9.26,
+      -12.5,
+      13.75,
+      -4.229
+    ],
+    "polygon": [
+      [
+        11.43,
+        -12.5
+      ],
+      [
+        13.75,
+        -12.5
+      ],
+      [
+        13.75,
+        -4.229
+      ],
+      [
+        9.26,
+        -4.229
+      ],
+      [
+        9.26,
+        -9.85
+      ],
+      [
+        11.43,
+        -9.85
+      ]
+    ],
+    "floorZ": 0,
+    "ceilingZ": 2.545,
+    "treadmills": [
+      {
+        "frontX": 9.33,
+        "centerY": -5.65,
+        "length": 1.76,
+        "width": 0.79,
+        "height": 1.26,
+        "rearClearance": [
+          2,
+          1
+        ]
+      },
+      {
+        "frontX": 9.33,
+        "centerY": -6.7,
+        "length": 1.76,
+        "width": 0.79,
+        "height": 1.26,
+        "rearClearance": [
+          2,
+          1
+        ]
+      }
+    ],
+    "bench": [
+      11.72,
+      -9.53,
+      12.38,
+      -7.99
+    ],
+    "cable": {
+      "center": [
+        9.5,
+        -9.735
+      ],
+      "size": [
+        0.4,
+        0.2,
+        2.15
+      ],
+      "activity": [
+        9.28,
+        -9.35,
+        11.05,
+        -8.1
+      ]
+    },
+    "dumbbells": [
+      10.45,
+      -9.835,
+      11.17,
+      -9.395
+    ],
+    "bike": {
+      "center": [
+        12.37,
+        -10.25
+      ],
+      "size": [
+        1.22,
+        0.61,
+        1.25
+      ],
+      "activity": [
+        11.73,
+        -10.85,
+        13.01,
+        -9.65
+      ],
+      "facing": "west"
+    },
+    "rower": {
+      "stored": [
+        11.455,
+        -12.385,
+        12.09,
+        -11.547
+      ],
+      "storedHeight": 1.372,
+      "deployed": [
+        12.095,
+        -7.79,
+        12.705,
+        -5.35
+      ],
+      "activity": [
+        11.79,
+        -7.94,
+        13.01,
+        -5.2
+      ]
+    },
+    "waterShelf": [
+      11.44,
+      -11.25,
+      11.68,
+      -10.35
+    ],
+    "view": {
+      "id": "proposal-gym",
+      "position": [
+        10.45,
+        -7.55,
+        0
+      ],
+      "direction": [
+        1,
+        -1,
+        -0.15
+      ]
+    },
+    "notes": [
+      "Retain two west-facing treadmills and no mirrors.",
+      "Treadmill proportions and rear safety zones reference the manufacturer MyRun manual.",
+      "Rowing uses the clear rear treadmill area only with both treadmills switched off. This is an alternate training mode.",
+      "The bench stays in place; cycling and strength have some shared working space and are checked separately.",
+      "The rower is stored as two nested parts, as Concept2 describes; never depict the assembled rower balanced on end.",
+      "Verify final products, fixing, ventilation, floor loads and selected exercises before installation.",
+      "The oversized freestanding barbell arrangement and loose exercise ball are omitted; a full dumbbell bench and compact cable tower provide the strength area."
+    ],
+    "views": {
+      "entrance": {
+        "position": [
+          9.68,
+          -7.42,
+          1.62
+        ],
+        "target": [
+          12.5,
+          -9.3,
+          1.0
+        ],
+        "fov": 68
+      },
+      "cardio": {
+        "position": [
+          13.36,
+          -7.35,
+          1.65
+        ],
+        "target": [
+          10.0,
+          -6.05,
+          0.7
+        ],
+        "fov": 66
+      },
+      "strength": {
+        "position": [
+          13.35,
+          -8.88,
+          1.65
+        ],
+        "target": [
+          10.9,
+          -9.0,
+          0.9
+        ],
+        "fov": 64
+      },
+      "water": {
+        "position": [
+          13.28,
+          -11.88,
+          1.62
+        ],
+        "target": [
+          11.64,
+          -10.85,
+          1.0
+        ],
+        "fov": 64
+      },
+      "reverse": {
+        "position": [
+          12.75,
+          -11.78,
+          1.6
+        ],
+        "target": [
+          11.2,
+          -6.5,
+          1.0
+        ],
+        "fov": 68
+      },
+      "overview": {
+        "position": [
+          18,
+          -16,
+          12
+        ],
+        "target": [
+          11.5,
+          -8,
+          0.7
+        ],
+        "fov": 50,
+        "cutaway": true
+      }
+    },
+    "benchActivity": [
+      11.25,
+      -9.7,
+      13.05,
+      -7.83
+    ]
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "6b27bf141b88bcbfb3958b38566634fd20d3d0bd9af5e110908fc05b5b176ea9",
+  "source_house_unchanged": true,
+  "isolated_objects": 412,
+  "views": {
+    "entrance": {
+      "position": [
+        9.68,
+        -7.42,
+        1.62
+      ],
+      "target": [
+        12.5,
+        -9.3,
+        1.0
+      ],
+      "fov": 68
+    },
+    "cardio": {
+      "position": [
+        13.36,
+        -7.35,
+        1.65
+      ],
+      "target": [
+        10.0,
+        -6.05,
+        0.7
+      ],
+      "fov": 66
+    },
+    "strength": {
+      "position": [
+        13.35,
+        -8.88,
+        1.65
+      ],
+      "target": [
+        10.9,
+        -9.0,
+        0.9
+      ],
+      "fov": 64
+    },
+    "water": {
+      "position": [
+        13.28,
+        -11.88,
+        1.62
+      ],
+      "target": [
+        11.64,
+        -10.85,
+        1.0
+      ],
+      "fov": 64
+    },
+    "reverse": {
+      "position": [
+        12.75,
+        -11.78,
+        1.6
+      ],
+      "target": [
+        11.2,
+        -6.5,
+        1.0
+      ],
+      "fov": 68
+    },
+    "overview": {
+      "position": [
+        18,
+        -16,
+        12
+      ],
+      "target": [
+        11.5,
+        -8,
+        0.7
+      ],
+      "fov": 50,
+      "cutaway": true
+    }
+  }
+}

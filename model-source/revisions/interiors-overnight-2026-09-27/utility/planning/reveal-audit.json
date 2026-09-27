@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source_unchanged": true,
+  "rays": [
+    {
+      "expected": "Utility 01 | east window internal head",
+      "hit": "Utility 01 | east window internal head",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        13.789653778076172,
+        -15.25,
+        2.2980000972747803
+      ]
+    },
+    {
+      "expected": "Utility 01 | east window internal first jamb",
+      "hit": "Utility 01 | east window internal first jamb",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        13.789619445800781,
+        -15.748000144958496,
+        1.75
+      ]
+    },
+    {
+      "expected": "Utility 01 | east window internal second jamb",
+      "hit": "Utility 01 | east window internal second jamb",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        13.789619445800781,
+        -14.751999855041504,
+        1.75
+      ]
+    },
+    {
+      "expected": "Utility 01 | east window internal sill",
+      "hit": "Utility 01 | east window internal sill",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        13.789653778076172,
+        -15.25,
+        1.2020000219345093
+      ]
+    },
+    {
+      "expected": "Utility 01 | south window internal head",
+      "hit": "Utility 01 | south window internal head",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        12.694999694824219,
+        -16.11962127685547,
+        2.3480000495910645
+      ]
+    },
+    {
+      "expected": "Utility 01 | south window internal first jamb",
+      "hit": "Utility 01 | south window internal first jamb",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        12.196999549865723,
+        -16.119640350341797,
+        1.875
+      ]
+    },
+    {
+      "expected": "Utility 01 | south window internal second jamb",
+      "hit": "Utility 01 | south window internal second jamb",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        13.192999839782715,
+        -16.119640350341797,
+        1.875
+      ]
+    },
+    {
+      "expected": "Utility 01 | south window internal sill",
+      "hit": "Utility 01 | south window internal sill",
+      "material": "Interior | Utility warm ivory",
+      "position": [
+        12.694999694824219,
+        -16.11962127685547,
+        1.4019999504089355
+      ]
+    }
+  ]
+}

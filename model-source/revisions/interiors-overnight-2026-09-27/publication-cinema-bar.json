@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "commit": "2be05aec9f5738c7c17863af09c48aaaafbd12c7",
+  "pages_run": 36284098450,
+  "live_downloads": [
+    {
+      "asset": "proposal-compact.54e7ad411b136caf.glb",
+      "bytes": 56626944,
+      "sha256": "54e7ad411b136caf25a7cd204a832a6de5060d7bd7cefba21ce44f1307459536"
+    },
+    {
+      "asset": "proposal-compact-navigation.379c401c9a908616.json",
+      "bytes": 1814173,
+      "sha256": "379c401c9a90861661a02925d45f1fa81fcdb57c091d3d0f685403b949e98e51"
+    },
+    {
+      "asset": "proposal-planning.9a91604fdbc2d56e.glb",
+      "bytes": 54727432,
+      "sha256": "9a91604fdbc2d56e191dff4bfffebadaafcedbc870888cbb5f93a80f55faa183"
+    },
+    {
+      "asset": "proposal-planning-navigation.3473e3cfdf5842d6.json",
+      "bytes": 1531968,
+      "sha256": "3473e3cfdf5842d621fd218316a07b656a1c82d931b0288f286fa7cce7834add"
+    },
+    {
+      "asset": "app.38427ae3b4959339.js",
+      "bytes": 5380153,
+      "sha256": "38427ae3b49593396caf8a02c7406c513a5ca87c3ce49e5f28d5da199ba6f3cb"
+    },
+    {
+      "asset": "interiors/leisure/bar-plan.6a5c25df5fdf5d11.svg",
+      "bytes": 6539,
+      "sha256": "6a5c25df5fdf5d1117e3c45dfff98827dd4d44cce070af8ab4b009beb0419aba"
+    },
+    {
+      "asset": "interiors/leisure/cinema-plan.f9256867c48649bc.svg",
+      "bytes": 4890,
+      "sha256": "f9256867c48649bc8cf9a80bae2d2ea586e5667b91275209061c34ecfc5ff606"
+    },
+    {
+      "asset": "interiors/leisure/models/compact-bar.4bf83b6d97dea44d.glb",
+      "bytes": 10330464,
+      "sha256": "4bf83b6d97dea44d3d304f15282ef085763d9c7c3e32bbdb3e35045ff2fa8fb6"
+    },
+    {
+      "asset": "interiors/leisure/models/compact-bar.adf112936e4f0ef6.json",
+      "bytes": 28244,
+      "sha256": "adf112936e4f0ef6377aafbeb87b8c37f2a62f97197a16a9f96a34e53bd843af"
+    },
+    {
+      "asset": "interiors/leisure/models/compact-cinema.96431164752ac666.glb",
+      "bytes": 8530968,
+      "sha256": "96431164752ac666264681431ab4d3364e0927f5ec9103a5fd6e736c7bf482e3"
+    },
+    {
+      "asset": "interiors/leisure/models/compact-cinema.2aba44788b3ae9b3.json",
+      "bytes": 28386,
+      "sha256": "2aba44788b3ae9b39ed4f8b6c4ce345b866810e10c331c24a6990bbb9233a85c"
+    },
+    {
+      "asset": "interiors/leisure/models/planning-bar.5c99b20b964a80e7.glb",
+      "bytes": 10330616,
+      "sha256": "5c99b20b964a80e74f6edef90c1f36be9322bbba6d95eea77f6cfa78360c1e6c"
+    },
+    {
+      "asset": "interiors/leisure/models/planning-bar.c43419f4329093a2.json",
+      "bytes": 26710,
+      "sha256": "c43419f4329093a287ea84dfa88daf725cb7322dd12f2e58125a73eac1697283"
+    },
+    {
+      "asset": "interiors/leisure/models/planning-cinema.bb1e3f0b28b80c15.glb",
+      "bytes": 8530884,
+      "sha256": "bb1e3f0b28b80c15f3ddf6df18fb5d054a29c5bc8863ccb100f082c58d486d18"
+    },
+    {
+      "asset": "interiors/leisure/models/planning-cinema.be913b506ceed222.json",
+      "bytes": 26852,
+      "sha256": "be913b506ceed2223789bf666f6d2ae96450cf12f2c31d8c1d574b6215a887b2"
+    },
+    {
+      "asset": "interiors/leisure/room-model.26690733546e5bdb.js",
+      "bytes": 4792590,
+      "sha256": "26690733546e5bdb78b8e1c0c0e653f8f33ced1c69587a35cb6d3c19f471a283"
+    },
+    {
+      "asset": "interiors/leisure/studio.fcd9fe47725a433e.css",
+      "bytes": 9096,
+      "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
+    }
+  ],
+  "pages": {
+    "index.html": "32301fe7388d0bd1eee4b3a6d69670aedb25f0793b5c23e8a7f5b6064add0aa7",
+    "cinema.html": "ba0c7e7e70afe6e976fef7197fabb441a3cf7b4edf258b0afa55119db1f07d19",
+    "bar.html": "fe6d8ef8166b3769ce5204246abb261e95371e295b09360ad754b2ef6be94d3e"
+  }
+}

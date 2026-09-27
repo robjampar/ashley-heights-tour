@@ -1,0 +1,92 @@
+{
+  "revision": 1,
+  "room": "Garden guest en suite",
+  "floorZ": 2.8,
+  "ceilingZ": 5.25,
+  "bounds": [
+    7.185,
+    5.505,
+    9.015,
+    7.775
+  ],
+  "polygon": [
+    [
+      7.185,
+      6.165
+    ],
+    [
+      7.805,
+      6.165
+    ],
+    [
+      7.805,
+      5.505
+    ],
+    [
+      9.015,
+      5.505
+    ],
+    [
+      9.015,
+      7.775
+    ],
+    [
+      7.185,
+      7.775
+    ]
+  ],
+  "shower": {
+    "tray": [
+      7.813,
+      5.517,
+      9.003,
+      6.317
+    ],
+    "glassY": 6.3,
+    "hinge": [
+      8.987,
+      6.3,
+      2.825
+    ],
+    "leafWidth": 0.626,
+    "fixedEdgeX": 8.351,
+    "clearEntry": 0.612,
+    "height": 2.003,
+    "openDelta": 1.5707963267948966
+  },
+  "vanity": [
+    7.202,
+    6.29,
+    7.672,
+    7.19
+  ],
+  "wc": {
+    "centerX": 8.41,
+    "panBounds": [
+      8.215,
+      7.065,
+      8.605,
+      7.605
+    ],
+    "cistern": [
+      7.985,
+      7.605,
+      8.835,
+      7.765
+    ]
+  },
+  "notes": [
+    "Working layout only; retained north window and wall faces checked against source walls.",
+    "Retain the service-wall arrangement and existing doorway.",
+    "Inward shower door layout referenced to Matki EPW1200; product selection and site dimensions remain unresolved."
+  ],
+  "window": {
+    "axis": "y",
+    "inside": 7.775,
+    "frame": 7.89,
+    "a": 7.82,
+    "d": 8.8311,
+    "sill": 3.96,
+    "head": 4.84
+  }
+}

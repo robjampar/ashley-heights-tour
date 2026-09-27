@@ -1,0 +1,26 @@
+"""Native rays verify white internal returns without changing exterior finishes."""
+import bpy,json,sys,hashlib
+from pathlib import Path
+from mathutils import Vector
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
+from build_support import native_name
+variant=sys.argv[sys.argv.index('--')+1];area=sys.argv[sys.argv.index('--study')+1]if'--study'in sys.argv else None
+native=ROOT/f'revisions/interiors-overnight-2026-09-27/{area}/{variant}'/(area.title()+' — interior study.blend')if area else ROOT/f'output-proposed-{variant}'/(native_name(variant)+'.blend');digest=hashlib.sha256(native.read_bytes()).hexdigest()
+bpy.ops.wm.open_mainfile(filepath=str(native));scene=next(s for s in bpy.data.scenes if'interior study'in s.name)if area else bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene;scene.view_layers[0].update();deps=bpy.context.evaluated_depsgraph_get()
+windows=[('Utility','east window','x',13.60,13.79,-15.75,-14.75,1.20,2.30),('Utility','south window','y',-15.94,-16.12,12.195,13.195,1.40,2.35),('Gym','east window -10.9','x',13.60,13.79,-11.90,-9.90,.55,2.35),('Gym','east window -8.49','x',13.60,13.79,-9.49,-7.49,.55,2.35),('Gym','west window -9.505','x',9.40,9.245,-9.505,-8.105,.60,2.40),('Gym','west window -6.405','x',9.40,9.245,-6.405,-4.605,.60,2.40),('Gym','courtyard doors','y',-4.70,-4.41,10.745,13.145,0,2.35)]
+if area:windows=[w for w in windows if w[0].lower()==area]
+rays=[]
+for area,label,axis,inside,frame,a,d,sill,head in windows:
+    mid=(a+d)/2;z=(sill+head)/2
+    point=lambda depth,u,h:(depth,u,h)if axis=='x'else(u,depth,h)
+    for surface,u,h in [('head',mid,head-.001),('first jamb',a+.001,z),('second jamb',d-.001,z)]+([('sill',mid,sill+.001)]if sill>0 else[]):
+        origin=Vector(point(inside,mid,z));target=Vector(point(frame,u,h));delta=target-origin
+        hit,loc,normal,face,ob,matrix=scene.ray_cast(deps,origin,delta.normalized(),distance=delta.length+.01)
+        name=ob.get('source_name',ob.name)if hit else None
+        expected=f'{area} 01 | {label} internal {surface}'
+        assert hit and name==expected,(variant,expected,name,list(loc))
+        material=ob.data.materials[ob.data.polygons[face].material_index].name
+        assert material==f'Interior | {area} warm ivory',(expected,material)
+        rays.append({'expected':expected,'hit':name,'material':material,'position':list(loc)})
+assert hashlib.sha256(native.read_bytes()).hexdigest()==digest
+out=ROOT/'revisions/interiors-overnight-2026-09-27'/(area.lower()+'/'+variant+'/reveal-audit.json'if'--study'in sys.argv else'internal-reveals-'+variant+'.json');out.write_text(json.dumps({'status':'PASS','variant':variant,'source_unchanged':True,'rays':rays},indent=2)+'\n');print('PASS white internal reveals',variant,len(rays),flush=True)

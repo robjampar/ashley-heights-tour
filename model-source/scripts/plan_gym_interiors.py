@@ -23,9 +23,9 @@ for i,state in enumerate(('running','rowing')):
     for t in cfg['treadmills']:
         rect([t['frontX'],t['centerY']-t['width']/2,t['frontX']+t['length'],t['centerY']+t['width']/2],'equipment','← Treadmill')
         if state=='running':rect([t['frontX']+t['length'],t['centerY']-.5,t['frontX']+t['length']+2,t['centerY']+.5],'activity','2 × 1 m clear')
-    rect(cfg['bench'],'equipment','Bench');rect([10.53,-8.335,12.37,-8.265],'equipment')
-    rect(cfg['dumbbells'],'furniture','Weights');rect([9.92,-9.835,10.32,-9.635],'furniture')
-    rect([12.845,-10.83,13.455,-9.61],'equipment','Bike');rect(cfg['waterShelf'],'furniture')
+    rect(cfg['bench'],'equipment','Bench')
+    rect(cfg['dumbbells'],'furniture','Weights');rect([9.30,-9.835,9.70,-9.635],'furniture')
+    rect([11.76,-10.555,12.98,-9.945],'equipment','Bike');rect(cfg['waterShelf'],'furniture')
     if state=='running':rect(cfg['rower']['stored'],'equipment','Rower stored')
     else:rect(cfg['rower']['activity'],'rowing');rect(cfg['rower']['deployed'],'equipment','Rower')
     x,y=p(12.05,-12.85);svg.append(f'<text x="{x}" y="{y}" class="small">Utility door retained</text>')

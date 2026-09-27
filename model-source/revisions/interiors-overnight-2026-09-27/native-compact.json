@@ -1,12 +1,13 @@
 {
   "status": "PASS",
   "variant": "compact",
-  "source_sha256": "eea2bdf0b75cb2ad3c275a61abbcebcdf1949b1855cc00436bc971e3bd4e366f",
+  "source_sha256": "132f3f516cfdf7fe2ea850021b6fd3cd1fdca971108db94eb0aa4f23a2a95ddf",
   "source_unchanged": true,
   "reports": [
     {
       "area": "cinema",
-      "exact_study_meshes": 156,
+      "matching_study_meshes": 156,
+      "maximum_world_vertex_difference_m": 0,
       "screen_rays": [
         {
           "seat": 1,
@@ -192,7 +193,8 @@
     },
     {
       "area": "bar",
-      "exact_study_meshes": 505,
+      "matching_study_meshes": 505,
+      "maximum_world_vertex_difference_m": 0,
       "screen_rays": [
         {
           "seat": 1,
@@ -330,6 +332,18 @@
           "hit": "Bar 01 | fixed media TV screen"
         }
       ]
+    },
+    {
+      "area": "gym",
+      "matching_study_meshes": 306,
+      "maximum_world_vertex_difference_m": 1.9073486328125e-06,
+      "screen_rays": []
+    },
+    {
+      "area": "utility",
+      "matching_study_meshes": 311,
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
     }
   ]
 }

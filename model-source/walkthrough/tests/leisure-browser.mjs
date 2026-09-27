@@ -4,8 +4,11 @@ import fs from 'node:fs/promises';
 const root=process.env.LEISURE_URL??'http://127.0.0.1:8776/',out=new URL('../../revisions/interiors-overnight-2026-09-27/',import.meta.url);
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
 const checks=[],errors=[],failed=[];
+const areas=process.env.LEISURE_AREAS?.split(',')??['cinema','bar','gym','utility'];
+const roomIds={cinema:'proposal-basement-cinema',bar:'proposal-basement-bar',gym:'proposal-gym',utility:'proposal-utility'};
+const details={utility:['washer start pause button','dryer drum perforation','undermount sink bowl','curved sink mixer','soap pump spout'],cinema:['fixed projection screen','remote button','USB-C port','front piping','rear storage drawer'],bar:['wine cooler touch control','continuous bronze footrail','pool pocket leather well','dartboard ring wire','controller face button','dried sculptural branch'],gym:['treadmill 1 stop button','stored rower grille spoke','bike monitor button','dumbbell hex head','blind pull loop','rolled exercise mat']};
 try{
- for(const area of ['cinema','bar'])for(const design of ['compact','planning']){
+ for(const area of areas)for(const design of ['compact','planning']){
   const page=await browser.newPage({viewport:{width:1440,height:1050}});
   page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push([r.status(),r.url()]);});
   await page.goto(root+`interiors/leisure/${area}.html?design=${design}`);await page.waitForFunction(()=>window.interiorPreview?.ready,null,{timeout:120000});
@@ -14,8 +17,9 @@ try{
    const v=interiorPreview,names=[];v.scene.traverse(o=>{if(o.isMesh)names.push(...o.userData.spatialBatch?.sourceNames??[],o.userData.source_name??'');});
    return {variant:v.info.variant,revision:v.info.layoutRevision,views:Object.keys(v.views),objects:v.info.objects,cutaway:v.cutawayMeshes.length,names,fullHouse:document.querySelector('#full-house').href};
   });
-  assert.equal(info.variant,design);assert.equal(info.revision,1);assert(info.objects>150);assert(info.cutaway>0);assert(info.fullHouse.includes('room=proposal-basement-'+(area==='cinema'?'cinema':'bar')));
-  for(const term of area==='cinema'?['fixed projection screen','remote button','USB-C port','front piping','rear storage drawer']:['wine cooler touch control','continuous bronze footrail','pool pocket leather well','dartboard ring wire','controller face button','dried sculptural branch'])assert(info.names.some(n=>n.includes(term)),term);
+  assert.equal(info.variant,design);assert.equal(info.revision,1);assert(info.objects>150);assert(info.cutaway>0);assert(info.fullHouse.includes('room='+roomIds[area]));
+  for(const term of details[area])assert(info.names.some(n=>n.includes(term)),term);
+  if(area==='gym')assert(await page.evaluate(()=>interiorPreview.info.mirrors.length===0));
   for(const view of info.views){
    await page.locator(`[data-camera=${view}]`).click();await page.waitForTimeout(400);
    assert(await page.evaluate(()=>interiorPreview.cutawayMeshes.every(o=>o.visible===!interiorPreview.views[new URL(location.href).searchParams.get('view')].cutaway)));
@@ -24,12 +28,12 @@ try{
   await page.locator('[data-camera=reverse]').click();await page.locator('#model-design').selectOption(design==='compact'?'planning':'compact');await page.waitForFunction(()=>window.interiorPreview?.ready,null,{timeout:120000});assert.equal(await page.locator('[data-camera=reverse]').getAttribute('aria-pressed'),'true');
   checks.push({area,design,...info,names:undefined});await page.close();
  }
- for(const area of ['cinema','bar']){
+ for(const area of areas){
   const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});page.on('pageerror',e=>errors.push(e.message));
   await page.goto(root+`interiors/leisure/${area}.html?design=planning`);await page.waitForFunction(()=>window.interiorPreview?.ready,null,{timeout:120000});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.screenshot({path:new URL(`${area}/mobile.png`,out).pathname,fullPage:true});await page.close();
  }
  assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
- await fs.writeFile(new URL('isolated-browser-checks.json',out),JSON.stringify({status:'PASS',checks,mobileWidth:390,retainedCameraAcrossDesigns:true,errors,failed},null,2)+'\n');
- console.log('PASS: cinema and bar in both designs, every camera, details, cutaway, retained view and mobile');
+ await fs.writeFile(new URL(process.env.LEISURE_AREAS?'isolated-'+areas.join('-')+'-browser-checks.json':'isolated-browser-checks.json',out),JSON.stringify({status:'PASS',checks,mobileWidth:390,retainedCameraAcrossDesigns:true,errors,failed},null,2)+'\n');
+ console.log('PASS: room studies in both designs, every camera, details, cutaway, retained view and mobile');
 }finally{await browser.close();}

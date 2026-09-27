@@ -3,12 +3,13 @@
   "reports": [
     {
       "variant": "compact",
-      "unchanged_previous_meshes": 13145,
+      "unchanged_previous_meshes": 13034,
       "unchanged_kitchen_lounge_meshes": 1028,
       "unchanged_principal_suite_meshes": 862,
-      "maximum_vertex_difference_m": 0,
+      "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 2467,
+      "declared_replaced_parts": 2574,
+      "exactly_verified_rehung_door_parts": 7,
       "rooms": [
         {
           "area": "cinema",
@@ -19,17 +20,28 @@
           "area": "bar",
           "mesh_objects": 505,
           "lights": 5
+        },
+        {
+          "area": "gym",
+          "mesh_objects": 306,
+          "lights": 3
+        },
+        {
+          "area": "utility",
+          "mesh_objects": 311,
+          "lights": 3
         }
       ]
     },
     {
       "variant": "planning",
-      "unchanged_previous_meshes": 12330,
+      "unchanged_previous_meshes": 12219,
       "unchanged_kitchen_lounge_meshes": 919,
       "unchanged_principal_suite_meshes": 862,
-      "maximum_vertex_difference_m": 0,
+      "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 2467,
+      "declared_replaced_parts": 2574,
+      "exactly_verified_rehung_door_parts": 7,
       "rooms": [
         {
           "area": "cinema",
@@ -40,6 +52,16 @@
           "area": "bar",
           "mesh_objects": 505,
           "lights": 5
+        },
+        {
+          "area": "gym",
+          "mesh_objects": 306,
+          "lights": 3
+        },
+        {
+          "area": "utility",
+          "mesh_objects": 311,
+          "lights": 3
         }
       ]
     }

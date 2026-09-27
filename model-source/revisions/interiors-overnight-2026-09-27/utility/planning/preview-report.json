@@ -1,0 +1,1525 @@
+{
+  "area": "utility",
+  "revision": 1,
+  "objects": 314,
+  "mesh_objects": 311,
+  "lights": 3,
+  "removed_objects": [
+    {
+      "name": "Utility 01 | limestone floor",
+      "object_name": "Utility 01 | limestone floor"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint.001"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint.002"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint.003"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint.004"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint.005"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint.006"
+    },
+    {
+      "name": "Utility 01 | floor tile fine joint",
+      "object_name": "Utility 01 | floor tile fine joint.007"
+    },
+    {
+      "name": "Utility 01 | ivory ceiling finish",
+      "object_name": "Utility 01 | ivory ceiling finish"
+    },
+    {
+      "name": "Utility 01 | west oak skirting",
+      "object_name": "Utility 01 | west oak skirting"
+    },
+    {
+      "name": "Utility 01 | west oak skirting",
+      "object_name": "Utility 01 | west oak skirting.001"
+    },
+    {
+      "name": "Utility 01 | south oak skirting",
+      "object_name": "Utility 01 | south oak skirting"
+    },
+    {
+      "name": "Utility 01 | limestone worktop south folding section",
+      "object_name": "Utility 01 | limestone worktop south folding section"
+    },
+    {
+      "name": "Utility 01 | limestone worktop north sink section",
+      "object_name": "Utility 01 | limestone worktop north sink section"
+    },
+    {
+      "name": "Utility 01 | limestone worktop sink front rim",
+      "object_name": "Utility 01 | limestone worktop sink front rim"
+    },
+    {
+      "name": "Utility 01 | limestone worktop sink rear rim",
+      "object_name": "Utility 01 | limestone worktop sink rear rim"
+    },
+    {
+      "name": "Utility 01 | south worktop end cheek",
+      "object_name": "Utility 01 | south worktop end cheek"
+    },
+    {
+      "name": "Utility 01 | hamper cabinet back",
+      "object_name": "Utility 01 | hamper cabinet back"
+    },
+    {
+      "name": "Utility 01 | hamper cabinet side",
+      "object_name": "Utility 01 | hamper cabinet side"
+    },
+    {
+      "name": "Utility 01 | hamper cabinet side",
+      "object_name": "Utility 01 | hamper cabinet side.001"
+    },
+    {
+      "name": "Utility 01 | hamper cabinet bottom",
+      "object_name": "Utility 01 | hamper cabinet bottom"
+    },
+    {
+      "name": "Utility 01 | hamper recessed plinth",
+      "object_name": "Utility 01 | hamper recessed plinth"
+    },
+    {
+      "name": "Utility 01 | hamper oak front",
+      "object_name": "Utility 01 | hamper oak front"
+    },
+    {
+      "name": "Utility 01 | hamper recessed finger pull",
+      "object_name": "Utility 01 | hamper recessed finger pull"
+    },
+    {
+      "name": "Utility 01 | hamper drawer runner",
+      "object_name": "Utility 01 | hamper drawer runner"
+    },
+    {
+      "name": "Utility 01 | hamper drawer runner",
+      "object_name": "Utility 01 | hamper drawer runner.001"
+    },
+    {
+      "name": "Utility 01 | hamper pullout tray",
+      "object_name": "Utility 01 | hamper pullout tray"
+    },
+    {
+      "name": "Utility 01 | hamper bin bottom",
+      "object_name": "Utility 01 | hamper bin bottom"
+    },
+    {
+      "name": "Utility 01 | hamper bin side",
+      "object_name": "Utility 01 | hamper bin side"
+    },
+    {
+      "name": "Utility 01 | hamper bin side",
+      "object_name": "Utility 01 | hamper bin side.001"
+    },
+    {
+      "name": "Utility 01 | hamper bin end",
+      "object_name": "Utility 01 | hamper bin end"
+    },
+    {
+      "name": "Utility 01 | hamper bin end",
+      "object_name": "Utility 01 | hamper bin end.001"
+    },
+    {
+      "name": "Utility 01 | hamper folded linen",
+      "object_name": "Utility 01 | hamper folded linen"
+    },
+    {
+      "name": "Utility 01 | hamper bin bottom",
+      "object_name": "Utility 01 | hamper bin bottom.001"
+    },
+    {
+      "name": "Utility 01 | hamper bin side",
+      "object_name": "Utility 01 | hamper bin side.002"
+    },
+    {
+      "name": "Utility 01 | hamper bin side",
+      "object_name": "Utility 01 | hamper bin side.003"
+    },
+    {
+      "name": "Utility 01 | hamper bin end",
+      "object_name": "Utility 01 | hamper bin end.002"
+    },
+    {
+      "name": "Utility 01 | hamper bin end",
+      "object_name": "Utility 01 | hamper bin end.003"
+    },
+    {
+      "name": "Utility 01 | hamper folded linen",
+      "object_name": "Utility 01 | hamper folded linen.001"
+    },
+    {
+      "name": "Utility 01 | sink cabinet back",
+      "object_name": "Utility 01 | sink cabinet back"
+    },
+    {
+      "name": "Utility 01 | sink cabinet side",
+      "object_name": "Utility 01 | sink cabinet side"
+    },
+    {
+      "name": "Utility 01 | sink cabinet side",
+      "object_name": "Utility 01 | sink cabinet side.001"
+    },
+    {
+      "name": "Utility 01 | sink cabinet bottom",
+      "object_name": "Utility 01 | sink cabinet bottom"
+    },
+    {
+      "name": "Utility 01 | sink recessed plinth",
+      "object_name": "Utility 01 | sink recessed plinth"
+    },
+    {
+      "name": "Utility 01 | sink oak front",
+      "object_name": "Utility 01 | sink oak front"
+    },
+    {
+      "name": "Utility 01 | sink recessed finger pull",
+      "object_name": "Utility 01 | sink recessed finger pull"
+    },
+    {
+      "name": "Utility 01 | sink oak front",
+      "object_name": "Utility 01 | sink oak front.001"
+    },
+    {
+      "name": "Utility 01 | sink recessed finger pull",
+      "object_name": "Utility 01 | sink recessed finger pull.001"
+    },
+    {
+      "name": "Utility 01 | tall cabinet back",
+      "object_name": "Utility 01 | tall cabinet back"
+    },
+    {
+      "name": "Utility 01 | tall cabinet side",
+      "object_name": "Utility 01 | tall cabinet side"
+    },
+    {
+      "name": "Utility 01 | tall cabinet side",
+      "object_name": "Utility 01 | tall cabinet side.001"
+    },
+    {
+      "name": "Utility 01 | tall cabinet bottom",
+      "object_name": "Utility 01 | tall cabinet bottom"
+    },
+    {
+      "name": "Utility 01 | tall recessed plinth",
+      "object_name": "Utility 01 | tall recessed plinth"
+    },
+    {
+      "name": "Utility 01 | tall storage divider",
+      "object_name": "Utility 01 | tall storage divider"
+    },
+    {
+      "name": "Utility 01 | tall storage shelf",
+      "object_name": "Utility 01 | tall storage shelf"
+    },
+    {
+      "name": "Utility 01 | tall storage shelf",
+      "object_name": "Utility 01 | tall storage shelf.001"
+    },
+    {
+      "name": "Utility 01 | tall storage shelf",
+      "object_name": "Utility 01 | tall storage shelf.002"
+    },
+    {
+      "name": "Utility 01 | tall storage shelf",
+      "object_name": "Utility 01 | tall storage shelf.003"
+    },
+    {
+      "name": "Utility 01 | cleaning bottle",
+      "object_name": "Utility 01 | cleaning bottle"
+    },
+    {
+      "name": "Utility 01 | cleaning bottle",
+      "object_name": "Utility 01 | cleaning bottle.001"
+    },
+    {
+      "name": "Utility 01 | folded spare linen",
+      "object_name": "Utility 01 | folded spare linen"
+    },
+    {
+      "name": "Utility 01 | folded ironing board",
+      "object_name": "Utility 01 | folded ironing board"
+    },
+    {
+      "name": "Utility 01 | stored broom head",
+      "object_name": "Utility 01 | stored broom head"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.001"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.002"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.003"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.004"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.005"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.006"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.007"
+    },
+    {
+      "name": "Utility 01 | stored broom bristles",
+      "object_name": "Utility 01 | stored broom bristles.008"
+    },
+    {
+      "name": "Utility 01 | iron soleplate",
+      "object_name": "Utility 01 | iron soleplate"
+    },
+    {
+      "name": "Utility 01 | iron body",
+      "object_name": "Utility 01 | iron body"
+    },
+    {
+      "name": "Utility 01 | tall storage door",
+      "object_name": "Utility 01 | tall storage door"
+    },
+    {
+      "name": "Utility 01 | tall storage recessed pull",
+      "object_name": "Utility 01 | tall storage recessed pull"
+    },
+    {
+      "name": "Utility 01 | tall storage door",
+      "object_name": "Utility 01 | tall storage door.001"
+    },
+    {
+      "name": "Utility 01 | tall storage recessed pull",
+      "object_name": "Utility 01 | tall storage recessed pull.001"
+    },
+    {
+      "name": "Utility 01 | tall storage top shadow",
+      "object_name": "Utility 01 | tall storage top shadow"
+    },
+    {
+      "name": "Utility 01 | washer case side",
+      "object_name": "Utility 01 | washer case side"
+    },
+    {
+      "name": "Utility 01 | washer case side",
+      "object_name": "Utility 01 | washer case side.001"
+    },
+    {
+      "name": "Utility 01 | washer case cap",
+      "object_name": "Utility 01 | washer case cap"
+    },
+    {
+      "name": "Utility 01 | washer case cap",
+      "object_name": "Utility 01 | washer case cap.001"
+    },
+    {
+      "name": "Utility 01 | washer rear panel",
+      "object_name": "Utility 01 | washer rear panel"
+    },
+    {
+      "name": "Utility 01 | washer front panel circular opening",
+      "object_name": "Utility 01 | washer front panel circular opening"
+    },
+    {
+      "name": "Utility 01 | washer control fascia",
+      "object_name": "Utility 01 | washer control fascia"
+    },
+    {
+      "name": "Utility 01 | washer detergent drawer",
+      "object_name": "Utility 01 | washer detergent drawer"
+    },
+    {
+      "name": "Utility 01 | washer drawer finger recess",
+      "object_name": "Utility 01 | washer drawer finger recess"
+    },
+    {
+      "name": "Utility 01 | washer programme dial",
+      "object_name": "Utility 01 | washer programme dial"
+    },
+    {
+      "name": "Utility 01 | washer dial index",
+      "object_name": "Utility 01 | washer dial index"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.001"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.002"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.003"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.004"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.005"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.006"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.007"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.008"
+    },
+    {
+      "name": "Utility 01 | washer programme marker",
+      "object_name": "Utility 01 | washer programme marker.009"
+    },
+    {
+      "name": "Utility 01 | washer display glass",
+      "object_name": "Utility 01 | washer display glass"
+    },
+    {
+      "name": "Utility 01 | washer display digit",
+      "object_name": "Utility 01 | washer display digit"
+    },
+    {
+      "name": "Utility 01 | washer display digit",
+      "object_name": "Utility 01 | washer display digit.001"
+    },
+    {
+      "name": "Utility 01 | washer display digit",
+      "object_name": "Utility 01 | washer display digit.002"
+    },
+    {
+      "name": "Utility 01 | washer start pause button",
+      "object_name": "Utility 01 | washer start pause button"
+    },
+    {
+      "name": "Utility 01 | washer rubber door seal",
+      "object_name": "Utility 01 | washer rubber door seal"
+    },
+    {
+      "name": "Utility 01 | washer stainless drum",
+      "object_name": "Utility 01 | washer stainless drum"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.001"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.002"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.003"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.004"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.005"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.006"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.007"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.008"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.009"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.010"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.011"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.012"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.013"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.014"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.015"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.016"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.017"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.018"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.019"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.020"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.021"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.022"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.023"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.024"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.025"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.026"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.027"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.028"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.029"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.030"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.031"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.032"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.033"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.034"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.035"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.036"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.037"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.038"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.039"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.040"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.041"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.042"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.043"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.044"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.045"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.046"
+    },
+    {
+      "name": "Utility 01 | washer drum perforation",
+      "object_name": "Utility 01 | washer drum perforation.047"
+    },
+    {
+      "name": "Utility 01 | washer door outer trim",
+      "object_name": "Utility 01 | washer door outer trim"
+    },
+    {
+      "name": "Utility 01 | washer door inner graphite",
+      "object_name": "Utility 01 | washer door inner graphite"
+    },
+    {
+      "name": "Utility 01 | washer door bowl glass",
+      "object_name": "Utility 01 | washer door bowl glass"
+    },
+    {
+      "name": "Utility 01 | washer door hinge",
+      "object_name": "Utility 01 | washer door hinge"
+    },
+    {
+      "name": "Utility 01 | washer lower service flap",
+      "object_name": "Utility 01 | washer lower service flap"
+    },
+    {
+      "name": "Utility 01 | washer adjustable foot",
+      "object_name": "Utility 01 | washer adjustable foot"
+    },
+    {
+      "name": "Utility 01 | washer adjustable foot",
+      "object_name": "Utility 01 | washer adjustable foot.001"
+    },
+    {
+      "name": "Utility 01 | dryer case side",
+      "object_name": "Utility 01 | dryer case side"
+    },
+    {
+      "name": "Utility 01 | dryer case side",
+      "object_name": "Utility 01 | dryer case side.001"
+    },
+    {
+      "name": "Utility 01 | dryer case cap",
+      "object_name": "Utility 01 | dryer case cap"
+    },
+    {
+      "name": "Utility 01 | dryer case cap",
+      "object_name": "Utility 01 | dryer case cap.001"
+    },
+    {
+      "name": "Utility 01 | dryer rear panel",
+      "object_name": "Utility 01 | dryer rear panel"
+    },
+    {
+      "name": "Utility 01 | dryer front panel circular opening",
+      "object_name": "Utility 01 | dryer front panel circular opening"
+    },
+    {
+      "name": "Utility 01 | dryer control fascia",
+      "object_name": "Utility 01 | dryer control fascia"
+    },
+    {
+      "name": "Utility 01 | dryer condensate drawer",
+      "object_name": "Utility 01 | dryer condensate drawer"
+    },
+    {
+      "name": "Utility 01 | dryer drawer finger recess",
+      "object_name": "Utility 01 | dryer drawer finger recess"
+    },
+    {
+      "name": "Utility 01 | dryer programme dial",
+      "object_name": "Utility 01 | dryer programme dial"
+    },
+    {
+      "name": "Utility 01 | dryer dial index",
+      "object_name": "Utility 01 | dryer dial index"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.001"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.002"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.003"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.004"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.005"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.006"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.007"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.008"
+    },
+    {
+      "name": "Utility 01 | dryer programme marker",
+      "object_name": "Utility 01 | dryer programme marker.009"
+    },
+    {
+      "name": "Utility 01 | dryer display glass",
+      "object_name": "Utility 01 | dryer display glass"
+    },
+    {
+      "name": "Utility 01 | dryer display digit",
+      "object_name": "Utility 01 | dryer display digit"
+    },
+    {
+      "name": "Utility 01 | dryer display digit",
+      "object_name": "Utility 01 | dryer display digit.001"
+    },
+    {
+      "name": "Utility 01 | dryer display digit",
+      "object_name": "Utility 01 | dryer display digit.002"
+    },
+    {
+      "name": "Utility 01 | dryer start pause button",
+      "object_name": "Utility 01 | dryer start pause button"
+    },
+    {
+      "name": "Utility 01 | dryer rubber door seal",
+      "object_name": "Utility 01 | dryer rubber door seal"
+    },
+    {
+      "name": "Utility 01 | dryer stainless drum",
+      "object_name": "Utility 01 | dryer stainless drum"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.001"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.002"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.003"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.004"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.005"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.006"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.007"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.008"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.009"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.010"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.011"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.012"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.013"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.014"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.015"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.016"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.017"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.018"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.019"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.020"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.021"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.022"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.023"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.024"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.025"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.026"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.027"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.028"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.029"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.030"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.031"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.032"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.033"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.034"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.035"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.036"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.037"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.038"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.039"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.040"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.041"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.042"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.043"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.044"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.045"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.046"
+    },
+    {
+      "name": "Utility 01 | dryer drum perforation",
+      "object_name": "Utility 01 | dryer drum perforation.047"
+    },
+    {
+      "name": "Utility 01 | dryer door outer trim",
+      "object_name": "Utility 01 | dryer door outer trim"
+    },
+    {
+      "name": "Utility 01 | dryer door inner graphite",
+      "object_name": "Utility 01 | dryer door inner graphite"
+    },
+    {
+      "name": "Utility 01 | dryer door bowl glass",
+      "object_name": "Utility 01 | dryer door bowl glass"
+    },
+    {
+      "name": "Utility 01 | dryer door hinge",
+      "object_name": "Utility 01 | dryer door hinge"
+    },
+    {
+      "name": "Utility 01 | dryer lower service flap",
+      "object_name": "Utility 01 | dryer lower service flap"
+    },
+    {
+      "name": "Utility 01 | dryer adjustable foot",
+      "object_name": "Utility 01 | dryer adjustable foot"
+    },
+    {
+      "name": "Utility 01 | dryer adjustable foot",
+      "object_name": "Utility 01 | dryer adjustable foot.001"
+    },
+    {
+      "name": "Utility 01 | undermount sink bowl",
+      "object_name": "Utility 01 | undermount sink bowl"
+    },
+    {
+      "name": "Utility 01 | sink drain rim",
+      "object_name": "Utility 01 | sink drain rim"
+    },
+    {
+      "name": "Utility 01 | sink drain opening",
+      "object_name": "Utility 01 | sink drain opening"
+    },
+    {
+      "name": "Utility 01 | sink drain strainer",
+      "object_name": "Utility 01 | sink drain strainer"
+    },
+    {
+      "name": "Utility 01 | sink drain strainer",
+      "object_name": "Utility 01 | sink drain strainer.001"
+    },
+    {
+      "name": "Utility 01 | sink drain strainer",
+      "object_name": "Utility 01 | sink drain strainer.002"
+    },
+    {
+      "name": "Utility 01 | sink drain strainer",
+      "object_name": "Utility 01 | sink drain strainer.003"
+    },
+    {
+      "name": "Utility 01 | sink drain strainer",
+      "object_name": "Utility 01 | sink drain strainer.004"
+    },
+    {
+      "name": "Utility 01 | tap base",
+      "object_name": "Utility 01 | tap base"
+    },
+    {
+      "name": "Utility 01 | tap aerator",
+      "object_name": "Utility 01 | tap aerator"
+    },
+    {
+      "name": "Utility 01 | sink splashback",
+      "object_name": "Utility 01 | sink splashback"
+    },
+    {
+      "name": "Utility 01 | upper sink cupboard",
+      "object_name": "Utility 01 | upper sink cupboard"
+    },
+    {
+      "name": "Utility 01 | upper cupboard door",
+      "object_name": "Utility 01 | upper cupboard door"
+    },
+    {
+      "name": "Utility 01 | upper cupboard finger reveal",
+      "object_name": "Utility 01 | upper cupboard finger reveal"
+    },
+    {
+      "name": "Utility 01 | upper cupboard door",
+      "object_name": "Utility 01 | upper cupboard door.001"
+    },
+    {
+      "name": "Utility 01 | upper cupboard finger reveal",
+      "object_name": "Utility 01 | upper cupboard finger reveal.001"
+    },
+    {
+      "name": "Utility 01 | under cupboard diffuser",
+      "object_name": "Utility 01 | under cupboard diffuser"
+    },
+    {
+      "name": "Utility 01 | window blind cassette",
+      "object_name": "Utility 01 | window blind cassette"
+    },
+    {
+      "name": "Utility 01 | window blind roller",
+      "object_name": "Utility 01 | window blind roller"
+    },
+    {
+      "name": "Utility 01 | window blind fabric edge",
+      "object_name": "Utility 01 | window blind fabric edge"
+    },
+    {
+      "name": "Utility 01 | folded laundry towel",
+      "object_name": "Utility 01 | folded laundry towel"
+    },
+    {
+      "name": "Utility 01 | folded laundry towel",
+      "object_name": "Utility 01 | folded laundry towel.001"
+    },
+    {
+      "name": "Utility 01 | folded laundry towel",
+      "object_name": "Utility 01 | folded laundry towel.002"
+    },
+    {
+      "name": "Utility 01 | ceramic soap dispenser",
+      "object_name": "Utility 01 | ceramic soap dispenser"
+    },
+    {
+      "name": "Utility 01 | soap pump collar",
+      "object_name": "Utility 01 | soap pump collar"
+    },
+    {
+      "name": "Utility 01 | laundry brush",
+      "object_name": "Utility 01 | laundry brush"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.001"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.002"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.003"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.004"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.005"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.006"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.007"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.008"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.009"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.010"
+    },
+    {
+      "name": "Utility 01 | brush bristle row",
+      "object_name": "Utility 01 | brush bristle row.011"
+    },
+    {
+      "name": "Utility 01 | ceiling light bronze bezel",
+      "object_name": "Utility 01 | ceiling light bronze bezel"
+    },
+    {
+      "name": "Utility 01 | ceiling light opal",
+      "object_name": "Utility 01 | ceiling light opal"
+    },
+    {
+      "name": "Utility 01 | soft ceiling light",
+      "object_name": "Utility 01 | soft ceiling light"
+    },
+    {
+      "name": "Utility 01 | ceiling light bronze bezel",
+      "object_name": "Utility 01 | ceiling light bronze bezel.001"
+    },
+    {
+      "name": "Utility 01 | ceiling light opal",
+      "object_name": "Utility 01 | ceiling light opal.001"
+    },
+    {
+      "name": "Utility 01 | soft ceiling light",
+      "object_name": "Utility 01 | soft ceiling light.001"
+    },
+    {
+      "name": "Utility 01 | sink work light",
+      "object_name": "Utility 01 | sink work light"
+    },
+    {
+      "name": "Utility 01 | ironing board folded leg",
+      "object_name": "Utility 01 | ironing board folded leg"
+    },
+    {
+      "name": "Utility 01 | ironing board folded leg",
+      "object_name": "Utility 01 | ironing board folded leg.001"
+    },
+    {
+      "name": "Utility 01 | stored broom handle",
+      "object_name": "Utility 01 | stored broom handle"
+    },
+    {
+      "name": "Utility 01 | iron grip",
+      "object_name": "Utility 01 | iron grip"
+    },
+    {
+      "name": "Utility 01 | washer drum lifter",
+      "object_name": "Utility 01 | washer drum lifter"
+    },
+    {
+      "name": "Utility 01 | washer drum lifter",
+      "object_name": "Utility 01 | washer drum lifter.001"
+    },
+    {
+      "name": "Utility 01 | washer drum lifter",
+      "object_name": "Utility 01 | washer drum lifter.002"
+    },
+    {
+      "name": "Utility 01 | washer door grip",
+      "object_name": "Utility 01 | washer door grip"
+    },
+    {
+      "name": "Utility 01 | dryer drum lifter",
+      "object_name": "Utility 01 | dryer drum lifter"
+    },
+    {
+      "name": "Utility 01 | dryer drum lifter",
+      "object_name": "Utility 01 | dryer drum lifter.001"
+    },
+    {
+      "name": "Utility 01 | dryer drum lifter",
+      "object_name": "Utility 01 | dryer drum lifter.002"
+    },
+    {
+      "name": "Utility 01 | dryer door grip",
+      "object_name": "Utility 01 | dryer door grip"
+    },
+    {
+      "name": "Utility 01 | curved sink mixer",
+      "object_name": "Utility 01 | curved sink mixer"
+    },
+    {
+      "name": "Utility 01 | tap lever",
+      "object_name": "Utility 01 | tap lever"
+    },
+    {
+      "name": "Utility 01 | soap pump spout",
+      "object_name": "Utility 01 | soap pump spout"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Utility 01 | fitted laundry run",
+      "box": [
+        13.025,
+        -15.943999999999999,
+        13.73,
+        -12.72
+      ],
+      "bottom": 0,
+      "top": 2.41
+    }
+  ],
+  "configuration": {
+    "revision": 1,
+    "room": "Utility",
+    "bounds": [
+      11.43,
+      -16.076,
+      13.75,
+      -12.61
+    ],
+    "floorZ": 0,
+    "ceilingZ": 2.545,
+    "run": {
+      "frontX": 13.025,
+      "backX": 13.73,
+      "southY": -15.92,
+      "northY": -12.72,
+      "worktopZ": 0.935
+    },
+    "appliance": {
+      "backX": 13.69,
+      "width": 0.596,
+      "height": 0.85,
+      "depth": 0.643,
+      "openDepth": 1.077
+    },
+    "modules": [
+      {
+        "kind": "washer",
+        "south": -15.92,
+        "north": -15.32
+      },
+      {
+        "kind": "dryer",
+        "south": -15.32,
+        "north": -14.72
+      },
+      {
+        "kind": "hamper",
+        "south": -14.72,
+        "north": -14.22
+      },
+      {
+        "kind": "sink",
+        "south": -14.22,
+        "north": -13.42
+      },
+      {
+        "kind": "tall",
+        "south": -13.42,
+        "north": -12.72
+      }
+    ],
+    "view": {
+      "id": "proposal-utility",
+      "position": [
+        12.0,
+        -14.25,
+        0
+      ],
+      "direction": [
+        1,
+        -0.65,
+        -0.25
+      ]
+    },
+    "notes": [
+      "Preserve both door openings and the east window. Rehang the garage leaf at its north jamb. No WC.",
+      "Appliances face west into a 1.595 m aisle measured to the actual modelled wall face; previous machines faced the wall.",
+      "Sink remains on the east service wall, adjusted 550 mm south.",
+      "Manufacturer dimensions are examples; final products and installation must be checked."
+    ],
+    "sinkCenterY": -13.95,
+    "garageDoor": {
+      "id": "Proposal | Garage east separation door 0",
+      "hinge": [
+        11.315,
+        -12.95,
+        0
+      ],
+      "openDelta": 1.5707963267948966,
+      "note": "Rehang at the north jamb of the unchanged opening; leaf continues to open into utility."
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          11.83,
+          -13.1,
+          1.6
+        ],
+        "target": [
+          13.39,
+          -14.9,
+          1.05
+        ],
+        "fov": 64
+      },
+      "laundry": {
+        "position": [
+          11.83,
+          -15.1,
+          1.51
+        ],
+        "target": [
+          13.35,
+          -15.26,
+          0.72
+        ],
+        "fov": 65
+      },
+      "sink": {
+        "position": [
+          11.95,
+          -14.18,
+          1.53
+        ],
+        "target": [
+          13.38,
+          -13.94,
+          1.12
+        ],
+        "fov": 58
+      },
+      "reverse": {
+        "position": [
+          12.12,
+          -15.58,
+          1.62
+        ],
+        "target": [
+          12.55,
+          -13.1,
+          1.24
+        ],
+        "fov": 62
+      },
+      "details": {
+        "position": [
+          12.32,
+          -15.24,
+          1.15
+        ],
+        "target": [
+          13.21,
+          -15.31,
+          0.7
+        ],
+        "fov": 54
+      },
+      "overview": {
+        "position": [
+          7.9,
+          -18.8,
+          7.6
+        ],
+        "target": [
+          12.59,
+          -14.4,
+          1.0
+        ],
+        "fov": 49,
+        "cutaway": true
+      }
+    }
+  },
+  "transformed_objects": [],
+  "door_rehang": {
+    "id": "Proposal | Garage east separation door 0",
+    "hinge": [
+      11.315,
+      -12.95,
+      0
+    ],
+    "openDelta": 1.5707963267948966,
+    "note": "Rehang at the north jamb of the unchanged opening; leaf continues to open into utility."
+  },
+  "declared_transforms": [
+    {
+      "object_names": [
+        "Proposal | Garage east separation door 0 leaf",
+        "Proposal | Garage east separation door 0 face rail",
+        "Proposal | Garage east separation door 0 face rail.001",
+        "Proposal | Garage east separation door 0 lever rose",
+        "Proposal | Garage east separation door 0 lever",
+        "Proposal | Garage east separation door 0 lever rose.001",
+        "Proposal | Garage east separation door 0 lever.001"
+      ],
+      "rotation_z": 3.141592653589793,
+      "centre": [
+        11.315,
+        -13.4,
+        0
+      ]
+    }
+  ],
+  "native_screen_rays": [],
+  "source_house_sha256": "6b27bf141b88bcbfb3958b38566634fd20d3d0bd9af5e110908fc05b5b176ea9",
+  "source_house_unchanged": true,
+  "isolated_objects": 355,
+  "views": {
+    "entrance": {
+      "position": [
+        11.83,
+        -13.1,
+        1.6
+      ],
+      "target": [
+        13.39,
+        -14.9,
+        1.05
+      ],
+      "fov": 64
+    },
+    "laundry": {
+      "position": [
+        11.83,
+        -15.1,
+        1.51
+      ],
+      "target": [
+        13.35,
+        -15.26,
+        0.72
+      ],
+      "fov": 65
+    },
+    "sink": {
+      "position": [
+        11.95,
+        -14.18,
+        1.53
+      ],
+      "target": [
+        13.38,
+        -13.94,
+        1.12
+      ],
+      "fov": 58
+    },
+    "reverse": {
+      "position": [
+        12.12,
+        -15.58,
+        1.62
+      ],
+      "target": [
+        12.55,
+        -13.1,
+        1.24
+      ],
+      "fov": 62
+    },
+    "details": {
+      "position": [
+        12.32,
+        -15.24,
+        1.15
+      ],
+      "target": [
+        13.21,
+        -15.31,
+        0.7
+      ],
+      "fov": 54
+    },
+    "overview": {
+      "position": [
+        7.9,
+        -18.8,
+        7.6
+      ],
+      "target": [
+        12.59,
+        -14.4,
+        1.0
+      ],
+      "fov": 49,
+      "cutaway": true
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source": "revisions/interiors-overnight-2026-09-27/guest/compact/preview-navigation.json",
+  "sourceSha256": "3224b9c73f273ce18a1847233fe7b919467dacc7dd4455ddc8a80c6af5769a0a",
+  "southBedAisle": 0.8550000000000004,
+  "note": "A person using the wardrobe or dressing beside the bed occupies that side aisle; routes to the other side, ensuite and balcony are checked.",
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 132,
+          "obstacles": 121,
+          "surfaces": 29
+        },
+        "after": {
+          "segments": 27,
+          "obstacles": 22,
+          "surfaces": 6
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "ensuite entrance",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "balcony doorway",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "balcony landing",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "window approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "west wardrobe",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "wardrobeUse",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 132,
+          "obstacles": 122,
+          "surfaces": 29
+        },
+        "after": {
+          "segments": 27,
+          "obstacles": 23,
+          "surfaces": 6
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "ensuite entrance",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "balcony doorway",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "balcony landing",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "window approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "west wardrobe",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "reading",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 132,
+          "obstacles": 122,
+          "surfaces": 29
+        },
+        "after": {
+          "segments": 27,
+          "obstacles": 23,
+          "surfaces": 6
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "ensuite entrance",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "balcony doorway",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "balcony landing",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "window approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "west wardrobe",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "southBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 132,
+          "obstacles": 122,
+          "surfaces": 29
+        },
+        "after": {
+          "segments": 27,
+          "obstacles": 23,
+          "surfaces": 6
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "ensuite entrance",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "balcony doorway",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "balcony landing",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "window approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "west wardrobe",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "northBedOccupied",
+      "bodyWidth": 0.6,
+      "crop": {
+        "before": {
+          "segments": 132,
+          "obstacles": 122,
+          "surfaces": 29
+        },
+        "after": {
+          "segments": 27,
+          "obstacles": 23,
+          "surfaces": 6
+        },
+        "equivalentProbes": 441,
+        "margin": 1
+      },
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "ensuite entrance",
+          "distance": 0.007071067811865952,
+          "reachable": true
+        },
+        {
+          "label": "balcony approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "balcony doorway",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "balcony landing",
+          "distance": 0.007071067811865324,
+          "reachable": true
+        },
+        {
+          "label": "window approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "west wardrobe",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

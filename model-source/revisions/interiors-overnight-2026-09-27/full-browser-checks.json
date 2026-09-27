@@ -13,12 +13,24 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 510
+        },
+        "gym": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 309
+        },
+        "utility": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 314
         }
       },
       "principal": true,
       "kitchen": 2,
       "cinema": 156,
       "bar": 505,
+      "gym": 306,
+      "utility": 311,
       "details": [
         {
           "term": "fixed projection screen",
@@ -43,10 +55,80 @@
         {
           "term": "wine cooler touch control",
           "count": 2
+        },
+        {
+          "term": "treadmill 1 stop button",
+          "count": 1
+        },
+        {
+          "term": "stored rower grille spoke",
+          "count": 12
+        },
+        {
+          "term": "bike monitor button",
+          "count": 3
+        },
+        {
+          "term": "washer start pause button",
+          "count": 1
+        },
+        {
+          "term": "hamper bin side",
+          "count": 4
+        },
+        {
+          "term": "undermount sink bowl",
+          "count": 1
+        },
+        {
+          "term": "curved sink mixer",
+          "count": 1
         }
       ],
       "doors": {
         "closed": [
+          {
+            "id": "Proposal | Garage east separation door 0",
+            "wall": "Proposal | Garage east separation door 0",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "position": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Boot utility inward door",
+            "wall": "Proposal | Boot utility inward door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "position": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
           {
             "id": "Proposal | Basement AV cupboard door",
             "wall": "Proposal | Cinema east wall door 0",
@@ -91,6 +173,50 @@
           }
         ],
         "open": [
+          {
+            "id": "Proposal | Garage east separation door 0",
+            "wall": "Proposal | Garage east separation door 0",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "position": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Boot utility inward door",
+            "wall": "Proposal | Boot utility inward door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "position": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
           {
             "id": "Proposal | Basement AV cupboard door",
             "wall": "Proposal | Cinema east wall door 0",
@@ -150,12 +276,24 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 510
+        },
+        "gym": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 309
+        },
+        "utility": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 314
         }
       },
       "principal": true,
       "kitchen": 2,
       "cinema": 156,
       "bar": 505,
+      "gym": 306,
+      "utility": 311,
       "details": [
         {
           "term": "fixed projection screen",
@@ -180,10 +318,80 @@
         {
           "term": "wine cooler touch control",
           "count": 2
+        },
+        {
+          "term": "treadmill 1 stop button",
+          "count": 1
+        },
+        {
+          "term": "stored rower grille spoke",
+          "count": 12
+        },
+        {
+          "term": "bike monitor button",
+          "count": 3
+        },
+        {
+          "term": "washer start pause button",
+          "count": 1
+        },
+        {
+          "term": "hamper bin side",
+          "count": 4
+        },
+        {
+          "term": "undermount sink bowl",
+          "count": 1
+        },
+        {
+          "term": "curved sink mixer",
+          "count": 1
         }
       ],
       "doors": {
         "closed": [
+          {
+            "id": "Proposal | Garage east separation door 0",
+            "wall": "Proposal | Garage east separation door 0",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "position": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Boot utility inward door",
+            "wall": "Proposal | Boot utility inward door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "position": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
           {
             "id": "Proposal | Basement AV cupboard door",
             "wall": "Proposal | Cinema east wall door 0",
@@ -228,6 +436,50 @@
           }
         ],
         "open": [
+          {
+            "id": "Proposal | Garage east separation door 0",
+            "wall": "Proposal | Garage east separation door 0",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "position": [
+              11.315,
+              -12.95,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Boot utility inward door",
+            "wall": "Proposal | Boot utility inward door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "position": [
+              12.93,
+              -12.55,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
           {
             "id": "Proposal | Basement AV cupboard door",
             "wall": "Proposal | Cinema east wall door 0",

@@ -110,10 +110,25 @@
       "sha256": "b8c01f3c336acac7cbec7e8f97ee15458d71ffed7532a523e811d8f439d67a91",
       "bytes": 1761
     },
+    "proposal/interiors/leisure/guest.json": {
+      "source": "proposal/interiors/leisure/guest.json",
+      "sha256": "1bcffde11802e2f55dbde8ff38dee153bb02d8b45c5856b342c8da9d53fb798f",
+      "bytes": 4174
+    },
+    "proposal/interiors/leisure/guestbath.json": {
+      "source": "proposal/interiors/leisure/guestbath.json",
+      "sha256": "35ba7ffb2ceabee6f8a3145d7ec3f86f73e807de411a2f58a530104d5bd25dea",
+      "bytes": 1386
+    },
     "proposal/interiors/leisure/gym.json": {
       "source": "proposal/interiors/leisure/gym.json",
-      "sha256": "ba274a8665e1a01d33956056dbb9857920f3803f66832a6101b8a9c0ebe3b8ea",
-      "bytes": 2507
+      "sha256": "57a832a4072588fae9c81739ddc095dcf765f29222adfc3713b78e6c6f9277a0",
+      "bytes": 3774
+    },
+    "proposal/interiors/leisure/utility.json": {
+      "source": "proposal/interiors/leisure/utility.json",
+      "sha256": "67e898e0de9406c0cdb35cdbd45aa0300941448c4f6bcc121321a5eba6f5cfd4",
+      "bytes": 2821
     },
     "proposal/interiors/principal/accepted/compact/bedroom-report.json": {
       "source": "proposal/interiors/principal/accepted/compact/bedroom-report.json",
@@ -332,13 +347,13 @@
     },
     "revisions/interiors-overnight-2026-09-27/PLAN.md": {
       "source": "revisions/interiors-overnight-2026-09-27/PLAN.md",
-      "sha256": "bab20f662c5e9951f1e8d2bcab5ddfd4357ee42f57f9f9c2e46d89ab9146da46",
-      "bytes": 2335
+      "sha256": "5a7e3867b7b7a20919f76d9bec8dd6851c92f00377f05dfda15082643d3e8234",
+      "bytes": 2734
     },
     "revisions/interiors-overnight-2026-09-27/STATUS.md": {
       "source": "revisions/interiors-overnight-2026-09-27/STATUS.md",
-      "sha256": "ca1d7248a61e9a07ed583dd785686980273f986d1de397a0f7c78504692749fe",
-      "bytes": 1677
+      "sha256": "29ec24a85d947d1fbe5af340ca54165f11225a163616b7050881035f078bc66e",
+      "bytes": 2952
     },
     "revisions/interiors-overnight-2026-09-27/bar/DESIGN.md": {
       "source": "revisions/interiors-overnight-2026-09-27/bar/DESIGN.md",
@@ -462,43 +477,253 @@
     },
     "revisions/interiors-overnight-2026-09-27/full-browser-checks.json": {
       "source": "revisions/interiors-overnight-2026-09-27/full-browser-checks.json",
-      "sha256": "a8803bb9f2fe9de1a636558f69aa68142e9ccf4bb68faff1cd1a24bbdebfbd85",
-      "bytes": 6867
+      "sha256": "3547a60924648724352072891741884209a3bad88bce671ded60d857c44d6bd0",
+      "bytes": 13385
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/DESIGN.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/DESIGN.md",
+      "sha256": "e06320eacac8069ef395e0b825cf6a159e6d3f77641c2c8375dc460550d0e36c",
+      "bytes": 2402
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/compact/guest-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/compact/guest-interior-report.json",
+      "sha256": "cbfd3609bb49966ef46bf4b60ebb9aaf3ad968c3bdfe84a27ab7f2ac3bfa3eca",
+      "bytes": 71881
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/compact/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/compact/preview-navigation.json",
+      "sha256": "3224b9c73f273ce18a1847233fe7b919467dacc7dd4455ddc8a80c6af5769a0a",
+      "bytes": 1808879
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/compact/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/compact/preview-report.json",
+      "sha256": "534348e6cc3cae083611f9854f486475fa3f96204ac1a3b04264cb40b2ece726",
+      "bytes": 74948
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/layout-plan.svg": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/layout-plan.svg",
+      "sha256": "5d9734475631d5b69f196fa29468cdecb72051852d18ec294789a5b01d7e9a8c",
+      "bytes": 7630
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/native-circulation-compact.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/native-circulation-compact.json",
+      "sha256": "e66ae9e1837b15d2f45788f04fc8093e136d44ec234988500af89ef0f09e4285",
+      "bytes": 7834
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/plan-circulation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/plan-circulation.json",
+      "sha256": "82b558e6168d4535446925a77353a339a103569871aa4aa062ed3b6b7d481f20",
+      "bytes": 6289
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/planning/guest-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/planning/guest-interior-report.json",
+      "sha256": "cbfd3609bb49966ef46bf4b60ebb9aaf3ad968c3bdfe84a27ab7f2ac3bfa3eca",
+      "bytes": 71881
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/planning/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/planning/preview-navigation.json",
+      "sha256": "f5b4d26e031e95ddbba4a5de630707fd25c044e17e9adcef54f5dbd9ca7d385f",
+      "bytes": 1525380
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/planning/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/guest/planning/preview-report.json",
+      "sha256": "04300b826193cbacd890a7d0444223fb2667ba34aeeadf0b160ce393980532d6",
+      "bytes": 74948
+    },
+    "revisions/interiors-overnight-2026-09-27/guestbath/DESIGN.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/guestbath/DESIGN.md",
+      "sha256": "cde1440b7462eb1e3e97e63c66c30c4a73de12b1f1a34acbcd5a21d4cb4577ca",
+      "bytes": 2085
     },
     "revisions/interiors-overnight-2026-09-27/gym/DESIGN.md": {
       "source": "revisions/interiors-overnight-2026-09-27/gym/DESIGN.md",
-      "sha256": "1950789661106f0e9ab656c6e9860a575039ef4c43e26c6b1113397998e4ec20",
-      "bytes": 2655
+      "sha256": "440861bc32a22576234d5a6d20332e7b3404609eca75ed5f2499d6342d9fa6a4",
+      "bytes": 3463
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/ROOM-REVIEW.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/ROOM-REVIEW.md",
+      "sha256": "52635ca74cb80a47a6dd4186a7d9d74ce40f07bc4478885bad5bdf327fe21d52",
+      "bytes": 1448
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/compact/gym-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/compact/gym-interior-report.json",
+      "sha256": "2beda1094939e15423020541fda67fca973f5e69fae3d1e100913079eb6dc0f9",
+      "bytes": 39899
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/compact/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/compact/preview-navigation.json",
+      "sha256": "410a5905e56cc0ef802065eacc09ec1770b2ce62a3f42804309b4c8cb0965dbe",
+      "bytes": 1808242
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/compact/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/compact/preview-report.json",
+      "sha256": "aeed8249eca5880ae44cf2f80432f80d351ad4226bee1b6d665611c95aab12ef",
+      "bytes": 41190
     },
     "revisions/interiors-overnight-2026-09-27/gym/layout-plan.svg": {
       "source": "revisions/interiors-overnight-2026-09-27/gym/layout-plan.svg",
-      "sha256": "6964db58153a8badc3b3c2c45fac6e4146ed79d0942cfa075e275135bb5ea222",
-      "bytes": 7173
+      "sha256": "66b2dc2d028c722d43f7b9e03e5a50466638383fe056de740a74caa2f90d2afa",
+      "bytes": 6937
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/native-circulation-compact.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/native-circulation-compact.json",
+      "sha256": "c4b259fe30e365312917fcfc0a616e4ed1f5d742e41668f10f203adf3007a7f2",
+      "bytes": 3616
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/native-circulation-planning.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/native-circulation-planning.json",
+      "sha256": "7d76778dcba55e068a3bbee0ea32010c37dc0db2fa0f8a0d5a74092afcb7b2ea",
+      "bytes": 3618
     },
     "revisions/interiors-overnight-2026-09-27/gym/plan-circulation.json": {
       "source": "revisions/interiors-overnight-2026-09-27/gym/plan-circulation.json",
-      "sha256": "c4d0f6b17d1a04a14aafbf065043f264a844bd137dded72220f7da3c1467d41e",
-      "bytes": 2196
+      "sha256": "afa5709fb5fe7d80972248d09f0db92939fbb48787c3bad35628056e4f079183",
+      "bytes": 3504
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/planning/gym-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/planning/gym-interior-report.json",
+      "sha256": "2beda1094939e15423020541fda67fca973f5e69fae3d1e100913079eb6dc0f9",
+      "bytes": 39899
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/planning/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/planning/preview-navigation.json",
+      "sha256": "9b58837a9a6206253439882e761dc34a4a7d3ffb39888d3a2ef4007cd1c469b9",
+      "bytes": 1524743
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/planning/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/planning/preview-report.json",
+      "sha256": "d1482078efb0edc158883e56d96513501d2409d99f955f37ecdca4c4affabac0",
+      "bytes": 41190
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/planning/reveal-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/gym/planning/reveal-audit.json",
+      "sha256": "d46302dfd6f0249da186a22b43e5c2b3f96d72c311c2af32799bd0c287ee5d88",
+      "bytes": 5669
+    },
+    "revisions/interiors-overnight-2026-09-27/internal-reveals-compact.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/internal-reveals-compact.json",
+      "sha256": "30fa95ce7f346baa303429b35a81bd079ebb635a4a045789c1a4d1ed0766fc8f",
+      "bytes": 7974
+    },
+    "revisions/interiors-overnight-2026-09-27/internal-reveals-planning.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/internal-reveals-planning.json",
+      "sha256": "dc60613f17918bb0d99294fa3e67d1191aede9c0264c66a44022aff679025587",
+      "bytes": 7975
     },
     "revisions/interiors-overnight-2026-09-27/isolated-browser-checks.json": {
       "source": "revisions/interiors-overnight-2026-09-27/isolated-browser-checks.json",
       "sha256": "965e8be85bfca4cbdee241681ed7cbf464384b84959289b6c648853f644f2795",
       "bytes": 1774
     },
+    "revisions/interiors-overnight-2026-09-27/isolated-gym-browser-checks.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/isolated-gym-browser-checks.json",
+      "sha256": "c0540d2e0a8878eec41508bf138aa8986d93c6ef7f1581df75ffbffe0c948450",
+      "bytes": 876
+    },
+    "revisions/interiors-overnight-2026-09-27/isolated-gym-utility-browser-checks.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/isolated-gym-utility-browser-checks.json",
+      "sha256": "c1c9fed205e5323ff92bda3a07d0bd84d06085fdad209fba8c1ba4c69bfb7ab2",
+      "bytes": 1654
+    },
+    "revisions/interiors-overnight-2026-09-27/isolated-utility-browser-checks.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/isolated-utility-browser-checks.json",
+      "sha256": "4e5a2da51c30f31584d7ad96d3d5a09c06a82642cb9dbfe6370c2674fdbe53c2",
+      "bytes": 888
+    },
     "revisions/interiors-overnight-2026-09-27/native-compact.json": {
       "source": "revisions/interiors-overnight-2026-09-27/native-compact.json",
-      "sha256": "cda26a63e1450134e7fea75d767ba9289dcee2363fd76fc5d4619d7543b135f8",
-      "bytes": 8226
+      "sha256": "dcd4abff724aa8e7fdb80f79e8c4e5c117d6a60b41539ab42e172731447e5127",
+      "bytes": 8626
     },
     "revisions/interiors-overnight-2026-09-27/native-planning.json": {
       "source": "revisions/interiors-overnight-2026-09-27/native-planning.json",
-      "sha256": "8a465c83b5505e69962223a427358e73bbe2cc4cd663045bf486511ca5de9538",
-      "bytes": 8227
+      "sha256": "ddc55d49e26659097671970d7f84f867f1bd0bccd360b8d18264aac97463985c",
+      "bytes": 8627
     },
     "revisions/interiors-overnight-2026-09-27/preservation.json": {
       "source": "revisions/interiors-overnight-2026-09-27/preservation.json",
-      "sha256": "336291d72c753c0ecc59f11caa5dfa437cd738056db044c0960421ac85c71cb3",
-      "bytes": 1098
+      "sha256": "c20693d6aa6e25194c8f8e65ff91d288d820e0057593ef7a46bde5986cf84963",
+      "bytes": 1654
+    },
+    "revisions/interiors-overnight-2026-09-27/publication-cinema-bar.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/publication-cinema-bar.json",
+      "sha256": "aa67ef6f40529677de6d9395f4c1e5f1e4a987f672221e1263952a33cc37376f",
+      "bytes": 3620
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/DESIGN.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/DESIGN.md",
+      "sha256": "23d8d7116e434d926787fcbd9404632fcd7e257f716a735f25b64b170e95ee22",
+      "bytes": 4415
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/ROOM-REVIEW.md": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/ROOM-REVIEW.md",
+      "sha256": "209d97f9ee6d559d73bcfad1f585346d8cfa3bad94fff9bc27488689ab133c50",
+      "bytes": 1346
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/compact/detail-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/compact/detail-audit.json",
+      "sha256": "239e5977da09ce6cf71c7a313049c9102ee74705c19b4e2db3c0bc55b83101a6",
+      "bytes": 4511
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/compact/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/compact/preview-navigation.json",
+      "sha256": "524cb722e52a83ad03d09e44b735432bd0621f104b4b97e8ee182b355d1a804c",
+      "bytes": 1808248
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/compact/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/compact/preview-report.json",
+      "sha256": "17ae69c562981069322b4c3ef348809c1e5542b399a8eba28a330047d60d93b9",
+      "bytes": 43862
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/compact/utility-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/compact/utility-interior-report.json",
+      "sha256": "f732142dae774b83146cab5f7475902ddafedae14a43e85728cffadecf40676a",
+      "bytes": 42549
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/layout-plan.svg": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/layout-plan.svg",
+      "sha256": "b2c4e717767d6696bb52a96a84abde5dae493bcb29a5dd0c1160da5947c5ba50",
+      "bytes": 5668
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/native-circulation-compact.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/native-circulation-compact.json",
+      "sha256": "007ca3b3901d4c7ae0dcb741c6049230c6ba97bd4c1b9c41025ec2776a9d3a6d",
+      "bytes": 5505
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/native-circulation-planning.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/native-circulation-planning.json",
+      "sha256": "6c92acc44d90c44c60c571e907126717fd7880babb05c0cb3b4bd16660d9abe3",
+      "bytes": 5507
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/plan-circulation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/plan-circulation.json",
+      "sha256": "7f564a408c2e1672d17e712f026dff77481a935b9dc62207e85f19ba4641bfe4",
+      "bytes": 5393
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/planning/detail-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/planning/detail-audit.json",
+      "sha256": "caff200ef9da4e8ca5c1b01d0cf708cdcd6051e3bd402843c0ac03df4acef55c",
+      "bytes": 4512
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/planning/preview-navigation.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/planning/preview-navigation.json",
+      "sha256": "c01bea62d5e2ea16f321c8849678b36fe92e14e6402b7eb55de8d8faea61f633",
+      "bytes": 1524749
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/planning/preview-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/planning/preview-report.json",
+      "sha256": "58b4cfa19e82d84b310567c15570818a4d2d6c5c71e34c037f9603017d964343",
+      "bytes": 43862
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/planning/reveal-audit.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/planning/reveal-audit.json",
+      "sha256": "8f69e6537f3cb5ad9421e1aeb6bd68dcca71abbb2da0e328e34c0f94b4062988",
+      "bytes": 2398
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/planning/utility-interior-report.json": {
+      "source": "revisions/interiors-overnight-2026-09-27/utility/planning/utility-interior-report.json",
+      "sha256": "f732142dae774b83146cab5f7475902ddafedae14a43e85728cffadecf40676a",
+      "bytes": 42549
     },
     "revisions/interiors-principal-2026-09-26/ENSUITE-DESIGN.md": {
       "source": "revisions/interiors-principal-2026-09-26/ENSUITE-DESIGN.md",
@@ -800,6 +1025,11 @@
       "sha256": "7ad55f004e061eaf108cf43da044d3d7adabda8ffac932d04d91e69c383e3894",
       "bytes": 3837
     },
+    "scripts/audit_internal_reveals.py": {
+      "source": "scripts/audit_internal_reveals.py",
+      "sha256": "4bccfff2cf4ad5f8d3f4eeeeb250c360e66b08175cbe62c88487ada61899862a",
+      "bytes": 2811
+    },
     "scripts/audit_kitchen_interiors.py": {
       "source": "scripts/audit_kitchen_interiors.py",
       "sha256": "1cc701a286a0b95ddcdd0170291cd4ab822f31992d7f085169b191128ffc1231",
@@ -807,13 +1037,13 @@
     },
     "scripts/audit_leisure_native.py": {
       "source": "scripts/audit_leisure_native.py",
-      "sha256": "a27443bc5ce6bef7e8deb218769d950958c3cad0519dea5c42e4d3efba420c9c",
-      "bytes": 3666
+      "sha256": "381e30ae32af8c6e2f151801ae4e8979826433fb6af755efbe0610c7be856e87",
+      "bytes": 4461
     },
     "scripts/audit_overnight_preservation.py": {
       "source": "scripts/audit_overnight_preservation.py",
-      "sha256": "aea520d1a4b983c21ef9ea7c719fad146784af9d7a53c2c00c70632c09ef52f3",
-      "bytes": 2789
+      "sha256": "76e62a596cfce8175a50db86e85248efc37091412ad1b3972e95409a11ab7012",
+      "bytes": 3846
     },
     "scripts/audit_plan_openings.py": {
       "source": "scripts/audit_plan_openings.py",
@@ -865,6 +1095,11 @@
       "sha256": "4f694af30f49d45943d64ec6aac3010dd5fa8fda5f2363f8dd994d8d5f51ba2c",
       "bytes": 3369
     },
+    "scripts/audit_utility_details.py": {
+      "source": "scripts/audit_utility_details.py",
+      "sha256": "eb00d9ac4c35b1d73a8225ff00929b5506d7706d63dbd60c57ace9137f117543",
+      "bytes": 3498
+    },
     "scripts/blender_booleans.py": {
       "source": "scripts/blender_booleans.py",
       "sha256": "736f3b81a8cc1fef74d14c7a61669e8f0964282d8b1a8d06d00ef179ee849acb",
@@ -882,8 +1117,8 @@
     },
     "scripts/build_leisure_review.py": {
       "source": "scripts/build_leisure_review.py",
-      "sha256": "4d7cc84bf121793e67a6a336a199488feb32e883624e37870b88b35f3a33378b",
-      "bytes": 7480
+      "sha256": "0b5f6de8d9b606b280369513842ed730eaaa6c63bc01af270b73dbbff1599f41",
+      "bytes": 10139
     },
     "scripts/build_model.py": {
       "source": "scripts/build_model.py",
@@ -907,8 +1142,8 @@
     },
     "scripts/build_support.py": {
       "source": "scripts/build_support.py",
-      "sha256": "07e48d4029d09b41e6b1bccad0b88983a6ecdb7c867cb06215720895858d8f13",
-      "bytes": 8402
+      "sha256": "da1afd0eb3c7523354b269bf46d4729240c31a9c0822f536ca4015889e6ac22f",
+      "bytes": 8494
     },
     "scripts/check_bedroom4_window_height.py": {
       "source": "scripts/check_bedroom4_window_height.py",
@@ -1082,8 +1317,8 @@
     },
     "scripts/interior_furnishing.py": {
       "source": "scripts/interior_furnishing.py",
-      "sha256": "108e15f47e3441e4e0e9d2fbf73584be4a483651eb75a7ef9a38f64ce1c69aa1",
-      "bytes": 9685
+      "sha256": "49aaeb22622af8b5d788403cdfe03572a5fc0179b5890a113c1a12765482cf5c",
+      "bytes": 10436
     },
     "scripts/make_alignment_overlays.py": {
       "source": "scripts/make_alignment_overlays.py",
@@ -1170,10 +1405,20 @@
       "sha256": "5693fd4b59dda43a97d2a1d31b43986771c63430c5ba7258f85d9522f6ba483f",
       "bytes": 4943
     },
+    "scripts/plan_guest_interiors.py": {
+      "source": "scripts/plan_guest_interiors.py",
+      "sha256": "879d0fbbb144824521ce85e000c50857ba23e3aa802e50339ddcea0071fc101f",
+      "bytes": 4587
+    },
     "scripts/plan_gym_interiors.py": {
       "source": "scripts/plan_gym_interiors.py",
-      "sha256": "fb2d462d02891441e72fd03e5783146f47801b1d27864f8dc33fcd0d78a0bf0e",
-      "bytes": 4262
+      "sha256": "0db582066e0de9e9cbc230b5ac422a72f6d44531d4a280f7cf4d23dae536a7ef",
+      "bytes": 4215
+    },
+    "scripts/plan_utility_interiors.py": {
+      "source": "scripts/plan_utility_interiors.py",
+      "sha256": "1186f4117df618c60132ad2a8ed1caae56111cb80bf4af33a556f2a3aad4a878",
+      "bytes": 4391
     },
     "scripts/planning_drawings/__init__.py": {
       "source": "scripts/planning_drawings/__init__.py",
@@ -1287,8 +1532,8 @@
     },
     "scripts/preview_leisure_interiors.py": {
       "source": "scripts/preview_leisure_interiors.py",
-      "sha256": "901696590d300d8166ec7d307b86a39fa0f973ecf12657c30333bde05fe19ec2",
-      "bytes": 9358
+      "sha256": "ecbbfbd0d87e883dd8d7d639d972f092de0d54369caefde84b32ffc2785ddc7f",
+      "bytes": 11610
     },
     "scripts/preview_principal_bedroom.py": {
       "source": "scripts/preview_principal_bedroom.py",
@@ -1415,6 +1660,16 @@
       "sha256": "c64733f7b343792c4e88e10673477301752ba396227a695791d7b41f9a4c4aae",
       "bytes": 27596
     },
+    "scripts/proposal_guest_interiors.py": {
+      "source": "scripts/proposal_guest_interiors.py",
+      "sha256": "54e4426939107d21c12d38d798f5b8e1d38c0003ef60a2c65503b794a9f9e2d6",
+      "bytes": 14324
+    },
+    "scripts/proposal_gym_interiors.py": {
+      "source": "scripts/proposal_gym_interiors.py",
+      "sha256": "6d248683fbe65bd69ef4a81d70d443cba60110b47315ca15629921e3f3e3bdb1",
+      "bytes": 13596
+    },
     "scripts/proposal_helpers.py": {
       "source": "scripts/proposal_helpers.py",
       "sha256": "3a1beb1a126e3f741c3e69e4049d47344af0b9aa026fe91e77f91ff2b9822081",
@@ -1442,8 +1697,8 @@
     },
     "scripts/proposal_leisure_interiors.py": {
       "source": "scripts/proposal_leisure_interiors.py",
-      "sha256": "34116ba5a346fface7240f27fdeb50307296c9978be0b6e7240a65a392476ccc",
-      "bytes": 10899
+      "sha256": "ff06709105c8d3444adf43b19665611b4139ad9801002bf7cf4cb6a5929c71bd",
+      "bytes": 11053
     },
     "scripts/proposal_lifestyle.py": {
       "source": "scripts/proposal_lifestyle.py",
@@ -1534,6 +1789,11 @@
       "source": "scripts/proposal_surface_junctions.py",
       "sha256": "c39d0721eed61ee2a299f5eb8054f773c172b11ac3458eef4c1436ac983253c0",
       "bytes": 4819
+    },
+    "scripts/proposal_utility_interiors.py": {
+      "source": "scripts/proposal_utility_interiors.py",
+      "sha256": "51dd6e5351bddbb9f96746a20dd8e100ac25c68f9d704ca15cde738909a9b7bc",
+      "bytes": 16650
     },
     "scripts/proposal_vegetation_clearance.py": {
       "source": "scripts/proposal_vegetation_clearance.py",
@@ -1957,8 +2217,8 @@
     },
     "scripts/stage_github_pages.py": {
       "source": "scripts/stage_github_pages.py",
-      "sha256": "07b4165cf1bf454bf40d75a2ad261999986a81c330d841c2f9e0411f1f89d1d3",
-      "bytes": 11069
+      "sha256": "660485b20b7dfcc96e3e823c2d576ac7bf18317edfe517aa99430d177f1eb137",
+      "bytes": 11085
     },
     "scripts/stage_interior_studio.py": {
       "source": "scripts/stage_interior_studio.py",
@@ -2020,6 +2280,11 @@
       "sha256": "767a556e5f17c375f104f0605fc69c10458f67407aae7af272dc782db20b3be1",
       "bytes": 8140
     },
+    "scripts/verify_interior_publication.py": {
+      "source": "scripts/verify_interior_publication.py",
+      "sha256": "efbc64b634e9a3f18eb1399bcbc91e4675c536a466c1f32c062bda57f7c0db4c",
+      "bytes": 2199
+    },
     "scripts/verify_release.py": {
       "source": "scripts/verify_release.py",
       "sha256": "01d5a1eb14427dab74d750b085593b129726e3d5722d5c1dd9b58aecce3a59af",
@@ -2037,8 +2302,8 @@
     },
     "tests/test_build_pipeline.py": {
       "source": "tests/test_build_pipeline.py",
-      "sha256": "a7dba0888d13b803fa8f18b0a2f4e3bd699a1f729b54626926bb7ac3db3e0473",
-      "bytes": 17182
+      "sha256": "f3e9983f8a133d19622424afecd32337770315c95dedd87e202f0caa1f382d22",
+      "bytes": 17498
     },
     "tests/test_entrance_gable.py": {
       "source": "tests/test_entrance_gable.py",
@@ -2087,8 +2352,8 @@
     },
     "walkthrough/build.mjs": {
       "source": "walkthrough/build.mjs",
-      "sha256": "bb8ee479c93274c70ab6006a7db7fd6625152b9c3d76f611cadaac94bbde45b8",
-      "bytes": 6164
+      "sha256": "944510335b0bc0d067f9fa0f1a9c28fac026db01832ea8645945b293aa283c70",
+      "bytes": 6180
     },
     "walkthrough/index.html": {
       "source": "walkthrough/index.html",
@@ -2182,8 +2447,8 @@
     },
     "walkthrough/public/interiors/leisure/bar.html": {
       "source": "walkthrough/public/interiors/leisure/bar.html",
-      "sha256": "0c539cd9a4b68aedbf68d8d7ca7c76e8d7fe3d78e704af8ec72bc4523fb1cd4c",
-      "bytes": 5690
+      "sha256": "f79356855aa5c13dd239f9dfed1773790adb7cb08afa0077f50860a9b36f650e",
+      "bytes": 5797
     },
     "walkthrough/public/interiors/leisure/cinema-plan.svg": {
       "source": "walkthrough/public/interiors/leisure/cinema-plan.svg",
@@ -2192,13 +2457,23 @@
     },
     "walkthrough/public/interiors/leisure/cinema.html": {
       "source": "walkthrough/public/interiors/leisure/cinema.html",
-      "sha256": "1feeaeeb8aec6846e8a7f69849d3ce437f461540f85c965f39c529d82ed4baf2",
-      "bytes": 5377
+      "sha256": "3b515914399f69ba263eb347894b5f3b843d5703558168ec9063b755363ef6c9",
+      "bytes": 5484
+    },
+    "walkthrough/public/interiors/leisure/gym-plan.svg": {
+      "source": "walkthrough/public/interiors/leisure/gym-plan.svg",
+      "sha256": "66b2dc2d028c722d43f7b9e03e5a50466638383fe056de740a74caa2f90d2afa",
+      "bytes": 6937
+    },
+    "walkthrough/public/interiors/leisure/gym.html": {
+      "source": "walkthrough/public/interiors/leisure/gym.html",
+      "sha256": "b2090b01e059671074e8c8906585a1c7493db7666e3031fa70523e9bf1091eb3",
+      "bytes": 5551
     },
     "walkthrough/public/interiors/leisure/index.html": {
       "source": "walkthrough/public/interiors/leisure/index.html",
-      "sha256": "28adce3316a41130406c53c8a91ae1b783a966d9c968e2dae932980c3f2963ad",
-      "bytes": 2324
+      "sha256": "dbf459cd8bc1775b949770fff122cfb6c1ac9121a3511b3db3a9ba9f64a120d6",
+      "bytes": 2650
     },
     "walkthrough/public/interiors/leisure/models/compact-bar.json": {
       "source": "walkthrough/public/interiors/leisure/models/compact-bar.json",
@@ -2210,6 +2485,21 @@
       "sha256": "2aba44788b3ae9b39ed4f8b6c4ce345b866810e10c331c24a6990bbb9233a85c",
       "bytes": 28386
     },
+    "walkthrough/public/interiors/leisure/models/compact-guest.json": {
+      "source": "walkthrough/public/interiors/leisure/models/compact-guest.json",
+      "sha256": "b375d991cb1bb040d9f6b4f18138cc8809b45c38287eb64b7ae7dda7fa2ea357",
+      "bytes": 34659
+    },
+    "walkthrough/public/interiors/leisure/models/compact-gym.json": {
+      "source": "walkthrough/public/interiors/leisure/models/compact-gym.json",
+      "sha256": "09967f460adb5f449781ce48dbafb364ef7443b98cf997765103c5af0d357229",
+      "bytes": 32428
+    },
+    "walkthrough/public/interiors/leisure/models/compact-utility.json": {
+      "source": "walkthrough/public/interiors/leisure/models/compact-utility.json",
+      "sha256": "0cf7a94a52f541ab5b017450a4da9cbbc3bd60f23f71553fdda1986876c2bd73",
+      "bytes": 30892
+    },
     "walkthrough/public/interiors/leisure/models/planning-bar.json": {
       "source": "walkthrough/public/interiors/leisure/models/planning-bar.json",
       "sha256": "c43419f4329093a287ea84dfa88daf725cb7322dd12f2e58125a73eac1697283",
@@ -2219,6 +2509,31 @@
       "source": "walkthrough/public/interiors/leisure/models/planning-cinema.json",
       "sha256": "be913b506ceed2223789bf666f6d2ae96450cf12f2c31d8c1d574b6215a887b2",
       "bytes": 26852
+    },
+    "walkthrough/public/interiors/leisure/models/planning-guest.json": {
+      "source": "walkthrough/public/interiors/leisure/models/planning-guest.json",
+      "sha256": "acc0734e11e091f7e0066231bce2d683aa1729a85d845b7aafa868c4f313fbda",
+      "bytes": 33181
+    },
+    "walkthrough/public/interiors/leisure/models/planning-gym.json": {
+      "source": "walkthrough/public/interiors/leisure/models/planning-gym.json",
+      "sha256": "dc67dac65badf929499a04e6b423d5219556a256a5799492906d11213b7e1006",
+      "bytes": 30894
+    },
+    "walkthrough/public/interiors/leisure/models/planning-utility.json": {
+      "source": "walkthrough/public/interiors/leisure/models/planning-utility.json",
+      "sha256": "2164bf0aced9d36525b9f1845d8fbaf3ba356da507c2873b7ec3f297953b8453",
+      "bytes": 29358
+    },
+    "walkthrough/public/interiors/leisure/utility-plan.svg": {
+      "source": "walkthrough/public/interiors/leisure/utility-plan.svg",
+      "sha256": "b2c4e717767d6696bb52a96a84abde5dae493bcb29a5dd0c1160da5947c5ba50",
+      "bytes": 5668
+    },
+    "walkthrough/public/interiors/leisure/utility.html": {
+      "source": "walkthrough/public/interiors/leisure/utility.html",
+      "sha256": "7ec669619a07c6aef704ef9dd933ebd3cb5c6e505a00c07741381073abf54264",
+      "bytes": 5448
     },
     "walkthrough/public/interiors/principal/arrangements.html": {
       "source": "walkthrough/public/interiors/principal/arrangements.html",
@@ -2700,10 +3015,15 @@
       "sha256": "dd5b825d02f379c85b10b8d2ca2146e09076a67ad407d430137c2eb09c0db672",
       "bytes": 2331
     },
+    "walkthrough/tests/guest-layout.mjs": {
+      "source": "walkthrough/tests/guest-layout.mjs",
+      "sha256": "cc418548681f8283ae48f1277dee8a5c6fb0f6456f3243d3ca6c97a24e915330",
+      "bytes": 4605
+    },
     "walkthrough/tests/gym-layout.mjs": {
       "source": "walkthrough/tests/gym-layout.mjs",
-      "sha256": "a30c4ab1abced36b49044de356a39fdada2d04279673098534eb62748008c88b",
-      "bytes": 3931
+      "sha256": "0758cc995d5cc55daf2c891a5a166823aa86fc553625b9004fa72a9770e25f93",
+      "bytes": 5317
     },
     "walkthrough/tests/hidden-spawns.mjs": {
       "source": "walkthrough/tests/hidden-spawns.mjs",
@@ -2747,8 +3067,8 @@
     },
     "walkthrough/tests/leisure-browser.mjs": {
       "source": "walkthrough/tests/leisure-browser.mjs",
-      "sha256": "ce88e2805f13e86d16fa83807e0d55b6763c1cbf336fb847d7ee77e89820f450",
-      "bytes": 3693
+      "sha256": "528951cca82d438b923740974585a782c2daf33f48482cec3e616390ec62de10",
+      "bytes": 4303
     },
     "walkthrough/tests/leisure-circulation.mjs": {
       "source": "walkthrough/tests/leisure-circulation.mjs",
@@ -2757,8 +3077,8 @@
     },
     "walkthrough/tests/leisure-full-browser.mjs": {
       "source": "walkthrough/tests/leisure-full-browser.mjs",
-      "sha256": "af47831eb6ce416210a5032064aaf54850bfcdcb81c36b207f2a52910eb3421b",
-      "bytes": 3255
+      "sha256": "ebac272589eb6f5e0806648d6c346724b79ab3b1b93bb52fb7aad907f8fbf614",
+      "bytes": 3941
     },
     "walkthrough/tests/life.test.mjs": {
       "source": "walkthrough/tests/life.test.mjs",
@@ -2935,6 +3255,11 @@
       "sha256": "5466d05a3099cba35fe9d58f7f0326e5d59f50aed59a0ce6343183ceaad3a400",
       "bytes": 1993
     },
+    "walkthrough/tests/restrict-navigation.mjs": {
+      "source": "walkthrough/tests/restrict-navigation.mjs",
+      "sha256": "ec7274d870dfb6f71ef5aba9ec84d7f04c5239aa98691bccde12d089cedaab12",
+      "bytes": 1635
+    },
     "walkthrough/tests/review-captures.test.mjs": {
       "source": "walkthrough/tests/review-captures.test.mjs",
       "sha256": "6886b0f61b417a6632ae60194f5995c189d242f33913e5acb3b09e5423370fc9",
@@ -2984,6 +3309,11 @@
       "source": "walkthrough/tests/tour-performance.mjs",
       "sha256": "28a844bdccad53d1dd652b440f6c0ea126ede3d586dcdee25d5c3542cffb7f73",
       "bytes": 3084
+    },
+    "walkthrough/tests/utility-layout.mjs": {
+      "source": "walkthrough/tests/utility-layout.mjs",
+      "sha256": "e22eac7bcd576a3f174350e457e93ec716d751e2f947b38215f4f5be77ccde3e",
+      "bytes": 3757
     },
     "walkthrough/tests/viewpoints.mjs": {
       "source": "walkthrough/tests/viewpoints.mjs",
@@ -3053,16 +3383,16 @@
   },
   "required_local_baselines": {
     "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": {
-      "sha256": "eea2bdf0b75cb2ad3c275a61abbcebcdf1949b1855cc00436bc971e3bd4e366f",
-      "bytes": 232764202
+      "sha256": "132f3f516cfdf7fe2ea850021b6fd3cd1fdca971108db94eb0aa4f23a2a95ddf",
+      "bytes": 237710821
     },
     "output-proposed-compact/geometry.json": {
-      "sha256": "b638ec9068bed9d72519615d99c9b9b566c58b5929416cfc6e5f10ae431e7393",
-      "bytes": 95427752
+      "sha256": "99f809143e48342224a0b8bfe6aa809e70779ad73316c95a74f533ffa74339ea",
+      "bytes": 98025710
     },
     "output-proposed-compact/navigation.json": {
-      "sha256": "1d55d65853040bf921a4e44b19cc2af1343df5655c16fcb5f07ce27f0cf2a5cd",
-      "bytes": 1806370
+      "sha256": "a90221eae257af9c4708d15abcacb1d17a3dc202ee97822065d2859485bb0815",
+      "bytes": 1808248
     },
     "output-proposed-compact/principal-interior-report.json": {
       "sha256": "788b3f9b7cd1e07413a8fde32147bd170c4784391bc90b957162f36cb7f63370",
@@ -3147,6 +3477,30 @@
     "revisions/interiors-overnight-2026-09-27/cinema/planning/Cinema \u2014 interior study.blend": {
       "sha256": "c0c1a6177f9f5985f51838fa1e71dbc15aa16cb54e25689cdfd10a4b40e2de1f",
       "bytes": 9744929
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/compact/Guest \u2014 interior study.blend": {
+      "sha256": "1f60e39e9166acbef6763574a153ca2c5e11158a07aed2b8942c87f688d44a75",
+      "bytes": 11576636
+    },
+    "revisions/interiors-overnight-2026-09-27/guest/planning/Guest \u2014 interior study.blend": {
+      "sha256": "0e68b69cb42285460ca5aa2304251eaf40ca955ae099a306e76ec2e8f0660ddd",
+      "bytes": 11585743
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/compact/Gym \u2014 interior study.blend": {
+      "sha256": "24a9b5939172f2642fecd5367bf53370304d9434799e345ea5166040bc2c21d0",
+      "bytes": 11544311
+    },
+    "revisions/interiors-overnight-2026-09-27/gym/planning/Gym \u2014 interior study.blend": {
+      "sha256": "30a0746b98b7b8d4d2d8b43def551af7c474874318aa9767e86d0fba5c39f366",
+      "bytes": 11603753
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/compact/Utility \u2014 interior study.blend": {
+      "sha256": "d7b5a447b4ec2dcff56ddeb4104f02132ac8ccb800c21ba4323e5ea359d08e4f",
+      "bytes": 10979429
+    },
+    "revisions/interiors-overnight-2026-09-27/utility/planning/Utility \u2014 interior study.blend": {
+      "sha256": "488d93b5c9d9de85cecbc6be6b9285be14cba8fe82743f60cd95e830f0803714",
+      "bytes": 11061588
     },
     "revisions/interiors-principal-2026-09-26/bedroom/compact/Principal bedroom \u2014 south wall.blend": {
       "sha256": "2f755cc1e96b08d4a77c0f9c54a997cf01a8d75a3b39d1113497108206eb35a0",

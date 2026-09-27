@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "gym",
+      "design": "compact",
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 386,
+      "cutaway": 12,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-gym"
+    },
+    {
+      "area": "gym",
+      "design": "planning",
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 386,
+      "cutaway": 12,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-gym"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

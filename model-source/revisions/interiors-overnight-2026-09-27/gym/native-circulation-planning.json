@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source": "output-proposed-planning/navigation.json",
+  "sourceSha256": "f1875ef444d3661a3bfc04e57673ae2ef1d50e3ecdf1c83140937679ff778f75",
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "reachable": 62257,
+      "checks": [
+        {
+          "label": "courtyard",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "utility",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "water",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "bench west side",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "bench east side",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "left dumbbell pair",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "right dumbbell pair",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "running",
+      "bodyWidth": 0.6,
+      "reachable": 38151,
+      "checks": [
+        {
+          "label": "courtyard",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "utility",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "water",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "rowing",
+      "bodyWidth": 0.6,
+      "reachable": 40947,
+      "checks": [
+        {
+          "label": "courtyard",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "utility",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "water",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "cycling",
+      "bodyWidth": 0.6,
+      "reachable": 59636,
+      "checks": [
+        {
+          "label": "courtyard",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "utility",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "water",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "cable",
+      "bodyWidth": 0.6,
+      "reachable": 52530,
+      "checks": [
+        {
+          "label": "courtyard",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "utility",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "water",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "strength",
+      "bodyWidth": 0.6,
+      "reachable": 51627,
+      "checks": [
+        {
+          "label": "courtyard",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "utility",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "water",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}
