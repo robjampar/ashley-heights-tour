@@ -3322,8 +3322,8 @@
     },
     "scripts/model_delivery.py": {
       "source": "scripts/model_delivery.py",
-      "sha256": "bc22ad6acdc7db22316d77543ec5ade88a448e290c04f59bd1ede4d952bab91d",
-      "bytes": 649
+      "sha256": "76d049626b8c68ce0b1109c20b599b14d9830a0489755a5abbeb460076c363ea",
+      "bytes": 1944
     },
     "scripts/organize_latest.py": {
       "source": "scripts/organize_latest.py",
@@ -4402,8 +4402,8 @@
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "0fb32326f6deddbf9989565a4a4f673f645a6d840aea93e99b6a7e223fc1543e",
-      "bytes": 10686
+      "sha256": "57b050c40121861e0b54f20f31dd449db7f17c0e0e9a745626fcccb22cf53988",
+      "bytes": 10839
     },
     "scripts/stage_room_studies.py": {
       "source": "scripts/stage_room_studies.py",
@@ -4517,8 +4517,8 @@
     },
     "tests/test_model_delivery.py": {
       "source": "tests/test_model_delivery.py",
-      "sha256": "90e4190158cf716271ab492fe813d33b521d04441527164ed697e1ab53c109ff",
-      "bytes": 715
+      "sha256": "7fbff4b33e56454d7e8a0de5297d9da071dcc6f89c25fecff4716a48b1f33f4a",
+      "bytes": 1686
     },
     "tests/test_pages_artifact.py": {
       "source": "tests/test_pages_artifact.py",
@@ -6099,6 +6099,21 @@
       "source": "walkthrough/tools/verify-compressed-glbs.mjs",
       "sha256": "fca1e1912bedd5bd0187f379697b08c8f2d03bd0b6f60db9a06e84d3cfce3d5e",
       "bytes": 1207
+    },
+    "revisions/publication-speed-2026-09-29/benchmark.json": {
+      "source": "revisions/publication-speed-2026-09-29/benchmark.json",
+      "sha256": "0d6b3ff8a35630f1b5a7c9a32f3642af09aa29e05a6705c8c039383ecb2d6217",
+      "bytes": 210
+    },
+    "revisions/publication-speed-2026-09-29/README.md": {
+      "source": "revisions/publication-speed-2026-09-29/README.md",
+      "sha256": "17cc626329a26bbfbf8c844828b1dd4f59fefff9065e318b24326d4140947381",
+      "bytes": 2217
+    },
+    "revisions/publication-speed-2026-09-29/sparse-checkout-validation.json": {
+      "source": "revisions/publication-speed-2026-09-29/sparse-checkout-validation.json",
+      "sha256": "75561d28c3825e21bf92b4b7cc2764b3774a7757925d27440ba583ab12255da0",
+      "bytes": 201
     }
   },
   "required_local_baselines": {

@@ -2,6 +2,16 @@ name: Publish Ashley Heights tours
 on:
   push:
     branches: [main]
+    paths:
+      - '.nojekyll'
+      - 'CNAME'
+      - 'index.html'
+      - 'auth.js'
+      - 'designs.json'
+      - 'assets/**'
+      - 'model/**'
+      - 'easter/**'
+      - 'model-source/scripts/pages_artifact.py'
   workflow_dispatch:
     inputs:
       staged_rollout:
@@ -21,6 +31,9 @@ jobs:
       stages: ${{ steps.plan.outputs.stages }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: model-source/publication-rollout/rollout.json
       - id: plan
         env:
           BEFORE: ${{ github.event.before }}
@@ -43,6 +56,19 @@ jobs:
         stage: ${{ fromJSON(needs.plan.outputs.stages) }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.nojekyll
+            /CNAME
+            /index.html
+            /auth.js
+            /designs.json
+            /assets/
+            /model/
+            /easter/
+            /model-source/scripts/pages_artifact.py
+            /model-source/publication-rollout/stage-${{ matrix.stage }}/model/
       - uses: actions/configure-pages@v5
       - name: Select cache-compatible model package
         if: matrix.stage != 3
@@ -87,7 +113,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Allow preceding HTML caches to expire
-        run: sleep 1800
+        run: sleep 900
       - name: Publish remaining room studies
         id: deployment
         uses: actions/deploy-pages@v4
@@ -106,7 +132,7 @@ jobs:
     steps:
       - name: Allow preceding HTML caches to expire
         if: needs.plan.outputs.staged == 'true'
-        run: sleep 1800
+        run: sleep 900
       - name: Publish complete tour and brochure
         id: deployment
         uses: actions/deploy-pages@v4
