@@ -121,7 +121,7 @@ jobs:
           artifact_name: github-pages-stage-2
   deploy-full-tour:
     needs: [plan, build, deploy-room-studies]
-    if: always() && needs.build.result == 'success' && (needs.plan.outputs.staged == 'false' || needs.deploy-room-studies.result == 'success')
+    if: ${{ !cancelled() && needs.build.result == 'success' && (needs.plan.outputs.staged == 'false' || needs.deploy-room-studies.result == 'success') }}
     runs-on: ubuntu-latest
     permissions:
       pages: write
