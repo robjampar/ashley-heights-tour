@@ -2144,13 +2144,13 @@
       "bytes": 2010991,
       "sha256": "5ac4c2d56c138bc30b72b5b9a7f8fbbdca6c3c5988c1634e75f68dd1e137c02c"
     },
-    "style.1bc4a2b50aa0d851.css": {
-      "bytes": 25871,
-      "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a"
-    },
     "app.718f9642a584e0c9.js": {
       "bytes": 5413990,
       "sha256": "718f9642a584e0c9356a16ad963a5733871b2d4fa5e4bed6f97db29489d84dc7"
+    },
+    "style.ad5fbc1e1d466a1b.css": {
+      "bytes": 25849,
+      "sha256": "ad5fbc1e1d466a1bc209606cb3249e0ae8ac30b728c2e8ed988a4343a9b9061f"
     }
   },
   "previous_assets": {
@@ -2218,6 +2218,12 @@
       "bytes": 5380153,
       "sha256": "f9f513cd767946d8e9d40d0493c5403da7d8505b63ff05a58d59871ca8264557",
       "retain_until_next_confirmed_deployment": true
+    },
+    "style.1bc4a2b50aa0d851.css": {
+      "bytes": 25871,
+      "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a",
+      "retired_at_epoch": 1790639723.674307,
+      "retain_until_epoch": 1790641523.674307
     }
   },
   "easter": {
