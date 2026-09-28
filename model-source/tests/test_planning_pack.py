@@ -108,7 +108,7 @@ class PackIntegrityTests(unittest.TestCase):
             (staging / 'PA-040.pdf').write_bytes(b'preview')
             return 0
 
-        with patch.object(build_pack.release, 'input_fingerprints', return_value=self.inputs), patch.object(build_pack, 'build', side_effect=fake_build), patch('scripts.planning_drawings.readiness.write_readiness'):
+        with patch.object(build_pack.release, 'model_source_issues', return_value=[]), patch.object(build_pack.release, 'input_fingerprints', return_value=self.inputs), patch.object(build_pack, 'build', side_effect=fake_build), patch('scripts.planning_drawings.readiness.write_readiness'):
             self.assertEqual(build_pack.main(['--out', str(self.out), '--sheets', 'PA-040']), 0)
         self.assertEqual((self.out / 'manifest.json').read_bytes(), previous)
         previews = list((self.out / 'checks/previews').glob('*/manifest.json'))

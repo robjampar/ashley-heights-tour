@@ -1,0 +1,252 @@
+{
+  "room": "Original-house loft hobby room and bridge",
+  "revision": 1,
+  "floorZ": 5.55,
+  "ceilingZ": 7.96,
+  "bounds": [
+    -3.49,
+    -5.3,
+    12.42,
+    7.87
+  ],
+  "hobbyPolygon": [
+    [
+      -1.485,
+      3.97
+    ],
+    [
+      10.24,
+      3.97
+    ],
+    [
+      10.24,
+      7.87
+    ],
+    [
+      -1.485,
+      7.87
+    ]
+  ],
+  "projectTable": [
+    0.45,
+    5.7,
+    2.45,
+    6.75
+  ],
+  "chairs": [
+    [
+      -0.21,
+      5.955,
+      0.37,
+      6.515
+    ],
+    [
+      2.53,
+      5.955,
+      3.11,
+      6.515
+    ]
+  ],
+  "northStorage": [
+    -1.34,
+    7.41,
+    3.45,
+    7.855
+  ],
+  "archiveStorage": [
+    -0.1,
+    3.3,
+    5.4,
+    3.82
+  ],
+  "bookStorage": [
+    3.7,
+    7.4,
+    6.45,
+    7.855
+  ],
+  "sofa": [
+    9.29,
+    5.7,
+    10.21,
+    7.7
+  ],
+  "readingChair": [
+    6.46,
+    6.18,
+    7.35,
+    7.08
+  ],
+  "coffeeTable": [
+    7.92,
+    6.27,
+    8.57,
+    7.07
+  ],
+  "sideTable": [
+    6.4,
+    7.24,
+    6.77,
+    7.61
+  ],
+  "flexibleArea": [
+    3.75,
+    5.12,
+    6.25,
+    7.05
+  ],
+  "view": {
+    "id": "proposal-loft-studio-and-lounge",
+    "position": [
+      8.48,
+      5.2,
+      5.55
+    ],
+    "direction": [
+      -1,
+      0.35,
+      -0.02
+    ]
+  },
+  "views": {
+    "entrance": {
+      "position": [
+        9.3,
+        4.83,
+        7.17
+      ],
+      "target": [
+        4.2,
+        6.5,
+        6.45
+      ],
+      "fov": 67
+    },
+    "worktable": {
+      "position": [
+        3.61,
+        5.06,
+        7.16
+      ],
+      "target": [
+        1.15,
+        6.4,
+        6.18
+      ],
+      "fov": 64
+    },
+    "seated": {
+      "position": [
+        9.65,
+        6.7,
+        6.68
+      ],
+      "target": [
+        6.3,
+        6.6,
+        6.32
+      ],
+      "fov": 66
+    },
+    "storage": {
+      "position": [
+        2.7,
+        6.6,
+        7.13
+      ],
+      "target": [
+        1.75,
+        3.63,
+        6.05
+      ],
+      "fov": 66
+    },
+    "bridge": {
+      "position": [
+        8.92,
+        -2.6,
+        7.15
+      ],
+      "target": [
+        8.92,
+        3.8,
+        6.7
+      ],
+      "fov": 65
+    },
+    "overview": {
+      "position": [
+        15,
+        15,
+        18
+      ],
+      "target": [
+        4.1,
+        3.0,
+        6.05
+      ],
+      "fov": 58,
+      "cutaway": true
+    },
+    "lounge": {
+      "position": [
+        5.83,
+        5.05,
+        7.15
+      ],
+      "target": [
+        9.25,
+        6.8,
+        6.3
+      ],
+      "fov": 65
+    }
+  },
+  "limitations": [
+    "The eaves doors are low and retain their existing openings. Storage beyond them requires stooping.",
+    "The dormer ceiling is about 2.09 m above the structural floor.",
+    "The project-table chairs can be moved; the floor plan checks the normal working positions and occupied places.",
+    "The open centre remains available for different hobbies; no specialist equipment is assumed.",
+    "The retained bridge west of the loft stair has a narrow route with roughly 1.78\u20131.90 m roof clearance, rather than 2 m. Its roof and stair geometry remain for owner review; it is not validated as a full-height route for taller people."
+  ],
+  "doors": [
+    {
+      "label": "west eaves door",
+      "hinge": [
+        -1.684,
+        5.188,
+        5.55
+      ],
+      "axis": [
+        0,
+        -1
+      ],
+      "width": 0.676,
+      "openAngle": -1.5707963267948966,
+      "height": 1.64,
+      "opening": [
+        -1.575,
+        4.85
+      ]
+    },
+    {
+      "label": "east eaves door",
+      "hinge": [
+        10.439,
+        5.188,
+        5.55
+      ],
+      "axis": [
+        0,
+        -1
+      ],
+      "width": 0.676,
+      "openAngle": 1.5707963267948966,
+      "height": 1.64,
+      "opening": [
+        10.33,
+        4.85
+      ]
+    }
+  ]
+}

@@ -28,6 +28,7 @@ for _bay in _site_spec['bays']:
 _site_spec['bays']=[b for b in _site_spec['bays'] if b['id']!='S2']
 _site_review={'revision':spec.get('revision','P4'),'parking_count':{'driveway':3,'new_double_garage':2,'old_garage_counted':0},'bay_S2_replaced_by':'front lawn and tree (proposal_forecourt.py)','source':'proposal/P4_site-feasibility.json','path_proof':'proposal/P4_parking-validated.json','fountain_removed_original_objects':[],'relocated_tree_original_objects':[],'cars':[],'original_scene_modified':False,'limitations':'Generic compact-car geometric check; not surveyed vehicle tracking. Tree relocation feasibility, roots and applicable constraints unverified.'}
 
+
 # The user explicitly replaced the retained-fountain P1 concept.
 for _o in original_objects:
  if _o.type=='MESH' and _o.name.startswith('Fountain '):

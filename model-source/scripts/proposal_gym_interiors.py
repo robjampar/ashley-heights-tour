@@ -32,7 +32,8 @@ def apply_gym(ns):
         a=-9.845 if xx<11.43 else -12.495
         b.box('rubber tile fine joint',(xx,(a-4.234)/2,z+.0182),(.0015,-4.234-a,.0003),graphite)
     # Slim skirting stays within existing wall collision allowances.
-    for a,d in((-9.85,-7.83),(-6.78,-4.46)):
+    door_y=cfg['hallDoorCentre'][1]
+    for a,d in((-9.85,door_y-.525),(door_y+.525,-4.46)):
         b.box('west oak skirting',(9.272,(a+d)/2,.073),(.020,d-a,.11),oak,.003)
     b.box('east oak skirting',(13.738,-8.48,.073),(.020,8.03,.11),oak,.003)
     b.box('south return skirting',(10.35,-9.838,.073),(2.16,.020,.11),oak,.003)
@@ -49,12 +50,13 @@ def apply_gym(ns):
         b.cylinder('blind roller',(13.715,yy,2.350),.025,2.0,towel,(0,1,0))
         b.box('rolled blind fabric edge',(13.698,yy,2.315),(.005,1.95,.058),towel)
         b.tube('blind pull loop',[(13.68,yy-.965,2.34),(13.68,yy-.965,1.70),(13.68,yy-.95,1.68),(13.68,yy-.935,1.70),(13.68,yy-.935,2.34)],.0018,bronze,1)
-    for a,d in((-9.505,-8.105),(-6.405,-4.605)):
+    for a,d in cfg['westWindows']:
         b.window_reveal('west window '+str(a),'x',9.262,9.226,a,d,.60,2.40,ivory)
-    b.window_reveal('courtyard doors','y',-4.461,-4.370,10.745,13.145,0,2.35,ivory)
-    # Product-sized compact treadmills, west-facing as the owner requested.
+    # Stop the lining short of the complete inward-swinging door frames.
+    b.window_reveal('courtyard doors','y',-4.461,-4.430,10.710,13.180,-.004,2.388,ivory)
+    # Product-sized compact treadmills. Rotate each complete assembly, including controls.
     for i,tread in enumerate(cfg['treadmills']):
-        x,y=tread['frontX'],tread['centerY'];name=f'treadmill {i+1} '
+        x,y=tread['frontX'],tread['centerY'];name=f'treadmill {i+1} ';tread_start=len(b.objects)
         b.box(name+'chassis',(x+.88,y,.185),(1.76,.79,.15),graphite,.035)
         b.box(name+'running belt',(x+.965,y,.265),(1.47,.51,.022),black,.007)
         b.box(name+'front motor cover',(x+.145,y,.289),(.265,.68,.072),graphite,.025)
@@ -73,9 +75,12 @@ def apply_gym(ns):
         b.cylinder(name+'stop button',(x+.25,y+.25,1.248),.018,.006,red,sides=24)
         b.box(name+'safety key',(x+.404,y,1.15),(.011,.033,.035),red,.004)
         b.tube(name+'safety lanyard',[(x+.414,y,1.15),(x+.50,y-.02,.98),(x+.57,y-.07,1.07)],.002,red,1)
-        b.obstacle(name+'complete machine',[x,y-.398,x+1.76,y+.398],0,1.26)
+        from mathutils import Matrix,Vector
+        px,py=tread['placedFront'];turn=Matrix.Translation(Vector((px,py,0)))@Matrix.Rotation(math.radians(cfg['treadmillRotationDegrees']),4,'Z')@Matrix.Translation(Vector((-x,-y,0)))
+        for ob in b.objects[tread_start:]:ob.matrix_world=turn@ob.matrix_world
+        b.obstacle(name+'complete machine',tread['footprint'],0,1.26)
     # Full-size upholstered dumbbell bench with clear access to storage.
-    a,c,d,e=cfg['bench'];cx,cy=(a+d)/2,(c+e)/2
+    a,c,d,e=cfg['bench'];cx,cy=(a+d)/2,(c+e)/2;bench_start=len(b.objects)
     b.box('bench back pad',(cx,cy+.28,.50),(.46,.88,.12),black,.035)
     b.box('bench seat pad',(cx,cy-.445,.49),(.46,.40,.12),black,.035)
     for x in(cx-.197,cx+.197):b.tube('bench upholstery seam',[(x,cy-.62,.553),(x,cy-.28,.553)],.0018,bronze,1)
@@ -84,9 +89,12 @@ def apply_gym(ns):
         b.box('bench floor foot',(cx,yy,.055),(.66,.07,.07),graphite,.012)
         b.tube('bench upright',[(cx,yy,.06),(cx,yy,.44)],.028,graphite)
         for xx in(cx-.28,cx+.28):b.box('bench rubber floor cap',(xx,yy,.032),(.10,.09,.035),black,.007)
+    turn=Matrix.Translation(Vector((cx,cy,0)))@Matrix.Rotation(math.radians(cfg['benchRotationDegrees']),4,'Z')@Matrix.Translation(Vector((-cx,-cy,0)))
+    for ob in b.objects[bench_start:]:ob.matrix_world=turn@ob.matrix_world
     b.obstacle('weights bench',cfg['bench'],0,.59)
     # Eight pairs on a compact oak rack; keep actual head diameters and handles.
-    a,c,d,e=cfg['dumbbells'];x=(a+d)/2;y=(c+e)/2
+    a,c,d,e=cfg['dumbbells'];x=(a+d)/2;y=(c+e)/2;dumbbell_start=len(b.objects)
+    a,c,d,e=x-.36,y-.22,x+.36,y+.22
     for xx in(a+.02,d-.02):b.box('dumbbell rack oak upright',(xx,y,.615),(.035,e-c,1.17),oak,.009)
     for k,h in enumerate((.19,.47,.75,1.03)):
         b.box('dumbbell rack shelf',(x,y,h),(d-a-.035,e-c,.027),oak,.005)
@@ -96,21 +104,26 @@ def apply_gym(ns):
                 r=.042+k*.008
                 b.cylinder('dumbbell knurled handle',(xx,yy,h+r+.024),.013,.13,steel,(1,0,0),20)
                 for side in(-1,1):b.cylinder('dumbbell hex head',(xx+side*.095,yy,h+r+.024),r,.060,black,(1,0,0),6)
+    turn=Matrix.Translation(Vector((x,y,0)))@Matrix.Rotation(math.radians(cfg['dumbbellRotationDegrees']),4,'Z')@Matrix.Translation(Vector((-x,-y,0)))
+    for ob in b.objects[dumbbell_start:]:ob.matrix_world=turn@ob.matrix_world
     b.obstacle('dumbbell storage',cfg['dumbbells'],0,1.22)
-    # Compact cable tower: wood surround, visible stack, pulleys and controls.
-    x,y=cfg['cable']['center']
-    b.box('cable tower oak body',(x,y,1.085),(.40,.20,2.15),oak,.026)
-    b.box('cable tower weight recess',(x,y+.103,.82),(.245,.012,1.17),black,.008)
-    for k in range(17):b.box('cable weight plate',(x,y+.119,.32+k*.050),(.23,.026,.040),graphite,.003)
-    for xx in(x-.135,x+.135):b.cylinder('cable tower guide rail',(xx,y+.118,1.10),.011,1.98,steel)
-    b.box('cable pulley carriage',(x,y+.125,1.33),(.28,.035,.085),bronze,.008)
-    for side in(-1,1):
-        xx=x+side*.10
-        b.cylinder('cable pulley wheel',(xx,y+.150,1.32),.041,.017,graphite,(0,1,0),28)
-        b.tube('cable steel rope',[(xx,y+.153,2.03),(xx,y+.153,1.32),(xx,y+.16,1.08)],.0018,steel,1)
-        b.tube('cable handle',[(xx-.038,y+.16,1.08),(xx-.055,y+.16,.995),(xx+.055,y+.16,.995),(xx+.038,y+.16,1.08)],.007,black)
-    b.cylinder('cable adjustment knob',(x,y+.168,1.335),.016,.016,black,(0,1,0),24)
-    b.obstacle('cable tower',[x-.205,y-.105,x+.205,y+.18],0,2.18)
+    if cfg.get('includeCableTower',True):
+        # Compact cable tower: wood surround, visible stack, pulleys and controls.
+        cable_start=len(b.objects);x,y=cfg['cable']['center']
+        b.box('cable tower oak body',(x,y,1.085),(.40,.20,2.15),oak,.026)
+        b.box('cable tower weight recess',(x,y+.103,.82),(.245,.012,1.17),black,.008)
+        for k in range(17):b.box('cable weight plate',(x,y+.119,.32+k*.050),(.23,.026,.040),graphite,.003)
+        for xx in(x-.135,x+.135):b.cylinder('cable tower guide rail',(xx,y+.118,1.10),.011,1.98,steel)
+        b.box('cable pulley carriage',(x,y+.125,1.33),(.28,.035,.085),bronze,.008)
+        for side in(-1,1):
+            xx=x+side*.10
+            b.cylinder('cable pulley wheel',(xx,y+.150,1.32),.041,.017,graphite,(0,1,0),28)
+            b.tube('cable steel rope',[(xx,y+.153,2.03),(xx,y+.153,1.32),(xx,y+.16,1.08)],.0018,steel,1)
+            b.tube('cable handle',[(xx-.038,y+.16,1.08),(xx-.055,y+.16,.995),(xx+.055,y+.16,.995),(xx+.038,y+.16,1.08)],.007,black)
+        b.cylinder('cable adjustment knob',(x,y+.168,1.335),.016,.016,black,(0,1,0),24)
+        rotation=Matrix.Translation(Vector((x,y,0)))@Matrix.Rotation(math.radians(cfg.get('cableRotationDegrees',0)),4,'Z')@Matrix.Translation(Vector((-x,-y,0)))
+        for ob in b.objects[cable_start:]:ob.matrix_world=rotation@ob.matrix_world
+        b.obstacle('cable tower',cfg['cable']['footprint'],0,2.18)
     # Upright cycle with saddle adjustment, crank, pedals and physical controls.
     x,y=cfg['bike']['center'];bike_start=len(b.objects)
     for yy in(y-.52,y+.52):

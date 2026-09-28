@@ -2,15 +2,21 @@
   "status": "PASS",
   "variant": "compact",
   "source": "plan fixtures",
+  "sourceSha256": "a85d217e171f851e8d170710b1d3e217a039ff2fd88f335237fe3cf167b27ca1",
   "results": [
     {
       "state": "ordinary",
       "bodyWidth": 0.6,
-      "reachable": 62272,
+      "reachable": 64480,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -25,22 +31,22 @@
         },
         {
           "label": "bench west side",
-          "distance": 0,
-          "reachable": true
-        },
-        {
-          "label": "bench east side",
           "distance": 0.004999999999999005,
           "reachable": true
         },
         {
-          "label": "left dumbbell pair",
-          "distance": 0.005000000000000782,
+          "label": "bench east side",
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
-          "label": "right dumbbell pair",
-          "distance": 0.005000000000000782,
+          "label": "dumbbell rack south",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "dumbbell rack north",
+          "distance": 0.004999999999999005,
           "reachable": true
         }
       ]
@@ -48,11 +54,16 @@
     {
       "state": "running",
       "bodyWidth": 0.6,
-      "reachable": 38154,
+      "reachable": 40493,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -70,11 +81,16 @@
     {
       "state": "rowing",
       "bodyWidth": 0.6,
-      "reachable": 40969,
+      "reachable": 41693,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -92,33 +108,16 @@
     {
       "state": "cycling",
       "bodyWidth": 0.6,
-      "reachable": 59651,
+      "reachable": 60918,
       "checks": [
         {
-          "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
           "reachable": true
         },
         {
-          "label": "utility",
-          "distance": 0.007071067811866581,
-          "reachable": true
-        },
-        {
-          "label": "water",
-          "distance": 0.005000000000000782,
-          "reachable": true
-        }
-      ]
-    },
-    {
-      "state": "cable",
-      "bodyWidth": 0.6,
-      "reachable": 52545,
-      "checks": [
-        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -136,11 +135,16 @@
     {
       "state": "strength",
       "bodyWidth": 0.6,
-      "reachable": 51642,
+      "reachable": 56482,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {

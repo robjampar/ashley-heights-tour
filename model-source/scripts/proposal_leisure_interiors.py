@@ -12,6 +12,18 @@ from proposal_bedroom2_interiors import apply_bedroom2
 from proposal_bedroom3_interiors import apply_bedroom3
 from proposal_familybath_interiors import apply_familybath
 from proposal_bedroom4_interiors import apply_bedroom4
+from proposal_formal_interiors import apply_formal
+from proposal_sidebed_interiors import apply_sidebed
+from proposal_loftsuite_interiors import apply_loftsuite
+from proposal_hobby_interiors import apply_hobby
+from proposal_terrace_interiors import apply_terrace
+from proposal_arrival_interiors import apply_arrival
+from proposal_landings_interiors import apply_landings
+from proposal_garage_interiors import apply_garage
+from proposal_poolgarden_interiors import apply_poolgarden
+from proposal_gardenhouse_interiors import apply_gardenhouse
+from proposal_office_interiors import apply_office
+from proposal_workshop_interiors import apply_workshop
 
 
 def apply_cinema(ns):
@@ -150,10 +162,15 @@ def apply_cinema(ns):
     return b.finish(cfg)
 
 
-def apply_leisure(ns,areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4')):
+def apply_leisure(ns,areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4','formal','sidebed','loftsuite','hobby','terrace','arrival','landings','garage','poolgarden','gardenhouse','office','workshop')):
     if ns.get('VARIANT') not in ('compact','planning'):return {}
-    return {area:{'cinema':apply_cinema,'bar':apply_bar,'gym':apply_gym,'utility':apply_utility,'guest':apply_guest,'guestbath':apply_guestbath,'family':apply_family,'cloakroom':apply_cloakroom,'bedroom2':apply_bedroom2,'bedroom3':apply_bedroom3,'familybath':apply_familybath,'bedroom4':apply_bedroom4}[area](ns)for area in areas}
+    return {area:{'cinema':apply_cinema,'bar':apply_bar,'gym':apply_gym,'utility':apply_utility,'guest':apply_guest,'guestbath':apply_guestbath,'family':apply_family,'cloakroom':apply_cloakroom,'bedroom2':apply_bedroom2,'bedroom3':apply_bedroom3,'familybath':apply_familybath,'bedroom4':apply_bedroom4,'formal':apply_formal,'sidebed':apply_sidebed,'loftsuite':apply_loftsuite,'hobby':apply_hobby,'terrace':apply_terrace,'arrival':apply_arrival,'landings':apply_landings,'garage':apply_garage,'poolgarden':apply_poolgarden,'gardenhouse':apply_gardenhouse,'office':apply_office,'workshop':apply_workshop}[area](ns)for area in areas if area not in('terrace','poolgarden','workshop') or ns['VARIANT']=='compact'}
 
 
 if 'scene' in globals() and 'nav' in globals():
+    # Local garden corrections follow house finish classification. A clipped
+    # hedge or kerb must not change distant house/site exposure classifications.
+    from garden_level_steps import correct_loggia_step, correct_garden_building_clearance
+    correct_loggia_step(globals())
+    correct_garden_building_clearance(globals())
     leisure_interior_report=apply_leisure(globals())

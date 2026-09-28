@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "reports": [
+    {
+      "name": "summer room from garden",
+      "bodyWidth": 0.6,
+      "samples": 195,
+      "maxRise": 0.0005897872340427934,
+      "maxFall": 0.06840974065110483,
+      "end": {
+        "x": 15.1,
+        "y": 21.1,
+        "z": 0.5445870161056519
+      },
+      "failure": null
+    },
+    {
+      "name": "summer room from garden · return",
+      "bodyWidth": 0.6,
+      "samples": 195,
+      "maxRise": 0.06840974065110483,
+      "maxFall": 0.0005897872340427934,
+      "end": {
+        "x": 12.2,
+        "y": 21.1,
+        "z": 0.5644800000000001
+      },
+      "failure": null
+    },
+    {
+      "name": "outside WC from garden",
+      "bodyWidth": 0.6,
+      "samples": 169,
+      "maxRise": 0.0483144622594982,
+      "maxFall": 0.00011778461538469731,
+      "end": {
+        "x": 14.71,
+        "y": 25.42,
+        "z": 0.5445870161056519
+      },
+      "failure": null
+    },
+    {
+      "name": "outside WC from garden · return",
+      "bodyWidth": 0.6,
+      "samples": 169,
+      "maxRise": 0.00011778461538469731,
+      "maxFall": 0.0483144622594982,
+      "end": {
+        "x": 12.2,
+        "y": 25.42,
+        "z": 0.4866719999999999
+      },
+      "failure": null
+    },
+    {
+      "name": "tool store from garden",
+      "bodyWidth": 0.6,
+      "samples": 169,
+      "maxRise": 0.0002990769230771795,
+      "maxFall": 0.03701298389434826,
+      "end": {
+        "x": 14.72,
+        "y": 24.04,
+        "z": 0.5445870161056519
+      },
+      "failure": null
+    },
+    {
+      "name": "tool store from garden · return",
+      "bodyWidth": 0.6,
+      "samples": 169,
+      "maxRise": 0.03701298389434826,
+      "maxFall": 0.0002990769230771795,
+      "end": {
+        "x": 12.2,
+        "y": 24.04,
+        "z": 0.565552
+      },
+      "failure": null
+    },
+    {
+      "name": "retained balcony clear centre",
+      "bodyWidth": 0.6,
+      "samples": 300,
+      "maxRise": 1.9073486345888568e-7,
+      "maxFall": 0,
+      "end": {
+        "x": 8.65,
+        "y": 8.4,
+        "z": 2.8000001907348633
+      },
+      "failure": null
+    },
+    {
+      "name": "retained balcony clear centre · return",
+      "bodyWidth": 0.6,
+      "samples": 300,
+      "maxRise": 1.9073486345888568e-7,
+      "maxFall": 0,
+      "end": {
+        "x": 5.48,
+        "y": 8.4,
+        "z": 2.8000001907348633
+      },
+      "failure": null
+    }
+  ]
+}

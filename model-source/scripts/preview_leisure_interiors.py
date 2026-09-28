@@ -6,15 +6,68 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from build_support import native_name
 from proposal_leisure_interiors import apply_leisure
 from proposal_kitchen_interiors import export_quiet_oak_gltf
-parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
+parser=argparse.ArgumentParser();parser.add_argument('variant',choices=('compact','planning'));parser.add_argument('--area',choices=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4','formal','sidebed','loftsuite','hobby','terrace','arrival','landings','garage','poolgarden','gardenhouse','office','workshop'),default='cinema');parser.add_argument('--render',action='store_true');parser.add_argument('--view',default='entrance');parser.add_argument('--samples',type=int,default=32);parser.add_argument('--render-only',action='store_true');parser.add_argument('--working',action='store_true');parser.add_argument('--baseline',type=Path,help='Optional immutable native/geometry/navigation snapshot directory')
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);VARIANT=args.variant;area=args.area
 OUT=ROOT/'revisions/interiors-overnight-2026-09-27'/area/VARIANT;OUT.mkdir(parents=True,exist_ok=True)
 PUBLIC=ROOT/'walkthrough/public/interiors/leisure/models';PUBLIC.mkdir(parents=True,exist_ok=True)
 BASE=args.baseline.resolve()if args.baseline else ROOT/f'output-proposed-{VARIANT}';native=BASE/(native_name(VARIANT)+'.blend');source_hash=hashlib.sha256(native.read_bytes()).hexdigest()
 nav=json.loads((BASE/'navigation.json').read_text());g=json.loads((BASE/'geometry.json').read_text())
-bpy.ops.wm.open_mainfile(filepath=str(native));scene=bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene
+bpy.ops.wm.open_mainfile(filepath=str(native))
+# Re-evaluate the retained reconstruction before a study copies its parts.
+# Once the full proposal replaces the stair, those source objects belong only
+# to this inactive scene and load with unevaluated world transforms.
+if area=='arrival':
+    bpy.context.window.scene=bpy.data.scenes['01 Exterior']
+    for ob in bpy.context.scene.objects:ob.update_tag(refresh={'OBJECT'})
+    bpy.context.view_layer.update()
+scene=bpy.data.scenes['08 Proposed extensions'];bpy.context.window.scene=scene
 materials={m.name:m for m in bpy.data.materials};PALETTE=dict(g['materials']);new_obstacles=[];new_surfaces=[];new_segments=[];new_views=[]
-if area=='bedroom4':
+if area=='family':
+    from proposal_sidebed_interiors import apply_sidebed
+    apply_sidebed(globals())
+elif area=='sidebed':
+    from proposal_family_interiors import apply_family
+    apply_family(globals())
+if area in('poolgarden','gardenhouse','workshop'):
+    from garden_level_steps import correct_loggia_step,correct_garden_building_clearance
+    correct_loggia_step(globals());correct_garden_building_clearance(globals())
+if area=='workshop':
+    from proposal_workshop_interiors import apply_workshop
+    report=apply_workshop(globals())
+elif area=='office':
+    from proposal_office_interiors import apply_office
+    report=apply_office(globals())
+elif area=='gardenhouse':
+    from proposal_gardenhouse_interiors import apply_gardenhouse
+    report=apply_gardenhouse(globals())
+elif area=='poolgarden':
+    from proposal_poolgarden_interiors import apply_poolgarden
+    report=apply_poolgarden(globals())
+elif area=='garage':
+    from proposal_garage_interiors import apply_garage
+    report=apply_garage(globals())
+elif area=='landings':
+    from proposal_landings_interiors import apply_landings
+    report=apply_landings(globals())
+elif area=='arrival':
+    from proposal_arrival_interiors import apply_arrival
+    report=apply_arrival(globals())
+elif area=='terrace':
+    from proposal_terrace_interiors import apply_terrace
+    report=apply_terrace(globals())
+elif area=='hobby':
+    from proposal_hobby_interiors import apply_hobby
+    report=apply_hobby(globals())
+elif area=='loftsuite':
+    from proposal_loftsuite_interiors import apply_loftsuite
+    report=apply_loftsuite(globals())
+elif area=='sidebed':
+    from proposal_sidebed_interiors import apply_sidebed
+    report=apply_sidebed(globals())
+elif area=='formal':
+    from proposal_formal_interiors import apply_formal
+    report=apply_formal(globals())
+elif area=='bedroom4':
     from proposal_bedroom4_interiors import apply_bedroom4
     report=apply_bedroom4(globals())
 elif area=='familybath':
@@ -77,7 +130,7 @@ def bounds(ob):
     return [min(v[i]for v in p)for i in range(3)]+[max(v[i]for v in p)for i in range(3)]
 
 x0,y0,x1,y1=cfg['bounds'];z=cfg['floorZ'];ceiling=cfg['ceilingZ']
-crop=[x0-(.24 if area=='utility'else .17 if area=='guest'else .13),y0-.13,z-.04,x1+.15,y1+(.25 if area in('family','bedroom4')else .23 if area=='cloakroom'else .10),ceiling+.08]
+crop=[x0-(.24 if area=='utility'else .17 if area=='guest'else .13),y0-.13,cfg.get('cropBottomZ',z-.04),x1+.15,y1+(.25 if area in('family','bedroom4')else .23 if area=='cloakroom'else .10),ceiling+.08]
 study=bpy.data.scenes.new(area.title()+' — interior study');coll=bpy.data.collections.new(area.title()+' study geometry');study.collection.children.link(coll)
 hidden=set(nav.get('hiddenObjects',[]));cutaway=[];copied=[]
 for ob in list(scene.objects):
@@ -91,6 +144,8 @@ for ob in list(scene.objects):
     if area in('gym','utility') and name.startswith(('Proposal | New wing ground floor','Proposal | Wing Ground ceiling','Proposal | Wing first floor')):continue
     bb=bounds(ob)
     if any(bb[i+3]<=crop[i] or bb[i]>=crop[i+3] for i in range(3)):continue
+    if area=='landings' and ob.get('interior_room')!=area and ((bb[0]>9.965 and bb[4]<-6.71)or(bb[0]>10.475 and bb[4]<-3.0)or(bb[3]<5.9 and bb[1]<3.19 and bb[4]>.0)or(bb[1]>4.60 and bb[0]>3.8)):continue
+    if area=='arrival' and ob.get('interior_room')!=area and ((bb[3]<5.55 and bb[1]>-4.115 and bb[4]<0)or(bb[3]<5.92 and bb[1]<2.59 and bb[4]>0)):continue
     if area=='bar' and bb[3]<9.12 and bb[4]<-9.85:continue
     if area=='gym' and bb[3]<11.43 and bb[4]<-9.85:continue
     # Keep walls that meet the L-shaped boundary; float rounding must not
@@ -98,6 +153,7 @@ for ob in list(scene.objects):
     if area=='familybath' and bb[0]>7.185 and bb[1]>6.165:continue
     if area=='bedroom3' and bb[3]<3.715 and bb[4]<5.615:continue
     if area=='family' and bb[3]<-2.48 and bb[4]<5.15:continue
+    if area=='formal' and bb[3]<8.74 and bb[4]<4.98:continue
     copy=ob.copy();copy.data=ob.data.copy();coll.objects.link(copy);copy.name=name;copy['source_name']=name;copy['model_object_name']=ob.name
     copy.parent=None;copy.matrix_world=ob.matrix_world.copy()
     # Long shared retaining walls are cut only in this isolated study, never in the source house.
@@ -115,7 +171,11 @@ for ob in list(scene.objects):
             bm.free();bpy.data.objects.remove(copy,do_unlink=True);continue
         bm.to_mesh(mesh);bm.free();copy.modifiers.clear();copy.data=mesh;copy.matrix_world=Matrix.Identity(4)
     copied.append(copy)
-    if bb[2]>ceiling-.05 or any(t in name for t in('acoustic ceiling','ceiling speaker','projector','ceiling concealed','ivory ceiling','pendant cable','pendant shade','pendant diffuser','pool overhead','pool light suspension','linear ceiling','strength ceiling','ceiling light')):cutaway.append(name)
+    if(area=='poolgarden'and ('roof'in name.lower() or 'ceiling'in name.lower()))or(area=='arrival'and bb[2]>=2.60)or(area in('loftsuite','hobby')and 'Joined roof lining'in name)or bb[2]>ceiling-.05 or any(t in name for t in('acoustic ceiling','ceiling speaker','projector','ceiling concealed','ivory ceiling','pendant cable','pendant shade','pendant diffuser','pool overhead','pool light suspension','linear ceiling','strength ceiling','ceiling light')):cutaway.append(name)
+if area in('arrival','landings','garage','poolgarden','gardenhouse','office','workshop'):
+    authored=sum(ob.type=='MESH' and ob.get('interior_room')==area for ob in scene.objects)
+    retained=sum(ob.type=='MESH' and ob.get('interior_room')==area for ob in copied)
+    assert authored==retained,(area,'authored geometry removed from study',authored,retained)
 bpy.context.window.scene=study;study.view_layers[0].update()
 views=cfg.get('views')or{
     'entrance':{'position':[8.62,-10.50,z+1.60],'target':[6.76,-14.15,z+1.20],'fov':65},
@@ -126,7 +186,7 @@ views=cfg.get('views')or{
     'details':{'position':[8.48,-13.37,z+1.45],'target':[6.68,-12.05,z+.58],'fov':56},
     'overview':{'position':[12.5,-17.5,5.6],'target':[7.1,-12.6,z+1.3],'fov':50,'cutaway':True},
 }
-meta={'variant':VARIANT,'room':cfg['room'],'layoutRevision':cfg['revision'],'configuration':cfg,'materials':PALETTE,'planRooms':[r for r in nav['planRooms']if r['name']==cfg['room']or(area=='bedroom4'and r['name']in('Bedroom 4','Bedroom 4 en suite'))],'proposalLights':[l for l in nav['proposalLights']if l['name'].startswith(area.title()+' 01 | ')],'cutawayObjects':cutaway,'mirrors':[m for m in nav.get('mirrors',[])if m['name'].startswith(area.title()+' 01 | ')],'objects':len(copied),'views':views,'sourceModelUpdatedAt':nav['modelUpdatedAt']}
+meta={'variant':VARIANT,'room':cfg['room'],'layoutRevision':cfg['revision'],'configuration':cfg,'materials':PALETTE,'planRooms':[r for r in nav['planRooms']if r['name']==cfg['room']or(area=='bedroom4'and r['name']in('Bedroom 4','Bedroom 4 en suite'))or(area=='sidebed'and r['name']in('Side wing south bedroom','Side south ensuite'))or(area=='loftsuite'and r['name']in('New loft bedroom','Loft ensuite','Loft hip store'))or(area=='arrival'and r['name']in('Entrance hall','New entrance gallery','Attached entrance gallery'))or(area=='gardenhouse'and r['name']in('Summer house','Outside WC','Tool store'))or(area=='garage'and r['name']=='New double garage')or(area=='landings'and r['name']in('Landing','Joined first-floor landing','Landing library','New upper gallery'))or(area=='hobby'and r['name']in('Loft studio and lounge','Original loft bridge','Loft landing','Loft east eaves store','Loft west eaves store'))],'proposalLights':[l for l in nav['proposalLights']if l['name'].startswith(area.title()+' 01 | ')],'cutawayObjects':cutaway,'mirrors':[m for m in nav.get('mirrors',[])if m['name'].startswith(area.title()+' 01 | ')],'objects':len(copied),'views':views,'sourceModelUpdatedAt':nav['modelUpdatedAt']}
 if not args.render_only:
     export_quiet_oak_gltf(filepath=str(PUBLIC/(VARIANT+'-'+area+'.glb')),export_format='GLB',use_active_scene=True,export_apply=True,export_cameras=False,export_lights=False,export_extras=True)
     (PUBLIC/(VARIANT+'-'+area+'.json')).write_text(json.dumps(meta,indent=2)+'\n')
@@ -164,6 +224,9 @@ if args.render:
         study.cycles.device='GPU'
     except Exception as error:print('CPU_RENDER',error,flush=True)
     world=bpy.data.worlds.new('Room studio ambient');world.use_nodes=True;world.node_tree.nodes['Background'].inputs['Color'].default_value=(.12,.12,.12,1);world.node_tree.nodes['Background'].inputs['Strength'].default_value=.15;study.world=world
+    if area in('terrace','poolgarden'):
+        world.node_tree.nodes['Background'].inputs['Color'].default_value=(.65,.73,.84,1);world.node_tree.nodes['Background'].inputs['Strength'].default_value=.48
+        sun=bpy.data.objects.new('Terrace afternoon sun',bpy.data.lights.new('Terrace afternoon sun','SUN'));sun.data.energy=2.0;sun.data.angle=math.radians(12);sun.rotation_euler=(math.radians(28),math.radians(-22),math.radians(-28));study.collection.objects.link(sun)
     camera=bpy.data.objects.new('Room review camera',bpy.data.cameras.new('Room review camera'));study.collection.objects.link(camera);study.camera=camera
     view=views[args.view];camera.location=view['position'];camera.rotation_euler=(Vector(view['target'])-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='PERSP';camera.data.sensor_fit='VERTICAL';camera.data.angle_y=math.radians(view['fov']);camera.data.clip_start=.025
     if view.get('cutaway'):

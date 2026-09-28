@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "bedroom4",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Bedroom4 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "shower",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 458,
+      "cutaway": 21,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445676-0"
+    },
+    {
+      "area": "bedroom4",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Bedroom4 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "shower",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 460,
+      "cutaway": 21,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445676-0"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

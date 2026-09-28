@@ -40,13 +40,26 @@ function assertSceneUnchanged(before,after){
  }
 }
 
-export async function verifyLosslessGlb(original,packed){
+export async function verifyLosslessGlb(original,packed,loadImage){
  await MeshoptDecoder.ready;
- const a=parse(original),b=parse(packed);assertSceneUnchanged(a.json,b.json);
+ const a=parse(original),b=parse(packed),externalViews=new Set();
+ for(let i=0;i<(a.json.images?.length??0);i++){
+  const source=a.json.images[i],target=b.json.images?.[i];
+  if(source.bufferView===undefined||!target?.uri)continue;
+  if(!loadImage)throw Error('External texture resolver required');
+  const view=a.json.bufferViews[source.bufferView],raw=a.bin.subarray(view.byteOffset??0,(view.byteOffset??0)+view.byteLength);
+  if(!raw.equals(await loadImage(target.uri)))throw Error('External image bytes changed: '+i);
+  const normalized={...target,bufferView:source.bufferView};delete normalized.uri;
+  // Preserve property order for the existing exact scene comparison.
+  if(Object.keys(normalized).length!==Object.keys(source).length||Object.entries(source).some(([k,v])=>JSON.stringify(v)!==JSON.stringify(normalized[k])))throw Error('Image metadata changed');
+  b.json.images[i]=structuredClone(source);externalViews.add(source.bufferView);
+ }
+ assertSceneUnchanged(a.json,b.json);
  let checkedBytes=0;
  for(let i=0;i<a.json.bufferViews.length;i++){
   const source=a.json.bufferViews[i],target=b.json.bufferViews[i],ext=target.extensions?.[EXTENSION];
   const raw=a.bin.subarray(source.byteOffset??0,(source.byteOffset??0)+source.byteLength);
+  if(externalViews.has(i)){checkedBytes+=raw.length;continue;}
   let decoded;
   if(ext){
    decoded=Buffer.alloc(target.byteLength);

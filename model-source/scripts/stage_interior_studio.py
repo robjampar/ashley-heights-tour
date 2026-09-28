@@ -3,6 +3,10 @@ from pathlib import Path
 import hashlib
 import json
 import re
+try:
+    from .model_delivery import delivery_asset
+except ImportError:
+    from model_delivery import delivery_asset
 
 
 def stage_studio(source, destination, previous, now, retirement, authored, room='kitchen'):
@@ -27,7 +31,7 @@ def stage_studio(source, destination, previous, now, retirement, authored, room=
         if relative.parts[0]=='images' and relative.as_posix() not in selected_images:
             continue
         payload = path.read_bytes()
-        target = relative.with_name(relative.stem + '.' + sha(payload)[:16] + relative.suffix)
+        target, payload = delivery_asset(relative, payload)
         asset_map[relative.as_posix()] = target.as_posix()
         dest = destination / target
         dest.parent.mkdir(parents=True, exist_ok=True)

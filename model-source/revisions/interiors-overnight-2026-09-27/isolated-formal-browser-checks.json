@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "formal",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak beige limestone floor",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal warm wool",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "dining",
+        "seated",
+        "fireplace",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 1129,
+      "cutaway": 30,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=2445666-0"
+    },
+    {
+      "area": "formal",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak beige limestone floor",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal warm wool",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "dining",
+        "seated",
+        "fireplace",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 1126,
+      "cutaway": 34,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=2445666-0"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

@@ -1,0 +1,22 @@
+{
+  "status": "blocked_not_published",
+  "live_site_changed": false,
+  "build": "passed",
+  "javascript_tests": 116,
+  "publication_tests": 9,
+  "brochure_link_check": "passed",
+  "full_resolution_jpeg_checks": 61,
+  "blockers": [
+    "GitHub hostname cannot be resolved from this environment; remote sync/push unavailable",
+    "Sparse checkout omits assets/; 13 of its122 tracked blobs unavailable locally and require fetching",
+    "Available staged public files already total about1.23GB before panorama assets, exceeding configured1GB Pages budget",
+    "Current Proposed packed GLB exceeds100MB per-file GitHub limit; requires asset packaging changes before push"
+  ],
+  "large_files": [
+    {
+      "path": "model/proposal-compact.8ac8fd165199c677.glb",
+      "bytes": 104969840
+    }
+  ],
+  "native_rebuild_pending": true
+}

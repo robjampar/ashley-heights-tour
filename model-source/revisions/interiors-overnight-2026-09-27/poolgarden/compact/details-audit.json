@@ -1,0 +1,234 @@
+{
+  "status": "PASS",
+  "loungers": [
+    {
+      "lounger": 1,
+      "localBounds": [
+        -1.0250006362437996,
+        -0.3790004707579705,
+        2.980232227667301e-09,
+        1.0249998993008806,
+        0.3790002732947105,
+        1.011747407913208
+      ],
+      "meshParts": 78
+    },
+    {
+      "lounger": 2,
+      "localBounds": [
+        -1.0250010047152625,
+        -0.37900056948960137,
+        2.980232227667301e-09,
+        1.0249995308294177,
+        0.37900017456307955,
+        1.011747407913208
+      ],
+      "meshParts": 78
+    },
+    {
+      "lounger": 3,
+      "localBounds": [
+        -1.0249995308294177,
+        -0.37900017456307955,
+        2.980232227667301e-09,
+        1.0250010047152625,
+        0.37900056948960137,
+        1.011747407913208
+      ],
+      "meshParts": 78
+    }
+  ],
+  "floorContacts": [
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "xy": [
+        4.652788877487183,
+        18.20426845550537
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "xy": [
+        5.261322259902954,
+        18.041213035583496
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "xy": [
+        4.223148584365845,
+        16.60083293914795
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "xy": [
+        4.831681966781616,
+        16.43777561187744
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "xy": [
+        4.652788877487183,
+        20.804268836975098
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "xy": [
+        5.261322259902954,
+        20.641213417053223
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "xy": [
+        4.223148584365845,
+        19.200833320617676
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "xy": [
+        4.831681966781616,
+        19.037775993347168
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "xy": [
+        4.652788877487183,
+        23.40426731109619
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "xy": [
+        5.261322259902954,
+        23.241211891174316
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "xy": [
+        4.223148584365845,
+        21.80083179473877
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "xy": [
+        4.831681966781616,
+        21.63777446746826
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 pedestal foot",
+      "xy": [
+        4.360000133514404,
+        18.6200008392334
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 pedestal foot",
+      "xy": [
+        4.360000133514404,
+        21.219999313354492
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 pedestal foot",
+      "xy": [
+        4.360000133514404,
+        23.81999969482422
+      ],
+      "support": "Proposal | Pool terrace"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "xy": [
+        13.104999542236328,
+        20.209999084472656
+      ],
+      "support": "Proposal | Pavilion expanded floor"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "xy": [
+        13.104999542236328,
+        22.229999542236328
+      ],
+      "support": "Proposal | Pavilion expanded floor"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "xy": [
+        13.8149995803833,
+        20.209999084472656
+      ],
+      "support": "Proposal | Pavilion expanded floor"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "xy": [
+        13.8149995803833,
+        22.229999542236328
+      ],
+      "support": "Proposal | Pavilion expanded floor"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table pedestal foot",
+      "xy": [
+        12.369999885559082,
+        21.219999313354492
+      ],
+      "support": "Proposal | Pavilion expanded floor"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard recessed base",
+      "xy": [
+        12.724999904632568,
+        25.9350004196167
+      ],
+      "support": "Proposal | Pavilion expanded floor"
+    }
+  ],
+  "retainedClashes": [],
+  "correctedLoggiaStep": {
+    "object_name": "Proposal | Loggia step",
+    "name": "Proposal | Loggia step",
+    "reason": "Intermediate tread must meet the retained terrace and summer-house floor; lawn conformation had raised it a second time.",
+    "bounds": [
+      13.95,
+      19.77,
+      0.18000000000000002,
+      14.32,
+      23.34,
+      0.3722935080528259
+    ],
+    "lower_floor": 0.2,
+    "upper_floor": 0.5445870161056519,
+    "risers": [
+      0.1722935080528259,
+      0.17229350805282595
+    ],
+    "tread_depth": 0.370000000000001
+  },
+  "sourceSha256": "41a32848357180a851d361e056ee45f709ff9b5af554421ccb7651fbf40ba039",
+  "sourceUnchanged": true
+}

@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "garage",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Garage natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Garage warm stone worktop",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "storage",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 278,
+      "cutaway": 11,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-new-double-garage"
+    },
+    {
+      "area": "garage",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Garage natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Garage warm stone worktop",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "storage",
+        "details",
+        "reverse",
+        "overview"
+      ],
+      "objects": 282,
+      "cutaway": 11,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-new-double-garage"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

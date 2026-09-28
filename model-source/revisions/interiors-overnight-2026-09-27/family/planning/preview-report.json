@@ -1,253 +1,1589 @@
 {
   "area": "family",
-  "revision": 1,
+  "revision": 2,
   "objects": 395,
   "mesh_objects": 389,
   "lights": 6,
   "removed_objects": [
     {
-      "name": "Proposal | Family lounge sofa oak underframe",
-      "object_name": "Proposal | Family lounge sofa oak underframe"
+      "name": "Family 01 | wide oak floor",
+      "object_name": "Family 01 | wide oak floor"
     },
     {
-      "name": "Proposal | Family lounge sofa foot",
-      "object_name": "Proposal | Family lounge sofa foot"
+      "name": "Family 01 | ivory ceiling",
+      "object_name": "Family 01 | ivory ceiling"
     },
     {
-      "name": "Proposal | Family lounge sofa foot",
-      "object_name": "Proposal | Family lounge sofa foot.001"
+      "name": "Family 01 | soft wool seating rug",
+      "object_name": "Family 01 | soft wool seating rug"
     },
     {
-      "name": "Proposal | Family lounge sofa foot",
-      "object_name": "Proposal | Family lounge sofa foot.002"
+      "name": "Family 01 | south sofa wall ivory finish",
+      "object_name": "Family 01 | south sofa wall ivory finish"
     },
     {
-      "name": "Proposal | Family lounge sofa foot",
-      "object_name": "Proposal | Family lounge sofa foot.003"
+      "name": "Family 01 | north west pier ivory finish",
+      "object_name": "Family 01 | north west pier ivory finish"
     },
     {
-      "name": "Proposal | Family lounge sofa seat cushion",
-      "object_name": "Proposal | Family lounge sofa seat cushion"
+      "name": "Family 01 | north east pier ivory finish",
+      "object_name": "Family 01 | north east pier ivory finish"
     },
     {
-      "name": "Proposal | Family lounge sofa seat cushion",
-      "object_name": "Proposal | Family lounge sofa seat cushion.001"
+      "name": "Family 01 | north head ivory finish",
+      "object_name": "Family 01 | north head ivory finish"
     },
     {
-      "name": "Proposal | Family lounge sofa seat cushion",
-      "object_name": "Proposal | Family lounge sofa seat cushion.002"
+      "name": "Family 01 | north window sill wall ivory",
+      "object_name": "Family 01 | north window sill wall ivory"
     },
     {
-      "name": "Proposal | Family lounge sofa back cushion",
-      "object_name": "Proposal | Family lounge sofa back cushion"
+      "name": "Family 01 | west window internal sill",
+      "object_name": "Family 01 | west window internal sill"
     },
     {
-      "name": "Proposal | Family lounge sofa back cushion",
-      "object_name": "Proposal | Family lounge sofa back cushion.001"
+      "name": "Family 01 | west window internal head",
+      "object_name": "Family 01 | west window internal head"
     },
     {
-      "name": "Proposal | Family lounge sofa back cushion",
-      "object_name": "Proposal | Family lounge sofa back cushion.002"
+      "name": "Family 01 | west window internal first jamb",
+      "object_name": "Family 01 | west window internal first jamb"
     },
     {
-      "name": "Proposal | Family lounge sofa arm",
-      "object_name": "Proposal | Family lounge sofa arm"
+      "name": "Family 01 | west window internal second jamb",
+      "object_name": "Family 01 | west window internal second jamb"
     },
     {
-      "name": "Proposal | Family lounge sofa arm",
-      "object_name": "Proposal | Family lounge sofa arm.001"
+      "name": "Family 01 | north window internal sill",
+      "object_name": "Family 01 | north window internal sill"
     },
     {
-      "name": "Proposal | Family lounge coffee table top",
-      "object_name": "Proposal | Family lounge coffee table top"
+      "name": "Family 01 | north window internal head",
+      "object_name": "Family 01 | north window internal head"
     },
     {
-      "name": "Proposal | Family lounge coffee table foot",
-      "object_name": "Proposal | Family lounge coffee table foot"
+      "name": "Family 01 | north window internal first jamb",
+      "object_name": "Family 01 | north window internal first jamb"
     },
     {
-      "name": "Proposal | Family lounge coffee table foot",
-      "object_name": "Proposal | Family lounge coffee table foot.001"
+      "name": "Family 01 | north window internal second jamb",
+      "object_name": "Family 01 | north window internal second jamb"
     },
     {
-      "name": "Proposal | Family lounge coffee table foot",
-      "object_name": "Proposal | Family lounge coffee table foot.002"
+      "name": "Family 01 | west recessed blind cassette",
+      "object_name": "Family 01 | west recessed blind cassette"
     },
     {
-      "name": "Proposal | Family lounge coffee table foot",
-      "object_name": "Proposal | Family lounge coffee table foot.003"
+      "name": "Family 01 | west linen blind upper drop",
+      "object_name": "Family 01 | west linen blind upper drop"
     },
     {
-      "name": "Proposal | Family lounge storage back",
-      "object_name": "Proposal | Family lounge storage back"
+      "name": "Family 01 | west blind lower hem",
+      "object_name": "Family 01 | west blind lower hem"
     },
     {
-      "name": "Proposal | Family lounge storage upright",
-      "object_name": "Proposal | Family lounge storage upright"
+      "name": "Family 01 | north recessed blind cassette",
+      "object_name": "Family 01 | north recessed blind cassette"
     },
     {
-      "name": "Proposal | Family lounge storage upright",
-      "object_name": "Proposal | Family lounge storage upright.001"
+      "name": "Family 01 | north linen blind upper drop",
+      "object_name": "Family 01 | north linen blind upper drop"
     },
     {
-      "name": "Proposal | Family lounge storage upright",
-      "object_name": "Proposal | Family lounge storage upright.002"
+      "name": "Family 01 | north blind lower hem",
+      "object_name": "Family 01 | north blind lower hem"
     },
     {
-      "name": "Proposal | Family lounge storage upright",
-      "object_name": "Proposal | Family lounge storage upright.003"
+      "name": "Family 01 | sofa recessed foot",
+      "object_name": "Family 01 | sofa recessed foot"
     },
     {
-      "name": "Proposal | Family lounge storage full shelf",
-      "object_name": "Proposal | Family lounge storage full shelf"
+      "name": "Family 01 | sofa recessed foot",
+      "object_name": "Family 01 | sofa recessed foot.001"
     },
     {
-      "name": "Proposal | Family lounge storage full shelf",
-      "object_name": "Proposal | Family lounge storage full shelf.001"
+      "name": "Family 01 | sofa recessed foot",
+      "object_name": "Family 01 | sofa recessed foot.002"
     },
     {
-      "name": "Proposal | Family lounge storage cupboard front",
-      "object_name": "Proposal | Family lounge storage cupboard front"
+      "name": "Family 01 | sofa recessed foot",
+      "object_name": "Family 01 | sofa recessed foot.003"
     },
     {
-      "name": "Proposal | Family lounge storage pull",
-      "object_name": "Proposal | Family lounge storage pull"
+      "name": "Family 01 | sofa shadow plinth",
+      "object_name": "Family 01 | sofa shadow plinth"
     },
     {
-      "name": "Proposal | Family lounge storage cupboard front",
-      "object_name": "Proposal | Family lounge storage cupboard front.001"
+      "name": "Family 01 | sofa upholstered base",
+      "object_name": "Family 01 | sofa upholstered base"
     },
     {
-      "name": "Proposal | Family lounge storage pull",
-      "object_name": "Proposal | Family lounge storage pull.001"
+      "name": "Family 01 | sofa seat cushion",
+      "object_name": "Family 01 | sofa seat cushion"
     },
     {
-      "name": "Proposal | Family lounge storage open shelf",
-      "object_name": "Proposal | Family lounge storage open shelf"
+      "name": "Family 01 | sofa back cushion",
+      "object_name": "Family 01 | sofa back cushion"
     },
     {
-      "name": "Proposal | Family lounge storage open shelf",
-      "object_name": "Proposal | Family lounge storage open shelf.001"
+      "name": "Family 01 | sofa seat cushion",
+      "object_name": "Family 01 | sofa seat cushion.001"
     },
     {
-      "name": "Proposal | Family lounge storage open shelf",
-      "object_name": "Proposal | Family lounge storage open shelf.002"
+      "name": "Family 01 | sofa back cushion",
+      "object_name": "Family 01 | sofa back cushion.001"
     },
     {
-      "name": "Proposal | Family lounge storage low door",
-      "object_name": "Proposal | Family lounge storage low door"
+      "name": "Family 01 | sofa seat cushion",
+      "object_name": "Family 01 | sofa seat cushion.002"
     },
     {
-      "name": "Proposal | Family lounge storage low pull",
-      "object_name": "Proposal | Family lounge storage low pull"
+      "name": "Family 01 | sofa back cushion",
+      "object_name": "Family 01 | sofa back cushion.002"
     },
     {
-      "name": "Proposal | Family lounge storage low door",
-      "object_name": "Proposal | Family lounge storage low door.001"
+      "name": "Family 01 | rounded sofa arm",
+      "object_name": "Family 01 | rounded sofa arm"
     },
     {
-      "name": "Proposal | Family lounge storage low pull",
-      "object_name": "Proposal | Family lounge storage low pull.001"
+      "name": "Family 01 | rounded sofa arm",
+      "object_name": "Family 01 | rounded sofa arm.001"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book"
+      "name": "Family 01 | left sofa linen cushion",
+      "object_name": "Family 01 | left sofa linen cushion"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book.001"
+      "name": "Family 01 | right sofa ivory cushion",
+      "object_name": "Family 01 | right sofa ivory cushion"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book.002"
+      "name": "Family 01 | draped sofa throw",
+      "object_name": "Family 01 | draped sofa throw"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book.003"
+      "name": "Family 01 | left arm oak drinks tray",
+      "object_name": "Family 01 | left arm oak drinks tray"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book.004"
+      "name": "Family 01 | nesting table oak pedestal 0",
+      "object_name": "Family 01 | nesting table oak pedestal 0"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book.005"
+      "name": "Family 01 | nesting table limestone top 0",
+      "object_name": "Family 01 | nesting table limestone top 0"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book.006"
+      "name": "Family 01 | nesting table oak pedestal 1",
+      "object_name": "Family 01 | nesting table oak pedestal 1"
     },
     {
-      "name": "Proposal | Family lounge storage book",
-      "object_name": "Proposal | Family lounge storage book.007"
+      "name": "Family 01 | nesting table limestone top 1",
+      "object_name": "Family 01 | nesting table limestone top 1"
     },
     {
-      "name": "Proposal | Family lounge storage board game",
-      "object_name": "Proposal | Family lounge storage board game"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square"
     },
     {
-      "name": "Proposal | Family lounge storage board game",
-      "object_name": "Proposal | Family lounge storage board game.001"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.001"
     },
     {
-      "name": "Proposal | Family lounge storage board game",
-      "object_name": "Proposal | Family lounge storage board game.002"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.002"
     },
     {
-      "name": "Proposal | Family lounge work table top",
-      "object_name": "Proposal | Family lounge work table top"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.003"
     },
     {
-      "name": "Proposal | Family lounge work table leg",
-      "object_name": "Proposal | Family lounge work table leg"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.004"
     },
     {
-      "name": "Proposal | Family lounge work table leg",
-      "object_name": "Proposal | Family lounge work table leg.001"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.005"
     },
     {
-      "name": "Proposal | Family lounge work table leg",
-      "object_name": "Proposal | Family lounge work table leg.002"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.006"
     },
     {
-      "name": "Proposal | Family lounge work table leg",
-      "object_name": "Proposal | Family lounge work table leg.003"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.007"
     },
     {
-      "name": "Proposal | Family lounge chair 1 cushion",
-      "object_name": "Proposal | Family lounge chair 1 cushion"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.008"
     },
     {
-      "name": "Proposal | Family lounge chair 1 back",
-      "object_name": "Proposal | Family lounge chair 1 back"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.009"
     },
     {
-      "name": "Proposal | Family lounge chair 1 leg",
-      "object_name": "Proposal | Family lounge chair 1 leg"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.010"
     },
     {
-      "name": "Proposal | Family lounge chair 1 leg",
-      "object_name": "Proposal | Family lounge chair 1 leg.001"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.011"
     },
     {
-      "name": "Proposal | Family lounge chair 1 leg",
-      "object_name": "Proposal | Family lounge chair 1 leg.002"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.012"
     },
     {
-      "name": "Proposal | Family lounge chair 1 leg",
-      "object_name": "Proposal | Family lounge chair 1 leg.003"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.013"
     },
     {
-      "name": "Proposal | Upstairs family lounge ceiling light",
-      "object_name": "Proposal | Upstairs family lounge ceiling light"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.014"
     },
     {
-      "name": "Proposal | Upstairs family lounge ceiling fitting",
-      "object_name": "Proposal | Upstairs family lounge ceiling fitting"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.015"
     },
     {
-      "name": "Proposal | Upstairs family lounge ceiling diffuser",
-      "object_name": "Proposal | Upstairs family lounge ceiling diffuser"
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.016"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.017"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.018"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.019"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.020"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.021"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.022"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.023"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.024"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.025"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.026"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.027"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.028"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.029"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.030"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.031"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.032"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.033"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.034"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.035"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.036"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.037"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.038"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.039"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.040"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.041"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.042"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.043"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.044"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.045"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.046"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.047"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.048"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.049"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.050"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.051"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.052"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.053"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.054"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.055"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.056"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.057"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.058"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.059"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.060"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.061"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.062"
+    },
+    {
+      "name": "Family 01 | chess board square",
+      "object_name": "Family 01 | chess board square.063"
+    },
+    {
+      "name": "Family 01 | chess rook body",
+      "object_name": "Family 01 | chess rook body"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.001"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.002"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.003"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base"
+    },
+    {
+      "name": "Family 01 | chess knight body",
+      "object_name": "Family 01 | chess knight body"
+    },
+    {
+      "name": "Family 01 | carved knight head",
+      "object_name": "Family 01 | carved knight head"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye.001"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.001"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.001"
+    },
+    {
+      "name": "Family 01 | chess bishop body",
+      "object_name": "Family 01 | chess bishop body"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.002"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.002"
+    },
+    {
+      "name": "Family 01 | chess queen body",
+      "object_name": "Family 01 | chess queen body"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.001"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.002"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.003"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.004"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.003"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.003"
+    },
+    {
+      "name": "Family 01 | chess king body",
+      "object_name": "Family 01 | chess king body"
+    },
+    {
+      "name": "Family 01 | king crown vertical",
+      "object_name": "Family 01 | king crown vertical"
+    },
+    {
+      "name": "Family 01 | king crown cross",
+      "object_name": "Family 01 | king crown cross"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.004"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.004"
+    },
+    {
+      "name": "Family 01 | chess bishop body",
+      "object_name": "Family 01 | chess bishop body.001"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.005"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.005"
+    },
+    {
+      "name": "Family 01 | chess knight body",
+      "object_name": "Family 01 | chess knight body.001"
+    },
+    {
+      "name": "Family 01 | carved knight head",
+      "object_name": "Family 01 | carved knight head.001"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye.002"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye.003"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.006"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.006"
+    },
+    {
+      "name": "Family 01 | chess rook body",
+      "object_name": "Family 01 | chess rook body.001"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.004"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.005"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.006"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.007"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.007"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.007"
+    },
+    {
+      "name": "Family 01 | chess rook body",
+      "object_name": "Family 01 | chess rook body.002"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.008"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.009"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.010"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.011"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.008"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.008"
+    },
+    {
+      "name": "Family 01 | chess knight body",
+      "object_name": "Family 01 | chess knight body.002"
+    },
+    {
+      "name": "Family 01 | carved knight head",
+      "object_name": "Family 01 | carved knight head.002"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye.004"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye.005"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.009"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.009"
+    },
+    {
+      "name": "Family 01 | chess bishop body",
+      "object_name": "Family 01 | chess bishop body.002"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.010"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.010"
+    },
+    {
+      "name": "Family 01 | chess queen body",
+      "object_name": "Family 01 | chess queen body.001"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.005"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.006"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.007"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.008"
+    },
+    {
+      "name": "Family 01 | queen crown point",
+      "object_name": "Family 01 | queen crown point.009"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.011"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.011"
+    },
+    {
+      "name": "Family 01 | chess king body",
+      "object_name": "Family 01 | chess king body.001"
+    },
+    {
+      "name": "Family 01 | king crown vertical",
+      "object_name": "Family 01 | king crown vertical.001"
+    },
+    {
+      "name": "Family 01 | king crown cross",
+      "object_name": "Family 01 | king crown cross.001"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.012"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.012"
+    },
+    {
+      "name": "Family 01 | chess bishop body",
+      "object_name": "Family 01 | chess bishop body.003"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.013"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.013"
+    },
+    {
+      "name": "Family 01 | chess knight body",
+      "object_name": "Family 01 | chess knight body.003"
+    },
+    {
+      "name": "Family 01 | carved knight head",
+      "object_name": "Family 01 | carved knight head.003"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye.006"
+    },
+    {
+      "name": "Family 01 | knight eye",
+      "object_name": "Family 01 | knight eye.007"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.014"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.014"
+    },
+    {
+      "name": "Family 01 | chess rook body",
+      "object_name": "Family 01 | chess rook body.003"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.012"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.013"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.014"
+    },
+    {
+      "name": "Family 01 | rook crown merlon",
+      "object_name": "Family 01 | rook crown merlon.015"
+    },
+    {
+      "name": "Family 01 | chess pawn head",
+      "object_name": "Family 01 | chess pawn head.015"
+    },
+    {
+      "name": "Family 01 | chess pawn base",
+      "object_name": "Family 01 | chess pawn base.015"
+    },
+    {
+      "name": "Family 01 | sofa side table base",
+      "object_name": "Family 01 | sofa side table base"
+    },
+    {
+      "name": "Family 01 | sofa side table stem",
+      "object_name": "Family 01 | sofa side table stem"
+    },
+    {
+      "name": "Family 01 | sofa side table stone top",
+      "object_name": "Family 01 | sofa side table stone top"
+    },
+    {
+      "name": "Family 01 | side-table ceramic cup",
+      "object_name": "Family 01 | side-table ceramic cup"
+    },
+    {
+      "name": "Family 01 | writing desk oak top",
+      "object_name": "Family 01 | writing desk oak top"
+    },
+    {
+      "name": "Family 01 | desk leg",
+      "object_name": "Family 01 | desk leg"
+    },
+    {
+      "name": "Family 01 | desk levelling foot",
+      "object_name": "Family 01 | desk levelling foot"
+    },
+    {
+      "name": "Family 01 | desk leg",
+      "object_name": "Family 01 | desk leg.001"
+    },
+    {
+      "name": "Family 01 | desk levelling foot",
+      "object_name": "Family 01 | desk levelling foot.001"
+    },
+    {
+      "name": "Family 01 | desk leg",
+      "object_name": "Family 01 | desk leg.002"
+    },
+    {
+      "name": "Family 01 | desk levelling foot",
+      "object_name": "Family 01 | desk levelling foot.002"
+    },
+    {
+      "name": "Family 01 | desk leg",
+      "object_name": "Family 01 | desk leg.003"
+    },
+    {
+      "name": "Family 01 | desk levelling foot",
+      "object_name": "Family 01 | desk levelling foot.003"
+    },
+    {
+      "name": "Family 01 | rear stationery drawer",
+      "object_name": "Family 01 | rear stationery drawer"
+    },
+    {
+      "name": "Family 01 | stationery drawer reveal",
+      "object_name": "Family 01 | stationery drawer reveal"
+    },
+    {
+      "name": "Family 01 | desk USB power plate",
+      "object_name": "Family 01 | desk USB power plate"
+    },
+    {
+      "name": "Family 01 | desk USB C slot",
+      "object_name": "Family 01 | desk USB C slot"
+    },
+    {
+      "name": "Family 01 | desk USB C slot",
+      "object_name": "Family 01 | desk USB C slot.001"
+    },
+    {
+      "name": "Family 01 | desk closed notebook",
+      "object_name": "Family 01 | desk closed notebook"
+    },
+    {
+      "name": "Family 01 | notebook page block",
+      "object_name": "Family 01 | notebook page block"
+    },
+    {
+      "name": "Family 01 | desk pen",
+      "object_name": "Family 01 | desk pen"
+    },
+    {
+      "name": "Family 01 | desk cable grommet",
+      "object_name": "Family 01 | desk cable grommet"
+    },
+    {
+      "name": "Family 01 | desk lamp base",
+      "object_name": "Family 01 | desk lamp base"
+    },
+    {
+      "name": "Family 01 | desk lamp shade",
+      "object_name": "Family 01 | desk lamp shade"
+    },
+    {
+      "name": "Family 01 | desk lamp diffuser",
+      "object_name": "Family 01 | desk lamp diffuser"
+    },
+    {
+      "name": "Family 01 | desk reading glow",
+      "object_name": "Family 01 | desk reading glow"
+    },
+    {
+      "name": "Family 01 | desk chair central stem",
+      "object_name": "Family 01 | desk chair central stem"
+    },
+    {
+      "name": "Family 01 | desk chair wheel",
+      "object_name": "Family 01 | desk chair wheel"
+    },
+    {
+      "name": "Family 01 | desk chair wheel",
+      "object_name": "Family 01 | desk chair wheel.001"
+    },
+    {
+      "name": "Family 01 | desk chair wheel",
+      "object_name": "Family 01 | desk chair wheel.002"
+    },
+    {
+      "name": "Family 01 | desk chair wheel",
+      "object_name": "Family 01 | desk chair wheel.003"
+    },
+    {
+      "name": "Family 01 | desk chair wheel",
+      "object_name": "Family 01 | desk chair wheel.004"
+    },
+    {
+      "name": "Family 01 | desk chair seat",
+      "object_name": "Family 01 | desk chair seat"
+    },
+    {
+      "name": "Family 01 | desk chair curved back",
+      "object_name": "Family 01 | desk chair curved back"
+    },
+    {
+      "name": "Family 01 | desk chair padded arm",
+      "object_name": "Family 01 | desk chair padded arm"
+    },
+    {
+      "name": "Family 01 | desk chair padded arm",
+      "object_name": "Family 01 | desk chair padded arm.001"
+    },
+    {
+      "name": "Family 01 | storage shadow plinth",
+      "object_name": "Family 01 | storage shadow plinth"
+    },
+    {
+      "name": "Family 01 | storage back",
+      "object_name": "Family 01 | storage back"
+    },
+    {
+      "name": "Family 01 | storage end",
+      "object_name": "Family 01 | storage end"
+    },
+    {
+      "name": "Family 01 | storage end",
+      "object_name": "Family 01 | storage end.001"
+    },
+    {
+      "name": "Family 01 | book and games shelf",
+      "object_name": "Family 01 | book and games shelf"
+    },
+    {
+      "name": "Family 01 | book and games shelf",
+      "object_name": "Family 01 | book and games shelf.001"
+    },
+    {
+      "name": "Family 01 | book and games shelf",
+      "object_name": "Family 01 | book and games shelf.002"
+    },
+    {
+      "name": "Family 01 | book and games shelf",
+      "object_name": "Family 01 | book and games shelf.003"
+    },
+    {
+      "name": "Family 01 | book and games shelf",
+      "object_name": "Family 01 | book and games shelf.004"
+    },
+    {
+      "name": "Family 01 | sliding low storage front",
+      "object_name": "Family 01 | sliding low storage front"
+    },
+    {
+      "name": "Family 01 | storage recessed pull",
+      "object_name": "Family 01 | storage recessed pull"
+    },
+    {
+      "name": "Family 01 | sliding low storage front",
+      "object_name": "Family 01 | sliding low storage front.001"
+    },
+    {
+      "name": "Family 01 | storage recessed pull",
+      "object_name": "Family 01 | storage recessed pull.001"
+    },
+    {
+      "name": "Family 01 | sliding low storage front",
+      "object_name": "Family 01 | sliding low storage front.002"
+    },
+    {
+      "name": "Family 01 | storage recessed pull",
+      "object_name": "Family 01 | storage recessed pull.002"
+    },
+    {
+      "name": "Family 01 | sliding low storage front",
+      "object_name": "Family 01 | sliding low storage front.003"
+    },
+    {
+      "name": "Family 01 | storage recessed pull",
+      "object_name": "Family 01 | storage recessed pull.003"
+    },
+    {
+      "name": "Family 01 | storage upper divider",
+      "object_name": "Family 01 | storage upper divider"
+    },
+    {
+      "name": "Family 01 | storage upper divider",
+      "object_name": "Family 01 | storage upper divider.001"
+    },
+    {
+      "name": "Family 01 | storage stone counter",
+      "object_name": "Family 01 | storage stone counter"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.001"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.001"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.002"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.002"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.003"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.003"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.004"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.004"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.005"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.005"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.006"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.006"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.007"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.007"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.008"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.008"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.009"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.009"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.010"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.010"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.011"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.011"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.012"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.012"
+    },
+    {
+      "name": "Family 01 | board game box",
+      "object_name": "Family 01 | board game box"
+    },
+    {
+      "name": "Family 01 | game box lid seam",
+      "object_name": "Family 01 | game box lid seam"
+    },
+    {
+      "name": "Family 01 | board game box",
+      "object_name": "Family 01 | board game box.001"
+    },
+    {
+      "name": "Family 01 | game box lid seam",
+      "object_name": "Family 01 | game box lid seam.001"
+    },
+    {
+      "name": "Family 01 | board game box",
+      "object_name": "Family 01 | board game box.002"
+    },
+    {
+      "name": "Family 01 | game box lid seam",
+      "object_name": "Family 01 | game box lid seam.002"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.013"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.013"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.014"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.014"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.015"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.015"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.016"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.016"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.017"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.017"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.018"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.018"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.019"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.019"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.020"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.020"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.021"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.021"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.022"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.022"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.023"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.023"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.024"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.024"
+    },
+    {
+      "name": "Family 01 | bound book spine",
+      "object_name": "Family 01 | bound book spine.025"
+    },
+    {
+      "name": "Family 01 | book page block",
+      "object_name": "Family 01 | book page block.025"
+    },
+    {
+      "name": "Family 01 | board game box",
+      "object_name": "Family 01 | board game box.003"
+    },
+    {
+      "name": "Family 01 | game box lid seam",
+      "object_name": "Family 01 | game box lid seam.003"
+    },
+    {
+      "name": "Family 01 | board game box",
+      "object_name": "Family 01 | board game box.004"
+    },
+    {
+      "name": "Family 01 | game box lid seam",
+      "object_name": "Family 01 | game box lid seam.004"
+    },
+    {
+      "name": "Family 01 | board game box",
+      "object_name": "Family 01 | board game box.005"
+    },
+    {
+      "name": "Family 01 | game box lid seam",
+      "object_name": "Family 01 | game box lid seam.005"
+    },
+    {
+      "name": "Family 01 | shelf plant ceramic pot",
+      "object_name": "Family 01 | shelf plant ceramic pot"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.001"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.002"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.003"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.004"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.005"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.006"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.007"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.008"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.009"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.010"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.011"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.012"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.013"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.014"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.015"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.016"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.017"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.018"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.019"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.020"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.021"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.022"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.023"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.024"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.025"
+    },
+    {
+      "name": "Family 01 | shelf plant leaf",
+      "object_name": "Family 01 | shelf plant leaf.026"
+    },
+    {
+      "name": "Family 01 | south art bronze frame",
+      "object_name": "Family 01 | south art bronze frame"
+    },
+    {
+      "name": "Family 01 | south ivory relief artwork",
+      "object_name": "Family 01 | south ivory relief artwork"
+    },
+    {
+      "name": "Family 01 | sofa reading light plate",
+      "object_name": "Family 01 | sofa reading light plate"
+    },
+    {
+      "name": "Family 01 | sofa reading light shade",
+      "object_name": "Family 01 | sofa reading light shade"
+    },
+    {
+      "name": "Family 01 | sofa reading light lens",
+      "object_name": "Family 01 | sofa reading light lens"
+    },
+    {
+      "name": "Family 01 | sofa reading glow -4.9",
+      "object_name": "Family 01 | sofa reading glow -4.9"
+    },
+    {
+      "name": "Family 01 | sofa reading light plate",
+      "object_name": "Family 01 | sofa reading light plate.001"
+    },
+    {
+      "name": "Family 01 | sofa reading light shade",
+      "object_name": "Family 01 | sofa reading light shade.001"
+    },
+    {
+      "name": "Family 01 | sofa reading light lens",
+      "object_name": "Family 01 | sofa reading light lens.001"
+    },
+    {
+      "name": "Family 01 | sofa reading glow -2.64",
+      "object_name": "Family 01 | sofa reading glow -2.64"
+    },
+    {
+      "name": "Family 01 | ceiling light trim",
+      "object_name": "Family 01 | ceiling light trim"
+    },
+    {
+      "name": "Family 01 | ceiling light diffuser",
+      "object_name": "Family 01 | ceiling light diffuser"
+    },
+    {
+      "name": "Family 01 | ceiling glow 6.0",
+      "object_name": "Family 01 | ceiling glow 6.0"
+    },
+    {
+      "name": "Family 01 | ceiling light trim",
+      "object_name": "Family 01 | ceiling light trim.001"
+    },
+    {
+      "name": "Family 01 | ceiling light diffuser",
+      "object_name": "Family 01 | ceiling light diffuser.001"
+    },
+    {
+      "name": "Family 01 | ceiling glow 7.65",
+      "object_name": "Family 01 | ceiling glow 7.65"
+    },
+    {
+      "name": "Family 01 | ceiling light trim",
+      "object_name": "Family 01 | ceiling light trim.002"
+    },
+    {
+      "name": "Family 01 | ceiling light diffuser",
+      "object_name": "Family 01 | ceiling light diffuser.002"
+    },
+    {
+      "name": "Family 01 | ceiling glow 4.48",
+      "object_name": "Family 01 | ceiling glow 4.48"
+    },
+    {
+      "name": "Family 01 | sofa seat piping",
+      "object_name": "Family 01 | sofa seat piping"
+    },
+    {
+      "name": "Family 01 | sofa cushion seam",
+      "object_name": "Family 01 | sofa cushion seam"
+    },
+    {
+      "name": "Family 01 | sofa seat piping",
+      "object_name": "Family 01 | sofa seat piping.001"
+    },
+    {
+      "name": "Family 01 | sofa cushion seam",
+      "object_name": "Family 01 | sofa cushion seam.001"
+    },
+    {
+      "name": "Family 01 | sofa seat piping",
+      "object_name": "Family 01 | sofa seat piping.002"
+    },
+    {
+      "name": "Family 01 | sofa cushion seam",
+      "object_name": "Family 01 | sofa cushion seam.002"
+    },
+    {
+      "name": "Family 01 | bishop mitre seam",
+      "object_name": "Family 01 | bishop mitre seam"
+    },
+    {
+      "name": "Family 01 | bishop mitre seam",
+      "object_name": "Family 01 | bishop mitre seam.001"
+    },
+    {
+      "name": "Family 01 | bishop mitre seam",
+      "object_name": "Family 01 | bishop mitre seam.002"
+    },
+    {
+      "name": "Family 01 | bishop mitre seam",
+      "object_name": "Family 01 | bishop mitre seam.003"
+    },
+    {
+      "name": "Family 01 | desk lamp curved stem",
+      "object_name": "Family 01 | desk lamp curved stem"
+    },
+    {
+      "name": "Family 01 | desk chair base spoke",
+      "object_name": "Family 01 | desk chair base spoke"
+    },
+    {
+      "name": "Family 01 | desk chair base spoke",
+      "object_name": "Family 01 | desk chair base spoke.001"
+    },
+    {
+      "name": "Family 01 | desk chair base spoke",
+      "object_name": "Family 01 | desk chair base spoke.002"
+    },
+    {
+      "name": "Family 01 | desk chair base spoke",
+      "object_name": "Family 01 | desk chair base spoke.003"
+    },
+    {
+      "name": "Family 01 | desk chair base spoke",
+      "object_name": "Family 01 | desk chair base spoke.004"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.001"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.002"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.003"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.004"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.005"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.006"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.007"
+    },
+    {
+      "name": "Family 01 | shelf plant stem",
+      "object_name": "Family 01 | shelf plant stem.008"
+    },
+    {
+      "name": "Family 01 | sculpted artwork line",
+      "object_name": "Family 01 | sculpted artwork line"
+    },
+    {
+      "name": "Family 01 | sculpted artwork line",
+      "object_name": "Family 01 | sculpted artwork line.001"
+    },
+    {
+      "name": "Family 01 | sculpted artwork line",
+      "object_name": "Family 01 | sculpted artwork line.002"
+    },
+    {
+      "name": "Family 01 | sofa reading light arm",
+      "object_name": "Family 01 | sofa reading light arm"
+    },
+    {
+      "name": "Family 01 | sofa reading light arm",
+      "object_name": "Family 01 | sofa reading light arm.001"
     }
   ],
   "collision_records": [
@@ -834,11 +2170,11 @@
     }
   ],
   "configuration": {
-    "revision": 1,
+    "revision": 2,
     "room": "Upstairs family lounge",
     "bounds": [
       -5.065,
-      3.46,
+      4.34,
       -0.115,
       8.705
     ],
@@ -853,19 +2189,19 @@
       ],
       [
         -2.47,
-        3.76
+        5.04
       ],
       [
-        -1.29,
-        3.76
+        -2.82,
+        5.04
       ],
       [
-        -1.29,
-        3.46
+        -2.82,
+        4.34
       ],
       [
         -0.115,
-        3.46
+        4.34
       ],
       [
         -0.115,
@@ -1035,7 +2371,8 @@
       "Quiet shared reading, conversation, games and a compact homework desk.",
       "Proposed retains the terrace doors; Planning retains its north window and no terrace.",
       "The 1.14 m writing desk is shorter than the old 1.6 m desk; its new position receives west-window light from the side.",
-      "The sofa is 2.4 m wide, fully against the 2.595 m solid south wall."
+      "The sofa is 2.4 m wide, fully against the 2.595 m solid south wall.",
+      "The south approach is shortened to give the adjacent bedroom two usable bedside aisles; the main seating arrangement remains."
     ],
     "tables": [
       {
@@ -1063,9 +2400,9 @@
     ]
   },
   "native_screen_rays": [],
-  "source_house_sha256": "841d5a5c61708c9b3639d29ca17c5a89557aa212ead491b0ce149c8aad8e3b06",
+  "source_house_sha256": "7756a17cb60a112069280c1c5737fb30ef738b3e4e0cf68d99abbc06077c3f91",
   "source_house_unchanged": true,
-  "isolated_objects": 459,
+  "isolated_objects": 461,
   "views": {
     "entrance": {
       "position": [

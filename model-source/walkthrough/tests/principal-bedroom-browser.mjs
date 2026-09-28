@@ -19,7 +19,7 @@ try{
     features:['wall-backed upholstered headboard','bed mattress','bedside floating cabinet','sofa seat','desk top','swivel chair','New wing east upper window 3 glass','bed TV screen','sofa TV screen'].map(term=>({term,count:names.filter(n=>n.includes(term)).length})),
     views:Object.keys(interiorPreview.views),cutawayObjects:interiorPreview.cutawayMeshes.length,batches:interiorPreview.batches};
   });
-  assert.equal(result.revision,3);assert.equal(result.variant,design);assert(result.authored>250);assert(result.features.every(f=>f.count>0));assert(result.cutawayObjects>=4);
+  assert.equal(result.revision,4);assert.equal(result.variant,design);assert(result.authored>250);assert(result.features.every(f=>f.count>0));assert(result.cutawayObjects>=4);
   for(const view of result.views){
    await page.locator(`[data-camera=${view}]`).click();await page.waitForTimeout(700);
    assert.equal(new URL(page.url()).searchParams.get('view'),view);

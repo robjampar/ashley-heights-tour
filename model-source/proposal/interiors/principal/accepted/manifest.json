@@ -1,23 +1,23 @@
 {
-  "bedroom_revision": 3,
-  "ensuite_revision": 2,
+  "bedroom_revision": 4,
+  "ensuite_revision": 3,
   "variants": {
     "compact": {
       "directory": "proposal/interiors/principal/accepted/compact",
       "sha256": {
-        "suite.blend": "5162cc885ba7a137c77b58469a4bd14f762e3ecf97bec80e7be44a535387ac9f",
-        "bedroom-report.json": "5960441bab911aabfb837186fa3e2a74e678feb7abf9a775c59ea393dd60ee39",
-        "ensuite-report.json": "53950480cdfa03b3f97c3a6d9f3d1b57b966ca7f92496697be971574bcdac225",
-        "metadata.json": "845ac1d2d7dbafc7df381223e401ffe036dd1d713708348311e7673170aa21b5"
+        "suite.blend": "3a9e5793087c3d37c8c1a84956be7655c98a3bb6073aed1248174d775be0a471",
+        "bedroom-report.json": "f7dd7ed925c7607a4ffbab4c1d34116145c50f75b1a84bf49b800c2a2ab9a42e",
+        "ensuite-report.json": "b6f2ab79474275480de7b01104ce356b6322aa2dcb8b810fadfcac4c274600a6",
+        "metadata.json": "7de756bb235760aba82b43156227d9d694f66674b4e05574e7684444d393a2f0"
       }
     },
     "planning": {
       "directory": "proposal/interiors/principal/accepted/planning",
       "sha256": {
-        "suite.blend": "aee2e9c751536e56c89bf3c07532f838582d0ef79a4352c7a95e9a78d5c22247",
-        "bedroom-report.json": "d812b657d1c9814cb5278d5b795a6a9f27093cbc3e4dfde9163e342ad5da482b",
-        "ensuite-report.json": "a653152e49ba2d225204a873affcb638e1df2d537c4707be18bd57cf94defe87",
-        "metadata.json": "f6f7eca56355bfbf32b5dcac2e752ecc31a4c801a4ad8157460bacd3ded84bb3"
+        "suite.blend": "e9a96df8fdb5fe4d81287ea24c9b9e26ac627cddcb3d340f07249df05eb1a290",
+        "bedroom-report.json": "c467f13d09d5532d50c8ddc3aa96cb3f38f1f9e4f440c6cc76537e63208f6070",
+        "ensuite-report.json": "c59a81def37320ad0401443da84dffbb07f502bcf82aabfdbfc87ff50ff5495c",
+        "metadata.json": "8cfe99dd6e6ba6670dc4e9a24ba72e7d61667990d0b712f3e82d93c61b606095"
       }
     }
   }

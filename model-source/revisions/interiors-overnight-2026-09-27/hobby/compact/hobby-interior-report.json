@@ -1,0 +1,788 @@
+{
+  "area": "hobby",
+  "revision": 1,
+  "objects": 537,
+  "mesh_objects": 527,
+  "lights": 10,
+  "removed_objects": [
+    {
+      "name": "Proposal | Loft west store door lever rose",
+      "object_name": "Proposal | Loft west store door lever rose"
+    },
+    {
+      "name": "Proposal | Loft west store door lever",
+      "object_name": "Proposal | Loft west store door lever"
+    },
+    {
+      "name": "Proposal | Loft west store door lever rose",
+      "object_name": "Proposal | Loft west store door lever rose.001"
+    },
+    {
+      "name": "Proposal | Loft west store door lever",
+      "object_name": "Proposal | Loft west store door lever.001"
+    },
+    {
+      "name": "Proposal | Loft passage east wall door 0 lever rose",
+      "object_name": "Proposal | Loft passage east wall door 0 lever rose"
+    },
+    {
+      "name": "Proposal | Loft passage east wall door 0 lever",
+      "object_name": "Proposal | Loft passage east wall door 0 lever"
+    },
+    {
+      "name": "Proposal | Loft passage east wall door 0 lever rose",
+      "object_name": "Proposal | Loft passage east wall door 0 lever rose.001"
+    },
+    {
+      "name": "Proposal | Loft passage east wall door 0 lever",
+      "object_name": "Proposal | Loft passage east wall door 0 lever.001"
+    },
+    {
+      "name": "Proposal | Loft shared sofa oak underframe",
+      "object_name": "Proposal | Loft shared sofa oak underframe"
+    },
+    {
+      "name": "Proposal | Loft shared sofa foot",
+      "object_name": "Proposal | Loft shared sofa foot"
+    },
+    {
+      "name": "Proposal | Loft shared sofa foot",
+      "object_name": "Proposal | Loft shared sofa foot.001"
+    },
+    {
+      "name": "Proposal | Loft shared sofa foot",
+      "object_name": "Proposal | Loft shared sofa foot.002"
+    },
+    {
+      "name": "Proposal | Loft shared sofa foot",
+      "object_name": "Proposal | Loft shared sofa foot.003"
+    },
+    {
+      "name": "Proposal | Loft shared sofa seat cushion",
+      "object_name": "Proposal | Loft shared sofa seat cushion"
+    },
+    {
+      "name": "Proposal | Loft shared sofa seat cushion",
+      "object_name": "Proposal | Loft shared sofa seat cushion.001"
+    },
+    {
+      "name": "Proposal | Loft shared sofa seat cushion",
+      "object_name": "Proposal | Loft shared sofa seat cushion.002"
+    },
+    {
+      "name": "Proposal | Loft shared sofa seat cushion",
+      "object_name": "Proposal | Loft shared sofa seat cushion.003"
+    },
+    {
+      "name": "Proposal | Loft shared sofa back cushion",
+      "object_name": "Proposal | Loft shared sofa back cushion"
+    },
+    {
+      "name": "Proposal | Loft shared sofa back cushion",
+      "object_name": "Proposal | Loft shared sofa back cushion.001"
+    },
+    {
+      "name": "Proposal | Loft shared sofa back cushion",
+      "object_name": "Proposal | Loft shared sofa back cushion.002"
+    },
+    {
+      "name": "Proposal | Loft shared sofa back cushion",
+      "object_name": "Proposal | Loft shared sofa back cushion.003"
+    },
+    {
+      "name": "Proposal | Loft shared sofa arm",
+      "object_name": "Proposal | Loft shared sofa arm"
+    },
+    {
+      "name": "Proposal | Loft shared sofa arm",
+      "object_name": "Proposal | Loft shared sofa arm.001"
+    },
+    {
+      "name": "Proposal | Loft shared coffee table top",
+      "object_name": "Proposal | Loft shared coffee table top"
+    },
+    {
+      "name": "Proposal | Loft shared coffee table leg",
+      "object_name": "Proposal | Loft shared coffee table leg"
+    },
+    {
+      "name": "Proposal | Loft shared coffee table leg",
+      "object_name": "Proposal | Loft shared coffee table leg.001"
+    },
+    {
+      "name": "Proposal | Loft shared coffee table leg",
+      "object_name": "Proposal | Loft shared coffee table leg.002"
+    },
+    {
+      "name": "Proposal | Loft shared coffee table leg",
+      "object_name": "Proposal | Loft shared coffee table leg.003"
+    },
+    {
+      "name": "Proposal | Loft creative workbench top",
+      "object_name": "Proposal | Loft creative workbench top"
+    },
+    {
+      "name": "Proposal | Loft quiet desk top",
+      "object_name": "Proposal | Loft quiet desk top"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage",
+      "object_name": "Proposal | Loft eaves archive storage"
+    },
+    {
+      "name": "Proposal | Loft studio supplies storage",
+      "object_name": "Proposal | Loft studio supplies storage"
+    },
+    {
+      "name": "Proposal | Loft creative workbench support",
+      "object_name": "Proposal | Loft creative workbench support"
+    },
+    {
+      "name": "Proposal | Loft creative workbench support",
+      "object_name": "Proposal | Loft creative workbench support.001"
+    },
+    {
+      "name": "Proposal | Loft creative workbench support",
+      "object_name": "Proposal | Loft creative workbench support.002"
+    },
+    {
+      "name": "Proposal | Loft creative workbench support",
+      "object_name": "Proposal | Loft creative workbench support.003"
+    },
+    {
+      "name": "Proposal | Loft creative workbench chair seat",
+      "object_name": "Proposal | Loft creative workbench chair seat"
+    },
+    {
+      "name": "Proposal | Loft creative workbench chair back",
+      "object_name": "Proposal | Loft creative workbench chair back"
+    },
+    {
+      "name": "Proposal | Loft creative workbench chair leg",
+      "object_name": "Proposal | Loft creative workbench chair leg"
+    },
+    {
+      "name": "Proposal | Loft creative workbench chair leg",
+      "object_name": "Proposal | Loft creative workbench chair leg.001"
+    },
+    {
+      "name": "Proposal | Loft creative workbench chair leg",
+      "object_name": "Proposal | Loft creative workbench chair leg.002"
+    },
+    {
+      "name": "Proposal | Loft creative workbench chair leg",
+      "object_name": "Proposal | Loft creative workbench chair leg.003"
+    },
+    {
+      "name": "Proposal | Loft creative workbench writing pad",
+      "object_name": "Proposal | Loft creative workbench writing pad"
+    },
+    {
+      "name": "Proposal | Loft quiet desk support",
+      "object_name": "Proposal | Loft quiet desk support"
+    },
+    {
+      "name": "Proposal | Loft quiet desk support",
+      "object_name": "Proposal | Loft quiet desk support.001"
+    },
+    {
+      "name": "Proposal | Loft quiet desk support",
+      "object_name": "Proposal | Loft quiet desk support.002"
+    },
+    {
+      "name": "Proposal | Loft quiet desk support",
+      "object_name": "Proposal | Loft quiet desk support.003"
+    },
+    {
+      "name": "Proposal | Loft quiet desk chair seat",
+      "object_name": "Proposal | Loft quiet desk chair seat"
+    },
+    {
+      "name": "Proposal | Loft quiet desk chair back",
+      "object_name": "Proposal | Loft quiet desk chair back"
+    },
+    {
+      "name": "Proposal | Loft quiet desk chair leg",
+      "object_name": "Proposal | Loft quiet desk chair leg"
+    },
+    {
+      "name": "Proposal | Loft quiet desk chair leg",
+      "object_name": "Proposal | Loft quiet desk chair leg.001"
+    },
+    {
+      "name": "Proposal | Loft quiet desk chair leg",
+      "object_name": "Proposal | Loft quiet desk chair leg.002"
+    },
+    {
+      "name": "Proposal | Loft quiet desk chair leg",
+      "object_name": "Proposal | Loft quiet desk chair leg.003"
+    },
+    {
+      "name": "Proposal | Loft quiet desk writing pad",
+      "object_name": "Proposal | Loft quiet desk writing pad"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.001"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.001"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.002"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.002"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.003"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.003"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.004"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.004"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.005"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.005"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.006"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.006"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.007"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.007"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage door",
+      "object_name": "Proposal | Loft eaves archive storage door.008"
+    },
+    {
+      "name": "Proposal | Loft eaves archive storage pull",
+      "object_name": "Proposal | Loft eaves archive storage pull.008"
+    },
+    {
+      "name": "Proposal | Loft studio supplies storage door",
+      "object_name": "Proposal | Loft studio supplies storage door"
+    },
+    {
+      "name": "Proposal | Loft studio supplies storage pull",
+      "object_name": "Proposal | Loft studio supplies storage pull"
+    },
+    {
+      "name": "Proposal | Loft studio supplies storage door",
+      "object_name": "Proposal | Loft studio supplies storage door.001"
+    },
+    {
+      "name": "Proposal | Loft studio supplies storage pull",
+      "object_name": "Proposal | Loft studio supplies storage pull.001"
+    },
+    {
+      "name": "Proposal | Loft studio supplies storage door",
+      "object_name": "Proposal | Loft studio supplies storage door.002"
+    },
+    {
+      "name": "Proposal | Loft studio supplies storage pull",
+      "object_name": "Proposal | Loft studio supplies storage pull.002"
+    },
+    {
+      "name": "Proposal | Loft creative sketchbook",
+      "object_name": "Proposal | Loft creative sketchbook"
+    },
+    {
+      "name": "Proposal | Loft creative sketchbook",
+      "object_name": "Proposal | Loft creative sketchbook.001"
+    },
+    {
+      "name": "Proposal | Loft creative sketchbook",
+      "object_name": "Proposal | Loft creative sketchbook.002"
+    },
+    {
+      "name": "Proposal | Loft creative sketchbook",
+      "object_name": "Proposal | Loft creative sketchbook.003"
+    },
+    {
+      "name": "Proposal | Loft quiet desk monitor",
+      "object_name": "Proposal | Loft quiet desk monitor"
+    },
+    {
+      "name": "Proposal | Loft quiet desk monitor foot",
+      "object_name": "Proposal | Loft quiet desk monitor foot"
+    },
+    {
+      "name": "Proposal | Loft west store door leaf",
+      "object_name": "Proposal | Loft west store door leaf"
+    },
+    {
+      "name": "Proposal | Loft west store door face rail",
+      "object_name": "Proposal | Loft west store door face rail"
+    },
+    {
+      "name": "Proposal | Loft west store door face rail",
+      "object_name": "Proposal | Loft west store door face rail.001"
+    },
+    {
+      "name": "Proposal | Loft passage east wall door 0 leaf",
+      "object_name": "Proposal | Loft passage east wall door 0 leaf"
+    },
+    {
+      "name": "Proposal | Loft passage east wall door 0 face rail",
+      "object_name": "Proposal | Loft passage east wall door 0 face rail"
+    },
+    {
+      "name": "Proposal | Loft passage east wall door 0 face rail",
+      "object_name": "Proposal | Loft passage east wall door 0 face rail.001"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Hobby 01 | project table",
+      "box": [
+        0.45,
+        5.7,
+        2.45,
+        6.75
+      ],
+      "bottom": 5.55,
+      "top": 6.32
+    },
+    {
+      "name": "Hobby 01 | project chair 0",
+      "box": [
+        -0.21,
+        5.955,
+        0.37,
+        6.515
+      ],
+      "bottom": 5.55,
+      "top": 6.4799999999999995
+    },
+    {
+      "name": "Hobby 01 | project chair 1",
+      "box": [
+        2.53,
+        5.955,
+        3.11,
+        6.515
+      ],
+      "bottom": 5.55,
+      "top": 6.4799999999999995
+    },
+    {
+      "name": "Hobby 01 | reading chair",
+      "box": [
+        6.46,
+        6.18,
+        7.35,
+        7.08
+      ],
+      "bottom": 5.55,
+      "top": 6.47
+    },
+    {
+      "name": "Hobby 01 | north supplies",
+      "box": [
+        -1.34,
+        7.41,
+        3.45,
+        7.855
+      ],
+      "bottom": 5.55,
+      "top": 6.239999999999999
+    },
+    {
+      "name": "Hobby 01 | low books",
+      "box": [
+        3.7,
+        7.4,
+        6.45,
+        7.855
+      ],
+      "bottom": 5.55,
+      "top": 6.239999999999999
+    },
+    {
+      "name": "Hobby 01 | eaves archive",
+      "box": [
+        -0.1,
+        3.3,
+        5.4,
+        3.82
+      ],
+      "bottom": 5.55,
+      "top": 6.34
+    },
+    {
+      "name": "Hobby 01 | complete sofa",
+      "box": [
+        9.29,
+        5.7,
+        10.21,
+        7.7
+      ],
+      "bottom": 5.55,
+      "top": 6.65
+    },
+    {
+      "name": "Hobby 01 | coffee table",
+      "box": [
+        7.92,
+        6.27,
+        8.57,
+        7.07
+      ],
+      "bottom": 5.55,
+      "top": 5.96
+    },
+    {
+      "name": "Hobby 01 | reading side table",
+      "box": [
+        6.4,
+        7.24,
+        6.77,
+        7.61
+      ],
+      "bottom": 5.55,
+      "top": 6.06
+    },
+    {
+      "name": "Hobby 01 | reading corner plant",
+      "box": [
+        6.779999999999999,
+        7.5,
+        7.0,
+        7.720000000000001
+      ],
+      "bottom": 5.55,
+      "top": 6.13
+    },
+    {
+      "name": "Hobby 01 | west eaves shelves",
+      "box": [
+        -3.4400000000000004,
+        2.62,
+        -3.0,
+        3.38
+      ],
+      "bottom": 5.55,
+      "top": 6.33
+    },
+    {
+      "name": "Hobby 01 | west eaves shelves",
+      "box": [
+        -3.4400000000000004,
+        3.52,
+        -3.0,
+        4.28
+      ],
+      "bottom": 5.55,
+      "top": 6.33
+    },
+    {
+      "name": "Hobby 01 | east eaves shelves",
+      "box": [
+        11.76,
+        2.62,
+        12.200000000000001,
+        3.38
+      ],
+      "bottom": 5.55,
+      "top": 6.33
+    },
+    {
+      "name": "Hobby 01 | east eaves shelves",
+      "box": [
+        11.76,
+        3.52,
+        12.200000000000001,
+        4.28
+      ],
+      "bottom": 5.55,
+      "top": 6.33
+    }
+  ],
+  "configuration": {
+    "room": "Original-house loft hobby room and bridge",
+    "revision": 1,
+    "floorZ": 5.55,
+    "ceilingZ": 7.96,
+    "bounds": [
+      -3.49,
+      -5.3,
+      12.42,
+      7.87
+    ],
+    "hobbyPolygon": [
+      [
+        -1.485,
+        3.97
+      ],
+      [
+        10.24,
+        3.97
+      ],
+      [
+        10.24,
+        7.87
+      ],
+      [
+        -1.485,
+        7.87
+      ]
+    ],
+    "projectTable": [
+      0.45,
+      5.7,
+      2.45,
+      6.75
+    ],
+    "chairs": [
+      [
+        -0.21,
+        5.955,
+        0.37,
+        6.515
+      ],
+      [
+        2.53,
+        5.955,
+        3.11,
+        6.515
+      ]
+    ],
+    "northStorage": [
+      -1.34,
+      7.41,
+      3.45,
+      7.855
+    ],
+    "archiveStorage": [
+      -0.1,
+      3.3,
+      5.4,
+      3.82
+    ],
+    "bookStorage": [
+      3.7,
+      7.4,
+      6.45,
+      7.855
+    ],
+    "sofa": [
+      9.29,
+      5.7,
+      10.21,
+      7.7
+    ],
+    "readingChair": [
+      6.46,
+      6.18,
+      7.35,
+      7.08
+    ],
+    "coffeeTable": [
+      7.92,
+      6.27,
+      8.57,
+      7.07
+    ],
+    "sideTable": [
+      6.4,
+      7.24,
+      6.77,
+      7.61
+    ],
+    "flexibleArea": [
+      3.75,
+      5.12,
+      6.25,
+      7.05
+    ],
+    "view": {
+      "id": "proposal-loft-studio-and-lounge",
+      "position": [
+        8.48,
+        5.2,
+        5.55
+      ],
+      "direction": [
+        -1,
+        0.35,
+        -0.02
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          9.3,
+          4.83,
+          7.17
+        ],
+        "target": [
+          4.2,
+          6.5,
+          6.45
+        ],
+        "fov": 67
+      },
+      "worktable": {
+        "position": [
+          3.61,
+          5.06,
+          7.16
+        ],
+        "target": [
+          1.15,
+          6.4,
+          6.18
+        ],
+        "fov": 64
+      },
+      "seated": {
+        "position": [
+          9.65,
+          6.7,
+          6.68
+        ],
+        "target": [
+          6.3,
+          6.6,
+          6.32
+        ],
+        "fov": 66
+      },
+      "storage": {
+        "position": [
+          2.7,
+          6.6,
+          7.13
+        ],
+        "target": [
+          1.75,
+          3.63,
+          6.05
+        ],
+        "fov": 66
+      },
+      "bridge": {
+        "position": [
+          8.92,
+          -2.6,
+          7.15
+        ],
+        "target": [
+          8.92,
+          3.8,
+          6.7
+        ],
+        "fov": 65
+      },
+      "overview": {
+        "position": [
+          15,
+          15,
+          18
+        ],
+        "target": [
+          4.1,
+          3.0,
+          6.05
+        ],
+        "fov": 58,
+        "cutaway": true
+      },
+      "lounge": {
+        "position": [
+          5.83,
+          5.05,
+          7.15
+        ],
+        "target": [
+          9.25,
+          6.8,
+          6.3
+        ],
+        "fov": 65
+      }
+    },
+    "limitations": [
+      "The eaves doors are low and retain their existing openings. Storage beyond them requires stooping.",
+      "The dormer ceiling is about 2.09 m above the structural floor.",
+      "The project-table chairs can be moved; the floor plan checks the normal working positions and occupied places.",
+      "The open centre remains available for different hobbies; no specialist equipment is assumed.",
+      "The retained bridge west of the loft stair has a narrow route with roughly 1.78\u20131.90 m roof clearance, rather than 2 m. Its roof and stair geometry remain for owner review; it is not validated as a full-height route for taller people."
+    ],
+    "doors": [
+      {
+        "label": "west eaves door",
+        "hinge": [
+          -1.684,
+          5.188,
+          5.55
+        ],
+        "axis": [
+          0,
+          -1
+        ],
+        "width": 0.676,
+        "openAngle": -1.5707963267948966,
+        "height": 1.64,
+        "opening": [
+          -1.575,
+          4.85
+        ]
+      },
+      {
+        "label": "east eaves door",
+        "hinge": [
+          10.439,
+          5.188,
+          5.55
+        ],
+        "axis": [
+          0,
+          -1
+        ],
+        "width": 0.676,
+        "openAngle": 1.5707963267948966,
+        "height": 1.64,
+        "opening": [
+          10.33,
+          4.85
+        ]
+      }
+    ]
+  }
+}

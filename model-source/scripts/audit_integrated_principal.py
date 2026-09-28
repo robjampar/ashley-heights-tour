@@ -37,7 +37,7 @@ for tv in cfg['tvs']:
     eyes=tv['eyes']+([cfg['desk']['tv_eye']]if tv['id']=='sofa'else[])
     for eye in eyes:
         for u,v in((0,0),(-.45,-.45),(-.45,.45),(.45,-.45),(.45,.45)):
-            target=Vector((tv['center'][0]+u*tv['screen_m'][0],tv['center'][1],cfg['floor_z']+tv['height_m']+v*tv['screen_m'][1]))
+            target=Vector((tv['center'][0]+tv.get('screenOffsetX',0)+u*tv['screen_m'][0],tv['center'][1],cfg['floor_z']+tv['height_m']+v*tv['screen_m'][1]))
             delta=target-Vector(eye);hit,loc,n,f,ob,m=scene.ray_cast(deps,Vector(eye),delta.normalized(),distance=delta.length+.06)
             name=ob.get('source_name',ob.name)if hit else None
             assert hit and name.startswith('Bedroom 02 | '+tv['id']+' TV screen'),(eye,list(target),name)

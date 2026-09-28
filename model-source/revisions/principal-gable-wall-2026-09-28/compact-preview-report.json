@@ -1,0 +1,124 @@
+{
+  "variant": "compact",
+  "wall": {
+    "wall_x_m": 5.045,
+    "thickness_m": 0.23,
+    "floor_z_m": 2.8,
+    "centre_y_m": -12.94,
+    "opening_width_m": 1.2,
+    "opening_shape": "rectangular",
+    "centre_clear_height_m": 1.7000000000000002,
+    "jamb_clear_height_m": 1.7000000000000002,
+    "sections": [
+      [
+        "south pier",
+        [
+          [
+            -16.09,
+            2.8
+          ],
+          [
+            -13.54,
+            2.8
+          ],
+          [
+            -13.54,
+            4.544294889894544
+          ],
+          [
+            -16.09,
+            2.8242981719463556
+          ]
+        ]
+      ],
+      [
+        "north pier",
+        [
+          [
+            -12.34,
+            2.8
+          ],
+          [
+            -9.79,
+            2.8
+          ],
+          [
+            -9.79,
+            2.8242981719463556
+          ],
+          [
+            -12.34,
+            4.544294889894544
+          ]
+        ]
+      ],
+      [
+        "opening head",
+        [
+          [
+            -13.54,
+            4.5
+          ],
+          [
+            -12.34,
+            4.5
+          ],
+          [
+            -12.34,
+            4.544294889894544
+          ],
+          [
+            -12.94,
+            4.949
+          ],
+          [
+            -13.54,
+            4.544294889894544
+          ]
+        ]
+      ]
+    ],
+    "opening": [
+      [
+        -13.54,
+        2.8
+      ],
+      [
+        -12.34,
+        2.8
+      ],
+      [
+        -12.34,
+        4.5
+      ],
+      [
+        -13.54,
+        4.5
+      ]
+    ],
+    "floor_beam": "Concept: concealed in floor; section and bearings unverified",
+    "native_rebuild_pending": true,
+    "structural_status": "Concept only. Concealed floor beam and opening lintel sizes, bearings and load path require structural design. No garage geometry changes.",
+    "low_opening_notice": "1.7 m opening: ducking required; not a normal standing doorway"
+  },
+  "added_objects": [
+    "Principal gable wall | south pier",
+    "Principal gable wall | north pier",
+    "Principal gable wall | opening head",
+    "Principal gable wall | south lining",
+    "Principal gable wall | north lining",
+    "Principal gable wall | head lining"
+  ],
+  "preserved_nodes": 17151,
+  "preserved_meshes": 16027,
+  "native_rebuild_pending": true,
+  "garage_and_roof_unchanged": true,
+  "input_sha256": {
+    "proposal-compact.glb": "b01ef77f7e784a25df10a694ccc2dd03e56064bed25250611eb195ee4e7b7b1c",
+    "proposal-compact-navigation.json": "b4c0310b54e37b407bef4a68cf4e758ed0c77318557df2d08aab012578c6a6d7"
+  },
+  "output_sha256": {
+    "proposal-compact.glb": "e0475dd8522951982b3cb8729a8ef8236519955b3eff625bad7c608a0c0f7912",
+    "proposal-compact-navigation.json": "0eeb4fd5f758fb1906bd2fba56feaa4cf143cf43bb7a1b6c28c7f00903479186"
+  }
+}

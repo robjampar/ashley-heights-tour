@@ -17,11 +17,22 @@ class PlanningVariantTests(unittest.TestCase):
   self.assertFalse(names.intersection({'Garden workshop','Expanded garden pavilion','Pool terrace','Pool hot tub area','Shared roof terrace','Garden living and dining'}))
   for key in ('pool','pavilion','rearGardenRoom','hotTub','roofTerrace','gardenWorkshop'):self.assertNotIn(key,self.nav['proposal']['specification'])
   for o in self.g['objects']:self.assertFalse(o['name'].startswith(('Proposal | Pool','Proposal | Pavilion','Proposal | Terrace ','Proposal | Garden north glazing')))
- def test_existing_outbuildings_retained_without_geometry_or_material_changes(self):
+ def test_existing_outbuilding_shells_retained_with_reviewed_door_replacements(self):
   actual={o['object_name']:o for o in self.g['objects']}
   sources=[o for o in self.ex['objects'] if o['layer'] in ('40 Outbuildings','41 Outbuilding roof')]
   self.assertGreater(len(sources),10)
+  # Owner-approved garden-room interiors replace exactly these door/panel
+  # assemblies, preserving the surrounding masonry and roof geometry.
+  replaced={'Outside WC door','Tool store door','Summer house glazed light.002',
+            'Summer house horizontal frame.006','Summer house horizontal frame.007',
+            'Summer house horizontal frame.008','Summer house lower panel.002'}
+  self.assertEqual({o['object_name'] for o in sources if o['object_name'] not in actual},replaced)
+  doors={d['id']:d for d in self.nav['interactiveDoors']}
+  for name in ('Gardenhouse 01 | wc door','Gardenhouse 01 | tool door','Gardenhouse 01 | summer glazed door'):
+   self.assertIn(name,doors)
+   self.assertTrue(doors[name]['members'])
   for source in sources:
+   if source['object_name'] in replaced:continue
    ob=actual[source['object_name']]
    np.testing.assert_allclose(ob['vertices'],source['vertices'],atol=2e-5,rtol=0)
    self.assertEqual(ob['materials'],source['materials'])

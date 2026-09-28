@@ -1,0 +1,385 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "gridStep": 0.02,
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "headWidth": 0.2,
+      "minimumHeadroom": 2,
+      "checks": [
+        {
+          "label": "west bed side",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "east bed side",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "wardrobe",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "eaves-side approach",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "bathroom arrival",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "vanity",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.00999999999999801,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "hip store doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.1013899999999994
+        }
+      ]
+    },
+    {
+      "state": "hallClosed",
+      "bodyWidth": 0.6,
+      "headWidth": 0.2,
+      "minimumHeadroom": 2,
+      "checks": [
+        {
+          "label": "west bed side",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "east bed side",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "wardrobe",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "eaves-side approach",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "bathroom arrival",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "vanity",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.00999999999999801,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "hip store doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.1013899999999994
+        }
+      ]
+    },
+    {
+      "state": "bathClosed",
+      "bodyWidth": 0.6,
+      "headWidth": 0.2,
+      "minimumHeadroom": 2,
+      "checks": [
+        {
+          "label": "bathroom arrival",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "vanity",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.00999999999999801,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "hip store doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.1013899999999994
+        }
+      ]
+    },
+    {
+      "state": "showerClosed",
+      "bodyWidth": 0.6,
+      "headWidth": 0.2,
+      "minimumHeadroom": 2,
+      "checks": [
+        {
+          "label": "west bed side",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "east bed side",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "wardrobe",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "eaves-side approach",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "bathroom arrival",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "vanity",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.00999999999999801,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "hip store doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.1013899999999994
+        }
+      ]
+    },
+    {
+      "state": "wardrobeUse",
+      "bodyWidth": 0.6,
+      "headWidth": 0.2,
+      "minimumHeadroom": 2,
+      "checks": [
+        {
+          "label": "west bed side",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "east bed side",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "eaves-side approach",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "bathroom arrival",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "vanity",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "WC approach",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.00999999999999801,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "hip store doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.1013899999999994
+        }
+      ]
+    },
+    {
+      "state": "basinUse",
+      "bodyWidth": 0.6,
+      "headWidth": 0.2,
+      "minimumHeadroom": 2,
+      "checks": [
+        {
+          "label": "west bed side",
+          "distance": 0,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "east bed side",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "wardrobe",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "eaves-side approach",
+          "distance": 8.881784197001252e-16,
+          "reachable": true,
+          "headroom": 2.06142
+        },
+        {
+          "label": "bathroom arrival",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.00999999999999801,
+          "reachable": true,
+          "headroom": 2.09
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.009999999999999787,
+          "reachable": true,
+          "headroom": 2.09
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "utility door",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "overhead-door approach",
+          "distance": 0.014142135623730963,
+          "reachable": true
+        },
+        {
+          "label": "southern car driver",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "southern car passenger",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "northern car driver",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "northern car passenger",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "workbench",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "south charger",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "north charger",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "southCarDoorsOpen",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "utility door",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "overhead-door approach",
+          "distance": 0.014142135623730963,
+          "reachable": true
+        },
+        {
+          "label": "southern car driver",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "southern car passenger",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "northern car driver",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "northern car passenger",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "workbench",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "south charger",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "north charger",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "northCarDoorsOpen",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "utility door",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "overhead-door approach",
+          "distance": 0.014142135623730963,
+          "reachable": true
+        },
+        {
+          "label": "southern car driver",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "southern car passenger",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "northern car driver",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "northern car passenger",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "workbench",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "south charger",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "north charger",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "driversOpen",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "utility door",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "overhead-door approach",
+          "distance": 0.014142135623730963,
+          "reachable": true
+        },
+        {
+          "label": "southern car driver",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "southern car passenger",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "northern car driver",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "northern car passenger",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "workbench",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "south charger",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "north charger",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "drawerOpen",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "utility door",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "overhead-door approach",
+          "distance": 0.014142135623730963,
+          "reachable": true
+        },
+        {
+          "label": "southern car driver",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "southern car passenger",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "northern car driver",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "northern car passenger",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 0.02000000000000135,
+          "reachable": true
+        },
+        {
+          "label": "south charger",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "north charger",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "benchUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "utility door",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "overhead-door approach",
+          "distance": 0.014142135623730963,
+          "reachable": true
+        },
+        {
+          "label": "southern car driver",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "southern car passenger",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "northern car driver",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "northern car passenger",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "tall storage",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "south charger",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "north charger",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "cupboardUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "utility door",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "overhead-door approach",
+          "distance": 0.014142135623730963,
+          "reachable": true
+        },
+        {
+          "label": "southern car driver",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "southern car passenger",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "northern car driver",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "northern car passenger",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "workbench",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "south charger",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "north charger",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

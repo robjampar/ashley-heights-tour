@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "gridStep": 0.025,
+  "results": [
+    {
+      "places": 6,
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "dining hall arrival",
+          "distance": 0.012083045973593828,
+          "reachable": true
+        },
+        {
+          "label": "drawing hall arrival",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "north bay doors",
+          "distance": 0.011180339887498314,
+          "reachable": true
+        },
+        {
+          "label": "drawing garden doors",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "front bay",
+          "distance": 0.011180339887499306,
+          "reachable": true
+        },
+        {
+          "label": "kitchen hatch",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "south sofa approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "north sofa approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.0050000000000001155,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "places": 8,
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "dining hall arrival",
+          "distance": 0.012083045973593828,
+          "reachable": true
+        },
+        {
+          "label": "drawing hall arrival",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "north bay doors",
+          "distance": 0.011180339887498314,
+          "reachable": true
+        },
+        {
+          "label": "drawing garden doors",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "front bay",
+          "distance": 0.011180339887499306,
+          "reachable": true
+        },
+        {
+          "label": "kitchen hatch",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "south sofa approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "north sofa approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.0050000000000001155,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "places": 10,
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "dining hall arrival",
+          "distance": 0.012083045973593828,
+          "reachable": true
+        },
+        {
+          "label": "drawing hall arrival",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "north bay doors",
+          "distance": 0.011180339887498314,
+          "reachable": true
+        },
+        {
+          "label": "drawing garden doors",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "front bay",
+          "distance": 0.011180339887499306,
+          "reachable": true
+        },
+        {
+          "label": "kitchen hatch",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "south sofa approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "north sofa approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.0050000000000001155,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

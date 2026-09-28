@@ -1,7 +1,7 @@
 {
   "variant": "compact",
   "configuration": {
-    "revision": 3,
+    "revision": 4,
     "status": "Bedroom and window revision with shifted dressing room and longer ensuite; isolated room review",
     "floor_z": 2.8,
     "ceiling_z": 5.28,
@@ -199,10 +199,10 @@
           -8.83
         ],
         "screen_m": [
-          1.218,
-          0.685
+          1.882,
+          1.059
         ],
-        "height_m": 1.35,
+        "height_m": 1.53,
         "eyes": [
           [
             6.52,
@@ -215,7 +215,8 @@
             3.9
           ]
         ],
-        "cabinet_center_y": -9.03
+        "cabinet_center_y": -9.03,
+        "screenOffsetX": 0.05
       }
     ],
     "entry": {
@@ -738,7 +739,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.471
+      "distance_m": 2.505
     },
     {
       "group": "sofa",
@@ -749,7 +750,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.417
+      "distance_m": 2.439
     },
     {
       "group": "sofa",
@@ -760,7 +761,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.48
+      "distance_m": 2.601
     },
     {
       "group": "sofa",
@@ -771,7 +772,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.618
+      "distance_m": 2.77
     },
     {
       "group": "sofa",
@@ -782,7 +783,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.676
+      "distance_m": 2.915
     },
     {
       "group": "sofa",
@@ -793,7 +794,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.471
+      "distance_m": 2.487
     },
     {
       "group": "sofa",
@@ -804,7 +805,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.618
+      "distance_m": 2.723
     },
     {
       "group": "sofa",
@@ -815,7 +816,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.676
+      "distance_m": 2.869
     },
     {
       "group": "sofa",
@@ -826,7 +827,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.417
+      "distance_m": 2.455
     },
     {
       "group": "sofa",
@@ -837,7 +838,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 2.48
+      "distance_m": 2.616
     },
     {
       "group": "sofa",
@@ -848,7 +849,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 5.822
+      "distance_m": 5.833
     },
     {
       "group": "sofa",
@@ -856,17 +857,6 @@
       "sample": [
         -0.45,
         -0.45
-      ],
-      "clear": true,
-      "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 5.825
-    },
-    {
-      "group": "sofa",
-      "seat": 2,
-      "sample": [
-        -0.45,
-        0.45
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
@@ -876,12 +866,23 @@
       "group": "sofa",
       "seat": 2,
       "sample": [
+        -0.45,
+        0.45
+      ],
+      "clear": true,
+      "hit": "Bedroom 02 | sofa TV screen",
+      "distance_m": 5.902
+    },
+    {
+      "group": "sofa",
+      "seat": 2,
+      "sample": [
         0.45,
         -0.45
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 5.868
+      "distance_m": 5.924
     },
     {
       "group": "sofa",
@@ -892,7 +893,7 @@
       ],
       "clear": true,
       "hit": "Bedroom 02 | sofa TV screen",
-      "distance_m": 5.887
+      "distance_m": 5.982
     }
   ],
   "native_window_checks": [
@@ -3995,34 +3996,34 @@
     {
       "name": "Bedroom 02 | sofa TV fixed case",
       "bounds": [
-        6.355999946594238,
+        6.073999881744385,
         -8.827500343322754,
-        3.7925000190734863,
-        7.604000091552734,
+        3.7855000495910645,
+        7.986000061035156,
         -8.762499809265137,
-        4.507500171661377
+        4.874499797821045
       ]
     },
     {
       "name": "Bedroom 02 | sofa TV screen",
       "bounds": [
-        6.370999813079834,
+        6.089000225067139,
         -8.834500312805176,
-        3.807499885559082,
-        7.589000225067139,
+        3.80049991607666,
+        7.9710001945495605,
         -8.825499534606934,
-        4.492499828338623
+        4.859499931335449
       ]
     },
     {
       "name": "Bedroom 02 | sofa TV status light",
       "bounds": [
-        7.462699890136719,
+        7.778299808502197,
         -8.84000015258789,
-        3.7980000972747803,
-        7.471700191497803,
+        3.7909998893737793,
+        7.787300109863281,
         -8.833999633789062,
-        3.8010001182556152
+        3.7939999103546143
       ]
     },
     {

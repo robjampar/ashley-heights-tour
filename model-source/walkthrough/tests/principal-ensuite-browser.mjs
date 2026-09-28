@@ -19,7 +19,7 @@ try{
     features:['oval bath hollow shell','basin hollow bowl','shower thermostatic control','WC privacy return','hanging garment','window drawer front','bath window obscure pane','wall-backed upholstered headboard','bed TV screen'].map(term=>({term,count:names.filter(n=>n.includes(term)).length})),
     mirrors:interiorPreview.mirrors.length,views:Object.keys(interiorPreview.views),cutawayObjects:interiorPreview.cutawayMeshes.length,batches:interiorPreview.batches};
   });
-  assert.equal(result.revision,2);assert.equal(result.variant,design);assert(result.authored>400);assert(result.features.every(f=>f.count>0));assert.equal(result.mirrors,3);
+  assert.equal(result.revision,3);assert.equal(result.variant,design);assert(result.authored>400);assert(result.features.every(f=>f.count>0));assert.equal(result.mirrors,3);
   for(const view of result.views){
    await page.locator(`[data-camera=${view}]`).click();await page.waitForTimeout(800);
    assert.equal(new URL(page.url()).searchParams.get('view'),view);

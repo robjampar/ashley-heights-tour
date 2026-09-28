@@ -1,23 +1,24 @@
 {
-  "owner_scope_updated": "2026-09-27 morning",
+  "owner_scope_updated": "2026-09-28 00:47 BST",
   "areas": [
     {
       "key": "formal",
       "title": "Formal lounge and dining room",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified locally; publication awaits owner review",
       "views": [
         {
           "id": "2445659-0",
           "label": "Formal dining and lounge \u00b7 dining end",
           "group": "Ground floor",
           "position": [
-            6.2,
-            9.6,
-            0.0
+            6.04,
+            8.65,
+            0
           ],
           "direction": [
-            0.35,
-            -1
+            0.8,
+            -0.6,
+            -0.08
           ]
         },
         {
@@ -25,13 +26,14 @@
           "label": "Formal dining and lounge \u00b7 lounge end",
           "group": "Ground floor",
           "position": [
-            11.417438963152719,
-            1.7388538429854843,
-            0.0
+            11.05,
+            0.94,
+            0
           ],
           "direction": [
-            0.08286678745968175,
-            0.9965606331458774
+            0,
+            1,
+            -0.04
           ]
         }
       ]
@@ -39,21 +41,21 @@
     {
       "key": "sidebedroom",
       "title": "Side-wing south bedroom and ensuite",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "owner corrections modelled and checked in both variants; final combined local build running",
       "views": [
         {
           "id": "proposal-side-wing-south-bedroom",
           "label": "Side wing south bedroom",
           "group": "Proposal \u00b7 First floor",
           "position": [
-            -2.2,
-            3.1,
+            -2.5,
+            2.65,
             2.8
           ],
           "direction": [
-            0.35,
-            -1,
-            0
+            1,
+            0,
+            -0.04
           ]
         },
         {
@@ -61,14 +63,14 @@
           "label": "Side south ensuite",
           "group": "Proposal \u00b7 First floor",
           "position": [
-            -3.35,
-            4.38,
+            -3.67,
+            4.48,
             2.8
           ],
           "direction": [
             -1,
-            -0.15,
-            0
+            0.05,
+            -0.07
           ]
         }
       ]
@@ -76,21 +78,21 @@
     {
       "key": "upperbedroom",
       "title": "Bedroom and ensuite above the principal suite",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified locally; publication awaits owner review",
       "views": [
         {
           "id": "proposal-new-loft-studio",
           "label": "New loft bedroom",
           "group": "Proposal \u00b7 Loft",
           "position": [
-            11.7,
-            -6.1499999999999995,
+            11.82,
+            -6.95,
             5.55
           ],
           "direction": [
-            -0.3,
-            -1,
-            0
+            -0.5,
+            -0.9,
+            -0.04
           ]
         },
         {
@@ -98,14 +100,14 @@
           "label": "Loft ensuite",
           "group": "Proposal \u00b7 Loft",
           "position": [
-            10.75,
-            -10.3,
+            10.8,
+            -10.32,
             5.55
           ],
           "direction": [
-            0.6,
+            0.7,
             -0.8,
-            0
+            -0.06
           ]
         },
         {
@@ -128,20 +130,21 @@
     {
       "key": "hobbyloft",
       "title": "Original-house dormer hobby / multifunction room",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified locally; publication awaits owner review",
       "views": [
         {
           "id": "proposal-loft-studio-and-lounge",
           "label": "Loft studio and lounge",
           "group": "Proposal \u00b7 Loft",
           "position": [
-            8.0,
-            4.95,
+            8.48,
+            5.2,
             5.55
           ],
           "direction": [
             -1,
-            0.35
+            0.35,
+            -0.02
           ]
         },
         {
@@ -149,13 +152,14 @@
           "label": "Loft \u00b7 creative workbench",
           "group": "Proposal \u00b7 Loft",
           "position": [
-            1.2,
-            5.0,
+            3.56,
+            5.32,
             5.55
           ],
           "direction": [
-            -0.55,
-            0.85
+            -0.8,
+            0.65,
+            -0.08
           ]
         },
         {
@@ -163,27 +167,29 @@
           "label": "Loft \u00b7 shared lounge",
           "group": "Proposal \u00b7 Loft",
           "position": [
-            6.7,
-            5.1,
+            8.9,
+            5.34,
             5.55
           ],
           "direction": [
-            -1,
-            0.45
+            -0.3,
+            1,
+            -0.04
           ]
         },
         {
           "id": "proposal-loft-quiet-work",
-          "label": "Loft \u00b7 quiet work area",
+          "label": "Loft \u00b7 flexible hobby area",
           "group": "Proposal \u00b7 Loft",
           "position": [
-            7.9,
-            6.3,
+            4.9,
+            6.1,
             5.55
           ],
           "direction": [
-            1,
-            0.15
+            -1,
+            0,
+            -0.04
           ]
         },
         {
@@ -219,7 +225,7 @@
     {
       "key": "loftlinks",
       "title": "Loft landings and bridge",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified locally; publication awaits owner review; retained bridge headroom 1.78\u20131.90 m remains a design constraint",
       "views": [
         {
           "id": "proposal-loft-landing",
@@ -256,13 +262,14 @@
           "label": "Original loft bridge",
           "group": "Proposal \u00b7 Loft",
           "position": [
-            8.4,
-            -0.7,
+            8.92,
+            -0.65,
             5.55
           ],
           "direction": [
             0,
-            -1
+            1,
+            0
           ]
         }
       ]
@@ -270,7 +277,7 @@
     {
       "key": "roofterrace",
       "title": "Shared roof terrace",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified locally; publication awaits owner review",
       "views": [
         {
           "id": "proposal-shared-roof-terrace",
@@ -284,7 +291,7 @@
           "direction": [
             0.2,
             1,
-            0
+            -0.1
           ]
         }
       ]
@@ -292,20 +299,20 @@
     {
       "key": "arrival",
       "title": "Main entrance and galleries",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "owner corrections modelled and checked in both variants; final combined local build running",
       "views": [
         {
           "id": "proposal-new-entrance-gallery",
           "label": "New entrance gallery",
           "group": "Proposal \u00b7 Ground floor",
           "position": [
-            6.0,
-            -8.0,
-            0.0
+            4.85,
+            -7.25,
+            0
           ],
           "direction": [
             1,
-            0,
+            0.45,
             0
           ]
         },
@@ -328,7 +335,7 @@
     {
       "key": "landings",
       "title": "House landings, library and stairs",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "owner corrections modelled and checked in both variants; final combined local build running",
       "views": [
         {
           "id": "2445670-3",
@@ -379,14 +386,14 @@
           "label": "Landing library",
           "group": "Proposal \u00b7 First floor",
           "position": [
-            9.5,
-            -5.6,
+            8.64,
+            -1.24,
             2.8
           ],
           "direction": [
-            -1,
-            0,
-            0
+            1,
+            -0.05,
+            -0.08
           ]
         },
         {
@@ -409,20 +416,20 @@
     {
       "key": "garage",
       "title": "Double garage and unloading route",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified locally; four outdoor bays and two garage cars; publication awaits owner review",
       "views": [
         {
           "id": "proposal-new-double-garage",
           "label": "New double garage",
           "group": "Proposal \u00b7 Ground floor",
           "position": [
-            4.0,
-            -12.94,
-            0.0
+            4.03,
+            -12.8,
+            0
           ],
           "direction": [
             1,
-            0,
+            -0.04,
             0
           ]
         }
@@ -431,7 +438,7 @@
     {
       "key": "poolgarden",
       "title": "Pool, hot tub, terrace and garden pavilion",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified as isolated native studies; final combined local build running; publication awaits owner review",
       "views": [
         {
           "id": "proposal-pool-terrace",
@@ -483,13 +490,14 @@
           "label": "Summer House",
           "group": "Garden",
           "position": [
-            15.25999896177807,
-            21.449999319099348,
-            0.572
+            14.79,
+            21.12,
+            0.5445870161056519
           ],
           "direction": [
-            0.02940310805371039,
-            0.9995676351487086
+            0.4,
+            -1,
+            0
           ]
         }
       ]
@@ -497,20 +505,21 @@
     {
       "key": "office",
       "title": "Original ground-floor office",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified as isolated native studies; final combined local build running; publication awaits owner review",
       "views": [
         {
           "id": "2445661-0",
           "label": "Office",
           "group": "Ground floor",
           "position": [
-            3.8,
-            3.0,
-            0.0
+            3.54,
+            3.14,
+            0
           ],
           "direction": [
-            -0.8,
-            -0.5
+            -0.7,
+            -1,
+            0
           ]
         }
       ]
@@ -518,7 +527,7 @@
     {
       "key": "sideliving",
       "title": "Side garden living room",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "already developed as the accepted Quiet oak kitchen/TV lounge; preserved by the full native and retained-geometry checks",
       "views": [
         {
           "id": "2445664-0",
@@ -540,20 +549,20 @@
     {
       "key": "gardenancillary",
       "title": "Garden workshop, tool store, outside WC and garden routes",
-      "status": "remaining; current furniture not yet redesigned",
+      "status": "developed and verified as isolated native studies; final combined local build running; publication awaits owner review",
       "views": [
         {
           "id": "proposal-garden-workshop",
           "label": "Garden workshop",
           "group": "Proposal \u00b7 Garden",
           "position": [
-            -20.045,
+            -18.61,
             23.4,
-            -0.459
+            -0.45944247075586114
           ],
           "direction": [
-            -0.7,
-            0.5,
+            -1,
+            0.2,
             0
           ]
         },

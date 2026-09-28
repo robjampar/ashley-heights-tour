@@ -1,0 +1,1725 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "footprints": [
+    {
+      "label": "linen",
+      "actual": [
+        0.29600000381469727,
+        3.305000066757202,
+        2.4040000438690186,
+        3.8355000019073486
+      ],
+      "declared": [
+        0.3,
+        3.305,
+        2.4,
+        3.835
+      ]
+    },
+    {
+      "label": "gallery books",
+      "actual": [
+        9.515000343322754,
+        -8.359999656677246,
+        9.824999809265137,
+        -6.869999885559082
+      ],
+      "declared": [
+        9.515,
+        -8.36,
+        9.825,
+        -6.87
+      ]
+    },
+    {
+      "label": "main books",
+      "actual": [
+        0.30000001192092896,
+        5.21750020980835,
+        3.4600000381469727,
+        5.570000171661377
+      ],
+      "declared": [
+        0.3,
+        5.225,
+        3.46,
+        5.57
+      ]
+    },
+    {
+      "label": "chair",
+      "actual": [
+        9.47499942779541,
+        -1.7925000190734863,
+        10.204999923706055,
+        -0.9774999618530273
+      ],
+      "declared": [
+        9.42,
+        -1.83,
+        10.22,
+        -0.94
+      ]
+    }
+  ],
+  "slidingLinenPanels": [
+    {
+      "panel": 0,
+      "positions": 41,
+      "clashes": []
+    },
+    {
+      "panel": 1,
+      "positions": 41,
+      "clashes": []
+    }
+  ],
+  "fixtureWallClashes": [],
+  "doorSweeps": [
+    {
+      "door": "Principal suite entrance",
+      "positions": 91,
+      "completeMembers": 2,
+      "clashesWithNewFittings": []
+    },
+    {
+      "door": "Guest 01 | entrance door",
+      "positions": 91,
+      "completeMembers": 8,
+      "clashesWithNewFittings": []
+    },
+    {
+      "door": "Bedroom2 01 | entrance door",
+      "positions": 91,
+      "completeMembers": 8,
+      "clashesWithNewFittings": []
+    },
+    {
+      "door": "Bedroom3 01 | entrance door",
+      "positions": 91,
+      "completeMembers": 8,
+      "clashesWithNewFittings": []
+    },
+    {
+      "door": "Familybath 01 | entrance door",
+      "positions": 91,
+      "completeMembers": 8,
+      "clashesWithNewFittings": []
+    },
+    {
+      "door": "Bedroom4 01 | hall door",
+      "positions": 91,
+      "completeMembers": 8,
+      "clashesWithNewFittings": []
+    }
+  ],
+  "retainedFloorSamples": [
+    {
+      "xy": [
+        8.633333206176758,
+        5.136666774749756
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.946000099182129,
+        4.712000370025635
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.946000099182129,
+        5.349000453948975
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.007999420166016,
+        5.349000453948975
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.186666488647461,
+        4.833333492279053
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.812000274658203,
+        4.621000289916992
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.874000072479248,
+        5.258000373840332
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.87399959564209,
+        4.621000289916992
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.713333129882812,
+        4.0460004806518555
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.9350004196167,
+        3.3684003353118896
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.9350004196167,
+        4.384800434112549
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.270000457763672,
+        4.384800434112549
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.949999809265137,
+        4.0460004806518555
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.706000328063965,
+        3.3684003353118896
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.041000366210938,
+        4.384800434112549
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.102999687194824,
+        4.384800434112549
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.183333396911621,
+        4.0460004806518555
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.176000595092773,
+        3.3684003353118896
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.572999477386475,
+        4.384800434112549
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        4.800999641418457,
+        4.384800434112549
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.570000171661377,
+        3.5993337631225586
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.992000579833984,
+        3.2344002723693848
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        4.617000102996826,
+        4.250800132751465
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.1010003089904785,
+        3.312800168991089
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        4.486666679382324,
+        3.636666774749756
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        5.47599983215332,
+        3.324000120162964
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        3.991999864578247,
+        4.26200008392334
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        3.992000102996826,
+        3.324000120162964
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.293333053588867,
+        3.122666835784912
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.509000778198242,
+        3.091400146484375
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.618000507354736,
+        3.169800043106079
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.753000259399414,
+        3.106800079345703
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.556666374206543,
+        3.130000114440918
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.531999588012695,
+        3.1089999675750732
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.397000312805176,
+        3.171999931335449
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.741000175476074,
+        3.1089999675750732
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.5400004386901855,
+        2.0966668128967285
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.436000347137451,
+        2.7990000247955322
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.092000484466553,
+        2.861999988555908
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.0920000076293945,
+        0.6290000081062317
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.3100004196167,
+        3.0853333473205566
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.814001083374023,
+        3.0802001953125
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.058000564575195,
+        3.095600128173828
+      ],
+      "retained": "Bedroom 2 door | pier 0",
+      "z": 2.8000001907348633
+    },
+    {
+      "xy": [
+        9.057999610900879,
+        3.0802001953125
+      ],
+      "retained": "Bedroom 2 door | pier 0",
+      "z": 2.8000001907348633
+    },
+    {
+      "xy": [
+        7.6508049964904785,
+        1.6800000667572021
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.7692413330078125,
+        1.1829999685287476
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.7692413330078125,
+        2.6740002632141113
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.413931369781494,
+        1.183000087738037
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.010804653167725,
+        1.3566666841506958
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.221931457519531,
+        1.0859999656677246
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.57724142074585,
+        2.577000141143799
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.233241558074951,
+        0.40700000524520874
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.841609477996826,
+        0.32333335280418396
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.171172618865967,
+        0.09700000286102295
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.171172618865967,
+        0.7760000228881836
+      ],
+      "retained": "Landing | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.182483196258545,
+        0.09700000286102295
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        2.5199999809265137,
+        4.849999904632568
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        3.4019999504089355,
+        3.688000202178955
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        3.4019999504089355,
+        5.430999755859375
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        0.7559999823570251,
+        5.431000232696533
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        1.2599999904632568,
+        4.019999980926514
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        3.0239999294281006,
+        3.439000129699707
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        0.3779999911785126,
+        5.182000160217285
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        0.3779999911785126,
+        3.439000129699707
+      ],
+      "retained": "Bedroom 5 | floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.081666946411133,
+        -1.4866666793823242
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.934499740600586,
+        -3.4069998264312744
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.934499740600586,
+        -0.5264999866485596
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.37600040435791,
+        -0.5264999866485596
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.863333225250244,
+        -2.8583335876464844
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.569000244140625,
+        -3.81850004196167
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.010499954223633,
+        -0.937999963760376
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.010500431060791,
+        -3.81850004196167
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.151666641235352,
+        -7.350000381469727
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.633500099182129,
+        -8.246000289916992
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.633500099182129,
+        -6.9019999504089355
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.188000679016113,
+        -6.9019999504089355
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.463333129882812,
+        -7.9900007247924805
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.427000045776367,
+        -8.438000679016113
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.981500625610352,
+        -7.093999862670898
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.981500625610352,
+        -8.438000679016113
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.191666603088379,
+        -6.630000114440918
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.6875,
+        -6.685999870300293
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.6875,
+        -6.6020002365112305
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.199999809265137,
+        -6.6020002365112305
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.483333587646484,
+        -6.670000076293945
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.47499942779541,
+        -6.697999954223633
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.987500190734863,
+        -6.61400032043457
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.987500190734863,
+        -6.697999954223633
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.491666793823242,
+        -5.800000190734863
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        10.092500686645508,
+        -6.353000640869141
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        10.092500686645508,
+        -5.523500442504883
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.290000915527344,
+        -5.523500442504883
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.633333206176758,
+        -6.195000171661377
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.835000991821289,
+        -6.471500396728516
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.032500267028809,
+        -5.642000198364258
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.032500267028809,
+        -6.471500396728516
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        8.620000839233398,
+        -4.62166690826416
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.831000328063965,
+        -5.170000076293945
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.831000328063965,
+        -4.347499847412109
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.197999954223633,
+        -4.347499847412109
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.890000343322754,
+        -5.013333320617676
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.312000274658203,
+        -5.287500381469727
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        5.678999900817871,
+        -4.465000152587891
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        5.678999900817871,
+        -5.287500381469727
+      ],
+      "retained": "Proposal | Wing first floor",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.133333206176758,
+        -0.038333334028720856
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.558000087738037,
+        -0.09200000017881393
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.558000087738037,
+        -0.011500000022351742
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.283999919891357,
+        -0.011500000022351742
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.526666641235352,
+        -0.07666666805744171
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.375999927520752,
+        -0.10350000113248825
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.1020002365112305,
+        -0.023000000044703484
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        6.1020002365112305,
+        -0.10350000113248825
+      ],
+      "retained": "Proposal | Original ground junction lintel",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.717471599578857,
+        0.7100000381469727
+      ],
+      "retained": "Landing connection at head of stairs",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.859241008758545,
+        0.2900000214576721
+      ],
+      "retained": "Landing connection at head of stairs",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.859241008758545,
+        0.9200000166893005
+      ],
+      "retained": "Arrival 01 | original stair Stair winder 17 - turns onto front landing",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.433931350708008,
+        0.9200000166893005
+      ],
+      "retained": "Landing connection at head of stairs",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.5149431228637695,
+        0.4099999964237213
+      ],
+      "retained": "Landing connection at head of stairs",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.798482418060303,
+        0.20000001788139343
+      ],
+      "retained": "Landing connection at head of stairs",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.373172283172607,
+        0.8299999833106995
+      ],
+      "retained": "Landing connection at head of stairs",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        7.373172760009766,
+        0.20000001788139343
+      ],
+      "retained": "Landing connection at head of stairs",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        10.000000953674316,
+        -1.440000057220459
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        10.245000839233398,
+        -2.251999855041504
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        10.245000839233398,
+        -1.034000039100647
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.510000228881836,
+        -1.034000039100647
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.65000057220459,
+        -2.0199999809265137
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        10.14000129699707,
+        -2.425999879837036
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.405000686645508,
+        -1.2079999446868896
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    },
+    {
+      "xy": [
+        9.405000686645508,
+        -2.425999879837036
+      ],
+      "retained": "Proposal | Entrance first floor continuation",
+      "z": 2.799999952316284
+    }
+  ],
+  "headroomStations": [
+    {
+      "xy": [
+        8.9,
+        -8.15
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        9.0,
+        -8.15
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.8,
+        -8.15
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.9,
+        -8.05
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.9,
+        -8.25
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.6,
+        -6.8
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.7,
+        -6.8
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.5,
+        -6.8
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.6,
+        -6.7
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.6,
+        -6.8999999999999995
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.5,
+        -5.4
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.6,
+        -5.4
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.4,
+        -5.4
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.5,
+        -5.300000000000001
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        8.5,
+        -5.5
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        9.75,
+        -4.97
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        9.85,
+        -4.97
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        9.65,
+        -4.97
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        9.75,
+        -4.87
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        9.75,
+        -5.069999999999999
+      ],
+      "height": 2.4849998474121096,
+      "overhead": "Proposal | Wing First ceiling"
+    },
+    {
+      "xy": [
+        7.0,
+        -2.0
+      ],
+      "height": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "xy": [
+        7.1,
+        -2.0
+      ],
+      "height": 2.470000457763672,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "xy": [
+        6.9,
+        -2.0
+      ],
+      "height": 2.470000457763672,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "xy": [
+        7.0,
+        -1.9
+      ],
+      "height": 2.470000457763672,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "xy": [
+        7.0,
+        -2.1
+      ],
+      "height": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        0.5
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.8,
+        0.5
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.6000000000000005,
+        0.5
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        0.6
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        0.4
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        2.5
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.8,
+        2.5
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.6000000000000005,
+        2.5
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        2.6
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        2.4
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        3.9
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.8,
+        3.9
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.6000000000000005,
+        3.9
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        4.0
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        6.7,
+        3.8
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        4.4,
+        3.9
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        4.5,
+        3.9
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        4.300000000000001,
+        3.9
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        4.4,
+        4.0
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        4.4,
+        3.8
+      ],
+      "height": 2.45,
+      "overhead": "Landing continuous ceiling"
+    },
+    {
+      "xy": [
+        2.4,
+        4.4
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        2.5,
+        4.4
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        2.3,
+        4.4
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        2.4,
+        4.5
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        2.4,
+        4.300000000000001
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        1.0,
+        4.4
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        1.1,
+        4.4
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        0.9,
+        4.4
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        1.0,
+        4.5
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    },
+    {
+      "xy": [
+        1.0,
+        4.300000000000001
+      ],
+      "height": 2.45,
+      "overhead": "Bedroom 5 | ceiling"
+    }
+  ],
+  "readingLightRetainedWall": [],
+  "readingChairHeadroom": [
+    {
+      "station": "seated",
+      "xy": [
+        9.8,
+        -1.39
+      ],
+      "clearHeight": 2.0343749046325685,
+      "overhead": "Proposal | Loft stair structure 13"
+    },
+    {
+      "station": "seated",
+      "xy": [
+        9.9,
+        -1.39
+      ],
+      "clearHeight": 2.0343749046325685,
+      "overhead": "Proposal | Loft stair structure 13"
+    },
+    {
+      "station": "seated",
+      "xy": [
+        9.700000000000001,
+        -1.39
+      ],
+      "clearHeight": 2.0343749046325685,
+      "overhead": "Proposal | Loft stair structure 13"
+    },
+    {
+      "station": "seated",
+      "xy": [
+        9.8,
+        -1.2899999999999998
+      ],
+      "clearHeight": 2.2062499046325685,
+      "overhead": "Proposal | Loft stair structure 14"
+    },
+    {
+      "station": "seated",
+      "xy": [
+        9.8,
+        -1.49
+      ],
+      "clearHeight": 2.0343749046325685,
+      "overhead": "Proposal | Loft stair structure 13"
+    },
+    {
+      "station": "stand up in front",
+      "xy": [
+        9.08,
+        -1.39
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "stand up in front",
+      "xy": [
+        9.18,
+        -1.39
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "stand up in front",
+      "xy": [
+        8.98,
+        -1.39
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "stand up in front",
+      "xy": [
+        9.08,
+        -1.2899999999999998
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "stand up in front",
+      "xy": [
+        9.08,
+        -1.49
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "approach",
+      "xy": [
+        8.94,
+        -1.72
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "approach",
+      "xy": [
+        9.04,
+        -1.72
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "approach",
+      "xy": [
+        8.84,
+        -1.72
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "approach",
+      "xy": [
+        8.94,
+        -1.6199999999999999
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    },
+    {
+      "station": "approach",
+      "xy": [
+        8.94,
+        -1.82
+      ],
+      "clearHeight": 2.469999980926514,
+      "overhead": "Proposal | Entrance upper ceiling"
+    }
+  ],
+  "sourceSha256": "8e992c8b3b4d616cb42ac0dba817d15d2c1d3105a421c433cc5c56e10c97d4d0",
+  "sourceUnchanged": true
+}

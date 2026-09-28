@@ -1,0 +1,234 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "south lounger",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "middle lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north pool route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east pool route",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "spa approach",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "pavilion sofa",
+          "distance": 0.00999999999999801,
+          "reachable": true
+        },
+        {
+          "label": "towels",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "outside WC approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "tool store approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "summer house approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "loungerUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "middle lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north pool route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east pool route",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "spa approach",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "pavilion sofa",
+          "distance": 0.00999999999999801,
+          "reachable": true
+        },
+        {
+          "label": "towels",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "outside WC approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "tool store approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "summer house approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "sofaOccupied",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "south lounger",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "middle lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north pool route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east pool route",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "spa approach",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "towels",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "outside WC approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "tool store approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "summer house approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "towelUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "south lounger",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "middle lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north lounger",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "north pool route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east pool route",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "spa approach",
+          "distance": 0.014142135623731905,
+          "reachable": true
+        },
+        {
+          "label": "pavilion sofa",
+          "distance": 0.00999999999999801,
+          "reachable": true
+        },
+        {
+          "label": "outside WC approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "tool store approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "summer house approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

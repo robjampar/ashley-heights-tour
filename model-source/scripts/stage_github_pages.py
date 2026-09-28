@@ -6,7 +6,10 @@ import json
 import re
 from stage_interior_studio import stage_studio
 from stage_room_studies import stage_room_studies
+from stage_house_brochure import stage_brochure
 from publication_retention import retirement
+from pages_artifact import public_bytes
+from model_delivery import delivery_asset
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'walkthrough/dist'
@@ -21,8 +24,8 @@ model_files = ('house.glb', 'navigation.json', 'proposal-compact.glb', 'proposal
                    name for option in (*redesign_ids, 'g1') for name in (f'redesign-{option}.glb', f'redesign-{option}-navigation.json'))
 for name in (*model_files, 'style.css'):
     data = (DIST / name).read_bytes()
-    stem, suffix = name.rsplit('.', 1)
-    assets[name] = (f'{stem}.{sha(data)[:16]}.{suffix}', data)
+    target, data = delivery_asset(name, data)
+    assets[name] = (target.as_posix(), data)
 
 app = (DIST / 'app.js').read_text()
 for name in model_files:
@@ -43,6 +46,14 @@ DEST.mkdir(parents=True, exist_ok=True)
 # preserves the original retirement time across repeated staging.
 manifest_path = DEST / 'release.json'
 previous = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+shared_textures={}
+for name in json.loads((DIST/'shared-textures.json').read_text()):
+    relative=Path(name)
+    assert relative.parts[0]=='textures' and len(relative.parts)==2
+    data=(DIST/relative).read_bytes()
+    assert relative.stem==sha(data)
+    target=DEST/relative;target.parent.mkdir(exist_ok=True);target.write_bytes(data)
+    shared_textures[name]={'bytes':len(data),'sha256':sha(data)}
 new_names = {name for name, _ in assets.values()}
 now = datetime.now(timezone.utc).timestamp()
 retained = {}
@@ -129,8 +140,16 @@ principal_studio = stage_studio(DIST / 'interiors/principal', DEST / 'interiors/
                               previous.get('principal_studio', {}), now, retirement,
                               ROOT / 'walkthrough/public/interiors/principal', room='principal')
 leisure_studio = stage_room_studies(DIST/'interiors/leisure',DEST/'interiors/leisure',
-                                  previous.get('leisure_studio',{}),now,retirement,('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4'))
+                                  previous.get('leisure_studio',{}),now,retirement,('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4','formal','sidebed','loftsuite','hobby','terrace','arrival','landings','garage','poolgarden','gardenhouse','office','workshop'))
+download_tag='brochure-'+sha((DIST/'brochure/ashley-heights-house-brochure.pdf').read_bytes())[:12]
+download_dir=ROOT/'output/release-downloads'/download_tag
+brochure = stage_brochure(DIST/'brochure',DEST/'brochure',download_dir,
+                         'https://github.com/robjampar/ashley-heights-tour/releases/download/'+download_tag)
+(download_dir/'upload-manifest.json').write_text(json.dumps({'repo':'robjampar/ashley-heights-tour','tag':download_tag,'assets':brochure['external_downloads'],'status':'must upload and verify before publishing linked site'},indent=2)+'\n')
 manifest = {
+    'shared_textures': shared_textures,
+    'brochure': brochure,
+    'principal_gable_wall': {'proposed':compact_nav.get('principalGableWall'), 'planning':planning_nav.get('principalGableWall')},
     'leisure_studio': leisure_studio,
     'interior_studio': interior_studio,
     'principal_studio': principal_studio,
@@ -163,10 +182,9 @@ manifest = {
     'accuracy_note': 'Photo and plan reconstruction; unmeasured details remain estimates.'
 }
 manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
-# Include the source snapshot and landing page in the limit, but never Git's
-# object database. Refuse publication instead of dropping recent cached assets.
-site_bytes = sum(p.stat().st_size for p in DEST.parent.rglob('*')
-                 if p.is_file() and '.git' not in p.relative_to(DEST.parent).parts)
+# Use the same explicit static-file inventory as the Pages workflow. Source is
+# retained in Git; recent cached public assets remain part of the size budget.
+site_bytes = public_bytes(DEST.parent)
 if site_bytes > 1_000_000_000:
     raise RuntimeError(f'Staged site is {site_bytes:,} bytes; wait for retained assets to expire before publishing')
 manifest['staged_site_bytes'] = site_bytes

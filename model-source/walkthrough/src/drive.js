@@ -37,7 +37,9 @@ export class DriveWorld {
   // departures vanish.
   this.gate=gateGeometry(data);
   const {a,b,out}=this.gate,side=[-out[1],out[0]];
-  this.road=[[a[0]+out[0]*.2-side[0]*5,a[1]+out[1]*.2-side[1]*5],[b[0]+out[0]*.2+side[0]*5,b[1]+out[1]*.2+side[1]*5],[b[0]+out[0]*14+side[0]*5,b[1]+out[1]*14+side[1]*5],[a[0]+out[0]*14-side[0]*5,a[1]+out[1]*14-side[1]*5]];
+  // Join the road strip to the boundary line; a 200 mm offset left a
+  // fictitious non-drivable gap across an otherwise open gate.
+  this.road=[[a[0]-side[0]*5,a[1]-side[1]*5],[b[0]+side[0]*5,b[1]+side[1]*5],[b[0]+out[0]*14+side[0]*5,b[1]+out[1]*14+side[1]*5],[a[0]+out[0]*14-side[0]*5,a[1]+out[1]*14-side[1]*5]];
   this.bounds=[Math.min(this.bounds[0],...this.road.map(q=>q[0]))-1,Math.min(this.bounds[1],...this.road.map(q=>q[1]))-1,this.bounds[2],this.bounds[3]];
   this.dynamic=[];   // boxes of parked cars the current search must respect
   this.cells=new Map();

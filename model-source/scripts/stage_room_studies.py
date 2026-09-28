@@ -1,6 +1,10 @@
 """Cache-safe publication of measured, furnished room studies."""
 from pathlib import Path
 import hashlib,json
+try:
+    from .model_delivery import delivery_asset
+except ImportError:
+    from model_delivery import delivery_asset
 
 
 def stage_room_studies(source,destination,previous,now,retirement,rooms):
@@ -9,7 +13,8 @@ def stage_room_studies(source,destination,previous,now,retirement,rooms):
     names={'studio.css','room-model.js'}
     for room in rooms:
         names.add(room+'-plan.svg')
-        names.update('models/'+variant+'-'+room+suffix for variant in ('compact','planning')for suffix in ('.glb','.json'))
+        variants=('compact',) if room in ('terrace','poolgarden','workshop') else ('compact','planning')
+        names.update('models/'+variant+'-'+room+suffix for variant in variants for suffix in ('.glb','.json'))
     shared=source/'shared-textures.json'
     if shared.exists():names.update(json.loads(shared.read_text()))
     mapping,manifest={},{}
@@ -18,7 +23,7 @@ def stage_room_studies(source,destination,previous,now,retirement,rooms):
         if relative.parts[0]=='textures':
             assert len(relative.parts)==2 and relative.stem==sha(payload), 'Shared texture name must match exact image bytes'
             target=relative
-        else:target=relative.with_name(relative.stem+'.'+sha(payload)[:16]+relative.suffix)
+        else:target,payload=delivery_asset(relative,payload)
         mapping[name]=target.as_posix();out=destination/target;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(payload)
         manifest[target.as_posix()]={'source':name,'bytes':len(payload),'sha256':sha(payload)}
     pages={}

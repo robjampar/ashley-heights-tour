@@ -1,5 +1,5 @@
 {
-  "revision": 1,
+  "revision": 3,
   "room": "Gym",
   "bounds": [
     9.26,
@@ -45,6 +45,22 @@
       "rearClearance": [
         2,
         1
+      ],
+      "placedFront": [
+        9.29,
+        -5.63
+      ],
+      "footprint": [
+        9.29,
+        -6.028,
+        11.049999999999999,
+        -5.232
+      ],
+      "safetyZone": [
+        11.049999999999999,
+        -6.13,
+        13.049999999999999,
+        -5.13
       ]
     },
     {
@@ -56,19 +72,35 @@
       "rearClearance": [
         2,
         1
+      ],
+      "placedFront": [
+        9.29,
+        -6.68
+      ],
+      "footprint": [
+        9.29,
+        -7.077999999999999,
+        11.049999999999999,
+        -6.282
+      ],
+      "safetyZone": [
+        11.049999999999999,
+        -7.18,
+        13.049999999999999,
+        -6.18
       ]
     }
   ],
   "bench": [
-    11.72,
-    -9.53,
-    12.38,
-    -7.99
+    10.85,
+    -9.58,
+    11.51,
+    -8.04
   ],
   "cable": {
     "center": [
-      9.5,
-      -9.735
+      13.61,
+      -9.35
     ],
     "size": [
       0.4,
@@ -76,22 +108,28 @@
       2.15
     ],
     "activity": [
-      9.28,
-      -9.35,
-      11.05,
-      -8.1
+      11.95,
+      -10.1,
+      13.49,
+      -8.6
+    ],
+    "footprint": [
+      13.43,
+      -9.555,
+      13.715,
+      -9.145
     ]
   },
   "dumbbells": [
-    10.45,
-    -9.835,
-    11.17,
-    -9.395
+    13.295,
+    -9.6,
+    13.735,
+    -8.88
   ],
   "bike": {
     "center": [
-      12.37,
-      -10.25
+      13.08,
+      -10.65
     ],
     "size": [
       1.22,
@@ -99,32 +137,32 @@
       1.25
     ],
     "activity": [
-      11.73,
-      -10.85,
-      13.01,
-      -9.65
+      12.43,
+      -11.25,
+      13.73,
+      -10.05
     ],
     "facing": "west"
   },
   "rower": {
     "stored": [
-      11.455,
-      -12.385,
-      12.09,
-      -11.547
+      9.29,
+      -9.68,
+      9.925,
+      -8.842
     ],
     "storedHeight": 1.372,
     "deployed": [
-      12.095,
-      -7.79,
-      12.705,
-      -5.35
+      12.105,
+      -7.05,
+      12.715,
+      -4.61
     ],
     "activity": [
-      11.79,
-      -7.94,
-      13.01,
-      -5.2
+      11.8,
+      -7.2,
+      13.02,
+      -4.46
     ]
   },
   "waterShelf": [
@@ -136,30 +174,31 @@
   "view": {
     "id": "proposal-gym",
     "position": [
-      10.45,
-      -7.55,
+      11.47,
+      -7.5,
       0
     ],
     "direction": [
-      1,
       -1,
-      -0.15
+      0.7,
+      -0.08
     ]
   },
   "notes": [
-    "Retain two west-facing treadmills and no mirrors.",
+    "Owner review: return both treadmills to face west towards the entrance and front gates, 20 mm north of their earlier locations.",
+    "The gym hall door moves 300 mm south; the adjacent internal window moves 200 mm south to retain a masonry pier. The rear safety zones and courtyard access stay clear.",
     "Treadmill proportions and rear safety zones reference the manufacturer MyRun manual.",
-    "Rowing uses the clear rear treadmill area only with both treadmills switched off. This is an alternate training mode.",
+    "Rowing uses a separate central lane with the bike unoccupied. Activity states are checked individually.",
     "The bench stays in place; cycling and strength have some shared working space and are checked separately.",
     "The rower is stored as two nested parts, as Concept2 describes; never depict the assembled rower balanced on end.",
     "Verify final products, fixing, ventilation, floor loads and selected exercises before installation.",
-    "The oversized freestanding barbell arrangement and loose exercise ball are omitted; a full dumbbell bench and compact cable tower provide the strength area."
+    "Strength training uses the dumbbell rack and bench. The additional cable tower is omitted to retain a clear route to the utility door."
   ],
   "views": {
     "entrance": {
       "position": [
         9.68,
-        -7.42,
+        -7.72,
         1.62
       ],
       "target": [
@@ -237,9 +276,28 @@
     }
   },
   "benchActivity": [
-    11.25,
-    -9.7,
-    13.05,
-    -7.83
+    10.43,
+    -9.72,
+    11.93,
+    -7.89
+  ],
+  "treadmillRotationDegrees": 0,
+  "benchRotationDegrees": 0,
+  "dumbbellRotationDegrees": 90,
+  "cableRotationDegrees": 90,
+  "includeCableTower": false,
+  "hallDoorCentre": [
+    9.2,
+    -7.605
+  ],
+  "westWindows": [
+    [
+      -9.705,
+      -8.305
+    ],
+    [
+      -6.405,
+      -4.605
+    ]
   ]
 }

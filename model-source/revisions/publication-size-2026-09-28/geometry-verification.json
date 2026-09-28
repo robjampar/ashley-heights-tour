@@ -1,0 +1,122 @@
+{
+  "house.glb": {
+    "sourceSHA256": "2b7f086fa70c041989595a9859d93c92b2e159f4eccae41d6c9bcd04a3df59d9",
+    "packedSHA256": "bc357a957f204bb2bb3fd701166ea396b2527cda06b7658d88c5a3bdf8d0fbec",
+    "sourceBytes": 32481260,
+    "packedBytes": 20340016,
+    "byteExact": true,
+    "checkedBufferViews": 22657,
+    "checkedBytes": 24680466,
+    "nodes": 11844,
+    "meshes": 10806,
+    "materials": 72
+  },
+  "proposal-planning.glb": {
+    "sourceSHA256": "b4397bc2fb9e0a17e4bd2af130ba0aa3ff4b1cbe3d83150de9016bf7025d9f97",
+    "packedSHA256": "4224ef5661e6d6311baa86da6caf860ae3aeab21f694470cc778b0bfb3e9a7b2",
+    "sourceBytes": 156313492,
+    "packedBytes": 89045664,
+    "byteExact": true,
+    "checkedBufferViews": 43146,
+    "checkedBytes": 144419624,
+    "nodes": 15425,
+    "meshes": 14319,
+    "materials": 370
+  },
+  "proposal-compact.glb": {
+    "sourceSHA256": "e0475dd8522951982b3cb8729a8ef8236519955b3eff625bad7c608a0c0f7912",
+    "packedSHA256": "8dcad22e79bda86d179fddf8768d9c8e2c14b80ac2ef188fb4720acc892bf7a1",
+    "sourceBytes": 175422600,
+    "packedBytes": 97487932,
+    "byteExact": true,
+    "checkedBufferViews": 48000,
+    "checkedBytes": 162095672,
+    "nodes": 17157,
+    "meshes": 16033,
+    "materials": 407
+  },
+  "redesign-i1.glb": {
+    "sourceSHA256": "68e60d4cc51994d8fbd0ee1ecd4b2afdcb71bd5af80188796fb1a7932f822159",
+    "packedSHA256": "5eb0c2a9c90443f1b0d662d0b05192e3de4e32eb93636372e4c0ddfd44619d9a",
+    "sourceBytes": 49990648,
+    "packedBytes": 30706732,
+    "byteExact": true,
+    "checkedBufferViews": 30222,
+    "checkedBytes": 39598730,
+    "nodes": 15226,
+    "meshes": 13995,
+    "materials": 136
+  },
+  "redesign-i2.glb": {
+    "sourceSHA256": "b1f10e7e0305326775259e0465f903223e5e67dae857fee893789f789714e096",
+    "packedSHA256": "e066f668e7b850faa836cbeb3a5e6ff5b087c3650430d44a85edb36a19cb283a",
+    "sourceBytes": 47790352,
+    "packedBytes": 29457716,
+    "byteExact": true,
+    "checkedBufferViews": 28173,
+    "checkedBytes": 38102306,
+    "nodes": 14214,
+    "meshes": 12983,
+    "materials": 127
+  },
+  "redesign-i3.glb": {
+    "sourceSHA256": "ab3fe05759446848074269e8b5e74083550976fe37e388995888bb8c16a6ee60",
+    "packedSHA256": "a87df23f20f2bf5603445a0cc85bc8d682e43b1d69a8507f73cc8b59b1a56c88",
+    "sourceBytes": 48583888,
+    "packedBytes": 29907920,
+    "byteExact": true,
+    "checkedBufferViews": 29194,
+    "checkedBytes": 38564930,
+    "nodes": 14716,
+    "meshes": 13485,
+    "materials": 134
+  },
+  "redesign-e1.glb": {
+    "sourceSHA256": "705402c7998746874e7ca819ebc135a8a5eed18357d430b9fc170a32f4144b9d",
+    "packedSHA256": "b01728b0b23ab8cbd775d1ca1816cbf8e4331ed3b693bbed50d11c440fd025ad",
+    "sourceBytes": 25810596,
+    "packedBytes": 16016256,
+    "byteExact": true,
+    "checkedBufferViews": 17190,
+    "checkedBytes": 20011178,
+    "nodes": 8949,
+    "meshes": 7910,
+    "materials": 123
+  },
+  "redesign-e2.glb": {
+    "sourceSHA256": "fe8003342a501f0882040698174a3b399ddb322c81f0c75c4857bf84c8edc35a",
+    "packedSHA256": "6cd85a7038eb0ab7691d8e4fd2ba31f8c76f6dc95e6d3ec4b76343f084096caf",
+    "sourceBytes": 28303416,
+    "packedBytes": 17810768,
+    "byteExact": true,
+    "checkedBufferViews": 20363,
+    "checkedBytes": 21362390,
+    "nodes": 10522,
+    "meshes": 9483,
+    "materials": 145
+  },
+  "redesign-e3.glb": {
+    "sourceSHA256": "2814048836dcfd4deea39f036914ccd976f6bba97fa35b03d8991133f3d74bbd",
+    "packedSHA256": "59ceff94f4f5056a4f0c7a1c17914c0bdce6b1915de78ef947bf627d02bb1054",
+    "sourceBytes": 30398412,
+    "packedBytes": 19433584,
+    "byteExact": true,
+    "checkedBufferViews": 22848,
+    "checkedBytes": 22645388,
+    "nodes": 11732,
+    "meshes": 10693,
+    "materials": 144
+  },
+  "redesign-g1.glb": {
+    "sourceSHA256": "65d94f50c201655a284c53322584c9831624f0017e6ff119b679db63629c6bb3",
+    "packedSHA256": "dcf35466c0fe0d5ca4383be6ad3d3bb7b4348b683f0b0669f3746118b8f1e921",
+    "sourceBytes": 48605796,
+    "packedBytes": 29916968,
+    "byteExact": true,
+    "checkedBufferViews": 29154,
+    "checkedBytes": 38617740,
+    "nodes": 14657,
+    "meshes": 13424,
+    "materials": 139
+  }
+}

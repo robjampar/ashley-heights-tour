@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "bodyWidth": 0.6,
+  "bay": {
+    "id": "N3",
+    "bounds_m": [
+      -1.45,
+      -10.8,
+      1.05,
+      -6
+    ],
+    "center": [
+      -0.2,
+      -8.4
+    ],
+    "heading": 4.71238898038469
+  },
+  "checks": [
+    {
+      "label": "N1 passenger side",
+      "distance": 0.020000000000000018,
+      "reachable": true
+    },
+    {
+      "label": "N2 passenger side",
+      "distance": 5.551115123125783e-16,
+      "reachable": true
+    },
+    {
+      "label": "N3 passenger side",
+      "distance": 0.028284271247461613,
+      "reachable": true
+    },
+    {
+      "label": "S1 driver side",
+      "distance": 0.0282842712474613,
+      "reachable": true
+    },
+    {
+      "label": "front entrance",
+      "distance": 0.014142135623731905,
+      "reachable": true
+    },
+    {
+      "label": "pedestrian courtyard",
+      "distance": 0.019999999999999574,
+      "reachable": true
+    },
+    {
+      "label": "garage entrance",
+      "distance": 0,
+      "reachable": true
+    }
+  ]
+}

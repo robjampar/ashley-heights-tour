@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 23378,
+        "distance": 0.014142135623730963
+      },
+      "checks": [
+        {
+          "label": "chair side approach",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "desk east approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.010000000000000231,
+          "reachable": true
+        },
+        {
+          "label": "reading seat approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "bay outlook",
+          "distance": 0.00707106781186556,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "chairPulled",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 23378,
+        "distance": 0.014142135623730963
+      },
+      "checks": [
+        {
+          "label": "chair side approach",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "desk east approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.010000000000000231,
+          "reachable": true
+        },
+        {
+          "label": "reading seat approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "bay outlook",
+          "distance": 0.00707106781186556,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "readingOccupied",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 23378,
+        "distance": 0.014142135623730963
+      },
+      "checks": [
+        {
+          "label": "chair side approach",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "desk east approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.010000000000000231,
+          "reachable": true
+        },
+        {
+          "label": "bay outlook",
+          "distance": 0.00707106781186556,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "storageUse",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 23378,
+        "distance": 0.014142135623730963
+      },
+      "checks": [
+        {
+          "label": "chair side approach",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "desk east approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "reading seat approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "bay outlook",
+          "distance": 0.00707106781186556,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "drawerOpen",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 23378,
+        "distance": 0.014142135623730963
+      },
+      "checks": [
+        {
+          "label": "chair side approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "desk east approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.010000000000000231,
+          "reachable": true
+        },
+        {
+          "label": "reading seat approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "bay outlook",
+          "distance": 0.00707106781186556,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

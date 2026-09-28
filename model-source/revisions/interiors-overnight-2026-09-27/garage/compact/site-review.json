@@ -1,0 +1,754 @@
+{
+  "revision": "P8",
+  "parking_count": {
+    "driveway": 3,
+    "new_double_garage": 2,
+    "old_garage_counted": 0
+  },
+  "bay_S2_replaced_by": "front lawn and tree (proposal_forecourt.py)",
+  "source": "proposal/P4_site-feasibility.json",
+  "path_proof": "proposal/P4_parking-validated.json",
+  "fountain_removed_original_objects": [
+    "Fountain island soil",
+    "Fountain circular kerb",
+    "Fountain basin water",
+    "Fountain pedestal",
+    "Fountain lower bowl",
+    "Fountain middle stem",
+    "Fountain middle bowl",
+    "Fountain upper stem",
+    "Fountain upper bowl",
+    "Fountain finial",
+    "Fountain island planting",
+    "Fountain island planting.001",
+    "Fountain island planting.002",
+    "Fountain island planting.003",
+    "Fountain island planting.004",
+    "Fountain island planting.005",
+    "Fountain island planting.006",
+    "Fountain island planting.007",
+    "Fountain island planting.008",
+    "Fountain island planting.009",
+    "Fountain island planting.010",
+    "Fountain island planting.011",
+    "Fountain island planting.012",
+    "Fountain island planting.013",
+    "Fountain island planting.014",
+    "Fountain island planting.015",
+    "Fountain island planting.016",
+    "Fountain island planting.017",
+    "Fountain island planting.018",
+    "Fountain island planting.019",
+    "Fountain island planting.020",
+    "Fountain island planting.021",
+    "Fountain island planting.022",
+    "Fountain island planting.023",
+    "Fountain island planting.024",
+    "Fountain island planting.025",
+    "Fountain island planting.026",
+    "Fountain island planting.027",
+    "Fountain island planting.028",
+    "Fountain island planting.029",
+    "Fountain island planting.030",
+    "Fountain island planting.031",
+    "Fountain island planting.032",
+    "Fountain island planting.033"
+  ],
+  "relocated_tree_original_objects": [],
+  "cars": [
+    {
+      "bay": "N1",
+      "outside": true,
+      "centre_m": [
+        -4.55,
+        -3.5
+      ],
+      "heading_radians": 4.71238898038469,
+      "audited_size_m": [
+        4.4,
+        1.8
+      ],
+      "actual_mesh_bounds_m": [
+        -5.447000026702881,
+        -5.7,
+        -0.014999999999999989,
+        -3.6529998779296875,
+        -1.2999999999999996,
+        1.463
+      ],
+      "objects": [
+        "Proposal | Compact car N1 sculpted body",
+        "Proposal | Compact car N1 roof and pillars",
+        "Proposal | Compact car N1 windscreen",
+        "Proposal | Compact car N1 rear glass",
+        "Proposal | Compact car N1 rear side window -1",
+        "Proposal | Compact car N1 front side window -1",
+        "Proposal | Compact car N1 mirror -1",
+        "Proposal | Compact car N1 door handle -1",
+        "Proposal | Compact car N1 door handle -1.001",
+        "Proposal | Compact car N1 door division -1",
+        "Proposal | Compact car N1 sill strip -1",
+        "Proposal | Compact car N1 tyre -1 -1.34",
+        "Proposal | Compact car N1 alloy rim -1 -1.34",
+        "Proposal | Compact car N1 wheel centre -1 -1.34",
+        "Proposal | Compact car N1 wheel spoke",
+        "Proposal | Compact car N1 wheel spoke.001",
+        "Proposal | Compact car N1 wheel spoke.002",
+        "Proposal | Compact car N1 wheel spoke.003",
+        "Proposal | Compact car N1 wheel spoke.004",
+        "Proposal | Compact car N1 tyre -1 1.34",
+        "Proposal | Compact car N1 alloy rim -1 1.34",
+        "Proposal | Compact car N1 wheel centre -1 1.34",
+        "Proposal | Compact car N1 wheel spoke.005",
+        "Proposal | Compact car N1 wheel spoke.006",
+        "Proposal | Compact car N1 wheel spoke.007",
+        "Proposal | Compact car N1 wheel spoke.008",
+        "Proposal | Compact car N1 wheel spoke.009",
+        "Proposal | Compact car N1 rear side window 1",
+        "Proposal | Compact car N1 front side window 1",
+        "Proposal | Compact car N1 mirror 1",
+        "Proposal | Compact car N1 door handle 1",
+        "Proposal | Compact car N1 door handle 1.001",
+        "Proposal | Compact car N1 door division 1",
+        "Proposal | Compact car N1 sill strip 1",
+        "Proposal | Compact car N1 tyre 1 -1.34",
+        "Proposal | Compact car N1 alloy rim 1 -1.34",
+        "Proposal | Compact car N1 wheel centre 1 -1.34",
+        "Proposal | Compact car N1 wheel spoke.010",
+        "Proposal | Compact car N1 wheel spoke.011",
+        "Proposal | Compact car N1 wheel spoke.012",
+        "Proposal | Compact car N1 wheel spoke.013",
+        "Proposal | Compact car N1 wheel spoke.014",
+        "Proposal | Compact car N1 tyre 1 1.34",
+        "Proposal | Compact car N1 alloy rim 1 1.34",
+        "Proposal | Compact car N1 wheel centre 1 1.34",
+        "Proposal | Compact car N1 wheel spoke.015",
+        "Proposal | Compact car N1 wheel spoke.016",
+        "Proposal | Compact car N1 wheel spoke.017",
+        "Proposal | Compact car N1 wheel spoke.018",
+        "Proposal | Compact car N1 wheel spoke.019",
+        "Proposal | Compact car N1 front intake",
+        "Proposal | Compact car N1 rear lower trim",
+        "Proposal | Compact car N1 headlamp -1",
+        "Proposal | Compact car N1 tail light -1",
+        "Proposal | Compact car N1 headlamp 1",
+        "Proposal | Compact car N1 tail light 1",
+        "Proposal | Compact car N1 front blank plate",
+        "Proposal | Compact car N1 rear blank plate",
+        "Proposal | Compact car N1 hatch lower edge"
+      ],
+      "route_direction_changes": 1,
+      "route_validation": {
+        "samples": 360,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.6943,
+        "minimum_inset_plot_clearance_m": 0.2949
+      }
+    },
+    {
+      "bay": "N2",
+      "outside": true,
+      "centre_m": [
+        -1.75,
+        -3.5
+      ],
+      "heading_radians": 4.71238898038469,
+      "audited_size_m": [
+        4.4,
+        1.8
+      ],
+      "actual_mesh_bounds_m": [
+        -2.6470000743865967,
+        -5.7,
+        -0.014999999999999989,
+        -0.8529999852180481,
+        -1.2999999999999996,
+        1.463
+      ],
+      "objects": [
+        "Proposal | Compact car N2 sculpted body",
+        "Proposal | Compact car N2 roof and pillars",
+        "Proposal | Compact car N2 windscreen",
+        "Proposal | Compact car N2 rear glass",
+        "Proposal | Compact car N2 rear side window -1",
+        "Proposal | Compact car N2 front side window -1",
+        "Proposal | Compact car N2 mirror -1",
+        "Proposal | Compact car N2 door handle -1",
+        "Proposal | Compact car N2 door handle -1.001",
+        "Proposal | Compact car N2 door division -1",
+        "Proposal | Compact car N2 sill strip -1",
+        "Proposal | Compact car N2 tyre -1 -1.34",
+        "Proposal | Compact car N2 alloy rim -1 -1.34",
+        "Proposal | Compact car N2 wheel centre -1 -1.34",
+        "Proposal | Compact car N2 wheel spoke",
+        "Proposal | Compact car N2 wheel spoke.001",
+        "Proposal | Compact car N2 wheel spoke.002",
+        "Proposal | Compact car N2 wheel spoke.003",
+        "Proposal | Compact car N2 wheel spoke.004",
+        "Proposal | Compact car N2 tyre -1 1.34",
+        "Proposal | Compact car N2 alloy rim -1 1.34",
+        "Proposal | Compact car N2 wheel centre -1 1.34",
+        "Proposal | Compact car N2 wheel spoke.005",
+        "Proposal | Compact car N2 wheel spoke.006",
+        "Proposal | Compact car N2 wheel spoke.007",
+        "Proposal | Compact car N2 wheel spoke.008",
+        "Proposal | Compact car N2 wheel spoke.009",
+        "Proposal | Compact car N2 rear side window 1",
+        "Proposal | Compact car N2 front side window 1",
+        "Proposal | Compact car N2 mirror 1",
+        "Proposal | Compact car N2 door handle 1",
+        "Proposal | Compact car N2 door handle 1.001",
+        "Proposal | Compact car N2 door division 1",
+        "Proposal | Compact car N2 sill strip 1",
+        "Proposal | Compact car N2 tyre 1 -1.34",
+        "Proposal | Compact car N2 alloy rim 1 -1.34",
+        "Proposal | Compact car N2 wheel centre 1 -1.34",
+        "Proposal | Compact car N2 wheel spoke.010",
+        "Proposal | Compact car N2 wheel spoke.011",
+        "Proposal | Compact car N2 wheel spoke.012",
+        "Proposal | Compact car N2 wheel spoke.013",
+        "Proposal | Compact car N2 wheel spoke.014",
+        "Proposal | Compact car N2 tyre 1 1.34",
+        "Proposal | Compact car N2 alloy rim 1 1.34",
+        "Proposal | Compact car N2 wheel centre 1 1.34",
+        "Proposal | Compact car N2 wheel spoke.015",
+        "Proposal | Compact car N2 wheel spoke.016",
+        "Proposal | Compact car N2 wheel spoke.017",
+        "Proposal | Compact car N2 wheel spoke.018",
+        "Proposal | Compact car N2 wheel spoke.019",
+        "Proposal | Compact car N2 front intake",
+        "Proposal | Compact car N2 rear lower trim",
+        "Proposal | Compact car N2 headlamp -1",
+        "Proposal | Compact car N2 tail light -1",
+        "Proposal | Compact car N2 headlamp 1",
+        "Proposal | Compact car N2 tail light 1",
+        "Proposal | Compact car N2 front blank plate",
+        "Proposal | Compact car N2 rear blank plate",
+        "Proposal | Compact car N2 hatch lower edge"
+      ],
+      "route_direction_changes": 1,
+      "route_validation": {
+        "samples": 370,
+        "collisions": 0,
+        "minimum_obstacle_clearance_m": 0.3047,
+        "minimum_inset_plot_clearance_m": 1.0526
+      }
+    },
+    {
+      "bay": "S1",
+      "outside": true,
+      "centre_m": [
+        0.8500000000000001,
+        -20.625
+      ],
+      "heading_radians": 1.5707963267948966,
+      "audited_size_m": [
+        4.4,
+        1.8
+      ],
+      "actual_mesh_bounds_m": [
+        -0.04700000211596489,
+        -22.825,
+        -0.014999999999999989,
+        1.746999979019165,
+        -18.425,
+        1.463
+      ],
+      "objects": [
+        "Proposal | Compact car S1 sculpted body",
+        "Proposal | Compact car S1 roof and pillars",
+        "Proposal | Compact car S1 windscreen",
+        "Proposal | Compact car S1 rear glass",
+        "Proposal | Compact car S1 rear side window -1",
+        "Proposal | Compact car S1 front side window -1",
+        "Proposal | Compact car S1 mirror -1",
+        "Proposal | Compact car S1 door handle -1",
+        "Proposal | Compact car S1 door handle -1.001",
+        "Proposal | Compact car S1 door division -1",
+        "Proposal | Compact car S1 sill strip -1",
+        "Proposal | Compact car S1 tyre -1 -1.34",
+        "Proposal | Compact car S1 alloy rim -1 -1.34",
+        "Proposal | Compact car S1 wheel centre -1 -1.34",
+        "Proposal | Compact car S1 wheel spoke",
+        "Proposal | Compact car S1 wheel spoke.001",
+        "Proposal | Compact car S1 wheel spoke.002",
+        "Proposal | Compact car S1 wheel spoke.003",
+        "Proposal | Compact car S1 wheel spoke.004",
+        "Proposal | Compact car S1 tyre -1 1.34",
+        "Proposal | Compact car S1 alloy rim -1 1.34",
+        "Proposal | Compact car S1 wheel centre -1 1.34",
+        "Proposal | Compact car S1 wheel spoke.005",
+        "Proposal | Compact car S1 wheel spoke.006",
+        "Proposal | Compact car S1 wheel spoke.007",
+        "Proposal | Compact car S1 wheel spoke.008",
+        "Proposal | Compact car S1 wheel spoke.009",
+        "Proposal | Compact car S1 rear side window 1",
+        "Proposal | Compact car S1 front side window 1",
+        "Proposal | Compact car S1 mirror 1",
+        "Proposal | Compact car S1 door handle 1",
+        "Proposal | Compact car S1 door handle 1.001",
+        "Proposal | Compact car S1 door division 1",
+        "Proposal | Compact car S1 sill strip 1",
+        "Proposal | Compact car S1 tyre 1 -1.34",
+        "Proposal | Compact car S1 alloy rim 1 -1.34",
+        "Proposal | Compact car S1 wheel centre 1 -1.34",
+        "Proposal | Compact car S1 wheel spoke.010",
+        "Proposal | Compact car S1 wheel spoke.011",
+        "Proposal | Compact car S1 wheel spoke.012",
+        "Proposal | Compact car S1 wheel spoke.013",
+        "Proposal | Compact car S1 wheel spoke.014",
+        "Proposal | Compact car S1 tyre 1 1.34",
+        "Proposal | Compact car S1 alloy rim 1 1.34",
+        "Proposal | Compact car S1 wheel centre 1 1.34",
+        "Proposal | Compact car S1 wheel spoke.015",
+        "Proposal | Compact car S1 wheel spoke.016",
+        "Proposal | Compact car S1 wheel spoke.017",
+        "Proposal | Compact car S1 wheel spoke.018",
+        "Proposal | Compact car S1 wheel spoke.019",
+        "Proposal | Compact car S1 front intake",
+        "Proposal | Compact car S1 rear lower trim",
+        "Proposal | Compact car S1 headlamp -1",
+        "Proposal | Compact car S1 tail light -1",
+        "Proposal | Compact car S1 headlamp 1",
+        "Proposal | Compact car S1 tail light 1",
+        "Proposal | Compact car S1 front blank plate",
+        "Proposal | Compact car S1 rear blank plate",
+        "Proposal | Compact car S1 hatch lower edge"
+      ],
+      "route_direction_changes": 1,
+      "route_validation": "Re-positioned for the projecting garage wing; P4 turning proof not re-run"
+    },
+    {
+      "bay": "G1",
+      "outside": false,
+      "centre_m": [
+        6.9,
+        -14.33
+      ],
+      "heading_radians": 0,
+      "audited_size_m": [
+        4.4,
+        1.8
+      ],
+      "actual_mesh_bounds_m": [
+        4.7,
+        -15.226999740600586,
+        1.0408340855860843e-17,
+        9.100000000000001,
+        -13.433000068664551,
+        1.478
+      ],
+      "objects": [
+        "Proposal | Compact car G1 sculpted body",
+        "Proposal | Compact car G1 roof and pillars",
+        "Proposal | Compact car G1 windscreen",
+        "Proposal | Compact car G1 rear glass",
+        "Proposal | Compact car G1 rear side window -1",
+        "Proposal | Compact car G1 front side window -1",
+        "Proposal | Compact car G1 mirror -1",
+        "Proposal | Compact car G1 door handle -1",
+        "Proposal | Compact car G1 door handle -1.001",
+        "Proposal | Compact car G1 door division -1",
+        "Proposal | Compact car G1 sill strip -1",
+        "Proposal | Compact car G1 tyre -1 -1.34",
+        "Proposal | Compact car G1 alloy rim -1 -1.34",
+        "Proposal | Compact car G1 wheel centre -1 -1.34",
+        "Proposal | Compact car G1 wheel spoke",
+        "Proposal | Compact car G1 wheel spoke.001",
+        "Proposal | Compact car G1 wheel spoke.002",
+        "Proposal | Compact car G1 wheel spoke.003",
+        "Proposal | Compact car G1 wheel spoke.004",
+        "Proposal | Compact car G1 tyre -1 1.34",
+        "Proposal | Compact car G1 alloy rim -1 1.34",
+        "Proposal | Compact car G1 wheel centre -1 1.34",
+        "Proposal | Compact car G1 wheel spoke.005",
+        "Proposal | Compact car G1 wheel spoke.006",
+        "Proposal | Compact car G1 wheel spoke.007",
+        "Proposal | Compact car G1 wheel spoke.008",
+        "Proposal | Compact car G1 wheel spoke.009",
+        "Proposal | Compact car G1 rear side window 1",
+        "Proposal | Compact car G1 front side window 1",
+        "Proposal | Compact car G1 mirror 1",
+        "Proposal | Compact car G1 door handle 1",
+        "Proposal | Compact car G1 door handle 1.001",
+        "Proposal | Compact car G1 door division 1",
+        "Proposal | Compact car G1 sill strip 1",
+        "Proposal | Compact car G1 tyre 1 -1.34",
+        "Proposal | Compact car G1 alloy rim 1 -1.34",
+        "Proposal | Compact car G1 wheel centre 1 -1.34",
+        "Proposal | Compact car G1 wheel spoke.010",
+        "Proposal | Compact car G1 wheel spoke.011",
+        "Proposal | Compact car G1 wheel spoke.012",
+        "Proposal | Compact car G1 wheel spoke.013",
+        "Proposal | Compact car G1 wheel spoke.014",
+        "Proposal | Compact car G1 tyre 1 1.34",
+        "Proposal | Compact car G1 alloy rim 1 1.34",
+        "Proposal | Compact car G1 wheel centre 1 1.34",
+        "Proposal | Compact car G1 wheel spoke.015",
+        "Proposal | Compact car G1 wheel spoke.016",
+        "Proposal | Compact car G1 wheel spoke.017",
+        "Proposal | Compact car G1 wheel spoke.018",
+        "Proposal | Compact car G1 wheel spoke.019",
+        "Proposal | Compact car G1 front intake",
+        "Proposal | Compact car G1 rear lower trim",
+        "Proposal | Compact car G1 headlamp -1",
+        "Proposal | Compact car G1 tail light -1",
+        "Proposal | Compact car G1 headlamp 1",
+        "Proposal | Compact car G1 tail light 1",
+        "Proposal | Compact car G1 front blank plate",
+        "Proposal | Compact car G1 rear blank plate",
+        "Proposal | Compact car G1 hatch lower edge"
+      ],
+      "route_direction_changes": 0,
+      "route_validation": "Staggered garage position; front-door use and walking routes checked separately from outside drive tracking."
+    },
+    {
+      "bay": "G2",
+      "outside": false,
+      "centre_m": [
+        8.3,
+        -11.72
+      ],
+      "heading_radians": 0,
+      "audited_size_m": [
+        4.4,
+        1.8
+      ],
+      "actual_mesh_bounds_m": [
+        6.1000000000000005,
+        -12.61699935913086,
+        1.0408340855860843e-17,
+        10.500000000000002,
+        -10.823000640869141,
+        1.478
+      ],
+      "objects": [
+        "Proposal | Compact car G2 sculpted body",
+        "Proposal | Compact car G2 roof and pillars",
+        "Proposal | Compact car G2 windscreen",
+        "Proposal | Compact car G2 rear glass",
+        "Proposal | Compact car G2 rear side window -1",
+        "Proposal | Compact car G2 front side window -1",
+        "Proposal | Compact car G2 mirror -1",
+        "Proposal | Compact car G2 door handle -1",
+        "Proposal | Compact car G2 door handle -1.001",
+        "Proposal | Compact car G2 door division -1",
+        "Proposal | Compact car G2 sill strip -1",
+        "Proposal | Compact car G2 tyre -1 -1.34",
+        "Proposal | Compact car G2 alloy rim -1 -1.34",
+        "Proposal | Compact car G2 wheel centre -1 -1.34",
+        "Proposal | Compact car G2 wheel spoke",
+        "Proposal | Compact car G2 wheel spoke.001",
+        "Proposal | Compact car G2 wheel spoke.002",
+        "Proposal | Compact car G2 wheel spoke.003",
+        "Proposal | Compact car G2 wheel spoke.004",
+        "Proposal | Compact car G2 tyre -1 1.34",
+        "Proposal | Compact car G2 alloy rim -1 1.34",
+        "Proposal | Compact car G2 wheel centre -1 1.34",
+        "Proposal | Compact car G2 wheel spoke.005",
+        "Proposal | Compact car G2 wheel spoke.006",
+        "Proposal | Compact car G2 wheel spoke.007",
+        "Proposal | Compact car G2 wheel spoke.008",
+        "Proposal | Compact car G2 wheel spoke.009",
+        "Proposal | Compact car G2 rear side window 1",
+        "Proposal | Compact car G2 front side window 1",
+        "Proposal | Compact car G2 mirror 1",
+        "Proposal | Compact car G2 door handle 1",
+        "Proposal | Compact car G2 door handle 1.001",
+        "Proposal | Compact car G2 door division 1",
+        "Proposal | Compact car G2 sill strip 1",
+        "Proposal | Compact car G2 tyre 1 -1.34",
+        "Proposal | Compact car G2 alloy rim 1 -1.34",
+        "Proposal | Compact car G2 wheel centre 1 -1.34",
+        "Proposal | Compact car G2 wheel spoke.010",
+        "Proposal | Compact car G2 wheel spoke.011",
+        "Proposal | Compact car G2 wheel spoke.012",
+        "Proposal | Compact car G2 wheel spoke.013",
+        "Proposal | Compact car G2 wheel spoke.014",
+        "Proposal | Compact car G2 tyre 1 1.34",
+        "Proposal | Compact car G2 alloy rim 1 1.34",
+        "Proposal | Compact car G2 wheel centre 1 1.34",
+        "Proposal | Compact car G2 wheel spoke.015",
+        "Proposal | Compact car G2 wheel spoke.016",
+        "Proposal | Compact car G2 wheel spoke.017",
+        "Proposal | Compact car G2 wheel spoke.018",
+        "Proposal | Compact car G2 wheel spoke.019",
+        "Proposal | Compact car G2 front intake",
+        "Proposal | Compact car G2 rear lower trim",
+        "Proposal | Compact car G2 headlamp -1",
+        "Proposal | Compact car G2 tail light -1",
+        "Proposal | Compact car G2 headlamp 1",
+        "Proposal | Compact car G2 tail light 1",
+        "Proposal | Compact car G2 front blank plate",
+        "Proposal | Compact car G2 rear blank plate",
+        "Proposal | Compact car G2 hatch lower edge"
+      ],
+      "route_direction_changes": 0,
+      "route_validation": "Staggered garage position; front-door use and walking routes checked separately from outside drive tracking."
+    }
+  ],
+  "original_scene_modified": false,
+  "limitations": "Generic compact-car geometric check; not surveyed vehicle tracking. Tree relocation feasibility, roots and applicable constraints unverified.",
+  "tree_relocation": {
+    "original_approximate_base_m": [
+      7.2,
+      19.4
+    ],
+    "new_approximate_base_m": [
+      3.0,
+      20.2
+    ],
+    "translation_m": [
+      -4.199999809265137,
+      0.800000011920929,
+      0.0
+    ],
+    "component_count": 0,
+    "verification": "Concept only; transplant feasibility, measured roots and tree constraints unverified"
+  },
+  "removed_trees": [],
+  "removed_tree_ids": [],
+  "driveway_bay_bounds_m": [
+    {
+      "id": "N1",
+      "bounds_m": [
+        -5.8,
+        -6,
+        -3.3,
+        -1
+      ]
+    },
+    {
+      "id": "N2",
+      "bounds_m": [
+        -3,
+        -6,
+        -0.5,
+        -1
+      ]
+    },
+    {
+      "id": "S1",
+      "bounds_m": [
+        -0.4,
+        -22.95,
+        2.1,
+        -18.3
+      ]
+    }
+  ],
+  "new_garage_clear_bounds_m": [
+    3.49,
+    -16.076,
+    11.2,
+    -10.02
+  ],
+  "area_comparison": {
+    "revision": "P5 internal garden; equality target intentionally superseded",
+    "source": "proposal/P5_internal-garden-area.json",
+    "original": {
+      "published_approximate_ground_floor_m2": 166,
+      "model_internal_envelope_m2": 168.1343735526366,
+      "model_external_envelope_m2": 181.43667508650933,
+      "rectangle_only_m2": 175.47950000000003,
+      "centreline_perimeter_m": 57.83610460984041
+    },
+    "new": {
+      "outer_polygon_m": [
+        [
+          13.98,
+          -4.0
+        ],
+        [
+          13.98,
+          -20.40606211322894
+        ],
+        [
+          4.93,
+          -20.40606211322894
+        ],
+        [
+          4.93,
+          -4.0
+        ],
+        [
+          5.5,
+          -4.0
+        ],
+        [
+          5.5,
+          -0.7
+        ],
+        [
+          5.5,
+          -0.115
+        ],
+        [
+          9.815,
+          -0.115
+        ],
+        [
+          9.815,
+          -0.7
+        ],
+        [
+          10.465,
+          -0.7
+        ],
+        [
+          10.465,
+          -4.0
+        ],
+        [
+          13.98,
+          -4.0
+        ]
+      ],
+      "comparison_internal_polygon_m": [
+        [
+          13.75,
+          -4.23
+        ],
+        [
+          13.75,
+          -20.17606211322894
+        ],
+        [
+          5.16,
+          -20.17606211322894
+        ],
+        [
+          5.16,
+          -4.23
+        ],
+        [
+          5.73,
+          -4.23
+        ],
+        [
+          5.73,
+          -0.34500000000000003
+        ],
+        [
+          9.584999999999999,
+          -0.34500000000000003
+        ],
+        [
+          9.584999999999999,
+          -0.9299999999999999
+        ],
+        [
+          10.235,
+          -0.9299999999999999
+        ],
+        [
+          10.235,
+          -4.23
+        ],
+        [
+          13.75,
+          -4.23
+        ]
+      ],
+      "comparison_internal_area_m2": 154.09834855263657,
+      "external_area_m2": 167.38363712472193,
+      "comparison_internal_difference_m2": -14.036024999999995
+    },
+    "area_basis": "Same230mm inward-offset isolated envelope comparison as P3; conservative fixed allowance for new glazed boundary, not measured net habitable floor area. Main wing and parking unchanged.",
+    "garden_room_programme_decrement_m2": 12.136,
+    "note": "The lost anteroom room programme and whole-envelope comparison decrement differ because the new garden-facing boundary changes the external wall allowance and has a return around the original bay."
+  },
+  "courtyard": {
+    "nominal_open_area_bounds_m": [
+      0,
+      -4,
+      5.5,
+      0
+    ],
+    "nominal_area_m2": 22,
+    "open_side": "WEST",
+    "parked_car_overlap_m2": 0,
+    "parking_bay_overlap_m2": 0,
+    "note": "Entire nominal courtyard zone is clear of parking. Existing front bay reduces actual usable floor area locally. Keep the gate-to-entry pedestrian corridor clear; root designer owns planting/bench layout.",
+    "hard_landscape_minimum_x_m": 0.3,
+    "vehicle_sweeps": "No sampled vehicle body enters the courtyard. N2 additional 200 mm margin reaches x0.106 near the western edge; keep hard planter/bench edges at x>=0.30."
+  },
+  "original_front_opening_permission": "P4 owner instruction permits removal of the old central front door, porch and arched landing window for a full-height attached connection. The other existing structure and the separate baseline model are retained.",
+  "footprint_audit_revision": "P5 internal garden reduces enclosed link area; P4 option A parking, main wing and west-open courtyard remain unchanged",
+  "parking_option": "A \u2014 northern pair on original garage forecourt",
+  "old_garage_access_retained": false,
+  "old_garage_access_tradeoff": "The original garage structure and doors remain. N1/N2 use its forecourt, so vehicle access requires moving those cars. It is excluded from the six-space parking count.",
+  "pedestrian_route": {
+    "centreline_m": [
+      [
+        -1.45,
+        -14.88
+      ],
+      [
+        0.4,
+        -13.5
+      ],
+      [
+        2.8,
+        -11.6
+      ],
+      [
+        4.1,
+        -10.6
+      ],
+      [
+        4.25,
+        -8.85
+      ],
+      [
+        4.93,
+        -8.85
+      ]
+    ],
+    "width_m": 1.2,
+    "parked_car_min_centreline_distance_m": 2.659,
+    "clear_of_parked_cars": true,
+    "clear_of_walls_and_trees": true,
+    "inside_model_plot": true,
+    "existing_threshold_paving_width_m": 1.03,
+    "proposed_paving_change": "Widen threshold terrace west edge from x3.90 to x3.65; allow 1.20 m clear pedestrian strip. Route shares the unmarked private driveway with vehicle circulation."
+  },
+  "vehicle_check_scope": {
+    "car_size_m": [
+      4.4,
+      1.8
+    ],
+    "additional_body_margin_m": 0.2,
+    "centreline_turn_radius_m": 4.3,
+    "other_five_spaces_occupied": true,
+    "sampled_collisions": 0,
+    "minimum_sampled_body_clearance_m": 0.209
+  },
+  "new_garage_clear_polygon_m": [
+    [
+      3.49,
+      -15.86
+    ],
+    [
+      5.16,
+      -15.86
+    ],
+    [
+      5.16,
+      -16.076
+    ],
+    [
+      11.2,
+      -16.076
+    ],
+    [
+      11.2,
+      -10.02
+    ],
+    [
+      3.49,
+      -10.02
+    ]
+  ],
+  "garage_car_door_check_degrees": 42
+}

@@ -1,0 +1,4150 @@
+{
+  "objects": [
+    {
+      "name": "Outside WC floor",
+      "object_name": "Outside WC floor",
+      "materials": [
+        "Cream tile"
+      ],
+      "bounds": [
+        14.279999732971191,
+        24.559999465942383,
+        0.394586980342865,
+        16.25,
+        26.280000686645508,
+        0.5445870161056519
+      ]
+    },
+    {
+      "name": "Outside WC rear wall",
+      "object_name": "Outside WC rear wall",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        16.165000915527344,
+        24.559999465942383,
+        0.5445870161056519,
+        16.334999084472656,
+        26.280000686645508,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Outside WC west wall",
+      "object_name": "Outside WC west wall",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.279999732971191,
+        26.19499969482422,
+        0.5445870161056519,
+        16.25,
+        26.365001678466797,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Outside WC east wall",
+      "object_name": "Outside WC east wall",
+      "materials": [
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.279999732971191,
+        24.494998931884766,
+        0.5445870161056519,
+        16.25,
+        24.625,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Outside WC front pier",
+      "object_name": "Outside WC front pier",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.195000648498535,
+        25.815000534057617,
+        0.5445870161056519,
+        14.364998817443848,
+        26.280000686645508,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Outside WC front pier",
+      "object_name": "Outside WC front pier.001",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.195000648498535,
+        24.559999465942383,
+        0.5445870161056519,
+        14.364998817443848,
+        25.024999618530273,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Outside WC front lintel",
+      "object_name": "Outside WC front lintel",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.195000648498535,
+        25.024999618530273,
+        2.744586944580078,
+        14.364998817443848,
+        25.815000534057617,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Outside WC door",
+      "object_name": "Outside WC door",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        14.380000114440918,
+        25.045000076293945,
+        0.5445870161056519,
+        14.419999122619629,
+        25.795000076293945,
+        2.624587059020996
+      ]
+    },
+    {
+      "name": "Tool store floor",
+      "object_name": "Tool store floor",
+      "materials": [
+        "Cream tile"
+      ],
+      "bounds": [
+        14.279999732971191,
+        23.520000457763672,
+        0.394586980342865,
+        16.25,
+        24.55999755859375,
+        0.5445870161056519
+      ]
+    },
+    {
+      "name": "Tool store rear wall",
+      "object_name": "Tool store rear wall",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        16.165000915527344,
+        23.520000457763672,
+        0.5445870161056519,
+        16.334999084472656,
+        24.55999755859375,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Tool store front pier",
+      "object_name": "Tool store front pier",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.195000648498535,
+        24.434999465942383,
+        0.5445870161056519,
+        14.364998817443848,
+        24.559999465942383,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Tool store front pier",
+      "object_name": "Tool store front pier.001",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.195000648498535,
+        23.520000457763672,
+        0.5445870161056519,
+        14.364998817443848,
+        23.645000457763672,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Tool store front lintel",
+      "object_name": "Tool store front lintel",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.195000648498535,
+        23.645000457763672,
+        2.744586944580078,
+        14.364998817443848,
+        24.43499755859375,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Tool store door",
+      "object_name": "Tool store door",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        14.380000114440918,
+        23.66499900817871,
+        0.5445870161056519,
+        14.419999122619629,
+        24.41499900817871,
+        2.624587059020996
+      ]
+    },
+    {
+      "name": "Summer house floor",
+      "object_name": "Summer house floor",
+      "materials": [
+        "Cream tile"
+      ],
+      "bounds": [
+        14.320000648498535,
+        19.59000015258789,
+        0.394586980342865,
+        16.25,
+        23.520000457763672,
+        0.5445870161056519
+      ]
+    },
+    {
+      "name": "Summer house rear wall",
+      "object_name": "Summer house rear wall",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        16.165000915527344,
+        19.59000015258789,
+        0.5445870161056519,
+        16.334999084472656,
+        23.520000457763672,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Summer house west wall",
+      "object_name": "Summer house west wall",
+      "materials": [
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.320000648498535,
+        23.454998016357422,
+        0.5445870161056519,
+        16.25,
+        23.584999084472656,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Summer house east wall",
+      "object_name": "Summer house east wall",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.320000648498535,
+        19.50499725341797,
+        0.5445870161056519,
+        16.25,
+        19.674999237060547,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Summer house front pier",
+      "object_name": "Summer house front pier",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.234999656677246,
+        23.34000015258789,
+        0.5445870161056519,
+        14.404999732971191,
+        23.520000457763672,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Summer house front pier",
+      "object_name": "Summer house front pier.001",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.234999656677246,
+        19.59000015258789,
+        0.5445870161056519,
+        14.404999732971191,
+        19.770000457763672,
+        2.944587230682373
+      ]
+    },
+    {
+      "name": "Summer house front lintel",
+      "object_name": "Summer house front lintel",
+      "materials": [
+        "Red brown brick",
+        "Warm plaster"
+      ],
+      "bounds": [
+        14.234999656677246,
+        19.770000457763672,
+        2.764586925506592,
+        14.404999732971191,
+        23.34000015258789,
+        2.944586753845215
+      ]
+    },
+    {
+      "name": "Rear wall garden path",
+      "object_name": "Rear wall garden path",
+      "materials": [
+        "Paving"
+      ],
+      "bounds": [
+        -6.350000381469727,
+        25.329999923706055,
+        0.09238971769809723,
+        11.774999618530273,
+        26.3700008392334,
+        0.4875609874725342
+      ]
+    },
+    {
+      "name": "Main rear garden niche wall",
+      "object_name": "Main rear garden niche wall",
+      "materials": [
+        "Red brown brick"
+      ],
+      "bounds": [
+        -6.540253639221191,
+        26.437108993530273,
+        0.0666925311088562,
+        16.488574981689453,
+        26.675031661987305,
+        2.113447904586792
+      ]
+    },
+    {
+      "name": "Main rear garden niche wall coping",
+      "object_name": "Main rear garden niche wall coping",
+      "materials": [
+        "Stone"
+      ],
+      "bounds": [
+        -6.56026554107666,
+        26.402101516723633,
+        1.7060960531234741,
+        16.508586883544922,
+        26.710039138793945,
+        2.183727741241455
+      ]
+    },
+    {
+      "name": "Garden niche inset",
+      "object_name": "Garden niche inset.003",
+      "materials": [
+        "Warm plaster"
+      ],
+      "bounds": [
+        6.055000305175781,
+        26.38500213623047,
+        1.1942826509475708,
+        6.545000076293945,
+        26.402999877929688,
+        1.7649306058883667
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.048",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.534884929656982,
+        26.33500099182129,
+        1.7565044164657593,
+        6.6098313331604,
+        26.405000686645508,
+        1.816940188407898
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.049",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.52057409286499,
+        26.33500099182129,
+        1.8034310340881348,
+        6.603209018707275,
+        26.405000686645508,
+        1.8752806186676025
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.050",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.497786998748779,
+        26.33500099182129,
+        1.8487015962600708,
+        6.584933757781982,
+        26.405000686645508,
+        1.9292008876800537
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.051",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.4673991203308105,
+        26.33500099182129,
+        1.8905754089355469,
+        6.555709362030029,
+        26.405000686645508,
+        1.976629376411438
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.052",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.430577754974365,
+        26.33500099182129,
+        1.927354097366333,
+        6.516658306121826,
+        26.405000686645508,
+        2.0156760215759277
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.053",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.388739109039307,
+        26.33500099182129,
+        1.9576835632324219,
+        6.46928071975708,
+        26.405000686645508,
+        2.0448291301727295
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.054",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.343490123748779,
+        26.33500099182129,
+        1.980404019355774,
+        6.415398120880127,
+        26.405000686645508,
+        2.0630264282226562
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.055",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.29656982421875,
+        26.33500099182129,
+        1.994641661643982,
+        6.357080459594727,
+        26.405000686645508,
+        2.069568395614624
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.056",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.242919921875,
+        26.33500099182129,
+        1.9944792985916138,
+        6.303430557250977,
+        26.405000686645508,
+        2.069558620452881
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.057",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.1846022605896,
+        26.33500099182129,
+        1.9800961017608643,
+        6.256510257720947,
+        26.405000686645508,
+        2.0628552436828613
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.058",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.130719184875488,
+        26.33500099182129,
+        1.9572421312332153,
+        6.211260795593262,
+        26.405000686645508,
+        2.0445029735565186
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.059",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.083341598510742,
+        26.33500099182129,
+        1.9267959594726562,
+        6.169422149658203,
+        26.405000686645508,
+        2.015206813812256
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.060",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.044290542602539,
+        26.33500099182129,
+        1.8899273872375488,
+        6.132600784301758,
+        26.405000686645508,
+        1.9760932922363281
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.061",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.015066146850586,
+        26.33500099182129,
+        1.8480536937713623,
+        6.102212905883789,
+        26.405000686645508,
+        1.9286648035049438
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.062",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        5.996791362762451,
+        26.33500099182129,
+        1.8027831315994263,
+        6.079426288604736,
+        26.405000686645508,
+        1.8747446537017822
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.063",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        5.990169048309326,
+        26.33500099182129,
+        1.7558563947677612,
+        6.065115451812744,
+        26.405000686645508,
+        1.816407322883606
+      ]
+    },
+    {
+      "name": "Garden niche side",
+      "object_name": "Garden niche side.006",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        5.989999771118164,
+        26.332500457763672,
+        1.1941813230514526,
+        6.059999465942383,
+        26.40749740600586,
+        1.7644147872924805
+      ]
+    },
+    {
+      "name": "Garden niche side",
+      "object_name": "Garden niche side.007",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.539999961853027,
+        26.332500457763672,
+        1.1948206424713135,
+        6.609999656677246,
+        26.40749740600586,
+        1.764946699142456
+      ]
+    },
+    {
+      "name": "Garden niche sill",
+      "object_name": "Garden niche sill.003",
+      "materials": [
+        "Stone"
+      ],
+      "bounds": [
+        5.960000038146973,
+        26.229999542236328,
+        1.1391289234161377,
+        6.640000343322754,
+        26.43000030517578,
+        1.219871163368225
+      ]
+    },
+    {
+      "name": "Garden niche light",
+      "object_name": "Garden niche light.003",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        6.2310638427734375,
+        26.240909576416016,
+        1.4297595024108887,
+        6.368936538696289,
+        26.359088897705078,
+        1.6297602653503418
+      ]
+    },
+    {
+      "name": "Garden niche inset",
+      "object_name": "Garden niche inset.004",
+      "materials": [
+        "Warm plaster"
+      ],
+      "bounds": [
+        9.854999542236328,
+        26.38500213623047,
+        1.7120044231414795,
+        10.345001220703125,
+        26.402999877929688,
+        2.3140945434570312
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.064",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.334884643554688,
+        26.33500099182129,
+        1.756888508796692,
+        10.409832000732422,
+        26.405000686645508,
+        1.817677617073059
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.065",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.320573806762695,
+        26.33500099182129,
+        1.8038077354431152,
+        10.403207778930664,
+        26.405000686645508,
+        1.8759835958480835
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.066",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.297786712646484,
+        26.33500099182129,
+        1.84905207157135,
+        10.384933471679688,
+        26.405000686645508,
+        1.9298477172851562
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.067",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.267398834228516,
+        26.33500099182129,
+        1.8908826112747192,
+        10.355709075927734,
+        26.405000686645508,
+        1.9772002696990967
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.068",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.230578422546387,
+        26.33500099182129,
+        1.9276924133300781,
+        10.316658973693848,
+        26.405000686645508,
+        2.016221046447754
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.069",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.188738822937012,
+        26.33500099182129,
+        1.9580668210983276,
+        10.269280433654785,
+        26.405000686645508,
+        2.045410394668579
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.070",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.143489837646484,
+        26.33500099182129,
+        1.9808379411697388,
+        10.215398788452148,
+        26.405000686645508,
+        2.0636470317840576
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.071",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.096570014953613,
+        26.33500099182129,
+        1.9951317310333252,
+        10.15708065032959,
+        26.405000686645508,
+        2.0702297687530518
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.072",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.042920112609863,
+        26.33500099182129,
+        1.9950934648513794,
+        10.10343074798584,
+        26.405000686645508,
+        2.070225238800049
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.073",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.984601974487305,
+        26.33500099182129,
+        1.980765700340271,
+        10.056510925292969,
+        26.405000686645508,
+        2.0635628700256348
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.074",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.930719375610352,
+        26.33500099182129,
+        1.9579042196273804,
+        10.011260986328125,
+        26.405000686645508,
+        2.0452208518981934
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.075",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.883341789245605,
+        26.33500099182129,
+        1.9274444580078125,
+        9.969422340393066,
+        26.405000686645508,
+        2.0158894062042236
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.076",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.844289779663086,
+        26.33500099182129,
+        1.8905647993087769,
+        9.932600021362305,
+        26.405000686645508,
+        1.9767451286315918
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.077",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.815065383911133,
+        26.33500099182129,
+        1.8486828804016113,
+        9.902212142944336,
+        26.405000686645508,
+        1.9292916059494019
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.078",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.796791076660156,
+        26.33500099182129,
+        1.8034075498580933,
+        9.879425048828125,
+        26.405000686645508,
+        1.8753526210784912
+      ]
+    },
+    {
+      "name": "Garden niche arched surround",
+      "object_name": "Garden niche arched surround.079",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.790168762207031,
+        26.33500099182129,
+        1.7564789056777954,
+        9.865116119384766,
+        26.405000686645508,
+        1.817001461982727
+      ]
+    },
+    {
+      "name": "Garden niche side",
+      "object_name": "Garden niche side.008",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        9.789999961853027,
+        26.332500457763672,
+        1.1947649717330933,
+        9.859999656677246,
+        26.40749740600586,
+        1.7650549411773682
+      ]
+    },
+    {
+      "name": "Garden niche side",
+      "object_name": "Garden niche side.009",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.34000015258789,
+        26.332500457763672,
+        1.1953108310699463,
+        10.40999984741211,
+        26.40749740600586,
+        1.765609622001648
+      ]
+    },
+    {
+      "name": "Garden niche sill",
+      "object_name": "Garden niche sill.004",
+      "materials": [
+        "Stone"
+      ],
+      "bounds": [
+        9.760000228881836,
+        26.229999542236328,
+        1.1396600008010864,
+        10.440000534057617,
+        26.43000030517578,
+        1.221015214920044
+      ]
+    },
+    {
+      "name": "Garden niche light",
+      "object_name": "Garden niche light.004",
+      "materials": [
+        "White joinery"
+      ],
+      "bounds": [
+        10.031063079833984,
+        26.240909576416016,
+        1.4304791688919067,
+        10.168937683105469,
+        26.359088897705078,
+        1.6304805278778076
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.162702560424805,
+        24.844898223876953,
+        0.43041133880615234,
+        17.836877822875977,
+        26.6175537109375,
+        6.794533729553223
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.001",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.185211181640625,
+        23.187288284301758,
+        0.29387521743774414,
+        17.859386444091797,
+        24.959943771362305,
+        6.4682488441467285
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.002",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.207719802856445,
+        21.52967643737793,
+        0.32364320755004883,
+        17.881895065307617,
+        23.302331924438477,
+        6.358808994293213
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.003",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.2302303314209,
+        19.872066497802734,
+        0.6324291229248047,
+        17.90440559387207,
+        21.64472198486328,
+        6.059642791748047
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.004",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.25273895263672,
+        18.214454650878906,
+        0.626023530960083,
+        17.92691421508789,
+        19.987110137939453,
+        6.807971954345703
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.005",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.275249481201172,
+        16.556840896606445,
+        0.546905517578125,
+        17.949424743652344,
+        18.329496383666992,
+        6.3468017578125
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.006",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.297758102416992,
+        14.899232864379883,
+        0.4672822952270508,
+        17.971933364868164,
+        16.67188835144043,
+        6.331721305847168
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.007",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        16.320268630981445,
+        13.241621971130371,
+        0.508986234664917,
+        17.994443893432617,
+        15.014275550842285,
+        6.347637176513672
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.073",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        1.3806233406066895,
+        25.66893196105957,
+        1.419342041015625,
+        3.0547966957092285,
+        27.441587448120117,
+        3.6193418502807617
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.074",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        3.012484550476074,
+        25.669492721557617,
+        1.2205305099487305,
+        4.686657905578613,
+        27.442148208618164,
+        3.4205307960510254
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.075",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        4.644347667694092,
+        25.670055389404297,
+        0.9943253993988037,
+        6.318521022796631,
+        27.442710876464844,
+        3.1943252086639404
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.076",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        6.276209831237793,
+        25.670616149902344,
+        1.1055563688278198,
+        7.950383186340332,
+        27.44327163696289,
+        3.305556297302246
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.077",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        7.9080705642700195,
+        25.67117691040039,
+        1.2331316471099854,
+        9.582243919372559,
+        27.443832397460938,
+        3.433131456375122
+      ]
+    },
+    {
+      "name": "Boundary hedge",
+      "object_name": "Boundary hedge.081",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        14.435516357421875,
+        25.673423767089844,
+        1.2045315504074097,
+        16.109691619873047,
+        27.44607925415039,
+        3.404531478881836
+      ]
+    },
+    {
+      "name": "Proposal revision | Outbuilding flat roof",
+      "object_name": "Proposal revision | Outbuilding flat roof",
+      "materials": [
+        "White joinery",
+        "Garden roof membrane"
+      ],
+      "bounds": [
+        13.334999084472656,
+        19.40999984741211,
+        2.944587230682373,
+        16.459999084472656,
+        26.459999084472656,
+        3.054586887359619
+      ]
+    },
+    {
+      "name": "Proposal revision | Plot ground - title plan approximate",
+      "object_name": "Proposal revision | Plot ground - title plan approximate",
+      "materials": [
+        "Grass"
+      ],
+      "bounds": [
+        -25.94000244140625,
+        -23.368000030517578,
+        -0.765999972820282,
+        17.14099884033203,
+        26.559999465942383,
+        0.800000011920929
+      ]
+    },
+    {
+      "name": "Proposal revision | Boundary hedge.078",
+      "object_name": "Proposal revision | Boundary hedge.078",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        9.539933204650879,
+        25.67173957824707,
+        1.0131642818450928,
+        11.213617324829102,
+        27.444395065307617,
+        3.2131640911102295
+      ]
+    },
+    {
+      "name": "Proposal revision | Boundary hedge.079",
+      "object_name": "Proposal revision | Boundary hedge.079",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        11.171793937683105,
+        25.672300338745117,
+        1.373171091079712,
+        12.845967292785645,
+        27.444955825805664,
+        3.5731709003448486
+      ]
+    },
+    {
+      "name": "Proposal revision | Boundary hedge.080",
+      "object_name": "Proposal revision | Boundary hedge.080",
+      "materials": [
+        "Hedge dark green"
+      ],
+      "bounds": [
+        12.803861618041992,
+        25.711505889892578,
+        1.1892211437225342,
+        14.477829933166504,
+        27.445518493652344,
+        3.389220952987671
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa oak underframe",
+      "object_name": "Proposal | Pavilion sofa oak underframe",
+      "materials": [
+        "Proposal | Pale oak"
+      ],
+      "bounds": [
+        13.619999885559082,
+        22.565000534057617,
+        0.7200000286102295,
+        15.779999732971191,
+        23.334999084472656,
+        0.8500000238418579
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        13.682499885559082,
+        22.622499465942383,
+        0.5450000166893005,
+        13.737500190734863,
+        22.677499771118164,
+        0.7750000357627869
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot.001",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        13.682499885559082,
+        23.22249984741211,
+        0.5450000166893005,
+        13.737500190734863,
+        23.27750015258789,
+        0.7750000357627869
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot.002",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        15.662500381469727,
+        22.622499465942383,
+        0.5450000166893005,
+        15.717499732971191,
+        22.677499771118164,
+        0.7750000357627869
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot.003",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        15.662500381469727,
+        23.22249984741211,
+        0.5450000166893005,
+        15.717499732971191,
+        23.27750015258789,
+        0.7750000357627869
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa seat cushion",
+      "object_name": "Proposal | Pavilion sofa seat cushion",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        13.708999633789062,
+        22.530000686645508,
+        0.8650000095367432,
+        14.357666969299316,
+        23.25,
+        1.0850000381469727
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa seat cushion",
+      "object_name": "Proposal | Pavilion sofa seat cushion.001",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        14.375666618347168,
+        22.530000686645508,
+        0.8650000095367432,
+        15.024333000183105,
+        23.25,
+        1.0850000381469727
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa seat cushion",
+      "object_name": "Proposal | Pavilion sofa seat cushion.002",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        15.042333602905273,
+        22.530000686645508,
+        0.8650000095367432,
+        15.690999984741211,
+        23.25,
+        1.0850000381469727
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa back cushion",
+      "object_name": "Proposal | Pavilion sofa back cushion",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        13.708999633789062,
+        23.149999618530273,
+        0.9800000190734863,
+        14.357666969299316,
+        23.3700008392334,
+        1.630000114440918
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa back cushion",
+      "object_name": "Proposal | Pavilion sofa back cushion.001",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        14.375666618347168,
+        23.149999618530273,
+        0.9800000190734863,
+        15.024333000183105,
+        23.3700008392334,
+        1.630000114440918
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa back cushion",
+      "object_name": "Proposal | Pavilion sofa back cushion.002",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        15.042333602905273,
+        23.149999618530273,
+        0.9800000190734863,
+        15.690999984741211,
+        23.3700008392334,
+        1.630000114440918
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa arm",
+      "object_name": "Proposal | Pavilion sofa arm",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        13.53499984741211,
+        22.5049991607666,
+        0.8300000429153442,
+        13.704999923706055,
+        23.395000457763672,
+        1.4200000762939453
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion sofa arm",
+      "object_name": "Proposal | Pavilion sofa arm.001",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        15.694999694824219,
+        22.5049991607666,
+        0.8300000429153442,
+        15.864999771118164,
+        23.395000457763672,
+        1.4200000762939453
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion drinks counter",
+      "object_name": "Proposal | Pavilion drinks counter",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        15.550000190734863,
+        19.84000015258789,
+        1.4249999523162842,
+        16.030000686645508,
+        21.559999465942383,
+        1.5049999952316284
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion drinks cabinet",
+      "object_name": "Proposal | Pavilion drinks cabinet",
+      "materials": [
+        "Proposal | Pale oak"
+      ],
+      "bounds": [
+        15.550000190734863,
+        19.84000015258789,
+        0.5850000381469727,
+        16.030000686645508,
+        21.559999465942383,
+        1.4249999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger timber frame",
+      "object_name": "Proposal | Pool lounger timber frame",
+      "materials": [
+        "Proposal | Pale oak"
+      ],
+      "bounds": [
+        4.300000190734863,
+        17.139999389648438,
+        0.4350000023841858,
+        6.199999809265137,
+        17.860000610351562,
+        0.5249999761581421
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        4.502500057220459,
+        17.202499389648438,
+        0.20000000298023224,
+        4.557499885559082,
+        17.25749969482422,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.001",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        4.502500057220459,
+        17.74250030517578,
+        0.20000000298023224,
+        4.557499885559082,
+        17.797500610351562,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.002",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        5.942500114440918,
+        17.202499389648438,
+        0.20000000298023224,
+        5.997499942779541,
+        17.25749969482422,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.003",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        5.942500114440918,
+        17.74250030517578,
+        0.20000000298023224,
+        5.997499942779541,
+        17.797500610351562,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger cushion",
+      "object_name": "Proposal | Pool lounger cushion",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        4.735000133514404,
+        17.165000915527344,
+        0.5249999761581421,
+        6.164999961853027,
+        17.834999084472656,
+        0.6550000309944153
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger raised back",
+      "object_name": "Proposal | Pool lounger raised back",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        4.325407981872559,
+        17.165000915527344,
+        0.6194014549255371,
+        4.874591827392578,
+        17.834999084472656,
+        0.9605984687805176
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger timber frame",
+      "object_name": "Proposal | Pool lounger timber frame.001",
+      "materials": [
+        "Proposal | Pale oak"
+      ],
+      "bounds": [
+        4.300000190734863,
+        19.639999389648438,
+        0.4350000023841858,
+        6.199999809265137,
+        20.360000610351562,
+        0.5249999761581421
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.004",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        4.502500057220459,
+        19.702499389648438,
+        0.20000000298023224,
+        4.557499885559082,
+        19.75749969482422,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.005",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        4.502500057220459,
+        20.24250030517578,
+        0.20000000298023224,
+        4.557499885559082,
+        20.297500610351562,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.006",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        5.942500114440918,
+        19.702499389648438,
+        0.20000000298023224,
+        5.997499942779541,
+        19.75749969482422,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.007",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        5.942500114440918,
+        20.24250030517578,
+        0.20000000298023224,
+        5.997499942779541,
+        20.297500610351562,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger cushion",
+      "object_name": "Proposal | Pool lounger cushion.001",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        4.735000133514404,
+        19.665000915527344,
+        0.5249999761581421,
+        6.164999961853027,
+        20.334999084472656,
+        0.6550000309944153
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger raised back",
+      "object_name": "Proposal | Pool lounger raised back.001",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        4.325407981872559,
+        19.665000915527344,
+        0.6194014549255371,
+        4.874591827392578,
+        20.334999084472656,
+        0.9605984687805176
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger timber frame",
+      "object_name": "Proposal | Pool lounger timber frame.002",
+      "materials": [
+        "Proposal | Pale oak"
+      ],
+      "bounds": [
+        4.300000190734863,
+        22.139999389648438,
+        0.4350000023841858,
+        6.199999809265137,
+        22.860000610351562,
+        0.5249999761581421
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.008",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        4.502500057220459,
+        22.202499389648438,
+        0.20000000298023224,
+        4.557499885559082,
+        22.25749969482422,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.009",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        4.502500057220459,
+        22.74250030517578,
+        0.20000000298023224,
+        4.557499885559082,
+        22.797500610351562,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.010",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        5.942500114440918,
+        22.202499389648438,
+        0.20000000298023224,
+        5.997499942779541,
+        22.25749969482422,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger foot",
+      "object_name": "Proposal | Pool lounger foot.011",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        5.942500114440918,
+        22.74250030517578,
+        0.20000000298023224,
+        5.997499942779541,
+        22.797500610351562,
+        0.4399999976158142
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger cushion",
+      "object_name": "Proposal | Pool lounger cushion.002",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        4.735000133514404,
+        22.165000915527344,
+        0.5249999761581421,
+        6.164999961853027,
+        22.834999084472656,
+        0.6550000309944153
+      ]
+    },
+    {
+      "name": "Proposal | Pool lounger raised back",
+      "object_name": "Proposal | Pool lounger raised back.002",
+      "materials": [
+        "Proposal | Oatmeal linen"
+      ],
+      "bounds": [
+        4.325407981872559,
+        22.165000915527344,
+        0.6194014549255371,
+        4.874591827392578,
+        22.834999084472656,
+        0.9605984687805176
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard bronze base",
+      "object_name": "Proposal | Garden pool bollard bronze base",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        6.014999866485596,
+        15.364999771118164,
+        0.4399999976158142,
+        6.085000038146973,
+        15.4350004196167,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard warm lens",
+      "object_name": "Proposal | Garden pool bollard warm lens",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        6.013000011444092,
+        15.36299991607666,
+        0.5525000095367432,
+        6.086999893188477,
+        15.437000274658203,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard bronze base",
+      "object_name": "Proposal | Garden pool bollard bronze base.001",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        10.614999771118164,
+        15.364999771118164,
+        0.4399999976158142,
+        10.6850004196167,
+        15.4350004196167,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard warm lens",
+      "object_name": "Proposal | Garden pool bollard warm lens.001",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        10.61299991607666,
+        15.36299991607666,
+        0.5525000095367432,
+        10.687000274658203,
+        15.437000274658203,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard bronze base",
+      "object_name": "Proposal | Garden pool bollard bronze base.002",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        6.014999866485596,
+        24.514999389648438,
+        0.4399999976158142,
+        6.085000038146973,
+        24.584999084472656,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard warm lens",
+      "object_name": "Proposal | Garden pool bollard warm lens.002",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        6.013000011444092,
+        24.51300048828125,
+        0.5525000095367432,
+        6.086999893188477,
+        24.586999893188477,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard bronze base",
+      "object_name": "Proposal | Garden pool bollard bronze base.003",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        10.614999771118164,
+        24.514999389648438,
+        0.4399999976158142,
+        10.6850004196167,
+        24.584999084472656,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard warm lens",
+      "object_name": "Proposal | Garden pool bollard warm lens.003",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        10.61299991607666,
+        24.51300048828125,
+        0.5525000095367432,
+        10.687000274658203,
+        24.586999893188477,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard bronze base",
+      "object_name": "Proposal | Garden pool bollard bronze base.004",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        10.765000343322754,
+        19.165000915527344,
+        0.4399999976158142,
+        10.835000038146973,
+        19.235000610351562,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard warm lens",
+      "object_name": "Proposal | Garden pool bollard warm lens.004",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        10.762999534606934,
+        19.163000106811523,
+        0.5525000095367432,
+        10.836999893188477,
+        19.23699951171875,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard bronze base",
+      "object_name": "Proposal | Garden pool bollard bronze base.005",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        10.765000343322754,
+        23.864999771118164,
+        0.4399999976158142,
+        10.835000038146973,
+        23.934999465942383,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard warm lens",
+      "object_name": "Proposal | Garden pool bollard warm lens.005",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        10.762999534606934,
+        23.863000869750977,
+        0.5525000095367432,
+        10.836999893188477,
+        23.937000274658203,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard bronze base",
+      "object_name": "Proposal | Garden pool bollard bronze base.006",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        10.765000343322754,
+        26.165000915527344,
+        0.4399999976158142,
+        10.835000038146973,
+        26.235000610351562,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Garden pool bollard warm lens",
+      "object_name": "Proposal | Garden pool bollard warm lens.006",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        10.762999534606934,
+        26.163000106811523,
+        0.5525000095367432,
+        10.836999893188477,
+        26.23699951171875,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Hot tub approach light bronze base",
+      "object_name": "Proposal | Hot tub approach light bronze base",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        14.404999732971191,
+        14.895000457763672,
+        0.4399999976158142,
+        14.475000381469727,
+        14.96500015258789,
+        0.5600000023841858
+      ]
+    },
+    {
+      "name": "Proposal | Hot tub approach light warm lens",
+      "object_name": "Proposal | Hot tub approach light warm lens",
+      "materials": [
+        "Proposal | Warm lamps"
+      ],
+      "bounds": [
+        14.402999877929688,
+        14.892999649047852,
+        0.5525000095367432,
+        14.47700023651123,
+        14.967000007629395,
+        0.6075000166893005
+      ]
+    },
+    {
+      "name": "Proposal | Rear living terrace",
+      "object_name": "Proposal | Rear living terrace",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        -4.699999809265137,
+        14.199999809265137,
+        -0.12559840083122253,
+        4.699999809265137,
+        15.449999809265137,
+        0.0
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion poolside deck",
+      "object_name": "Proposal | Pavilion poolside deck",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        10.15999984741211,
+        19.149999618530273,
+        -0.44999998807907104,
+        14.239999771118164,
+        26.5,
+        0.19999998807907104
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "object_name": "Proposal | Pool terrace",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        4.0,
+        15.100000381469727,
+        -0.44999998807907104,
+        11.300000190734863,
+        15.84000015258789,
+        0.19999998807907104
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "object_name": "Proposal | Pool terrace.001",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        5.599999904632568,
+        24.15999984741211,
+        -0.44999998807907104,
+        10.899999618530273,
+        24.899999618530273,
+        0.19999998807907104
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "object_name": "Proposal | Pool terrace.002",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        4.0,
+        15.84000015258789,
+        -0.44999998807907104,
+        6.340000152587891,
+        24.15999984741211,
+        0.19999998807907104
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "object_name": "Proposal | Pool terrace.003",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        10.15999984741211,
+        15.84000015258789,
+        -0.44999998807907104,
+        11.300000190734863,
+        24.15999984741211,
+        0.19999998807907104
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.544219970703125,
+        16.137407302856445,
+        0.22500000894069672,
+        3.887036085128784,
+        16.49224853515625,
+        0.6733990907669067
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.001",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.569011688232422,
+        16.503437042236328,
+        0.22500000894069672,
+        3.874424695968628,
+        16.90351104736328,
+        0.6698523759841919
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.002",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.518667221069336,
+        16.91057014465332,
+        0.22500000894069672,
+        3.82012677192688,
+        17.227432250976562,
+        0.6632716655731201
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.003",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.5368714332580566,
+        17.27136993408203,
+        0.22500000894069672,
+        3.933336019515991,
+        17.62097930908203,
+        0.6720830202102661
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.004",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.473029136657715,
+        17.73874855041504,
+        0.22500000894069672,
+        3.8455970287323,
+        18.011497497558594,
+        0.6720028519630432
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.005",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.6375749111175537,
+        18.100830078125,
+        0.22500000894069672,
+        3.9603896141052246,
+        18.38530731201172,
+        0.6712929010391235
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.006",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.5121963024139404,
+        18.426633834838867,
+        0.22500000894069672,
+        3.8259739875793457,
+        18.809650421142578,
+        0.6710599064826965
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.007",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.6060051918029785,
+        18.90715789794922,
+        0.22500000894069672,
+        3.8990232944488525,
+        19.172374725341797,
+        0.6711137294769287
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.008",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.476694345474243,
+        19.252246856689453,
+        0.22500000894069672,
+        3.8257546424865723,
+        19.61002540588379,
+        0.6701472401618958
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.009",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.638390302658081,
+        19.65226173400879,
+        0.22500000894069672,
+        3.9465200901031494,
+        19.971683502197266,
+        0.6602297425270081
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.010",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.4980201721191406,
+        20.063589096069336,
+        0.22500000894069672,
+        3.8344902992248535,
+        20.36801528930664,
+        0.6717691421508789
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.011",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.665018081665039,
+        20.422012329101562,
+        0.22500000894069672,
+        3.9421231746673584,
+        20.766801834106445,
+        0.658618688583374
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.012",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.520801305770874,
+        20.81332015991211,
+        0.22500000894069672,
+        3.7761731147766113,
+        21.16084861755371,
+        0.653719425201416
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.013",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.6166889667510986,
+        21.239952087402344,
+        0.22500000894069672,
+        3.9948179721832275,
+        21.562013626098633,
+        0.6722555160522461
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.014",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.4947500228881836,
+        21.582679748535156,
+        0.22500000894069672,
+        3.821031332015991,
+        21.92872428894043,
+        0.6646597385406494
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.015",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.6346185207366943,
+        21.91912841796875,
+        0.22500000894069672,
+        3.961134672164917,
+        22.335107803344727,
+        0.6708990335464478
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.016",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.5436551570892334,
+        22.37145233154297,
+        0.22500000894069672,
+        3.8670926094055176,
+        22.706146240234375,
+        0.6584502458572388
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.017",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.640927791595459,
+        22.751789093017578,
+        0.22500000894069672,
+        3.955488920211792,
+        23.121410369873047,
+        0.6696064472198486
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.018",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.540118455886841,
+        23.18660545349121,
+        0.22500000894069672,
+        3.8577239513397217,
+        23.452165603637695,
+        0.6724853515625
+      ]
+    },
+    {
+      "name": "Proposal | Pool border ornamental grass",
+      "object_name": "Proposal | Pool border ornamental grass.019",
+      "materials": [
+        "Proposal | Grasses"
+      ],
+      "bounds": [
+        3.554399251937866,
+        23.566930770874023,
+        0.22500000894069672,
+        3.9584503173828125,
+        23.821266174316406,
+        0.6734650135040283
+      ]
+    },
+    {
+      "name": "Proposal | Loggia step",
+      "object_name": "Proposal | Loggia step",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        13.859999656677246,
+        19.738500595092773,
+        0.7390000224113464,
+        14.210000038146973,
+        23.37150001525879,
+        0.9894999861717224
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace link paving",
+      "object_name": "Proposal | Pool terrace link paving",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        11.300000190734863,
+        18.760000228881836,
+        0.04367721080780029,
+        14.239999771118164,
+        19.149999618530273,
+        0.6936771869659424
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        4.0,
+        14.699999809265137,
+        -0.44999998807907104,
+        4.52142858505249,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.001",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        4.52142858505249,
+        14.699999809265137,
+        -0.44999998807907104,
+        5.0428571701049805,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.002",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        5.0428571701049805,
+        14.699999809265137,
+        -0.44999998807907104,
+        5.564285755157471,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.003",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        5.564285755157471,
+        14.699999809265137,
+        -0.44999998807907104,
+        6.085714340209961,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.004",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        6.085714340209961,
+        14.699999809265137,
+        -0.44999998807907104,
+        6.607142925262451,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.005",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        6.607142925262451,
+        14.699999809265137,
+        -0.44999998807907104,
+        7.128571510314941,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.006",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        7.128571510314941,
+        14.699999809265137,
+        -0.44999998807907104,
+        7.650000095367432,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.007",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        7.650000095367432,
+        14.699999809265137,
+        -0.44999998807907104,
+        8.171428680419922,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.008",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        8.171428680419922,
+        14.699999809265137,
+        -0.44999998807907104,
+        8.692856788635254,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.009",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        8.692856788635254,
+        14.699999809265137,
+        -0.44999998807907104,
+        9.214285850524902,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.010",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        9.214285850524902,
+        14.699999809265137,
+        -0.44999998807907104,
+        9.735713958740234,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.011",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        9.735713958740234,
+        14.699999809265137,
+        -0.44999998807907104,
+        10.257143020629883,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.012",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        10.257143020629883,
+        14.699999809265137,
+        -0.44999998807907104,
+        10.778571128845215,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.013",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        10.778571128845215,
+        14.699999809265137,
+        -0.44999998807907104,
+        11.300000190734863,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        5.599999904632568,
+        24.899999618530273,
+        0.18000000715255737,
+        10.369999885559082,
+        25.100000381469727,
+        0.5116699934005737
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.001",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        5.400000095367432,
+        24.15999984741211,
+        0.18000000715255737,
+        5.599999904632568,
+        24.899999618530273,
+        0.5015159845352173
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.002",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        4.0,
+        24.15999984741211,
+        0.18000000715255737,
+        5.599999904632568,
+        24.360000610351562,
+        0.5024933218955994
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.003",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        3.799999952316284,
+        17.616666793823242,
+        0.18000000715255737,
+        4.0,
+        24.15999984741211,
+        0.44622331857681274
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.014",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        3.5999999046325684,
+        16.106666564941406,
+        -0.44999998807907104,
+        4.0,
+        16.610000610351562,
+        0.10944958031177521
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.015",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        3.5999999046325684,
+        15.603333473205566,
+        -0.44999998807907104,
+        4.0,
+        16.106666564941406,
+        0.09656506776809692
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.016",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        3.5999999046325684,
+        15.100000381469727,
+        -0.44999998807907104,
+        4.0,
+        15.603333473205566,
+        0.09843654930591583
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.017",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        11.300000190734863,
+        14.699999809265137,
+        -0.44999998807907104,
+        11.84857177734375,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.018",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        11.84857177734375,
+        14.699999809265137,
+        -0.44999998807907104,
+        12.39714241027832,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "object_name": "Proposal | Pool terrace step.019",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        12.39714241027832,
+        14.699999809265137,
+        -0.44999998807907104,
+        12.945713996887207,
+        15.100000381469727,
+        0.12999999523162842
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.004",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        12.945713996887207,
+        14.899999618530273,
+        0.18000000715255737,
+        15.140000343322754,
+        15.100000381469727,
+        0.4192948639392853
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.005",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        15.140000343322754,
+        15.100000381469727,
+        0.18000000715255737,
+        15.34000015258789,
+        18.760000228881836,
+        0.624045729637146
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.006",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        14.04285717010498,
+        18.760000228881836,
+        0.18000000715255737,
+        15.140000343322754,
+        18.959999084472656,
+        0.6160998940467834
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.007",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        14.239999771118164,
+        19.149999618530273,
+        0.18000000715255737,
+        14.4399995803833,
+        26.5,
+        0.654653012752533
+      ]
+    },
+    {
+      "name": "Proposal | Pool terrace retaining kerb",
+      "object_name": "Proposal | Pool terrace retaining kerb.009",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        9.960000038146973,
+        24.924999237060547,
+        0.18000000715255737,
+        10.15999984741211,
+        26.5,
+        0.5091850161552429
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion expanded floor",
+      "object_name": "Proposal | Pavilion expanded floor",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        12.100000381469727,
+        19.59000015258789,
+        -0.44999998807907104,
+        14.319999694824219,
+        26.280000686645508,
+        0.19999998807907104
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion north return",
+      "object_name": "Proposal | Pavilion north return",
+      "materials": [
+        "Proposal | Limestone render"
+      ],
+      "bounds": [
+        12.100000381469727,
+        26.190000534057617,
+        0.20000004768371582,
+        14.319999694824219,
+        26.3700008392334,
+        2.93500018119812
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion extended flat roof",
+      "object_name": "Proposal | Pavilion extended flat roof",
+      "materials": [
+        "Proposal | Bronze black frames"
+      ],
+      "bounds": [
+        11.199999809265137,
+        19.40999984741211,
+        2.93500018119812,
+        14.319999694824219,
+        26.459999084472656,
+        3.055000066757202
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion plaster ceiling",
+      "object_name": "Proposal | Pavilion plaster ceiling",
+      "materials": [
+        "Proposal | Loft plaster"
+      ],
+      "bounds": [
+        11.220000267028809,
+        19.43000030517578,
+        2.9130001068115234,
+        14.319999694824219,
+        26.440000534057617,
+        2.937999963760376
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion pillar 1",
+      "object_name": "Proposal | Pavilion pillar 1",
+      "materials": [
+        "Proposal | Limestone render"
+      ],
+      "bounds": [
+        11.319999694824219,
+        19.530000686645508,
+        0.30000007152557373,
+        11.5600004196167,
+        19.770000457763672,
+        2.93500018119812
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion pillar 2",
+      "object_name": "Proposal | Pavilion pillar 2",
+      "materials": [
+        "Proposal | Limestone render"
+      ],
+      "bounds": [
+        11.319999694824219,
+        22.815000534057617,
+        0.30000007152557373,
+        11.5600004196167,
+        23.05500030517578,
+        2.93500018119812
+      ]
+    },
+    {
+      "name": "Proposal | Pavilion pillar 3",
+      "object_name": "Proposal | Pavilion pillar 3",
+      "materials": [
+        "Proposal | Limestone render"
+      ],
+      "bounds": [
+        11.319999694824219,
+        26.100000381469727,
+        0.30000007152557373,
+        11.5600004196167,
+        26.34000015258789,
+        2.93500018119812
+      ]
+    },
+    {
+      "name": "Proposal | Pool shell west",
+      "object_name": "Proposal | Pool shell west",
+      "materials": [
+        "Proposal | Pool limestone blue"
+      ],
+      "bounds": [
+        6.400000095367432,
+        16.0,
+        -1.149999976158142,
+        6.599999904632568,
+        24.0,
+        0.17999997735023499
+      ]
+    },
+    {
+      "name": "Proposal | Pool shell east",
+      "object_name": "Proposal | Pool shell east",
+      "materials": [
+        "Proposal | Pool limestone blue"
+      ],
+      "bounds": [
+        9.899999618530273,
+        16.0,
+        -1.149999976158142,
+        10.100000381469727,
+        24.0,
+        0.17999997735023499
+      ]
+    },
+    {
+      "name": "Proposal | Pool shell south",
+      "object_name": "Proposal | Pool shell south",
+      "materials": [
+        "Proposal | Pool limestone blue"
+      ],
+      "bounds": [
+        6.5,
+        15.899999618530273,
+        -1.149999976158142,
+        10.0,
+        16.100000381469727,
+        0.17999997735023499
+      ]
+    },
+    {
+      "name": "Proposal | Pool shell north",
+      "object_name": "Proposal | Pool shell north",
+      "materials": [
+        "Proposal | Pool limestone blue"
+      ],
+      "bounds": [
+        6.5,
+        23.899999618530273,
+        -1.149999976158142,
+        10.0,
+        24.100000381469727,
+        0.17999997735023499
+      ]
+    },
+    {
+      "name": "Proposal | Pool coping west",
+      "object_name": "Proposal | Pool coping west",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        6.340000152587891,
+        15.84000015258789,
+        0.17000000178813934,
+        6.659999847412109,
+        24.15999984741211,
+        0.23499999940395355
+      ]
+    },
+    {
+      "name": "Proposal | Pool coping east",
+      "object_name": "Proposal | Pool coping east",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        9.84000015258789,
+        15.84000015258789,
+        0.17000000178813934,
+        10.15999984741211,
+        24.15999984741211,
+        0.23499999940395355
+      ]
+    },
+    {
+      "name": "Proposal | Pool coping south",
+      "object_name": "Proposal | Pool coping south",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        6.340000152587891,
+        15.84000015258789,
+        0.17000000178813934,
+        10.15999984741211,
+        16.15999984741211,
+        0.23499999940395355
+      ]
+    },
+    {
+      "name": "Proposal | Pool coping north",
+      "object_name": "Proposal | Pool coping north",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        6.340000152587891,
+        23.84000015258789,
+        0.17000000178813934,
+        10.15999984741211,
+        24.15999984741211,
+        0.23499999940395355
+      ]
+    },
+    {
+      "name": "Proposal | Pool water",
+      "object_name": "Proposal | Pool water",
+      "materials": [
+        "Proposal | Pool water"
+      ],
+      "bounds": [
+        6.559999942779541,
+        16.059999465942383,
+        0.08250000327825546,
+        9.9399995803833,
+        23.940000534057617,
+        0.10750000178813934
+      ]
+    },
+    {
+      "name": "Proposal | Pool underwater step 0",
+      "object_name": "Proposal | Pool underwater step 0",
+      "materials": [
+        "Proposal | Pool limestone blue"
+      ],
+      "bounds": [
+        6.699999809265137,
+        16.200000762939453,
+        -0.18999998271465302,
+        9.800000190734863,
+        16.5,
+        -0.04999999701976776
+      ]
+    },
+    {
+      "name": "Proposal | Hot tub area paving",
+      "object_name": "Proposal | Hot tub area paving",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        11.300000190734863,
+        15.100000381469727,
+        -0.44999998807907104,
+        15.140000343322754,
+        18.760000228881836,
+        0.19999998807907104
+      ]
+    },
+    {
+      "name": "Proposal | Pool hot tub shell",
+      "object_name": "Proposal | Pool hot tub shell",
+      "materials": [
+        "Proposal | Hot tub ceramic"
+      ],
+      "bounds": [
+        11.619999885559082,
+        16.15999984741211,
+        -0.949999988079071,
+        14.699999809265137,
+        18.440000534057617,
+        0.2200000286102295
+      ]
+    },
+    {
+      "name": "Proposal | Pool hot tub water",
+      "object_name": "Proposal | Pool hot tub water",
+      "materials": [
+        "Proposal | Hot tub water"
+      ],
+      "bounds": [
+        11.819999694824219,
+        16.360000610351562,
+        0.07000000774860382,
+        14.5,
+        18.239999771118164,
+        0.10000000149011612
+      ]
+    },
+    {
+      "name": "Proposal | Pool hot tub coping south",
+      "object_name": "Proposal | Pool hot tub coping south",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        11.300000190734863,
+        15.84000015258789,
+        0.17000000178813934,
+        15.020000457763672,
+        16.15999984741211,
+        0.24000000953674316
+      ]
+    },
+    {
+      "name": "Proposal | Pool hot tub coping north",
+      "object_name": "Proposal | Pool hot tub coping north",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        11.300000190734863,
+        18.440000534057617,
+        0.17000000178813934,
+        15.020000457763672,
+        18.760000228881836,
+        0.24000000953674316
+      ]
+    },
+    {
+      "name": "Proposal | Pool hot tub coping west",
+      "object_name": "Proposal | Pool hot tub coping west",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        11.300000190734863,
+        16.15999984741211,
+        0.17000000178813934,
+        11.619999885559082,
+        18.440000534057617,
+        0.24000000953674316
+      ]
+    },
+    {
+      "name": "Proposal | Pool hot tub coping east",
+      "object_name": "Proposal | Pool hot tub coping east",
+      "materials": [
+        "Proposal | Limestone paving"
+      ],
+      "bounds": [
+        14.699999809265137,
+        16.15999984741211,
+        0.17000000178813934,
+        15.020000457763672,
+        18.440000534057617,
+        0.24000000953674316
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "name": "Outside WC",
+      "floor": 2,
+      "polygon_m": [
+        [
+          14.279999757995604,
+          26.280000708906172
+        ],
+        [
+          14.279999757995604,
+          24.560000708906173
+        ],
+        [
+          16.249999757995603,
+          24.560000708906173
+        ],
+        [
+          16.249999757995603,
+          26.280000708906172
+        ]
+      ],
+      "published_dimensions_m": [
+        1.57,
+        1.8
+      ]
+    },
+    {
+      "name": "Tool store",
+      "floor": 2,
+      "polygon_m": [
+        [
+          14.279999757995604,
+          24.560000708906173
+        ],
+        [
+          14.279999757995604,
+          23.52000070890617
+        ],
+        [
+          16.249999757995603,
+          23.52000070890617
+        ],
+        [
+          16.249999757995603,
+          24.560000708906173
+        ]
+      ],
+      "published_dimensions_m": null
+    },
+    {
+      "name": "Summer house",
+      "floor": 2,
+      "polygon_m": [
+        [
+          14.319999757995603,
+          23.520000708906174
+        ],
+        [
+          14.319999757995603,
+          19.590000708906175
+        ],
+        [
+          16.249999757995603,
+          19.590000708906175
+        ],
+        [
+          16.249999757995603,
+          23.520000708906174
+        ]
+      ],
+      "published_dimensions_m": [
+        3.78,
+        1.76
+      ]
+    },
+    {
+      "name": "Expanded garden pavilion",
+      "floor": 2,
+      "base_z": 0.2,
+      "polygon_m": [
+        [
+          12.1,
+          19.59
+        ],
+        [
+          16.25,
+          19.59
+        ],
+        [
+          16.25,
+          23.52
+        ],
+        [
+          14.32,
+          23.52
+        ],
+        [
+          14.32,
+          26.28
+        ],
+        [
+          12.1,
+          26.28
+        ]
+      ],
+      "proposal": true
+    },
+    {
+      "name": "Pool terrace",
+      "floor": 2,
+      "base_z": 0.2,
+      "polygon_m": [
+        [
+          5.3,
+          15.1
+        ],
+        [
+          11.25,
+          15.1
+        ],
+        [
+          11.25,
+          24.9
+        ],
+        [
+          5.3,
+          24.9
+        ]
+      ],
+      "proposal": true
+    },
+    {
+      "name": "Pool hot tub area",
+      "floor": 2,
+      "base_z": 0.2,
+      "polygon_m": [
+        [
+          11.3,
+          15.1
+        ],
+        [
+          15.139999999999999,
+          15.1
+        ],
+        [
+          15.139999999999999,
+          18.76
+        ],
+        [
+          11.3,
+          18.76
+        ]
+      ],
+      "proposal": true,
+      "area_scope": "external_garden",
+      "enclosed": false,
+      "included_in_internal_area": false
+    }
+  ],
+  "surfaces": [
+    {
+      "polygon": [
+        [
+          14.320000648498535,
+          23.520000457763672
+        ],
+        [
+          14.320000648498535,
+          19.59000015258789
+        ],
+        [
+          16.25,
+          19.59000015258789
+        ],
+        [
+          16.25,
+          23.520000457763672
+        ]
+      ],
+      "z": 0.5445870161056519,
+      "name": "Summer house floor"
+    },
+    {
+      "name": "Proposal | Pavilion expanded floor",
+      "polygon": [
+        [
+          12.1,
+          19.59
+        ],
+        [
+          14.32,
+          19.59
+        ],
+        [
+          14.32,
+          26.28
+        ],
+        [
+          12.1,
+          26.28
+        ]
+      ],
+      "z": 0.2
+    },
+    {
+      "name": "Proposal | Pavilion poolside deck",
+      "polygon": [
+        [
+          10.16,
+          19.15
+        ],
+        [
+          14.24,
+          19.15
+        ],
+        [
+          14.24,
+          26.5
+        ],
+        [
+          10.16,
+          26.5
+        ]
+      ],
+      "z": 0.2
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "polygon": [
+        [
+          4.0,
+          15.1
+        ],
+        [
+          11.3,
+          15.1
+        ],
+        [
+          11.3,
+          15.84
+        ],
+        [
+          4.0,
+          15.84
+        ]
+      ],
+      "z": 0.2
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "polygon": [
+        [
+          5.6,
+          24.16
+        ],
+        [
+          10.9,
+          24.16
+        ],
+        [
+          10.9,
+          24.9
+        ],
+        [
+          5.6,
+          24.9
+        ]
+      ],
+      "z": 0.2
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "polygon": [
+        [
+          4.0,
+          15.84
+        ],
+        [
+          6.34,
+          15.84
+        ],
+        [
+          6.34,
+          24.16
+        ],
+        [
+          4.0,
+          24.16
+        ]
+      ],
+      "z": 0.2
+    },
+    {
+      "name": "Proposal | Pool terrace",
+      "polygon": [
+        [
+          10.16,
+          15.84
+        ],
+        [
+          11.3,
+          15.84
+        ],
+        [
+          11.3,
+          24.16
+        ],
+        [
+          10.16,
+          24.16
+        ]
+      ],
+      "z": 0.2
+    },
+    {
+      "name": "Proposal | Pool terrace link paving",
+      "polygon": [
+        [
+          11.3,
+          18.76
+        ],
+        [
+          14.239999771118164,
+          18.76
+        ],
+        [
+          14.239999771118164,
+          19.149999618530273
+        ],
+        [
+          11.3,
+          19.149999618530273
+        ]
+      ],
+      "z": 0.2
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          4.0,
+          14.7
+        ],
+        [
+          4.521428571428571,
+          14.7
+        ],
+        [
+          4.521428571428571,
+          15.1
+        ],
+        [
+          4.0,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          4.521428571428571,
+          14.7
+        ],
+        [
+          5.042857142857143,
+          14.7
+        ],
+        [
+          5.042857142857143,
+          15.1
+        ],
+        [
+          4.521428571428571,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          5.042857142857143,
+          14.7
+        ],
+        [
+          5.564285714285714,
+          14.7
+        ],
+        [
+          5.564285714285714,
+          15.1
+        ],
+        [
+          5.042857142857143,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          5.564285714285714,
+          14.7
+        ],
+        [
+          6.085714285714285,
+          14.7
+        ],
+        [
+          6.085714285714285,
+          15.1
+        ],
+        [
+          5.564285714285714,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          6.085714285714285,
+          14.7
+        ],
+        [
+          6.607142857142858,
+          14.7
+        ],
+        [
+          6.607142857142858,
+          15.1
+        ],
+        [
+          6.085714285714285,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          6.607142857142858,
+          14.7
+        ],
+        [
+          7.128571428571428,
+          14.7
+        ],
+        [
+          7.128571428571428,
+          15.1
+        ],
+        [
+          6.607142857142858,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          7.128571428571428,
+          14.7
+        ],
+        [
+          7.65,
+          14.7
+        ],
+        [
+          7.65,
+          15.1
+        ],
+        [
+          7.128571428571428,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          7.65,
+          14.7
+        ],
+        [
+          8.17142857142857,
+          14.7
+        ],
+        [
+          8.17142857142857,
+          15.1
+        ],
+        [
+          7.65,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          8.17142857142857,
+          14.7
+        ],
+        [
+          8.692857142857143,
+          14.7
+        ],
+        [
+          8.692857142857143,
+          15.1
+        ],
+        [
+          8.17142857142857,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          8.692857142857143,
+          14.7
+        ],
+        [
+          9.214285714285715,
+          14.7
+        ],
+        [
+          9.214285714285715,
+          15.1
+        ],
+        [
+          8.692857142857143,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          9.214285714285715,
+          14.7
+        ],
+        [
+          9.735714285714286,
+          14.7
+        ],
+        [
+          9.735714285714286,
+          15.1
+        ],
+        [
+          9.214285714285715,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          9.735714285714286,
+          14.7
+        ],
+        [
+          10.257142857142856,
+          14.7
+        ],
+        [
+          10.257142857142856,
+          15.1
+        ],
+        [
+          9.735714285714286,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          10.257142857142856,
+          14.7
+        ],
+        [
+          10.778571428571428,
+          14.7
+        ],
+        [
+          10.778571428571428,
+          15.1
+        ],
+        [
+          10.257142857142856,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          10.778571428571428,
+          14.7
+        ],
+        [
+          11.3,
+          14.7
+        ],
+        [
+          11.3,
+          15.1
+        ],
+        [
+          10.778571428571428,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          3.6,
+          16.10666666666667
+        ],
+        [
+          4.0,
+          16.10666666666667
+        ],
+        [
+          4.0,
+          16.61
+        ],
+        [
+          3.6,
+          16.61
+        ]
+      ],
+      "z": 0.10944959605333339
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          3.6,
+          15.603333333333333
+        ],
+        [
+          4.0,
+          15.603333333333333
+        ],
+        [
+          4.0,
+          16.10666666666667
+        ],
+        [
+          3.6,
+          16.10666666666667
+        ]
+      ],
+      "z": 0.096565066048
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          3.6,
+          15.1
+        ],
+        [
+          4.0,
+          15.1
+        ],
+        [
+          4.0,
+          15.603333333333333
+        ],
+        [
+          3.6,
+          15.603333333333333
+        ]
+      ],
+      "z": 0.098436560896
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          11.3,
+          14.7
+        ],
+        [
+          11.848571428571429,
+          14.7
+        ],
+        [
+          11.848571428571429,
+          15.1
+        ],
+        [
+          11.3,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          11.848571428571429,
+          14.7
+        ],
+        [
+          12.397142857142857,
+          14.7
+        ],
+        [
+          12.397142857142857,
+          15.1
+        ],
+        [
+          11.848571428571429,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    },
+    {
+      "name": "Proposal | Pool terrace step",
+      "polygon": [
+        [
+          12.397142857142857,
+          14.7
+        ],
+        [
+          12.945714285714285,
+          14.7
+        ],
+        [
+          12.945714285714285,
+          15.1
+        ],
+        [
+          12.397142857142857,
+          15.1
+        ]
+      ],
+      "z": 0.13
+    }
+  ],
+  "doors": [],
+  "hotTub": {
+    "external_bounds_m": [
+      11.62,
+      16.16,
+      14.7,
+      18.44
+    ],
+    "collision_bounds_m": [
+      11.62,
+      16.16,
+      14.7,
+      18.44
+    ],
+    "unit_size_m": [
+      3.08,
+      2.28
+    ],
+    "sunken": true,
+    "rim_z_m": 0.04,
+    "water_z_m": -0.1,
+    "paving_bounds_m": [
+      11.3,
+      15.1,
+      15.139999999999999,
+      18.76
+    ],
+    "pool_coping_east_x_m": 10.16,
+    "nominal_coping_to_shell_m": 1.3,
+    "minimum_coping_to_timber_skirt_m": 1.3,
+    "basin_floor_z_m": -0.95,
+    "bench_seat_z_m": -0.5,
+    "coping_m": 0.32,
+    "separate_water": true,
+    "pavilion_route": "The unchanged east pool aisle X10.16..11.30 remains fully clear; route centreX10.80 continues north to pavilion.",
+    "clear_routes_m": {
+      "pool_to_pavilion": [
+        [
+          10.8,
+          15.3,
+          0
+        ],
+        [
+          10.8,
+          18.8,
+          0
+        ],
+        [
+          10.8,
+          20.8,
+          0
+        ],
+        [
+          11.5,
+          21.55,
+          0
+        ]
+      ],
+      "spa_approach": [
+        [
+          10.8,
+          15.3,
+          0
+        ],
+        [
+          12.2,
+          15.2,
+          0
+        ],
+        [
+          13.5,
+          15.2,
+          0
+        ],
+        [
+          13.16,
+          15.3,
+          0
+        ]
+      ]
+    },
+    "navigation": "The coping walks round the open basin; the water volume is a fixed obstacle."
+  }
+}

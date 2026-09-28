@@ -1,0 +1,3028 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "gym",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Gym natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym ivory terry fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival warm limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 391,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-gym"
+    },
+    {
+      "area": "gym",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Gym natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym ivory terry fabric",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Utility natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival warm limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "cardio",
+        "strength",
+        "water",
+        "reverse",
+        "overview"
+      ],
+      "objects": 391,
+      "cutaway": 13,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-gym"
+    },
+    {
+      "area": "sidebed",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "vanity",
+        "shower",
+        "overview"
+      ],
+      "objects": 454,
+      "cutaway": 25,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-side-wing-south-bedroom"
+    },
+    {
+      "area": "sidebed",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "vanity",
+        "shower",
+        "overview"
+      ],
+      "objects": 454,
+      "cutaway": 25,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-side-wing-south-bedroom"
+    },
+    {
+      "area": "arrival",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak beige limestone floor",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal warm wool",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "storage",
+        "details",
+        "reverse",
+        "gallery",
+        "hall",
+        "mirror",
+        "overview",
+        "stair"
+      ],
+      "objects": 2621,
+      "cutaway": 1397,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-new-entrance-gallery"
+    },
+    {
+      "area": "arrival",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom4 honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak beige limestone floor",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Gym natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Formal warm wool",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival warm limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "storage",
+        "details",
+        "reverse",
+        "gallery",
+        "hall",
+        "mirror",
+        "overview",
+        "stair"
+      ],
+      "objects": 2621,
+      "cutaway": 1397,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-new-entrance-gallery"
+    },
+    {
+      "area": "landings",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "library",
+        "gallery",
+        "connecting",
+        "linen",
+        "details",
+        "hall",
+        "overview"
+      ],
+      "objects": 1861,
+      "cutaway": 50,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-landing-library"
+    },
+    {
+      "area": "landings",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Proposal | Quiet oak pale natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Proposal | Quiet oak honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Guest natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom2 woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Familybath natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Arrival natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Landings warm limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 2,
+      "views": [
+        "entrance",
+        "library",
+        "gallery",
+        "connecting",
+        "linen",
+        "details",
+        "hall",
+        "overview"
+      ],
+      "objects": 1859,
+      "cutaway": 49,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-landing-library"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

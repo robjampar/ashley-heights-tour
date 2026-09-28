@@ -1,0 +1,341 @@
+{
+  "room": "Formal dining and lounge",
+  "revision": 2,
+  "floorZ": 0,
+  "ceilingZ": 2.6,
+  "bounds": [
+    5.05,
+    -0.33,
+    13.98,
+    10.18
+  ],
+  "polygon": [
+    [
+      5.05,
+      5.1
+    ],
+    [
+      5.05,
+      9.19
+    ],
+    [
+      5.899166819254557,
+      10.18
+    ],
+    [
+      8.030833485921224,
+      10.18
+    ],
+    [
+      8.88,
+      9.19
+    ],
+    [
+      8.88,
+      8.82
+    ],
+    [
+      13.98,
+      8.82
+    ],
+    [
+      13.98,
+      0.0
+    ],
+    [
+      12.933275109170307,
+      0.0
+    ],
+    [
+      12.309694323144106,
+      -0.24
+    ],
+    [
+      11.886550218340613,
+      -0.33
+    ],
+    [
+      10.95117903930131,
+      -0.33
+    ],
+    [
+      10.528034934497818,
+      -0.24
+    ],
+    [
+      9.926724890829695,
+      0.0
+    ],
+    [
+      8.88,
+      0.0
+    ],
+    [
+      8.88,
+      5.1
+    ]
+  ],
+  "table": {
+    "centre": [
+      7.92,
+      7.25
+    ],
+    "length": 1.8,
+    "extendedLength": 2.8,
+    "width": 1.0,
+    "height": 0.76,
+    "dailyPlaces": 6,
+    "extendedPlaces": [
+      8,
+      10
+    ]
+  },
+  "sofas": [
+    [
+      10.02,
+      2.4,
+      12.42,
+      3.38
+    ],
+    [
+      10.02,
+      5.22,
+      12.42,
+      6.2
+    ]
+  ],
+  "coffeeTable": [
+    10.42,
+    4.04,
+    11.82,
+    4.58
+  ],
+  "rug": [
+    9.8,
+    2.14,
+    12.75,
+    6.46
+  ],
+  "views": {
+    "entrance": {
+      "position": [
+        6.78,
+        5.66,
+        1.6
+      ],
+      "target": [
+        9.3,
+        7.1,
+        1.03
+      ],
+      "fov": 66
+    },
+    "dining": {
+      "position": [
+        6.0,
+        8.7,
+        1.6
+      ],
+      "target": [
+        9.5,
+        5.7,
+        1.0
+      ],
+      "fov": 64
+    },
+    "seated": {
+      "position": [
+        11.23,
+        2.76,
+        1.12
+      ],
+      "target": [
+        11.42,
+        5.72,
+        0.9
+      ],
+      "fov": 65
+    },
+    "fireplace": {
+      "position": [
+        9.7,
+        4.34,
+        1.58
+      ],
+      "target": [
+        13.65,
+        4.7,
+        1.0
+      ],
+      "fov": 62
+    },
+    "reverse": {
+      "position": [
+        12.9,
+        7.88,
+        1.6
+      ],
+      "target": [
+        9.92,
+        4.7,
+        0.95
+      ],
+      "fov": 64
+    },
+    "details": {
+      "position": [
+        8.48,
+        5.82,
+        1.22
+      ],
+      "target": [
+        7.78,
+        7.1,
+        0.64
+      ],
+      "fov": 53
+    },
+    "overview": {
+      "position": [
+        17,
+        13,
+        15
+      ],
+      "target": [
+        9.4,
+        4.6,
+        0.6
+      ],
+      "fov": 48,
+      "cutaway": true
+    },
+    "drinks": {
+      "position": [
+        7.25,
+        8.92,
+        1.58
+      ],
+      "target": [
+        5.28,
+        8.56,
+        1.12
+      ],
+      "fov": 57
+    }
+  },
+  "view": {
+    "id": "2445666-0",
+    "position": [
+      11.05,
+      0.94,
+      0
+    ],
+    "direction": [
+      0,
+      1,
+      -0.04
+    ]
+  },
+  "status": "isolated validation",
+  "sources": [
+    {
+      "title": "Ethnicraft extending-table dimensions",
+      "url": "https://media.ethnicraft.com/sys-master/s3_content_medias/hf1/hbb/8833260945438/Furniture_NoveltiesSept21_digital_web.pdf"
+    },
+    {
+      "title": "Ethnicraft chair dimension drawing",
+      "url": "https://media.ethnicraft.com/sys-master/s3_product_medias/h3d/h9c/8805130371102/10151491_LD.pdf"
+    }
+  ],
+  "hallDoors": [
+    {
+      "label": "dining west door",
+      "hinge": [
+        6.148,
+        5.21,
+        0.02
+      ],
+      "axis": [
+        1,
+        0
+      ],
+      "width": 0.632,
+      "openDegrees": 130,
+      "opening": [
+        6.786,
+        5.1,
+        0
+      ],
+      "aperture": 1.297
+    },
+    {
+      "label": "dining east door",
+      "hinge": [
+        7.424,
+        5.21,
+        0.02
+      ],
+      "axis": [
+        -1,
+        0
+      ],
+      "width": 0.632,
+      "openDegrees": -155,
+      "opening": [
+        6.786,
+        5.1,
+        0
+      ],
+      "aperture": 1.297
+    },
+    {
+      "label": "drawing north door",
+      "hinge": [
+        9.06,
+        4.891,
+        0.02
+      ],
+      "axis": [
+        0,
+        -1
+      ],
+      "width": 0.54,
+      "openDegrees": 90,
+      "opening": [
+        8.95,
+        4.345,
+        0
+      ],
+      "aperture": 1.112
+    },
+    {
+      "label": "drawing south door",
+      "hinge": [
+        9.06,
+        3.8,
+        0.02
+      ],
+      "axis": [
+        0,
+        1
+      ],
+      "width": 0.54,
+      "openDegrees": -90,
+      "opening": [
+        8.95,
+        4.345,
+        0
+      ],
+      "aperture": 1.112
+    }
+  ],
+  "drinksCabinet": [
+    5.075,
+    7.99,
+    5.505,
+    9.15
+  ],
+  "viewLabels": {
+    "drinks": "Drinks cabinet"
+  }
+}

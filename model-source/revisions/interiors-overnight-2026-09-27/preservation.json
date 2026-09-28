@@ -3,13 +3,274 @@
   "reports": [
     {
       "variant": "compact",
-      "unchanged_previous_meshes": 11791,
+      "unchanged_previous_meshes": 7780,
       "unchanged_kitchen_lounge_meshes": 1028,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 3822,
-      "exactly_verified_rehung_door_parts": 7,
+      "declared_replaced_parts": 7704,
+      "exactly_verified_declared_transform_parts": 125,
+      "bounded_source_corrections": [
+        {
+          "source": "Boundary hedge",
+          "retained_outside_vertices": 117,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.001",
+          "retained_outside_vertices": 114,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.002",
+          "retained_outside_vertices": 116,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.003",
+          "retained_outside_vertices": 116,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.004",
+          "retained_outside_vertices": 120,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.081",
+          "retained_outside_vertices": 90,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Proposal revision | Boundary hedge.080",
+          "retained_outside_vertices": 97,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ],
+            [
+              13.35,
+              25.0,
+              0.52,
+              14.146,
+              25.89,
+              2.72
+            ]
+          ]
+        },
+        {
+          "source": "Proposal revision | Boundary hedge.057",
+          "retained_outside_vertices": 108,
+          "cutter_volumes": [
+            [
+              -24.320000457763673,
+              21.416999053955077,
+              -0.5094424664974213,
+              -17.769999694824218,
+              25.876000213623048,
+              2.280557533502579
+            ]
+          ]
+        },
+        {
+          "source": "Proposal revision | Boundary hedge.058",
+          "retained_outside_vertices": 108,
+          "cutter_volumes": [
+            [
+              -24.320000457763673,
+              21.416999053955077,
+              -0.5094424664974213,
+              -17.769999694824218,
+              25.876000213623048,
+              2.280557533502579
+            ]
+          ]
+        },
+        {
+          "source": "Proposal revision | Boundary hedge.059",
+          "retained_outside_vertices": 108,
+          "cutter_volumes": [
+            [
+              -24.320000457763673,
+              21.416999053955077,
+              -0.5094424664974213,
+              -17.769999694824218,
+              25.876000213623048,
+              2.280557533502579
+            ]
+          ]
+        },
+        {
+          "source": "Proposal revision | Boundary hedge.060",
+          "retained_outside_vertices": 108,
+          "cutter_volumes": [
+            [
+              -24.320000457763673,
+              21.416999053955077,
+              -0.5094424664974213,
+              -17.769999694824218,
+              25.876000213623048,
+              2.280557533502579
+            ]
+          ]
+        },
+        {
+          "source": "Proposal revision | Boundary hedge.061",
+          "retained_outside_vertices": 118,
+          "cutter_volumes": [
+            [
+              -24.320000457763673,
+              21.416999053955077,
+              -0.5094424664974213,
+              -17.769999694824218,
+              25.876000213623048,
+              2.280557533502579
+            ]
+          ]
+        },
+        {
+          "source": "Proposal revision | Boundary hedge.092",
+          "retained_outside_vertices": 112,
+          "cutter_volumes": [
+            [
+              -24.320000457763673,
+              21.416999053955077,
+              -0.5094424664974213,
+              -17.769999694824218,
+              25.876000213623048,
+              2.280557533502579
+            ]
+          ]
+        },
+        {
+          "source": "Proposal | Loggia step",
+          "verified_step_bounds": [
+            13.95,
+            19.77,
+            0.18000000000000002,
+            14.32,
+            23.34,
+            0.3722935080528259
+          ],
+          "risers": [
+            0.1722935080528259,
+            0.17229350805282595
+          ]
+        },
+        {
+          "source": "Proposal | Pool terrace retaining kerb.007",
+          "retained_outside_vertices": 8,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.001",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.002",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.003",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.004",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.005",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.006",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.007",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.008",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        },
+        {
+          "source": "Proposal | Workshop approach stepping stone.009",
+          "owner_requested_removal": "Workshop approach stepping stones, 27 September"
+        }
+      ],
       "retained_shared_skirtings": [
         {
           "source": "Bathroom east | skirting end1",
@@ -35,7 +296,7 @@
         },
         {
           "area": "gym",
-          "mesh_objects": 306,
+          "mesh_objects": 277,
           "lights": 3
         },
         {
@@ -82,18 +343,186 @@
           "area": "bedroom4",
           "mesh_objects": 279,
           "lights": 7
+        },
+        {
+          "area": "formal",
+          "mesh_objects": 440,
+          "lights": 7
+        },
+        {
+          "area": "sidebed",
+          "mesh_objects": 382,
+          "lights": 8
+        },
+        {
+          "area": "loftsuite",
+          "mesh_objects": 495,
+          "lights": 8
+        },
+        {
+          "area": "hobby",
+          "mesh_objects": 527,
+          "lights": 10
+        },
+        {
+          "area": "arrival",
+          "mesh_objects": 620,
+          "lights": 8
+        },
+        {
+          "area": "landings",
+          "mesh_objects": 1027,
+          "lights": 6
+        },
+        {
+          "area": "garage",
+          "mesh_objects": 106,
+          "lights": 4
+        },
+        {
+          "area": "gardenhouse",
+          "mesh_objects": 183,
+          "lights": 4
+        },
+        {
+          "area": "office",
+          "mesh_objects": 472,
+          "lights": 3
+        },
+        {
+          "area": "terrace",
+          "mesh_objects": 452,
+          "lights": 2
+        },
+        {
+          "area": "poolgarden",
+          "mesh_objects": 350,
+          "lights": 2
+        },
+        {
+          "area": "workshop",
+          "mesh_objects": 209,
+          "lights": 2
         }
       ]
     },
     {
       "variant": "planning",
-      "unchanged_previous_meshes": 10978,
+      "unchanged_previous_meshes": 7082,
       "unchanged_kitchen_lounge_meshes": 919,
       "unchanged_principal_suite_meshes": 862,
       "maximum_expected_vertex_difference_m": 8.392333974427402e-07,
       "source_reconstruction_preserved": true,
-      "declared_replaced_parts": 3820,
-      "exactly_verified_rehung_door_parts": 7,
+      "declared_replaced_parts": 7603,
+      "exactly_verified_declared_transform_parts": 125,
+      "bounded_source_corrections": [
+        {
+          "source": "Boundary hedge",
+          "retained_outside_vertices": 117,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.001",
+          "retained_outside_vertices": 114,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.002",
+          "retained_outside_vertices": 116,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.003",
+          "retained_outside_vertices": 116,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.004",
+          "retained_outside_vertices": 120,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.080",
+          "retained_outside_vertices": 110,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ],
+            [
+              13.35,
+              25.0,
+              0.52,
+              14.146,
+              25.89,
+              2.72
+            ]
+          ]
+        },
+        {
+          "source": "Boundary hedge.081",
+          "retained_outside_vertices": 90,
+          "cutter_volumes": [
+            [
+              14.145,
+              19.455,
+              0.15,
+              16.385,
+              26.415,
+              3.045
+            ]
+          ]
+        }
+      ],
       "retained_shared_skirtings": [
         {
           "source": "Bathroom east | skirting end1",
@@ -119,7 +548,7 @@
         },
         {
           "area": "gym",
-          "mesh_objects": 306,
+          "mesh_objects": 277,
           "lights": 3
         },
         {
@@ -166,6 +595,51 @@
           "area": "bedroom4",
           "mesh_objects": 279,
           "lights": 7
+        },
+        {
+          "area": "formal",
+          "mesh_objects": 440,
+          "lights": 7
+        },
+        {
+          "area": "sidebed",
+          "mesh_objects": 382,
+          "lights": 8
+        },
+        {
+          "area": "loftsuite",
+          "mesh_objects": 495,
+          "lights": 8
+        },
+        {
+          "area": "hobby",
+          "mesh_objects": 527,
+          "lights": 10
+        },
+        {
+          "area": "arrival",
+          "mesh_objects": 620,
+          "lights": 8
+        },
+        {
+          "area": "landings",
+          "mesh_objects": 1027,
+          "lights": 6
+        },
+        {
+          "area": "garage",
+          "mesh_objects": 106,
+          "lights": 4
+        },
+        {
+          "area": "gardenhouse",
+          "mesh_objects": 195,
+          "lights": 4
+        },
+        {
+          "area": "office",
+          "mesh_objects": 472,
+          "lights": 3
         }
       ]
     }

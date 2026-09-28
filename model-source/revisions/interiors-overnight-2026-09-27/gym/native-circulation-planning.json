@@ -1,17 +1,22 @@
 {
   "status": "PASS",
   "variant": "planning",
-  "source": "output-proposed-planning/navigation.json",
-  "sourceSha256": "f1875ef444d3661a3bfc04e57673ae2ef1d50e3ecdf1c83140937679ff778f75",
+  "source": "/Users/r.parker/Documents/GitHub/ashley-heights-model/output-proposed-planning/navigation.json",
+  "sourceSha256": "fe42ff356751488f357ddc615afa30f54f507693cc9e80a6904caec7e2440ba2",
   "results": [
     {
       "state": "ordinary",
       "bodyWidth": 0.6,
-      "reachable": 62257,
+      "reachable": 63747,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -26,22 +31,22 @@
         },
         {
           "label": "bench west side",
-          "distance": 0,
-          "reachable": true
-        },
-        {
-          "label": "bench east side",
           "distance": 0.004999999999999005,
           "reachable": true
         },
         {
-          "label": "left dumbbell pair",
-          "distance": 0.005000000000000782,
+          "label": "bench east side",
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
-          "label": "right dumbbell pair",
-          "distance": 0.005000000000000782,
+          "label": "dumbbell rack south",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "dumbbell rack north",
+          "distance": 0.004999999999999005,
           "reachable": true
         }
       ]
@@ -49,11 +54,16 @@
     {
       "state": "running",
       "bodyWidth": 0.6,
-      "reachable": 38151,
+      "reachable": 39760,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -71,11 +81,16 @@
     {
       "state": "rowing",
       "bodyWidth": 0.6,
-      "reachable": 40947,
+      "reachable": 40986,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -93,33 +108,16 @@
     {
       "state": "cycling",
       "bodyWidth": 0.6,
-      "reachable": 59636,
+      "reachable": 60289,
       "checks": [
         {
-          "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
           "reachable": true
         },
         {
-          "label": "utility",
-          "distance": 0.007071067811866581,
-          "reachable": true
-        },
-        {
-          "label": "water",
-          "distance": 0.005000000000000782,
-          "reachable": true
-        }
-      ]
-    },
-    {
-      "state": "cable",
-      "bodyWidth": 0.6,
-      "reachable": 52530,
-      "checks": [
-        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {
@@ -137,11 +135,16 @@
     {
       "state": "strength",
       "bodyWidth": 0.6,
-      "reachable": 51627,
+      "reachable": 55826,
       "checks": [
         {
+          "label": "inside the gym doorway",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
           "label": "courtyard",
-          "distance": 0.004999999999999005,
+          "distance": 0.007071067811864069,
           "reachable": true
         },
         {

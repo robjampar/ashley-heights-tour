@@ -1,0 +1,223 @@
+{
+  "room": "Shared roof terrace",
+  "revision": 1,
+  "variants": [
+    "compact"
+  ],
+  "floorZ": 2.8,
+  "ceilingZ": 5.3,
+  "bounds": [
+    -5.02,
+    8.69,
+    4.68,
+    14.32
+  ],
+  "usableBounds": [
+    -4.845,
+    9.05,
+    4.505,
+    14.115
+  ],
+  "rooflights": [
+    [
+      -1.0,
+      10.1,
+      0.0,
+      11.1
+    ],
+    [
+      0.7,
+      10.1,
+      1.7,
+      11.1
+    ],
+    [
+      2.4,
+      10.1,
+      3.4,
+      11.1
+    ]
+  ],
+  "sofa": [
+    -3.78,
+    11.13,
+    -2.86,
+    13.13
+  ],
+  "loungeChairs": [
+    [
+      -1.54,
+      11.15,
+      -0.7,
+      11.95
+    ],
+    [
+      -1.54,
+      12.23,
+      -0.7,
+      13.03
+    ]
+  ],
+  "coffeeTable": [
+    -2.43,
+    11.8,
+    -1.91,
+    12.58
+  ],
+  "cafeTable": {
+    "center": [
+      2.05,
+      11.92
+    ],
+    "diameter": 1.05,
+    "height": 0.74
+  },
+  "diningChairs": [
+    {
+      "center": [
+        2.05,
+        11.0
+      ],
+      "rotation": 3.141592653589793
+    },
+    {
+      "center": [
+        2.97,
+        11.92
+      ],
+      "rotation": -1.5707963267948966
+    },
+    {
+      "center": [
+        2.05,
+        12.84
+      ],
+      "rotation": 0
+    },
+    {
+      "center": [
+        1.13,
+        11.92
+      ],
+      "rotation": 1.5707963267948966
+    }
+  ],
+  "cushionBox": [
+    -0.3,
+    9.18,
+    0.9,
+    9.66
+  ],
+  "planters": [
+    [
+      1.25,
+      9.43,
+      0.23
+    ],
+    [
+      -0.79,
+      9.43,
+      0.22
+    ]
+  ],
+  "view": {
+    "id": "proposal-shared-roof-terrace",
+    "position": [
+      -2.59,
+      10.15,
+      2.8
+    ],
+    "direction": [
+      0.2,
+      1,
+      -0.1
+    ]
+  },
+  "views": {
+    "entrance": {
+      "position": [
+        -2.59,
+        9.45,
+        4.4
+      ],
+      "target": [
+        -0.2,
+        12.3,
+        3.45
+      ],
+      "fov": 68
+    },
+    "lounge": {
+      "position": [
+        -0.05,
+        10.98,
+        4.35
+      ],
+      "target": [
+        -2.75,
+        12.24,
+        3.35
+      ],
+      "fov": 62
+    },
+    "seated": {
+      "position": [
+        -3.4,
+        12.08,
+        3.96
+      ],
+      "target": [
+        1.5,
+        12.0,
+        3.5
+      ],
+      "fov": 64
+    },
+    "dining": {
+      "position": [
+        3.81,
+        13.44,
+        4.35
+      ],
+      "target": [
+        1.87,
+        11.9,
+        3.35
+      ],
+      "fov": 62
+    },
+    "details": {
+      "position": [
+        -2.95,
+        11.0,
+        3.9
+      ],
+      "target": [
+        -3.32,
+        11.72,
+        3.23
+      ],
+      "fov": 48
+    },
+    "overview": {
+      "position": [
+        8.7,
+        18.5,
+        13.2
+      ],
+      "target": [
+        -0.2,
+        11.5,
+        3.1
+      ],
+      "fov": 49,
+      "cutaway": true
+    }
+  },
+  "limitations": [
+    "This terrace exists in Proposed only. Planning retains its existing roof and window.",
+    "The roof outline, three flush rooflights, drainage, guards and west privacy screen remain. Furniture stays clear of the rooflights and is set back from the outer guards.",
+    "Four caf\u00e9 places and a separate four-place sitting group use the terrace in different ways; the indoor formal table provides larger dining capacity.",
+    "Existing roof construction, loading, waterproofing, wind restraint, guards and rooflight specification require project-specific detailed design. Loose cushions are stored indoors in bad weather."
+  ]
+}

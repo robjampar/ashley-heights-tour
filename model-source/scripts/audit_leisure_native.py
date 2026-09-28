@@ -15,6 +15,7 @@ def signature(ob):
         # Compare actual evaluated world vertices and faces, including bevels and handles.
         data={'vertices':[[float(v)for v in evaluated.matrix_world@p.co]for p in mesh.vertices],
               'faces':[list(p.vertices)for p in mesh.polygons]}
+        vv=data['vertices'];data['bounds']=[min(v[i]for v in vv)for i in range(3)]+[max(v[i]for v in vv)for i in range(3)]if vv else[0]*6
         return data
     finally:evaluated.to_mesh_clear()
 def inventory(active,prefix):
@@ -32,6 +33,7 @@ def compare_meshes(full,isolated,area):
         for part in parts:
             matches=[]
             for i,candidate in enumerate(candidates):
+                if max(abs(x-y)for x,y in zip(part['bounds'],candidate['bounds']))>=.00003:continue
                 if part['faces']!=candidate['faces']or len(part['vertices'])!=len(candidate['vertices']):continue
                 error=max((abs(x-y)for a,b in zip(part['vertices'],candidate['vertices'])for x,y in zip(a,b)),default=0)
                 matches.append((error,i))
@@ -39,7 +41,10 @@ def compare_meshes(full,isolated,area):
             error,i=min(matches);assert error<.00003,(area,name,'world-vertex difference',error)
             maximum=max(maximum,error);candidates.pop(i)
     return maximum
-for area in ('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4'):
+all_areas=('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4','formal','sidebed','loftsuite','hobby','arrival','landings','garage','gardenhouse','office')+(('terrace','poolgarden','workshop')if variant=='compact'else())
+selected=sys.argv[sys.argv.index('--')+2:]
+assert all(a in all_areas for a in selected),selected
+for area in (tuple(selected)if selected else all_areas):
     prefix=area.title()+' 01 | '
     full=inventory(scene,prefix)
     study_path=ROOT/f'revisions/interiors-overnight-2026-09-27/{area}/{variant}'/(area.title()+' — interior study.blend')
@@ -66,6 +71,7 @@ for area in ('cinema','bar','gym','utility','guest','guestbath','family','cloakr
             rays.append({'seat':seat+1,'target':list(target),'hit':name})
     reports.append({'area':area,'matching_study_meshes':sum(map(len,full.values())),'preserved_context_parts_outside_room':context,'maximum_world_vertex_difference_m':maximum,'screen_rays':rays})
 assert hashlib.sha256(native.read_bytes()).hexdigest()==digest
-out=ROOT/f'revisions/interiors-overnight-2026-09-27/native-{variant}.json'
+suffix='-'+'-'.join(selected)if selected else''
+out=ROOT/f'revisions/interiors-overnight-2026-09-27/native-{variant}{suffix}.json'
 out.write_text(json.dumps({'status':'PASS','variant':variant,'source_sha256':digest,'source_unchanged':True,'reports':reports},indent=2)+'\n')
 print('PASS native leisure rooms',variant,[(r['area'],r['matching_study_meshes'],r['maximum_world_vertex_difference_m'],len(r['screen_rays']))for r in reports],flush=True)

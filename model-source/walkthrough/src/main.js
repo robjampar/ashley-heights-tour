@@ -1,3 +1,4 @@
+import {loadModel} from './model-delivery.js';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
@@ -214,7 +215,7 @@ async function load(){
  ],{budget:touch.enabled?4:6});
  lighting.info.localBounceLights=localLights.info.budget;lighting.info.roomFills=localLights.info;
  if(data.modelUpdatedAt){const stamp=new Date(data.modelUpdatedAt);$('model-version').textContent='Updated '+new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Europe/London'}).format(stamp);$('model-version').title=stamp.toLocaleString('en-GB',{timeZone:'Europe/London'})+' · London time';}
- const loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);const gltf=await new Promise((resolve,reject)=>loader.load((new URL('./'+DESIGN_ASSETS[currentDesign].model,import.meta.url)).href,resolve,e=>{const pc=e.total?Math.round(e.loaded/e.total*75):35;$('progress').style.width=pc+'%';$('load-status').textContent='Loading model · '+pc+'%';},reject));
+ const loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);const gltf=await loadModel(loader,(new URL('./'+DESIGN_ASSETS[currentDesign].model,import.meta.url)).href,e=>{const pc=e.total?Math.round(e.loaded/e.total*75):35;$('progress').style.width=pc+'%';$('load-status').textContent='Loading model · '+pc+'%';});
  $('load-status').textContent='Preparing the rooms…';$('progress').style.width='85%';await new Promise(r=>setTimeout(r,20));
  gltf.scene.updateMatrixWorld(true);const hide=new Set(data.hiddenObjects),batches=createSpatialBatcher({cellSize:6,floorHeight:2.8,minMaterialTriangles:20000,indexVertices:false}),materials=new Map();
  doors=new DoorMotion(scene,data.interactiveDoors);

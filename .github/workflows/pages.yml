@@ -1,0 +1,114 @@
+name: Publish Ashley Heights tours
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      staged_rollout:
+        description: Replay the three cache-safe publication stages
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      staged: ${{ steps.plan.outputs.staged }}
+      stages: ${{ steps.plan.outputs.stages }}
+    steps:
+      - uses: actions/checkout@v6
+      - id: plan
+        env:
+          BEFORE: ${{ github.event.before }}
+          REQUEST_STAGED: ${{ inputs.staged_rollout }}
+        run: |
+          python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          base=json.loads(Path('model-source/publication-rollout/rollout.json').read_text())['base_commit']
+          staged=os.environ.get('BEFORE')==base or os.environ.get('REQUEST_STAGED')=='true'
+          with open(os.environ['GITHUB_OUTPUT'],'a')as out:
+              out.write('staged='+str(staged).lower()+'\n')
+              out.write('stages='+json.dumps([1,2,3]if staged else [3])+'\n')
+          PY
+  build:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        stage: ${{ fromJSON(needs.plan.outputs.stages) }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - name: Select cache-compatible model package
+        if: matrix.stage != 3
+        env:
+          STAGE: ${{ matrix.stage }}
+        run: |
+          python3 - <<'PY'
+          import os,shutil
+          shutil.rmtree('model')
+          shutil.copytree('model-source/publication-rollout/stage-'+os.environ['STAGE']+'/model','model')
+          PY
+      - name: Validate and package complete public tours
+        run: python3 model-source/scripts/pages_artifact.py --repo . --output "$RUNNER_TEMP/ashley-pages"
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          name: github-pages-stage-${{ matrix.stage }}
+          path: ${{ runner.temp }}/ashley-pages
+  deploy-bedroom-kitchen:
+    needs: [plan, build]
+    if: needs.plan.outputs.staged == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish bedroom and kitchen studies
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-stage-1
+  deploy-room-studies:
+    needs: deploy-bedroom-kitchen
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Allow preceding HTML caches to expire
+        run: sleep 1800
+      - name: Publish remaining room studies
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-stage-2
+  deploy-full-tour:
+    needs: [plan, build, deploy-room-studies]
+    if: always() && needs.build.result == 'success' && (needs.plan.outputs.staged == 'false' || needs.deploy-room-studies.result == 'success')
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Allow preceding HTML caches to expire
+        if: needs.plan.outputs.staged == 'true'
+        run: sleep 1800
+      - name: Publish complete tour and brochure
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-stage-3

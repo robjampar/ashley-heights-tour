@@ -14,11 +14,12 @@ try{
   const result=await page.evaluate(()=>{
    const w=walkthrough;w.startDrag();w.setLife('people',false);w.setLife('cars',false);
    const names=w.inspector.pickables().flatMap(m=>m.userData.spatialBatch?.sourceNames??[]);
-   return {interior:w.data.principalInterior,kitchen:w.data.interiorDesign,mirrors:w.mirrors.reduce((n,m)=>n+m.userData.mirrorPlaneCount,0),mirrorGroups:w.mirrors.length,
+   const suiteMirrors=w.mirrors.filter(m=>/^(Basin mirror|Dressing mirror)/.test(m.name));
+   return {interior:w.data.principalInterior,kitchen:w.data.interiorDesign,mirrors:suiteMirrors.reduce((n,m)=>n+m.userData.mirrorPlaneCount,0),mirrorGroups:suiteMirrors.length,
     features:['wall-backed upholstered headboard','desk top rounded L','oval bath hollow shell','window drawer front','bath window obscure pane','TV inset glass','rotary dial'].map(term=>({term,count:names.filter(n=>n.replaceAll('_',' ').toLowerCase().includes(term.toLowerCase())).length})),
     rooms:w.data.principalInterior.rooms};
   });
-  assert.equal(result.interior.bedroomRevision,3);assert.equal(result.interior.ensuiteRevision,2);assert(result.interior.integrated);assert.equal(result.kitchen.revision,2);assert.equal(result.mirrors,3);assert.equal(result.mirrorGroups,2);
+  assert.equal(result.interior.bedroomRevision,4);assert.equal(result.interior.ensuiteRevision,3);assert(result.interior.integrated);assert.equal(result.kitchen.revision,2);assert.equal(result.mirrors,3);assert.equal(result.mirrorGroups,2);
   assert(result.features.every(f=>f.count>0),JSON.stringify(result.features));
   for(const id of result.rooms){
    await page.locator('#rooms').selectOption(id);

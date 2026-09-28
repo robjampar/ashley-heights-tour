@@ -1,0 +1,69 @@
+{
+  "source": "proposal/interiors/principal/accepted/compact/suite.blend",
+  "sourceSha256": "f61b77feba662a49f2c82629e97ff0d681bc38df81cd150e4ff7b51c281110e6",
+  "sourceSaved": false,
+  "geometryChanged": false,
+  "camera": {
+    "pos": [
+      11.75,
+      -6.79,
+      4.19
+    ],
+    "target": [
+      12.82,
+      -4.23,
+      3.49
+    ],
+    "fov": 65,
+    "lights": [
+      [
+        "bath window daylight",
+        [
+          13.66,
+          -4.3,
+          4.4
+        ],
+        [
+          11.7,
+          -4.3,
+          3.7
+        ],
+        140,
+        1.5,
+        [
+          1,
+          0.96,
+          0.88
+        ]
+      ],
+      [
+        "bath ceiling bounce",
+        [
+          11.65,
+          -5.7,
+          5.12
+        ],
+        [
+          11.65,
+          -5.7,
+          3.8
+        ],
+        40,
+        1.4,
+        [
+          1,
+          0.88,
+          0.73
+        ]
+      ]
+    ]
+  },
+  "samples": 40,
+  "resolution": [
+    1500,
+    1000
+  ],
+  "renderEngine": "Cycles Metal",
+  "finish": "ivory render, oak panels, source tiled roof",
+  "lighting": "Nishita daylight and photographic bounce; source fittings retained"
+}

@@ -1,0 +1,38 @@
+{
+  "base_commit": "abc04e9535df6b055222b36dee5b92b65430ed77",
+  "stages": [
+    {
+      "stage": 1,
+      "model_directory": "output/publication-rollout/stage-1/model",
+      "public_bytes_without_missing_original_files": 967136433,
+      "budget_headroom_bytes": 32863567,
+      "retained_previous_assets": 18,
+      "active_assets": 256
+    },
+    {
+      "stage": 2,
+      "model_directory": "output/publication-rollout/stage-2/model",
+      "public_bytes_without_missing_original_files": 905179240,
+      "budget_headroom_bytes": 94820760,
+      "retained_previous_assets": 32,
+      "active_assets": 315
+    },
+    {
+      "stage": 3,
+      "model_directory": "output/publication-rollout/stage-3/model",
+      "public_bytes_without_missing_original_files": 907020124,
+      "budget_headroom_bytes": 92979876,
+      "retained_previous_assets": 13,
+      "active_assets": 450
+    }
+  ],
+  "missing_original_tour_files": [],
+  "status": "prepared locally; not deployed",
+  "requirements": [
+    "Restore original tour files and recheck actual budget.",
+    "Upload and verify brochure release downloads before stage 3.",
+    "Confirm each deployment succeeded; wait at least 1800 seconds before the next stage.",
+    "Replace only model/ with the stage model directory; retain the complete original tour.",
+    "Run pages_artifact.py before each commit and push."
+  ]
+}

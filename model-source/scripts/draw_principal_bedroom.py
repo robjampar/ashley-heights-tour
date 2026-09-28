@@ -4,12 +4,19 @@ import json, math
 from shapely.geometry import Polygon, box, LineString, Point
 from shapely.ops import unary_union
 from principal_room_geometry import desk_outline
+from principal_gable_wall import mesh_parts
 ROOT=Path(__file__).resolve().parents[1];cfg=json.loads((ROOT/'proposal/interiors/principal/bedroom.json').read_text());out=ROOT/'revisions/interiors-principal-2026-09-26/bedroom'
 shift=cfg.get('suite_shift_m',0)
 room=Polygon(cfg['bedroom_polygon']);alcove=Polygon(cfg['alcove_polygon']);reserved=Polygon(cfg['reserved_polygon'])
 # Only the central strip of the vault is part of standing circulation.
 walkable=unary_union([room,box(4.07,-13.49,5.17,-12.39)])
 rects={'bed':[10.13,-15.926,12.17,-13.846],'left bedside':[9.475,-15.895,10.085,-15.385],'right bedside':[12.215,-15.895,12.825,-15.385],'bench':[10.325,-13.36,11.975,-12.94],'sofa':[5.83,-11.625,8.13,-10.675],'coffee table':[6.43,-10.275,7.53,-9.775],'sofa media':[5.58,-9.24,8.38,-8.83],'bed media':[9.95,-10.76-shift,12.35,-10.35-shift],'desk':cfg['desk']['bounds'],'desk return':cfg['desk']['return_bounds'],'occupied desk':cfg['desk']['chair_operation'],'side table':[5.24,-11.54,5.68,-11.10],'floor lamp':[5.34,-10.91,5.64,-10.61],'planter':[13.009,-12.910,13.740,-12.168],'east curtains lower':[13.55,-15.72,13.67,-15.42],'east curtains upper':[13.55,-13.79,13.67,-13.49]}
+gable_config=json.loads((ROOT/'proposal/interiors/principal/gable-wall.json').read_text())
+gable_spec=json.loads((ROOT/'proposal/design-spec-compact.json').read_text())
+gable_report,gable_parts=mesh_parts(gable_spec,gable_config)
+for part in gable_parts:
+ if part['obstacle']['bottom']<cfg['floor_z']+.01:
+  rects[part['name']]=part['obstacle']['box']
 # Main shared routes deliberately omit the locally narrower retained doorway.
 routes={
  'main spine':([[9.10,-10.50],[9.10,-12.1],[8.6,-13.05],[8.6,-14.75]],1.2),
@@ -34,6 +41,8 @@ assert not entryhits,entryhits
 assert abs((-15.926-.11-.04)-cfg['bed']['headboard_wall_y'])<1e-8
 for c in checks:assert c['pass'],c
 report={'revision':cfg['revision'],'status':'PASS','routes':checks,'entry':{'opening_m':.95,'estimated_clear_at_90_deg_m':.928,'furniture_hits':entryhits},'bed':{'headboard_contacts_wall_through_panel':True,'mattress_m':[1.8,2.0],'frame_m':[2.04,2.08],'bedside_width_m':.6,'east_access_below_bedside_to_curtains_m':1.38,'main_foot_route_m':1.2,'bench_gap_to_bed_m':.486},'seating':{'coffee_table_gap_m':.4,'sofa_width_m':2.3,'fixed_screens':2},'desk':{'side_lengths_m':[1.8,1.8],'depth_m':.7,'inner_corner_radius_m':.30,'outer_corner_radius_m':.25,'chair_operation_depth_m':1.10,'separate_passing_route_m':1.0},'reserved_north_wing_m2':round(reserved.area,2),'limitations':['Clearances derive from the current design model, not a measured site survey','Revised adjoining bathroom and wardrobe have their own furnished review; services remain unresolved','Native ray tests are reported separately for each variant']}
+report['gable_wall']=gable_report
+report['limitations'].append('Gable opening is 1.70 m high: plan-route widths do not imply standing headroom; ducking is required. Floor beam remains a structural concept.')
 (out/'measurements.json').write_text(json.dumps(report,indent=2)+'\n')
 # A simple architectural drawing in the same coordinate system as the native model.
 S=66;OX=40;OY=106;X=lambda x:OX+(x-3)*S;Y=lambda y:OY+(-2.65-y)*S
@@ -52,7 +61,7 @@ rect([3.49,-15.86,5.16,-13.54],'#d0c9bc');rect([3.49,-12.34,5.16,-10.02],'#d0c9b
 rect([9.4,-15.90,12.9,-12.72],'#d7cebc');rect([5.39,-11.83,8.49,-9.21],'#ddd6c9')
 for name,r in rects.items():
  if name in('occupied desk','east curtains lower','east curtains upper','desk','desk return'):continue
- rect(r,'#f7f3e9'if name in('bed','sofa','bench')else'#c5ac88',radius=4 if name in('bed','sofa','coffee table')else 1)
+ rect(r,'#535c52' if name.startswith('Principal gable wall | ') else '#f7f3e9'if name in('bed','sofa','bench')else'#c5ac88',radius=4 if name in('bed','sofa','coffee table')else 1)
 rect([10.25,-15.7,11.07,-15.25],'#fffdf6',radius=6);rect([11.23,-15.7,12.05,-15.25],'#fffdf6',radius=6)
 rect([10.20,-14.39,12.10,-13.99],'#aaa08c');rect([9.34,-16.076,12.96,-16.036],'#9e7955');rect([10.09,-16.036,12.21,-15.926],'#b8aa94')
 poly(desk_outline(),'#c5ac88');rect([6.48,-14.99,7.02,-14.31],'#f7f3e9',radius=6)
@@ -66,7 +75,7 @@ for name in('main spine','bed right','desk approach with chair occupied','vault 
 txt(11.85,-5.1,'DRESSING + ENSUITE','label');txt(11.85,-5.5,f'{reserved.area:.1f} m² adjoining wing');txt(11.85,-5.9,'See the furnished adjoining-room review');txt(11.85,-6.3,'Bathroom services unresolved')
 txt(8.94,-8.30,'ENTRY');txt(6.98,-11.25,'SOFA','label');txt(11.15,-14.91,'1.8 × 2 m','label');txt(11.15,-12.43,'CLEAR FOOT ROUTE');txt(7.70,-14.84,'L DESK');txt(4.31,-11.55,'LOW VAULT');txt(4.31,-14.5,'LOW VAULT')
 # Side notes, away from the room drawing.
-notes=[('01  A real headboard wall','Existing solid south wall.','Two 600 mm bedsides and reading lights.'),('02  Straight-ahead viewing','85-inch bed TV; 55-inch sofa TV.','Both fixed. No rotating mechanism.'),('03  Two complete furniture groups','2.3 m sofa, coffee table and side table.','400 mm sofa-to-table reach gap.'),('04  Room to move','1.2 m central route after the entrance.','1 m checked side and desk routes.'),('05  Desk beside daylight','Equal 1.8 m L sides; curved inner corner.','Swivel chair; 1 m separate passing.'),('06  Requested window changes','Middle + wardrobe windows shift 750 mm.','New east window behind the bath.')]
+notes=[('01  A real headboard wall','Existing solid south wall.','Two 600 mm bedsides and reading lights.'),('02  Straight-ahead viewing','Matching fixed 85-inch screens.','Both fixed. No rotating mechanism.'),('03  Two complete furniture groups','2.3 m sofa, coffee table and side table.','400 mm sofa-to-table reach gap.'),('04  Room to move','1.2 m central route after the entrance.','1 m checked side and desk routes.'),('05  Desk beside daylight','Equal 1.8 m L sides; curved inner corner.','Swivel chair; 1 m separate passing.'),('06  Requested window changes','Middle + wardrobe windows shift 750 mm.','New east window behind the bath.')]
 for i,(title,a,b)in enumerate(notes):
  yy=190+i*122;svg.append(f'<text x="825" y="{yy}" font-size="16" font-weight="600">{title}</text><text x="825" y="{yy+27}" font-size="13">{a}</text><text x="825" y="{yy+48}" font-size="13">{b}</text>')
 svg.append('<text x="64" y="1037" font-size="13">Model-based dimensions · 950 mm nominal entry opening · Native eye-level views accompany this plan</text>')

@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "sidebed",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "vanity",
+        "shower",
+        "overview"
+      ],
+      "objects": 442,
+      "cutaway": 25,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-side-wing-south-bedroom"
+    },
+    {
+      "area": "sidebed",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Sidebed woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "bed",
+        "wardrobe",
+        "bathroom",
+        "vanity",
+        "shower",
+        "overview"
+      ],
+      "objects": 442,
+      "cutaway": 25,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-side-wing-south-bedroom"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

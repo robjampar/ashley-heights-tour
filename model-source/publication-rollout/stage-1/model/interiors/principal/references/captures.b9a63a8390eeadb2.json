@@ -1,0 +1,110 @@
+[
+  {
+    "design": "compact",
+    "name": "bedroom",
+    "position": [
+      5.82,
+      -12.4,
+      2.8
+    ],
+    "direction": [
+      1.45,
+      -2.02,
+      -0.18
+    ],
+    "fov": 68,
+    "updatedAt": "2026-09-25T18:31:01.503809+00:00",
+    "blocked": false,
+    "supported": true
+  },
+  {
+    "design": "compact",
+    "name": "sitting",
+    "position": [
+      6.4,
+      -12.1,
+      2.8
+    ],
+    "direction": [
+      0.6,
+      2.87,
+      -0.2
+    ],
+    "fov": 68,
+    "updatedAt": "2026-09-25T18:31:01.503809+00:00",
+    "blocked": false,
+    "supported": true
+  },
+  {
+    "design": "compact",
+    "name": "study",
+    "position": [
+      11.2,
+      -8.8,
+      2.8
+    ],
+    "direction": [
+      2.12,
+      1.6,
+      -0.2
+    ],
+    "fov": 68,
+    "updatedAt": "2026-09-25T18:31:01.503809+00:00",
+    "blocked": false,
+    "supported": true
+  },
+  {
+    "design": "planning",
+    "name": "bedroom",
+    "position": [
+      5.82,
+      -12.4,
+      2.8
+    ],
+    "direction": [
+      1.45,
+      -2.02,
+      -0.18
+    ],
+    "fov": 68,
+    "updatedAt": "2026-09-25T18:29:43.700575+00:00",
+    "blocked": false,
+    "supported": true
+  },
+  {
+    "design": "planning",
+    "name": "sitting",
+    "position": [
+      6.4,
+      -12.1,
+      2.8
+    ],
+    "direction": [
+      0.6,
+      2.87,
+      -0.2
+    ],
+    "fov": 68,
+    "updatedAt": "2026-09-25T18:29:43.700575+00:00",
+    "blocked": false,
+    "supported": true
+  },
+  {
+    "design": "planning",
+    "name": "study",
+    "position": [
+      11.2,
+      -8.8,
+      2.8
+    ],
+    "direction": [
+      2.12,
+      1.6,
+      -0.2
+    ],
+    "fov": 68,
+    "updatedAt": "2026-09-25T18:29:43.700575+00:00",
+    "blocked": false,
+    "supported": true
+  }
+]

@@ -1,0 +1,426 @@
+{
+  "area": "terrace",
+  "revision": 1,
+  "objects": 454,
+  "mesh_objects": 452,
+  "lights": 2,
+  "removed_objects": [
+    {
+      "name": "Proposal | Terrace caf\u00e9 table top",
+      "object_name": "Proposal | Terrace caf\u00e9 table top"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 table stem",
+      "object_name": "Proposal | Terrace caf\u00e9 table stem"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 table base",
+      "object_name": "Proposal | Terrace caf\u00e9 table base"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair1 seat",
+      "object_name": "Proposal | Terrace caf\u00e9 chair1 seat"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair1 back",
+      "object_name": "Proposal | Terrace caf\u00e9 chair1 back"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair1 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair1 leg"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair1 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair1 leg.001"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair1 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair1 leg.002"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair1 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair1 leg.003"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair2 seat",
+      "object_name": "Proposal | Terrace caf\u00e9 chair2 seat"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair2 back",
+      "object_name": "Proposal | Terrace caf\u00e9 chair2 back"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair2 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair2 leg"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair2 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair2 leg.001"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair2 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair2 leg.002"
+    },
+    {
+      "name": "Proposal | Terrace caf\u00e9 chair2 leg",
+      "object_name": "Proposal | Terrace caf\u00e9 chair2 leg.003"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Terrace 01 | complete sofa",
+      "box": [
+        -3.78,
+        11.13,
+        -2.86,
+        13.13
+      ],
+      "bottom": 2.8,
+      "top": 3.6599999999999997
+    },
+    {
+      "name": "Terrace 01 | lounge chair 0",
+      "box": [
+        -1.54,
+        11.15,
+        -0.7,
+        11.95
+      ],
+      "bottom": 2.8,
+      "top": 3.6599999999999997
+    },
+    {
+      "name": "Terrace 01 | lounge chair 1",
+      "box": [
+        -1.54,
+        12.23,
+        -0.7,
+        13.03
+      ],
+      "bottom": 2.8,
+      "top": 3.6599999999999997
+    },
+    {
+      "name": "Terrace 01 | caf\u00e9 chair 0",
+      "box": [
+        1.7799999999999998,
+        10.73,
+        2.32,
+        11.27
+      ],
+      "bottom": 2.8,
+      "top": 3.67
+    },
+    {
+      "name": "Terrace 01 | caf\u00e9 chair 1",
+      "box": [
+        2.7,
+        11.65,
+        3.24,
+        12.19
+      ],
+      "bottom": 2.8,
+      "top": 3.67
+    },
+    {
+      "name": "Terrace 01 | caf\u00e9 chair 2",
+      "box": [
+        1.7799999999999998,
+        12.57,
+        2.32,
+        13.11
+      ],
+      "bottom": 2.8,
+      "top": 3.67
+    },
+    {
+      "name": "Terrace 01 | caf\u00e9 chair 3",
+      "box": [
+        0.8599999999999999,
+        11.65,
+        1.4,
+        12.19
+      ],
+      "bottom": 2.8,
+      "top": 3.67
+    },
+    {
+      "name": "Terrace 01 | coffee table",
+      "box": [
+        -2.43,
+        11.8,
+        -1.91,
+        12.58
+      ],
+      "bottom": 2.8,
+      "top": 3.21
+    },
+    {
+      "name": "Terrace 01 | caf\u00e9 table",
+      "box": [
+        1.525,
+        11.395,
+        2.5749999999999997,
+        12.445
+      ],
+      "bottom": 2.8,
+      "top": 3.55
+    },
+    {
+      "name": "Terrace 01 | cushion box",
+      "box": [
+        -0.3,
+        9.18,
+        0.9,
+        9.66
+      ],
+      "bottom": 2.8,
+      "top": 3.3
+    },
+    {
+      "name": "Terrace 01 | planter 0",
+      "box": [
+        1.02,
+        9.2,
+        1.48,
+        9.66
+      ],
+      "bottom": 2.8,
+      "top": 3.78
+    },
+    {
+      "name": "Terrace 01 | planter 1",
+      "box": [
+        -1.01,
+        9.209999999999999,
+        -0.5700000000000001,
+        9.65
+      ],
+      "bottom": 2.8,
+      "top": 3.78
+    }
+  ],
+  "configuration": {
+    "room": "Shared roof terrace",
+    "revision": 1,
+    "variants": [
+      "compact"
+    ],
+    "floorZ": 2.8,
+    "ceilingZ": 5.3,
+    "bounds": [
+      -5.02,
+      8.69,
+      4.68,
+      14.32
+    ],
+    "usableBounds": [
+      -4.845,
+      9.05,
+      4.505,
+      14.115
+    ],
+    "rooflights": [
+      [
+        -1.0,
+        10.1,
+        0.0,
+        11.1
+      ],
+      [
+        0.7,
+        10.1,
+        1.7,
+        11.1
+      ],
+      [
+        2.4,
+        10.1,
+        3.4,
+        11.1
+      ]
+    ],
+    "sofa": [
+      -3.78,
+      11.13,
+      -2.86,
+      13.13
+    ],
+    "loungeChairs": [
+      [
+        -1.54,
+        11.15,
+        -0.7,
+        11.95
+      ],
+      [
+        -1.54,
+        12.23,
+        -0.7,
+        13.03
+      ]
+    ],
+    "coffeeTable": [
+      -2.43,
+      11.8,
+      -1.91,
+      12.58
+    ],
+    "cafeTable": {
+      "center": [
+        2.05,
+        11.92
+      ],
+      "diameter": 1.05,
+      "height": 0.74
+    },
+    "diningChairs": [
+      {
+        "center": [
+          2.05,
+          11.0
+        ],
+        "rotation": 3.141592653589793
+      },
+      {
+        "center": [
+          2.97,
+          11.92
+        ],
+        "rotation": -1.5707963267948966
+      },
+      {
+        "center": [
+          2.05,
+          12.84
+        ],
+        "rotation": 0
+      },
+      {
+        "center": [
+          1.13,
+          11.92
+        ],
+        "rotation": 1.5707963267948966
+      }
+    ],
+    "cushionBox": [
+      -0.3,
+      9.18,
+      0.9,
+      9.66
+    ],
+    "planters": [
+      [
+        1.25,
+        9.43,
+        0.23
+      ],
+      [
+        -0.79,
+        9.43,
+        0.22
+      ]
+    ],
+    "view": {
+      "id": "proposal-shared-roof-terrace",
+      "position": [
+        -2.59,
+        10.15,
+        2.8
+      ],
+      "direction": [
+        0.2,
+        1,
+        -0.1
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          -2.59,
+          9.45,
+          4.4
+        ],
+        "target": [
+          -0.2,
+          12.3,
+          3.45
+        ],
+        "fov": 68
+      },
+      "lounge": {
+        "position": [
+          -0.05,
+          10.98,
+          4.35
+        ],
+        "target": [
+          -2.75,
+          12.24,
+          3.35
+        ],
+        "fov": 62
+      },
+      "seated": {
+        "position": [
+          -3.4,
+          12.08,
+          3.96
+        ],
+        "target": [
+          1.5,
+          12.0,
+          3.5
+        ],
+        "fov": 64
+      },
+      "dining": {
+        "position": [
+          3.81,
+          13.44,
+          4.35
+        ],
+        "target": [
+          1.87,
+          11.9,
+          3.35
+        ],
+        "fov": 62
+      },
+      "details": {
+        "position": [
+          -2.95,
+          11.0,
+          3.9
+        ],
+        "target": [
+          -3.32,
+          11.72,
+          3.23
+        ],
+        "fov": 48
+      },
+      "overview": {
+        "position": [
+          8.7,
+          18.5,
+          13.2
+        ],
+        "target": [
+          -0.2,
+          11.5,
+          3.1
+        ],
+        "fov": 49,
+        "cutaway": true
+      }
+    },
+    "limitations": [
+      "This terrace exists in Proposed only. Planning retains its existing roof and window.",
+      "The roof outline, three flush rooflights, drainage, guards and west privacy screen remain. Furniture stays clear of the rooflights and is set back from the outer guards.",
+      "Four caf\u00e9 places and a separate four-place sitting group use the terrace in different ways; the indoor formal table provides larger dining capacity.",
+      "Existing roof construction, loading, waterproofing, wind restraint, guards and rooflight specification require project-specific detailed design. Loose cushions are stored indoors in bad weather."
+    ]
+  }
+}

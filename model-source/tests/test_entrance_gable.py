@@ -9,7 +9,7 @@ from shapely.ops import unary_union
 ROOT=Path(__file__).resolve().parents[1]
 
 class EntranceGableTests(unittest.TestCase):
- def test_disjoint_front_faces_and_variant_specific_roof_verges(self):
+ def test_disjoint_front_faces_and_tile_covered_roof_verges(self):
   for variant in ('compact','planning'):
    with self.subTest(variant=variant):
     data=json.loads((ROOT/f'output-proposed-{variant}/geometry.json').read_text())
@@ -35,9 +35,9 @@ class EntranceGableTests(unittest.TestCase):
        self.assertLess(p.intersection(q).area,2e-6,(variant,band['name'],name))
     roof=[o for o in data['objects'] if o['name'].startswith('Proposal | Joined roof') and 'Gate gable' in o['name']]
     self.assertGreater(len(roof),4)
-    # The 24 September planning detail lowers the rake band and carries
-    # the tiled verge over it. The compact roof still stops behind the band.
-    roof_front=front if variant=='planning' else back
+    # The owner's correction carries the tiles over the rake band in both
+    # variants, so the compact design no longer exposes masonry above them.
+    roof_front=front
     self.assertAlmostEqual(min(v[0] for ob in roof for v in ob['vertices']),roof_front,places=4)
     for ob in roof:
      self.assertGreaterEqual(min(v[0] for v in ob['vertices']),roof_front-2e-5,ob['name'])

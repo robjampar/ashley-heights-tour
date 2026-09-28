@@ -1,0 +1,1826 @@
+{
+  "area": "poolgarden",
+  "revision": 2,
+  "objects": 352,
+  "mesh_objects": 350,
+  "lights": 2,
+  "removed_objects": [
+    {
+      "name": "Poolgarden 01 | lounger 1 rounded timber side rail",
+      "object_name": "Poolgarden 01 | lounger 1 rounded timber side rail"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 rounded timber side rail",
+      "object_name": "Poolgarden 01 | lounger 1 rounded timber side rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 timber end rail",
+      "object_name": "Poolgarden 01 | lounger 1 timber end rail"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 timber end rail",
+      "object_name": "Poolgarden 01 | lounger 1 timber end rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.008"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.009"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.010"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.011"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.012"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.013"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.014"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.015"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.016"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.017"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.018"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.019"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.020"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.021"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 deck slat",
+      "object_name": "Poolgarden 01 | lounger 1 deck slat.022"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 1 tapered timber foot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "object_name": "Poolgarden 01 | lounger 1 floor glide"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 1 frame fixing"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 1 tapered timber foot.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "object_name": "Poolgarden 01 | lounger 1 floor glide.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 1 frame fixing.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 1 tapered timber foot.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "object_name": "Poolgarden 01 | lounger 1 floor glide.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 1 frame fixing.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 1 tapered timber foot.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 floor glide",
+      "object_name": "Poolgarden 01 | lounger 1 floor glide.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 1 frame fixing.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 rear wheel",
+      "object_name": "Poolgarden 01 | lounger 1 rear wheel"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 wheel axle cap",
+      "object_name": "Poolgarden 01 | lounger 1 wheel axle cap"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 rear wheel",
+      "object_name": "Poolgarden 01 | lounger 1 rear wheel.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 wheel axle cap",
+      "object_name": "Poolgarden 01 | lounger 1 wheel axle cap.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 seat cushion",
+      "object_name": "Poolgarden 01 | lounger 1 seat cushion"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back side",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back side"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back side",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back side.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 1 adjustable back slat.008"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 back cushion",
+      "object_name": "Poolgarden 01 | lounger 1 back cushion"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 small head pillow",
+      "object_name": "Poolgarden 01 | lounger 1 small head pillow"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 back hinge",
+      "object_name": "Poolgarden 01 | lounger 1 back hinge"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 hinge screw",
+      "object_name": "Poolgarden 01 | lounger 1 hinge screw"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 hinge screw slot",
+      "object_name": "Poolgarden 01 | lounger 1 hinge screw slot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 back hinge",
+      "object_name": "Poolgarden 01 | lounger 1 back hinge.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 hinge screw",
+      "object_name": "Poolgarden 01 | lounger 1 hinge screw.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 hinge screw slot",
+      "object_name": "Poolgarden 01 | lounger 1 hinge screw slot.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 1 adjustment rack tooth.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 folded pool towel",
+      "object_name": "Poolgarden 01 | lounger 1 folded pool towel"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 towel woven stripe",
+      "object_name": "Poolgarden 01 | lounger 1 towel woven stripe"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 towel woven stripe",
+      "object_name": "Poolgarden 01 | lounger 1 towel woven stripe.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 rounded timber side rail",
+      "object_name": "Poolgarden 01 | lounger 2 rounded timber side rail"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 rounded timber side rail",
+      "object_name": "Poolgarden 01 | lounger 2 rounded timber side rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 timber end rail",
+      "object_name": "Poolgarden 01 | lounger 2 timber end rail"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 timber end rail",
+      "object_name": "Poolgarden 01 | lounger 2 timber end rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.008"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.009"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.010"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.011"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.012"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.013"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.014"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.015"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.016"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.017"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.018"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.019"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.020"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.021"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 deck slat",
+      "object_name": "Poolgarden 01 | lounger 2 deck slat.022"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 2 tapered timber foot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "object_name": "Poolgarden 01 | lounger 2 floor glide"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 2 frame fixing"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 2 tapered timber foot.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "object_name": "Poolgarden 01 | lounger 2 floor glide.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 2 frame fixing.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 2 tapered timber foot.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "object_name": "Poolgarden 01 | lounger 2 floor glide.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 2 frame fixing.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 2 tapered timber foot.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 floor glide",
+      "object_name": "Poolgarden 01 | lounger 2 floor glide.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 2 frame fixing.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 rear wheel",
+      "object_name": "Poolgarden 01 | lounger 2 rear wheel"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 wheel axle cap",
+      "object_name": "Poolgarden 01 | lounger 2 wheel axle cap"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 rear wheel",
+      "object_name": "Poolgarden 01 | lounger 2 rear wheel.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 wheel axle cap",
+      "object_name": "Poolgarden 01 | lounger 2 wheel axle cap.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 seat cushion",
+      "object_name": "Poolgarden 01 | lounger 2 seat cushion"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back side",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back side"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back side",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back side.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 2 adjustable back slat.008"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 back cushion",
+      "object_name": "Poolgarden 01 | lounger 2 back cushion"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 small head pillow",
+      "object_name": "Poolgarden 01 | lounger 2 small head pillow"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 back hinge",
+      "object_name": "Poolgarden 01 | lounger 2 back hinge"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 hinge screw",
+      "object_name": "Poolgarden 01 | lounger 2 hinge screw"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 hinge screw slot",
+      "object_name": "Poolgarden 01 | lounger 2 hinge screw slot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 back hinge",
+      "object_name": "Poolgarden 01 | lounger 2 back hinge.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 hinge screw",
+      "object_name": "Poolgarden 01 | lounger 2 hinge screw.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 hinge screw slot",
+      "object_name": "Poolgarden 01 | lounger 2 hinge screw slot.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 2 adjustment rack tooth.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 folded pool towel",
+      "object_name": "Poolgarden 01 | lounger 2 folded pool towel"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 towel woven stripe",
+      "object_name": "Poolgarden 01 | lounger 2 towel woven stripe"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 towel woven stripe",
+      "object_name": "Poolgarden 01 | lounger 2 towel woven stripe.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 rounded timber side rail",
+      "object_name": "Poolgarden 01 | lounger 3 rounded timber side rail"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 rounded timber side rail",
+      "object_name": "Poolgarden 01 | lounger 3 rounded timber side rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 timber end rail",
+      "object_name": "Poolgarden 01 | lounger 3 timber end rail"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 timber end rail",
+      "object_name": "Poolgarden 01 | lounger 3 timber end rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.008"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.009"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.010"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.011"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.012"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.013"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.014"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.015"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.016"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.017"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.018"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.019"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.020"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.021"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 deck slat",
+      "object_name": "Poolgarden 01 | lounger 3 deck slat.022"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 3 tapered timber foot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "object_name": "Poolgarden 01 | lounger 3 floor glide"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 3 frame fixing"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 3 tapered timber foot.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "object_name": "Poolgarden 01 | lounger 3 floor glide.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 3 frame fixing.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 3 tapered timber foot.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "object_name": "Poolgarden 01 | lounger 3 floor glide.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 3 frame fixing.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 tapered timber foot",
+      "object_name": "Poolgarden 01 | lounger 3 tapered timber foot.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 floor glide",
+      "object_name": "Poolgarden 01 | lounger 3 floor glide.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 frame fixing",
+      "object_name": "Poolgarden 01 | lounger 3 frame fixing.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 rear wheel",
+      "object_name": "Poolgarden 01 | lounger 3 rear wheel"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 wheel axle cap",
+      "object_name": "Poolgarden 01 | lounger 3 wheel axle cap"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 rear wheel",
+      "object_name": "Poolgarden 01 | lounger 3 rear wheel.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 wheel axle cap",
+      "object_name": "Poolgarden 01 | lounger 3 wheel axle cap.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 seat cushion",
+      "object_name": "Poolgarden 01 | lounger 3 seat cushion"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back side",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back side"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back side",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back side.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustable back slat",
+      "object_name": "Poolgarden 01 | lounger 3 adjustable back slat.008"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 back cushion",
+      "object_name": "Poolgarden 01 | lounger 3 back cushion"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 small head pillow",
+      "object_name": "Poolgarden 01 | lounger 3 small head pillow"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 back hinge",
+      "object_name": "Poolgarden 01 | lounger 3 back hinge"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 hinge screw",
+      "object_name": "Poolgarden 01 | lounger 3 hinge screw"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 hinge screw slot",
+      "object_name": "Poolgarden 01 | lounger 3 hinge screw slot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth.003"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 back hinge",
+      "object_name": "Poolgarden 01 | lounger 3 back hinge.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 hinge screw",
+      "object_name": "Poolgarden 01 | lounger 3 hinge screw.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 hinge screw slot",
+      "object_name": "Poolgarden 01 | lounger 3 hinge screw slot.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth.004"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth.005"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth.006"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 adjustment rack tooth",
+      "object_name": "Poolgarden 01 | lounger 3 adjustment rack tooth.007"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 folded pool towel",
+      "object_name": "Poolgarden 01 | lounger 3 folded pool towel"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 towel woven stripe",
+      "object_name": "Poolgarden 01 | lounger 3 towel woven stripe"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 towel woven stripe",
+      "object_name": "Poolgarden 01 | lounger 3 towel woven stripe.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 pedestal foot",
+      "object_name": "Poolgarden 01 | lounger side table 1 pedestal foot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 pedestal",
+      "object_name": "Poolgarden 01 | lounger side table 1 pedestal"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 stone top",
+      "object_name": "Poolgarden 01 | lounger side table 1 stone top"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 1 underside fixing"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 1 underside fixing.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 1 underside fixing.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 1 underside fixing.003"
+    },
+    {
+      "name": "Poolgarden 01 | pool cup base",
+      "object_name": "Poolgarden 01 | pool cup base"
+    },
+    {
+      "name": "Poolgarden 01 | hollow pool cup",
+      "object_name": "Poolgarden 01 | hollow pool cup"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 pedestal foot",
+      "object_name": "Poolgarden 01 | lounger side table 2 pedestal foot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 pedestal",
+      "object_name": "Poolgarden 01 | lounger side table 2 pedestal"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 stone top",
+      "object_name": "Poolgarden 01 | lounger side table 2 stone top"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 2 underside fixing"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 2 underside fixing.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 2 underside fixing.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 2 underside fixing.003"
+    },
+    {
+      "name": "Poolgarden 01 | pool cup base",
+      "object_name": "Poolgarden 01 | pool cup base.001"
+    },
+    {
+      "name": "Poolgarden 01 | hollow pool cup",
+      "object_name": "Poolgarden 01 | hollow pool cup.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 pedestal foot",
+      "object_name": "Poolgarden 01 | lounger side table 3 pedestal foot"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 pedestal",
+      "object_name": "Poolgarden 01 | lounger side table 3 pedestal"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 stone top",
+      "object_name": "Poolgarden 01 | lounger side table 3 stone top"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 3 underside fixing"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 3 underside fixing.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 3 underside fixing.002"
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3 underside fixing",
+      "object_name": "Poolgarden 01 | lounger side table 3 underside fixing.003"
+    },
+    {
+      "name": "Poolgarden 01 | pool cup base",
+      "object_name": "Poolgarden 01 | pool cup base.002"
+    },
+    {
+      "name": "Poolgarden 01 | hollow pool cup",
+      "object_name": "Poolgarden 01 | hollow pool cup.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa foot",
+      "object_name": "Poolgarden 01 | loggia sofa foot"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "object_name": "Poolgarden 01 | loggia sofa glide"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa foot",
+      "object_name": "Poolgarden 01 | loggia sofa foot.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "object_name": "Poolgarden 01 | loggia sofa glide.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa foot",
+      "object_name": "Poolgarden 01 | loggia sofa foot.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "object_name": "Poolgarden 01 | loggia sofa glide.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa foot",
+      "object_name": "Poolgarden 01 | loggia sofa foot.003"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa glide",
+      "object_name": "Poolgarden 01 | loggia sofa glide.003"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa long rail",
+      "object_name": "Poolgarden 01 | loggia sofa long rail"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa long rail",
+      "object_name": "Poolgarden 01 | loggia sofa long rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa end rail",
+      "object_name": "Poolgarden 01 | loggia sofa end rail"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa end rail",
+      "object_name": "Poolgarden 01 | loggia sofa end rail.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.003"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.004"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.005"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.006"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.007"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.008"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.009"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.010"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.011"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.012"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.013"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.014"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.015"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.016"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.017"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat slat",
+      "object_name": "Poolgarden 01 | loggia sofa seat slat.018"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa ivory seat",
+      "object_name": "Poolgarden 01 | loggia sofa ivory seat"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa back cushion",
+      "object_name": "Poolgarden 01 | loggia sofa back cushion"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa back support",
+      "object_name": "Poolgarden 01 | loggia sofa back support"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa ivory seat",
+      "object_name": "Poolgarden 01 | loggia sofa ivory seat.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa back cushion",
+      "object_name": "Poolgarden 01 | loggia sofa back cushion.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa back support",
+      "object_name": "Poolgarden 01 | loggia sofa back support.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa ivory seat",
+      "object_name": "Poolgarden 01 | loggia sofa ivory seat.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa back cushion",
+      "object_name": "Poolgarden 01 | loggia sofa back cushion.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa back support",
+      "object_name": "Poolgarden 01 | loggia sofa back support.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa rounded arm",
+      "object_name": "Poolgarden 01 | loggia sofa rounded arm"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa arm post",
+      "object_name": "Poolgarden 01 | loggia sofa arm post"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa arm bolt",
+      "object_name": "Poolgarden 01 | loggia sofa arm bolt"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa rounded arm",
+      "object_name": "Poolgarden 01 | loggia sofa rounded arm.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa arm post",
+      "object_name": "Poolgarden 01 | loggia sofa arm post.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa arm bolt",
+      "object_name": "Poolgarden 01 | loggia sofa arm bolt.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table pedestal foot",
+      "object_name": "Poolgarden 01 | loggia coffee table pedestal foot"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table pedestal",
+      "object_name": "Poolgarden 01 | loggia coffee table pedestal"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table stone top",
+      "object_name": "Poolgarden 01 | loggia coffee table stone top"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table underside fixing",
+      "object_name": "Poolgarden 01 | loggia coffee table underside fixing"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table underside fixing",
+      "object_name": "Poolgarden 01 | loggia coffee table underside fixing.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table underside fixing",
+      "object_name": "Poolgarden 01 | loggia coffee table underside fixing.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table underside fixing",
+      "object_name": "Poolgarden 01 | loggia coffee table underside fixing.003"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard recessed base",
+      "object_name": "Poolgarden 01 | towel cupboard recessed base"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard side",
+      "object_name": "Poolgarden 01 | towel cupboard side"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard side",
+      "object_name": "Poolgarden 01 | towel cupboard side.001"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard back",
+      "object_name": "Poolgarden 01 | towel cupboard back"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard shelf",
+      "object_name": "Poolgarden 01 | towel cupboard shelf"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard shelf",
+      "object_name": "Poolgarden 01 | towel cupboard shelf.001"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard shelf",
+      "object_name": "Poolgarden 01 | towel cupboard shelf.002"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard shelf",
+      "object_name": "Poolgarden 01 | towel cupboard shelf.003"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard sliding front",
+      "object_name": "Poolgarden 01 | towel cupboard sliding front"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard recessed pull",
+      "object_name": "Poolgarden 01 | towel cupboard recessed pull"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot.001"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot.002"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot.003"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard sliding front",
+      "object_name": "Poolgarden 01 | towel cupboard sliding front.001"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard recessed pull",
+      "object_name": "Poolgarden 01 | towel cupboard recessed pull.001"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot.004"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot.005"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot.006"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard ventilation slot",
+      "object_name": "Poolgarden 01 | towel cupboard ventilation slot.007"
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard limestone top",
+      "object_name": "Poolgarden 01 | towel cupboard limestone top"
+    },
+    {
+      "name": "Poolgarden 01 | folded spare towel",
+      "object_name": "Poolgarden 01 | folded spare towel"
+    },
+    {
+      "name": "Poolgarden 01 | spare towel stitched hem",
+      "object_name": "Poolgarden 01 | spare towel stitched hem"
+    },
+    {
+      "name": "Poolgarden 01 | folded spare towel",
+      "object_name": "Poolgarden 01 | folded spare towel.001"
+    },
+    {
+      "name": "Poolgarden 01 | spare towel stitched hem",
+      "object_name": "Poolgarden 01 | spare towel stitched hem.001"
+    },
+    {
+      "name": "Poolgarden 01 | portable lamp base",
+      "object_name": "Poolgarden 01 | portable lamp base"
+    },
+    {
+      "name": "Poolgarden 01 | portable lamp stem",
+      "object_name": "Poolgarden 01 | portable lamp stem"
+    },
+    {
+      "name": "Poolgarden 01 | portable lamp shade",
+      "object_name": "Poolgarden 01 | portable lamp shade"
+    },
+    {
+      "name": "Poolgarden 01 | portable lamp diffuser",
+      "object_name": "Poolgarden 01 | portable lamp diffuser"
+    },
+    {
+      "name": "Poolgarden 01 | portable lamp power button",
+      "object_name": "Poolgarden 01 | portable lamp power button"
+    },
+    {
+      "name": "Poolgarden 01 | loggia seating glow",
+      "object_name": "Poolgarden 01 | loggia seating glow"
+    },
+    {
+      "name": "Poolgarden 01 | towel storage glow",
+      "object_name": "Poolgarden 01 | towel storage glow"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 seat stitched welt",
+      "object_name": "Poolgarden 01 | lounger 1 seat stitched welt"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 back stitched welt",
+      "object_name": "Poolgarden 01 | lounger 1 back stitched welt"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 back support arm",
+      "object_name": "Poolgarden 01 | lounger 1 back support arm"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 1 back support arm",
+      "object_name": "Poolgarden 01 | lounger 1 back support arm.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 seat stitched welt",
+      "object_name": "Poolgarden 01 | lounger 2 seat stitched welt"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 back stitched welt",
+      "object_name": "Poolgarden 01 | lounger 2 back stitched welt"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 back support arm",
+      "object_name": "Poolgarden 01 | lounger 2 back support arm"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2 back support arm",
+      "object_name": "Poolgarden 01 | lounger 2 back support arm.001"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 seat stitched welt",
+      "object_name": "Poolgarden 01 | lounger 3 seat stitched welt"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 back stitched welt",
+      "object_name": "Poolgarden 01 | lounger 3 back stitched welt"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 back support arm",
+      "object_name": "Poolgarden 01 | lounger 3 back support arm"
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3 back support arm",
+      "object_name": "Poolgarden 01 | lounger 3 back support arm.001"
+    },
+    {
+      "name": "Poolgarden 01 | pool cup handle",
+      "object_name": "Poolgarden 01 | pool cup handle"
+    },
+    {
+      "name": "Poolgarden 01 | pool cup handle",
+      "object_name": "Poolgarden 01 | pool cup handle.001"
+    },
+    {
+      "name": "Poolgarden 01 | pool cup handle",
+      "object_name": "Poolgarden 01 | pool cup handle.002"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat piping",
+      "object_name": "Poolgarden 01 | loggia sofa seat piping"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat piping",
+      "object_name": "Poolgarden 01 | loggia sofa seat piping.001"
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa seat piping",
+      "object_name": "Poolgarden 01 | loggia sofa seat piping.002"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Poolgarden 01 | lounger 1",
+      "polygon": [
+        [
+          4.638578448977348,
+          18.441013399536278
+        ],
+        [
+          4.107999406517179,
+          16.460865455643688
+        ],
+        [
+          4.861421551022652,
+          16.258986600463725
+        ],
+        [
+          5.392000593482821,
+          18.239134544356315
+        ]
+      ],
+      "bottom": 0.2,
+      "top": 1.27
+    },
+    {
+      "name": "Poolgarden 01 | lounger 2",
+      "polygon": [
+        [
+          4.638578448977348,
+          21.041013399536276
+        ],
+        [
+          4.107999406517179,
+          19.060865455643686
+        ],
+        [
+          4.861421551022652,
+          18.858986600463723
+        ],
+        [
+          5.392000593482821,
+          20.839134544356313
+        ]
+      ],
+      "bottom": 0.2,
+      "top": 1.27
+    },
+    {
+      "name": "Poolgarden 01 | lounger 3",
+      "polygon": [
+        [
+          4.638578448977348,
+          23.641013399536277
+        ],
+        [
+          4.107999406517179,
+          21.660865455643687
+        ],
+        [
+          4.861421551022652,
+          21.458986600463724
+        ],
+        [
+          5.392000593482821,
+          23.439134544356314
+        ]
+      ],
+      "bottom": 0.2,
+      "top": 1.27
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 1",
+      "box": [
+        4.17,
+        18.43,
+        4.550000000000001,
+        18.810000000000002
+      ],
+      "bottom": 0.2,
+      "top": 0.6699999999999999
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 2",
+      "box": [
+        4.17,
+        21.029999999999998,
+        4.550000000000001,
+        21.41
+      ],
+      "bottom": 0.2,
+      "top": 0.6699999999999999
+    },
+    {
+      "name": "Poolgarden 01 | lounger side table 3",
+      "box": [
+        4.17,
+        23.63,
+        4.550000000000001,
+        24.01
+      ],
+      "bottom": 0.2,
+      "top": 0.6699999999999999
+    },
+    {
+      "name": "Poolgarden 01 | loggia sofa",
+      "box": [
+        13.03,
+        20.12,
+        13.89,
+        22.32
+      ],
+      "bottom": 0.2,
+      "top": 1.12
+    },
+    {
+      "name": "Poolgarden 01 | loggia coffee table",
+      "box": [
+        12.09,
+        20.939999999999998,
+        12.649999999999999,
+        21.5
+      ],
+      "bottom": 0.2,
+      "top": 0.6000000000000001
+    },
+    {
+      "name": "Poolgarden 01 | towel cupboard",
+      "box": [
+        12.2,
+        25.7,
+        13.25,
+        26.17
+      ],
+      "bottom": 0.2,
+      "top": 1.445
+    }
+  ],
+  "configuration": {
+    "room": "Pool terrace and pavilion loggia",
+    "revision": 2,
+    "variants": [
+      "compact"
+    ],
+    "floorZ": 0.2,
+    "ceilingZ": 3.06,
+    "bounds": [
+      3.6,
+      14.7,
+      16.4,
+      26.6
+    ],
+    "pool": [
+      6.5,
+      16.0,
+      10.0,
+      24.0
+    ],
+    "poolExclusion": [
+      6.34,
+      15.84,
+      10.16,
+      24.16
+    ],
+    "loungers": [
+      [
+        4.75,
+        17.35
+      ],
+      [
+        4.75,
+        19.95
+      ],
+      [
+        4.75,
+        22.55
+      ]
+    ],
+    "loungerSize": [
+      2.05,
+      0.78
+    ],
+    "sideTables": [
+      [
+        4.36,
+        18.62,
+        0.19
+      ],
+      [
+        4.36,
+        21.22,
+        0.19
+      ],
+      [
+        4.36,
+        23.82,
+        0.19
+      ]
+    ],
+    "sofa": [
+      13.03,
+      20.12,
+      13.89,
+      22.32
+    ],
+    "coffeeTable": [
+      12.37,
+      21.22,
+      0.28
+    ],
+    "towelStorage": [
+      12.2,
+      25.7,
+      13.25,
+      26.17
+    ],
+    "view": {
+      "id": "proposal-pool-terrace",
+      "position": [
+        10.8,
+        17.0,
+        0.2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          4.8,
+          15.2,
+          1.86
+        ],
+        "target": [
+          8.2,
+          21.3,
+          0.65
+        ],
+        "fov": 70
+      },
+      "lounge": {
+        "position": [
+          11.93,
+          23.48,
+          1.81
+        ],
+        "target": [
+          13.21,
+          21.22,
+          0.92
+        ],
+        "fov": 65
+      },
+      "details": {
+        "position": [
+          5.14,
+          16.43,
+          1.36
+        ],
+        "target": [
+          4.55,
+          17.35,
+          0.67
+        ],
+        "fov": 58
+      },
+      "storage": {
+        "position": [
+          12.83,
+          24.66,
+          1.74
+        ],
+        "target": [
+          12.7,
+          26.1,
+          0.98
+        ],
+        "fov": 60
+      },
+      "reverse": {
+        "position": [
+          10.8,
+          24.53,
+          1.87
+        ],
+        "target": [
+          9.1,
+          16.9,
+          0.5
+        ],
+        "fov": 70
+      },
+      "overview": {
+        "position": [
+          22,
+          9,
+          24
+        ],
+        "target": [
+          9.9,
+          20.7,
+          0.6
+        ],
+        "fov": 56,
+        "cutaway": true
+      }
+    },
+    "viewLabels": {
+      "lounge": "Pavilion seating",
+      "storage": "Towels and cushions"
+    },
+    "limitations": [
+      "Proposed only: the existing planning-application scheme excludes the pool, spa and pavilion addition.",
+      "The three full-size loungers turn along the west deck, leaving a continuous approximately 0.95 m clear strip beside them. The 1.14 m east pool route also stays clear.",
+      "The existing pool, spa, level changes, surrounds and structural pavilion remain. Pool safety systems, cover, drainage, slip resistance and services need project-specific design."
+    ],
+    "loungerAngleDegrees": 255,
+    "cropBottomZ": -1.35,
+    "notes": [
+      "Owner review: rotate all three pool sun loungers 180 degrees in place."
+    ]
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "65007e4277dcb6cf251a82db86d771fbf5c4a5223f94c549f625c9e25cdcd5a7",
+  "source_house_unchanged": true,
+  "isolated_objects": 729,
+  "views": {
+    "entrance": {
+      "position": [
+        4.8,
+        15.2,
+        1.86
+      ],
+      "target": [
+        8.2,
+        21.3,
+        0.65
+      ],
+      "fov": 70
+    },
+    "lounge": {
+      "position": [
+        11.93,
+        23.48,
+        1.81
+      ],
+      "target": [
+        13.21,
+        21.22,
+        0.92
+      ],
+      "fov": 65
+    },
+    "details": {
+      "position": [
+        5.14,
+        16.43,
+        1.36
+      ],
+      "target": [
+        4.55,
+        17.35,
+        0.67
+      ],
+      "fov": 58
+    },
+    "storage": {
+      "position": [
+        12.83,
+        24.66,
+        1.74
+      ],
+      "target": [
+        12.7,
+        26.1,
+        0.98
+      ],
+      "fov": 60
+    },
+    "reverse": {
+      "position": [
+        10.8,
+        24.53,
+        1.87
+      ],
+      "target": [
+        9.1,
+        16.9,
+        0.5
+      ],
+      "fov": 70
+    },
+    "overview": {
+      "position": [
+        22,
+        9,
+        24
+      ],
+      "target": [
+        9.9,
+        20.7,
+        0.6
+      ],
+      "fov": 56,
+      "cutaway": true
+    }
+  }
+}

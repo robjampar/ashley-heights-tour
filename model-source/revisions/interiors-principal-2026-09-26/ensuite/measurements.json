@@ -64,10 +64,10 @@
       "variant": "compact",
       "check": "bath actual mesh matches specified footprint",
       "measured": [
-        12.760000228881836,
-        -5.199999809265137,
-        13.5600004196167,
-        -3.4000000953674316
+        12.680000305175781,
+        -5.25,
+        13.579999923706055,
+        -3.3499999046325684
       ],
       "pass": true
     },
@@ -154,10 +154,10 @@
       "variant": "planning",
       "check": "bath actual mesh matches specified footprint",
       "measured": [
-        12.760000228881836,
-        -5.199999809265137,
-        13.5600004196167,
-        -3.4000000953674316
+        12.680000305175781,
+        -5.25,
+        13.579999923706055,
+        -3.3499999046325684
       ],
       "pass": true
     },
@@ -243,9 +243,11 @@
   ],
   "clearances_m": {
     "bath": [
-      1.8,
-      0.8
+      1.9,
+      0.9
     ],
+    "bath_side_actual_gap": 0.775,
+    "bath_side_route": 0.74,
     "shower_footprint": [
       1.43,
       1.701
@@ -257,8 +259,8 @@
     "vanity_front_to_WC_screen": 1.64,
     "vanity_occupied_passing": 1.04,
     "wardrobe_main_aisle": 2.54,
-    "bath_east_cleaning_gap": 0.19,
-    "bath_north_cleaning_gap": 0.141
+    "bath_east_cleaning_gap": 0.17,
+    "bath_north_cleaning_gap": 0.091
   },
   "storage": {
     "tall_frontage_m": 3.9,

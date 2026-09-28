@@ -1,0 +1,4846 @@
+{
+  "variant": "compact",
+  "room": "Entrance gallery and original hall",
+  "layoutRevision": 3,
+  "configuration": {
+    "room": "Entrance gallery and original hall",
+    "revision": 3,
+    "floorZ": 0,
+    "ceilingZ": 6.2,
+    "bounds": [
+      3.6,
+      -10.05,
+      9.71,
+      5.11
+    ],
+    "coatStorage": [
+      5.18,
+      -5.35,
+      5.5,
+      -4.3
+    ],
+    "shoeBench": [
+      8.665,
+      -6.53,
+      9.115,
+      -5.1
+    ],
+    "plant": [
+      6.04,
+      -3.66,
+      0.19
+    ],
+    "mirror": {
+      "center": [
+        6.009,
+        0.62,
+        1.2
+      ],
+      "width": 0.62,
+      "height": 2.02
+    },
+    "view": {
+      "id": "proposal-new-entrance-gallery",
+      "position": [
+        4.85,
+        -7.25,
+        0
+      ],
+      "direction": [
+        1,
+        0.45,
+        0
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          4.45,
+          -7.45,
+          1.62
+        ],
+        "target": [
+          7.1,
+          -6.7,
+          1.85
+        ],
+        "fov": 67
+      },
+      "storage": {
+        "position": [
+          7.62,
+          -6.98,
+          1.6
+        ],
+        "target": [
+          4.95,
+          -5.1,
+          1.12
+        ],
+        "fov": 63
+      },
+      "details": {
+        "position": [
+          7.9,
+          -5.42,
+          1.17
+        ],
+        "target": [
+          8.93,
+          -5.78,
+          0.35
+        ],
+        "fov": 56
+      },
+      "reverse": {
+        "position": [
+          7.4,
+          -4.48,
+          1.65
+        ],
+        "target": [
+          5.7,
+          -7.3,
+          2.5
+        ],
+        "fov": 66
+      },
+      "gallery": {
+        "position": [
+          7.48,
+          -3.78,
+          1.63
+        ],
+        "target": [
+          7.18,
+          2.55,
+          1.3
+        ],
+        "fov": 63
+      },
+      "hall": {
+        "position": [
+          6.72,
+          2.99,
+          1.62
+        ],
+        "target": [
+          6.64,
+          4.83,
+          1.22
+        ],
+        "fov": 70
+      },
+      "mirror": {
+        "position": [
+          7.38,
+          2.77,
+          1.6
+        ],
+        "target": [
+          6.05,
+          1.02,
+          1.12
+        ],
+        "fov": 60
+      },
+      "overview": {
+        "position": [
+          17,
+          9,
+          20
+        ],
+        "target": [
+          6.75,
+          -2.2,
+          0.75
+        ],
+        "fov": 57,
+        "cutaway": true
+      },
+      "stair": {
+        "position": [
+          6.6,
+          4.12,
+          1.63
+        ],
+        "target": [
+          8.2,
+          1.64,
+          1.72
+        ],
+        "fov": 66
+      }
+    },
+    "limitations": [
+      "The entrance link, front doors, internal glazing, stair openings and structural walls stay in place.",
+      "Two 320 mm-deep joinery legs wrap the retained wall corner; coats hang end-on in two bays.",
+      "The shoe bench sits below the retained gym glazing. The route remains clear with someone seated or choosing a coat.",
+      "The original stair geometry and radiator remain; the stair receives oak treads, ivory risers and simple bronze guarding.",
+      "The normal study views retain the double-height entrance. The cutaway removes the upper storeys only for ground-floor review."
+    ],
+    "keyReturn": [
+      4.4,
+      -5.67,
+      5.5,
+      -5.35
+    ],
+    "drawerDelta": [
+      0,
+      -0.25,
+      0
+    ]
+  },
+  "materials": {
+    "Warm plaster": [
+      0.76,
+      0.72,
+      0.59,
+      1
+    ],
+    "White joinery": [
+      0.91,
+      0.9,
+      0.84,
+      1
+    ],
+    "Red brown brick": [
+      0.43,
+      0.19,
+      0.105,
+      1
+    ],
+    "Slate roof": [
+      0.055,
+      0.06,
+      0.054,
+      1
+    ],
+    "Blue carpet": [
+      0.22,
+      0.27,
+      0.35,
+      1
+    ],
+    "Rose carpet": [
+      0.47,
+      0.245,
+      0.275,
+      1
+    ],
+    "Green carpet": [
+      0.13,
+      0.33,
+      0.265,
+      1
+    ],
+    "Oak": [
+      0.17,
+      0.064,
+      0.022,
+      1
+    ],
+    "Dark walnut": [
+      0.095,
+      0.036,
+      0.012,
+      1
+    ],
+    "Stone": [
+      0.54,
+      0.51,
+      0.42,
+      1
+    ],
+    "Concrete": [
+      0.48,
+      0.48,
+      0.45,
+      1
+    ],
+    "Glazing": [
+      0.93,
+      0.98,
+      1,
+      0.3
+    ],
+    "Metal": [
+      0.09,
+      0.1,
+      0.1,
+      1
+    ],
+    "Porcelain": [
+      0.91,
+      0.91,
+      0.84,
+      1
+    ],
+    "Cream tile": [
+      0.69,
+      0.66,
+      0.51,
+      1
+    ],
+    "Burgundy leather": [
+      0.31,
+      0.06,
+      0.059,
+      1
+    ],
+    "Cream upholstery": [
+      0.46,
+      0.42,
+      0.29,
+      1
+    ],
+    "Bed linen": [
+      0.56,
+      0.6,
+      0.62,
+      1
+    ],
+    "Gravel": [
+      0.37,
+      0.37,
+      0.33,
+      1
+    ],
+    "Grass": [
+      0.28,
+      0.39,
+      0.15,
+      1
+    ],
+    "Foliage": [
+      0.13,
+      0.25,
+      0.095,
+      1
+    ],
+    "Water": [
+      0.25,
+      0.51,
+      0.58,
+      1
+    ],
+    "Reference teal": [
+      0.06,
+      0.4,
+      0.43,
+      1
+    ],
+    "Book red": [
+      0.43,
+      0.16,
+      0.13,
+      1
+    ],
+    "Honey oak": [
+      0.32,
+      0.15,
+      0.045,
+      1
+    ],
+    "Pine": [
+      0.39,
+      0.2,
+      0.068,
+      1
+    ],
+    "Polished granite": [
+      0.105,
+      0.125,
+      0.123,
+      1
+    ],
+    "Chrome": [
+      0.7,
+      0.73,
+      0.74,
+      1
+    ],
+    "Brass": [
+      0.57,
+      0.38,
+      0.1,
+      1
+    ],
+    "Mirror": [
+      0.92,
+      0.95,
+      0.96,
+      1
+    ],
+    "Black screen": [
+      0.007,
+      0.012,
+      0.016,
+      1
+    ],
+    "Curtain taupe": [
+      0.25,
+      0.27,
+      0.27,
+      1
+    ],
+    "Curtain blue": [
+      0.045,
+      0.21,
+      0.28,
+      1
+    ],
+    "Curtain green gold": [
+      0.39,
+      0.38,
+      0.145,
+      1
+    ],
+    "Curtain floral": [
+      0.16,
+      0.2,
+      0.16,
+      1
+    ],
+    "Rattan": [
+      0.47,
+      0.3,
+      0.13,
+      1
+    ],
+    "Rattan cushion": [
+      0.24,
+      0.29,
+      0.18,
+      1
+    ],
+    "Cream ceramic": [
+      0.78,
+      0.72,
+      0.49,
+      1
+    ],
+    "Bed plaid": [
+      0.34,
+      0.35,
+      0.33,
+      1
+    ],
+    "Bed floral": [
+      0.28,
+      0.44,
+      0.44,
+      1
+    ],
+    "Lampshade": [
+      0.8,
+      0.73,
+      0.48,
+      1
+    ],
+    "Pink lampshade": [
+      0.51,
+      0.235,
+      0.2,
+      1
+    ],
+    "Picture print": [
+      0.34,
+      0.37,
+      0.28,
+      1
+    ],
+    "Book spine 0": [
+      0.055,
+      0.085,
+      0.12,
+      1
+    ],
+    "Book spine 1": [
+      0.45,
+      0.055,
+      0.035,
+      1
+    ],
+    "Book spine 2": [
+      0.66,
+      0.59,
+      0.43,
+      1
+    ],
+    "Book spine 3": [
+      0.11,
+      0.24,
+      0.2,
+      1
+    ],
+    "Book spine 4": [
+      0.36,
+      0.31,
+      0.19,
+      1
+    ],
+    "Book spine 5": [
+      0.72,
+      0.73,
+      0.65,
+      1
+    ],
+    "Book spine 6": [
+      0.14,
+      0.23,
+      0.3,
+      1
+    ],
+    "Cast iron": [
+      0.009,
+      0.013,
+      0.011,
+      1
+    ],
+    "Bathroom mist glass": [
+      0.73,
+      0.8,
+      0.8,
+      0.7
+    ],
+    "Pale bathroom tile": [
+      0.66,
+      0.7,
+      0.65,
+      1
+    ],
+    "Tarmac": [
+      0.105,
+      0.112,
+      0.108,
+      1
+    ],
+    "Planting soil": [
+      0.13,
+      0.105,
+      0.072,
+      1
+    ],
+    "Fountain stone": [
+      0.46,
+      0.41,
+      0.31,
+      1
+    ],
+    "Fountain water": [
+      0.15,
+      0.25,
+      0.21,
+      0.78
+    ],
+    "Hedge dark green": [
+      0.09,
+      0.18,
+      0.06,
+      1
+    ],
+    "White blossom": [
+      0.85,
+      0.84,
+      0.74,
+      1
+    ],
+    "Paving": [
+      0.46,
+      0.43,
+      0.36,
+      1
+    ],
+    "Garage roof timber": [
+      0.26,
+      0.16,
+      0.069,
+      1
+    ],
+    "Ochre footstool fabric": [
+      0.4399999976158142,
+      0.3199999928474426,
+      0.1599999964237213,
+      1.0
+    ],
+    "Hall opal lamp glass": [
+      0.91,
+      0.83,
+      0.61,
+      1
+    ],
+    "Pale painted cast iron": [
+      0.7,
+      0.74,
+      0.72,
+      1
+    ],
+    "Lift cream enamel": [
+      0.78,
+      0.76,
+      0.62,
+      1
+    ],
+    "Lift smoked safety panel": [
+      0.06,
+      0.052,
+      0.035,
+      1
+    ],
+    "Entrance mat fibre": [
+      0.3199999928474426,
+      0.18000000715255737,
+      0.0729999989271164,
+      1.0
+    ],
+    "Weathered fence timber": [
+      0.29,
+      0.23,
+      0.16,
+      1
+    ],
+    "Gate connector black iron": [
+      0.018,
+      0.022,
+      0.018,
+      1
+    ],
+    "Entrance arch mortar": [
+      0.6,
+      0.49,
+      0.32,
+      1
+    ],
+    "Entrance radial brick 0": [
+      0.27,
+      0.095,
+      0.038,
+      1
+    ],
+    "Entrance radial brick 1": [
+      0.33,
+      0.12,
+      0.05,
+      1
+    ],
+    "Entrance radial brick 2": [
+      0.22,
+      0.069,
+      0.025,
+      1
+    ],
+    "Entrance radial brick 3": [
+      0.38,
+      0.15,
+      0.062,
+      1
+    ],
+    "Entrance lantern iron": [
+      0.021,
+      0.022,
+      0.02,
+      1
+    ],
+    "Entrance lantern glass": [
+      0.64,
+      0.69,
+      0.64,
+      1
+    ],
+    "Garden roof membrane": [
+      0.048,
+      0.053,
+      0.046,
+      1
+    ],
+    "Entrance stippled glass": [
+      0.68,
+      0.73,
+      0.7,
+      0.68
+    ],
+    "Proposal | Limestone render": [
+      0.78,
+      0.76,
+      0.69,
+      1
+    ],
+    "Proposal | Limestone paving": [
+      0.54,
+      0.52,
+      0.45,
+      1
+    ],
+    "Proposal | Pale oak": [
+      0.44,
+      0.29,
+      0.14,
+      1
+    ],
+    "Proposal | Bronze black frames": [
+      0.034,
+      0.04,
+      0.037,
+      1
+    ],
+    "Proposal | Clear glazing": [
+      0.55,
+      0.72,
+      0.77,
+      0.14
+    ],
+    "Proposal | Loft plaster": [
+      0.83,
+      0.82,
+      0.76,
+      1
+    ],
+    "Proposal | Oatmeal linen": [
+      0.56,
+      0.53,
+      0.45,
+      1
+    ],
+    "Proposal | Warm lamps": [
+      0.95,
+      0.59,
+      0.24,
+      1
+    ],
+    "Proposal | Pool water": [
+      0.08,
+      0.36,
+      0.44,
+      0.72
+    ],
+    "Proposal | Pool limestone blue": [
+      0.22,
+      0.4,
+      0.42,
+      1
+    ],
+    "Proposal | Mulch": [
+      0.09,
+      0.066,
+      0.045,
+      1
+    ],
+    "Proposal | Grasses": [
+      0.22,
+      0.29,
+      0.095,
+      1
+    ],
+    "Proposal | Permeable court": [
+      0.32,
+      0.3,
+      0.26,
+      1
+    ],
+    "Proposal | Slate roof anthracite": [
+      0.048,
+      0.056,
+      0.06,
+      1
+    ],
+    "Proposal | Car tyre rubber": [
+      0.017,
+      0.02,
+      0.019,
+      1
+    ],
+    "Proposal | Car alloy": [
+      0.4,
+      0.43,
+      0.43,
+      1
+    ],
+    "Proposal | Car seals and grilles": [
+      0.017,
+      0.023,
+      0.025,
+      1
+    ],
+    "Proposal | Car smoked glass": [
+      0.065,
+      0.125,
+      0.15,
+      1
+    ],
+    "Proposal | Car headlight lenses": [
+      0.78,
+      0.83,
+      0.75,
+      1
+    ],
+    "Proposal | Car tail light lenses": [
+      0.36,
+      0.018,
+      0.016,
+      1
+    ],
+    "Proposal | Car blank plate": [
+      0.68,
+      0.69,
+      0.64,
+      1
+    ],
+    "Proposal | Car Deep blue": [
+      0.055,
+      0.135,
+      0.235,
+      1
+    ],
+    "Proposal | Car Sage grey": [
+      0.25,
+      0.31,
+      0.28,
+      1
+    ],
+    "Proposal | Car Pearl chalk": [
+      0.73,
+      0.72,
+      0.65,
+      1
+    ],
+    "Proposal | Car Burgundy": [
+      0.25,
+      0.045,
+      0.036,
+      1
+    ],
+    "Proposal | Car Graphite": [
+      0.06,
+      0.073,
+      0.085,
+      1
+    ],
+    "Proposal | Sliding gate oak slat": [
+      0.42,
+      0.27,
+      0.13,
+      1
+    ],
+    "Proposal | Kitchen honed warm quartz": [
+      0.67,
+      0.65,
+      0.59,
+      1
+    ],
+    "Proposal | Kitchen brushed stainless": [
+      0.46,
+      0.49,
+      0.48,
+      1
+    ],
+    "Proposal | Kitchen induction glass": [
+      0.024,
+      0.029,
+      0.031,
+      1
+    ],
+    "Proposal | Kitchen induction markings": [
+      0.22,
+      0.24,
+      0.24,
+      1
+    ],
+    "Proposal | Kitchen warm opal lens": [
+      0.94,
+      0.83,
+      0.63,
+      1
+    ],
+    "Proposal | Kitchen translucent paper shade": [
+      0.78,
+      0.73,
+      0.62,
+      1
+    ],
+    "Proposal | Patinated zinc flashings": [
+      0.115,
+      0.135,
+      0.135,
+      1
+    ],
+    "Proposal | Rainwater anthracite": [
+      0.043,
+      0.052,
+      0.049,
+      1
+    ],
+    "Proposal | Cherry detail Deep green": [
+      0.032999999821186066,
+      0.09000000357627869,
+      0.017999999225139618,
+      1.0
+    ],
+    "Proposal | Cherry detail Mid green": [
+      0.06700000166893005,
+      0.1509999930858612,
+      0.03200000151991844,
+      1.0
+    ],
+    "Proposal | Cherry detail Olive new leaf": [
+      0.10599999874830246,
+      0.1860000044107437,
+      0.04600000008940697,
+      1.0
+    ],
+    "Proposal | Cherry detail Small cherry petals": [
+      0.7099999785423279,
+      0.6899999976158142,
+      0.6100000143051147,
+      1.0
+    ],
+    "Proposal | Courtyard foliage 0": [
+      0.1,
+      0.19,
+      0.045,
+      1
+    ],
+    "Proposal | Courtyard foliage 1": [
+      0.17,
+      0.27,
+      0.065,
+      1
+    ],
+    "Proposal | Courtyard foliage 2": [
+      0.24,
+      0.34,
+      0.095,
+      1
+    ],
+    "Proposal | Courtyard foliage 3": [
+      0.13,
+      0.23,
+      0.052,
+      1
+    ],
+    "Proposal | Resin-bound gravel": [
+      0.6,
+      0.53,
+      0.41,
+      1
+    ],
+    "Proposal | Clipped box": [
+      0.16,
+      0.27,
+      0.1,
+      1
+    ],
+    "Proposal | Olive foliage": [
+      0.42,
+      0.5,
+      0.36,
+      1
+    ],
+    "Proposal | Olive bark": [
+      0.36,
+      0.32,
+      0.27,
+      1
+    ],
+    "Proposal | Planter soil": [
+      0.18,
+      0.14,
+      0.1,
+      1
+    ],
+    "Proposal | Front grass lawn": [
+      0.3,
+      0.42,
+      0.16,
+      1
+    ],
+    "Proposal | White ceramic": [
+      0.82,
+      0.83,
+      0.81,
+      1
+    ],
+    "Proposal | Bathroom mirror": [
+      0.73,
+      0.76,
+      0.77,
+      1
+    ],
+    "Proposal | Utility light diffuser": [
+      0.86,
+      0.92,
+      0.95,
+      1
+    ],
+    "Proposal | Pool light frosted lens": [
+      0.62,
+      0.8,
+      0.91,
+      1
+    ],
+    "Proposal | Cinema ink velvet": [
+      0.043,
+      0.061,
+      0.065,
+      1
+    ],
+    "Proposal | Cinema projection screen": [
+      0.66,
+      0.72,
+      0.69,
+      1
+    ],
+    "Proposal | Gym rubber": [
+      0.075,
+      0.083,
+      0.078,
+      1
+    ],
+    "Proposal | Gym graphite": [
+      0.11,
+      0.13,
+      0.12,
+      1
+    ],
+    "Proposal | Bottle green": [
+      0.025,
+      0.085,
+      0.041,
+      1
+    ],
+    "Proposal | Wine bottle labels": [
+      0.75,
+      0.7,
+      0.52,
+      1
+    ],
+    "Proposal | Side bathroom pale porcelain": [
+      0.6,
+      0.63,
+      0.59,
+      1
+    ],
+    "Proposal | Side bathroom opal glass": [
+      0.68,
+      0.75,
+      0.71,
+      0.9
+    ],
+    "Proposal | Dark walnut": [
+      0.2,
+      0.11,
+      0.06,
+      1
+    ],
+    "Proposal | Oxblood leather": [
+      0.28,
+      0.07,
+      0.06,
+      1
+    ],
+    "Proposal | Antique brass": [
+      0.55,
+      0.42,
+      0.2,
+      1
+    ],
+    "Proposal | Office rug navy": [
+      0.13,
+      0.15,
+      0.22,
+      1
+    ],
+    "Proposal | Banker lamp green": [
+      0.08,
+      0.3,
+      0.16,
+      1
+    ],
+    "Proposal | Cinema acoustic charcoal": [
+      0.065,
+      0.074,
+      0.073,
+      1
+    ],
+    "Proposal | Cinema woven carpet": [
+      0.1,
+      0.11,
+      0.1,
+      1
+    ],
+    "Proposal | Games table sage felt": [
+      0.13,
+      0.25,
+      0.2,
+      1
+    ],
+    "Proposal | Pool ball ivory": [
+      0.91,
+      0.89,
+      0.78,
+      1
+    ],
+    "Proposal | Walk-on lantern frame": [
+      0.05,
+      0.055,
+      0.052,
+      1
+    ],
+    "Proposal | Terrace timber balustrade": [
+      0.36,
+      0.24,
+      0.13,
+      1
+    ],
+    "Proposal | Terrace privacy opal glass": [
+      0.8,
+      0.85,
+      0.82,
+      0.72
+    ],
+    "Proposal | Hot tub ceramic": [
+      0.77,
+      0.8,
+      0.77,
+      1
+    ],
+    "Proposal | Hot tub water": [
+      0.095,
+      0.4,
+      0.43,
+      0.72
+    ],
+    "Proposal | Hot tub timber": [
+      0.22,
+      0.135,
+      0.075,
+      1
+    ],
+    "Proposal | Hot tub warm lens": [
+      0.98,
+      0.7,
+      0.37,
+      1
+    ],
+    "Proposal | Workshop warm timber": [
+      0.24,
+      0.16,
+      0.09,
+      1
+    ],
+    "Proposal | Workshop birch worktop": [
+      0.52,
+      0.38,
+      0.22,
+      1
+    ],
+    "Proposal | White internal walls": [
+      0.84,
+      0.84,
+      0.82,
+      1
+    ],
+    "Proposal | Slate roof anthracite - vertical hanging": [
+      0.04800000041723251,
+      0.0560000017285347,
+      0.05999999865889549,
+      1.0
+    ],
+    "Appearance | wall | Red brown brick": [
+      0.4300000071525574,
+      0.1899999976158142,
+      0.10499999672174454,
+      1.0
+    ],
+    "Appearance | wall | Warm plaster": [
+      0.7599999904632568,
+      0.7200000286102295,
+      0.5899999737739563,
+      1.0
+    ],
+    "Appearance | roof | Slate roof": [
+      0.054999999701976776,
+      0.05999999865889549,
+      0.05400000140070915,
+      1.0
+    ],
+    "Appearance | wall | Proposal | Limestone render": [
+      0.7799999713897705,
+      0.7599999904632568,
+      0.6899999976158142,
+      1.0
+    ],
+    "Appearance | oak-panel | Proposal | Pale oak": [
+      0.4399999976158142,
+      0.28999999165534973,
+      0.14000000059604645,
+      1.0
+    ],
+    "Appearance | oak-detail | Proposal | Bronze black frames": [
+      0.03400000184774399,
+      0.03999999910593033,
+      0.03700000047683716,
+      1.0
+    ],
+    "Appearance | dormer | Proposal | Slate roof anthracite - vertic": [
+      0.04800000041723251,
+      0.0560000017285347,
+      0.05999999865889549,
+      1.0
+    ],
+    "Appearance | wall | Proposal | Loft plaster": [
+      0.8299999833106995,
+      0.8199999928474426,
+      0.7599999904632568,
+      1.0
+    ],
+    "Appearance | roof | Proposal | Slate roof anthracite": [
+      0.04800000041723251,
+      0.0560000017285347,
+      0.05999999865889549,
+      1.0
+    ],
+    "Proposal | Quiet oak pale natural oak": [
+      0.55,
+      0.52,
+      0.46,
+      1
+    ],
+    "Proposal | Quiet oak honed limestone": [
+      0.98,
+      0.95,
+      0.88,
+      1
+    ],
+    "Proposal | Quiet oak beige limestone floor": [
+      0.79,
+      0.74,
+      0.66,
+      1
+    ],
+    "Proposal | Quiet oak limestone grout": [
+      0.7,
+      0.66,
+      0.59,
+      1
+    ],
+    "Proposal | Quiet oak cream upholstery": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Proposal | Quiet oak upholstery piping": [
+      0.6,
+      0.56,
+      0.49,
+      1
+    ],
+    "Proposal | Quiet oak shadow joints": [
+      0.027,
+      0.024,
+      0.018,
+      1
+    ],
+    "Proposal | Quiet oak obsidian enamel": [
+      0.012,
+      0.015,
+      0.018,
+      1
+    ],
+    "Proposal | Quiet oak smoked oven window": [
+      0.02,
+      0.025,
+      0.028,
+      1
+    ],
+    "Proposal | Quiet oak brushed champagne bronze": [
+      0.52,
+      0.38,
+      0.2,
+      1
+    ],
+    "Proposal | Quiet oak satin steel": [
+      0.4,
+      0.43,
+      0.43,
+      1
+    ],
+    "Proposal | Quiet oak opal diffuser": [
+      1,
+      0.75,
+      0.43,
+      1
+    ],
+    "Proposal | Quiet oak ivory ceramic": [
+      0.47,
+      0.425,
+      0.34,
+      1
+    ],
+    "Proposal | Quiet oak olive leaf": [
+      0.055,
+      0.09,
+      0.023,
+      1
+    ],
+    "Proposal | Quiet oak olive leaf underside": [
+      0.13,
+      0.165,
+      0.075,
+      1
+    ],
+    "Proposal | Quiet oak olive branch": [
+      0.18,
+      0.11,
+      0.055,
+      1
+    ],
+    "Proposal | Quiet oak green pear": [
+      0.235,
+      0.28,
+      0.035,
+      1
+    ],
+    "Proposal | Quiet oak oven display": [
+      0.49,
+      0.77,
+      0.78,
+      1
+    ],
+    "Proposal | Quiet oak warm ivory painted ceiling": [
+      0.82,
+      0.79,
+      0.71,
+      1
+    ],
+    "Proposal | Quiet oak oven dial edge": [
+      0.16,
+      0.175,
+      0.18,
+      1
+    ],
+    "Proposal | Quiet oak warm chalk media plaster": [
+      0.64,
+      0.598,
+      0.51,
+      1
+    ],
+    "Proposal | Quiet oak TV anti-reflective screen": [
+      0.008,
+      0.011,
+      0.012,
+      1
+    ],
+    "Proposal | Quiet oak planting soil": [
+      0.045,
+      0.027,
+      0.013,
+      1
+    ],
+    "Proposal | Quiet oak oatmeal linen": [
+      0.73,
+      0.7,
+      0.63,
+      1
+    ],
+    "Proposal | Quiet oak book paper": [
+      0.7,
+      0.66,
+      0.56,
+      1
+    ],
+    "Ensuite 01 | recess shadow": [
+      0.041999999433755875,
+      0.032999999821186066,
+      0.024000000208616257,
+      1.0
+    ],
+    "Ensuite 01 | warm light lens": [
+      0.9599999785423279,
+      0.8500000238418579,
+      0.6499999761581421,
+      1.0
+    ],
+    "Ensuite 01 | taupe clothes": [
+      0.3400000035762787,
+      0.28999999165534973,
+      0.23000000417232513,
+      1.0
+    ],
+    "Bedroom 02 | brushed bronze": [
+      0.38999998569488525,
+      0.2800000011920929,
+      0.1599999964237213,
+      1.0
+    ],
+    "Ensuite 01 | folded ivory towels": [
+      0.7699999809265137,
+      0.7350000143051147,
+      0.6499999761581421,
+      1.0
+    ],
+    "Ensuite 01 | ivory clothes": [
+      0.7699999809265137,
+      0.7400000095367432,
+      0.6700000166893005,
+      1.0
+    ],
+    "Ensuite 01 | charcoal clothes": [
+      0.052000001072883606,
+      0.06499999761581421,
+      0.061000000685453415,
+      1.0
+    ],
+    "Ensuite 01 | warm white ceramic": [
+      0.8999999761581421,
+      0.8849999904632568,
+      0.8399999737739563,
+      1.0
+    ],
+    "Ensuite 01 | mirror backing": [
+      0.7200000286102295,
+      0.75,
+      0.7300000190734863,
+      1.0
+    ],
+    "Ensuite 01 | Shower Glass": [
+      0.8500000238418579,
+      0.9399999976158142,
+      0.9100000262260437,
+      0.1599999964237213
+    ],
+    "Ensuite 01 | honed bath stone": [
+      0.9800000190734863,
+      0.949999988079071,
+      0.8799999952316284,
+      1.0
+    ],
+    "Ensuite 01 | obscure privacy pane": [
+      0.7599999904632568,
+      0.8199999928474426,
+      0.7699999809265137,
+      0.8500000238418579
+    ],
+    "Ensuite 01 | limestone grout": [
+      0.4300000071525574,
+      0.38999998569488525,
+      0.3199999928474426,
+      1.0
+    ],
+    "Bedroom 02 | ivory plaster": [
+      0.8199999928474426,
+      0.800000011920929,
+      0.75,
+      1.0
+    ],
+    "Bedroom 02 | sand linen": [
+      0.550000011920929,
+      0.49000000953674316,
+      0.4000000059604645,
+      1.0
+    ],
+    "Bedroom 02 | charcoal": [
+      0.017999999225139618,
+      0.023000000044703484,
+      0.02500000037252903,
+      1.0
+    ],
+    "Bedroom 02 | ivory wool": [
+      0.7200000286102295,
+      0.6800000071525574,
+      0.6000000238418579,
+      1.0
+    ],
+    "Bedroom 02 | opal lens": [
+      0.9599999785423279,
+      0.8700000047683716,
+      0.6700000166893005,
+      1.0
+    ],
+    "Bedroom 02 | screen": [
+      0.012000000104308128,
+      0.017999999225139618,
+      0.019999999552965164,
+      1.0
+    ],
+    "Interior | Cinema natural oak": [
+      0.55,
+      0.52,
+      0.46,
+      1
+    ],
+    "Interior | Cinema smoked oak": [
+      0.16,
+      0.13,
+      0.1,
+      1
+    ],
+    "Interior | Cinema warm taupe upholstery": [
+      0.48,
+      0.42,
+      0.35,
+      1
+    ],
+    "Interior | Cinema charcoal acoustic fabric": [
+      0.036,
+      0.03,
+      0.025,
+      1
+    ],
+    "Interior | Cinema warm charcoal woven carpet": [
+      0.06,
+      0.052,
+      0.043,
+      1
+    ],
+    "Interior | Cinema warm charcoal ceiling": [
+      0.055,
+      0.048,
+      0.04,
+      1
+    ],
+    "Interior | Cinema honed limestone": [
+      0.79,
+      0.74,
+      0.66,
+      1
+    ],
+    "Interior | Cinema shadow joint": [
+      0.009,
+      0.009,
+      0.009,
+      1
+    ],
+    "Interior | Cinema satin dark bronze": [
+      0.12,
+      0.1,
+      0.075,
+      1
+    ],
+    "Interior | Cinema AV graphite": [
+      0.015,
+      0.017,
+      0.018,
+      1
+    ],
+    "Interior | Cinema AV control edge": [
+      0.25,
+      0.27,
+      0.28,
+      1
+    ],
+    "Interior | Cinema projection surface": [
+      0.31,
+      0.33,
+      0.33,
+      1
+    ],
+    "Interior | Cinema warm concealed diffuser": [
+      1,
+      0.72,
+      0.39,
+      1
+    ],
+    "Interior | Cinema standby amber": [
+      0.9,
+      0.38,
+      0.08,
+      1
+    ],
+    "Interior | Cinema taupe stitch": [
+      0.25,
+      0.215,
+      0.17,
+      1
+    ],
+    "Interior | Bar natural oak": [
+      0.6,
+      0.58,
+      0.52,
+      1
+    ],
+    "Interior | Bar smoked oak": [
+      0.25,
+      0.2,
+      0.15,
+      1
+    ],
+    "Interior | Bar honed limestone": [
+      0.85,
+      0.79,
+      0.68,
+      1
+    ],
+    "Interior | Bar ivory upholstery": [
+      0.88,
+      0.82,
+      0.71,
+      1
+    ],
+    "Interior | Bar oatmeal carpet": [
+      0.53,
+      0.47,
+      0.36,
+      1
+    ],
+    "Interior | Bar warm ivory plaster": [
+      0.84,
+      0.81,
+      0.75,
+      1
+    ],
+    "Interior | Bar satin bronze": [
+      0.24,
+      0.19,
+      0.12,
+      1
+    ],
+    "Interior | Bar graphite fittings": [
+      0.019,
+      0.021,
+      0.021,
+      1
+    ],
+    "Interior | Bar shadow joint": [
+      0.015,
+      0.014,
+      0.012,
+      1
+    ],
+    "Interior | Bar fixed TV glass": [
+      0.025,
+      0.038,
+      0.041,
+      1
+    ],
+    "Interior | Bar warm opal": [
+      1,
+      0.79,
+      0.53,
+      1
+    ],
+    "Interior | Bar clear glass": [
+      0.79,
+      0.85,
+      0.8,
+      0.2
+    ],
+    "Interior | Bar olive bottle glass": [
+      0.044,
+      0.087,
+      0.042,
+      1
+    ],
+    "Interior | Bar amber bottle glass": [
+      0.3,
+      0.12,
+      0.025,
+      1
+    ],
+    "Interior | Bar ivory paper labels": [
+      0.82,
+      0.79,
+      0.67,
+      1
+    ],
+    "Interior | Bar terracotta detail": [
+      0.44,
+      0.1,
+      0.064,
+      1
+    ],
+    "Interior | Bar deep sage cloth": [
+      0.085,
+      0.16,
+      0.12,
+      1
+    ],
+    "Interior | Bar art warm grey": [
+      0.39,
+      0.38,
+      0.34,
+      1
+    ],
+    "Interior | Bar art chalk": [
+      0.77,
+      0.75,
+      0.69,
+      1
+    ],
+    "Interior | Gym natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Gym honed limestone": [
+      0.82,
+      0.77,
+      0.68,
+      1
+    ],
+    "Interior | Gym warm ivory": [
+      0.86,
+      0.83,
+      0.77,
+      1
+    ],
+    "Interior | Gym ivory terry fabric": [
+      0.89,
+      0.86,
+      0.77,
+      1
+    ],
+    "Interior | Gym warm grey rubber": [
+      0.28,
+      0.27,
+      0.24,
+      1
+    ],
+    "Interior | Gym graphite equipment": [
+      0.047,
+      0.051,
+      0.049,
+      1
+    ],
+    "Interior | Gym belt and pads": [
+      0.018,
+      0.021,
+      0.02,
+      1
+    ],
+    "Interior | Gym brushed bronze": [
+      0.28,
+      0.22,
+      0.14,
+      1
+    ],
+    "Interior | Gym satin steel": [
+      0.43,
+      0.46,
+      0.45,
+      1
+    ],
+    "Interior | Gym equipment display": [
+      0.035,
+      0.065,
+      0.065,
+      1
+    ],
+    "Interior | Gym screen marks": [
+      0.49,
+      0.69,
+      0.63,
+      1
+    ],
+    "Interior | Gym safety red": [
+      0.55,
+      0.035,
+      0.025,
+      1
+    ],
+    "Interior | Gym warm light diffuser": [
+      1,
+      0.8,
+      0.56,
+      1
+    ],
+    "Interior | Utility natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Utility honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Utility warm ivory": [
+      0.88,
+      0.85,
+      0.79,
+      1
+    ],
+    "Interior | Utility ivory appliance enamel": [
+      0.91,
+      0.9,
+      0.85,
+      1
+    ],
+    "Interior | Utility ivory linen": [
+      0.88,
+      0.85,
+      0.77,
+      1
+    ],
+    "Interior | Utility satin bronze": [
+      0.3,
+      0.24,
+      0.16,
+      1
+    ],
+    "Interior | Utility satin appliance steel": [
+      0.5,
+      0.53,
+      0.52,
+      1
+    ],
+    "Interior | Utility rubber and recess": [
+      0.021,
+      0.025,
+      0.024,
+      1
+    ],
+    "Interior | Utility appliance display": [
+      0.026,
+      0.047,
+      0.044,
+      1
+    ],
+    "Interior | Utility display marks": [
+      0.56,
+      0.7,
+      0.64,
+      1
+    ],
+    "Interior | Utility warm light diffuser": [
+      1,
+      0.83,
+      0.61,
+      1
+    ],
+    "Interior | Utility appliance door glass": [
+      0.42,
+      0.51,
+      0.49,
+      1
+    ],
+    "Interior | Guest natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Guest honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Guest warm ivory": [
+      0.89,
+      0.86,
+      0.8,
+      1
+    ],
+    "Interior | Guest ivory upholstery": [
+      0.88,
+      0.85,
+      0.77,
+      1
+    ],
+    "Interior | Guest cotton bedding": [
+      0.95,
+      0.93,
+      0.87,
+      1
+    ],
+    "Interior | Guest woven taupe": [
+      0.58,
+      0.54,
+      0.45,
+      1
+    ],
+    "Interior | Guest warm wool carpet": [
+      0.73,
+      0.7,
+      0.62,
+      1
+    ],
+    "Interior | Guest satin bronze": [
+      0.31,
+      0.25,
+      0.17,
+      1
+    ],
+    "Interior | Guest shadow and recess": [
+      0.025,
+      0.029,
+      0.026,
+      1
+    ],
+    "Interior | Guest fixed screen": [
+      0.018,
+      0.025,
+      0.023,
+      1
+    ],
+    "Interior | Guest warm diffuser": [
+      1,
+      0.84,
+      0.63,
+      1
+    ],
+    "Interior | Guest olive leaves": [
+      0.18,
+      0.25,
+      0.15,
+      1
+    ],
+    "Interior | Guest soil": [
+      0.055,
+      0.046,
+      0.031,
+      1
+    ],
+    "Interior | Guestbath natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Guestbath honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Guestbath warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Guestbath ivory ceramic": [
+      0.96,
+      0.945,
+      0.9,
+      1
+    ],
+    "Interior | Guestbath satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Guestbath ivory towels": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Guestbath recess and drain": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Guestbath mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Guestbath clear shower glass": [
+      0.91,
+      0.97,
+      0.95,
+      1
+    ],
+    "Interior | Guestbath warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Family natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Family honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Family warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Family ivory upholstery": [
+      0.89,
+      0.86,
+      0.79,
+      1
+    ],
+    "Interior | Family warm taupe linen": [
+      0.59,
+      0.55,
+      0.47,
+      1
+    ],
+    "Interior | Family book paper": [
+      0.93,
+      0.91,
+      0.84,
+      1
+    ],
+    "Interior | Family satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Family joinery shadow": [
+      0.028,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Family warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Family living foliage": [
+      0.17,
+      0.25,
+      0.14,
+      1
+    ],
+    "Interior | Cloakroom natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Cloakroom honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Cloakroom warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Cloakroom ivory ceramic": [
+      0.96,
+      0.945,
+      0.9,
+      1
+    ],
+    "Interior | Cloakroom satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Cloakroom ivory towels": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Cloakroom recess and drain": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Cloakroom mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Cloakroom warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Cloakroom soft white paper": [
+      0.96,
+      0.94,
+      0.88,
+      1
+    ],
+    "Interior | Bedroom2 natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Bedroom2 honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Bedroom2 warm ivory": [
+      0.89,
+      0.86,
+      0.8,
+      1
+    ],
+    "Interior | Bedroom2 ivory upholstery": [
+      0.88,
+      0.85,
+      0.77,
+      1
+    ],
+    "Interior | Bedroom2 cotton bedding": [
+      0.95,
+      0.93,
+      0.87,
+      1
+    ],
+    "Interior | Bedroom2 woven taupe": [
+      0.58,
+      0.54,
+      0.45,
+      1
+    ],
+    "Interior | Bedroom2 warm wool carpet": [
+      0.73,
+      0.7,
+      0.62,
+      1
+    ],
+    "Interior | Bedroom2 satin bronze": [
+      0.31,
+      0.25,
+      0.17,
+      1
+    ],
+    "Interior | Bedroom2 shadow and recess": [
+      0.025,
+      0.029,
+      0.026,
+      1
+    ],
+    "Interior | Bedroom2 warm diffuser": [
+      1,
+      0.84,
+      0.63,
+      1
+    ],
+    "Interior | Bedroom2 soft green leaves": [
+      0.18,
+      0.25,
+      0.15,
+      1
+    ],
+    "Interior | Bedroom3 natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Bedroom3 honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Bedroom3 warm ivory": [
+      0.89,
+      0.86,
+      0.8,
+      1
+    ],
+    "Interior | Bedroom3 ivory upholstery": [
+      0.88,
+      0.85,
+      0.77,
+      1
+    ],
+    "Interior | Bedroom3 cotton bedding": [
+      0.95,
+      0.93,
+      0.87,
+      1
+    ],
+    "Interior | Bedroom3 woven taupe": [
+      0.58,
+      0.54,
+      0.45,
+      1
+    ],
+    "Interior | Bedroom3 warm wool carpet": [
+      0.73,
+      0.7,
+      0.62,
+      1
+    ],
+    "Interior | Bedroom3 satin bronze": [
+      0.31,
+      0.25,
+      0.17,
+      1
+    ],
+    "Interior | Bedroom3 shadow and recess": [
+      0.025,
+      0.029,
+      0.026,
+      1
+    ],
+    "Interior | Bedroom3 warm diffuser": [
+      1,
+      0.84,
+      0.63,
+      1
+    ],
+    "Interior | Bedroom3 soft green leaves": [
+      0.18,
+      0.25,
+      0.15,
+      1
+    ],
+    "Interior | Familybath natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Familybath honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Familybath warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Familybath ivory ceramic": [
+      0.96,
+      0.945,
+      0.9,
+      1
+    ],
+    "Interior | Familybath satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Familybath ivory towels": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Familybath recess and drain": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Familybath mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Familybath warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Familybath soft white paper": [
+      0.96,
+      0.94,
+      0.88,
+      1
+    ],
+    "Interior | Familybath warm stone grout": [
+      0.63,
+      0.6,
+      0.52,
+      1
+    ],
+    "Interior | Bedroom4 natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Bedroom4 honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Bedroom4 warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Bedroom4 ivory ceramic": [
+      0.96,
+      0.945,
+      0.9,
+      1
+    ],
+    "Interior | Bedroom4 satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Bedroom4 ivory upholstery": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Bedroom4 cotton bedding": [
+      0.95,
+      0.93,
+      0.87,
+      1
+    ],
+    "Interior | Bedroom4 woven taupe": [
+      0.58,
+      0.54,
+      0.45,
+      1
+    ],
+    "Interior | Bedroom4 warm wool carpet": [
+      0.73,
+      0.7,
+      0.62,
+      1
+    ],
+    "Interior | Bedroom4 recess and drain": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Bedroom4 mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Bedroom4 warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Bedroom4 clear shower glass": [
+      0.91,
+      0.97,
+      0.95,
+      1
+    ],
+    "Interior | Formal natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Formal honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Formal warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Formal ivory upholstery": [
+      0.89,
+      0.86,
+      0.79,
+      1
+    ],
+    "Interior | Formal woven taupe": [
+      0.59,
+      0.55,
+      0.47,
+      1
+    ],
+    "Interior | Formal warm wool": [
+      0.76,
+      0.735,
+      0.67,
+      1
+    ],
+    "Interior | Formal satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Formal joinery shadow": [
+      0.028,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Formal living foliage": [
+      0.17,
+      0.25,
+      0.14,
+      1
+    ],
+    "Interior | Formal book paper": [
+      0.93,
+      0.91,
+      0.84,
+      1
+    ],
+    "Interior | Formal warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Formal drinks clear glass": [
+      0.86,
+      0.91,
+      0.87,
+      1
+    ],
+    "Interior | Formal drinks bronze mirror": [
+      0.54,
+      0.46,
+      0.32,
+      1
+    ],
+    "Interior | Sidebed natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Sidebed honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Sidebed warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Sidebed cotton bedding": [
+      0.95,
+      0.93,
+      0.87,
+      1
+    ],
+    "Interior | Sidebed ivory upholstery": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Sidebed woven taupe": [
+      0.58,
+      0.54,
+      0.45,
+      1
+    ],
+    "Interior | Sidebed warm wool carpet": [
+      0.73,
+      0.7,
+      0.62,
+      1
+    ],
+    "Interior | Sidebed ivory ceramic": [
+      0.96,
+      0.945,
+      0.9,
+      1
+    ],
+    "Interior | Sidebed satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Sidebed recess and drain": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Sidebed mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Sidebed warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Sidebed clear shower glass": [
+      0.91,
+      0.97,
+      0.95,
+      1
+    ],
+    "Interior | Loftsuite natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Loftsuite honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Loftsuite warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Loftsuite cotton bedding": [
+      0.95,
+      0.93,
+      0.87,
+      1
+    ],
+    "Interior | Loftsuite ivory upholstery": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Loftsuite woven taupe": [
+      0.58,
+      0.54,
+      0.45,
+      1
+    ],
+    "Interior | Loftsuite warm wool carpet": [
+      0.73,
+      0.7,
+      0.62,
+      1
+    ],
+    "Interior | Loftsuite ivory ceramic": [
+      0.96,
+      0.945,
+      0.9,
+      1
+    ],
+    "Interior | Loftsuite satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Loftsuite recess and drain": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Loftsuite mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Loftsuite warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Loftsuite clear shower glass": [
+      0.91,
+      0.97,
+      0.95,
+      1
+    ],
+    "Interior | Loftsuite soft green leaves": [
+      0.18,
+      0.25,
+      0.15,
+      1
+    ],
+    "Interior | Hobby natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Hobby honed limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Hobby warm ivory": [
+      0.9,
+      0.875,
+      0.825,
+      1
+    ],
+    "Interior | Hobby paper and linen": [
+      0.95,
+      0.93,
+      0.87,
+      1
+    ],
+    "Interior | Hobby ivory upholstery": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Hobby woven taupe": [
+      0.58,
+      0.54,
+      0.45,
+      1
+    ],
+    "Interior | Hobby satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Hobby recess and rubber": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Hobby soft green leaves": [
+      0.18,
+      0.25,
+      0.15,
+      1
+    ],
+    "Interior | Hobby warm diffuser": [
+      1,
+      0.84,
+      0.65,
+      1
+    ],
+    "Interior | Hobby sage work mat": [
+      0.39,
+      0.43,
+      0.34,
+      1
+    ],
+    "Interior | Terrace pale outdoor timber": [
+      0.64,
+      0.58,
+      0.46,
+      1
+    ],
+    "Interior | Terrace ivory outdoor upholstery": [
+      0.91,
+      0.885,
+      0.82,
+      1
+    ],
+    "Interior | Terrace taupe outdoor weave": [
+      0.63,
+      0.57,
+      0.46,
+      1
+    ],
+    "Interior | Terrace honed stone": [
+      0.83,
+      0.79,
+      0.69,
+      1
+    ],
+    "Interior | Terrace satin bronze": [
+      0.31,
+      0.25,
+      0.17,
+      1
+    ],
+    "Interior | Terrace shadow and rubber": [
+      0.035,
+      0.037,
+      0.03,
+      1
+    ],
+    "Interior | Terrace ceramic ivory": [
+      0.91,
+      0.89,
+      0.83,
+      1
+    ],
+    "Interior | Terrace sage green": [
+      0.25,
+      0.32,
+      0.2,
+      1
+    ],
+    "Interior | Terrace warm portable lamp": [
+      1,
+      0.85,
+      0.67,
+      1
+    ],
+    "Interior | Arrival natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Arrival warm limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Arrival warm ivory": [
+      0.91,
+      0.885,
+      0.825,
+      1
+    ],
+    "Interior | Arrival ivory upholstery": [
+      0.91,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Arrival woven taupe": [
+      0.58,
+      0.53,
+      0.44,
+      1
+    ],
+    "Interior | Arrival satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Arrival recess and rubber": [
+      0.031,
+      0.034,
+      0.028,
+      1
+    ],
+    "Interior | Arrival soft green": [
+      0.2,
+      0.29,
+      0.16,
+      1
+    ],
+    "Interior | Arrival limestone fine joints": [
+      0.68,
+      0.65,
+      0.58,
+      1
+    ],
+    "Interior | Arrival warm diffuser": [
+      1,
+      0.85,
+      0.68,
+      1
+    ],
+    "Interior | Arrival ivory ceramic": [
+      0.94,
+      0.915,
+      0.86,
+      1
+    ],
+    "Interior | Arrival mirror": [
+      0.95,
+      0.96,
+      0.96,
+      1
+    ],
+    "Interior | Landings natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Landings warm limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Landings warm ivory": [
+      0.91,
+      0.885,
+      0.825,
+      1
+    ],
+    "Interior | Landings ivory upholstery": [
+      0.91,
+      0.885,
+      0.82,
+      1
+    ],
+    "Interior | Landings woven taupe": [
+      0.58,
+      0.53,
+      0.44,
+      1
+    ],
+    "Interior | Landings satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Landings recess": [
+      0.032,
+      0.035,
+      0.029,
+      1
+    ],
+    "Interior | Landings book paper": [
+      0.94,
+      0.92,
+      0.87,
+      1
+    ],
+    "Interior | Landings olive book cloth": [
+      0.31,
+      0.35,
+      0.26,
+      1
+    ],
+    "Interior | Landings clay book cloth": [
+      0.47,
+      0.37,
+      0.29,
+      1
+    ],
+    "Interior | Landings warm diffuser": [
+      1,
+      0.85,
+      0.68,
+      1
+    ],
+    "Interior | Landings ivory ceramic": [
+      0.94,
+      0.92,
+      0.87,
+      1
+    ],
+    "Proposal | Car Silver": [
+      0.51,
+      0.54,
+      0.54,
+      1
+    ],
+    "Interior | Garage natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Garage warm stone worktop": [
+      0.81,
+      0.79,
+      0.72,
+      1
+    ],
+    "Interior | Garage warm ivory": [
+      0.91,
+      0.885,
+      0.825,
+      1
+    ],
+    "Interior | Garage warm grey cabinet": [
+      0.55,
+      0.56,
+      0.52,
+      1
+    ],
+    "Interior | Garage warm grey resin": [
+      0.6,
+      0.6,
+      0.565,
+      1
+    ],
+    "Interior | Garage rubber and shadow": [
+      0.037,
+      0.043,
+      0.037,
+      1
+    ],
+    "Interior | Garage satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Garage satin steel": [
+      0.48,
+      0.49,
+      0.46,
+      1
+    ],
+    "Interior | Garage warm diffuser": [
+      1,
+      0.86,
+      0.72,
+      1
+    ],
+    "Interior | Garage charger status": [
+      0.24,
+      0.72,
+      0.42,
+      1
+    ],
+    "Interior | Garage muted tool handles": [
+      0.18,
+      0.26,
+      0.27,
+      1
+    ],
+    "Interior | Poolgarden pale outdoor timber": [
+      0.64,
+      0.58,
+      0.46,
+      1
+    ],
+    "Interior | Poolgarden ivory outdoor upholstery": [
+      0.91,
+      0.885,
+      0.82,
+      1
+    ],
+    "Interior | Poolgarden taupe woven fabric": [
+      0.67,
+      0.62,
+      0.53,
+      1
+    ],
+    "Interior | Poolgarden honed limestone": [
+      0.83,
+      0.79,
+      0.69,
+      1
+    ],
+    "Interior | Poolgarden satin bronze": [
+      0.31,
+      0.25,
+      0.17,
+      1
+    ],
+    "Interior | Poolgarden rubber and shadow": [
+      0.035,
+      0.037,
+      0.03,
+      1
+    ],
+    "Interior | Poolgarden warm ceramic": [
+      0.89,
+      0.88,
+      0.81,
+      1
+    ],
+    "Interior | Poolgarden portable warm diffuser": [
+      1,
+      0.85,
+      0.69,
+      1
+    ],
+    "Interior | Gardenhouse natural oak": [
+      0.61,
+      0.575,
+      0.5,
+      1
+    ],
+    "Interior | Gardenhouse warm limestone": [
+      0.82,
+      0.785,
+      0.7,
+      1
+    ],
+    "Interior | Gardenhouse warm ivory": [
+      0.91,
+      0.885,
+      0.825,
+      1
+    ],
+    "Interior | Gardenhouse ivory upholstery": [
+      0.92,
+      0.89,
+      0.83,
+      1
+    ],
+    "Interior | Gardenhouse woven taupe": [
+      0.64,
+      0.59,
+      0.49,
+      1
+    ],
+    "Interior | Gardenhouse satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Gardenhouse shadow and waste": [
+      0.027,
+      0.031,
+      0.026,
+      1
+    ],
+    "Interior | Gardenhouse ivory ceramic": [
+      0.95,
+      0.94,
+      0.89,
+      1
+    ],
+    "Interior | Gardenhouse mirror glass": [
+      0.88,
+      0.91,
+      0.91,
+      1
+    ],
+    "Interior | Gardenhouse warm diffuser": [
+      1,
+      0.84,
+      0.68,
+      1
+    ],
+    "Interior | Gardenhouse paper": [
+      0.96,
+      0.94,
+      0.89,
+      1
+    ],
+    "Interior | Office natural oak": [
+      0.6,
+      0.57,
+      0.5,
+      1
+    ],
+    "Interior | Office warm limestone": [
+      0.83,
+      0.79,
+      0.7,
+      1
+    ],
+    "Interior | Office warm ivory": [
+      0.91,
+      0.885,
+      0.825,
+      1
+    ],
+    "Interior | Office ivory upholstery": [
+      0.91,
+      0.885,
+      0.82,
+      1
+    ],
+    "Interior | Office woven taupe": [
+      0.59,
+      0.55,
+      0.47,
+      1
+    ],
+    "Interior | Office satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Office graphite details": [
+      0.025,
+      0.029,
+      0.025,
+      1
+    ],
+    "Interior | Office paper": [
+      0.93,
+      0.92,
+      0.86,
+      1
+    ],
+    "Interior | Office living foliage": [
+      0.18,
+      0.25,
+      0.14,
+      1
+    ],
+    "Interior | Office monitor glass": [
+      0.035,
+      0.055,
+      0.045,
+      1
+    ],
+    "Interior | Office warm diffuser": [
+      1,
+      0.84,
+      0.67,
+      1
+    ],
+    "Interior | Workshop natural oak": [
+      0.62,
+      0.58,
+      0.49,
+      1
+    ],
+    "Interior | Workshop washable ivory": [
+      0.9,
+      0.88,
+      0.82,
+      1
+    ],
+    "Interior | Workshop warm grey floor": [
+      0.59,
+      0.585,
+      0.55,
+      1
+    ],
+    "Interior | Workshop satin metal": [
+      0.37,
+      0.38,
+      0.36,
+      1
+    ],
+    "Interior | Workshop satin bronze": [
+      0.32,
+      0.255,
+      0.17,
+      1
+    ],
+    "Interior | Workshop rubber graphite": [
+      0.027,
+      0.032,
+      0.029,
+      1
+    ],
+    "Interior | Workshop paper": [
+      0.92,
+      0.91,
+      0.85,
+      1
+    ],
+    "Interior | Workshop opal diffuser": [
+      1,
+      0.88,
+      0.73,
+      1
+    ],
+    "Interior | Workshop sage tool cases": [
+      0.35,
+      0.4,
+      0.32,
+      1
+    ]
+  },
+  "planRooms": [
+    {
+      "name": "Entrance hall",
+      "floor": 0,
+      "polygon": [
+        [
+          501,
+          347
+        ],
+        [
+          707,
+          347
+        ],
+        [
+          707,
+          579
+        ],
+        [
+          579,
+          579
+        ],
+        [
+          579,
+          461
+        ],
+        [
+          501,
+          461
+        ]
+      ],
+      "polygon_m": [
+        [
+          4.32,
+          5.1
+        ],
+        [
+          8.88,
+          5.1
+        ],
+        [
+          8.88,
+          0.0
+        ],
+        [
+          5.92,
+          0.0
+        ],
+        [
+          5.92,
+          2.59
+        ],
+        [
+          4.32,
+          2.59
+        ]
+      ],
+      "published_dimensions_m": null
+    },
+    {
+      "name": "New entrance gallery",
+      "floor": 0,
+      "base_z": 0,
+      "polygon_m": [
+        [
+          3.61,
+          -9.27
+        ],
+        [
+          9.139999999999999,
+          -9.27
+        ],
+        [
+          9.139999999999999,
+          -4.23
+        ],
+        [
+          3.61,
+          -4.23
+        ]
+      ],
+      "proposal": true
+    },
+    {
+      "name": "Attached entrance gallery",
+      "floor": 0,
+      "base_z": 0,
+      "polygon_m": [
+        [
+          5.73,
+          -4
+        ],
+        [
+          9.585,
+          -4
+        ],
+        [
+          9.585,
+          -0.115
+        ],
+        [
+          5.73,
+          -0.115
+        ]
+      ],
+      "proposal": true
+    }
+  ],
+  "proposalLights": [
+    {
+      "name": "Arrival 01 | key bay warm glow",
+      "position": [
+        4.95,
+        -5.489999999999999,
+        1.88
+      ],
+      "range": 1.4,
+      "intensity": 0.18
+    },
+    {
+      "name": "Arrival 01 | old hall sconce 5.59",
+      "position": [
+        5.59,
+        4.82,
+        2.04
+      ],
+      "range": 2.4,
+      "intensity": 0.25
+    },
+    {
+      "name": "Arrival 01 | old hall sconce 8.2",
+      "position": [
+        8.2,
+        4.82,
+        2.04
+      ],
+      "range": 2.4,
+      "intensity": 0.25
+    },
+    {
+      "name": "Arrival 01 | pendant warm light 0",
+      "position": [
+        6.37,
+        -7.62,
+        3.17
+      ],
+      "range": 4.2,
+      "intensity": 0.55
+    },
+    {
+      "name": "Arrival 01 | pendant warm light 1",
+      "position": [
+        6.73,
+        -7.1,
+        3.6
+      ],
+      "range": 4.2,
+      "intensity": 0.55
+    },
+    {
+      "name": "Arrival 01 | pendant warm light 2",
+      "position": [
+        6.42,
+        -6.48,
+        4.02
+      ],
+      "range": 4.2,
+      "intensity": 0.55
+    },
+    {
+      "name": "Arrival 01 | arrival ambient -7.3",
+      "position": [
+        6.7,
+        -7.3,
+        2.43
+      ],
+      "range": 3.0,
+      "intensity": 0.4
+    },
+    {
+      "name": "Arrival 01 | arrival ambient -1.65",
+      "position": [
+        7.25,
+        -1.65,
+        2.43
+      ],
+      "range": 3.0,
+      "intensity": 0.4
+    }
+  ],
+  "cutawayObjects": [
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Landing radiator rib",
+    "Bedroom 3 | ceiling",
+    "Bedroom 5 | ceiling",
+    "Linen cupboard | ceiling",
+    "Bathroom | ceiling",
+    "Principal bedroom | ceiling",
+    "Bedroom 2 | ceiling",
+    "Landing continuous ceiling",
+    "Roof join | Front fascia east",
+    "Roof join | Front soffit east",
+    "Bedroom 3 | floor",
+    "Bedroom 5 | floor",
+    "Linen cupboard | floor",
+    "Bathroom | floor",
+    "Principal bedroom | floor",
+    "Bedroom 2 | floor",
+    "Landing | floor",
+    "Landing connection at head of stairs",
+    "Bedroom 5 to 4 | end",
+    "Linen cupboard back | end",
+    "Bedroom 4 en suite hall | end",
+    "Bathroom bedroom 3 | end",
+    "Bathroom east | end",
+    "Bedroom 2 stair partition | end",
+    "Bedroom 3 hall door | pier 0",
+    "Bedroom 3 hall door | lintel 0",
+    "Bedroom 3 hall door | end",
+    "Bedroom 4 hall | pier 0",
+    "Bedroom 4 hall | lintel 0",
+    "Bedroom 4 hall | end",
+    "Linen cupboard hall | pier 0",
+    "Linen cupboard hall | lintel 0",
+    "Linen cupboard hall | end",
+    "Bathroom hall | pier 0",
+    "Bathroom hall | lintel 0",
+    "Bathroom hall | end",
+    "Principal en suite east | end",
+    "Principal hall entrance | pier 0",
+    "Principal hall entrance | lintel 0",
+    "Bedroom 2 door | pier 0",
+    "Bedroom 2 door | lintel 0",
+    "Airing cupboard hall | west jamb",
+    "Airing cupboard hall | east jamb",
+    "Airing cupboard hall | lintel",
+    "Bedroom 5 to 4 | skirting end-1",
+    "Bedroom 5 to 4 | skirting end1",
+    "Linen cupboard back | skirting end1",
+    "Bedroom 4 en suite hall | skirting end1",
+    "Bathroom bedroom 3 | skirting end-1",
+    "Bedroom 2 stair partition | skirting end1",
+    "Bedroom 3 hall door | skirting pier 0-1",
+    "Bedroom 3 hall door | skirting pier 01",
+    "Bedroom 3 hall door | skirting end-1",
+    "Bedroom 3 hall door | skirting end1",
+    "Bedroom 4 hall | skirting pier 0-1",
+    "Bedroom 4 hall | skirting pier 01",
+    "Bedroom 4 hall | skirting end-1",
+    "Bedroom 4 hall | skirting end1",
+    "Linen cupboard hall | skirting pier 0-1",
+    "Linen cupboard hall | skirting pier 01",
+    "Linen cupboard hall | skirting end-1",
+    "Linen cupboard hall | skirting end1",
+    "Bathroom hall | skirting pier 0-1",
+    "Bathroom hall | skirting end-1",
+    "Principal en suite east | skirting end1",
+    "Principal hall entrance | skirting pier 0-1",
+    "Principal hall entrance | skirting pier 01",
+    "Bedroom 2 door | skirting pier 0-1",
+    "Bedroom 2 door | skirting pier 01",
+    "Circulation detail | Cove Bathroom bedroom 3 -1",
+    "Circulation detail | Cove Bathroom bedroom 3 1",
+    "Circulation detail | Cove Bathroom east -1",
+    "Circulation detail | Cove Bathroom east 1",
+    "Circulation detail | Cove Bathroom hall -1",
+    "Circulation detail | Cove Bathroom hall 1",
+    "Circulation detail | Cove Bedroom 2 door -1",
+    "Circulation detail | Cove Bedroom 2 door 1",
+    "Circulation detail | Cove Bedroom 2 stair partition -1",
+    "Circulation detail | Cove Bedroom 2 stair partition 1",
+    "Circulation detail | Cove Bedroom 3 hall door -1",
+    "Circulation detail | Cove Bedroom 3 hall door 1",
+    "Circulation detail | Cove Bedroom 4 en suite hall 1",
+    "Circulation detail | Cove Bedroom 4 hall -1",
+    "Circulation detail | Cove Bedroom 4 hall 1",
+    "Circulation detail | Cove Bedroom 5 hall -1",
+    "Circulation detail | Cove Bedroom 5 hall 1",
+    "Circulation detail | Cove Bedroom 5 to 4 -1",
+    "Circulation detail | Cove Bedroom 5 to 4 1",
+    "Circulation detail | Cove Linen cupboard back -1",
+    "Circulation detail | Cove Linen cupboard back 1",
+    "Circulation detail | Cove Linen cupboard hall -1",
+    "Circulation detail | Cove Linen cupboard hall 1",
+    "Circulation detail | Cove Principal en suite east -1",
+    "Circulation detail | Cove Principal en suite east 1",
+    "Circulation detail | Cove Principal hall entrance -1",
+    "Circulation detail | Cove Principal hall entrance 1",
+    "Trim comparison | Bedroom 3 hall door opening 1 side -1 mitred casing",
+    "Trim comparison | Bedroom 3 hall door opening 1 side 1 mitred casing",
+    "Trim comparison | Linen cupboard hall opening 1 side -1 mitred casing",
+    "Trim comparison | Linen cupboard hall opening 1 side 1 mitred casing",
+    "Trim comparison | Bathroom hall opening 1 side -1 mitred casing",
+    "Trim comparison | Bathroom hall opening 1 side 1 mitred casing",
+    "Trim comparison | Principal hall entrance opening 1 side -1 mitred casing",
+    "Trim comparison | Principal hall entrance opening 1 side 1 mitred casing",
+    "Trim comparison | Bedroom 2 door opening 1 side -1 mitred casing",
+    "Trim comparison | Bedroom 2 door opening 1 side 1 mitred casing",
+    "Trim comparison | Bedroom 4 hall opening 1 side -1 mitred casing",
+    "Trim comparison | Bedroom 4 hall opening 1 side 1 mitred casing",
+    "Owner interior detail | Airing cupboard door leaf backing",
+    "Owner interior detail | Airing cupboard recessed panel",
+    "Owner interior detail | Airing cupboard panel moulding",
+    "Owner interior detail | Airing cupboard recessed panel",
+    "Owner interior detail | Airing cupboard panel moulding",
+    "Owner interior detail | Airing cupboard recessed panel",
+    "Owner interior detail | Airing cupboard panel moulding",
+    "Owner interior detail | Airing cupboard recessed panel",
+    "Owner interior detail | Airing cupboard panel moulding",
+    "Owner interior detail | Airing cupboard recessed panel",
+    "Owner interior detail | Airing cupboard panel moulding",
+    "Owner interior detail | Airing cupboard recessed panel",
+    "Owner interior detail | Airing cupboard panel moulding",
+    "Owner interior detail | Airing cupboard fixed casing",
+    "Owner interior detail | Airing cupboard fixed casing",
+    "Owner interior detail | Airing cupboard fixed head casing",
+    "Owner interior detail | Airing cupboard brass handle rose",
+    "Owner interior detail | Airing cupboard brass handle",
+    "Proposal revision | First front | corrected wall 13",
+    "Proposal revision | First front | corrected wall 14",
+    "Proposal revision | First front | skirting pier 1-1",
+    "Proposal revision | Circulation detail | Cove First front -1",
+    "Proposal revision | Roof join | First front masonry head",
+    "Proposal revision | Roof join | First front masonry head.001",
+    "Proposal revision | Bedroom 5 hall | pier 0",
+    "Proposal revision | Bedroom 5 hall | lintel 0",
+    "Proposal revision | Bedroom 5 hall | end",
+    "Proposal | Original first junction lintel",
+    "Proposal | Continued roof garage wing gable north head 0",
+    "Proposal | Entrance gable south rake band",
+    "Proposal | Entrance gable north rake band",
+    "Proposal | North west elevation closure 0",
+    "Proposal | Entrance glazing head packer 0",
+    "Proposal | Entrance glazing head packer 1",
+    "Proposal | Entrance transom",
+    "Proposal | North upper facade pier 0",
+    "Proposal | West recess upper facade",
+    "Proposal | West upper principal facade above vault",
+    "Proposal | West upper principal facade above wing roof",
+    "Proposal | Wing First ceiling",
+    "Proposal | Arrival upper gallery east newel",
+    "Proposal | Arrival upper gallery east newel",
+    "Proposal | Arrival upper gallery east newel",
+    "Proposal | Arrival upper gallery east handrail",
+    "Proposal | Arrival upper gallery east base rail",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery east spindle",
+    "Proposal | Arrival upper gallery north newel",
+    "Proposal | Arrival upper gallery north newel",
+    "Proposal | Arrival upper gallery north newel",
+    "Proposal | Arrival upper gallery north handrail",
+    "Proposal | Arrival upper gallery north base rail",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Arrival upper gallery north spindle",
+    "Proposal | Landing library west guard newel",
+    "Proposal | Landing library west guard newel",
+    "Proposal | Landing library west guard handrail",
+    "Proposal | Landing library west guard base rail",
+    "Proposal | Landing library west guard spindle",
+    "Proposal | Landing library west guard spindle",
+    "Proposal | Principal suite north partition pier 0",
+    "Proposal | Principal suite north partition head 0",
+    "Proposal | Principal suite north partition pier 1",
+    "Proposal | Principal study west wall",
+    "Proposal | Courtyard upper landing glass",
+    "Proposal | Courtyard upper landing horizontal frame",
+    "Proposal | Courtyard upper landing horizontal frame",
+    "Proposal | Courtyard upper landing mullion",
+    "Proposal | Courtyard upper landing mullion",
+    "Proposal | Courtyard upper landing mullion",
+    "Proposal | Courtyard upper landing mullion",
+    "Proposal | Entrance upper ceiling",
+    "Proposal | Courtyard upper wall pitched head",
+    "Proposal | Entrance upper south outer frame",
+    "Proposal | Entrance upper central frame",
+    "Proposal | Entrance upper north outer frame",
+    "Proposal | Wing loft floor",
+    "Proposal | Loft bridge junction deck",
+    "Proposal | Loft knee wall 1",
+    "Proposal | Loft suite lobby wall slope",
+    "Proposal | Loft suite entry wall pier 0",
+    "Proposal | Loft ensuite north wall slope",
+    "Proposal | Loft ensuite north wall pier 0",
+    "Proposal | Loft stair structure 01",
+    "Proposal | Loft stair oak tread 01",
+    "Proposal | Loft stair structure 02",
+    "Proposal | Loft stair oak tread 02",
+    "Proposal | Loft stair structure 03",
+    "Proposal | Loft stair oak tread 03",
+    "Proposal | Loft stair structure 04",
+    "Proposal | Loft stair oak tread 04",
+    "Proposal | Loft stair structure 05",
+    "Proposal | Loft stair oak tread 05",
+    "Proposal | Loft stair structure 06",
+    "Proposal | Loft stair oak tread 06",
+    "Proposal | Loft stair structure 07",
+    "Proposal | Loft stair oak tread 07",
+    "Proposal | Loft stair structure 08",
+    "Proposal | Loft stair oak tread 08",
+    "Proposal | Loft stair structure 09",
+    "Proposal | Loft stair oak tread 09",
+    "Proposal | Loft stair structure 10",
+    "Proposal | Loft stair oak tread 10",
+    "Proposal | Loft stair structure 11",
+    "Proposal | Loft stair oak tread 11",
+    "Proposal | Loft stair structure 12",
+    "Proposal | Loft stair oak tread 12",
+    "Proposal | Loft stair structure 13",
+    "Proposal | Loft stair oak tread 13",
+    "Proposal | Loft stair structure 14",
+    "Proposal | Loft stair oak tread 14",
+    "Proposal | Loft stair structure 15",
+    "Proposal | Loft stair oak tread 15",
+    "Proposal | Loft stair final riser",
+    "Proposal | Loft stair west handrail",
+    "Proposal | Loft stair west guard newel",
+    "Proposal | Loft stair west guard newel",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair west guard spindle",
+    "Proposal | Loft stair void west guard newel",
+    "Proposal | Loft stair void west guard newel",
+    "Proposal | Loft stair void west guard newel",
+    "Proposal | Loft stair void west guard base rail",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void west guard spindle",
+    "Proposal | Loft stair void south guard newel",
+    "Proposal | Loft stair void south guard base rail",
+    "Proposal | Loft stair void south guard spindle",
+    "Proposal | Loft stair void south guard spindle",
+    "Proposal | Loft stair void south guard spindle",
+    "Proposal | Loft stair void south guard spindle",
+    "Proposal | Joined roof 095 | New main hip 1 continued region 1",
+    "Proposal | Joined roof lining 095 | New main hip 1 continued region 1",
+    "Proposal | Joined roof lining 096 | New main hip 1 continued region 1",
+    "Proposal | Joined roof 097 | New main hip 1 continued region 1",
+    "Proposal | Joined roof lining 097 | New main hip 1 continued region 1",
+    "Proposal | Joined roof 098 | New main hip 1 continued region 1",
+    "Proposal | Joined roof lining 098 | New main hip 1 continued region 1",
+    "Proposal | Joined roof 099 | New main hip 1 continued region 1",
+    "Proposal | Joined roof lining 099 | New main hip 1 continued region 1",
+    "Proposal | Joined roof 103 | New main hip 1 continued region 1",
+    "Proposal | Joined roof lining 103 | New main hip 1 continued region 1",
+    "Proposal | Joined roof 117 | New main hip 1 continued region 2",
+    "Proposal | Joined roof lining 117 | New main hip 1 continued region 2",
+    "Proposal | Joined roof 119 | New main hip 1 continued region 2",
+    "Proposal | Joined roof lining 119 | New main hip 1 continued region 2",
+    "Proposal | Joined roof 120 | New main hip 1 continued region 2",
+    "Proposal | Joined roof lining 120 | New main hip 1 continued region 2",
+    "Proposal | Joined roof 125 | New main hip 1 continued region 2",
+    "Proposal | Joined roof lining 125 | New main hip 1 continued region 2",
+    "Proposal | Joined roof 133 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 133 | New main hip 1 continued region 3",
+    "Proposal | Joined roof 134 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 134 | New main hip 1 continued region 3",
+    "Proposal | Joined roof 135 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 135 | New main hip 1 continued region 3",
+    "Proposal | Joined roof 137 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 137 | New main hip 1 continued region 3",
+    "Proposal | Joined roof 140 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 140 | New main hip 1 continued region 3",
+    "Proposal | Joined roof 142 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 142 | New main hip 1 continued region 3",
+    "Proposal | Joined roof 143 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 143 | New main hip 1 continued region 3",
+    "Proposal | Joined roof lining 145 | New main hip 1 continued region 3",
+    "Proposal | Joined roof 159 | Gate gable south",
+    "Proposal | Joined roof lining 159 | Gate gable south",
+    "Proposal | Joined roof lining 160 | Gate gable south",
+    "Proposal | Joined roof 161 | Gate gable south",
+    "Proposal | Joined roof lining 161 | Gate gable south",
+    "Proposal | Joined roof 162 | Gate gable south",
+    "Proposal | Joined roof lining 162 | Gate gable south",
+    "Proposal | Joined roof 164 | Gate gable north",
+    "Proposal | Joined roof lining 164 | Gate gable north",
+    "Proposal | Joined roof 165 | Gate gable north",
+    "Proposal | Joined roof lining 165 | Gate gable north",
+    "Proposal | Joined roof 166 | Gate gable north",
+    "Proposal | Joined roof lining 166 | Gate gable north",
+    "Proposal | Joined roof 170 | Garage gable north",
+    "Proposal | Joined roof lining 170 | Garage gable north",
+    "Proposal | Joined roof exposed fascia",
+    "Proposal | Joined roof exposed fascia",
+    "Proposal | Joined roof exposed fascia",
+    "Proposal | Joined roof exposed fascia",
+    "Proposal | Joined roof eaves gutter",
+    "Proposal | Entrance upper gable glass 0",
+    "Proposal | Entrance upper sloping frame 0",
+    "Proposal | Entrance upper gable glass 1",
+    "Proposal | Entrance upper sloping frame 1",
+    "Proposal | Double height pendant bronze base",
+    "Proposal | Double height pendant warm lens",
+    "Proposal | Double height pendant bronze base",
+    "Proposal | Double height pendant warm lens",
+    "Proposal | Double height pendant bronze base",
+    "Proposal | Double height pendant warm lens",
+    "Proposal | Library downlight trim",
+    "Proposal | Library downlight lens",
+    "Proposal | Original loft deck 01",
+    "Proposal | Original loft deck 02",
+    "Proposal | Original loft deck 04",
+    "Proposal | Original loft deck 05",
+    "Proposal | Original loft front knee wall 2",
+    "Proposal | Original loft bridge west knee wall",
+    "Proposal | Joined roof 015 | Retained original hip 1",
+    "Proposal | Joined roof lining 015 | Retained original hip 1",
+    "Proposal | Joined roof 019 | Retained original hip 1",
+    "Proposal | Joined roof lining 019 | Retained original hip 1",
+    "Proposal | Roof drainage | main west south outlet hopper",
+    "Proposal | Roof drainage | main west south pipe 00",
+    "Proposal | Roof drainage | main west south clip",
+    "Proposal | Roof drainage | main west south fixing",
+    "Proposal | Roof drainage | main west south clip",
+    "Proposal | Roof drainage | main west south fixing",
+    "Proposal | Roof drainage | main west north outlet hopper",
+    "Proposal | Roof drainage | main west north pipe 00",
+    "Proposal | Roof drainage | main west north clip",
+    "Proposal | Roof drainage | main west north fixing",
+    "Proposal | Roof drainage | main west north clip",
+    "Proposal | Roof drainage | main west north fixing",
+    "Proposal | Roof drainage | continued roof eave 009",
+    "Proposal | Roof drainage | continued roof eave 023",
+    "Proposal | Roof drainage | continued roof eave 027",
+    "Proposal | Roof drainage | original front east",
+    "Proposal | Roof weathering | valley 03 left",
+    "Proposal | Roof weathering | valley 03 right",
+    "Proposal | Roof weathering | valley 07 left",
+    "Proposal | Roof weathering | valley 07 right",
+    "Proposal | Roof weathering | valley 08 left",
+    "Proposal | Roof weathering | valley 08 right",
+    "Bedroom 02 | sofa wool rug",
+    "Bedroom 02 | sofa TV status light",
+    "Bedroom 02 | sofa TV screen",
+    "Bedroom 02 | sofa TV fixed case",
+    "Bedroom 02 | sofa soundbar grille.024",
+    "Bedroom 02 | sofa soundbar grille.023",
+    "Bedroom 02 | sofa soundbar grille.022",
+    "Bedroom 02 | sofa soundbar grille.021",
+    "Bedroom 02 | sofa soundbar grille.020",
+    "Bedroom 02 | sofa soundbar grille.019",
+    "Bedroom 02 | sofa soundbar grille.018",
+    "Bedroom 02 | sofa soundbar grille.017",
+    "Bedroom 02 | sofa soundbar grille.016",
+    "Bedroom 02 | sofa soundbar grille.015",
+    "Bedroom 02 | sofa soundbar grille.014",
+    "Bedroom 02 | sofa soundbar grille.013",
+    "Bedroom 02 | sofa soundbar grille.012",
+    "Bedroom 02 | sofa soundbar grille.011",
+    "Bedroom 02 | sofa soundbar grille.010",
+    "Bedroom 02 | sofa soundbar grille.009",
+    "Bedroom 02 | sofa soundbar grille.008",
+    "Bedroom 02 | sofa soundbar grille.007",
+    "Bedroom 02 | sofa soundbar grille.006",
+    "Bedroom 02 | sofa soundbar grille.005",
+    "Bedroom 02 | sofa soundbar grille.004",
+    "Bedroom 02 | sofa soundbar grille.003",
+    "Bedroom 02 | sofa soundbar grille.002",
+    "Bedroom 02 | sofa soundbar grille.001",
+    "Bedroom 02 | sofa soundbar grille",
+    "Bedroom 02 | sofa soundbar",
+    "Bedroom 02 | sofa media limestone top",
+    "Bedroom 02 | sofa media drawer 3",
+    "Bedroom 02 | sofa media drawer 2",
+    "Bedroom 02 | sofa media drawer 1",
+    "Bedroom 02 | sofa media drawer 0",
+    "Bedroom 02 | sofa media cabinet",
+    "Bedroom 02 | retained vault soffit.001",
+    "Bedroom 02 | floor 1",
+    "Bedroom 02 | floor 0",
+    "Bedroom 02 | entry door open",
+    "Bedroom 02 | entry door handle",
+    "Bedroom 02 | dressing return pier.001",
+    "Bedroom 02 | dressing doorway header",
+    "Bedroom 02 | dressing door jamb.001",
+    "Bedroom 02 | downlight lens.004",
+    "Bedroom 02 | downlight bezel.004",
+    "Bedroom 02 | coffee table oak base.001",
+    "Bedroom 02 | coffee table oak base",
+    "Bedroom 02 | coffee table limestone",
+    "Bedroom 02 | coffee table book",
+    "Bedroom 02 | coffee cup",
+    "Bedroom 02 | ceiling 0",
+    "Gym 01 | ivory ceiling finish",
+    "Guest 01 | warm wool carpet",
+    "Guest 01 | ivory ceiling finish",
+    "Guest 01 | entrance door leaf",
+    "Guest 01 | entrance door handle rose -1",
+    "Guest 01 | entrance door handle rose 1",
+    "Guest 01 | entrance door hinge barrel 3.02",
+    "Guest 01 | entrance door hinge barrel 3.88",
+    "Guest 01 | entrance door hinge barrel 4.6899999999999995",
+    "Guest 01 | entrance door lever -1",
+    "Guest 01 | entrance door lever 1",
+    "Guestbath 01 | retained skirting outside ensuite Bathroom east | skirting end1",
+    "Guestbath 01 | retained skirting outside ensuite Principal en suite east | skirting end-1",
+    "Bedroom2 01 | warm wool carpet",
+    "Bedroom2 01 | ivory ceiling finish",
+    "Bedroom2 01 | oak doorway transition",
+    "Bedroom2 01 | wardrobe recessed plinth",
+    "Bedroom2 01 | wardrobe back",
+    "Bedroom2 01 | wardrobe base or top",
+    "Bedroom2 01 | wardrobe base or top",
+    "Bedroom2 01 | wardrobe vertical carcass",
+    "Bedroom2 01 | wardrobe vertical carcass",
+    "Bedroom2 01 | wardrobe vertical carcass",
+    "Bedroom2 01 | wardrobe upper shelf",
+    "Bedroom2 01 | wardrobe hanging rail",
+    "Bedroom2 01 | sliding wardrobe door",
+    "Bedroom2 01 | wardrobe recessed pull",
+    "Bedroom2 01 | wardrobe pull inset",
+    "Bedroom2 01 | wardrobe upper shelf",
+    "Bedroom2 01 | wardrobe folded-clothes shelf",
+    "Bedroom2 01 | wardrobe folded-clothes shelf",
+    "Bedroom2 01 | wardrobe folded-clothes shelf",
+    "Bedroom2 01 | wardrobe folded-clothes shelf",
+    "Bedroom2 01 | wardrobe folded linen",
+    "Bedroom2 01 | wardrobe folded linen",
+    "Bedroom2 01 | wardrobe folded linen",
+    "Bedroom2 01 | sliding wardrobe door",
+    "Bedroom2 01 | wardrobe recessed pull",
+    "Bedroom2 01 | wardrobe pull inset",
+    "Bedroom2 01 | wardrobe sliding track",
+    "Bedroom2 01 | wardrobe sliding track",
+    "Bedroom2 01 | entrance door leaf",
+    "Bedroom2 01 | entrance door handle rose -1",
+    "Bedroom2 01 | entrance door handle rose 1",
+    "Bedroom2 01 | entrance door hinge barrel 3.02",
+    "Bedroom2 01 | entrance door hinge barrel 3.88",
+    "Bedroom2 01 | entrance door hinge barrel 4.6899999999999995",
+    "Bedroom2 01 | wooden clothes hanger",
+    "Bedroom2 01 | hanger hook",
+    "Bedroom2 01 | wooden clothes hanger",
+    "Bedroom2 01 | hanger hook",
+    "Bedroom2 01 | wooden clothes hanger",
+    "Bedroom2 01 | hanger hook",
+    "Bedroom2 01 | wooden clothes hanger",
+    "Bedroom2 01 | hanger hook",
+    "Bedroom2 01 | wooden clothes hanger",
+    "Bedroom2 01 | hanger hook",
+    "Bedroom2 01 | wooden clothes hanger",
+    "Bedroom2 01 | hanger hook",
+    "Bedroom2 01 | entrance door lever -1",
+    "Bedroom2 01 | entrance door lever 1",
+    "Bedroom3 01 | warm wool carpet",
+    "Bedroom3 01 | ivory ceiling finish",
+    "Bedroom3 01 | oak doorway transition",
+    "Bedroom3 01 | entrance door leaf",
+    "Bedroom3 01 | entrance door handle rose -1",
+    "Bedroom3 01 | entrance door handle rose 1",
+    "Bedroom3 01 | entrance door hinge barrel 3.02",
+    "Bedroom3 01 | entrance door hinge barrel 3.88",
+    "Bedroom3 01 | entrance door hinge barrel 4.6899999999999995",
+    "Bedroom3 01 | entrance door lever -1",
+    "Bedroom3 01 | entrance door lever 1",
+    "Familybath 01 | limestone floor",
+    "Familybath 01 | ivory ceiling finish",
+    "Familybath 01 | floor fine grout line",
+    "Familybath 01 | floor fine grout line",
+    "Familybath 01 | floor fine grout line",
+    "Familybath 01 | floor fine grout line",
+    "Familybath 01 | floor fine cross joint",
+    "Familybath 01 | west limestone wall",
+    "Familybath 01 | east lower ivory wall",
+    "Familybath 01 | south ivory return",
+    "Familybath 01 | south ivory return",
+    "Familybath 01 | south doorway ivory head",
+    "Familybath 01 | limestone doorway transition",
+    "Familybath 01 | vanity back",
+    "Familybath 01 | vanity end",
+    "Familybath 01 | vanity base",
+    "Familybath 01 | vanity drawer front 0",
+    "Familybath 01 | vanity finger recess 0",
+    "Familybath 01 | vanity drawer front 1",
+    "Familybath 01 | vanity finger recess 1",
+    "Familybath 01 | upper drawer bottom wing",
+    "Familybath 01 | upper drawer divided back",
+    "Familybath 01 | upper drawer side",
+    "Familybath 01 | hollow ceramic basin",
+    "Familybath 01 | mirror bronze edge",
+    "Familybath 01 | basin mirror",
+    "Familybath 01 | mirror light bronze",
+    "Familybath 01 | mirror light diffuser",
+    "Familybath 01 | hollow paper roll",
+    "Familybath 01 | paper hanging end",
+    "Familybath 01 | toilet brush pot",
+    "Familybath 01 | toilet brush handle",
+    "Familybath 01 | entrance door leaf",
+    "Familybath 01 | entrance door handle rose -1",
+    "Familybath 01 | entrance door handle rose 1",
+    "Familybath 01 | entrance door hinge barrel 3.02",
+    "Familybath 01 | entrance door hinge barrel 3.88",
+    "Familybath 01 | entrance door hinge barrel 4.6899999999999995",
+    "Familybath 01 | paper holder",
+    "Familybath 01 | entrance door lever -1",
+    "Familybath 01 | entrance door lever 1",
+    "Bedroom4 01 | linen back junction infill",
+    "Bedroom4 01 | north oak headwall",
+    "Bedroom4 01 | hall oak threshold",
+    "Bedroom4 01 | shower rear limestone wall",
+    "Bedroom4 01 | shower linear drain",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | shower drain slot divider",
+    "Bedroom4 01 | hall door leaf",
+    "Bedroom4 01 | hall door handle rose -1",
+    "Bedroom4 01 | hall door handle rose 1",
+    "Bedroom4 01 | hall door hinge barrel 0.22",
+    "Bedroom4 01 | hall door hinge barrel 1.08",
+    "Bedroom4 01 | hall door hinge barrel 1.89",
+    "Bedroom4 01 | shower thermostatic plate",
+    "Bedroom4 01 | shower control",
+    "Bedroom4 01 | shower control index",
+    "Bedroom4 01 | shower control",
+    "Bedroom4 01 | shower control index",
+    "Bedroom4 01 | rain shower head",
+    "Bedroom4 01 | rain spray face",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | rain nozzle",
+    "Bedroom4 01 | shower shelf",
+    "Bedroom4 01 | shower bottle",
+    "Bedroom4 01 | shower pump",
+    "Bedroom4 01 | shower bottle",
+    "Bedroom4 01 | shower pump",
+    "Bedroom4 01 | hall door lever -1",
+    "Bedroom4 01 | hall door lever 1",
+    "Bedroom4 01 | rain shower riser",
+    "Formal 01 | ivory ceiling",
+    "Loftsuite 01 | bedroom wool floor",
+    "Loftsuite 01 | ensuite limestone floor",
+    "Loftsuite 01 | oak headwall",
+    "Loftsuite 01 | headwall fine joint",
+    "Loftsuite 01 | headwall fine joint",
+    "Loftsuite 01 | headwall fine joint",
+    "Loftsuite 01 | wall-backed upholstered headboard",
+    "Loftsuite 01 | bed recessed base",
+    "Loftsuite 01 | bed upholstered frame",
+    "Loftsuite 01 | double mattress",
+    "Loftsuite 01 | draped cotton duvet",
+    "Loftsuite 01 | folded duvet edge",
+    "Loftsuite 01 | woven bed throw",
+    "Loftsuite 01 | sleeping pillow",
+    "Loftsuite 01 | small linen cushion",
+    "Loftsuite 01 | floating bedside 0",
+    "Loftsuite 01 | bedside limestone top",
+    "Loftsuite 01 | bedside finger recess",
+    "Loftsuite 01 | wardrobe recessed plinth",
+    "Loftsuite 01 | wardrobe back",
+    "Loftsuite 01 | wardrobe upright",
+    "Loftsuite 01 | wardrobe carcass horizontal",
+    "Loftsuite 01 | wardrobe lower shelf",
+    "Loftsuite 01 | wardrobe lower shelf",
+    "Loftsuite 01 | folded wardrobe linen",
+    "Loftsuite 01 | folded wardrobe linen",
+    "Loftsuite 01 | sliding wardrobe front",
+    "Loftsuite 01 | vanity back",
+    "Loftsuite 01 | vanity end",
+    "Loftsuite 01 | vanity bottom",
+    "Loftsuite 01 | sliding vanity front",
+    "Loftsuite 01 | vanity limestone wall",
+    "Hobby 01 | oak hobby floor",
+    "Hobby 01 | archive oak floor",
+    "Hobby 01 | bridge oak deck",
+    "Hobby 01 | bridge oak deck",
+    "Hobby 01 | bridge oak deck",
+    "Hobby 01 | bridge oak deck",
+    "Hobby 01 | bridge oak deck",
+    "Hobby 01 | landing oak floor",
+    "Hobby 01 | eaves archive recessed plinth",
+    "Hobby 01 | eaves archive back",
+    "Hobby 01 | eaves archive base",
+    "Hobby 01 | eaves archive upright",
+    "Hobby 01 | eaves archive upright",
+    "Hobby 01 | eaves archive upright",
+    "Hobby 01 | eaves archive shelf",
+    "Hobby 01 | eaves archive sliding front",
+    "Hobby 01 | eaves archive recessed pull",
+    "Hobby 01 | eaves archive supply box",
+    "Hobby 01 | eaves archive shelf",
+    "Hobby 01 | eaves archive sliding front",
+    "Hobby 01 | eaves archive recessed pull",
+    "Hobby 01 | eaves archive supply box",
+    "Hobby 01 | eaves archive shelf",
+    "Hobby 01 | eaves archive sliding front",
+    "Hobby 01 | eaves archive supply box",
+    "Hobby 01 | soft flexible floor rug",
+    "Arrival 01 | garden passage ivory ceiling",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing bronze baluster",
+    "Arrival 01 | landing baluster foot",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | landing foot screw",
+    "Arrival 01 | pendant ceiling canopy",
+    "Arrival 01 | pendant bronze stem",
+    "Arrival 01 | pendant opal globe",
+    "Arrival 01 | pendant globe collar",
+    "Arrival 01 | pendant canopy fixing",
+    "Arrival 01 | pendant canopy fixing",
+    "Arrival 01 | pendant ceiling canopy",
+    "Arrival 01 | pendant bronze stem",
+    "Arrival 01 | pendant opal globe",
+    "Arrival 01 | pendant globe collar",
+    "Arrival 01 | pendant canopy fixing",
+    "Arrival 01 | pendant canopy fixing",
+    "Arrival 01 | pendant ceiling canopy",
+    "Arrival 01 | pendant bronze stem",
+    "Arrival 01 | pendant opal globe",
+    "Arrival 01 | pendant globe collar",
+    "Arrival 01 | pendant canopy fixing",
+    "Arrival 01 | pendant canopy fixing",
+    "Arrival 01 | pendant suspension cable",
+    "Arrival 01 | pendant suspension cable",
+    "Arrival 01 | pendant suspension cable",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | continuous oak landing floor",
+    "Landings 01 | gallery bookcase plinth",
+    "Landings 01 | gallery bookcase back",
+    "Landings 01 | gallery bookcase upright",
+    "Landings 01 | gallery bookcase upright",
+    "Landings 01 | gallery bookcase shelf",
+    "Landings 01 | gallery bookcase shelf",
+    "Landings 01 | gallery bookcase shelf",
+    "Landings 01 | gallery bookcase shelf",
+    "Landings 01 | gallery bookcase shelf",
+    "Landings 01 | gallery bookcase shelf",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book page block",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book cloth cover",
+    "Landings 01 | gallery book bound spine",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | gallery book spine foil line",
+    "Landings 01 | reading chair oak leg",
+    "Landings 01 | reading chair floor glide",
+    "Landings 01 | reading chair oak leg",
+    "Landings 01 | reading chair floor glide",
+    "Landings 01 | reading chair oak seat rail",
+    "Landings 01 | reading chair upholstered seat",
+    "Landings 01 | reading chair padded arm",
+    "Landings 01 | reading chair padded arm",
+    "Landings 01 | reading table stone foot",
+    "Landings 01 | reading table bronze stem",
+    "Landings 01 | reading table stone top",
+    "Landings 01 | hollow reading cup",
+    "Landings 01 | reading cup saucer",
+    "Landings 01 | reading book cover",
+    "Landings 01 | reading book pages",
+    "Landings 01 | reading book upper cover",
+    "Landings 01 | reading light bronze base",
+    "Landings 01 | reading light shade",
+    "Landings 01 | reading light opal lens",
+    "Landings 01 | hall artwork oak frame",
+    "Landings 01 | hall artwork ivory ground",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork oak frame",
+    "Landings 01 | hall artwork ivory ground",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | hall artwork relief line",
+    "Landings 01 | reading chair seat welt",
+    "Landings 01 | reading chair seat welt"
+  ],
+  "mirrors": [
+    {
+      "name": "Arrival 01 | hall mirror",
+      "position": [
+        6.015000000000001,
+        0.62,
+        1.2
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "width": 0.62,
+      "height": 2.02
+    }
+  ],
+  "objects": 2495,
+  "views": {
+    "entrance": {
+      "position": [
+        4.45,
+        -7.45,
+        1.62
+      ],
+      "target": [
+        7.1,
+        -6.7,
+        1.85
+      ],
+      "fov": 67
+    },
+    "storage": {
+      "position": [
+        7.62,
+        -6.98,
+        1.6
+      ],
+      "target": [
+        4.95,
+        -5.1,
+        1.12
+      ],
+      "fov": 63
+    },
+    "details": {
+      "position": [
+        7.9,
+        -5.42,
+        1.17
+      ],
+      "target": [
+        8.93,
+        -5.78,
+        0.35
+      ],
+      "fov": 56
+    },
+    "reverse": {
+      "position": [
+        7.4,
+        -4.48,
+        1.65
+      ],
+      "target": [
+        5.7,
+        -7.3,
+        2.5
+      ],
+      "fov": 66
+    },
+    "gallery": {
+      "position": [
+        7.48,
+        -3.78,
+        1.63
+      ],
+      "target": [
+        7.18,
+        2.55,
+        1.3
+      ],
+      "fov": 63
+    },
+    "hall": {
+      "position": [
+        6.72,
+        2.99,
+        1.62
+      ],
+      "target": [
+        6.64,
+        4.83,
+        1.22
+      ],
+      "fov": 70
+    },
+    "mirror": {
+      "position": [
+        7.38,
+        2.77,
+        1.6
+      ],
+      "target": [
+        6.05,
+        1.02,
+        1.12
+      ],
+      "fov": 60
+    },
+    "overview": {
+      "position": [
+        17,
+        9,
+        20
+      ],
+      "target": [
+        6.75,
+        -2.2,
+        0.75
+      ],
+      "fov": 57,
+      "cutaway": true
+    },
+    "stair": {
+      "position": [
+        6.6,
+        4.12,
+        1.63
+      ],
+      "target": [
+        8.2,
+        1.64,
+        1.72
+      ],
+      "fov": 66
+    }
+  },
+  "sourceModelUpdatedAt": "2026-09-28T00:48:38.991954+00:00"
+}

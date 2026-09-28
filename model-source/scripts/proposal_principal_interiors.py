@@ -127,7 +127,7 @@ def apply_principal_suite(ns):
         ns['proposed_doors'].append({'id':id,'wall':id,'hinge':hinge,'members':members,'openingCenter':center,'apertureAxis':axis,'apertureWidth':.95,'closedDelta':delta,'openDelta':0,'openDistance':1.5,'closeDistance':2.0})
     nav['proposalLights'] = [l for l in nav.get('proposalLights',[]) if not l['name'].startswith(('Principal bedroom','Principal bathroom','Principal nook','Dressing'))] + meta['proposalLights']
     nav['mirrors'] = meta['mirrors']
-    nav['principalInterior'] = {'bedroomRevision':3,'ensuiteRevision':2,'nativeAssetSHA256':entry['sha256']['suite.blend'],'integrated':True,'rooms':[v[0] for v in views]}
+    nav['principalInterior'] = {'bedroomRevision':manifest['bedroom_revision'],'ensuiteRevision':manifest['ensuite_revision'],'nativeAssetSHA256':entry['sha256']['suite.blend'],'integrated':True,'rooms':[v[0] for v in views]}
     # Keep appearance membership consistent with the replacement facade objects.
     appearance = nav.get('exteriorAppearance')
     if appearance:
@@ -140,10 +140,12 @@ def apply_principal_suite(ns):
                     appearance['materials'][mat.name] = {'role':role,'source':mat.get('appearance_source_material',mat.name)}
                     names = appearance['objects'].setdefault(role,[])
                     if ob.name not in names:names.append(ob.name)
-    report = {'variant':variant,'asset_sha256':entry['sha256']['suite.blend'],'imported_meshes':len(imported),'authored_meshes':len(owned),'removed_objects':removed,'new_collision_records':len(collision),'bedroom_revision':3,'ensuite_revision':2,'original_scenes_preserved':True}
+    report = {'variant':variant,'asset_sha256':entry['sha256']['suite.blend'],'imported_meshes':len(imported),'authored_meshes':len(owned),'removed_objects':removed,'new_collision_records':len(collision),'bedroom_revision':manifest['bedroom_revision'],'ensuite_revision':manifest['ensuite_revision'],'original_scenes_preserved':True}
     (ns['OUT']/'principal-interior-report.json').write_text(json.dumps(report,indent=2)+'\n')
     print('PRINCIPAL_SUITE_INTEGRATED',variant,len(imported),'meshes',flush=True)
     return report
 
 if 'scene' in globals() and 'nav' in globals():
     principal_interior_report = apply_principal_suite(globals())
+    from principal_gable_wall import apply_gable_wall
+    apply_gable_wall(globals())

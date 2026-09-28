@@ -1,5 +1,5 @@
 {
-  "revision": 3,
+  "revision": 4,
   "status": "Bedroom and window revision with shifted dressing room and longer ensuite; isolated room review",
   "floor_z": 2.8,
   "ceiling_z": 5.28,
@@ -197,10 +197,10 @@
         -8.83
       ],
       "screen_m": [
-        1.218,
-        0.685
+        1.882,
+        1.059
       ],
-      "height_m": 1.35,
+      "height_m": 1.53,
       "eyes": [
         [
           6.52,
@@ -213,7 +213,8 @@
           3.9
         ]
       ],
-      "cabinet_center_y": -9.03
+      "cabinet_center_y": -9.03,
+      "screenOffsetX": 0.05
     }
   ],
   "entry": {

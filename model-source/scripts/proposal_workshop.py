@@ -134,17 +134,7 @@ _ws_store_bounds=[_ws_inner[0]+.06,_ws_dy-.92,_ws_inner[0]+.60,_ws_dy+.38]
 wardrobe(name,_ws_store_bounds,0,2.02)
 wardrobe_front(name,[_ws_store_bounds[2]+.014,_ws_store_bounds[1]+.03],[_ws_store_bounds[2]+.014,_ws_store_bounds[3]-.03],0,2.02)
 
-# Existing path retains its880mm width. The few additional stepping stones
-# mark the previously open lawn route without removing any planting.
-_ws_approach=[[0,15.85],[0,18.30],[-5.70,21.90],[-6.05,23.40]]
-for aa,bb in zip(_ws_approach,_ws_approach[1:]):
- length=math.dist(aa,bb);count=max(1,int(length/.91));angle=math.atan2(bb[1]-aa[1],bb[0]-aa[0])
- for i in range(count):
-  t=(i+.5)/count;xx=aa[0]+(bb[0]-aa[0])*t;yy=aa[1]+(bb[1]-aa[1])*t
-  box('Proposal | Workshop approach stepping stone',(xx,yy,-.065),(.64,.88,.13),stone,WS,angle)
-  co,si=math.cos(angle),math.sin(angle)
-  poly=[[xx+dx*co-dy*si,yy+dx*si+dy*co]for dx,dy in[(-.32,-.44),(.32,-.44),(.32,.44),(-.32,.44)]]
-  new_surfaces.append({'name':'Proposal | Workshop approach stepping stone','polygon':poly,'z':0})
+# Owner review: retain the existing 880 mm strip path; no stepping stones across the lawn.
 
 # Fittings are real meshes plus one native light; the viewer receives its
 # normal bounded local fill instead of an unbounded global light.

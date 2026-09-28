@@ -2,21 +2,21 @@
   "status": "PASS",
   "variant": "compact",
   "source": "output-proposed-compact/navigation.json",
-  "sourceSha256": "216e0106a1b5041a819e160c6b65dde53262d1eed03fefc9209eeeaf0ff63928",
+  "sourceSha256": "a85d217e171f851e8d170710b1d3e217a039ff2fd88f335237fe3cf167b27ca1",
   "results": [
     {
       "state": "ordinary",
       "bodyWidth": 0.6,
       "crop": {
         "before": {
-          "segments": 133,
-          "obstacles": 140,
-          "surfaces": 124
+          "segments": 130,
+          "obstacles": 176,
+          "surfaces": 120
         },
         "after": {
-          "segments": 27,
-          "obstacles": 33,
-          "surfaces": 16
+          "segments": 24,
+          "obstacles": 51,
+          "surfaces": 17
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -69,14 +69,14 @@
       "bodyWidth": 0.6,
       "crop": {
         "before": {
-          "segments": 133,
-          "obstacles": 141,
-          "surfaces": 124
+          "segments": 130,
+          "obstacles": 177,
+          "surfaces": 120
         },
         "after": {
-          "segments": 27,
-          "obstacles": 34,
-          "surfaces": 16
+          "segments": 24,
+          "obstacles": 52,
+          "surfaces": 17
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -129,14 +129,14 @@
       "bodyWidth": 0.6,
       "crop": {
         "before": {
-          "segments": 133,
-          "obstacles": 140,
-          "surfaces": 124
+          "segments": 130,
+          "obstacles": 176,
+          "surfaces": 120
         },
         "after": {
-          "segments": 27,
-          "obstacles": 33,
-          "surfaces": 16
+          "segments": 24,
+          "obstacles": 51,
+          "surfaces": 17
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -189,14 +189,14 @@
       "bodyWidth": 0.6,
       "crop": {
         "before": {
-          "segments": 133,
-          "obstacles": 141,
-          "surfaces": 124
+          "segments": 130,
+          "obstacles": 177,
+          "surfaces": 120
         },
         "after": {
-          "segments": 27,
-          "obstacles": 34,
-          "surfaces": 16
+          "segments": 24,
+          "obstacles": 52,
+          "surfaces": 17
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -234,14 +234,14 @@
       "bodyWidth": 0.6,
       "crop": {
         "before": {
-          "segments": 133,
-          "obstacles": 141,
-          "surfaces": 124
+          "segments": 130,
+          "obstacles": 177,
+          "surfaces": 120
         },
         "after": {
-          "segments": 27,
-          "obstacles": 34,
-          "surfaces": 16
+          "segments": 24,
+          "obstacles": 52,
+          "surfaces": 17
         },
         "equivalentProbes": 441,
         "margin": 1
@@ -289,14 +289,14 @@
       "bodyWidth": 0.6,
       "crop": {
         "before": {
-          "segments": 133,
-          "obstacles": 142,
-          "surfaces": 124
+          "segments": 130,
+          "obstacles": 178,
+          "surfaces": 120
         },
         "after": {
-          "segments": 27,
-          "obstacles": 35,
-          "surfaces": 16
+          "segments": 24,
+          "obstacles": 53,
+          "surfaces": 17
         },
         "equivalentProbes": 441,
         "margin": 1

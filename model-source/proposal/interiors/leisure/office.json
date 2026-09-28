@@ -1,0 +1,189 @@
+{
+  "room": "Office",
+  "revision": 1,
+  "floorZ": 0,
+  "ceilingZ": 2.6,
+  "bounds": [
+    0.125,
+    -0.24,
+    4.26,
+    3.93
+  ],
+  "polygon": [
+    [
+      0.15,
+      0.15
+    ],
+    [
+      0.982,
+      0.15
+    ],
+    [
+      1.58,
+      -0.1
+    ],
+    [
+      2.02,
+      -0.19
+    ],
+    [
+      2.87,
+      -0.19
+    ],
+    [
+      3.28,
+      -0.1
+    ],
+    [
+      3.86,
+      0.15
+    ],
+    [
+      4.23,
+      0.15
+    ],
+    [
+      4.23,
+      3.89
+    ],
+    [
+      0.15,
+      3.89
+    ]
+  ],
+  "desk": [
+    1.42,
+    1.0,
+    2.22,
+    2.8
+  ],
+  "deskChair": [
+    0.98,
+    1.9
+  ],
+  "storage": [
+    0.34,
+    3.43,
+    3.04,
+    3.865
+  ],
+  "readingChair": [
+    3.26,
+    0.4,
+    4.09,
+    1.27
+  ],
+  "sideTable": [
+    3.72,
+    1.62,
+    0.19
+  ],
+  "plant": [
+    0.65,
+    2.92,
+    0.15
+  ],
+  "view": {
+    "id": "2445661-0",
+    "position": [
+      3.54,
+      3.14,
+      0
+    ],
+    "direction": [
+      -0.7,
+      -1,
+      0
+    ]
+  },
+  "views": {
+    "entrance": {
+      "position": [
+        3.8,
+        3.14,
+        1.59
+      ],
+      "target": [
+        1.71,
+        1.55,
+        0.91
+      ],
+      "fov": 69
+    },
+    "desk": {
+      "position": [
+        0.55,
+        2.83,
+        1.53
+      ],
+      "target": [
+        1.74,
+        1.78,
+        1.03
+      ],
+      "fov": 63
+    },
+    "storage": {
+      "position": [
+        2.97,
+        2.23,
+        1.53
+      ],
+      "target": [
+        1.56,
+        3.7,
+        1.07
+      ],
+      "fov": 66
+    },
+    "reading": {
+      "position": [
+        2.44,
+        2.52,
+        1.48
+      ],
+      "target": [
+        3.13,
+        0.78,
+        0.7
+      ],
+      "fov": 65
+    },
+    "details": {
+      "position": [
+        1.03,
+        1.15,
+        1.18
+      ],
+      "target": [
+        1.92,
+        1.74,
+        0.86
+      ],
+      "fov": 57
+    },
+    "overview": {
+      "position": [
+        6.12,
+        6.03,
+        7.8
+      ],
+      "target": [
+        2.16,
+        1.85,
+        0.5
+      ],
+      "fov": 52,
+      "cutaway": true
+    }
+  },
+  "viewLabels": {
+    "storage": "Books and closed storage",
+    "desk": "Workstation",
+    "reading": "Reading corner"
+  },
+  "limitations": [
+    "Retained office envelope, bay glazing and double hall doors. Furniture and joinery only.",
+    "Adjustable chair and monitor are concept models; fit the final desk to the user."
+  ]
+}

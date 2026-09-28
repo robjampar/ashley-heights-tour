@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "sourceUnchanged": true,
+  "sourceSha256": "b54d4f4505c09021ee61eda008e62cdfd8dcf7fc30986f83b0d32b7bd87934b6",
+  "doorSweeps": [
+    {
+      "door": "Drawing rear detail | Pair 1 left hinge",
+      "meshes": 27,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Drawing rear detail | Pair 1 right hinge",
+      "meshes": 27,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Drawing rear detail | Pair 2 left hinge",
+      "meshes": 27,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Drawing rear detail | Pair 2 right hinge",
+      "meshes": 27,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Drawing rear detail | Pair 3 left hinge",
+      "meshes": 27,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Drawing rear detail | Pair 3 right hinge",
+      "meshes": 27,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Formal 01 | dining west door",
+      "meshes": 10,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Formal 01 | dining east door",
+      "meshes": 10,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Formal 01 | drawing north door",
+      "meshes": 10,
+      "positions": 91,
+      "clashes": []
+    },
+    {
+      "door": "Formal 01 | drawing south door",
+      "meshes": 10,
+      "positions": 91,
+      "clashes": []
+    }
+  ],
+  "note": "New oak hall doors are tested from fully shut to fully open. Retained rear garden doors are tested through their complete opening. Complete furnishing geometry is included.",
+  "chairGeometry": [
+    {
+      "chair": 0,
+      "width": 0.5,
+      "depth": 0.49900007247924805,
+      "height": 0.7653818242251873,
+      "parts": 12
+    },
+    {
+      "chair": 1,
+      "width": 0.5,
+      "depth": 0.49900007247924805,
+      "height": 0.7653818242251873,
+      "parts": 12
+    },
+    {
+      "chair": 2,
+      "width": 0.5,
+      "depth": 0.49899959564208984,
+      "height": 0.7653818242251873,
+      "parts": 12
+    },
+    {
+      "chair": 3,
+      "width": 0.5,
+      "depth": 0.49899959564208984,
+      "height": 0.7653818242251873,
+      "parts": 12
+    },
+    {
+      "chair": 4,
+      "width": 0.5,
+      "depth": 0.49900007247924805,
+      "height": 0.7653818242251873,
+      "parts": 12
+    },
+    {
+      "chair": 5,
+      "width": 0.5,
+      "depth": 0.49899959564208984,
+      "height": 0.7653818242251873,
+      "parts": 12
+    }
+  ],
+  "storedChairAndLeafParts": 50
+}

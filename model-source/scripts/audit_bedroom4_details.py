@@ -17,6 +17,12 @@ for ob in scene.objects:
  try:v=[ev.matrix_world@p.co for p in mesh.vertices];f=[tuple(p.vertices)for p in mesh.polygons]
  finally:ev.to_mesh_clear()
  if v:items.append({**shape(v,f),'name':ob.get('source_name',ob.name),'modelName':ob.get('model_object_name',ob.get('source_name',ob.name)),'authored':ob.get('interior_room')=='bedroom4','drawer':ob.get('bedroom4_pullout')=='upper drawer'})
+# Every carcass and drawer-front part must survive the room crop and share the
+# same transformed footprint and storey as the basin above it.
+vanity=[p for p in items if p['name'].startswith('Bedroom4 01 | vanity ')]
+assert len(vanity)==8,('Incomplete vanity cabinet',len(vanity),[p['name']for p in vanity])
+vanity_bounds=bounds([v for p in vanity for v in p['v']]);a,s,c,n=cfg['bathVanity'];z=cfg['floorZ']
+assert vanity_bounds[0]>=a-.003 and vanity_bounds[1]>=s-.003 and vanity_bounds[3]<=c+.003 and vanity_bounds[4]<=n+.003 and vanity_bounds[2]>z+.30 and vanity_bounds[5]<z+.864,('Vanity cabinet outside intended envelope',vanity_bounds)
 nav=json.loads((out/'preview-navigation.json').read_text());doors=[d for d in nav['interactiveDoors']if d['id'].startswith('Bedroom4 01 |')];assert len(doors)==3
 all_moving={n for d in doors for n in d['members']};fixed=[p for p in items if p['authored']and p['name']not in all_moving];sweeps=[]
 for door in doors:

@@ -1,0 +1,377 @@
+{
+  "area": "gardenhouse",
+  "revision": 1,
+  "objects": 187,
+  "mesh_objects": 183,
+  "lights": 4,
+  "removed_objects": [
+    {
+      "name": "Outside WC door",
+      "object_name": "Outside WC door"
+    },
+    {
+      "name": "Tool store door",
+      "object_name": "Tool store door"
+    },
+    {
+      "name": "Proposal | Pavilion sofa oak underframe",
+      "object_name": "Proposal | Pavilion sofa oak underframe"
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot"
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot.001"
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot.002"
+    },
+    {
+      "name": "Proposal | Pavilion sofa foot",
+      "object_name": "Proposal | Pavilion sofa foot.003"
+    },
+    {
+      "name": "Proposal | Pavilion sofa seat cushion",
+      "object_name": "Proposal | Pavilion sofa seat cushion"
+    },
+    {
+      "name": "Proposal | Pavilion sofa seat cushion",
+      "object_name": "Proposal | Pavilion sofa seat cushion.001"
+    },
+    {
+      "name": "Proposal | Pavilion sofa seat cushion",
+      "object_name": "Proposal | Pavilion sofa seat cushion.002"
+    },
+    {
+      "name": "Proposal | Pavilion sofa back cushion",
+      "object_name": "Proposal | Pavilion sofa back cushion"
+    },
+    {
+      "name": "Proposal | Pavilion sofa back cushion",
+      "object_name": "Proposal | Pavilion sofa back cushion.001"
+    },
+    {
+      "name": "Proposal | Pavilion sofa back cushion",
+      "object_name": "Proposal | Pavilion sofa back cushion.002"
+    },
+    {
+      "name": "Proposal | Pavilion sofa arm",
+      "object_name": "Proposal | Pavilion sofa arm"
+    },
+    {
+      "name": "Proposal | Pavilion sofa arm",
+      "object_name": "Proposal | Pavilion sofa arm.001"
+    },
+    {
+      "name": "Proposal | Pavilion drinks counter",
+      "object_name": "Proposal | Pavilion drinks counter"
+    },
+    {
+      "name": "Proposal | Pavilion drinks cabinet",
+      "object_name": "Proposal | Pavilion drinks cabinet"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Gardenhouse 01 | summer bench",
+      "box": [
+        14.52,
+        19.75,
+        16.08,
+        20.38
+      ],
+      "bottom": 0.5445870161056519,
+      "top": 1.434587016105652
+    },
+    {
+      "name": "Gardenhouse 01 | drinks cabinet",
+      "box": [
+        15.7,
+        20.95,
+        16.14,
+        21.76
+      ],
+      "bottom": 0.5445870161056519,
+      "top": 1.414587016105652
+    },
+    {
+      "name": "Gardenhouse 01 | changing bench",
+      "box": [
+        15.68,
+        22.15,
+        16.13,
+        23.36
+      ],
+      "bottom": 0.5445870161056519,
+      "top": 1.0745870161056519
+    },
+    {
+      "name": "Gardenhouse 01 | WC vanity",
+      "box": [
+        14.55,
+        24.64,
+        15.19,
+        25.015
+      ],
+      "bottom": 0.5445870161056519,
+      "top": 1.4075870161056518
+    },
+    {
+      "name": "Gardenhouse 01 | WC pan",
+      "box": [
+        15.24,
+        25.5,
+        15.84,
+        25.9
+      ],
+      "bottom": 0.5445870161056519,
+      "top": 0.9885870161056518
+    },
+    {
+      "name": "Gardenhouse 01 | WC cistern",
+      "box": [
+        15.88,
+        25.349999999999998,
+        16.14,
+        26.029999999999998
+      ],
+      "bottom": 0.5445870161056519,
+      "top": 1.624587016105652
+    },
+    {
+      "name": "Gardenhouse 01 | tool rack",
+      "box": [
+        15.91,
+        23.64,
+        16.14,
+        24.44
+      ],
+      "bottom": 0.5445870161056519,
+      "top": 2.6745870161056517
+    }
+  ],
+  "configuration": {
+    "room": "Summer house, changing and garden WC",
+    "revision": 1,
+    "floorZ": 0.5445870161056519,
+    "ceilingZ": 2.944587230682373,
+    "bounds": [
+      13.5,
+      19.505,
+      16.335,
+      26.365
+    ],
+    "summerBounds": [
+      14.405,
+      19.675,
+      16.165,
+      23.455
+    ],
+    "wcBounds": [
+      14.365,
+      24.625,
+      16.165,
+      26.195
+    ],
+    "toolBounds": [
+      14.365,
+      23.585,
+      16.165,
+      24.495
+    ],
+    "summerBench": [
+      14.52,
+      19.75,
+      16.08,
+      20.38
+    ],
+    "drinksStorage": [
+      15.7,
+      20.95,
+      16.14,
+      21.76
+    ],
+    "changingBench": [
+      15.68,
+      22.15,
+      16.13,
+      23.36
+    ],
+    "changingCurtainY": 22.02,
+    "basin": [
+      14.55,
+      24.64,
+      15.19,
+      25.015
+    ],
+    "wcPan": [
+      15.24,
+      25.5,
+      15.84,
+      25.9
+    ],
+    "wcCistern": [
+      15.88,
+      25.37,
+      16.14,
+      26.05
+    ],
+    "toolShelf": [
+      15.91,
+      23.64,
+      16.14,
+      24.44
+    ],
+    "doors": {
+      "wc": {
+        "hinge": [
+          14.17,
+          25.04,
+          0.5445870161056519
+        ],
+        "axis": [
+          0,
+          1
+        ],
+        "width": 0.765,
+        "height": 2.065,
+        "openAngle": 1.5707963267948966
+      },
+      "tool": {
+        "hinge": [
+          14.17,
+          24.425,
+          0.5445870161056519
+        ],
+        "axis": [
+          0,
+          -1
+        ],
+        "width": 0.765,
+        "height": 2.065,
+        "openAngle": -1.5707963267948966
+      }
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          14.62,
+          21.12,
+          2.12
+        ],
+        "target": [
+          15.38,
+          19.99,
+          1.21
+        ],
+        "fov": 68
+      },
+      "storage": {
+        "position": [
+          14.75,
+          20.98,
+          2.09
+        ],
+        "target": [
+          15.91,
+          21.36,
+          1.47
+        ],
+        "fov": 58
+      },
+      "wardrobe": {
+        "position": [
+          14.73,
+          21.54,
+          2.12
+        ],
+        "target": [
+          15.41,
+          22.8,
+          1.41
+        ],
+        "fov": 65
+      },
+      "bathroom": {
+        "position": [
+          14.69,
+          25.41,
+          2.05
+        ],
+        "target": [
+          15.72,
+          25.09,
+          1.24
+        ],
+        "fov": 73
+      },
+      "details": {
+        "position": [
+          14.95,
+          25.34,
+          1.81
+        ],
+        "target": [
+          15.35,
+          24.84,
+          1.39
+        ],
+        "fov": 62
+      },
+      "store": {
+        "position": [
+          14.61,
+          24.04,
+          2.04
+        ],
+        "target": [
+          16.06,
+          24.04,
+          1.51
+        ],
+        "fov": 64
+      },
+      "overview": {
+        "position": [
+          9.8,
+          18.1,
+          10.8
+        ],
+        "target": [
+          15.15,
+          22.82,
+          1.2
+        ],
+        "fov": 54,
+        "cutaway": true
+      }
+    },
+    "viewLabels": {
+      "wardrobe": "Private changing corner",
+      "storage": "Drinks and towels",
+      "store": "Garden tools"
+    },
+    "limitations": [
+      "The existing summer-house, tool-store and WC envelopes remain. The summer house is a narrow room with a single-user changing corner, not a new bedroom.",
+      "Proposed retains its loggia and step from the pool terrace. Planning retains the existing exterior garden path and glazed summer-house front.",
+      "The outside WC is a compact, single-user room; final services, drainage and the wet-route finishes need detailed design."
+    ],
+    "view": {
+      "id": "2445694-0",
+      "position": [
+        14.79,
+        21.12,
+        0.5445870161056519
+      ],
+      "direction": [
+        0.4,
+        -1,
+        0
+      ]
+    },
+    "cropBottomZ": 0.15
+  }
+}

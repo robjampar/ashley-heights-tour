@@ -1,0 +1,159 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "hobby",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Loftsuite warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "worktable",
+        "seated",
+        "storage",
+        "bridge",
+        "overview",
+        "lounge"
+      ],
+      "objects": 1201,
+      "cutaway": 180,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-loft-studio-and-lounge"
+    },
+    {
+      "area": "hobby",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Loftsuite warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby woven taupe",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Hobby ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "worktable",
+        "seated",
+        "storage",
+        "bridge",
+        "overview",
+        "lounge"
+      ],
+      "objects": 1201,
+      "cutaway": 180,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-loft-studio-and-lounge"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

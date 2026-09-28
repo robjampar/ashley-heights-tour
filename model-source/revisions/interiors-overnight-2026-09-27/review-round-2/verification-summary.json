@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "time": "2026-09-28T02:35:26.174360+00:00",
+  "publication": "held for owner approval",
+  "modelAreas": {
+    "compact": 24,
+    "planning": 21
+  },
+  "unexpectedChanges": 0,
+  "principalMeshesPerVariant": 945,
+  "principalTVRaysPerVariant": 25,
+  "principalPrivacyRaysPerVariant": 9,
+  "fullTours": 2,
+  "changedRoomStudyVariants": 14,
+  "exteriorFaceChecks": 112,
+  "pythonTests": 83,
+  "viewerUnitTests": 116,
+  "brochurePages": 6,
+  "nativeRenders": {
+    "status": "PASS",
+    "count": 7,
+    "resolution": [
+      4200,
+      2800
+    ],
+    "samples": 128,
+    "sourceModelUnchanged": true
+  },
+  "geometrySha256": {
+    "compact": "5c15577aacd2f6b4314a9d59d9e5f875615bcf15f6cc19e5b5931b86242066f8",
+    "planning": "c102b53660380193c453202dfdc1f8c33146e2382319652a6859df2c1f4b630e"
+  },
+  "pdfVisualReview": "PASS \u2014 all six pages",
+  "brochureGallery": "PASS \u2014 desktop and mobile; all native links and downloads",
+  "brochurePlanSourceMatch": "PASS \u2014 final compact and planning geometry"
+}

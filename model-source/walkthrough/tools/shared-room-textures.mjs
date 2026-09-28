@@ -1,15 +1,16 @@
 // Keep image bytes unchanged while allowing room studies to share browser cache entries.
 import {createHash} from 'node:crypto';
 const sha=b=>createHash('sha256').update(b).digest('hex');
-export function shareRoomTextures(input){
+export function shareRoomTextures(input,uriPrefix='../textures/'){
  if(input.readUInt32LE(0)!==0x46546c67||input.readUInt32LE(4)!==2||input.readUInt32LE(8)!==input.length)throw Error('Invalid GLB');
  const jl=input.readUInt32LE(12),json=JSON.parse(input.toString('utf8',20,20+jl)),bin=input.subarray(28+jl),before=structuredClone(json),textures=new Map(),imageViews=new Set();
+ if(!(json.images?.length))return {packed:input,textures,verification:{geometryBytesUnchanged:true,imageBytesUnchanged:true,images:0,sourceBytes:input.length,sharedModelBytes:input.length}};
  for(const img of json.images??[]){
   if(img.bufferView===undefined)throw Error('Expected embedded source image');
   const v=json.bufferViews[img.bufferView];if(v.buffer!==0||v.extensions)throw Error('Unsupported image storage');
   const bytes=bin.subarray(v.byteOffset??0,(v.byteOffset??0)+v.byteLength),ext=img.mimeType==='image/png'?'png':img.mimeType==='image/jpeg'?'jpg':null;
   if(!ext)throw Error('Unsupported image MIME');
-  const name=sha(bytes)+'.'+ext;textures.set(name,bytes);imageViews.add(img.bufferView);delete img.bufferView;img.uri='../textures/'+name;
+  const name=sha(bytes)+'.'+ext;textures.set(name,bytes);imageViews.add(img.bufferView);delete img.bufferView;img.uri=uriPrefix+name;
  }
  for(const a of json.accessors??[])if(imageViews.has(a.bufferView)||imageViews.has(a.sparse?.indices?.bufferView)||imageViews.has(a.sparse?.values?.bufferView))throw Error('Image view also stores geometry');
  const chunks=[],offsets=new Map();let length=0;const append=(start,count)=>{const key=start+':'+count;if(offsets.has(key))return offsets.get(key);const at=length,data=bin.subarray(start,start+count);if(data.length!==count)throw Error('Buffer range outside GLB');chunks.push(data);const pad=(-count)&3;if(pad)chunks.push(Buffer.alloc(pad));length+=count+pad;offsets.set(key,at);return at;};
@@ -35,5 +36,5 @@ export function shareRoomTextures(input){
  }
  for(const key of Object.keys(before))if(!['buffers','bufferViews','images'].includes(key)&&JSON.stringify(before[key])!==JSON.stringify(json[key]))throw Error('Changed scene '+key);
  let text=Buffer.from(JSON.stringify(json));text=Buffer.concat([text,Buffer.alloc((-text.length)&3,32)]);const head=Buffer.alloc(20),bh=Buffer.alloc(8);head.writeUInt32LE(0x46546c67);head.writeUInt32LE(2,4);head.writeUInt32LE(28+text.length+packedBin.length,8);head.writeUInt32LE(text.length,12);head.writeUInt32LE(0x4e4f534a,16);bh.writeUInt32LE(packedBin.length);bh.writeUInt32LE(0x004e4942,4);
- return {packed:Buffer.concat([head,text,bh,packedBin]),textures,verification:{geometryBytesUnchanged:true,checkedGeometryBytes:checked,images:json.images.length,imageBytesUnchanged:true,sourceBytes:input.length,sharedModelBytes:28+text.length+packedBin.length}};
+ return {packed:Buffer.concat([head,text,bh,packedBin]),textures,verification:{geometryBytesUnchanged:true,checkedGeometryBytes:checked,images:json.images?.length??0,imageBytesUnchanged:true,sourceBytes:input.length,sharedModelBytes:28+text.length+packedBin.length}};
 }

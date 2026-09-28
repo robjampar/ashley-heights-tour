@@ -1,0 +1,647 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "bridge": [
+    {
+      "x": 8.92,
+      "y": -4.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -4.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -4,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -3.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -3.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -3.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -3,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -2.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -2.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -2.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -2,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -1.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -1.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -1.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -1,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -0.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -0.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": -0.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 0,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 0.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 0.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 0.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 1,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 1.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 1.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 1.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 2,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 2.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 2.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 2.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 3,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 3.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 3.5,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 3.75,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 4,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 4.25,
+      "blocked": false,
+      "support": 5.55
+    },
+    {
+      "x": 8.92,
+      "y": 4.5,
+      "blocked": false,
+      "support": 5.55
+    }
+  ],
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "west eaves approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "east eaves approach",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "west maker approach",
+          "distance": 0.01118033988749881,
+          "reachable": true
+        },
+        {
+          "label": "east maker approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "table south edge",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "supplies",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "archive",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "books",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "sofa approach",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "flexible floor",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "eavesClosed",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "west eaves approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "east eaves approach",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "west maker approach",
+          "distance": 0.01118033988749881,
+          "reachable": true
+        },
+        {
+          "label": "east maker approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "table south edge",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "supplies",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "archive",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "books",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "sofa approach",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "flexible floor",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bothMakers",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "west eaves approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "east eaves approach",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "west maker approach",
+          "distance": 0.01118033988749881,
+          "reachable": true
+        },
+        {
+          "label": "east maker approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "table south edge",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "supplies",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "archive",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "books",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "sofa approach",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "flexible floor",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "occupiedLounge",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "west eaves approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "east eaves approach",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "west maker approach",
+          "distance": 0.01118033988749881,
+          "reachable": true
+        },
+        {
+          "label": "east maker approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "table south edge",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "supplies",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "archive",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "books",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "sofa approach",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "flexible floor",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "storageUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "west eaves approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "east eaves approach",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "west maker approach",
+          "distance": 0.01118033988749881,
+          "reachable": true
+        },
+        {
+          "label": "east maker approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "table south edge",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "archive",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "books",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "sofa approach",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "flexible floor",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "archiveUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "west eaves approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "east eaves approach",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "west maker approach",
+          "distance": 0.01118033988749881,
+          "reachable": true
+        },
+        {
+          "label": "east maker approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "table south edge",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "supplies",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "archive",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "books",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "sofa approach",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "flexible floor",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "projectInCentre",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "west eaves approach",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "east eaves approach",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "west maker approach",
+          "distance": 0.01118033988749881,
+          "reachable": true
+        },
+        {
+          "label": "east maker approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "table south edge",
+          "distance": 0.011180339887498711,
+          "reachable": true
+        },
+        {
+          "label": "supplies",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "archive",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "books",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "sofa approach",
+          "distance": 0.007071067811866581,
+          "reachable": true
+        },
+        {
+          "label": "reading chair approach",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

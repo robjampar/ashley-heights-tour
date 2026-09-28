@@ -1,0 +1,364 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "gridStep": 0.015,
+  "results": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "south bedside",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.004999999999999449,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "front window",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "luggage bench",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "ensuite arrival",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "hallClosed",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "south bedside",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.004999999999999449,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "front window",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "luggage bench",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "ensuite arrival",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bathClosed",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "basin",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "showerClosed",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "south bedside",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.004999999999999449,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "front window",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "luggage bench",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "ensuite arrival",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "wardrobeUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "south bedside",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.004999999999999449,
+          "reachable": true
+        },
+        {
+          "label": "front window",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "ensuite arrival",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "basinUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "north bedside",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "south bedside",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.004999999999999449,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "front window",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "luggage bench",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "ensuite arrival",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bedsideUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "south bedside",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "bed foot",
+          "distance": 0.004999999999999449,
+          "reachable": true
+        },
+        {
+          "label": "wardrobe",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "front window",
+          "distance": 0.007071067811865481,
+          "reachable": true
+        },
+        {
+          "label": "luggage bench",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "ensuite arrival",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "basin",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "WC approach",
+          "distance": 0.0050000000000003375,
+          "reachable": true
+        },
+        {
+          "label": "shower approach",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        },
+        {
+          "label": "inside shower",
+          "distance": 0.007071067811865325,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

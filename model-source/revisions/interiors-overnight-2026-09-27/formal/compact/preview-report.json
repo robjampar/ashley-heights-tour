@@ -1,0 +1,2766 @@
+{
+  "area": "formal",
+  "revision": 2,
+  "objects": 529,
+  "mesh_objects": 519,
+  "lights": 10,
+  "removed_objects": [
+    {
+      "name": "Formal 01 | wide oak floor",
+      "object_name": "Formal 01 | wide oak floor"
+    },
+    {
+      "name": "Formal 01 | ivory ceiling",
+      "object_name": "Formal 01 | ivory ceiling"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.001"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.002"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.003"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.004"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.005"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.006"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.007"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.008"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.009"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.010"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.011"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.012"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.013"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.014"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.015"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.016"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.017"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.018"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.019"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.020"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.021"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.022"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.023"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.024"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.025"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.026"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.027"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.028"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.029"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.030"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.031"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.032"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.033"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.034"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.035"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.036"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.037"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.038"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.039"
+    },
+    {
+      "name": "Formal 01 | oak board fine joint",
+      "object_name": "Formal 01 | oak board fine joint.040"
+    },
+    {
+      "name": "Formal 01 | soft wool conversation rug",
+      "object_name": "Formal 01 | soft wool conversation rug"
+    },
+    {
+      "name": "Formal 01 | sofa 0 recessed foot",
+      "object_name": "Formal 01 | sofa 0 recessed foot"
+    },
+    {
+      "name": "Formal 01 | sofa 0 recessed foot",
+      "object_name": "Formal 01 | sofa 0 recessed foot.001"
+    },
+    {
+      "name": "Formal 01 | sofa 0 recessed foot",
+      "object_name": "Formal 01 | sofa 0 recessed foot.002"
+    },
+    {
+      "name": "Formal 01 | sofa 0 recessed foot",
+      "object_name": "Formal 01 | sofa 0 recessed foot.003"
+    },
+    {
+      "name": "Formal 01 | sofa 0 shadow plinth",
+      "object_name": "Formal 01 | sofa 0 shadow plinth"
+    },
+    {
+      "name": "Formal 01 | sofa 0 upholstered base",
+      "object_name": "Formal 01 | sofa 0 upholstered base"
+    },
+    {
+      "name": "Formal 01 | sofa 0 seat cushion",
+      "object_name": "Formal 01 | sofa 0 seat cushion"
+    },
+    {
+      "name": "Formal 01 | sofa 0 back cushion",
+      "object_name": "Formal 01 | sofa 0 back cushion"
+    },
+    {
+      "name": "Formal 01 | sofa 0 seat cushion",
+      "object_name": "Formal 01 | sofa 0 seat cushion.001"
+    },
+    {
+      "name": "Formal 01 | sofa 0 back cushion",
+      "object_name": "Formal 01 | sofa 0 back cushion.001"
+    },
+    {
+      "name": "Formal 01 | sofa 0 seat cushion",
+      "object_name": "Formal 01 | sofa 0 seat cushion.002"
+    },
+    {
+      "name": "Formal 01 | sofa 0 back cushion",
+      "object_name": "Formal 01 | sofa 0 back cushion.002"
+    },
+    {
+      "name": "Formal 01 | sofa softly rounded arm",
+      "object_name": "Formal 01 | sofa softly rounded arm"
+    },
+    {
+      "name": "Formal 01 | sofa softly rounded arm",
+      "object_name": "Formal 01 | sofa softly rounded arm.001"
+    },
+    {
+      "name": "Formal 01 | sofa linen scatter cushion",
+      "object_name": "Formal 01 | sofa linen scatter cushion"
+    },
+    {
+      "name": "Formal 01 | sofa ivory scatter cushion",
+      "object_name": "Formal 01 | sofa ivory scatter cushion"
+    },
+    {
+      "name": "Formal 01 | sofa 1 recessed foot",
+      "object_name": "Formal 01 | sofa 1 recessed foot"
+    },
+    {
+      "name": "Formal 01 | sofa 1 recessed foot",
+      "object_name": "Formal 01 | sofa 1 recessed foot.001"
+    },
+    {
+      "name": "Formal 01 | sofa 1 recessed foot",
+      "object_name": "Formal 01 | sofa 1 recessed foot.002"
+    },
+    {
+      "name": "Formal 01 | sofa 1 recessed foot",
+      "object_name": "Formal 01 | sofa 1 recessed foot.003"
+    },
+    {
+      "name": "Formal 01 | sofa 1 shadow plinth",
+      "object_name": "Formal 01 | sofa 1 shadow plinth"
+    },
+    {
+      "name": "Formal 01 | sofa 1 upholstered base",
+      "object_name": "Formal 01 | sofa 1 upholstered base"
+    },
+    {
+      "name": "Formal 01 | sofa 1 seat cushion",
+      "object_name": "Formal 01 | sofa 1 seat cushion"
+    },
+    {
+      "name": "Formal 01 | sofa 1 back cushion",
+      "object_name": "Formal 01 | sofa 1 back cushion"
+    },
+    {
+      "name": "Formal 01 | sofa 1 seat cushion",
+      "object_name": "Formal 01 | sofa 1 seat cushion.001"
+    },
+    {
+      "name": "Formal 01 | sofa 1 back cushion",
+      "object_name": "Formal 01 | sofa 1 back cushion.001"
+    },
+    {
+      "name": "Formal 01 | sofa 1 seat cushion",
+      "object_name": "Formal 01 | sofa 1 seat cushion.002"
+    },
+    {
+      "name": "Formal 01 | sofa 1 back cushion",
+      "object_name": "Formal 01 | sofa 1 back cushion.002"
+    },
+    {
+      "name": "Formal 01 | sofa softly rounded arm",
+      "object_name": "Formal 01 | sofa softly rounded arm.002"
+    },
+    {
+      "name": "Formal 01 | sofa softly rounded arm",
+      "object_name": "Formal 01 | sofa softly rounded arm.003"
+    },
+    {
+      "name": "Formal 01 | sofa linen scatter cushion",
+      "object_name": "Formal 01 | sofa linen scatter cushion.001"
+    },
+    {
+      "name": "Formal 01 | sofa ivory scatter cushion",
+      "object_name": "Formal 01 | sofa ivory scatter cushion.001"
+    },
+    {
+      "name": "Formal 01 | coffee table oak pedestal",
+      "object_name": "Formal 01 | coffee table oak pedestal"
+    },
+    {
+      "name": "Formal 01 | coffee table oak pedestal",
+      "object_name": "Formal 01 | coffee table oak pedestal.001"
+    },
+    {
+      "name": "Formal 01 | oval limestone coffee table",
+      "object_name": "Formal 01 | oval limestone coffee table"
+    },
+    {
+      "name": "Formal 01 | coffee table art book",
+      "object_name": "Formal 01 | coffee table art book"
+    },
+    {
+      "name": "Formal 01 | art book oak-colour cover",
+      "object_name": "Formal 01 | art book oak-colour cover"
+    },
+    {
+      "name": "Formal 01 | small ceramic coffee bowl",
+      "object_name": "Formal 01 | small ceramic coffee bowl"
+    },
+    {
+      "name": "Formal 01 | extending table top half",
+      "object_name": "Formal 01 | extending table top half"
+    },
+    {
+      "name": "Formal 01 | tapered oak dining leg",
+      "object_name": "Formal 01 | tapered oak dining leg"
+    },
+    {
+      "name": "Formal 01 | dining leg felt pad",
+      "object_name": "Formal 01 | dining leg felt pad"
+    },
+    {
+      "name": "Formal 01 | tapered oak dining leg",
+      "object_name": "Formal 01 | tapered oak dining leg.001"
+    },
+    {
+      "name": "Formal 01 | dining leg felt pad",
+      "object_name": "Formal 01 | dining leg felt pad.001"
+    },
+    {
+      "name": "Formal 01 | extending table top half",
+      "object_name": "Formal 01 | extending table top half.001"
+    },
+    {
+      "name": "Formal 01 | tapered oak dining leg",
+      "object_name": "Formal 01 | tapered oak dining leg.002"
+    },
+    {
+      "name": "Formal 01 | dining leg felt pad",
+      "object_name": "Formal 01 | dining leg felt pad.002"
+    },
+    {
+      "name": "Formal 01 | tapered oak dining leg",
+      "object_name": "Formal 01 | tapered oak dining leg.003"
+    },
+    {
+      "name": "Formal 01 | dining leg felt pad",
+      "object_name": "Formal 01 | dining leg felt pad.003"
+    },
+    {
+      "name": "Formal 01 | table oak apron",
+      "object_name": "Formal 01 | table oak apron"
+    },
+    {
+      "name": "Formal 01 | table telescopic outer rail",
+      "object_name": "Formal 01 | table telescopic outer rail"
+    },
+    {
+      "name": "Formal 01 | table rail screw",
+      "object_name": "Formal 01 | table rail screw"
+    },
+    {
+      "name": "Formal 01 | table rail screw",
+      "object_name": "Formal 01 | table rail screw.001"
+    },
+    {
+      "name": "Formal 01 | table oak apron",
+      "object_name": "Formal 01 | table oak apron.001"
+    },
+    {
+      "name": "Formal 01 | table telescopic outer rail",
+      "object_name": "Formal 01 | table telescopic outer rail.001"
+    },
+    {
+      "name": "Formal 01 | table rail screw",
+      "object_name": "Formal 01 | table rail screw.002"
+    },
+    {
+      "name": "Formal 01 | table rail screw",
+      "object_name": "Formal 01 | table rail screw.003"
+    },
+    {
+      "name": "Formal 01 | table underside alignment block",
+      "object_name": "Formal 01 | table underside alignment block"
+    },
+    {
+      "name": "Formal 01 | table underside alignment block",
+      "object_name": "Formal 01 | table underside alignment block.001"
+    },
+    {
+      "name": "Formal 01 | table underside joining latch",
+      "object_name": "Formal 01 | table underside joining latch"
+    },
+    {
+      "name": "Formal 01 | table latch pivot",
+      "object_name": "Formal 01 | table latch pivot"
+    },
+    {
+      "name": "Formal 01 | dining chair oak seat frame",
+      "object_name": "Formal 01 | dining chair oak seat frame"
+    },
+    {
+      "name": "Formal 01 | dining chair upholstered seat",
+      "object_name": "Formal 01 | dining chair upholstered seat"
+    },
+    {
+      "name": "Formal 01 | curved upholstered dining chair back",
+      "object_name": "Formal 01 | curved upholstered dining chair back"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.001"
+    },
+    {
+      "name": "Formal 01 | dining chair oak seat frame",
+      "object_name": "Formal 01 | dining chair oak seat frame.001"
+    },
+    {
+      "name": "Formal 01 | dining chair upholstered seat",
+      "object_name": "Formal 01 | dining chair upholstered seat.001"
+    },
+    {
+      "name": "Formal 01 | curved upholstered dining chair back",
+      "object_name": "Formal 01 | curved upholstered dining chair back.001"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.002"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.003"
+    },
+    {
+      "name": "Formal 01 | dining chair oak seat frame",
+      "object_name": "Formal 01 | dining chair oak seat frame.002"
+    },
+    {
+      "name": "Formal 01 | dining chair upholstered seat",
+      "object_name": "Formal 01 | dining chair upholstered seat.002"
+    },
+    {
+      "name": "Formal 01 | curved upholstered dining chair back",
+      "object_name": "Formal 01 | curved upholstered dining chair back.002"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.004"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.005"
+    },
+    {
+      "name": "Formal 01 | dining chair oak seat frame",
+      "object_name": "Formal 01 | dining chair oak seat frame.003"
+    },
+    {
+      "name": "Formal 01 | dining chair upholstered seat",
+      "object_name": "Formal 01 | dining chair upholstered seat.003"
+    },
+    {
+      "name": "Formal 01 | curved upholstered dining chair back",
+      "object_name": "Formal 01 | curved upholstered dining chair back.003"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.006"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.007"
+    },
+    {
+      "name": "Formal 01 | dining chair oak seat frame",
+      "object_name": "Formal 01 | dining chair oak seat frame.004"
+    },
+    {
+      "name": "Formal 01 | dining chair upholstered seat",
+      "object_name": "Formal 01 | dining chair upholstered seat.004"
+    },
+    {
+      "name": "Formal 01 | curved upholstered dining chair back",
+      "object_name": "Formal 01 | curved upholstered dining chair back.004"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.008"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.009"
+    },
+    {
+      "name": "Formal 01 | dining chair oak seat frame",
+      "object_name": "Formal 01 | dining chair oak seat frame.005"
+    },
+    {
+      "name": "Formal 01 | dining chair upholstered seat",
+      "object_name": "Formal 01 | dining chair upholstered seat.005"
+    },
+    {
+      "name": "Formal 01 | curved upholstered dining chair back",
+      "object_name": "Formal 01 | curved upholstered dining chair back.005"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.010"
+    },
+    {
+      "name": "Formal 01 | dining chair brass back screw",
+      "object_name": "Formal 01 | dining chair brass back screw.011"
+    },
+    {
+      "name": "Formal 01 | dining ceiling rose",
+      "object_name": "Formal 01 | dining ceiling rose"
+    },
+    {
+      "name": "Formal 01 | pendant suspension",
+      "object_name": "Formal 01 | pendant suspension"
+    },
+    {
+      "name": "Formal 01 | pendant suspension",
+      "object_name": "Formal 01 | pendant suspension.001"
+    },
+    {
+      "name": "Formal 01 | dining pendant bronze body",
+      "object_name": "Formal 01 | dining pendant bronze body"
+    },
+    {
+      "name": "Formal 01 | dining pendant diffuser",
+      "object_name": "Formal 01 | dining pendant diffuser"
+    },
+    {
+      "name": "Formal 01 | dining pendant glow",
+      "object_name": "Formal 01 | dining pendant glow"
+    },
+    {
+      "name": "Formal 01 | dining ceramic vase",
+      "object_name": "Formal 01 | dining ceramic vase"
+    },
+    {
+      "name": "Formal 01 | limestone fireplace hearth",
+      "object_name": "Formal 01 | limestone fireplace hearth"
+    },
+    {
+      "name": "Formal 01 | fireplace dark firebox",
+      "object_name": "Formal 01 | fireplace dark firebox"
+    },
+    {
+      "name": "Formal 01 | limestone fireplace jamb",
+      "object_name": "Formal 01 | limestone fireplace jamb"
+    },
+    {
+      "name": "Formal 01 | limestone fireplace jamb",
+      "object_name": "Formal 01 | limestone fireplace jamb.001"
+    },
+    {
+      "name": "Formal 01 | limestone fireplace lintel",
+      "object_name": "Formal 01 | limestone fireplace lintel"
+    },
+    {
+      "name": "Formal 01 | limestone mantel cap",
+      "object_name": "Formal 01 | limestone mantel cap"
+    },
+    {
+      "name": "Formal 01 | fireplace abstract artwork frame",
+      "object_name": "Formal 01 | fireplace abstract artwork frame"
+    },
+    {
+      "name": "Formal 01 | fireplace artwork linen ground",
+      "object_name": "Formal 01 | fireplace artwork linen ground"
+    },
+    {
+      "name": "Formal 01 | sideboard recessed plinth",
+      "object_name": "Formal 01 | sideboard recessed plinth"
+    },
+    {
+      "name": "Formal 01 | sideboard back",
+      "object_name": "Formal 01 | sideboard back"
+    },
+    {
+      "name": "Formal 01 | sideboard end",
+      "object_name": "Formal 01 | sideboard end"
+    },
+    {
+      "name": "Formal 01 | sideboard end",
+      "object_name": "Formal 01 | sideboard end.001"
+    },
+    {
+      "name": "Formal 01 | sideboard horizontal carcass",
+      "object_name": "Formal 01 | sideboard horizontal carcass"
+    },
+    {
+      "name": "Formal 01 | sideboard horizontal carcass",
+      "object_name": "Formal 01 | sideboard horizontal carcass.001"
+    },
+    {
+      "name": "Formal 01 | sideboard sliding oak door",
+      "object_name": "Formal 01 | sideboard sliding oak door"
+    },
+    {
+      "name": "Formal 01 | sideboard recessed bronze pull",
+      "object_name": "Formal 01 | sideboard recessed bronze pull"
+    },
+    {
+      "name": "Formal 01 | sideboard sliding oak door",
+      "object_name": "Formal 01 | sideboard sliding oak door.001"
+    },
+    {
+      "name": "Formal 01 | sideboard recessed bronze pull",
+      "object_name": "Formal 01 | sideboard recessed bronze pull.001"
+    },
+    {
+      "name": "Formal 01 | sideboard sliding oak door",
+      "object_name": "Formal 01 | sideboard sliding oak door.002"
+    },
+    {
+      "name": "Formal 01 | sideboard recessed bronze pull",
+      "object_name": "Formal 01 | sideboard recessed bronze pull.002"
+    },
+    {
+      "name": "Formal 01 | stored extension leaf",
+      "object_name": "Formal 01 | stored extension leaf"
+    },
+    {
+      "name": "Formal 01 | extension leaf padded support",
+      "object_name": "Formal 01 | extension leaf padded support"
+    },
+    {
+      "name": "Formal 01 | extension leaf padded support",
+      "object_name": "Formal 01 | extension leaf padded support.001"
+    },
+    {
+      "name": "Formal 01 | stored extension leaf",
+      "object_name": "Formal 01 | stored extension leaf.001"
+    },
+    {
+      "name": "Formal 01 | extension leaf padded support",
+      "object_name": "Formal 01 | extension leaf padded support.002"
+    },
+    {
+      "name": "Formal 01 | extension leaf padded support",
+      "object_name": "Formal 01 | extension leaf padded support.003"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 0 back frame rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 0 nested leg"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 0 back frame rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 0 nested leg.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 0 frame cross rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 0 frame cross rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 back upholstery",
+      "object_name": "Formal 01 | stored folding guest chair 0 back upholstery"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 folded seat",
+      "object_name": "Formal 01 | stored folding guest chair 0 folded seat"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 0 brass pivot"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 0 brass pivot.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 0 padded rack"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 0 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 0 padded rack.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 1 back frame rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 1 nested leg"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 1 back frame rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 1 nested leg.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 1 frame cross rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 1 frame cross rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 back upholstery",
+      "object_name": "Formal 01 | stored folding guest chair 1 back upholstery"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 folded seat",
+      "object_name": "Formal 01 | stored folding guest chair 1 folded seat"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 1 brass pivot"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 1 brass pivot.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 1 padded rack"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 1 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 1 padded rack.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 2 back frame rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 2 nested leg"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 2 back frame rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 2 nested leg.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 2 frame cross rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 2 frame cross rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 back upholstery",
+      "object_name": "Formal 01 | stored folding guest chair 2 back upholstery"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 folded seat",
+      "object_name": "Formal 01 | stored folding guest chair 2 folded seat"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 2 brass pivot"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 2 brass pivot.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 2 padded rack"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 2 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 2 padded rack.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 3 back frame rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 3 nested leg"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 back frame rail",
+      "object_name": "Formal 01 | stored folding guest chair 3 back frame rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 nested leg",
+      "object_name": "Formal 01 | stored folding guest chair 3 nested leg.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 3 frame cross rail"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 frame cross rail",
+      "object_name": "Formal 01 | stored folding guest chair 3 frame cross rail.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 back upholstery",
+      "object_name": "Formal 01 | stored folding guest chair 3 back upholstery"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 folded seat",
+      "object_name": "Formal 01 | stored folding guest chair 3 folded seat"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 3 brass pivot"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 brass pivot",
+      "object_name": "Formal 01 | stored folding guest chair 3 brass pivot.001"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 3 padded rack"
+    },
+    {
+      "name": "Formal 01 | stored folding guest chair 3 padded rack",
+      "object_name": "Formal 01 | stored folding guest chair 3 padded rack.001"
+    },
+    {
+      "name": "Formal 01 | sideboard limestone top",
+      "object_name": "Formal 01 | sideboard limestone top"
+    },
+    {
+      "name": "Formal 01 | sideboard linen napkins",
+      "object_name": "Formal 01 | sideboard linen napkins"
+    },
+    {
+      "name": "Formal 01 | sideboard linen napkins",
+      "object_name": "Formal 01 | sideboard linen napkins.001"
+    },
+    {
+      "name": "Formal 01 | sideboard linen napkins",
+      "object_name": "Formal 01 | sideboard linen napkins.002"
+    },
+    {
+      "name": "Formal 01 | sideboard ceramic bowl",
+      "object_name": "Formal 01 | sideboard ceramic bowl"
+    },
+    {
+      "name": "Formal 01 | drinks shadow plinth",
+      "object_name": "Formal 01 | drinks shadow plinth"
+    },
+    {
+      "name": "Formal 01 | drinks oak back",
+      "object_name": "Formal 01 | drinks oak back"
+    },
+    {
+      "name": "Formal 01 | drinks rounded oak side",
+      "object_name": "Formal 01 | drinks rounded oak side"
+    },
+    {
+      "name": "Formal 01 | drinks rounded oak side",
+      "object_name": "Formal 01 | drinks rounded oak side.001"
+    },
+    {
+      "name": "Formal 01 | drinks oak horizontal",
+      "object_name": "Formal 01 | drinks oak horizontal"
+    },
+    {
+      "name": "Formal 01 | drinks oak horizontal",
+      "object_name": "Formal 01 | drinks oak horizontal.001"
+    },
+    {
+      "name": "Formal 01 | drinks oak horizontal",
+      "object_name": "Formal 01 | drinks oak horizontal.002"
+    },
+    {
+      "name": "Formal 01 | drinks limestone counter",
+      "object_name": "Formal 01 | drinks limestone counter"
+    },
+    {
+      "name": "Formal 01 | drinks cooler insulated back",
+      "object_name": "Formal 01 | drinks cooler insulated back"
+    },
+    {
+      "name": "Formal 01 | drinks cooler insulated side",
+      "object_name": "Formal 01 | drinks cooler insulated side"
+    },
+    {
+      "name": "Formal 01 | drinks cooler insulated side",
+      "object_name": "Formal 01 | drinks cooler insulated side.001"
+    },
+    {
+      "name": "Formal 01 | drinks cooler insulated shelf",
+      "object_name": "Formal 01 | drinks cooler insulated shelf"
+    },
+    {
+      "name": "Formal 01 | drinks cooler insulated shelf",
+      "object_name": "Formal 01 | drinks cooler insulated shelf.001"
+    },
+    {
+      "name": "Formal 01 | drinks cooler bronze door surround",
+      "object_name": "Formal 01 | drinks cooler bronze door surround"
+    },
+    {
+      "name": "Formal 01 | drinks cooler smoked glass",
+      "object_name": "Formal 01 | drinks cooler smoked glass"
+    },
+    {
+      "name": "Formal 01 | drinks cooler recessed grip",
+      "object_name": "Formal 01 | drinks cooler recessed grip"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille.001"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille.002"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille.003"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille.004"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille.005"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille.006"
+    },
+    {
+      "name": "Formal 01 | drinks cooler ventilation grille",
+      "object_name": "Formal 01 | drinks cooler ventilation grille.007"
+    },
+    {
+      "name": "Formal 01 | drinks cooler bottle rack",
+      "object_name": "Formal 01 | drinks cooler bottle rack"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.001"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.001"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.002"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.002"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.003"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.003"
+    },
+    {
+      "name": "Formal 01 | drinks cooler bottle rack",
+      "object_name": "Formal 01 | drinks cooler bottle rack.001"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.004"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.004"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.005"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.005"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.006"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.006"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.007"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.007"
+    },
+    {
+      "name": "Formal 01 | drinks cooler bottle rack",
+      "object_name": "Formal 01 | drinks cooler bottle rack.002"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.008"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.008"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.009"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.009"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.010"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.010"
+    },
+    {
+      "name": "Formal 01 | drinks chilled bottle",
+      "object_name": "Formal 01 | drinks chilled bottle.011"
+    },
+    {
+      "name": "Formal 01 | drinks bottle neck",
+      "object_name": "Formal 01 | drinks bottle neck.011"
+    },
+    {
+      "name": "Formal 01 | drinks oak storage front",
+      "object_name": "Formal 01 | drinks oak storage front"
+    },
+    {
+      "name": "Formal 01 | drinks storage bronze pull",
+      "object_name": "Formal 01 | drinks storage bronze pull"
+    },
+    {
+      "name": "Formal 01 | drinks mirrored niche",
+      "object_name": "Formal 01 | drinks mirrored niche"
+    },
+    {
+      "name": "Formal 01 | drinks display shelf",
+      "object_name": "Formal 01 | drinks display shelf"
+    },
+    {
+      "name": "Formal 01 | drinks concealed shelf diffuser",
+      "object_name": "Formal 01 | drinks concealed shelf diffuser"
+    },
+    {
+      "name": "Formal 01 | drinks warm shelf 1.35",
+      "object_name": "Formal 01 | drinks warm shelf 1.35"
+    },
+    {
+      "name": "Formal 01 | drinks display shelf",
+      "object_name": "Formal 01 | drinks display shelf.001"
+    },
+    {
+      "name": "Formal 01 | drinks concealed shelf diffuser",
+      "object_name": "Formal 01 | drinks concealed shelf diffuser.001"
+    },
+    {
+      "name": "Formal 01 | drinks warm shelf 1.78",
+      "object_name": "Formal 01 | drinks warm shelf 1.78"
+    },
+    {
+      "name": "Formal 01 | drinks display shelf",
+      "object_name": "Formal 01 | drinks display shelf.002"
+    },
+    {
+      "name": "Formal 01 | drinks concealed shelf diffuser",
+      "object_name": "Formal 01 | drinks concealed shelf diffuser.002"
+    },
+    {
+      "name": "Formal 01 | drinks warm shelf 2.125",
+      "object_name": "Formal 01 | drinks warm shelf 2.125"
+    },
+    {
+      "name": "Formal 01 | drinks decanter",
+      "object_name": "Formal 01 | drinks decanter"
+    },
+    {
+      "name": "Formal 01 | drinks decanter stopper",
+      "object_name": "Formal 01 | drinks decanter stopper"
+    },
+    {
+      "name": "Formal 01 | drinks decanter",
+      "object_name": "Formal 01 | drinks decanter.001"
+    },
+    {
+      "name": "Formal 01 | drinks decanter stopper",
+      "object_name": "Formal 01 | drinks decanter stopper.001"
+    },
+    {
+      "name": "Formal 01 | drinks wine glass",
+      "object_name": "Formal 01 | drinks wine glass"
+    },
+    {
+      "name": "Formal 01 | drinks wine glass",
+      "object_name": "Formal 01 | drinks wine glass.001"
+    },
+    {
+      "name": "Formal 01 | drinks wine glass",
+      "object_name": "Formal 01 | drinks wine glass.002"
+    },
+    {
+      "name": "Formal 01 | drinks wine glass",
+      "object_name": "Formal 01 | drinks wine glass.003"
+    },
+    {
+      "name": "Formal 01 | drinks wine glass",
+      "object_name": "Formal 01 | drinks wine glass.004"
+    },
+    {
+      "name": "Formal 01 | drinks wine glass",
+      "object_name": "Formal 01 | drinks wine glass.005"
+    },
+    {
+      "name": "Formal 01 | drinks tumbler",
+      "object_name": "Formal 01 | drinks tumbler"
+    },
+    {
+      "name": "Formal 01 | drinks tumbler",
+      "object_name": "Formal 01 | drinks tumbler.001"
+    },
+    {
+      "name": "Formal 01 | drinks tumbler",
+      "object_name": "Formal 01 | drinks tumbler.002"
+    },
+    {
+      "name": "Formal 01 | drinks tumbler",
+      "object_name": "Formal 01 | drinks tumbler.003"
+    },
+    {
+      "name": "Formal 01 | drinks tumbler",
+      "object_name": "Formal 01 | drinks tumbler.004"
+    },
+    {
+      "name": "Formal 01 | drinks serving tray",
+      "object_name": "Formal 01 | drinks serving tray"
+    },
+    {
+      "name": "Formal 01 | drinks linen coaster",
+      "object_name": "Formal 01 | drinks linen coaster"
+    },
+    {
+      "name": "Formal 01 | drinks linen coaster",
+      "object_name": "Formal 01 | drinks linen coaster.001"
+    },
+    {
+      "name": "Formal 01 | drinks linen coaster",
+      "object_name": "Formal 01 | drinks linen coaster.002"
+    },
+    {
+      "name": "Formal 01 | rear recessed curtain track",
+      "object_name": "Formal 01 | rear recessed curtain track"
+    },
+    {
+      "name": "Formal 01 | rear linen curtain panel",
+      "object_name": "Formal 01 | rear linen curtain panel"
+    },
+    {
+      "name": "Formal 01 | rear linen curtain panel",
+      "object_name": "Formal 01 | rear linen curtain panel.001"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.001"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.002"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.003"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.004"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.005"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.006"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.007"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.008"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.009"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.010"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.011"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.012"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.013"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.014"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.015"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.016"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.017"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.018"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.019"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.020"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.021"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.022"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.023"
+    },
+    {
+      "name": "Formal 01 | front bay Roman blind fold",
+      "object_name": "Formal 01 | front bay Roman blind fold.024"
+    },
+    {
+      "name": "Formal 01 | front bay plant ceramic planter",
+      "object_name": "Formal 01 | front bay plant ceramic planter"
+    },
+    {
+      "name": "Formal 01 | front bay plant soil",
+      "object_name": "Formal 01 | front bay plant soil"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.001"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.002"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.003"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.004"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.005"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.006"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.007"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.008"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.009"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.010"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.011"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.012"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.013"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.014"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.015"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.016"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.017"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.018"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.019"
+    },
+    {
+      "name": "Formal 01 | front bay plant leaf",
+      "object_name": "Formal 01 | front bay plant leaf.020"
+    },
+    {
+      "name": "Formal 01 | garden corner plant ceramic planter",
+      "object_name": "Formal 01 | garden corner plant ceramic planter"
+    },
+    {
+      "name": "Formal 01 | garden corner plant soil",
+      "object_name": "Formal 01 | garden corner plant soil"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.001"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.002"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.003"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.004"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.005"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.006"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.007"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.008"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.009"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.010"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.011"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.012"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.013"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.014"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.015"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.016"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.017"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.018"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.019"
+    },
+    {
+      "name": "Formal 01 | garden corner plant leaf",
+      "object_name": "Formal 01 | garden corner plant leaf.020"
+    },
+    {
+      "name": "Formal 01 | bay reading chair foot",
+      "object_name": "Formal 01 | bay reading chair foot"
+    },
+    {
+      "name": "Formal 01 | bay reading chair foot",
+      "object_name": "Formal 01 | bay reading chair foot.001"
+    },
+    {
+      "name": "Formal 01 | bay reading chair foot",
+      "object_name": "Formal 01 | bay reading chair foot.002"
+    },
+    {
+      "name": "Formal 01 | bay reading chair foot",
+      "object_name": "Formal 01 | bay reading chair foot.003"
+    },
+    {
+      "name": "Formal 01 | bay reading chair seat",
+      "object_name": "Formal 01 | bay reading chair seat"
+    },
+    {
+      "name": "Formal 01 | curved bay reading chair back",
+      "object_name": "Formal 01 | curved bay reading chair back"
+    },
+    {
+      "name": "Formal 01 | bay reading chair arm",
+      "object_name": "Formal 01 | bay reading chair arm"
+    },
+    {
+      "name": "Formal 01 | bay reading chair arm",
+      "object_name": "Formal 01 | bay reading chair arm.001"
+    },
+    {
+      "name": "Formal 01 | bay reading lumbar cushion",
+      "object_name": "Formal 01 | bay reading lumbar cushion"
+    },
+    {
+      "name": "Formal 01 | bay reading table pedestal",
+      "object_name": "Formal 01 | bay reading table pedestal"
+    },
+    {
+      "name": "Formal 01 | bay reading table top",
+      "object_name": "Formal 01 | bay reading table top"
+    },
+    {
+      "name": "Formal 01 | bay reading book",
+      "object_name": "Formal 01 | bay reading book"
+    },
+    {
+      "name": "Formal 01 | ceiling light trim",
+      "object_name": "Formal 01 | ceiling light trim"
+    },
+    {
+      "name": "Formal 01 | ceiling light diffuser",
+      "object_name": "Formal 01 | ceiling light diffuser"
+    },
+    {
+      "name": "Formal 01 | ceiling glow 10.1 1.4",
+      "object_name": "Formal 01 | ceiling glow 10.1 1.4"
+    },
+    {
+      "name": "Formal 01 | ceiling light trim",
+      "object_name": "Formal 01 | ceiling light trim.001"
+    },
+    {
+      "name": "Formal 01 | ceiling light diffuser",
+      "object_name": "Formal 01 | ceiling light diffuser.001"
+    },
+    {
+      "name": "Formal 01 | ceiling glow 12.5 1.4",
+      "object_name": "Formal 01 | ceiling glow 12.5 1.4"
+    },
+    {
+      "name": "Formal 01 | ceiling light trim",
+      "object_name": "Formal 01 | ceiling light trim.002"
+    },
+    {
+      "name": "Formal 01 | ceiling light diffuser",
+      "object_name": "Formal 01 | ceiling light diffuser.002"
+    },
+    {
+      "name": "Formal 01 | ceiling glow 10.1 7.6",
+      "object_name": "Formal 01 | ceiling glow 10.1 7.6"
+    },
+    {
+      "name": "Formal 01 | ceiling light trim",
+      "object_name": "Formal 01 | ceiling light trim.003"
+    },
+    {
+      "name": "Formal 01 | ceiling light diffuser",
+      "object_name": "Formal 01 | ceiling light diffuser.003"
+    },
+    {
+      "name": "Formal 01 | ceiling glow 12.5 7.6",
+      "object_name": "Formal 01 | ceiling glow 12.5 7.6"
+    },
+    {
+      "name": "Formal 01 | ceiling light trim",
+      "object_name": "Formal 01 | ceiling light trim.004"
+    },
+    {
+      "name": "Formal 01 | ceiling light diffuser",
+      "object_name": "Formal 01 | ceiling light diffuser.004"
+    },
+    {
+      "name": "Formal 01 | ceiling glow 6.0 8.8",
+      "object_name": "Formal 01 | ceiling glow 6.0 8.8"
+    },
+    {
+      "name": "Formal 01 | ceiling light trim",
+      "object_name": "Formal 01 | ceiling light trim.005"
+    },
+    {
+      "name": "Formal 01 | ceiling light diffuser",
+      "object_name": "Formal 01 | ceiling light diffuser.005"
+    },
+    {
+      "name": "Formal 01 | ceiling glow 8.0 9.4",
+      "object_name": "Formal 01 | ceiling glow 8.0 9.4"
+    },
+    {
+      "name": "Formal 01 | dining switch plate",
+      "object_name": "Formal 01 | dining switch plate"
+    },
+    {
+      "name": "Formal 01 | dining rocker switch",
+      "object_name": "Formal 01 | dining rocker switch"
+    },
+    {
+      "name": "Formal 01 | dining rocker switch",
+      "object_name": "Formal 01 | dining rocker switch.001"
+    },
+    {
+      "name": "Formal 01 | dining switch plate",
+      "object_name": "Formal 01 | dining switch plate.001"
+    },
+    {
+      "name": "Formal 01 | dining rocker switch",
+      "object_name": "Formal 01 | dining rocker switch.002"
+    },
+    {
+      "name": "Formal 01 | dining rocker switch",
+      "object_name": "Formal 01 | dining rocker switch.003"
+    },
+    {
+      "name": "Formal 01 | chamfered wall oak panel",
+      "object_name": "Formal 01 | chamfered wall oak panel"
+    },
+    {
+      "name": "Formal 01 | chamfered wall floating shelf",
+      "object_name": "Formal 01 | chamfered wall floating shelf"
+    },
+    {
+      "name": "Formal 01 | chamfered wall floating shelf",
+      "object_name": "Formal 01 | chamfered wall floating shelf.001"
+    },
+    {
+      "name": "Formal 01 | chamfered wall ceramic vessel",
+      "object_name": "Formal 01 | chamfered wall ceramic vessel"
+    },
+    {
+      "name": "Formal 01 | chamfered wall art book",
+      "object_name": "Formal 01 | chamfered wall art book"
+    },
+    {
+      "name": "Formal 01 | dining west door oak leaf",
+      "object_name": "Formal 01 | dining west door oak leaf"
+    },
+    {
+      "name": "Formal 01 | dining west door bronze hinge",
+      "object_name": "Formal 01 | dining west door bronze hinge"
+    },
+    {
+      "name": "Formal 01 | dining west door bronze hinge",
+      "object_name": "Formal 01 | dining west door bronze hinge.001"
+    },
+    {
+      "name": "Formal 01 | dining west door bronze hinge",
+      "object_name": "Formal 01 | dining west door bronze hinge.002"
+    },
+    {
+      "name": "Formal 01 | dining west door handle rose",
+      "object_name": "Formal 01 | dining west door handle rose"
+    },
+    {
+      "name": "Formal 01 | dining west door key escutcheon",
+      "object_name": "Formal 01 | dining west door key escutcheon"
+    },
+    {
+      "name": "Formal 01 | dining west door handle rose",
+      "object_name": "Formal 01 | dining west door handle rose.001"
+    },
+    {
+      "name": "Formal 01 | dining west door key escutcheon",
+      "object_name": "Formal 01 | dining west door key escutcheon.001"
+    },
+    {
+      "name": "Formal 01 | dining east door oak leaf",
+      "object_name": "Formal 01 | dining east door oak leaf"
+    },
+    {
+      "name": "Formal 01 | dining east door bronze hinge",
+      "object_name": "Formal 01 | dining east door bronze hinge"
+    },
+    {
+      "name": "Formal 01 | dining east door bronze hinge",
+      "object_name": "Formal 01 | dining east door bronze hinge.001"
+    },
+    {
+      "name": "Formal 01 | dining east door bronze hinge",
+      "object_name": "Formal 01 | dining east door bronze hinge.002"
+    },
+    {
+      "name": "Formal 01 | dining east door handle rose",
+      "object_name": "Formal 01 | dining east door handle rose"
+    },
+    {
+      "name": "Formal 01 | dining east door key escutcheon",
+      "object_name": "Formal 01 | dining east door key escutcheon"
+    },
+    {
+      "name": "Formal 01 | dining east door handle rose",
+      "object_name": "Formal 01 | dining east door handle rose.001"
+    },
+    {
+      "name": "Formal 01 | dining east door key escutcheon",
+      "object_name": "Formal 01 | dining east door key escutcheon.001"
+    },
+    {
+      "name": "Formal 01 | drawing north door oak leaf",
+      "object_name": "Formal 01 | drawing north door oak leaf"
+    },
+    {
+      "name": "Formal 01 | drawing north door bronze hinge",
+      "object_name": "Formal 01 | drawing north door bronze hinge"
+    },
+    {
+      "name": "Formal 01 | drawing north door bronze hinge",
+      "object_name": "Formal 01 | drawing north door bronze hinge.001"
+    },
+    {
+      "name": "Formal 01 | drawing north door bronze hinge",
+      "object_name": "Formal 01 | drawing north door bronze hinge.002"
+    },
+    {
+      "name": "Formal 01 | drawing north door handle rose",
+      "object_name": "Formal 01 | drawing north door handle rose"
+    },
+    {
+      "name": "Formal 01 | drawing north door key escutcheon",
+      "object_name": "Formal 01 | drawing north door key escutcheon"
+    },
+    {
+      "name": "Formal 01 | drawing north door handle rose",
+      "object_name": "Formal 01 | drawing north door handle rose.001"
+    },
+    {
+      "name": "Formal 01 | drawing north door key escutcheon",
+      "object_name": "Formal 01 | drawing north door key escutcheon.001"
+    },
+    {
+      "name": "Formal 01 | drawing south door oak leaf",
+      "object_name": "Formal 01 | drawing south door oak leaf"
+    },
+    {
+      "name": "Formal 01 | drawing south door bronze hinge",
+      "object_name": "Formal 01 | drawing south door bronze hinge"
+    },
+    {
+      "name": "Formal 01 | drawing south door bronze hinge",
+      "object_name": "Formal 01 | drawing south door bronze hinge.001"
+    },
+    {
+      "name": "Formal 01 | drawing south door bronze hinge",
+      "object_name": "Formal 01 | drawing south door bronze hinge.002"
+    },
+    {
+      "name": "Formal 01 | drawing south door handle rose",
+      "object_name": "Formal 01 | drawing south door handle rose"
+    },
+    {
+      "name": "Formal 01 | drawing south door key escutcheon",
+      "object_name": "Formal 01 | drawing south door key escutcheon"
+    },
+    {
+      "name": "Formal 01 | drawing south door handle rose",
+      "object_name": "Formal 01 | drawing south door handle rose.001"
+    },
+    {
+      "name": "Formal 01 | drawing south door key escutcheon",
+      "object_name": "Formal 01 | drawing south door key escutcheon.001"
+    },
+    {
+      "name": "Formal 01 | sofa seat piping",
+      "object_name": "Formal 01 | sofa seat piping"
+    },
+    {
+      "name": "Formal 01 | sofa seat piping",
+      "object_name": "Formal 01 | sofa seat piping.001"
+    },
+    {
+      "name": "Formal 01 | sofa seat piping",
+      "object_name": "Formal 01 | sofa seat piping.002"
+    },
+    {
+      "name": "Formal 01 | sofa seat piping",
+      "object_name": "Formal 01 | sofa seat piping.003"
+    },
+    {
+      "name": "Formal 01 | sofa seat piping",
+      "object_name": "Formal 01 | sofa seat piping.004"
+    },
+    {
+      "name": "Formal 01 | sofa seat piping",
+      "object_name": "Formal 01 | sofa seat piping.005"
+    },
+    {
+      "name": "Formal 01 | dining chair 0 oak leg",
+      "object_name": "Formal 01 | dining chair 0 oak leg"
+    },
+    {
+      "name": "Formal 01 | dining chair 0 oak leg",
+      "object_name": "Formal 01 | dining chair 0 oak leg.001"
+    },
+    {
+      "name": "Formal 01 | dining chair 0 oak leg",
+      "object_name": "Formal 01 | dining chair 0 oak leg.002"
+    },
+    {
+      "name": "Formal 01 | dining chair 0 oak leg",
+      "object_name": "Formal 01 | dining chair 0 oak leg.003"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.001"
+    },
+    {
+      "name": "Formal 01 | dining chair back stitched edge",
+      "object_name": "Formal 01 | dining chair back stitched edge"
+    },
+    {
+      "name": "Formal 01 | dining chair 1 oak leg",
+      "object_name": "Formal 01 | dining chair 1 oak leg"
+    },
+    {
+      "name": "Formal 01 | dining chair 1 oak leg",
+      "object_name": "Formal 01 | dining chair 1 oak leg.001"
+    },
+    {
+      "name": "Formal 01 | dining chair 1 oak leg",
+      "object_name": "Formal 01 | dining chair 1 oak leg.002"
+    },
+    {
+      "name": "Formal 01 | dining chair 1 oak leg",
+      "object_name": "Formal 01 | dining chair 1 oak leg.003"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.002"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.003"
+    },
+    {
+      "name": "Formal 01 | dining chair back stitched edge",
+      "object_name": "Formal 01 | dining chair back stitched edge.001"
+    },
+    {
+      "name": "Formal 01 | dining chair 2 oak leg",
+      "object_name": "Formal 01 | dining chair 2 oak leg"
+    },
+    {
+      "name": "Formal 01 | dining chair 2 oak leg",
+      "object_name": "Formal 01 | dining chair 2 oak leg.001"
+    },
+    {
+      "name": "Formal 01 | dining chair 2 oak leg",
+      "object_name": "Formal 01 | dining chair 2 oak leg.002"
+    },
+    {
+      "name": "Formal 01 | dining chair 2 oak leg",
+      "object_name": "Formal 01 | dining chair 2 oak leg.003"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.004"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.005"
+    },
+    {
+      "name": "Formal 01 | dining chair back stitched edge",
+      "object_name": "Formal 01 | dining chair back stitched edge.002"
+    },
+    {
+      "name": "Formal 01 | dining chair 3 oak leg",
+      "object_name": "Formal 01 | dining chair 3 oak leg"
+    },
+    {
+      "name": "Formal 01 | dining chair 3 oak leg",
+      "object_name": "Formal 01 | dining chair 3 oak leg.001"
+    },
+    {
+      "name": "Formal 01 | dining chair 3 oak leg",
+      "object_name": "Formal 01 | dining chair 3 oak leg.002"
+    },
+    {
+      "name": "Formal 01 | dining chair 3 oak leg",
+      "object_name": "Formal 01 | dining chair 3 oak leg.003"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.006"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.007"
+    },
+    {
+      "name": "Formal 01 | dining chair back stitched edge",
+      "object_name": "Formal 01 | dining chair back stitched edge.003"
+    },
+    {
+      "name": "Formal 01 | dining chair 4 oak leg",
+      "object_name": "Formal 01 | dining chair 4 oak leg"
+    },
+    {
+      "name": "Formal 01 | dining chair 4 oak leg",
+      "object_name": "Formal 01 | dining chair 4 oak leg.001"
+    },
+    {
+      "name": "Formal 01 | dining chair 4 oak leg",
+      "object_name": "Formal 01 | dining chair 4 oak leg.002"
+    },
+    {
+      "name": "Formal 01 | dining chair 4 oak leg",
+      "object_name": "Formal 01 | dining chair 4 oak leg.003"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.008"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.009"
+    },
+    {
+      "name": "Formal 01 | dining chair back stitched edge",
+      "object_name": "Formal 01 | dining chair back stitched edge.004"
+    },
+    {
+      "name": "Formal 01 | dining chair 5 oak leg",
+      "object_name": "Formal 01 | dining chair 5 oak leg"
+    },
+    {
+      "name": "Formal 01 | dining chair 5 oak leg",
+      "object_name": "Formal 01 | dining chair 5 oak leg.001"
+    },
+    {
+      "name": "Formal 01 | dining chair 5 oak leg",
+      "object_name": "Formal 01 | dining chair 5 oak leg.002"
+    },
+    {
+      "name": "Formal 01 | dining chair 5 oak leg",
+      "object_name": "Formal 01 | dining chair 5 oak leg.003"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.010"
+    },
+    {
+      "name": "Formal 01 | dining chair back upright",
+      "object_name": "Formal 01 | dining chair back upright.011"
+    },
+    {
+      "name": "Formal 01 | dining chair back stitched edge",
+      "object_name": "Formal 01 | dining chair back stitched edge.005"
+    },
+    {
+      "name": "Formal 01 | dining sculptural branch",
+      "object_name": "Formal 01 | dining sculptural branch"
+    },
+    {
+      "name": "Formal 01 | dining sculptural branch",
+      "object_name": "Formal 01 | dining sculptural branch.001"
+    },
+    {
+      "name": "Formal 01 | fireplace grate bar",
+      "object_name": "Formal 01 | fireplace grate bar"
+    },
+    {
+      "name": "Formal 01 | fireplace grate bar",
+      "object_name": "Formal 01 | fireplace grate bar.001"
+    },
+    {
+      "name": "Formal 01 | fireplace grate bar",
+      "object_name": "Formal 01 | fireplace grate bar.002"
+    },
+    {
+      "name": "Formal 01 | fireplace grate bar",
+      "object_name": "Formal 01 | fireplace grate bar.003"
+    },
+    {
+      "name": "Formal 01 | fireplace grate bar",
+      "object_name": "Formal 01 | fireplace grate bar.004"
+    },
+    {
+      "name": "Formal 01 | abstract artwork relief",
+      "object_name": "Formal 01 | abstract artwork relief"
+    },
+    {
+      "name": "Formal 01 | abstract artwork relief",
+      "object_name": "Formal 01 | abstract artwork relief.001"
+    },
+    {
+      "name": "Formal 01 | abstract artwork relief",
+      "object_name": "Formal 01 | abstract artwork relief.002"
+    },
+    {
+      "name": "Formal 01 | front bay plant stem",
+      "object_name": "Formal 01 | front bay plant stem"
+    },
+    {
+      "name": "Formal 01 | front bay plant stem",
+      "object_name": "Formal 01 | front bay plant stem.001"
+    },
+    {
+      "name": "Formal 01 | front bay plant stem",
+      "object_name": "Formal 01 | front bay plant stem.002"
+    },
+    {
+      "name": "Formal 01 | front bay plant stem",
+      "object_name": "Formal 01 | front bay plant stem.003"
+    },
+    {
+      "name": "Formal 01 | front bay plant stem",
+      "object_name": "Formal 01 | front bay plant stem.004"
+    },
+    {
+      "name": "Formal 01 | front bay plant stem",
+      "object_name": "Formal 01 | front bay plant stem.005"
+    },
+    {
+      "name": "Formal 01 | front bay plant stem",
+      "object_name": "Formal 01 | front bay plant stem.006"
+    },
+    {
+      "name": "Formal 01 | garden corner plant stem",
+      "object_name": "Formal 01 | garden corner plant stem"
+    },
+    {
+      "name": "Formal 01 | garden corner plant stem",
+      "object_name": "Formal 01 | garden corner plant stem.001"
+    },
+    {
+      "name": "Formal 01 | garden corner plant stem",
+      "object_name": "Formal 01 | garden corner plant stem.002"
+    },
+    {
+      "name": "Formal 01 | garden corner plant stem",
+      "object_name": "Formal 01 | garden corner plant stem.003"
+    },
+    {
+      "name": "Formal 01 | garden corner plant stem",
+      "object_name": "Formal 01 | garden corner plant stem.004"
+    },
+    {
+      "name": "Formal 01 | garden corner plant stem",
+      "object_name": "Formal 01 | garden corner plant stem.005"
+    },
+    {
+      "name": "Formal 01 | garden corner plant stem",
+      "object_name": "Formal 01 | garden corner plant stem.006"
+    },
+    {
+      "name": "Formal 01 | dining west door lever",
+      "object_name": "Formal 01 | dining west door lever"
+    },
+    {
+      "name": "Formal 01 | dining west door lever",
+      "object_name": "Formal 01 | dining west door lever.001"
+    },
+    {
+      "name": "Formal 01 | dining east door lever",
+      "object_name": "Formal 01 | dining east door lever"
+    },
+    {
+      "name": "Formal 01 | dining east door lever",
+      "object_name": "Formal 01 | dining east door lever.001"
+    },
+    {
+      "name": "Formal 01 | drawing north door lever",
+      "object_name": "Formal 01 | drawing north door lever"
+    },
+    {
+      "name": "Formal 01 | drawing north door lever",
+      "object_name": "Formal 01 | drawing north door lever.001"
+    },
+    {
+      "name": "Formal 01 | drawing south door lever",
+      "object_name": "Formal 01 | drawing south door lever"
+    },
+    {
+      "name": "Formal 01 | drawing south door lever",
+      "object_name": "Formal 01 | drawing south door lever.001"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Formal 01 | three-seat sofa 0",
+      "box": [
+        10.02,
+        2.4,
+        12.42,
+        3.38
+      ],
+      "bottom": 0,
+      "top": 0.965
+    },
+    {
+      "name": "Formal 01 | three-seat sofa 1",
+      "box": [
+        10.02,
+        5.22,
+        12.42,
+        6.2
+      ],
+      "bottom": 0,
+      "top": 0.965
+    },
+    {
+      "name": "Formal 01 | coffee table",
+      "box": [
+        10.42,
+        4.04,
+        11.82,
+        4.58
+      ],
+      "bottom": 0,
+      "top": 0.41
+    },
+    {
+      "name": "Formal 01 | extending dining table",
+      "box": [
+        7.02,
+        6.75,
+        8.82,
+        7.75
+      ],
+      "bottom": 0,
+      "top": 0.76
+    },
+    {
+      "name": "Formal 01 | dining chair 0",
+      "box": [
+        7.345,
+        6.215,
+        7.845,
+        6.765000000000001
+      ],
+      "bottom": 0,
+      "top": 0.803
+    },
+    {
+      "name": "Formal 01 | dining chair 1",
+      "box": [
+        7.994999999999999,
+        6.215,
+        8.495,
+        6.765000000000001
+      ],
+      "bottom": 0,
+      "top": 0.803
+    },
+    {
+      "name": "Formal 01 | dining chair 2",
+      "box": [
+        7.345,
+        7.734999999999999,
+        7.845,
+        8.285
+      ],
+      "bottom": 0,
+      "top": 0.803
+    },
+    {
+      "name": "Formal 01 | dining chair 3",
+      "box": [
+        7.994999999999999,
+        7.734999999999999,
+        8.495,
+        8.285
+      ],
+      "bottom": 0,
+      "top": 0.803
+    },
+    {
+      "name": "Formal 01 | dining chair 4",
+      "box": [
+        6.484999999999999,
+        7.0,
+        7.035,
+        7.5
+      ],
+      "bottom": 0,
+      "top": 0.803
+    },
+    {
+      "name": "Formal 01 | dining chair 5",
+      "box": [
+        8.805,
+        7.0,
+        9.355,
+        7.5
+      ],
+      "bottom": 0,
+      "top": 0.803
+    },
+    {
+      "name": "Formal 01 | retained fireplace envelope",
+      "box": [
+        13.165,
+        3.75,
+        14.015,
+        5.65
+      ],
+      "bottom": 0,
+      "top": 1.39
+    },
+    {
+      "name": "Formal 01 | serving sideboard",
+      "box": [
+        13.276,
+        1.437,
+        13.874,
+        3.163
+      ],
+      "bottom": 0,
+      "top": 0.933
+    },
+    {
+      "name": "Formal 01 | drinks cabinet",
+      "box": [
+        5.075,
+        7.99,
+        5.53,
+        9.15
+      ],
+      "bottom": 0,
+      "top": 2.18
+    },
+    {
+      "name": "Formal 01 | front bay plant pot",
+      "box": [
+        9.285,
+        0.30500000000000005,
+        9.715,
+        0.735
+      ],
+      "bottom": 0,
+      "top": 0.44
+    },
+    {
+      "name": "Formal 01 | garden corner plant pot",
+      "box": [
+        13.325,
+        7.885,
+        13.754999999999999,
+        8.315
+      ],
+      "bottom": 0,
+      "top": 0.44
+    },
+    {
+      "name": "Formal 01 | bay reading chair",
+      "box": [
+        12.1,
+        0.37,
+        13.2,
+        1.47
+      ],
+      "bottom": 0,
+      "top": 0.84
+    },
+    {
+      "name": "Formal 01 | bay reading table",
+      "box": [
+        11.6,
+        0.86,
+        11.94,
+        1.2
+      ],
+      "bottom": 0,
+      "top": 0.52
+    }
+  ],
+  "configuration": {
+    "room": "Formal dining and lounge",
+    "revision": 2,
+    "floorZ": 0,
+    "ceilingZ": 2.6,
+    "bounds": [
+      5.05,
+      -0.33,
+      13.98,
+      10.18
+    ],
+    "polygon": [
+      [
+        5.05,
+        5.1
+      ],
+      [
+        5.05,
+        9.19
+      ],
+      [
+        5.899166819254557,
+        10.18
+      ],
+      [
+        8.030833485921224,
+        10.18
+      ],
+      [
+        8.88,
+        9.19
+      ],
+      [
+        8.88,
+        8.82
+      ],
+      [
+        13.98,
+        8.82
+      ],
+      [
+        13.98,
+        0.0
+      ],
+      [
+        12.933275109170307,
+        0.0
+      ],
+      [
+        12.309694323144106,
+        -0.24
+      ],
+      [
+        11.886550218340613,
+        -0.33
+      ],
+      [
+        10.95117903930131,
+        -0.33
+      ],
+      [
+        10.528034934497818,
+        -0.24
+      ],
+      [
+        9.926724890829695,
+        0.0
+      ],
+      [
+        8.88,
+        0.0
+      ],
+      [
+        8.88,
+        5.1
+      ]
+    ],
+    "table": {
+      "centre": [
+        7.92,
+        7.25
+      ],
+      "length": 1.8,
+      "extendedLength": 2.8,
+      "width": 1.0,
+      "height": 0.76,
+      "dailyPlaces": 6,
+      "extendedPlaces": [
+        8,
+        10
+      ]
+    },
+    "sofas": [
+      [
+        10.02,
+        2.4,
+        12.42,
+        3.38
+      ],
+      [
+        10.02,
+        5.22,
+        12.42,
+        6.2
+      ]
+    ],
+    "coffeeTable": [
+      10.42,
+      4.04,
+      11.82,
+      4.58
+    ],
+    "rug": [
+      9.8,
+      2.14,
+      12.75,
+      6.46
+    ],
+    "views": {
+      "entrance": {
+        "position": [
+          6.78,
+          5.66,
+          1.6
+        ],
+        "target": [
+          9.3,
+          7.1,
+          1.03
+        ],
+        "fov": 66
+      },
+      "dining": {
+        "position": [
+          6.0,
+          8.7,
+          1.6
+        ],
+        "target": [
+          9.5,
+          5.7,
+          1.0
+        ],
+        "fov": 64
+      },
+      "seated": {
+        "position": [
+          11.23,
+          2.76,
+          1.12
+        ],
+        "target": [
+          11.42,
+          5.72,
+          0.9
+        ],
+        "fov": 65
+      },
+      "fireplace": {
+        "position": [
+          9.7,
+          4.34,
+          1.58
+        ],
+        "target": [
+          13.65,
+          4.7,
+          1.0
+        ],
+        "fov": 62
+      },
+      "reverse": {
+        "position": [
+          12.9,
+          7.88,
+          1.6
+        ],
+        "target": [
+          9.92,
+          4.7,
+          0.95
+        ],
+        "fov": 64
+      },
+      "details": {
+        "position": [
+          8.48,
+          5.82,
+          1.22
+        ],
+        "target": [
+          7.78,
+          7.1,
+          0.64
+        ],
+        "fov": 53
+      },
+      "overview": {
+        "position": [
+          17,
+          13,
+          15
+        ],
+        "target": [
+          9.4,
+          4.6,
+          0.6
+        ],
+        "fov": 48,
+        "cutaway": true
+      },
+      "drinks": {
+        "position": [
+          7.25,
+          8.92,
+          1.58
+        ],
+        "target": [
+          5.28,
+          8.56,
+          1.12
+        ],
+        "fov": 57
+      }
+    },
+    "view": {
+      "id": "2445666-0",
+      "position": [
+        11.05,
+        0.94,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        -0.04
+      ]
+    },
+    "status": "isolated validation",
+    "sources": [
+      {
+        "title": "Ethnicraft extending-table dimensions",
+        "url": "https://media.ethnicraft.com/sys-master/s3_content_medias/hf1/hbb/8833260945438/Furniture_NoveltiesSept21_digital_web.pdf"
+      },
+      {
+        "title": "Ethnicraft chair dimension drawing",
+        "url": "https://media.ethnicraft.com/sys-master/s3_product_medias/h3d/h9c/8805130371102/10151491_LD.pdf"
+      }
+    ],
+    "hallDoors": [
+      {
+        "label": "dining west door",
+        "hinge": [
+          6.148,
+          5.21,
+          0.02
+        ],
+        "axis": [
+          1,
+          0
+        ],
+        "width": 0.632,
+        "openDegrees": 130,
+        "opening": [
+          6.786,
+          5.1,
+          0
+        ],
+        "aperture": 1.297
+      },
+      {
+        "label": "dining east door",
+        "hinge": [
+          7.424,
+          5.21,
+          0.02
+        ],
+        "axis": [
+          -1,
+          0
+        ],
+        "width": 0.632,
+        "openDegrees": -155,
+        "opening": [
+          6.786,
+          5.1,
+          0
+        ],
+        "aperture": 1.297
+      },
+      {
+        "label": "drawing north door",
+        "hinge": [
+          9.06,
+          4.891,
+          0.02
+        ],
+        "axis": [
+          0,
+          -1
+        ],
+        "width": 0.54,
+        "openDegrees": 90,
+        "opening": [
+          8.95,
+          4.345,
+          0
+        ],
+        "aperture": 1.112
+      },
+      {
+        "label": "drawing south door",
+        "hinge": [
+          9.06,
+          3.8,
+          0.02
+        ],
+        "axis": [
+          0,
+          1
+        ],
+        "width": 0.54,
+        "openDegrees": -90,
+        "opening": [
+          8.95,
+          4.345,
+          0
+        ],
+        "aperture": 1.112
+      }
+    ],
+    "drinksCabinet": [
+      5.075,
+      7.99,
+      5.505,
+      9.15
+    ],
+    "viewLabels": {
+      "drinks": "Drinks cabinet"
+    }
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "ddc946f87d929a7fd940b2ca4afd2aa533d248a4b37d12863ce288cb126bfae9",
+  "source_house_unchanged": true,
+  "isolated_objects": 1183,
+  "views": {
+    "entrance": {
+      "position": [
+        6.78,
+        5.66,
+        1.6
+      ],
+      "target": [
+        9.3,
+        7.1,
+        1.03
+      ],
+      "fov": 66
+    },
+    "dining": {
+      "position": [
+        6.0,
+        8.7,
+        1.6
+      ],
+      "target": [
+        9.5,
+        5.7,
+        1.0
+      ],
+      "fov": 64
+    },
+    "seated": {
+      "position": [
+        11.23,
+        2.76,
+        1.12
+      ],
+      "target": [
+        11.42,
+        5.72,
+        0.9
+      ],
+      "fov": 65
+    },
+    "fireplace": {
+      "position": [
+        9.7,
+        4.34,
+        1.58
+      ],
+      "target": [
+        13.65,
+        4.7,
+        1.0
+      ],
+      "fov": 62
+    },
+    "reverse": {
+      "position": [
+        12.9,
+        7.88,
+        1.6
+      ],
+      "target": [
+        9.92,
+        4.7,
+        0.95
+      ],
+      "fov": 64
+    },
+    "details": {
+      "position": [
+        8.48,
+        5.82,
+        1.22
+      ],
+      "target": [
+        7.78,
+        7.1,
+        0.64
+      ],
+      "fov": 53
+    },
+    "overview": {
+      "position": [
+        17,
+        13,
+        15
+      ],
+      "target": [
+        9.4,
+        4.6,
+        0.6
+      ],
+      "fov": 48,
+      "cutaway": true
+    },
+    "drinks": {
+      "position": [
+        7.25,
+        8.92,
+        1.58
+      ],
+      "target": [
+        5.28,
+        8.56,
+        1.12
+      ],
+      "fov": 57
+    }
+  }
+}

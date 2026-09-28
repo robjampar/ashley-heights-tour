@@ -1,8 +1,8 @@
 {
   "area": "gym",
-  "revision": 1,
-  "objects": 309,
-  "mesh_objects": 306,
+  "revision": 3,
+  "objects": 280,
+  "mesh_objects": 277,
   "lights": 3,
   "removed_objects": [
     {
@@ -118,6 +118,22 @@
       "object_name": "Gym 01 | soft room light.002"
     },
     {
+      "name": "Gym 01 | east window -10.9 internal sill",
+      "object_name": "Gym 01 | east window -10.9 internal sill"
+    },
+    {
+      "name": "Gym 01 | east window -10.9 internal head",
+      "object_name": "Gym 01 | east window -10.9 internal head"
+    },
+    {
+      "name": "Gym 01 | east window -10.9 internal first jamb",
+      "object_name": "Gym 01 | east window -10.9 internal first jamb"
+    },
+    {
+      "name": "Gym 01 | east window -10.9 internal second jamb",
+      "object_name": "Gym 01 | east window -10.9 internal second jamb"
+    },
+    {
       "name": "Gym 01 | east window blind cassette",
       "object_name": "Gym 01 | east window blind cassette"
     },
@@ -130,6 +146,22 @@
       "object_name": "Gym 01 | rolled blind fabric edge"
     },
     {
+      "name": "Gym 01 | east window -8.49 internal sill",
+      "object_name": "Gym 01 | east window -8.49 internal sill"
+    },
+    {
+      "name": "Gym 01 | east window -8.49 internal head",
+      "object_name": "Gym 01 | east window -8.49 internal head"
+    },
+    {
+      "name": "Gym 01 | east window -8.49 internal first jamb",
+      "object_name": "Gym 01 | east window -8.49 internal first jamb"
+    },
+    {
+      "name": "Gym 01 | east window -8.49 internal second jamb",
+      "object_name": "Gym 01 | east window -8.49 internal second jamb"
+    },
+    {
       "name": "Gym 01 | east window blind cassette",
       "object_name": "Gym 01 | east window blind cassette.001"
     },
@@ -140,6 +172,54 @@
     {
       "name": "Gym 01 | rolled blind fabric edge",
       "object_name": "Gym 01 | rolled blind fabric edge.001"
+    },
+    {
+      "name": "Gym 01 | west window -9.705 internal sill",
+      "object_name": "Gym 01 | west window -9.705 internal sill"
+    },
+    {
+      "name": "Gym 01 | west window -9.705 internal head",
+      "object_name": "Gym 01 | west window -9.705 internal head"
+    },
+    {
+      "name": "Gym 01 | west window -9.705 internal first jamb",
+      "object_name": "Gym 01 | west window -9.705 internal first jamb"
+    },
+    {
+      "name": "Gym 01 | west window -9.705 internal second jamb",
+      "object_name": "Gym 01 | west window -9.705 internal second jamb"
+    },
+    {
+      "name": "Gym 01 | west window -6.405 internal sill",
+      "object_name": "Gym 01 | west window -6.405 internal sill"
+    },
+    {
+      "name": "Gym 01 | west window -6.405 internal head",
+      "object_name": "Gym 01 | west window -6.405 internal head"
+    },
+    {
+      "name": "Gym 01 | west window -6.405 internal first jamb",
+      "object_name": "Gym 01 | west window -6.405 internal first jamb"
+    },
+    {
+      "name": "Gym 01 | west window -6.405 internal second jamb",
+      "object_name": "Gym 01 | west window -6.405 internal second jamb"
+    },
+    {
+      "name": "Gym 01 | courtyard doors internal sill",
+      "object_name": "Gym 01 | courtyard doors internal sill"
+    },
+    {
+      "name": "Gym 01 | courtyard doors internal head",
+      "object_name": "Gym 01 | courtyard doors internal head"
+    },
+    {
+      "name": "Gym 01 | courtyard doors internal first jamb",
+      "object_name": "Gym 01 | courtyard doors internal first jamb"
+    },
+    {
+      "name": "Gym 01 | courtyard doors internal second jamb",
+      "object_name": "Gym 01 | courtyard doors internal second jamb"
     },
     {
       "name": "Gym 01 | treadmill 1 chassis",
@@ -670,106 +750,6 @@
       "object_name": "Gym 01 | dumbbell hex head.031"
     },
     {
-      "name": "Gym 01 | cable tower oak body",
-      "object_name": "Gym 01 | cable tower oak body"
-    },
-    {
-      "name": "Gym 01 | cable tower weight recess",
-      "object_name": "Gym 01 | cable tower weight recess"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.001"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.002"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.003"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.004"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.005"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.006"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.007"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.008"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.009"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.010"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.011"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.012"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.013"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.014"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.015"
-    },
-    {
-      "name": "Gym 01 | cable weight plate",
-      "object_name": "Gym 01 | cable weight plate.016"
-    },
-    {
-      "name": "Gym 01 | cable tower guide rail",
-      "object_name": "Gym 01 | cable tower guide rail"
-    },
-    {
-      "name": "Gym 01 | cable tower guide rail",
-      "object_name": "Gym 01 | cable tower guide rail.001"
-    },
-    {
-      "name": "Gym 01 | cable pulley carriage",
-      "object_name": "Gym 01 | cable pulley carriage"
-    },
-    {
-      "name": "Gym 01 | cable pulley wheel",
-      "object_name": "Gym 01 | cable pulley wheel"
-    },
-    {
-      "name": "Gym 01 | cable pulley wheel",
-      "object_name": "Gym 01 | cable pulley wheel.001"
-    },
-    {
-      "name": "Gym 01 | cable adjustment knob",
-      "object_name": "Gym 01 | cable adjustment knob"
-    },
-    {
       "name": "Gym 01 | bike stabiliser",
       "object_name": "Gym 01 | bike stabiliser"
     },
@@ -1038,22 +1018,6 @@
       "object_name": "Gym 01 | bench upright.001"
     },
     {
-      "name": "Gym 01 | cable steel rope",
-      "object_name": "Gym 01 | cable steel rope"
-    },
-    {
-      "name": "Gym 01 | cable handle",
-      "object_name": "Gym 01 | cable handle"
-    },
-    {
-      "name": "Gym 01 | cable steel rope",
-      "object_name": "Gym 01 | cable steel rope.001"
-    },
-    {
-      "name": "Gym 01 | cable handle",
-      "object_name": "Gym 01 | cable handle.001"
-    },
-    {
       "name": "Gym 01 | bike main frame",
       "object_name": "Gym 01 | bike main frame"
     },
@@ -1166,10 +1130,10 @@
     {
       "name": "Gym 01 | treadmill 1 complete machine",
       "box": [
-        9.33,
-        -6.048,
-        11.09,
-        -5.252000000000001
+        9.29,
+        -6.028,
+        11.049999999999999,
+        -5.232
       ],
       "bottom": 0,
       "top": 1.26
@@ -1177,10 +1141,10 @@
     {
       "name": "Gym 01 | treadmill 2 complete machine",
       "box": [
-        9.33,
-        -7.098,
-        11.09,
-        -6.3020000000000005
+        9.29,
+        -7.077999999999999,
+        11.049999999999999,
+        -6.282
       ],
       "bottom": 0,
       "top": 1.26
@@ -1188,10 +1152,10 @@
     {
       "name": "Gym 01 | weights bench",
       "box": [
-        11.72,
-        -9.53,
-        12.38,
-        -7.99
+        10.85,
+        -9.58,
+        11.51,
+        -8.04
       ],
       "bottom": 0,
       "top": 0.59
@@ -1199,32 +1163,21 @@
     {
       "name": "Gym 01 | dumbbell storage",
       "box": [
-        10.45,
-        -9.835,
-        11.17,
-        -9.395
+        13.295,
+        -9.6,
+        13.735,
+        -8.88
       ],
       "bottom": 0,
       "top": 1.22
     },
     {
-      "name": "Gym 01 | cable tower",
-      "box": [
-        9.295,
-        -9.84,
-        9.705,
-        -9.555
-      ],
-      "bottom": 0,
-      "top": 2.18
-    },
-    {
       "name": "Gym 01 | exercise bike",
       "box": [
-        11.76,
-        -10.565,
-        12.979999999999999,
-        -9.935
+        12.47,
+        -10.965,
+        13.69,
+        -10.335
       ],
       "bottom": 0,
       "top": 1.27
@@ -1232,10 +1185,10 @@
     {
       "name": "Gym 01 | two-part rower storage",
       "box": [
-        11.455,
-        -12.385,
-        12.09,
-        -11.547
+        9.29,
+        -9.68,
+        9.925,
+        -8.842
       ],
       "bottom": 0,
       "top": 1.372
@@ -1253,7 +1206,7 @@
     }
   ],
   "configuration": {
-    "revision": 1,
+    "revision": 3,
     "room": "Gym",
     "bounds": [
       9.26,
@@ -1299,6 +1252,22 @@
         "rearClearance": [
           2,
           1
+        ],
+        "placedFront": [
+          9.29,
+          -5.63
+        ],
+        "footprint": [
+          9.29,
+          -6.028,
+          11.049999999999999,
+          -5.232
+        ],
+        "safetyZone": [
+          11.049999999999999,
+          -6.13,
+          13.049999999999999,
+          -5.13
         ]
       },
       {
@@ -1310,19 +1279,35 @@
         "rearClearance": [
           2,
           1
+        ],
+        "placedFront": [
+          9.29,
+          -6.68
+        ],
+        "footprint": [
+          9.29,
+          -7.077999999999999,
+          11.049999999999999,
+          -6.282
+        ],
+        "safetyZone": [
+          11.049999999999999,
+          -7.18,
+          13.049999999999999,
+          -6.18
         ]
       }
     ],
     "bench": [
-      11.72,
-      -9.53,
-      12.38,
-      -7.99
+      10.85,
+      -9.58,
+      11.51,
+      -8.04
     ],
     "cable": {
       "center": [
-        9.5,
-        -9.735
+        13.61,
+        -9.35
       ],
       "size": [
         0.4,
@@ -1330,22 +1315,28 @@
         2.15
       ],
       "activity": [
-        9.28,
-        -9.35,
-        11.05,
-        -8.1
+        11.95,
+        -10.1,
+        13.49,
+        -8.6
+      ],
+      "footprint": [
+        13.43,
+        -9.555,
+        13.715,
+        -9.145
       ]
     },
     "dumbbells": [
-      10.45,
-      -9.835,
-      11.17,
-      -9.395
+      13.295,
+      -9.6,
+      13.735,
+      -8.88
     ],
     "bike": {
       "center": [
-        12.37,
-        -10.25
+        13.08,
+        -10.65
       ],
       "size": [
         1.22,
@@ -1353,32 +1344,32 @@
         1.25
       ],
       "activity": [
-        11.73,
-        -10.85,
-        13.01,
-        -9.65
+        12.43,
+        -11.25,
+        13.73,
+        -10.05
       ],
       "facing": "west"
     },
     "rower": {
       "stored": [
-        11.455,
-        -12.385,
-        12.09,
-        -11.547
+        9.29,
+        -9.68,
+        9.925,
+        -8.842
       ],
       "storedHeight": 1.372,
       "deployed": [
-        12.095,
-        -7.79,
-        12.705,
-        -5.35
+        12.105,
+        -7.05,
+        12.715,
+        -4.61
       ],
       "activity": [
-        11.79,
-        -7.94,
-        13.01,
-        -5.2
+        11.8,
+        -7.2,
+        13.02,
+        -4.46
       ]
     },
     "waterShelf": [
@@ -1390,30 +1381,31 @@
     "view": {
       "id": "proposal-gym",
       "position": [
-        10.45,
-        -7.55,
+        11.47,
+        -7.5,
         0
       ],
       "direction": [
-        1,
         -1,
-        -0.15
+        0.7,
+        -0.08
       ]
     },
     "notes": [
-      "Retain two west-facing treadmills and no mirrors.",
+      "Owner review: return both treadmills to face west towards the entrance and front gates, 20 mm north of their earlier locations.",
+      "The gym hall door moves 300 mm south; the adjacent internal window moves 200 mm south to retain a masonry pier. The rear safety zones and courtyard access stay clear.",
       "Treadmill proportions and rear safety zones reference the manufacturer MyRun manual.",
-      "Rowing uses the clear rear treadmill area only with both treadmills switched off. This is an alternate training mode.",
+      "Rowing uses a separate central lane with the bike unoccupied. Activity states are checked individually.",
       "The bench stays in place; cycling and strength have some shared working space and are checked separately.",
       "The rower is stored as two nested parts, as Concept2 describes; never depict the assembled rower balanced on end.",
       "Verify final products, fixing, ventilation, floor loads and selected exercises before installation.",
-      "The oversized freestanding barbell arrangement and loose exercise ball are omitted; a full dumbbell bench and compact cable tower provide the strength area."
+      "Strength training uses the dumbbell rack and bench. The additional cable tower is omitted to retain a clear route to the utility door."
     ],
     "views": {
       "entrance": {
         "position": [
           9.68,
-          -7.42,
+          -7.72,
           1.62
         ],
         "target": [
@@ -1491,21 +1483,40 @@
       }
     },
     "benchActivity": [
-      11.25,
-      -9.7,
-      13.05,
-      -7.83
+      10.43,
+      -9.72,
+      11.93,
+      -7.89
+    ],
+    "treadmillRotationDegrees": 0,
+    "benchRotationDegrees": 0,
+    "dumbbellRotationDegrees": 90,
+    "cableRotationDegrees": 90,
+    "includeCableTower": false,
+    "hallDoorCentre": [
+      9.2,
+      -7.605
+    ],
+    "westWindows": [
+      [
+        -9.705,
+        -8.305
+      ],
+      [
+        -6.405,
+        -4.605
+      ]
     ]
   },
   "native_screen_rays": [],
-  "source_house_sha256": "d863e0c7d481f1794c5070e8a94e968220e302f49f5546c1bbf0f994132b761b",
+  "source_house_sha256": "ddc946f87d929a7fd940b2ca4afd2aa533d248a4b37d12863ce288cb126bfae9",
   "source_house_unchanged": true,
-  "isolated_objects": 412,
+  "isolated_objects": 391,
   "views": {
     "entrance": {
       "position": [
         9.68,
-        -7.42,
+        -7.72,
         1.62
       ],
       "target": [

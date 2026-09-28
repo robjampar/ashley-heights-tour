@@ -1,0 +1,2251 @@
+{
+  "area": "office",
+  "revision": 1,
+  "objects": 475,
+  "mesh_objects": 472,
+  "lights": 3,
+  "removed_objects": [
+    {
+      "name": "Office 01 | continuous oak floor",
+      "object_name": "Office 01 | continuous oak floor"
+    },
+    {
+      "name": "Office 01 | ivory ceiling",
+      "object_name": "Office 01 | ivory ceiling"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.001"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.002"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.003"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.004"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.005"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.006"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.007"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.008"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.009"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.010"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.011"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.012"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.013"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.014"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.015"
+    },
+    {
+      "name": "Office 01 | fine oak board joint",
+      "object_name": "Office 01 | fine oak board joint.016"
+    },
+    {
+      "name": "Office 01 | bay blind cassette",
+      "object_name": "Office 01 | bay blind cassette"
+    },
+    {
+      "name": "Office 01 | folded linen Roman blind",
+      "object_name": "Office 01 | folded linen Roman blind"
+    },
+    {
+      "name": "Office 01 | folded linen Roman blind",
+      "object_name": "Office 01 | folded linen Roman blind.001"
+    },
+    {
+      "name": "Office 01 | folded linen Roman blind",
+      "object_name": "Office 01 | folded linen Roman blind.002"
+    },
+    {
+      "name": "Office 01 | folded linen Roman blind",
+      "object_name": "Office 01 | folded linen Roman blind.003"
+    },
+    {
+      "name": "Office 01 | folded linen Roman blind",
+      "object_name": "Office 01 | folded linen Roman blind.004"
+    },
+    {
+      "name": "Office 01 | Roman blind lower hem",
+      "object_name": "Office 01 | Roman blind lower hem"
+    },
+    {
+      "name": "Office 01 | west plaster relief backing",
+      "object_name": "Office 01 | west plaster relief backing"
+    },
+    {
+      "name": "Office 01 | rounded oak desktop",
+      "object_name": "Office 01 | rounded oak desktop"
+    },
+    {
+      "name": "Office 01 | desk felt foot",
+      "object_name": "Office 01 | desk felt foot"
+    },
+    {
+      "name": "Office 01 | desk felt foot",
+      "object_name": "Office 01 | desk felt foot.001"
+    },
+    {
+      "name": "Office 01 | desk end apron",
+      "object_name": "Office 01 | desk end apron"
+    },
+    {
+      "name": "Office 01 | desk felt foot",
+      "object_name": "Office 01 | desk felt foot.002"
+    },
+    {
+      "name": "Office 01 | desk felt foot",
+      "object_name": "Office 01 | desk felt foot.003"
+    },
+    {
+      "name": "Office 01 | desk end apron",
+      "object_name": "Office 01 | desk end apron.001"
+    },
+    {
+      "name": "Office 01 | desk cable tray",
+      "object_name": "Office 01 | desk cable tray"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.001"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.002"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.003"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.004"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.005"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.006"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.007"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.008"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.009"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.010"
+    },
+    {
+      "name": "Office 01 | cable tray ventilation aperture",
+      "object_name": "Office 01 | cable tray ventilation aperture.011"
+    },
+    {
+      "name": "Office 01 | desktop cable grommet",
+      "object_name": "Office 01 | desktop cable grommet"
+    },
+    {
+      "name": "Office 01 | pencil drawer bottom",
+      "object_name": "Office 01 | pencil drawer bottom"
+    },
+    {
+      "name": "Office 01 | pencil drawer side",
+      "object_name": "Office 01 | pencil drawer side"
+    },
+    {
+      "name": "Office 01 | pencil drawer side",
+      "object_name": "Office 01 | pencil drawer side.001"
+    },
+    {
+      "name": "Office 01 | pencil drawer rear",
+      "object_name": "Office 01 | pencil drawer rear"
+    },
+    {
+      "name": "Office 01 | pencil drawer front",
+      "object_name": "Office 01 | pencil drawer front"
+    },
+    {
+      "name": "Office 01 | pencil drawer recessed pull",
+      "object_name": "Office 01 | pencil drawer recessed pull"
+    },
+    {
+      "name": "Office 01 | monitor base",
+      "object_name": "Office 01 | monitor base"
+    },
+    {
+      "name": "Office 01 | monitor upright",
+      "object_name": "Office 01 | monitor upright"
+    },
+    {
+      "name": "Office 01 | monitor back housing",
+      "object_name": "Office 01 | monitor back housing"
+    },
+    {
+      "name": "Office 01 | monitor bezel",
+      "object_name": "Office 01 | monitor bezel"
+    },
+    {
+      "name": "Office 01 | monitor screen",
+      "object_name": "Office 01 | monitor screen"
+    },
+    {
+      "name": "Office 01 | monitor lower control",
+      "object_name": "Office 01 | monitor lower control"
+    },
+    {
+      "name": "Office 01 | monitor lower control",
+      "object_name": "Office 01 | monitor lower control.001"
+    },
+    {
+      "name": "Office 01 | monitor lower control",
+      "object_name": "Office 01 | monitor lower control.002"
+    },
+    {
+      "name": "Office 01 | monitor lower control",
+      "object_name": "Office 01 | monitor lower control.003"
+    },
+    {
+      "name": "Office 01 | monitor lower control",
+      "object_name": "Office 01 | monitor lower control.004"
+    },
+    {
+      "name": "Office 01 | monitor power indicator",
+      "object_name": "Office 01 | monitor power indicator"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.001"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.002"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.003"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.004"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.005"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.006"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.007"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.008"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.009"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.010"
+    },
+    {
+      "name": "Office 01 | monitor rear ventilation",
+      "object_name": "Office 01 | monitor rear ventilation.011"
+    },
+    {
+      "name": "Office 01 | keyboard rounded chassis",
+      "object_name": "Office 01 | keyboard rounded chassis"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.001"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.002"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.003"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.004"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.005"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.006"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.007"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.008"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.009"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.010"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.011"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.012"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.013"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.014"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.015"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.016"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.017"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.018"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.019"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.020"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.021"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.022"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.023"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.024"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.025"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.026"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.027"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.028"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.029"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.030"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.031"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.032"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.033"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.034"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.035"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.036"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.037"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.038"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.039"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.040"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.041"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.042"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.043"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.044"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.045"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.046"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.047"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.048"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.049"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.050"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.051"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.052"
+    },
+    {
+      "name": "Office 01 | keyboard key",
+      "object_name": "Office 01 | keyboard key.053"
+    },
+    {
+      "name": "Office 01 | keyboard spacebar",
+      "object_name": "Office 01 | keyboard spacebar"
+    },
+    {
+      "name": "Office 01 | mouse leather mat",
+      "object_name": "Office 01 | mouse leather mat"
+    },
+    {
+      "name": "Office 01 | wireless mouse",
+      "object_name": "Office 01 | wireless mouse"
+    },
+    {
+      "name": "Office 01 | mouse button seam",
+      "object_name": "Office 01 | mouse button seam"
+    },
+    {
+      "name": "Office 01 | mouse wheel",
+      "object_name": "Office 01 | mouse wheel"
+    },
+    {
+      "name": "Office 01 | closed desk notebook",
+      "object_name": "Office 01 | closed desk notebook"
+    },
+    {
+      "name": "Office 01 | notebook cloth cover",
+      "object_name": "Office 01 | notebook cloth cover"
+    },
+    {
+      "name": "Office 01 | desk pen",
+      "object_name": "Office 01 | desk pen"
+    },
+    {
+      "name": "Office 01 | pen point",
+      "object_name": "Office 01 | pen point"
+    },
+    {
+      "name": "Office 01 | chair gas lift",
+      "object_name": "Office 01 | chair gas lift"
+    },
+    {
+      "name": "Office 01 | chair lift collar",
+      "object_name": "Office 01 | chair lift collar"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.001"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.002"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.003"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.004"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.005"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.006"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.007"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.008"
+    },
+    {
+      "name": "Office 01 | chair twin castor",
+      "object_name": "Office 01 | chair twin castor.009"
+    },
+    {
+      "name": "Office 01 | chair seat underpan",
+      "object_name": "Office 01 | chair seat underpan"
+    },
+    {
+      "name": "Office 01 | chair padded seat",
+      "object_name": "Office 01 | chair padded seat"
+    },
+    {
+      "name": "Office 01 | chair upholstered back",
+      "object_name": "Office 01 | chair upholstered back"
+    },
+    {
+      "name": "Office 01 | chair soft arm cap",
+      "object_name": "Office 01 | chair soft arm cap"
+    },
+    {
+      "name": "Office 01 | chair soft arm cap",
+      "object_name": "Office 01 | chair soft arm cap.001"
+    },
+    {
+      "name": "Office 01 | chair height lever paddle",
+      "object_name": "Office 01 | chair height lever paddle"
+    },
+    {
+      "name": "Office 01 | chair tilt tension dial",
+      "object_name": "Office 01 | chair tilt tension dial"
+    },
+    {
+      "name": "Office 01 | storage shadow plinth",
+      "object_name": "Office 01 | storage shadow plinth"
+    },
+    {
+      "name": "Office 01 | storage back",
+      "object_name": "Office 01 | storage back"
+    },
+    {
+      "name": "Office 01 | storage end",
+      "object_name": "Office 01 | storage end"
+    },
+    {
+      "name": "Office 01 | storage end",
+      "object_name": "Office 01 | storage end.001"
+    },
+    {
+      "name": "Office 01 | storage end",
+      "object_name": "Office 01 | storage end.002"
+    },
+    {
+      "name": "Office 01 | storage shelf",
+      "object_name": "Office 01 | storage shelf"
+    },
+    {
+      "name": "Office 01 | storage shelf",
+      "object_name": "Office 01 | storage shelf.001"
+    },
+    {
+      "name": "Office 01 | storage shelf",
+      "object_name": "Office 01 | storage shelf.002"
+    },
+    {
+      "name": "Office 01 | storage sliding front",
+      "object_name": "Office 01 | storage sliding front"
+    },
+    {
+      "name": "Office 01 | storage flush pull",
+      "object_name": "Office 01 | storage flush pull"
+    },
+    {
+      "name": "Office 01 | storage sliding front",
+      "object_name": "Office 01 | storage sliding front.001"
+    },
+    {
+      "name": "Office 01 | storage flush pull",
+      "object_name": "Office 01 | storage flush pull.001"
+    },
+    {
+      "name": "Office 01 | storage sliding front",
+      "object_name": "Office 01 | storage sliding front.002"
+    },
+    {
+      "name": "Office 01 | storage flush pull",
+      "object_name": "Office 01 | storage flush pull.002"
+    },
+    {
+      "name": "Office 01 | storage sliding front",
+      "object_name": "Office 01 | storage sliding front.003"
+    },
+    {
+      "name": "Office 01 | storage flush pull",
+      "object_name": "Office 01 | storage flush pull.003"
+    },
+    {
+      "name": "Office 01 | storage limestone top",
+      "object_name": "Office 01 | storage limestone top"
+    },
+    {
+      "name": "Office 01 | open bookcase upright",
+      "object_name": "Office 01 | open bookcase upright"
+    },
+    {
+      "name": "Office 01 | open bookcase upright",
+      "object_name": "Office 01 | open bookcase upright.001"
+    },
+    {
+      "name": "Office 01 | open bookcase shelf",
+      "object_name": "Office 01 | open bookcase shelf"
+    },
+    {
+      "name": "Office 01 | open bookcase shelf",
+      "object_name": "Office 01 | open bookcase shelf.001"
+    },
+    {
+      "name": "Office 01 | open bookcase shelf",
+      "object_name": "Office 01 | open bookcase shelf.002"
+    },
+    {
+      "name": "Office 01 | open bookcase shelf",
+      "object_name": "Office 01 | open bookcase shelf.003"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.001"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.001"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.002"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.003"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.001"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.002"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.004"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.005"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.002"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.003"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.006"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.007"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.003"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.004"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.008"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.009"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.004"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.005"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.010"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.011"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.005"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.006"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.012"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.013"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.006"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.007"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.014"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.015"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.007"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.008"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.016"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.017"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.008"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.009"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.018"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.019"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.009"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.010"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.020"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.021"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.010"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.011"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.022"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.023"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.011"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.012"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.024"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.025"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.012"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.013"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.026"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.027"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.013"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.014"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.028"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.029"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.014"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.015"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.030"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.031"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.015"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.016"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.032"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.033"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.016"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.017"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.034"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.035"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.017"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.018"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.036"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.037"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.018"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.019"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.038"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.039"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.019"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.020"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.040"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.041"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.020"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.021"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.042"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.043"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.021"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.022"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.044"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.045"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.022"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.023"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.046"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.047"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.023"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.024"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.048"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.049"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.024"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.025"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.050"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.051"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.025"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.026"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.052"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.053"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.026"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.027"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.054"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.055"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.027"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.028"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.056"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.057"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.028"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.029"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.058"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.059"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.029"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.030"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.060"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.061"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.030"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.031"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.062"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.063"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.031"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.032"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.064"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.065"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.032"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.033"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.066"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.067"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.033"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.034"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.068"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.069"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.034"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.035"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.070"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.071"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.035"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.036"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.072"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.073"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.036"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.037"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.074"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.075"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.037"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.038"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.076"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.077"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.038"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.039"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.078"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.079"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.039"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.040"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.080"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.081"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.040"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.041"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.082"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.083"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.041"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.042"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.084"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.085"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.042"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.043"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.086"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.087"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.043"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.044"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.088"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.089"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.044"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.045"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.090"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.091"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.045"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.046"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.092"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.093"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.046"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.047"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.094"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.095"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.047"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.048"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.096"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.097"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.048"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.049"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.098"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.099"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.049"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.050"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.100"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.101"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.050"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.051"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.102"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.103"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.051"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.052"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.104"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.105"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.052"
+    },
+    {
+      "name": "Office 01 | book page block",
+      "object_name": "Office 01 | book page block.053"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.106"
+    },
+    {
+      "name": "Office 01 | book cloth cover",
+      "object_name": "Office 01 | book cloth cover.107"
+    },
+    {
+      "name": "Office 01 | book spine",
+      "object_name": "Office 01 | book spine.053"
+    },
+    {
+      "name": "Office 01 | storage ceramic bowl",
+      "object_name": "Office 01 | storage ceramic bowl"
+    },
+    {
+      "name": "Office 01 | reading chair bronze foot",
+      "object_name": "Office 01 | reading chair bronze foot"
+    },
+    {
+      "name": "Office 01 | reading chair bronze foot",
+      "object_name": "Office 01 | reading chair bronze foot.001"
+    },
+    {
+      "name": "Office 01 | reading chair bronze foot",
+      "object_name": "Office 01 | reading chair bronze foot.002"
+    },
+    {
+      "name": "Office 01 | reading chair bronze foot",
+      "object_name": "Office 01 | reading chair bronze foot.003"
+    },
+    {
+      "name": "Office 01 | reading chair base",
+      "object_name": "Office 01 | reading chair base"
+    },
+    {
+      "name": "Office 01 | reading chair seat",
+      "object_name": "Office 01 | reading chair seat"
+    },
+    {
+      "name": "Office 01 | reading chair back",
+      "object_name": "Office 01 | reading chair back"
+    },
+    {
+      "name": "Office 01 | reading chair arm",
+      "object_name": "Office 01 | reading chair arm"
+    },
+    {
+      "name": "Office 01 | reading chair arm",
+      "object_name": "Office 01 | reading chair arm.001"
+    },
+    {
+      "name": "Office 01 | reading chair lumbar cushion",
+      "object_name": "Office 01 | reading chair lumbar cushion"
+    },
+    {
+      "name": "Office 01 | reading table oak base",
+      "object_name": "Office 01 | reading table oak base"
+    },
+    {
+      "name": "Office 01 | reading table stone top",
+      "object_name": "Office 01 | reading table stone top"
+    },
+    {
+      "name": "Office 01 | reading art book",
+      "object_name": "Office 01 | reading art book"
+    },
+    {
+      "name": "Office 01 | reading book cloth cover",
+      "object_name": "Office 01 | reading book cloth cover"
+    },
+    {
+      "name": "Office 01 | plant ceramic pot",
+      "object_name": "Office 01 | plant ceramic pot"
+    },
+    {
+      "name": "Office 01 | plant soil",
+      "object_name": "Office 01 | plant soil"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.001"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.002"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.003"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.004"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.005"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.006"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.007"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.008"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.009"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.010"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.011"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.012"
+    },
+    {
+      "name": "Office 01 | plant curved leaf",
+      "object_name": "Office 01 | plant curved leaf.013"
+    },
+    {
+      "name": "Office 01 | ceiling bronze rim",
+      "object_name": "Office 01 | ceiling bronze rim"
+    },
+    {
+      "name": "Office 01 | ceiling warm diffuser",
+      "object_name": "Office 01 | ceiling warm diffuser"
+    },
+    {
+      "name": "Office 01 | soft room light",
+      "object_name": "Office 01 | soft room light"
+    },
+    {
+      "name": "Office 01 | ceiling bronze rim",
+      "object_name": "Office 01 | ceiling bronze rim.001"
+    },
+    {
+      "name": "Office 01 | ceiling warm diffuser",
+      "object_name": "Office 01 | ceiling warm diffuser.001"
+    },
+    {
+      "name": "Office 01 | soft room light",
+      "object_name": "Office 01 | soft room light.001"
+    },
+    {
+      "name": "Office 01 | ceiling bronze rim",
+      "object_name": "Office 01 | ceiling bronze rim.002"
+    },
+    {
+      "name": "Office 01 | ceiling warm diffuser",
+      "object_name": "Office 01 | ceiling warm diffuser.002"
+    },
+    {
+      "name": "Office 01 | soft room light",
+      "object_name": "Office 01 | soft room light.002"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line.001"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line.002"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line.003"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line.004"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line.005"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line.006"
+    },
+    {
+      "name": "Office 01 | west relief sculpted line",
+      "object_name": "Office 01 | west relief sculpted line.007"
+    },
+    {
+      "name": "Office 01 | desk tapered frame leg",
+      "object_name": "Office 01 | desk tapered frame leg"
+    },
+    {
+      "name": "Office 01 | desk tapered frame leg",
+      "object_name": "Office 01 | desk tapered frame leg.001"
+    },
+    {
+      "name": "Office 01 | desk tapered frame leg",
+      "object_name": "Office 01 | desk tapered frame leg.002"
+    },
+    {
+      "name": "Office 01 | desk tapered frame leg",
+      "object_name": "Office 01 | desk tapered frame leg.003"
+    },
+    {
+      "name": "Office 01 | monitor power cable",
+      "object_name": "Office 01 | monitor power cable"
+    },
+    {
+      "name": "Office 01 | chair radial base",
+      "object_name": "Office 01 | chair radial base"
+    },
+    {
+      "name": "Office 01 | chair radial base",
+      "object_name": "Office 01 | chair radial base.001"
+    },
+    {
+      "name": "Office 01 | chair radial base",
+      "object_name": "Office 01 | chair radial base.002"
+    },
+    {
+      "name": "Office 01 | chair radial base",
+      "object_name": "Office 01 | chair radial base.003"
+    },
+    {
+      "name": "Office 01 | chair radial base",
+      "object_name": "Office 01 | chair radial base.004"
+    },
+    {
+      "name": "Office 01 | chair back support",
+      "object_name": "Office 01 | chair back support"
+    },
+    {
+      "name": "Office 01 | chair arm support",
+      "object_name": "Office 01 | chair arm support"
+    },
+    {
+      "name": "Office 01 | chair arm support",
+      "object_name": "Office 01 | chair arm support.001"
+    },
+    {
+      "name": "Office 01 | chair height lever",
+      "object_name": "Office 01 | chair height lever"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.001"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.002"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.003"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.004"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.005"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.006"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.007"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.008"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.009"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.010"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.011"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.012"
+    },
+    {
+      "name": "Office 01 | plant stem",
+      "object_name": "Office 01 | plant stem.013"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Office 01 | desk",
+      "box": [
+        1.42,
+        1.0,
+        2.22,
+        2.8
+      ],
+      "bottom": 0,
+      "top": 0.782
+    },
+    {
+      "name": "Office 01 | desk chair",
+      "box": [
+        0.6399999999999999,
+        1.5599999999999998,
+        1.32,
+        2.2399999999999998
+      ],
+      "bottom": 0,
+      "top": 1.09
+    },
+    {
+      "name": "Office 01 | north storage",
+      "box": [
+        0.34,
+        3.43,
+        3.04,
+        3.865
+      ],
+      "bottom": 0,
+      "top": 0.908
+    },
+    {
+      "name": "Office 01 | reading chair",
+      "box": [
+        3.26,
+        0.4,
+        4.09,
+        1.27
+      ],
+      "bottom": 0,
+      "top": 1.0
+    },
+    {
+      "name": "Office 01 | reading side table",
+      "box": [
+        3.5300000000000002,
+        1.4300000000000002,
+        3.91,
+        1.81
+      ],
+      "bottom": 0,
+      "top": 0.405
+    },
+    {
+      "name": "Office 01 | bay plant",
+      "box": [
+        0.5,
+        2.77,
+        0.8,
+        3.07
+      ],
+      "bottom": 0,
+      "top": 1.35
+    }
+  ],
+  "configuration": {
+    "room": "Office",
+    "revision": 1,
+    "floorZ": 0,
+    "ceilingZ": 2.6,
+    "bounds": [
+      0.125,
+      -0.24,
+      4.26,
+      3.93
+    ],
+    "polygon": [
+      [
+        0.15,
+        0.15
+      ],
+      [
+        0.982,
+        0.15
+      ],
+      [
+        1.58,
+        -0.1
+      ],
+      [
+        2.02,
+        -0.19
+      ],
+      [
+        2.87,
+        -0.19
+      ],
+      [
+        3.28,
+        -0.1
+      ],
+      [
+        3.86,
+        0.15
+      ],
+      [
+        4.23,
+        0.15
+      ],
+      [
+        4.23,
+        3.89
+      ],
+      [
+        0.15,
+        3.89
+      ]
+    ],
+    "desk": [
+      1.42,
+      1.0,
+      2.22,
+      2.8
+    ],
+    "deskChair": [
+      0.98,
+      1.9
+    ],
+    "storage": [
+      0.34,
+      3.43,
+      3.04,
+      3.865
+    ],
+    "readingChair": [
+      3.26,
+      0.4,
+      4.09,
+      1.27
+    ],
+    "sideTable": [
+      3.72,
+      1.62,
+      0.19
+    ],
+    "plant": [
+      0.65,
+      2.92,
+      0.15
+    ],
+    "view": {
+      "id": "2445661-0",
+      "position": [
+        3.54,
+        3.14,
+        0
+      ],
+      "direction": [
+        -0.7,
+        -1,
+        0
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          3.8,
+          3.14,
+          1.59
+        ],
+        "target": [
+          1.71,
+          1.55,
+          0.91
+        ],
+        "fov": 69
+      },
+      "desk": {
+        "position": [
+          0.55,
+          2.83,
+          1.53
+        ],
+        "target": [
+          1.74,
+          1.78,
+          1.03
+        ],
+        "fov": 63
+      },
+      "storage": {
+        "position": [
+          2.97,
+          2.23,
+          1.53
+        ],
+        "target": [
+          1.56,
+          3.7,
+          1.07
+        ],
+        "fov": 66
+      },
+      "reading": {
+        "position": [
+          2.44,
+          2.52,
+          1.48
+        ],
+        "target": [
+          3.13,
+          0.78,
+          0.7
+        ],
+        "fov": 65
+      },
+      "details": {
+        "position": [
+          1.03,
+          1.15,
+          1.18
+        ],
+        "target": [
+          1.92,
+          1.74,
+          0.86
+        ],
+        "fov": 57
+      },
+      "overview": {
+        "position": [
+          6.12,
+          6.03,
+          7.8
+        ],
+        "target": [
+          2.16,
+          1.85,
+          0.5
+        ],
+        "fov": 52,
+        "cutaway": true
+      }
+    },
+    "viewLabels": {
+      "storage": "Books and closed storage",
+      "desk": "Workstation",
+      "reading": "Reading corner"
+    },
+    "limitations": [
+      "Retained office envelope, bay glazing and double hall doors. Furniture and joinery only.",
+      "Adjustable chair and monitor are concept models; fit the final desk to the user."
+    ]
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "6695c5dd2b56c90461756f3331e6a4dc515dd83d5f42452ae3363cdec98c6974",
+  "source_house_unchanged": true,
+  "isolated_objects": 657,
+  "views": {
+    "entrance": {
+      "position": [
+        3.8,
+        3.14,
+        1.59
+      ],
+      "target": [
+        1.71,
+        1.55,
+        0.91
+      ],
+      "fov": 69
+    },
+    "desk": {
+      "position": [
+        0.55,
+        2.83,
+        1.53
+      ],
+      "target": [
+        1.74,
+        1.78,
+        1.03
+      ],
+      "fov": 63
+    },
+    "storage": {
+      "position": [
+        2.97,
+        2.23,
+        1.53
+      ],
+      "target": [
+        1.56,
+        3.7,
+        1.07
+      ],
+      "fov": 66
+    },
+    "reading": {
+      "position": [
+        2.44,
+        2.52,
+        1.48
+      ],
+      "target": [
+        3.13,
+        0.78,
+        0.7
+      ],
+      "fov": 65
+    },
+    "details": {
+      "position": [
+        1.03,
+        1.15,
+        1.18
+      ],
+      "target": [
+        1.92,
+        1.74,
+        0.86
+      ],
+      "fov": 57
+    },
+    "overview": {
+      "position": [
+        6.12,
+        6.03,
+        7.8
+      ],
+      "target": [
+        2.16,
+        1.85,
+        0.5
+      ],
+      "fov": 52,
+      "cutaway": true
+    }
+  }
+}

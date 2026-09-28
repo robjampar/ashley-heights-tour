@@ -1,0 +1,3321 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "variant": "compact",
+      "geometrySha256": "5c15577aacd2f6b4314a9d59d9e5f875615bcf15f6cc19e5b5931b86242066f8",
+      "unchangedMeshes": 15581,
+      "unchangedKitchenMeshes": 1028,
+      "unchangedSuiteMeshes": 851,
+      "declaredChanges": [
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door architrave head",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door oak lining head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door plain oak lining",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door slim oak architrave",
+          "before": 0,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door architrave head",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door oak lining head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door plain oak lining",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door slim oak architrave",
+          "before": 0,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door architrave head",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door oak lining head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door plain oak lining",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door slim oak architrave",
+          "before": 0,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | original stair Landing polished rail",
+          "before": 2,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | original stair Stair continuous polished handrail",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | original stair continuous oak handrail",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Bedroom 02 | sofa TV fixed case",
+          "before": 1,
+          "after": 1,
+          "reason": "same-size sofa TV"
+        },
+        {
+          "name": "Bedroom 02 | sofa TV screen",
+          "before": 1,
+          "after": 1,
+          "reason": "same-size sofa TV"
+        },
+        {
+          "name": "Bedroom 02 | sofa TV status light",
+          "before": 1,
+          "after": 1,
+          "reason": "same-size sofa TV"
+        },
+        {
+          "name": "Ensuite 01 | bath bridge felt foot",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath bridge felt foot.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath candle vessel",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath candle wax",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath candle wick",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath filler base",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath filler control",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath filler lever",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath flexible shower hose",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath floor filler",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath folded towel",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower cradle",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower head",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.002",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.003",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.004",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.005",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.006",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.007",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.008",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.009",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.010",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.011",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.012",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.013",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath oak bridge",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath overflow bronze rim",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath overflow slot",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath pedestal base",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath pedestal top",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath recessed stone foot",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath towel woven border",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath towel woven border.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.002",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.003",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.004",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.005",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.006",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.007",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.008",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.009",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.010",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.011",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | oval bath hollow shell",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Formal 01 | drinks bottle neck",
+          "before": 0,
+          "after": 12,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks chilled bottle",
+          "before": 0,
+          "after": 12,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks concealed shelf diffuser",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler bottle rack",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler bronze door surround",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler insulated back",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler insulated shelf",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler insulated side",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler recessed grip",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler smoked glass",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler ventilation grille",
+          "before": 0,
+          "after": 8,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks decanter",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks decanter stopper",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks display shelf",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks limestone counter",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks linen coaster",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks mirrored niche",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks oak back",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks oak horizontal",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks oak storage front",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks rounded oak side",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks serving tray",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks shadow plinth",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks storage bronze pull",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks tumbler",
+          "before": 0,
+          "after": 5,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks wine glass",
+          "before": 0,
+          "after": 6,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench back pad",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench floor foot",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench lower spine",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench rubber floor cap",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench seat pad",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench upholstery seam",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike crank",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike flywheel",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike flywheel hub",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike handlebar post",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike handlebars",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike levelling foot",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike main frame",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike monitor",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike monitor button",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike monitor screen",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike pedal",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike pedal strap",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike saddle",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike saddle adjustment",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike saddle post",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike stabiliser",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell hex head",
+          "before": 32,
+          "after": 32,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell knurled handle",
+          "before": 16,
+          "after": 16,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell rack oak upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell rack shelf",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell rack soft tray",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower display",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower fan grille",
+          "before": 6,
+          "after": 6,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower fan housing",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower folded monitor",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower foot strap",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower footplate",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower front feet",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower front frame",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower grille spoke",
+          "before": 12,
+          "after": 12,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower monitor button",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower rail running surface",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower saddle",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower upright monorail",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 chassis",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 console",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 console upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 display data mark",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 display glass",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 front motor cover",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 hand rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 landing rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 rail grip rib",
+          "before": 14,
+          "after": 14,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 rear adjustment screw",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 running belt",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 safety key",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 safety lanyard",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 side fixing",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 start button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 stop button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 chassis",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 console",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 console upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 display data mark",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 display glass",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 front motor cover",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 hand rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 landing rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 rail grip rib",
+          "before": 14,
+          "after": 14,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 rear adjustment screw",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 running belt",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 safety key",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 safety lanyard",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 side fixing",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 start button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 stop button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west oak skirting",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal first jamb",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal head",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal second jamb",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal sill",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal first jamb",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal second jamb",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal sill",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard back",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard bottom",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard divider",
+          "before": 5,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard top",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer back",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer bottom",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer front",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer recessed pull",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer side",
+          "before": 24,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | hip store linen box",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | hip store oak upright",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | hip store shelf",
+          "before": 6,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | linen box label pocket",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | linen box paper label",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 panel bead",
+          "before": 24,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 panelled leaf",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 raised panel",
+          "before": 6,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 panel bead",
+          "before": 24,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 panelled leaf",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 raised panel",
+          "before": 6,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 panel bead",
+          "before": 24,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 panelled leaf",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 raised panel",
+          "before": 6,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 glass",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 glazing crossbar",
+          "before": 5,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 glazing upright",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 rail",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 stile",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Proposal | Entrance gable north rake band",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Entrance gable south rake band",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Entrance glazing head packer 0",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Entrance glazing head packer 1",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Gate gable ridge",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 face rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 leaf",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 lever",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 lever rose",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition head 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition head 1",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition pier 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition pier 1",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition pier 2",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition sill 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window 0 glass",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window 0 horizontal frame",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window 0 mullion",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window cill 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Joined roof 162 | Gate gable south",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Joined roof 163 | Gate gable north",
+          "before": 0,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Joined roof 164 | Gate gable north",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Joined roof 167 | Gate gable north",
+          "before": 0,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Joined roof lining 162 | Gate gable south",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Joined roof lining 163 | Gate gable north",
+          "before": 0,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Joined roof lining 164 | Gate gable north",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | Joined roof lining 167 | Gate gable north",
+          "before": 0,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | West entrance north pier",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | West entrance south pier",
+          "before": 1,
+          "after": 1,
+          "reason": "tile-covered entrance gable"
+        },
+        {
+          "name": "Proposal | West recess upper facade",
+          "before": 1,
+          "after": 1,
+          "reason": "outside / inside finish split"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        }
+      ],
+      "unexpectedChanges": [],
+      "originalPreserved": true
+    },
+    {
+      "variant": "planning",
+      "geometrySha256": "c102b53660380193c453202dfdc1f8c33146e2382319652a6859df2c1f4b630e",
+      "unchangedMeshes": 13882,
+      "unchangedKitchenMeshes": 919,
+      "unchangedSuiteMeshes": 851,
+      "declaredChanges": [
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door 1 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door architrave head",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door oak lining head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door plain oak lining",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | cloakroom hall door slim oak architrave",
+          "before": 0,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 1 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door 2 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door architrave head",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door oak lining head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door plain oak lining",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | family hall door slim oak architrave",
+          "before": 0,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 bronze hinge",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 key escutcheon",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 lever",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 lever rose",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door 1 oak leaf",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door architrave head",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door oak lining head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door plain oak lining",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | kitchen hall door slim oak architrave",
+          "before": 0,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | original stair Landing polished rail",
+          "before": 2,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | original stair Stair continuous polished handrail",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Arrival 01 | original stair continuous oak handrail",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Bedroom 02 | sofa TV fixed case",
+          "before": 1,
+          "after": 1,
+          "reason": "same-size sofa TV"
+        },
+        {
+          "name": "Bedroom 02 | sofa TV screen",
+          "before": 1,
+          "after": 1,
+          "reason": "same-size sofa TV"
+        },
+        {
+          "name": "Bedroom 02 | sofa TV status light",
+          "before": 1,
+          "after": 1,
+          "reason": "same-size sofa TV"
+        },
+        {
+          "name": "Ensuite 01 | bath bridge felt foot",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath bridge felt foot.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath candle vessel",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath candle wax",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath candle wick",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath filler base",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath filler control",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath filler lever",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath flexible shower hose",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath floor filler",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath folded towel",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower cradle",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower head",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.002",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.003",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.004",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.005",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.006",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.007",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.008",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.009",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.010",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.011",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.012",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath hand shower nozzle.013",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath oak bridge",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath overflow bronze rim",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath overflow slot",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath pedestal base",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath pedestal top",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath recessed stone foot",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath towel woven border",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath towel woven border.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.001",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.002",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.003",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.004",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.005",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.006",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.007",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.008",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.009",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.010",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | bath waste radial slot.011",
+          "before": 0,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Ensuite 01 | oval bath hollow shell",
+          "before": 1,
+          "after": 1,
+          "reason": "principal bath and fittings"
+        },
+        {
+          "name": "Formal 01 | drinks bottle neck",
+          "before": 0,
+          "after": 12,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks chilled bottle",
+          "before": 0,
+          "after": 12,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks concealed shelf diffuser",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler bottle rack",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler bronze door surround",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler insulated back",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler insulated shelf",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler insulated side",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler recessed grip",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler smoked glass",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks cooler ventilation grille",
+          "before": 0,
+          "after": 8,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks decanter",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks decanter stopper",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks display shelf",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks limestone counter",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks linen coaster",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks mirrored niche",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks oak back",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks oak horizontal",
+          "before": 0,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks oak storage front",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks rounded oak side",
+          "before": 0,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks serving tray",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks shadow plinth",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks storage bronze pull",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks tumbler",
+          "before": 0,
+          "after": 5,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Formal 01 | drinks wine glass",
+          "before": 0,
+          "after": 6,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench back pad",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench floor foot",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench lower spine",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench rubber floor cap",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench seat pad",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench upholstery seam",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bench upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike crank",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike flywheel",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike flywheel hub",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike handlebar post",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike handlebars",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike levelling foot",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike main frame",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike monitor",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike monitor button",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike monitor screen",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike pedal",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike pedal strap",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike saddle",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike saddle adjustment",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike saddle post",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | bike stabiliser",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell hex head",
+          "before": 32,
+          "after": 32,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell knurled handle",
+          "before": 16,
+          "after": 16,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell rack oak upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell rack shelf",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | dumbbell rack soft tray",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower display",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower fan grille",
+          "before": 6,
+          "after": 6,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower fan housing",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower folded monitor",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower foot strap",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower footplate",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower front feet",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower front frame",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower grille spoke",
+          "before": 12,
+          "after": 12,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower monitor button",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower rail running surface",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower saddle",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | stored rower upright monorail",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 chassis",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 console",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 console upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 display data mark",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 display glass",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 front motor cover",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 hand rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 landing rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 rail grip rib",
+          "before": 14,
+          "after": 14,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 rear adjustment screw",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 running belt",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 safety key",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 safety lanyard",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 side fixing",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 start button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 1 stop button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 chassis",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 console",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 console upright",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 display data mark",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 display glass",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 front motor cover",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 hand rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 landing rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 rail grip rib",
+          "before": 14,
+          "after": 14,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 rear adjustment screw",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 running belt",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 safety key",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 safety lanyard",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 side fixing",
+          "before": 4,
+          "after": 4,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 start button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | treadmill 2 stop button",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west oak skirting",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal first jamb",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal head",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal second jamb",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.505 internal sill",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal first jamb",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal head",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal second jamb",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Gym 01 | west window -9.705 internal sill",
+          "before": 0,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard back",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard bottom",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard divider",
+          "before": 5,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves cupboard top",
+          "before": 1,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer back",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer bottom",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer front",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer recessed pull",
+          "before": 12,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | eaves drawer side",
+          "before": 24,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | hip store linen box",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | hip store oak upright",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | hip store shelf",
+          "before": 6,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | linen box label pocket",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Loftsuite 01 | linen box paper label",
+          "before": 4,
+          "after": 0,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 panel bead",
+          "before": 24,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 panelled leaf",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Cloakroom hall door leaf 1 raised panel",
+          "before": 6,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 panel bead",
+          "before": 24,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 panelled leaf",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 1 raised panel",
+          "before": 6,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 panel bead",
+          "before": 24,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 panelled leaf",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Family hall door leaf 2 raised panel",
+          "before": 6,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 glass",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 glazing crossbar",
+          "before": 5,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 glazing upright",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 lever",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 lever rose",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 rail",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Photo detail | Kitchen hall door leaf 1 stile",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 face rail",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 leaf",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 lever",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition door 1 lever rose",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition head 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition head 1",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition pier 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition pier 1",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition pier 2",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition sill 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window 0 glass",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window 0 horizontal frame",
+          "before": 2,
+          "after": 2,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window 0 mullion",
+          "before": 3,
+          "after": 3,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | Gym west partition window cill 0",
+          "before": 1,
+          "after": 1,
+          "reason": "owner-reviewed room / gym opening"
+        },
+        {
+          "name": "Proposal | West recess upper facade",
+          "before": 1,
+          "after": 1,
+          "reason": "outside / inside finish split"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side -1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Family hall door opening 1 side 1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side -1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 corner block frame",
+          "before": 16,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 plinth block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 reeded head",
+          "before": 1,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 reeded jamb",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        },
+        {
+          "name": "Trim comparison | Kitchen hall door opening 1 side 1 square corner block",
+          "before": 2,
+          "after": 0,
+          "reason": "four modern hall doors"
+        }
+      ],
+      "unexpectedChanges": [],
+      "originalPreserved": true
+    }
+  ]
+}

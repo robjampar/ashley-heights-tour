@@ -83,12 +83,12 @@ def apply_bedroom4(ns):
         b.box('wardrobe pull inset',(xx+.016,yy+length/4-.041,z+1.08),(.001,.006,.268),bronze,.002)
     for zz in(z+.129,z+2.269):b.box('wardrobe sliding track',(x1-.027,(y0+y1)/2,zz),(.047,length-.028,.009),bronze,.002)
     b.obstacle('west sliding wardrobe',cfg['wardrobe'],z,z+2.31)
-    a,s,c,n=4.403,.99,4.813,1.89;start=len(b.objects);cy=(s+n)/2;cx=4.635;top=.86
+    a,s,c,n=4.403,.99,4.813,1.89;vanity_start=len(b.objects);cy=(s+n)/2;cx=4.635;top=.86
     b.box('vanity back',(a+.015,cy,.56),(.025,n-s,.49),oak,.004)
     for yy in(s+.011,n-.011):b.box('vanity end',((a+c-.027)/2,yy,.56),(c-a-.027,.022,.50),oak,.005)
     b.box('vanity base',((a+c)/2,cy,.32),(c-a,n-s,.024),oak,.004)
     for j in range(2):
-        start=len(b.objects);zz=.450 if j==0 else .696
+        drawer_start=len(b.objects);zz=.450 if j==0 else .696
         b.box('vanity drawer front '+str(j),(c-.012,cy,zz),(.024,n-s-.032,.213 if j==0 else .260),oak,.008)
         b.box('vanity finger recess '+str(j),(c+.001,cy,zz+(.104 if j==0 else .126)),(.001,n-s-.065,.010),dark,.002)
         if j==1:
@@ -99,7 +99,7 @@ def apply_bedroom4(ns):
             b.box('upper drawer front bridge',(c-.048,cy,.582),(.065,.52,.012),oak,.003)
             for yy in(s+.038,n-.038):b.box('upper drawer side',((a+c)/2+.012,yy,.662),(c-a-.070,.013,.16),oak,.002)
             for yy in(cy-.264,cy+.264):b.box('drawer service cutout side',((a+c)/2-.032,yy,.65),(c-a-.15,.009,.125),oak,.002)
-            for ob in b.objects[start:]:ob['bedroom4_pullout']='upper drawer'
+            for ob in b.objects[drawer_start:]:ob['bedroom4_pullout']='upper drawer'
     # Open elliptical basin through the ceramic top, with a real recessed bowl.
     angles=sorted(set([j*math.tau/80 for j in range(80)]+[math.atan2(yy-cy,xx-cx)%math.tau for xx in(a,c)for yy in(s,n)]));steps=len(angles);vv=[]
     for layer in range(6):
@@ -132,7 +132,7 @@ def apply_bedroom4(ns):
     for zz in(.701,.712,.723):b.box('hand towel woven hem',(4.492,.81,zz),(.002,.162,.003),ivory,.001)
     b.lathe('soap dispenser ceramic body',(4.628,1.82,.862),[(.030,0),(.037,.008),(.036,.109),(.022,.127)],ivory,40);b.cylinder('soap dispenser collar',(4.628,1.82,.998),.018,.020,bronze,sides=32);b.tube('soap pump spout',[(4.628,1.82,1.011),(4.671,1.82,1.011),(4.677,1.82,1.006)],.0045,bronze,3)
     transform=Matrix(((0,-1,0,6.49),(.40/.41,0,0,.14-4.403*.40/.41),(0,0,1,z),(0,0,0,1)))
-    for ob in b.objects[start:]:ob.matrix_world=transform@ob.matrix_world
+    for ob in b.objects[vanity_start:]:ob.matrix_world=transform@ob.matrix_world
     for l in nav['proposalLights']:
         if l['name']==b.prefix+'basin face glow':l['position']=list(transform@Vector(l['position']))
     nav['mirrors'].append({'name':b.prefix+'basin mirror','position':[5.05,.1722,z+1.65],'normal':[0,1,0],'width':.81,'height':.91})

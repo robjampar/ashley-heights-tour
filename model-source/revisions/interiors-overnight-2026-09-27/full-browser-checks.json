@@ -3,6 +3,26 @@
   "checks": [
     {
       "design": "proposed",
+      "additions": {
+        "Poolgarden": 350,
+        "Gardenhouse": 163,
+        "Office": 472,
+        "Workshop": 209
+      },
+      "garage": 106,
+      "parking": {
+        "driveway": 4,
+        "new_double_garage": 2,
+        "old_garage_counted": 0
+      },
+      "landings": 1027,
+      "arrival": 663,
+      "terraceFurniture": 452,
+      "hobby": 507,
+      "loftsuite": 357,
+      "sidebed": 356,
+      "formal": 479,
+      "bedroom4": 254,
       "rooms": {
         "cinema": {
           "revision": 1,
@@ -15,9 +35,9 @@
           "objects": 510
         },
         "gym": {
-          "revision": 1,
+          "revision": 3,
           "status": "developed concept",
-          "objects": 309
+          "objects": 280
         },
         "utility": {
           "revision": 1,
@@ -35,7 +55,7 @@
           "objects": 174
         },
         "family": {
-          "revision": 1,
+          "revision": 2,
           "status": "developed concept",
           "objects": 400
         },
@@ -58,6 +78,71 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 248
+        },
+        "bedroom4": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 286
+        },
+        "formal": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 529
+        },
+        "sidebed": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 390
+        },
+        "loftsuite": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 401
+        },
+        "hobby": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 537
+        },
+        "terrace": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 454
+        },
+        "arrival": {
+          "revision": 3,
+          "status": "developed concept",
+          "objects": 693
+        },
+        "landings": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 1033
+        },
+        "garage": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 110
+        },
+        "poolgarden": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 352
+        },
+        "gardenhouse": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 187
+        },
+        "office": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 475
+        },
+        "workshop": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 211
         }
       },
       "principal": true,
@@ -68,7 +153,7 @@
       "cloakroom": 71,
       "cinema": 156,
       "bar": 505,
-      "gym": 306,
+      "gym": 277,
       "utility": 311,
       "guest": 220,
       "guestbath": 159,
@@ -128,11 +213,11 @@
         },
         {
           "term": "wall-backed upholstered headboard",
-          "count": 4
+          "count": 7
         },
         {
           "term": "pillow stitched edge",
-          "count": 6
+          "count": 12
         },
         {
           "term": "hollow inset ceramic basin",
@@ -144,11 +229,11 @@
         },
         {
           "term": "shower control index",
-          "count": 2
+          "count": 4
         }
       ],
       "finishSwitch": {
-        "materials": 134,
+        "materials": 280,
         "allInterior": true,
         "states": [
           {
@@ -245,22 +330,64 @@
             "closedPoseRestored": true
           },
           {
-            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
-            "wall": "Cloakroom hall door",
+            "id": "Proposal | Entrance solid door left",
+            "wall": "Proposal | Entrance solid door left",
             "motion": "hinged",
             "angle": 0,
             "open": false,
-            "meshCount": 35,
+            "meshCount": 7,
             "batches": 2,
             "hinge": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
             ],
             "position": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Entrance solid door right",
+            "wall": "Proposal | Entrance solid door right",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "position": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Garage north store separation door 0",
+            "wall": "Proposal | Garage north store separation door 0",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              5.25,
+              -9.905,
+              0
+            ],
+            "position": [
+              5.25,
+              -9.905,
+              0
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
@@ -308,6 +435,48 @@
             "closedPoseRestored": true
           },
           {
+            "id": "Proposal | Courtyard edge passage entry leaf",
+            "wall": "Proposal | Courtyard edge passage entry leaf",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 11,
+            "batches": 2,
+            "hinge": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "position": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Gym west partition door 1",
+            "wall": "Proposal | Gym west partition door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              9.2,
+              -8.105,
+              0
+            ],
+            "position": [
+              9.2,
+              -8.105,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
             "id": "Proposal | Basement AV cupboard door",
             "wall": "Proposal | Cinema east wall door 0",
             "motion": "hinged",
@@ -345,6 +514,27 @@
               9.16,
               -10,
               -2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Workshop inward door",
+            "wall": "Proposal | Workshop inward door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 9,
+            "batches": 2,
+            "hinge": [
+              -17.88,
+              22.799999999999997,
+              0
+            ],
+            "position": [
+              -17.88,
+              22.799999999999997,
+              0
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
@@ -474,6 +664,468 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom4 01 | hall door",
+            "wall": "Bedroom4 01 | hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "position": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom4 01 | ensuite door",
+            "wall": "Bedroom4 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "position": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom4 01 | shower door",
+            "wall": "Bedroom4 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 3,
+            "hinge": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "position": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | dining west door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "position": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | dining east door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "position": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | drawing north door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "position": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | drawing south door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "position": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Sidebed 01 | shower door",
+            "wall": "Sidebed 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "position": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Sidebed 01 | hall door",
+            "wall": "Sidebed 01 | hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "position": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Sidebed 01 | ensuite door",
+            "wall": "Sidebed 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "position": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | shower door",
+            "wall": "Loftsuite 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "position": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | hall door",
+            "wall": "Loftsuite 01 | hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | ensuite door",
+            "wall": "Loftsuite 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | hip store door",
+            "wall": "Loftsuite 01 | hip store door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "position": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Hobby 01 | west eaves door",
+            "wall": "Hobby 01 | west eaves door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "position": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Hobby 01 | east eaves door",
+            "wall": "Hobby 01 | east eaves door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "position": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Kitchen hall door leaf 1",
+            "wall": "Arrival 01 | kitchen hall door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              4.797,
+              0
+            ],
+            "position": [
+              4.215,
+              4.797,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 1",
+            "wall": "Arrival 01 | family hall door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              3.87,
+              0
+            ],
+            "position": [
+              4.215,
+              3.87,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 2",
+            "wall": "Arrival 01 | family hall door 2",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              2.738,
+              0
+            ],
+            "position": [
+              4.215,
+              2.738,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Arrival 01 | cloakroom hall door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "position": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Gardenhouse 01 | wc door",
+            "wall": "Gardenhouse 01 | wc door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Gardenhouse 01 | tool door",
+            "wall": "Gardenhouse 01 | tool door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
@@ -500,22 +1152,66 @@
             "expectedOpenAngle": 1.5707963267948966
           },
           {
-            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
-            "wall": "Cloakroom hall door",
+            "id": "Proposal | Entrance solid door left",
+            "wall": "Proposal | Entrance solid door left",
             "motion": "hinged",
             "angle": -1.5707963267948966,
             "open": true,
-            "meshCount": 35,
+            "meshCount": 7,
             "batches": 2,
             "hinge": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
             ],
             "position": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Proposal | Entrance solid door right",
+            "wall": "Proposal | Entrance solid door right",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "position": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Garage north store separation door 0",
+            "wall": "Proposal | Garage north store separation door 0",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              5.25,
+              -9.905,
+              0
+            ],
+            "position": [
+              5.25,
+              -9.905,
+              0
             ],
             "nativePoseRestored": false,
             "closedPoseRestored": false,
@@ -566,6 +1262,50 @@
             "expectedOpenAngle": -1.5707963267948966
           },
           {
+            "id": "Proposal | Courtyard edge passage entry leaf",
+            "wall": "Proposal | Courtyard edge passage entry leaf",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 11,
+            "batches": 2,
+            "hinge": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "position": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Gym west partition door 1",
+            "wall": "Proposal | Gym west partition door 1",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              9.2,
+              -8.105,
+              0
+            ],
+            "position": [
+              9.2,
+              -8.105,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
             "id": "Proposal | Basement AV cupboard door",
             "wall": "Proposal | Cinema east wall door 0",
             "motion": "hinged",
@@ -608,6 +1348,28 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Proposal | Workshop inward door",
+            "wall": "Proposal | Workshop inward door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 9,
+            "batches": 2,
+            "hinge": [
+              -17.88,
+              22.799999999999997,
+              0
+            ],
+            "position": [
+              -17.88,
+              22.799999999999997,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
           },
           {
             "id": "Guest 01 | entrance door",
@@ -740,12 +1502,516 @@
             "nativePoseRestored": false,
             "closedPoseRestored": false,
             "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Bedroom4 01 | hall door",
+            "wall": "Bedroom4 01 | hall door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "position": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Bedroom4 01 | ensuite door",
+            "wall": "Bedroom4 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "position": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Bedroom4 01 | shower door",
+            "wall": "Bedroom4 01 | shower door",
+            "motion": "hinged",
+            "angle": 1.4835298641951802,
+            "open": true,
+            "meshCount": 7,
+            "batches": 3,
+            "hinge": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "position": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.4835298641951802
+          },
+          {
+            "id": "Formal 01 | dining west door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": 2.2689280275926285,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "position": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 2.2689280275926285
+          },
+          {
+            "id": "Formal 01 | dining east door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": -2.705260340591211,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "position": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -2.705260340591211
+          },
+          {
+            "id": "Formal 01 | drawing north door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "position": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Formal 01 | drawing south door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "position": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Sidebed 01 | shower door",
+            "wall": "Sidebed 01 | shower door",
+            "motion": "hinged",
+            "angle": -1.3962634015954636,
+            "open": true,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "position": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.3962634015954636
+          },
+          {
+            "id": "Sidebed 01 | hall door",
+            "wall": "Sidebed 01 | hall door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "position": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Sidebed 01 | ensuite door",
+            "wall": "Sidebed 01 | ensuite door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "position": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | shower door",
+            "wall": "Loftsuite 01 | shower door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "position": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | hall door",
+            "wall": "Loftsuite 01 | hall door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | ensuite door",
+            "wall": "Loftsuite 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | hip store door",
+            "wall": "Loftsuite 01 | hip store door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "position": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Hobby 01 | west eaves door",
+            "wall": "Hobby 01 | west eaves door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "position": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Hobby 01 | east eaves door",
+            "wall": "Hobby 01 | east eaves door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "position": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Assembly | Photo detail | Kitchen hall door leaf 1",
+            "wall": "Arrival 01 | kitchen hall door 1",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              4.797,
+              0
+            ],
+            "position": [
+              4.215,
+              4.797,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 1",
+            "wall": "Arrival 01 | family hall door 1",
+            "motion": "hinged",
+            "angle": -1.4835298641951802,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              3.87,
+              0
+            ],
+            "position": [
+              4.215,
+              3.87,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.4835298641951802
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 2",
+            "wall": "Arrival 01 | family hall door 2",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              2.738,
+              0
+            ],
+            "position": [
+              4.215,
+              2.738,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Arrival 01 | cloakroom hall door 1",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "position": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Gardenhouse 01 | wc door",
+            "wall": "Gardenhouse 01 | wc door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Gardenhouse 01 | tool door",
+            "wall": "Gardenhouse 01 | tool door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
           }
         ]
       }
     },
     {
       "design": "planning",
+      "additions": {
+        "Poolgarden": 0,
+        "Gardenhouse": 161,
+        "Office": 472,
+        "Workshop": 0
+      },
+      "garage": 106,
+      "parking": {
+        "driveway": 4,
+        "new_double_garage": 2,
+        "old_garage_counted": 0
+      },
+      "landings": 1027,
+      "arrival": 663,
+      "terraceFurniture": 0,
+      "hobby": 507,
+      "loftsuite": 357,
+      "sidebed": 356,
+      "formal": 479,
+      "bedroom4": 254,
       "rooms": {
         "cinema": {
           "revision": 1,
@@ -758,9 +2024,9 @@
           "objects": 510
         },
         "gym": {
-          "revision": 1,
+          "revision": 3,
           "status": "developed concept",
-          "objects": 309
+          "objects": 280
         },
         "utility": {
           "revision": 1,
@@ -778,7 +2044,7 @@
           "objects": 174
         },
         "family": {
-          "revision": 1,
+          "revision": 2,
           "status": "developed concept",
           "objects": 395
         },
@@ -801,6 +2067,56 @@
           "revision": 1,
           "status": "developed concept",
           "objects": 248
+        },
+        "bedroom4": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 286
+        },
+        "formal": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 529
+        },
+        "sidebed": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 390
+        },
+        "loftsuite": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 401
+        },
+        "hobby": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 537
+        },
+        "arrival": {
+          "revision": 3,
+          "status": "developed concept",
+          "objects": 693
+        },
+        "landings": {
+          "revision": 2,
+          "status": "developed concept",
+          "objects": 1033
+        },
+        "garage": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 110
+        },
+        "gardenhouse": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 199
+        },
+        "office": {
+          "revision": 1,
+          "status": "developed concept",
+          "objects": 475
         }
       },
       "principal": true,
@@ -811,7 +2127,7 @@
       "cloakroom": 71,
       "cinema": 156,
       "bar": 505,
-      "gym": 306,
+      "gym": 277,
       "utility": 311,
       "guest": 220,
       "guestbath": 159,
@@ -871,11 +2187,11 @@
         },
         {
           "term": "wall-backed upholstered headboard",
-          "count": 4
+          "count": 7
         },
         {
           "term": "pillow stitched edge",
-          "count": 6
+          "count": 12
         },
         {
           "term": "hollow inset ceramic basin",
@@ -887,11 +2203,11 @@
         },
         {
           "term": "shower control index",
-          "count": 2
+          "count": 4
         }
       ],
       "finishSwitch": {
-        "materials": 134,
+        "materials": 255,
         "allInterior": true,
         "states": [
           {
@@ -941,22 +2257,64 @@
             "closedPoseRestored": true
           },
           {
-            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
-            "wall": "Cloakroom hall door",
+            "id": "Proposal | Entrance solid door left",
+            "wall": "Proposal | Entrance solid door left",
             "motion": "hinged",
             "angle": 0,
             "open": false,
-            "meshCount": 35,
+            "meshCount": 7,
             "batches": 2,
             "hinge": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
             ],
             "position": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Entrance solid door right",
+            "wall": "Proposal | Entrance solid door right",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "position": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Garage north store separation door 0",
+            "wall": "Proposal | Garage north store separation door 0",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              5.25,
+              -9.905,
+              0
+            ],
+            "position": [
+              5.25,
+              -9.905,
+              0
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
@@ -998,6 +2356,48 @@
             "position": [
               12.93,
               -12.55,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Courtyard edge passage entry leaf",
+            "wall": "Proposal | Courtyard edge passage entry leaf",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 11,
+            "batches": 2,
+            "hinge": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "position": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Proposal | Gym west partition door 1",
+            "wall": "Proposal | Gym west partition door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              9.2,
+              -8.105,
+              0
+            ],
+            "position": [
+              9.2,
+              -8.105,
               0
             ],
             "nativePoseRestored": true,
@@ -1170,6 +2570,489 @@
             ],
             "nativePoseRestored": true,
             "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom4 01 | hall door",
+            "wall": "Bedroom4 01 | hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "position": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom4 01 | ensuite door",
+            "wall": "Bedroom4 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "position": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Bedroom4 01 | shower door",
+            "wall": "Bedroom4 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 7,
+            "batches": 3,
+            "hinge": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "position": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | dining west door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "position": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | dining east door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "position": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | drawing north door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "position": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Formal 01 | drawing south door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "position": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Sidebed 01 | shower door",
+            "wall": "Sidebed 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "position": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Sidebed 01 | hall door",
+            "wall": "Sidebed 01 | hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "position": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Sidebed 01 | ensuite door",
+            "wall": "Sidebed 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "position": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | shower door",
+            "wall": "Loftsuite 01 | shower door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "position": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | hall door",
+            "wall": "Loftsuite 01 | hall door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | ensuite door",
+            "wall": "Loftsuite 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Loftsuite 01 | hip store door",
+            "wall": "Loftsuite 01 | hip store door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "position": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Hobby 01 | west eaves door",
+            "wall": "Hobby 01 | west eaves door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "position": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Hobby 01 | east eaves door",
+            "wall": "Hobby 01 | east eaves door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "position": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Kitchen hall door leaf 1",
+            "wall": "Arrival 01 | kitchen hall door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              4.797,
+              0
+            ],
+            "position": [
+              4.215,
+              4.797,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 1",
+            "wall": "Arrival 01 | family hall door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              3.87,
+              0
+            ],
+            "position": [
+              4.215,
+              3.87,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 2",
+            "wall": "Arrival 01 | family hall door 2",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              2.738,
+              0
+            ],
+            "position": [
+              4.215,
+              2.738,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Arrival 01 | cloakroom hall door 1",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "position": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Gardenhouse 01 | wc door",
+            "wall": "Gardenhouse 01 | wc door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Gardenhouse 01 | tool door",
+            "wall": "Gardenhouse 01 | tool door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
+          },
+          {
+            "id": "Gardenhouse 01 | summer glazed door",
+            "wall": "Gardenhouse 01 | summer glazed door",
+            "motion": "hinged",
+            "angle": 0,
+            "open": false,
+            "meshCount": 14,
+            "batches": 4,
+            "hinge": [
+              14.245,
+              21.517,
+              0.5445870161056519
+            ],
+            "position": [
+              14.245,
+              21.517,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": true,
+            "closedPoseRestored": true
           }
         ],
         "open": [
@@ -1196,22 +3079,66 @@
             "expectedOpenAngle": 1.5707963267948966
           },
           {
-            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
-            "wall": "Cloakroom hall door",
+            "id": "Proposal | Entrance solid door left",
+            "wall": "Proposal | Entrance solid door left",
             "motion": "hinged",
             "angle": -1.5707963267948966,
             "open": true,
-            "meshCount": 35,
+            "meshCount": 7,
             "batches": 2,
             "hinge": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
             ],
             "position": [
-              5.0261406898498535,
-              2.5899999141693115,
-              0.017499923706054688
+              3.76,
+              -8.05,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Proposal | Entrance solid door right",
+            "wall": "Proposal | Entrance solid door right",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "position": [
+              3.76,
+              -6.3500000000000005,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Garage north store separation door 0",
+            "wall": "Proposal | Garage north store separation door 0",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              5.25,
+              -9.905,
+              0
+            ],
+            "position": [
+              5.25,
+              -9.905,
+              0
             ],
             "nativePoseRestored": false,
             "closedPoseRestored": false,
@@ -1255,6 +3182,50 @@
             "position": [
               12.93,
               -12.55,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Proposal | Courtyard edge passage entry leaf",
+            "wall": "Proposal | Courtyard edge passage entry leaf",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 11,
+            "batches": 2,
+            "hinge": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "position": [
+              5.615,
+              -3.225,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Proposal | Gym west partition door 1",
+            "wall": "Proposal | Gym west partition door 1",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 7,
+            "batches": 2,
+            "hinge": [
+              9.2,
+              -8.105,
+              0
+            ],
+            "position": [
+              9.2,
+              -8.105,
               0
             ],
             "nativePoseRestored": false,
@@ -1432,6 +3403,512 @@
               7.1289,
               4.53,
               2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Bedroom4 01 | hall door",
+            "wall": "Bedroom4 01 | hall door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 8,
+            "batches": 2,
+            "hinge": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "position": [
+              4.756,
+              3.19,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Bedroom4 01 | ensuite door",
+            "wall": "Bedroom4 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "position": [
+              4.28,
+              0.7804,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Bedroom4 01 | shower door",
+            "wall": "Bedroom4 01 | shower door",
+            "motion": "hinged",
+            "angle": 1.4835298641951802,
+            "open": true,
+            "meshCount": 7,
+            "batches": 3,
+            "hinge": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "position": [
+              5.045,
+              2.04,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.4835298641951802
+          },
+          {
+            "id": "Formal 01 | dining west door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": 2.2689280275926285,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "position": [
+              6.148,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 2.2689280275926285
+          },
+          {
+            "id": "Formal 01 | dining east door",
+            "wall": "Dining hall doors",
+            "motion": "hinged",
+            "angle": -2.705260340591211,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "position": [
+              7.424,
+              5.21,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -2.705260340591211
+          },
+          {
+            "id": "Formal 01 | drawing north door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "position": [
+              9.06,
+              4.891,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Formal 01 | drawing south door",
+            "wall": "Drawing hall partition",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "position": [
+              9.06,
+              3.8,
+              0.02
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Sidebed 01 | shower door",
+            "wall": "Sidebed 01 | shower door",
+            "motion": "hinged",
+            "angle": -1.3962634015954636,
+            "open": true,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "position": [
+              -4.02,
+              4.985,
+              2.825
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.3962634015954636
+          },
+          {
+            "id": "Sidebed 01 | hall door",
+            "wall": "Sidebed 01 | hall door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "position": [
+              -1.465,
+              4.36,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Sidebed 01 | ensuite door",
+            "wall": "Sidebed 01 | ensuite door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "position": [
+              -3.115,
+              3.12,
+              2.8
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | shower door",
+            "wall": "Loftsuite 01 | shower door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 6,
+            "batches": 3,
+            "hinge": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "position": [
+              11.3,
+              -10.46,
+              5.575
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | hall door",
+            "wall": "Loftsuite 01 | hall door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -5.42,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | ensuite door",
+            "wall": "Loftsuite 01 | ensuite door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "position": [
+              12.238,
+              -9.47,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Loftsuite 01 | hip store door",
+            "wall": "Loftsuite 01 | hip store door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "position": [
+              8.962,
+              -11.52,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Hobby 01 | west eaves door",
+            "wall": "Hobby 01 | west eaves door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "position": [
+              -1.684,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Hobby 01 | east eaves door",
+            "wall": "Hobby 01 | east eaves door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "position": [
+              10.439,
+              5.188,
+              5.55
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Assembly | Photo detail | Kitchen hall door leaf 1",
+            "wall": "Arrival 01 | kitchen hall door 1",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              4.797,
+              0
+            ],
+            "position": [
+              4.215,
+              4.797,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 1",
+            "wall": "Arrival 01 | family hall door 1",
+            "motion": "hinged",
+            "angle": -1.4835298641951802,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              3.87,
+              0
+            ],
+            "position": [
+              4.215,
+              3.87,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.4835298641951802
+          },
+          {
+            "id": "Assembly | Photo detail | Family hall door leaf 2",
+            "wall": "Arrival 01 | family hall door 2",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              4.215,
+              2.738,
+              0
+            ],
+            "position": [
+              4.215,
+              2.738,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Assembly | Photo detail | Cloakroom hall door leaf 1",
+            "wall": "Arrival 01 | cloakroom hall door 1",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "position": [
+              5.04514,
+              2.485,
+              0
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Gardenhouse 01 | wc door",
+            "wall": "Gardenhouse 01 | wc door",
+            "motion": "hinged",
+            "angle": 1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              25.04,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": 1.5707963267948966
+          },
+          {
+            "id": "Gardenhouse 01 | tool door",
+            "wall": "Gardenhouse 01 | tool door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 10,
+            "batches": 2,
+            "hinge": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "position": [
+              14.17,
+              24.425,
+              0.5445870161056519
+            ],
+            "nativePoseRestored": false,
+            "closedPoseRestored": false,
+            "expectedOpenAngle": -1.5707963267948966
+          },
+          {
+            "id": "Gardenhouse 01 | summer glazed door",
+            "wall": "Gardenhouse 01 | summer glazed door",
+            "motion": "hinged",
+            "angle": -1.5707963267948966,
+            "open": true,
+            "meshCount": 14,
+            "batches": 4,
+            "hinge": [
+              14.245,
+              21.517,
+              0.5445870161056519
+            ],
+            "position": [
+              14.245,
+              21.517,
+              0.5445870161056519
             ],
             "nativePoseRestored": false,
             "closedPoseRestored": false,

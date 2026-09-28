@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "terrace",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Bedroom3 ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Terrace pale outdoor timber",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Terrace pale outdoor timber",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Terrace ivory outdoor upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Terrace pale outdoor timber",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Terrace pale outdoor timber",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Terrace honed stone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Terrace taupe outdoor weave",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "lounge",
+        "seated",
+        "dining",
+        "details",
+        "overview"
+      ],
+      "objects": 827,
+      "cutaway": 2,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-shared-roof-terrace"
+    },
+    {
+      "area": "family",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family warm taupe linen",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "desk",
+        "storage",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 470,
+      "cutaway": 15,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-upstairs-family-lounge"
+    },
+    {
+      "area": "family",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Family natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family warm taupe linen",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Family honed limestone",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "seated",
+        "desk",
+        "storage",
+        "reverse",
+        "details",
+        "overview"
+      ],
+      "objects": 459,
+      "cutaway": 15,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-upstairs-family-lounge"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

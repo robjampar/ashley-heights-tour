@@ -1,6 +1,7 @@
 """Stage the authored model/viewer source and review evidence, excluding private logs and large native baselines."""
 from pathlib import Path
 import json,hashlib,shutil
+from pages_artifact import public_bytes
 ROOT=Path(__file__).resolve().parents[1];DEST=ROOT/'deployment/ashley-heights-tour/model-source';DEST.mkdir(exist_ok=True)
 paths=set()
 for id in ('i1','i2','i3','e1','e2','e3','g1'):
@@ -26,6 +27,8 @@ paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'revisions/interiors-princi
 paths.update('revisions/interiors-principal-2026-09-26/ensuite/'+name for name in ('ROOM-REVIEW.md','measurements.json','browser-checks.json','compact/report.json','planning/report.json','compact/Principal suite — bathroom and wardrobe.blend','planning/Principal suite — bathroom and wardrobe.blend'))
 paths.add('revisions/interiors-principal-2026-09-26/LAYOUT-RESEARCH.md')
 paths.add('proposal/interiors/DESIGN-PRINCIPLES.md')
+paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'revisions/principal-gable-wall-2026-09-28').glob('*') if p.is_file() and p.suffix in ('.json','.md','.svg'))
+paths.update('revisions/publication-size-2026-09-28/'+name for name in ('STATUS.md','delivery-verification.json','rollout-verification.json','geometry-verification.json','recovery-report.json','download-upload-verification.json','recovery-online.json'))
 paths.add('proposal/interiors/ROOM-REVIEW-TEMPLATE.md')
 paths.update('revisions/interiors-principal-2026-09-26/arrangements/'+name for name in ('audit.json','browser-checks.json'))
 paths.update('revisions/interiors-principal-2026-09-26/floorplans/'+name for name in ('audit.json','browser-checks.json'))
@@ -38,7 +41,7 @@ paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'proposal/interiors/leisure
 paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'revisions/interiors-overnight-2026-09-27').rglob('*') if p.is_file() and (p.suffix in ('.md','.json','.blend') or p.name in ('arrangements.svg','layout-plan.svg')))
 for name in sorted(paths):
  source=ROOT/name
- if name.startswith(('output-','walkthrough/public/house','walkthrough/public/proposal','revisions/interiors-overnight-2026-09-27/before/'))or source.suffix in('.blend','.glb') or source.name=='preview-navigation.json' or name in ('revisions/redesigns-2026-09-25/compact-object-index.json','revisions/redesigns-2026-09-25/original-object-index.json','revisions/interiors-principal-integration-2026-09-27/compact-before/navigation.json','revisions/interiors-principal-integration-2026-09-27/planning-before/navigation.json'):
+ if (source.is_file() and source.stat().st_size > 100*1024*1024) or name.startswith(('output-','walkthrough/public/house','walkthrough/public/proposal','revisions/interiors-overnight-2026-09-27/before/'))or source.suffix in('.blend','.glb') or source.name=='preview-navigation.json' or name in ('revisions/redesigns-2026-09-25/compact-object-index.json','revisions/redesigns-2026-09-25/original-object-index.json','revisions/interiors-principal-integration-2026-09-27/compact-before/navigation.json','revisions/interiors-principal-integration-2026-09-27/planning-before/navigation.json'):
   if source.is_file():
    with source.open('rb')as handle:digest=hashlib.file_digest(handle,'sha256').hexdigest()
    baseline[name]={'sha256':digest,'bytes':source.stat().st_size}
@@ -72,6 +75,6 @@ previous_path.write_text(json.dumps({'files':manifest,'required_local_baselines'
 print('Staged',len(manifest),'source files;',len(baseline),'local baseline references')
 
 # Recheck after evidence staging, which can add bytes after the viewer guard.
-site_bytes=sum(p.stat().st_size for p in DEST.parent.rglob('*') if p.is_file() and '.git' not in p.relative_to(DEST.parent).parts)
-if site_bytes>1_000_000_000:raise RuntimeError(f'Staged site including source evidence is {site_bytes:,} bytes, over the publication budget')
-print('Staged site including source evidence:',site_bytes,'bytes')
+site_bytes=public_bytes(DEST.parent)
+if site_bytes>1_000_000_000:raise RuntimeError(f'Staged public site is {site_bytes:,} bytes, over the publication budget')
+print('Staged public site:',site_bytes,'bytes; editable source retained separately in Git')

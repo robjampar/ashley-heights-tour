@@ -1,0 +1,78 @@
+{
+  "wall_x_m": 5.045,
+  "thickness_m": 0.23,
+  "floor_z_m": 2.8,
+  "centre_y_m": -12.94,
+  "opening_width_m": 1.2,
+  "opening_shape": "roof-following",
+  "centre_clear_height_m": 2.149,
+  "jamb_clear_height_m": 1.7442948898945438,
+  "sections": [
+    [
+      "south pier",
+      [
+        [
+          -16.09,
+          2.8
+        ],
+        [
+          -13.54,
+          2.8
+        ],
+        [
+          -13.54,
+          4.544294889894544
+        ],
+        [
+          -16.09,
+          2.8242981719463556
+        ]
+      ]
+    ],
+    [
+      "north pier",
+      [
+        [
+          -12.34,
+          2.8
+        ],
+        [
+          -9.79,
+          2.8
+        ],
+        [
+          -9.79,
+          2.8242981719463556
+        ],
+        [
+          -12.34,
+          4.544294889894544
+        ]
+      ]
+    ]
+  ],
+  "opening": [
+    [
+      -13.54,
+      2.8
+    ],
+    [
+      -12.34,
+      2.8
+    ],
+    [
+      -12.34,
+      4.544294889894544
+    ],
+    [
+      -12.94,
+      4.949
+    ],
+    [
+      -13.54,
+      4.544294889894544
+    ]
+  ],
+  "floor_beam": "Concept: concealed in floor; section and bearings unverified",
+  "status": "Draft geometry awaiting opening-shape choice; not integrated"
+}

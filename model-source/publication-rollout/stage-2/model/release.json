@@ -1,0 +1,1872 @@
+{
+  "leisure_studio": {
+    "path": "./interiors/leisure/",
+    "rooms": [
+      "cinema",
+      "bar",
+      "gym",
+      "utility",
+      "guest",
+      "guestbath",
+      "family",
+      "cloakroom",
+      "bedroom2",
+      "bedroom3",
+      "familybath",
+      "bedroom4",
+      "formal",
+      "sidebed",
+      "loftsuite",
+      "hobby",
+      "terrace",
+      "arrival",
+      "landings",
+      "garage",
+      "poolgarden",
+      "gardenhouse",
+      "office",
+      "workshop"
+    ],
+    "method": "Measured native room geometry; developed concepts for review",
+    "pages": {
+      "index.html": "bccbd9d99916e89847e484761a3b46b2e47d61484cd77e5106c64a74e83a5350",
+      "cinema.html": "a1c614f8d84281d3be836bf165cf518a6758638553404efaf7983f75e4b52f79",
+      "bar.html": "570a39c9a92b65ea05cb20fcc243c0d159796778f5fe3846c6c7c0808d19783f",
+      "gym.html": "d4515c5d38d620eb672729eb6e9cc6dd7152e1dccf12999a3eb7ea3e17a4626b",
+      "utility.html": "883931fda46cdbad4cd61b4c3755bbafc17e5c8874d38b55632171c6d2ea4ad4",
+      "guest.html": "50836261ad8a10d4e62a50375f00a2cc86088c8ef67ce536a9ef4f1176111d59",
+      "guestbath.html": "0fd8c8001454267028d38261a814f2fec2703d022dd977999840d0ce1ab84d72",
+      "family.html": "7bf29b75ab7c62e5295887222074e8455c731e2679edcc863f09330a5b9066f9",
+      "cloakroom.html": "1c0e31f4046bbd9e140a342fa912bedbf9d436e71d7837ac7b44394d549e542d",
+      "bedroom2.html": "9b247577e752a252beb580d01d6703c28c3760e8ca2df55180edc849086827f5",
+      "bedroom3.html": "b7a8c4961457bbc2fd6111c224d9a7833ee9ad7352c0f2a64dc2e02e2623a616",
+      "familybath.html": "1dfd47358a90dc0170253c098b8f169ba5995dca4d202c3b335b8be973767b92",
+      "bedroom4.html": "ceeea5f09b2e1502969549f8814064bbe8588527a74e08b33cd2e36a211f0672",
+      "formal.html": "b6fb7d3cde349e1510d14228c16dded60fab058e3da62df870a13f96424f5b1f",
+      "sidebed.html": "4ec34214eb81682a771688521a452c0eb1fb5c5f3ceb00dc1acafa539cdd76fd",
+      "loftsuite.html": "b1fbe749998f9740e1e99e5a9df12cb8a344f2ced4072a70da252acc2090afa2",
+      "hobby.html": "879f36a4140b7efccfcff40cb2790698f1bb6ee2867b64158250cd9d64ad173b",
+      "terrace.html": "585af81bde24d8c91e85e77f68c7c0b76c7754965dbd65551ee9acd6b54cd1d4",
+      "arrival.html": "78103a2f796b8b6a590d07cd26395976154e731862573ff3a00e19644c6848d7",
+      "landings.html": "9bd480cf2551b2404029831e6482c78d7d98baa85d333476b612669808f9deb1",
+      "garage.html": "02c02f82196afbe7347cf05c1b1b3da100a995471e0cd28556d3f0f816e8d696",
+      "poolgarden.html": "3bd43840647f9aaf26dd30659baba4918d7e124f222ccb11ef0ae2271a47f8c1",
+      "gardenhouse.html": "22f010d0cd8af404a99d45aba047104e88dd935f0c25d492f872bd1cf01f8114",
+      "office.html": "64751c6cac92a8ab2231519abb4a8d4d8cc8a620c4f4b7bff0d45a542a5b58ac",
+      "workshop.html": "ddd80d4caafe3d1ca78d5b2ddc6a70e112e27f367395a632962b4530b54f5779"
+    },
+    "assets": {
+      "arrival-plan.81d98e3156d16362.svg": {
+        "source": "arrival-plan.svg",
+        "bytes": 7985,
+        "sha256": "81d98e3156d163626fa1d0239b8ba4a3af551ca9cc757863ce6e921d198daaba"
+      },
+      "bar-plan.6a5c25df5fdf5d11.svg": {
+        "source": "bar-plan.svg",
+        "bytes": 6539,
+        "sha256": "6a5c25df5fdf5d1117e3c45dfff98827dd4d44cce070af8ab4b009beb0419aba"
+      },
+      "bedroom2-plan.fda821c9b9d58108.svg": {
+        "source": "bedroom2-plan.svg",
+        "bytes": 5042,
+        "sha256": "fda821c9b9d581082934e96d455b767c2722c2ad49394b403c4641c0dcfafa05"
+      },
+      "bedroom3-plan.2d86ac96f71eadb4.svg": {
+        "source": "bedroom3-plan.svg",
+        "bytes": 5227,
+        "sha256": "2d86ac96f71eadb45a4adba41baa36c741169450f37f05609450c758b117e618"
+      },
+      "bedroom4-plan.0d9016acf822229e.svg": {
+        "source": "bedroom4-plan.svg",
+        "bytes": 8659,
+        "sha256": "0d9016acf822229e73cf7162a2237ade9453c0e66b9ffcb41d7488e8d469463e"
+      },
+      "cinema-plan.f9256867c48649bc.svg": {
+        "source": "cinema-plan.svg",
+        "bytes": 4890,
+        "sha256": "f9256867c48649bc8cf9a80bae2d2ea586e5667b91275209061c34ecfc5ff606"
+      },
+      "cloakroom-plan.6552d6465c50aaac.svg": {
+        "source": "cloakroom-plan.svg",
+        "bytes": 13532,
+        "sha256": "6552d6465c50aaac33a6b713de191961193cb1c5a46d56fa6ae8c003314fc793"
+      },
+      "family-plan.c0df51c6876f7b34.svg": {
+        "source": "family-plan.svg",
+        "bytes": 9690,
+        "sha256": "c0df51c6876f7b34278b360d28f0e4e60f1b8f5f296d9f9bf7a820bf8fe93d66"
+      },
+      "familybath-plan.97933ba5fa19bf86.svg": {
+        "source": "familybath-plan.svg",
+        "bytes": 4638,
+        "sha256": "97933ba5fa19bf86b9365b83fad85413101c27963084a444ea5464682b1be138"
+      },
+      "formal-plan.6a29834a18e20cbe.svg": {
+        "source": "formal-plan.svg",
+        "bytes": 22129,
+        "sha256": "6a29834a18e20cbeb78b93089f2bc6fb8a977de1d8581ee8f45fdebb04ff6554"
+      },
+      "garage-plan.105bf3daa4090976.svg": {
+        "source": "garage-plan.svg",
+        "bytes": 2731,
+        "sha256": "105bf3daa4090976ba1f38f98f9d33edbb577ed3697b6d6969aa170c38100c99"
+      },
+      "gardenhouse-plan.1a9e1b61a0d001a6.svg": {
+        "source": "gardenhouse-plan.svg",
+        "bytes": 3011,
+        "sha256": "1a9e1b61a0d001a6b66292533c1ca71588a243bc5e63ec2801903095aad03020"
+      },
+      "guest-plan.6d7f2d80208c3252.svg": {
+        "source": "guest-plan.svg",
+        "bytes": 8272,
+        "sha256": "6d7f2d80208c3252f2de4c31cc46fb34c95f858d206aeb15a3e11f6433a93955"
+      },
+      "guestbath-plan.ea11ca426880ba75.svg": {
+        "source": "guestbath-plan.svg",
+        "bytes": 6011,
+        "sha256": "ea11ca426880ba75424cf31c60ea3b40f507b3d0d5dc610751a53626076913e6"
+      },
+      "gym-plan.2851c9da94c19006.svg": {
+        "source": "gym-plan.svg",
+        "bytes": 6738,
+        "sha256": "2851c9da94c19006b034497959bf33e0f44ce7b1127b5570a9f78a4c3bd21a04"
+      },
+      "hobby-plan.12e4df8ffb8f3881.svg": {
+        "source": "hobby-plan.svg",
+        "bytes": 6599,
+        "sha256": "12e4df8ffb8f38815a4ed1150b525b7fb3d5f5f00a17b171e3d424b1aa3e4062"
+      },
+      "landings-plan.d12d43534af2fac6.svg": {
+        "source": "landings-plan.svg",
+        "bytes": 5767,
+        "sha256": "d12d43534af2fac6e4d8bd907cf6e2249ad1b2771ac5b87f1ddb30ae64d2b231"
+      },
+      "loftsuite-plan.6807689d5e0d1704.svg": {
+        "source": "loftsuite-plan.svg",
+        "bytes": 5961,
+        "sha256": "6807689d5e0d1704a872505ae7efbb85b36b163eaf68df36f73b8bc4c174bb78"
+      },
+      "models/compact-arrival.7bd48b96d638fbda.glb.gz": {
+        "source": "models/compact-arrival.glb",
+        "bytes": 7008580,
+        "sha256": "7bd48b96d638fbdad9af0c3e9ff85a454a149092c03523345f69476d7fe7b014"
+      },
+      "models/compact-arrival.e2918a0f057ec899.json": {
+        "source": "models/compact-arrival.json",
+        "bytes": 116895,
+        "sha256": "e2918a0f057ec8993ce78a861e29cbf50e041c7c4f3272d338126221d618e933"
+      },
+      "models/compact-bar.ecf40d0742c169b6.glb.gz": {
+        "source": "models/compact-bar.glb",
+        "bytes": 890757,
+        "sha256": "ecf40d0742c169b65d5a1899b4f3af1c1f15b480233c17d5c2e0e931a373650e"
+      },
+      "models/compact-bar.adf112936e4f0ef6.json": {
+        "source": "models/compact-bar.json",
+        "bytes": 28244,
+        "sha256": "adf112936e4f0ef6377aafbeb87b8c37f2a62f97197a16a9f96a34e53bd843af"
+      },
+      "models/compact-bedroom2.3b2b1947993c8b0c.glb.gz": {
+        "source": "models/compact-bedroom2.glb",
+        "bytes": 394093,
+        "sha256": "3b2b1947993c8b0caf5b82c264175b4d6a1c04b07bbc266dd986b7e711ce04d0"
+      },
+      "models/compact-bedroom2.a3be336fe8498058.json": {
+        "source": "models/compact-bedroom2.json",
+        "bytes": 37320,
+        "sha256": "a3be336fe8498058d3faadedf53821ca93d8064d4051312e9a9ac1705a71cb4c"
+      },
+      "models/compact-bedroom3.0ab886bbd9ab9301.glb.gz": {
+        "source": "models/compact-bedroom3.glb",
+        "bytes": 392492,
+        "sha256": "0ab886bbd9ab930158108ce0fad2ccb706b0e2d3b79db0e2a2ea2c771161d3df"
+      },
+      "models/compact-bedroom3.fbca26b23c3ace1a.json": {
+        "source": "models/compact-bedroom3.json",
+        "bytes": 38104,
+        "sha256": "fbca26b23c3ace1ad395ed3b3872fab7f8690d85b499476428bc36a10e7e3161"
+      },
+      "models/compact-bedroom4.1d184a4364cc3626.glb.gz": {
+        "source": "models/compact-bedroom4.glb",
+        "bytes": 642681,
+        "sha256": "1d184a4364cc3626752af1598378d0f48c8bb8a4b3657cbc0af7434aa1c64fa0"
+      },
+      "models/compact-bedroom4.8bfdf5d367c3f768.json": {
+        "source": "models/compact-bedroom4.json",
+        "bytes": 44224,
+        "sha256": "8bfdf5d367c3f76886be2096e614025ba973203983b4de5ae1b6be408b48758b"
+      },
+      "models/compact-cinema.768d0fec8f0be7b9.glb.gz": {
+        "source": "models/compact-cinema.glb",
+        "bytes": 332146,
+        "sha256": "768d0fec8f0be7b94b2aa7054c357d4b049a34c46be5c8d82728ae5d537d51a1"
+      },
+      "models/compact-cinema.2aba44788b3ae9b3.json": {
+        "source": "models/compact-cinema.json",
+        "bytes": 28386,
+        "sha256": "2aba44788b3ae9b39ed4f8b6c4ce345b866810e10c331c24a6990bbb9233a85c"
+      },
+      "models/compact-cloakroom.3b08c09c08c02e6a.glb.gz": {
+        "source": "models/compact-cloakroom.glb",
+        "bytes": 373305,
+        "sha256": "3b08c09c08c02e6a161fd84fee9a5068ff1da34e8cf874f4bb3cfd72193e35ab"
+      },
+      "models/compact-cloakroom.4a62d38b325ad362.json": {
+        "source": "models/compact-cloakroom.json",
+        "bytes": 51821,
+        "sha256": "4a62d38b325ad3627ed57a77760bb787abcab3aa32dd2fa4e5a73be00c3db52c"
+      },
+      "models/compact-family.a6cebd996e39238f.glb.gz": {
+        "source": "models/compact-family.glb",
+        "bytes": 1134301,
+        "sha256": "a6cebd996e39238fe1df7475da6e85874d2b79169a17a6433ca530bd1a667fc7"
+      },
+      "models/compact-family.ecfb42a6770ba875.json": {
+        "source": "models/compact-family.json",
+        "bytes": 53694,
+        "sha256": "ecfb42a6770ba8757fb33031b36a9acb1356f7d57a5bc4f1a764bbd30d70b62c"
+      },
+      "models/compact-familybath.f9aa99e780caf4b0.glb.gz": {
+        "source": "models/compact-familybath.glb",
+        "bytes": 461298,
+        "sha256": "f9aa99e780caf4b09c68cb225bf6e0d991a8ea7e7e7894b16c95285709160687"
+      },
+      "models/compact-familybath.f39138cd47b7f31d.json": {
+        "source": "models/compact-familybath.json",
+        "bytes": 39749,
+        "sha256": "f39138cd47b7f31df1bf6b45d675d06d4206011eb089ae0b642514c7af504331"
+      },
+      "models/compact-formal.dc74bd31190f8bd2.glb.gz": {
+        "source": "models/compact-formal.glb",
+        "bytes": 1636372,
+        "sha256": "dc74bd31190f8bd2652646e0f70af60e4234d05a7ebf8be62b05568b2998f674"
+      },
+      "models/compact-formal.395fb6d821a6dc25.json": {
+        "source": "models/compact-formal.json",
+        "bytes": 58513,
+        "sha256": "395fb6d821a6dc25135513b57079d7f813a19783a60527d4f4ebac6d73e0093a"
+      },
+      "models/compact-garage.49dcd2eaf55a6c00.glb.gz": {
+        "source": "models/compact-garage.glb",
+        "bytes": 617410,
+        "sha256": "49dcd2eaf55a6c00d817e5fbe1411f5418e72d26c69acb49fb66a3d25eef5ad6"
+      },
+      "models/compact-garage.98565d0c4603b474.json": {
+        "source": "models/compact-garage.json",
+        "bytes": 48496,
+        "sha256": "98565d0c4603b47443b6ec35348aff051e72ce79fd0a7f9d0cbac8d6e26c8191"
+      },
+      "models/compact-gardenhouse.6fbd3a6354c0594b.glb.gz": {
+        "source": "models/compact-gardenhouse.glb",
+        "bytes": 771825,
+        "sha256": "6fbd3a6354c0594beb025a3a29385d142d175c28f5c41c3ff267cbb119cbd1e7"
+      },
+      "models/compact-gardenhouse.3e83a55209aecbda.json": {
+        "source": "models/compact-gardenhouse.json",
+        "bytes": 51823,
+        "sha256": "3e83a55209aecbdab48ad31ad49bdcc213725e3a746715e8528c5da3e9de7892"
+      },
+      "models/compact-guest.9fa3af64d3c03e8e.glb.gz": {
+        "source": "models/compact-guest.glb",
+        "bytes": 503054,
+        "sha256": "9fa3af64d3c03e8e26873ec52db464e55ce0fb085a7ac937f90f3b644016d6c8"
+      },
+      "models/compact-guest.f39fd994ba2c6dba.json": {
+        "source": "models/compact-guest.json",
+        "bytes": 37515,
+        "sha256": "f39fd994ba2c6dbac3efef33cf3f484d41bbb60e68a45d67e32275c3c812d460"
+      },
+      "models/compact-guestbath.8bfee530e11d2817.glb.gz": {
+        "source": "models/compact-guestbath.glb",
+        "bytes": 364246,
+        "sha256": "8bfee530e11d281783ea5b1c302755ebfb7322c51c76c1aa48b497eb9a67344f"
+      },
+      "models/compact-guestbath.d7dedfcc059568db.json": {
+        "source": "models/compact-guestbath.json",
+        "bytes": 34359,
+        "sha256": "d7dedfcc059568db5c8985b809609b9dc87d34cb117ec33947df5888170eb352"
+      },
+      "models/compact-gym.3f34de82340c45c1.glb.gz": {
+        "source": "models/compact-gym.glb",
+        "bytes": 454752,
+        "sha256": "3f34de82340c45c117f0149cf903b88c6e26c73ed332988d23e36a7f4c80b5aa"
+      },
+      "models/compact-gym.df1eb47a79f37ad1.json": {
+        "source": "models/compact-gym.json",
+        "bytes": 54881,
+        "sha256": "df1eb47a79f37ad12fc13fb9332250ee5efa84a5119b9a054427fecf55b238f0"
+      },
+      "models/compact-hobby.78aad30ec29efb11.glb.gz": {
+        "source": "models/compact-hobby.glb",
+        "bytes": 1353551,
+        "sha256": "78aad30ec29efb11e58f4db73223eab5500301c5be51a30463e163bc55779af5"
+      },
+      "models/compact-hobby.98082e2112aa1d5a.json": {
+        "source": "models/compact-hobby.json",
+        "bytes": 60237,
+        "sha256": "98082e2112aa1d5a27f18644830742b0bdcafc42dbec2ef093a0bae4c60c162c"
+      },
+      "models/compact-landings.e1557c85431daf29.glb.gz": {
+        "source": "models/compact-landings.glb",
+        "bytes": 8401343,
+        "sha256": "e1557c85431daf29ecbc2705deebe0ed7d683acd01c9c56e1ba9c6e917f23c02"
+      },
+      "models/compact-landings.b81cc462b8fc4c1f.json": {
+        "source": "models/compact-landings.json",
+        "bytes": 60264,
+        "sha256": "b81cc462b8fc4c1fbca297cf6b398f248d4284fc6c7ea78604f9191f326148ac"
+      },
+      "models/compact-loftsuite.5af9b5673a082f05.glb.gz": {
+        "source": "models/compact-loftsuite.glb",
+        "bytes": 720829,
+        "sha256": "5af9b5673a082f05983e8542cee36ac31a89d0fcff6b042ee6b08946fce75306"
+      },
+      "models/compact-loftsuite.6cbe1939929faf9a.json": {
+        "source": "models/compact-loftsuite.json",
+        "bytes": 58271,
+        "sha256": "6cbe1939929faf9af2809ab96e0e40e24f63214f52d4da6b5aa33ee8d5cbfa48"
+      },
+      "models/compact-office.56df3cfa2c2c0ad0.glb.gz": {
+        "source": "models/compact-office.glb",
+        "bytes": 2909267,
+        "sha256": "56df3cfa2c2c0ad001ee6c9f654a51fd50295d8849f5856c886cc3735d67fd7c"
+      },
+      "models/compact-office.77ab05ade8a3ba6e.json": {
+        "source": "models/compact-office.json",
+        "bytes": 53036,
+        "sha256": "77ab05ade8a3ba6ee4c4127b0c888e01beb1964bc29593fe68366be251603159"
+      },
+      "models/compact-poolgarden.46456b8b54adee38.glb.gz": {
+        "source": "models/compact-poolgarden.glb",
+        "bytes": 1796590,
+        "sha256": "46456b8b54adee3863f80ab304374991b00528481223dfa97cb18f6fd36841fd"
+      },
+      "models/compact-poolgarden.04ac968f02e6709b.json": {
+        "source": "models/compact-poolgarden.json",
+        "bytes": 51985,
+        "sha256": "04ac968f02e6709b74b4b18affe0cd7858b83961226f35e17ed8e355ebe8862e"
+      },
+      "models/compact-sidebed.826d914261b5e25f.glb.gz": {
+        "source": "models/compact-sidebed.glb",
+        "bytes": 826386,
+        "sha256": "826d914261b5e25f62a964f3551942c4159bbd77f9210cd0b7ce9ca67c004400"
+      },
+      "models/compact-sidebed.8902eb079fb2c8ee.json": {
+        "source": "models/compact-sidebed.json",
+        "bytes": 57406,
+        "sha256": "8902eb079fb2c8ee4ae5916911d0913ff76ad40d66d4b47975d26e11bc4027a0"
+      },
+      "models/compact-terrace.178e67d247a1b086.glb.gz": {
+        "source": "models/compact-terrace.glb",
+        "bytes": 680697,
+        "sha256": "178e67d247a1b086b5dd657c08c5146cfcbe2885cfe29f431ecc0d52637e0da5"
+      },
+      "models/compact-terrace.2427177324034a4a.json": {
+        "source": "models/compact-terrace.json",
+        "bytes": 45080,
+        "sha256": "2427177324034a4ab2f1d7ff5be5a74ee31faba2cf99b924bb2991a98db1b52f"
+      },
+      "models/compact-utility.d244df8cf326ce3e.glb.gz": {
+        "source": "models/compact-utility.glb",
+        "bytes": 493096,
+        "sha256": "d244df8cf326ce3e3367c02c318c382362c797af5451ee400deacccbc61d52f8"
+      },
+      "models/compact-utility.0cf7a94a52f541ab.json": {
+        "source": "models/compact-utility.json",
+        "bytes": 30892,
+        "sha256": "0cf7a94a52f541ab5b017450a4da9cbbc3bd60f23f71553fdda1986876c2bd73"
+      },
+      "models/compact-workshop.867cdf774a64ce04.glb.gz": {
+        "source": "models/compact-workshop.glb",
+        "bytes": 1078679,
+        "sha256": "867cdf774a64ce04c4ac30874897adcb78795f117345d9935e5970f9345b8a71"
+      },
+      "models/compact-workshop.c51d50c5916f37b2.json": {
+        "source": "models/compact-workshop.json",
+        "bytes": 50778,
+        "sha256": "c51d50c5916f37b237bf1613b7852dbccd4e5596421edf2444e1117a3bd14129"
+      },
+      "models/planning-arrival.06b25d3202a94b92.glb.gz": {
+        "source": "models/planning-arrival.glb",
+        "bytes": 7032514,
+        "sha256": "06b25d3202a94b929b4451a61620fc08780aaf5004e509cd3b77c728d786e6cb"
+      },
+      "models/planning-arrival.86ddbfd5b6ff21d9.json": {
+        "source": "models/planning-arrival.json",
+        "bytes": 113536,
+        "sha256": "86ddbfd5b6ff21d9d92281b456254b762ef75bc1ad05e732be0b7f09aa603d7b"
+      },
+      "models/planning-bar.edbd6c29d07bcc1d.glb.gz": {
+        "source": "models/planning-bar.glb",
+        "bytes": 890788,
+        "sha256": "edbd6c29d07bcc1de90f1d23afbcfb6df17fccfada0081831fab41f9b8bee40e"
+      },
+      "models/planning-bar.c43419f4329093a2.json": {
+        "source": "models/planning-bar.json",
+        "bytes": 26710,
+        "sha256": "c43419f4329093a287ea84dfa88daf725cb7322dd12f2e58125a73eac1697283"
+      },
+      "models/planning-bedroom2.4b4409f955feee01.glb.gz": {
+        "source": "models/planning-bedroom2.glb",
+        "bytes": 395485,
+        "sha256": "4b4409f955feee01307327935a9a9e5e19385da76fb3ac66b4d5150ca9a7d652"
+      },
+      "models/planning-bedroom2.42cf4140d8188d31.json": {
+        "source": "models/planning-bedroom2.json",
+        "bytes": 35806,
+        "sha256": "42cf4140d8188d31b1621f675c6f406e9bd84bb819b23bd43a6e7e65d9d5d4e9"
+      },
+      "models/planning-bedroom3.d8dc8918ab5ec81e.glb.gz": {
+        "source": "models/planning-bedroom3.glb",
+        "bytes": 393116,
+        "sha256": "d8dc8918ab5ec81ea4b92d47b6b6a5e4344b98564d7a8d3e38f70448949695d9"
+      },
+      "models/planning-bedroom3.f2010b18721ec343.json": {
+        "source": "models/planning-bedroom3.json",
+        "bytes": 36606,
+        "sha256": "f2010b18721ec34393b29c60a1db12e5d86ecca3c0be1eeda977cccbe0eb1d28"
+      },
+      "models/planning-bedroom4.99664805ea6342d7.glb.gz": {
+        "source": "models/planning-bedroom4.glb",
+        "bytes": 645074,
+        "sha256": "99664805ea6342d77f97f003d011e075cc8ea80676bb002f74defbb47209819b"
+      },
+      "models/planning-bedroom4.e2e8a92dfd9b18c2.json": {
+        "source": "models/planning-bedroom4.json",
+        "bytes": 42690,
+        "sha256": "e2e8a92dfd9b18c2cd37e57143d1e967bbee28962ad8e2ddbd20823021cbf41a"
+      },
+      "models/planning-cinema.9efc8b2e64751a25.glb.gz": {
+        "source": "models/planning-cinema.glb",
+        "bytes": 332158,
+        "sha256": "9efc8b2e64751a2553c67ceb5a560ebeaa9837f5e28f457fcbdd713ef772bb21"
+      },
+      "models/planning-cinema.be913b506ceed222.json": {
+        "source": "models/planning-cinema.json",
+        "bytes": 26852,
+        "sha256": "be913b506ceed2223789bf666f6d2ae96450cf12f2c31d8c1d574b6215a887b2"
+      },
+      "models/planning-cloakroom.46200e3bf054ff16.glb.gz": {
+        "source": "models/planning-cloakroom.glb",
+        "bytes": 373988,
+        "sha256": "46200e3bf054ff161bfa922780fc6fa0bcbd7c5088ccd9205b148246082a570f"
+      },
+      "models/planning-cloakroom.a5df79a4016c51e4.json": {
+        "source": "models/planning-cloakroom.json",
+        "bytes": 47842,
+        "sha256": "a5df79a4016c51e4303228805ddd396c38ae7e5008ea014fb65e81ae1443bd61"
+      },
+      "models/planning-family.e8c5922d530ab357.glb.gz": {
+        "source": "models/planning-family.glb",
+        "bytes": 1142840,
+        "sha256": "e8c5922d530ab357f9763c57ea32107494dd8a7754677b0ba94c5d1d2e4fc408"
+      },
+      "models/planning-family.0c8a2620ceb1fdd6.json": {
+        "source": "models/planning-family.json",
+        "bytes": 49655,
+        "sha256": "0c8a2620ceb1fdd64d7c1e42633bef5d4adcbc7f6eb34d2a34c1329de8b4277b"
+      },
+      "models/planning-familybath.dc25babfab1f4153.glb.gz": {
+        "source": "models/planning-familybath.glb",
+        "bytes": 461536,
+        "sha256": "dc25babfab1f41531b188faa312a9b47c6c43f48a1fc4fb411ce68f39618e773"
+      },
+      "models/planning-familybath.6eb14d0f9a92592a.json": {
+        "source": "models/planning-familybath.json",
+        "bytes": 38215,
+        "sha256": "6eb14d0f9a92592a2310f39a3f2fd3f0914436ca0b0d230b94012697e5ce0671"
+      },
+      "models/planning-formal.a7f2c8fab6a7d5e4.glb.gz": {
+        "source": "models/planning-formal.glb",
+        "bytes": 1628536,
+        "sha256": "a7f2c8fab6a7d5e4c4827e000bc3c76857af4a3f6aabf9c94eb7a38dff2a5606"
+      },
+      "models/planning-formal.c5c92520cd5f99b4.json": {
+        "source": "models/planning-formal.json",
+        "bytes": 54674,
+        "sha256": "c5c92520cd5f99b4c27fa3b5ce93606503132a47ea60e29f164b7c0060cfb76f"
+      },
+      "models/planning-garage.dc47b997b3d02995.glb.gz": {
+        "source": "models/planning-garage.glb",
+        "bytes": 620040,
+        "sha256": "dc47b997b3d029952200f677d9d08e94fb1a6a242eaffe042fec7ffeb024986b"
+      },
+      "models/planning-garage.07430934d138ed19.json": {
+        "source": "models/planning-garage.json",
+        "bytes": 46100,
+        "sha256": "07430934d138ed1968db4511c3f5345c3616e8f08bca8041319dc7eb4006fd3c"
+      },
+      "models/planning-gardenhouse.9f5488eec0b04b4a.glb.gz": {
+        "source": "models/planning-gardenhouse.glb",
+        "bytes": 797728,
+        "sha256": "9f5488eec0b04b4ac127789f58a9669c7f548474d297b65a94bfea0d4537428c"
+      },
+      "models/planning-gardenhouse.2e502e3220e1d613.json": {
+        "source": "models/planning-gardenhouse.json",
+        "bytes": 49318,
+        "sha256": "2e502e3220e1d61330198453a9cf0e979703097b53152d99579cf18a5327df35"
+      },
+      "models/planning-guest.1d888ac5175d8221.glb.gz": {
+        "source": "models/planning-guest.glb",
+        "bytes": 504439,
+        "sha256": "1d888ac5175d82216966ac0a1107b7032299b2e125b9e8d1d6ab00bd1ec9ec23"
+      },
+      "models/planning-guest.f41ca8f8f336bfab.json": {
+        "source": "models/planning-guest.json",
+        "bytes": 36037,
+        "sha256": "f41ca8f8f336bfab135acbcf101205e732ab4f3467e9eda5a2cd37abb6cc8abb"
+      },
+      "models/planning-guestbath.dd521f4d8ec4b458.glb.gz": {
+        "source": "models/planning-guestbath.glb",
+        "bytes": 364426,
+        "sha256": "dd521f4d8ec4b45892f11b8fe0f8fb9a6aca6e1dd7bd2011c8bd866ded2d418d"
+      },
+      "models/planning-guestbath.c0a3591c312b4341.json": {
+        "source": "models/planning-guestbath.json",
+        "bytes": 32825,
+        "sha256": "c0a3591c312b4341b56c455f98835faf0e9b639627e4c357330f34b6dbfdc98b"
+      },
+      "models/planning-gym.04eb558efcb9f25d.glb.gz": {
+        "source": "models/planning-gym.glb",
+        "bytes": 455555,
+        "sha256": "04eb558efcb9f25d6b8c57263342c1afd80f2e30f932eb26688ad6d2049ca675"
+      },
+      "models/planning-gym.3fff0633b933893c.json": {
+        "source": "models/planning-gym.json",
+        "bytes": 50842,
+        "sha256": "3fff0633b933893c3f9fbb2ad81b4e5b3843cdb7a4a68e38d36cf451ac5e7760"
+      },
+      "models/planning-hobby.7c96f56a9f9169c4.glb.gz": {
+        "source": "models/planning-hobby.glb",
+        "bytes": 1359841,
+        "sha256": "7c96f56a9f9169c4765adf5c4bcb9b5d0ee640797026e361513c2bdc5fcadaf7"
+      },
+      "models/planning-hobby.d6110e3de8b6e526.json": {
+        "source": "models/planning-hobby.json",
+        "bytes": 58703,
+        "sha256": "d6110e3de8b6e52654afcdb13cd1a09e01afca28c357ef26e7d956f5ba0c87cc"
+      },
+      "models/planning-landings.7228290df21924a6.glb.gz": {
+        "source": "models/planning-landings.glb",
+        "bytes": 8406850,
+        "sha256": "7228290df21924a69247ac0192b6e05be8534fba264a8ea753455c71a0c7b3a0"
+      },
+      "models/planning-landings.5fae64748251a8bb.json": {
+        "source": "models/planning-landings.json",
+        "bytes": 56225,
+        "sha256": "5fae64748251a8bb4eec11dc287798e86d782818e5056bab122900bfaa99fb65"
+      },
+      "models/planning-loftsuite.51e24a1ecdf8da4b.glb.gz": {
+        "source": "models/planning-loftsuite.glb",
+        "bytes": 725588,
+        "sha256": "51e24a1ecdf8da4b0aa515ae01f8adb45ddb0d81a71ee42eb430edc9b5595dfb"
+      },
+      "models/planning-loftsuite.4d546ec904529e63.json": {
+        "source": "models/planning-loftsuite.json",
+        "bytes": 54232,
+        "sha256": "4d546ec904529e63228295cddea724cf1ac88b8f7ddbc14597d1acf7d75ca3ae"
+      },
+      "models/planning-office.b94128a37c01387f.glb.gz": {
+        "source": "models/planning-office.glb",
+        "bytes": 2910214,
+        "sha256": "b94128a37c01387f10a2011b2309946f065f50394079cd948cad5feac74c7d02"
+      },
+      "models/planning-office.d257d88ae11073c7.json": {
+        "source": "models/planning-office.json",
+        "bytes": 49077,
+        "sha256": "d257d88ae11073c7c54e4825d82c5c409f4277dfd169d3ac1e96f35827905fea"
+      },
+      "models/planning-sidebed.ee51808e1002d2a1.glb.gz": {
+        "source": "models/planning-sidebed.glb",
+        "bytes": 826389,
+        "sha256": "ee51808e1002d2a11ef15d7d0b60bb49fb5964d2432843d4b4d9cd523fdb6bd6"
+      },
+      "models/planning-sidebed.b471e8f2b6bd0ab8.json": {
+        "source": "models/planning-sidebed.json",
+        "bytes": 53367,
+        "sha256": "b471e8f2b6bd0ab828e4a08777e6034c5fd8f23e0b239ed2f0c25a1589043493"
+      },
+      "models/planning-utility.752fca69f333bd82.glb.gz": {
+        "source": "models/planning-utility.glb",
+        "bytes": 493921,
+        "sha256": "752fca69f333bd821c0dbbcf1aeef43bf12498c339194ac41390bd44cd9f6094"
+      },
+      "models/planning-utility.2164bf0aced9d365.json": {
+        "source": "models/planning-utility.json",
+        "bytes": 29358,
+        "sha256": "2164bf0aced9d36525b9f1845d8fbaf3ba356da507c2873b7ec3f297953b8453"
+      },
+      "office-plan.374f108fe1672462.svg": {
+        "source": "office-plan.svg",
+        "bytes": 1777,
+        "sha256": "374f108fe16724622a2c40ab560ef0a4ce27dbec8b019d9fc73e19c461f63535"
+      },
+      "poolgarden-plan.a85756ffaac2142a.svg": {
+        "source": "poolgarden-plan.svg",
+        "bytes": 3802,
+        "sha256": "a85756ffaac2142ab09cd02dbe54a79f5fe087f39bca93dd28b9bc9ecdc62de2"
+      },
+      "room-model.504633d26ca5502f.js": {
+        "source": "room-model.js",
+        "bytes": 4826601,
+        "sha256": "504633d26ca5502f3e0d49ad1214fa05c6cca8c794186a5236cb61650f0944ac"
+      },
+      "sidebed-plan.fcf24a9b498b6c4e.svg": {
+        "source": "sidebed-plan.svg",
+        "bytes": 4614,
+        "sha256": "fcf24a9b498b6c4e202c237cb7ab51c2ed2cfaf6bdaa3c49d265da126a2f3681"
+      },
+      "studio.fcd9fe47725a433e.css": {
+        "source": "studio.css",
+        "bytes": 9096,
+        "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
+      },
+      "terrace-plan.957e635bb1dd19df.svg": {
+        "source": "terrace-plan.svg",
+        "bytes": 5380,
+        "sha256": "957e635bb1dd19df886af23da89921d5bbb27175d016adce7e3183dafbc5c89d"
+      },
+      "utility-plan.b2c4e717767d6696.svg": {
+        "source": "utility-plan.svg",
+        "bytes": 5668,
+        "sha256": "b2c4e717767d6696bb52a96a84abde5dae493bcb29a5dd0c1160da5947c5ba50"
+      },
+      "workshop-plan.edcf99006d2d2145.svg": {
+        "source": "workshop-plan.svg",
+        "bytes": 1570,
+        "sha256": "edcf99006d2d21453631b8faaddfd7797f0cd4929273ed62572dddf8f5de8536"
+      }
+    },
+    "previous_assets": {
+      "gym-plan.66b2dc2d028c722d.svg": {
+        "source": "gym-plan.svg",
+        "bytes": 6937,
+        "sha256": "66b2dc2d028c722d43f7b9e03e5a50466638383fe056de740a74caa2f90d2afa",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-bar.4bf83b6d97dea44d.glb": {
+        "source": "models/compact-bar.glb",
+        "bytes": 10330464,
+        "sha256": "4bf83b6d97dea44d3d304f15282ef085763d9c7c3e32bbdb3e35045ff2fa8fb6",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-bedroom2.a3b09a91265f757c.glb": {
+        "source": "models/compact-bedroom2.glb",
+        "bytes": 8587636,
+        "sha256": "a3b09a91265f757c7240dfdd6cb23d647a1c4a0bc646134b56c29cb4a45b4cb5",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-bedroom3.acd65642f1defcaf.glb": {
+        "source": "models/compact-bedroom3.glb",
+        "bytes": 8742116,
+        "sha256": "acd65642f1defcaf6ba4cac790bea16ebd0caca73fc694e640b1dc4cab5505cc",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-cinema.96431164752ac666.glb": {
+        "source": "models/compact-cinema.glb",
+        "bytes": 8530968,
+        "sha256": "96431164752ac666264681431ab4d3364e0927f5ec9103a5fd6e736c7bf482e3",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-cloakroom.15ee6cce9fbc45d8.glb": {
+        "source": "models/compact-cloakroom.glb",
+        "bytes": 8251992,
+        "sha256": "15ee6cce9fbc45d87b2794bdf0f3e67e4801193a9db41cc472eae8e952da26e1",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-cloakroom.9b37e27f7672069f.json": {
+        "source": "models/compact-cloakroom.json",
+        "bytes": 34651,
+        "sha256": "9b37e27f7672069f587c0aff48a36f5b9b59331b0dbe16ddfcca247204e996e6",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-family.d4c46d80980c604f.glb": {
+        "source": "models/compact-family.glb",
+        "bytes": 10413560,
+        "sha256": "d4c46d80980c604f3fe8daf167bf8b21d0a7be7bacece9bf2ee2da2f3e144bd9",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-family.4937d446710743b5.json": {
+        "source": "models/compact-family.json",
+        "bytes": 28174,
+        "sha256": "4937d446710743b571e19948c224a5729b006ef83795c9cdce4dcf67e0af26c9",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-familybath.c8826d74737864e3.glb": {
+        "source": "models/compact-familybath.glb",
+        "bytes": 8826940,
+        "sha256": "c8826d74737864e384b0ede6ed2c22702fc2c623d169dba0124933f7946bf44b",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-familybath.d6e0ef2664e90d87.json": {
+        "source": "models/compact-familybath.json",
+        "bytes": 39749,
+        "sha256": "d6e0ef2664e90d8748f54775884dce512a3df5495210a00b3de4dfa383bb6a68",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-guest.b6be9d6607065426.glb": {
+        "source": "models/compact-guest.glb",
+        "bytes": 9097512,
+        "sha256": "b6be9d66070654264a957aef7303b4781908572b4f930d4f1cdced3fd9fdcba6",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-guestbath.dc532b1393ff34ee.glb": {
+        "source": "models/compact-guestbath.glb",
+        "bytes": 8604604,
+        "sha256": "dc532b1393ff34ee5291f7eca212d466f02b0261e4dd5f11919af7c856cbf763",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-gym.221ade57b319a623.glb": {
+        "source": "models/compact-gym.glb",
+        "bytes": 9193936,
+        "sha256": "221ade57b319a6231b09885ee7bb3f731c9ba27873b1a0f6caf19510a8d2e38f",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-gym.09967f460adb5f44.json": {
+        "source": "models/compact-gym.json",
+        "bytes": 32428,
+        "sha256": "09967f460adb5f449781ce48dbafb364ef7443b98cf997765103c5af0d357229",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/compact-utility.45fc56b1d82fb176.glb": {
+        "source": "models/compact-utility.glb",
+        "bytes": 8919804,
+        "sha256": "45fc56b1d82fb17662ff07a2f2da72eaa8184e3dc3a12881a45bcdc5b1d1b15a",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-bar.5c99b20b964a80e7.glb": {
+        "source": "models/planning-bar.glb",
+        "bytes": 10330616,
+        "sha256": "5c99b20b964a80e74f6edef90c1f36be9322bbba6d95eea77f6cfa78360c1e6c",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-bedroom2.c33f4dd8d3d8fd6f.glb": {
+        "source": "models/planning-bedroom2.glb",
+        "bytes": 8590292,
+        "sha256": "c33f4dd8d3d8fd6f6504403ae8b44acf724127dac89c19d40ff23d8a848cb1be",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-bedroom3.084099844749a330.glb": {
+        "source": "models/planning-bedroom3.glb",
+        "bytes": 8743972,
+        "sha256": "084099844749a330516288508f010d71b201087b1b9f556defe9aa02146ab981",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-cinema.bb1e3f0b28b80c15.glb": {
+        "source": "models/planning-cinema.glb",
+        "bytes": 8530884,
+        "sha256": "bb1e3f0b28b80c15f3ddf6df18fb5d054a29c5bc8863ccb100f082c58d486d18",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-cloakroom.7261c35a430afc6d.glb": {
+        "source": "models/planning-cloakroom.glb",
+        "bytes": 8252916,
+        "sha256": "7261c35a430afc6debec0fce7385a72590bcec68b2dcd7ba7ac727bc59e2c686",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-cloakroom.aa40dd8d90ced1fb.json": {
+        "source": "models/planning-cloakroom.json",
+        "bytes": 33177,
+        "sha256": "aa40dd8d90ced1fb09e52daf60514a38cc74ec40f298e08c7f3f5bce5e1dd1bb",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-family.a64b8595b6239236.glb": {
+        "source": "models/planning-family.glb",
+        "bytes": 10406944,
+        "sha256": "a64b8595b623923694d9a35bcc2f0a53e4b4d0b5173f2bd806a0926d1bb05569",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-family.4bee52d802b36f39.json": {
+        "source": "models/planning-family.json",
+        "bytes": 26640,
+        "sha256": "4bee52d802b36f39d6ee865058dcc92b39c0c120362a1e581799177491b17fda",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-familybath.1307e2eddf00bab2.glb": {
+        "source": "models/planning-familybath.glb",
+        "bytes": 8828232,
+        "sha256": "1307e2eddf00bab26b166dc19b4a6bfb495e89f6ad799090842e0843dda390ae",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-familybath.d6669d8f045aad3a.json": {
+        "source": "models/planning-familybath.json",
+        "bytes": 38215,
+        "sha256": "d6669d8f045aad3a703f454e163626d26105b05b6ed30733afc979e7edd82faa",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-guest.ffb1f05bed81aecf.glb": {
+        "source": "models/planning-guest.glb",
+        "bytes": 9101988,
+        "sha256": "ffb1f05bed81aecf2a2821b95b80d29be5f93c6f04de01d97c693ed7aaf6fdcc",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-guestbath.2f7c4c2d14df0ef4.glb": {
+        "source": "models/planning-guestbath.glb",
+        "bytes": 8605456,
+        "sha256": "2f7c4c2d14df0ef48fb6877841087d777d4f88bcbae16a133824e2dc97a85e06",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-gym.ad465d1f6f963122.glb": {
+        "source": "models/planning-gym.glb",
+        "bytes": 9195184,
+        "sha256": "ad465d1f6f963122fe3553816586c008e4f5747d6d2c301ffc037e4fc8127105",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-gym.dc67dac65badf929.json": {
+        "source": "models/planning-gym.json",
+        "bytes": 30894,
+        "sha256": "dc67dac65badf929499a04e6b423d5219556a256a5799492906d11213b7e1006",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "models/planning-utility.02ddc797e59adc76.glb": {
+        "source": "models/planning-utility.glb",
+        "bytes": 8922652,
+        "sha256": "02ddc797e59adc766ea3d3535633b24a89cdbad33624a22b85fa149ef6aaf542",
+        "retain_until_next_confirmed_deployment": true
+      },
+      "room-model.26690733546e5bdb.js": {
+        "source": "room-model.js",
+        "bytes": 4792590,
+        "sha256": "26690733546e5bdb78b8e1c0c0e653f8f33ced1c69587a35cb6d3c19f471a283",
+        "retain_until_next_confirmed_deployment": true
+      }
+    }
+  },
+  "interior_studio": {
+    "path": "./interiors/kitchen/",
+    "session": "kitchen-2026-09-25-v1",
+    "options": 10,
+    "images": 20,
+    "engine": "Built-in image_gen",
+    "html_sha256": "85eb1dace1b21e4015c6a1e54c07fac03b3c9bf60fdc136e3ebbd1be5ebaf546",
+    "assets": {
+      "images/01-planning.da95d4f435a5ebe2.png": {
+        "source": "images/01-planning.png",
+        "bytes": 2386642,
+        "sha256": "da95d4f435a5ebe2db3d52bfb856826b677099fffd320087f5c310377cf2a6fc"
+      },
+      "images/01-proposed.be41d91f468c9f6f.png": {
+        "source": "images/01-proposed.png",
+        "bytes": 2258047,
+        "sha256": "be41d91f468c9f6fc7883392d9345d7d5e6297140b8943788ae70887c682ce7f"
+      },
+      "images/02-planning.a514195fa6afad19.png": {
+        "source": "images/02-planning.png",
+        "bytes": 2351531,
+        "sha256": "a514195fa6afad19120e55bcbeec575c80777319a152ab22c14fb2ac16042f3e"
+      },
+      "images/02-proposed.668f481870a929f9.png": {
+        "source": "images/02-proposed.png",
+        "bytes": 2372044,
+        "sha256": "668f481870a929f97aa745d0c3467d5e7e4e8a4894cdbfad3ba02a6b0498f3df"
+      },
+      "images/03-planning.d4bbf18207440144.png": {
+        "source": "images/03-planning.png",
+        "bytes": 2347588,
+        "sha256": "d4bbf1820744014420c78f29ede3a2e9cca3e1a53bed3ea5d39238dc54ece686"
+      },
+      "images/03-proposed.c8061b9c109ef68a.png": {
+        "source": "images/03-proposed.png",
+        "bytes": 2246707,
+        "sha256": "c8061b9c109ef68aebe1710321b7398dc4132f8e82694f290880197ea35bd4de"
+      },
+      "images/04-planning.32e6cf675f158f8c.png": {
+        "source": "images/04-planning.png",
+        "bytes": 2376822,
+        "sha256": "32e6cf675f158f8c2f7d80fdaee2dbfe00c631a97b2356bd9af9a4e5025a8c5a"
+      },
+      "images/04-proposed.6eb2b00b81b97439.png": {
+        "source": "images/04-proposed.png",
+        "bytes": 2138363,
+        "sha256": "6eb2b00b81b9743989d2d2657feaf9d1b4a0cd455c570e12cc2dd1686c4f4e04"
+      },
+      "images/05-planning.fe804c82f5e9ec18.png": {
+        "source": "images/05-planning.png",
+        "bytes": 2296215,
+        "sha256": "fe804c82f5e9ec18b1b66291842bbc9d22be38f09b7d0214d881792fb18c8352"
+      },
+      "images/05-proposed.a6695788b03853cf.png": {
+        "source": "images/05-proposed.png",
+        "bytes": 2187923,
+        "sha256": "a6695788b03853cfffbb542fc0a8bc8bb2120b8ec648d6784329bef43608d693"
+      },
+      "images/06-planning.97d0bf421f9e8c3e.png": {
+        "source": "images/06-planning.png",
+        "bytes": 2318242,
+        "sha256": "97d0bf421f9e8c3e0035ea8139ba9c547bbe79da74279ea5d8415a4c6c380ef4"
+      },
+      "images/06-proposed.91067e244492cd57.png": {
+        "source": "images/06-proposed.png",
+        "bytes": 2220236,
+        "sha256": "91067e244492cd5780923bda50736e5c35fc25047d92032d3c5592ae284dcb2e"
+      },
+      "images/07-planning.d059fa705ff52ad7.png": {
+        "source": "images/07-planning.png",
+        "bytes": 2473325,
+        "sha256": "d059fa705ff52ad70a225fba6da3a160e6b5e46fa36ceec4e9cfb38f21d014eb"
+      },
+      "images/07-proposed.4dd418116911b6b2.png": {
+        "source": "images/07-proposed.png",
+        "bytes": 2249343,
+        "sha256": "4dd418116911b6b2b91903a5baf1f0d31f7bd3c327c2a712b1312666ac8e9c9a"
+      },
+      "images/08-planning.2a3095d7c84c6894.png": {
+        "source": "images/08-planning.png",
+        "bytes": 2307575,
+        "sha256": "2a3095d7c84c6894751a9e74e3c5ad4b52928411edebd99b65137e431672c285"
+      },
+      "images/08-proposed.dca1500c8ade3edd.png": {
+        "source": "images/08-proposed.png",
+        "bytes": 2275895,
+        "sha256": "dca1500c8ade3edddca8ba28a1a90db00ac48105c6fd73aba781d8407796fa44"
+      },
+      "images/09-planning.eccbc74c710f1199.png": {
+        "source": "images/09-planning.png",
+        "bytes": 2355727,
+        "sha256": "eccbc74c710f1199a6ee779e5d1088f99ed7055e9fd1f597a5ffacc25dc52c6d"
+      },
+      "images/09-proposed.db6515f016c7815c.png": {
+        "source": "images/09-proposed.png",
+        "bytes": 2167044,
+        "sha256": "db6515f016c7815cdd532f5cfc50c2cb871593958d818e69eccbd2540293e8bd"
+      },
+      "images/10-planning.49ddd69bc62ba8fd.png": {
+        "source": "images/10-planning.png",
+        "bytes": 2353296,
+        "sha256": "49ddd69bc62ba8fdfd4b6692506d6b67ef71c463602e37b0461ae0018f304734"
+      },
+      "images/10-proposed.25dfdf1c072a396e.png": {
+        "source": "images/10-proposed.png",
+        "bytes": 2214251,
+        "sha256": "25dfdf1c072a396ec7d2aa7868449df69ad671a8a6099fa955ff6a089609fd10"
+      },
+      "models/compact-kitchen.27e260bd321d6ac9.glb.gz": {
+        "source": "models/compact-kitchen.glb",
+        "bytes": 5755339,
+        "sha256": "27e260bd321d6ac9ffe438b655863438cdd38ec47b1144226615d4be2edaac88"
+      },
+      "models/compact-kitchen.90b55baccd61b292.json": {
+        "source": "models/compact-kitchen.json",
+        "bytes": 54174,
+        "sha256": "90b55baccd61b2929e8f7616909a7884631102aa966a75c3710f77da24b5115e"
+      },
+      "models/compact-render.3208c5edee00fa9e.png": {
+        "source": "models/compact-render.png",
+        "bytes": 2055762,
+        "sha256": "3208c5edee00fa9e55d22d5f2235e1e8d6b99b3786dea89ced2869228cfc276e"
+      },
+      "models/planning-kitchen.8b1b3db9a01a633f.glb.gz": {
+        "source": "models/planning-kitchen.glb",
+        "bytes": 4949384,
+        "sha256": "8b1b3db9a01a633fac81ad57ff63b952f59add25d5f6f81d90caf688d7da0458"
+      },
+      "models/planning-kitchen.8f053540b129ecf3.json": {
+        "source": "models/planning-kitchen.json",
+        "bytes": 48996,
+        "sha256": "8f053540b129ecf3dcfa4bbb759311b5e2f8949f04f72a215addb8530fb19df7"
+      },
+      "models/planning-render.100c35d74fb6f8e6.png": {
+        "source": "models/planning-render.png",
+        "bytes": 2078808,
+        "sha256": "100c35d74fb6f8e6e71a64650838ec7d961e73b9216d314d41f6b40e4cc69906"
+      },
+      "options.4827b8f804e259a7.json": {
+        "source": "options.json",
+        "bytes": 6205,
+        "sha256": "4827b8f804e259a74e758fb83ef98259a940da4b924e736267ec79f4edd0ca81"
+      },
+      "prompts.1d9ca2ba962169d1.json": {
+        "source": "prompts.json",
+        "bytes": 54075,
+        "sha256": "1d9ca2ba962169d10ade54f31b08e7ea1d4af2521ed12378894a1aa5ae3ad8db"
+      },
+      "references/planning-dining.5553f555fe479ffb.png": {
+        "source": "references/planning-dining.png",
+        "bytes": 608503,
+        "sha256": "5553f555fe479ffbd43e1c3de5fc416821ac348743c9178e44c4e34ba260bdf0"
+      },
+      "references/planning-dining.png.829cff63b09abd82.json": {
+        "source": "references/planning-dining.png.json",
+        "bytes": 221,
+        "sha256": "829cff63b09abd82ff701b1de9075525812a75f3dbc531c52386d7c59cdac912"
+      },
+      "references/planning-kitchen-reverse.43089d87e24ff853.png": {
+        "source": "references/planning-kitchen-reverse.png",
+        "bytes": 729470,
+        "sha256": "43089d87e24ff853b584c05c99ef4d895b252a15cbd99fcb6b332d2744de49f8"
+      },
+      "references/planning-kitchen-reverse.png.e298a068bf3fc9c1.json": {
+        "source": "references/planning-kitchen-reverse.png.json",
+        "bytes": 240,
+        "sha256": "e298a068bf3fc9c1e1e81f17800b75827952ac4da5feb9935c4076bb1becbb69"
+      },
+      "references/planning-kitchen.fd6b47635e45b032.png": {
+        "source": "references/planning-kitchen.png",
+        "bytes": 542055,
+        "sha256": "fd6b47635e45b03216e24b4837a2b7ef1bc377f5ad5949c5d16105d819b43a41"
+      },
+      "references/planning-kitchen.png.367259ce309f32c6.json": {
+        "source": "references/planning-kitchen.png.json",
+        "bytes": 228,
+        "sha256": "367259ce309f32c6f899ad48e4a78d354d443f4c1407d4d32f975f8df3395252"
+      },
+      "references/proposed-dining.5335036903e6bdfa.png": {
+        "source": "references/proposed-dining.png",
+        "bytes": 589761,
+        "sha256": "5335036903e6bdfaf020013527cf72206f9b3e001b829270785b578977b87cb4"
+      },
+      "references/proposed-dining.png.29495e3629313e44.json": {
+        "source": "references/proposed-dining.png.json",
+        "bytes": 221,
+        "sha256": "29495e3629313e445318578b0201b19e2a614eab93d3a7f53a881a035c167821"
+      },
+      "references/proposed-kitchen-reverse.0c6c32f2f81d8ae4.png": {
+        "source": "references/proposed-kitchen-reverse.png",
+        "bytes": 596653,
+        "sha256": "0c6c32f2f81d8ae4e4e5598a62bd3c8fe54324bb30f1086cae5068cd479b6d0f"
+      },
+      "references/proposed-kitchen-reverse.png.506ffcbb6f029345.json": {
+        "source": "references/proposed-kitchen-reverse.png.json",
+        "bytes": 240,
+        "sha256": "506ffcbb6f029345b46bdff07a9e457f1861519401be91435fb36cebaddc777a"
+      },
+      "references/proposed-kitchen.b170925cee0c06db.png": {
+        "source": "references/proposed-kitchen.png",
+        "bytes": 417661,
+        "sha256": "b170925cee0c06db392960d34e9981d97fefc6cd00f41d0d28e32e2f2bc18fee"
+      },
+      "references/proposed-kitchen.png.982a4c163a074236.json": {
+        "source": "references/proposed-kitchen.png.json",
+        "bytes": 228,
+        "sha256": "982a4c163a07423699cf5aabfd38c22c4362b9e84c5a0f63837bf4058d44a0ec"
+      },
+      "room-model.504633d26ca5502f.js": {
+        "source": "room-model.js",
+        "bytes": 4826601,
+        "sha256": "504633d26ca5502f3e0d49ad1214fa05c6cca8c794186a5236cb61650f0944ac"
+      },
+      "studio.fcd9fe47725a433e.css": {
+        "source": "studio.css",
+        "bytes": 9096,
+        "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
+      },
+      "studio.dee5c52936a4865d.js": {
+        "source": "studio.js",
+        "bytes": 18396,
+        "sha256": "dee5c52936a4865d05b9499dfd852ddb3452ce064f1503dd7f3ec4d4b12bbe2d"
+      }
+    },
+    "previous_assets": {},
+    "model_html_sha256": "e7b5b18b089fdac433104f8fa5f5ef19d2cc6608749178c0ef1e09d8b239ef47"
+  },
+  "principal_studio": {
+    "path": "./interiors/principal/",
+    "session": "principal-2026-09-26-v1",
+    "options": 10,
+    "images": 10,
+    "engine": "Built-in image_gen",
+    "html_sha256": "ac51bdab7f9f20289e437799a87ab00026ff54629d7229fb41d077ed4048eb43",
+    "assets": {
+      "arrangements/A.212c9812a028e8c2.svg": {
+        "source": "arrangements/A.svg",
+        "bytes": 9262,
+        "sha256": "212c9812a028e8c23100fa7b872f6925c9e4f74099770326d1c8794ce8563399"
+      },
+      "arrangements/B.6cb17e58c0149f8a.svg": {
+        "source": "arrangements/B.svg",
+        "bytes": 9627,
+        "sha256": "6cb17e58c0149f8ad6e89a33b28191f0e4b6f8b505f45c9c9e0b931bddb83d7e"
+      },
+      "arrangements/options.5e17cb328d763f32.json": {
+        "source": "arrangements/options.json",
+        "bytes": 1437,
+        "sha256": "5e17cb328d763f32285f3cf2144ddcb8bf1249f0e04f4fd4af2cc30f19e91984"
+      },
+      "bedroom-plan.2411752f1ba43407.svg": {
+        "source": "bedroom-plan.svg",
+        "bytes": 9453,
+        "sha256": "2411752f1ba434075587fe99f6c30a6da7ebe3a745b2d8e1027cfb1bae133d41"
+      },
+      "ensuite-plan.6fb18d84e2a0f305.svg": {
+        "source": "ensuite-plan.svg",
+        "bytes": 9991,
+        "sha256": "6fb18d84e2a0f3055c9ad7abc6780fa4e8fcf4b096d7ae4c7b6531288436be67"
+      },
+      "floorplans/01.bb1c00680cfe3f19.svg": {
+        "source": "floorplans/01.svg",
+        "bytes": 11459,
+        "sha256": "bb1c00680cfe3f196b84f95313f76019aade797da337b2618a86dcd9946f18a6"
+      },
+      "floorplans/02.7f5b44ffaa653f88.svg": {
+        "source": "floorplans/02.svg",
+        "bytes": 11968,
+        "sha256": "7f5b44ffaa653f8877a0878aa904337f4354bd8ecac9a1e7a30df69a27f82ef1"
+      },
+      "floorplans/03.916508bdb2dd1ae4.svg": {
+        "source": "floorplans/03.svg",
+        "bytes": 11585,
+        "sha256": "916508bdb2dd1ae43b17f0d96a31ba024c8b552cd1012f5a0c574a340ba1a2cb"
+      },
+      "floorplans/04.43935adb6826b7e6.svg": {
+        "source": "floorplans/04.svg",
+        "bytes": 12946,
+        "sha256": "43935adb6826b7e6b2633d6b81865ec00c0b30665b1036cf767e0a27b7f8c334"
+      },
+      "floorplans/05.e306b1560570187c.svg": {
+        "source": "floorplans/05.svg",
+        "bytes": 12371,
+        "sha256": "e306b1560570187cfb4903131e271bcbc3fa14d763176c40aea0cf6f2ca5289d"
+      },
+      "floorplans/options.8e98d3013e2a2871.json": {
+        "source": "floorplans/options.json",
+        "bytes": 3995,
+        "sha256": "8e98d3013e2a28716a519825b06f712c8a9de02fb18987300e7f49f5fb581ea7"
+      },
+      "image-manifest.1a852bff56b5e71f.json": {
+        "source": "image-manifest.json",
+        "bytes": 1583,
+        "sha256": "1a852bff56b5e71fc2fd928aa48a688be82ca866a7f346d02c35ae1b75b07605"
+      },
+      "images/01.9c0f6e21bc213fee.png": {
+        "source": "images/01.png",
+        "bytes": 2477141,
+        "sha256": "9c0f6e21bc213feea90f7542faf37f37f566686866256c0b1957a7b4ae4ebe78"
+      },
+      "images/02.0ce8f8e9852d0566.png": {
+        "source": "images/02.png",
+        "bytes": 2560579,
+        "sha256": "0ce8f8e9852d0566c576bb1769df65ed61e5016ffdd7728575dc08895da34e59"
+      },
+      "images/03.b8acaba8eade305a.png": {
+        "source": "images/03.png",
+        "bytes": 2502652,
+        "sha256": "b8acaba8eade305aadb19ea79277f4ee56baeaeacbdadbfe352fe9f532f08110"
+      },
+      "images/04.006f7ebe643f5049.png": {
+        "source": "images/04.png",
+        "bytes": 2489498,
+        "sha256": "006f7ebe643f5049034bd8c21f2d4ebc2ef01b1ad2896c74037632f9363f4007"
+      },
+      "images/05.0da3ae66d6989ed6.png": {
+        "source": "images/05.png",
+        "bytes": 2417260,
+        "sha256": "0da3ae66d6989ed69fc64f567a2279b985d4d56c71ac76c090422d8979d26fd3"
+      },
+      "images/06.4adbec965434b604.png": {
+        "source": "images/06.png",
+        "bytes": 2508487,
+        "sha256": "4adbec965434b60457a3760e523ce4ebfe81692b49df9599f9a7ced455165301"
+      },
+      "images/07.8e15da701f4f15b1.png": {
+        "source": "images/07.png",
+        "bytes": 2716411,
+        "sha256": "8e15da701f4f15b1f4c80f3ed6f7b77b4d2f74c2a3202012de7cd4c24f9b2af9"
+      },
+      "images/08.1f382642a9abd83d.png": {
+        "source": "images/08.png",
+        "bytes": 2434162,
+        "sha256": "1f382642a9abd83d6ccbb5903245c69b43b61dcdc56eb3769165821f3319ab8c"
+      },
+      "images/09.a1a694a66a30d610.png": {
+        "source": "images/09.png",
+        "bytes": 2514380,
+        "sha256": "a1a694a66a30d610a1fc96a48ce1db4138fead8704112f59c7614af3154d7a83"
+      },
+      "images/10.abbd0009a3c3c852.png": {
+        "source": "images/10.png",
+        "bytes": 2455670,
+        "sha256": "abbd0009a3c3c85296ef90bf655007a0d18c4f6dc0ec792f5764e3c338f3eb95"
+      },
+      "layout-plan.c6466fe644d4a4c8.svg": {
+        "source": "layout-plan.svg",
+        "bytes": 12967,
+        "sha256": "c6466fe644d4a4c8145284d100a6f6214c35a0fe0e61169b6f10c36aa6ca62ec"
+      },
+      "models/compact-bedroom.203ed8bf4cd9aa13.glb.gz": {
+        "source": "models/compact-bedroom.glb",
+        "bytes": 3129831,
+        "sha256": "203ed8bf4cd9aa134efd74c0b84f1a5f5ebbc38e560d0e7705b264223433a21a"
+      },
+      "models/compact-bedroom.7aab47c69656dcac.json": {
+        "source": "models/compact-bedroom.json",
+        "bytes": 31809,
+        "sha256": "7aab47c69656dcac3c77ccbc2ca4c420b686ad0b6f90441790f44af4eaf6561f"
+      },
+      "models/compact-ensuite.8c2ddcaafbf9dea1.glb.gz": {
+        "source": "models/compact-ensuite.glb",
+        "bytes": 5406505,
+        "sha256": "8c2ddcaafbf9dea1917fb51c7488339ac98c47986aa34735d69963bc061ea01b"
+      },
+      "models/compact-ensuite.7de756bb235760ab.json": {
+        "source": "models/compact-ensuite.json",
+        "bytes": 13161,
+        "sha256": "7de756bb235760aba82b43156227d9d694f66674b4e05574e7684444d393a2f0"
+      },
+      "models/compact-suite.613cfd48d9b70472.glb.gz": {
+        "source": "models/compact-suite.glb",
+        "bytes": 1919894,
+        "sha256": "613cfd48d9b704728fbb1d0bb96ba0676d6ff2664106d8f617aeba62c1bdaa09"
+      },
+      "models/compact-suite.c6bd92d39d532267.json": {
+        "source": "models/compact-suite.json",
+        "bytes": 31136,
+        "sha256": "c6bd92d39d53226795c70932777a8b3132af75edfa5d6a91d202ff7bf3fd456e"
+      },
+      "models/planning-bedroom.46ae91e7f8e78616.glb.gz": {
+        "source": "models/planning-bedroom.glb",
+        "bytes": 3136994,
+        "sha256": "46ae91e7f8e786168a8e695592bf4c0155c1e0617f82a8a0e801aae0d131eabb"
+      },
+      "models/planning-bedroom.776570619d1745c0.json": {
+        "source": "models/planning-bedroom.json",
+        "bytes": 29310,
+        "sha256": "776570619d1745c09dedf16cff9a6c2b49f3fbe7e974f58a286e237618f8a0b5"
+      },
+      "models/planning-ensuite.fb8eb0313289251d.glb.gz": {
+        "source": "models/planning-ensuite.glb",
+        "bytes": 5413832,
+        "sha256": "fb8eb0313289251d6e66f4f431439319bd5f466d9cefcdd23ced6a6bfa812e1f"
+      },
+      "models/planning-ensuite.8cfe99dd6e6ba667.json": {
+        "source": "models/planning-ensuite.json",
+        "bytes": 13296,
+        "sha256": "8cfe99dd6e6ba6670dc4e9a24ba72e7d61667990d0b712f3e82d93c61b606095"
+      },
+      "models/planning-suite.f7dfa3720aa12d0c.glb.gz": {
+        "source": "models/planning-suite.glb",
+        "bytes": 1925739,
+        "sha256": "f7dfa3720aa12d0c1f11a6a1dfd873b5b453b452d5036f1185296be7ed0d06af"
+      },
+      "models/planning-suite.a756fe5054e68e7e.json": {
+        "source": "models/planning-suite.json",
+        "bytes": 28637,
+        "sha256": "a756fe5054e68e7e40b75febc71679293176067e74d519278f224c4ae7cad6be"
+      },
+      "options.f67a961f5dc61645.json": {
+        "source": "options.json",
+        "bytes": 6573,
+        "sha256": "f67a961f5dc6164569ef557d8643e3909af83b8de6798263880a9e38fcd97043"
+      },
+      "prompts.c23afe02429ca187.json": {
+        "source": "prompts.json",
+        "bytes": 19364,
+        "sha256": "c23afe02429ca187bf50ff8ff2d07a518e88be6a4f7e85af51a85457da00ce18"
+      },
+      "references/captures.b9a63a8390eeadb2.json": {
+        "source": "references/captures.json",
+        "bytes": 1738,
+        "sha256": "b9a63a8390eeadb254a2081f1893dc9caee2f34bcfec1b55834dc64fef498a42"
+      },
+      "references/planning-bedroom.232183cc920eea4d.png": {
+        "source": "references/planning-bedroom.png",
+        "bytes": 372344,
+        "sha256": "232183cc920eea4dcdb6c598e54faa7f025b5bb4475ce4016b96da7044e9bb99"
+      },
+      "references/planning-sitting.5f48e7bf88276bbc.png": {
+        "source": "references/planning-sitting.png",
+        "bytes": 309991,
+        "sha256": "5f48e7bf88276bbce43c6ef3f065e4f45b82b61269ec2600582a457ee1e433dc"
+      },
+      "references/planning-study.3c52fa7173f8c05e.png": {
+        "source": "references/planning-study.png",
+        "bytes": 622501,
+        "sha256": "3c52fa7173f8c05ecda9f757bdb5b337dd73ef31c10dc4d4472f0abe12cff478"
+      },
+      "references/proposed-bedroom.e9a355bdcbdf2fb8.png": {
+        "source": "references/proposed-bedroom.png",
+        "bytes": 368182,
+        "sha256": "e9a355bdcbdf2fb8aaf240b427615722ba9a2e9fbe6a7a51b7e17d2bf9f28123"
+      },
+      "references/proposed-sitting.29274e0085e2bbb6.png": {
+        "source": "references/proposed-sitting.png",
+        "bytes": 312794,
+        "sha256": "29274e0085e2bbb60743ae6d1099df10a4c2eaeee1f2cba3edf4571f45110db5"
+      },
+      "references/proposed-study.e77eb6bafc270fab.png": {
+        "source": "references/proposed-study.png",
+        "bytes": 628369,
+        "sha256": "e77eb6bafc270fab979f468b6b31f7af4916275f90158ffc41f6de76330e9c22"
+      },
+      "room-model.504633d26ca5502f.js": {
+        "source": "room-model.js",
+        "bytes": 4826601,
+        "sha256": "504633d26ca5502f3e0d49ad1214fa05c6cca8c794186a5236cb61650f0944ac"
+      },
+      "studio.fcd9fe47725a433e.css": {
+        "source": "studio.css",
+        "bytes": 9096,
+        "sha256": "fcd9fe47725a433eaf2aed57019aac57377618fa5a3fee8abc9b2ef66c19cf72"
+      },
+      "studio.b92e9d3dec6391ce.js": {
+        "source": "studio.js",
+        "bytes": 18224,
+        "sha256": "b92e9d3dec6391ce1ac8a2e2841421aaab0aa1d24041d1b6c719419ef0271753"
+      }
+    },
+    "previous_assets": {},
+    "model_html_sha256": "1f084372b0e5446a76b383e763fbeae7becfa40481d00336f955d1a842295d70",
+    "bedroom_html_sha256": "e72ca8a3607953685f5b77e13f1a1507ac3c03aba318b246d07545ccf4270af2",
+    "ensuite_html_sha256": "a97b2f4b159d239036f660550fa81f87bcbb6883f0818e60bc6ac8c30d942980",
+    "plans_html_sha256": "05e199d522867e7e0fd7abf6c65e3e551d531ea0f353c6acd90dc7d6d01be37d",
+    "floorplans": {
+      "path": "plans.html",
+      "options": 5,
+      "session": "principal-floorplans-2026-09-26-v1",
+      "method": "Measured model-based SVG floorplans"
+    },
+    "arrangements_html_sha256": "efa8795abe611cd8678c0a1620609aeae6b68da19e36a36a2a19ca80a604fe69",
+    "arrangements": {
+      "path": "arrangements.html",
+      "options": 0,
+      "working_studies": 2,
+      "status": "withdrawn",
+      "session": "principal-arrangements-2026-09-26-v2",
+      "method": "Measured furniture studies; separate design review required"
+    }
+  },
+  "published_utc": "2026-09-27T06:07:10.641981+00:00",
+  "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
+  "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
+  "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
+  "assets": {
+    "house.bc357a957f204bb2.glb": {
+      "bytes": 20340016,
+      "sha256": "bc357a957f204bb2bb3fd701166ea396b2527cda06b7658d88c5a3bdf8d0fbec"
+    },
+    "navigation.ee090474080cd08c.json": {
+      "bytes": 531449,
+      "sha256": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
+    },
+    "proposal-compact.128a3653f68c8ac7.glb": {
+      "bytes": 65387428,
+      "sha256": "128a3653f68c8ac772904a141ac739696d615eede164301208fce466da1879cf"
+    },
+    "proposal-compact-navigation.9e6053779607ff00.json": {
+      "bytes": 1825857,
+      "sha256": "9e6053779607ff0087bccc68565ad2015e12631ac276523178e719c7190bc3b9"
+    },
+    "proposal-planning.12cfc30ad6d84b64.glb": {
+      "bytes": 63490716,
+      "sha256": "12cfc30ad6d84b64225b4b849165f68c21c1b89410a2c4031c745ad9fd0050b8"
+    },
+    "proposal-planning-navigation.27f15bc036d483b2.json": {
+      "bytes": 1543300,
+      "sha256": "27f15bc036d483b24cbef26510dc695b27089e9b2a27151111ca1e950d4ac23c"
+    },
+    "redesign-i1.5eb0c2a9c90443f1.glb": {
+      "bytes": 30706732,
+      "sha256": "5eb0c2a9c90443f1b0d662d0b05192e3de4e32eb93636372e4c0ddfd44619d9a"
+    },
+    "redesign-i1-navigation.8d0efdd5b38dd3ea.json": {
+      "bytes": 1836747,
+      "sha256": "8d0efdd5b38dd3eae9a4828ea726ec4a00c6adcea5cbaee1d97ed39570f0abf7"
+    },
+    "redesign-i2.e066f668e7b850fa.glb": {
+      "bytes": 29457716,
+      "sha256": "e066f668e7b850faa836cbeb3a5e6ff5b087c3650430d44a85edb36a19cb283a"
+    },
+    "redesign-i2-navigation.35b73f261d55e096.json": {
+      "bytes": 2006112,
+      "sha256": "35b73f261d55e0969b365dac2479d24dc111d2f84d3ef2ec3f534ce90120c76f"
+    },
+    "redesign-i3.a87df23f20f2bf56.glb": {
+      "bytes": 29907920,
+      "sha256": "a87df23f20f2bf5603445a0cc85bc8d682e43b1d69a8507f73cc8b59b1a56c88"
+    },
+    "redesign-i3-navigation.559afe0fffe23709.json": {
+      "bytes": 1952446,
+      "sha256": "559afe0fffe23709c646fe13b2219b71d5896334f0fa42abd60eabf9d2055b29"
+    },
+    "redesign-e1.b01728b0b23ab8cb.glb": {
+      "bytes": 16016256,
+      "sha256": "b01728b0b23ab8cbd775d1ca1816cbf8e4331ed3b693bbed50d11c440fd025ad"
+    },
+    "redesign-e1-navigation.71aea8b1a737e77d.json": {
+      "bytes": 1304788,
+      "sha256": "71aea8b1a737e77d6883e4120a1b6406b091cfbdf879105e8ed2c11d44ea775b"
+    },
+    "redesign-e2.6cd85a7038eb0ab7.glb": {
+      "bytes": 17810768,
+      "sha256": "6cd85a7038eb0ab7691d8e4fd2ba31f8c76f6dc95e6d3ec4b76343f084096caf"
+    },
+    "redesign-e2-navigation.83690541e7bd5367.json": {
+      "bytes": 1057258,
+      "sha256": "83690541e7bd53672706ab5e1ca4000fe51cf094bbde00796f894d82a70963e1"
+    },
+    "redesign-e3.59ceff94f4f5056a.glb": {
+      "bytes": 19433584,
+      "sha256": "59ceff94f4f5056a4f0c7a1c17914c0bdce6b1915de78ef947bf627d02bb1054"
+    },
+    "redesign-e3-navigation.4268eedcca5bdd34.json": {
+      "bytes": 963339,
+      "sha256": "4268eedcca5bdd34feffde71840d1a35b1a638c9f1adc4817bba725083a1357c"
+    },
+    "redesign-g1.dcf35466c0fe0d5c.glb": {
+      "bytes": 29916968,
+      "sha256": "dcf35466c0fe0d5ca4383be6ad3d3bb7b4348b683f0b0669f3746118b8f1e921"
+    },
+    "redesign-g1-navigation.5ac4c2d56c138bc3.json": {
+      "bytes": 2010991,
+      "sha256": "5ac4c2d56c138bc30b72b5b9a7f8fbbdca6c3c5988c1634e75f68dd1e137c02c"
+    },
+    "style.1bc4a2b50aa0d851.css": {
+      "bytes": 25871,
+      "sha256": "1bc4a2b50aa0d8515c1d99cd9711a8d11e557dfef76de13e69ef506aacfdc19a"
+    },
+    "app.f9f513cd767946d8.js": {
+      "bytes": 5380153,
+      "sha256": "f9f513cd767946d8e9d40d0493c5403da7d8505b63ff05a58d59871ca8264557"
+    }
+  },
+  "previous_assets": {},
+  "easter": {
+    "path": "../easter/",
+    "delay_active_seconds": 0,
+    "trigger": "house entry after automatic walk-over garden shed bow pickup",
+    "spawn_visibility": "whole body outside current camera frustum with edge margin",
+    "game": "unified tour with optional wave survival",
+    "weapons": {
+      "bow": 1,
+      "pistol": 3,
+      "shotgun": 5,
+      "carbine": 7
+    },
+    "enemy_types": [
+      "shambler",
+      "runner",
+      "brute",
+      "flanker"
+    ],
+    "concurrent_cap": {
+      "desktop": 12,
+      "touch": 7
+    },
+    "html_sha256": "31f5897d9eb32e7864e5e5c802c9fda64566d52f7d7f1de5bc7b7a01a492d76b"
+  },
+  "designs": {
+    "existing": "./",
+    "proposed": "./?design=proposed",
+    "planning": "./?design=planning",
+    "proposal_label": "Proposed",
+    "proposal_revision": "P8",
+    "proposal_updated_at": "2026-09-27T05:56:43.517776+00:00",
+    "proposal_native_sha256": "fb42bf1076e6bedfa4b84f3472d630ddd4ee82921b6cb7e1176523d8784593f2",
+    "proposal_geometry_sha256": "350bf7e467540007374197717e07fc2a6ad571bfe69b88620aacd08d7304a9c6",
+    "gate_aligned": "./?design=g1",
+    "gate_aligned_updated_at": "2026-09-25T09:13:00.386616+00:00",
+    "planning_label": "Proposed (planning application)",
+    "planning_updated_at": "2026-09-27T05:55:36.388084+00:00",
+    "planning_native_sha256": "19134cf1378df2ddc1ed9ade4d0e57523833bd2ba8b7016071a9b56fec629b17",
+    "planning_geometry_sha256": "cda8a0594e8bd880777b0541702c70c7e81f13a42a622a338192434a852f281c"
+  },
+  "exterior_finishes": {
+    "scope": "house-and-extensions",
+    "walls": [
+      "render-oak",
+      "brick"
+    ],
+    "roof": [
+      "dark",
+      "light"
+    ],
+    "dormers": "always-tiled",
+    "per_design_preferences": true
+  },
+  "redesign_review": {
+    "path": "./redesigns/",
+    "options": {
+      "i1": {
+        "path": "./?design=i1",
+        "model_updated_at": "2026-09-25T04:31:27.446974+00:00"
+      },
+      "i2": {
+        "path": "./?design=i2",
+        "model_updated_at": "2026-09-25T04:31:30.979245+00:00"
+      },
+      "i3": {
+        "path": "./?design=i3",
+        "model_updated_at": "2026-09-25T04:32:44.260921+00:00"
+      },
+      "e1": {
+        "path": "./?design=e1",
+        "model_updated_at": "2026-09-25T05:48:45.337703+00:00"
+      },
+      "e2": {
+        "path": "./?design=e2",
+        "model_updated_at": "2026-09-25T05:48:46.475973+00:00"
+      },
+      "e3": {
+        "path": "./?design=e3",
+        "model_updated_at": "2026-09-25T05:50:02.805234+00:00"
+      }
+    },
+    "assets": {
+      "images/e1-front.443f1ad64480da55.jpg": {
+        "bytes": 291186,
+        "sha256": "443f1ad64480da55b02e5c1956222ff5833c2343788243b51728dba42ec4ffbd"
+      },
+      "images/e1-interior.8f7b6d0399d57ea7.jpg": {
+        "bytes": 155266,
+        "sha256": "8f7b6d0399d57ea73cb1a834fdecf1da4393baa0114cf7fdc40497bc415f98ed"
+      },
+      "images/e1-rear.706682cb8e3d1db7.jpg": {
+        "bytes": 312681,
+        "sha256": "706682cb8e3d1db7aa120039e8ded2464543e70de2513a8140521d89394e7a21"
+      },
+      "images/e2-front.44f1f673e9f21020.jpg": {
+        "bytes": 289422,
+        "sha256": "44f1f673e9f210201006223a816e554fe0585f7e75de89676d03657c493993b3"
+      },
+      "images/e2-interior.fcefd69f06678186.jpg": {
+        "bytes": 67661,
+        "sha256": "fcefd69f06678186857d759a4b0bf6ac2ca8580b0922bb0dfa493e0348cc6a37"
+      },
+      "images/e2-rear.7a7c0359c82294bd.jpg": {
+        "bytes": 313813,
+        "sha256": "7a7c0359c82294bd0397ff6d4f28905ca470bf0b5068b268344993b0dfc77eab"
+      },
+      "images/e3-front.f39f2acee832d103.jpg": {
+        "bytes": 298276,
+        "sha256": "f39f2acee832d103224f0efc93e2b2cf542489225cf1d599228670301f4583b1"
+      },
+      "images/e3-interior.1e03addcdf371c0d.jpg": {
+        "bytes": 96737,
+        "sha256": "1e03addcdf371c0d81cdb4e7ae6641672bbd56ffbe74114a269d07dad8f40f7b"
+      },
+      "images/e3-rear.744b5398525ff48e.jpg": {
+        "bytes": 317058,
+        "sha256": "744b5398525ff48e2777ff8b8ff936e1021dbbd24cd145a8294b7228db703e30"
+      },
+      "images/i1-front.5e4cea0b26c5eecc.jpg": {
+        "bytes": 309044,
+        "sha256": "5e4cea0b26c5eecc53a2782c6ff2b76c175dd580036045b648f5bc8d4f1224f6"
+      },
+      "images/i1-interior.d8071df270dc3b41.jpg": {
+        "bytes": 156234,
+        "sha256": "d8071df270dc3b4152c7c132770fbd2b0bd66006ad208652ce39bfe5a115f9ce"
+      },
+      "images/i1-rear.cef237ccd6e34940.jpg": {
+        "bytes": 330603,
+        "sha256": "cef237ccd6e349407dafd4732723bf739ba47a3503d5c187ee374255dc087041"
+      },
+      "images/i2-front.77c2944cb92178a5.jpg": {
+        "bytes": 308892,
+        "sha256": "77c2944cb92178a53cb78cbbec01587de2480004bcbb08a14b08c80d355354f4"
+      },
+      "images/i2-interior.276bf2a840e69b97.jpg": {
+        "bytes": 146263,
+        "sha256": "276bf2a840e69b9739da1bd0b243d22b386f7305f81d48399dec5fac75d491b4"
+      },
+      "images/i2-rear.a7b9e85fa2982d6d.jpg": {
+        "bytes": 330857,
+        "sha256": "a7b9e85fa2982d6ded69d641bdc45375a7d2edc55f1e94996137f10a99589caa"
+      },
+      "images/i3-front.8a0117100ce2c47a.jpg": {
+        "bytes": 309063,
+        "sha256": "8a0117100ce2c47a52a98e5b74ad23b76932a9901561681ba23be06d8ad10381"
+      },
+      "images/i3-interior.2e4ae7a30aedf873.jpg": {
+        "bytes": 90556,
+        "sha256": "2e4ae7a30aedf8736a4b7d5f6e0ef73e683705653d848990edfd4bc245bd5617"
+      },
+      "images/i3-rear.9b08d1ef50614765.jpg": {
+        "bytes": 330693,
+        "sha256": "9b08d1ef506147658034c27472e4a2a8b23fecdea8bb2f1e75f1645425db66ca"
+      },
+      "options.e75444cd178d5176.json": {
+        "bytes": 68449,
+        "sha256": "e75444cd178d5176a8baefc2dbf9527e36d321e928cc7ac6e5aa5b6c8ffbf94d"
+      },
+      "plans/e1/first-floor-detail.b4b30ee5ffe5effd.svg": {
+        "bytes": 165174,
+        "sha256": "b4b30ee5ffe5effdd2c09c8421cf0d3dc9b2b8e23a7da571f98651c4a46443ec"
+      },
+      "plans/e1/first-floor.4f04bb8f03da6d4e.svg": {
+        "bytes": 166052,
+        "sha256": "4f04bb8f03da6d4e5dd785e82beb58980613cb93d75abd4ae03a870a2d62f28f"
+      },
+      "plans/e1/ground-floor-detail.dc240e15b74b559c.svg": {
+        "bytes": 152701,
+        "sha256": "dc240e15b74b559c1ee98512df09938e509103d03f7d3627b6882f3beed0c1f4"
+      },
+      "plans/e1/ground-floor.cfec933fe7ad478e.svg": {
+        "bytes": 153422,
+        "sha256": "cfec933fe7ad478e80a8b9c1b60a6c26d523a2a9b56c2fc12671b9ad69f2396a"
+      },
+      "plans/e1/loft-detail.82bea573521ce1fc.svg": {
+        "bytes": 90531,
+        "sha256": "82bea573521ce1fc30a4d00c9f4de09504d00c3143af0c215a2eed1f6eb67168"
+      },
+      "plans/e1/loft.c45611fe37c74415.svg": {
+        "bytes": 91252,
+        "sha256": "c45611fe37c74415c8247fcb0974e1df949d672d60a09ac44d28bbd28dea19e6"
+      },
+      "plans/e1/manifest.6c407c2a2a47c7d9.json": {
+        "bytes": 4029,
+        "sha256": "6c407c2a2a47c7d92cb1549b8a6c1fa75f921724512c67906ee871b6ba0e713c"
+      },
+      "plans/e1/site-detail.94ad0133dabb12f6.svg": {
+        "bytes": 95020,
+        "sha256": "94ad0133dabb12f6fb38a35ec63f10ebea3a9f7ecd9018a2e4bcd4d16c670eb4"
+      },
+      "plans/e1/site.37bf8517c4cab003.svg": {
+        "bytes": 95108,
+        "sha256": "37bf8517c4cab0035670829f616961ab639a59d0e228c3f0dcf2a5da70ec82c6"
+      },
+      "plans/e2/first-floor-detail.540d5a2ac9411873.svg": {
+        "bytes": 161954,
+        "sha256": "540d5a2ac9411873772b4d95a58261e6e0270fdecb6144efe101d493a11032fc"
+      },
+      "plans/e2/first-floor.63ec728950ed9b41.svg": {
+        "bytes": 162582,
+        "sha256": "63ec728950ed9b41498d55975bcc85ea5d1b4f4ed65a1919e0db6c16bb50ee54"
+      },
+      "plans/e2/ground-floor-detail.5dc963f8771add93.svg": {
+        "bytes": 172260,
+        "sha256": "5dc963f8771add93ef7d2a1eef014774549a6f3faadec52c993decce964593a2"
+      },
+      "plans/e2/ground-floor.b4edff73cae11c4f.svg": {
+        "bytes": 172855,
+        "sha256": "b4edff73cae11c4f0e496bc498402e182bba33f0107d1fce8de93894a84f1cf3"
+      },
+      "plans/e2/loft-detail.441ca30c353e6a44.svg": {
+        "bytes": 92097,
+        "sha256": "441ca30c353e6a44145da90b5bad552b0ae101430e24c120a77995cdbc5c3b40"
+      },
+      "plans/e2/loft.2ba3b964e574a6ab.svg": {
+        "bytes": 92818,
+        "sha256": "2ba3b964e574a6ab5a9f3e51610b81be3e36f6192b7f5c0e2494535ce0a3d913"
+      },
+      "plans/e2/manifest.a94ba09c2aed9c5c.json": {
+        "bytes": 4050,
+        "sha256": "a94ba09c2aed9c5c27dc2b7577418148aa7d0dfd116c45f1de75f6314e753f71"
+      },
+      "plans/e2/site-detail.5c733474314911a1.svg": {
+        "bytes": 97332,
+        "sha256": "5c733474314911a14fba4aae1d39f5c094fb279dd10baceb6e464982ff7b5a3c"
+      },
+      "plans/e2/site.ab3024261dd96e6e.svg": {
+        "bytes": 97548,
+        "sha256": "ab3024261dd96e6e498e2c2b5b0e74b6427587effd7796852673b727d7f2c745"
+      },
+      "plans/e3/cellar-detail.0d31c0aa43df4cb4.svg": {
+        "bytes": 106065,
+        "sha256": "0d31c0aa43df4cb4dcded7a7da70f2aae1f5eec8b3dff29d8996266b084a09cc"
+      },
+      "plans/e3/cellar.e468209e6f9b5f09.svg": {
+        "bytes": 106733,
+        "sha256": "e468209e6f9b5f0923111b621011d12adf3a6e9da6c1818d9d10471165944186"
+      },
+      "plans/e3/first-floor-detail.a4b6c0cebcd04925.svg": {
+        "bytes": 199122,
+        "sha256": "a4b6c0cebcd04925cbf03d46c758102e69b82ae07b9b6932dbaa2ee47fc91159"
+      },
+      "plans/e3/first-floor.e3e1bee5e821adc7.svg": {
+        "bytes": 199971,
+        "sha256": "e3e1bee5e821adc7735f53831c8364e3f32a03d67f84a30d26fad34f42264760"
+      },
+      "plans/e3/ground-floor-detail.923a08464825f48d.svg": {
+        "bytes": 178539,
+        "sha256": "923a08464825f48deb8f34c8370fecb05b73d77b635156daec8d7833ab80c859"
+      },
+      "plans/e3/ground-floor.6380526929a7d1d4.svg": {
+        "bytes": 179153,
+        "sha256": "6380526929a7d1d4c3be234477aa9d64dc7bc4866d95064aed420933a504e98b"
+      },
+      "plans/e3/loft-detail.84f4be2335df3d2d.svg": {
+        "bytes": 81393,
+        "sha256": "84f4be2335df3d2d77946b5e76cf8552c753e3e67ebc053c97740be63d5a6c1a"
+      },
+      "plans/e3/loft.1e26a2ca63d3589b.svg": {
+        "bytes": 82059,
+        "sha256": "1e26a2ca63d3589b6c998ca48bc08f50bbe80986be66bd0f31a6b1cbb3ac4fe9"
+      },
+      "plans/e3/manifest.c714d0b97a6e4cf1.json": {
+        "bytes": 5341,
+        "sha256": "c714d0b97a6e4cf10c77bca85cb70b072821a33106463cd245d2068ab834587a"
+      },
+      "plans/e3/site-detail.16a397e9d2f9ca59.svg": {
+        "bytes": 98223,
+        "sha256": "16a397e9d2f9ca59b20476e7d859af8a6e78b85a256eaf0523639f7e10357c93"
+      },
+      "plans/e3/site.ba2609dc0d4c2d3d.svg": {
+        "bytes": 98404,
+        "sha256": "ba2609dc0d4c2d3d69ed85a456b797ca86401f5c654d7007b3f749071ca028cd"
+      },
+      "plans/i1/cellar-detail.7caf9e58b6c6d152.svg": {
+        "bytes": 93156,
+        "sha256": "7caf9e58b6c6d1526169d44ae484b4072214d383139df65ac5685fa20010ff5a"
+      },
+      "plans/i1/cellar.272e65e1bf3a6702.svg": {
+        "bytes": 93723,
+        "sha256": "272e65e1bf3a6702611efd2ce5d7787526f0aaddd2b01b737e4e66e32385d63e"
+      },
+      "plans/i1/first-floor-detail.5b562411b2d16374.svg": {
+        "bytes": 219003,
+        "sha256": "5b562411b2d16374b4c8ab5d985c19af810d006445758f6a93000cd24f7c947d"
+      },
+      "plans/i1/first-floor.2bbdf5b5ba4c6c29.svg": {
+        "bytes": 219284,
+        "sha256": "2bbdf5b5ba4c6c29c4d4b5520f0d646672fee2182a495d8fd4de024c5574946a"
+      },
+      "plans/i1/ground-floor-detail.30d8e9f9a0c9bd9f.svg": {
+        "bytes": 179399,
+        "sha256": "30d8e9f9a0c9bd9f7f1ebf9d236c6056591071672a07372023770cbd8549203b"
+      },
+      "plans/i1/ground-floor.e4c4d18a60103446.svg": {
+        "bytes": 179781,
+        "sha256": "e4c4d18a601034463da6eea6db69572847cdef38d120830988089c42e08c35d1"
+      },
+      "plans/i1/loft-detail.ee4c790cb9aedf19.svg": {
+        "bytes": 109386,
+        "sha256": "ee4c790cb9aedf19c90a2917d262c532c4d27d85f3b3fd7dc68b00717f82b6da"
+      },
+      "plans/i1/loft.8a872a61ac28840d.svg": {
+        "bytes": 109771,
+        "sha256": "8a872a61ac28840d5a23f4d9e5ee5e9ecea4e5190ad6347396ad640624ca17ae"
+      },
+      "plans/i1/manifest.45aca284d8a8ea19.json": {
+        "bytes": 5932,
+        "sha256": "45aca284d8a8ea19444b4a64d38d5c81a52952d23ca106df1c3514c99d1bd95d"
+      },
+      "plans/i1/site-detail.aebe253734970e94.svg": {
+        "bytes": 97878,
+        "sha256": "aebe253734970e94f18e9a26e6c82064b4560fd2084f8f77acf6e53d3697677d"
+      },
+      "plans/i1/site.5a6287644b0668eb.svg": {
+        "bytes": 97993,
+        "sha256": "5a6287644b0668eb94f5d9684ef3f84486defd345b7546239dae346e5d3acee5"
+      },
+      "plans/i2/cellar-detail.b6ef45c5d66fbc44.svg": {
+        "bytes": 89609,
+        "sha256": "b6ef45c5d66fbc44f31cbf95ff03d32703e2d9e93914bdbc7cc65400a27fcae2"
+      },
+      "plans/i2/cellar.147808f22e872ac0.svg": {
+        "bytes": 90189,
+        "sha256": "147808f22e872ac017cf90eca251386de09b46a316682734687137da968f9fbd"
+      },
+      "plans/i2/first-floor-detail.3e846104c53df52f.svg": {
+        "bytes": 211043,
+        "sha256": "3e846104c53df52fe8a0b54d6d503fdaa0eb9c1d16867f5bcd5f70359cd30b48"
+      },
+      "plans/i2/first-floor.c9880f0d6d5323c6.svg": {
+        "bytes": 211308,
+        "sha256": "c9880f0d6d5323c639e15a355c419f2343399ccbe4117a697de932603cc6329a"
+      },
+      "plans/i2/ground-floor-detail.13935e34d18cec36.svg": {
+        "bytes": 189922,
+        "sha256": "13935e34d18cec361749880574cfd48eb924103984e9f7d48b0a8ec94c77622c"
+      },
+      "plans/i2/ground-floor.a533a711dee5f1b6.svg": {
+        "bytes": 190308,
+        "sha256": "a533a711dee5f1b68d087c207a65c27b2f6399c6a9ae9674a4931dc47492df8e"
+      },
+      "plans/i2/loft-detail.5c20a298cb040ba5.svg": {
+        "bytes": 108201,
+        "sha256": "5c20a298cb040ba58fdd77efbf33a28f9546beed3434a86579861f204c242efa"
+      },
+      "plans/i2/loft.bbc9125266fcfa26.svg": {
+        "bytes": 108586,
+        "sha256": "bbc9125266fcfa26d89f18f7a8be43fa5af3336ed64a8329abb8afcc475c3da5"
+      },
+      "plans/i2/manifest.2bb4f1d4aa3e937b.json": {
+        "bytes": 6062,
+        "sha256": "2bb4f1d4aa3e937ba0881d952299a5441a11fb5e2a7c7bfbc9e20debb922083e"
+      },
+      "plans/i2/site-detail.c845a8a9406e38a2.svg": {
+        "bytes": 97403,
+        "sha256": "c845a8a9406e38a2564b11e04af0573b3ea9706de69d03b6583c7e0e99bf2cd6"
+      },
+      "plans/i2/site.bc58f2d6faf6357e.svg": {
+        "bytes": 97518,
+        "sha256": "bc58f2d6faf6357e48436dc01142d86c4ffa66081c7a43a9425343a6bc6bf712"
+      },
+      "plans/i3/cellar-detail.4cb5489bb2c80715.svg": {
+        "bytes": 93474,
+        "sha256": "4cb5489bb2c80715dabd3936a882826220f76f09ca8a470490465bf71085c4a3"
+      },
+      "plans/i3/cellar.a9c93fe5ac1eba3d.svg": {
+        "bytes": 94041,
+        "sha256": "a9c93fe5ac1eba3ded1cb0cda4d36b5e2e47e8d059669d156a7ae0516f17deaa"
+      },
+      "plans/i3/first-floor-detail.9599414bf1d4738b.svg": {
+        "bytes": 214929,
+        "sha256": "9599414bf1d4738b67f5def61477e48cd2a9dc0a85f1e5ae56fbe0eee323db95"
+      },
+      "plans/i3/first-floor.09cb4570a8a62858.svg": {
+        "bytes": 215184,
+        "sha256": "09cb4570a8a62858ff7ee9650fcc0b9ed68eb0a2cdaf04c02445024f62a2655d"
+      },
+      "plans/i3/ground-floor-detail.837878d70e087a90.svg": {
+        "bytes": 178707,
+        "sha256": "837878d70e087a907aba9f39710220884980746581546b622173739f3d468de4"
+      },
+      "plans/i3/ground-floor.263aec6b694e94a0.svg": {
+        "bytes": 179157,
+        "sha256": "263aec6b694e94a0c04dd351a4801460cf2b328d0ec03540fde6425416633bdc"
+      },
+      "plans/i3/loft-detail.74d42b080a961785.svg": {
+        "bytes": 109704,
+        "sha256": "74d42b080a961785f6b324aed17cb1d599aed362c01f55e0f4ef49de49a59486"
+      },
+      "plans/i3/loft.5a06490b7cf3e20b.svg": {
+        "bytes": 110089,
+        "sha256": "5a06490b7cf3e20b22348c088b7f4963d7d28a8e6f5715bed0e1476a655f769d"
+      },
+      "plans/i3/manifest.2ef803225fed8395.json": {
+        "bytes": 5740,
+        "sha256": "2ef803225fed839561b85c045b02acb13e55c59f0c1620c90535efc5462e0ad0"
+      },
+      "plans/i3/site-detail.03d6b2a781114df4.svg": {
+        "bytes": 98178,
+        "sha256": "03d6b2a781114df4ae632c167faa5c27b9f7ae9b51a5f2fb259344a6e7e91563"
+      },
+      "plans/i3/site.e95aa3f271901bf9.svg": {
+        "bytes": 98293,
+        "sha256": "e95aa3f271901bf9fb36dbe78f389b7b8dd566118e81d0b1cb3bffa62f38d849"
+      },
+      "review.b628de54dbb856ec.css": {
+        "bytes": 11302,
+        "sha256": "b628de54dbb856ec9cdf7c89a4ccbad96ee21a2c5b04568938f79286cc0b2f1d"
+      },
+      "six-options.a90a72aa8e816ab6.pdf": {
+        "bytes": 5711253,
+        "sha256": "a90a72aa8e816ab66cad2354dc1b53ef91b28b0296855043dc5144d03e4ba91b"
+      },
+      "review.fbf39f1d98a8def8.js": {
+        "bytes": 13607,
+        "sha256": "fbf39f1d98a8def8cb9ef4126dfa1a4d423d070ee77e777abd6e00b688ffe4cd"
+      }
+    },
+    "previous_assets": {}
+  },
+  "interactive_door_leaves": 27,
+  "optional_street_context": {
+    "setting": "Settings \u2192 Street & neighbours",
+    "default": "off",
+    "preference_shared_between_designs": true,
+    "walk_distance_beyond_gates_m": 50,
+    "basis": "Approximate road and low-detail neighbouring buildings from supplied site images"
+  },
+  "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates.",
+  "staged_site_bytes": 997447731,
+  "shared_textures": {
+    "textures/7eb3b0129821084a86d3adb57fa377321ce82141eece46c3ffd4c4a8104c5098.png": {
+      "bytes": 2778824,
+      "sha256": "7eb3b0129821084a86d3adb57fa377321ce82141eece46c3ffd4c4a8104c5098"
+    },
+    "textures/ee9fa499b8e87edfe8e4abf56c06ff87e4fa3ec42bac8d3c075ff2cf161fa244.png": {
+      "bytes": 2032830,
+      "sha256": "ee9fa499b8e87edfe8e4abf56c06ff87e4fa3ec42bac8d3c075ff2cf161fa244"
+    },
+    "textures/f566ca179a97b6bf43b1e803fbc11aacdc1c345342ec2865cbeea837fcf0841e.png": {
+      "bytes": 2670416,
+      "sha256": "f566ca179a97b6bf43b1e803fbc11aacdc1c345342ec2865cbeea837fcf0841e"
+    }
+  },
+  "rollout": {
+    "stage": 2,
+    "base_commit": "abc04e9535df6b055222b36dee5b92b65430ed77",
+    "minimum_wait_after_previous_deployment_seconds": 1800
+  }
+}

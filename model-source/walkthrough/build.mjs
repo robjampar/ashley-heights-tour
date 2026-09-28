@@ -32,11 +32,21 @@ for(const {navigation:name} of assets){
  performanceReport.navigation.push({name,cached:hit,seconds:(performance.now()-t)/1000});
 }
 const compression={assets:{},sourceAssetsUnchanged:true};
+const sharedTextures=new Set(),sharedReports=[];
+await mkdir('dist/textures',{recursive:true});
+async function writeSharedModel(name,packed){
+ const prefix=path.posix.relative(path.posix.dirname(name),'textures')+'/';
+ const shared=shareRoomTextures(packed,prefix);
+ await atomicWrite('dist/'+name,shared.packed);
+ for(const [file,bytes]of shared.textures){await atomicWrite('dist/textures/'+file,bytes);sharedTextures.add('textures/'+file);}
+ sharedReports.push({name,...shared.verification});
+ return shared;
+}
 for(const {model:name} of assets){
  const original=await readFile('public/'+name),t=performance.now();
  const key=digest(packSignature+'\n'+digest(original));
  const {packed,metadata,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);
- await atomicWrite('dist/'+name,packed);compression.assets[name]=metadata;
+ const shared=await writeSharedModel(name,packed);compression.assets[name]={...metadata,embeddedPackedSHA256:metadata.packedSHA256,packedSHA256:digest(shared.packed),packedBytes:shared.packed.length,sharedTextures:shared.verification};
  performanceReport.models.push({name,cached:hit,seconds:(performance.now()-t)/1000});
  console.log(`${name}: ${(metadata.sourceBytes/1e6).toFixed(2)} MB → ${(metadata.packedBytes/1e6).toFixed(2)} MB; ${hit?'verified cache reused':'decoded buffers verified byte-exact'}`);
 }
@@ -47,23 +57,22 @@ for(const variant of ['compact','planning']){
  const name=`interiors/kitchen/models/${variant}-kitchen.glb`;
  const original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
  const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);
- await atomicWrite('dist/'+name,packed);
+ await writeSharedModel(name,packed);
  console.log(`${variant} isolated room: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }
 for(const variant of ['compact','planning'])for(const stem of ['suite','bedroom','ensuite']){
  const name=`interiors/principal/models/${variant}-${stem}.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
- const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await atomicWrite('dist/'+name,packed);
+ const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await writeSharedModel(name,packed);
  console.log(`${variant} ${stem} study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }
-const sharedTextures=new Set(),sharedReports=[];await mkdir('dist/interiors/leisure/textures',{recursive:true});
-for(const variant of ['compact','planning'])for(const stem of ['cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4']){
+for(const variant of ['compact','planning'])for(const stem of ['cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4','formal','sidebed','loftsuite','hobby','terrace','arrival','landings','garage','poolgarden','gardenhouse','office','workshop']){
+ if(['terrace','poolgarden','workshop'].includes(stem)&&variant!=='compact')continue;
  const name=`interiors/leisure/models/${variant}-${stem}.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
- const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);const shared=shareRoomTextures(packed);await atomicWrite('dist/'+name,shared.packed);
- for(const [file,bytes]of shared.textures){await atomicWrite('dist/interiors/leisure/textures/'+file,bytes);sharedTextures.add('textures/'+file);}
- sharedReports.push({name,...shared.verification});
+ const {packed,hit}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);await writeSharedModel(name,packed);
  console.log(`${variant} ${stem} study: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; ${hit?'cache reused':'decoded buffers verified byte-exact'}`);
 }
-await writeFile('dist/interiors/leisure/shared-textures.json',JSON.stringify([...sharedTextures].sort()));
+await writeFile('dist/shared-textures.json',JSON.stringify([...sharedTextures].sort()));
+await writeFile('dist/interiors/leisure/shared-textures.json','[]');
 await writeFile('dist/room-texture-sharing.json',JSON.stringify(sharedReports,null,2)+'\n');
 await cp('index.html','dist/index.html');
 performanceReport.seconds=(performance.now()-started)/1000;

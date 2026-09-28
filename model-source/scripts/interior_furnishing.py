@@ -11,16 +11,21 @@ class RoomBuilder:
         if self.collection is None:self.collection=bpy.data.collections.new(collection_name)
         if self.collection.name not in self.scene.collection.children:self.scene.collection.children.link(self.collection)
 
-    def remove(self,prefixes):
+    def remove(self,prefixes,within=None):
         import bpy
         owners=set(self.scene.collection.children_recursive)
         for ob in list(self.scene.objects):
             name=ob.get('source_name',ob.name)
             if not name.startswith(tuple(prefixes)+(self.prefix,)):continue
+            if within is not None:
+                from mathutils import Vector
+                points=[ob.matrix_world@Vector(v)for v in ob.bound_box]
+                if not all(within[i]-.0001<=p[i]<=within[i+3]+.0001 for p in points for i in range(3)):continue
             self.removed.append({'name':name,'object_name':ob.name})
             for collection in tuple(ob.users_collection):
                 if collection in owners:collection.objects.unlink(ob)
             if not ob.users_collection:bpy.data.objects.remove(ob)
+        if within is not None:return
         for key,pending in (('obstacles','new_obstacles'),('surfaces','new_surfaces'),('segments','new_segments')):
             for values in (self.ns['nav'].get(key,[]),self.ns.get(pending,[])):
                 values[:]=[v for v in values if not v['name'].startswith(tuple(prefixes)+(self.prefix,))]

@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "completed": "2026-09-28T02:34:19.206034+00:00",
+  "source": "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+  "sourceSha256": "483845fdbe7eaad0742720cd0de2fa664ff810ae7de8a07009201e2e4954142d",
+  "sourceSaved": false,
+  "geometryChanged": false,
+  "renderer": "Cycles Metal",
+  "samples": 128,
+  "assets": [
+    {
+      "view": "front",
+      "path": "revisions/interiors-overnight-2026-09-27/review-round-2/brochure/renders/compact/front.png",
+      "sha256": "0446111e5a941fb87e25d1b9422e5a0ca570e78f65f9395fa3dacbef72953203",
+      "bytes": 32069035,
+      "resolution": [
+        4200,
+        2800
+      ]
+    },
+    {
+      "view": "kitchen",
+      "path": "revisions/interiors-overnight-2026-09-27/review-round-2/brochure/renders/compact/kitchen.png",
+      "sha256": "9b11068b9f1d507a50c8bff9e66cce915ba4c2be4bd186d768267f20531e9184",
+      "bytes": 48097785,
+      "resolution": [
+        4200,
+        2800
+      ]
+    },
+    {
+      "view": "formal",
+      "path": "revisions/interiors-overnight-2026-09-27/review-round-2/brochure/renders/compact/formal.png",
+      "sha256": "c78b895e7b66030f1de9fe10eb21ab51e7dfb4198fb56ae394e6f92bc7ab4a00",
+      "bytes": 50231213,
+      "resolution": [
+        4200,
+        2800
+      ]
+    },
+    {
+      "view": "drinks",
+      "path": "revisions/interiors-overnight-2026-09-27/review-round-2/brochure/renders/compact/drinks.png",
+      "sha256": "cb58ac6a5dcd084552e23b455c43dedbddfaa2b4fec12ff6984d0f5324de45b4",
+      "bytes": 45432789,
+      "resolution": [
+        4200,
+        2800
+      ]
+    },
+    {
+      "view": "bedroom",
+      "path": "revisions/interiors-overnight-2026-09-27/review-round-2/brochure/renders/compact/bedroom.png",
+      "sha256": "9f39c2a1dc3679d22997fa3287a5ad31895cd40615602e9ea86b18a8c92fdf0b",
+      "bytes": 50172110,
+      "resolution": [
+        4200,
+        2800
+      ]
+    },
+    {
+      "view": "bath",
+      "path": "revisions/interiors-overnight-2026-09-27/review-round-2/brochure/renders/compact/bath.png",
+      "sha256": "19e26613073dd0310a350ec5271d20c8d682a1caa29d521d188317dfdbe6c773",
+      "bytes": 53182711,
+      "resolution": [
+        4200,
+        2800
+      ]
+    },
+    {
+      "view": "pool",
+      "path": "revisions/interiors-overnight-2026-09-27/review-round-2/brochure/renders/compact/pool.png",
+      "sha256": "94e7b13c8bd824e296f064b0e9b2b3f60e2bdd87afeb361d54bedd5b5a3a4efd",
+      "bytes": 44352403,
+      "resolution": [
+        4200,
+        2800
+      ]
+    }
+  ]
+}

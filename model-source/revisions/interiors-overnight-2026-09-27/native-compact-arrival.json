@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "source_sha256": "f0fea323b97807cc40597effb6c534479d067b435a7a4ab7a6149cf65c464af9",
+  "source_unchanged": true,
+  "reports": [
+    {
+      "area": "arrival",
+      "matching_study_meshes": 324,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    }
+  ]
+}

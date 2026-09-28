@@ -1,6 +1,6 @@
 {
-  "revision": 2,
-  "status": "Longer bathroom, shifted walk-through wardrobe and revised east windows; isolated room review",
+  "revision": 3,
+  "status": "Owner review: sculptural limestone bath and coordinated bronze details",
   "floor_z": 2.8,
   "ceiling_z": 5.28,
   "bathroom_polygon": [
@@ -63,10 +63,10 @@
   },
   "fixtures": {
     "bath": [
-      12.76,
-      -5.2,
-      13.56,
-      -3.4
+      12.68,
+      -5.25,
+      13.58,
+      -3.35
     ],
     "shower": [
       10.47,
@@ -234,18 +234,18 @@
     },
     {
       "name": "Bath long-side approach",
-      "width_m": 0.8,
+      "width_m": 0.74,
       "points": [
         [
           12.13,
-          -5.48
+          -5.7
         ],
         [
-          12.32,
-          -5.25
+          12.2925,
+          -5.5
         ],
         [
-          12.32,
+          12.2925,
           -4.0
         ]
       ]

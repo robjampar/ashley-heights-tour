@@ -446,11 +446,8 @@ for index,panel in enumerate(roof_panels):
     # walls (230 mm); the slate shows as the remainder of the roof package.
     outer_thickness=.13 if kind in ('original','side') else .20 if kind=='dormer' else panel['thickness']-.23
     total=panel['thickness']
-    # The solid rake band owns the front 350 mm of the entrance roof edge.
-    # Stop both roof layers at its back instead of drawing coincident faces.
-    # In the tiled planning design the tiles run over the band as a verge (see the rake band below).
-    shell_poly=(_roof_clip(panel['poly'],1,0,-_entrance_band_back)
-                if panel['name'].startswith('Gate gable ') and not PLANNING else panel['poly'])
+    # Both designs carry the roof over the lowered masonry rake band.
+    shell_poly=panel['poly']
     if not shell_poly:continue
     _roof_shell('Proposal | Joined roof %03d | %s'%(index+1,panel['name']),shell_poly,
                 panel['plane'],0,outer_thickness,material,layer)
@@ -526,9 +523,8 @@ for label,a,b,bottom,th in[
              [(3,2,1,0),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)],white,L)
         roof_wall_closures.append({'object':ob.name,'a':aa,'b':bb,
           'bottomZ':bottom,'topZ':tops,'boundsXY':poly})
-# The entrance gable has no verge: a rendered band as wide as the piers
-# follows each rake, flush with the gable face and as deep as the side walls,
-# with its outer edge at the roof surface.
+# A flush masonry band follows each entrance rake below the complete roof
+# package. The tiles cover its upper edge in both proposals.
 _egable=next(g for g in bay_gables if g['label']=='Gate gable')
 _eband=float(_eb['rake_band_m']);_ebx=_egable['bay_front_x']
 entrance_rake_bands=[]
@@ -539,11 +535,9 @@ for side,yy,zz in zip(('south','north'),_egable['eaves_y'],_egable['eaves_z']):
     # mitre, not two square ends crossing beyond the apex.
     vertical_depth=_eband*length/abs(dy)
     section=[(yy,zz),(ry,rz),(ry,rz-vertical_depth),(yy,zz-vertical_depth)]
-    if PLANNING:
-        # Tiled verge (owner, 24 Sep 2026: the band showed through the tiles at the top of the roof):
-        # the band drops one roof thickness and the tiles run over it to the gable front.
-        _gt=next(p_['thickness'] for p_ in roof_panels if p_['name'].startswith('Gate gable '))
-        section=[(y_,z_-_gt) for y_,z_ in section]
+    # Owner review: use the verified Planning verge in Proposed as well.
+    _gt=next(p_['thickness'] for p_ in roof_panels if p_['name'].startswith('Gate gable '))
+    section=[(y_,z_-_gt) for y_,z_ in section]
     if _roof_area(section)<0:section.reverse()
     vv=[(_ebx,y,z)for y,z in section]+[(_ebx+_eth,y,z)for y,z in section]
     band=mesh('Proposal | Entrance gable '+side+' rake band',vv,
@@ -644,7 +638,7 @@ if side_wing_roof_enabled:
     _roof_exposed_line('Proposal | Side wing continued original ridge',
                       (side_roof_ridge_x0,sry),(sx,sry),srz)
 for gable in bay_gables:
-    ridge_start=_entrance_band_back if gable['label']=='Gate gable' and not PLANNING else gable['verge_x']
+    ridge_start=gable['verge_x']
     _roof_exposed_line('Proposal | '+gable['label']+' ridge',(ridge_start,gable['ridge_y']),(cross_x1,gable['ridge_y']),gable['ridge_z'])
 
 proposal_roof_report={

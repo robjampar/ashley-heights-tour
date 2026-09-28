@@ -1,0 +1,542 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "coat approach",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "key and bag bay",
+          "distance": 0.014142135623731907,
+          "reachable": true
+        },
+        {
+          "label": "shoe bench",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "gym doorway",
+          "distance": 0.01802775637731882,
+          "reachable": true
+        },
+        {
+          "label": "garage approach",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "basement stair head",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "courtyard passage",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "garden view",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "old hall arrival",
+          "distance": 0.00999999999999912,
+          "reachable": true
+        },
+        {
+          "label": "mirror",
+          "distance": 7.771561172376096e-16,
+          "reachable": true
+        },
+        {
+          "label": "stair approach",
+          "distance": 1.831026719408895e-15,
+          "reachable": true
+        },
+        {
+          "label": "cloakroom",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "kitchen doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal dining doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal lounge doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "doorsClosed",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "coat approach",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "key and bag bay",
+          "distance": 0.014142135623731907,
+          "reachable": true
+        },
+        {
+          "label": "shoe bench",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "gym doorway",
+          "distance": 0.01802775637731882,
+          "reachable": true
+        },
+        {
+          "label": "garage approach",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "basement stair head",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "courtyard passage",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "garden view",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "old hall arrival",
+          "distance": 0.00999999999999912,
+          "reachable": true
+        },
+        {
+          "label": "mirror",
+          "distance": 7.771561172376096e-16,
+          "reachable": true
+        },
+        {
+          "label": "stair approach",
+          "distance": 1.831026719408895e-15,
+          "reachable": true
+        },
+        {
+          "label": "cloakroom",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "kitchen doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal dining doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal lounge doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "drawerOpen",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "coat approach",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "shoe bench",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "gym doorway",
+          "distance": 0.01802775637731882,
+          "reachable": true
+        },
+        {
+          "label": "garage approach",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "basement stair head",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "courtyard passage",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "garden view",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "old hall arrival",
+          "distance": 0.00999999999999912,
+          "reachable": true
+        },
+        {
+          "label": "mirror",
+          "distance": 7.771561172376096e-16,
+          "reachable": true
+        },
+        {
+          "label": "stair approach",
+          "distance": 1.831026719408895e-15,
+          "reachable": true
+        },
+        {
+          "label": "cloakroom",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "kitchen doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal dining doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal lounge doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "coatUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "key and bag bay",
+          "distance": 0.014142135623731907,
+          "reachable": true
+        },
+        {
+          "label": "shoe bench",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "gym doorway",
+          "distance": 0.01802775637731882,
+          "reachable": true
+        },
+        {
+          "label": "garage approach",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "basement stair head",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "courtyard passage",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "garden view",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "old hall arrival",
+          "distance": 0.00999999999999912,
+          "reachable": true
+        },
+        {
+          "label": "mirror",
+          "distance": 7.771561172376096e-16,
+          "reachable": true
+        },
+        {
+          "label": "stair approach",
+          "distance": 1.831026719408895e-15,
+          "reachable": true
+        },
+        {
+          "label": "cloakroom",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "kitchen doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal dining doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal lounge doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "benchOccupied",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "coat approach",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "key and bag bay",
+          "distance": 0.014142135623731907,
+          "reachable": true
+        },
+        {
+          "label": "gym doorway",
+          "distance": 0.01802775637731882,
+          "reachable": true
+        },
+        {
+          "label": "garage approach",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "basement stair head",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "courtyard passage",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "garden view",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "old hall arrival",
+          "distance": 0.00999999999999912,
+          "reachable": true
+        },
+        {
+          "label": "mirror",
+          "distance": 7.771561172376096e-16,
+          "reachable": true
+        },
+        {
+          "label": "stair approach",
+          "distance": 1.831026719408895e-15,
+          "reachable": true
+        },
+        {
+          "label": "cloakroom",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "kitchen doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal dining doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal lounge doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bagUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "coat approach",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "shoe bench",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "gym doorway",
+          "distance": 0.01802775637731882,
+          "reachable": true
+        },
+        {
+          "label": "garage approach",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "basement stair head",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "courtyard passage",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "garden view",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "old hall arrival",
+          "distance": 0.00999999999999912,
+          "reachable": true
+        },
+        {
+          "label": "mirror",
+          "distance": 7.771561172376096e-16,
+          "reachable": true
+        },
+        {
+          "label": "stair approach",
+          "distance": 1.831026719408895e-15,
+          "reachable": true
+        },
+        {
+          "label": "cloakroom",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "kitchen doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal dining doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal lounge doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bothInUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "key and bag bay",
+          "distance": 0.014142135623731907,
+          "reachable": true
+        },
+        {
+          "label": "gym doorway",
+          "distance": 0.01802775637731882,
+          "reachable": true
+        },
+        {
+          "label": "garage approach",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "basement stair head",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "courtyard passage",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "garden view",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "old hall arrival",
+          "distance": 0.00999999999999912,
+          "reachable": true
+        },
+        {
+          "label": "mirror",
+          "distance": 7.771561172376096e-16,
+          "reachable": true
+        },
+        {
+          "label": "stair approach",
+          "distance": 1.831026719408895e-15,
+          "reachable": true
+        },
+        {
+          "label": "cloakroom",
+          "distance": 0.01414213562373065,
+          "reachable": true
+        },
+        {
+          "label": "kitchen doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal dining doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "formal lounge doorway",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

@@ -186,20 +186,25 @@ obstacle('side table',[5.24,-11.54,5.68,-11.10],.53)
 cylinder('reading floor lamp base',(5.49,-10.76,z+.02),.15,.04,bronze)
 cylinder('reading floor lamp stem',(5.49,-10.76,z+.72),.012,1.4,bronze)
 cylinder('reading floor lamp shade',(5.49,-10.76,z+1.45),.18,.20,fabric,top=.135)
-# Fixed TVs and useful media joinery. Screen widths correspond to 85 and 55 inch class.
+# Fixed TVs and useful media joinery. Both screens now have the same 85-inch dimensions.
 for tv in cfg['tvs']:
- label=tv['id'];x,y=tv['center'];sw,sh=tv['screen_m'];h=tv['height_m'];my=tv['cabinet_center_y'];width=2.4 if label=='bed'else 2.8
+ label=tv['id'];x,y=tv['center'];tx=x+tv.get('screenOffsetX',0);sw,sh=tv['screen_m'];h=tv['height_m'];my=tv['cabinet_center_y'];width=2.4 if label=='bed'else 2.8
  box(label+' media cabinet',(x,my,z+.39),(width,.40,.38),oak,bevel=.017)
  box(label+' media limestone top',(x,my,z+.594),(width+.02,.41,.028),stone)
  for j in range(4):box(label+' media drawer '+str(j),(x+(j-1.5)*(width/4),my-.207,z+.39),(width/4-.012,.02,.34),oak)
- box(label+' TV fixed case',(x,y+.035,z+h),(sw+.030,.065,sh+.03),dark,bevel=.008)
- box(label+' TV screen',(x,y,z+h),(sw,.009,sh),screen,bevel=.002)
- box(label+' TV status light',(x+sw*.4,y-.007,z+h-sh/2-.008),(.009,.006,.003),light,bevel=.001)
+ box(label+' TV fixed case',(tx,y+.035,z+h),(sw+.030,.065,sh+.03),dark,bevel=.008)
+ box(label+' TV screen',(tx,y,z+h),(sw,.009,sh),screen,bevel=.002)
+ box(label+' TV status light',(tx+sw*.4,y-.007,z+h-sh/2-.008),(.009,.006,.003),light,bevel=.001)
  box(label+' soundbar',(x,my-.162,z+.66),(.92,.09,.06),dark,bevel=.018)
  for j in range(25):box(label+' soundbar grille',(x-.41+j*.034,my-.209,z+.66),(.006,.005,.035),bronze,bevel=.001)
  obstacle(label+' media cabinet',[x-width/2,my-.21,x+width/2,my+.20],.61)
 # Equal-sided L desk with a genuine curved concave/convex outline.
 outline=desk_outline();n=len(outline);verts=[(x,y,z+h)for h in(.7175,.7725)for x,y in outline]
+# Keep the two full-length desk arms independent of TV mount coordinates.
+desk_boxes=[cfg['desk']['bounds'],cfg['desk']['return_bounds']]
+for axis in (0,1):
+ expected=max(bb[axis+2]for bb in desk_boxes)-min(bb[axis]for bb in desk_boxes)
+ assert abs(max(p[axis]for p in verts)-min(p[axis]for p in verts)-expected)<.001,('L desk footprint',axis)
 vs=[Vector((x,y,0))for x,y in outline];lookup={tuple(v):i for i,v in enumerate(vs)}
 triangles=[tuple(v if isinstance(v,int)else lookup[tuple(v)]for v in tri)for tri in tessellate_polygon([vs])]
 faces=[tuple(reversed(tri))for tri in triangles]+[tuple(i+n for i in tri)for tri in triangles]+[(i,(i+1)%n,(i+1)%n+n,i+n)for i in range(n)]
@@ -271,7 +276,7 @@ for tv in cfg['tvs']:
  eyes=tv['eyes']+([cfg['desk']['tv_eye']]if tv['id']==cfg['desk']['tv']else[])
  for seat,eye in enumerate(eyes):
   for u,v in[(0,0),(-.45,-.45),(-.45,.45),(.45,-.45),(.45,.45)]:
-   target=Vector((tv['center'][0]+u*tv['screen_m'][0],tv['center'][1]-.005,z+tv['height_m']+v*tv['screen_m'][1]));delta=target-Vector(eye)
+   target=Vector((tv['center'][0]+tv.get('screenOffsetX',0)+u*tv['screen_m'][0],tv['center'][1]-.005,z+tv['height_m']+v*tv['screen_m'][1]));delta=target-Vector(eye)
    hit,location,norm,face,ob,matrix=study.ray_cast(deps,Vector(eye),delta.normalized(),distance=delta.length+.03)
    ok=hit and ob.get('source_name',ob.name)==prefix+tv['id']+' TV screen'
    rays.append({'group':tv['id'],'seat':seat,'sample':[u,v],'clear':ok,'hit':ob.name if hit else None,'distance_m':round(delta.length,3)})

@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "area": "loftsuite",
+      "design": "compact",
+      "textures": [
+        {
+          "name": "Interior | Loftsuite warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "compact",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "wardrobe",
+        "bathroom",
+        "vanity",
+        "store",
+        "overview"
+      ],
+      "objects": 653,
+      "cutaway": 46,
+      "fullHouse": "http://127.0.0.1:8776/?design=proposed&room=proposal-new-loft-studio"
+    },
+    {
+      "area": "loftsuite",
+      "design": "planning",
+      "textures": [
+        {
+          "name": "Interior | Loftsuite warm wool carpet",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite honed limestone",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite natural oak",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite ivory upholstery",
+          "width": 1254,
+          "height": 1254
+        },
+        {
+          "name": "Interior | Loftsuite woven taupe",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "variant": "planning",
+      "revision": 1,
+      "views": [
+        "entrance",
+        "wardrobe",
+        "bathroom",
+        "vanity",
+        "store",
+        "overview"
+      ],
+      "objects": 653,
+      "cutaway": 46,
+      "fullHouse": "http://127.0.0.1:8776/?design=planning&room=proposal-new-loft-studio"
+    }
+  ],
+  "mobileWidth": 390,
+  "retainedCameraAcrossDesigns": true,
+  "errors": [],
+  "failed": []
+}

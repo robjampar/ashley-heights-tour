@@ -1,0 +1,431 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gallery books",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "reading chair",
+          "distance": 0.010000000000000453,
+          "reachable": true
+        },
+        {
+          "label": "loft stair approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "garden gallery",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original stair head",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original hall",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 2",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "garden guest bedroom",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "family bathroom",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 3",
+          "distance": 1.2560739669470201e-15,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 4",
+          "distance": 0.009999999999999343,
+          "reachable": true
+        },
+        {
+          "label": "side wing connection",
+          "distance": 0.014142135623731433,
+          "reachable": true
+        },
+        {
+          "label": "linen",
+          "distance": 0.010000000000000009,
+          "reachable": true
+        },
+        {
+          "label": "main books",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "reading",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gallery books",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "loft stair approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "garden gallery",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original stair head",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original hall",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 2",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "garden guest bedroom",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "family bathroom",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 3",
+          "distance": 1.2560739669470201e-15,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 4",
+          "distance": 0.009999999999999343,
+          "reachable": true
+        },
+        {
+          "label": "side wing connection",
+          "distance": 0.014142135623731433,
+          "reachable": true
+        },
+        {
+          "label": "linen",
+          "distance": 0.010000000000000009,
+          "reachable": true
+        },
+        {
+          "label": "main books",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "linenUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gallery books",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "reading chair",
+          "distance": 0.010000000000000453,
+          "reachable": true
+        },
+        {
+          "label": "loft stair approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "garden gallery",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original stair head",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original hall",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 2",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "garden guest bedroom",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "family bathroom",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 3",
+          "distance": 1.2560739669470201e-15,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 4",
+          "distance": 0.009999999999999343,
+          "reachable": true
+        },
+        {
+          "label": "side wing connection",
+          "distance": 0.014142135623731433,
+          "reachable": true
+        },
+        {
+          "label": "main books",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "libraryUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "reading chair",
+          "distance": 0.010000000000000453,
+          "reachable": true
+        },
+        {
+          "label": "loft stair approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "garden gallery",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original stair head",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original hall",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 2",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "garden guest bedroom",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "family bathroom",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 3",
+          "distance": 1.2560739669470201e-15,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 4",
+          "distance": 0.009999999999999343,
+          "reachable": true
+        },
+        {
+          "label": "side wing connection",
+          "distance": 0.014142135623731433,
+          "reachable": true
+        },
+        {
+          "label": "linen",
+          "distance": 0.010000000000000009,
+          "reachable": true
+        },
+        {
+          "label": "main books",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "landingBooksUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gallery books",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "reading chair",
+          "distance": 0.010000000000000453,
+          "reachable": true
+        },
+        {
+          "label": "loft stair approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "garden gallery",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original stair head",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original hall",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 2",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "garden guest bedroom",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "family bathroom",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 3",
+          "distance": 1.2560739669470201e-15,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 4",
+          "distance": 0.009999999999999343,
+          "reachable": true
+        },
+        {
+          "label": "side wing connection",
+          "distance": 0.014142135623731433,
+          "reachable": true
+        },
+        {
+          "label": "linen",
+          "distance": 0.010000000000000009,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "bothInUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "gallery books",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "loft stair approach",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        },
+        {
+          "label": "garden gallery",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original stair head",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "original hall",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 2",
+          "distance": 0.009999999999998899,
+          "reachable": true
+        },
+        {
+          "label": "garden guest bedroom",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "family bathroom",
+          "distance": 0.010000000000000675,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 3",
+          "distance": 1.2560739669470201e-15,
+          "reachable": true
+        },
+        {
+          "label": "Bedroom 4",
+          "distance": 0.009999999999999343,
+          "reachable": true
+        },
+        {
+          "label": "side wing connection",
+          "distance": 0.014142135623731433,
+          "reachable": true
+        },
+        {
+          "label": "main books",
+          "distance": 0.009999999999999787,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

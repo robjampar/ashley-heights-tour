@@ -1,0 +1,29 @@
+{
+  "source": "output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+  "sourceSha256": "00fd7b489b476dd4449e919781eb7e62043c673d57c819d451c7a26feffe5a2f",
+  "sourceSaved": false,
+  "geometryChanged": false,
+  "camera": {
+    "pos": [
+      -8,
+      -21,
+      2.8
+    ],
+    "target": [
+      6.0,
+      -7.0,
+      2.8
+    ],
+    "fov": 59,
+    "shift": 0.12,
+    "outside": true
+  },
+  "samples": 40,
+  "resolution": [
+    1500,
+    1000
+  ],
+  "renderEngine": "Cycles Metal",
+  "finish": "ivory render, oak panels, source tiled roof",
+  "lighting": "Nishita daylight and photographic bounce; source fittings retained"
+}

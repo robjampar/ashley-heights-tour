@@ -1,0 +1,671 @@
+{
+  "variant": "compact",
+  "room": "Principal bathroom and walk-through wardrobe",
+  "status": "Longer bathroom, shifted walk-through wardrobe and revised east windows; isolated room review",
+  "layoutRevision": 2,
+  "materials": {
+    "Appearance | wall | Proposal | Limestone render": [
+      0.7799999713897705,
+      0.7599999904632568,
+      0.6899999976158142,
+      1.0
+    ],
+    "Bedroom 02 | brushed bronze": [
+      0.38999998569488525,
+      0.2800000011920929,
+      0.1599999964237213,
+      1.0
+    ],
+    "Bedroom 02 | charcoal": [
+      0.017999999225139618,
+      0.023000000044703484,
+      0.02500000037252903,
+      1.0
+    ],
+    "Bedroom 02 | ivory plaster": [
+      0.8199999928474426,
+      0.800000011920929,
+      0.75,
+      1.0
+    ],
+    "Bedroom 02 | ivory wool": [
+      0.7200000286102295,
+      0.6800000071525574,
+      0.6000000238418579,
+      1.0
+    ],
+    "Bedroom 02 | opal lens": [
+      0.9599999785423279,
+      0.8700000047683716,
+      0.6700000166893005,
+      1.0
+    ],
+    "Bedroom 02 | sand linen": [
+      0.550000011920929,
+      0.49000000953674316,
+      0.4000000059604645,
+      1.0
+    ],
+    "Bedroom 02 | screen": [
+      0.012000000104308128,
+      0.017999999225139618,
+      0.019999999552965164,
+      1.0
+    ],
+    "Ensuite 01 | charcoal clothes": [
+      0.052000001072883606,
+      0.06499999761581421,
+      0.061000000685453415,
+      1.0
+    ],
+    "Ensuite 01 | folded ivory towels": [
+      0.7699999809265137,
+      0.7350000143051147,
+      0.6499999761581421,
+      1.0
+    ],
+    "Ensuite 01 | ivory clothes": [
+      0.7699999809265137,
+      0.7400000095367432,
+      0.6700000166893005,
+      1.0
+    ],
+    "Ensuite 01 | limestone grout": [
+      0.4300000071525574,
+      0.38999998569488525,
+      0.3199999928474426,
+      1.0
+    ],
+    "Ensuite 01 | mirror backing": [
+      0.7200000286102295,
+      0.75,
+      0.7300000190734863,
+      1.0
+    ],
+    "Ensuite 01 | obscure privacy pane": [
+      0.7599999904632568,
+      0.8199999928474426,
+      0.7699999809265137,
+      0.8500000238418579
+    ],
+    "Ensuite 01 | recess shadow": [
+      0.041999999433755875,
+      0.032999999821186066,
+      0.024000000208616257,
+      1.0
+    ],
+    "Ensuite 01 | Shower Glass": [
+      0.8500000238418579,
+      0.9399999976158142,
+      0.9100000262260437,
+      0.1599999964237213
+    ],
+    "Ensuite 01 | taupe clothes": [
+      0.3400000035762787,
+      0.28999999165534973,
+      0.23000000417232513,
+      1.0
+    ],
+    "Ensuite 01 | warm light lens": [
+      0.9599999785423279,
+      0.8500000238418579,
+      0.6499999761581421,
+      1.0
+    ],
+    "Ensuite 01 | warm white ceramic": [
+      0.8999999761581421,
+      0.8849999904632568,
+      0.8399999737739563,
+      1.0
+    ],
+    "Proposal | Bronze black frames": [
+      0.03400000184774399,
+      0.03999999910593033,
+      0.03700000047683716,
+      1.0
+    ],
+    "Proposal | Clear glazing": [
+      0.550000011920929,
+      0.7200000286102295,
+      0.7699999809265137,
+      0.14000000059604645
+    ],
+    "Proposal | Limestone paving": [
+      0.5400000214576721,
+      0.5199999809265137,
+      0.44999998807907104,
+      1.0
+    ],
+    "Proposal | Limestone render": [
+      0.7799999713897705,
+      0.7599999904632568,
+      0.6899999976158142,
+      1.0
+    ],
+    "Proposal | Loft plaster": [
+      0.8299999833106995,
+      0.8199999928474426,
+      0.7599999904632568,
+      1.0
+    ],
+    "Proposal | Oatmeal linen": [
+      0.5600000023841858,
+      0.5299999713897705,
+      0.44999998807907104,
+      1.0
+    ],
+    "Proposal | Pale oak": [
+      0.4399999976158142,
+      0.28999999165534973,
+      0.14000000059604645,
+      1.0
+    ],
+    "Proposal | Quiet oak cream upholstery": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Proposal | Quiet oak honed limestone": [
+      0.9800000190734863,
+      0.949999988079071,
+      0.8799999952316284,
+      1.0
+    ],
+    "Proposal | Quiet oak ivory ceramic": [
+      0.4699999988079071,
+      0.42500001192092896,
+      0.3400000035762787,
+      1.0
+    ],
+    "Proposal | Quiet oak olive branch": [
+      0.18000000715255737,
+      0.10999999940395355,
+      0.054999999701976776,
+      1.0
+    ],
+    "Proposal | Quiet oak olive leaf": [
+      0.054999999701976776,
+      0.09000000357627869,
+      0.023000000044703484,
+      1.0
+    ],
+    "Proposal | Quiet oak olive leaf underside": [
+      0.12999999523162842,
+      0.16500000655651093,
+      0.07500000298023224,
+      1.0
+    ],
+    "Proposal | Quiet oak pale natural oak": [
+      0.550000011920929,
+      0.5199999809265137,
+      0.46000000834465027,
+      1.0
+    ],
+    "Proposal | Quiet oak planting soil": [
+      0.04500000178813934,
+      0.027000000700354576,
+      0.013000000268220901,
+      1.0
+    ],
+    "Proposal | Quiet oak warm chalk media plaster": [
+      0.6399999856948853,
+      0.5979999899864197,
+      0.5099999904632568,
+      1.0
+    ],
+    "Proposal | White internal walls": [
+      0.8399999737739563,
+      0.8399999737739563,
+      0.8199999928474426,
+      1.0
+    ]
+  },
+  "planRooms": [
+    {
+      "name": "Bedroom",
+      "floor": 1,
+      "polygon_m": [
+        [
+          5.16,
+          -16.076
+        ],
+        [
+          13.75,
+          -16.076
+        ],
+        [
+          13.75,
+          -10.95
+        ],
+        [
+          9.96,
+          -10.95
+        ],
+        [
+          9.96,
+          -8.76
+        ],
+        [
+          5.16,
+          -8.76
+        ]
+      ]
+    }
+  ],
+  "cutawayObjects": [
+    "Bedroom 02 | ceiling 0",
+    "Bedroom 02 | ceiling 2",
+    "Bedroom 02 | retained vault soffit",
+    "Bedroom 02 | retained vault soffit.001",
+    "Bedroom 02 | downlight bezel",
+    "Bedroom 02 | downlight lens",
+    "Bedroom 02 | downlight bezel.001",
+    "Bedroom 02 | downlight lens.001",
+    "Bedroom 02 | downlight bezel.002",
+    "Bedroom 02 | downlight lens.002",
+    "Bedroom 02 | downlight bezel.003",
+    "Bedroom 02 | downlight lens.003",
+    "Bedroom 02 | downlight bezel.004",
+    "Bedroom 02 | downlight lens.004",
+    "Ensuite 01 | ceiling downlight trim",
+    "Ensuite 01 | ceiling downlight lens",
+    "Ensuite 01 | ceiling downlight trim.001",
+    "Ensuite 01 | ceiling downlight lens.001",
+    "Ensuite 01 | ceiling downlight trim.002",
+    "Ensuite 01 | ceiling downlight lens.002",
+    "Ensuite 01 | ceiling downlight trim.003",
+    "Ensuite 01 | ceiling downlight lens.003",
+    "Ensuite 01 | extract grille",
+    "Ensuite 01 | extract slot",
+    "Ensuite 01 | extract slot.001",
+    "Ensuite 01 | extract slot.002",
+    "Ensuite 01 | extract slot.003",
+    "Ensuite 01 | extract slot.004",
+    "Ensuite 01 | extract slot.005",
+    "Ensuite 01 | extract slot.006",
+    "Ensuite 01 | extract slot.007",
+    "Ensuite 01 | extract slot.008"
+  ],
+  "configuration": {
+    "revision": 2,
+    "status": "Longer bathroom, shifted walk-through wardrobe and revised east windows; isolated room review",
+    "floor_z": 2.8,
+    "ceiling_z": 5.28,
+    "bathroom_polygon": [
+      [
+        9.96,
+        -7.64
+      ],
+      [
+        13.75,
+        -7.64
+      ],
+      [
+        13.75,
+        -3.259
+      ],
+      [
+        10.47,
+        -3.259
+      ],
+      [
+        10.47,
+        -6.71
+      ],
+      [
+        9.96,
+        -6.71
+      ]
+    ],
+    "dressing_polygon": [
+      [
+        9.96,
+        -10.95
+      ],
+      [
+        13.75,
+        -10.95
+      ],
+      [
+        13.75,
+        -7.76
+      ],
+      [
+        9.96,
+        -7.76
+      ]
+    ],
+    "partition": {
+      "y": -7.7,
+      "thickness_m": 0.12,
+      "opening": [
+        11.45,
+        12.4
+      ],
+      "hinge": [
+        12.4,
+        -7.7
+      ],
+      "width_m": 0.95,
+      "swing": "outward into dressing"
+    },
+    "fixtures": {
+      "bath": [
+        12.76,
+        -5.2,
+        13.56,
+        -3.4
+      ],
+      "shower": [
+        10.47,
+        -4.96,
+        11.9,
+        -3.259
+      ],
+      "vanity": [
+        10.47,
+        -6.84,
+        11.02,
+        -5.04
+      ],
+      "wc": [
+        13.045,
+        -7.43,
+        13.445,
+        -6.87
+      ],
+      "wc_screen": [
+        12.66,
+        -7.64,
+        12.74,
+        -6.865
+      ],
+      "cistern": [
+        12.74,
+        -7.64,
+        13.75,
+        -7.43
+      ],
+      "west_wardrobe": [
+        9.96,
+        -9.75,
+        10.61,
+        -7.85
+      ],
+      "south_wardrobe": [
+        11.7,
+        -10.95,
+        13.7,
+        -10.3
+      ],
+      "window_drawers": [
+        13.15,
+        -9.55,
+        13.75,
+        -7.95
+      ]
+    },
+    "use_zones": {
+      "vanity_person_south": [
+        11.02,
+        -6.75,
+        11.62,
+        -6.05
+      ],
+      "vanity_person_north": [
+        11.02,
+        -5.85,
+        11.62,
+        -5.15
+      ],
+      "wc_front": [
+        12.845,
+        -6.87,
+        13.645,
+        -6.12
+      ],
+      "vanity_drawer_open": [
+        11.02,
+        -6.81,
+        11.42,
+        -6.0
+      ],
+      "west_drawer_open": [
+        10.61,
+        -9.74,
+        11.06,
+        -9.15
+      ],
+      "window_drawer_open": [
+        12.7,
+        -9.52,
+        13.15,
+        -8.75
+      ]
+    },
+    "routes": [
+      {
+        "name": "Dressing turn",
+        "width_m": 1.0,
+        "points": [
+          [
+            10.95,
+            -10.28
+          ],
+          [
+            11.16,
+            -10.28
+          ],
+          [
+            11.16,
+            -9.1
+          ],
+          [
+            11.8,
+            -8.3
+          ]
+        ]
+      },
+      {
+        "name": "Bathroom doorway and aisle",
+        "width_m": 0.9,
+        "points": [
+          [
+            11.91,
+            -8.4
+          ],
+          [
+            11.91,
+            -7.4
+          ],
+          [
+            12.13,
+            -7.0
+          ],
+          [
+            12.13,
+            -5.48
+          ]
+        ]
+      },
+      {
+        "name": "WC side approach",
+        "width_m": 1.0,
+        "points": [
+          [
+            12.14,
+            -6.04
+          ],
+          [
+            13.2,
+            -6.04
+          ]
+        ]
+      },
+      {
+        "name": "Shower approach",
+        "width_m": 0.84,
+        "points": [
+          [
+            12.13,
+            -5.6
+          ],
+          [
+            11.47,
+            -5.6
+          ],
+          [
+            11.47,
+            -4.4
+          ]
+        ]
+      },
+      {
+        "name": "Bath long-side approach",
+        "width_m": 0.8,
+        "points": [
+          [
+            12.13,
+            -5.48
+          ],
+          [
+            12.32,
+            -5.25
+          ],
+          [
+            12.32,
+            -4.0
+          ]
+        ]
+      }
+    ],
+    "unresolved": [
+      "Survey and final product installation clearances",
+      "Structural floor loading and drainage/soil route",
+      "Extraction, waterproofing, window privacy and electrical design",
+      "Main-house integration after room review",
+      "Elevation/structural review of moved windows and added bath window"
+    ],
+    "suite_shift_m": 0.75,
+    "bath_window": {
+      "wall": "east",
+      "center_y": -4.3,
+      "width_m": 1.8,
+      "sill_above_floor_m": 1.1,
+      "head_z": 5.05
+    }
+  },
+  "objects": 964,
+  "authored_objects": 464,
+  "proposalLights": [
+    {
+      "name": "Bedroom bounce",
+      "position": [
+        11.15,
+        -14.0,
+        4.7
+      ],
+      "range": 5,
+      "intensity": 2.0
+    },
+    {
+      "name": "Sitting bounce",
+      "position": [
+        7,
+        -10.5,
+        4.7
+      ],
+      "range": 4,
+      "intensity": 1.8
+    },
+    {
+      "name": "Desk bounce",
+      "position": [
+        6.7,
+        -14.7,
+        4.6
+      ],
+      "range": 4,
+      "intensity": 1.2
+    },
+    {
+      "name": "Vanity light bounce",
+      "position": [
+        11.3,
+        -5.9,
+        4.6
+      ],
+      "range": 3,
+      "intensity": 1.65
+    },
+    {
+      "name": "Bath daylight bounce",
+      "position": [
+        12.4,
+        -4.0,
+        4.6
+      ],
+      "range": 3,
+      "intensity": 1.4
+    },
+    {
+      "name": "Dressing light bounce",
+      "position": [
+        11.9,
+        -9.25,
+        4.8
+      ],
+      "range": 4,
+      "intensity": 1.6
+    }
+  ],
+  "sourceModelUpdatedAt": "2026-09-25T18:31:01.503809+00:00",
+  "mirrors": [
+    {
+      "name": "Basin mirror 0",
+      "position": [
+        10.523,
+        -6.39,
+        4.529999999999999
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "width": 0.754,
+      "height": 1.024
+    },
+    {
+      "name": "Basin mirror 1",
+      "position": [
+        10.523,
+        -5.49,
+        4.529999999999999
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "width": 0.754,
+      "height": 1.024
+    },
+    {
+      "name": "Dressing mirror",
+      "position": [
+        10.99,
+        -7.813,
+        3.9799999999999995
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "width": 0.66,
+      "height": 1.95
+    }
+  ]
+}

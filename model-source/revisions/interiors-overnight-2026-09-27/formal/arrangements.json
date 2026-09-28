@@ -1,0 +1,900 @@
+{
+  "status": "WORKING STUDY",
+  "results": [
+    {
+      "orientation": "crosswise",
+      "places": 6,
+      "tableLength": 1.8,
+      "tableWidth": 1,
+      "centre": [
+        7.92,
+        7.25
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": true,
+        "drawing hall arrival": true,
+        "north bay doors": true,
+        "drawing garden doors": true,
+        "front bay": true,
+        "kitchen hatch": true,
+        "south sofa approach": true,
+        "north sofa approach": true,
+        "reading chair approach": true
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "PASS",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "crosswise",
+      "places": 8,
+      "tableLength": 2.8,
+      "tableWidth": 1,
+      "centre": [
+        7.92,
+        7.25
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": true,
+        "drawing hall arrival": true,
+        "north bay doors": true,
+        "drawing garden doors": true,
+        "front bay": true,
+        "kitchen hatch": true,
+        "south sofa approach": true,
+        "north sofa approach": true,
+        "reading chair approach": true
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 7,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 8,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "PASS",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "crosswise",
+      "places": 10,
+      "tableLength": 2.8,
+      "tableWidth": 1,
+      "centre": [
+        7.92,
+        7.25
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": true,
+        "drawing hall arrival": true,
+        "north bay doors": true,
+        "drawing garden doors": true,
+        "front bay": true,
+        "kitchen hatch": true,
+        "south sofa approach": true,
+        "north sofa approach": true,
+        "reading chair approach": true
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 7,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 8,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 9,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 10,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "PASS",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "lengthwise",
+      "places": 6,
+      "tableLength": 1.8,
+      "tableWidth": 1,
+      "centre": [
+        6.965,
+        7.57
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": true,
+        "drawing hall arrival": true,
+        "north bay doors": true,
+        "drawing garden doors": true,
+        "front bay": true,
+        "kitchen hatch": true,
+        "south sofa approach": true,
+        "north sofa approach": true,
+        "reading chair approach": true
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "PASS",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "lengthwise",
+      "places": 8,
+      "tableLength": 2.8,
+      "tableWidth": 1,
+      "centre": [
+        6.965,
+        7.57
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": false,
+        "drawing hall arrival": false,
+        "north bay doors": false,
+        "drawing garden doors": false,
+        "front bay": false,
+        "kitchen hatch": false,
+        "south sofa approach": false,
+        "north sofa approach": false,
+        "reading chair approach": false
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 7,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 8,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "REWORK",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "lengthwise",
+      "places": 10,
+      "tableLength": 2.8,
+      "tableWidth": 1,
+      "centre": [
+        6.965,
+        7.57
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": false,
+        "drawing hall arrival": false,
+        "north bay doors": false,
+        "drawing garden doors": false,
+        "front bay": false,
+        "kitchen hatch": false,
+        "south sofa approach": false,
+        "north sofa approach": false,
+        "reading chair approach": false
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 7,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 8,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 9,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 10,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "REWORK",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "offset lengthwise",
+      "places": 6,
+      "tableLength": 1.8,
+      "tableWidth": 1,
+      "centre": [
+        7.9,
+        7.575
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": true,
+        "drawing hall arrival": false,
+        "north bay doors": true,
+        "drawing garden doors": false,
+        "front bay": false,
+        "kitchen hatch": true,
+        "south sofa approach": false,
+        "north sofa approach": false,
+        "reading chair approach": false
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "REWORK",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "offset lengthwise",
+      "places": 8,
+      "tableLength": 2.8,
+      "tableWidth": 1,
+      "centre": [
+        7.9,
+        7.575
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": true,
+        "drawing hall arrival": false,
+        "north bay doors": true,
+        "drawing garden doors": false,
+        "front bay": false,
+        "kitchen hatch": true,
+        "south sofa approach": false,
+        "north sofa approach": false,
+        "reading chair approach": false
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 7,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": [
+            "Formal 01 | dining east door"
+          ]
+        },
+        {
+          "chair": 8,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "REWORK",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    },
+    {
+      "orientation": "offset lengthwise",
+      "places": 10,
+      "tableLength": 2.8,
+      "tableWidth": 1,
+      "centre": [
+        7.9,
+        7.575
+      ],
+      "bodyWidth": 0.6,
+      "routeChecks": {
+        "dining hall arrival": true,
+        "drawing hall arrival": false,
+        "north bay doors": true,
+        "drawing garden doors": false,
+        "front bay": false,
+        "kitchen hatch": true,
+        "south sofa approach": false,
+        "north sofa approach": false,
+        "reading chair approach": false
+      },
+      "chairPullouts": [
+        {
+          "chair": 1,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 2,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 3,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 4,
+          "movement_m": [
+            0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 5,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 6,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 7,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 8,
+          "movement_m": [
+            -0.3,
+            0
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        },
+        {
+          "chair": 9,
+          "movement_m": [
+            0,
+            -0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": [
+            "Formal 01 | dining east door"
+          ]
+        },
+        {
+          "chair": 10,
+          "movement_m": [
+            0,
+            0.3
+          ],
+          "insideShell": true,
+          "furnitureClashes": []
+        }
+      ],
+      "furnitureOutsideRoom": [],
+      "status": "REWORK",
+      "note": "Preliminary static plan; complete native door movements, standing approach to each pulled chair and furniture geometry still to be checked."
+    }
+  ]
+}

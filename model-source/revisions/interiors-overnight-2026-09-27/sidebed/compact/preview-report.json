@@ -1,0 +1,2136 @@
+{
+  "area": "sidebed",
+  "revision": 2,
+  "objects": 390,
+  "mesh_objects": 382,
+  "lights": 8,
+  "removed_objects": [
+    {
+      "name": "Sidebed 01 | warm wool bedroom floor",
+      "object_name": "Sidebed 01 | warm wool bedroom floor"
+    },
+    {
+      "name": "Sidebed 01 | ensuite limestone floor",
+      "object_name": "Sidebed 01 | ensuite limestone floor"
+    },
+    {
+      "name": "Sidebed 01 | ivory ceiling",
+      "object_name": "Sidebed 01 | ivory ceiling"
+    },
+    {
+      "name": "Sidebed 01 | ivory ceiling",
+      "object_name": "Sidebed 01 | ivory ceiling.001"
+    },
+    {
+      "name": "Sidebed 01 | shifted ensuite east partition",
+      "object_name": "Sidebed 01 | shifted ensuite east partition"
+    },
+    {
+      "name": "Sidebed 01 | ensuite south west pier",
+      "object_name": "Sidebed 01 | ensuite south west pier"
+    },
+    {
+      "name": "Sidebed 01 | ensuite south east pier",
+      "object_name": "Sidebed 01 | ensuite south east pier"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door lintel",
+      "object_name": "Sidebed 01 | ensuite door lintel"
+    },
+    {
+      "name": "Sidebed 01 | hall west jamb infill",
+      "object_name": "Sidebed 01 | hall west jamb infill"
+    },
+    {
+      "name": "Sidebed 01 | hall east pier",
+      "object_name": "Sidebed 01 | hall east pier"
+    },
+    {
+      "name": "Sidebed 01 | hall door lintel",
+      "object_name": "Sidebed 01 | hall door lintel"
+    },
+    {
+      "name": "Sidebed 01 | east ivory wall lining",
+      "object_name": "Sidebed 01 | east ivory wall lining"
+    },
+    {
+      "name": "Sidebed 01 | east oak headwall",
+      "object_name": "Sidebed 01 | east oak headwall"
+    },
+    {
+      "name": "Sidebed 01 | headwall fine joint",
+      "object_name": "Sidebed 01 | headwall fine joint"
+    },
+    {
+      "name": "Sidebed 01 | headwall fine joint",
+      "object_name": "Sidebed 01 | headwall fine joint.001"
+    },
+    {
+      "name": "Sidebed 01 | headwall fine joint",
+      "object_name": "Sidebed 01 | headwall fine joint.002"
+    },
+    {
+      "name": "Sidebed 01 | headwall fine joint",
+      "object_name": "Sidebed 01 | headwall fine joint.003"
+    },
+    {
+      "name": "Sidebed 01 | headwall fine joint",
+      "object_name": "Sidebed 01 | headwall fine joint.004"
+    },
+    {
+      "name": "Sidebed 01 | headwall fine joint",
+      "object_name": "Sidebed 01 | headwall fine joint.005"
+    },
+    {
+      "name": "Sidebed 01 | wall-backed upholstered headboard",
+      "object_name": "Sidebed 01 | wall-backed upholstered headboard"
+    },
+    {
+      "name": "Sidebed 01 | bed recessed base",
+      "object_name": "Sidebed 01 | bed recessed base"
+    },
+    {
+      "name": "Sidebed 01 | bed upholstered frame",
+      "object_name": "Sidebed 01 | bed upholstered frame"
+    },
+    {
+      "name": "Sidebed 01 | double mattress",
+      "object_name": "Sidebed 01 | double mattress"
+    },
+    {
+      "name": "Sidebed 01 | draped cotton duvet",
+      "object_name": "Sidebed 01 | draped cotton duvet"
+    },
+    {
+      "name": "Sidebed 01 | folded duvet edge",
+      "object_name": "Sidebed 01 | folded duvet edge"
+    },
+    {
+      "name": "Sidebed 01 | woven bed throw",
+      "object_name": "Sidebed 01 | woven bed throw"
+    },
+    {
+      "name": "Sidebed 01 | sleeping pillow",
+      "object_name": "Sidebed 01 | sleeping pillow"
+    },
+    {
+      "name": "Sidebed 01 | small linen cushion",
+      "object_name": "Sidebed 01 | small linen cushion"
+    },
+    {
+      "name": "Sidebed 01 | sleeping pillow",
+      "object_name": "Sidebed 01 | sleeping pillow.001"
+    },
+    {
+      "name": "Sidebed 01 | small linen cushion",
+      "object_name": "Sidebed 01 | small linen cushion.001"
+    },
+    {
+      "name": "Sidebed 01 | floating bedside drawer",
+      "object_name": "Sidebed 01 | floating bedside drawer"
+    },
+    {
+      "name": "Sidebed 01 | bedside limestone top",
+      "object_name": "Sidebed 01 | bedside limestone top"
+    },
+    {
+      "name": "Sidebed 01 | bedside finger recess",
+      "object_name": "Sidebed 01 | bedside finger recess"
+    },
+    {
+      "name": "Sidebed 01 | reading light backplate",
+      "object_name": "Sidebed 01 | reading light backplate"
+    },
+    {
+      "name": "Sidebed 01 | reading light shade",
+      "object_name": "Sidebed 01 | reading light shade"
+    },
+    {
+      "name": "Sidebed 01 | reading light lens",
+      "object_name": "Sidebed 01 | reading light lens"
+    },
+    {
+      "name": "Sidebed 01 | bedside control plate",
+      "object_name": "Sidebed 01 | bedside control plate"
+    },
+    {
+      "name": "Sidebed 01 | bedside switch",
+      "object_name": "Sidebed 01 | bedside switch"
+    },
+    {
+      "name": "Sidebed 01 | bedside switch",
+      "object_name": "Sidebed 01 | bedside switch.001"
+    },
+    {
+      "name": "Sidebed 01 | bedside USB C slot",
+      "object_name": "Sidebed 01 | bedside USB C slot"
+    },
+    {
+      "name": "Sidebed 01 | bedside glow",
+      "object_name": "Sidebed 01 | bedside glow"
+    },
+    {
+      "name": "Sidebed 01 | floating bedside drawer",
+      "object_name": "Sidebed 01 | floating bedside drawer.001"
+    },
+    {
+      "name": "Sidebed 01 | bedside limestone top",
+      "object_name": "Sidebed 01 | bedside limestone top.001"
+    },
+    {
+      "name": "Sidebed 01 | bedside finger recess",
+      "object_name": "Sidebed 01 | bedside finger recess.001"
+    },
+    {
+      "name": "Sidebed 01 | reading light backplate",
+      "object_name": "Sidebed 01 | reading light backplate.001"
+    },
+    {
+      "name": "Sidebed 01 | reading light shade",
+      "object_name": "Sidebed 01 | reading light shade.001"
+    },
+    {
+      "name": "Sidebed 01 | reading light lens",
+      "object_name": "Sidebed 01 | reading light lens.001"
+    },
+    {
+      "name": "Sidebed 01 | bedside control plate",
+      "object_name": "Sidebed 01 | bedside control plate.001"
+    },
+    {
+      "name": "Sidebed 01 | bedside switch",
+      "object_name": "Sidebed 01 | bedside switch.002"
+    },
+    {
+      "name": "Sidebed 01 | bedside switch",
+      "object_name": "Sidebed 01 | bedside switch.003"
+    },
+    {
+      "name": "Sidebed 01 | bedside USB C slot",
+      "object_name": "Sidebed 01 | bedside USB C slot.001"
+    },
+    {
+      "name": "Sidebed 01 | bedside glow",
+      "object_name": "Sidebed 01 | bedside glow.001"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe recessed plinth",
+      "object_name": "Sidebed 01 | wardrobe recessed plinth"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe back",
+      "object_name": "Sidebed 01 | wardrobe back"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe upright",
+      "object_name": "Sidebed 01 | wardrobe upright"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe upright",
+      "object_name": "Sidebed 01 | wardrobe upright.001"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe upright",
+      "object_name": "Sidebed 01 | wardrobe upright.002"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe horizontal carcass",
+      "object_name": "Sidebed 01 | wardrobe horizontal carcass"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe horizontal carcass",
+      "object_name": "Sidebed 01 | wardrobe horizontal carcass.001"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe upper shelf",
+      "object_name": "Sidebed 01 | wardrobe upper shelf"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe hanging rail",
+      "object_name": "Sidebed 01 | wardrobe hanging rail"
+    },
+    {
+      "name": "Sidebed 01 | sliding wardrobe front",
+      "object_name": "Sidebed 01 | sliding wardrobe front"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe recessed pull",
+      "object_name": "Sidebed 01 | wardrobe recessed pull"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe upper shelf",
+      "object_name": "Sidebed 01 | wardrobe upper shelf.001"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe folded storage shelf",
+      "object_name": "Sidebed 01 | wardrobe folded storage shelf"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe folded storage shelf",
+      "object_name": "Sidebed 01 | wardrobe folded storage shelf.001"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe folded storage shelf",
+      "object_name": "Sidebed 01 | wardrobe folded storage shelf.002"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe folded storage shelf",
+      "object_name": "Sidebed 01 | wardrobe folded storage shelf.003"
+    },
+    {
+      "name": "Sidebed 01 | folded wardrobe linen",
+      "object_name": "Sidebed 01 | folded wardrobe linen"
+    },
+    {
+      "name": "Sidebed 01 | folded wardrobe linen",
+      "object_name": "Sidebed 01 | folded wardrobe linen.001"
+    },
+    {
+      "name": "Sidebed 01 | folded wardrobe linen",
+      "object_name": "Sidebed 01 | folded wardrobe linen.002"
+    },
+    {
+      "name": "Sidebed 01 | sliding wardrobe front",
+      "object_name": "Sidebed 01 | sliding wardrobe front.001"
+    },
+    {
+      "name": "Sidebed 01 | wardrobe recessed pull",
+      "object_name": "Sidebed 01 | wardrobe recessed pull.001"
+    },
+    {
+      "name": "Sidebed 01 | luggage bench oak leg",
+      "object_name": "Sidebed 01 | luggage bench oak leg"
+    },
+    {
+      "name": "Sidebed 01 | luggage bench oak leg",
+      "object_name": "Sidebed 01 | luggage bench oak leg.001"
+    },
+    {
+      "name": "Sidebed 01 | luggage bench shelf",
+      "object_name": "Sidebed 01 | luggage bench shelf"
+    },
+    {
+      "name": "Sidebed 01 | luggage bench padded top",
+      "object_name": "Sidebed 01 | luggage bench padded top"
+    },
+    {
+      "name": "Sidebed 01 | luggage bench woven strap",
+      "object_name": "Sidebed 01 | luggage bench woven strap"
+    },
+    {
+      "name": "Sidebed 01 | luggage bench woven strap",
+      "object_name": "Sidebed 01 | luggage bench woven strap.001"
+    },
+    {
+      "name": "Sidebed 01 | vanity back",
+      "object_name": "Sidebed 01 | vanity back"
+    },
+    {
+      "name": "Sidebed 01 | vanity end",
+      "object_name": "Sidebed 01 | vanity end"
+    },
+    {
+      "name": "Sidebed 01 | vanity end",
+      "object_name": "Sidebed 01 | vanity end.001"
+    },
+    {
+      "name": "Sidebed 01 | vanity base",
+      "object_name": "Sidebed 01 | vanity base"
+    },
+    {
+      "name": "Sidebed 01 | vanity top support rail",
+      "object_name": "Sidebed 01 | vanity top support rail"
+    },
+    {
+      "name": "Sidebed 01 | vanity top support rail",
+      "object_name": "Sidebed 01 | vanity top support rail.001"
+    },
+    {
+      "name": "Sidebed 01 | vanity top support rail",
+      "object_name": "Sidebed 01 | vanity top support rail.002"
+    },
+    {
+      "name": "Sidebed 01 | vanity top support rail",
+      "object_name": "Sidebed 01 | vanity top support rail.003"
+    },
+    {
+      "name": "Sidebed 01 | sliding vanity front",
+      "object_name": "Sidebed 01 | sliding vanity front"
+    },
+    {
+      "name": "Sidebed 01 | vanity recessed pull",
+      "object_name": "Sidebed 01 | vanity recessed pull"
+    },
+    {
+      "name": "Sidebed 01 | sliding vanity front",
+      "object_name": "Sidebed 01 | sliding vanity front.001"
+    },
+    {
+      "name": "Sidebed 01 | vanity recessed pull",
+      "object_name": "Sidebed 01 | vanity recessed pull.001"
+    },
+    {
+      "name": "Sidebed 01 | hollow ceramic basin",
+      "object_name": "Sidebed 01 | hollow ceramic basin"
+    },
+    {
+      "name": "Sidebed 01 | basin dark waste",
+      "object_name": "Sidebed 01 | basin dark waste"
+    },
+    {
+      "name": "Sidebed 01 | basin bronze pop-up waste",
+      "object_name": "Sidebed 01 | basin bronze pop-up waste"
+    },
+    {
+      "name": "Sidebed 01 | mixer backplate",
+      "object_name": "Sidebed 01 | mixer backplate"
+    },
+    {
+      "name": "Sidebed 01 | mixer aerator",
+      "object_name": "Sidebed 01 | mixer aerator"
+    },
+    {
+      "name": "Sidebed 01 | mixer control backplate",
+      "object_name": "Sidebed 01 | mixer control backplate"
+    },
+    {
+      "name": "Sidebed 01 | mixer control knob",
+      "object_name": "Sidebed 01 | mixer control knob"
+    },
+    {
+      "name": "Sidebed 01 | mixer control index",
+      "object_name": "Sidebed 01 | mixer control index"
+    },
+    {
+      "name": "Sidebed 01 | mirror bronze edge",
+      "object_name": "Sidebed 01 | mirror bronze edge"
+    },
+    {
+      "name": "Sidebed 01 | basin mirror",
+      "object_name": "Sidebed 01 | basin mirror"
+    },
+    {
+      "name": "Sidebed 01 | mirror light bronze",
+      "object_name": "Sidebed 01 | mirror light bronze"
+    },
+    {
+      "name": "Sidebed 01 | mirror light diffuser",
+      "object_name": "Sidebed 01 | mirror light diffuser"
+    },
+    {
+      "name": "Sidebed 01 | mirror light bronze",
+      "object_name": "Sidebed 01 | mirror light bronze.001"
+    },
+    {
+      "name": "Sidebed 01 | mirror light diffuser",
+      "object_name": "Sidebed 01 | mirror light diffuser.001"
+    },
+    {
+      "name": "Sidebed 01 | basin face glow",
+      "object_name": "Sidebed 01 | basin face glow"
+    },
+    {
+      "name": "Sidebed 01 | soap dispenser ceramic body",
+      "object_name": "Sidebed 01 | soap dispenser ceramic body"
+    },
+    {
+      "name": "Sidebed 01 | soap dispenser collar",
+      "object_name": "Sidebed 01 | soap dispenser collar"
+    },
+    {
+      "name": "Sidebed 01 | concealed WC cistern",
+      "object_name": "Sidebed 01 | concealed WC cistern"
+    },
+    {
+      "name": "Sidebed 01 | cistern stone cap",
+      "object_name": "Sidebed 01 | cistern stone cap"
+    },
+    {
+      "name": "Sidebed 01 | open wall-hung WC pan",
+      "object_name": "Sidebed 01 | open wall-hung WC pan"
+    },
+    {
+      "name": "Sidebed 01 | WC concealed rear outlet",
+      "object_name": "Sidebed 01 | WC concealed rear outlet"
+    },
+    {
+      "name": "Sidebed 01 | WC dark bowl outlet",
+      "object_name": "Sidebed 01 | WC dark bowl outlet"
+    },
+    {
+      "name": "Sidebed 01 | open WC seat",
+      "object_name": "Sidebed 01 | open WC seat"
+    },
+    {
+      "name": "Sidebed 01 | WC seat hinge",
+      "object_name": "Sidebed 01 | WC seat hinge"
+    },
+    {
+      "name": "Sidebed 01 | WC seat hinge",
+      "object_name": "Sidebed 01 | WC seat hinge.001"
+    },
+    {
+      "name": "Sidebed 01 | dual flush plate",
+      "object_name": "Sidebed 01 | dual flush plate"
+    },
+    {
+      "name": "Sidebed 01 | dual flush button",
+      "object_name": "Sidebed 01 | dual flush button"
+    },
+    {
+      "name": "Sidebed 01 | dual flush button",
+      "object_name": "Sidebed 01 | dual flush button.001"
+    },
+    {
+      "name": "Sidebed 01 | paper roll",
+      "object_name": "Sidebed 01 | paper roll"
+    },
+    {
+      "name": "Sidebed 01 | low limestone shower tray",
+      "object_name": "Sidebed 01 | low limestone shower tray"
+    },
+    {
+      "name": "Sidebed 01 | shower linear drain",
+      "object_name": "Sidebed 01 | shower linear drain"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.001"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.002"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.003"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.004"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.005"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.006"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.007"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.008"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.009"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.010"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.011"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.012"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.013"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.014"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.015"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.016"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.017"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.018"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.019"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.020"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.021"
+    },
+    {
+      "name": "Sidebed 01 | shower drain slot divider",
+      "object_name": "Sidebed 01 | shower drain slot divider.022"
+    },
+    {
+      "name": "Sidebed 01 | shower south glass",
+      "object_name": "Sidebed 01 | shower south glass"
+    },
+    {
+      "name": "Sidebed 01 | shower south wall channel",
+      "object_name": "Sidebed 01 | shower south wall channel"
+    },
+    {
+      "name": "Sidebed 01 | shower short east return",
+      "object_name": "Sidebed 01 | shower short east return"
+    },
+    {
+      "name": "Sidebed 01 | shower short north return",
+      "object_name": "Sidebed 01 | shower short north return"
+    },
+    {
+      "name": "Sidebed 01 | shower north corner channel",
+      "object_name": "Sidebed 01 | shower north corner channel"
+    },
+    {
+      "name": "Sidebed 01 | shower door glass",
+      "object_name": "Sidebed 01 | shower door glass"
+    },
+    {
+      "name": "Sidebed 01 | shower door hinge",
+      "object_name": "Sidebed 01 | shower door hinge"
+    },
+    {
+      "name": "Sidebed 01 | shower door hinge",
+      "object_name": "Sidebed 01 | shower door hinge.001"
+    },
+    {
+      "name": "Sidebed 01 | shower door bottom seal",
+      "object_name": "Sidebed 01 | shower door bottom seal"
+    },
+    {
+      "name": "Sidebed 01 | shower rear limestone wall",
+      "object_name": "Sidebed 01 | shower rear limestone wall"
+    },
+    {
+      "name": "Sidebed 01 | shower west limestone sill wall",
+      "object_name": "Sidebed 01 | shower west limestone sill wall"
+    },
+    {
+      "name": "Sidebed 01 | shower west limestone head wall",
+      "object_name": "Sidebed 01 | shower west limestone head wall"
+    },
+    {
+      "name": "Sidebed 01 | shower west limestone window pier",
+      "object_name": "Sidebed 01 | shower west limestone window pier"
+    },
+    {
+      "name": "Sidebed 01 | shower west limestone window pier",
+      "object_name": "Sidebed 01 | shower west limestone window pier.001"
+    },
+    {
+      "name": "Sidebed 01 | ensuite east limestone wall",
+      "object_name": "Sidebed 01 | ensuite east limestone wall"
+    },
+    {
+      "name": "Sidebed 01 | shower mixer plate",
+      "object_name": "Sidebed 01 | shower mixer plate"
+    },
+    {
+      "name": "Sidebed 01 | shower mixer knob",
+      "object_name": "Sidebed 01 | shower mixer knob"
+    },
+    {
+      "name": "Sidebed 01 | shower mixer knob",
+      "object_name": "Sidebed 01 | shower mixer knob.001"
+    },
+    {
+      "name": "Sidebed 01 | rain shower head",
+      "object_name": "Sidebed 01 | rain shower head"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.001"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.002"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.003"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.004"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.005"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.006"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.007"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.008"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.009"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.010"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.011"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.012"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.013"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.014"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.015"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.016"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.017"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.018"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.019"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.020"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.021"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.022"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.023"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.024"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.025"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.026"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.027"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.028"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.029"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.030"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.031"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.032"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.033"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.034"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.035"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.036"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.037"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.038"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.039"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.040"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.041"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.042"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.043"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.044"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.045"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.046"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.047"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.048"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.049"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.050"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.051"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.052"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.053"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.054"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.055"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.056"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.057"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.058"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.059"
+    },
+    {
+      "name": "Sidebed 01 | rain nozzle",
+      "object_name": "Sidebed 01 | rain nozzle.060"
+    },
+    {
+      "name": "Sidebed 01 | hand shower wall outlet",
+      "object_name": "Sidebed 01 | hand shower wall outlet"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.001"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.002"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.003"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.004"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.005"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.006"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.007"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.008"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.009"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.010"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.011"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.012"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.013"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.014"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.015"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.016"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.017"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.018"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.019"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.020"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.021"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.022"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.023"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.024"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.025"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.026"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.027"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.028"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.029"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.030"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.031"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.032"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.033"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.034"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.035"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.036"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.037"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.038"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.039"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.040"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.041"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.042"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.043"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.044"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.045"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.046"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.047"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.048"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.049"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.050"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.051"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.052"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.053"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.054"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.055"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.056"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.057"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.058"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.059"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.060"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.061"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose rib",
+      "object_name": "Sidebed 01 | hand shower hose rib.062"
+    },
+    {
+      "name": "Sidebed 01 | hand shower handle",
+      "object_name": "Sidebed 01 | hand shower handle"
+    },
+    {
+      "name": "Sidebed 01 | hand shower head",
+      "object_name": "Sidebed 01 | hand shower head"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.001"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.002"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.003"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.004"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.005"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.006"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.007"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.008"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.009"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.010"
+    },
+    {
+      "name": "Sidebed 01 | hand shower nozzle",
+      "object_name": "Sidebed 01 | hand shower nozzle.011"
+    },
+    {
+      "name": "Sidebed 01 | folded hand towel",
+      "object_name": "Sidebed 01 | folded hand towel"
+    },
+    {
+      "name": "Sidebed 01 | hand towel woven hem",
+      "object_name": "Sidebed 01 | hand towel woven hem"
+    },
+    {
+      "name": "Sidebed 01 | hand towel woven hem",
+      "object_name": "Sidebed 01 | hand towel woven hem.001"
+    },
+    {
+      "name": "Sidebed 01 | hand towel woven hem",
+      "object_name": "Sidebed 01 | hand towel woven hem.002"
+    },
+    {
+      "name": "Sidebed 01 | front Roman blind fold",
+      "object_name": "Sidebed 01 | front Roman blind fold"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west Roman blind fold",
+      "object_name": "Sidebed 01 | bedroom west Roman blind fold"
+    },
+    {
+      "name": "Sidebed 01 | ensuite privacy blind fold",
+      "object_name": "Sidebed 01 | ensuite privacy blind fold"
+    },
+    {
+      "name": "Sidebed 01 | front Roman blind fold",
+      "object_name": "Sidebed 01 | front Roman blind fold.001"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west Roman blind fold",
+      "object_name": "Sidebed 01 | bedroom west Roman blind fold.001"
+    },
+    {
+      "name": "Sidebed 01 | ensuite privacy blind fold",
+      "object_name": "Sidebed 01 | ensuite privacy blind fold.001"
+    },
+    {
+      "name": "Sidebed 01 | front Roman blind fold",
+      "object_name": "Sidebed 01 | front Roman blind fold.002"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west Roman blind fold",
+      "object_name": "Sidebed 01 | bedroom west Roman blind fold.002"
+    },
+    {
+      "name": "Sidebed 01 | ensuite privacy blind fold",
+      "object_name": "Sidebed 01 | ensuite privacy blind fold.002"
+    },
+    {
+      "name": "Sidebed 01 | front Roman blind fold",
+      "object_name": "Sidebed 01 | front Roman blind fold.003"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west Roman blind fold",
+      "object_name": "Sidebed 01 | bedroom west Roman blind fold.003"
+    },
+    {
+      "name": "Sidebed 01 | ensuite privacy blind fold",
+      "object_name": "Sidebed 01 | ensuite privacy blind fold.003"
+    },
+    {
+      "name": "Sidebed 01 | front Roman blind fold",
+      "object_name": "Sidebed 01 | front Roman blind fold.004"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west Roman blind fold",
+      "object_name": "Sidebed 01 | bedroom west Roman blind fold.004"
+    },
+    {
+      "name": "Sidebed 01 | ensuite privacy blind fold",
+      "object_name": "Sidebed 01 | ensuite privacy blind fold.004"
+    },
+    {
+      "name": "Sidebed 01 | bedroom front window internal sill",
+      "object_name": "Sidebed 01 | bedroom front window internal sill"
+    },
+    {
+      "name": "Sidebed 01 | bedroom front window internal head",
+      "object_name": "Sidebed 01 | bedroom front window internal head"
+    },
+    {
+      "name": "Sidebed 01 | bedroom front window internal first jamb",
+      "object_name": "Sidebed 01 | bedroom front window internal first jamb"
+    },
+    {
+      "name": "Sidebed 01 | bedroom front window internal second jamb",
+      "object_name": "Sidebed 01 | bedroom front window internal second jamb"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west window internal sill",
+      "object_name": "Sidebed 01 | bedroom west window internal sill"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west window internal head",
+      "object_name": "Sidebed 01 | bedroom west window internal head"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west window internal first jamb",
+      "object_name": "Sidebed 01 | bedroom west window internal first jamb"
+    },
+    {
+      "name": "Sidebed 01 | bedroom west window internal second jamb",
+      "object_name": "Sidebed 01 | bedroom west window internal second jamb"
+    },
+    {
+      "name": "Sidebed 01 | ensuite window internal sill",
+      "object_name": "Sidebed 01 | ensuite window internal sill"
+    },
+    {
+      "name": "Sidebed 01 | ensuite window internal head",
+      "object_name": "Sidebed 01 | ensuite window internal head"
+    },
+    {
+      "name": "Sidebed 01 | ensuite window internal first jamb",
+      "object_name": "Sidebed 01 | ensuite window internal first jamb"
+    },
+    {
+      "name": "Sidebed 01 | ensuite window internal second jamb",
+      "object_name": "Sidebed 01 | ensuite window internal second jamb"
+    },
+    {
+      "name": "Sidebed 01 | hall door oak leaf",
+      "object_name": "Sidebed 01 | hall door oak leaf"
+    },
+    {
+      "name": "Sidebed 01 | hall door bronze hinge",
+      "object_name": "Sidebed 01 | hall door bronze hinge"
+    },
+    {
+      "name": "Sidebed 01 | hall door bronze hinge",
+      "object_name": "Sidebed 01 | hall door bronze hinge.001"
+    },
+    {
+      "name": "Sidebed 01 | hall door bronze hinge",
+      "object_name": "Sidebed 01 | hall door bronze hinge.002"
+    },
+    {
+      "name": "Sidebed 01 | hall door lever rose",
+      "object_name": "Sidebed 01 | hall door lever rose"
+    },
+    {
+      "name": "Sidebed 01 | hall door key escutcheon",
+      "object_name": "Sidebed 01 | hall door key escutcheon"
+    },
+    {
+      "name": "Sidebed 01 | hall door lever rose",
+      "object_name": "Sidebed 01 | hall door lever rose.001"
+    },
+    {
+      "name": "Sidebed 01 | hall door key escutcheon",
+      "object_name": "Sidebed 01 | hall door key escutcheon.001"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door oak leaf",
+      "object_name": "Sidebed 01 | ensuite door oak leaf"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door bronze hinge",
+      "object_name": "Sidebed 01 | ensuite door bronze hinge"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door bronze hinge",
+      "object_name": "Sidebed 01 | ensuite door bronze hinge.001"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door bronze hinge",
+      "object_name": "Sidebed 01 | ensuite door bronze hinge.002"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door lever rose",
+      "object_name": "Sidebed 01 | ensuite door lever rose"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door key escutcheon",
+      "object_name": "Sidebed 01 | ensuite door key escutcheon"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door lever rose",
+      "object_name": "Sidebed 01 | ensuite door lever rose.001"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door key escutcheon",
+      "object_name": "Sidebed 01 | ensuite door key escutcheon.001"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light trim",
+      "object_name": "Sidebed 01 | ceiling light trim"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light diffuser",
+      "object_name": "Sidebed 01 | ceiling light diffuser"
+    },
+    {
+      "name": "Sidebed 01 | ceiling glow -1.1 2.05",
+      "object_name": "Sidebed 01 | ceiling glow -1.1 2.05"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light trim",
+      "object_name": "Sidebed 01 | ceiling light trim.001"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light diffuser",
+      "object_name": "Sidebed 01 | ceiling light diffuser.001"
+    },
+    {
+      "name": "Sidebed 01 | ceiling glow -3.3 1.76",
+      "object_name": "Sidebed 01 | ceiling glow -3.3 1.76"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light trim",
+      "object_name": "Sidebed 01 | ceiling light trim.002"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light diffuser",
+      "object_name": "Sidebed 01 | ceiling light diffuser.002"
+    },
+    {
+      "name": "Sidebed 01 | ceiling glow -4.34 2.09",
+      "object_name": "Sidebed 01 | ceiling glow -4.34 2.09"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light trim",
+      "object_name": "Sidebed 01 | ceiling light trim.003"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light diffuser",
+      "object_name": "Sidebed 01 | ceiling light diffuser.003"
+    },
+    {
+      "name": "Sidebed 01 | ceiling glow -3.59 3.55",
+      "object_name": "Sidebed 01 | ceiling glow -3.59 3.55"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light trim",
+      "object_name": "Sidebed 01 | ceiling light trim.004"
+    },
+    {
+      "name": "Sidebed 01 | ceiling light diffuser",
+      "object_name": "Sidebed 01 | ceiling light diffuser.004"
+    },
+    {
+      "name": "Sidebed 01 | ceiling glow -3.39 4.53",
+      "object_name": "Sidebed 01 | ceiling glow -3.39 4.53"
+    },
+    {
+      "name": "Sidebed 01 | pillow stitched edge",
+      "object_name": "Sidebed 01 | pillow stitched edge"
+    },
+    {
+      "name": "Sidebed 01 | pillow stitched edge",
+      "object_name": "Sidebed 01 | pillow stitched edge.001"
+    },
+    {
+      "name": "Sidebed 01 | reading light arm",
+      "object_name": "Sidebed 01 | reading light arm"
+    },
+    {
+      "name": "Sidebed 01 | reading light arm",
+      "object_name": "Sidebed 01 | reading light arm.001"
+    },
+    {
+      "name": "Sidebed 01 | wooden clothes hanger",
+      "object_name": "Sidebed 01 | wooden clothes hanger"
+    },
+    {
+      "name": "Sidebed 01 | hanger hook",
+      "object_name": "Sidebed 01 | hanger hook"
+    },
+    {
+      "name": "Sidebed 01 | wooden clothes hanger",
+      "object_name": "Sidebed 01 | wooden clothes hanger.001"
+    },
+    {
+      "name": "Sidebed 01 | hanger hook",
+      "object_name": "Sidebed 01 | hanger hook.001"
+    },
+    {
+      "name": "Sidebed 01 | wooden clothes hanger",
+      "object_name": "Sidebed 01 | wooden clothes hanger.002"
+    },
+    {
+      "name": "Sidebed 01 | hanger hook",
+      "object_name": "Sidebed 01 | hanger hook.002"
+    },
+    {
+      "name": "Sidebed 01 | wooden clothes hanger",
+      "object_name": "Sidebed 01 | wooden clothes hanger.003"
+    },
+    {
+      "name": "Sidebed 01 | hanger hook",
+      "object_name": "Sidebed 01 | hanger hook.003"
+    },
+    {
+      "name": "Sidebed 01 | basin compact trap",
+      "object_name": "Sidebed 01 | basin compact trap"
+    },
+    {
+      "name": "Sidebed 01 | curved basin mixer",
+      "object_name": "Sidebed 01 | curved basin mixer"
+    },
+    {
+      "name": "Sidebed 01 | soap pump spout",
+      "object_name": "Sidebed 01 | soap pump spout"
+    },
+    {
+      "name": "Sidebed 01 | paper holder",
+      "object_name": "Sidebed 01 | paper holder"
+    },
+    {
+      "name": "Sidebed 01 | shower door handle",
+      "object_name": "Sidebed 01 | shower door handle"
+    },
+    {
+      "name": "Sidebed 01 | shower door handle",
+      "object_name": "Sidebed 01 | shower door handle.001"
+    },
+    {
+      "name": "Sidebed 01 | shower riser",
+      "object_name": "Sidebed 01 | shower riser"
+    },
+    {
+      "name": "Sidebed 01 | hand shower hose",
+      "object_name": "Sidebed 01 | hand shower hose"
+    },
+    {
+      "name": "Sidebed 01 | hand towel rail",
+      "object_name": "Sidebed 01 | hand towel rail"
+    },
+    {
+      "name": "Sidebed 01 | hall door lever",
+      "object_name": "Sidebed 01 | hall door lever"
+    },
+    {
+      "name": "Sidebed 01 | hall door lever",
+      "object_name": "Sidebed 01 | hall door lever.001"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door lever",
+      "object_name": "Sidebed 01 | ensuite door lever"
+    },
+    {
+      "name": "Sidebed 01 | ensuite door lever",
+      "object_name": "Sidebed 01 | ensuite door lever.001"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Sidebed 01 | complete upholstered double bed",
+      "box": [
+        -2.155,
+        1.955,
+        -0.135,
+        3.385
+      ],
+      "bottom": 2.8,
+      "top": 4.14
+    },
+    {
+      "name": "Sidebed 01 | floating bedside",
+      "box": [
+        -0.62,
+        3.54,
+        -0.15,
+        3.86
+      ],
+      "bottom": 2.8,
+      "top": 3.36
+    },
+    {
+      "name": "Sidebed 01 | floating bedside",
+      "box": [
+        -0.62,
+        1.48,
+        -0.15,
+        1.8
+      ],
+      "bottom": 2.8,
+      "top": 3.36
+    },
+    {
+      "name": "Sidebed 01 | full-depth wardrobe",
+      "box": [
+        -5.04,
+        2.38,
+        -3.93,
+        2.97
+      ],
+      "bottom": 2.8,
+      "top": 5.05
+    },
+    {
+      "name": "Sidebed 01 | luggage bench",
+      "box": [
+        -5.015,
+        1.28,
+        -4.665,
+        2.02
+      ],
+      "bottom": 2.8,
+      "top": 3.2699999999999996
+    },
+    {
+      "name": "Sidebed 01 | floating vanity",
+      "box": [
+        -3.32,
+        4.1,
+        -2.96,
+        4.98
+      ],
+      "bottom": 2.8,
+      "top": 3.6639999999999997
+    },
+    {
+      "name": "Sidebed 01 | WC pan",
+      "box": [
+        -4.9,
+        3.295,
+        -4.27,
+        3.705
+      ],
+      "bottom": 2.8,
+      "top": 3.2439999999999998
+    },
+    {
+      "name": "Sidebed 01 | WC cistern",
+      "box": [
+        -5.035,
+        3.225,
+        -4.86,
+        3.775
+      ],
+      "bottom": 2.8,
+      "top": 3.88
+    }
+  ],
+  "configuration": {
+    "room": "Side wing south bedroom and ensuite",
+    "revision": 2,
+    "floorZ": 2.8,
+    "ceilingZ": 5.18,
+    "bounds": [
+      -5.065,
+      1.015,
+      -0.115,
+      5.04
+    ],
+    "bedroomPolygon": [
+      [
+        -5.065,
+        1.015
+      ],
+      [
+        -0.115,
+        1.015
+      ],
+      [
+        -0.115,
+        4.22
+      ],
+      [
+        -2.82,
+        4.22
+      ],
+      [
+        -2.82,
+        2.98
+      ],
+      [
+        -5.065,
+        2.98
+      ]
+    ],
+    "bathroomPolygon": [
+      [
+        -5.065,
+        3.1
+      ],
+      [
+        -2.94,
+        3.1
+      ],
+      [
+        -2.94,
+        5.04
+      ],
+      [
+        -5.065,
+        5.04
+      ]
+    ],
+    "bed": {
+      "head": [
+        -0.135,
+        2.67
+      ],
+      "angleDegrees": 90,
+      "frameWidth": 1.43,
+      "frameLength": 2.02,
+      "mattress": [
+        1.35,
+        1.9
+      ],
+      "envelope": [
+        -2.155,
+        1.955,
+        -0.135,
+        3.385
+      ]
+    },
+    "bedside": [
+      -0.62,
+      3.54,
+      -0.15,
+      3.86
+    ],
+    "wardrobe": [
+      -5.04,
+      2.38,
+      -3.93,
+      2.97
+    ],
+    "bench": [
+      -5.015,
+      1.28,
+      -4.665,
+      2.02
+    ],
+    "vanity": [
+      -3.32,
+      4.1,
+      -2.96,
+      4.98
+    ],
+    "shower": [
+      -5.02,
+      4.02,
+      -4.02,
+      5.02
+    ],
+    "wcPan": [
+      -4.9,
+      3.295,
+      -4.27,
+      3.705
+    ],
+    "cistern": [
+      -5.035,
+      3.225,
+      -4.86,
+      3.775
+    ],
+    "hallDoor": {
+      "hinge": [
+        -1.465,
+        4.36,
+        2.8
+      ],
+      "axis": [
+        -1,
+        0
+      ],
+      "width": 0.824,
+      "openAngle": -1.5707963267948966
+    },
+    "bathDoor": {
+      "hinge": [
+        -3.115,
+        3.12,
+        2.8
+      ],
+      "axis": [
+        -1,
+        0
+      ],
+      "width": 0.77,
+      "openAngle": -1.5707963267948966
+    },
+    "showerDoor": {
+      "hinge": [
+        -4.02,
+        4.985,
+        2.825
+      ],
+      "axis": [
+        0,
+        -1
+      ],
+      "width": 0.905,
+      "openAngle": -1.3962634015954636
+    },
+    "view": {
+      "id": "proposal-side-wing-south-bedroom",
+      "position": [
+        -2.5,
+        2.65,
+        2.8
+      ],
+      "direction": [
+        1,
+        0,
+        -0.04
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          -2.58,
+          3.72,
+          4.38
+        ],
+        "target": [
+          -0.7,
+          2.65,
+          3.55
+        ],
+        "fov": 64
+      },
+      "bed": {
+        "position": [
+          -0.7,
+          2.67,
+          3.95
+        ],
+        "target": [
+          -4.1,
+          2.3,
+          3.55
+        ],
+        "fov": 64
+      },
+      "wardrobe": {
+        "position": [
+          -2.35,
+          1.54,
+          4.38
+        ],
+        "target": [
+          -4.2,
+          2.65,
+          3.96
+        ],
+        "fov": 63
+      },
+      "bathroom": {
+        "position": [
+          -3.17,
+          3.35,
+          4.38
+        ],
+        "target": [
+          -4.1,
+          4.57,
+          3.65
+        ],
+        "fov": 67
+      },
+      "vanity": {
+        "position": [
+          -4.22,
+          3.56,
+          4.3
+        ],
+        "target": [
+          -2.77,
+          4.52,
+          3.83
+        ],
+        "fov": 64
+      },
+      "shower": {
+        "position": [
+          -3.33,
+          4.6,
+          4.33
+        ],
+        "target": [
+          -4.69,
+          4.45,
+          3.75
+        ],
+        "fov": 65
+      },
+      "overview": {
+        "position": [
+          -10,
+          7.5,
+          12.0
+        ],
+        "target": [
+          -2.6,
+          3.0,
+          3.35
+        ],
+        "fov": 48,
+        "cutaway": true
+      }
+    },
+    "status": "measured plan study",
+    "limitations": [
+      "Standard double with 940 mm south-side space and 835 mm north-side space; 665 mm beside the ensuite at the bed foot.",
+      "The entrance partition moves north into the family approach. The main family seating and exterior windows stay in place.",
+      "The ensuite east partition moves 350 mm west of the original layout; a 360 mm-deep basin unit keeps its aisle usable.",
+      "The hall door retains its 850 mm aperture and opens outward; the ensuite door retains 800 mm.",
+      "Wardrobe depth is 590 mm, ending clear of the retained west window and Roman blind."
+    ],
+    "bathEastShiftX": -0.35,
+    "secondBedside": [
+      -0.62,
+      1.48,
+      -0.15,
+      1.8
+    ],
+    "hallOpening": [
+      -1.875,
+      4.28
+    ],
+    "bathOpening": [
+      -3.5,
+      3.04
+    ],
+    "partitions": [
+      {
+        "label": "shifted ensuite east partition",
+        "a": [
+          -2.88,
+          3.04
+        ],
+        "b": [
+          -2.88,
+          5.1
+        ],
+        "bottom": 2.8,
+        "top": 5.18
+      },
+      {
+        "label": "ensuite south west pier",
+        "a": [
+          -5.18,
+          3.04
+        ],
+        "b": [
+          -3.9,
+          3.04
+        ],
+        "bottom": 2.8,
+        "top": 5.18
+      },
+      {
+        "label": "ensuite south east pier",
+        "a": [
+          -3.1,
+          3.04
+        ],
+        "b": [
+          -2.88,
+          3.04
+        ],
+        "bottom": 2.8,
+        "top": 5.18
+      },
+      {
+        "label": "ensuite door lintel",
+        "a": [
+          -3.9,
+          3.04
+        ],
+        "b": [
+          -3.1,
+          3.04
+        ],
+        "bottom": 5.0,
+        "top": 5.18
+      },
+      {
+        "label": "hall west jamb infill",
+        "a": [
+          -2.88,
+          4.28
+        ],
+        "b": [
+          -2.3,
+          4.28
+        ],
+        "bottom": 2.8,
+        "top": 5.18
+      },
+      {
+        "label": "hall east pier",
+        "a": [
+          -1.45,
+          4.28
+        ],
+        "b": [
+          0,
+          4.28
+        ],
+        "bottom": 2.8,
+        "top": 5.18
+      },
+      {
+        "label": "hall door lintel",
+        "a": [
+          -2.3,
+          4.28
+        ],
+        "b": [
+          -1.45,
+          4.28
+        ],
+        "bottom": 5.0,
+        "top": 5.18
+      }
+    ]
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "157cf49f92038a69c6e6930891b3430a1fa0688d1a2194f2b53b794af64ba8c2",
+  "source_house_unchanged": true,
+  "isolated_objects": 454,
+  "views": {
+    "entrance": {
+      "position": [
+        -2.58,
+        3.72,
+        4.38
+      ],
+      "target": [
+        -0.7,
+        2.65,
+        3.55
+      ],
+      "fov": 64
+    },
+    "bed": {
+      "position": [
+        -0.7,
+        2.67,
+        3.95
+      ],
+      "target": [
+        -4.1,
+        2.3,
+        3.55
+      ],
+      "fov": 64
+    },
+    "wardrobe": {
+      "position": [
+        -2.35,
+        1.54,
+        4.38
+      ],
+      "target": [
+        -4.2,
+        2.65,
+        3.96
+      ],
+      "fov": 63
+    },
+    "bathroom": {
+      "position": [
+        -3.17,
+        3.35,
+        4.38
+      ],
+      "target": [
+        -4.1,
+        4.57,
+        3.65
+      ],
+      "fov": 67
+    },
+    "vanity": {
+      "position": [
+        -4.22,
+        3.56,
+        4.3
+      ],
+      "target": [
+        -2.77,
+        4.52,
+        3.83
+      ],
+      "fov": 64
+    },
+    "shower": {
+      "position": [
+        -3.33,
+        4.6,
+        4.33
+      ],
+      "target": [
+        -4.69,
+        4.45,
+        3.75
+      ],
+      "fov": 65
+    },
+    "overview": {
+      "position": [
+        -10,
+        7.5,
+        12.0
+      ],
+      "target": [
+        -2.6,
+        3.0,
+        3.35
+      ],
+      "fov": 48,
+      "cutaway": true
+    }
+  }
+}

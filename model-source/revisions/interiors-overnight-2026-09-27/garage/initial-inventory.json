@@ -1,0 +1,412 @@
+{
+  "rooms": [
+    {
+      "id": "proposal-new-double-garage",
+      "label": "New double garage",
+      "group": "Proposal \u00b7 Ground floor",
+      "position": [
+        4.0,
+        -12.94,
+        0.0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "proposal-loft-hip-store",
+      "label": "Loft hip store",
+      "group": "Proposal \u00b7 Loft",
+      "position": [
+        9.35,
+        -12.299999999999999,
+        5.55
+      ],
+      "direction": [
+        -0.35,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "proposal-loft-east-eaves-store",
+      "label": "Loft east eaves store",
+      "group": "Proposal \u00b7 Loft",
+      "position": [
+        10.87,
+        4.7,
+        5.55
+      ],
+      "direction": [
+        0.55,
+        0.8
+      ]
+    },
+    {
+      "id": "proposal-loft-west-eaves-store",
+      "label": "Loft west eaves store",
+      "group": "Proposal \u00b7 Loft",
+      "position": [
+        -2.115,
+        4.7,
+        5.55
+      ],
+      "direction": [
+        -0.55,
+        0.8
+      ]
+    },
+    {
+      "id": "proposal-utility",
+      "label": "Utility",
+      "group": "Proposal \u00b7 Ground floor",
+      "position": [
+        12.0,
+        -14.25,
+        0
+      ],
+      "direction": [
+        1,
+        -0.65,
+        -0.25
+      ]
+    }
+  ],
+  "planRooms": [
+    {
+      "name": "Tool store",
+      "floor": 2,
+      "polygon_m": [
+        [
+          14.279999757995604,
+          24.560000708906173
+        ],
+        [
+          14.279999757995604,
+          23.52000070890617
+        ],
+        [
+          16.249999757995603,
+          23.52000070890617
+        ],
+        [
+          16.249999757995603,
+          24.560000708906173
+        ]
+      ],
+      "published_dimensions_m": null
+    },
+    {
+      "name": "New double garage",
+      "floor": 0,
+      "base_z": 0,
+      "polygon_m": [
+        [
+          3.4899999999999998,
+          -15.86
+        ],
+        [
+          5.16,
+          -15.86
+        ],
+        [
+          5.16,
+          -16.551000000000002
+        ],
+        [
+          11.2,
+          -16.551000000000002
+        ],
+        [
+          11.2,
+          -10.02
+        ],
+        [
+          3.4899999999999998,
+          -10.02
+        ]
+      ],
+      "proposal": true
+    },
+    {
+      "name": "Utility",
+      "floor": 0,
+      "base_z": 0,
+      "polygon_m": [
+        [
+          11.43,
+          -16.076
+        ],
+        [
+          13.75,
+          -16.076
+        ],
+        [
+          13.75,
+          -12.61
+        ],
+        [
+          11.43,
+          -12.61
+        ]
+      ],
+      "proposal": true
+    },
+    {
+      "name": "Loft hip store",
+      "floor": 3,
+      "base_z": 5.55,
+      "polygon_m": [
+        [
+          7.52,
+          -13.0
+        ],
+        [
+          12.42,
+          -13.0
+        ],
+        [
+          12.42,
+          -11.66
+        ],
+        [
+          7.52,
+          -11.66
+        ]
+      ],
+      "proposal": true
+    },
+    {
+      "name": "Loft east eaves store",
+      "floor": 3,
+      "base_z": 5.55,
+      "polygon_m": [
+        [
+          10.42,
+          2.29
+        ],
+        [
+          12.25,
+          2.29
+        ],
+        [
+          12.25,
+          6.57
+        ],
+        [
+          10.42,
+          6.57
+        ]
+      ],
+      "proposal": true
+    },
+    {
+      "name": "Loft west eaves store",
+      "floor": 3,
+      "base_z": 5.55,
+      "polygon_m": [
+        [
+          -3.4955555555555566,
+          2.29
+        ],
+        [
+          -1.665,
+          2.29
+        ],
+        [
+          -1.665,
+          6.57
+        ],
+        [
+          -3.4955555555555566,
+          6.57
+        ]
+      ],
+      "proposal": true
+    }
+  ],
+  "doors": [
+    {
+      "id": "Proposal | New double garage door",
+      "wall": "Proposal | West garage facade",
+      "motion": "retractable-garage",
+      "hinge": [
+        3.375,
+        -12.940000000000001,
+        2.35
+      ],
+      "members": [
+        "Proposal | Double garage sectional door",
+        "Proposal | Garage panel joint",
+        "Proposal | Garage panel joint.001",
+        "Proposal | Garage panel joint.002",
+        "Proposal | Garage panel joint.003",
+        "Proposal | Garage oak board",
+        "Proposal | Garage oak board.001",
+        "Proposal | Garage oak board.002",
+        "Proposal | Garage oak board.003",
+        "Proposal | Garage oak board.004",
+        "Proposal | Garage oak board.005",
+        "Proposal | Garage oak board.006",
+        "Proposal | Garage oak board.007",
+        "Proposal | Garage oak board.008",
+        "Proposal | Garage oak board.009",
+        "Proposal | Garage oak board.010",
+        "Proposal | Garage oak board.011",
+        "Proposal | Garage oak board.012",
+        "Proposal | Garage oak board.013",
+        "Proposal | Garage oak board.014",
+        "Proposal | Garage oak board.015",
+        "Proposal | Garage oak board.016",
+        "Proposal | Garage oak board.017",
+        "Proposal | Garage oak board.018",
+        "Proposal | Garage oak board.019",
+        "Proposal | Garage oak board.020",
+        "Proposal | Garage oak board.021",
+        "Proposal | Garage oak board.022",
+        "Proposal | Garage oak board.023",
+        "Proposal | Garage oak board.024",
+        "Proposal | Garage oak board.025",
+        "Proposal | Garage oak board.026",
+        "Proposal | Garage oak board.027",
+        "Proposal | Garage oak board.028",
+        "Proposal | Garage oak board.029",
+        "Proposal | Garage oak board.030",
+        "Proposal | Garage oak board.031",
+        "Proposal | Garage oak board.032",
+        "Proposal | Garage oak board.033",
+        "Proposal | Garage oak board.034",
+        "Proposal | Garage oak board.035",
+        "Proposal | Garage oak board.036",
+        "Proposal | Garage oak board.037",
+        "Proposal | Garage oak board.038",
+        "Proposal | Garage oak board.039",
+        "Proposal | Garage oak board.040",
+        "Proposal | Garage oak board.041",
+        "Proposal | Garage oak board.042",
+        "Proposal | Garage oak board.043",
+        "Proposal | Garage oak board.044"
+      ],
+      "openingCenter": [
+        3.375,
+        -12.940000000000001,
+        0
+      ],
+      "rotationAxis": [
+        0,
+        1,
+        0
+      ],
+      "apertureAxis": [
+        0,
+        1
+      ],
+      "apertureWidth": 5.4399999999999995,
+      "openTranslation": [
+        2.18,
+        0,
+        -0.15
+      ],
+      "openDelta": 1.5707963267948966,
+      "openDistance": 3.25,
+      "closeDistance": 4.4,
+      "responseRate": 3
+    },
+    {
+      "id": "Proposal | Garage north store separation door 0",
+      "wall": "Proposal | Garage north store separation door 0",
+      "hinge": [
+        5.25,
+        -9.905,
+        0
+      ],
+      "members": [
+        "Proposal | Garage north store separation door 0 leaf",
+        "Proposal | Garage north store separation door 0 face rail",
+        "Proposal | Garage north store separation door 0 face rail.001",
+        "Proposal | Garage north store separation door 0 lever rose",
+        "Proposal | Garage north store separation door 0 lever",
+        "Proposal | Garage north store separation door 0 lever rose.001",
+        "Proposal | Garage north store separation door 0 lever.001"
+      ],
+      "openingCenter": [
+        5.7,
+        -9.905,
+        0
+      ],
+      "apertureAxis": [
+        1.0,
+        0.0
+      ],
+      "apertureWidth": 0.9000000000000004,
+      "openDelta": -1.5707963267948966,
+      "openDistance": 1.5,
+      "closeDistance": 2.0
+    },
+    {
+      "id": "Proposal | Garage east separation door 0",
+      "wall": "Proposal | Garage east separation door 0",
+      "hinge": [
+        11.315,
+        -12.95,
+        0
+      ],
+      "members": [
+        "Proposal | Garage east separation door 0 leaf",
+        "Proposal | Garage east separation door 0 face rail",
+        "Proposal | Garage east separation door 0 face rail.001",
+        "Proposal | Garage east separation door 0 lever rose",
+        "Proposal | Garage east separation door 0 lever",
+        "Proposal | Garage east separation door 0 lever rose.001",
+        "Proposal | Garage east separation door 0 lever.001"
+      ],
+      "openingCenter": [
+        11.315,
+        -13.4,
+        0
+      ],
+      "apertureAxis": [
+        0,
+        -1
+      ],
+      "apertureWidth": 0.9000000000000021,
+      "openDelta": 1.5707963267948966,
+      "openDistance": 1.5,
+      "closeDistance": 2.0
+    },
+    {
+      "id": "Proposal | Boot utility inward door",
+      "wall": "Proposal | Boot utility inward door",
+      "hinge": [
+        12.93,
+        -12.55,
+        0
+      ],
+      "members": [
+        "Proposal | Boot utility inward door leaf",
+        "Proposal | Boot utility inward door face rail",
+        "Proposal | Boot utility inward door face rail.001",
+        "Proposal | Boot utility inward door lever rose",
+        "Proposal | Boot utility inward door lever",
+        "Proposal | Boot utility inward door lever rose.001",
+        "Proposal | Boot utility inward door lever.001"
+      ],
+      "openingCenter": [
+        12.48,
+        -12.55,
+        0
+      ],
+      "apertureAxis": [
+        -1.0,
+        0.0
+      ],
+      "apertureWidth": 0.9000000000000004,
+      "openDelta": -1.5707963267948966,
+      "openDistance": 1.5,
+      "closeDistance": 2.0
+    }
+  ],
+  "vehicleKeys": {}
+}

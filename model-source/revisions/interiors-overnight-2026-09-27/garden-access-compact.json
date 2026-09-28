@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "variant": "compact",
+  "reports": [
+    {
+      "name": "summer room from garden",
+      "bodyWidth": 0.6,
+      "samples": 83,
+      "maxRise": 0.1722935080528259,
+      "maxFall": 2.7755575615628914e-17,
+      "end": {
+        "x": 14.78,
+        "y": 22.9,
+        "z": 0.5445870161056519
+      },
+      "failure": null
+    },
+    {
+      "name": "summer room from garden · return",
+      "bodyWidth": 0.6,
+      "samples": 83,
+      "maxRise": 2.7755575615628914e-17,
+      "maxFall": 0.1722935080528259,
+      "end": {
+        "x": 13.54,
+        "y": 22.9,
+        "z": 0.20000000000000004
+      },
+      "failure": null
+    },
+    {
+      "name": "outside WC from garden",
+      "bodyWidth": 0.6,
+      "samples": 63,
+      "maxRise": 0.17229350805282595,
+      "maxFall": 0,
+      "end": {
+        "x": 14.71,
+        "y": 25.42,
+        "z": 0.5445870161056519
+      },
+      "failure": null
+    },
+    {
+      "name": "outside WC from garden · return",
+      "bodyWidth": 0.6,
+      "samples": 63,
+      "maxRise": 0,
+      "maxFall": 0.17229350805282595,
+      "end": {
+        "x": 13.78,
+        "y": 25.42,
+        "z": 0.2
+      },
+      "failure": null
+    },
+    {
+      "name": "tool store from garden",
+      "bodyWidth": 0.6,
+      "samples": 169,
+      "maxRise": 0.1722935080528259,
+      "maxFall": 5.551115123125783e-17,
+      "end": {
+        "x": 14.72,
+        "y": 24.04,
+        "z": 0.5445870161056519
+      },
+      "failure": null
+    },
+    {
+      "name": "tool store from garden · return",
+      "bodyWidth": 0.6,
+      "samples": 169,
+      "maxRise": 5.551115123125783e-17,
+      "maxFall": 0.1722935080528259,
+      "end": {
+        "x": 12.2,
+        "y": 24.04,
+        "z": 0.2
+      },
+      "failure": null
+    },
+    {
+      "name": "workshop from retained garden strip",
+      "bodyWidth": 0.6,
+      "samples": 371,
+      "maxRise": 0.0009338775510207009,
+      "maxFall": 0.00044247075586112405,
+      "end": {
+        "x": -18.55,
+        "y": 23.4,
+        "z": -0.45944247075586114
+      },
+      "failure": null
+    },
+    {
+      "name": "workshop from retained garden strip · return",
+      "bodyWidth": 0.6,
+      "samples": 371,
+      "maxRise": 0.00044247075586112405,
+      "maxFall": 0.0009338775510207009,
+      "end": {
+        "x": -13,
+        "y": 23.4,
+        "z": -0.5327999999999999
+      },
+      "failure": null
+    },
+    {
+      "name": "retained balcony clear centre",
+      "bodyWidth": 0.6,
+      "samples": 300,
+      "maxRise": 1.9073486345888568e-7,
+      "maxFall": 0,
+      "end": {
+        "x": 8.65,
+        "y": 8.4,
+        "z": 2.8000001907348633
+      },
+      "failure": null
+    },
+    {
+      "name": "retained balcony clear centre · return",
+      "bodyWidth": 0.6,
+      "samples": 300,
+      "maxRise": 1.9073486345888568e-7,
+      "maxFall": 0,
+      "end": {
+        "x": 5.48,
+        "y": 8.4,
+        "z": 2.8000001907348633
+      },
+      "failure": null
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "room": "Double garage and parking",
+  "revision": 1,
+  "floorZ": 0,
+  "ceilingZ": 2.545,
+  "bounds": [
+    3.49,
+    -16.076,
+    11.2,
+    -10.02
+  ],
+  "polygon": [
+    [
+      3.49,
+      -15.86
+    ],
+    [
+      5.16,
+      -15.86
+    ],
+    [
+      5.16,
+      -16.076
+    ],
+    [
+      11.2,
+      -16.076
+    ],
+    [
+      11.2,
+      -10.02
+    ],
+    [
+      3.49,
+      -10.02
+    ]
+  ],
+  "storage": [
+    10.61,
+    -16.0,
+    11.18,
+    -14.08
+  ],
+  "benchNorthY": -14.08,
+  "tallSouthY": -15.4,
+  "cars": [
+    {
+      "id": "G1",
+      "baselineCenter": [
+        8.15,
+        -14.6
+      ],
+      "center": [
+        6.9,
+        -14.33
+      ]
+    },
+    {
+      "id": "G2",
+      "baselineCenter": [
+        8.15,
+        -11.5
+      ],
+      "center": [
+        8.3,
+        -11.72
+      ]
+    }
+  ],
+  "vehicleSize": [
+    4.4,
+    1.8
+  ],
+  "frontDoorCheckDegrees": 42,
+  "fourthBay": {
+    "id": "N3",
+    "bounds_m": [
+      -1.45,
+      -10.8,
+      1.05,
+      -6.0
+    ],
+    "center": [
+      -0.2,
+      -8.4
+    ],
+    "heading": 4.71238898038469
+  },
+  "view": {
+    "id": "proposal-new-double-garage",
+    "position": [
+      4.03,
+      -12.8,
+      0
+    ],
+    "direction": [
+      1,
+      -0.04,
+      0
+    ]
+  },
+  "views": {
+    "entrance": {
+      "position": [
+        3.75,
+        -13.0,
+        1.62
+      ],
+      "target": [
+        8.8,
+        -13.1,
+        1.0
+      ],
+      "fov": 74
+    },
+    "storage": {
+      "position": [
+        9.47,
+        -13.75,
+        1.61
+      ],
+      "target": [
+        10.98,
+        -15.21,
+        1.2
+      ],
+      "fov": 65
+    },
+    "details": {
+      "position": [
+        9.65,
+        -14.6,
+        1.42
+      ],
+      "target": [
+        10.84,
+        -14.75,
+        0.9
+      ],
+      "fov": 58
+    },
+    "reverse": {
+      "position": [
+        10.8,
+        -13.38,
+        1.63
+      ],
+      "target": [
+        4.0,
+        -12.94,
+        1.0
+      ],
+      "fov": 72
+    },
+    "overview": {
+      "position": [
+        17,
+        -21,
+        14
+      ],
+      "target": [
+        7.32,
+        -13.06,
+        0.7
+      ],
+      "fov": 57,
+      "cutaway": true
+    }
+  },
+  "limitations": [
+    "The existing double-garage opening, garage envelope, utility doorway and house doorway remain.",
+    "The two 4.4 \u00d7 1.8 m concept cars are staggered to improve access and create useful storage beside the southern car. Actual household vehicles need checking before final joinery selection.",
+    "Door-use checks use 42-degree front-door openings and a 600 mm body. They do not claim every car door can open to 90 degrees in this retained garage.",
+    "The fourth outdoor bay is a 4.8 \u00d7 2.5 m compact-car space on the existing drive. Vehicle tracking and the pedestrian route are checked against the current model, subject to surveyed site and vehicle dimensions.",
+    "Routes remain connected with either car\u2019s front doors open, or both drivers\u2019 doors open. With all four front doors open together, close a door to pass between the separated areas."
+  ]
+}

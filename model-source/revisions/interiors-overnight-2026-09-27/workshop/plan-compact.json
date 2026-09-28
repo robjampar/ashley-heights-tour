@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 12667,
+        "distance": 0.01640121946685619
+      },
+      "checks": [
+        {
+          "label": "bench west",
+          "distance": 0.013000000000001677,
+          "reachable": true
+        },
+        {
+          "label": "bench drawers",
+          "distance": 0.01640121946685684,
+          "reachable": true
+        },
+        {
+          "label": "vice",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "assembly north",
+          "distance": 0.01044030650891208,
+          "reachable": true
+        },
+        {
+          "label": "assembly south",
+          "distance": 0.012206555615735816,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "tool rail",
+          "distance": 0.010440306508908677,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "drawerOpen",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 12667,
+        "distance": 0.01640121946685619
+      },
+      "checks": [
+        {
+          "label": "bench west",
+          "distance": 0.013000000000001677,
+          "reachable": true
+        },
+        {
+          "label": "vice",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "assembly north",
+          "distance": 0.01044030650891208,
+          "reachable": true
+        },
+        {
+          "label": "assembly south",
+          "distance": 0.012206555615735816,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "tool rail",
+          "distance": 0.010440306508908677,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "benchUse",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 12667,
+        "distance": 0.01640121946685619
+      },
+      "checks": [
+        {
+          "label": "bench drawers",
+          "distance": 0.01640121946685684,
+          "reachable": true
+        },
+        {
+          "label": "vice",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "assembly north",
+          "distance": 0.01044030650891208,
+          "reachable": true
+        },
+        {
+          "label": "assembly south",
+          "distance": 0.012206555615735816,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "tool rail",
+          "distance": 0.010440306508908677,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "assemblyUse",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 12667,
+        "distance": 0.01640121946685619
+      },
+      "checks": [
+        {
+          "label": "bench west",
+          "distance": 0.013000000000001677,
+          "reachable": true
+        },
+        {
+          "label": "bench drawers",
+          "distance": 0.01640121946685684,
+          "reachable": true
+        },
+        {
+          "label": "vice",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "assembly south",
+          "distance": 0.012206555615735816,
+          "reachable": true
+        },
+        {
+          "label": "storage",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "tool rail",
+          "distance": 0.010440306508908677,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "storageUse",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 12667,
+        "distance": 0.01640121946685619
+      },
+      "checks": [
+        {
+          "label": "bench west",
+          "distance": 0.013000000000001677,
+          "reachable": true
+        },
+        {
+          "label": "bench drawers",
+          "distance": 0.01640121946685684,
+          "reachable": true
+        },
+        {
+          "label": "vice",
+          "distance": 0.01640121946685619,
+          "reachable": true
+        },
+        {
+          "label": "assembly north",
+          "distance": 0.01044030650891208,
+          "reachable": true
+        },
+        {
+          "label": "assembly south",
+          "distance": 0.012206555615735816,
+          "reachable": true
+        },
+        {
+          "label": "tool rail",
+          "distance": 0.010440306508908677,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

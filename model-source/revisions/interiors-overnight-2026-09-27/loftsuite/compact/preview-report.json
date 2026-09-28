@@ -1,0 +1,2082 @@
+{
+  "area": "loftsuite",
+  "revision": 2,
+  "objects": 401,
+  "mesh_objects": 393,
+  "lights": 8,
+  "removed_objects": [
+    {
+      "name": "Loftsuite 01 | bedroom wool floor",
+      "object_name": "Loftsuite 01 | bedroom wool floor"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite limestone floor",
+      "object_name": "Loftsuite 01 | ensuite limestone floor"
+    },
+    {
+      "name": "Loftsuite 01 | hip store oak floor",
+      "object_name": "Loftsuite 01 | hip store oak floor"
+    },
+    {
+      "name": "Loftsuite 01 | oak headwall",
+      "object_name": "Loftsuite 01 | oak headwall"
+    },
+    {
+      "name": "Loftsuite 01 | headwall fine joint",
+      "object_name": "Loftsuite 01 | headwall fine joint"
+    },
+    {
+      "name": "Loftsuite 01 | headwall fine joint",
+      "object_name": "Loftsuite 01 | headwall fine joint.001"
+    },
+    {
+      "name": "Loftsuite 01 | headwall fine joint",
+      "object_name": "Loftsuite 01 | headwall fine joint.002"
+    },
+    {
+      "name": "Loftsuite 01 | headwall fine joint",
+      "object_name": "Loftsuite 01 | headwall fine joint.003"
+    },
+    {
+      "name": "Loftsuite 01 | headwall fine joint",
+      "object_name": "Loftsuite 01 | headwall fine joint.004"
+    },
+    {
+      "name": "Loftsuite 01 | headwall fine joint",
+      "object_name": "Loftsuite 01 | headwall fine joint.005"
+    },
+    {
+      "name": "Loftsuite 01 | wall-backed upholstered headboard",
+      "object_name": "Loftsuite 01 | wall-backed upholstered headboard"
+    },
+    {
+      "name": "Loftsuite 01 | bed recessed base",
+      "object_name": "Loftsuite 01 | bed recessed base"
+    },
+    {
+      "name": "Loftsuite 01 | bed upholstered frame",
+      "object_name": "Loftsuite 01 | bed upholstered frame"
+    },
+    {
+      "name": "Loftsuite 01 | double mattress",
+      "object_name": "Loftsuite 01 | double mattress"
+    },
+    {
+      "name": "Loftsuite 01 | draped cotton duvet",
+      "object_name": "Loftsuite 01 | draped cotton duvet"
+    },
+    {
+      "name": "Loftsuite 01 | folded duvet edge",
+      "object_name": "Loftsuite 01 | folded duvet edge"
+    },
+    {
+      "name": "Loftsuite 01 | woven bed throw",
+      "object_name": "Loftsuite 01 | woven bed throw"
+    },
+    {
+      "name": "Loftsuite 01 | sleeping pillow",
+      "object_name": "Loftsuite 01 | sleeping pillow"
+    },
+    {
+      "name": "Loftsuite 01 | small linen cushion",
+      "object_name": "Loftsuite 01 | small linen cushion"
+    },
+    {
+      "name": "Loftsuite 01 | sleeping pillow",
+      "object_name": "Loftsuite 01 | sleeping pillow.001"
+    },
+    {
+      "name": "Loftsuite 01 | small linen cushion",
+      "object_name": "Loftsuite 01 | small linen cushion.001"
+    },
+    {
+      "name": "Loftsuite 01 | floating bedside 0",
+      "object_name": "Loftsuite 01 | floating bedside 0"
+    },
+    {
+      "name": "Loftsuite 01 | bedside limestone top",
+      "object_name": "Loftsuite 01 | bedside limestone top"
+    },
+    {
+      "name": "Loftsuite 01 | bedside finger recess",
+      "object_name": "Loftsuite 01 | bedside finger recess"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading backplate",
+      "object_name": "Loftsuite 01 | bedside reading backplate"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading shade",
+      "object_name": "Loftsuite 01 | bedside reading shade"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading lens",
+      "object_name": "Loftsuite 01 | bedside reading lens"
+    },
+    {
+      "name": "Loftsuite 01 | bedside control plate",
+      "object_name": "Loftsuite 01 | bedside control plate"
+    },
+    {
+      "name": "Loftsuite 01 | bedside switch",
+      "object_name": "Loftsuite 01 | bedside switch"
+    },
+    {
+      "name": "Loftsuite 01 | bedside switch",
+      "object_name": "Loftsuite 01 | bedside switch.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside USB C slot",
+      "object_name": "Loftsuite 01 | bedside USB C slot"
+    },
+    {
+      "name": "Loftsuite 01 | bedside glow 0",
+      "object_name": "Loftsuite 01 | bedside glow 0"
+    },
+    {
+      "name": "Loftsuite 01 | floating bedside 1",
+      "object_name": "Loftsuite 01 | floating bedside 1"
+    },
+    {
+      "name": "Loftsuite 01 | bedside limestone top",
+      "object_name": "Loftsuite 01 | bedside limestone top.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside finger recess",
+      "object_name": "Loftsuite 01 | bedside finger recess.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading backplate",
+      "object_name": "Loftsuite 01 | bedside reading backplate.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading shade",
+      "object_name": "Loftsuite 01 | bedside reading shade.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading lens",
+      "object_name": "Loftsuite 01 | bedside reading lens.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside control plate",
+      "object_name": "Loftsuite 01 | bedside control plate.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside switch",
+      "object_name": "Loftsuite 01 | bedside switch.002"
+    },
+    {
+      "name": "Loftsuite 01 | bedside switch",
+      "object_name": "Loftsuite 01 | bedside switch.003"
+    },
+    {
+      "name": "Loftsuite 01 | bedside USB C slot",
+      "object_name": "Loftsuite 01 | bedside USB C slot.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside glow 1",
+      "object_name": "Loftsuite 01 | bedside glow 1"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe recessed plinth",
+      "object_name": "Loftsuite 01 | wardrobe recessed plinth"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe back",
+      "object_name": "Loftsuite 01 | wardrobe back"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe upright",
+      "object_name": "Loftsuite 01 | wardrobe upright"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe upright",
+      "object_name": "Loftsuite 01 | wardrobe upright.001"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe upright",
+      "object_name": "Loftsuite 01 | wardrobe upright.002"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe carcass horizontal",
+      "object_name": "Loftsuite 01 | wardrobe carcass horizontal"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe carcass horizontal",
+      "object_name": "Loftsuite 01 | wardrobe carcass horizontal.001"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe upper shelf",
+      "object_name": "Loftsuite 01 | wardrobe upper shelf"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe hanging rail",
+      "object_name": "Loftsuite 01 | wardrobe hanging rail"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe lower shelf",
+      "object_name": "Loftsuite 01 | wardrobe lower shelf"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe lower shelf",
+      "object_name": "Loftsuite 01 | wardrobe lower shelf.001"
+    },
+    {
+      "name": "Loftsuite 01 | folded wardrobe linen",
+      "object_name": "Loftsuite 01 | folded wardrobe linen"
+    },
+    {
+      "name": "Loftsuite 01 | folded wardrobe linen",
+      "object_name": "Loftsuite 01 | folded wardrobe linen.001"
+    },
+    {
+      "name": "Loftsuite 01 | sliding wardrobe front",
+      "object_name": "Loftsuite 01 | sliding wardrobe front"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe recessed bronze pull",
+      "object_name": "Loftsuite 01 | wardrobe recessed bronze pull"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe upper shelf",
+      "object_name": "Loftsuite 01 | wardrobe upper shelf.001"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe hanging rail",
+      "object_name": "Loftsuite 01 | wardrobe hanging rail.001"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe lower shelf",
+      "object_name": "Loftsuite 01 | wardrobe lower shelf.002"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe lower shelf",
+      "object_name": "Loftsuite 01 | wardrobe lower shelf.003"
+    },
+    {
+      "name": "Loftsuite 01 | folded wardrobe linen",
+      "object_name": "Loftsuite 01 | folded wardrobe linen.002"
+    },
+    {
+      "name": "Loftsuite 01 | folded wardrobe linen",
+      "object_name": "Loftsuite 01 | folded wardrobe linen.003"
+    },
+    {
+      "name": "Loftsuite 01 | sliding wardrobe front",
+      "object_name": "Loftsuite 01 | sliding wardrobe front.001"
+    },
+    {
+      "name": "Loftsuite 01 | wardrobe recessed bronze pull",
+      "object_name": "Loftsuite 01 | wardrobe recessed bronze pull.001"
+    },
+    {
+      "name": "Loftsuite 01 | vanity back",
+      "object_name": "Loftsuite 01 | vanity back"
+    },
+    {
+      "name": "Loftsuite 01 | vanity end",
+      "object_name": "Loftsuite 01 | vanity end"
+    },
+    {
+      "name": "Loftsuite 01 | vanity end",
+      "object_name": "Loftsuite 01 | vanity end.001"
+    },
+    {
+      "name": "Loftsuite 01 | vanity bottom",
+      "object_name": "Loftsuite 01 | vanity bottom"
+    },
+    {
+      "name": "Loftsuite 01 | vanity top side rail",
+      "object_name": "Loftsuite 01 | vanity top side rail"
+    },
+    {
+      "name": "Loftsuite 01 | vanity top side rail",
+      "object_name": "Loftsuite 01 | vanity top side rail.001"
+    },
+    {
+      "name": "Loftsuite 01 | vanity top front rail",
+      "object_name": "Loftsuite 01 | vanity top front rail"
+    },
+    {
+      "name": "Loftsuite 01 | vanity top front rail",
+      "object_name": "Loftsuite 01 | vanity top front rail.001"
+    },
+    {
+      "name": "Loftsuite 01 | sliding vanity front",
+      "object_name": "Loftsuite 01 | sliding vanity front"
+    },
+    {
+      "name": "Loftsuite 01 | vanity recessed pull",
+      "object_name": "Loftsuite 01 | vanity recessed pull"
+    },
+    {
+      "name": "Loftsuite 01 | sliding vanity front",
+      "object_name": "Loftsuite 01 | sliding vanity front.001"
+    },
+    {
+      "name": "Loftsuite 01 | vanity recessed pull",
+      "object_name": "Loftsuite 01 | vanity recessed pull.001"
+    },
+    {
+      "name": "Loftsuite 01 | hollow ceramic basin",
+      "object_name": "Loftsuite 01 | hollow ceramic basin"
+    },
+    {
+      "name": "Loftsuite 01 | basin dark waste",
+      "object_name": "Loftsuite 01 | basin dark waste"
+    },
+    {
+      "name": "Loftsuite 01 | basin bronze pop-up waste",
+      "object_name": "Loftsuite 01 | basin bronze pop-up waste"
+    },
+    {
+      "name": "Loftsuite 01 | basin mixer backplate",
+      "object_name": "Loftsuite 01 | basin mixer backplate"
+    },
+    {
+      "name": "Loftsuite 01 | basin mixer aerator",
+      "object_name": "Loftsuite 01 | basin mixer aerator"
+    },
+    {
+      "name": "Loftsuite 01 | basin mixer control",
+      "object_name": "Loftsuite 01 | basin mixer control"
+    },
+    {
+      "name": "Loftsuite 01 | basin mixer index",
+      "object_name": "Loftsuite 01 | basin mixer index"
+    },
+    {
+      "name": "Loftsuite 01 | vanity limestone wall",
+      "object_name": "Loftsuite 01 | vanity limestone wall"
+    },
+    {
+      "name": "Loftsuite 01 | mirror bronze frame",
+      "object_name": "Loftsuite 01 | mirror bronze frame"
+    },
+    {
+      "name": "Loftsuite 01 | basin mirror",
+      "object_name": "Loftsuite 01 | basin mirror"
+    },
+    {
+      "name": "Loftsuite 01 | mirror bronze light",
+      "object_name": "Loftsuite 01 | mirror bronze light"
+    },
+    {
+      "name": "Loftsuite 01 | mirror diffuser",
+      "object_name": "Loftsuite 01 | mirror diffuser"
+    },
+    {
+      "name": "Loftsuite 01 | mirror bronze light",
+      "object_name": "Loftsuite 01 | mirror bronze light.001"
+    },
+    {
+      "name": "Loftsuite 01 | mirror diffuser",
+      "object_name": "Loftsuite 01 | mirror diffuser.001"
+    },
+    {
+      "name": "Loftsuite 01 | basin face glow",
+      "object_name": "Loftsuite 01 | basin face glow"
+    },
+    {
+      "name": "Loftsuite 01 | concealed WC cistern",
+      "object_name": "Loftsuite 01 | concealed WC cistern"
+    },
+    {
+      "name": "Loftsuite 01 | cistern stone cap",
+      "object_name": "Loftsuite 01 | cistern stone cap"
+    },
+    {
+      "name": "Loftsuite 01 | open wall-hung WC pan",
+      "object_name": "Loftsuite 01 | open wall-hung WC pan"
+    },
+    {
+      "name": "Loftsuite 01 | WC concealed rear outlet",
+      "object_name": "Loftsuite 01 | WC concealed rear outlet"
+    },
+    {
+      "name": "Loftsuite 01 | WC dark bowl outlet",
+      "object_name": "Loftsuite 01 | WC dark bowl outlet"
+    },
+    {
+      "name": "Loftsuite 01 | open WC seat",
+      "object_name": "Loftsuite 01 | open WC seat"
+    },
+    {
+      "name": "Loftsuite 01 | WC seat hinge",
+      "object_name": "Loftsuite 01 | WC seat hinge"
+    },
+    {
+      "name": "Loftsuite 01 | WC seat hinge",
+      "object_name": "Loftsuite 01 | WC seat hinge.001"
+    },
+    {
+      "name": "Loftsuite 01 | dual flush plate",
+      "object_name": "Loftsuite 01 | dual flush plate"
+    },
+    {
+      "name": "Loftsuite 01 | dual flush button",
+      "object_name": "Loftsuite 01 | dual flush button"
+    },
+    {
+      "name": "Loftsuite 01 | dual flush button",
+      "object_name": "Loftsuite 01 | dual flush button.001"
+    },
+    {
+      "name": "Loftsuite 01 | paper roll",
+      "object_name": "Loftsuite 01 | paper roll"
+    },
+    {
+      "name": "Loftsuite 01 | low limestone shower tray",
+      "object_name": "Loftsuite 01 | low limestone shower tray"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain",
+      "object_name": "Loftsuite 01 | shower drain"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.001"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.002"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.003"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.004"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.005"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.006"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.007"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.008"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.009"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.010"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.011"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.012"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.013"
+    },
+    {
+      "name": "Loftsuite 01 | shower drain slot",
+      "object_name": "Loftsuite 01 | shower drain slot.014"
+    },
+    {
+      "name": "Loftsuite 01 | shower north glass",
+      "object_name": "Loftsuite 01 | shower north glass"
+    },
+    {
+      "name": "Loftsuite 01 | shower west fixed return",
+      "object_name": "Loftsuite 01 | shower west fixed return"
+    },
+    {
+      "name": "Loftsuite 01 | shower west short north return",
+      "object_name": "Loftsuite 01 | shower west short north return"
+    },
+    {
+      "name": "Loftsuite 01 | shower north west channel",
+      "object_name": "Loftsuite 01 | shower north west channel"
+    },
+    {
+      "name": "Loftsuite 01 | shower west south channel",
+      "object_name": "Loftsuite 01 | shower west south channel"
+    },
+    {
+      "name": "Loftsuite 01 | shower door glass",
+      "object_name": "Loftsuite 01 | shower door glass"
+    },
+    {
+      "name": "Loftsuite 01 | shower door hinge",
+      "object_name": "Loftsuite 01 | shower door hinge"
+    },
+    {
+      "name": "Loftsuite 01 | shower door hinge",
+      "object_name": "Loftsuite 01 | shower door hinge.001"
+    },
+    {
+      "name": "Loftsuite 01 | shower door bottom seal",
+      "object_name": "Loftsuite 01 | shower door bottom seal"
+    },
+    {
+      "name": "Loftsuite 01 | south limestone shower wall",
+      "object_name": "Loftsuite 01 | south limestone shower wall"
+    },
+    {
+      "name": "Loftsuite 01 | shower window sill wall",
+      "object_name": "Loftsuite 01 | shower window sill wall"
+    },
+    {
+      "name": "Loftsuite 01 | shower window head wall",
+      "object_name": "Loftsuite 01 | shower window head wall"
+    },
+    {
+      "name": "Loftsuite 01 | shower window pier",
+      "object_name": "Loftsuite 01 | shower window pier"
+    },
+    {
+      "name": "Loftsuite 01 | shower window pier",
+      "object_name": "Loftsuite 01 | shower window pier.001"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom dormer window internal sill",
+      "object_name": "Loftsuite 01 | bathroom dormer window internal sill"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom dormer window internal head",
+      "object_name": "Loftsuite 01 | bathroom dormer window internal head"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom dormer window internal first jamb",
+      "object_name": "Loftsuite 01 | bathroom dormer window internal first jamb"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom dormer window internal second jamb",
+      "object_name": "Loftsuite 01 | bathroom dormer window internal second jamb"
+    },
+    {
+      "name": "Loftsuite 01 | shower mixer plate",
+      "object_name": "Loftsuite 01 | shower mixer plate"
+    },
+    {
+      "name": "Loftsuite 01 | shower mixer knob",
+      "object_name": "Loftsuite 01 | shower mixer knob"
+    },
+    {
+      "name": "Loftsuite 01 | shower mixer index",
+      "object_name": "Loftsuite 01 | shower mixer index"
+    },
+    {
+      "name": "Loftsuite 01 | shower mixer knob",
+      "object_name": "Loftsuite 01 | shower mixer knob.001"
+    },
+    {
+      "name": "Loftsuite 01 | shower mixer index",
+      "object_name": "Loftsuite 01 | shower mixer index.001"
+    },
+    {
+      "name": "Loftsuite 01 | rain shower head",
+      "object_name": "Loftsuite 01 | rain shower head"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.001"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.002"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.003"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.004"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.005"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.006"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.007"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.008"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.009"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.010"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.011"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.012"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.013"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.014"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.015"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.016"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.017"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.018"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.019"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.020"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.021"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.022"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.023"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.024"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.025"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.026"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.027"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.028"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.029"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.030"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.031"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.032"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.033"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.034"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.035"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.036"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.037"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.038"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.039"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.040"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.041"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.042"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.043"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.044"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.045"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.046"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.047"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.048"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.049"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.050"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.051"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.052"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.053"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.054"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.055"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.056"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.057"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.058"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.059"
+    },
+    {
+      "name": "Loftsuite 01 | rain nozzle",
+      "object_name": "Loftsuite 01 | rain nozzle.060"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower outlet",
+      "object_name": "Loftsuite 01 | hand shower outlet"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.001"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.002"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.003"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.004"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.005"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.006"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.007"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.008"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.009"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.010"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.011"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.012"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.013"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.014"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.015"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.016"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.017"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.018"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.019"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.020"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.021"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.022"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.023"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.024"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.025"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.026"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.027"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.028"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.029"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.030"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.031"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.032"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.033"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.034"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.035"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.036"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.037"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.038"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.039"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.040"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.041"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.042"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.043"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.044"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.045"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose rib",
+      "object_name": "Loftsuite 01 | hand shower hose rib.046"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower handle",
+      "object_name": "Loftsuite 01 | hand shower handle"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower head",
+      "object_name": "Loftsuite 01 | hand shower head"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.001"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.002"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.003"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.004"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.005"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.006"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.007"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.008"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.009"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.010"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower nozzle",
+      "object_name": "Loftsuite 01 | hand shower nozzle.011"
+    },
+    {
+      "name": "Loftsuite 01 | bath towel rail back",
+      "object_name": "Loftsuite 01 | bath towel rail back"
+    },
+    {
+      "name": "Loftsuite 01 | folded bath hand towel",
+      "object_name": "Loftsuite 01 | folded bath hand towel"
+    },
+    {
+      "name": "Loftsuite 01 | towel woven hem",
+      "object_name": "Loftsuite 01 | towel woven hem"
+    },
+    {
+      "name": "Loftsuite 01 | towel woven hem",
+      "object_name": "Loftsuite 01 | towel woven hem.001"
+    },
+    {
+      "name": "Loftsuite 01 | towel woven hem",
+      "object_name": "Loftsuite 01 | towel woven hem.002"
+    },
+    {
+      "name": "Loftsuite 01 | hall door oak leaf",
+      "object_name": "Loftsuite 01 | hall door oak leaf"
+    },
+    {
+      "name": "Loftsuite 01 | hall door bronze hinge",
+      "object_name": "Loftsuite 01 | hall door bronze hinge"
+    },
+    {
+      "name": "Loftsuite 01 | hall door bronze hinge",
+      "object_name": "Loftsuite 01 | hall door bronze hinge.001"
+    },
+    {
+      "name": "Loftsuite 01 | hall door bronze hinge",
+      "object_name": "Loftsuite 01 | hall door bronze hinge.002"
+    },
+    {
+      "name": "Loftsuite 01 | hall door lever rose",
+      "object_name": "Loftsuite 01 | hall door lever rose"
+    },
+    {
+      "name": "Loftsuite 01 | hall door key escutcheon",
+      "object_name": "Loftsuite 01 | hall door key escutcheon"
+    },
+    {
+      "name": "Loftsuite 01 | hall door lever rose",
+      "object_name": "Loftsuite 01 | hall door lever rose.001"
+    },
+    {
+      "name": "Loftsuite 01 | hall door key escutcheon",
+      "object_name": "Loftsuite 01 | hall door key escutcheon.001"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door oak leaf",
+      "object_name": "Loftsuite 01 | ensuite door oak leaf"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door bronze hinge",
+      "object_name": "Loftsuite 01 | ensuite door bronze hinge"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door bronze hinge",
+      "object_name": "Loftsuite 01 | ensuite door bronze hinge.001"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door bronze hinge",
+      "object_name": "Loftsuite 01 | ensuite door bronze hinge.002"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door lever rose",
+      "object_name": "Loftsuite 01 | ensuite door lever rose"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door key escutcheon",
+      "object_name": "Loftsuite 01 | ensuite door key escutcheon"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door lever rose",
+      "object_name": "Loftsuite 01 | ensuite door lever rose.001"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door key escutcheon",
+      "object_name": "Loftsuite 01 | ensuite door key escutcheon.001"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door oak leaf",
+      "object_name": "Loftsuite 01 | hip store door oak leaf"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door bronze hinge",
+      "object_name": "Loftsuite 01 | hip store door bronze hinge"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door bronze hinge",
+      "object_name": "Loftsuite 01 | hip store door bronze hinge.001"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door bronze hinge",
+      "object_name": "Loftsuite 01 | hip store door bronze hinge.002"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door lever rose",
+      "object_name": "Loftsuite 01 | hip store door lever rose"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door key escutcheon",
+      "object_name": "Loftsuite 01 | hip store door key escutcheon"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door lever rose",
+      "object_name": "Loftsuite 01 | hip store door lever rose.001"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door key escutcheon",
+      "object_name": "Loftsuite 01 | hip store door key escutcheon.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south dormer window internal sill",
+      "object_name": "Loftsuite 01 | bedroom south dormer window internal sill"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south dormer window internal head",
+      "object_name": "Loftsuite 01 | bedroom south dormer window internal head"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south dormer window internal first jamb",
+      "object_name": "Loftsuite 01 | bedroom south dormer window internal first jamb"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south dormer window internal second jamb",
+      "object_name": "Loftsuite 01 | bedroom south dormer window internal second jamb"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom south Roman blind fold"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom south Roman blind fold.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom south Roman blind fold.002"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom south Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom south Roman blind fold.003"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north dormer window internal sill",
+      "object_name": "Loftsuite 01 | bedroom north dormer window internal sill"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north dormer window internal head",
+      "object_name": "Loftsuite 01 | bedroom north dormer window internal head"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north dormer window internal first jamb",
+      "object_name": "Loftsuite 01 | bedroom north dormer window internal first jamb"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north dormer window internal second jamb",
+      "object_name": "Loftsuite 01 | bedroom north dormer window internal second jamb"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom north Roman blind fold"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom north Roman blind fold.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom north Roman blind fold.002"
+    },
+    {
+      "name": "Loftsuite 01 | bedroom north Roman blind fold",
+      "object_name": "Loftsuite 01 | bedroom north Roman blind fold.003"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom privacy blind fold",
+      "object_name": "Loftsuite 01 | bathroom privacy blind fold"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom privacy blind fold",
+      "object_name": "Loftsuite 01 | bathroom privacy blind fold.001"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom privacy blind fold",
+      "object_name": "Loftsuite 01 | bathroom privacy blind fold.002"
+    },
+    {
+      "name": "Loftsuite 01 | bathroom privacy blind fold",
+      "object_name": "Loftsuite 01 | bathroom privacy blind fold.003"
+    },
+    {
+      "name": "Loftsuite 01 | window pier ceramic planter",
+      "object_name": "Loftsuite 01 | window pier ceramic planter"
+    },
+    {
+      "name": "Loftsuite 01 | planter soil",
+      "object_name": "Loftsuite 01 | planter soil"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.001"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.002"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.003"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.004"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.005"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.006"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.007"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.008"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.009"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.010"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.011"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.012"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.013"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.014"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.015"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.016"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.017"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.018"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.019"
+    },
+    {
+      "name": "Loftsuite 01 | plant leaf",
+      "object_name": "Loftsuite 01 | plant leaf.020"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light trim",
+      "object_name": "Loftsuite 01 | ceiling light trim"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light diffuser",
+      "object_name": "Loftsuite 01 | ceiling light diffuser"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling glow 10.25 -6.65",
+      "object_name": "Loftsuite 01 | ceiling glow 10.25 -6.65"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light trim",
+      "object_name": "Loftsuite 01 | ceiling light trim.001"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light diffuser",
+      "object_name": "Loftsuite 01 | ceiling light diffuser.001"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling glow 11.65 -8.1",
+      "object_name": "Loftsuite 01 | ceiling glow 11.65 -8.1"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light trim",
+      "object_name": "Loftsuite 01 | ceiling light trim.002"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light diffuser",
+      "object_name": "Loftsuite 01 | ceiling light diffuser.002"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling glow 10.83 -10.25",
+      "object_name": "Loftsuite 01 | ceiling glow 10.83 -10.25"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light trim",
+      "object_name": "Loftsuite 01 | ceiling light trim.003"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling light diffuser",
+      "object_name": "Loftsuite 01 | ceiling light diffuser.003"
+    },
+    {
+      "name": "Loftsuite 01 | ceiling glow 11.79 -10.98",
+      "object_name": "Loftsuite 01 | ceiling glow 11.79 -10.98"
+    },
+    {
+      "name": "Loftsuite 01 | hip store wall light",
+      "object_name": "Loftsuite 01 | hip store wall light"
+    },
+    {
+      "name": "Loftsuite 01 | hip store wall diffuser",
+      "object_name": "Loftsuite 01 | hip store wall diffuser"
+    },
+    {
+      "name": "Loftsuite 01 | hip store glow",
+      "object_name": "Loftsuite 01 | hip store glow"
+    },
+    {
+      "name": "Loftsuite 01 | pillow stitched edge",
+      "object_name": "Loftsuite 01 | pillow stitched edge"
+    },
+    {
+      "name": "Loftsuite 01 | pillow stitched edge",
+      "object_name": "Loftsuite 01 | pillow stitched edge.001"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading arm",
+      "object_name": "Loftsuite 01 | bedside reading arm"
+    },
+    {
+      "name": "Loftsuite 01 | bedside reading arm",
+      "object_name": "Loftsuite 01 | bedside reading arm.001"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.001"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.001"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.002"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.002"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.003"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.003"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.004"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.004"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.005"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.005"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.006"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.006"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.007"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.007"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.008"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.008"
+    },
+    {
+      "name": "Loftsuite 01 | wooden clothes hanger",
+      "object_name": "Loftsuite 01 | wooden clothes hanger.009"
+    },
+    {
+      "name": "Loftsuite 01 | hanger hook",
+      "object_name": "Loftsuite 01 | hanger hook.009"
+    },
+    {
+      "name": "Loftsuite 01 | basin trap",
+      "object_name": "Loftsuite 01 | basin trap"
+    },
+    {
+      "name": "Loftsuite 01 | basin mixer spout",
+      "object_name": "Loftsuite 01 | basin mixer spout"
+    },
+    {
+      "name": "Loftsuite 01 | paper holder",
+      "object_name": "Loftsuite 01 | paper holder"
+    },
+    {
+      "name": "Loftsuite 01 | shower door handle",
+      "object_name": "Loftsuite 01 | shower door handle"
+    },
+    {
+      "name": "Loftsuite 01 | shower door handle",
+      "object_name": "Loftsuite 01 | shower door handle.001"
+    },
+    {
+      "name": "Loftsuite 01 | shower riser",
+      "object_name": "Loftsuite 01 | shower riser"
+    },
+    {
+      "name": "Loftsuite 01 | hand shower hose",
+      "object_name": "Loftsuite 01 | hand shower hose"
+    },
+    {
+      "name": "Loftsuite 01 | bath towel rail",
+      "object_name": "Loftsuite 01 | bath towel rail"
+    },
+    {
+      "name": "Loftsuite 01 | hall door lever",
+      "object_name": "Loftsuite 01 | hall door lever"
+    },
+    {
+      "name": "Loftsuite 01 | hall door lever",
+      "object_name": "Loftsuite 01 | hall door lever.001"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door lever",
+      "object_name": "Loftsuite 01 | ensuite door lever"
+    },
+    {
+      "name": "Loftsuite 01 | ensuite door lever",
+      "object_name": "Loftsuite 01 | ensuite door lever.001"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door lever",
+      "object_name": "Loftsuite 01 | hip store door lever"
+    },
+    {
+      "name": "Loftsuite 01 | hip store door lever",
+      "object_name": "Loftsuite 01 | hip store door lever.001"
+    },
+    {
+      "name": "Loftsuite 01 | plant stem",
+      "object_name": "Loftsuite 01 | plant stem"
+    },
+    {
+      "name": "Loftsuite 01 | plant stem",
+      "object_name": "Loftsuite 01 | plant stem.001"
+    },
+    {
+      "name": "Loftsuite 01 | plant stem",
+      "object_name": "Loftsuite 01 | plant stem.002"
+    },
+    {
+      "name": "Loftsuite 01 | plant stem",
+      "object_name": "Loftsuite 01 | plant stem.003"
+    },
+    {
+      "name": "Loftsuite 01 | plant stem",
+      "object_name": "Loftsuite 01 | plant stem.004"
+    },
+    {
+      "name": "Loftsuite 01 | plant stem",
+      "object_name": "Loftsuite 01 | plant stem.005"
+    },
+    {
+      "name": "Loftsuite 01 | plant stem",
+      "object_name": "Loftsuite 01 | plant stem.006"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Loftsuite 01 | complete upholstered double bed",
+      "box": [
+        9.605,
+        -9.33,
+        11.185,
+        -7.23
+      ],
+      "bottom": 5.55,
+      "top": 6.89
+    },
+    {
+      "name": "Loftsuite 01 | bedside 0",
+      "box": [
+        9.145,
+        -9.28,
+        9.555,
+        -8.86
+      ],
+      "bottom": 5.55,
+      "top": 6.109999999999999
+    },
+    {
+      "name": "Loftsuite 01 | bedside 1",
+      "box": [
+        11.225,
+        -9.28,
+        11.43,
+        -8.96
+      ],
+      "bottom": 5.55,
+      "top": 6.109999999999999
+    },
+    {
+      "name": "Loftsuite 01 | full-depth wardrobe",
+      "box": [
+        9.3,
+        -6.0,
+        11.27,
+        -5.42
+      ],
+      "bottom": 5.55,
+      "top": 7.56
+    },
+    {
+      "name": "Loftsuite 01 | floating vanity",
+      "box": [
+        9.8,
+        -9.94,
+        10.8,
+        -9.47
+      ],
+      "bottom": 5.55,
+      "top": 6.42
+    },
+    {
+      "name": "Loftsuite 01 | WC pan",
+      "box": [
+        10.194999694824219,
+        -11.309999465942383,
+        10.604999542236328,
+        -10.699999809265137
+      ],
+      "bottom": 5.55,
+      "top": 5.994
+    },
+    {
+      "name": "Loftsuite 01 | WC cistern",
+      "box": [
+        10.049999237060547,
+        -11.489999771118164,
+        10.75,
+        -11.319999694824219
+      ],
+      "bottom": 5.55,
+      "top": 6.63
+    },
+    {
+      "name": "Loftsuite 01 | window pier planter",
+      "box": [
+        12.0,
+        -7.77,
+        12.32,
+        -7.45
+      ],
+      "bottom": 5.55,
+      "top": 6.68
+    }
+  ],
+  "configuration": {
+    "room": "Loft bedroom, ensuite and hip store",
+    "revision": 2,
+    "floorZ": 5.55,
+    "ceilingZ": 7.94,
+    "bounds": [
+      7.58,
+      -13,
+      12.42,
+      -5.4
+    ],
+    "bedroomPolygon": [
+      [
+        7.58,
+        -9.35
+      ],
+      [
+        12.42,
+        -9.35
+      ],
+      [
+        12.42,
+        -5.4
+      ],
+      [
+        7.58,
+        -5.4
+      ]
+    ],
+    "bathroomPolygon": [
+      [
+        7.58,
+        -11.52
+      ],
+      [
+        12.42,
+        -11.52
+      ],
+      [
+        12.42,
+        -9.45
+      ],
+      [
+        7.58,
+        -9.45
+      ]
+    ],
+    "storePolygon": [
+      [
+        7.58,
+        -13
+      ],
+      [
+        12.42,
+        -13
+      ],
+      [
+        12.42,
+        -11.66
+      ],
+      [
+        7.58,
+        -11.66
+      ]
+    ],
+    "bed": {
+      "head": [
+        10.395,
+        -9.33
+      ],
+      "angleDegrees": 0,
+      "frameWidth": 1.58,
+      "frameLength": 2.1,
+      "mattress": [
+        1.5,
+        2.0
+      ],
+      "envelope": [
+        9.605,
+        -9.33,
+        11.185,
+        -7.23
+      ]
+    },
+    "bedsides": [
+      [
+        9.145,
+        -9.28,
+        9.555,
+        -8.86
+      ],
+      [
+        11.225,
+        -9.28,
+        11.43,
+        -8.96
+      ]
+    ],
+    "wardrobe": [
+      9.3,
+      -6.0,
+      11.27,
+      -5.42
+    ],
+    "eavesStorage": [
+      7.6,
+      -9.28,
+      8.88,
+      -6.5
+    ],
+    "vanity": [
+      9.8,
+      -9.94,
+      10.8,
+      -9.47
+    ],
+    "shower": [
+      11.3,
+      -11.49,
+      12.39,
+      -10.39
+    ],
+    "wcPan": [
+      10.195,
+      -11.31,
+      10.605,
+      -10.7
+    ],
+    "cistern": [
+      10.05,
+      -11.49,
+      10.75,
+      -11.32
+    ],
+    "hallDoor": {
+      "hinge": [
+        12.238,
+        -5.42,
+        5.55
+      ],
+      "axis": [
+        -1,
+        0
+      ],
+      "width": 0.876,
+      "openAngle": 1.5707963267948966,
+      "height": 1.955
+    },
+    "bathDoor": {
+      "hinge": [
+        12.238,
+        -9.47,
+        5.55
+      ],
+      "axis": [
+        -1,
+        0
+      ],
+      "width": 0.776,
+      "openAngle": 1.5707963267948966,
+      "height": 1.955
+    },
+    "hipDoor": {
+      "hinge": [
+        8.962,
+        -11.52,
+        5.55
+      ],
+      "axis": [
+        1,
+        0
+      ],
+      "width": 0.776,
+      "openAngle": 1.5707963267948966,
+      "height": 1.76
+    },
+    "showerDoor": {
+      "hinge": [
+        11.3,
+        -10.46,
+        5.575
+      ],
+      "axis": [
+        0,
+        -1
+      ],
+      "width": 0.7,
+      "openAngle": 1.5707963267948966,
+      "height": 1.86
+    },
+    "view": {
+      "id": "proposal-new-loft-studio",
+      "position": [
+        11.82,
+        -6.95,
+        5.55
+      ],
+      "direction": [
+        -0.5,
+        -0.9,
+        -0.04
+      ]
+    },
+    "views": {
+      "entrance": {
+        "position": [
+          11.92,
+          -6.78,
+          7.17
+        ],
+        "target": [
+          10.31,
+          -8.76,
+          6.33
+        ],
+        "fov": 64
+      },
+      "wardrobe": {
+        "position": [
+          11.98,
+          -7.17,
+          7.17
+        ],
+        "target": [
+          10.14,
+          -5.84,
+          6.53
+        ],
+        "fov": 65
+      },
+      "bathroom": {
+        "position": [
+          11.64,
+          -9.86,
+          7.15
+        ],
+        "target": [
+          10.73,
+          -11.1,
+          6.46
+        ],
+        "fov": 69
+      },
+      "vanity": {
+        "position": [
+          10.75,
+          -10.71,
+          7.1
+        ],
+        "target": [
+          10.3,
+          -9.66,
+          6.65
+        ],
+        "fov": 59
+      },
+      "store": {
+        "position": [
+          9.41,
+          -11.98,
+          7.02
+        ],
+        "target": [
+          10.28,
+          -12.65,
+          6.0
+        ],
+        "fov": 67
+      },
+      "overview": {
+        "position": [
+          17,
+          -15,
+          16.5
+        ],
+        "target": [
+          10,
+          -9.2,
+          6.1
+        ],
+        "fov": 49,
+        "cutaway": true
+      }
+    },
+    "limitations": [
+      "Dormer ceiling is about 2.09 m above the structural floor; finishes reduce this slightly.",
+      "Low eaves and hip storage require stooping and are not counted as standing circulation.",
+      "Retains existing roof, dormer windows, partitions and door apertures.",
+      "The entry and bathroom leaves are rehung at their east jambs to clear the bed and circulation.",
+      "A compact 205 mm bedside perch on the doorway side preserves the ensuite approach; the opposite bedside is 410 mm wide."
+    ],
+    "hipStoreShelving": false,
+    "includeEavesStorage": false
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "ddc946f87d929a7fd940b2ca4afd2aa533d248a4b37d12863ce288cb126bfae9",
+  "source_house_unchanged": true,
+  "isolated_objects": 551,
+  "views": {
+    "entrance": {
+      "position": [
+        11.92,
+        -6.78,
+        7.17
+      ],
+      "target": [
+        10.31,
+        -8.76,
+        6.33
+      ],
+      "fov": 64
+    },
+    "wardrobe": {
+      "position": [
+        11.98,
+        -7.17,
+        7.17
+      ],
+      "target": [
+        10.14,
+        -5.84,
+        6.53
+      ],
+      "fov": 65
+    },
+    "bathroom": {
+      "position": [
+        11.64,
+        -9.86,
+        7.15
+      ],
+      "target": [
+        10.73,
+        -11.1,
+        6.46
+      ],
+      "fov": 69
+    },
+    "vanity": {
+      "position": [
+        10.75,
+        -10.71,
+        7.1
+      ],
+      "target": [
+        10.3,
+        -9.66,
+        6.65
+      ],
+      "fov": 59
+    },
+    "store": {
+      "position": [
+        9.41,
+        -11.98,
+        7.02
+      ],
+      "target": [
+        10.28,
+        -12.65,
+        6.0
+      ],
+      "fov": 67
+    },
+    "overview": {
+      "position": [
+        17,
+        -15,
+        16.5
+      ],
+      "target": [
+        10,
+        -9.2,
+        6.1
+      ],
+      "fov": 49,
+      "cutaway": true
+    }
+  }
+}

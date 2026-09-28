@@ -1,0 +1,300 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "ordinary",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "sofa south approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "south lounge approach",
+          "distance": 0.011180339887498983,
+          "reachable": true
+        },
+        {
+          "label": "north lounge approach",
+          "distance": 0.007071067811866384,
+          "reachable": true
+        },
+        {
+          "label": "café west approach",
+          "distance": 0.01118033988749861,
+          "reachable": true
+        },
+        {
+          "label": "café north approach",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "café east approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "café south approach",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "northwest drainage approach",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "west maintenance route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east maintenance route",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "cushion box approach",
+          "distance": 0.010000000000000508,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "occupiedLounge",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "sofa south approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "south lounge approach",
+          "distance": 0.011180339887498983,
+          "reachable": true
+        },
+        {
+          "label": "north lounge approach",
+          "distance": 0.007071067811866384,
+          "reachable": true
+        },
+        {
+          "label": "café west approach",
+          "distance": 0.01118033988749861,
+          "reachable": true
+        },
+        {
+          "label": "café north approach",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "café east approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "café south approach",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "northwest drainage approach",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "west maintenance route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east maintenance route",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "cushion box approach",
+          "distance": 0.010000000000000508,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "fourDining",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "sofa south approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "south lounge approach",
+          "distance": 0.011180339887498983,
+          "reachable": true
+        },
+        {
+          "label": "north lounge approach",
+          "distance": 0.007071067811866384,
+          "reachable": true
+        },
+        {
+          "label": "café west approach",
+          "distance": 0.01118033988749861,
+          "reachable": true
+        },
+        {
+          "label": "café north approach",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "café east approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "café south approach",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "northwest drainage approach",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "west maintenance route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east maintenance route",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "cushion box approach",
+          "distance": 0.010000000000000508,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "storageUse",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "sofa south approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "south lounge approach",
+          "distance": 0.011180339887498983,
+          "reachable": true
+        },
+        {
+          "label": "north lounge approach",
+          "distance": 0.007071067811866384,
+          "reachable": true
+        },
+        {
+          "label": "café west approach",
+          "distance": 0.01118033988749861,
+          "reachable": true
+        },
+        {
+          "label": "café north approach",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "café east approach",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        },
+        {
+          "label": "café south approach",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "northwest drainage approach",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "west maintenance route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east maintenance route",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "eastChairPulledOut",
+      "bodyWidth": 0.6,
+      "checks": [
+        {
+          "label": "sofa south approach",
+          "distance": 0,
+          "reachable": true
+        },
+        {
+          "label": "south lounge approach",
+          "distance": 0.011180339887498983,
+          "reachable": true
+        },
+        {
+          "label": "north lounge approach",
+          "distance": 0.007071067811866384,
+          "reachable": true
+        },
+        {
+          "label": "café west approach",
+          "distance": 0.01118033988749861,
+          "reachable": true
+        },
+        {
+          "label": "café north approach",
+          "distance": 0.014142135623731277,
+          "reachable": true
+        },
+        {
+          "label": "café south approach",
+          "distance": 0.014142135623732534,
+          "reachable": true
+        },
+        {
+          "label": "northwest drainage approach",
+          "distance": 1.7763568394002505e-15,
+          "reachable": true
+        },
+        {
+          "label": "west maintenance route",
+          "distance": 0.010000000000001563,
+          "reachable": true
+        },
+        {
+          "label": "east maintenance route",
+          "distance": 0.004999999999999893,
+          "reachable": true
+        },
+        {
+          "label": "cushion box approach",
+          "distance": 0.010000000000000508,
+          "reachable": true
+        }
+      ]
+    }
+  ]
+}

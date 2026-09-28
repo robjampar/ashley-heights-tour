@@ -1,0 +1,69 @@
+{
+  "status": "isolated checks passed; combined build pending",
+  "owner_corrections": 7,
+  "variants": {
+    "compact": {
+      "gym": {
+        "native": "PASS",
+        "source_sha256": "34b4f5398a232bedd570265b547861d6ef02ce0f8c7f10c079649f1d2893542a",
+        "circulation": "PASS"
+      },
+      "arrival": {
+        "native": "PASS",
+        "source_sha256": "e19bc50a56fb89bcaeb7b570596523e825e5568e18fdf5836101e03a1df93624",
+        "circulation": "PASS"
+      },
+      "landings": {
+        "native": "PASS",
+        "source_sha256": "ccd359f4834c85dd9eca0c2d87c5cd432235de374aa863a9c0ed46e6d510c40a",
+        "circulation": "PASS"
+      },
+      "sidebed": {
+        "native": "PASS",
+        "source_sha256": "b65ed00347f87349f90525ba3f56223b9448ef7b5fd76e25c10a15aed367dae3",
+        "circulation": "PASS"
+      },
+      "family": {
+        "native": "PASS",
+        "source_sha256": "f86a7673803d6cec0bc32bdd64d2f8d894921d7499e4cdeb4bbba8a161e804ff",
+        "circulation": "PASS"
+      }
+    },
+    "planning": {
+      "gym": {
+        "native": "PASS",
+        "source_sha256": "d14b1d6244af4f76c8484cb2e8e070b9558b27ac013133d971bc131b80c0360c",
+        "circulation": "PASS"
+      },
+      "arrival": {
+        "native": "PASS",
+        "source_sha256": "1006cbef98f767af9bdbfd7ee4442708931d2d70450600161b6c104264b19ef4",
+        "circulation": "PASS"
+      },
+      "landings": {
+        "native": "PASS",
+        "source_sha256": "ce32327a285f157dfc83719749f03b48f242d9757edd4f47e35a750fc8d5950d",
+        "circulation": "PASS"
+      },
+      "sidebed": {
+        "native": "PASS",
+        "source_sha256": "b5a055f87d3e0eb0ee57631e36815e76aa997af634bf3dd758b5f4373348d81f",
+        "circulation": "PASS"
+      },
+      "family": {
+        "native": "PASS",
+        "source_sha256": "a99d41bbf36376d078c51e3a6caa0d62556229f2a4c0d84418efc84b07f06f3f",
+        "circulation": "PASS"
+      }
+    }
+  },
+  "viewer_unit_tests": {
+    "passed": 116,
+    "failed": 0
+  },
+  "usage_observation": {
+    "time": "2026-09-28 00:11 BST",
+    "weekly_remaining_percent": 95
+  },
+  "publication": "held for owner review"
+}

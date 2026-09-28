@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "variant": "planning",
+  "source_sha256": "b0ebb6a7d32f2fe6ea6c78999c94e67b2560902dc3992b75e4f86e3024c6fdb5",
+  "source_unchanged": true,
+  "reports": [
+    {
+      "area": "arrival",
+      "matching_study_meshes": 324,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    }
+  ]
+}

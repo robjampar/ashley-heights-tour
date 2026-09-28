@@ -9,13 +9,14 @@ const furniture=[...['sofa','desk','chair','sideTable','storage'].map(k=>item('F
 const doorAudit=JSON.parse(fs.readFileSync(new URL('../../revisions/interiors-overnight-2026-09-27/family/'+variant+'/details-audit.json',import.meta.url)));
 assert.equal(doorAudit.status,'PASS');
 const terrace=doorAudit.openDoorParts;
+const adjacent=native?JSON.parse(fs.readFileSync(new URL(`../../revisions/interiors-overnight-2026-09-27/sidebed/${variant}/details-audit.json`,import.meta.url))).doorSweeps.find(d=>d.door.endsWith('| hall door')).poses.open:[];
 const states={ordinary:[],deskInUse:[item('desk user',[ -4.755,7.46,-4.145,8.03])],chairPulledBack:[item('pulled-back chair',[cfg.chair[0],cfg.chair[1]-.40,cfg.chair[2],cfg.chair[3]-.40])],sofaOccupied:[item('seated feet',[-4.80,6.22,-2.74,6.60],3.36)],storageUse:[item('storage user',[-1.135,6.75,-.525,7.35])],deskAndSofa:[item('desk user',[-4.755,7.46,-4.145,8.03]),item('seated feet',[-4.80,6.22,-2.74,6.60],3.36)]};
 const results=[];
 for(const[state,extra]of Object.entries(states)){
  let obstacles=base.obstacles.filter(o=>o.bottom<4.5&&o.top>2.84&&(native||!o.name.startsWith('Proposal | Family lounge')));
  let placed=native?[]:furniture;
  if(state==='chairPulledBack'){obstacles=obstacles.filter(o=>!o.name.startsWith('Family 01 | desk chair'));placed=placed.filter(o=>o.name!=='Family 01 | chair');}
- const nav=new Navigation({...base,obstacles:[...obstacles,...placed,...terrace,...extra]});nav.radius=.3;nav.segments=nav.segments.filter(s=>s.bottom<4.5&&s.top>2.84);
+ const nav=new Navigation({...base,obstacles:[...obstacles,...placed,...terrace,...adjacent,...extra]});nav.radius=.3;nav.segments=nav.segments.filter(s=>s.bottom<4.5&&s.top>2.84);
  const x0=-5.13,y0=3.33,step=.015,nx=381,ny=423,point=i=>({x:x0+i%nx*step,y:y0+Math.floor(i/nx)*step,z:2.8});const crop=restrictNavigation(nav,[x0,y0,x0+(nx-1)*step,y0+(ny-1)*step],2.8);
  const free=new Uint8Array(nx*ny),seen=new Uint8Array(nx*ny);for(let i=0;i<free.length;i++){const p=point(i);free[i]=Math.abs((nav.support(p.x,p.y,2.8)??99)-2.8)<.04&&!nav.blocked(p.x,p.y,2.8);}
  function nearest(x,y){let index=-1,distance=Infinity;for(let i=0;i<free.length;i++)if(free[i]){const p=point(i),d=Math.hypot(p.x-x,p.y-y);if(d<distance){distance=d;index=i;}}return{index,distance};}

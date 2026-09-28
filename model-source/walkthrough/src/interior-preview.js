@@ -1,3 +1,4 @@
+import {loadModel} from './model-delivery.js';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
@@ -12,7 +13,10 @@ import {Reflector} from 'three/addons/objects/Reflector.js';
 const asset=path=>globalThis.INTERIOR_ASSETS?.[path]??path;
 const roomConfig=globalThis.INTERIOR_PREVIEW_CONFIG??{},modelStem=roomConfig.modelStem??'kitchen';
 const $=id=>document.getElementById(id),canvas=$('room-model'),frame=canvas.parentElement;
-const variant=new URLSearchParams(location.search).get('design')==='planning'?'planning':'compact';
+const requestedVariant=new URLSearchParams(location.search).get('design')==='planning'?'planning':'compact';
+const availableVariants=roomConfig.variants??['compact','planning'];
+const variant=availableVariants.includes(requestedVariant)?requestedVariant:availableVariants[0];
+if(variant!==requestedVariant){const url=new URL(location.href);url.searchParams.set('design',variant);history.replaceState(null,'',url);}
 $('model-design').value=variant;$('model-design').onchange=()=>{location.search='?design='+$('model-design').value+'&view='+activeCamera;};
 $('full-house').href='../../?design='+(variant==='compact'?'proposed':'planning')+'&room='+(roomConfig.fullHouseRoom??(modelStem==='bedroom'?'proposal-new-principal-suite':modelStem==='ensuite'?'proposal-new-principal-bathroom':'2445662-0'));
 document.querySelectorAll('[data-reference]').forEach(a=>a.href='./#01-'+(variant==='compact'?'proposed':'planning'));
@@ -37,7 +41,7 @@ document.querySelectorAll('[data-camera]').forEach(b=>b.onclick=()=>setView(b.da
 function resize(){const w=frame.clientWidth,h=frame.clientHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false);lighting.resize(w,h);}new ResizeObserver(resize).observe(frame);resize();setView(new URLSearchParams(location.search).get('view')||'kitchen');
 try{
  const info=await fetch(asset('models/'+variant+'-'+modelStem+'.json')).then(r=>{if(!r.ok)throw Error('Room metadata unavailable');return r.json();});
- const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(asset('models/'+variant+'-'+modelStem+'.glb'),e=>{$('model-status').textContent=e.total?'Loading your room · '+Math.round(100*e.loaded/e.total)+'%':'Loading your room…';});
+ const gltf=await loadModel(new GLTFLoader().setMeshoptDecoder(MeshoptDecoder),asset('models/'+variant+'-'+modelStem+'.glb'),e=>{$('model-status').textContent=e.total?'Loading your room · '+Math.round(100*e.loaded/e.total)+'%':'Loading your room…';});
  gltf.scene.updateMatrixWorld(true);const batcher=createSpatialBatcher({minMaterialTriangles:20000}),materials=new Map();
  vegetation=new Vegetation(scene,{mobile:matchMedia('(pointer:coarse)').matches});
  vegetation.setClipBoxes((info.planRooms??[]).filter(r=>r.floor===0&&r.polygon_m?.length>2).map(r=>{const xs=r.polygon_m.map(p=>p[0]),ys=r.polygon_m.map(p=>p[1]);return [Math.min(...xs)-.15,Math.min(...ys)-.15,-.1,Math.max(...xs)+.15,Math.max(...ys)+.15,2.75];}));

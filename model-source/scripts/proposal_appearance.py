@@ -17,6 +17,7 @@ _appearance_joins = {
     # The projecting entrance masonry returns into the original 230 mm facade.
     'House front centre | corrected wall 1': [-.115],
     'First front | corrected wall 4': [-.115],
+    'Proposal | West recess upper facade': [float(spec['entranceBay']['y'][0])],
 }
 for _ap_ob in list(scene.objects):
     _ap_join_name = _ap_ob.name.removeprefix('Proposal revision | ')
@@ -130,6 +131,8 @@ def _appearance_constructed_side(name, point, normal):
         return False  # between the wing, gym and attached entrance gallery
     if name == 'proposal | entrance bay north return' and abs(normal.y) > .7:
         return normal.y > 0
+    if name == 'proposal | west recess upper facade' and abs(normal.x) > .7:
+        return normal.x < 0 and point.y < float(spec['entranceBay']['y'][0]) - 1e-4
     if name == 'proposal | west upper principal facade above wing roof' and abs(normal.x) > .7:
         return normal.x < 0
     if name in ('garage family partition | end', 'exterior brick floor band first west'):

@@ -1,0 +1,124 @@
+{
+  "variant": "planning",
+  "wall": {
+    "wall_x_m": 5.045,
+    "thickness_m": 0.23,
+    "floor_z_m": 2.8,
+    "centre_y_m": -12.94,
+    "opening_width_m": 1.2,
+    "opening_shape": "rectangular",
+    "centre_clear_height_m": 1.7000000000000002,
+    "jamb_clear_height_m": 1.7000000000000002,
+    "sections": [
+      [
+        "south pier",
+        [
+          [
+            -16.09,
+            2.8
+          ],
+          [
+            -13.54,
+            2.8
+          ],
+          [
+            -13.54,
+            4.544294889894544
+          ],
+          [
+            -16.09,
+            2.8242981719463556
+          ]
+        ]
+      ],
+      [
+        "north pier",
+        [
+          [
+            -12.34,
+            2.8
+          ],
+          [
+            -9.79,
+            2.8
+          ],
+          [
+            -9.79,
+            2.8242981719463556
+          ],
+          [
+            -12.34,
+            4.544294889894544
+          ]
+        ]
+      ],
+      [
+        "opening head",
+        [
+          [
+            -13.54,
+            4.5
+          ],
+          [
+            -12.34,
+            4.5
+          ],
+          [
+            -12.34,
+            4.544294889894544
+          ],
+          [
+            -12.94,
+            4.949
+          ],
+          [
+            -13.54,
+            4.544294889894544
+          ]
+        ]
+      ]
+    ],
+    "opening": [
+      [
+        -13.54,
+        2.8
+      ],
+      [
+        -12.34,
+        2.8
+      ],
+      [
+        -12.34,
+        4.5
+      ],
+      [
+        -13.54,
+        4.5
+      ]
+    ],
+    "floor_beam": "Concept: concealed in floor; section and bearings unverified",
+    "native_rebuild_pending": true,
+    "structural_status": "Concept only. Concealed floor beam and opening lintel sizes, bearings and load path require structural design. No garage geometry changes.",
+    "low_opening_notice": "1.7 m opening: ducking required; not a normal standing doorway"
+  },
+  "added_objects": [
+    "Principal gable wall | south pier",
+    "Principal gable wall | north pier",
+    "Principal gable wall | opening head",
+    "Principal gable wall | south lining",
+    "Principal gable wall | north lining",
+    "Principal gable wall | head lining"
+  ],
+  "preserved_nodes": 15419,
+  "preserved_meshes": 14313,
+  "native_rebuild_pending": true,
+  "garage_and_roof_unchanged": true,
+  "input_sha256": {
+    "proposal-planning.glb": "49a621facd395ea612eb8a326ed799beb5167659b0cd1c607dbfa45bc7268d72",
+    "proposal-planning-navigation.json": "53b3d0fa9f10a2d20f6100a7c758957798d469470a067a9835e7ecec8faa6f9a"
+  },
+  "output_sha256": {
+    "proposal-planning.glb": "b4397bc2fb9e0a17e4bd2af130ba0aa3ff4b1cbe3d83150de9016bf7025d9f97",
+    "proposal-planning-navigation.json": "4263bb590a619c0b9cef2638bc34b71be6b1ffedaea7bb46b173422450b6ee10"
+  }
+}

@@ -106,16 +106,44 @@ for xa,xb in((10.705,11.705),(12.185,13.185)):
  box('north window tiled head',((xa+xb)/2,-3.213,5.095),(xb-xa,.09,.01),stone,bevel=.001)
  # Separate privacy lining preserves original glass objects and openings.
  box('north obscure privacy pane',((xa+xb)/2,-3.183,4.375),(xb-xa-.11,.006,1.34),privacy,bevel=0)
-# Full-size hollow bath: continuous outer wall, eased rim, inner bowl and base.
-lathe('oval bath hollow shell',(13.16,-4.30,z),[(0,.035),(.69,.035),(.77,.075),(.84,.20),(.94,.43),(1,.565),(1,.585),(.986,.598),(.955,.598),(.935,.575),(.885,.43),(.77,.23),(.64,.15),(.30,.145),(0,.145)],(.4,.9),ceramic)
-tube('bath waste',[(13.16,-4.30,z+.146),(13.16,-4.30,z+.151)],.035,bronze,40)
-box('bath overflow slot',(13.16,-3.493,z+.49),(.09,.011,.008),dark,bevel=.002)
-tube('bath floor filler',[(13.60,-4.34,z+.01),(13.60,-4.34,z+.84),(13.58,-4.34,z+.89),(13.45,-4.34,z+.89),(13.43,-4.34,z+.86)],.018,bronze,24)
-tube('bath filler base',[(13.60,-4.34,z+.01),(13.60,-4.34,z+.024)],.065,bronze,40)
-tube('bath filler control',[(13.6,-4.34,z+.69),(13.6,-4.25,z+.69)],.012,bronze)
-box('bath oak bridge',(13.16,-4.87,z+.63),(.85,.22,.035),oak,bevel=.015)
-box('bath folded towel',(13.19,-4.86,z+.675),(.26,.19,.055),linen,bevel=.018)
-register('Bath',['oval bath hollow shell','bath oak bridge'])
+# Sculptural 1900 x 900 mm stone bath: softly rounded body, hollow bowl,
+# thicker rolled lip and a low recessed foot. All parts remain native meshes.
+bath_stone=stone.copy();bath_stone.name=prefix+'honed bath stone'
+bs=bath_stone.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.34
+profile=[(0,.026),(.50,.026),(.65,.035),(.72,.055),(.76,.09),(.79,.135),(.83,.21),(.88,.32),(.94,.445),(.985,.545),(1,.585),(1,.614),(.994,.633),(.982,.647),(.967,.652),(.947,.650),(.932,.642),(.919,.628),(.909,.605),(.892,.55),(.854,.435),(.807,.315),(.75,.225),(.675,.177),(.58,.158),(.40,.15),(0,.15)]
+lathe('oval bath hollow shell',(13.13,-4.30,z),profile,(.45,.95),bath_stone,144)
+lathe('bath recessed stone foot',(13.13,-4.30,z),[(0,.009),(.66,.009),(.67,.018),(.66,.035),(0,.035)],(.45,.95),dark,96)
+tube('bath waste',[(13.13,-4.30,z+.151),(13.13,-4.30,z+.155)],.035,bronze,64)
+for j in range(12):
+ a=j*math.tau/12;box('bath waste radial slot',(13.13+.025*math.cos(a),-4.30+.025*math.sin(a),z+.156),(.008,.0015,.001),dark,angle=a,bevel=0)
+box('bath overflow bronze rim',(13.13,-3.425,z+.535),(.105,.012,.012),bronze,bevel=.003)
+box('bath overflow slot',(13.13,-3.433,z+.535),(.082,.005,.005),dark,bevel=.002)
+# Floor-set bronze mixer at the south end, clear of the window and bath shell.
+tube('bath floor filler',[(13.38,-5.37,z+.02),(13.38,-5.37,z+.84),(13.38,-5.355,z+.885),(13.38,-5.31,z+.91),(13.38,-5.12,z+.91),(13.38,-5.09,z+.885)],.019,bronze,32)
+tube('bath filler base',[(13.38,-5.37,z+.012),(13.38,-5.37,z+.026)],.070,bronze,64)
+tube('bath filler control',[(13.38,-5.37,z+.72),(13.47,-5.37,z+.72)],.012,bronze,24)
+tube('bath filler lever',[(13.47,-5.37,z+.72),(13.47,-5.31,z+.72)],.007,bronze,24)
+tube('bath hand shower cradle',[(13.38,-5.37,z+.75),(13.29,-5.37,z+.75)],.008,bronze,24)
+tube('bath hand shower',[(13.29,-5.37,z+.73),(13.29,-5.37,z+.895)],.014,bronze,32)
+tube('bath hand shower head',[(13.29,-5.37,z+.895),(13.29,-5.35,z+.94)],.028,bronze,40)
+for j in range(14):
+ a=j*math.tau/14;tube('bath hand shower nozzle',[(13.29+.020*math.cos(a),-5.333,z+.917+.020*math.sin(a)),(13.29+.020*math.cos(a),-5.330,z+.917+.020*math.sin(a))],.0018,dark,10)
+hose=[(13.29+.06*math.sin(t*math.pi),-5.37,z+.73-.43*math.sin(t*math.pi))for t in[j/64 for j in range(65)]]
+tube('bath flexible shower hose',hose,.006,bronze,16)
+# Slim removable bath tray sits on the broad rim, with a linen towel.
+box('bath oak bridge',(13.13,-4.53,z+.674),(.91,.18,.035),oak,bevel=.014)
+for xx in(12.73,13.53):box('bath bridge felt foot',(xx,-4.53,z+.654),(.08,.14,.006),linen,bevel=.002)
+box('bath folded towel',(13.27,-4.53,z+.718),(.27,.16,.053),linen,bevel=.019)
+for yy in(-4.60,-4.59):box('bath towel woven border',(13.27,yy,z+.745),(.23,.003,.001),taupe,bevel=0)
+# A stone pedestal and restrained accessories tie the bath to the room palette.
+lathe('bath pedestal base',(12.36,-3.57,z),[(0,.006),(.15,.006),(.17,.025),(.125,.085),(.115,.42),(.15,.445),(0,.445)],(1,1),bath_stone,96)
+lathe('bath pedestal top',(12.36,-3.57,z),[(0,.44),(.195,.44),(.21,.451),(.213,.47),(.205,.485),(0,.485)],(1,1),bath_stone,96)
+lathe('bath candle vessel',(12.36,-3.57,z+.486),[(0,0),(.048,0),(.048,.095),(.044,.098),(.041,.092),(.041,.012),(0,.012)],(1,1),ceramic,64)
+lathe('bath candle wax',(12.36,-3.57,z+.486),[(0,.074),(.041,.074),(.041,.078),(0,.078)],(1,1),linen,48)
+tube('bath candle wick',[(12.36,-3.57,z+.565),(12.36,-3.57,z+.574)],.0012,dark,12)
+register('Bath',['oval bath hollow shell','bath oak bridge','bath recessed stone foot'])
+register('Bath mixer',['bath floor filler','bath filler base','bath filler control','bath filler lever','bath hand shower','bath flexible shower hose'])
+register('Bath pedestal',['bath pedestal base','bath pedestal top'])
 # Vanity: floating oak drawers, stone top and two ceramic bowls.
 block('vanity carcass',f['vanity'],.81,oak,.30)
 box('vanity stone countertop',(10.745,-5.94,z+.835),(.55,1.80,.05),stone,bevel=.008)

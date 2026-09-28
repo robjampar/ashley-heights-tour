@@ -1,0 +1,1133 @@
+{
+  "area": "workshop",
+  "revision": 1,
+  "objects": 211,
+  "mesh_objects": 209,
+  "lights": 2,
+  "removed_objects": [
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.001"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.002"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.003"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.004"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.005"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.006"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.007"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.008"
+    },
+    {
+      "name": "Proposal | Workshop approach stepping stone",
+      "object_name": "Proposal | Workshop approach stepping stone.009"
+    },
+    {
+      "name": "Workshop 01 | continuous washable floor",
+      "object_name": "Workshop 01 | continuous washable floor"
+    },
+    {
+      "name": "Workshop 01 | west wall ivory face",
+      "object_name": "Workshop 01 | west wall ivory face"
+    },
+    {
+      "name": "Workshop 01 | south wall ivory face",
+      "object_name": "Workshop 01 | south wall ivory face"
+    },
+    {
+      "name": "Workshop 01 | north wall ivory face",
+      "object_name": "Workshop 01 | north wall ivory face"
+    },
+    {
+      "name": "Workshop 01 | north wall ivory face",
+      "object_name": "Workshop 01 | north wall ivory face.001"
+    },
+    {
+      "name": "Workshop 01 | north wall ivory face",
+      "object_name": "Workshop 01 | north wall ivory face.002"
+    },
+    {
+      "name": "Workshop 01 | north wall ivory face",
+      "object_name": "Workshop 01 | north wall ivory face.003"
+    },
+    {
+      "name": "Workshop 01 | north wall ivory face",
+      "object_name": "Workshop 01 | north wall ivory face.004"
+    },
+    {
+      "name": "Workshop 01 | north wall ivory face",
+      "object_name": "Workshop 01 | north wall ivory face.005"
+    },
+    {
+      "name": "Workshop 01 | north wall ivory face",
+      "object_name": "Workshop 01 | north wall ivory face.006"
+    },
+    {
+      "name": "Workshop 01 | east wall ivory face",
+      "object_name": "Workshop 01 | east wall ivory face"
+    },
+    {
+      "name": "Workshop 01 | east wall ivory face",
+      "object_name": "Workshop 01 | east wall ivory face.001"
+    },
+    {
+      "name": "Workshop 01 | east wall ivory face",
+      "object_name": "Workshop 01 | east wall ivory face.002"
+    },
+    {
+      "name": "Workshop 01 | east wall ivory face",
+      "object_name": "Workshop 01 | east wall ivory face.003"
+    },
+    {
+      "name": "Workshop 01 | east wall ivory face",
+      "object_name": "Workshop 01 | east wall ivory face.004"
+    },
+    {
+      "name": "Workshop 01 | east wall ivory face",
+      "object_name": "Workshop 01 | east wall ivory face.005"
+    },
+    {
+      "name": "Workshop 01 | north oak worktop",
+      "object_name": "Workshop 01 | north oak worktop"
+    },
+    {
+      "name": "Workshop 01 | bench square leg",
+      "object_name": "Workshop 01 | bench square leg"
+    },
+    {
+      "name": "Workshop 01 | bench levelling pad",
+      "object_name": "Workshop 01 | bench levelling pad"
+    },
+    {
+      "name": "Workshop 01 | bench square leg",
+      "object_name": "Workshop 01 | bench square leg.001"
+    },
+    {
+      "name": "Workshop 01 | bench levelling pad",
+      "object_name": "Workshop 01 | bench levelling pad.001"
+    },
+    {
+      "name": "Workshop 01 | bench lower cross brace",
+      "object_name": "Workshop 01 | bench lower cross brace"
+    },
+    {
+      "name": "Workshop 01 | bench square leg",
+      "object_name": "Workshop 01 | bench square leg.002"
+    },
+    {
+      "name": "Workshop 01 | bench levelling pad",
+      "object_name": "Workshop 01 | bench levelling pad.002"
+    },
+    {
+      "name": "Workshop 01 | bench square leg",
+      "object_name": "Workshop 01 | bench square leg.003"
+    },
+    {
+      "name": "Workshop 01 | bench levelling pad",
+      "object_name": "Workshop 01 | bench levelling pad.003"
+    },
+    {
+      "name": "Workshop 01 | bench lower cross brace",
+      "object_name": "Workshop 01 | bench lower cross brace.001"
+    },
+    {
+      "name": "Workshop 01 | bench square leg",
+      "object_name": "Workshop 01 | bench square leg.004"
+    },
+    {
+      "name": "Workshop 01 | bench levelling pad",
+      "object_name": "Workshop 01 | bench levelling pad.004"
+    },
+    {
+      "name": "Workshop 01 | bench square leg",
+      "object_name": "Workshop 01 | bench square leg.005"
+    },
+    {
+      "name": "Workshop 01 | bench levelling pad",
+      "object_name": "Workshop 01 | bench levelling pad.005"
+    },
+    {
+      "name": "Workshop 01 | bench lower cross brace",
+      "object_name": "Workshop 01 | bench lower cross brace.002"
+    },
+    {
+      "name": "Workshop 01 | bench long lower rail",
+      "object_name": "Workshop 01 | bench long lower rail"
+    },
+    {
+      "name": "Workshop 01 | bench long lower rail",
+      "object_name": "Workshop 01 | bench long lower rail.001"
+    },
+    {
+      "name": "Workshop 01 | bench lower oak shelf",
+      "object_name": "Workshop 01 | bench lower oak shelf"
+    },
+    {
+      "name": "Workshop 01 | drawer unit side",
+      "object_name": "Workshop 01 | drawer unit side"
+    },
+    {
+      "name": "Workshop 01 | drawer unit side",
+      "object_name": "Workshop 01 | drawer unit side.001"
+    },
+    {
+      "name": "Workshop 01 | drawer unit back",
+      "object_name": "Workshop 01 | drawer unit back"
+    },
+    {
+      "name": "Workshop 01 | drawer unit shelf",
+      "object_name": "Workshop 01 | drawer unit shelf"
+    },
+    {
+      "name": "Workshop 01 | drawer unit shelf",
+      "object_name": "Workshop 01 | drawer unit shelf.001"
+    },
+    {
+      "name": "Workshop 01 | drawer unit shelf",
+      "object_name": "Workshop 01 | drawer unit shelf.002"
+    },
+    {
+      "name": "Workshop 01 | drawer unit shelf",
+      "object_name": "Workshop 01 | drawer unit shelf.003"
+    },
+    {
+      "name": "Workshop 01 | bench drawer front 0",
+      "object_name": "Workshop 01 | bench drawer front 0"
+    },
+    {
+      "name": "Workshop 01 | bench drawer floor",
+      "object_name": "Workshop 01 | bench drawer floor"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box side",
+      "object_name": "Workshop 01 | bench drawer box side"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box side",
+      "object_name": "Workshop 01 | bench drawer box side.001"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box rear",
+      "object_name": "Workshop 01 | bench drawer box rear"
+    },
+    {
+      "name": "Workshop 01 | bench drawer runner",
+      "object_name": "Workshop 01 | bench drawer runner"
+    },
+    {
+      "name": "Workshop 01 | bench drawer runner",
+      "object_name": "Workshop 01 | bench drawer runner.001"
+    },
+    {
+      "name": "Workshop 01 | bench drawer front 1",
+      "object_name": "Workshop 01 | bench drawer front 1"
+    },
+    {
+      "name": "Workshop 01 | bench drawer floor",
+      "object_name": "Workshop 01 | bench drawer floor.001"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box side",
+      "object_name": "Workshop 01 | bench drawer box side.002"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box side",
+      "object_name": "Workshop 01 | bench drawer box side.003"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box rear",
+      "object_name": "Workshop 01 | bench drawer box rear.001"
+    },
+    {
+      "name": "Workshop 01 | bench drawer runner",
+      "object_name": "Workshop 01 | bench drawer runner.002"
+    },
+    {
+      "name": "Workshop 01 | bench drawer runner",
+      "object_name": "Workshop 01 | bench drawer runner.003"
+    },
+    {
+      "name": "Workshop 01 | bench drawer front 2",
+      "object_name": "Workshop 01 | bench drawer front 2"
+    },
+    {
+      "name": "Workshop 01 | bench drawer floor",
+      "object_name": "Workshop 01 | bench drawer floor.002"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box side",
+      "object_name": "Workshop 01 | bench drawer box side.004"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box side",
+      "object_name": "Workshop 01 | bench drawer box side.005"
+    },
+    {
+      "name": "Workshop 01 | bench drawer box rear",
+      "object_name": "Workshop 01 | bench drawer box rear.002"
+    },
+    {
+      "name": "Workshop 01 | bench drawer runner",
+      "object_name": "Workshop 01 | bench drawer runner.004"
+    },
+    {
+      "name": "Workshop 01 | bench drawer runner",
+      "object_name": "Workshop 01 | bench drawer runner.005"
+    },
+    {
+      "name": "Workshop 01 | vice fixed body",
+      "object_name": "Workshop 01 | vice fixed body"
+    },
+    {
+      "name": "Workshop 01 | vice fixed jaw",
+      "object_name": "Workshop 01 | vice fixed jaw"
+    },
+    {
+      "name": "Workshop 01 | vice moving jaw",
+      "object_name": "Workshop 01 | vice moving jaw"
+    },
+    {
+      "name": "Workshop 01 | vice threaded screw",
+      "object_name": "Workshop 01 | vice threaded screw"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.001"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.002"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.003"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.004"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.005"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.006"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.007"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.008"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.009"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.010"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.011"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.012"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.013"
+    },
+    {
+      "name": "Workshop 01 | vice screw thread",
+      "object_name": "Workshop 01 | vice screw thread.014"
+    },
+    {
+      "name": "Workshop 01 | vice handle hub",
+      "object_name": "Workshop 01 | vice handle hub"
+    },
+    {
+      "name": "Workshop 01 | vice sliding handle",
+      "object_name": "Workshop 01 | vice sliding handle"
+    },
+    {
+      "name": "Workshop 01 | vice handle end",
+      "object_name": "Workshop 01 | vice handle end"
+    },
+    {
+      "name": "Workshop 01 | vice handle end",
+      "object_name": "Workshop 01 | vice handle end.001"
+    },
+    {
+      "name": "Workshop 01 | vice mounting bolt",
+      "object_name": "Workshop 01 | vice mounting bolt"
+    },
+    {
+      "name": "Workshop 01 | vice bolt slot",
+      "object_name": "Workshop 01 | vice bolt slot"
+    },
+    {
+      "name": "Workshop 01 | vice mounting bolt",
+      "object_name": "Workshop 01 | vice mounting bolt.001"
+    },
+    {
+      "name": "Workshop 01 | vice bolt slot",
+      "object_name": "Workshop 01 | vice bolt slot.001"
+    },
+    {
+      "name": "Workshop 01 | assembly oak worktop",
+      "object_name": "Workshop 01 | assembly oak worktop"
+    },
+    {
+      "name": "Workshop 01 | assembly table leg",
+      "object_name": "Workshop 01 | assembly table leg"
+    },
+    {
+      "name": "Workshop 01 | castor swivel pin",
+      "object_name": "Workshop 01 | castor swivel pin"
+    },
+    {
+      "name": "Workshop 01 | castor fork",
+      "object_name": "Workshop 01 | castor fork"
+    },
+    {
+      "name": "Workshop 01 | assembly rubber wheel",
+      "object_name": "Workshop 01 | assembly rubber wheel"
+    },
+    {
+      "name": "Workshop 01 | castor axle bolt",
+      "object_name": "Workshop 01 | castor axle bolt"
+    },
+    {
+      "name": "Workshop 01 | castor locking pedal",
+      "object_name": "Workshop 01 | castor locking pedal"
+    },
+    {
+      "name": "Workshop 01 | assembly table leg",
+      "object_name": "Workshop 01 | assembly table leg.001"
+    },
+    {
+      "name": "Workshop 01 | castor swivel pin",
+      "object_name": "Workshop 01 | castor swivel pin.001"
+    },
+    {
+      "name": "Workshop 01 | castor fork",
+      "object_name": "Workshop 01 | castor fork.001"
+    },
+    {
+      "name": "Workshop 01 | assembly rubber wheel",
+      "object_name": "Workshop 01 | assembly rubber wheel.001"
+    },
+    {
+      "name": "Workshop 01 | castor axle bolt",
+      "object_name": "Workshop 01 | castor axle bolt.001"
+    },
+    {
+      "name": "Workshop 01 | castor locking pedal",
+      "object_name": "Workshop 01 | castor locking pedal.001"
+    },
+    {
+      "name": "Workshop 01 | assembly table leg",
+      "object_name": "Workshop 01 | assembly table leg.002"
+    },
+    {
+      "name": "Workshop 01 | castor swivel pin",
+      "object_name": "Workshop 01 | castor swivel pin.002"
+    },
+    {
+      "name": "Workshop 01 | castor fork",
+      "object_name": "Workshop 01 | castor fork.002"
+    },
+    {
+      "name": "Workshop 01 | assembly rubber wheel",
+      "object_name": "Workshop 01 | assembly rubber wheel.002"
+    },
+    {
+      "name": "Workshop 01 | castor axle bolt",
+      "object_name": "Workshop 01 | castor axle bolt.002"
+    },
+    {
+      "name": "Workshop 01 | castor locking pedal",
+      "object_name": "Workshop 01 | castor locking pedal.002"
+    },
+    {
+      "name": "Workshop 01 | assembly table leg",
+      "object_name": "Workshop 01 | assembly table leg.003"
+    },
+    {
+      "name": "Workshop 01 | castor swivel pin",
+      "object_name": "Workshop 01 | castor swivel pin.003"
+    },
+    {
+      "name": "Workshop 01 | castor fork",
+      "object_name": "Workshop 01 | castor fork.003"
+    },
+    {
+      "name": "Workshop 01 | assembly rubber wheel",
+      "object_name": "Workshop 01 | assembly rubber wheel.003"
+    },
+    {
+      "name": "Workshop 01 | castor axle bolt",
+      "object_name": "Workshop 01 | castor axle bolt.003"
+    },
+    {
+      "name": "Workshop 01 | castor locking pedal",
+      "object_name": "Workshop 01 | castor locking pedal.003"
+    },
+    {
+      "name": "Workshop 01 | assembly lower shelf",
+      "object_name": "Workshop 01 | assembly lower shelf"
+    },
+    {
+      "name": "Workshop 01 | clamp bar",
+      "object_name": "Workshop 01 | clamp bar"
+    },
+    {
+      "name": "Workshop 01 | clamp lower jaw",
+      "object_name": "Workshop 01 | clamp lower jaw"
+    },
+    {
+      "name": "Workshop 01 | clamp upper jaw",
+      "object_name": "Workshop 01 | clamp upper jaw"
+    },
+    {
+      "name": "Workshop 01 | clamp screw",
+      "object_name": "Workshop 01 | clamp screw"
+    },
+    {
+      "name": "Workshop 01 | clamp wooden handle",
+      "object_name": "Workshop 01 | clamp wooden handle"
+    },
+    {
+      "name": "Workshop 01 | clamp pressure pad",
+      "object_name": "Workshop 01 | clamp pressure pad"
+    },
+    {
+      "name": "Workshop 01 | cupboard shadow base",
+      "object_name": "Workshop 01 | cupboard shadow base"
+    },
+    {
+      "name": "Workshop 01 | cupboard back",
+      "object_name": "Workshop 01 | cupboard back"
+    },
+    {
+      "name": "Workshop 01 | cupboard end",
+      "object_name": "Workshop 01 | cupboard end"
+    },
+    {
+      "name": "Workshop 01 | cupboard end",
+      "object_name": "Workshop 01 | cupboard end.001"
+    },
+    {
+      "name": "Workshop 01 | cupboard shelf",
+      "object_name": "Workshop 01 | cupboard shelf"
+    },
+    {
+      "name": "Workshop 01 | cupboard shelf",
+      "object_name": "Workshop 01 | cupboard shelf.001"
+    },
+    {
+      "name": "Workshop 01 | cupboard shelf",
+      "object_name": "Workshop 01 | cupboard shelf.002"
+    },
+    {
+      "name": "Workshop 01 | cupboard shelf",
+      "object_name": "Workshop 01 | cupboard shelf.003"
+    },
+    {
+      "name": "Workshop 01 | cupboard shelf",
+      "object_name": "Workshop 01 | cupboard shelf.004"
+    },
+    {
+      "name": "Workshop 01 | cupboard sliding front",
+      "object_name": "Workshop 01 | cupboard sliding front"
+    },
+    {
+      "name": "Workshop 01 | cupboard flush bronze pull",
+      "object_name": "Workshop 01 | cupboard flush bronze pull"
+    },
+    {
+      "name": "Workshop 01 | cupboard sliding front",
+      "object_name": "Workshop 01 | cupboard sliding front.001"
+    },
+    {
+      "name": "Workshop 01 | cupboard flush bronze pull",
+      "object_name": "Workshop 01 | cupboard flush bronze pull.001"
+    },
+    {
+      "name": "Workshop 01 | tool rail oak backing",
+      "object_name": "Workshop 01 | tool rail oak backing"
+    },
+    {
+      "name": "Workshop 01 | tool shaped handle",
+      "object_name": "Workshop 01 | tool shaped handle"
+    },
+    {
+      "name": "Workshop 01 | tool shaft",
+      "object_name": "Workshop 01 | tool shaft"
+    },
+    {
+      "name": "Workshop 01 | hammer head",
+      "object_name": "Workshop 01 | hammer head"
+    },
+    {
+      "name": "Workshop 01 | tool shaped handle",
+      "object_name": "Workshop 01 | tool shaped handle.001"
+    },
+    {
+      "name": "Workshop 01 | tool shaft",
+      "object_name": "Workshop 01 | tool shaft.001"
+    },
+    {
+      "name": "Workshop 01 | screwdriver flat blade",
+      "object_name": "Workshop 01 | screwdriver flat blade"
+    },
+    {
+      "name": "Workshop 01 | tool shaped handle",
+      "object_name": "Workshop 01 | tool shaped handle.002"
+    },
+    {
+      "name": "Workshop 01 | tool shaft",
+      "object_name": "Workshop 01 | tool shaft.002"
+    },
+    {
+      "name": "Workshop 01 | chisel bevel blade",
+      "object_name": "Workshop 01 | chisel bevel blade"
+    },
+    {
+      "name": "Workshop 01 | tool shaped handle",
+      "object_name": "Workshop 01 | tool shaped handle.003"
+    },
+    {
+      "name": "Workshop 01 | tool shaft",
+      "object_name": "Workshop 01 | tool shaft.003"
+    },
+    {
+      "name": "Workshop 01 | hammer head",
+      "object_name": "Workshop 01 | hammer head.001"
+    },
+    {
+      "name": "Workshop 01 | tool shaped handle",
+      "object_name": "Workshop 01 | tool shaped handle.004"
+    },
+    {
+      "name": "Workshop 01 | tool shaft",
+      "object_name": "Workshop 01 | tool shaft.004"
+    },
+    {
+      "name": "Workshop 01 | screwdriver flat blade",
+      "object_name": "Workshop 01 | screwdriver flat blade.001"
+    },
+    {
+      "name": "Workshop 01 | tool shaped handle",
+      "object_name": "Workshop 01 | tool shaped handle.005"
+    },
+    {
+      "name": "Workshop 01 | tool shaft",
+      "object_name": "Workshop 01 | tool shaft.005"
+    },
+    {
+      "name": "Workshop 01 | chisel bevel blade",
+      "object_name": "Workshop 01 | chisel bevel blade.001"
+    },
+    {
+      "name": "Workshop 01 | tool shaped handle",
+      "object_name": "Workshop 01 | tool shaped handle.006"
+    },
+    {
+      "name": "Workshop 01 | tool shaft",
+      "object_name": "Workshop 01 | tool shaft.006"
+    },
+    {
+      "name": "Workshop 01 | hammer head",
+      "object_name": "Workshop 01 | hammer head.002"
+    },
+    {
+      "name": "Workshop 01 | bench power strip",
+      "object_name": "Workshop 01 | bench power strip"
+    },
+    {
+      "name": "Workshop 01 | socket upper pin aperture",
+      "object_name": "Workshop 01 | socket upper pin aperture"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.001"
+    },
+    {
+      "name": "Workshop 01 | socket upper pin aperture",
+      "object_name": "Workshop 01 | socket upper pin aperture.001"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.002"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.003"
+    },
+    {
+      "name": "Workshop 01 | socket upper pin aperture",
+      "object_name": "Workshop 01 | socket upper pin aperture.002"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.004"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.005"
+    },
+    {
+      "name": "Workshop 01 | power strip switch",
+      "object_name": "Workshop 01 | power strip switch"
+    },
+    {
+      "name": "Workshop 01 | bench power strip",
+      "object_name": "Workshop 01 | bench power strip.001"
+    },
+    {
+      "name": "Workshop 01 | socket upper pin aperture",
+      "object_name": "Workshop 01 | socket upper pin aperture.003"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.006"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.007"
+    },
+    {
+      "name": "Workshop 01 | socket upper pin aperture",
+      "object_name": "Workshop 01 | socket upper pin aperture.004"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.008"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.009"
+    },
+    {
+      "name": "Workshop 01 | socket upper pin aperture",
+      "object_name": "Workshop 01 | socket upper pin aperture.005"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.010"
+    },
+    {
+      "name": "Workshop 01 | socket lower pin aperture",
+      "object_name": "Workshop 01 | socket lower pin aperture.011"
+    },
+    {
+      "name": "Workshop 01 | power strip switch",
+      "object_name": "Workshop 01 | power strip switch.001"
+    },
+    {
+      "name": "Workshop 01 | closed tool carry case",
+      "object_name": "Workshop 01 | closed tool carry case"
+    },
+    {
+      "name": "Workshop 01 | case over-centre latch",
+      "object_name": "Workshop 01 | case over-centre latch"
+    },
+    {
+      "name": "Workshop 01 | case over-centre latch",
+      "object_name": "Workshop 01 | case over-centre latch.001"
+    },
+    {
+      "name": "Workshop 01 | closed tool carry case",
+      "object_name": "Workshop 01 | closed tool carry case.001"
+    },
+    {
+      "name": "Workshop 01 | case over-centre latch",
+      "object_name": "Workshop 01 | case over-centre latch.002"
+    },
+    {
+      "name": "Workshop 01 | case over-centre latch",
+      "object_name": "Workshop 01 | case over-centre latch.003"
+    },
+    {
+      "name": "Workshop 01 | closed tool carry case",
+      "object_name": "Workshop 01 | closed tool carry case.002"
+    },
+    {
+      "name": "Workshop 01 | case over-centre latch",
+      "object_name": "Workshop 01 | case over-centre latch.004"
+    },
+    {
+      "name": "Workshop 01 | case over-centre latch",
+      "object_name": "Workshop 01 | case over-centre latch.005"
+    },
+    {
+      "name": "Workshop 01 | ceiling task housing",
+      "object_name": "Workshop 01 | ceiling task housing"
+    },
+    {
+      "name": "Workshop 01 | ceiling opal lens",
+      "object_name": "Workshop 01 | ceiling opal lens"
+    },
+    {
+      "name": "Workshop 01 | ceiling fixing",
+      "object_name": "Workshop 01 | ceiling fixing"
+    },
+    {
+      "name": "Workshop 01 | ceiling fixing",
+      "object_name": "Workshop 01 | ceiling fixing.001"
+    },
+    {
+      "name": "Workshop 01 | bench ambient light",
+      "object_name": "Workshop 01 | bench ambient light"
+    },
+    {
+      "name": "Workshop 01 | ceiling task housing",
+      "object_name": "Workshop 01 | ceiling task housing.001"
+    },
+    {
+      "name": "Workshop 01 | ceiling opal lens",
+      "object_name": "Workshop 01 | ceiling opal lens.001"
+    },
+    {
+      "name": "Workshop 01 | ceiling fixing",
+      "object_name": "Workshop 01 | ceiling fixing.002"
+    },
+    {
+      "name": "Workshop 01 | ceiling fixing",
+      "object_name": "Workshop 01 | ceiling fixing.003"
+    },
+    {
+      "name": "Workshop 01 | bench ambient light",
+      "object_name": "Workshop 01 | bench ambient light.001"
+    },
+    {
+      "name": "Workshop 01 | bench drawer pull",
+      "object_name": "Workshop 01 | bench drawer pull"
+    },
+    {
+      "name": "Workshop 01 | bench drawer pull",
+      "object_name": "Workshop 01 | bench drawer pull.001"
+    },
+    {
+      "name": "Workshop 01 | bench drawer pull",
+      "object_name": "Workshop 01 | bench drawer pull.002"
+    },
+    {
+      "name": "Workshop 01 | tool hanging hook",
+      "object_name": "Workshop 01 | tool hanging hook"
+    },
+    {
+      "name": "Workshop 01 | tool hanging hook",
+      "object_name": "Workshop 01 | tool hanging hook.001"
+    },
+    {
+      "name": "Workshop 01 | tool hanging hook",
+      "object_name": "Workshop 01 | tool hanging hook.002"
+    },
+    {
+      "name": "Workshop 01 | tool hanging hook",
+      "object_name": "Workshop 01 | tool hanging hook.003"
+    },
+    {
+      "name": "Workshop 01 | tool hanging hook",
+      "object_name": "Workshop 01 | tool hanging hook.004"
+    },
+    {
+      "name": "Workshop 01 | tool hanging hook",
+      "object_name": "Workshop 01 | tool hanging hook.005"
+    },
+    {
+      "name": "Workshop 01 | tool hanging hook",
+      "object_name": "Workshop 01 | tool hanging hook.006"
+    },
+    {
+      "name": "Workshop 01 | case recessed carry handle",
+      "object_name": "Workshop 01 | case recessed carry handle"
+    },
+    {
+      "name": "Workshop 01 | case recessed carry handle",
+      "object_name": "Workshop 01 | case recessed carry handle.001"
+    },
+    {
+      "name": "Workshop 01 | case recessed carry handle",
+      "object_name": "Workshop 01 | case recessed carry handle.002"
+    }
+  ],
+  "collision_records": [
+    {
+      "name": "Workshop 01 | north bench",
+      "box": [
+        -23.95,
+        25.04,
+        -18.55,
+        25.67
+      ],
+      "bottom": -0.45944247075586114,
+      "top": 0.4655575292441389
+    },
+    {
+      "name": "Workshop 01 | bench vice",
+      "box": [
+        -19.139999999999997,
+        24.692999999999998,
+        -18.84,
+        25.2
+      ],
+      "bottom": 0.43055752924413887,
+      "top": 0.650557529244139
+    },
+    {
+      "name": "Workshop 01 | mobile assembly table",
+      "box": [
+        -22.4,
+        22.56,
+        -20.8,
+        23.36
+      ],
+      "bottom": -0.45944247075586114,
+      "top": 0.4505575292441389
+    },
+    {
+      "name": "Workshop 01 | west sliding cupboard",
+      "box": [
+        -24.11,
+        22.2,
+        -23.56,
+        23.8
+      ],
+      "bottom": -0.45944247075586114,
+      "top": 1.620557529244139
+    }
+  ],
+  "configuration": {
+    "room": "Garden workshop",
+    "revision": 1,
+    "variants": [
+      "compact"
+    ],
+    "floorZ": -0.45944247075586114,
+    "ceilingZ": 1.9405575292441388,
+    "bounds": [
+      -24.15,
+      21.587,
+      -17.94,
+      25.706
+    ],
+    "bench": [
+      -23.95,
+      25.04,
+      -18.55,
+      25.67
+    ],
+    "storage": [
+      -24.11,
+      22.2,
+      -23.56,
+      23.8
+    ],
+    "assemblyTable": [
+      -22.4,
+      22.56,
+      -20.8,
+      23.36
+    ],
+    "views": {
+      "entrance": {
+        "position": [
+          -18.6,
+          23.38,
+          1.140557529244139
+        ],
+        "target": [
+          -22.03,
+          24.07,
+          0.4505575292441389
+        ],
+        "fov": 70
+      },
+      "bench": {
+        "position": [
+          -21.05,
+          23.54,
+          1.070557529244139
+        ],
+        "target": [
+          -21.53,
+          25.37,
+          0.5005575292441389
+        ],
+        "fov": 68
+      },
+      "storage": {
+        "position": [
+          -22.08,
+          23.47,
+          1.090557529244139
+        ],
+        "target": [
+          -23.87,
+          23.41,
+          0.660557529244139
+        ],
+        "fov": 68
+      },
+      "details": {
+        "position": [
+          -19.22,
+          24.36,
+          0.7705575292441389
+        ],
+        "target": [
+          -19.38,
+          25.26,
+          0.5405575292441389
+        ],
+        "fov": 57
+      },
+      "overview": {
+        "position": [
+          -15.52,
+          19.47,
+          9.290557529244138
+        ],
+        "target": [
+          -21.045,
+          23.64,
+          0.0905575292441389
+        ],
+        "fov": 54,
+        "cutaway": true
+      }
+    },
+    "viewLabels": {
+      "bench": "Daylit workbench",
+      "storage": "Tools and closed storage"
+    },
+    "view": {
+      "id": "proposal-garden-workshop",
+      "position": [
+        -18.61,
+        23.4,
+        -0.45944247075586114
+      ],
+      "direction": [
+        -1,
+        0.2,
+        0
+      ]
+    },
+    "limitations": [
+      "The existing Proposed workshop footprint, roof, windows, door and narrow garden path remain. Planning has no workshop here.",
+      "Bench heights and storage are a general craft and maintenance concept; final tools, extraction and services should suit the intended hobby."
+    ]
+  },
+  "native_screen_rays": [],
+  "source_house_sha256": "65007e4277dcb6cf251a82db86d771fbf5c4a5223f94c549f625c9e25cdcd5a7",
+  "source_house_unchanged": true,
+  "isolated_objects": 338,
+  "views": {
+    "entrance": {
+      "position": [
+        -18.6,
+        23.38,
+        1.140557529244139
+      ],
+      "target": [
+        -22.03,
+        24.07,
+        0.4505575292441389
+      ],
+      "fov": 70
+    },
+    "bench": {
+      "position": [
+        -21.05,
+        23.54,
+        1.070557529244139
+      ],
+      "target": [
+        -21.53,
+        25.37,
+        0.5005575292441389
+      ],
+      "fov": 68
+    },
+    "storage": {
+      "position": [
+        -22.08,
+        23.47,
+        1.090557529244139
+      ],
+      "target": [
+        -23.87,
+        23.41,
+        0.660557529244139
+      ],
+      "fov": 68
+    },
+    "details": {
+      "position": [
+        -19.22,
+        24.36,
+        0.7705575292441389
+      ],
+      "target": [
+        -19.38,
+        25.26,
+        0.5405575292441389
+      ],
+      "fov": 57
+    },
+    "overview": {
+      "position": [
+        -15.52,
+        19.47,
+        9.290557529244138
+      ],
+      "target": [
+        -21.045,
+        23.64,
+        0.0905575292441389
+      ],
+      "fov": 54,
+      "cutaway": true
+    }
+  }
+}

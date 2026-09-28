@@ -65,10 +65,13 @@ def source_hashes(root, variant):
     paths.update(str(p.relative_to(root)) for p in (root / 'proposal/interiors/kitchen').rglob('*')
                  if p.is_file() and p.suffix in ('.json', '.png'))
     if variant in ('compact', 'planning'):
-        paths.update(('scripts/interior_furnishing.py','scripts/proposal_bar_interiors.py','scripts/proposal_gym_interiors.py','scripts/proposal_utility_interiors.py','scripts/proposal_guest_interiors.py','scripts/proposal_guestbath_interiors.py','scripts/proposal_family_interiors.py','scripts/proposal_cloakroom_interiors.py','scripts/proposal_bedroom2_interiors.py','scripts/proposal_bedroom3_interiors.py','scripts/proposal_familybath_interiors.py','scripts/proposal_bedroom4_interiors.py'))
-        paths.update('proposal/interiors/leisure/'+name+'.json'for name in ('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4'))
+        paths.update(('scripts/interior_furnishing.py','scripts/proposal_bar_interiors.py','scripts/proposal_gym_interiors.py','scripts/proposal_utility_interiors.py','scripts/proposal_guest_interiors.py','scripts/proposal_guestbath_interiors.py','scripts/proposal_family_interiors.py','scripts/proposal_cloakroom_interiors.py','scripts/proposal_bedroom2_interiors.py','scripts/proposal_bedroom3_interiors.py','scripts/proposal_familybath_interiors.py','scripts/proposal_bedroom4_interiors.py','scripts/proposal_formal_interiors.py','scripts/proposal_sidebed_interiors.py','scripts/proposal_loftsuite_interiors.py','scripts/proposal_hobby_interiors.py','scripts/proposal_arrival_interiors.py','scripts/proposal_landings_interiors.py','scripts/proposal_garage_interiors.py','scripts/proposal_gardenhouse_interiors.py','scripts/proposal_office_interiors.py','scripts/garden_level_steps.py','scripts/interior_suite_parts.py'))
+        paths.update('proposal/interiors/leisure/'+name+'.json'for name in ('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4','formal','sidebed','loftsuite','hobby','arrival','landings','garage','gardenhouse','office'))
         paths.add('proposal/interiors/principal/accepted/manifest.json')
+        paths.update(('scripts/principal_gable_wall.py', 'proposal/interiors/principal/gable-wall.json'))
         paths.update(str(p.relative_to(root)) for p in (root / 'proposal/interiors/principal/accepted' / variant).glob('*') if p.is_file())
+    if variant == 'compact':
+        paths.update(('scripts/proposal_terrace_interiors.py','proposal/interiors/leisure/terrace.json','scripts/proposal_poolgarden_interiors.py','proposal/interiors/leisure/poolgarden.json','scripts/proposal_workshop_interiors.py','proposal/interiors/leisure/workshop.json'))
     # These are optional in legacy reconstructions. Their appearance/disappearance
     # still changes the mapping and therefore invalidates the build.
     for name in ('proposal/P5_internal-garden-area.json',

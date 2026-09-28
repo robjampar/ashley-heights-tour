@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "variant": "planning",
-  "source_sha256": "19134cf1378df2ddc1ed9ade4d0e57523833bd2ba8b7016071a9b56fec629b17",
+  "source_sha256": "4deb4423e10c4de8b0f2e4b398472ec93c3f7d53871e25d30d625d82cb2e4f9a",
   "source_unchanged": true,
   "reports": [
     {
@@ -337,7 +337,7 @@
     },
     {
       "area": "gym",
-      "matching_study_meshes": 306,
+      "matching_study_meshes": 277,
       "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 1.9073486328125e-06,
       "screen_rays": []
@@ -488,6 +488,76 @@
     {
       "area": "familybath",
       "matching_study_meshes": 245,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    },
+    {
+      "area": "bedroom4",
+      "matching_study_meshes": 279,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 9.5367431640625e-07,
+      "screen_rays": []
+    },
+    {
+      "area": "formal",
+      "matching_study_meshes": 519,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 9.5367431640625e-07,
+      "screen_rays": []
+    },
+    {
+      "area": "sidebed",
+      "matching_study_meshes": 382,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 2.384185791015625e-07,
+      "screen_rays": []
+    },
+    {
+      "area": "loftsuite",
+      "matching_study_meshes": 393,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 9.5367431640625e-07,
+      "screen_rays": []
+    },
+    {
+      "area": "hobby",
+      "matching_study_meshes": 527,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 9.5367431640625e-07,
+      "screen_rays": []
+    },
+    {
+      "area": "arrival",
+      "matching_study_meshes": 685,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 4.76837158203125e-07,
+      "screen_rays": []
+    },
+    {
+      "area": "landings",
+      "matching_study_meshes": 1027,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 1.9073486328125e-06,
+      "screen_rays": []
+    },
+    {
+      "area": "garage",
+      "matching_study_meshes": 106,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 0,
+      "screen_rays": []
+    },
+    {
+      "area": "gardenhouse",
+      "matching_study_meshes": 195,
+      "preserved_context_parts_outside_room": [],
+      "maximum_world_vertex_difference_m": 9.5367431640625e-07,
+      "screen_rays": []
+    },
+    {
+      "area": "office",
+      "matching_study_meshes": 472,
       "preserved_context_parts_outside_room": [],
       "maximum_world_vertex_difference_m": 0,
       "screen_rays": []

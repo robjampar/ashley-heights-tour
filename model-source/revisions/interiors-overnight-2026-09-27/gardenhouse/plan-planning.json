@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "state": "summer room",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 11217,
+        "distance": 0.005000000000000782
+      },
+      "checks": [
+        {
+          "label": "bench approach",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "drinks",
+          "distance": 0.007071067811864069,
+          "reachable": true
+        },
+        {
+          "label": "changing seat",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "outside WC",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 6436,
+        "distance": 0.007071067811862812
+      },
+      "checks": [
+        {
+          "label": "basin use",
+          "distance": 0.004999999999999005,
+          "reachable": true
+        },
+        {
+          "label": "WC use",
+          "distance": 0.007071067811864069,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "state": "tool store",
+      "bodyWidth": 0.6,
+      "origin": {
+        "index": 3654,
+        "distance": 1.7763568394002505e-15
+      },
+      "checks": [
+        {
+          "label": "tool access",
+          "distance": 0.005000000000000782,
+          "reachable": true
+        }
+      ]
+    }
+  ],
+  "note": "Separate single-user WC and narrow tool store. Exterior thresholds tested separately."
+}
