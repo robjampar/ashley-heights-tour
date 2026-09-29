@@ -1,6 +1,6 @@
 """Two legible site/context plans from the existing registered project data."""
 from pathlib import Path
-import os,json,math
+import os,json,math,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 os.environ.setdefault('MPLCONFIGDIR',str(ROOT/'.cache/matplotlib'))
 import matplotlib
@@ -14,7 +14,38 @@ OUT=ROOT/'revisions/brochure-spatial-2026-09-28/context'
 nav=json.loads((ROOT/'output-proposed-compact/navigation.json').read_text())
 s=(ROOT/'walkthrough/src/street-context-data.js').read_text();street=json.loads(s.split('=',1)[1].strip().rstrip(';'))
 site=nav['site'];spec=nav['proposal'].get('brief',nav['proposal'].get('specification',{}))
+# Room navigation polygons describe clear internal spaces, not the building
+# envelope. In the front wing they leave the garage/gallery partition zone
+# empty, which previously appeared as a false cut through the building.
+# Project the authored ground-floor mesh faces instead, preserving the genuine
+# recess between the two projecting bays and the slab's actual outer edges.
 house=unary_union([Polygon(r['polygon_m']).buffer(.15,join_style=2) for r in nav['planRooms'] if r['floor']==0])
+geometry_path=ROOT/'output-proposed-compact/geometry.json'
+floor_names={'Proposal | New wing ground floor','Proposal | Garage bay ground floor','Proposal | Entrance bay ground floor'}
+floor_footprints=[];found=set()
+geometry_bytes=geometry_path.read_bytes()
+for obj in json.loads(geometry_bytes)['objects']:
+ if obj['name'] not in floor_names:continue
+ found.add(obj['name']);vertices=obj['vertices']
+ if vertices and not isinstance(vertices[0],list):vertices=list(zip(vertices[0::3],vertices[1::3],vertices[2::3]))
+ for face in obj['faces']:
+  projected=Polygon([vertices[index][:2] for index in face])
+  if projected.area>1e-8:floor_footprints.append(projected)
+assert found==floor_names, 'Ground-floor source meshes missing: '+str(floor_names-found)
+floor_projection=unary_union(floor_footprints)
+# A site footprint shows the external envelope, not internal stair openings.
+wing_footprint=unary_union([Polygon(p.exterior) for p in getattr(floor_projection,'geoms',[floor_projection])])
+wing_zone=box(*wing_footprint.bounds)
+old_wing=house.intersection(wing_zone)
+house=unary_union([house.difference(wing_zone),wing_footprint])
+assert wing_footprint.covers(box(5.0,-9.8,9.0,-9.5)), 'False internal wing gap remains'
+assert not wing_footprint.intersects(box(3.5,-9.7,4.5,-9.5)), 'Real recess between bays was filled'
+footprint_audit={'source':str(geometry_path.relative_to(ROOT)),
+ 'sha256':hashlib.sha256(geometry_bytes).hexdigest(),'meshes':sorted(found),
+ 'old_room_based_wing_area_m2':old_wing.area,'actual_ground_floor_area_m2':wing_footprint.area,
+ 'internal_gap_removed':True,'external_bay_recess_preserved':True,'model_geometry_changed':False}
+(OUT/'front-wing-footprint-audit.json').write_text(json.dumps(footprint_audit,indent=2)+'\n')
+del geometry_bytes
 views=json.loads((OUT/'camera-manifest.json').read_text())
 
 def base(ax):
@@ -61,5 +92,5 @@ for key in ('neighbourhood-plan','site-plan'):
   scalarbar(ax,-25,-31,10,1);ax.set_xlim(-30,32);ax.set_ylim(-34,35)
   ax.annotate('N',(-27,33),(-28,27),ha='center',fontsize=9,color='#273c34',arrowprops=dict(arrowstyle='->',color='#273c34'))
  ax.set_aspect('equal');ax.axis('off');save(fig,OUT,key)
-(OUT/'map-provenance.json').write_text(json.dumps({'basis':'Existing registered site outline, viewer neighbourhood footprints and current model room/brief polygons. Reconstructed orientation; not a land survey or legal boundary plan.','north':'Model +Y approximately 7.1 degrees west of true north. Arrow is approximate.','views':[dict(number=i,key=k,**v)for i,(k,v) in enumerate(views.items(),1)]},indent=2)+'\n')
+(OUT/'map-provenance.json').write_text(json.dumps({'front_wing_footprint':footprint_audit,'basis':'Existing registered site outline, viewer neighbourhood footprints and current model room/brief polygons. Reconstructed orientation; not a land survey or legal boundary plan.','north':'Model +Y approximately 7.1 degrees west of true north. Arrow is approximate.','views':[dict(number=i,key=k,**v)for i,(k,v) in enumerate(views.items(),1)]},indent=2)+'\n')
 print('Built site and neighbourhood key plans')

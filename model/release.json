@@ -19,25 +19,25 @@
     "images": 61,
     "download_format": "Full-resolution high-quality JPEG",
     "assets": {
-      "context/neighbourhood-plan.afca1730755af6c6.png": {
+      "context/neighbourhood-plan.fb88bab98d5473dc.png": {
         "source": "context/neighbourhood-plan.png",
-        "bytes": 191675,
-        "sha256": "afca1730755af6c6b4bb9ce4cd313850b31e3a9be554fc59e27c0cf4f10dd5f8"
+        "bytes": 191697,
+        "sha256": "fb88bab98d5473dc091748a6aa6e6de29c09ab06ae295daf0dcedd4a1876124b"
       },
-      "context/neighbourhood-plan.352838a2ecedd406.svg": {
+      "context/neighbourhood-plan.1181656eea9e09d2.svg": {
         "source": "context/neighbourhood-plan.svg",
-        "bytes": 46373,
-        "sha256": "352838a2ecedd4064fd9b15e7184a052ea2cea1fb1e08913c411101f8450429d"
+        "bytes": 46327,
+        "sha256": "1181656eea9e09d2bd62ecaa716a46e7c0b5ca859e537f7ee68f87c38cff0d02"
       },
-      "context/site-plan.a8e8582cab8c9863.png": {
+      "context/site-plan.253ce4091010b206.png": {
         "source": "context/site-plan.png",
         "bytes": 196763,
-        "sha256": "a8e8582cab8c9863412538e8a29fec11272279f823271104e8ce85f600f2c699"
+        "sha256": "253ce4091010b206f5a15f989d66ba3c94a0489520e14dd44760a5af1980feb6"
       },
-      "context/site-plan.46a5641c4545e0f5.svg": {
+      "context/site-plan.3e39a7b8a0402a28.svg": {
         "source": "context/site-plan.svg",
-        "bytes": 39845,
-        "sha256": "46a5641c4545e0f578fb155e32ccb1b571e24544351cc13b2eb9799adf613f8c"
+        "bytes": 39797,
+        "sha256": "3e39a7b8a0402a28a76873e43d0e55bf574d6d05f077eaa8ebe471bab9e9ff5e"
       },
       "elevations/E.b1f33c7a30f74d74.png": {
         "source": "elevations/E.png",
@@ -696,32 +696,61 @@
       }
     },
     "external_downloads": {
-      "ashley-heights-drawings.73b760997eca6714.zip": {
+      "ashley-heights-drawings.6e227a08f9cf77a4.zip": {
         "source": "ashley-heights-drawings.zip",
-        "bytes": 3778693,
-        "sha256": "73b760997eca6714abd3e313d879768bc319949d861faf622b6a6dcba97fd496",
-        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-67ea50051a32/ashley-heights-drawings.73b760997eca6714.zip"
+        "bytes": 3778489,
+        "sha256": "6e227a08f9cf77a4b07d38c47d08ae04467a9c550bcec2634fcd646be494ccc8",
+        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-dca22014e055/ashley-heights-drawings.6e227a08f9cf77a4.zip"
       },
       "ashley-heights-elevations-A3.a4bd1794e5269a71.pdf": {
         "source": "ashley-heights-elevations-A3.pdf",
         "bytes": 272556,
         "sha256": "a4bd1794e5269a71951742505a8da2240728bb38f9ace66226074c17c18ed5bf",
-        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-67ea50051a32/ashley-heights-elevations-A3.a4bd1794e5269a71.pdf"
+        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-dca22014e055/ashley-heights-elevations-A3.a4bd1794e5269a71.pdf"
       },
-      "ashley-heights-house-brochure.67ea50051a328a3f.pdf": {
+      "ashley-heights-house-brochure.dca22014e0557f30.pdf": {
         "source": "ashley-heights-house-brochure.pdf",
-        "bytes": 54984396,
-        "sha256": "67ea50051a328a3fb1b156d7a24a0e8d70f53d823d9edc924f416a050b521195",
-        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-67ea50051a32/ashley-heights-house-brochure.67ea50051a328a3f.pdf"
+        "bytes": 54984339,
+        "sha256": "dca22014e0557f307ff09553522aec4ee5be132165983a0cc77f23a81ef733ac",
+        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-dca22014e055/ashley-heights-house-brochure.dca22014e0557f30.pdf"
       },
       "ashley-heights-presentation-images.344df90ba18b7a7f.zip": {
         "source": "archive of full-resolution display JPEGs",
         "bytes": 43197578,
         "sha256": "344df90ba18b7a7f878f4a7874a84a6a0c2a3afa692a0ddfef79289445d3ca43",
-        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-67ea50051a32/ashley-heights-presentation-images.344df90ba18b7a7f.zip"
+        "url": "https://github.com/robjampar/ashley-heights-tour/releases/download/brochure-dca22014e055/ashley-heights-presentation-images.344df90ba18b7a7f.zip"
       }
     },
-    "previous_assets": {}
+    "previous_assets": {
+      "context/neighbourhood-plan.afca1730755af6c6.png": {
+        "source": "context/neighbourhood-plan.png",
+        "bytes": 191675,
+        "sha256": "afca1730755af6c6b4bb9ce4cd313850b31e3a9be554fc59e27c0cf4f10dd5f8",
+        "retired_at_epoch": 1790640851.9960818,
+        "retain_until_epoch": 1790642651.996083
+      },
+      "context/neighbourhood-plan.352838a2ecedd406.svg": {
+        "source": "context/neighbourhood-plan.svg",
+        "bytes": 46373,
+        "sha256": "352838a2ecedd4064fd9b15e7184a052ea2cea1fb1e08913c411101f8450429d",
+        "retired_at_epoch": 1790640851.996084,
+        "retain_until_epoch": 1790642651.996084
+      },
+      "context/site-plan.a8e8582cab8c9863.png": {
+        "source": "context/site-plan.png",
+        "bytes": 196763,
+        "sha256": "a8e8582cab8c9863412538e8a29fec11272279f823271104e8ce85f600f2c699",
+        "retired_at_epoch": 1790640851.996085,
+        "retain_until_epoch": 1790642651.996085
+      },
+      "context/site-plan.46a5641c4545e0f5.svg": {
+        "source": "context/site-plan.svg",
+        "bytes": 39845,
+        "sha256": "46a5641c4545e0f578fb155e32ccb1b571e24544351cc13b2eb9799adf613f8c",
+        "retired_at_epoch": 1790640851.996085,
+        "retain_until_epoch": 1790642651.996085
+      }
+    }
   },
   "principal_gable_wall": {
     "proposed": {

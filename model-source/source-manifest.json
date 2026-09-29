@@ -2992,8 +2992,8 @@
     },
     "scripts/brochure_site_plans.py": {
       "source": "scripts/brochure_site_plans.py",
-      "sha256": "9e6f0fdc0210ce32c1749dfd87879fb68efc983566592c6d95b35a9636b192a2",
-      "bytes": 5026
+      "bytes": 7217,
+      "sha256": "0ca62eaea988bc6f47dc7c6a17d4125889bfcd7e03afcd7e5a1d695c4c51186d"
     },
     "scripts/brochure_spatial_drawings.py": {
       "source": "scripts/brochure_spatial_drawings.py",
@@ -4402,8 +4402,8 @@
     },
     "scripts/stage_redesign_sources.py": {
       "source": "scripts/stage_redesign_sources.py",
-      "sha256": "57b050c40121861e0b54f20f31dd449db7f17c0e0e9a745626fcccb22cf53988",
-      "bytes": 10839
+      "bytes": 10994,
+      "sha256": "e3b2219997a27b95e419f307fd81f7677a8afe5e033cf19b385f117b0355ccf6"
     },
     "scripts/stage_room_studies.py": {
       "source": "scripts/stage_room_studies.py",
@@ -6114,6 +6114,31 @@
       "source": "revisions/publication-speed-2026-09-29/sparse-checkout-validation.json",
       "sha256": "75561d28c3825e21bf92b4b7cc2764b3774a7757925d27440ba583ab12255da0",
       "bytes": 201
+    },
+    "revisions/brochure-front-wing-2026-09-29/pdf-verification.json": {
+      "source": "revisions/brochure-front-wing-2026-09-29/pdf-verification.json",
+      "bytes": 86,
+      "sha256": "bed711892ceaa462a1cbc700296f11ef84dac34528c15b91ceb5fa9954ca3e11"
+    },
+    "revisions/brochure-front-wing-2026-09-29/README.md": {
+      "source": "revisions/brochure-front-wing-2026-09-29/README.md",
+      "bytes": 1206,
+      "sha256": "a7e2fbccf4c99385c8033131ebe9b45773c48cacc531e957981db96941b3cb8c"
+    },
+    "revisions/brochure-front-wing-2026-09-29/release.json": {
+      "source": "revisions/brochure-front-wing-2026-09-29/release.json",
+      "bytes": 135,
+      "sha256": "cc33ac245d92ea6f3a23db4d489e68a385daf163099a4c65c807bafc8c6fd05a"
+    },
+    "revisions/brochure-front-wing-2026-09-29/front-wing-footprint-audit.json": {
+      "source": "revisions/brochure-front-wing-2026-09-29/front-wing-footprint-audit.json",
+      "bytes": 493,
+      "sha256": "d4222b5d9af06f36c4155e33f25a2e5b5cc54f010cb0902965b03a404fbf3756"
+    },
+    "revisions/brochure-front-wing-2026-09-29/download-verification.json": {
+      "source": "revisions/brochure-front-wing-2026-09-29/download-verification.json",
+      "bytes": 315,
+      "sha256": "54ed57e901574eeb5034b0a061245d1ac849ebc7d07747a65fbd5529d1751103"
     }
   },
   "required_local_baselines": {

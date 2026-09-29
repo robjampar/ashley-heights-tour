@@ -1,0 +1,14 @@
+{
+  "source": "output-proposed-compact/geometry.json",
+  "sha256": "5c15577aacd2f6b4314a9d59d9e5f875615bcf15f6cc19e5b5931b86242066f8",
+  "meshes": [
+    "Proposal | Entrance bay ground floor",
+    "Proposal | Garage bay ground floor",
+    "Proposal | New wing ground floor"
+  ],
+  "old_room_based_wing_area_m2": 125.00030500000003,
+  "actual_ground_floor_area_m2": 129.2382922164918,
+  "internal_gap_removed": true,
+  "external_bay_recess_preserved": true,
+  "model_geometry_changed": false
+}
