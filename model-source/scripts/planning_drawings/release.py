@@ -18,13 +18,13 @@ def sha(path):
 
 def input_fingerprints(variant="planning"):
     paths = [ROOT / p for p in (
-        'output-walkthrough/geometry.json', 'walkthrough/public/navigation.json',
-        f'output-proposed-{variant}/geometry.json', f'output-proposed-{variant}/navigation.json',
-        ('proposal/planning-context.json' if variant == 'planning' else 'proposal/planning-context-proposed.json'), 'proposal/street-registration/registration.json',
+        'outputs/output-walkthrough/geometry.json', 'walkthrough/public/navigation.json',
+        f'outputs/output-proposed-{variant}/geometry.json', f'outputs/output-proposed-{variant}/navigation.json',
+        ('proposal/specs/planning-context.json' if variant == 'planning' else 'proposal/specs/planning-context-proposed.json'), 'proposal/street-registration/registration.json',
         'walkthrough/src/street-context-data.js', 'proposal/reference/street-site-plan.png')]
     paths += sorted((ROOT / 'scripts/planning_drawings').glob('*.py'))
     paths += sorted(p for p in (ROOT / 'source/listing-photos').iterdir() if p.is_file())
-    model_inputs = ROOT / f'output-proposed-{variant}/build-inputs.json'
+    model_inputs = ROOT / f'outputs/output-proposed-{variant}/build-inputs.json'
     if model_inputs.exists():
         paths.append(model_inputs)
         paths += [ROOT / p for p in json.loads(model_inputs.read_text())]
@@ -38,7 +38,7 @@ def input_fingerprints(variant="planning"):
 def model_source_issues(variant):
     if variant not in ('planning', 'compact'):
         return ['Unknown model variant']
-    manifest = ROOT / f'output-proposed-{variant}/build-inputs.json'
+    manifest = ROOT / f'outputs/output-proposed-{variant}/build-inputs.json'
     if not manifest.exists():
         return [variant + ' model has not been built with source tracking']
     return [variant + ' model needs rebuilding: ' + name

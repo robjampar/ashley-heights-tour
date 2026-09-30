@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const url=process.env.ASHLEY_URL||'http://127.0.0.1:8765/';
-const dest=process.env.ASHLEY_STAIR_OUTPUT||'../photo-review/stair-obstruction';
+const dest=process.env.ASHLEY_STAIR_OUTPUT||'../archive/photo-review/stair-obstruction';
 await fs.mkdir(dest,{recursive:true});
 const b=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
 const p=await b.newPage({viewport:{width:1280,height:900}}),errors=[];

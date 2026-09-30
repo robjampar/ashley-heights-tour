@@ -1,7 +1,7 @@
 // Full-size furniture, a retained opening and an inward leaf clear of the hall.
 import fs from'node:fs';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/familybath.json',import.meta.url))),variant=process.env.FAMILYBATH_VARIANT??'compact',native=process.env.FAMILYBATH_NAV;
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
 const furniture=[item('vanity',cfg.vanity),item('bath',cfg.bath),item('WC pan',cfg.wc.panBounds),item('cistern',cfg.wc.cistern)];
 const states={ordinary:[],doorClosed:[],vanityUse:[item('person at basin',[5.68,5.35,6.28,5.95])],wcUse:[item('person at WC',[6.36,5.33,6.96,5.93])],bathDrying:[item('person drying',[5.75,6.34,6.35,6.94])],drawerOpen:[item('extended vanity drawer',[5.655,5.07,5.955,6.23])]};
 const results=[];

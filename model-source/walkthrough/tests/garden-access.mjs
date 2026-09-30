@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {Navigation} from '../src/navigation.js';
 const root=new URL('../../',import.meta.url),variant=process.env.GARDEN_VARIANT??'compact';
-const base=JSON.parse(fs.readFileSync(process.env.GARDEN_NAV??new URL(`output-proposed-${variant}/navigation.json`,root)));
+const base=JSON.parse(fs.readFileSync(process.env.GARDEN_NAV??new URL(`outputs/output-proposed-${variant}/navigation.json`,root)));
 const details=JSON.parse(fs.readFileSync(new URL(`revisions/interiors-overnight-2026-09-27/gardenhouse/${variant}/details-audit.json`,root)));
 const obstacles=base.obstacles.filter(o=>!o.name.startsWith('Gardenhouse 01 | wc door')&&!o.name.startsWith('Gardenhouse 01 | tool door')&&!o.name.startsWith('Gardenhouse 01 | summer glazed door'));
 obstacles.push(...details.doors.flatMap(d=>d.poses.open));

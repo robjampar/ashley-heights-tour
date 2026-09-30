@@ -61,6 +61,6 @@ if(annex)for(const radius of [.18,.25])for(const reverse of [false,true]){
 }
 const navigation_sha256=createHash('sha256').update(fs.readFileSync(new URL('../public/navigation.json',import.meta.url))).digest('hex');
 const report={grid_m:step,navigation_sha256,basis:'Indoor routes plus both directions through the outdoor-access side annex, replayed using actual Navigation.move, wall apertures and mesh-derived furniture outlines. Door leaves opened in viewer. Not an accessibility assessment.',routes:results,passed:results.every(r=>r.passed)};
-fs.writeFileSync(new URL('../../output-walkthrough/walking-routes.json',import.meta.url),JSON.stringify(report,null,2));
+fs.writeFileSync(new URL('../../outputs/output-walkthrough/walking-routes.json',import.meta.url),JSON.stringify(report,null,2));
 for(const r of results)console.log(r.passed?'PASS':'FAIL',r.room,`body ${r.body_width_m} m`,r.reason||`${r.length_m} m route`,r.fail||'');
 if(!report.passed)process.exitCode=1;

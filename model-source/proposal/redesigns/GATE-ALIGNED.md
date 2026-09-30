@@ -24,9 +24,9 @@ The native model, geometry, navigation and all option-specific checks are under 
 Build the native option from the saved Proposed checkpoint:
 
 ```sh
-Blender --background --python-exit-code 1 --python scripts/build_redesign.py -- g1
+Blender --background --python-exit-code 1 --python scripts/build/build_redesign.py -- g1
 ```
 
-Then run `scripts/regenerate_gate_aligned.py` for the checked browser issue. This option uses the same house-only wall finishes and dark/light roof switches. Dormer cheeks remain tiled.
+Then run `scripts/build/regenerate_gate_aligned.py` for the checked browser issue. This option uses the same house-only wall finishes and dark/light roof switches. Dormer cheeks remain tiled.
 
 This is a concept comparison, not an approved planning scheme or construction design. The reduced footprint does not establish planning acceptability; the street elevation, trees, neighbours, cellar structure and drainage still need measured professional assessment. The car study is for the model's compact cars and does not prove SUV fit or real vehicle door sweeps.

@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+fs.mkdirSync(new URL('../test-results/easter/',import.meta.url),{recursive:true});
+
 import {Navigation} from '../src/navigation.js';
 import {PursuitPlanner,ZombiePursuit} from '../src/pursuit.js';
 import {ZombieFigure} from '../src/zombies.js';
@@ -78,4 +80,4 @@ test('zombie mesh count is bounded and limb animation changes articulation',()=>
  assert.notEqual(z.legs[0].rotation.x,before);assert.deepEqual(z.group.position.toArray(),[2,2.8099999999999996,-3]);z.dispose();
 });
 
-test.after(()=>{report.nodes=planner.nodes.length;fs.writeFileSync(new URL('./easter/pursuit-validation.json',import.meta.url),JSON.stringify(report,null,2)+'\n');});
+test.after(()=>{report.nodes=planner.nodes.length;fs.writeFileSync(new URL('../test-results/easter/pursuit-validation.json',import.meta.url),JSON.stringify(report,null,2)+'\n');});

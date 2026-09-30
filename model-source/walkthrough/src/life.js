@@ -214,7 +214,7 @@ export class Life {
   this.residents=[];this.cars=[];this.people=false;this.carsOn=false;this.time=0;this.claimed=new Set();this.unreachable=new Map();this.turn=0;
   this.driveOwner=null;this.frameDeadline=0;
   this.gate=gateGeometry(data);this.gateDoor=doors?.doors.find(d=>d.spec.id==='Proposal | Front sliding gate')??null;
-  this.destinations=buildDestinations(data);
+  this.destinations=buildDestinations(data,this.planner.nav);
   // Where people coming in from a car head for: the entrance hall.
   const hall=data.rooms.find(r=>/new entrance gallery/i.test(r.label))??data.rooms.find(r=>/entrance hall/i.test(r.label))??null;
   this.entrance=hall?{x:hall.position[0],y:hall.position[1],z:hall.position[2],dir:hall.direction}:null;
@@ -306,11 +306,39 @@ export class Life {
 // Destinations come from the named viewpoints (rooms and garden), seats and
 // the gym kit found in the navigation data; the loft bridge, stairs and
 // outdoor approach points are left out.
-export function buildDestinations(data){
+export function buildDestinations(data,nav=new LocalNavigation(data)){
+ nav.radius=.18;
  const out=[];
+ const grounded=p=>{
+  const z=nav.support(p.x,p.y,p.z);
+  return z!==null&&Math.abs(z-p.z)<.30&&!nav.blocked(p.x,p.y,z)?{...p,z}:null;
+ };
+ const addFurniture=(target,box,obstacle)=>{
+  // A camera-facing approach can land inside a dining table or another chair.
+  // Find a clear perimeter point, then check the short entry to the actual seat
+  // against every wall and obstacle except the furniture being used.
+  const access=new LocalNavigation({...data,obstacles:data.obstacles.filter(o=>o!==obstacle)});access.radius=.18;
+  const cx=(box[0]+box[2])/2,cy=(box[1]+box[3])/2;
+  const preferred=Math.atan2(target.y-cy,target.x-cx);
+  for(const turn of [0,Math.PI/4,-Math.PI/4,Math.PI/2,-Math.PI/2,3*Math.PI/4,-3*Math.PI/4,Math.PI]){
+   const a=preferred+turn,ux=Math.cos(a),uy=Math.sin(a);
+   const edge=Math.min(Math.abs(ux)<1e-8?Infinity:(box[2]-box[0])/2/Math.abs(ux),Math.abs(uy)<1e-8?Infinity:(box[3]-box[1])/2/Math.abs(uy));
+   const point=grounded({...target,x:cx+ux*(edge+.38),y:cy+uy*(edge+.38)});
+   if(!point)continue;
+   const steps=Math.ceil(Math.hypot(target.seat[0]-point.x,target.seat[1]-point.y)/.05);
+   let clear=true,z=point.z;
+   for(let i=0;i<=steps;i++){
+    const t=steps?i/steps:0,x=point.x+(target.seat[0]-point.x)*t,y=point.y+(target.seat[1]-point.y)*t;
+    const floor=access.support(x,y,z);
+    if(floor===null||Math.abs(floor-point.z)>.30||access.blocked(x,y,floor)){clear=false;break;}
+    z=floor;
+   }
+   if(clear){out.push(point);return;}
+  }
+ };
  for(const r of data.rooms){
   if(/gate|street|approach|outside|bridge|stair|landing|gallery|passage|corridor|lobby/i.test(r.id+' '+r.label))continue;
-  const [x,y,z]=r.position;out.push({key:'view:'+r.id,kind:'view',x,y,z,dir:r.direction,indoor:!/garden|terrace|pool|deck|pavilion|lawn|drive|court/i.test(r.group+' '+r.label)});
+  const [x,y,z]=r.position,point=grounded({key:'view:'+r.id,kind:'view',x,y,z,dir:r.direction,indoor:!/garden|terrace|pool|deck|pavilion|lawn|drive|court/i.test(r.group+' '+r.label)});if(point)out.push(point);
  }
  for(const o of data.obstacles??[]){
   const box=o.box;if(!box)continue;const name=o.name??'';
@@ -318,7 +346,7 @@ export function buildDestinations(data){
   if(/treadmill/i.test(name)){
    // Step on from the side, then face along the belt towards its console.
    const long=(box[3]-box[1])>(box[2]-box[0]),dir=long?[0,1]:[1,0],side=long?[(box[2]-box[0])/2+.45,0]:[0,(box[3]-box[1])/2+.45];
-   out.push({key:'treadmill:'+name,kind:'treadmill',x:cx+side[0],y:cy+side[1],z,dir,seat:[cx,cy],indoor:true});continue;
+   addFurniture({key:'treadmill:'+name,kind:'treadmill',x:cx+side[0],y:cy+side[1],z,dir,seat:[cx,cy],indoor:true},box,o);continue;
   }
   if(!SEAT.test(name)||NOT_SEAT.test(name))continue;
   const top=o.top??z+.45,height=/bed/i.test(name)?Math.min(.6,top):Math.min(.5,Math.max(.4,top-.4));
@@ -330,7 +358,7 @@ export function buildDestinations(data){
   // Stand just in front of the seat (outside its footprint) before sitting,
   // and sit near its front edge rather than in the middle of a bed.
   const edge=(Math.abs(ux)*w+Math.abs(uy)*d)/2,reach=edge+.38,perch=Math.max(0,edge-.30);
-  out.push({key:'seat:'+name,kind:'seat',x:cx+ux*reach,y:cy+uy*reach,z,dir:[ux,uy],seatHeight:height,seat:[cx+ux*perch,cy+uy*perch],indoor:true});
+  addFurniture({key:'seat:'+name,kind:'seat',x:cx+ux*reach,y:cy+uy*reach,z,dir:[ux,uy],seatHeight:height,seat:[cx+ux*perch,cy+uy*perch],indoor:true},box,o);
  }
  return out;
 }

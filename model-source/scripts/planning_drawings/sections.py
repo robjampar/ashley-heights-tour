@@ -1,5 +1,5 @@
 """Building and site sections: exact mesh/plane cuts (ported from
-proposal/make_P5_sections.py) over an elevation of everything beyond the cut."""
+proposal/studies/p5/make_P5_sections.py) over an elevation of everything beyond the cut."""
 import math
 import numpy as np
 from shapely.geometry import LineString, Polygon, box

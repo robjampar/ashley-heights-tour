@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-const base=process.env.ASHLEY_URL||'http://127.0.0.1:8765/?design=proposed',out=process.env.ASHLEY_FLIGHT_OUTPUT||'tests/flight';
+const base=process.env.ASHLEY_URL||'http://127.0.0.1:8765/?design=proposed',out=process.env.ASHLEY_FLIGHT_OUTPUT||'test-results/flight';
 await fs.mkdir(out,{recursive:true});const errors=[],checks=[];
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
 const state=page=>page.evaluate(()=>walkthrough.getState());

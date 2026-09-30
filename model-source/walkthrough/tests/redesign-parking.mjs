@@ -4,7 +4,7 @@ import {planDrivePaths} from '../tools/plan-drive.mjs';
 
 let success=true;
 for(const id of process.argv.slice(2)){
- const root=new URL('../../output-redesign-'+id+'/',import.meta.url);
+ const root=new URL('../../outputs/output-redesign-'+id+'/',import.meta.url);
  if(!fs.existsSync(new URL('build-report.json',root)))throw Error(id+': build incomplete');
  const data=JSON.parse(fs.readFileSync(new URL('navigation.json',root)));
  const cars=data.proposalSite.cars;

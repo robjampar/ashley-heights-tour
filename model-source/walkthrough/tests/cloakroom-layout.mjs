@@ -1,7 +1,7 @@
 // A small single-user room: retain the entrance leaf and check the drawer separately.
 import fs from'node:fs';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/cloakroom.json',import.meta.url))),variant=process.env.CLOAK_VARIANT??'compact',native=process.env.CLOAK_NAV;
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),door=JSON.parse(fs.readFileSync(new URL('../../revisions/interiors-overnight-2026-09-27/cloakroom/retained-door-poses.json',import.meta.url)));
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),door=JSON.parse(fs.readFileSync(new URL('../../revisions/interiors-overnight-2026-09-27/cloakroom/retained-door-poses.json',import.meta.url)));
 const item=(name,box,top=1.3)=>({name,box,bottom:0,top}),furniture=[item('Cloakroom 01 | vanity',cfg.vanity),item('Cloakroom 01 | WC',cfg.wc.panBounds),item('Cloakroom 01 | cistern',cfg.wc.cistern)];const results=[];
 for(const state of['doorOpen','doorClosed','drawerOpen']){
  const extra=state==='drawerOpen'?[item('open vanity drawer',[cfg.vanity[2],cfg.vanity[1]+.025,cfg.vanity[2]+.30,cfg.vanity[3]-.025],.75)]:[];

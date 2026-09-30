@@ -2,7 +2,7 @@
 import fs from'node:fs';import assert from'node:assert/strict';
 import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const root=new URL('../../',import.meta.url),z=2.8,cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/terrace.json',root)));
-const native=process.env.TERRACE_NAV,base=JSON.parse(fs.readFileSync(native??new URL('output-proposed-compact/navigation.json',root)));
+const native=process.env.TERRACE_NAV,base=JSON.parse(fs.readFileSync(native??new URL('outputs/output-proposed-compact/navigation.json',root)));
 const item=(name,box,top=z+1)=>({name,box,bottom:z,top});
 const furniture=[item('sofa',cfg.sofa),item('coffee',cfg.coffeeTable),item('cushions',cfg.cushionBox),...cfg.loungeChairs.map(bb=>item('lounge chair',bb)),...cfg.diningChairs.map(d=>{const[x,y]=d.center;return item('café chair',[x-.27,y-.27,x+.27,y+.27]);}),...cfg.planters.map(([x,y,r])=>item('planter',[x-r,y-r,x+r,y+r]))];
 const[cx,cy]=cfg.cafeTable.center,r=cfg.cafeTable.diameter/2;furniture.push(item('café table',[cx-r,cy-r,cx+r,cy+r]));

@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const url=process.env.ASHLEY_URL||'http://127.0.0.1:8782/';
-const output=process.env.ASHLEY_MOBILE_OUTPUT||'tests/mobile';
+const output=process.env.ASHLEY_MOBILE_OUTPUT||'test-results/mobile';
 await fs.mkdir(output,{recursive:true});
 const results={url,started:new Date().toISOString(),checks:[],errors:[],limitations:['Touch emulation does not measure performance or thermal behavior on a physical phone.']};
 const options={executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']};

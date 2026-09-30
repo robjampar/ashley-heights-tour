@@ -8,7 +8,7 @@ const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/g
 const out=new URL('../../revisions/interiors-overnight-2026-09-27/gym/',import.meta.url),results=[];
 const item=(name,box,top=1.5)=>({name,box,bottom:0,top});
 const native=process.env.GYM_NAV,variant=process.env.GYM_VARIANT??'compact';
-const sourceBytes=fs.readFileSync(native??new URL('../../output-proposed-compact/navigation.json',import.meta.url));
+const sourceBytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-compact/navigation.json',import.meta.url));
 const base=JSON.parse(sourceBytes),sourceSha256=createHash('sha256').update(sourceBytes).digest('hex');
 // Plan trials use the source-spec opening; native runs use the exported wall.
 const [doorX,doorY]=cfg.hallDoorCentre;

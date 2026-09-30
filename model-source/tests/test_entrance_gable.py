@@ -12,7 +12,7 @@ class EntranceGableTests(unittest.TestCase):
  def test_disjoint_front_faces_and_tile_covered_roof_verges(self):
   for variant in ('compact','planning'):
    with self.subTest(variant=variant):
-    data=json.loads((ROOT/f'output-proposed-{variant}/geometry.json').read_text())
+    data=json.loads((ROOT/f'outputs/output-proposed-{variant}/geometry.json').read_text())
     bands=[o for o in data['objects'] if o['name'].startswith('Proposal | Entrance gable ') and 'rake band' in o['name']]
     self.assertEqual(len(bands),2)
     front=min(v[0] for o in bands for v in o['vertices'])

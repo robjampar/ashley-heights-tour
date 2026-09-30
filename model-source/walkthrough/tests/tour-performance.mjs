@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 const label=process.env.PERF_LABEL||'after',base=process.env.ASHLEY_URL||'http://127.0.0.1:8765/?design=proposed';
-const out=`tests/performance/${label}`;await fs.mkdir(out,{recursive:true});
+const out=`test-results/performance/${label}`;await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
 const report={base,label,hardware:'Chrome on this Mac, including touch emulation; not a physical phone benchmark',views:[],errors:[]};
 try{

@@ -40,7 +40,7 @@ From the project root:
 
 The full build stages and checks the issue before replacing generated files. Changed inputs during generation cause it to retain the previous issue. A subset or `--no-docs` build writes a separate dated preview under `checks/previews/`; it does not update the full issue's manifest. The default build uses the planning application design.
 
-Inputs: existing `output-walkthrough/geometry.json` and `walkthrough/public/navigation.json`; current `output-proposed-planning/{geometry,navigation}.json`; `proposal/planning-context.json`; registered map/street context and listing photographs. The generator does not modify models, tree scripts, design specifications or the viewer.
+Inputs: existing `output-walkthrough/geometry.json` and `walkthrough/public/navigation.json`; current `output-proposed-planning/{geometry,navigation}.json`; `proposal/specs/planning-context.json`; registered map/street context and listing photographs. The generator does not modify models, tree scripts, design specifications or the viewer.
 
 `manifest.json` records input and deliverable hashes, page checks, model timestamps, opening cross-checks and area diagnostics. `--check` covers all of those inputs and outputs. `PACK_CURRENT` means technically current, not ready for submission. Check `checks/submission-readiness.json` and `REQUIRED-ACTIONS.md` separately.
 

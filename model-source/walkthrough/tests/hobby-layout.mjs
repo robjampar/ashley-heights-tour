@@ -3,7 +3,7 @@ import fs from'node:fs';import assert from'node:assert/strict';
 import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const root=new URL('../../',import.meta.url),variant=process.env.HOBBY_VARIANT??'compact',z=5.55;
 const cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/hobby.json',root))),native=process.env.HOBBY_NAV;
-const base=JSON.parse(fs.readFileSync(native??new URL(`output-proposed-${variant}/navigation.json`,root)));
+const base=JSON.parse(fs.readFileSync(native??new URL(`outputs/output-proposed-${variant}/navigation.json`,root)));
 const exact=native?JSON.parse(fs.readFileSync(new URL(`revisions/interiors-overnight-2026-09-27/hobby/${variant}/details-audit.json`,root))):null;
 const item=(name,box,top=z+1.2)=>({name,box,bottom:z,top});
 const furniture=['projectTable','northStorage','archiveStorage','bookStorage','sofa','readingChair','coffeeTable','sideTable'].map(k=>item(k,cfg[k]));cfg.chairs.forEach(bb=>furniture.push(item('project chair',bb)));

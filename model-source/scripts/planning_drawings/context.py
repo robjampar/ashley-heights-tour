@@ -1,11 +1,11 @@
 """Planning-pack inputs that the model does not know: address, designations,
-north, revision. Everything comes from proposal/planning-context.json so a
+north, revision. Everything comes from proposal/specs/planning-context.json so a
 rebuild after a model change carries the same context unchanged."""
 import json, math, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-CONTEXT_FILE = ROOT / 'proposal' / 'planning-context.json'
+CONTEXT_FILE = ROOT / 'proposal' / 'specs/planning-context.json'
 OUT = ROOT / 'proposal' / 'planning'
 
 REQUIRED = ['project', 'address', 'title_number', 'lpa', 'north_bearing_of_model_y_deg',

@@ -2,7 +2,7 @@ import {chromium,webkit} from 'playwright';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const base=process.env.ASHLEY_TEST_BASE||'http://127.0.0.1:8765/';
-const output=process.env.ASHLEY_TAP_OUTPUT||'tests/easter/mobile-tap';await fs.mkdir(output,{recursive:true});
+const output=process.env.ASHLEY_TAP_OUTPUT||'test-results/easter/mobile-tap';await fs.mkdir(output,{recursive:true});
 const report={base,checks:[],errors:[],layouts:[]};
 async function load(page){
  await page.goto(base);await page.waitForFunction(()=>window.walkthrough?.ready,null,{timeout:120000});

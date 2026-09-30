@@ -1,7 +1,7 @@
 // Full-size furniture, a retained opening and an inward leaf clear of the hall.
 import fs from'node:fs';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/bedroom3.json',import.meta.url))),variant=process.env.BED3_VARIANT??'compact',native=process.env.BED3_NAV;
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
 const furniture=[item('bed',cfg.bed.envelope),item('wardrobe',cfg.wardrobe,5.10),...cfg.bedsides.map(v=>item('bedside',v)),item('luggage perch',cfg.perch)];
 const states={ordinary:[],doorClosed:[],wardrobeUse:[item('person choosing clothes',[.805,7.0,1.405,7.6])],perchUse:[item('seated person feet',[3.94,7.05,4.54,7.65])],westBedOccupied:[item('person at west bedside',[.91,6.55,1.51,7.15])],eastBedOccupied:[item('person at east bedside',[3.21,6.55,3.81,7.15])]};
 const results=[];

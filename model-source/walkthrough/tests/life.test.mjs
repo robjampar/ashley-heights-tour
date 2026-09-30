@@ -47,7 +47,8 @@ test('destinations are standable viewpoints, seats and the treadmill',()=>{
  assert.ok(dest.some(d=>d.kind==='treadmill'),'treadmill');
  assert.ok(!dest.some(d=>/gate|bridge|stair/i.test(d.key)),'no gates, bridges or stairs');
  const standable=dest.filter(d=>planner.nav.canStand(d));
- assert.ok(standable.length>=dest.length*.85,`${standable.length}/${dest.length} destinations can be stood at`);
+ assert.equal(standable.length,dest.length,'every selected destination has clear standing space');
+ for(const point of dest){const z=planner.nav.support(point.x,point.y,point.z);assert.ok(z!==null&&Math.abs(z-point.z)<.001,point.key+' has actual floor support');}
 });
 
 test('a resident walks from the hall to the drive and to the loft',()=>{
@@ -99,4 +100,24 @@ test('the life system starts cars in their bays and residents indoors',()=>{
  for(let i=0;i<450;i++)life.step(1/30,{x:-6.3,y:-17.2,z:0});
  assert.ok(life.residents.some(r=>r.target||r.path),'residents pick destinations');
  life.setPeople(false);assert.equal(life.residents.length,0);
+});
+
+for(const variant of ['compact','planning'])test(`${variant}: furniture approaches respect the current room geometry`,()=>{
+ const data=load(`proposal-${variant}-navigation.json`),nav=new LocalNavigation(data);nav.radius=.18;
+ const targets=buildDestinations(data);
+ assert.ok(targets.filter(d=>d.kind==='seat').length>15,'retain useful seating choices');
+ assert.ok(targets.some(d=>d.kind==='treadmill'),'retain usable gym equipment');
+ for(const target of targets){
+  assert.ok(nav.canStand(target),target.key+' is clear');
+  assert.ok(Math.abs(nav.support(target.x,target.y,target.z)-target.z)<.001,target.key+' is supported');
+  if(!target.seat)continue;
+  const name=target.key.slice(target.key.indexOf(':')+1);
+  const entry=new LocalNavigation({...data,obstacles:data.obstacles.filter(o=>o.name!==name)});entry.radius=.18;
+  const count=Math.ceil(Math.hypot(target.seat[0]-target.x,target.seat[1]-target.y)/.025);
+  for(let i=0;i<=count;i++){
+   const t=count?i/count:0,x=target.x+(target.seat[0]-target.x)*t,y=target.y+(target.seat[1]-target.y)*t;
+   const z=entry.support(x,y,target.z);
+   assert.ok(z!==null&&!entry.blocked(x,y,z),target.key+' can be entered without crossing another obstacle');
+  }
+ }
 });

@@ -7,8 +7,8 @@ page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
 await page.goto('http://127.0.0.1:8765');
 await page.waitForFunction(()=>window.walkthrough?.ready,{timeout:120000});
 await page.click('#drag');
-const dest='../photo-review/walkthrough-lighting/after';await fs.mkdir(dest,{recursive:true});
-const views=JSON.parse(await fs.readFile('../photo-review/views.json'));
+const dest='../archive/photo-review/walkthrough-lighting/after';await fs.mkdir(dest,{recursive:true});
+const views=JSON.parse(await fs.readFile('../archive/photo-review/views.json'));
 const selected=['2445658-3','2445662-3','2445659-0','2445670-3','2445688-3'];
 for(const key of selected){
  const view=views.find(v=>v.key===key);

@@ -3,7 +3,7 @@ import {build} from 'esbuild';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {Navigation,pointInPolygon} from '../src/navigation.js';
-const root=fileURLToPath(new URL('../../',import.meta.url)),out=root+'walkthrough/tests/gates/';
+const root=fileURLToPath(new URL('../../',import.meta.url)),out=root+'walkthrough/test-results/gates/';
 const data=JSON.parse(await fs.readFile(out+'navigation-candidate.json'));
 const nav=new Navigation(data),arrival=data.rooms.find(r=>r.id==='arrival'),gates=data.interactiveDoors.filter(d=>d.wall==='Entrance driveway gates');
 const [cx,cy]=gates[0].openingCenter,[nx,ny]=arrival.direction;
@@ -19,7 +19,7 @@ await page.route('http://127.0.0.1:8765/',r=>r.fulfill({path:root+'walkthrough/i
 await page.route('**/style.css',r=>r.fulfill({path:root+'walkthrough/style.css',contentType:'text/css'}));
 await page.route('**/app.js',r=>r.fulfill({body:bundle.outputFiles[0].text,contentType:'text/javascript'}));
 await page.route('**/navigation.json',r=>r.fulfill({body:JSON.stringify(data),contentType:'application/json'}));
-await page.route('**/house.glb',r=>r.fulfill({path:root+'output-walkthrough/Ashley Heights.glb',contentType:'model/gltf-binary'}));
+await page.route('**/house.glb',r=>r.fulfill({path:root+'outputs/output-walkthrough/Ashley Heights.glb',contentType:'model/gltf-binary'}));
 await page.goto('http://127.0.0.1:8765/');await page.waitForFunction(()=>window.walkthrough?.ready,null,{timeout:120000});await page.click('#drag');
 const initial=await page.evaluate(()=>({position:{...walkthrough.nav.position},gates:walkthrough.doors.status().filter(d=>d.wall==='Entrance driveway gates')}));
 if(Math.hypot(initial.position.x-arrival.position[0],initial.position.y-arrival.position[1])>.001)errors.push('Start is not outside gates');

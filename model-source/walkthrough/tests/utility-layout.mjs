@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {Navigation} from '../src/navigation.js';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/utility.json',import.meta.url)));
 const native=process.env.UTILITY_NAV,variant=process.env.UTILITY_VARIANT??'compact';
-const sourceBytes=fs.readFileSync(native??new URL('../../output-proposed-compact/navigation.json',import.meta.url));
+const sourceBytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-compact/navigation.json',import.meta.url));
 const base=JSON.parse(sourceBytes),sourceSha256=createHash('sha256').update(sourceBytes).digest('hex');
 const item=(name,box,top=1.5)=>({name,box,bottom:0,top}),a=cfg.appliance,r=cfg.run;
 const doors=[item('open garage leaf',[11.315,-13.022,12.235,-12.878],2.3),item('open gym leaf',[12.865,-12.55,12.995,-11.65],2.3)];

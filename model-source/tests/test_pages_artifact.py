@@ -3,7 +3,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import patch
-spec=importlib.util.spec_from_file_location('pages_artifact',Path(__file__).resolve().parents[1]/'scripts/pages_artifact.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+spec=importlib.util.spec_from_file_location('pages_artifact',Path(__file__).resolve().parents[1]/'scripts/publication/pages_artifact.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 class PagesArtifactTests(unittest.TestCase):
     def source(self,parent):
         repo=parent/'repo';repo.mkdir()

@@ -1,6 +1,6 @@
 // Four occupied outdoor bays must retain a continuous pedestrian entrance route.
 import fs from'node:fs';import assert from'node:assert/strict';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
-const root=new URL('../../',import.meta.url),variant=process.env.GARAGE_VARIANT??'compact',n=JSON.parse(fs.readFileSync(new URL(`output-proposed-${variant}/navigation.json`,root))),cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/garage.json',root))),[cx,cy]=cfg.fourthBay.center;
+const root=new URL('../../',import.meta.url),variant=process.env.GARAGE_VARIANT??'compact',n=JSON.parse(fs.readFileSync(new URL(`outputs/output-proposed-${variant}/navigation.json`,root))),cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/garage.json',root))),[cx,cy]=cfg.fourthBay.center;
 if(!n.obstacles.some(o=>o.name==='Proposal | Compact car N3'))n.obstacles.push({name:'Proposal | Compact car N3',box:[cx-.9,cy-2.2,cx+.9,cy+2.2],bottom:0,top:1.55});
 const nav=new Navigation(n);nav.radius=.3;const x0=-7,y0=-23.5,step=.04,nx=291,ny=590,point=i=>({x:x0+i%nx*step,y:y0+Math.floor(i/nx)*step,z:0});restrictNavigation(nav,[x0,y0,4.6,.1],0);
 const free=new Uint8Array(nx*ny),seen=new Uint8Array(nx*ny);for(let i=0;i<free.length;i++){const p=point(i);const z=nav.support(p.x,p.y,0);free[i]=z!==null&&!nav.blocked(p.x,p.y,z);}

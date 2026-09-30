@@ -9,13 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class LoftBedroomWallTests(unittest.TestCase):
     def test_solid_wall_survives_as_a_closed_internal_mesh_below_the_roof(self):
-        spec = json.loads((ROOT / 'proposal/design-spec-compact.json').read_text())
+        spec = json.loads((ROOT / 'proposal/specs/design-spec-compact.json').read_text())
         x0, _, x1, _ = spec['frontWing']
         ridge = spec['newWingRoof']['ridge']
         slope = (ridge - spec['newWingRoof']['eave']) / ((x1-x0)/2 + .20)
         for variant in ('compact', 'planning'):
             with self.subTest(variant=variant):
-                path = ROOT / f'output-proposed-{variant}/geometry.json'
+                path = ROOT / f'outputs/output-proposed-{variant}/geometry.json'
                 if not path.exists():
                     self.skipTest('Build the current designs first')
                 data = json.loads(path.read_text())

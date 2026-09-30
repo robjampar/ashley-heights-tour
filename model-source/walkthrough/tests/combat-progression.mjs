@@ -1,5 +1,5 @@
 import {chromium,webkit} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs/promises';
-const output='tests/easter/progression';await fs.mkdir(output,{recursive:true});const result={checks:[],errors:[]};
+const output='test-results/easter/progression';await fs.mkdir(output,{recursive:true});const result={checks:[],errors:[]};
 const b=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
 try{const p=await b.newPage({viewport:{width:1280,height:900}});p.on('pageerror',e=>result.errors.push(e.message));await p.goto('http://127.0.0.1:8765/easter/');await p.waitForFunction(()=>window.walkthrough?.ready,null,{timeout:120000});await p.click('#drag');await p.selectOption('#rooms','2445694-0');await p.waitForFunction(()=>walkthrough.easter.game.state.weapon==='bow');assert.equal(await p.evaluate(()=>walkthrough.easter.clock.phase),'armed');assert.equal(await p.evaluate(()=>walkthrough.easter.game.state.wave),0);await p.evaluate(()=>walkthrough.goTo('2445658-3'));await p.waitForFunction(()=>walkthrough.easter.clock.phase==='chasing');await p.waitForFunction(()=>walkthrough.easter.game.state.weapon==='bow');
  for(const [wave,weapon,room]of [[2,'pistol','2445662-0'],[4,'shotgun','2445664-0'],[6,'carbine','2445670-3']]){

@@ -1,11 +1,15 @@
 """Run with Blender --background --python-exit-code 1 --python this-file.
 Exercises real mesh booleans, source sharing/transforms and failure cleanup.
 """
+
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import bpy,sys
 from pathlib import Path
 from mathutils import Matrix
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from blender_booleans import BooleanWorkspace
+from scripts.geometry.blender_booleans import BooleanWorkspace
 bpy.ops.wm.read_factory_settings(use_empty=True)
 main=bpy.context.scene
 

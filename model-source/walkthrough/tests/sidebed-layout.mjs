@@ -5,7 +5,7 @@ const root=new URL('../../',import.meta.url),variant=process.env.SIDEBED_VARIANT
 const cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/sidebed.json',root)));
 const native=process.env.SIDEBED_NAV;
 const exact=native?JSON.parse(fs.readFileSync(new URL(`revisions/interiors-overnight-2026-09-27/sidebed/${variant}/details-audit.json`,root))):null;
-const base=JSON.parse(fs.readFileSync(process.env.SIDEBED_NAV??new URL(`output-proposed-${variant}/navigation.json`,root)));
+const base=JSON.parse(fs.readFileSync(process.env.SIDEBED_NAV??new URL(`outputs/output-proposed-${variant}/navigation.json`,root)));
 const item=(name,box,top=4.6)=>({name,box,bottom:2.8,top});
 function leaf(name,d,closed=false){const[hx,hy,hz]=d.hinge,[ax,ay]=d.axis,a=closed?0:d.openAngle,c=Math.cos(a),s=Math.sin(a),p=(u,v)=>{const x=ax*u-ay*v,y=ay*u+ax*v;return[hx+x*c-y*s,hy+x*s+y*c];};return{name,polygon:[p(0,-.065),p(d.width,-.065),p(d.width,.065),p(0,.065)],bottom:hz,top:hz+2.15};}
 if(!native){

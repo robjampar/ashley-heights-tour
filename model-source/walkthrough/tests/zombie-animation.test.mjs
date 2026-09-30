@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import fs from 'node:fs';
+fs.mkdirSync(new URL('../test-results/easter/',import.meta.url),{recursive:true});
+
 import {ZombieFigure} from '../src/zombies.js';
 
 const types=['shambler','runner','brute','flanker'],point=new THREE.Vector3();
@@ -50,7 +52,7 @@ test('brute attacks with both arms and repeated hit recoil alternates sides',()=
  figure.update(0,{x:0,y:0,z:0},{x:0,y:0},false,.1,{state:'stagger',progress:.5});assert.ok(first*figure.body.rotation.y<0);figure.dispose();
 });
 
-test.after(()=>fs.writeFileSync(new URL('./easter/zombie-animation-validation.json',import.meta.url),JSON.stringify(report,null,2)+'\n'));
+test.after(()=>fs.writeFileSync(new URL('../test-results/easter/zombie-animation-validation.json',import.meta.url),JSON.stringify(report,null,2)+'\n'));
 
 test('civilian styles keep seventeen meshes and grounded feet, with readable child and boss scales',()=>{
  const styles=['woman-coat','woman-hoodie','worker','hoodie','child','suit','groundskeeper'];report.styles=styles;

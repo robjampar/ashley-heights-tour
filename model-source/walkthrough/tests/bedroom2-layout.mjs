@@ -1,7 +1,7 @@
 // Full-size furniture, a retained opening and an inward leaf clear of the hall.
 import fs from'node:fs';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/bedroom2.json',import.meta.url))),variant=process.env.BED2_VARIANT??'compact',native=process.env.BED2_NAV;
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
 const furniture=[item('bed',cfg.bed.envelope),item('wardrobe',cfg.wardrobe,5.10),...cfg.bedsides.map(v=>item('bedside',v)),item('reading chair',cfg.readingChair),item('reading table',cfg.readingTable)];
 const states={ordinary:[],doorClosed:[],wardrobeUse:[item('person choosing clothes',[9.71,.80,10.31,1.40])],reading:[item('reader knees',[10.27,2.50,10.87,3.10])],southBedOccupied:[item('person at south bedside',[12.05,.46,12.65,1.06])],northBedOccupied:[item('person at north bedside',[12.05,2.74,12.65,3.34])]};
 const results=[];

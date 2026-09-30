@@ -1,6 +1,6 @@
 """A1 landscape drawing sheet: exact-scale viewports, title block, north
 arrow, scale bars, key plan and legend. Every viewport's mm-per-metre is
-asserted from the saved page geometry, as proposal/make_P5_sections.py does.
+asserted from the saved page geometry, as proposal/studies/p5/make_P5_sections.py does.
 
 Printing at A3 halves every scale, which the title block states.
 """

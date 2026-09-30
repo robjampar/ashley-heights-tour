@@ -1,3 +1,7 @@
+## Publication started
+
+All changes pushed to main as c57cab12a65bed131ae80f4b20625ae6a3447c57. GitHub Actions run 36493796197 is in progress. The staged rollout is automated, with two 30-minute cache waits. Do not infer that all stages are live until the workflow completes.
+
 # Publication readiness — 28 September 2026
 
 GitHub access restored. All missing original-tour files have been recovered. All four brochure downloads are uploaded and verified by downloading and comparing their SHA-256 hashes. The three-stage deployment workflow is prepared for the publication commit.
@@ -17,7 +21,7 @@ GitHub access restored. All missing original-tour files have been recovered. All
 ## Publication sequence
 
 1. DONE: GitHub access restored; Pages build type changed from legacy to workflow.
-2. DONE: recovered all missing original files with `scripts/recover_release_files.py --repo deployment/ashley-heights-tour --fetch`. It restores only absent committed files; it does not overwrite local edits. Reconcile any upstream changes against the rollout base commit `abc04e9535df6b055222b36dee5b92b65430ed77` before proceeding.
+2. DONE: recovered all missing original files with `scripts/publication/recover_release_files.py --repo deployment/ashley-heights-tour --fetch`. It restores only absent committed files; it does not overwrite local edits. Reconcile any upstream changes against the rollout base commit `abc04e9535df6b055222b36dee5b92b65430ed77` before proceeding.
 3. DONE: uploaded and verified the four assets in `output/release-downloads/brochure-67ea50051a32/upload-manifest.json` to the designated GitHub release, then verify their public download content against the recorded hashes.
 4. Publish `output/publication-rollout/stage-1/model` in place of the deployment checkout's `model/`: this updates principal/kitchen studies and preserves the preceding release assets. Retain the complete original tour and staged editable sources. Run `pages_artifact.py` on the full checkout before committing/pushing.
 5. Confirm the deployment succeeded; allow at least 30 minutes for cached HTML to expire. Publish stage 2 in the same way (remaining room studies), validate, and wait again after successful deployment.

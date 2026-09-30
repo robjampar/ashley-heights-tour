@@ -1,9 +1,13 @@
+
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import json
 from pathlib import Path
 import tempfile
 import unittest
 
-from scripts.regenerate_redesign_review import cache_current, record_cache
+from scripts.build.regenerate_redesign_review import cache_current, record_cache
 
 
 class ReviewCacheTests(unittest.TestCase):

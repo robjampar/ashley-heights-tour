@@ -1,7 +1,7 @@
 // Track the two rotated garage cars with every other actual car body occupied.
 import fs from 'node:fs';
 import {DriveWorld,DriveTrack,HybridPlanner,gateGeometry} from '../src/drive.js';
-const dir=new URL('../../output-redesign-g1/',import.meta.url),data=JSON.parse(fs.readFileSync(new URL('navigation.json',dir)));
+const dir=new URL('../../outputs/output-redesign-g1/',import.meta.url),data=JSON.parse(fs.readFileSync(new URL('navigation.json',dir)));
 const cars=data.proposalSite.cars,results=[];
 for(const car of cars){
  const world=new DriveWorld(data,{ignore:o=>o.name==='Proposal | Compact car '+car.bay,planningMargin:.22});

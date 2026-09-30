@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+fs.mkdirSync(new URL('../test-results/easter/',import.meta.url),{recursive:true});
+
 import {Horde,HORDE_TYPES} from '../src/horde.js';
 import {Navigation} from '../src/navigation.js';
 import {ZombieFigure} from '../src/zombies.js';
@@ -85,7 +87,7 @@ test('rush and heavy-footstep events change actual composition with heavy priori
  assert.ok(rush.runner>normal.runner);assert.ok(heavy.brute>normal.brute);assert.deepEqual(both,heavy);
  report.eventComposition={normal,rush,heavy,both};h.reset();
 });
-test.after(()=>fs.writeFileSync(new URL('./easter/horde-validation.json',import.meta.url),JSON.stringify(report,null,2)+'\n'));
+test.after(()=>fs.writeFileSync(new URL('../test-results/easter/horde-validation.json',import.meta.url),JSON.stringify(report,null,2)+'\n'));
 
 test('independent styles, one fifth-wave boss and seeded speed variance',()=>{
  const h=new Horde(arena);h.startWave(5,origin,20);const variants=[];

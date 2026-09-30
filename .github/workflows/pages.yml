@@ -11,7 +11,7 @@ on:
       - 'assets/**'
       - 'model/**'
       - 'easter/**'
-      - 'model-source/scripts/pages_artifact.py'
+      - 'model-source/scripts/publication/pages_artifact.py'
   workflow_dispatch:
     inputs:
       staged_rollout:
@@ -67,7 +67,7 @@ jobs:
             /assets/
             /model/
             /easter/
-            /model-source/scripts/pages_artifact.py
+            /model-source/scripts/publication/pages_artifact.py
             /model-source/publication-rollout/stage-${{ matrix.stage }}/model/
       - uses: actions/configure-pages@v5
       - name: Select cache-compatible model package
@@ -81,7 +81,7 @@ jobs:
           shutil.copytree('model-source/publication-rollout/stage-'+os.environ['STAGE']+'/model','model')
           PY
       - name: Validate and package complete public tours
-        run: python3 model-source/scripts/pages_artifact.py --repo . --output "$RUNNER_TEMP/ashley-pages"
+        run: python3 model-source/scripts/publication/pages_artifact.py --repo . --output "$RUNNER_TEMP/ashley-pages"
       - uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages-stage-${{ matrix.stage }}

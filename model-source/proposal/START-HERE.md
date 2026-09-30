@@ -12,7 +12,7 @@ Planning finishes: matching red-brown brick outside, white painted internal wall
 
 The shared compact specification sets `sideWingFrontSetback_m` to 0.90 (owner, 24 Sep 2026: doubled from 0.45). Both proposed designs inherit the recessed side-wing front wall, windows and roof edge; the original house and rear alignment remain fixed.
 
-Run `PROPOSAL_VARIANT=planning` with `scripts/build_extension_proposal.py` in Blender for the planning native model. The full design remains `PROPOSAL_VARIANT=compact`. The complete command is `.venv/bin/python scripts/regenerate_design_outputs.py --exchange` from the project root.
+Run `PROPOSAL_VARIANT=planning` with `scripts/build/build_extension_proposal.py` in Blender for the planning native model. The full design remains `PROPOSAL_VARIANT=compact`. The complete command is `.venv/bin/python scripts/build/regenerate_design_outputs.py --exchange` from the project root.
 
 The browser menu preserves the view when changing design, moving to a supported room only where a walking position no longer exists. Each design has independent navigation and model files. Model exports include Blender, GLB, SketchUp and USDZ views. No public deployment is included in a local regeneration.
 

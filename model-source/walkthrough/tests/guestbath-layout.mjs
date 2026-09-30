@@ -7,7 +7,7 @@ import {Navigation} from '../src/navigation.js';
 import {restrictNavigation} from './restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/guestbath.json',import.meta.url)));
 const native=process.env.GUESTBATH_NAV,variant=process.env.GUESTBATH_VARIANT??'compact';
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-compact/navigation.json',import.meta.url)),base=JSON.parse(bytes);
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-compact/navigation.json',import.meta.url)),base=JSON.parse(bytes);
 const removed=['Principal en suite toilet','Principal west-wall vanity','Principal south shower'];
 const item=(name,box,top=4.8)=>({name,box,bottom:2.8,top});
 const fixtures=[item('vanity',cfg.vanity,3.71),item('WC pan',cfg.wc.panBounds,3.26),item('cistern',cfg.wc.cistern,3.91),item('shower fixed glass',[7.813,6.295,8.351,6.305]),item('towel rail',[7.20,7.28,7.267,7.69],4.39)];

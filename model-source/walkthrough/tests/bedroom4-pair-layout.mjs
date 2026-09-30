@@ -1,7 +1,7 @@
 // Paired-room circulation: complete double bed, real storage and shower return.
 import fs from'node:fs';import assert from'node:assert/strict';import{createHash}from'node:crypto';import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/bedroom4-pair-study.json',import.meta.url))),variant=process.env.BED4_VARIANT??'compact',native=process.env.BED4_NAV;
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes),item=(name,box,top=4.3)=>({name,box,bottom:2.8,top});
 if(!native)for(const w of base.walls){if(w.name==='Bedroom 4 shower return'){w.a[0]+=cfg.showerReturnShiftX;w.b[0]+=cfg.showerReturnShiftX;}if(w.name==='Linen cupboard back')w.a[0]+=cfg.showerReturnShiftX;}
 const furniture=[item('complete double bed',cfg.bed),...cfg.bedsides.map(b=>item('bedside',b)),item('full-depth wardrobe',cfg.wardrobe,5.10),item('basin cabinet',cfg.bathVanity),item('WC pan',cfg.wcPan),item('cistern',cfg.cistern)];
 function leaf(name,d,closed){const[hx,hy]=d.hinge,[ax,ay]=d.axis,angle=closed?0:d.openAngle,c=Math.cos(angle),s=Math.sin(angle),p=(u,v)=>{const x=ax*u-ay*v,y=ay*u+ax*v;return[hx+x*c-y*s,hy+x*s+y*c];};return{name,polygon:[p(0,-.06),p(d.width,-.06),p(d.width,.06),p(0,.06)],bottom:2.8,top:4.92};}

@@ -1,8 +1,8 @@
 """Loads one geometry+navigation export (existing house or a proposal variant)
 as numpy-backed objects with a layer classification and interior culling.
 
-Existing house: output-walkthrough/geometry.json + walkthrough/public/navigation.json
-Proposal:       output-proposed[-compact]/{geometry,navigation}.json
+Existing house: outputs/output-walkthrough/geometry.json + walkthrough/public/navigation.json
+Proposal:       outputs/output-proposed[-compact]/{geometry,navigation}.json
 
 Coordinates are model metres: x east(ish), y towards the rear garden, z up.
 """
@@ -16,7 +16,7 @@ from .context import ROOT
 
 CACHE = ROOT / '.cache' / 'planning_drawings'
 
-# Existing-house layers (scripts/build_model.py) and proposal collections.
+# Existing-house layers (scripts/model/build_model.py) and proposal collections.
 EXISTING_ENVELOPE_LAYERS = ('10', '11', '12', '13', '20', '21', '22', '23', '30', '40', '41')
 FURNITURE = re.compile(r'sofa|chair|desk|mattress|cushion|wardrobe|curtain|radiator|towel|tap |toilet|basin|oven|hob|lamp|chandelier|'
                        r'blossom|foliage|tree |tree$|hedge|grass|fountain|plate|photo|painting|mirror|picture|shelf|book|shell rib|'
@@ -212,12 +212,12 @@ class SourceModel:
 
 
 def load_existing():
-    return SourceModel('existing', ROOT / 'output-walkthrough' / 'geometry.json', ROOT / 'walkthrough' / 'public' / 'navigation.json',
-                       ROOT / 'output-walkthrough' / 'Ashley Heights.blend')
+    return SourceModel('existing', ROOT / 'outputs/output-walkthrough' / 'geometry.json', ROOT / 'walkthrough' / 'public' / 'navigation.json',
+                       ROOT / 'outputs/output-walkthrough' / 'Ashley Heights.blend')
 
 
 def load_proposed(variant='compact'):
     if variant not in ('planning', 'compact'):
         raise ValueError('Unknown proposed design: ' + variant)
-    d = ROOT / ('output-proposed-' + variant)
+    d = ROOT / ('outputs/output-proposed-' + variant)
     return SourceModel('proposed', d / 'geometry.json', d / 'navigation.json', d / ('Ashley Heights — Proposed (planning application).blend' if variant == 'planning' else 'Ashley Heights — Proposed (compact).blend'), variant)

@@ -1,6 +1,6 @@
 {
   "room": "Formal dining and lounge",
-  "revision": 2,
+  "revision": 3,
   "floorZ": 0,
   "ceilingZ": 2.6,
   "bounds": [
@@ -77,18 +77,16 @@
   ],
   "table": {
     "centre": [
-      7.92,
-      7.25
+      6.965,
+      7.5401977247
     ],
-    "length": 1.8,
-    "extendedLength": 2.8,
-    "width": 1.0,
+    "length": 1.7,
+    "width": 1.7,
     "height": 0.76,
-    "dailyPlaces": 6,
-    "extendedPlaces": [
-      8,
-      10
-    ]
+    "dailyPlaces": 8,
+    "shape": "round",
+    "diameter": 1.7,
+    "chairRadius": 1.13
   },
   "sofas": [
     [
@@ -236,7 +234,7 @@
       -0.04
     ]
   },
-  "status": "isolated validation",
+  "status": "Owner-approved round table, eight chairs; local integration",
   "sources": [
     {
       "title": "Ethnicraft extending-table dimensions",

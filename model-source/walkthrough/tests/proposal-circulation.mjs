@@ -82,6 +82,6 @@ for(const radius of [.18,.25])for(const route of routes){
 }
 const views=data.rooms.map(r=>{const nav=new Navigation(data);const [x,y,z]=r.position;return {name:r.label,position:r.position,blocked:nav.blocked(x,y,z),support:nav.support(x,y,z)};});
 const report={revision:data.designRevision,modelUpdatedAt:data.modelUpdatedAt,routes:results,views,passed:results.every(r=>r.pass)&&views.every(r=>!r.blocked&&r.support!==null)};
-fs.writeFileSync(new URL('../../'+(data.variant?'output-proposed-'+data.variant:'output-proposed')+'/circulation-check.json',import.meta.url),JSON.stringify(report,null,2));
+fs.writeFileSync(new URL('../../'+(data.variant?'outputs/output-proposed-'+data.variant:'outputs/output-proposed')+'/circulation-check.json',import.meta.url),JSON.stringify(report,null,2));
 for(const r of results)console.log(r.pass?'PASS':'FAIL',r.name,r.bodyWidth,r.fail??'');for(const v of views)if(v.blocked||v.support===null)console.log('VIEW_FAIL',v);
 if(!report.passed)process.exitCode=1;

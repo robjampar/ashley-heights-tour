@@ -3,7 +3,7 @@ import fs from'node:fs';import assert from'node:assert/strict';
 import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const root=new URL('../../',import.meta.url),variant=process.env.LOFTSUITE_VARIANT??'compact',z=5.55;
 const cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/loftsuite.json',root)));
-const native=process.env.LOFTSUITE_NAV,base=JSON.parse(fs.readFileSync(native??new URL(`output-proposed-${variant}/navigation.json`,root)));
+const native=process.env.LOFTSUITE_NAV,base=JSON.parse(fs.readFileSync(native??new URL(`outputs/output-proposed-${variant}/navigation.json`,root)));
 const exact=native?JSON.parse(fs.readFileSync(new URL(`revisions/interiors-overnight-2026-09-27/loftsuite/${variant}/details-audit.json`,root))):null;
 const survey=JSON.parse(fs.readFileSync(new URL(`revisions/interiors-overnight-2026-09-27/loftsuite/${variant}/headroom.json`,root)));
 const measured=survey.areas.loftsuite,grid=new Map(measured.map(p=>[`${Math.round((p.x-7.58)*10)},${Math.round((p.y+13)*10)}`,p.height]));

@@ -1,4 +1,8 @@
 """Check delivered geometry, retained garden fabric, and planning-only content."""
+
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import json,unittest
 from pathlib import Path
 import numpy as np
@@ -7,10 +11,10 @@ ROOT=Path(__file__).resolve().parents[1]
 class PlanningVariantTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.g=json.loads((ROOT/'output-proposed-planning/geometry.json').read_text())
-  cls.nav=json.loads((ROOT/'output-proposed-planning/navigation.json').read_text())
-  cls.ex=json.loads((ROOT/'output-walkthrough/geometry.json').read_text())
-  cls.full=json.loads((ROOT/'output-proposed-compact/navigation.json').read_text())
+  cls.g=json.loads((ROOT/'outputs/output-proposed-planning/geometry.json').read_text())
+  cls.nav=json.loads((ROOT/'outputs/output-proposed-planning/navigation.json').read_text())
+  cls.ex=json.loads((ROOT/'outputs/output-walkthrough/geometry.json').read_text())
+  cls.full=json.loads((ROOT/'outputs/output-proposed-compact/navigation.json').read_text())
  def test_omitted_works_absent_from_model_and_navigation(self):
   for key in ('proposalRoofTerrace','proposalHotTub','proposalWorkshop'):self.assertNotIn(key,self.nav)
   names={r['name'] for r in self.nav['planRooms']}
@@ -107,13 +111,13 @@ class PlanningVariantTests(unittest.TestCase):
      self.assertEqual(ob['materials'][m],'Red brown brick',ob['name']);checked+=1
   self.assertGreater(checked,5)
  def test_overlay_is_only_a_small_set_of_differences(self):
-  overlay=json.loads((ROOT/'proposal/design-spec-planning.json').read_text())
+  overlay=json.loads((ROOT/'proposal/specs/design-spec-planning.json').read_text())
   self.assertNotIn('frontWing',overlay);self.assertNotIn('entertainmentBasement',overlay)
  def test_side_extension_front_and_roof_are_set_back_in_both_options(self):
   original_roof=next(o for o in self.ex['objects']if o['name']=='Main hipped roof')
   expected_roof_y=original_roof['vertices'][0][1]+.90
   for variant in ('planning','compact'):
-   data=self.g if variant=='planning' else json.loads((ROOT/'output-proposed-compact/geometry.json').read_text())
+   data=self.g if variant=='planning' else json.loads((ROOT/'outputs/output-proposed-compact/geometry.json').read_text())
    nav=self.nav if variant=='planning' else self.full
    # CURRENT-BRIEF, 24 September: setback doubled from 450 to 900 mm.
    self.assertEqual(nav['proposalSideWing']['front_setback_m'],.90)

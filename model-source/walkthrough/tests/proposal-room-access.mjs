@@ -39,6 +39,6 @@ for(const [z,anchor,scope] of levels){
  output.push(...report);
 }
 const report={modelUpdatedAt:data.modelUpdatedAt,stepM:.12,bodyWidthM:.50,allNewHingedDoorsFullyOpen:true,rooms:output,passed:output.every(r=>r.pass)};
-fs.writeFileSync(new URL('../../'+(data.variant?'output-proposed-'+data.variant:'output-proposed')+'/room-access-check.json',import.meta.url),JSON.stringify(report,null,2));
+fs.writeFileSync(new URL('../../'+(data.variant?'outputs/output-proposed-'+data.variant:'outputs/output-proposed')+'/room-access-check.json',import.meta.url),JSON.stringify(report,null,2));
 for(const r of output)console.log(r.pass?'PASS':'FAIL',r.name,`${r.reachableSamples}/${r.freeSamples}`);
 if(!report.passed)process.exitCode=1;

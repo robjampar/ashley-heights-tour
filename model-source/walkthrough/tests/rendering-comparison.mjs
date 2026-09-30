@@ -10,8 +10,8 @@ try {
  // Keep navigation inactive: its floor support would raise estimated photo
  // eye heights to the normal 1.60 m walker height on the next animation frame.
  await page.addStyleTag({content:'body > :not(#view) { visibility: hidden !important; }'});
- const views=JSON.parse(await fs.readFile('../photo-review/views.json'));
- const dest='../photo-review/rendering-comparison';await fs.mkdir(dest,{recursive:true});
+ const views=JSON.parse(await fs.readFile('../archive/photo-review/views.json'));
+ const dest='../archive/photo-review/rendering-comparison';await fs.mkdir(dest,{recursive:true});
  for(const key of ['2445658-3','2445659-0']){
   const v=views.find(v=>v.key===key);
   await page.evaluate(v=>{

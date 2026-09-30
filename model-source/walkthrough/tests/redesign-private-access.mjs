@@ -15,7 +15,7 @@ const bedrooms={
 const defaults={'0':[7,3.9],'2.8':[7,3.9],'5.55':[8.9,3.9],'-2.8':[9.8,-9.3]};
 let success=true;
 for(const id of process.argv.slice(2)){
- const dir=new URL('../../output-redesign-'+id+'/',import.meta.url),read=name=>JSON.parse(fs.readFileSync(new URL(name,dir)));
+ const dir=new URL('../../outputs/output-redesign-'+id+'/',import.meta.url),read=name=>JSON.parse(fs.readFileSync(new URL(name,dir)));
  const nav=read('navigation.json'),circulation=read('circulation-audit.json'),record=read('circulation-grid.json');
  assert.equal(record.modelUpdatedAt,nav.modelUpdatedAt,'grid is current');assert.equal(circulation.modelUpdatedAt,nav.modelUpdatedAt,'circulation is current');
  const beds=bedrooms[id].map(name=>{const r=nav.planRooms.find(r=>r.name===name);assert(r,id+': '+name);return r;});

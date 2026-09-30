@@ -8,7 +8,7 @@ const inShape=(x,y,g)=>{
 };
 let allPass=true;
 for(const option of options){
- const root=new URL('../../output-redesign-'+option+'/',import.meta.url);
+ const root=new URL('../../outputs/output-redesign-'+option+'/',import.meta.url);
  if(!fs.existsSync(new URL('build-report.json',root)))throw new Error(`${option}: no successful build report`);
  const data=JSON.parse(fs.readFileSync(new URL('navigation.json',root)));
  const masks=JSON.parse(fs.readFileSync(new URL('walk-masks.json',root)));

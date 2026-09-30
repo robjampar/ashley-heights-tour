@@ -29,7 +29,7 @@ function nearPolygon(x,y,polygon){
 let success=true;
 for(const id of process.argv.slice(2)){
  assert(suites[id],'Unknown option '+id);
- const dir=new URL('../../output-redesign-'+id+'/',import.meta.url),read=name=>JSON.parse(fs.readFileSync(new URL(name,dir)));
+ const dir=new URL('../../outputs/output-redesign-'+id+'/',import.meta.url),read=name=>JSON.parse(fs.readFileSync(new URL(name,dir)));
  const nav=read('navigation.json'),record=read('circulation-grid.json');
  assert.equal(record.modelUpdatedAt,nav.modelUpdatedAt,'grid is current');
  const results=suites[id].map(names=>{

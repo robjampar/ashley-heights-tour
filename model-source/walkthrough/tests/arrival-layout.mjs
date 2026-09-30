@@ -2,7 +2,7 @@
 import fs from'node:fs';import assert from'node:assert/strict';
 import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const root=new URL('../../',import.meta.url),variant=process.env.ARRIVAL_VARIANT??'compact',z=0,cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/arrival.json',root)));
-const native=process.env.ARRIVAL_NAV,base=JSON.parse(fs.readFileSync(native??new URL(`output-proposed-${variant}/navigation.json`,root)));
+const native=process.env.ARRIVAL_NAV,base=JSON.parse(fs.readFileSync(native??new URL(`outputs/output-proposed-${variant}/navigation.json`,root)));
 const exact=native?JSON.parse(fs.readFileSync(new URL(`revisions/interiors-overnight-2026-09-27/arrival/${variant}/details-audit.json`,root))):null;
 const item=(name,box,top=1.2)=>({name,box,bottom:0,top}),[px,py,pr]=cfg.plant;
 const furniture=[item('coat storage',cfg.coatStorage,2.30),item('key return',cfg.keyReturn,2.30),item('shoe bench',cfg.shoeBench,.48),item('plant',[px-pr,py-pr,px+pr,py+pr],1.5)];

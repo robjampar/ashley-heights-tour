@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const base=process.env.ASHLEY_TEST_BASE||'http://127.0.0.1:8765/';
-const output=process.env.ASHLEY_SPAWN_OUTPUT||'tests/easter/hidden-spawns';await fs.mkdir(output,{recursive:true});
+const output=process.env.ASHLEY_SPAWN_OUTPUT||'test-results/easter/hidden-spawns';await fs.mkdir(output,{recursive:true});
 const result={base,checks:[],scenarios:[],errors:[]};
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
 try{

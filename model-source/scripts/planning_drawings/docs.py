@@ -124,7 +124,7 @@ def materials_sheet(ctx, records_ex, records_pr, path):
 # ---------------------------------------------------------------- PA-005
 def risk_sheet(ctx, risks, path):
     body = header(ctx, 'PA-005', 'Planning risk and opportunity register', 'Where the scheme could be adjusted to make consent easier — for the owner to assess')
-    body += '<p>Each item is measured from the current model against the policy or guidance named. RED: likely reason for refusal or a required change; AMBER: officer scrutiny likely, mitigation available; GREEN: no issue identified by this limited check; survey and planning judgement still required. The "spec key" is the field in proposal/design-spec-compact.json that controls the element, so a change is a spec edit and a rebuild.</p>'
+    body += '<p>Each item is measured from the current model against the policy or guidance named. RED: likely reason for refusal or a required change; AMBER: officer scrutiny likely, mitigation available; GREEN: no issue identified by this limited check; survey and planning judgement still required. The "spec key" is the field in proposal/specs/design-spec-compact.json that controls the element, so a change is a spec edit and a rebuild.</p>'
     rows = []; cls = []
     for r in risks:
         rows.append([r['id'], r['topic'], r['policy'], r['measured'], r['threshold'], r['verdict'].upper(), r['fix'], ', '.join(r['spec_keys'])])

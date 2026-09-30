@@ -1,6 +1,6 @@
 // Read-only tracking check of actual four bays, or an explicitly supplied candidate.
 import fs from'node:fs';import assert from'node:assert/strict';import{planDrivePaths}from'./plan-drive.mjs';import{DriveWorld}from'../src/drive.js';
-const root=new URL('../../',import.meta.url),variant=process.argv[2]??'compact',n=JSON.parse(fs.readFileSync(new URL(`output-proposed-${variant}/navigation.json`,root)));
+const root=new URL('../../',import.meta.url),variant=process.argv[2]??'compact',n=JSON.parse(fs.readFileSync(new URL(`outputs/output-proposed-${variant}/navigation.json`,root)));
 const actual=n.proposalSite.driveway_bay_bounds_m.find(b=>b.id==='N3'),cx=Number(process.argv[3]??(actual?(actual.bounds_m[0]+actual.bounds_m[2])/2:-.20)),cy=Number(process.argv[4]??(actual?(actual.bounds_m[1]+actual.bounds_m[3])/2:-8.40));const bay={id:'N3',bounds_m:[cx-1.25,cy-2.4,cx+1.25,cy+2.4]};
 n.proposalSite.driveway_bay_bounds_m=n.proposalSite.driveway_bay_bounds_m.filter(b=>b.id!=='N3');n.proposalSite.driveway_bay_bounds_m.push(bay);n.obstacles=n.obstacles.filter(o=>o.name!=='Proposal | Compact car N3');n.obstacles.push({name:'Proposal | Compact car N3',box:[cx-.9,cy-2.2,cx+.9,cy+2.2],bottom:0,top:1.55});
 const paths=planDrivePaths(n,{log:console.log}),reports=[];

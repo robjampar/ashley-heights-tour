@@ -1,5 +1,5 @@
 import {chromium,webkit} from 'playwright';import fs from 'node:fs/promises';import assert from 'node:assert/strict';
-const base=process.env.ASHLEY_TEST_BASE||'http://127.0.0.1:8765/';const output=process.env.ASHLEY_EASTER_OUTPUT||'tests/easter/browser';await fs.mkdir(output,{recursive:true});const result={base,checks:[],errors:[]};
+const base=process.env.ASHLEY_TEST_BASE||'http://127.0.0.1:8765/';const output=process.env.ASHLEY_EASTER_OUTPUT||'test-results/easter/browser';await fs.mkdir(output,{recursive:true});const result={base,checks:[],errors:[]};
 const chrome=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
 const load=async(page,path='')=>{await page.goto(new URL(path,base).href);await page.waitForFunction(()=>window.walkthrough?.ready,null,{timeout:120000});};
 try{const page=await chrome.newPage({viewport:{width:1280,height:900}});page.on('pageerror',e=>result.errors.push(e.message));await load(page);await page.click('#drag');assert.equal(await page.evaluate(()=>walkthrough.getState().room),'Outside gates');assert(await page.locator('#rooms').isVisible());assert(!await page.locator('#combat-hud').isVisible());

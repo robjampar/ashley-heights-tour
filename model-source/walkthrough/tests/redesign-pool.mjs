@@ -19,7 +19,7 @@ function follow(nav,points){
 
 let success=true;
 for(const id of process.argv.slice(2)){
- const root=new URL('../../output-redesign-'+id+'/',import.meta.url);
+ const root=new URL('../../outputs/output-redesign-'+id+'/',import.meta.url);
  if(!fs.existsSync(new URL('build-report.json',root)))throw Error(id+': no completed build');
  const data=JSON.parse(fs.readFileSync(new URL('navigation.json',root))),nav=new Navigation(data);nav.radius=.25;
  const start={x:7,y:10.5,z:0};nav.position={...start};

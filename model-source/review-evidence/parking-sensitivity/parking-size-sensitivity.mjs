@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {DriveWorld,DriveTrack,HybridPlanner,gateGeometry} from '../../walkthrough/src/drive.js';
 const size={length:4.8,width:1.95,radius:5.4},reports=[];
 for(const id of ['e1','e2','e3']){
- const data=JSON.parse(fs.readFileSync(new URL(`../../output-redesign-${id}/navigation.json`,import.meta.url)));
+ const data=JSON.parse(fs.readFileSync(new URL(`../../outputs/output-redesign-${id}/navigation.json`,import.meta.url)));
  const cars=data.proposalSite.cars,names=new Set(cars.map(c=>'Proposal | Compact car '+c.bay));
  const world=new DriveWorld(data,{ignore:o=>names.has(o.name),planningMargin:.12});
  const carClear=world.carClear.bind(world);

@@ -2,7 +2,7 @@
 import fs from'node:fs';import assert from'node:assert/strict';
 import{Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const root=new URL('../../',import.meta.url),variant=process.env.LANDINGS_VARIANT??'compact',z=2.8,cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/landings.json',root)));
-const native=process.env.LANDINGS_NAV,base=JSON.parse(fs.readFileSync(native??new URL(`output-proposed-${variant}/navigation.json`,root)));
+const native=process.env.LANDINGS_NAV,base=JSON.parse(fs.readFileSync(native??new URL(`outputs/output-proposed-${variant}/navigation.json`,root)));
 const item=(name,box,top=2.2)=>({name,box,bottom:z,top:z+top}),[tx,ty,tr]=cfg.sideTable;
 const replaced=['Bedroom 5 bookcase','Proposal | Landing bookcases','Proposal revision | Upstairs photo detail | Bedroom 2 north','Upstairs photo detail | Bedroom 2 north case',...(native?[]:['Landings 01 | '])];
 const furniture=[item('reading chair',cfg.readingChair,.88),item('side table',[tx-tr,ty-tr,tx+tr,ty+tr],.52),...['galleryBooks','linenStorage','landingBooks'].map(k=>item(k,cfg[k]))];

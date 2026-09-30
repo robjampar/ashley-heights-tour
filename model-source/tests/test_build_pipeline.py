@@ -1,4 +1,8 @@
 """Freshness, dependency isolation and command routing for incremental builds."""
+
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import json
 from pathlib import Path
 import subprocess
@@ -8,10 +12,10 @@ from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
-from scripts import build_support as build
-from scripts import regenerate_design_outputs as runner
-from scripts.refresh_exterior_appearance import validate_checkpoint
-from scripts.blender_collections import collection_memberships, object_collections
+from scripts.build import build_support as build
+from scripts.build import regenerate_design_outputs as runner
+from scripts.build.refresh_exterior_appearance import validate_checkpoint
+from scripts.geometry.blender_collections import collection_memberships, object_collections
 
 
 class BuildCacheTests(unittest.TestCase):
@@ -20,16 +24,18 @@ class BuildCacheTests(unittest.TestCase):
         self.addCleanup(self.directory.cleanup)
         self.root = Path(self.directory.name)
         names = {
-            'output-walkthrough/Ashley Heights.blend', 'output-walkthrough/geometry.json',
-            'walkthrough/public/navigation.json', 'proposal/design-spec.json',
-            'proposal/design-spec-compact.json', 'proposal/design-spec-planning.json',
-            'proposal/site-terrain.json', 'proposal/P4_site-feasibility.json',
-            'proposal/P4_parking-validated.json', 'scripts/build_model.py',
-            'scripts/build_extension_proposal.py', 'scripts/build_support.py',
-            'scripts/blender_collections.py', 'scripts/blender_booleans.py', 'scripts/exterior_exposure.py',
-            'scripts/interior_furnishing.py', 'scripts/proposal_bar_interiors.py', 'scripts/proposal_gym_interiors.py', 'scripts/proposal_utility_interiors.py','scripts/proposal_guest_interiors.py','scripts/proposal_guestbath_interiors.py','scripts/proposal_family_interiors.py','scripts/proposal_cloakroom_interiors.py','scripts/proposal_bedroom2_interiors.py','scripts/proposal_bedroom3_interiors.py','scripts/proposal_familybath_interiors.py','scripts/proposal_bedroom4_interiors.py','scripts/proposal_formal_interiors.py','scripts/proposal_sidebed_interiors.py','scripts/proposal_loftsuite_interiors.py','scripts/proposal_hobby_interiors.py','scripts/proposal_arrival_interiors.py','scripts/proposal_landings_interiors.py','scripts/proposal_garage_interiors.py','scripts/proposal_gardenhouse_interiors.py','scripts/proposal_office_interiors.py','scripts/garden_level_steps.py','scripts/interior_suite_parts.py',
+            'outputs/output-walkthrough/Ashley Heights.blend', 'outputs/output-walkthrough/geometry.json',
+            'walkthrough/public/navigation.json', 'proposal/specs/design-spec.json',
+            'proposal/specs/design-spec-compact.json', 'proposal/specs/design-spec-planning.json',
+            'proposal/specs/site-terrain.json', 'proposal/studies/p4/P4_site-feasibility.json',
+            'proposal/studies/p4/P4_parking-validated.json', 'scripts/model/build_model.py',
+            'scripts/build/build_extension_proposal.py', 'scripts/build/build_support.py',
+            'scripts/interiors/garden_stone.py', 'scripts/interiors/linen_baskets.py', 'proposal/interiors/garden-stone.json',
+            'scripts/interiors/principal_gable_wall.py', 'proposal/interiors/principal/gable-wall.json',
+            'scripts/geometry/blender_collections.py', 'scripts/geometry/blender_booleans.py', 'scripts/geometry/exterior_exposure.py',
+            'scripts/interiors/interior_furnishing.py', 'scripts/interiors/proposal_bar_interiors.py', 'scripts/interiors/proposal_gym_interiors.py', 'scripts/interiors/proposal_utility_interiors.py','scripts/interiors/proposal_guest_interiors.py','scripts/interiors/proposal_guestbath_interiors.py','scripts/interiors/proposal_family_interiors.py','scripts/interiors/proposal_cloakroom_interiors.py','scripts/interiors/proposal_bedroom2_interiors.py','scripts/interiors/proposal_bedroom3_interiors.py','scripts/interiors/proposal_familybath_interiors.py','scripts/interiors/proposal_bedroom4_interiors.py','scripts/interiors/proposal_formal_interiors.py','scripts/interiors/proposal_sidebed_interiors.py','scripts/interiors/proposal_loftsuite_interiors.py','scripts/interiors/proposal_hobby_interiors.py','scripts/interiors/proposal_arrival_interiors.py','scripts/interiors/proposal_landings_interiors.py','scripts/interiors/proposal_garage_interiors.py','scripts/interiors/proposal_gardenhouse_interiors.py','scripts/interiors/proposal_office_interiors.py','scripts/interiors/garden_level_steps.py','scripts/interiors/interior_suite_parts.py',
             'proposal/interiors/leisure/cinema.json', 'proposal/interiors/leisure/bar.json', 'proposal/interiors/leisure/gym.json', 'proposal/interiors/leisure/utility.json','proposal/interiors/leisure/guest.json','proposal/interiors/leisure/guestbath.json','proposal/interiors/leisure/family.json','proposal/interiors/leisure/cloakroom.json','proposal/interiors/leisure/bedroom2.json','proposal/interiors/leisure/bedroom3.json','proposal/interiors/leisure/familybath.json','proposal/interiors/leisure/bedroom4.json','proposal/interiors/leisure/formal.json','proposal/interiors/leisure/sidebed.json','proposal/interiors/leisure/loftsuite.json','proposal/interiors/leisure/hobby.json','proposal/interiors/leisure/arrival.json','proposal/interiors/leisure/landings.json','proposal/interiors/leisure/garage.json','proposal/interiors/leisure/gardenhouse.json','proposal/interiors/leisure/office.json',
-            'scripts/proposal_terrace_interiors.py', 'proposal/interiors/leisure/terrace.json','scripts/proposal_poolgarden_interiors.py','proposal/interiors/leisure/poolgarden.json','scripts/proposal_workshop_interiors.py','proposal/interiors/leisure/workshop.json',
+            'scripts/interiors/proposal_terrace_interiors.py', 'proposal/interiors/leisure/terrace.json','scripts/interiors/proposal_poolgarden_interiors.py','proposal/interiors/leisure/poolgarden.json','scripts/interiors/proposal_workshop_interiors.py','proposal/interiors/leisure/workshop.json',
             'proposal/interiors/principal/accepted/manifest.json',
             'proposal/interiors/principal/accepted/compact/suite.blend',
             'proposal/interiors/principal/accepted/planning/suite.blend',
@@ -37,7 +43,7 @@ class BuildCacheTests(unittest.TestCase):
         names.update('scripts/' + name for v in ('compact', 'planning') for name in build.modules_for(v))
         for name in names:
             self.put(name, name)
-        self.put('proposal/original-preservation.json', '{"files": {}}')
+        self.put('proposal/specs/original-preservation.json', '{"files": {}}')
         self.binary = self.put('Blender', 'binary')
         for variant in ('planning', 'compact'):
             for path in build.required_outputs(self.root, variant):
@@ -65,26 +71,26 @@ class BuildCacheTests(unittest.TestCase):
         self.assertTrue(self.fresh('compact'))
 
     def test_leisure_geometry_helpers_and_layouts_invalidate_both_designs(self):
-        for name in ('scripts/interior_furnishing.py','scripts/proposal_bar_interiors.py','scripts/proposal_gym_interiors.py','scripts/proposal_utility_interiors.py','scripts/proposal_guest_interiors.py','scripts/proposal_guestbath_interiors.py','scripts/proposal_family_interiors.py','scripts/proposal_cloakroom_interiors.py','scripts/proposal_bedroom2_interiors.py','scripts/proposal_bedroom3_interiors.py','scripts/proposal_familybath_interiors.py','scripts/proposal_bedroom4_interiors.py','scripts/proposal_formal_interiors.py','scripts/proposal_sidebed_interiors.py','scripts/proposal_loftsuite_interiors.py','scripts/proposal_hobby_interiors.py','scripts/proposal_arrival_interiors.py','scripts/proposal_landings_interiors.py','scripts/proposal_garage_interiors.py','scripts/proposal_gardenhouse_interiors.py','scripts/proposal_office_interiors.py','scripts/garden_level_steps.py','scripts/interior_suite_parts.py','proposal/interiors/leisure/gym.json','proposal/interiors/leisure/utility.json','proposal/interiors/leisure/guest.json','proposal/interiors/leisure/guestbath.json','proposal/interiors/leisure/family.json','proposal/interiors/leisure/cloakroom.json','proposal/interiors/leisure/bedroom2.json','proposal/interiors/leisure/bedroom3.json','proposal/interiors/leisure/familybath.json','proposal/interiors/leisure/bedroom4.json','proposal/interiors/leisure/formal.json','proposal/interiors/leisure/sidebed.json','proposal/interiors/leisure/loftsuite.json','proposal/interiors/leisure/hobby.json','proposal/interiors/leisure/arrival.json','proposal/interiors/leisure/landings.json','proposal/interiors/leisure/garage.json','proposal/interiors/leisure/gardenhouse.json','proposal/interiors/leisure/office.json','proposal/interiors/leisure/cinema.json','proposal/interiors/leisure/bar.json'):
+        for name in ('scripts/interiors/interior_furnishing.py','scripts/interiors/proposal_bar_interiors.py','scripts/interiors/proposal_gym_interiors.py','scripts/interiors/proposal_utility_interiors.py','scripts/interiors/proposal_guest_interiors.py','scripts/interiors/proposal_guestbath_interiors.py','scripts/interiors/proposal_family_interiors.py','scripts/interiors/proposal_cloakroom_interiors.py','scripts/interiors/proposal_bedroom2_interiors.py','scripts/interiors/proposal_bedroom3_interiors.py','scripts/interiors/proposal_familybath_interiors.py','scripts/interiors/proposal_bedroom4_interiors.py','scripts/interiors/proposal_formal_interiors.py','scripts/interiors/proposal_sidebed_interiors.py','scripts/interiors/proposal_loftsuite_interiors.py','scripts/interiors/proposal_hobby_interiors.py','scripts/interiors/proposal_arrival_interiors.py','scripts/interiors/proposal_landings_interiors.py','scripts/interiors/proposal_garage_interiors.py','scripts/interiors/proposal_gardenhouse_interiors.py','scripts/interiors/proposal_office_interiors.py','scripts/interiors/garden_level_steps.py','scripts/interiors/interior_suite_parts.py','proposal/interiors/leisure/gym.json','proposal/interiors/leisure/utility.json','proposal/interiors/leisure/guest.json','proposal/interiors/leisure/guestbath.json','proposal/interiors/leisure/family.json','proposal/interiors/leisure/cloakroom.json','proposal/interiors/leisure/bedroom2.json','proposal/interiors/leisure/bedroom3.json','proposal/interiors/leisure/familybath.json','proposal/interiors/leisure/bedroom4.json','proposal/interiors/leisure/formal.json','proposal/interiors/leisure/sidebed.json','proposal/interiors/leisure/loftsuite.json','proposal/interiors/leisure/hobby.json','proposal/interiors/leisure/arrival.json','proposal/interiors/leisure/landings.json','proposal/interiors/leisure/garage.json','proposal/interiors/leisure/gardenhouse.json','proposal/interiors/leisure/office.json','proposal/interiors/leisure/cinema.json','proposal/interiors/leisure/bar.json'):
             with self.subTest(name=name):
                 original=(self.root/name).read_text();self.put(name,'changed room geometry')
                 self.assertFalse(self.fresh('compact'));self.assertFalse(self.fresh('planning'))
                 self.put(name,original)
 
     def test_terrace_changes_only_invalidate_proposed(self):
-        for name in ('scripts/proposal_terrace_interiors.py','proposal/interiors/leisure/terrace.json','scripts/proposal_poolgarden_interiors.py','proposal/interiors/leisure/poolgarden.json','scripts/proposal_workshop_interiors.py','proposal/interiors/leisure/workshop.json'):
+        for name in ('scripts/interiors/proposal_terrace_interiors.py','proposal/interiors/leisure/terrace.json','scripts/interiors/proposal_poolgarden_interiors.py','proposal/interiors/leisure/poolgarden.json','scripts/interiors/proposal_workshop_interiors.py','proposal/interiors/leisure/workshop.json'):
             with self.subTest(name=name):
                 original=(self.root/name).read_text();self.put(name,'changed terrace')
                 self.assertFalse(self.fresh('compact'));self.assertTrue(self.fresh('planning'))
                 self.put(name,original)
 
     def test_planning_overlay_does_not_invalidate_compact(self):
-        self.put('proposal/design-spec-planning.json', '{"changed": true}')
+        self.put('proposal/specs/design-spec-planning.json', '{"changed": true}')
         self.assertFalse(self.fresh())
         self.assertTrue(self.fresh('compact'))
 
     def test_garden_and_shared_primitive_changes_invalidate_both(self):
-        for name in ('scripts/proposal_garden_levels.py', 'scripts/build_model.py'):
+        for name in ('scripts/model/proposal_garden_levels.py', 'scripts/model/build_model.py'):
             with self.subTest(name=name):
                 original = (self.root / name).read_text()
                 self.put(name, 'changed')
@@ -93,7 +99,7 @@ class BuildCacheTests(unittest.TestCase):
                 self.put(name, original)
 
     def test_compact_only_module_does_not_invalidate_planning(self):
-        self.put('scripts/proposal_workshop.py', 'changed')
+        self.put('scripts/model/proposal_workshop.py', 'changed')
         self.assertTrue(self.fresh())
         self.assertFalse(self.fresh('compact'))
 
@@ -109,7 +115,7 @@ class BuildCacheTests(unittest.TestCase):
                 self.assertTrue(self.fresh())
 
     def test_new_optional_input_invalidates_cache(self):
-        self.put('proposal/P5_internal-garden-area.json', '{}')
+        self.put('proposal/studies/p5/P5_internal-garden-area.json', '{}')
         self.assertFalse(self.fresh())
 
     def test_blender_change_invalidates_cache(self):
@@ -118,7 +124,7 @@ class BuildCacheTests(unittest.TestCase):
 
     def test_source_change_during_build_cannot_record_success(self):
         inputs = build.source_hashes(self.root, 'planning')
-        self.put('proposal/site-terrain.json', 'changed during build')
+        self.put('proposal/specs/site-terrain.json', 'changed during build')
         with self.assertRaises(RuntimeError):
             build.record_success(self.root, 'planning', self.binary, inputs)
         self.assertFalse(self.fresh())
@@ -134,17 +140,17 @@ class BuildCacheTests(unittest.TestCase):
 
     def test_planning_stage_is_timed_and_garden_is_a_dependency(self):
         modules = list(build.modules_for('planning'))
-        self.assertLess(modules.index('proposal_garden_levels.py'), modules.index('proposal_planning.py'))
-        self.assertEqual(modules[modules.index('proposal_planning.py') + 1], 'proposal_appearance.py')
-        self.assertIn('scripts/proposal_garden_levels.py', build.source_hashes(self.root, 'planning'))
+        self.assertLess(modules.index('model/proposal_garden_levels.py'), modules.index('model/proposal_planning.py'))
+        self.assertEqual(modules[modules.index('model/proposal_planning.py') + 1], 'model/proposal_appearance.py')
+        self.assertIn('scripts/model/proposal_garden_levels.py', build.source_hashes(self.root, 'planning'))
 
     def test_finish_refresh_accepts_only_finish_source_changes(self):
-        self.put('scripts/proposal_appearance.py', 'updated tagging')
-        self.put('scripts/exterior_exposure.py', 'updated exposure')
+        self.put('scripts/model/proposal_appearance.py', 'updated tagging')
+        self.put('scripts/geometry/exterior_exposure.py', 'updated exposure')
         self.assertFalse(self.fresh())
         self.assertEqual(validate_checkpoint(self.root, 'planning', self.binary),
                          build.source_hashes(self.root, 'planning'))
-        self.put('proposal/design-spec-planning.json', 'changed architecture')
+        self.put('proposal/specs/design-spec-planning.json', 'changed architecture')
         with self.assertRaisesRegex(RuntimeError, 'Architecture/build inputs changed'):
             validate_checkpoint(self.root, 'planning', self.binary)
 
@@ -161,7 +167,7 @@ class BuildCacheTests(unittest.TestCase):
         self.binary.write_text('different binary')
         with self.assertRaisesRegex(RuntimeError, 'Blender changed'):
             validate_checkpoint(self.root, 'planning', self.binary)
-        self.put('output-proposed-planning/build-cache.json', '[]')
+        self.put('outputs/output-proposed-planning/build-cache.json', '[]')
         with self.assertRaises(RuntimeError):
             validate_checkpoint(self.root, 'planning', self.binary)
 
@@ -202,7 +208,7 @@ class RunnerTests(unittest.TestCase):
             runner.main(['--variant', 'planning', '--appearance-only', '--models-only'])
         self.assertEqual(run.call_count, 1)
         command = run.call_args.args[0]
-        self.assertEqual(command[-4:], ['--python', 'scripts/refresh_exterior_appearance.py', '--', 'planning'])
+        self.assertEqual(command[-4:], ['--python', 'scripts/build/refresh_exterior_appearance.py', '--', 'planning'])
 
     def test_failure_stops_before_viewer_and_records_failed_timing(self):
         with patch.object(runner, 'current_build', return_value=(False, 'changed')), patch.object(
@@ -210,7 +216,7 @@ class RunnerTests(unittest.TestCase):
             with self.assertRaises(subprocess.CalledProcessError):
                 runner.main(['--variant', 'planning', '--viewer-only'])
         self.assertEqual(run.call_count, 1)
-        report = json.loads((self.root / 'regenerate-planning-timings.json').read_text())
+        report = json.loads((self.root / 'logs/regenerate-planning-timings.json').read_text())
         self.assertFalse(report['success'])
         self.assertFalse(report['stages'][-1]['success'])
 
@@ -226,7 +232,7 @@ class RunnerTests(unittest.TestCase):
         with patch.object(runner, 'current_build', return_value=(False, 'changed')), patch.object(runner, 'run', side_effect=execute) as run:
             runner.main(['--viewer-only'])
         self.assertEqual(run.call_count, 3)
-        report = json.loads((self.root / 'regenerate-all-timings.json').read_text())
+        report = json.loads((self.root / 'logs/regenerate-all-timings.json').read_text())
         self.assertTrue(report['success'])
         self.assertEqual({r['variant'] for r in report['model_results']}, completed)
 
@@ -243,7 +249,7 @@ class RunnerTests(unittest.TestCase):
             with self.assertRaises(subprocess.CalledProcessError):
                 runner.main(['--viewer-only'])
         self.assertEqual(completed, {'compact', 'planning'})
-        self.assertFalse(json.loads((self.root / 'regenerate-all-timings.json').read_text())['success'])
+        self.assertFalse(json.loads((self.root / 'logs/regenerate-all-timings.json').read_text())['success'])
 
     def test_drawing_packs_overlap_and_viewer_waits_for_both_checks(self):
         barrier = threading.Barrier(2)
@@ -261,7 +267,7 @@ class RunnerTests(unittest.TestCase):
                 built.add(variant)
         with patch.object(runner, 'current_build', return_value=(True, 'current')), patch.object(runner, 'run', side_effect=execute):
             runner.main([])
-        report = json.loads((self.root / 'regenerate-all-timings.json').read_text())
+        report = json.loads((self.root / 'logs/regenerate-all-timings.json').read_text())
         self.assertTrue(report['success'])
         self.assertEqual({r['variant'] for r in report['drawing_results']}, checked)
 
@@ -281,8 +287,8 @@ class RunnerTests(unittest.TestCase):
             with self.assertRaises(subprocess.CalledProcessError):
                 runner.main([])
         self.assertEqual(checked, {'compact', 'planning'})
-        self.assertFalse(json.loads((self.root / 'regenerate-all-timings.json').read_text())['success'])
-        failed = json.loads((self.root / 'output-proposed-planning/runner-drawings-timings.json').read_text())
+        self.assertFalse(json.loads((self.root / 'logs/regenerate-all-timings.json').read_text())['success'])
+        failed = json.loads((self.root / 'outputs/output-proposed-planning/runner-drawings-timings.json').read_text())
         self.assertFalse(failed['success'])
 
     def test_jobs_one_keeps_drawing_packs_sequential(self):

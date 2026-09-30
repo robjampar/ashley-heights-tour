@@ -27,7 +27,7 @@ class ExteriorFinishFaces(unittest.TestCase):
     def setUpClass(cls):
         cls.models = {}
         for variant in ('compact', 'planning'):
-            path = ROOT / f'output-proposed-{variant}/geometry.json'
+            path = ROOT / f'outputs/output-proposed-{variant}/geometry.json'
             if not path.exists():
                 raise unittest.SkipTest('Build both current designs first')
             cls.models[variant] = {

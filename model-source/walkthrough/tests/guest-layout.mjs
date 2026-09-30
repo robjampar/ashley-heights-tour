@@ -6,7 +6,7 @@ import {Navigation} from '../src/navigation.js';
 import {restrictNavigation} from './restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/guest.json',import.meta.url)));
 const native=process.env.GUEST_NAV,variant=process.env.GUEST_VARIANT??'compact';
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-compact/navigation.json',import.meta.url));
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-compact/navigation.json',import.meta.url));
 const base=JSON.parse(bytes),sourceSha256=createHash('sha256').update(bytes).digest('hex');
 const removed=['Principal bed','Principal right drawers','Principal left bedside','Principal pine wardrobe','Principal television','Upstairs photo detail | Principal wardrobe','Upstairs photo detail | Principal narrow CD tower'];
 const item=(name,box,top=4.2)=>({name,box,bottom:2.8,top});

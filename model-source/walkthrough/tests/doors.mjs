@@ -7,7 +7,7 @@ const browser=await chromium.launch({executablePath:'/Applications/Google Chrome
 const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];
 page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
 if(process.env.ASHLEY_DOOR_SCRATCH==='1'){
- const root=fileURLToPath(new URL('../../',import.meta.url)),assets=root+'photo-review/door-motion-combined/';
+ const root=fileURLToPath(new URL('../../',import.meta.url)),assets=root+'archive/photo-review/door-motion-combined/';
  const bundle=await build({entryPoints:[root+'walkthrough/src/main.js'],bundle:true,write:false,format:'esm'});
  await page.route('http://127.0.0.1:8765/',r=>r.fulfill({path:root+'walkthrough/index.html',contentType:'text/html'}));
  await page.route('**/style.css',r=>r.fulfill({path:root+'walkthrough/style.css',contentType:'text/css'}));

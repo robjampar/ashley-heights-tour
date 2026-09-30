@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
-const output=root+'photo-review/garage-door-motion/';
+const output=root+'archive/photo-review/garage-door-motion/';
 const assets=process.env.ASHLEY_DOOR_PROOF_DIR||output;
 const scratch=process.env.ASHLEY_GARAGE_SCRATCH==='1';
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});

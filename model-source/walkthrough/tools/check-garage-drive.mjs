@@ -1,6 +1,6 @@
 // Retained garage access with all four outdoor spaces and the other garage car occupied.
 import fs from'node:fs';import assert from'node:assert/strict';import{DriveWorld,HybridPlanner,gateGeometry}from'../src/drive.js';
-const root=new URL('../../',import.meta.url),variant=process.argv[2]??'compact',n=JSON.parse(fs.readFileSync(process.env.GARAGE_DRIVE_NAV??new URL(`output-proposed-${variant}/navigation.json`,root))),cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/garage.json',root))),[cx,cy]=cfg.fourthBay.center;
+const root=new URL('../../',import.meta.url),variant=process.argv[2]??'compact',n=JSON.parse(fs.readFileSync(process.env.GARAGE_DRIVE_NAV??new URL(`outputs/output-proposed-${variant}/navigation.json`,root))),cfg=JSON.parse(fs.readFileSync(new URL('proposal/interiors/leisure/garage.json',root))),[cx,cy]=cfg.fourthBay.center;
 if(!n.obstacles.some(o=>o.name==='Proposal | Compact car N3'))n.obstacles.push({name:'Proposal | Compact car N3',box:[cx-.9,cy-2.2,cx+.9,cy+2.2],bottom:0,top:1.55});
 const g=gateGeometry(n),road=k=>({x:g.centre[0]+g.out[0]*k,y:g.centre[1]+g.out[1]*k}),start={...road(8.5),t:g.inward},exit={...road(6),t:g.inward+Math.PI},reports=[];
 for(const car of cfg.cars){

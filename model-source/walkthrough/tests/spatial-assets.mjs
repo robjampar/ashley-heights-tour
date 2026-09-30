@@ -55,4 +55,4 @@ for(const [name,asset,navFile]of [['original','house.glb','navigation.json'],['p
  report.models.push(result);console.log(JSON.stringify(result,null,2));
  for(const mesh of meshes)mesh.geometry.dispose();for(const geometry of sources.values())geometry.dispose();
 }
-await fs.writeFile(new URL('./spatial-assets-proof.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
+await fs.writeFile(new URL('../test-results/spatial-assets-proof.json',import.meta.url),JSON.stringify(report,null,2)+'\n');

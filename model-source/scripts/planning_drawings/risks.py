@@ -96,7 +96,7 @@ def evaluate(ctx, ex, pr, schedule):
         R.append(_r('R10', 'Garden workshop', 'GPDO 2015 Sch.2 Part 1 Class E(e): max 2.5 m high within 2 m of a boundary (benchmark only — it is part of this application); ' + SPD + ' garages and outbuildings summary: "subservient in scale and position"',
                     f"{ws_['outside_area_m2']:.1f} m², flat roof {ws_['roof_top_m']:.2f} m, {ws_['crawl_space_m']:.1f} m from both fences, at the far end of the garden",
                     '≤ 2.5 m within 2 m of a boundary meets the Class E height benchmark only; other limitations still apply', 'amber',
-                    'Lower the roof to 2.5 m (ceiling 2.3 m) to meet that height benchmark; establish all other Class E criteria separately.', ['gardenWorkshopPlan', 'proposal_workshop.py']))
+                    'Lower the roof to 2.5 m (ceiling 2.3 m) to meet that height benchmark; establish all other Class E criteria separately.', ['gardenWorkshopPlan', 'model/proposal_workshop.py']))
     # R11 Front wall
     # Existing front wall and No 3's adjoining wall: 26 brick courses = 1.95 m (owner count).
     wall_top = float((spec.get('frontage') or {}).get('wall_top_z', 1.95)); existing_top = 1.95

@@ -2,7 +2,7 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash}from'node:crypto';
 import {Navigation}from'../src/navigation.js';import{restrictNavigation}from'./restrict-navigation.mjs';
 const cfg=JSON.parse(fs.readFileSync(new URL('../../proposal/interiors/leisure/family.json',import.meta.url))),native=process.env.FAMILY_NAV,variant=process.env.FAMILY_VARIANT??'compact';
-const bytes=fs.readFileSync(native??new URL('../../output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes);
+const bytes=fs.readFileSync(native??new URL('../../outputs/output-proposed-'+variant+'/navigation.json',import.meta.url)),base=JSON.parse(bytes);
 const item=(name,box,top=4.5)=>({name,box,bottom:2.8,top});
 const table=(t,i)=>({name:'nesting table '+i,polygon:Array.from({length:64},(_,j)=>[t.center[0]+t.radii[0]*Math.cos(j*Math.PI/32),t.center[1]+t.radii[1]*Math.sin(j*Math.PI/32)]),bottom:2.8,top:2.8+t.height});
 const furniture=[...['sofa','desk','chair','sideTable','storage'].map(k=>item('Family 01 | '+k,cfg[k])),...cfg.tables.map(table)];

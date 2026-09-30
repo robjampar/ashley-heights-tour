@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import {build} from 'esbuild';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-const root=fileURLToPath(new URL('../../',import.meta.url)),output=root+'photo-review/door-motion-combined/';
+const root=fileURLToPath(new URL('../../',import.meta.url)),output=root+'archive/photo-review/door-motion-combined/';
 const scratch=process.env.ASHLEY_DOOR_SCRATCH==='1';
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
 const page=await browser.newPage({viewport:{width:1200,height:850}}),errors=[];page.on('pageerror',e=>errors.push(e.message));

@@ -27,9 +27,9 @@ Design judgment: the bed has a calm, complete wall composition and the sofa has 
 Source and evidence:
 
 - `proposal/interiors/principal/bedroom.json`: dimensions and intent.
-- `scripts/preview_principal_bedroom.py`: editable native room generation from each saved house.
-- `scripts/draw_principal_bedroom.py`: measured SVG and route envelopes.
-- `scripts/audit_principal_bedroom.py`: independent comparisons to generated mesh bounds, wall contact, screen mounting and vault section.
+- `scripts/studies/preview_principal_bedroom.py`: editable native room generation from each saved house.
+- `scripts/drawings/draw_principal_bedroom.py`: measured SVG and route envelopes.
+- `scripts/audits/audit_principal_bedroom.py`: independent comparisons to generated mesh bounds, wall contact, screen mounting and vault section.
 - `measurements.json`, `native-audit.json`, `browser-checks.json`, and each variant's `report.json` record checks.
 - Each variant has `Principal bedroom — south wall.blend` locally; baseline hashes are recorded by source staging.
 

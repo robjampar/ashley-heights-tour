@@ -1,6 +1,10 @@
+
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import hashlib,json,tempfile,unittest
 from pathlib import Path
-from scripts.stage_room_studies import stage_room_studies
+from scripts.publication.stage_room_studies import stage_room_studies
 
 
 class RoomStudyPublicationTests(unittest.TestCase):

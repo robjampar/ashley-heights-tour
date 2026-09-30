@@ -96,7 +96,7 @@ def checklist(ctx, manifest_sheets):
         s('L9', 'Ancient woodland and ancient/veteran tree screening', 'reports register', 'verify', 'Ask the arboriculturist to establish whether a separate impact assessment is triggered'),
         s('L10', 'Daylight/sunlight and neighbour amenity', 'PA-070 and consultant review', 'verify', 'Assess affected neighbours and whether a daylight study is needed'),
         s('L11', 'Plant specification and acoustic evidence', 'reports register', 'external', 'Resolve equipment and location; no designed plant enclosure'),
-        s('P1', 'Applicant details, title interests and designations', 'planning-context.json', 'verify', 'Postcode, applicant details and all designations except owner-confirmed Green Belt status remain unverified'),
+        s('P1', 'Applicant details, title interests and designations', 'specs/planning-context.json', 'verify', 'Postcode, applicant details and all designations except owner-confirmed Green Belt status remain unverified'),
         s('P2', 'Survey and floorspace reconciliation', 'PA-080 and manifest.json', 'external', 'Measured building/topographical survey; reconcile model room and wall envelopes before CIL'),
         s('P3', 'Access, visibility and bin/cycle storage', 'PA-003', 'verify', 'Concept splays are not highway-approved; relocate storage marker into a workable garage layout'),
         s('P4', 'Decision evidence and character-area policy', 'supporting/DAS.pdf', 'verify', 'Retrieve decision notices and drawings for retained precedent leads; verify character-area policy'),

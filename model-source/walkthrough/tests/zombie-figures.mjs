@@ -15,4 +15,4 @@ renderer.render(scene,camera);window.proof={figures:3,meshes:figures.map(f=>f.me
 `,resolveDir:root,sourcefile:'zombie-proof.js'},bundle:true,write:false,format:'iife'});
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});const page=await browser.newPage({viewport:{width:1100,height:760}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.setContent('<style>body{margin:0}</style>');await page.addScriptTag({content:result.outputFiles[0].text});await page.waitForFunction(()=>window.proof);
-await page.screenshot({path:path.join(root,'tests/easter/figures.png')});console.log(JSON.stringify({...await page.evaluate(()=>window.proof),errors},null,2));await browser.close();if(errors.length)process.exitCode=1;
+await page.screenshot({path:path.join(root,'test-results/easter/figures.png')});console.log(JSON.stringify({...await page.evaluate(()=>window.proof),errors},null,2));await browser.close();if(errors.length)process.exitCode=1;

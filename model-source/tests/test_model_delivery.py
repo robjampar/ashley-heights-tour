@@ -1,7 +1,11 @@
+
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import gzip
 import hashlib
 import unittest
-from scripts.model_delivery import delivery_asset
+from scripts.publication.model_delivery import delivery_asset
 
 class ModelDeliveryTests(unittest.TestCase):
     def test_gzip_round_trip_and_stable_name(self):
@@ -19,7 +23,7 @@ class ModelDeliveryTests(unittest.TestCase):
         from unittest.mock import patch
         with TemporaryDirectory() as folder:
             first=delivery_asset('room.glb',b'glTFdata',folder)
-            with patch('scripts.model_delivery.gzip.compress',side_effect=AssertionError('recompressed')):
+            with patch('scripts.publication.model_delivery.gzip.compress',side_effect=AssertionError('recompressed')):
                 self.assertEqual(delivery_asset('room.glb',b'glTFdata',folder),first)
 
     def test_changed_model_and_corrupt_cache_rebuild(self):

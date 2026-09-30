@@ -52,7 +52,7 @@ def schedule_data(ctx, ex, pr):
 def build(argv=None):
     ap = argparse.ArgumentParser(); ap.add_argument('--variant', default='planning'); ap.add_argument('--sheets', default=''); ap.add_argument('--check', action='store_true'); ap.add_argument('--no-docs', action='store_true'); ap.add_argument('--out', default=str(OUT))
     a = ap.parse_args(argv)
-    t0 = time.time(); ctx = Context(ROOT / ("proposal/planning-context.json" if a.variant == "planning" else "proposal/planning-context-proposed.json")); out = Path(a.out); out.mkdir(parents=True, exist_ok=True); (out / 'supporting').mkdir(exist_ok=True); (out / 'checks').mkdir(exist_ok=True)
+    t0 = time.time(); ctx = Context(ROOT / ("proposal/specs/planning-context.json" if a.variant == "planning" else "proposal/specs/planning-context-proposed.json")); out = Path(a.out); out.mkdir(parents=True, exist_ok=True); (out / 'supporting').mkdir(exist_ok=True); (out / 'checks').mkdir(exist_ok=True)
     ex = load_existing(); pr = load_proposed(a.variant)
     manifest_path = out / 'manifest.json'; old = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     only = set(s.strip() for s in a.sheets.split(',') if s.strip())
