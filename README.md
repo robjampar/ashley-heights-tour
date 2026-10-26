@@ -97,7 +97,7 @@ The model tour offers **Existing**, **Proposed (planning application)** (`model/
 
 In either proposal, **Settings → Exterior finishes** switches the house and extensions between **White render + oak slats** and **Plain brick**, independently of **Dark grey** and **Light grey** roof tiles. Dormer fronts and cheeks always use matching tiles. Preferences are remembered separately for each design. Garden buildings, boundary walls and interiors keep their finishes. These are visual comparisons, not amendments to a planning application.
 
-Current checkpoint: 25 September 2026. Both proposal models include the latest site levels, roof junctions and exterior finishes. The planning scheme keeps the existing garden buildings/layout; the full proposal includes its garden and leisure additions.
+Current walkthrough checkpoint: 26 October 2026. The current proposals include the continuous main-wing roof, original-house loft stair and revised bedroom suites. Proposed also includes the brick garden workshop (approximately 23.65 m² inside and 2.45 m modelled overall height), retained workbench/tool storage and coordinated lighting. The planning scheme keeps its separate garden layout. Existing photo tours, brochures and isolated design studies retain their published links and issue dates.
 
 `model/` contains the static viewer, nine GLBs, their navigation data and content-hashed JavaScript/CSS. GitHub Pages serves it from the same `main` branch. Large native Blender/SketchUp projects remain local. Geometry is a photo/plan reconstruction; unmeasured details remain estimates.
 

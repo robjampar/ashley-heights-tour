@@ -11,6 +11,14 @@
     "textures/f566ca179a97b6bf43b1e803fbc11aacdc1c345342ec2865cbeea837fcf0841e.png": {
       "bytes": 2670416,
       "sha256": "f566ca179a97b6bf43b1e803fbc11aacdc1c345342ec2865cbeea837fcf0841e"
+    },
+    "textures/66c73defcc62ac090cb838e8455b8c1febbfea29a15c8f40a5e2d398b2ba4733.jpg": {
+      "bytes": 2060618,
+      "sha256": "66c73defcc62ac090cb838e8455b8c1febbfea29a15c8f40a5e2d398b2ba4733"
+    },
+    "textures/b83b382cbc3c9aadc500b50d466925b7dd32c59a4d99c4dcb87f0ca3e774d963.png": {
+      "bytes": 1882971,
+      "sha256": "b83b382cbc3c9aadc500b50d466925b7dd32c59a4d99c4dcb87f0ca3e774d963"
     }
   },
   "brochure": {
@@ -2115,7 +2123,7 @@
       "method": "Measured furniture studies; separate design review required"
     }
   },
-  "published_utc": "2026-09-30T13:57:18.871042+00:00",
+  "published_utc": "2026-10-26T09:03:04.098936+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -2128,21 +2136,21 @@
       "bytes": 531449,
       "sha256": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
     },
-    "proposal-compact.56310d44af35f17b.glb.gz": {
-      "bytes": 45552187,
-      "sha256": "56310d44af35f17b691112eaf456aea6adbb7f65edd89065d491ac4ab3896746"
+    "proposal-compact.ebe984af95d9841c.glb.gz": {
+      "bytes": 42538361,
+      "sha256": "ebe984af95d9841c6cfc3f83f23a95d2b38b2fdaffa329ca1f5a3901277faa78"
     },
-    "proposal-compact-navigation.e4551a6fc2f4e2bb.json": {
-      "bytes": 1938990,
-      "sha256": "e4551a6fc2f4e2bb398bd1f42b4526d9ff477550e3ef0c9f7b82db1127dd3a19"
+    "proposal-compact-navigation.d98b335e9d6a67ee.json": {
+      "bytes": 2365245,
+      "sha256": "d98b335e9d6a67eec08e65f058792cfab894f15e63890f112dace26141a78d79"
     },
-    "proposal-planning.a5f516210ce8e6d2.glb.gz": {
-      "bytes": 41218899,
-      "sha256": "a5f516210ce8e6d2f6b5286fe5412608f993f66d6aa4307ac7564bdd76fb2950"
+    "proposal-planning.8423bf66f063cc1d.glb.gz": {
+      "bytes": 37365866,
+      "sha256": "8423bf66f063cc1d355324abf037e5bb24fc0a7c3d115f98a4352fe3c08a822e"
     },
-    "proposal-planning-navigation.cc410bd7bc874bad.json": {
-      "bytes": 1608610,
-      "sha256": "cc410bd7bc874badade820083413c8a395b51a56d7326941374432537d43091e"
+    "proposal-planning-navigation.d668be02acae1ce1.json": {
+      "bytes": 1933872,
+      "sha256": "d668be02acae1ce180c9c90fd78b0da29f5ac17d6b4d9c57533888e5e46086b0"
     },
     "redesign-i1.750aaedc8f2d45a6.glb.gz": {
       "bytes": 11099833,
@@ -2200,13 +2208,13 @@
       "bytes": 2010991,
       "sha256": "5ac4c2d56c138bc30b72b5b9a7f8fbbdca6c3c5988c1634e75f68dd1e137c02c"
     },
-    "style.ad5fbc1e1d466a1b.css": {
-      "bytes": 25849,
-      "sha256": "ad5fbc1e1d466a1bc209606cb3249e0ae8ac30b728c2e8ed988a4343a9b9061f"
+    "style.ebb8ecb3363bef49.css": {
+      "bytes": 26736,
+      "sha256": "ebb8ecb3363bef49b6042a9a300359606621bea4ab720d674f271b529639452e"
     },
-    "app.48221d2d7f27d171.js": {
-      "bytes": 5414856,
-      "sha256": "48221d2d7f27d171ba456938bbe40b0476088e599c698a70b17f1519a3e5e6d8"
+    "app.8510037bb91baa56.js": {
+      "bytes": 5439753,
+      "sha256": "8510037bb91baa565c05da353c7328e744d54f80294dd095d324e0f15dfdd02d"
     }
   },
   "previous_assets": {
@@ -2244,6 +2252,42 @@
       "protected_committed_release": true,
       "retired_at_epoch": 1790776637.191681,
       "retain_until_epoch": 1790778437.191681
+    },
+    "proposal-compact.56310d44af35f17b.glb.gz": {
+      "bytes": 45552187,
+      "sha256": "56310d44af35f17b691112eaf456aea6adbb7f65edd89065d491ac4ab3896746",
+      "retired_at_epoch": 1793005384.098936,
+      "retain_until_epoch": 1793007184.098936
+    },
+    "proposal-compact-navigation.e4551a6fc2f4e2bb.json": {
+      "bytes": 1938990,
+      "sha256": "e4551a6fc2f4e2bb398bd1f42b4526d9ff477550e3ef0c9f7b82db1127dd3a19",
+      "retired_at_epoch": 1793005384.098936,
+      "retain_until_epoch": 1793007184.098936
+    },
+    "proposal-planning.a5f516210ce8e6d2.glb.gz": {
+      "bytes": 41218899,
+      "sha256": "a5f516210ce8e6d2f6b5286fe5412608f993f66d6aa4307ac7564bdd76fb2950",
+      "retired_at_epoch": 1793005384.098936,
+      "retain_until_epoch": 1793007184.098936
+    },
+    "proposal-planning-navigation.cc410bd7bc874bad.json": {
+      "bytes": 1608610,
+      "sha256": "cc410bd7bc874badade820083413c8a395b51a56d7326941374432537d43091e",
+      "retired_at_epoch": 1793005384.098936,
+      "retain_until_epoch": 1793007184.098936
+    },
+    "style.ad5fbc1e1d466a1b.css": {
+      "bytes": 25849,
+      "sha256": "ad5fbc1e1d466a1bc209606cb3249e0ae8ac30b728c2e8ed988a4343a9b9061f",
+      "retired_at_epoch": 1793005384.098936,
+      "retain_until_epoch": 1793007184.098936
+    },
+    "app.48221d2d7f27d171.js": {
+      "bytes": 5414856,
+      "sha256": "48221d2d7f27d171ba456938bbe40b0476088e599c698a70b17f1519a3e5e6d8",
+      "retired_at_epoch": 1793005384.098936,
+      "retain_until_epoch": 1793007184.098936
     }
   },
   "easter": {
@@ -2276,15 +2320,15 @@
     "planning": "./?design=planning",
     "proposal_label": "Proposed",
     "proposal_revision": "P8",
-    "proposal_updated_at": "2026-09-28T01:33:14.778274+00:00",
-    "proposal_native_sha256": "da94dc0a1794dfa8a4201c082b23d9d6996f450d2868a4b4f087730f38d73c4a",
-    "proposal_geometry_sha256": "c685d59d3133bd33c3c200565f8ae25b3365710c9de957048c057c043c2a3bc2",
+    "proposal_updated_at": "2026-10-26T01:44:14.064404+00:00",
+    "proposal_native_sha256": "d3bc5d2989c4c9aad39065c08ce48c839a55580018e7a0b19eb77215632e3cbe",
+    "proposal_geometry_sha256": "3fb81b911061a35f7b4903f8f7d867fd5aeafc029de295dd7e00dc152f7b87b7",
     "gate_aligned": "./?design=g1",
     "gate_aligned_updated_at": "2026-09-25T09:13:00.386616+00:00",
     "planning_label": "Proposed (planning application)",
-    "planning_updated_at": "2026-09-28T01:31:37.640600+00:00",
-    "planning_native_sha256": "25cfd9b2ab5c09d8deff43df62987ca3f453909c4e4b461075374f7aae59447b",
-    "planning_geometry_sha256": "6e7e42222b143973607ff3bd3d684195fed8fb10b9a3b4101cd5945d9ce069ad"
+    "planning_updated_at": "2026-10-26T00:35:54.239495+00:00",
+    "planning_native_sha256": "5eaada002d8654e2ab09c34a6792ddf350d24b4c897cbbb7ef1c4c78c072be36",
+    "planning_geometry_sha256": "1294046e1db325da3dc314bad7fdaaef9fd1299c7b474d99548814e913082cb5"
   },
   "exterior_finishes": {
     "scope": "house-and-extensions",
@@ -2676,5 +2720,174 @@
     "basis": "Approximate road and low-detail neighbouring buildings from supplied site images"
   },
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates.",
-  "staged_site_bytes": 693338914
+  "staged_site_bytes": 879382728,
+  "previous_runtime_assets": {},
+  "runtime_assets": {
+    "visual-quality/9ce5a8a9108f53d4/compact-daylight.json": {
+      "bytes": 2414105,
+      "sha256": "dc1c4ec3ccdfd493fdf5d242341cb0d55094b97c1adfe978c32bfc4b346dd092"
+    },
+    "visual-quality/9ce5a8a9108f53d4/compact-furnishings.glb": {
+      "bytes": 37538648,
+      "sha256": "741372db8dacd15fdb12a3da7567edee246f29211ef6660d9e8bca586ce0353f"
+    },
+    "visual-quality/9ce5a8a9108f53d4/compact-furnishings.json": {
+      "bytes": 436515,
+      "sha256": "c3ea9460ea7b4218b5427e41f99f63bdc66db82db67773df35d124b508baa150"
+    },
+    "visual-quality/9ce5a8a9108f53d4/daylight-settings.json": {
+      "bytes": 237,
+      "sha256": "9ec312cb26f68a1f603f13e48b5c8546ae7a86492989657f1b084249adab07c8"
+    },
+    "visual-quality/9ce5a8a9108f53d4/planning-daylight.json": {
+      "bytes": 1645565,
+      "sha256": "be91ccd59b38cdd66b1d24fb067910ffad92e7d14472bf9be65c7b92719678b3"
+    },
+    "visual-quality/9ce5a8a9108f53d4/planning-furnishings.glb": {
+      "bytes": 34674880,
+      "sha256": "576e99e676310faf837b63d68f55eae8d4dce99dc728f6ffb12fefd137e16958"
+    },
+    "visual-quality/9ce5a8a9108f53d4/planning-furnishings.json": {
+      "bytes": 408660,
+      "sha256": "7e174964a0e72c0a07de0f7e379529054f9c4dc6c52820109b455542d6d9c505"
+    },
+    "vehicles/0c084002aafd80d8/CREDITS.md": {
+      "bytes": 4039,
+      "sha256": "a95768fc86b3626447b6c559af189fa0a4f317efadc15ae2e47060ef7fe174e6"
+    },
+    "vehicles/0c084002aafd80d8/credits.html": {
+      "bytes": 1810,
+      "sha256": "9b9791068be6012fbd3c94fcb39d5ec294d36e98f1a9464e81e20557cebf84ce"
+    },
+    "vehicles/0c084002aafd80d8/fiat-500.glb": {
+      "bytes": 6697240,
+      "sha256": "a648ac8556c6e18e7a4eadf96b139e0df410702d80547a55c59fe7bcbd50019f"
+    },
+    "vehicles/0c084002aafd80d8/fiat-500.json": {
+      "bytes": 245,
+      "sha256": "a07133e5dfad449d980bf51aed80fcaa1de0b5560cf0f4176e154ae71b045662"
+    },
+    "vehicles/0c084002aafd80d8/nissan-nv200.glb": {
+      "bytes": 2680536,
+      "sha256": "dadb9336a07b4aa38f33ff3b034d2fac1f82e3841d7a458da37c1b71a5509487"
+    },
+    "vehicles/0c084002aafd80d8/nissan-nv200.json": {
+      "bytes": 343,
+      "sha256": "16762919d9fab82aa4e82d9e344ba43777468423f44d340d2c40df232a9133da"
+    },
+    "vehicles/0c084002aafd80d8/tesla-model-3.glb": {
+      "bytes": 5442756,
+      "sha256": "ce4e68a9a742850f65b5338ffc8ea1d9eeffb3234d7c6f54749d1850e4cfc1b0"
+    },
+    "vehicles/0c084002aafd80d8/tesla-model-3.json": {
+      "bytes": 271,
+      "sha256": "8622a991caa44dec76de08dc5fe469493867d62faac93885b59143567a7e6194"
+    }
+  },
+  "runtime_directories": {
+    "visual-quality": "visual-quality/9ce5a8a9108f53d4/",
+    "vehicles": "vehicles/0c084002aafd80d8/"
+  },
+  "source_assets": {
+    "house.glb": {
+      "path": "house.fbed43b634ee54c3.glb.gz",
+      "sourceSHA256": "bc357a957f204bb2bb3fd701166ea396b2527cda06b7658d88c5a3bdf8d0fbec"
+    },
+    "navigation.json": {
+      "path": "navigation.ee090474080cd08c.json",
+      "sourceSHA256": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
+    },
+    "proposal-compact.glb": {
+      "path": "proposal-compact.ebe984af95d9841c.glb.gz",
+      "sourceSHA256": "c9000023607cca445fa4a41a8ded52498ec049c473c61da429fe7070bfeda78a"
+    },
+    "proposal-compact-navigation.json": {
+      "path": "proposal-compact-navigation.d98b335e9d6a67ee.json",
+      "sourceSHA256": "d98b335e9d6a67eec08e65f058792cfab894f15e63890f112dace26141a78d79"
+    },
+    "proposal-planning.glb": {
+      "path": "proposal-planning.8423bf66f063cc1d.glb.gz",
+      "sourceSHA256": "aa534efcbb96299ccbdeea2341985e63c7abf939b7b25c695b34c05c946030d7"
+    },
+    "proposal-planning-navigation.json": {
+      "path": "proposal-planning-navigation.d668be02acae1ce1.json",
+      "sourceSHA256": "d668be02acae1ce180c9c90fd78b0da29f5ac17d6b4d9c57533888e5e46086b0"
+    },
+    "redesign-i1.glb": {
+      "path": "redesign-i1.750aaedc8f2d45a6.glb.gz",
+      "sourceSHA256": "5eb0c2a9c90443f1b0d662d0b05192e3de4e32eb93636372e4c0ddfd44619d9a"
+    },
+    "redesign-i1-navigation.json": {
+      "path": "redesign-i1-navigation.8d0efdd5b38dd3ea.json",
+      "sourceSHA256": "8d0efdd5b38dd3eae9a4828ea726ec4a00c6adcea5cbaee1d97ed39570f0abf7"
+    },
+    "redesign-i2.glb": {
+      "path": "redesign-i2.3281a7bf07db6df1.glb.gz",
+      "sourceSHA256": "e066f668e7b850faa836cbeb3a5e6ff5b087c3650430d44a85edb36a19cb283a"
+    },
+    "redesign-i2-navigation.json": {
+      "path": "redesign-i2-navigation.35b73f261d55e096.json",
+      "sourceSHA256": "35b73f261d55e0969b365dac2479d24dc111d2f84d3ef2ec3f534ce90120c76f"
+    },
+    "redesign-i3.glb": {
+      "path": "redesign-i3.c60009941ec18312.glb.gz",
+      "sourceSHA256": "a87df23f20f2bf5603445a0cc85bc8d682e43b1d69a8507f73cc8b59b1a56c88"
+    },
+    "redesign-i3-navigation.json": {
+      "path": "redesign-i3-navigation.559afe0fffe23709.json",
+      "sourceSHA256": "559afe0fffe23709c646fe13b2219b71d5896334f0fa42abd60eabf9d2055b29"
+    },
+    "redesign-e1.glb": {
+      "path": "redesign-e1.12a3916731775a21.glb.gz",
+      "sourceSHA256": "b01728b0b23ab8cbd775d1ca1816cbf8e4331ed3b693bbed50d11c440fd025ad"
+    },
+    "redesign-e1-navigation.json": {
+      "path": "redesign-e1-navigation.71aea8b1a737e77d.json",
+      "sourceSHA256": "71aea8b1a737e77d6883e4120a1b6406b091cfbdf879105e8ed2c11d44ea775b"
+    },
+    "redesign-e2.glb": {
+      "path": "redesign-e2.353a2038b445d0f5.glb.gz",
+      "sourceSHA256": "6cd85a7038eb0ab7691d8e4fd2ba31f8c76f6dc95e6d3ec4b76343f084096caf"
+    },
+    "redesign-e2-navigation.json": {
+      "path": "redesign-e2-navigation.83690541e7bd5367.json",
+      "sourceSHA256": "83690541e7bd53672706ab5e1ca4000fe51cf094bbde00796f894d82a70963e1"
+    },
+    "redesign-e3.glb": {
+      "path": "redesign-e3.546ce6844182a7bc.glb.gz",
+      "sourceSHA256": "59ceff94f4f5056a4f0c7a1c17914c0bdce6b1915de78ef947bf627d02bb1054"
+    },
+    "redesign-e3-navigation.json": {
+      "path": "redesign-e3-navigation.4268eedcca5bdd34.json",
+      "sourceSHA256": "4268eedcca5bdd34feffde71840d1a35b1a638c9f1adc4817bba725083a1357c"
+    },
+    "redesign-g1.glb": {
+      "path": "redesign-g1.361e8cd7317ed466.glb.gz",
+      "sourceSHA256": "dcf35466c0fe0d5ca4383be6ad3d3bb7b4348b683f0b0669f3746118b8f1e921"
+    },
+    "redesign-g1-navigation.json": {
+      "path": "redesign-g1-navigation.5ac4c2d56c138bc3.json",
+      "sourceSHA256": "5ac4c2d56c138bc30b72b5b9a7f8fbbdca6c3c5988c1634e75f68dd1e137c02c"
+    },
+    "style.css": {
+      "path": "style.ebb8ecb3363bef49.css",
+      "sourceSHA256": "ebb8ecb3363bef49b6042a9a300359606621bea4ab720d674f271b529639452e"
+    }
+  },
+  "release_method": "Verified main walkthrough update; existing photo tour, brochure and room studies preserved.",
+  "current_revisions": {
+    "compact": {
+      "continuousWingRoof": "continuous-wing-roof-2026-10-26",
+      "gardenWorkshopEnvelope": "garden-workshop-envelope-2026-10-26"
+    },
+    "planning": {
+      "continuousWingRoof": "continuous-wing-roof-2026-10-26"
+    }
+  },
+  "validation": {
+    "revision": "garden-workshop-envelope-2026-10-26",
+    "sha256": "91df785fe224cf7d8b4ba17ddf882b04c0c539e3b510b80185e39bb830dc66c6",
+    "pythonTests": 114,
+    "viewerTests": 279
+  }
 }
