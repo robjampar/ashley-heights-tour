@@ -1,8 +1,8 @@
 import {Navigation,pointInPolygon} from './navigation.js';
 
 // Car path planning for the "Cars" setting. A Hybrid A* search over
-// (x, y, heading) with the parking study's car (4.4 x 1.8 m, 4.3 m turning
-// radius) drives only on the resin forecourt: every wall, fence, planter,
+// (x, y, heading) uses each vehicle's dimensions and turning radius (falling
+// back to the parking study's hatchback) and drives only on the resin forecourt: every wall, fence, planter,
 // tree and parked car in the navigation data blocks it, and so does any
 // proposal surface above the drive (lawn, paths, terraces), the courtyard
 // and anything outside the plot except the gate apron.
@@ -13,7 +13,7 @@ const wrap=a=>a-TAU*Math.floor((a+Math.PI)/TAU);
 export class DriveWorld {
  constructor(data,{ignore=()=>false,planningMargin=.22}={}) {
   this.data=data;this.bounds=[-11,-26,19,3];
-  this.planningMargin=planningMargin;
+  this.planningMargin=planningMargin;this.vehicle={length:4.4,width:1.8};
   const ground=s=>(s.bottom??0)<.8&&(s.top??3)>.25;
   // The navigation's own ground-level segments: walls split at their real
   // openings, fences, guards and the proposal's partitions.
@@ -74,7 +74,7 @@ export class DriveWorld {
  // The whole car body against everything: its outline is sampled against
  // areas (plot, road, lawns, obstacle boxes), and every nearby wall line is
  // sampled against the body, so a thin wall between two samples still counts.
- carClear(x,y,theta,{length=4.4,width=1.8,margin=this.planningMargin}={}){
+ carClear(x,y,theta,{length=this.vehicle.length,width=this.vehicle.width,margin=this.planningMargin}={}){
   // Near its bay a car parks precisely, so the planning margin shrinks there.
   if(this.goal&&Math.hypot(x-this.goal.x,y-this.goal.y)<2.2)margin=Math.min(margin,.06);
   const c=Math.cos(theta),s=Math.sin(theta),hl=length/2+margin,hw=width/2+margin;

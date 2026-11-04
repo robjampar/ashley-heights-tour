@@ -1,0 +1,17 @@
+import fs from 'node:fs';import crypto from 'node:crypto';
+import * as T from '../../walkthrough/node_modules/three/build/three.module.js';
+import {inspectGlb} from '../../walkthrough/tests/helpers/glb-geometry.mjs';
+import {Navigation} from '../../walkthrough/src/navigation.js';
+const variant=process.argv[2]??'compact',root=new URL('../../',import.meta.url),dir=new URL('walkthrough/test-results/open-suite-eaves-storage-2026-10-23/',root),out=new URL(`outputs/output-open-suite-eaves-${variant}/`,root),file=new URL(process.argv[3]??`Ashley Heights — Proposed (${variant==='planning'?'planning application':variant}).glb`,out),scene=inspectGlb(file),nav=JSON.parse(fs.readFileSync(new URL('navigation.json',out))),meshes=[];
+scene.traverse(m=>{if(!m.isMesh)return;const b=new T.Box3().setFromObject(m);if(b.max.x< -6||b.min.x>12||-b.min.z< -5.5||-b.max.z>8||b.max.y<2.6||b.min.y>8)return;const original=m;m=new T.Mesh(original.geometry.clone().applyMatrix4(original.matrixWorld),original.material);m.name=original.name;m.userData={...original.userData};m.updateMatrixWorld(true);const door=nav.interactiveDoors.find(d=>d.members.includes(m.name));if(door&&door.id.startsWith('Combined suite 01 |')){const h=new T.Vector3(door.hinge[0],door.hinge[2],-door.hinge[1]);m.applyMatrix4(new T.Matrix4().makeTranslation(...h.toArray()).multiply(new T.Matrix4().makeRotationY(door.openDelta)).multiply(new T.Matrix4().makeTranslation(...h.clone().negate().toArray())));m.updateMatrixWorld(true)}m.userData.tag=/Closed winder|Straight oak tread/.test(m.name)?'stair':m.userData.stair_suite_role;meshes.push(m)});
+let src=fs.readFileSync(new URL('./check-study.mjs',import.meta.url),'utf8');src=src.slice(src.indexOf('const failures='));src=src.replaceAll("new URL('study-check.json',dir)","new URL('export-check-'+variant+'.json',dir)");
+src=src.replaceAll('[4.1,3.98,2.8],[4.1,3.65,2.8]','[4.05,3.98,2.8],[4.05,3.65,2.8]').replaceAll('.56,2.8','.59,2.8');
+src=src.replace("[4.65,5.05,5.45]","[4.69,5.05,5.45]");
+src=src.replace("[.55,2.1,2.8],[-1.4,2.1,2.8]","[.55,1.56,2.8],[-.9,1.56,2.8],[-.9,1.68,2.8],[-2.44,1.68,2.8]");
+src=src.replace("bathroom:[[-1.4,2.70,2.8],[-3.7,2.70,2.8]]","bathroom:[[-2.44,1.9,2.8],[-2.44,3.3,2.8],[-1.1,3.25,2.8]],shower:[[-2.44,3.35,2.8],[-3.4,3.85,2.8],[-3.4,4.25,2.8],[-4.35,4.25,2.8]],wc:[[-3.4,3.95,2.8],[-3.85,3.4,2.8]]");
+src=src.replace("k==='suiteEntry'||k==='bathroom'?.75:.8","k==='wc'?.6:k==='suiteDressing'?.75:k==='suiteEntry'||k==='bathroom'?.75:k==='shower'?.7:.8");
+src=src.replace('Math.abs(h.point.y-z)>.025','Math.abs(h.point.y-z)>.035');
+src=src.replace("Cropped spatial study with approximate furnishings and joinery;", "Actual full GLB export; room doors open for passage checks; width references: shower 700 mm, WC 600 mm, bedroom foot 750 mm;");
+src=src.replace("fs.writeFileSync(new URL('export-check-'+variant+'.json',dir),JSON.stringify(result,null,2));", "result.sourceSHA256=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'); result.variant=variant; fs.writeFileSync(new URL('export-check-'+variant+'.json',dir),JSON.stringify(result,null,2));");
+if(process.argv[3])src=src.replace('Actual full GLB export','Material-free regional GLB inspection');
+eval(src);

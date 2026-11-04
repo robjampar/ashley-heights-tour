@@ -1,0 +1,227 @@
+{
+  "scope": "Additional CJ01 joist/masonry solid contact audit, beyond the steel/masonry clash audit. Positive volume is unresolved, not an approved pocket or bearing.",
+  "intersections": [],
+  "approvedForConstruction": false,
+  "priorIntersections": [
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-E27074F",
+      "overlapCm3": 406.332
+    },
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-482F42F",
+      "overlapCm3": 3427.2
+    },
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-30F9F1D",
+      "overlapCm3": 365.818
+    },
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-EFF93DC",
+      "overlapCm3": 8289.09
+    },
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-3348299",
+      "overlapCm3": 4867.2
+    },
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-CF37F9E",
+      "overlapCm3": 8246.43
+    },
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-C697235",
+      "overlapCm3": 578.987
+    },
+    {
+      "joistId": "M-J-01-001",
+      "wallId": "M-BLOCK-EF992A0",
+      "overlapCm3": 479.732
+    },
+    {
+      "joistId": "M-J-01-002",
+      "wallId": "M-BLOCK-C697235",
+      "overlapCm3": 929.25
+    },
+    {
+      "joistId": "M-J-01-002",
+      "wallId": "M-BLOCK-EF992A0",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-01-003",
+      "wallId": "M-BLOCK-C697235",
+      "overlapCm3": 929.25
+    },
+    {
+      "joistId": "M-J-01-003",
+      "wallId": "M-BLOCK-EF992A0",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-01-004",
+      "wallId": "M-BLOCK-C697235",
+      "overlapCm3": 929.25
+    },
+    {
+      "joistId": "M-J-01-004",
+      "wallId": "M-BLOCK-EF992A0",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-01-005",
+      "wallId": "M-BLOCK-8D5FD18",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-01-006",
+      "wallId": "M-BLOCK-8D5FD18",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-01-007",
+      "wallId": "M-BLOCK-8D5FD18",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-01-008",
+      "wallId": "M-BLOCK-8D5FD18",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-01-009",
+      "wallId": "M-BLOCK-234CDFC",
+      "overlapCm3": 401.94
+    },
+    {
+      "joistId": "M-J-01-010",
+      "wallId": "M-BLOCK-234CDFC",
+      "overlapCm3": 401.94
+    },
+    {
+      "joistId": "M-J-01-011",
+      "wallId": "M-BLOCK-234CDFC",
+      "overlapCm3": 401.94
+    },
+    {
+      "joistId": "M-J-01-012",
+      "wallId": "M-BLOCK-234CDFC",
+      "overlapCm3": 401.94
+    },
+    {
+      "joistId": "M-J-01-013",
+      "wallId": "M-BLOCK-234CDFC",
+      "overlapCm3": 401.94
+    },
+    {
+      "joistId": "M-J-01-014",
+      "wallId": "M-BLOCK-234CDFC",
+      "overlapCm3": 401.94
+    },
+    {
+      "joistId": "M-J-02-001",
+      "wallId": "M-BLOCK-99298BA",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-02-002",
+      "wallId": "M-BLOCK-99298BA",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-02-003",
+      "wallId": "M-BLOCK-99298BA",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-02-004",
+      "wallId": "M-BLOCK-99298BA",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-02-005",
+      "wallId": "M-BLOCK-99298BA",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-02-006",
+      "wallId": "M-BLOCK-99298BA",
+      "overlapCm3": 769.95
+    },
+    {
+      "joistId": "M-J-02-007",
+      "wallId": "M-BLOCK-136CB09",
+      "overlapCm3": 434.565
+    },
+    {
+      "joistId": "M-J-02-008",
+      "wallId": "M-BLOCK-136CB09",
+      "overlapCm3": 434.565
+    },
+    {
+      "joistId": "M-J-02-009",
+      "wallId": "M-BLOCK-136CB09",
+      "overlapCm3": 141.919
+    },
+    {
+      "joistId": "M-J-02-009",
+      "wallId": "M-BLOCK-31022CF",
+      "overlapCm3": 486.112
+    },
+    {
+      "joistId": "M-LOFT-WING-051",
+      "wallId": "M-BLOCK-02FFCDC",
+      "overlapCm3": 1201.095
+    },
+    {
+      "joistId": "M-LOFT-WING-051",
+      "wallId": "M-BLOCK-46883A6",
+      "overlapCm3": 949.725
+    },
+    {
+      "joistId": "M-LOFT-WING-051",
+      "wallId": "M-BLOCK-6C1C856",
+      "overlapCm3": 593.933
+    },
+    {
+      "joistId": "M-LOFT-WING-051",
+      "wallId": "M-BLOCK-762D9AB",
+      "overlapCm3": 705.6
+    },
+    {
+      "joistId": "M-LOFT-WING-051",
+      "wallId": "M-BLOCK-00F7FD5",
+      "overlapCm3": 639.45
+    },
+    {
+      "joistId": "M-LOFT-WING-052",
+      "wallId": "M-BLOCK-02FFCDC",
+      "overlapCm3": 128.52
+    },
+    {
+      "joistId": "M-LOFT-WING-052",
+      "wallId": "M-BLOCK-0BB0039",
+      "overlapCm3": 793.8
+    },
+    {
+      "joistId": "M-LOFT-WING-052",
+      "wallId": "M-BLOCK-0B061C8",
+      "overlapCm3": 2242.249
+    },
+    {
+      "joistId": "M-LOFT-WING-053",
+      "wallId": "M-BLOCK-1962B51",
+      "overlapCm3": 766.348
+    },
+    {
+      "joistId": "M-LOFT-WING-053",
+      "wallId": "M-BLOCK-S-NE-UPPER-CORNER",
+      "overlapCm3": 17.483
+    }
+  ]
+}

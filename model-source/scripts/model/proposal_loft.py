@@ -15,7 +15,8 @@ new_ramps = globals().setdefault('new_ramps', [])
 loft_floor = float(spec['loftFloor'])
 loft_ceiling = float(spec['loftCeiling'])
 loft_dormer = list(spec['rearDormer'])
-loft_connector_full = [7.45, -9.0, 10.35, 4.5]
+_upper_link_x = float((spec.get('courtyard') or {}).get('upper_glazing_x',10.35))
+loft_connector_full = [7.45, -9.0, _upper_link_x, 4.5]
 loft_bridge = [loft_connector_full[0], -4.0,
                loft_connector_full[2], loft_connector_full[3]]
 # Proposal B (compact): the bridge is only the ridge band with 1.9 m headroom,
@@ -114,7 +115,7 @@ loft_stair_void = list(globals().get('loftstairvoid', [9.15, -4.0, 10.15, -0.95]
 # close the low eaves, while navigation uses the smaller2m headroom contour.
 knee_outline = _loft_contour(1.0)
 standing_outline = _loft_contour(2.0)
-_loft_holes = [loft_stair_void]+([] if loft_chimney_removed else [loft_chimney_core])
+_loft_holes = list(globals().get('loftstairvoids',[loft_stair_void]))+([] if loft_chimney_removed else [loft_chimney_core])
 physical_patches = _loft_patches([knee_outline, loft_dormer, loft_bridge], _loft_holes)
 for i, patch in enumerate(physical_patches):
     slab('Proposal | Original loft deck %02d' % (i+1),
@@ -217,6 +218,9 @@ if _wd_pw:
     _pwx = dx1-.09; _pdy = _wd_pw['door_y']; _gap = float(_wd_pw.get('head_gap_m', .10))
     _pdh = _cdh if _door_in_cheek else loft_ceiling-loft_floor-_gap   # full height, stopping short of the flat ceiling
     _pws = float(spec['wingDormer']['link_bounds'][3])-.12   # butts against the link glazing's north end
+    # The widened courtyard link returns cleanly to the retained narrower passage.
+    if _upper_link_x > _pwx+.10:
+        wall('Proposal | Loft widened link north return',[_pwx-.09,-.175],[_upper_link_x+.115,-.175],loft_floor,loft_ceiling,plaster,T,.12)
     # Owner (22 September): clad outside, plastered white on the passage side.
     _phole = (dy0-(_pdy[0]+_pdy[1])/2, _pdy[1]-_pdy[0], 0, _pdh)
     _pholes = [] if _door_in_cheek else [_phole]   # the door is in the cheek once it sits north of dy0
@@ -368,8 +372,8 @@ room('Loft studio and lounge',loft_dormer,loft_floor,3,'Proposal · Loft',
 room('Original loft bridge',loft_bridge,loft_floor,3,'Proposal · Loft',
      [8.4 if loft_bridge[2]>10.0 else (loft_bridge[0]+loft_bridge[2])/2,-.7,loft_floor,0,-1])
 _v0,_v1,_v2,_v3=loft_stair_void
-new_rooms[-1]['polygon_m']=([[7.45,-4.0],[10.35,-4.0],[10.35,_v1],[_v0,_v1],[_v0,_v3],[10.35,_v3],[10.35,4.5],[7.45,4.5]] if _v1>-4.0   # the void sits inside the bridge (flight rising north)
-    else [[7.45,-4.0],[_v0,-4.0],[_v0,_v3],[10.35,_v3],[10.35,4.5],[7.45,4.5]])
+new_rooms[-1]['polygon_m']=([[7.45,-4.0],[_upper_link_x,-4.0],[_upper_link_x,_v1],[_v0,_v1],[_v0,_v3],[_upper_link_x,_v3],[_upper_link_x,4.5],[7.45,4.5]] if _v1>-4.0   # the void sits inside the bridge (flight rising north)
+    else [[7.45,-4.0],[_v0,-4.0],[_v0,_v3],[_upper_link_x,_v3],[_upper_link_x,4.5],[7.45,4.5]])
 new_views.extend([
  {'id':'proposal-loft-creative-studio','label':'Loft · creative workbench','group':'Proposal · Loft','position':[1.20,5.00,loft_floor],'direction':[-.55,.85]},
  {'id':'proposal-loft-shared-lounge','label':'Loft · shared lounge','group':'Proposal · Loft','position':[6.7,5.1,loft_floor],'direction':[-1,.45]},

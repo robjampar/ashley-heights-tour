@@ -1,0 +1,238 @@
+{
+  "newScopedIntersections": {
+    "junctionReview": [],
+    "coveringFit": []
+  },
+  "joistAndPartitionIntersections": [],
+  "failedCJGravity": [],
+  "supportAudit": {
+    "joists": 239,
+    "receiverMembers": 70,
+    "unmappedJoistEnds": 0,
+    "cantileverFreeEnds": 0,
+    "receiverEndsWithoutDirectWallCandidate": 70,
+    "basis": "Geometric contacts only. Connected receiver networks still need engineering reactions, supports and capacity; no complete load path is certified."
+  },
+  "connectionFit": {
+    "assemblies": 478,
+    "solidPairsChecked": 1965,
+    "intersections": [],
+    "seatLevelErrors": [],
+    "scope": "Each joist against its linked receiver, hanger against that joist/receiver, and its infill block against those three members. Seat top checked against joist underside. Other nearby members and product/fastener capacities are not covered."
+  },
+  "bearings": [
+    {
+      "beamId": "M-FR-3-001",
+      "wallId": "M-BLOCK-303DDFE",
+      "wallIds": [
+        "M-BLOCK-303DDFE",
+        "M-BLOCK-393739F"
+      ],
+      "padId": "M-CJ01-CROSS-W-PAD",
+      "groutId": "M-CJ01-CROSS-W-PAD-GROUT",
+      "nominalBearingM": 0.09999999999999964,
+      "bearingZ": 5.134,
+      "removedMasonryM3": 0.0270308,
+      "padBounds": [
+        [
+          5.1825,
+          -10.205,
+          4.924
+        ],
+        [
+          5.2825,
+          -9.604999999999999,
+          5.1240000000000006
+        ]
+      ],
+      "groutBounds": [
+        [
+          5.1825,
+          -10.092,
+          5.1240000000000006
+        ],
+        [
+          5.2825,
+          -9.718,
+          5.134
+        ]
+      ],
+      "steelPocketBounds": [
+        [
+          5.1725,
+          -10.102,
+          5.134
+        ],
+        [
+          13.737499999999999,
+          -9.708,
+          5.516
+        ]
+      ],
+      "contactAreaM2": 0.0374,
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false,
+      "basis": "CJ01 repeated north/south main-wing joists. The garage/store bearing line continues through a wide steel head to the rear outside wall. A transverse loft girder preserves the open suite. Floor gravity candidates only; complete connections, support movement, masonry, roof/stability and foundations remain unverified."
+    },
+    {
+      "beamId": "M-FR-3-001",
+      "wallId": "M-BLOCK-02FFCDC",
+      "wallIds": [
+        "M-BLOCK-02FFCDC"
+      ],
+      "padId": "M-CJ01-CROSS-E-PAD",
+      "groutId": "M-CJ01-CROSS-E-PAD-GROUT",
+      "nominalBearingM": 0.09999999999999964,
+      "bearingZ": 5.134,
+      "removedMasonryM3": 0.0270308,
+      "padBounds": [
+        [
+          13.6275,
+          -10.25,
+          4.924
+        ],
+        [
+          13.7275,
+          -9.65,
+          5.1240000000000006
+        ]
+      ],
+      "groutBounds": [
+        [
+          13.6275,
+          -10.092,
+          5.1240000000000006
+        ],
+        [
+          13.7275,
+          -9.718,
+          5.134
+        ]
+      ],
+      "steelPocketBounds": [
+        [
+          5.1725,
+          -10.102,
+          5.134
+        ],
+        [
+          13.737499999999999,
+          -9.708,
+          5.516
+        ]
+      ],
+      "contactAreaM2": 0.0374,
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false,
+      "basis": "CJ01 repeated north/south main-wing joists. The garage/store bearing line continues through a wide steel head to the rear outside wall. A transverse loft girder preserves the open suite. Floor gravity candidates only; complete connections, support movement, masonry, roof/stability and foundations remain unverified."
+    },
+    {
+      "beamId": "M-FR-3-010",
+      "wallId": "M-BLOCK-7C51DD7",
+      "wallIds": [
+        "M-BLOCK-7C51DD7"
+      ],
+      "padId": "M-LP02-WEST-PAD",
+      "groutId": "M-LP02-WEST-PAD-GROUT",
+      "nominalBearingM": 0.1,
+      "bearingZ": 5.1661,
+      "removedMasonryM3": 0.01459,
+      "padBounds": [
+        [
+          5.1825,
+          -5.3525,
+          5.016100000000001
+        ],
+        [
+          5.2825,
+          -4.7525,
+          5.1561
+        ]
+      ],
+      "groutBounds": [
+        [
+          5.1825,
+          -5.3525,
+          5.1561
+        ],
+        [
+          5.2825,
+          -5.04275,
+          5.1661
+        ]
+      ],
+      "steelPocketBounds": [
+        [
+          5.1725,
+          -5.367249999999999,
+          5.1661
+        ],
+        [
+          13.737499999999999,
+          -5.03275,
+          5.516
+        ]
+      ],
+      "contactAreaM2": 0.030975,
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false,
+      "basis": "CJ02 beam end extended into the perpendicular inner leaf. 100 \u00d7 600 \u00d7 140 mm padstone envelope with full geometric base contact. Steel contact is only the actual flange/pad overlap; local bearing, eccentricity and wall resistance remain unverified."
+    },
+    {
+      "beamId": "M-FR-3-010",
+      "wallId": "M-BLOCK-0B061C8",
+      "wallIds": [
+        "M-BLOCK-0B061C8"
+      ],
+      "padId": "M-LP02-EAST-PAD",
+      "groutId": "M-LP02-EAST-PAD-GROUT",
+      "nominalBearingM": 0.1,
+      "bearingZ": 5.1661,
+      "removedMasonryM3": 0.0147326,
+      "padBounds": [
+        [
+          13.6275,
+          -5.64,
+          5.016100000000001
+        ],
+        [
+          13.7275,
+          -5.04,
+          5.1561
+        ]
+      ],
+      "groutBounds": [
+        [
+          13.6275,
+          -5.35725,
+          5.1561
+        ],
+        [
+          13.7275,
+          -5.04275,
+          5.1661
+        ]
+      ],
+      "steelPocketBounds": [
+        [
+          5.1725,
+          -5.367249999999999,
+          5.1661
+        ],
+        [
+          13.737499999999999,
+          -5.03275,
+          5.516
+        ]
+      ],
+      "contactAreaM2": 0.03145,
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false,
+      "basis": "Dimensioned bearing envelope only; local compression, eccentricity, wall stability and onward load path require design."
+    }
+  ],
+  "counts": {
+    "junctionReview": 81,
+    "coveringFit": 1159
+  }
+}

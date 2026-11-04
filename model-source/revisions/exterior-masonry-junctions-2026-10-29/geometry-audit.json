@@ -1,0 +1,84 @@
+{
+  "revision": "WM01-2026-10-29",
+  "approvedForConstruction": false,
+  "counts": {
+    "members": 2576,
+    "masonryPieces": {
+      "brick": 18944,
+      "block": 4079,
+      "solidbrick": 4963
+    },
+    "issues": 62
+  },
+  "unchangedExistingSteelJoistsHangers": 239,
+  "changedProtectedGeometry": [],
+  "newCollisionPairs": {
+    "junctionReview": [],
+    "coveringFit": []
+  },
+  "existingStructuralClashPairs": 81,
+  "existingCoveringPairs": 1159,
+  "hangerFit": {
+    "assemblies": 478,
+    "solidPairsChecked": 1965,
+    "intersections": [],
+    "seatLevelErrors": [],
+    "scope": "Each joist against its linked receiver, hanger against that joist/receiver, and its infill block against those three members. Seat top checked against joist underside. Other nearby members and product/fastener capacities are not covered."
+  },
+  "groundMasonryBaseContact": {
+    "M-WM01-GROUND-S-BRICK": 1.0,
+    "M-WM01-GROUND-S-BLOCK": 0.9999999995066404,
+    "M-WM01-GROUND-N-BRICK": 1.0,
+    "M-WM01-GROUND-N-BLOCK": 1.0,
+    "M-WM01-GROUND-BLOCK-RETURN": 0.999999994993256
+  },
+  "loadCases": [
+    {
+      "scenario": "low",
+      "addedPermanentKN": 9.092527304119974,
+      "equilibriumResidualKN": 2.8421709430404007e-13,
+      "beams": {
+        "M-FR-1-035": {
+          "deflectionMm": 1.9904786896808753,
+          "withinGravityScreen": true
+        },
+        "M-FR-1-030": {
+          "deflectionMm": 2.311134058437718,
+          "withinGravityScreen": true
+        }
+      }
+    },
+    {
+      "scenario": "reference",
+      "addedPermanentKN": 11.447999034799968,
+      "equilibriumResidualKN": 2.8421709430404007e-13,
+      "beams": {
+        "M-FR-1-035": {
+          "deflectionMm": 2.2738658508090652,
+          "withinGravityScreen": true
+        },
+        "M-FR-1-030": {
+          "deflectionMm": 2.5259443080346364,
+          "withinGravityScreen": true
+        }
+      }
+    },
+    {
+      "scenario": "high",
+      "addedPermanentKN": 14.228913265479958,
+      "equilibriumResidualKN": 2.8421709430404007e-13,
+      "beams": {
+        "M-FR-1-035": {
+          "deflectionMm": 2.6380858853687488,
+          "withinGravityScreen": true
+        },
+        "M-FR-1-030": {
+          "deflectionMm": 2.825097856190343,
+          "withinGravityScreen": true
+        }
+      }
+    }
+  ],
+  "nativeWindowAndFrameObjectsUnchanged": 1315,
+  "sourceHashesCurrent": true
+}

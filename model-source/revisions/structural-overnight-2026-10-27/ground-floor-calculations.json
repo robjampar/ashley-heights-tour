@@ -1,0 +1,4625 @@
+{
+  "revision": "G01-study-2026-10-27",
+  "status": "Experimental coordination candidate; not approved for construction",
+  "basis": "Replace the vehicle-loaded garage/utility deck south of the basement stair with a suspended RC slab on the perimeter RC walls and strengthened cinema walls. Retain timber floor north of the cinema, on a shorter main steel girder. All dimensions are experimental; reinforcement, load spreading, foundations and connection designs remain unverified.",
+  "geometry": {
+    "groundFFL": 0,
+    "slabTopZ": -0.075,
+    "slabBottomZ": -0.325,
+    "slabNorthY": -9.7975,
+    "cinemaNorthWallY": -9.905,
+    "cinemaEastWallX": 9.0975,
+    "wallWidthM": 0.215,
+    "bearingWallBottomZ": -3.0,
+    "bearingWallTopZ": -0.325,
+    "mainGirderX": 9.2,
+    "mainSupportY": [
+      -9.905,
+      -4.2525
+    ],
+    "newBasementStairVoid": [
+      6.2,
+      -9.785,
+      9.11,
+      -8.845
+    ],
+    "cinemaNorthEndX": 9.435,
+    "slabPolygon": [
+      [
+        5.1325,
+        -16.1035
+      ],
+      [
+        13.7775,
+        -16.1035
+      ],
+      [
+        13.7775,
+        -9.7975
+      ],
+      [
+        5.1325,
+        -9.7975
+      ]
+    ],
+    "slabClearPolygon": [
+      [
+        5.2825,
+        -15.9535
+      ],
+      [
+        13.6275,
+        -15.9535
+      ],
+      [
+        13.6275,
+        -9.7975
+      ],
+      [
+        5.2825,
+        -9.7975
+      ]
+    ]
+  },
+  "loads": {
+    "normalConcreteKNm3": 25,
+    "slabThicknessM": [
+      0.2,
+      0.225,
+      0.25
+    ],
+    "superimposedPermanentKPa": [
+      0.5,
+      1,
+      1.5
+    ],
+    "vehicleUDLKPa": [
+      2.5,
+      3,
+      3.5
+    ],
+    "singleWheelOrJackKN": [
+      10,
+      15,
+      20
+    ],
+    "garagePartitionLineKNm": [
+      5,
+      10,
+      20
+    ],
+    "slabStripWidthM": 1.0,
+    "limitations": "Wheel/axle/load distribution and simultaneous actions are not assigned from inaccessible normative text. Use separate UDL and concentrated-load sensitivities. 1 m strip is an explicit modelling assumption, not a verified effective width. Verify the actual van maximum gross/axle weights and future vehicles."
+  },
+  "sources": [
+    {
+      "title": "IStructE UK National Annex publication schedule, 19 October 2026",
+      "url": "https://www.istructe.org/resources/eurocodes/publication-schedule-of-uk-national-annexes-and-fu/",
+      "note": "NA to BS EN 1991-1-1:2025 reported published 30 September 2026. Exact normative values not accessed; no claim that older draft values equal the published annex."
+    },
+    {
+      "title": "JRC Eurocode 1 workshop: traffic/parking categories",
+      "url": "https://eurocodes.jrc.ec.europa.eu/sites/default/files/2022-06/EN1991_2_Malakatas.pdf"
+    },
+    {
+      "title": "BCSA second-generation Eurocode presentation",
+      "url": "https://bcsa.org.uk/upload/Resources/The%20Future%20of%20Steel/Presentations/TFoSC%20Mungo%20Stacy%20EN%201990%20and%20EN%201991.pdf",
+      "note": "Draft indicative UK choices only: F1 q3 kPa, axle30 kN, jack15 kN. Used to motivate upper sensitivity, not represented as the published standard."
+    },
+    {
+      "title": "FP McCann hollowcore flooring",
+      "url": "https://fpmccann.co.uk/portfolio-items/hollowcore-flooring/",
+      "note": "Precast alternative requires supplier selection for actual spans, wall lines and vehicle loads, plus erection/crane access."
+    }
+  ],
+  "section": "356x171x67",
+  "retiredTimberIds": [
+    "M-FR-0-001",
+    "M-FR-0-006",
+    "M-FR-0-009",
+    "M-FR-0-011"
+  ],
+  "sourceWallNames": [
+    "Proposal | Cinema north wall",
+    "Proposal | Cinema east wall pier 0",
+    "Proposal | Cinema east wall head 0",
+    "Proposal | Cinema east wall pier 1",
+    "Proposal | Cinema east wall head 1"
+  ],
+  "mainGirderCases": [
+    {
+      "scenario": "lower",
+      "permanentLineKNm": 6.53125,
+      "variableLineKNm": 12.5625,
+      "screen": {
+        "section": "356x171x67 UB",
+        "depthMm": 363.4,
+        "fyNmm2": 355,
+        "selfWeightKNm": 0.658251,
+        "gkIncludingSelfKNm": 0.658251,
+        "qkKNm": 0,
+        "pointGkKN": 0,
+        "engineeringSpanM": 5.6525,
+        "uls": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 161.376480318375,
+          "reactionsKN": [
+            80.6882401591875,
+            80.6882401591875
+          ],
+          "reactionKN": 80.6882401591875,
+          "momentKNm": 114.02256937495183,
+          "momentStationM": 2.82625,
+          "deflectionMm": 9.223646822504996,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 21.664288181240853,
+              "deflectionMm": 1.4685890470792455
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 41.04812497498267,
+              "deflectionMm": 2.895487210520769
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 58.151510381225435,
+              "deflectionMm": 4.243062011288749
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 72.97444439996919,
+              "deflectionMm": 5.478108320822168
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 85.51692703121387,
+              "deflectionMm": 6.571848361034809
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 95.77895827495955,
+              "deflectionMm": 7.499931704315263
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 103.76053813120615,
+              "deflectionMm": 8.242435273526914
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 109.46166659995379,
+              "deflectionMm": 8.783863342007958
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 112.88234368120233,
+              "deflectionMm": 9.113147533571388
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 114.02256937495183,
+              "deflectionMm": 9.223646822504996
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 112.88234368120231,
+              "deflectionMm": 9.113147533571388
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 109.46166659995379,
+              "deflectionMm": 8.78386334200796
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 103.76053813120618,
+              "deflectionMm": 8.242435273526915
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 95.7789582749595,
+              "deflectionMm": 7.499931704315261
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 85.51692703121392,
+              "deflectionMm": 6.571848361034807
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 72.97444439996923,
+              "deflectionMm": 5.478108320822164
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 58.15151038122542,
+              "deflectionMm": 4.243062011288749
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 41.04812497498267,
+              "deflectionMm": 2.89548721052076
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 21.664288181240863,
+              "deflectionMm": 1.4685890470792515
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "sls": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 111.64818565249999,
+          "reactionsKN": [
+            55.824092826249995,
+            55.824092826249995
+          ],
+          "reactionKN": 55.824092826249995,
+          "momentKNm": 78.88642117509453,
+          "momentStationM": 2.82625,
+          "deflectionMm": 6.381372494929002,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 14.98842002326796,
+              "deflectionMm": 1.0160421286425958
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 28.39911162303403,
+              "deflectionMm": 2.0032404536081123
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 40.2320747992982,
+              "deflectionMm": 2.935558975117239
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 50.487309552060495,
+              "deflectionMm": 3.7900247521882324
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 59.16481588132089,
+              "deflectionMm": 4.546727902636913
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 66.26459378707939,
+              "deflectionMm": 5.188821603076669
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 71.78664326933601,
+              "deflectionMm": 5.702522088918455
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 75.73096432809075,
+              "deflectionMm": 6.077108654370786
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 78.09755696334358,
+              "deflectionMm": 6.304923652439752
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 78.88642117509453,
+              "deflectionMm": 6.381372494929002
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 78.09755696334358,
+              "deflectionMm": 6.304923652439752
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 75.73096432809072,
+              "deflectionMm": 6.077108654370786
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 71.786643269336,
+              "deflectionMm": 5.702522088918453
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 66.2645937870794,
+              "deflectionMm": 5.188821603076673
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 59.16481588132089,
+              "deflectionMm": 4.546727902636918
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 50.48730955206048,
+              "deflectionMm": 3.790024752188232
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 40.2320747992982,
+              "deflectionMm": 2.9355589751172393
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 28.39911162303403,
+              "deflectionMm": 2.0032404536081097
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 14.988420023267963,
+              "deflectionMm": 1.0160421286426033
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "variableDeflectionMm": 4.0586263623389645,
+        "elasticMomentResistanceKNm": 382.69,
+        "conservativeShearResistanceKN": 571.8488716795986,
+        "totalDeflectionLimitMm": 10,
+        "flangeSlenderness": 4.417197452229299,
+        "webSlenderness": 33.69230769230769,
+        "checks": {
+          "elasticBending": true,
+          "shearBelowHalfResistance": true,
+          "localClassAtMost3": true,
+          "shearSlenderness": true,
+          "totalDeflection": true,
+          "variableDeflection": true
+        },
+        "withinScreen": true,
+        "lateralStabilityChecked": false,
+        "approvedForConstruction": false,
+        "analysis": "simply supported; actual gravity-load stations",
+        "permanent": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 40.638654402499995,
+          "reactionsKN": [
+            20.319327201249997,
+            20.319327201249997
+          ],
+          "reactionKN": 20.319327201249997,
+          "momentKNm": 28.713749251266396,
+          "momentStationM": 2.8262499999999995,
+          "deflectionMm": 2.322746132590037,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 5.455612357740617,
+              "deflectionMm": 0.36982763923098577
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 10.336949730455906,
+              "deflectionMm": 0.7291564659426646
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 14.644012118145865,
+              "deflectionMm": 1.068509675914069
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 18.3767995208105,
+              "deflectionMm": 1.379525383067875
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 21.5353119384498,
+              "deflectionMm": 1.6549566194704015
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 24.119549371063776,
+              "deflectionMm": 1.8886713353316114
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 26.12951181865242,
+              "deflectionMm": 2.0756523990051092
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 27.565199281215747,
+              "deflectionMm": 2.2119975969881445
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 28.426611758753737,
+              "deflectionMm": 2.2949196339216082
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 28.713749251266403,
+              "deflectionMm": 2.322746132590037
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 28.426611758753737,
+              "deflectionMm": 2.294919633921609
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 27.56519928121574,
+              "deflectionMm": 2.211997596988145
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 26.129511818652425,
+              "deflectionMm": 2.0756523990051092
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 24.11954937106377,
+              "deflectionMm": 1.8886713353316114
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 21.535311938449794,
+              "deflectionMm": 1.654956619470402
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 18.376799520810494,
+              "deflectionMm": 1.3795253830678755
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 14.644012118145866,
+              "deflectionMm": 1.06850967591407
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 10.336949730455899,
+              "deflectionMm": 0.7291564659426635
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 5.45561235774062,
+              "deflectionMm": 0.3698276392309876
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "variable": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 71.00953125,
+          "reactionsKN": [
+            35.504765625,
+            35.504765625
+          ],
+          "reactionKN": 35.504765625,
+          "momentKNm": 50.17267192382812,
+          "momentStationM": 2.82625,
+          "deflectionMm": 4.0586263623389645,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 9.532807665527343,
+              "deflectionMm": 0.6462144894116099
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 18.062161892578125,
+              "deflectionMm": 1.2740839876654477
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 25.588062681152337,
+              "deflectionMm": 1.8670492992031704
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 32.11051003125,
+              "deflectionMm": 2.410499369120358
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 37.62950394287109,
+              "deflectionMm": 2.8917712831665123
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 42.145044416015615,
+              "deflectionMm": 3.3001502677450585
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 45.657131450683586,
+              "deflectionMm": 3.6268696899133457
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 48.165765046874995,
+              "deflectionMm": 3.865111057382643
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 49.670945204589835,
+              "deflectionMm": 4.010004018518145
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 50.17267192382812,
+              "deflectionMm": 4.0586263623389645
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 49.67094520458984,
+              "deflectionMm": 4.010004018518145
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 48.16576504687498,
+              "deflectionMm": 3.865111057382643
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 45.65713145068358,
+              "deflectionMm": 3.6268696899133457
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 42.14504441601562,
+              "deflectionMm": 3.3001502677450603
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 37.6295039428711,
+              "deflectionMm": 2.8917712831665123
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 32.11051003124999,
+              "deflectionMm": 2.4104993691203584
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 25.588062681152337,
+              "deflectionMm": 1.8670492992031729
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 18.062161892578104,
+              "deflectionMm": 1.2740839876654504
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 9.532807665527343,
+              "deflectionMm": 0.6462144894116129
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "loads": {
+          "permanentUDL": [
+            [
+              0,
+              5.6525,
+              6.53125
+            ],
+            [
+              0,
+              5.6525,
+              0.658251
+            ]
+          ],
+          "variableUDL": [
+            [
+              0,
+              5.6525,
+              12.5625
+            ]
+          ],
+          "permanentPoints": [],
+          "variablePoints": []
+        }
+      }
+    },
+    {
+      "scenario": "reference",
+      "permanentLineKNm": 8.875,
+      "variableLineKNm": 12.5625,
+      "screen": {
+        "section": "356x171x67 UB",
+        "depthMm": 363.4,
+        "fyNmm2": 355,
+        "selfWeightKNm": 0.658251,
+        "gkIncludingSelfKNm": 0.658251,
+        "qkKNm": 0,
+        "pointGkKN": 0,
+        "engineeringSpanM": 5.6525,
+        "uls": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 179.261343599625,
+          "reactionsKN": [
+            89.63067179981252,
+            89.63067179981249
+          ],
+          "reactionKN": 89.63067179981252,
+          "momentKNm": 126.6593430871101,
+          "momentStationM": 2.8262500000000004,
+          "deflectionMm": 10.245875477198586,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 24.065275186550913,
+              "deflectionMm": 1.631348293479559
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 45.597363511359625,
+              "deflectionMm": 3.2163852298021807
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 64.59626497442613,
+              "deflectionMm": 4.713307637020893
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 81.06197957575046,
+              "deflectionMm": 6.085230363417785
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 94.99450731533256,
+              "deflectionMm": 7.300186277503992
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 106.39384819317246,
+              "deflectionMm": 8.331126268019716
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 115.26000220927017,
+              "deflectionMm": 9.155919243934202
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 121.59296936362568,
+              "deflectionMm": 9.757352134445759
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 125.39274965623898,
+              "deflectionMm": 10.123129888981751
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 126.65934308711009,
+              "deflectionMm": 10.245875477198586
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 125.39274965623903,
+              "deflectionMm": 10.123129888981747
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 121.59296936362571,
+              "deflectionMm": 9.757352134445764
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 115.26000220927017,
+              "deflectionMm": 9.155919243934203
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 106.39384819317252,
+              "deflectionMm": 8.33112626801972
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 94.99450731533261,
+              "deflectionMm": 7.300186277503998
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 81.06197957575051,
+              "deflectionMm": 6.08523036341779
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 64.59626497442622,
+              "deflectionMm": 4.713307637020901
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 45.597363511359674,
+              "deflectionMm": 3.216385229802187
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 24.06527518655099,
+              "deflectionMm": 1.631348293479564
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 1.1368683772161603e-13,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "sls": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 124.89623252749999,
+          "reactionsKN": [
+            62.448116263749995,
+            62.448116263749995
+          ],
+          "reactionKN": 62.448116263749995,
+          "momentKNm": 88.2469942952117,
+          "momentStationM": 2.82625,
+          "deflectionMm": 7.138578905813135,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 16.766928916090226,
+              "deflectionMm": 1.1366045333835675
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 31.76891794627622,
+              "deflectionMm": 2.2409426901128597
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 45.00596709055797,
+              "deflectionMm": 3.283889068252158
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 56.478076348935495,
+              "deflectionMm": 4.239744783740537
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 66.18524572140878,
+              "deflectionMm": 5.0862374703918585
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 74.12747520797782,
+              "deflectionMm": 5.804521279894777
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 80.30476480864264,
+              "deflectionMm": 6.379176881812733
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 84.71711452340324,
+              "deflectionMm": 6.798211463583964
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 87.36452435225961,
+              "deflectionMm": 7.053058730521494
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 88.2469942952117,
+              "deflectionMm": 7.138578905813135
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 87.36452435225961,
+              "deflectionMm": 7.053058730521491
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 84.71711452340321,
+              "deflectionMm": 6.798211463583964
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 80.30476480864266,
+              "deflectionMm": 6.379176881812733
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 74.12747520797782,
+              "deflectionMm": 5.804521279894777
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 66.18524572140876,
+              "deflectionMm": 5.086237470391859
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 56.478076348935474,
+              "deflectionMm": 4.239744783740533
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 45.00596709055796,
+              "deflectionMm": 3.283889068252155
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 31.768917946276247,
+              "deflectionMm": 2.2409426901128584
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 16.766928916090194,
+              "deflectionMm": 1.1366045333835721
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "variableDeflectionMm": 4.0586263623389645,
+        "elasticMomentResistanceKNm": 382.69,
+        "conservativeShearResistanceKN": 571.8488716795986,
+        "totalDeflectionLimitMm": 10,
+        "flangeSlenderness": 4.417197452229299,
+        "webSlenderness": 33.69230769230769,
+        "checks": {
+          "elasticBending": true,
+          "shearBelowHalfResistance": true,
+          "localClassAtMost3": true,
+          "shearSlenderness": true,
+          "totalDeflection": true,
+          "variableDeflection": true
+        },
+        "withinScreen": true,
+        "lateralStabilityChecked": false,
+        "approvedForConstruction": false,
+        "analysis": "simply supported; actual gravity-load stations",
+        "permanent": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 53.886701277499995,
+          "reactionsKN": [
+            26.943350638749994,
+            26.94335063875
+          ],
+          "reactionKN": 26.94335063875,
+          "momentKNm": 38.07432237138358,
+          "momentStationM": 2.8262499999999995,
+          "deflectionMm": 3.0799525434741715,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 7.234121250562882,
+              "deflectionMm": 0.4903900439719576
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 13.70675605369809,
+              "deflectionMm": 0.9668587024474122
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 19.41790440940563,
+              "deflectionMm": 1.4168397690489885
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 24.367566317685494,
+              "deflectionMm": 1.8292454146201804
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 28.555741778537687,
+              "deflectionMm": 2.194466187225347
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 31.98243079196221,
+              "deflectionMm": 2.504371012149718
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 34.64763335795905,
+              "deflectionMm": 2.752307191899389
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 36.55134947652824,
+              "deflectionMm": 2.9331004062013237
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 37.69357914766975,
+              "deflectionMm": 3.043054712003351
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 38.07432237138358,
+              "deflectionMm": 3.0799525434741715
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 37.69357914766975,
+              "deflectionMm": 3.0430547120033506
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 36.55134947652823,
+              "deflectionMm": 2.933100406201323
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 34.64763335795904,
+              "deflectionMm": 2.752307191899389
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 31.982430791962187,
+              "deflectionMm": 2.50437101214972
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 28.55574177853768,
+              "deflectionMm": 2.1944661872253475
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 24.367566317685473,
+              "deflectionMm": 1.829245414620181
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 19.417904409405608,
+              "deflectionMm": 1.4168397690489902
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 13.706756053698086,
+              "deflectionMm": 0.9668587024474126
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 7.2341212505628505,
+              "deflectionMm": 0.49039004397195785
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": -2.842170943040401e-14,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "variable": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 71.00953125,
+          "reactionsKN": [
+            35.504765625,
+            35.504765625
+          ],
+          "reactionKN": 35.504765625,
+          "momentKNm": 50.17267192382812,
+          "momentStationM": 2.82625,
+          "deflectionMm": 4.0586263623389645,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 9.532807665527343,
+              "deflectionMm": 0.6462144894116099
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 18.062161892578125,
+              "deflectionMm": 1.2740839876654477
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 25.588062681152337,
+              "deflectionMm": 1.8670492992031704
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 32.11051003125,
+              "deflectionMm": 2.410499369120358
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 37.62950394287109,
+              "deflectionMm": 2.8917712831665123
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 42.145044416015615,
+              "deflectionMm": 3.3001502677450585
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 45.657131450683586,
+              "deflectionMm": 3.6268696899133457
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 48.165765046874995,
+              "deflectionMm": 3.865111057382643
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 49.670945204589835,
+              "deflectionMm": 4.010004018518145
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 50.17267192382812,
+              "deflectionMm": 4.0586263623389645
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 49.67094520458984,
+              "deflectionMm": 4.010004018518145
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 48.16576504687498,
+              "deflectionMm": 3.865111057382643
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 45.65713145068358,
+              "deflectionMm": 3.6268696899133457
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 42.14504441601562,
+              "deflectionMm": 3.3001502677450603
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 37.6295039428711,
+              "deflectionMm": 2.8917712831665123
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 32.11051003124999,
+              "deflectionMm": 2.4104993691203584
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 25.588062681152337,
+              "deflectionMm": 1.8670492992031729
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 18.062161892578104,
+              "deflectionMm": 1.2740839876654504
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 9.532807665527343,
+              "deflectionMm": 0.6462144894116129
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "loads": {
+          "permanentUDL": [
+            [
+              0,
+              5.6525,
+              8.875
+            ],
+            [
+              0,
+              5.6525,
+              0.658251
+            ]
+          ],
+          "variableUDL": [
+            [
+              0,
+              5.6525,
+              12.5625
+            ]
+          ],
+          "permanentPoints": [],
+          "variablePoints": []
+        }
+      }
+    },
+    {
+      "scenario": "upper",
+      "permanentLineKNm": 12.05625,
+      "variableLineKNm": 16.75,
+      "screen": {
+        "section": "356x171x67 UB",
+        "depthMm": 363.4,
+        "fyNmm2": 355,
+        "selfWeightKNm": 0.658251,
+        "gkIncludingSelfKNm": 0.658251,
+        "qkKNm": 0,
+        "pointGkKN": 0,
+        "engineeringSpanM": 5.6525,
+        "uls": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 239.041830318375,
+          "reactionsKN": [
+            119.52091515918751,
+            119.52091515918748
+          ],
+          "reactionKN": 119.52091515918751,
+          "momentKNm": 168.89799323432686,
+          "momentStationM": 2.82625,
+          "deflectionMm": 13.66269368567215,
+          "deflectionStationM": 2.826249999999999,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 32.09061871452211,
+              "deflectionMm": 2.1753740886327204
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 60.80327756435767,
+              "deflectionMm": 4.288992801806202
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 86.13797654950669,
+              "deflectionMm": 6.285112349282903
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 108.09471566996919,
+              "deflectionMm": 8.114547033794404
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 126.67349492574513,
+              "deflectionMm": 9.73466925104141
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 141.87431431683456,
+              "deflectionMm": 11.10940948969374
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 153.69717384323744,
+              "deflectionMm": 12.209256331390346
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 162.1420735049538,
+              "deflectionMm": 13.011256450739305
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 167.2090133019836,
+              "deflectionMm": 13.4990146153178
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 168.89799323432686,
+              "deflectionMm": 13.662693685672151
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 167.20901330198362,
+              "deflectionMm": 13.4990146153178
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 162.14207350495377,
+              "deflectionMm": 13.0112564507393
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 153.6971738432374,
+              "deflectionMm": 12.20925633139034
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 141.8743143168346,
+              "deflectionMm": 11.10940948969374
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 126.67349492574522,
+              "deflectionMm": 9.734669251041398
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 108.09471566996922,
+              "deflectionMm": 8.114547033794402
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 86.13797654950667,
+              "deflectionMm": 6.285112349282891
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 60.8032775643577,
+              "deflectionMm": 4.288992801806196
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 32.09061871452218,
+              "deflectionMm": 2.1753740886327257
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 1.1368683772161603e-13,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "sls": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 166.5480919025,
+          "reactionsKN": [
+            83.27404595125002,
+            83.27404595124999
+          ],
+          "reactionKN": 83.27404595125002,
+          "momentKNm": 117.67663618486021,
+          "momentStationM": 2.8262500000000004,
+          "deflectionMm": 9.519235861632861,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 22.358560875123434,
+              "deflectionMm": 1.5156527338891843
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 42.36358902654967,
+              "deflectionMm": 2.9882785216837884
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 60.015084454278686,
+              "deflectionMm": 4.3790388810683485
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 75.31304715831052,
+              "deflectionMm": 5.65366456294099
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 88.25747713864513,
+              "deflectionMm": 6.782455551413415
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 98.84837439528255,
+              "deflectionMm": 7.7402810638109125
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 107.08573892822278,
+              "deflectionMm": 8.506579550672358
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 112.96957073746579,
+              "deflectionMm": 9.065358695750207
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 116.4998698230116,
+              "deflectionMm": 9.405195416010502
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 117.6766361848602,
+              "deflectionMm": 9.519235861632861
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 116.49986982301161,
+              "deflectionMm": 9.405195416010502
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 112.96957073746577,
+              "deflectionMm": 9.065358695750207
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 107.08573892822278,
+              "deflectionMm": 8.50657955067236
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 98.84837439528263,
+              "deflectionMm": 7.740281063810915
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 88.25747713864519,
+              "deflectionMm": 6.7824555514134195
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 75.31304715831055,
+              "deflectionMm": 5.65366456294099
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 60.01508445427879,
+              "deflectionMm": 4.37903888106835
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 42.36358902654973,
+              "deflectionMm": 2.988278521683788
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 22.3585608751236,
+              "deflectionMm": 1.5156527338891868
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 1.1368683772161603e-13,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "variableDeflectionMm": 5.411501816451953,
+        "elasticMomentResistanceKNm": 382.69,
+        "conservativeShearResistanceKN": 571.8488716795986,
+        "totalDeflectionLimitMm": 10,
+        "flangeSlenderness": 4.417197452229299,
+        "webSlenderness": 33.69230769230769,
+        "checks": {
+          "elasticBending": true,
+          "shearBelowHalfResistance": true,
+          "localClassAtMost3": true,
+          "shearSlenderness": true,
+          "totalDeflection": true,
+          "variableDeflection": true
+        },
+        "withinScreen": true,
+        "lateralStabilityChecked": false,
+        "approvedForConstruction": false,
+        "analysis": "simply supported; actual gravity-load stations",
+        "permanent": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 71.8687169025,
+          "reactionsKN": [
+            35.93435845124999,
+            35.934358451250006
+          ],
+          "reactionKN": 35.934358451250006,
+          "momentKNm": 50.77974028642264,
+          "momentStationM": 2.8262499999999995,
+          "deflectionMm": 4.107734045180903,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 9.648150654420302,
+              "deflectionMm": 0.6540334146737036
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 18.280706503112153,
+              "deflectionMm": 1.2894998714631893
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 25.897667546075546,
+              "deflectionMm": 1.8896398154641194
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 32.499033783310495,
+              "deflectionMm": 2.4396654041138426
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 38.08480521481698,
+              "deflectionMm": 2.926760507191394
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 42.65498184059501,
+              "deflectionMm": 3.340080706817496
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 46.20956366064459,
+              "deflectionMm": 3.670753297454559
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 48.748550674965735,
+              "deflectionMm": 3.911877285906679
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 50.2719428835584,
+              "deflectionMm": 4.058523391319636
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 50.77974028642263,
+              "deflectionMm": 4.107734045180903
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 50.2719428835584,
+              "deflectionMm": 4.058523391319636
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 48.74855067496573,
+              "deflectionMm": 3.911877285906679
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 46.20956366064459,
+              "deflectionMm": 3.670753297454558
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 42.654981840594985,
+              "deflectionMm": 3.340080706817498
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 38.08480521481697,
+              "deflectionMm": 2.926760507191396
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 32.499033783310466,
+              "deflectionMm": 2.4396654041138417
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 25.897667546075525,
+              "deflectionMm": 1.889639815464122
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 18.2807065031121,
+              "deflectionMm": 1.289499871463187
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 9.648150654420277,
+              "deflectionMm": 0.6540334146737056
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": -5.684341886080802e-14,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "variable": {
+          "engineeringSpanM": 5.6525,
+          "totalLoadKN": 94.679375,
+          "reactionsKN": [
+            47.3396875,
+            47.3396875
+          ],
+          "reactionKN": 47.3396875,
+          "momentKNm": 66.89689589843749,
+          "momentStationM": 2.82625,
+          "deflectionMm": 5.411501816451953,
+          "deflectionStationM": 2.82625,
+          "endDeflectionsMm": [
+            0.0,
+            0.0
+          ],
+          "equilibriumResidualKN": 0.0,
+          "samples": [
+            {
+              "xM": 0.0,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            },
+            {
+              "xM": 0.282625,
+              "momentKNm": 12.710410220703125,
+              "deflectionMm": 0.8616193192154799
+            },
+            {
+              "xM": 0.56525,
+              "momentKNm": 24.0828825234375,
+              "deflectionMm": 1.698778650220597
+            },
+            {
+              "xM": 0.8478749999999999,
+              "momentKNm": 34.11741690820312,
+              "deflectionMm": 2.489399065604227
+            },
+            {
+              "xM": 1.1305,
+              "momentKNm": 42.814013375,
+              "deflectionMm": 3.213999158827144
+            },
+            {
+              "xM": 1.413125,
+              "momentKNm": 50.17267192382812,
+              "deflectionMm": 3.8556950442220166
+            },
+            {
+              "xM": 1.6957499999999999,
+              "momentKNm": 56.193392554687485,
+              "deflectionMm": 4.4002003569934125
+            },
+            {
+              "xM": 1.9783749999999998,
+              "momentKNm": 60.87617526757812,
+              "deflectionMm": 4.835826253217794
+            },
+            {
+              "xM": 2.261,
+              "momentKNm": 64.2210200625,
+              "deflectionMm": 5.153481409843525
+            },
+            {
+              "xM": 2.543625,
+              "momentKNm": 66.22792693945311,
+              "deflectionMm": 5.346672024690858
+            },
+            {
+              "xM": 2.82625,
+              "momentKNm": 66.89689589843749,
+              "deflectionMm": 5.411501816451953
+            },
+            {
+              "xM": 3.108875,
+              "momentKNm": 66.22792693945313,
+              "deflectionMm": 5.346672024690858
+            },
+            {
+              "xM": 3.3914999999999997,
+              "momentKNm": 64.22102006249997,
+              "deflectionMm": 5.153481409843526
+            },
+            {
+              "xM": 3.674125,
+              "momentKNm": 60.876175267578105,
+              "deflectionMm": 4.835826253217795
+            },
+            {
+              "xM": 3.9567499999999995,
+              "momentKNm": 56.193392554687506,
+              "deflectionMm": 4.400200356993417
+            },
+            {
+              "xM": 4.239375,
+              "momentKNm": 50.17267192382812,
+              "deflectionMm": 3.8556950442220175
+            },
+            {
+              "xM": 4.522,
+              "momentKNm": 42.814013375,
+              "deflectionMm": 3.213999158827144
+            },
+            {
+              "xM": 4.804625,
+              "momentKNm": 34.117416908203126,
+              "deflectionMm": 2.489399065604227
+            },
+            {
+              "xM": 5.08725,
+              "momentKNm": 24.08288252343749,
+              "deflectionMm": 1.6987786502205968
+            },
+            {
+              "xM": 5.3698749999999995,
+              "momentKNm": 12.710410220703125,
+              "deflectionMm": 0.8616193192154866
+            },
+            {
+              "xM": 5.6525,
+              "momentKNm": 0.0,
+              "deflectionMm": 0.0
+            }
+          ]
+        },
+        "loads": {
+          "permanentUDL": [
+            [
+              0,
+              5.6525,
+              12.05625
+            ],
+            [
+              0,
+              5.6525,
+              0.658251
+            ]
+          ],
+          "variableUDL": [
+            [
+              0,
+              5.6525,
+              16.75
+            ]
+          ],
+          "permanentPoints": [],
+          "variablePoints": []
+        }
+      }
+    }
+  ],
+  "slabStripStudy": {
+    "status": "Flexural equilibrium sensitivity only; reinforcement is NOT selected",
+    "supportSpanBasis": "Wall-centre to wall-centre simply supported strips. No continuity/fixity credit. A local wheel/jack is placed at midspan; vehicle axle pattern and transverse load distribution remain unresolved.",
+    "materialAssumptions": {
+      "concrete": "C30/37",
+      "reinforcement": "B500",
+      "alphaCc": 0.85,
+      "gammaC": 1.5,
+      "gammaS": 1.15,
+      "coverMm": 40,
+      "trialBarDiameterMm": 16
+    },
+    "cases": [
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 22.252325698242178,
+        "reactionsKNPerM": [
+          22.301109374999996,
+          22.301109375000003
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 346.833058857366,
+        "neutralAxisRatio": 0.07294745651697865,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 44.719477309570294,
+        "reactionsKNPerM": [
+          29.817515624999995,
+          29.817515625000002
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 720.3290413125578,
+        "neutralAxisRatio": 0.15150277655820052,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 22.252325698242178,
+        "reactionsKNPerM": [
+          22.301109374999996,
+          22.301109375000003
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 346.833058857366,
+        "neutralAxisRatio": 0.07294745651697865,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 29.7522898095703,
+        "reactionsKNPerM": [
+          22.317515624999995,
+          22.317515625000002
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 468.67907165835385,
+        "neutralAxisRatio": 0.09857464658314415,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 22.252325698242185,
+        "reactionsKNPerM": [
+          22.301109375,
+          22.301109375
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 346.83305885736604,
+        "neutralAxisRatio": 0.07294745651697865,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 24.763227309570308,
+        "reactionsKNPerM": [
+          19.817515625,
+          19.817515625000002
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 387.3281353777884,
+        "neutralAxisRatio": 0.08146455936570123,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 38.75172730157496,
+        "reactionsKNPerM": [
+          29.865693787350605,
+          29.476649962649407
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 618.5647479344916,
+        "neutralAxisRatio": 0.13009926216821147,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 63.33778234863284,
+        "reactionsKNPerM": [
+          36.04147503735061,
+          35.652431212649404
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1051.4014854682644,
+        "neutralAxisRatio": 0.22113539117568484,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 38.75172730157496,
+        "reactionsKNPerM": [
+          29.865693787350605,
+          29.476649962649407
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 618.5647479344916,
+        "neutralAxisRatio": 0.13009926216821147,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 45.68934484863284,
+        "reactionsKNPerM": [
+          28.541475037350608,
+          28.152431212649404
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 737.0554884132446,
+        "neutralAxisRatio": 0.15502075658173303,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 38.75172730157494,
+        "reactionsKNPerM": [
+          29.865693787350597,
+          29.476649962649407
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 618.5647479344905,
+        "neutralAxisRatio": 0.13009926216821124,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 5.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 39.806532348632814,
+        "reactionsKNPerM": [
+          26.041475037350597,
+          25.652431212649407
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 636.4096958919788,
+        "neutralAxisRatio": 0.13385249021822815,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 23.93245096069335,
+        "reactionsKNPerM": [
+          23.984917968749997,
+          23.984917968750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 318.3066566577773,
+        "neutralAxisRatio": 0.05749177407230795,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 46.39960257202148,
+        "reactionsKNPerM": [
+          31.50132421875,
+          31.50132421875
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 631.7687735199222,
+        "neutralAxisRatio": 0.11410853915064989,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 23.93245096069335,
+        "reactionsKNPerM": [
+          23.984917968749997,
+          23.984917968750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 318.3066566577773,
+        "neutralAxisRatio": 0.05749177407230795,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 31.432415072021474,
+        "reactionsKNPerM": [
+          24.001324218749996,
+          24.001324218750003
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 421.2650772435437,
+        "neutralAxisRatio": 0.07608787356111804,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 23.93245096069336,
+        "reactionsKNPerM": [
+          23.98491796875,
+          23.98491796875
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 318.3066566577773,
+        "neutralAxisRatio": 0.05749177407230795,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 26.44335257202148,
+        "reactionsKNPerM": [
+          21.50132421875,
+          21.50132421875
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 352.59623282364595,
+        "neutralAxisRatio": 0.06368507391297952,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 41.07997236993434,
+        "reactionsKNPerM": [
+          31.851143006100603,
+          31.462099181399406
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 556.1540885037518,
+        "neutralAxisRatio": 0.10045119866916494,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 65.67378744506837,
+        "reactionsKNPerM": [
+          38.0269242561006,
+          37.63788043139941
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 913.703988670376,
+        "neutralAxisRatio": 0.16503099192826884,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 41.07997236993434,
+        "reactionsKNPerM": [
+          31.851143006100603,
+          31.462099181399406
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 556.1540885037518,
+        "neutralAxisRatio": 0.10045119866916494,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 48.02534994506836,
+        "reactionsKNPerM": [
+          30.5269242561006,
+          30.13788043139941
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 655.0596457440994,
+        "neutralAxisRatio": 0.11831527983876261,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 41.07997236993433,
+        "reactionsKNPerM": [
+          31.851143006100603,
+          31.462099181399406
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 556.1540885037518,
+        "neutralAxisRatio": 0.10045119866916494,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 42.14253744506837,
+        "reactionsKNPerM": [
+          28.026924256100603,
+          27.637880431399406
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 571.1857110854529,
+        "neutralAxisRatio": 0.10316617377675902,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 25.612576223144533,
+        "reactionsKNPerM": [
+          25.6687265625,
+          25.6687265625
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 297.22076831509673,
+        "neutralAxisRatio": 0.047039320401340935,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 48.07972783447265,
+        "reactionsKNPerM": [
+          33.1851328125,
+          33.1851328125
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 567.8559840828915,
+        "neutralAxisRatio": 0.08987110735403185,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 25.612576223144533,
+        "reactionsKNPerM": [
+          25.6687265625,
+          25.6687265625
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 297.22076831509673,
+        "neutralAxisRatio": 0.047039320401340935,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 33.112540334472655,
+        "reactionsKNPerM": [
+          25.6851328125,
+          25.6851328125
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 386.4797086525022,
+        "neutralAxisRatio": 0.06116578914380844,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 25.612576223144533,
+        "reactionsKNPerM": [
+          25.6687265625,
+          25.6687265625
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 297.22076831509673,
+        "neutralAxisRatio": 0.047039320401340935,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 28.123477834472663,
+        "reactionsKNPerM": [
+          23.1851328125,
+          23.1851328125
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 326.98645680286245,
+        "neutralAxisRatio": 0.051750154592638584,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 43.40821743829375,
+        "reactionsKNPerM": [
+          33.83659222485062,
+          33.4475484001494
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 510.76734368776243,
+        "neutralAxisRatio": 0.08083603600943293,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 68.00979254150394,
+        "reactionsKNPerM": [
+          40.01237347485061,
+          39.62332965014941
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 816.5814029923147,
+        "neutralAxisRatio": 0.12923536422734208,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 43.40821743829375,
+        "reactionsKNPerM": [
+          33.83659222485062,
+          33.4475484001494
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 510.76734368776243,
+        "neutralAxisRatio": 0.08083603600943293,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 50.36135504150394,
+        "reactionsKNPerM": [
+          32.51237347485061,
+          32.12332965014941
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 595.9010522551807,
+        "neutralAxisRatio": 0.09430962944961838,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": 2.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 43.40821743829371,
+        "reactionsKNPerM": [
+          33.836592224850605,
+          33.44754840014941
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 510.7673436877624,
+        "neutralAxisRatio": 0.08083603600943293,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "lower",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 10,
+        "partitionLineKNm": 5,
+        "ulsMomentKNmPerM": 44.47854254150392,
+        "reactionsKNPerM": [
+          30.012373474850605,
+          29.623329650149405
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 523.8083248524761,
+        "neutralAxisRatio": 0.08289995265574372,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 25.0898705859375,
+        "reactionsKNPerM": [
+          25.144875000000003,
+          25.144875000000003
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 392.6178578807359,
+        "neutralAxisRatio": 0.08257711710037015,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 61.03076501953126,
+        "reactionsKNPerM": [
+          38.6645625,
+          38.6645625
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1009.1719453992653,
+        "neutralAxisRatio": 0.21225348831422158,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 25.0898705859375,
+        "reactionsKNPerM": [
+          25.144875000000003,
+          25.144875000000003
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 392.6178578807359,
+        "neutralAxisRatio": 0.08257711710037015,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 38.57998376953125,
+        "reactionsKNPerM": [
+          27.414562500000002,
+          27.414562500000002
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 615.6648889742531,
+        "neutralAxisRatio": 0.1294893510596676,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 25.089870585937515,
+        "reactionsKNPerM": [
+          25.14487500000001,
+          25.144875
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 392.6178578807359,
+        "neutralAxisRatio": 0.08257711710037015,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 31.096390019531267,
+        "reactionsKNPerM": [
+          23.664562500000006,
+          23.6645625
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 490.80332229146205,
+        "neutralAxisRatio": 0.10322791641949246,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 50.59928936877488,
+        "reactionsKNPerM": [
+          36.788418824701196,
+          36.010331175298816
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 822.5713223733795,
+        "neutralAxisRatio": 0.17300682342285714,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 90.33908642578128,
+        "reactionsKNPerM": [
+          48.69935632470121,
+          47.921268675298805
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1575.908144002856,
+        "neutralAxisRatio": 0.33145194171550174,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 50.59928936877488,
+        "reactionsKNPerM": [
+          36.788418824701196,
+          36.010331175298816
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 822.5713223733795,
+        "neutralAxisRatio": 0.17300682342285714,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 63.866430175781275,
+        "reactionsKNPerM": [
+          37.44935632470121,
+          36.671268675298805
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1061.1297312939066,
+        "neutralAxisRatio": 0.2231814786844433,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 50.59928936877492,
+        "reactionsKNPerM": [
+          36.78841882470121,
+          36.01033117529881
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 822.5713223733809,
+        "neutralAxisRatio": 0.17300682342285736,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.0,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 55.04221142578128,
+        "reactionsKNPerM": [
+          33.69935632470121,
+          32.921268675298805
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 901.2029657923263,
+        "neutralAxisRatio": 0.1895449769888962,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 26.769995848388675,
+        "reactionsKNPerM": [
+          26.828683593750004,
+          26.828683593750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 357.0701325631708,
+        "neutralAxisRatio": 0.06449313880156103,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 62.71089028198242,
+        "reactionsKNPerM": [
+          40.34837109375,
+          40.34837109375
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 869.5093928646863,
+        "neutralAxisRatio": 0.1570486715333504,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 26.769995848388675,
+        "reactionsKNPerM": [
+          26.828683593750004,
+          26.828683593750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 357.0701325631708,
+        "neutralAxisRatio": 0.06449313880156103,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 40.260109031982424,
+        "reactionsKNPerM": [
+          29.098371093750004,
+          29.098371093750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 544.5800764487146,
+        "neutralAxisRatio": 0.09836072876456042,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 26.769995848388675,
+        "reactionsKNPerM": [
+          26.828683593750004,
+          26.828683593750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 357.0701325631708,
+        "neutralAxisRatio": 0.06449313880156103,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 32.77651528198243,
+        "reactionsKNPerM": [
+          25.348371093750004,
+          25.348371093750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 439.8895220286964,
+        "neutralAxisRatio": 0.07945177547587245,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 52.92753443713429,
+        "reactionsKNPerM": [
+          38.77386804345121,
+          37.995780394048815
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 725.8196826623818,
+        "neutralAxisRatio": 0.13109578558931573,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 92.6750915222168,
+        "reactionsKNPerM": [
+          50.684805543451205,
+          49.90671789404881
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1332.5387166426485,
+        "neutralAxisRatio": 0.2406799017156228,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 52.92753443713429,
+        "reactionsKNPerM": [
+          38.77386804345121,
+          37.995780394048815
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 725.8196826623818,
+        "neutralAxisRatio": 0.13109578558931573,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 66.2024352722168,
+        "reactionsKNPerM": [
+          39.434805543451205,
+          38.65671789404881
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 921.6235309141889,
+        "neutralAxisRatio": 0.16646140038474955,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 52.927534437134284,
+        "reactionsKNPerM": [
+          38.77386804345121,
+          37.99578039404881
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 725.8196826623818,
+        "neutralAxisRatio": 0.13109578558931573,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.625,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 57.3782165222168,
+        "reactionsKNPerM": [
+          35.684805543451205,
+          34.9067178940488
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 790.7699460504377,
+        "neutralAxisRatio": 0.14282694417660743,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 28.450121110839845,
+        "reactionsKNPerM": [
+          28.5124921875,
+          28.5124921875
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 330.8672825225696,
+        "neutralAxisRatio": 0.052364349238207694,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 64.39101554443363,
+        "reactionsKNPerM": [
+          42.03217968750001,
+          42.0321796875
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 770.7744350306847,
+        "neutralAxisRatio": 0.12198577445346483,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 28.450121110839845,
+        "reactionsKNPerM": [
+          28.5124921875,
+          28.5124921875
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 330.8672825225696,
+        "neutralAxisRatio": 0.052364349238207694,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 41.940234294433594,
+        "reactionsKNPerM": [
+          30.7821796875,
+          30.7821796875
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 492.91859415165925,
+        "neutralAxisRatio": 0.07801122315079057,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 28.450121110839845,
+        "reactionsKNPerM": [
+          28.5124921875,
+          28.5124921875
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 330.8672825225696,
+        "neutralAxisRatio": 0.052364349238207694,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 34.45664054443359,
+        "reactionsKNPerM": [
+          27.0321796875,
+          27.0321796875
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 402.5884924792042,
+        "neutralAxisRatio": 0.06371522822909084,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 55.25577950549364,
+        "reactionsKNPerM": [
+          40.75931726220119,
+          39.98122961279881
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 656.4282044970578,
+        "neutralAxisRatio": 0.10388889311758659,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 95.01109661865236,
+        "reactionsKNPerM": [
+          52.67025476220121,
+          51.8921671127988
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 1168.202421830363,
+        "neutralAxisRatio": 0.18488428088525916,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 55.25577950549364,
+        "reactionsKNPerM": [
+          40.75931726220119,
+          39.98122961279881
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 656.4282044970578,
+        "neutralAxisRatio": 0.10388889311758659,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 68.53844036865235,
+        "reactionsKNPerM": [
+          41.4202547622012,
+          40.64216711279881
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 823.2979260986095,
+        "neutralAxisRatio": 0.13029834742387658,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": 3,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 55.25577950549364,
+        "reactionsKNPerM": [
+          40.7593172622012,
+          39.98122961279882
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 656.4282044970579,
+        "neutralAxisRatio": 0.10388889311758659,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "reference",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.25,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 15,
+        "partitionLineKNm": 10,
+        "ulsMomentKNmPerM": 59.71422161865237,
+        "reactionsKNPerM": [
+          37.6702547622012,
+          36.89216711279881
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 712.0074518094642,
+        "neutralAxisRatio": 0.11268508201385508,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 27.927415473632806,
+        "reactionsKNPerM": [
+          27.988640624999995,
+          27.988640625000002
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 438.7834738900434,
+        "neutralAxisRatio": 0.09228687278949964,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 77.34205272949217,
+        "reactionsKNPerM": [
+          47.51160937499999,
+          47.511609375000006
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1316.010287434333,
+        "neutralAxisRatio": 0.27678907983795203,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 27.927415473632806,
+        "reactionsKNPerM": [
+          27.988640624999995,
+          27.988640625000002
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 438.7834738900434,
+        "neutralAxisRatio": 0.09228687278949964,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 47.407677729492164,
+        "reactionsKNPerM": [
+          32.51160937499999,
+          32.511609375000006
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 766.822760697059,
+        "neutralAxisRatio": 0.16128154039428652,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 27.927415473632816,
+        "reactionsKNPerM": [
+          27.988640625000002,
+          27.988640625000002
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 438.78347389004335,
+        "neutralAxisRatio": 0.09228687278949964,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 37.429552729492194,
+        "reactionsKNPerM": [
+          27.511609375000003,
+          27.511609375000003
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 596.2806172083037,
+        "neutralAxisRatio": 0.125412365646517,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 70.3622662766123,
+        "reactionsKNPerM": [
+          47.2806657744024,
+          45.72449047559761
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1182.2894749545528,
+        "neutralAxisRatio": 0.2486643296024349,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 124.82445300292967,
+        "reactionsKNPerM": [
+          64.9267595244024,
+          63.37058422559761
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 2355.624199700713,
+        "neutralAxisRatio": 0.4954452567010855,
+        "withinDuctilityAssumption": false,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 70.3622662766123,
+        "reactionsKNPerM": [
+          47.2806657744024,
+          45.72449047559761
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1182.2894749545528,
+        "neutralAxisRatio": 0.2486643296024349,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 89.52757800292969,
+        "reactionsKNPerM": [
+          49.9267595244024,
+          48.37058422559761
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1559.2296464970177,
+        "neutralAxisRatio": 0.3279440466619451,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 70.3622662766123,
+        "reactionsKNPerM": [
+          47.280665774402394,
+          45.72449047559761
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1182.2894749545528,
+        "neutralAxisRatio": 0.2486643296024349,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 200.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 6.5,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 78.05040807348733,
+        "reactionsKNPerM": [
+          44.92675952440242,
+          43.370584225597604
+        ],
+        "effectiveDepthAssumptionMm": 152.0,
+        "requiredFlexuralAsMm2PerM": 1329.7978016324475,
+        "neutralAxisRatio": 0.2796889305492932,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 29.607540736083983,
+        "reactionsKNPerM": [
+          29.67244921875,
+          29.67244921875
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 396.0639018556797,
+        "neutralAxisRatio": 0.07153609856222631,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 79.02217799194335,
+        "reactionsKNPerM": [
+          49.19541796874999,
+          49.19541796875001
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1116.9805412072967,
+        "neutralAxisRatio": 0.2017463083949775,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 29.607540736083983,
+        "reactionsKNPerM": [
+          29.67244921875,
+          29.67244921875
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 396.0639018556797,
+        "neutralAxisRatio": 0.07153609856222631,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 49.087802991943356,
+        "reactionsKNPerM": [
+          34.19541796875,
+          34.19541796875
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 670.3275115902834,
+        "neutralAxisRatio": 0.1210729246301464,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 29.60754073608398,
+        "reactionsKNPerM": [
+          29.67244921875,
+          29.672449218750007
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 396.06390185567966,
+        "neutralAxisRatio": 0.07153609856222631,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 39.10967799194336,
+        "reactionsKNPerM": [
+          29.195417968750004,
+          29.195417968750004
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 528.37477310728,
+        "neutralAxisRatio": 0.0954337662930195,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 72.69051134497167,
+        "reactionsKNPerM": [
+          49.2661149931524,
+          47.70993969434761
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1019.6854160921281,
+        "neutralAxisRatio": 0.18417309955859382,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 127.16045809936521,
+        "reactionsKNPerM": [
+          66.91220874315239,
+          65.3560334443476
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1918.199775487444,
+        "neutralAxisRatio": 0.34646057759465154,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 72.69051134497167,
+        "reactionsKNPerM": [
+          49.2661149931524,
+          47.70993969434761
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1019.6854160921281,
+        "neutralAxisRatio": 0.18417309955859382,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 91.86358309936524,
+        "reactionsKNPerM": [
+          51.9122087431524,
+          50.35603344434761
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1319.4943767660018,
+        "neutralAxisRatio": 0.23832386477632359,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 72.6905113449717,
+        "reactionsKNPerM": [
+          49.26611499315241,
+          47.70993969434761
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1019.6854160921281,
+        "neutralAxisRatio": 0.18417309955859382,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 225.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.125,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 80.3786531418467,
+        "reactionsKNPerM": [
+          46.912208743152405,
+          45.35603344434761
+        ],
+        "effectiveDepthAssumptionMm": 177.0,
+        "requiredFlexuralAsMm2PerM": 1138.037642927139,
+        "neutralAxisRatio": 0.20554959088804944,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 31.287665998535164,
+        "reactionsKNPerM": [
+          31.356257812500004,
+          31.356257812499997
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 364.66406834722426,
+        "neutralAxisRatio": 0.05771316064850603,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 80.70230325439454,
+        "reactionsKNPerM": [
+          50.8792265625,
+          50.8792265625
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 979.6418426478051,
+        "neutralAxisRatio": 0.15504194668528987,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 31.287665998535164,
+        "reactionsKNPerM": [
+          31.356257812500004,
+          31.356257812499997
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 364.66406834722426,
+        "neutralAxisRatio": 0.05771316064850603,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 50.76792825439453,
+        "reactionsKNPerM": [
+          35.8792265625,
+          35.8792265625
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 600.9098410324535,
+        "neutralAxisRatio": 0.09510233993701944,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 31.28766599853515,
+        "reactionsKNPerM": [
+          31.3562578125,
+          31.3562578125
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 364.66406834722426,
+        "neutralAxisRatio": 0.05771316064850603,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "west",
+        "spanM": 3.99125,
+        "supportCoordinatesX": [
+          5.10625,
+          9.0975
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 0,
+        "ulsMomentKNmPerM": 40.789803254394535,
+        "reactionsKNPerM": [
+          30.879226562499998,
+          30.879226562499998
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 478.9608727939895,
+        "neutralAxisRatio": 0.07580221961870894,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 75.01875641333109,
+        "reactionsKNPerM": [
+          51.25156421190241,
+          49.69538891309761
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 906.1552553277896,
+        "neutralAxisRatio": 0.1434116721733733,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 0.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 129.49646319580077,
+        "reactionsKNPerM": [
+          68.8976579619024,
+          67.34148266309761
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 1645.974046821142,
+        "neutralAxisRatio": 0.26049828549877535,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "distributed",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 75.01875641333109,
+        "reactionsKNPerM": [
+          51.25156421190241,
+          49.69538891309761
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 906.1552553277896,
+        "neutralAxisRatio": 0.1434116721733733,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.0,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 94.19958819580077,
+        "reactionsKNPerM": [
+          53.8976579619024,
+          52.34148266309761
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 1157.3673135210304,
+        "neutralAxisRatio": 0.18316947429810437,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "distributed",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": 3.5,
+        "singleWheelOrJackKN": null,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 75.01875641333106,
+        "reactionsKNPerM": [
+          51.251564211902405,
+          49.69538891309761
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 906.1552553277896,
+        "neutralAxisRatio": 0.1434116721733733,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      },
+      {
+        "case": "upper",
+        "bay": "east",
+        "spanM": 4.706250000000001,
+        "supportCoordinatesX": [
+          9.0975,
+          13.80375
+        ],
+        "thicknessMm": 250.0,
+        "stripWidthM": 1.5,
+        "loadAction": "wheel-or-jack",
+        "gkKPa": 7.75,
+        "vehicleUDLKPa": null,
+        "singleWheelOrJackKN": 20,
+        "partitionLineKNm": 20,
+        "ulsMomentKNmPerM": 82.70689821020602,
+        "reactionsKNPerM": [
+          48.89765796190239,
+          47.341482663097615
+        ],
+        "effectiveDepthAssumptionMm": 202.0,
+        "requiredFlexuralAsMm2PerM": 1005.7475679615791,
+        "neutralAxisRatio": 0.15917354080068546,
+        "withinDuctilityAssumption": true,
+        "equilibriumResidualKN": 0.0
+      }
+    ],
+    "approvedForConstruction": false,
+    "limits": "No verified effective strip width, wheel/axle/jack positions, simultaneous actions, punching/one-way shear, cracking, long-term deflection, reinforcement continuity, anchorage, fire/exposure cover, bearing or construction-stage design. Required As is not an order or fixing schedule.",
+    "flexureSource": "https://www.concretecentre.com/TCC/media/TCCMediaLibrary/Events/Online%20course/CCIP_Worked_Examples_EC2.pdf#page=185"
+  }
+}

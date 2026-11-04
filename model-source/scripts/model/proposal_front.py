@@ -13,7 +13,7 @@ outer=spec['frontWing'];x0,y0,x1,y1=outer[0]+.115,outer[1]+.115,outer[2]-.115,ou
 # wing's north wall stands one glazing bay further north, and the link's
 # northernmost glazing bay beside the original front wall is solid.
 _cy=spec.get('courtyard') or {};_cfy=float(_cy['facade_y']) if _cy.get('facade_y') is not None else outer[3]
-_cdy=round(_cfy-outer[3],4);y1c=_cfy-.115;_cx0=float(_cy.get('west_x',10.35));_cgx=float(_cy.get('ground_glazing_x',9.7));_cgz=[float(v) for v in _cy['glazing_y']] if _cy.get('glazing_y') else None
+_cdy=round(_cfy-outer[3],4);y1c=_cfy-.115;_cx0=float(_cy.get('upper_glazing_x',_cy.get('west_x',10.35)));_cgx=float(_cy.get('ground_glazing_x',9.7));_cgz=[float(v) for v in _cy['glazing_y']] if _cy.get('glazing_y') else None
 # Owner (22 September): at ground level that wall comes back again, so the
 # courtyard is bigger and the floors above overhang it as a covered loggia.
 _cgr=float(_cy.get('ground_recess_m',0));_cgfy=_cfy-_cgr;y1cg=_cgfy-.115
@@ -28,10 +28,11 @@ eth=float(_eb['wall_thickness_m']);ex=outer[0]-_eb['projection_m'];exc=ex+eth/2;
 epd=float(_eb['pier_depth_m']);exg=ex+float(_eb['glass_inset_m'])   # pier depth; recessed glass line
 eeave=float(_eb['eave_z'])   # owner: the whole entrance roof sits 1 m above the wing eaves
 # Main wing roof plane, for closures that meet its west slope.
-_wr=spec['newWingRoof'];_wex=outer[0]-.20;_wcx=(_wex+spec.get('frontWingUpperEastX',outer[2])+.20)/2
+_wr=spec['newWingRoof'];_wex=outer[0]-.20;_wcx=float(_wr.get('ridge_x',(_wex+spec.get('frontWingUpperEastX',outer[2])+.20)/2))
 _wslope=(float(_wr['ridge'])-float(_wr['eave']))/(_wcx-_wex)
+_weslope=(float(_wr['ridge'])-float(_wr['eave']))/(spec.get('frontWingUpperEastX',outer[2])+.20-_wcx)
 def _wing_west_top(x):return float(_wr['eave'])+_wslope*(x-_wex)
-def _wing_east_soffit(x):return float(_wr['ridge'])-_wslope*(x-_wcx)-.35
+def _wing_east_soffit(x):return float(_wr['ridge'])-_weslope*(x-_wcx)-.35
 # Variant support (proposal B, compact): everything on the first floor east
 # of the suite moves with the inset upper east wall; the loft's usable ridge
 # band (1.9 m headroom) and the loft flight follow the roof and the spec.
@@ -150,8 +151,9 @@ def _g_panel(name,bottom,top):
   [(0,5,4,3,2,1),(6,7,8,9,10,11),(0,1,7,6),(1,2,8,7),(2,3,9,8),(3,4,10,9),(4,5,11,10),(5,0,6,11)],white,L)
 _g_panel('Proposal | West upper principal facade above vault',_gv,_gt)
 if any(z<5.34 for y,z in _gt):_g_panel('Proposal | West upper principal facade above wing roof',_gt,[(y,5.35) for y,z in _gv])
-slab('Proposal | Garage wing first floor',[gxc,gy0+gth/2,x0+.115,gy1],gff,.20,oak,L)
-slab('Proposal | Garage wing ground ceiling',[gxc,gy0+gth/2,x0+.115,gy1],gff-.20,.065,plaster,L,False)
+_garage_floor_bounds=[gx+gth-.015,gy0+gth-.015,x0+.115,gy1-gth+.015]
+slab('Proposal | Garage wing first floor',_garage_floor_bounds,gff,.20,oak,L)
+slab('Proposal | Garage wing ground ceiling',_garage_floor_bounds,gff-.20,.065,plaster,L,False)
 # Under 1.75 m of headroom the vault is out of the walking route; the clear
 # 1.2 m band leads to a window seat under the gable window.
 for label,ya,yb in (('south',gy0,_gmid-.60),('north',_gmid+.60,gy1)):
@@ -232,7 +234,12 @@ _ls_yfoot=float(spec.get('loftStairFootY',-1.23))
 # two-storey garden glazing, so the loft room keeps no stair void; the void
 # then sits in the link and bridge deck instead.
 _ls_dir=1 if spec.get('loftStairRises','south')=='north' else -1
-loftstairvoid=[round(float(_lsx[0])-.02,2),min(_ls_yfoot+_ls_dir*3.76,_ls_yfoot+_ls_dir*.72),round(float(_lsx[1])+.02,2),max(_ls_yfoot+_ls_dir*3.76,_ls_yfoot+_ls_dir*.72)]
+loftstairvoid=[round(float(_lsx[0])-.02,2),min(_ls_yfoot+_ls_dir*3.76,_ls_yfoot+_ls_dir*float(spec.get('loftStairOpeningStartOffsetM',.72))),round(float(_lsx[1])+.02,2),max(_ls_yfoot+_ls_dir*3.76,_ls_yfoot+_ls_dir*float(spec.get('loftStairOpeningStartOffsetM',.72)))]
+loftstairvoids=[loftstairvoid]
+if spec.get('loftLevelStair'):
+ _level_cfg=json.loads((ROOT/'proposal/interiors/leisure/loft-stair.json').read_text());loftstairvoids=_level_cfg['openings'];loftstairvoid=loftstairvoids[0]
+elif spec.get('loftGrandStair'):
+ _grand_cfg=json.loads((ROOT/'proposal/interiors/leisure/loft-stair.json').read_text());loftstairvoids=_grand_cfg['openings'];loftstairvoid=loftstairvoids[1]
 floor_with_holes('Proposal | Wing first floor',[x0+.115,y0+.115,x1u-.115,y1-.115],ff,[arrivalhole])
 if _cdy>0:slab('Proposal | Wing first floor courtyard notch',[_cx0,y1-.115,x1u-.115,y1c-.115],ff,.20,oak,L)
 # Flat roof over the ground-floor strip east of the inset upper floor.
@@ -240,7 +247,7 @@ if x1u<x1-.10:   # only where the upper floor is inset from the ground floor (pr
  slab('Proposal | East step flat roof',[x1u-.02,y0-.10,x1+.30,y1+.10],ff+.16,.16,black,L,False)
  wall('Proposal | East step flat roof fascia',[x1+.30,y0-.10],[x1+.30,y1+.10],ff-.02,ff+.18,white,L,.03,False)
 before_loft_support=len(new_surfaces)
-floor_with_holes('Proposal | Wing loft floor',[x0+.30,y0+.30,x1u-.30,y1-.30],lf,[loftarrivalhole,loftstairvoid])
+floor_with_holes('Proposal | Wing loft floor',[x0+.30,y0+.30,x1u-.30,y1-.30],lf,[loftarrivalhole]+loftstairvoids)
 del new_surfaces[before_loft_support:]
 if _cdy>0:slab('Proposal | Wing loft floor courtyard notch',[_cx0,y1-.30,x1u-.30,y1c-.30],lf,.20,oak,L,False)
 # Standable roof band only; eaves floor remains editable storage, not false full-height space.
@@ -254,7 +261,7 @@ for rr in (WL['loft_standing'] or [[lb0+.1,_lse+.05,lb1-.1,_lgn],[max(7.45,lb0-.
  if rr[2]-rr[0]<.05 or rr[3]-rr[1]<.05:continue   # a strip the void or band leaves no room for
  new_surfaces.append({'name':'Proposal | New loft safe standing floor','polygon':[[rr[0],rr[1]],[rr[2],rr[1]],[rr[2],rr[3]],[rr[0],rr[3]]],'z':lf})
 # Ceilings follow those openings as well, below the structural deck.
-for name,z,holes,xe in [('Ground ceiling',2.61,[arrivalhole],x1),('First ceiling',5.35,[loftarrivalhole,loftstairvoid],x1u)]:
+for name,z,holes,xe in [('Ground ceiling',2.61,[arrivalhole],x1),('First ceiling',5.35,[loftarrivalhole]+loftstairvoids,x1u)]:
  ob=slab('Proposal | Wing '+name,[x0+.115,y0+.115,xe-.115,y1-.115],z,.065,plaster,L,False)
  for h in holes:cut(ob,h,z-.15,z+.1)
  if _cdy>0 or _cgr>0:slab('Proposal | Wing '+name+' courtyard notch',[_cgx if z<3 else _cx0,(min(y1,y1cg) if z<3 else y1)-.115,xe-.115,y1c-.115],z,.065,plaster,L,False)   # the ground ceiling runs out as the loggia soffit
@@ -458,9 +465,9 @@ else:
 if WL['linen']:wardrobe('Proposal | Landing linen storage',[ex_(12.35),_lsy+.10,ex_(13.10),_lsy+.72],ff)
 # Pitched-roof loft: useful central studio with low eaves storage outside knee walls.
 _jwx=WL['junction_walk_x']
-if _jwx[0]<=7.45 and _jwx[1]>=10.35:floor_with_holes('Proposal | Loft bridge junction deck',[7.45,-4.45,10.35,-3.98],lf,[loftstairvoid])
+if _jwx[0]<=7.45 and _jwx[1]>=_cx0:floor_with_holes('Proposal | Loft bridge junction deck',[7.45,-4.45,_cx0,-3.98],lf,loftstairvoids)
 else:
- slab('Proposal | Loft bridge junction deck',[7.45,-4.45,10.35,-3.98],lf,.20,oak,L,False)   # only its ridge band has headroom
+ slab('Proposal | Loft bridge junction deck',[7.45,-4.45,_cx0,-3.98],lf,.20,oak,L,False)   # only its ridge band has headroom
  new_surfaces.append({'name':'Proposal | Loft bridge junction deck','polygon':[[_jwx[0],-4.45],[_jwx[1],-4.45],[_jwx[1],-3.98],[_jwx[0],-3.98]],'z':lf})
 # Owner: the wing is about 10% smaller; with the lower ridge the loft rooms
 # keep only the 2.4 m band that still has 1.9 m headroom.
@@ -742,16 +749,16 @@ if _cgz:
  _gz=_ggz or _cgz
  if _gz[0]>_gsp+.01:wall('Proposal | Internal garden gallery south panel',[_cgx,_gsp],[_cgx,_gz[0]],0,2.60,white,L,.23)
  if _gz[1]<-.125:wall('Proposal | Internal garden gallery north panel',[_cgx,_gz[1]],[_cgx,-.115],0,2.60,white,L,.23)
-slab('Proposal | Entrance first floor continuation',[5.50,-4.30,10.35,.14],ff,.20,oak,L)
+slab('Proposal | Entrance first floor continuation',[5.50,-4.30,_cx0,.14],ff,.20,oak,L)
 # Owner: the loft flight now rises from the first-floor continuation beside
 # the garden-facing glazing, replacing the stacked flight over the original
 # stair. Its void is cut from this ceiling and (in the loft module) the bridge.
-_uc=slab('Proposal | Entrance upper ceiling',[5.50,-4.10,10.35,.1],5.35,.08,plaster,L,False)
-cut(_uc,loftstairvoid,5.2,5.5)
+_uc=slab('Proposal | Entrance upper ceiling',[5.50,-4.10,_cx0,.1],5.35,.08,plaster,L,False)
+for _hole in loftstairvoids:cut(_uc,_hole,5.2,5.5)
 _lgy0,_lgy1=(_cgz if _cgz else [_cfy,-.115])
-glazing('Proposal | Landing garden-facing glazing',[10.35,_lgy0],[10.35,_lgy1],ff,5.35,L,max(1,round((_lgy1-_lgy0)/.96)))
-if _lgy0>_cfy+.01:wall('Proposal | Landing garden-facing south panel',[10.4075,_cfy],[10.4075,_lgy0],ff,5.35,white,L,.115)   # faces flush with the courtyard upper return
-if _lgy1<-.125:wall('Proposal | Landing garden-facing north panel',[10.35,_lgy1],[10.35,-.115],ff,5.35,white,L,.23)
+glazing('Proposal | Landing garden-facing glazing',[_cx0,_lgy0],[_cx0,_lgy1],ff,5.35,L,max(1,round((_lgy1-_lgy0)/.96)))
+if _lgy0>_cfy+.01:wall('Proposal | Landing garden-facing south panel',[_cx0+.0575,_cfy],[_cx0+.0575,_lgy0],ff,5.35,white,L,.115)   # faces flush with the courtyard upper return
+if _lgy1<-.125:wall('Proposal | Landing garden-facing north panel',[_cx0,_lgy1],[_cx0,-.115],ff,5.35,white,L,.23)
 # The loft flight: sixteen risers from the first-floor continuation (2.80)
 # to the loft (5.55) on 250 mm goings. Owner: it rises SOUTH, with a landing
 # at its foot a metre from the original house and its head through the loft
@@ -761,44 +768,47 @@ _ls_x0,_ls_x1=float(_lsx[0]),float(_lsx[1]);_ls_cx=(_ls_x0+_ls_x1)/2;_ls_rise=(l
 # When the flight stands against the garden glazing (proposal B) the glass
 # itself is its east guard, so that side carries only a raked handrail.
 _ls_on_glass=_ls_x1>=float(_wd.get('link_bounds',[0,0,0,0])[2])-.06 if _wd.get('link_bounds') else False
-for i in range(15):
- z=ff+(i+1)*_ls_rise;yb=_ls_yfoot+_ls_dir*i*_ls_go;ya=yb+_ls_dir*_ls_go;ya,yb=min(ya,yb),max(ya,yb)
- slab('Proposal | Loft stair structure %02d'%(i+1),[_ls_x0,ya,_ls_x1,yb],z-.035,.165,plaster,L,False)
- slab('Proposal | Loft stair oak tread %02d'%(i+1),[_ls_x0,ya-(.018 if _ls_dir>0 else 0),_ls_x1,yb+(.018 if _ls_dir<0 else 0)],z,.035,oak,L,False)
- # The flight is entered from the landing over its three lowest treads: the
- # west guard starts at the fourth tread, once the drop exceeds 600 mm.
+if not spec.get('loftGrandStair') and not spec.get('loftLevelStair'):
+ for i in range(15):
+  z=ff+(i+1)*_ls_rise;yb=_ls_yfoot+_ls_dir*i*_ls_go;ya=yb+_ls_dir*_ls_go;ya,yb=min(ya,yb),max(ya,yb)
+  slab('Proposal | Loft stair structure %02d'%(i+1),[_ls_x0,ya,_ls_x1,yb],z-.035,.165,plaster,L,False)
+  slab('Proposal | Loft stair oak tread %02d'%(i+1),[_ls_x0,ya-(.018 if _ls_dir>0 else 0),_ls_x1,yb+(.018 if _ls_dir<0 else 0)],z,.035,oak,L,False)
+  # The flight is entered from the landing over its three lowest treads: the
+  # west guard starts at the fourth tread, once the drop exceeds 600 mm.
+  for side,x in [('west',_ls_x0-.01),('east',_ls_x1+.01)]:
+   if side=='west' and i<3:continue
+   if side=='east' and _ls_on_glass:continue
+   segment('Proposal | Loft stair '+side+' guard %02d'%(i+1),[x,ya],[x,yb],z,z+1.0,.035)
+ _ls_ytop=_ls_yfoot+_ls_dir*15*_ls_go   # the top riser lands flush with the loft floor at the void's far end
+ wall('Proposal | Loft stair final riser',[_ls_x0,_ls_ytop],[_ls_x1,_ls_ytop],lf-_ls_rise,lf,plaster,L,.025,False)
  for side,x in [('west',_ls_x0-.01),('east',_ls_x1+.01)]:
-  if side=='west' and i<3:continue
+  y0g=_ls_yfoot+_ls_dir*(3*_ls_go if side=='west' else 0);z0g=ff+_ls_rise*(4 if side=='west' else 1)
+  # Owner (22 September): nothing on the glazed side - no handrail or guard there.
   if side=='east' and _ls_on_glass:continue
-  segment('Proposal | Loft stair '+side+' guard %02d'%(i+1),[x,ya],[x,yb],z,z+1.0,.035)
-_ls_ytop=_ls_yfoot+_ls_dir*15*_ls_go   # the top riser lands flush with the loft floor at the void's far end
-wall('Proposal | Loft stair final riser',[_ls_x0,_ls_ytop],[_ls_x1,_ls_ytop],lf-_ls_rise,lf,plaster,L,.025,False)
-for side,x in [('west',_ls_x0-.01),('east',_ls_x1+.01)]:
- y0g=_ls_yfoot+_ls_dir*(3*_ls_go if side=='west' else 0);z0g=ff+_ls_rise*(4 if side=='west' else 1)
- # Owner (22 September): nothing on the glazed side - no handrail or guard there.
- if side=='east' and _ls_on_glass:continue
- beam('Proposal | Loft stair '+side+' handrail',(x,y0g,z0g+1.0),(x,_ls_ytop,lf+1.0),.045,oak,L)
- # Owner (21 September, proposal B): oak newels and spindles along the flight instead of glass.
- raked_guard('Proposal | Loft stair '+side+' guard',[x,y0g],[x,_ls_ytop],z0g,lf,L,1.0)
-# The ramp overlaps the loft floor's void edge and the landing by 30 mm, so
-# no unsupported sliver is left between the top riser and the void edge.
-new_ramps.append({'name':'Proposal | First-to-loft stair beside garden glazing','polygon':[[_ls_x0,_ls_ytop+_ls_dir*.03],[_ls_x1,_ls_ytop+_ls_dir*.03],[_ls_x1,_ls_yfoot-_ls_dir*.03],[_ls_x0,_ls_yfoot-_ls_dir*.03]],'start':[_ls_cx,_ls_yfoot,ff],'end':[_ls_cx,_ls_ytop,lf]})
-loftstairramp=new_ramps[-1]['name']
-# Nobody on the landing floor walks under the low half of the flight beyond
-# its open entry treads; the block applies to the landing level only, so it
-# never stops anyone already climbing. The loft void is guarded on its open
-# west edge and its foot end.
-_ls_lo=[_ls_yfoot+_ls_dir*2.72,_ls_yfoot+_ls_dir*(3*_ls_go+.02)]
-obstacle('Proposal | Loft stair low headroom',[_ls_x0-.02,min(_ls_lo),_ls_x1+.02,max(_ls_lo)],ff,lf)
-new_obstacles[-1]['maxFootZ']=ff+.25
-guard('Proposal | Loft stair void west guard',[loftstairvoid[0]-.06,loftstairvoid[1]],[loftstairvoid[0]-.06,loftstairvoid[3]],lf,L)
-if _ls_dir<0:guard('Proposal | Loft stair void north guard',[loftstairvoid[0]-.06,loftstairvoid[3]+.06],[loftstairvoid[2],loftstairvoid[3]+.06],lf,L)
+  beam('Proposal | Loft stair '+side+' handrail',(x,y0g,z0g+1.0),(x,_ls_ytop,lf+1.0),.045,oak,L)
+  # Owner (21 September, proposal B): oak newels and spindles along the flight instead of glass.
+  raked_guard('Proposal | Loft stair '+side+' guard',[x,y0g],[x,_ls_ytop],z0g,lf,L,1.0)
+ # The ramp overlaps the loft floor's void edge and the landing by 30 mm, so
+ # no unsupported sliver is left between the top riser and the void edge.
+ new_ramps.append({'name':'Proposal | First-to-loft stair beside garden glazing','polygon':[[_ls_x0,_ls_ytop+_ls_dir*.03],[_ls_x1,_ls_ytop+_ls_dir*.03],[_ls_x1,_ls_yfoot-_ls_dir*.03],[_ls_x0,_ls_yfoot-_ls_dir*.03]],'start':[_ls_cx,_ls_yfoot,ff],'end':[_ls_cx,_ls_ytop,lf]})
+ loftstairramp=new_ramps[-1]['name']
+ # Nobody on the landing floor walks under the low half of the flight beyond
+ # its open entry treads; the block applies to the landing level only, so it
+ # never stops anyone already climbing. The loft void is guarded on its open
+ # west edge and its foot end.
+ _ls_lo=[_ls_yfoot+_ls_dir*2.72,_ls_yfoot+_ls_dir*(3*_ls_go+.02)]
+ obstacle('Proposal | Loft stair low headroom',[_ls_x0-.02,min(_ls_lo),_ls_x1+.02,max(_ls_lo)],ff,lf)
+ new_obstacles[-1]['maxFootZ']=ff+.25
+ guard('Proposal | Loft stair void west guard',[loftstairvoid[0]-.06,loftstairvoid[1]],[loftstairvoid[0]-.06,loftstairvoid[3]],lf,L)
+ if _ls_dir<0:guard('Proposal | Loft stair void north guard',[loftstairvoid[0]-.06,loftstairvoid[3]+.06],[loftstairvoid[2],loftstairvoid[3]+.06],lf,L)
+ else:
+  guard('Proposal | Loft stair void south guard',[loftstairvoid[0]-.06,loftstairvoid[1]-.06],[loftstairvoid[2],loftstairvoid[1]-.06],lf,L)
+  # Owner (22 September): it turns the corner and runs on to the dormer's solid
+  # panel, so the void's east side is not open where the glazing stops short.
+  _vge=(_cgz[0] if _cgz else loftstairvoid[3])-.06
+  if _vge>loftstairvoid[1]+.15:guard('Proposal | Loft stair void east guard',[loftstairvoid[2],loftstairvoid[1]-.06],[loftstairvoid[2],_vge],lf,L)
 else:
- guard('Proposal | Loft stair void south guard',[loftstairvoid[0]-.06,loftstairvoid[1]-.06],[loftstairvoid[2],loftstairvoid[1]-.06],lf,L)
- # Owner (22 September): it turns the corner and runs on to the dormer's solid
- # panel, so the void's east side is not open where the glazing stops short.
- _vge=(_cgz[0] if _cgz else loftstairvoid[3])-.06
- if _vge>loftstairvoid[1]+.15:guard('Proposal | Loft stair void east guard',[loftstairvoid[2],loftstairvoid[1]-.06],[loftstairvoid[2],_vge],lf,L)
+ _ls_ytop=-.30;loftstairramp='Proposal | Grand loft stair | main flight'
 new_views.append({'id':'proposal-old-house-loft-stair','label':'Loft stair beside the garden glazing','group':'Proposal · First floor','position':_vviews.get('loft-stair',{}).get('position',[8.4,-0.6,ff]),'direction':_vviews.get('loft-stair',{}).get('direction',[.75,-.55,.3])})
 nav['proposalVariantRoutes']={'upperEastShift':_dxe,'loftPassageX':_lpx,'upperGalleryX':round((7.73+(float(WL['study']['west_x']) if WL.get('study') else ex_(11.24)))/2,2),'linkWestX':min(7.0,_ls_x0-.55),
  'stair':{'x':[_ls_x0,_ls_x1],'centre_x':_ls_cx,'foot_y':_ls_yfoot,'top_y':_ls_ytop,'rises':'north' if _ls_dir>0 else 'south'},'loftBand':[lb0,lb1],'laundryDoorX':ex_(11.30),
@@ -814,7 +824,7 @@ room('Joined first-floor landing',[5.73,-4.1,10.23,.10],ff,1,'Proposal · First 
 new_rooms[-1]['polygon_m']=[[5.73,-4.1],[9.24,-4.1],[9.24,.10],[5.73,.10]]
 slab('Proposal | New arrival threshold terrace',[ex-1.28,ey0+1.11,ex,ey1-1.11],0,.12,stone,S)
 for y in(ey0+.71,ey1-.71):lamp('Proposal | Arrival wall uplight',ex-.21,y,.2)
-for y in(-10,-8.9,-7.8):lamp('Proposal | Double height pendant',7.6,y,4.6)
+# The detailed Arrival 01 suspended luminaires replace the obsolete floating lamp proxies.
 # Room views and plans.
 room('New double garage',[gx+gth,y0-.36,11.20,gy1-gth],view=[4.0,_gmid if False else (gy0+gy1)/2,0,1,0,0])
 new_rooms[-1]['polygon_m']=[[gx+gth,gy0+gth],[5.16,gy0+gth],[5.16,y0-.36],[11.20,y0-.36],[11.20,gy1-gth],[gx+gth,gy1-gth]]
@@ -831,11 +841,13 @@ _gyn=float(WL.get('gym_north_y',-6.71));_gwx=float(WL.get('gym_west_x',10.69))  
 if _gyn<y1-.3:wall('Proposal | Gym north partition',[_gwx,_gyn],[x1,_gyn],0,2.60,plaster,L,.12)
 # Owner: a big internal window from the gym into the house, beside its door
 # (and, in proposal B, a second one the other side of the door).
-perforated_wall('Proposal | Gym west partition',[_gwx,WL['gym_west_partition_y0']],[_gwx,_gyn],0,2.60,[tuple(h) for h in WL['gym_west_holes']],plaster,L,.12)
+perforated_wall('Proposal | Gym west partition',[_gwx,WL['gym_west_partition_y0']],[_gwx,float(WL.get('gym_west_north_y',_gyn))],0,2.60,[tuple(h) for h in WL['gym_west_holes']],plaster,L,.12)
 proposed_doors[-1]['openDelta']=-math.pi/2
 _gys=WL['gym_south_y'];_gyw=WL['gym_west_y']
 room('Gym',[_gwx+.06,_gys,13.75,_gyn-.06],view=WL.get('gym_view') or [11.55,-7.3,0,.4,-1,0])
 new_rooms[-1]['polygon_m']=[[11.43,_gys],[13.75,_gys],[13.75,_gyn-.06],[_gwx+.06,_gyn-.06],[_gwx+.06,_gyw],[11.43,_gyw]]
+if WL.get('gym_expanded_courtyard'):
+ new_rooms[-1]['polygon_m']=[[11.43,_gys],[13.75,_gys],[13.75,_gyn-.06],[_cgx+.115,_gyn-.06],[_cgx+.115,y1-.115],[_gwx+.06,y1-.115],[_gwx+.06,_gyw],[11.43,_gyw]]
 if WL['reading_alcove']:room('Open reading alcove',[5.16,-6.64,9.29,-4.23],view=[8.5,-5.6,0,-1,0,0]);new_views[-1]['id']='proposal-new-study'
 room('Attached entrance gallery',[5.73,-3.885,10.235,-.815])
 new_rooms[-1]['polygon_m']=spec['frontLinkInteriorPolygon']
@@ -880,7 +892,7 @@ else:
   room('Loft ensuite',[_kx,_lsy0,wdx1-.18,_ey1-.05],lf,3,'Proposal · Loft',[wdx0+1.2,_ey1-.9,lf,.6,-.8,0])
   if _lhs:room('Loft hip store',[float(WL['loft_knee_walls'][0][0][0]),float(_lhs['store_south_y']),wdx1-.18,float(_lhs['wall_y'])-.06],lf,3,'Proposal · Loft',[(_hd0+_hd1)/2,float(_lhs['wall_y'])-.7,lf,-.35,-1,0])
   room('Loft landing',[_kx,_ly+.05,wdx1-.18,-4.0],lf,3,'Proposal · Loft',[(11.35+wdx1-.18)/2,-4.6,lf,0,-1,0])
-  new_rooms[-1]['polygon_m']=[[_kx,_ly+.05],[wdx1-.18,_ly+.05],[wdx1-.18,wdy1-.1],[10.35,wdy1-.1],[10.35,-4.0],[_kx,-4.0]]
+  new_rooms[-1]['polygon_m']=[[_kx,_ly+.05],[wdx1-.18,_ly+.05],[wdx1-.18,wdy1-.1],[_cx0,wdy1-.1],[_cx0,-4.0],[_kx,-4.0]]
  elif _lsu and _lsu.get('plan')=='open':
   _lsy0=min(q[1] for q in _lsp)
   room('New loft bedroom',[_kx,_lsy0,wdx1-.18,_ly-.05],lf,3,'Proposal · Loft',[wdx1-.9,_ly-.8,lf,-.3,-1,0])
@@ -890,7 +902,7 @@ else:
   if _wr_:room('Loft walk-in wardrobe',[_kx,_wy0+.05,_wx1-.05,_wy1-.05],lf,3,'Proposal · Loft',[_wx1-.3,(_wy0+_wy1)/2,lf,-1,0,0])
   room('Loft ensuite',[_kx,_ey0+.05,_ex1-.05,_ly-.05],lf,3,'Proposal · Loft',[wdx0+.45,_ly-.85,lf,.5,.85,0])   # between the vanity and the shower
   room('Loft landing',[_kx,_ly+.05,wdx1-.18,-4.0],lf,3,'Proposal · Loft',[(_ex1+wdx1-.18)/2,-4.6,lf,0,-1,0])
-  new_rooms[-1]['polygon_m']=[[_kx,_ly+.05],[wdx1-.18,_ly+.05],[wdx1-.18,wdy1-.1],[10.35,wdy1-.1],[10.35,-4.0],[_kx,-4.0]]
+  new_rooms[-1]['polygon_m']=[[_kx,_ly+.05],[wdx1-.18,_ly+.05],[wdx1-.18,wdy1-.1],[_cx0,wdy1-.1],[_cx0,-4.0],[_kx,-4.0]]
  elif _lsu:
   # The dormer room is a bedroom suite: bedroom at the south end, wardrobe
   # and ensuite under the slope, a corridor along the glazed band.
@@ -900,7 +912,7 @@ else:
   room('Loft walk-in wardrobe',[_kx,_wy0+.05,_cx-.05,_wy1-.05],lf,3,'Proposal · Loft',[_cx-.3,(_wy0+_wy1)/2,lf,-1,0,0])
   room('Loft ensuite',[_ewx+.05,_ey0+.05,_cx-.05,_ey1-.05],lf,3,'Proposal · Loft',[_cx-.2,_ey1-.3,lf,-.85,-.5,0])
   room('Loft corridor',[_kx,_bwy+.05,wdx1-.18,-4.0],lf,3,'Proposal · Loft',[(_cx+wdx1-.18)/2,-4.6,lf,0,-1,0])
-  new_rooms[-1]['polygon_m']=[[_cx+.05,_bwy+.05],[wdx1-.18,_bwy+.05],[wdx1-.18,wdy1-.1],[10.35,wdy1-.1],[10.35,-4.0],[_kx,-4.0],[_kx,_ly+.05],[_cx+.05,_ly+.05]]
+  new_rooms[-1]['polygon_m']=[[_cx+.05,_bwy+.05],[wdx1-.18,_bwy+.05],[wdx1-.18,wdy1-.1],[_cx0,wdy1-.1],[_cx0,-4.0],[_kx,-4.0],[_kx,_ly+.05],[_cx+.05,_ly+.05]]
  else:
   room('New loft studio',[min(q[0] for q in _lsp),min(q[1] for q in _lsp),max(q[0] for q in _lsp),max(q[1] for q in _lsp)],lf,3,'Proposal · Loft',_lsv)
   new_rooms[-1]['polygon_m']=[list(q) for q in _lsp]

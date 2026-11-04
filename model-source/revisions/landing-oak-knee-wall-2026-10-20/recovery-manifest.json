@@ -1,0 +1,874 @@
+[
+  {
+    "path": "outputs/output-proposed-compact/kitchen-interior-report.json",
+    "sha256": "4b75b9f0f0ae6fcdb86173e2390bde25ee822bf226d472c4df68714514a5ab59"
+  },
+  {
+    "path": "outputs/output-proposed-compact/basement-roof-inventory-refresh.json",
+    "sha256": "9feb747704998948de184c1c35584c21cae7b2ce3354a8739f0cd9a6a21c8380"
+  },
+  {
+    "path": "outputs/output-proposed-compact/roof-terrace-hot-tub-review.json",
+    "sha256": "ffc8f1c1208f1efc49b82648f0ac03d795dccc7ee122685f3b7c0be0fc67ce5d"
+  },
+  {
+    "path": "outputs/output-proposed-compact/bedroom4-interior-report.json",
+    "sha256": "3b1ffad46c348ef30a59aff403774f97f6a5ea3ff5b56c8bcac1e0bcfc929d2a"
+  },
+  {
+    "path": "outputs/output-proposed-compact/navigation.json",
+    "sha256": "5531871fdda8b1e2439e639884f2747595960e28728262916831a4d79e44cc7c"
+  },
+  {
+    "path": "outputs/output-proposed-compact/garage-interior-report.json",
+    "sha256": "dd232792ec829509491cfdd511a53991188a837318fbb7e9f46bcf1f801b664a"
+  },
+  {
+    "path": "outputs/output-proposed-compact/geometry.json",
+    "sha256": "4af2b629d738d785d4dcfcf3ace7867b702c51a550a038d1ead5f56084181f12"
+  },
+  {
+    "path": "outputs/output-proposed-compact/guestbath-interior-report.json",
+    "sha256": "ea63a45d8e5dd58101114099780a433dd23be58f9c16f5b2430a6ad3014f3187"
+  },
+  {
+    "path": "outputs/output-proposed-compact/cinema-interior-report.json",
+    "sha256": "7bd8826924b150d700c2efb1d557452d28ab477cbf577f66ad836f4afc8fc89f"
+  },
+  {
+    "path": "outputs/output-proposed-compact/architectural-lighting-review.json",
+    "sha256": "ea19ad8be84e9a0ac32f06b3601f0e6fbb8fe27e81475ed185a0c03b7b1395ee"
+  },
+  {
+    "path": "outputs/output-proposed-compact/surface-junctions.json",
+    "sha256": "d0b2fb79afb73116f992255731a80e33ac7e44a75aafa809f48606f3ecd659f4"
+  },
+  {
+    "path": "outputs/output-proposed-compact/workshop-interior-report.json",
+    "sha256": "2258810f5db8b49e619f5edcd8c9e4cd96e0a0bb066661f60eba8dd0323f3900"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+    "sha256": "e2ecfbada8d7d20159f8ba2426035a37a1c4445ddf2ab3fa349eb773c564024d"
+  },
+  {
+    "path": "outputs/output-proposed-compact/storey-edge-closures.json",
+    "sha256": "688665cef3ae4872b5d353521d580719f7c27935378376a9d424abd251b3e892"
+  },
+  {
+    "path": "outputs/output-proposed-compact/loft-finish-refresh.json",
+    "sha256": "0a849bfa63580de850b538cf728a17a99b9bddc53196544764c0ebb102c30338"
+  },
+  {
+    "path": "outputs/output-proposed-compact/basement-roof-refresh.json",
+    "sha256": "48b1d607cfb2d0c8fd07191029705c3af1e7ec2688bf505973727a3806a6c6e4"
+  },
+  {
+    "path": "outputs/output-proposed-compact/exterior-finish-audit.timings.json",
+    "sha256": "08b4f7b18884cf836bc5ddb0b5ac6afdb86ce9e975aaa7885f7054cde567221e"
+  },
+  {
+    "path": "outputs/output-proposed-compact/workshop-review.json",
+    "sha256": "315fca2394aa38233116a8f98e422666f8dd0d3336eea8e2068d0bc7e3595bcd"
+  },
+  {
+    "path": "outputs/output-proposed-compact/office-interior-report.json",
+    "sha256": "57aeb58ae56810898b9a100916668ec73464a34cb536eff9320db4b3bea83ab2"
+  },
+  {
+    "path": "outputs/output-proposed-compact/family-interior-report.json",
+    "sha256": "57461c120dcbff8ba3b4bf30abd04bdcf3b52c42662a25ff57e1b3fee27033e1"
+  },
+  {
+    "path": "outputs/output-proposed-compact/side-bathroom-review.json",
+    "sha256": "aba768bd8d60693288ceb8b2ce52cf9ba6c3c2aec5368716607cff88b5724b78"
+  },
+  {
+    "path": "outputs/output-proposed-compact/site-review.json",
+    "sha256": "ee33757136569c8458a73271f82f53a925fc3270590f46f03b369c507377c6eb"
+  },
+  {
+    "path": "outputs/output-proposed-compact/door-wall-cinema-refresh.json",
+    "sha256": "646409c6c6d7486611864ddabf629af00976a125be3e27fdec0f520cbb37a956"
+  },
+  {
+    "path": "outputs/output-proposed-compact/shared-lounge-review.json",
+    "sha256": "16d0e9857402293d04dda5248bf256b4ac39de0e8a630860ad48eff189c38848"
+  },
+  {
+    "path": "outputs/output-proposed-compact/exterior-appearance.json",
+    "sha256": "f167a9856bdc088f84e4ce539c607e3c727c97d028142cc54e869109de8a274f"
+  },
+  {
+    "path": "outputs/output-proposed-compact/landings-interior-report.json",
+    "sha256": "1e7e759bb78de3585ef0fc86c99786af59e651236b83d31ec403181869ce3937"
+  },
+  {
+    "path": "outputs/output-proposed-compact/owner-model-integration.json",
+    "sha256": "7f75271aaf67d529b71fad6490fc6778ed2f2fffb002e872cc5f3cddbba1ab4a"
+  },
+  {
+    "path": "outputs/output-proposed-compact/original-preservation-check.json",
+    "sha256": "b56fe8ad9e892470f9f193cb42cbf79576d1fe0c6a9bbebb5d2f8d8c48c2c9e5"
+  },
+  {
+    "path": "outputs/output-proposed-compact/build-inputs.json",
+    "sha256": "84684ab7c334271e2341fbba4c0a2d4137165dd5a7f4cd4ec462a6292fe541f0"
+  },
+  {
+    "path": "outputs/output-proposed-compact/arrival-interior-report.json",
+    "sha256": "70e1bd025d073890a520e62709aa11d17f1b5264f80ea5ad44c7c73fb7b7f62d"
+  },
+  {
+    "path": "outputs/output-proposed-compact/bar-interior-report.json",
+    "sha256": "8f0e659ba27be39f57d7064328018146343b2f9b3a918ca67918c2c44eb9df5b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/cloakroom-interior-report.json",
+    "sha256": "fec9259c2bcad0ab4258a48c24a67e8f8cc8f23ba6eb87ccfb63def2e23f1932"
+  },
+  {
+    "path": "outputs/output-proposed-compact/boundary-foliage-review.json",
+    "sha256": "2381e1670e14a63f322a50592ee9f8016e129f1164ae641133ecccbc05a3dae5"
+  },
+  {
+    "path": "outputs/output-proposed-compact/loft-bedroom-door-head-refresh.json",
+    "sha256": "b98a74312aefea5448b6ff7140d36843451c6b1abe7605d5721ba062c117127f"
+  },
+  {
+    "path": "outputs/output-proposed-compact/principal-gable-wall-report.json",
+    "sha256": "c1d832ed6ea4ec99fcbda21e035a059bbc88739fdfc51e09daf2b9281920b88b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/circulation-check.json",
+    "sha256": "b875224e99dad081e7d5a48189f688c7dcc7880bf9fe3e83d51e123b52a890b8"
+  },
+  {
+    "path": "outputs/output-proposed-compact/loft-finish-head-refresh.json",
+    "sha256": "2f3ff6580c14ba6425a9727482e3da2b8d0178f4e576131292e54bae3b35d9eb"
+  },
+  {
+    "path": "outputs/output-proposed-compact/exterior-finish-audit.json",
+    "sha256": "d509a58fa192959030f463b9a58438aaa914b4d432d186ed03a6d3f4b26428a6"
+  },
+  {
+    "path": "outputs/output-proposed-compact/door-wall-cinema-header-refresh.json",
+    "sha256": "4f6e3c02daf11234c4c7b5f693c9b1c2d85b83d8213ab51ff38ec37737d507c6"
+  },
+  {
+    "path": "outputs/output-proposed-compact/sketchup-dimensions.json",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "outputs/output-proposed-compact/modern-stair-gutter-refresh.json",
+    "sha256": "c7a149422ad74c24a6507aa3dfc8351a4e2ebd8bd3e12371708ef2990e5acb89"
+  },
+  {
+    "path": "outputs/output-proposed-compact/vegetation-clearance-review.json",
+    "sha256": "b87bf9f43f24a6e162eb56fb91291c1c356d4b82a1cafaa6f3e6d578c62c9166"
+  },
+  {
+    "path": "outputs/output-proposed-compact/prep-kitchen-interior-report.json",
+    "sha256": "47fcde1edf10aafb16869619fed325e42158b9a4fe4b41f16d329d7499673180"
+  },
+  {
+    "path": "outputs/output-proposed-compact/sidebed-interior-report.json",
+    "sha256": "c0f8bc78ed2f35dfc03817fa2b24a007c2f84e4e18a373d67c6c164fda95ef77"
+  },
+  {
+    "path": "outputs/output-proposed-compact/roof-weathering-review.json",
+    "sha256": "87fd779e9df2d9684129c6a65c2863a98adaf1928df483a1a2947867a47341fc"
+  },
+  {
+    "path": "outputs/output-proposed-compact/review-cameras.json",
+    "sha256": "4c88d1164f230ac3c4d0fbfcb96d014aa5ec7acbb1ddeec7ab6138929db6e33a"
+  },
+  {
+    "path": "outputs/output-proposed-compact/principal-interior-report.json",
+    "sha256": "c18c1f956a237cbaa5150e1637164046f9804bd67fb5ea8ff96c26a5bfc2a3b4"
+  },
+  {
+    "path": "outputs/output-proposed-compact/side-wing-review.json",
+    "sha256": "7341649c871a755f263314254d50bc4295c49cf9293299d1acabcf45be2649ee"
+  },
+  {
+    "path": "outputs/output-proposed-compact/door-wall-junctions-refresh.json",
+    "sha256": "d150b1d01b8872f8a257a720da05da666689902106889c26d6dcea56cc8f7698"
+  },
+  {
+    "path": "outputs/output-proposed-compact/sketchup-validation.json",
+    "sha256": "70ad72574d4e26b8ac6e7ac2fa0296fde7ce8cd3e4aef0515719ba025475e916"
+  },
+  {
+    "path": "outputs/output-proposed-compact/door-wall-final-refresh.json",
+    "sha256": "6d0ff5f4219c3a645175362bf40076fae1c7c00bf533515c8d50c9dc9324129d"
+  },
+  {
+    "path": "outputs/output-proposed-compact/kitchen-connection-review.json",
+    "sha256": "daeefad929f69776165c3d39a6f8338297726954b4e4a77202ca586dddfead1a"
+  },
+  {
+    "path": "outputs/output-proposed-compact/entertainment-basement-review.json",
+    "sha256": "891524a7879338dd839c46e817d45924211ac122b10c6f93bde1cdcbe0832667"
+  },
+  {
+    "path": "outputs/output-proposed-compact/hobby-interior-report.json",
+    "sha256": "ad4f79da6bd6b1d68216caff33bff6dac1073cd1b4f66faba92d138651135aac"
+  },
+  {
+    "path": "outputs/output-proposed-compact/familybath-interior-report.json",
+    "sha256": "7899bdd9aa3fe2d13aabd5fe096960fbbef0cd2cd35d6947d3d5d53864cbe226"
+  },
+  {
+    "path": "outputs/output-proposed-compact/loft-bedroom-refresh.json",
+    "sha256": "f39f85f5771572312f73d48b01cff7371674ff8ec6b79b6d5180d83d92ba51b9"
+  },
+  {
+    "path": "outputs/output-proposed-compact/internal-garden-review.json",
+    "sha256": "84e9a223626e50822fbbeb98a44ce374263f35f419581413e48c47fd78217a71"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact) 5.blend",
+    "sha256": "9070321c2794878a428dcb47a24ab461a1d96f461a350114de3120c4ba5446af"
+  },
+  {
+    "path": "outputs/output-proposed-compact/appearance-refresh-timings.json",
+    "sha256": "efc949816ecd60b7cbc46209eb0af84960cfb787503c10c894400b8eff53aeb5"
+  },
+  {
+    "path": "outputs/output-proposed-compact/roof-envelope.json",
+    "sha256": "85c2c9f73ae7d64dbb7dbc2570750e78e5a83eaff0d5e79d8300f0a5a0af0870"
+  },
+  {
+    "path": "outputs/output-proposed-compact/gardenhouse-interior-report.json",
+    "sha256": "96043e740f2871bef83f703f683047716d4efd6bafe89a285096d298ea493515"
+  },
+  {
+    "path": "outputs/output-proposed-compact/native-edit-views.json",
+    "sha256": "97cf73cb86e03334849993ccfadbb955d14921a4265e21241318208893594d88"
+  },
+  {
+    "path": "outputs/output-proposed-compact/bedroom3-interior-report.json",
+    "sha256": "883b8fe467ba7211d8b5a6c5c4d95b594f13fee2ff0bd3edbe43c0fb50c57058"
+  },
+  {
+    "path": "outputs/output-proposed-compact/forecourt-review.json",
+    "sha256": "a87f4c8cecc3bc919e19845abd95e8e7b642eba82bc753b6decf6610955600a7"
+  },
+  {
+    "path": "outputs/output-proposed-compact/foliage-detail-review.json",
+    "sha256": "e2c1d2be811134ccce43c60c82db115d5f6a236d730fa778ed6bc19f66f81f26"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact) 3.blend",
+    "sha256": "1d360cc7161493f6c4887c4ce0ee0173bf10eb4d47c8cbe83c580f8923008d2c"
+  },
+  {
+    "path": "outputs/output-proposed-compact/room-access-check.json",
+    "sha256": "4637c6f218813ee133747773418666d92e2c8a6c8f49c4133d1dbecd94b1854b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/door-wall-cinema-pier-refresh.json",
+    "sha256": "487a2c4267462909ba0f474218f645db4166b3e987a0167303fe51f376baa80d"
+  },
+  {
+    "path": "outputs/output-proposed-compact/guest-interior-report.json",
+    "sha256": "123c0e0310adae6721fafd7b48e7ebbfdd21658957149d85698d557c69e1c67f"
+  },
+  {
+    "path": "outputs/output-proposed-compact/fit-audit.json",
+    "sha256": "5000313867cc4eefce823c3a8f315a5f02d47939321ede3dcaf135a1ecb109d5"
+  },
+  {
+    "path": "outputs/output-proposed-compact/modern-stair-cove-refresh.json",
+    "sha256": "538c958353ee75dbb130123229412ea70abe0fd288ffcd5e8ba95ca15b11a11b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/drain-pier-refresh.json",
+    "sha256": "16e9ca371270b7164539f67516888a3122150806b165f118d655e5e1e6291a3b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact) 4.blend",
+    "sha256": "a68c682768ae5a5502f0c3a6d662523253ede85bd9d3ed76661c1814f8b5eb99"
+  },
+  {
+    "path": "outputs/output-proposed-compact/runner-model-timings.json",
+    "sha256": "fcfcc7beb3921448f3a275328e675169b89dd79d2f6f66ee33f55587d46c04a8"
+  },
+  {
+    "path": "outputs/output-proposed-compact/utility-interior-report.json",
+    "sha256": "6661cfaa9a68c7f1313003f29b072d380c501b2488d3d461f42f4bb356c5b2f5"
+  },
+  {
+    "path": "outputs/output-proposed-compact/loft-review.json",
+    "sha256": "779082cca2a82820ed56fae81fa163bbf76fa3300cab7f288394ca1cf0b5ea81"
+  },
+  {
+    "path": "outputs/output-proposed-compact/gym-fixture-refinement.json",
+    "sha256": "92db978b262ee56c0a9e1b3c6eac022665802ed7bd6d6b2e04173e99e4685e3e"
+  },
+  {
+    "path": "outputs/output-proposed-compact/formal-interior-report.json",
+    "sha256": "2c13370af3629bd480d91ee2928abe0595289327e1e30f1a012f7cc48f2fd790"
+  },
+  {
+    "path": "outputs/output-proposed-compact/terrace-interior-report.json",
+    "sha256": "ef34422af1068d4dc182c1e9ad83ffde979a595438a8af8c49b1445b75a24335"
+  },
+  {
+    "path": "outputs/output-proposed-compact/door-wall-panel-refresh.json",
+    "sha256": "4bc11d39041a6b1e8b1f6812b7a5160eadc8bf5baf0ffbf0c6423f02f7b43ce3"
+  },
+  {
+    "path": "outputs/output-proposed-compact/build-timings.json",
+    "sha256": "88a3f2a279f4e5f5237f464a964e1ecbf4c86ee7f14b2a56661111cb4c171ea6"
+  },
+  {
+    "path": "outputs/output-proposed-compact/frontage-review.json",
+    "sha256": "2e464dc949032f0a60ec6dc409a957d072b6f45864185899493e12de93cc6c64"
+  },
+  {
+    "path": "outputs/output-proposed-compact/build-cache.json",
+    "sha256": "a6847e6a28eed353faa25954ccc0b405800d32e9d8f5b21c8db10003960c634c"
+  },
+  {
+    "path": "outputs/output-proposed-compact/rear-finish-review.json",
+    "sha256": "cd955d33163bed0a417fb414552336b2408ea89f458826c8ed8653eab5f3a3c0"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact) 2.blend",
+    "sha256": "7a35108ec8f5559cc0d5d16f02a12e7d26b3a515a81949785af6120472f07561"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb",
+    "sha256": "1ddaaac3343e52fc0dae571df5a475b43ab5533a69f82083ffdf20f6966f3cb8"
+  },
+  {
+    "path": "outputs/output-proposed-compact/front-review.json",
+    "sha256": "4bcf4b4fe32ca856acae9d06459228ebc81e2e5292b923d2afe29510a9bf04cc"
+  },
+  {
+    "path": "outputs/output-proposed-compact/editability-check.json",
+    "sha256": "cc1be2b3b3c6a0056dcdd4748eae5168c1e2e9fd17d5ab0cd002727120675110"
+  },
+  {
+    "path": "outputs/output-proposed-compact/loftsuite-interior-report.json",
+    "sha256": "5a746966b4f200b820bb6d1a1e08fd7050da9fb11be07c4bf43ce60f292ca381"
+  },
+  {
+    "path": "outputs/output-proposed-compact/bedroom2-interior-report.json",
+    "sha256": "10f027b2f802a4f56615f1d5731c4df2f6bc5c5c61ce5468b3a3f385c2f2f20a"
+  },
+  {
+    "path": "outputs/output-proposed-compact/loft-dormer-alignment-refresh.json",
+    "sha256": "5516d15bb6a5a1fc5dc23cfb4c345c82502e32d7e22d07c62ec0b2246574b361"
+  },
+  {
+    "path": "outputs/output-proposed-compact/build-report.json",
+    "sha256": "058b7833863f72658ea8b5f9a5273c0dfa3710a11ff1836065f2a66abcc1180f"
+  },
+  {
+    "path": "outputs/output-proposed-compact/grand-stair-detail-refresh.json",
+    "sha256": "36ab9bb077bdb45de32a9c7e16b54517f9e4e50d6cade5fa1cc8ded10dc1d998"
+  },
+  {
+    "path": "outputs/output-proposed-compact/runner-drawings-timings.json",
+    "sha256": "f6ecb131d469f37afb600e578d126ffe6f6eeffc42c020de860f6e9bcde3a519"
+  },
+  {
+    "path": "outputs/output-proposed-compact/poolgarden-interior-report.json",
+    "sha256": "8946a23742b09fda6deaba53ed721a537d8e5a034afb552e8e5f8922b6688b5c"
+  },
+  {
+    "path": "outputs/output-proposed-compact/gym-interior-report.json",
+    "sha256": "79f88a2769a34249710fb40bb0429497554f0a858c47747ad91c618af8045926"
+  },
+  {
+    "path": "outputs/output-visual-realism-compact/Ashley Heights \u2014 Proposed (compact) \u2014 visual refinement 4.blend",
+    "sha256": "edce32c4c72b737231ed3633c99ef5caff1b3b63dcd677550f72c657a00f264b"
+  },
+  {
+    "path": "outputs/output-visual-realism-compact/Ashley Heights \u2014 Proposed (compact) \u2014 visual refinement 3.blend",
+    "sha256": "3bc644a9ef38f1701e9f6f55c8e9603005b74ac20f08b9226cb2aac2c5a7e177"
+  },
+  {
+    "path": "outputs/output-visual-realism-compact/refinement-report.json",
+    "sha256": "086d72f4b53ef9e6c52ece0f7933561d42ad71fed6461ef290066ca7dbbd67ab"
+  },
+  {
+    "path": "outputs/output-visual-realism-compact/Ashley Heights \u2014 Proposed (compact) \u2014 visual refinement 5.blend",
+    "sha256": "9bfbfab081aa951303ebc7b3227e52e5dc6cf934549766a4f631d831afabcaa4"
+  },
+  {
+    "path": "outputs/output-visual-realism-compact/Ashley Heights \u2014 Proposed (compact) \u2014 visual refinement.blend",
+    "sha256": "ec2ce786deb2f5c4d549f629f2efbcf7ed4fcf56a5d1f5436d659b5552e2d09b"
+  },
+  {
+    "path": "outputs/output-visual-realism-compact/Ashley Heights \u2014 Proposed (compact) \u2014 photographic materials.blend",
+    "sha256": "745c2e2eb1225aaa190d020ef8b1e12f2243852bd12c3ba584606c1a8a4599aa"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact-navigation.json",
+    "sha256": "5531871fdda8b1e2439e639884f2747595960e28728262916831a4d79e44cc7c"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact.glb",
+    "sha256": "1ddaaac3343e52fc0dae571df5a475b43ab5533a69f82083ffdf20f6966f3cb8"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-furnishings.glb",
+    "sha256": "7a9bc11f5329aa4c1cfae1597dcb968021f8767efeb04dde0614ec9f30d93aff"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-daylight.json",
+    "sha256": "8a45345b082762c630a0adf88c72fdbed9d2b06f13a8bdaa3772b0571abc84ad"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-furnishings.json",
+    "sha256": "086d72f4b53ef9e6c52ece0f7933561d42ad71fed6461ef290066ca7dbbd67ab"
+  },
+  {
+    "path": "outputs/output-proposed-planning/kitchen-interior-report.json",
+    "sha256": "24aa3aed7e3fb8c28ca3f5621b858a3d3fbb8025b232e2cc865a1c0429aa1ffd"
+  },
+  {
+    "path": "outputs/output-proposed-planning/basement-roof-inventory-refresh.json",
+    "sha256": "c598bb8798b17d7681e1873fb6b69d6ee76f9843dbf1eaf4b4303d368dac0247"
+  },
+  {
+    "path": "outputs/output-proposed-planning/level-loft-finish-inventory-refresh.json",
+    "sha256": "8f72f620801fc24d4e4490b0692dc9561d8b4593ce22316de64d7d21d96cc17f"
+  },
+  {
+    "path": "outputs/output-proposed-planning/bedroom4-interior-report.json",
+    "sha256": "8c11e45303ca2f6d015570b2c43a8e3306b3be1fdce544a8e3f9c93955051d42"
+  },
+  {
+    "path": "outputs/output-proposed-planning/navigation.json",
+    "sha256": "ee5c6a2f5156ea48197d97eaeb40823ad5c63a1228ae7158f03beb57159e74b5"
+  },
+  {
+    "path": "outputs/output-proposed-planning/garage-interior-report.json",
+    "sha256": "58c55b7541bed03cef6243e19f3ddc7e088a74e5cbe21de7645720538b70319c"
+  },
+  {
+    "path": "outputs/output-proposed-planning/geometry.json",
+    "sha256": "b5749fa61801c6e990ea9a32e58c3b71f8fbdfbe8207be39c18140b71e7e508f"
+  },
+  {
+    "path": "outputs/output-proposed-planning/guestbath-interior-report.json",
+    "sha256": "ea63a45d8e5dd58101114099780a433dd23be58f9c16f5b2430a6ad3014f3187"
+  },
+  {
+    "path": "outputs/output-proposed-planning/cinema-interior-report.json",
+    "sha256": "7bd8826924b150d700c2efb1d557452d28ab477cbf577f66ad836f4afc8fc89f"
+  },
+  {
+    "path": "outputs/output-proposed-planning/architectural-lighting-review.json",
+    "sha256": "89f6ed676803c38ebfd128d44fe0ed7ee689718ba9322f157296d9d5ab5f5f24"
+  },
+  {
+    "path": "outputs/output-proposed-planning/surface-junctions.json",
+    "sha256": "ac2997733cc07b44799ddf37d6e5aa8d4eaf526d6a6b66b3a13308c914e05959"
+  },
+  {
+    "path": "outputs/output-proposed-planning/storey-edge-closures.json",
+    "sha256": "688665cef3ae4872b5d353521d580719f7c27935378376a9d424abd251b3e892"
+  },
+  {
+    "path": "outputs/output-proposed-planning/loft-finish-refresh.json",
+    "sha256": "3acf55e999ba6f5df06caa8e2606abce8db1d60e258976d224c5ea8b729d374d"
+  },
+  {
+    "path": "outputs/output-proposed-planning/basement-roof-refresh.json",
+    "sha256": "1562454a66ec4e65da3a06bb489665d274886f959c8e3258bafa74085f1f7793"
+  },
+  {
+    "path": "outputs/output-proposed-planning/exterior-finish-audit.timings.json",
+    "sha256": "6a25cbbbb51f2e9d4bd46cc3109fd4cbb90d871e58468be98f105e5689e52ad5"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application) 2.blend",
+    "sha256": "a75e9483ffd8b5d32bd9f7b6de9f6e2e9d76b3d874272425634635005966d108"
+  },
+  {
+    "path": "outputs/output-proposed-planning/office-interior-report.json",
+    "sha256": "57aeb58ae56810898b9a100916668ec73464a34cb536eff9320db4b3bea83ab2"
+  },
+  {
+    "path": "outputs/output-proposed-planning/family-interior-report.json",
+    "sha256": "712b9ce04f402fa326ef56ceea86acfc5d2a0460b7daf0baaf925bc819be0aa2"
+  },
+  {
+    "path": "outputs/output-proposed-planning/side-bathroom-review.json",
+    "sha256": "aba768bd8d60693288ceb8b2ce52cf9ba6c3c2aec5368716607cff88b5724b78"
+  },
+  {
+    "path": "outputs/output-proposed-planning/site-review.json",
+    "sha256": "ee33757136569c8458a73271f82f53a925fc3270590f46f03b369c507377c6eb"
+  },
+  {
+    "path": "outputs/output-proposed-planning/door-wall-cinema-refresh.json",
+    "sha256": "33208a91968487cb3c6b5c1d9d0eb193743cf97d89ccc39002884420c5ae553a"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).glb",
+    "sha256": "1885c2b885bec10400104db205d77f6161baf7cdbdf09854be8fe1ea77427d6a"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application) 4.blend",
+    "sha256": "9357df24a166da54867f45880d713680be24cdbd89c42a6e57c3a692cfe396b1"
+  },
+  {
+    "path": "outputs/output-proposed-planning/shared-lounge-review.json",
+    "sha256": "16d0e9857402293d04dda5248bf256b4ac39de0e8a630860ad48eff189c38848"
+  },
+  {
+    "path": "outputs/output-proposed-planning/exterior-appearance.json",
+    "sha256": "ce5f42a82a8c0b308105a2ecaa2a467d001a849653547ef34c6031141fb457ee"
+  },
+  {
+    "path": "outputs/output-proposed-planning/landings-interior-report.json",
+    "sha256": "1e7e759bb78de3585ef0fc86c99786af59e651236b83d31ec403181869ce3937"
+  },
+  {
+    "path": "outputs/output-proposed-planning/owner-model-integration.json",
+    "sha256": "7f15b97d374c83536581ce66ab875f2fa9cf1ec9b070ce7948ada199e3fd0f70"
+  },
+  {
+    "path": "outputs/output-proposed-planning/original-preservation-check.json",
+    "sha256": "b56fe8ad9e892470f9f193cb42cbf79576d1fe0c6a9bbebb5d2f8d8c48c2c9e5"
+  },
+  {
+    "path": "outputs/output-proposed-planning/build-inputs.json",
+    "sha256": "f9a9678b083fcfd5f411c646453d96cfe39848e8ca0f8c10e7e5feaff1ac68de"
+  },
+  {
+    "path": "outputs/output-proposed-planning/arrival-interior-report.json",
+    "sha256": "70e1bd025d073890a520e62709aa11d17f1b5264f80ea5ad44c7c73fb7b7f62d"
+  },
+  {
+    "path": "outputs/output-proposed-planning/bar-interior-report.json",
+    "sha256": "8f0e659ba27be39f57d7064328018146343b2f9b3a918ca67918c2c44eb9df5b"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application) 3.blend",
+    "sha256": "ec587bd5f14ba22ec351baa9aa5a85ba3145ad0c30a1ebf26e6ab86e96800dcd"
+  },
+  {
+    "path": "outputs/output-proposed-planning/cloakroom-interior-report.json",
+    "sha256": "fec9259c2bcad0ab4258a48c24a67e8f8cc8f23ba6eb87ccfb63def2e23f1932"
+  },
+  {
+    "path": "outputs/output-proposed-planning/boundary-foliage-review.json",
+    "sha256": "eff6c77028a6c3cf0e92ae8f951821a7c4280504826b87026d8df084987e5458"
+  },
+  {
+    "path": "outputs/output-proposed-planning/loft-bedroom-door-head-refresh.json",
+    "sha256": "97ffae077652f8598ba38ab8475590691cce7128be8027be671d262e71ce42a5"
+  },
+  {
+    "path": "outputs/output-proposed-planning/principal-gable-wall-report.json",
+    "sha256": "c1d832ed6ea4ec99fcbda21e035a059bbc88739fdfc51e09daf2b9281920b88b"
+  },
+  {
+    "path": "outputs/output-proposed-planning/circulation-check.json",
+    "sha256": "dc03340c34a77a39d1b61c42d0d2456d9b2a9dcf1ef3ba5f6daec9e55b3b446f"
+  },
+  {
+    "path": "outputs/output-proposed-planning/loft-finish-head-refresh.json",
+    "sha256": "5f819d25c3e425ed88da8363646d960f611b9c446ec61590144689e2e7d8cead"
+  },
+  {
+    "path": "outputs/output-proposed-planning/exterior-finish-audit.json",
+    "sha256": "bee8d9404064b04433c30504b2319695481371c0a36cf65581d34505014abd69"
+  },
+  {
+    "path": "outputs/output-proposed-planning/door-wall-cinema-header-refresh.json",
+    "sha256": "c816f8e22673751d75b930a7495e0bc8cf185d605ec846770d436580a44728b8"
+  },
+  {
+    "path": "outputs/output-proposed-planning/sketchup-dimensions.json",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "outputs/output-proposed-planning/modern-stair-gutter-refresh.json",
+    "sha256": "c46a73d9b84ab10fb5ce33cba4008a48b24ee4ff198f5072dae0f2276e84b63d"
+  },
+  {
+    "path": "outputs/output-proposed-planning/vegetation-clearance-review.json",
+    "sha256": "e555a949db8f5ffb5ec5d03e73197eec9043b4e81798a8506e3a0c69aef960e2"
+  },
+  {
+    "path": "outputs/output-proposed-planning/prep-kitchen-interior-report.json",
+    "sha256": "47fcde1edf10aafb16869619fed325e42158b9a4fe4b41f16d329d7499673180"
+  },
+  {
+    "path": "outputs/output-proposed-planning/sidebed-interior-report.json",
+    "sha256": "c0f8bc78ed2f35dfc03817fa2b24a007c2f84e4e18a373d67c6c164fda95ef77"
+  },
+  {
+    "path": "outputs/output-proposed-planning/roof-weathering-review.json",
+    "sha256": "87fd779e9df2d9684129c6a65c2863a98adaf1928df483a1a2947867a47341fc"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).blend",
+    "sha256": "28a1ded0105c9e7a4b4876cc4670d1f0f3ef74f04a0ecf5d2c1665b10edd55d5"
+  },
+  {
+    "path": "outputs/output-proposed-planning/review-cameras.json",
+    "sha256": "d69a0810f2d5f4e6f147151ee91e1b72d8f77ff19b76d13864dd0876480644d4"
+  },
+  {
+    "path": "outputs/output-proposed-planning/principal-interior-report.json",
+    "sha256": "7b13fefde0b9200b09c36c36d6409872543af08ce29ad0f6dc296f223a9d0fc3"
+  },
+  {
+    "path": "outputs/output-proposed-planning/side-wing-review.json",
+    "sha256": "7341649c871a755f263314254d50bc4295c49cf9293299d1acabcf45be2649ee"
+  },
+  {
+    "path": "outputs/output-proposed-planning/door-wall-junctions-refresh.json",
+    "sha256": "b80221327687c6a48d26451ed4a8fe544dad17f4bc57d952685f94dc583ce6cc"
+  },
+  {
+    "path": "outputs/output-proposed-planning/sketchup-validation.json",
+    "sha256": "75ff3e38145983345d0d1180f635b89d6a9a50a3bfb0297191190d86b8946b54"
+  },
+  {
+    "path": "outputs/output-proposed-planning/door-wall-final-refresh.json",
+    "sha256": "8a60d1997d064dc9a80d53a05c1fd64573182fc9a6f640dadab4db1022184512"
+  },
+  {
+    "path": "outputs/output-proposed-planning/entertainment-basement-review.json",
+    "sha256": "891524a7879338dd839c46e817d45924211ac122b10c6f93bde1cdcbe0832667"
+  },
+  {
+    "path": "outputs/output-proposed-planning/hobby-interior-report.json",
+    "sha256": "ad4f79da6bd6b1d68216caff33bff6dac1073cd1b4f66faba92d138651135aac"
+  },
+  {
+    "path": "outputs/output-proposed-planning/familybath-interior-report.json",
+    "sha256": "7899bdd9aa3fe2d13aabd5fe096960fbbef0cd2cd35d6947d3d5d53864cbe226"
+  },
+  {
+    "path": "outputs/output-proposed-planning/loft-bedroom-refresh.json",
+    "sha256": "c0485baf79a93f94477091aa33e72a668a46c0131c687281e60bddddd8934298"
+  },
+  {
+    "path": "outputs/output-proposed-planning/internal-garden-review.json",
+    "sha256": "84e9a223626e50822fbbeb98a44ce374263f35f419581413e48c47fd78217a71"
+  },
+  {
+    "path": "outputs/output-proposed-planning/appearance-refresh-timings.json",
+    "sha256": "9b7b15872d982345201689bd8e80e018382d1a18ae8f97794e1b6a947f4c1917"
+  },
+  {
+    "path": "outputs/output-proposed-planning/P8-room-programme.json",
+    "sha256": "b110e41b5890b1015d3ceb2ffaf3e10d0dd5f151d807421a51f5be44009d52e7"
+  },
+  {
+    "path": "outputs/output-proposed-planning/roof-envelope.json",
+    "sha256": "85c2c9f73ae7d64dbb7dbc2570750e78e5a83eaff0d5e79d8300f0a5a0af0870"
+  },
+  {
+    "path": "outputs/output-proposed-planning/gardenhouse-interior-report.json",
+    "sha256": "3b74dce6a1ee3c0a7d5f934f73146850e4deb1ae6b9f821c8c6499685f077b83"
+  },
+  {
+    "path": "outputs/output-proposed-planning/native-edit-views.json",
+    "sha256": "1dcbaac6df0a6e2299f353fac07d56db55e231ae7e216e9213c320c4684bd418"
+  },
+  {
+    "path": "outputs/output-proposed-planning/bedroom3-interior-report.json",
+    "sha256": "883b8fe467ba7211d8b5a6c5c4d95b594f13fee2ff0bd3edbe43c0fb50c57058"
+  },
+  {
+    "path": "outputs/output-proposed-planning/forecourt-review.json",
+    "sha256": "a87f4c8cecc3bc919e19845abd95e8e7b642eba82bc753b6decf6610955600a7"
+  },
+  {
+    "path": "outputs/output-proposed-planning/room-access-check.json",
+    "sha256": "888b3a3a73a02b7d65df807a59bc052daa2e39a25e02576bd5077879a43b602c"
+  },
+  {
+    "path": "outputs/output-proposed-planning/door-wall-cinema-pier-refresh.json",
+    "sha256": "81dbd44429864da604108f9bb1b354fc0d15e664deb81d2004f0100084d8f554"
+  },
+  {
+    "path": "outputs/output-proposed-planning/guest-interior-report.json",
+    "sha256": "123c0e0310adae6721fafd7b48e7ebbfdd21658957149d85698d557c69e1c67f"
+  },
+  {
+    "path": "outputs/output-proposed-planning/planning-scope-check.json",
+    "sha256": "d172c479de23b50fda597dac1139b3d2a40769b1072aa631a08d004c53aeb032"
+  },
+  {
+    "path": "outputs/output-proposed-planning/modern-stair-cove-refresh.json",
+    "sha256": "818a335de39fa6c0a93f1578471b49ab2168d0857d85c59ef5fa1aeee572cd02"
+  },
+  {
+    "path": "outputs/output-proposed-planning/drain-pier-refresh.json",
+    "sha256": "bc82366357c89f72054f4bb8a4997178c7358036198e3e2d16acc2a55e094d28"
+  },
+  {
+    "path": "outputs/output-proposed-planning/runner-model-timings.json",
+    "sha256": "50c4c1fdda1d72c4a17f49eae31a5ede66b025bed21da3b558c189586d0bf7a9"
+  },
+  {
+    "path": "outputs/output-proposed-planning/utility-interior-report.json",
+    "sha256": "6661cfaa9a68c7f1313003f29b072d380c501b2488d3d461f42f4bb356c5b2f5"
+  },
+  {
+    "path": "outputs/output-proposed-planning/loft-review.json",
+    "sha256": "779082cca2a82820ed56fae81fa163bbf76fa3300cab7f288394ca1cf0b5ea81"
+  },
+  {
+    "path": "outputs/output-proposed-planning/gym-fixture-refinement.json",
+    "sha256": "7e3e5ef5493f81d5eafc8d21a9a14efed7922127a659c385da527a2ed3d51303"
+  },
+  {
+    "path": "outputs/output-proposed-planning/formal-interior-report.json",
+    "sha256": "2c13370af3629bd480d91ee2928abe0595289327e1e30f1a012f7cc48f2fd790"
+  },
+  {
+    "path": "outputs/output-proposed-planning/door-wall-panel-refresh.json",
+    "sha256": "f8b78d5252ef228830b13de88ed2ba2ae0899d8e69bc50355ff74ce43b5bed11"
+  },
+  {
+    "path": "outputs/output-proposed-planning/interior-wall-finish-check.json",
+    "sha256": "50c16aac421ba44c3e5e9f70cc98efa1715717e584207c06dc27835a19e82069"
+  },
+  {
+    "path": "outputs/output-proposed-planning/build-timings.json",
+    "sha256": "65c97bb06322d3cb43f6f9e32f564d922f5249dbced38ecd7c0d84579c5be0cb"
+  },
+  {
+    "path": "outputs/output-proposed-planning/frontage-review.json",
+    "sha256": "2e464dc949032f0a60ec6dc409a957d072b6f45864185899493e12de93cc6c64"
+  },
+  {
+    "path": "outputs/output-proposed-planning/build-cache.json",
+    "sha256": "269fba37376f4327456400c2a14fcfb635ebb413d1b3caf7bad4237487392f42"
+  },
+  {
+    "path": "outputs/output-proposed-planning/rear-finish-review.json",
+    "sha256": "cd955d33163bed0a417fb414552336b2408ea89f458826c8ed8653eab5f3a3c0"
+  },
+  {
+    "path": "outputs/output-proposed-planning/front-review.json",
+    "sha256": "4bcf4b4fe32ca856acae9d06459228ebc81e2e5292b923d2afe29510a9bf04cc"
+  },
+  {
+    "path": "outputs/output-proposed-planning/editability-check.json",
+    "sha256": "ff0856dc8f01c1bfb2f9f24110d169ea62e764c79045f251573cafb0d2e6b01a"
+  },
+  {
+    "path": "outputs/output-proposed-planning/loftsuite-interior-report.json",
+    "sha256": "5a746966b4f200b820bb6d1a1e08fd7050da9fb11be07c4bf43ce60f292ca381"
+  },
+  {
+    "path": "outputs/output-proposed-planning/bedroom2-interior-report.json",
+    "sha256": "10f027b2f802a4f56615f1d5731c4df2f6bc5c5c61ce5468b3a3f385c2f2f20a"
+  },
+  {
+    "path": "outputs/output-proposed-planning/loft-dormer-alignment-refresh.json",
+    "sha256": "9293355f80a46eda44f4e733357d040015455086cb33b3b180e858806e136c9c"
+  },
+  {
+    "path": "outputs/output-proposed-planning/build-report.json",
+    "sha256": "fd3e488987e9a9ef2950cdd33b99dd8a640e58b884e138da600c0528e5304e4e"
+  },
+  {
+    "path": "outputs/output-proposed-planning/grand-stair-detail-refresh.json",
+    "sha256": "c4aabefda97cdb1dd889ef92e4ee3abbc6d5b86def3a5f5cb5743dcbf5fd9b9b"
+  },
+  {
+    "path": "outputs/output-proposed-planning/runner-drawings-timings.json",
+    "sha256": "42cd0c286bb6a822ed330c11e1c92ffaf4af819336e91d117dbaf26158797e96"
+  },
+  {
+    "path": "outputs/output-proposed-planning/gym-interior-report.json",
+    "sha256": "79f88a2769a34249710fb40bb0429497554f0a858c47747ad91c618af8045926"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement 2.blend",
+    "sha256": "87ea4c3bb3f6f5bccf75936c10688b4974ad49a32b2782ff032a0f952cafac69"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement 4.blend",
+    "sha256": "109f306a4085a51796dea9c25100e8c75cd7fd165830d28b208131132de81f3e"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement 6.blend",
+    "sha256": "a79860e5e5bbbd8f721f539b7399c1835cdd04c6b85912bf46ce66a6312f7f88"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/refinement-report.json",
+    "sha256": "87d96c82ee32dc99e2b200c0867d063b2ba8517e0a562a5653b84dc4c707382c"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement 3.blend",
+    "sha256": "9889ebe3f7b7de8a9010f1a0c12293b71669c15af91556e2a9e86f4fd336cca1"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement 7.blend",
+    "sha256": "b4e7b08d6205974f69695fb8a66721f2d802a5c6828fa28932af041979fbd511"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement 5.blend",
+    "sha256": "bb2893f6ed44c165d6ec65a07ea82ac4e4be67f91bdee28e3b795e606f56c3e5"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 photographic materials.blend",
+    "sha256": "2e55f1ecbf5d29818cc423522ed16b8a083b1395af839aed560354ea77c44464"
+  },
+  {
+    "path": "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement.blend",
+    "sha256": "4dfd8d41f2c2c55a10b349d834b5d2ac8f13aa1a2af90634cba292e15b0aaba4"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning.glb",
+    "sha256": "1885c2b885bec10400104db205d77f6161baf7cdbdf09854be8fe1ea77427d6a"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning-navigation.json",
+    "sha256": "ee5c6a2f5156ea48197d97eaeb40823ad5c63a1228ae7158f03beb57159e74b5"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-furnishings.glb",
+    "sha256": "3bacac6babc80c28c5c1c3c54568120f295234fa6ed14881521455fa1bb3050e"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-furnishings.json",
+    "sha256": "87d96c82ee32dc99e2b200c0867d063b2ba8517e0a562a5653b84dc4c707382c"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-daylight.json",
+    "sha256": "60007f7dd4191a82205a91e3f504b35fa141159b7cf07714db02a174114b46d9"
+  },
+  {
+    "path": "scripts/model/proposal_level_loft.py",
+    "sha256": "029e008ab0c69e516921839831c17e45b61008c252677a7757acbcfb48beaea6"
+  },
+  {
+    "path": "scripts/build/build_support.py",
+    "sha256": "a1d1d74bdc3fd3fa10e9f58f2e9da08bfd0ca44dd5a09f115a07b3928987c8b2"
+  },
+  {
+    "path": "README.md",
+    "sha256": "44e804bbd7e17d8b29f7b2c939e3bd9ed512d2c1381cfa22708bbcfc75fa1e32"
+  },
+  {
+    "path": "revisions/README.md",
+    "sha256": "37262be89aeaa88a9a5531e8971b093f2687e33c03b7c7507a9913cb0768cd00"
+  },
+  {
+    "path": "scripts/audits/audit_visual_quality.py",
+    "sha256": "d171bddd5fdc4301c9661e00c13755a47fe2dc02a0894e34dd134539cc57f623"
+  },
+  {
+    "path": "walkthrough/tests/bar-detail-circulation.test.mjs",
+    "sha256": "f823ca3277c4c82103d58c2c3b610db678beefa6f40f0a6ac6476ff0370c926a"
+  }
+]

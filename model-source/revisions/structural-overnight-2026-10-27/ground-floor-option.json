@@ -1,0 +1,129 @@
+{
+  "revision": "G01-study-2026-10-27",
+  "status": "Experimental coordination candidate; not approved for construction",
+  "basis": "Replace the vehicle-loaded garage/utility deck south of the basement stair with a suspended RC slab on the perimeter RC walls and strengthened cinema walls. Retain timber floor north of the cinema, on a shorter main steel girder. All dimensions are experimental; reinforcement, load spreading, foundations and connection designs remain unverified.",
+  "geometry": {
+    "groundFFL": 0,
+    "slabTopZ": -0.075,
+    "slabBottomZ": -0.325,
+    "slabNorthY": -9.7975,
+    "cinemaNorthWallY": -9.905,
+    "cinemaEastWallX": 9.0975,
+    "wallWidthM": 0.215,
+    "bearingWallBottomZ": -3.0,
+    "bearingWallTopZ": -0.325,
+    "mainGirderX": 9.2,
+    "mainSupportY": [
+      -9.905,
+      -4.2525
+    ],
+    "newBasementStairVoid": [
+      6.2,
+      -9.785,
+      9.11,
+      -8.845
+    ],
+    "cinemaNorthEndX": 9.435,
+    "slabPolygon": [
+      [
+        5.1325,
+        -16.1035
+      ],
+      [
+        13.7775,
+        -16.1035
+      ],
+      [
+        13.7775,
+        -9.7975
+      ],
+      [
+        5.1325,
+        -9.7975
+      ]
+    ],
+    "slabClearPolygon": [
+      [
+        5.2825,
+        -15.9535
+      ],
+      [
+        13.6275,
+        -15.9535
+      ],
+      [
+        13.6275,
+        -9.7975
+      ],
+      [
+        5.2825,
+        -9.7975
+      ]
+    ]
+  },
+  "loads": {
+    "normalConcreteKNm3": 25,
+    "slabThicknessM": [
+      0.2,
+      0.225,
+      0.25
+    ],
+    "superimposedPermanentKPa": [
+      0.5,
+      1,
+      1.5
+    ],
+    "vehicleUDLKPa": [
+      2.5,
+      3,
+      3.5
+    ],
+    "singleWheelOrJackKN": [
+      10,
+      15,
+      20
+    ],
+    "garagePartitionLineKNm": [
+      5,
+      10,
+      20
+    ],
+    "slabStripWidthM": 1.0,
+    "limitations": "Wheel/axle/load distribution and simultaneous actions are not assigned from inaccessible normative text. Use separate UDL and concentrated-load sensitivities. 1 m strip is an explicit modelling assumption, not a verified effective width. Verify the actual van maximum gross/axle weights and future vehicles."
+  },
+  "sources": [
+    {
+      "title": "IStructE UK National Annex publication schedule, 19 October 2026",
+      "url": "https://www.istructe.org/resources/eurocodes/publication-schedule-of-uk-national-annexes-and-fu/",
+      "note": "NA to BS EN 1991-1-1:2025 reported published 30 September 2026. Exact normative values not accessed; no claim that older draft values equal the published annex."
+    },
+    {
+      "title": "JRC Eurocode 1 workshop: traffic/parking categories",
+      "url": "https://eurocodes.jrc.ec.europa.eu/sites/default/files/2022-06/EN1991_2_Malakatas.pdf"
+    },
+    {
+      "title": "BCSA second-generation Eurocode presentation",
+      "url": "https://bcsa.org.uk/upload/Resources/The%20Future%20of%20Steel/Presentations/TFoSC%20Mungo%20Stacy%20EN%201990%20and%20EN%201991.pdf",
+      "note": "Draft indicative UK choices only: F1 q3 kPa, axle30 kN, jack15 kN. Used to motivate upper sensitivity, not represented as the published standard."
+    },
+    {
+      "title": "FP McCann hollowcore flooring",
+      "url": "https://fpmccann.co.uk/portfolio-items/hollowcore-flooring/",
+      "note": "Precast alternative requires supplier selection for actual spans, wall lines and vehicle loads, plus erection/crane access."
+    }
+  ],
+  "section": "356x171x67",
+  "retiredTimberIds": [
+    "M-FR-0-001",
+    "M-FR-0-006",
+    "M-FR-0-009",
+    "M-FR-0-011"
+  ],
+  "sourceWallNames": [
+    "Proposal | Cinema north wall",
+    "Proposal | Cinema east wall pier 0",
+    "Proposal | Cinema east wall head 0",
+    "Proposal | Cinema east wall pier 1",
+    "Proposal | Cinema east wall head 1"
+  ]
+}

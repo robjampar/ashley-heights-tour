@@ -1,0 +1,26 @@
+import {chromium} from '../../walkthrough/node_modules/playwright/index.mjs';
+import {writeFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const out=new URL('../../walkthrough/test-results/structural-walls-roof-options-2026-10-26/',import.meta.url).pathname;
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--use-angle=metal']});
+const page=await browser.newPage({viewport:{width:1600,height:1050},deviceScaleFactor:1}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:8765/structure/');await page.waitForFunction(()=>window.structureStudio?.ready);await page.waitForTimeout(600);
+const shot=async name=>{await page.screenshot({path:out+name+'.png'});};
+async function camera(pos,target){await page.evaluate(({pos,target})=>{const s=window.structureStudio;s.camera.position.set(...pos);s.controls.target.set(...target);s.controls.update();}, {pos,target});await page.waitForTimeout(450);}
+await shot('01-all-walls-corrected');
+await page.getByRole('button',{name:'Wall structure',exact:true}).click();await camera([-10,7.8,22],[4.7,2.8,12]);await shot('02-garage-gable-and-south-return');
+await camera([-8,8,3],[4.6,3,10.4]);await shot('03-garage-north-return-and-upper-wall');
+await camera([-7,7,1],[4,3.2,7.3]);await shot('04-entrance-returns');
+await page.selectOption('#level','3');assert.equal(await page.evaluate(()=>{const s=window.structureStudio;return s.visible().map(id=>s.data.elements.find(e=>e.id===id)).filter(e=>e.category==='masonry').length;}),0);await camera([18,12,13],[7.4,6.7,1]);await shot('05-loft-timber-only');
+await page.selectOption('#level','all');await page.getByRole('button',{name:'Roof framing',exact:true}).click();await page.check('#retained');await page.locator('#fit').click();await page.waitForTimeout(450);await shot('06-roof-A-retained');
+const roofA=await page.evaluate(()=>window.structureStudio.visible());await page.selectOption('#roof-option','replace');await page.waitForTimeout(300);await shot('07-roof-B-rebuilt');const roofB=await page.evaluate(()=>window.structureStudio.visible());assert.ok(roofB.includes('M-ROOF-B-RIDGE'));assert.ok(!roofA.includes('M-ROOF-B-RIDGE'));
+assert.equal(await page.evaluate(()=>{const s=window.structureStudio;return s.visible().some(id=>s.members.retainedRoofIds.includes(id));}),false);
+await page.getByRole('button',{name:'Roof options',exact:true}).click();await shot('08-roof-options');
+await page.locator('[data-roof-plan="retain"]').click();await shot('09-roof-plan-A');await writeFile(out+'roof-plan-A.svg',await page.locator('#drawing').innerHTML());
+await page.selectOption('#roof-option','replace');await shot('10-roof-plan-B');await writeFile(out+'roof-plan-B.svg',await page.locator('#drawing').innerHTML());assert.ok((await page.locator('#drawing').innerHTML()).includes('ROOF B'));
+await page.getByRole('button',{name:'Costs',exact:true}).click();await shot('11-costs-B');const costB=await page.locator('#costs .trial-metrics').innerText();await page.selectOption('#roof-option','retain');await shot('12-costs-A');const costA=await page.locator('#costs .trial-metrics').innerText();assert.notEqual(costA,costB);
+const report=await page.evaluate(()=>{const s=window.structureStudio;return {revision:s.members.revision,memberCount:s.members.elements.length,roofOptions:s.members.roofOptions};});
+await page.goto('http://127.0.0.1:8765/structure/?view=roof-options&roof=replace');await page.waitForFunction(()=>window.structureStudio?.ready);assert.equal(await page.locator('#roof-option').inputValue(),'replace');assert.equal(await page.evaluate(()=>window.structureStudio.state.view),'roof-options');
+await page.setViewportSize({width:390,height:844});await shot('13-mobile-roof-options');
+await writeFile(out+'browser-review.json',JSON.stringify({errors,roofACount:roofA.length,roofBCount:roofB.length,costA,costB,...report},null,2));await browser.close();console.log(JSON.stringify({errors,costA,costB,...report}));if(errors.length)process.exitCode=1;

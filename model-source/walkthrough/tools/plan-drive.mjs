@@ -16,7 +16,7 @@ export function drivePlanningInput(data){
   site:pick(data.site,['outline_m']),
   approachSurface:pick(data.approachSurface,['polygon']),
   proposalFrontage:pick(data.proposalFrontage,['wall_line_m']),
-  proposalSite:{...pick(data.proposalSite,['pedestrianCourtyards','drivablePolygons']),
+  proposalSite:{...pick(data.proposalSite,['pedestrianCourtyards','drivablePolygons','vehicleSizes']),
    driveway_bay_bounds_m:(data.proposalSite?.driveway_bay_bounds_m??[]).map(b=>pick(b,['id','bounds_m']))},
  };
 }
@@ -27,16 +27,17 @@ export function drivePlanningInput(data){
 // the neighbours are in.
 export function planDrivePaths(data,{log=()=>{},planningMargin=.22}={}){
  data=drivePlanningInput(data);
- const bays=data.proposalSite?.driveway_bay_bounds_m??[];
+ const bays=(data.proposalSite?.driveway_bay_bounds_m??[]).filter(bay=>!data.proposalSite.vehicleSizes||data.proposalSite.vehicleSizes[bay.id]);
  if(!bays.length)return null;
  const carName=id=>'Proposal | Compact car '+id;
  const world=new DriveWorld(data,{ignore:o=>bays.some(b=>o.name===carName(b.id)),planningMargin});
- const planner=new HybridPlanner(world,{reverseCost:4,changeCost:2});
  const g=gateGeometry(data);
  const road=k=>({x:g.centre[0]+g.out[0]*k,y:g.centre[1]+g.out[1]*k});
  const start={...road(8.5),t:g.inward},exitGoal={...road(6),t:g.inward+Math.PI};
  const out={gate:{centre:g.centre,out:g.out,inward:g.inward,width:g.width},start,exit:exitGoal,bays:{}};
  for(const bay of bays){
+  world.vehicle=data.proposalSite.vehicleSizes?.[bay.id]??{length:4.4,width:1.8};
+  const planner=new HybridPlanner(world,{radius:world.vehicle.turningRadius??4.3,reverseCost:4,changeCost:2});
   const b=bay.bounds_m,cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2,along=(b[3]-b[1])>(b[2]-b[0])?Math.PI/2:0;
   world.dynamic=(data.obstacles??[]).filter(o=>bays.some(q=>q.id!==bay.id&&o.name===carName(q.id))).map(o=>o.box);
   const t0=Date.now();

@@ -1,6 +1,6 @@
 {
   "room": "Upper landings and library",
-  "revision": 2,
+  "revision": 4,
   "floorZ": 2.8,
   "ceilingZ": 5.35,
   "bounds": [
@@ -10,14 +10,14 @@
     5.7
   ],
   "readingChair": [
-    9.42,
-    -1.83,
-    10.22,
-    -0.94
+    7.7,
+    -4.12,
+    8.5,
+    -3.23
   ],
   "sideTable": [
-    9.82,
-    -2.2,
+    8.78,
+    -3.68,
     0.16
   ],
   "galleryBooks": [
@@ -397,5 +397,6 @@
   "viewLabels": {
     "gallery": "Upper gallery books"
   },
-  "readingLightY": -1.4
+  "readingLightY": -3.68,
+  "courtyardFloorBasis": "Owner 17 October follow-up: landing finish returns to the former 10.35 m upper glazing line. Grand split stair occupies the interior of the landing. Reading chair and table move beside the south side of the main stair, clear of its low soffit."
 }

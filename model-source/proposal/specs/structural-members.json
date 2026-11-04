@@ -1,0 +1,217 @@
+{
+  "revision": "M16-2026-10-27",
+  "approvedForConstruction": false,
+  "basis": "Experimental member layout over the accepted architectural model. Reference-load candidates from UK-T01 where available; other sizes are explicit space reservations, not calculated designs.",
+  "floorFinishAndDeckMm": 44,
+  "joistSpacingMm": 400,
+  "roofSpacingMm": 400,
+  "roofReservationMm": [
+    45,
+    220
+  ],
+  "cavityMm": 150,
+  "brickMm": [
+    215,
+    102.5,
+    65
+  ],
+  "blockMm": [
+    440,
+    100,
+    215
+  ],
+  "mortarMm": 10,
+  "rates": {
+    "steel": {
+      "label": "Structural steel: fabricated/erected allowance",
+      "unit": "kg",
+      "low": 4,
+      "reference": 6,
+      "high": 9
+    },
+    "ijoist": {
+      "label": "I-joists: supply and installation allowance",
+      "unit": "m",
+      "low": 13,
+      "reference": 20,
+      "high": 30
+    },
+    "timber": {
+      "label": "Sawn/engineered timber reservations: supply and install",
+      "unit": "m\u00b3",
+      "low": 1200,
+      "reference": 1800,
+      "high": 2800
+    },
+    "hanger": {
+      "label": "Hanger assembly: supply/install allowance, fixings TBD",
+      "unit": "each",
+      "low": 10,
+      "reference": 18,
+      "high": 30
+    },
+    "brick": {
+      "label": "102.5 mm brick leaf, mortar and labour allowance",
+      "unit": "m\u00b2",
+      "low": 80,
+      "reference": 115,
+      "high": 165
+    },
+    "solidbrick": {
+      "label": "215 mm workshop brick wall allowance",
+      "unit": "m\u00b2",
+      "low": 135,
+      "reference": 190,
+      "high": 260
+    },
+    "block": {
+      "label": "100 mm blockwork, mortar and labour allowance",
+      "unit": "m\u00b2",
+      "low": 38,
+      "reference": 55,
+      "high": 80
+    },
+    "concrete": {
+      "label": "Concrete only, placed: excludes reinforcement/formwork",
+      "unit": "m\u00b3",
+      "low": 180,
+      "reference": 240,
+      "high": 330
+    },
+    "lintel": {
+      "label": "Unselected lintel: provisional supply/install per metre",
+      "unit": "m",
+      "low": 70,
+      "reference": 130,
+      "high": 240
+    },
+    "foundationMasonry": {
+      "label": "Foundation masonry envelope: unquoted budget allowance",
+      "unit": "m\u00b3",
+      "low": 350,
+      "reference": 450,
+      "high": 650
+    },
+    "block215": {
+      "label": "215 mm bearing blockwork provisional allowance \u00b7 twice the 100 mm rate, not a quotation",
+      "unit": "m\u00b2",
+      "low": 76,
+      "reference": 110,
+      "high": 160
+    }
+  },
+  "rateBasis": "Editable owner-study GBP ex-VAT allowances, dated 26 October 2026. Not supplier quotes or a complete tender estimate. Low/high are sensitivity cases, not guaranteed bounds. Quantities are net model geometry; no waste or procurement rounding included.",
+  "excludedCosts": [
+    "Retained structure (excluded, not valued at replacement cost)",
+    "Ground investigation, trial pits, design and statutory fees",
+    "Demolition, temporary works, propping and underpinning",
+    "Excavation, disposal, dewatering and ground remediation",
+    "Reinforcement, formwork, basement waterproofing and drainage",
+    "Unresolved support/transfer members, connection plates, anchors and bolts",
+    "Decks, insulation, cavity ties/trays, DPCs, fire protection and finishes",
+    "Crane/access/preliminaries, contingency, VAT and contractor overheads not included in rates"
+  ],
+  "garageOption": {
+    "id": "garage-rebuild",
+    "label": "Original garage: demolition and rebuild \u2014 base scheme",
+    "default": true,
+    "basis": "Rebuild included by default. F01 uses 600 \u00d7 300 mm concrete strips, underside 1.00 m below assumed ground (model Z -0.15 m), with 850 mm foundation masonry rising to FFL 0. Soil and load values are explicit experimental assumptions; no surveyed site bounds or engineered depths. Ground investigation, tree effects, adjacent foundations, settlement and reinforcement remain unresolved.",
+    "foundationReservationMm": [
+      600,
+      300
+    ],
+    "foundationTopZ": -0.85,
+    "foundationBaseZ": -1.15,
+    "foundationDepthRangeM": [
+      0.75,
+      1,
+      1.5
+    ]
+  },
+  "sources": [
+    {
+      "title": "JJI technical manual and installation details",
+      "url": "https://www.jamesjones.co.uk/products-and-services/engineered-timber/downloads"
+    },
+    {
+      "title": "British Steel section geometry",
+      "url": "https://www.britishsteel.co.uk/wp-content/uploads/2025/08/british-sections-product-range.pdf"
+    },
+    {
+      "title": "Simpson Strong-Tie: masonry / steel I-joist hangers",
+      "url": "https://www.strongtie.co.uk/en-UK/products/joist-hanger-for-masonry-i-joists-jhmi"
+    },
+    {
+      "title": "Wienerberger standard brick formats",
+      "url": "https://www.wienerberger.co.uk/products/brick/standard-format-bricks.html"
+    },
+    {
+      "title": "Forterra Conbloc guide",
+      "url": "https://www.forterra.co.uk/wp-content/uploads/2021/02/Conbloc-Guide-June-2024.pdf"
+    },
+    {
+      "title": "Catnic CG150/100 lintel data",
+      "url": "https://catnic.com/assets/datasheets/uk/lintels/cg150-100.pdf?v=1739350228"
+    },
+    {
+      "title": "England Approved Document A",
+      "url": "https://www.gov.uk/government/publications/structure-approved-document-a"
+    },
+    {
+      "title": "Timber Development UK C24 span tables (2023), hosted by Jewson; domestic floor section p6",
+      "url": "https://www.jewson.co.uk/medias/D.100.02-01-C24-Span-Tables-Design-Span-Tables.pdf?context=bWFzdGVyfHJvb3R8NjM4Nzc1fGFwcGxpY2F0aW9uL3BkZnxhRFprTDJobE55ODVOekV4TWpBME16QXlPRGM0TDBRdU1UQXdMakF5TFRBeFgwTXlOQzFUY0dGdUxWUmhZbXhsYzE5RVpYTnBaMjVmVTNCaGJpMVVZV0pzWlhNdWNHUm18NjJjODEyNDNhYzQxYTViYWM2ZDVlYzIwNjExOTg0ZDBiZDFlMWZiOWIzYjhiNGQ0M2MxYmI4MGY1M2E0NjVhNQ",
+      "checked": "2026-10-26",
+      "use": "Section/spacing benchmark only. WLT-01 has separate floor-only calculations; this table does not validate the building or its supports."
+    }
+  ],
+  "roofOptions": {
+    "default": "replace",
+    "externalForm": "Both options keep the accepted external roof shape, dormers, levels and stair position. The choice concerns retaining versus replacing the existing roof structure.",
+    "options": [
+      {
+        "id": "retain",
+        "label": "A \u00b7 Retain and adapt the existing roof",
+        "description": "Keep surviving original-house roof structure where survey and load checks allow. Form the agreed dormers, roof junctions and new wings; allow for local strengthening and temporary support.",
+        "risks": "Existing timber condition, connections, bearings and capacity are unverified. Local strengthening and the demolition already needed for the agreed alterations remain unpriced."
+      },
+      {
+        "id": "replace",
+        "label": "B \u00b7 Remove and rebuild the existing roof",
+        "description": "Strip the existing roof completely and construct the agreed roof shape with a new coordinated frame. New framing replaces every surviving original-roof surface shown in Option A; altered/new roof areas are common to both options.",
+        "risks": "Requires a full replacement roof design, demolition/propping/weather protection, wall-head checks, temporary stability and connection design. Replacement member sizes currently reserve space only."
+      }
+    ]
+  },
+  "loftFloor": {
+    "default": true,
+    "scope": "Full replacement of original loft joists and boarding; new joists across the complete loft footprint, with real stair/void openings preserved.",
+    "basis": "Owner instruction 26 October 2026: remove the existing roof and loft joists entirely. Existing lower-storey structure remains unless altered. New-member dimensions, supports and temporary works require design."
+  },
+  "gardenRoom": {
+    "id": "garden-room",
+    "basis": "Garden room/rear extension follows the accepted 500 mm inset and 2 m chamfer. All members are coordination reservations; roof terrace loads, stability, connections, foundation reactions, waterproofing and thermal design remain unverified. Existing house openings remain; glazing is not treated as a structural support.",
+    "slabThicknessM": 0.15,
+    "slabTopZ": -0.15,
+    "foundationBaseZ": -1.15,
+    "foundationTopZ": -0.85,
+    "foundationWidthM": 0.6,
+    "stemWidthM": 0.3525,
+    "movementJointM": 0.01,
+    "roofBeamSection": "203x133x30",
+    "roofBottomZ": 2.55,
+    "roofJoistSizeM": [
+      0.045,
+      0.22
+    ],
+    "roofJoistSpacingM": 0.4,
+    "postSizeM": 0.08,
+    "postWallM": 0.005,
+    "sources": [
+      {
+        "title": "NHBC chapter 7.1: terrace structural design and roof build-up coordination",
+        "url": "https://nhbc-standards.co.uk/downloads/NHBC-Standards-2024-7.pdf",
+        "note": "Reference for outstanding terrace loading, deflection, falls and construction layers; no compliance or capacity claim."
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "revision": "CJ01-2026-10-28",
+  "nativeUpdate": "Targeted stage from preserved SW02, not a full source rebuild",
+  "published": false,
+  "approvedForConstruction": false,
+  "hashes": {
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "11add2d516c5911ac370380e8e5d29bff5ac87127bae31391544d6ad5e92f5f7",
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb": "ca673e21cfe7e80760cd024ef9d16099c54215b24343132b8c559671cbe538c3",
+    "outputs/output-proposed-compact/geometry.json": "026ca82ba31255ea636e46bd8cd3c6994f2d668cf4638b901377d8bb6bd3c280",
+    "outputs/output-proposed-compact/navigation.json": "efe9a30e4affc8c91945435ed2d3f76bef969345f547c1429f524205cf22d656",
+    "walkthrough/public/structure/members.json": "e11e033bb980e88d0408ef4315c08f221277e686d26ac8a7cacff776f1a900f8",
+    "walkthrough/public/visual-quality/compact-furnishings.json": "4f8caf37dca872ed8eea5583f51a15e15c51f2748ef63f125daf4b391ff86e55",
+    "proposal/specs/continuous-joist-integration.json": "343e43895ef36d46335203c466830b4e9c949c77ca8716d91528187860d42856",
+    "scripts/structure/continuous_joist_integration.py": "599abd029683aee540754c715c5a71e04c014b34ce2c69a8468c234b2ee73ee6",
+    "scripts/structure/build_members.py": "5133e83783010e959c47daf6f1a57509f488a5037f531573eddba68863c6aec5",
+    "scripts/model/proposal_continuous_joists.py": "cf5d17a14708b92444880964d90624bffef955dcdd36ab9bd0007b86c549b50b",
+    "scripts/interiors/door_frame_details.py": "0efa44d8be33cf7c67f2532f40a670b262ff4312958986ad000d48d3820632f8"
+  },
+  "members": 2535,
+  "joists": 237,
+  "unmappedJoistEnds": 0,
+  "hangerFit": {
+    "assemblies": 474,
+    "solidPairsChecked": 1947,
+    "intersections": [],
+    "seatLevelErrors": [],
+    "scope": "Each joist against its linked receiver, hanger against that joist/receiver, and its infill block against those three members. Seat top checked against joist underside. Other nearby members and product/fastener capacities are not covered."
+  },
+  "scopedSteelAndMasonryIntersections": 83,
+  "newScopedPairs": [],
+  "coveringIntersections": 1159,
+  "newCoveringPairs": [],
+  "additionalJoistMasonryIntersections": 0,
+  "sections": {
+    "M-FR-3-001": {
+      "section": "UC 356x368x196 steel reservation; full design unverified",
+      "physicalLengthM": 8.545,
+      "allLimitedScreensPass": true,
+      "maxFloorSLSDeflectionMm": 9.217719900038547,
+      "approvedForConstruction": false
+    },
+    "M-FR-3-010": {
+      "section": "UC 305x305x198 steel reservation; full design unverified",
+      "physicalLengthM": 8.4275,
+      "allLimitedScreensPass": true,
+      "maxFloorSLSDeflectionMm": 7.846677199923527,
+      "approvedForConstruction": false
+    },
+    "M-CJ01-GROUND-HEAD": {
+      "section": "UB 356x171x51 gravity candidate",
+      "physicalLengthM": 4.62,
+      "allLimitedScreensPass": true,
+      "maxFloorSLSDeflectionMm": 3.3682730448589657,
+      "approvedForConstruction": false
+    },
+    "M-GABLE-FLOOR-BLOCK": {
+      "section": "UC305 \u00d7 305 \u00d7 129 gravity candidate",
+      "physicalLengthM": 6.4,
+      "allLimitedScreensPass": true,
+      "maxFloorSLSDeflectionMm": 5.584441423307891,
+      "approvedForConstruction": false
+    }
+  },
+  "tests": {
+    "python": {
+      "fullSuite": 287,
+      "passed": true,
+      "afterFinalSpacingAdjustment": {
+        "affectedTests": 22,
+        "passed": true
+      }
+    },
+    "web": {
+      "total": 317,
+      "passed": true,
+      "runs": [
+        12,
+        305
+      ],
+      "finalMemberTests": 16
+    },
+    "layout": {
+      "passed": false,
+      "unchangedFromBaseline": true,
+      "findings": 345
+    }
+  },
+  "browser": {
+    "errors": [],
+    "passages": [
+      {
+        "id": "Proposal | Garage east separation door 0",
+        "x": 10.255000000000022,
+        "expected": 10.255
+      },
+      {
+        "id": "Proposal | Basement cinema door",
+        "x": 10.255000000000022,
+        "expected": 10.255
+      },
+      {
+        "id": "CJ01 wide opening",
+        "y": -9.049999999999978,
+        "expected": -9.05
+      }
+    ],
+    "native": "CJ01-native-2026-10-28",
+    "members": "CJ01-2026-10-28",
+    "selected": "M-J-01-009",
+    "postPresent": false,
+    "eastLoftJoistX": 13.574,
+    "hallLedgers": 2,
+    "gymEdgeJoistX": 9.617,
+    "supplierInspector": "MEMBER / ASSEMBLY INSPECTORM-J-01-009J-01 \u00b7 joist 009Supplier-table candidate; floor assembly unverifiedWork scopeNew workRoof strategyShared / retained basisMaterial proposaltimberDisplayed sectionJJI 300DLength5.741 mTop / underside2.756 / 2.456 mCentres400 mmCalculation basisCJ01 \u00b7 supplier span-table comparisonQuantity5.741 mReference allowance\u00a3115 ex VATConstruction statusNot approvedCJ01 repeated north/south main-wing joists. The garage/store bearing line continues through a wide steel head to the rear outside wall. A transverse loft girder preserves the open suite. Floor gravity candidates only; complete connections, support movement, masonry, roof/stability and foundations remain unverified.Supports: Ends are linked to the displayed receiver network or explicitly identified as a cantilever tip. Receiver capacity, bearings and the full load path remain unverified.Supplier span-table comparison5.841 m between modelled receivers; table limit 6.286 m at 400 mm centres. Within table span only.Supplier conditions, loads, flexible supports, concentrated loads, vibration, blocking and connections require project-specific design.James Jones JJI manual \u00b7 16, domestic floors, SC1 \u2197\n \n \n \n \n \n Joist endsEnd 1: M-FR-1-002 \u00b7 receiver reservation; capacity unverifiedEnd 2: M-FR-1-007 \u00b7 receiver reservation; capacity unverifiedFocus in 3DIsolate this assemblyOpen checksJ-01: floor depth coordinationJJI 300D: member top 2.756 m, underside 2.456 m. Deck/finish 44 mm, service/suspension 25 mm and lining 31.5 mm; total 400.5 mm versus the original 200 mm architectural envelope. These are dimensional budgets, not selected fire/acoustic systems. Native floor, ceiling and headroom coordination is required. Clipped to exported structural deck: 13.33 m\u00b2 of the bounding bay is not covered; some is legitimate void, some requires reconciliation.Receiver network is a proposed load-transfer layoutJoist ends now identify physical receiver members. Those members are uncalculated reservations, not assumed adequate beams. Their wall bearings, connected framing, reactions, splices, stability and load path to foundations must be resolved. Adding perimeter framing does not prove structural support. Geometric contacts are recorded separately from capacity.Engineer to verify loading, capacity, stability and complete support path.Coordinate bearings, connections, fire protection and installation tolerances before construction.Source objects: F-8A7A6AE, F-46D63C5"
+  },
+  "additionalJoistMasonryOverlapsCorrected": 44,
+  "visualReview": {
+    "reviewed": true,
+    "views": [
+      "suite-wide",
+      "suite-partition",
+      "gym-opening",
+      "gym-window",
+      "garage",
+      "utility",
+      "loft",
+      "loft-structure",
+      "ground-head-structure"
+    ],
+    "notes": "Preferred suite and furniture preserved; gym diffuser footprints corrected; garage surrounds fitted; revised member overlay aligned. Appearance remains a real-time architectural model, not a photorealism claim. Whole-building structural design remains unverified."
+  }
+}

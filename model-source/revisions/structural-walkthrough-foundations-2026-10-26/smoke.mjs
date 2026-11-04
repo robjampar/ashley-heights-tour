@@ -1,0 +1,10 @@
+import {chromium} from '../../walkthrough/node_modules/playwright/index.mjs';
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--use-angle=metal']});
+const page=await browser.newPage({viewport:{width:1720,height:1100}});page.on('pageerror',e=>console.log('ERROR',e.message));
+await page.goto('http://127.0.0.1:8765/?design=proposed');await page.waitForFunction(()=>window.walkthrough?.ready,{timeout:120000});
+await page.locator('#structure-toggle').click();await page.waitForFunction(()=>window.walkthrough?.structure?.enabled,{timeout:120000});
+console.log(await page.evaluate(()=>({state:window.walkthrough.getState(),members:window.walkthrough.structure.studio.visible().length,scene:window.walkthrough.structure.studio.scene.children.length})));
+await page.screenshot({path:'walkthrough/test-results/structural-walkthrough-foundations-2026-10-26/01-first-integration.png'});
+await page.evaluate(()=>{const w=window.walkthrough,s=w.structure.studio;s.select('M-GARDEN-BEAM-03');s.focusElement(s.data.elements.find(e=>e.id==='M-GARDEN-BEAM-03'));});
+await page.waitForTimeout(800);await page.screenshot({path:'walkthrough/test-results/structural-walkthrough-foundations-2026-10-26/02-first-focus.png'});
+console.log(await page.evaluate(()=>window.walkthrough.getState()));await browser.close();

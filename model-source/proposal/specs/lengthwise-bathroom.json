@@ -1,0 +1,115 @@
+{
+  "revision": "lengthwise-bathroom-2026-10-23",
+  "intent": "Run the bathroom front-to-back along the west side, with an open walk-through wardrobe beside it and a retained privacy door. Split the existing front window at the partition.",
+  "floorZ": 2.8,
+  "ceilingZ": 5.168,
+  "bathroom": [
+    -5.065,
+    1.015,
+    -2.94,
+    5.04
+  ],
+  "dressing": [
+    -2.82,
+    1.015,
+    -0.115,
+    4.22
+  ],
+  "partition": [
+    -2.94,
+    1.015,
+    -2.82,
+    5.04
+  ],
+  "door": {
+    "centre": [
+      -2.88,
+      3.32
+    ],
+    "hinge": [
+      -2.81,
+      3.733,
+      2.8
+    ],
+    "axis": [
+      0,
+      -1
+    ],
+    "openAngle": 1.5707963267948966,
+    "openingY": [
+      2.87,
+      3.77
+    ]
+  },
+  "wardrobes": [
+    {
+      "bounds": [
+        -2.82,
+        1.4,
+        -2.22,
+        2.81
+      ],
+      "frontX": -2.22,
+      "faces": "east"
+    },
+    {
+      "bounds": [
+        -0.715,
+        2.15,
+        -0.115,
+        4.2
+      ],
+      "frontX": -0.715,
+      "faces": "west"
+    }
+  ],
+  "windowSeat": [
+    -2.75,
+    1.025,
+    -1.45,
+    1.295
+  ],
+  "vanity": [
+    -3.49,
+    1.11,
+    -2.94,
+    2.71
+  ],
+  "vanityCentre": [
+    -3.215,
+    1.91
+  ],
+  "shower": [
+    -5.02,
+    3.8,
+    -3.82,
+    5.0
+  ],
+  "wc": [
+    -5.09,
+    3.05,
+    -4.3,
+    3.65
+  ],
+  "frontWindows": {
+    "originalOpening": [
+      -3.79,
+      -1.39
+    ],
+    "pier": [
+      -2.97,
+      -2.79
+    ],
+    "bathroom": [
+      -3.79,
+      -2.97
+    ],
+    "dressing": [
+      -2.79,
+      -1.39
+    ],
+    "wallY": 0.9,
+    "sillZ": 3.6,
+    "headZ": 5.05
+  }
+}

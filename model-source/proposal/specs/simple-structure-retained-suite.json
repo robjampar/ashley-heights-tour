@@ -1,0 +1,84 @@
+{
+  "id": "SW02",
+  "status": "layout and gravity feasibility study; not installed or construction design",
+  "authority": "Owner accepts the other changes but prefers the previous principal suite, 27 October 2026",
+  "wallCoreMm": 215,
+  "finishEachSideMm": 15,
+  "westAxisM": 5.2325,
+  "eastAxisM": 13.6775,
+  "southAxisM": -16.0035,
+  "northReturnAxisM": -9.905,
+  "northTransferAxisM": -5.3,
+  "oldCinemaWallAxisM": 9.0975,
+  "oldGarageWallAxisM": 11.315,
+  "garageWestInnerFaceM": 3.6125,
+  "primaryDoorY": [
+    -12.4,
+    -11.45
+  ],
+  "bathroomPartitionY": -12.3,
+  "bathroomDoorX": [
+    7.85,
+    8.8
+  ],
+  "loftJoistTrial": {
+    "name": "C24 72 x 245 mm actual section",
+    "widthMm": 72,
+    "depthMm": 245,
+    "maximumSpacingM": 0.4
+  },
+  "groundAndFirstWallMaterial": "215 mm ground-floor bearing blockwork over basement wall. No new first-floor spine or return wall.",
+  "loftWalls": "Timber partitions only; spine stops below loft deck",
+  "van": {
+    "lengthM": 4.73,
+    "widthM": 2.04,
+    "centre": [
+      6.4725,
+      -14.33
+    ]
+  },
+  "changes": [
+    "Move proposed cinema east wall to the midpoint of the loft bearing axes; extend its north and south returns, carpet, ceiling and acoustic lining.",
+    "Align the garage/service division with that same line.",
+    "Keep the previous principal-suite bedroom, sitting area, corner desk, walk-through wardrobe and bathroom positions.",
+    "Use two ceiling-level girders instead of a first-floor dividing wall. Their joint bears on a single-storey post concealed in a roughly 565 mm extension of the existing media/wardrobe partition end.",
+    "Move the ground-floor and basement spine door openings south of the post bearing; retain the original garage north doorway.",
+    "The post bears onto a padstone reservation on the aligned ground wall, then basement wall and raft. Do not place it over the new doorway or on floor joists.",
+    "Keep the accepted bar island/stools, relocate its wall console and retain the van clearance as in SW01.",
+    "No free-standing post, altered suite zoning, roof reshaping or stair move is proposed. All sizing remains provisional."
+  ],
+  "preservePrincipalSuite": true,
+  "suiteGirderSection": "305x165x54",
+  "retainedGarageNorthDoorX": [
+    5.25,
+    6.15
+  ],
+  "concealedPost": {
+    "centre": [
+      9.455,
+      -11.01
+    ],
+    "tubeTrial": "150 x 150 x 8 SHS; axial stability and connection design outstanding",
+    "finishedEndPanelBounds": [
+      9.335,
+      -11.13,
+      9.96,
+      -10.89
+    ],
+    "baseBearingEnvelope": [
+      9.3475,
+      -11.235,
+      9.5625,
+      -10.785
+    ],
+    "padstoneTrialMm": [
+      215,
+      450,
+      200
+    ],
+    "heightM": 2.4
+  },
+  "northTransferSection": "305x305x129",
+  "galleryEdgeSection": "254x146x31",
+  "gallerySectionCoordination": "Retain the existing narrow gallery edge section to clear the original-house joists and roof-edge timber. Its actual section is re-screened under both gallery live-load patterns; roof/facade and full stability design remain unverified."
+}

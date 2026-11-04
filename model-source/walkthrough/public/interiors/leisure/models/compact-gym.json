@@ -1,9 +1,9 @@
 {
   "variant": "compact",
   "room": "Gym",
-  "layoutRevision": 3,
+  "layoutRevision": 4,
   "configuration": {
-    "revision": 3,
+    "revision": 4,
     "room": "Gym",
     "bounds": [
       9.26,
@@ -51,20 +51,20 @@
           1
         ],
         "placedFront": [
-          9.29,
-          -5.63
+          9.43,
+          -5.0
         ],
         "footprint": [
-          9.29,
-          -6.028,
-          11.049999999999999,
-          -5.232
+          9.43,
+          -5.398,
+          11.19,
+          -4.602
         ],
         "safetyZone": [
-          11.049999999999999,
-          -6.13,
-          13.049999999999999,
-          -5.13
+          11.19,
+          -5.5,
+          13.19,
+          -4.5
         ]
       },
       {
@@ -78,20 +78,20 @@
           1
         ],
         "placedFront": [
-          9.29,
-          -6.68
+          9.43,
+          -6.0
         ],
         "footprint": [
-          9.29,
-          -7.077999999999999,
-          11.049999999999999,
-          -6.282
+          9.43,
+          -6.398,
+          11.19,
+          -5.602
         ],
         "safetyZone": [
-          11.049999999999999,
-          -7.18,
-          13.049999999999999,
-          -6.18
+          11.19,
+          -6.5,
+          13.19,
+          -5.5
         ]
       }
     ],
@@ -189,8 +189,8 @@
       ]
     },
     "notes": [
-      "Owner review: return both treadmills to face west towards the entrance and front gates, 20 mm north of their earlier locations.",
-      "The gym hall door moves 300 mm south; the adjacent internal window moves 200 mm south to retain a masonry pier. The rear safety zones and courtyard access stay clear.",
+      "Owner review 2026-10-15: both treadmills aligned with the northern west window, facing the entrance garden.",
+      "The nearest treadmill is 707 mm north of the hall aperture; each console sits within the window span. Keep the two-metre rear run-off clear.",
       "Treadmill proportions and rear safety zones reference the manufacturer MyRun manual.",
       "Rowing uses a separate central lane with the bike unoccupied. Activity states are checked individually.",
       "The bench stays in place; cycling and strength have some shared working space and are checked separately.",
@@ -3442,5 +3442,6 @@
       "cutaway": true
     }
   },
-  "sourceModelUpdatedAt": "2026-09-28T00:48:38.991954+00:00"
+  "sourceModelUpdatedAt": "2026-09-28T00:48:38.991954+00:00",
+  "targetedRefresh": "gym-fixture-refinement-2026-10-15"
 }

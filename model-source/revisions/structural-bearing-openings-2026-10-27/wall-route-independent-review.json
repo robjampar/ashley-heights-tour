@@ -1,0 +1,330 @@
+{
+  "revision": "wall-route-independent-review-2026-10-27",
+  "reviewedAt": "2026-10-27T08:53:52.984700+00:00",
+  "installed": false,
+  "approvedForConstruction": false,
+  "sourceHashes": {
+    "walkthrough/public/structure/members.json": "ee8cb35362355e6d6b4cede7b1afe888d1f56ac87a84b93cc5e2bf478e466d26",
+    "outputs/output-proposed-compact/geometry.json": "05e956bcf112f8a321d5b2331bc2dec106de69e53b49c4b017b82c2ec841d9ef",
+    "walkthrough/public/proposal-compact-navigation.json": "f0ac26413f3abe0140a027826fb8b9f11accfd4755e3f07a58ecc1855dbc2d3a",
+    "proposal/specs/structural-uk-catalog.json": "6fbaf4b82954f7d5b61a090f6a4be9f5c2dd9e6bc1d1aef381d00839abf91d69",
+    "proposal/specs/structural-trials.json": "4b0ed3cd6347b40118ea19103d9b0a69e238004848d840ec72183757d303b973"
+  },
+  "recommendation": "Develop the aligned garage/store/cinema wall route as the strongest currently identified shallow-girder alternative. A new first-floor media divider can provide the intermediate bearing without a full-height steel column. Do not present it as a verified construction design or apply it without architectural review.",
+  "wall": {
+    "planCoreBounds": [
+      [
+        6.15,
+        -10.0125
+      ],
+      [
+        8.82,
+        -9.7975
+      ]
+    ],
+    "coreThicknessMm": 215,
+    "lengthM": 2.67,
+    "finishAssumptionMm": 15,
+    "upperWallBottomZ": 2.8,
+    "bearingZ": 5.188,
+    "groundWallBottomZ": -0.075,
+    "groundWallTopZ": 2.8,
+    "groundSlabBottomZ": -0.325,
+    "basementWallTopZ": -0.325,
+    "basementWallBottomZ": -3.0
+  },
+  "planCoverage": [
+    {
+      "memberId": "M-G01-GARAGE-SLAB",
+      "bounds": [
+        [
+          5.1325,
+          -16.1035,
+          -0.325
+        ],
+        [
+          13.7775,
+          -9.7975,
+          -0.075
+        ]
+      ],
+      "proposedWallAreaM2": 0.5740499999999996,
+      "coveredAreaM2": 0.5740499999999996,
+      "uncoveredAreaM2": 0.0
+    },
+    {
+      "memberId": "M-G01-CINEMA-NORTH",
+      "bounds": [
+        [
+          5.2825,
+          -10.0125,
+          -3.0
+        ],
+        [
+          9.435,
+          -9.7975,
+          -0.325
+        ]
+      ],
+      "proposedWallAreaM2": 0.5740499999999996,
+      "coveredAreaM2": 0.5740499999999996,
+      "uncoveredAreaM2": 0.0
+    },
+    {
+      "memberId": "M-BLOCK-4D5245A",
+      "bounds": [
+        [
+          6.15,
+          -9.955,
+          0.0
+        ],
+        [
+          11.315,
+          -9.855,
+          2.6
+        ]
+      ],
+      "proposedWallAreaM2": 0.5740499999999996,
+      "coveredAreaM2": 0.26699999999999907,
+      "uncoveredAreaM2": 0.3070500000000006
+    }
+  ],
+  "methodology": "Projected actual triangulated structural solids, not only their bounding rectangles, onto the horizontal plane and intersected the proposed wall rectangle. Used current native object bounds for door/furniture clearances; furniture collision screening is bounding-box only. Imported existing exact gravity solvers for an independent continuous-girder check with actual loaded-girder stations and its selfweight added once. Geometry contacts do not prove strength, stability, fire or foundation adequacy.",
+  "circulation": {
+    "eastClearM": 1.004999999999999,
+    "westClearM": 0.8525000000000009,
+    "rearNicheClearM": 1.022499999999999,
+    "entryDoorOpenTipY": -9.65,
+    "mediaWallNorthFinishedY": -9.782499999999999,
+    "entryDoorTipGapM": 0.1324999999999985,
+    "doorBasis": "Current principal entrance hinge[8.47,-8.7,2.8],950mmleaf;90degree open leaf liesX8.448..8.492,Y-9.65..-8.7. Its sweep to closed stays north/east of the wall; hardware and changed hinge products require final check. Open leaf prevents use of the western rear niche directly from entrance, but the main east route stays available."
+  },
+  "furniture": {
+    "sofaGroupMoveM": [
+      0.5,
+      -0.9,
+      0
+    ],
+    "movedPlinthBounds": [
+      [
+        6.415,
+        -12.45,
+        2.87
+      ],
+      [
+        8.545,
+        -11.65,
+        3.07
+      ]
+    ],
+    "deskNorthEdgeY": -14.06,
+    "sofaBackToDeskPlanGapM": 1.61,
+    "check": "No substantive bounding-box clash detected against other principal-suite furniture bodies; flooring/rug contacts excluded. Move Bedroom02 coffee-table objects as well as the sofa-prefixed objects, rug, accessories, TV and media cabinet. Final native/render/navigation review remains required."
+  },
+  "continuousMainIndependentCheck": [
+    {
+      "scenario": "low",
+      "supportY": [
+        -16.0035,
+        -9.905,
+        -5.3
+      ],
+      "engineeringSpanM": 10.703499999999998,
+      "ulsReactionsKN": [
+        37.91180510017165,
+        102.67735239662086,
+        16.885068856803592
+      ],
+      "slsRelativeDeflectionMm": 1.591892866265799,
+      "ulsAbsoluteMomentKNm": 56.73892424779825,
+      "checks": {
+        "elasticBending": true,
+        "shearBelowHalfResistance": true,
+        "localClassAtMost3": true,
+        "shearSlenderness": true,
+        "totalDeflection": true,
+        "variableDeflection": true,
+        "noGravityUplift": true
+      },
+      "note": "Independent all-loaded check of main girder only; it does not recompute north-transfer response. Root study handles full propagation and variable patterns."
+    },
+    {
+      "scenario": "reference",
+      "supportY": [
+        -16.0035,
+        -9.905,
+        -5.3
+      ],
+      "engineeringSpanM": 10.703499999999998,
+      "ulsReactionsKN": [
+        41.41293625072413,
+        111.97154455854547,
+        18.340249724045613
+      ],
+      "slsRelativeDeflectionMm": 1.7499331066290584,
+      "ulsAbsoluteMomentKNm": 61.888107140321836,
+      "checks": {
+        "elasticBending": true,
+        "shearBelowHalfResistance": true,
+        "localClassAtMost3": true,
+        "shearSlenderness": true,
+        "totalDeflection": true,
+        "variableDeflection": true,
+        "noGravityUplift": true
+      },
+      "note": "Independent all-loaded check of main girder only; it does not recompute north-transfer response. Root study handles full propagation and variable patterns."
+    },
+    {
+      "scenario": "high",
+      "supportY": [
+        -16.0035,
+        -9.905,
+        -5.3
+      ],
+      "engineeringSpanM": 10.703499999999998,
+      "ulsReactionsKN": [
+        46.31451986149762,
+        124.9834135852399,
+        20.377502938184453
+      ],
+      "slsRelativeDeflectionMm": 1.971189767795722,
+      "ulsAbsoluteMomentKNm": 69.09696318985485,
+      "checks": {
+        "elasticBending": true,
+        "shearBelowHalfResistance": true,
+        "localClassAtMost3": true,
+        "shearSlenderness": true,
+        "totalDeflection": true,
+        "variableDeflection": true,
+        "noGravityUplift": true
+      },
+      "note": "Independent all-loaded check of main girder only; it does not recompute north-transfer response. Root study handles full propagation and variable patterns."
+    }
+  ],
+  "bearingDetail": "Two simply supported girder ends over a215mmwall with a10mmjoint have only102.5mmnominal seats each, before fabrication/build tolerances. Do not mark that detail solved. A continuous girder across the wall avoids the central end-bearing squeeze, but introduces a negative-moment region and different support reactions. A designed cap or wider wall head is a separate alternative, not an assumed pad extension.",
+  "selfweightSensitivity": {
+    "assumedMasonryKNm3": 20,
+    "upperWallHeightBelowPadM": 2.1630000000000003,
+    "newUpperWallCharacteristicKN": 24.833403,
+    "localGroundWallAdditionalCharacteristicKN": 19.123875,
+    "basis": "Illustrative dense masonry assumption; excludes mortar/product variation, finishes,pad,restraints and loads already carried by the existing first-floor/garage/slab system. Removed steel-column weight and any duplicated partition allowance must be reconciled in the full load takeoff."
+  },
+  "coordinationRequirements": [
+    "Ground support must start on the slab atZ-0.075, not on75mmfloor finishes. The slab bears directly over the215mmcinema wall in this exact footprint; check vertical compression/local shear, reinforcement continuity and construction joints.",
+    "Continue upgraded ground masonry through the first-floor build-up to upper wall underside. Trim floor/deck/finish/ceiling layers around the wall, never seat upper masonry on a timber ledger.",
+    "M-FR-1-007 timber receiver overlaps the proposed wall south face and needs relocation with its joists/hangers. Root exact-solid check measures37.5mmnominal transverse overlap; a47.5mmsouth shift would provide10mmclearance if validated with the whole assembly.",
+    "M-FR-1-026 first-floor steel trimmer meets this wall: retain a real masonry pad pocket, include its reaction in the local wall compression/combined bearing check, and coordinate its new pad with masonry courses.",
+    "The basement cinema north wall endsX9.435. Do not widen the entire ground separator toX11.315 and call it directly stacked; the eastern remainder would add load to a spanning slab and needs separate design.",
+    "A free-ended first-floor media wall needs actual lateral restraint to structural floors/beam framing, not decorative ceilings. Design wall slenderness,eccentricity,concentrated bearing and pad compression.",
+    "A continuous steel girder has bottom-flange compression near the new internal support. Existing top-flange/deck restraint alone must not be treated as proof of lateral-torsional stability.",
+    "Recompute north-transfer reactions, variable-load patterns and support-settlement sensitivity for the selected girder continuity. All-loaded main middle reaction is about125kN, not the98.65kNsplit-piece result.",
+    "Update basement wall/raft line loads with new masonry weight, existing slab/first-floor loads and FR1-026 reaction. The load becomes distributed but total structural dead load increases.",
+    "Remove the old column only in the accepted alternative, repairing its wall/casing and floor/ceiling penetrations; retain recovery data. Preserve current first-floor and loft finish datums.",
+    "The full roof load route, main ridge, lateral system, concentrated storage/bath loads, fire/acoustic construction, temporary propping and installation remain outside this review.",
+    "LowG/main-south-only sensitivity0.9G+1.5Q gives about0.676kN upward action at the north main-to-transfer joint. Positive connection restraint is required;1.35G-only gravity patterns do not establish absence of uplift."
+  ],
+  "alternatives": [
+    {
+      "route": "Current principal north partition atY-8.7",
+      "assessment": "It does not coincide with the garage/store and cinema bearing line. Making only this partition load-bearing does not create an onward load path. Additional ground/basement wall or transfer design would be required; it risks the basement stair arrival."
+    },
+    {
+      "route": "Aligned media divider atY-9.905",
+      "assessment": "Best direct geometric route found, with limited room/furniture change and unchanged girder depth. It requires new load-bearing masonry, amended ground thickness, real support detailing and full calculations."
+    },
+    {
+      "route": "Two girder pieces with wider/capped wall head",
+      "assessment": "Can retain the simply supported analysis basis if the actual support stations and bearing head are designed, but this adds local depth/projection and connection complexity."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nhbcprod.blob.core.windows.net/shared/CC2981-NHBC-Standards-2024-aw-digital-version-lr-151223.pdf",
+      "use": "Chapter6.3: supporting walls need lateral restraint and beam/lintel bearing design. Reference guidance only; project/current regulatory basis still to be established."
+    },
+    {
+      "url": "https://www.steelconstruction.info/images/5/54/NSC_Technical_Digest_2021.pdf",
+      "use": "SCI guidance on continuous-beam hogging regions explains the need to assess bottom-flange lateral restraint; a gravity-only strength/deflection screen is insufficient."
+    }
+  ],
+  "upliftSensitivity": [
+    {
+      "scenario": "low",
+      "pattern": "main-south-only",
+      "permanentFactor": 0.9,
+      "variableFactor": 1.5,
+      "reactionsKN": [
+        34.55722908557475,
+        65.70515341255992,
+        -0.6755774986556426
+      ],
+      "upliftAtNorthKN": 0.6755774986556426,
+      "basis": "Favourable permanent-load sensitivity for support uplift; not a complete selected Eurocode design combination. Needs positive main-to-transfer tie and full downstream analysis."
+    },
+    {
+      "scenario": "reference",
+      "pattern": "main-south-only",
+      "permanentFactor": 0.9,
+      "variableFactor": 1.5,
+      "reactionsKN": [
+        36.891316519276415,
+        71.90128152050968,
+        0.2945430795057069
+      ],
+      "upliftAtNorthKN": 0,
+      "basis": "Favourable permanent-load sensitivity for support uplift; not a complete selected Eurocode design combination. Needs positive main-to-transfer tie and full downstream analysis."
+    },
+    {
+      "scenario": "high",
+      "pattern": "main-south-only",
+      "permanentFactor": 0.9,
+      "variableFactor": 1.5,
+      "reactionsKN": [
+        40.159038926458734,
+        80.57586087163932,
+        1.6527118889316021
+      ],
+      "upliftAtNorthKN": 0,
+      "basis": "Favourable permanent-load sensitivity for support uplift; not a complete selected Eurocode design combination. Needs positive main-to-transfer tie and full downstream analysis."
+    },
+    {
+      "scenario": "low",
+      "pattern": "main-north-only",
+      "permanentFactor": 0.9,
+      "variableFactor": 1.5,
+      "reactionsKN": [
+        8.21155293564857,
+        50.544222756435396,
+        19.955267380522592
+      ],
+      "upliftAtNorthKN": 0,
+      "basis": "Favourable permanent-load sensitivity for support uplift; not a complete selected Eurocode design combination. Needs positive main-to-transfer tie and full downstream analysis."
+    },
+    {
+      "scenario": "reference",
+      "pattern": "main-north-only",
+      "permanentFactor": 0.9,
+      "variableFactor": 1.5,
+      "reactionsKN": [
+        10.545640369350227,
+        56.740350864385135,
+        20.925387958683945
+      ],
+      "upliftAtNorthKN": 0,
+      "basis": "Favourable permanent-load sensitivity for support uplift; not a complete selected Eurocode design combination. Needs positive main-to-transfer tie and full downstream analysis."
+    },
+    {
+      "scenario": "high",
+      "pattern": "main-north-only",
+      "permanentFactor": 0.9,
+      "variableFactor": 1.5,
+      "reactionsKN": [
+        13.813362776532554,
+        65.41493021551476,
+        22.28355676810984
+      ],
+      "upliftAtNorthKN": 0,
+      "basis": "Favourable permanent-load sensitivity for support uplift; not a complete selected Eurocode design combination. Needs positive main-to-transfer tie and full downstream analysis."
+    }
+  ]
+}

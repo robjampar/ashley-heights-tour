@@ -1,0 +1,45 @@
+{
+  "recorded": "2026-10-03T09:17:27.551762+00:00",
+  "before": {
+    "outputs/output-proposed-planning/geometry.json": {
+      "sha256": "6e7e42222b143973607ff3bd3d684195fed8fb10b9a3b4101cd5945d9ce069ad",
+      "bytes": 123875845
+    },
+    "outputs/output-proposed-planning/navigation.json": {
+      "sha256": "ed38f5b1ec00dd390ced809e9ff482515268680d5b8a385d95007cf73d807d6b",
+      "bytes": 1592677
+    },
+    "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).blend": {
+      "sha256": "25cfd9b2ab5c09d8deff43df62987ca3f453909c4e4b461075374f7aae59447b",
+      "bytes": 270457220
+    },
+    "outputs/output-proposed-planning/build-inputs.json": {
+      "sha256": "a6bedd696121b9689c825bdfe50187c3324fd652c4e83eace8f11fa993678ac7",
+      "bytes": 12348
+    }
+  },
+  "after": {
+    "outputs/output-proposed-planning/geometry.json": {
+      "sha256": "6e7e42222b143973607ff3bd3d684195fed8fb10b9a3b4101cd5945d9ce069ad",
+      "bytes": 123875845,
+      "unchanged": true
+    },
+    "outputs/output-proposed-planning/navigation.json": {
+      "sha256": "ed38f5b1ec00dd390ced809e9ff482515268680d5b8a385d95007cf73d807d6b",
+      "bytes": 1592677,
+      "unchanged": true
+    },
+    "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).blend": {
+      "sha256": "25cfd9b2ab5c09d8deff43df62987ca3f453909c4e4b461075374f7aae59447b",
+      "bytes": 270457220,
+      "unchanged": true
+    },
+    "outputs/output-proposed-planning/build-inputs.json": {
+      "sha256": "a6bedd696121b9689c825bdfe50187c3324fd652c4e83eace8f11fa993678ac7",
+      "bytes": 12348,
+      "unchanged": true
+    }
+  },
+  "verified_at": "2026-10-03T09:37:37.090939+00:00",
+  "all_unchanged": true
+}

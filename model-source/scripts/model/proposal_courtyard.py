@@ -76,9 +76,11 @@ for i,(ya,yb)in enumerate([(ya,yb) for ya,yb in [(-4.0+_cgd,-3.23+_cgd),(-3.21+_
  slab('Proposal | Internal garden limestone step '+str(i+1),[11.27,ya,12.62,yb],0,.10,stone,S)
 # Planting starts beyond the full north-swinging leaves. Low west grasses
 # remain below the retained bay sill; east shrubs frame its view from outside.
+_gym_door_y=_cgy-float((spec.get('courtyard') or {}).get('ground_recess_m',0))-.115
+_west_planting_south=max(-2.50,_gym_door_y+1.20+.25)
 for label,rr,height in [
  ('east',[13.35,-2.50,13.89,-.75],.22),
- ('west',[10.58,-2.50,11.05,-1.05],.14),
+ ('west',[10.58,_west_planting_south,11.05,-1.05],.14),
 ]:
  slab('Proposal | Internal garden '+label+' planting curb',rr,height,height,stone,S,False)
  inner=[rr[0]+.035,rr[1]+.035,rr[2]-.035,rr[3]-.035]
@@ -86,7 +88,9 @@ for label,rr,height in [
  obstacle('Proposal | Internal garden '+label+' planting',rr,0,1.05 if label=='east' else .61)
 for i,y in enumerate((-2.18,-1.63,-1.08)):
  leaf_cluster('Proposal | Internal garden east shrub '+str(i+1),(13.62,y,.75),(.19,.27,.29))
-for i,y in enumerate((-2.22,-1.87,-1.52,-1.20)):
+_grass_count=max(2,round((-1.05-_west_planting_south)/.35))
+for i in range(_grass_count):
+ y=_west_planting_south+.22+i*((-1.25)-(_west_planting_south+.22))/max(1,_grass_count-1)
  planting_clump('Proposal | Internal garden low grasses',10.815,y,.15,.43,800+i)
 lamp('Proposal | Internal garden planting light',13.62,-1.60,.23)
 _garden_review={
@@ -97,7 +101,7 @@ _garden_review={
  'glazed_boundary_centerline':_garden['glazedBoundaryCenterline'],
  'door_jambs_m':_garden['newWingDoors']['jambs'],
  'path_clear_width_m':1.35,'path_top_z_m':0,
- 'planting_north_of_open_door_tips_m':.415,
+ 'planting_north_of_open_door_tips_m':round(_west_planting_south-(_gym_door_y+1.20),3),
  'rainwater_leader_reserved_m':[10.43,-3.70,.08],
  'entrance_to_old_hall_waypoints_m':[[6.0,-8.9,0],[9.5,-7.1,0],[9.5,-4.35,0],[9.5,-1.6,0],[8.45,-1.6,0],[7.0,-.45,0],[7.0,.55,0]],
  'new_wing_to_garden_waypoints_m':[[11.95,-5.2,0],[11.95,-4.1+_cgd,0],[11.95,-2.5,0],[11.95,-1.3,0]],

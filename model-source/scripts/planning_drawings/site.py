@@ -40,10 +40,11 @@ def trees(model):
         x, y = float((o.low[0] + o.high[0]) / 2), float((o.low[1] + o.high[1]) / 2)
         near = [f for f in foliage if f.low[0] - .5 <= x <= f.high[0] + .5 and f.low[1] - .5 <= y <= f.high[1] + .5]
         r = max([max(f.high[0] - f.low[0], f.high[1] - f.low[1]) / 2 for f in near], default=1.5)
-        h = float(o.high[2])
+        # Trunk top is not tree height. Do not publish it as a surveyed dimension.
+        h = None
         kind = 'cherry' if 'cherry' in o.name.lower() else 'olive' if 'olive' in o.name.lower() else 'courtyard tree' if 'courtyard' in o.name.lower() else 'mature deciduous' if 'mature' in o.name.lower() else 'tree'
         label = f'T{len(out) + 1:02d}'
-        out.append({'id': label, 'x': x, 'y': y, 'radius': round(min(r, 5.0), 1), 'height_m': round(h, 1), 'kind': kind, 'new': o.name.startswith('Proposal |'), 'name': o.name})
+        out.append({'id': label, 'x': x, 'y': y, 'radius': round(min(r, 5.0), 1), 'height_m': h, 'kind': kind, 'new': o.name.startswith('Proposal |'), 'name': o.name})
     # de-duplicate trunks that appear twice (revised copies)
     uniq = []
     for t in out:
@@ -51,7 +52,7 @@ def trees(model):
             continue
         uniq.append(t)
     for i, t in enumerate(uniq):
-        t['id'] = f'T{i + 1:02d}'
+        t['id'] = f'{"EX" if model.tag == "existing" else "PR"}-T{i + 1:02d}'
     return uniq
 
 
@@ -113,6 +114,13 @@ def draw_splays(ax, model, ctx):
     ax.text(gx, gy - 2.2, f"Visibility splays {vs['vehicle_x_m']} × {vs['vehicle_y_m']} m (MfS) — to be agreed with KCC Highways", fontsize=4.2, color='#8a5a10', ha='center', zorder=7)
 
 
+def parking_bays(nav):
+    """Saved site metadata retains S2 even after its explicit lawn replacement."""
+    site = nav.get('proposalSite', {})
+    return [b for b in site.get('driveway_bay_bounds_m', [])
+            if not (b['id'] == 'S2' and site.get('bay_S2_replaced_by'))]
+
+
 def draw_block_plan(ax, model, ctx, existing, demolished_polys=None, records=None):
     draw_site_base(ax, model, ctx, existing)
     z0, _ = fp.room_envelope(model, 0.0, fp.HOUSE_REGION)
@@ -140,12 +148,15 @@ def draw_block_plan(ax, model, ctx, existing, demolished_polys=None, records=Non
         if bb:
             ax.add_patch(Rectangle((bb[0], bb[1]), bb[2] - bb[0], bb[3] - bb[1], facecolor='none', edgecolor=COL['below'], lw=.6, linestyle=(0, (5, 3)), zorder=10))
             ax.text(bb[0] + .3, bb[1] + .4, 'BASEMENT BELOW', fontsize=4.2, color=COL['below'], zorder=11)
-        for b in nav.get('proposalSite', {}).get('driveway_bay_bounds_m', []):
+        lawn = nav.get('proposalForecourt', {}).get('lawn', {}).get('polygon_m')
+        if lawn:
+            ax.add_patch(MplPolygon(lawn, closed=True, facecolor=COL['garden'], edgecolor='#8f9a8c', lw=.4, zorder=5))
+        for b in parking_bays(nav):
             x0, y0, x1, y1 = b['bounds_m']
             ax.add_patch(Rectangle((x0, y0), x1 - x0, y1 - y0, facecolor='#e4e3dc', edgecolor='#9a9a90', lw=.4, zorder=6))
             ax.text((x0 + x1) / 2, (y0 + y1) / 2, 'P ' + b['id'], ha='center', va='center', fontsize=4.4, color='#5a6058', zorder=7)
         bc = ctx.get('bins_cycles', {}).get('draw_rect_m')
-        if bc:
+        if bc and ctx.get('bins_cycles', {}).get('layout_verified', False):
             ax.add_patch(Rectangle((bc[0], bc[1]), bc[2] - bc[0], bc[3] - bc[1], facecolor='#ffffff', edgecolor=INK, lw=.4, zorder=12))
             ax.text((bc[0] + bc[2]) / 2, (bc[1] + bc[3]) / 2, 'BINS /\nCYCLES', ha='center', va='center', fontsize=3.8, color=INK, zorder=13)
         wsr = nav.get('proposalWorkshop', {}).get('outer_bounds_m')
@@ -164,7 +175,7 @@ def draw_block_plan(ax, model, ctx, existing, demolished_polys=None, records=Non
         ax.text((g[0][0] + g[1][0]) / 2 - 1.2, (g[0][1] + g[1][1]) / 2 - 1.0, 'GATE' + ('' if existing else ' (sliding)'), fontsize=4.2, color='#3a4a5a', zorder=13)
     if demolished_polys:
         draw_demolition_geom(ax, demolished_polys, zorder=14)
-    draw_trees(ax, trees(model), protect=not existing)
+    draw_trees(ax, trees(model), protect=False)  # no invented canopy-based RPAs
     for t in street_data().get('trees', []):   # neighbouring trees (researched, off site)
         if t['kind'] == 'hedge':
             continue

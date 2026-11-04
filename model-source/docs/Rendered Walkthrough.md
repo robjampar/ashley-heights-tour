@@ -1,0 +1,9 @@
+Double-click **Open Rendered Walkthrough.command** to open a separate Blender window in the entrance hall. It uses the same Cycles renderer, twenty comparison lights, existing sun/world lighting, AgX and exposure as the comparison renders.
+
+Use **W/A/S/D** to move and the mouse to look. **Q/E** moves down/up. **Enter** or a left-click ends navigation and keeps the new viewpoint; **Esc** cancels the walk and returns to its starting viewpoint. Start again with **View → Navigation → Walk Navigation**. The launcher attempts to start this standard Blender control automatically.
+
+Cycles refines the image while you stand still. The viewport uses 16–32 adaptive samples with denoising and Metal when available. Navigation will be slower than the browser, which remains useful for fast movement and automatic doors. Blender’s stock Walk Navigation does not open doors automatically. The rendered viewport uses the same lighting and materials as the comparison renderer; its interactive resolution and denoising can differ from the saved stills.
+
+The separate file is **outputs/output-walkthrough/Ashley Heights Rendered Walkthrough.blend**. Use the launcher to restore rendered shading automatically. If opening the file directly, choose **Rendered** from the viewport shading controls, then **View → Navigation → Walk Navigation**. The editable master **Ashley Heights.blend** is unchanged. Save any edits under another name before rebuilding.
+
+The saved geometry, lighting and viewport settings were checked by reopening the file in background Blender. A separate temporary Blender GUI process also verified that the launcher’s setup starts Walk Navigation, W moves the view, and Esc returns to the starting view. A screenshot records the Cycles viewport. The test left your existing Blender instance and editable master untouched.

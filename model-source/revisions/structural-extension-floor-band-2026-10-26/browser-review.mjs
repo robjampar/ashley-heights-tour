@@ -1,0 +1,16 @@
+import {chromium} from '../../walkthrough/node_modules/playwright/index.mjs';
+import {mkdir,writeFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const out='walkthrough/test-results/structural-extension-floor-band-2026-10-26/';await mkdir(out,{recursive:true});
+const b=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--use-angle=metal']});
+const p=await b.newPage({viewport:{width:1700,height:1050}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
+await p.goto('http://127.0.0.1:8765/structure/');await p.waitForFunction(()=>window.structureStudio?.ready);
+assert.equal(await p.evaluate(()=>window.structureStudio.members.revision),'M13-2026-10-26');
+await p.evaluate(()=>{const s=window.structureStudio;const ids=s.members.elements.filter(e=>(e.category==='masonry'&&e.bounds[1][0]<.3&&e.bounds[0][2]<5.3&&e.bounds[1][2]>0)||e.id.startsWith('M-J-04-')||/^M-FR-1-02[0123]$/.test(e.id)).map(e=>e.id);s.inspectJunction(ids);s.select('M-BRICK-DDF9501');s.cutawayPlanes.structure.constant=3.4;s.camera.position.set(-13,4,-4.65);s.controls.target.set(-5.1,2.5,-4.65);s.controls.update();});
+await p.waitForTimeout(350);await p.screenshot({path:out+'01-west-brick-band-closed.png'});
+await p.evaluate(()=>{const s=window.structureStudio;s.select('M-FR-1-023');s.camera.position.set(-.8,4.9,-5.8);s.controls.target.set(-4.9,2.6,-4.1);s.controls.update();});
+await p.waitForTimeout(350);await p.screenshot({path:out+'02-ledger-inside-blockwork.png'});
+assert.ok((await p.locator('#selection').innerText()).includes('room-side ledger'));
+const facts=await p.evaluate(()=>{const s=window.structureStudio,west=s.members.elements.filter(e=>e.name.startsWith('Side bedrooms west')&&e.floorBandSupport);return {continuedLeaves:west.length,unmatchedAreaM2:west.reduce((n,e)=>n+e.floorBandSupport.unmatchedBaseAreaM2,0),timberIntersections:s.members.junctionReview.masonryFloor.timberIntersections};});
+assert.equal(facts.continuedLeaves,14);assert.equal(facts.unmatchedAreaM2,0);assert.deepEqual(facts.timberIntersections,[]);
+await writeFile(out+'browser-review.json',JSON.stringify({errors,facts},null,2));await b.close();assert.deepEqual(errors,[]);console.log(JSON.stringify({errors,facts}));

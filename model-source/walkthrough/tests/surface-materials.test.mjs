@@ -28,3 +28,16 @@ test('Quiet oak preserves authored materials and treats the colour image only as
  surfaceDetail(ceramic,'Proposal | Quiet oak ivory ceramic');
  assert.equal(ceramic.roughness,.66);assert.equal(ceramic.onBeforeCompile,originalCompile);
 });
+test('coloured bottles keep their body colour and opacity instead of disappearing as window glass',()=>{
+ const material=new MeshStandardMaterial({color:new Color().setRGB(.044,.087,.042),transparent:true,opacity:.11,depthWrite:false});
+ surfaceDetail(material,'Interior | Bar olive bottle glass');
+ assert.deepEqual(material.color.toArray(),[.044,.087,.042]);assert.equal(material.opacity,1);
+ assert.equal(material.transparent,false);assert.equal(material.depthWrite,true);assert.equal(material.roughness,.2);
+});
+test('Art Deco light shades transmit their visible bulbs while marble keeps its polish',()=>{
+ const shade=new MeshStandardMaterial({roughness:.12}),stone=new MeshStandardMaterial({roughness:.23});
+ surfaceDetail(shade,'Interior | Bar Art Deco reeded glass');
+ surfaceDetail(stone,'Interior | Bar Art Deco Calacatta Oro marble');
+ assert(shade.transparent);assert(shade.opacity<.5);assert(!shade.depthWrite);
+ assert.equal(stone.roughness,.23);assert.equal(stone.transparent,false);
+});

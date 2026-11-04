@@ -1,0 +1,45 @@
+{
+  "errors": [],
+  "revision": "WM01-2026-10-29",
+  "native": {
+    "revision": "WM01-native-2026-10-29",
+    "changed": [
+      "Proposal | Level loft | 067 Flush courtyard pier",
+      "Proposal | Level loft | 068 Flush courtyard pier",
+      "Proposal | Internal garden gallery south panel",
+      "Proposal | Internal garden gallery north panel",
+      "WM01 | West recess exterior closure",
+      "WM01 | West recess floor-band closure",
+      "WM01 | West recess upper lining return",
+      "WM01 | Courtyard south inner corner",
+      "WM01 | Courtyard south return lining",
+      "WM01 | Courtyard ground inner corner",
+      "WM01 | Courtyard ground return lining",
+      "Proposal | Entrance first floor continuation",
+      "Proposal | Wing first floor courtyard notch",
+      "Proposal | Stair landing finish | courtyard junction closed flo",
+      "Arrival 01 | continuous limestone floor.002",
+      "Arrival 01 | garden passage ivory ceiling",
+      "Landings 01 | continuous oak landing floor.002",
+      "Landings 01 | continuous oak landing floor.009",
+      "Gym 01 | continuous rubber floor",
+      "Formal 01 | wide oak floor",
+      "Proposal | Stair landing finish | courtyard junction continuous"
+    ],
+    "removed": [],
+    "exteriorGlazingPreserved": true,
+    "insidePierFaceX": 9.3325,
+    "approvedForConstruction": false,
+    "published": false
+  },
+  "channel": {
+    "beamId": "M-FR-1-035",
+    "side": "outer-east",
+    "depthMm": 68.60000000000177,
+    "rootClearanceMm": 2,
+    "fullBrick": false,
+    "structuralCompositeAction": false,
+    "limits": "Outer web bay only. No replacement of inner hanger packing. Infill restraint, bedding, movement, moisture, corrosion and fire protection require a designed assembly."
+  },
+  "approved": false
+}

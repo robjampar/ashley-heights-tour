@@ -1,0 +1,1108 @@
+{
+  "revision": "gallery-native-stage-addendum-2026-10-27",
+  "reviewedAt": "2026-10-27T10:18:40.010041+00:00",
+  "status": "Independent staged review; not installed",
+  "installed": false,
+  "approvedForConstruction": false,
+  "sourceHashes": {
+    "walkthrough/public/structure/members.json": "296d63aa3d866041d9b085ecf4dba67fa8da0a8672581b81c0da58b1c035150a",
+    "revisions/structural-bearing-openings-2026-10-27/staged-structure/members.json": "a41a9de4c7a514fd8542c917cdf4601e8091d673d5d5a2795577ab8109cd05b3",
+    "revisions/structural-bearing-openings-2026-10-27/staged-structure/model.json": "30b95f2973a2a835a723a32763777bd1eafe89c22518da8c9ff7c5f7cfa81277",
+    "outputs/output-structural-openings-compact/geometry.json": "c7288de6c1e473286bf91eeba9f5b621c9c4d8fc6fb4448855625040eb4abc7e"
+  },
+  "sourceFreshness": {
+    "stagedMembersGeometrySHA256": "4ee460a0f0b7862f7b979c111eb7d2d419ab01196cbeb4d38f0eb92963086172",
+    "currentCandidateGeometrySHA256": "c7288de6c1e473286bf91eeba9f5b621c9c4d8fc6fb4448855625040eb4abc7e",
+    "matches": false,
+    "note": "The small native top-bed proxy refresh occurred after this structural extraction. Rebuild and verify source hashes before installation; the present checks do not imply a fresh final integrated build."
+  },
+  "baselineMemberCount": 2582,
+  "stagedMemberCount": 2582,
+  "addedIds": [],
+  "removedIds": [],
+  "summary": "The staged structure preserves the reviewed gallery and garden load-path geometry. Seven reviewed pad bases remain fully supported; physical floor and layer outlines agree. Eight prep partition studs shorten and two top plates lower to the revised nonbearing opening head. The west retained pier band and top bed gain a small frame reveal. Other changed triangle arrays represent retriangulation or sub-millimetre numerical noise. The actual staged native gallery floor now matches the complete corrected floor polygon, closing the former diagonal body void.",
+  "geometryChanges": [
+    {
+      "memberId": "M-BRICK-0C22ABF",
+      "name": "North ground facade pier 0 \u00b7 brick",
+      "oldBounds": [
+        [
+          4.93,
+          -4.1025,
+          0.0
+        ],
+        [
+          5.64,
+          -4.0,
+          2.6
+        ]
+      ],
+      "newBounds": [
+        [
+          4.93,
+          -4.1025,
+          0.0
+        ],
+        [
+          5.64,
+          -4.0,
+          2.6
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-BLOCK-0C22ABF",
+      "name": "North ground facade pier 0 \u00b7 block",
+      "oldBounds": [
+        [
+          5.1825,
+          -4.3525,
+          0.0
+        ],
+        [
+          5.64,
+          -4.2525,
+          2.4526
+        ]
+      ],
+      "newBounds": [
+        [
+          5.1825,
+          -4.3525,
+          0.0
+        ],
+        [
+          5.64,
+          -4.2525,
+          2.4526
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-BRICK-CA822FA",
+      "name": "North ground facade end pier \u00b7 brick",
+      "oldBounds": [
+        [
+          9.14,
+          -4.1025,
+          0.0
+        ],
+        [
+          9.6875,
+          -4.0,
+          2.6
+        ]
+      ],
+      "newBounds": [
+        [
+          9.14,
+          -4.1025,
+          0.0
+        ],
+        [
+          9.6875,
+          -4.0,
+          2.6
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-BLOCK-CA822FA",
+      "name": "North ground facade end pier \u00b7 block",
+      "oldBounds": [
+        [
+          9.14,
+          -4.3525,
+          0.0
+        ],
+        [
+          9.9375,
+          -4.2525,
+          2.4526
+        ]
+      ],
+      "newBounds": [
+        [
+          9.14,
+          -4.3525,
+          0.0
+        ],
+        [
+          9.9375,
+          -4.2525,
+          2.4526
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-BRICK-6AE62E9",
+      "name": "Courtyard ground return \u00b7 brick",
+      "oldBounds": [
+        [
+          9.585,
+          -4.1025,
+          0.0
+        ],
+        [
+          9.6875,
+          -3.029,
+          2.6
+        ]
+      ],
+      "newBounds": [
+        [
+          9.585,
+          -4.1025,
+          0.0
+        ],
+        [
+          9.6875,
+          -3.029,
+          2.6
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-BRICK-34AD690",
+      "name": "North upper facade pier 0 \u00b7 brick",
+      "oldBounds": [
+        [
+          4.93,
+          -4.1025,
+          2.6
+        ],
+        [
+          5.625,
+          -4.0,
+          5.35
+        ]
+      ],
+      "newBounds": [
+        [
+          4.93,
+          -4.1025,
+          2.6
+        ],
+        [
+          5.625,
+          -4.0,
+          5.35
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.00047872722674924267,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-BLOCK-34AD690",
+      "name": "North upper facade pier 0 \u00b7 block",
+      "oldBounds": [
+        [
+          5.1825,
+          -4.3525,
+          2.766
+        ],
+        [
+          5.625,
+          -4.2525,
+          5.35
+        ]
+      ],
+      "newBounds": [
+        [
+          5.1825,
+          -4.3525,
+          2.766
+        ],
+        [
+          5.625,
+          -4.252499998,
+          5.35
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.00016159416613900691,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-S-1096404-01",
+      "name": "Prep kitchen | partition west pier \u00b7 stud 1",
+      "oldBounds": [
+        [
+          -5.065,
+          3.5925,
+          0.045
+        ],
+        [
+          -5.02,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -5.065,
+          3.5925,
+          0.045
+        ],
+        [
+          -5.02,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6725000000196,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-S-1096404-02",
+      "name": "Prep kitchen | partition west pier \u00b7 stud 2",
+      "oldBounds": [
+        [
+          -4.8225,
+          3.5925,
+          0.045
+        ],
+        [
+          -4.7775,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -4.8225,
+          3.5925,
+          0.045
+        ],
+        [
+          -4.7775,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6725000000009,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-S-1096404-03",
+      "name": "Prep kitchen | partition west pier \u00b7 stud 3",
+      "oldBounds": [
+        [
+          -4.445,
+          3.5925,
+          0.045
+        ],
+        [
+          -4.4,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -4.445,
+          3.5925,
+          0.045
+        ],
+        [
+          -4.4,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6724999999974,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-S-1096404-04",
+      "name": "Prep kitchen | partition west pier \u00b7 stud 4",
+      "oldBounds": [
+        [
+          -4.4225,
+          3.5925,
+          0.045
+        ],
+        [
+          -4.3775,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -4.4225,
+          3.5925,
+          0.045
+        ],
+        [
+          -4.3775,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6725000000009,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-SP-1096404-01",
+      "name": "Prep kitchen | partition west pier \u00b7 panel plate",
+      "oldBounds": [
+        [
+          -5.065,
+          3.5925,
+          2.515
+        ],
+        [
+          -4.4,
+          3.6875,
+          2.56
+        ]
+      ],
+      "newBounds": [
+        [
+          -5.065,
+          3.5925,
+          2.3511
+        ],
+        [
+          -4.4,
+          3.6875,
+          2.3961
+        ]
+      ],
+      "removedCm3": 2842.875000000009,
+      "addedCm3": 2842.875000000009,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-S-D683BC7-01",
+      "name": "Prep kitchen | partition east pier \u00b7 stud 1",
+      "oldBounds": [
+        [
+          -0.92,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.875,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -0.92,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.875,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6725000000031,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-S-D683BC7-02",
+      "name": "Prep kitchen | partition east pier \u00b7 stud 2",
+      "oldBounds": [
+        [
+          -0.8225,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.7775,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -0.8225,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.7775,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6725000000034,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-S-D683BC7-03",
+      "name": "Prep kitchen | partition east pier \u00b7 stud 3",
+      "oldBounds": [
+        [
+          -0.4225,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.3775,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -0.4225,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.3775,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6725000000024,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-S-D683BC7-04",
+      "name": "Prep kitchen | partition east pier \u00b7 stud 4",
+      "oldBounds": [
+        [
+          -0.16,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.115,
+          3.6875,
+          2.515
+        ]
+      ],
+      "newBounds": [
+        [
+          -0.16,
+          3.5925,
+          0.045
+        ],
+        [
+          -0.115,
+          3.6875,
+          2.3511
+        ]
+      ],
+      "removedCm3": 700.6724999999994,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-SP-D683BC7-01",
+      "name": "Prep kitchen | partition east pier \u00b7 panel plate",
+      "oldBounds": [
+        [
+          -0.92,
+          3.5925,
+          2.515
+        ],
+        [
+          -0.115,
+          3.6875,
+          2.56
+        ]
+      ],
+      "newBounds": [
+        [
+          -0.92,
+          3.5925,
+          2.3511
+        ],
+        [
+          -0.115,
+          3.6875,
+          2.3961
+        ]
+      ],
+      "removedCm3": 3441.3750000000014,
+      "addedCm3": 3441.3749999999977,
+      "materialShapeChange": true,
+      "framingRole": "non-loadbearing"
+    },
+    {
+      "memberId": "M-RETAINED-GALLERY-W",
+      "name": "Front gallery west \u00b7 assumed retained pier band",
+      "oldBounds": [
+        [
+          5.6,
+          -0.33,
+          2.6
+        ],
+        [
+          5.8,
+          0.115,
+          2.8
+        ]
+      ],
+      "newBounds": [
+        [
+          5.6,
+          -0.33,
+          2.6
+        ],
+        [
+          5.8,
+          0.115,
+          2.8
+        ]
+      ],
+      "removedCm3": 150.60600000000142,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-RETAINED-GALLERY-W-BED",
+      "name": "Front gallery west \u00b7 assumed retained pier band \u00b7 top bearing-bed allowance",
+      "oldBounds": [
+        [
+          5.635,
+          -0.33,
+          2.756
+        ],
+        [
+          5.8,
+          0.115,
+          2.766
+        ]
+      ],
+      "newBounds": [
+        [
+          5.635,
+          -0.33,
+          2.756
+        ],
+        [
+          5.8,
+          0.115,
+          2.766
+        ]
+      ],
+      "removedCm3": 1.8900000000001989,
+      "addedCm3": 0.0,
+      "materialShapeChange": true,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-CLOSE-34AD690-CORE",
+      "name": "North upper facade west opening \u00b7 jamb cavity closer \u00b7 insulation / compressible closure allowance",
+      "oldBounds": [
+        [
+          5.575,
+          -4.2525,
+          2.6
+        ],
+        [
+          5.622,
+          -4.1025,
+          5.35
+        ]
+      ],
+      "newBounds": [
+        [
+          5.575,
+          -4.2525,
+          2.6
+        ],
+        [
+          5.622,
+          -4.1025,
+          5.35
+        ]
+      ],
+      "removedCm3": 0.00025493604112678003,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-CLOSE-34AD690-PROFILE",
+      "name": "North upper facade west opening \u00b7 jamb cavity closer \u00b7 moisture-resistant closure profile allowance",
+      "oldBounds": [
+        [
+          5.622,
+          -4.2525,
+          2.6
+        ],
+        [
+          5.625,
+          -4.1025,
+          5.35
+        ]
+      ],
+      "newBounds": [
+        [
+          5.622,
+          -4.2525,
+          2.6
+        ],
+        [
+          5.625,
+          -4.1025,
+          5.35
+        ]
+      ],
+      "removedCm3": 1.6377599312832786e-05,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-LAYER-INF-GALLERY-FINISH",
+      "name": "INF-GALLERY \u00b7 Finish allowance",
+      "oldBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.778
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.8
+        ]
+      ],
+      "newBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.778
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.8
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 5.86666745331547e-07,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-LAYER-INF-GALLERY-DECK",
+      "name": "INF-GALLERY \u00b7 Structural deck allowance",
+      "oldBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.756
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.778
+        ]
+      ],
+      "newBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.756
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.778
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 1.421612906100215e-06,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-LAYER-INF-GALLERY-SERVICE",
+      "name": "INF-GALLERY \u00b7 Service / suspension space allowance",
+      "oldBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.4276
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.456
+        ]
+      ],
+      "newBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.4276
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.456
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    },
+    {
+      "memberId": "M-LAYER-INF-GALLERY-CEILING",
+      "name": "INF-GALLERY \u00b7 Ceiling lining allowance",
+      "oldBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.3961
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.4276
+        ]
+      ],
+      "newBounds": [
+        [
+          5.585000001,
+          -4.299999997,
+          2.3961
+        ],
+        [
+          9.700000003,
+          0.0,
+          2.4276
+        ]
+      ],
+      "removedCm3": 0.0,
+      "addedCm3": 0.0,
+      "materialShapeChange": false,
+      "framingRole": null
+    }
+  ],
+  "materialChangeCount": 12,
+  "retainedPierFinitePockets": [
+    {
+      "sourceId": "W-6E6BBF4",
+      "bounds": [
+        [
+          5.6,
+          -0.33,
+          0.0
+        ],
+        [
+          5.8,
+          0.115,
+          2.6
+        ]
+      ],
+      "triangleVertexCount": 162,
+      "note": "Finite native pockets now appear in the extracted source. Pad-base slices below the pockets remain supported; this does not verify retained masonry or foundation strength."
+    },
+    {
+      "sourceId": "W-8C66A05",
+      "bounds": [
+        [
+          8.89,
+          -0.33,
+          0.0
+        ],
+        [
+          9.205,
+          0.115,
+          2.6
+        ]
+      ],
+      "triangleVertexCount": 198,
+      "note": "Finite native pockets now appear in the extracted source. Pad-base slices below the pockets remain supported; this does not verify retained masonry or foundation strength."
+    },
+    {
+      "sourceId": "W-5012A48",
+      "bounds": [
+        [
+          9.205,
+          -0.115,
+          0.0
+        ],
+        [
+          9.92673,
+          0.115,
+          2.6
+        ]
+      ],
+      "triangleVertexCount": 180,
+      "note": "Finite native pockets now appear in the extracted source. Pad-base slices below the pockets remain supported; this does not verify retained masonry or foundation strength."
+    },
+    {
+      "sourceId": "W-51031F0",
+      "bounds": [
+        [
+          8.885,
+          0.0,
+          0.0
+        ],
+        [
+          9.015,
+          3.7895,
+          2.6
+        ]
+      ],
+      "triangleVertexCount": 174,
+      "note": "Finite native pockets now appear in the extracted source. Pad-base slices below the pockets remain supported; this does not verify retained masonry or foundation strength."
+    }
+  ],
+  "padBaseContacts": [
+    {
+      "padId": "M-PAD-GALLERY-CROSS-W",
+      "supportIds": [
+        "M-BLOCK-0C22ABF",
+        "M-BLOCK-7C51DD7",
+        "M-BLOCK-34AD690"
+      ],
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false
+    },
+    {
+      "padId": "M-PAD-GALLERY-CROSS-E",
+      "supportIds": [
+        "M-BLOCK-CA822FA",
+        "M-BLOCK-6AE62E9"
+      ],
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false
+    },
+    {
+      "padId": "M-PAD-GALLERY-W-N",
+      "supportIds": [
+        "W-6E6BBF4"
+      ],
+      "baseSupportedFraction": 1.0000000000000053,
+      "capacityVerified": false
+    },
+    {
+      "padId": "M-PAD-GALLERY-E-N",
+      "supportIds": [
+        "W-5012A48"
+      ],
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false
+    },
+    {
+      "padId": "M-PAD-GALLERY-N-E",
+      "supportIds": [
+        "W-8C66A05"
+      ],
+      "baseSupportedFraction": 0.9999999999999687,
+      "capacityVerified": false
+    },
+    {
+      "padId": "M-PAD-GARDEN-W-S",
+      "supportIds": [
+        "M-BLOCK-D97410F"
+      ],
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false
+    },
+    {
+      "padId": "M-PAD-GARDEN-W-N",
+      "supportIds": [
+        "M-BLOCK-D97410F"
+      ],
+      "baseSupportedFraction": 1.0,
+      "capacityVerified": false
+    }
+  ],
+  "gardenLeaves": [
+    {
+      "id": "M-BRICK-D97410F",
+      "bitwiseTrianglesUnchanged": true,
+      "symmetricDifferenceM3": 0.0,
+      "bounds": [
+        [
+          -5.015,
+          8.935,
+          0.0
+        ],
+        [
+          -4.9125,
+          14.1,
+          2.55
+        ]
+      ],
+      "costQuantityUnchanged": true
+    },
+    {
+      "id": "M-BLOCK-D97410F",
+      "bitwiseTrianglesUnchanged": true,
+      "symmetricDifferenceM3": 0.0,
+      "bounds": [
+        [
+          -4.7625,
+          8.935,
+          0.0
+        ],
+        [
+          -4.6625,
+          14.1,
+          2.55
+        ]
+      ],
+      "costQuantityUnchanged": true
+    }
+  ],
+  "physicalLayerCoverage": [
+    {
+      "id": "M-LAYER-INF-GALLERY-DECK",
+      "areaM2": 17.450674986819994,
+      "physicalSourceAreaM2": 17.450674999999997,
+      "symmetricDifferenceM2": 3.0835002540799334e-08
+    },
+    {
+      "id": "M-LAYER-INF-GALLERY-FINISH",
+      "areaM2": 17.450674986819994,
+      "physicalSourceAreaM2": 17.450674999999997,
+      "symmetricDifferenceM2": 3.0835002540799334e-08
+    }
+  ],
+  "cavityClosers": [
+    {
+      "id": "M-CLOSE-34AD690-CORE",
+      "cavityWidthM": 0.1499999980000002,
+      "productSelected": false,
+      "fireRatingVerified": false
+    },
+    {
+      "id": "M-CLOSE-34AD690-PROFILE",
+      "cavityWidthM": 0.1499999980000002,
+      "productSelected": false,
+      "fireRatingVerified": false
+    },
+    {
+      "id": "M-CLOSE-0C22ABF-CORE",
+      "cavityWidthM": 0.15000000000000036,
+      "productSelected": false,
+      "fireRatingVerified": false
+    },
+    {
+      "id": "M-CLOSE-0C22ABF-PROFILE",
+      "cavityWidthM": 0.15000000000000036,
+      "productSelected": false,
+      "fireRatingVerified": false
+    }
+  ],
+  "nativeFloor": {
+    "objectName": "Proposal | Entrance first floor continuation",
+    "nativeAreaM2": 17.450674999999997,
+    "physicalStructuralAreaM2": 17.450674999999997,
+    "symmetricDifferenceM2": 0.0,
+    "legacyReferenceAreaM2": 18.059999999999995,
+    "referenceOnly": true,
+    "note": "The legacy rectangle remains only for receiver-network identity. The actual native body, structural physical plate and floor layers now use the corrected notches."
+  },
+  "beam034WestEnd": {
+    "beamId": "M-FR-1-034",
+    "beamName": "First-floor gallery north cross-beam \u00b7 west receiver to retained pier",
+    "end": 1,
+    "point": [
+      5.81,
+      0.0,
+      2.6043
+    ],
+    "bearingZ": 2.4526,
+    "kind": "steel-connection-required",
+    "supportIds": [
+      "M-FR-1-036"
+    ],
+    "nearbyMasonry": [
+      {
+        "id": "W-E869604",
+        "name": "Cloakroom east | end",
+        "planGapMm": 45.0,
+        "heightGapMm": 0,
+        "leaf": "retained-solid-unknown",
+        "capacityVerified": false
+      },
+      {
+        "id": "W-689B4D0",
+        "name": "Proposal revision | House front centre | corrected wall 3",
+        "planGapMm": 210.0,
+        "heightGapMm": 0,
+        "leaf": "retained-solid-unknown",
+        "capacityVerified": false
+      },
+      {
+        "id": "W-6E6BBF4",
+        "name": "Proposal revision | House front centre | corrected wall 4",
+        "planGapMm": 10.0,
+        "heightGapMm": 0,
+        "leaf": "retained-solid-unknown",
+        "capacityVerified": false
+      }
+    ],
+    "detail": "Steel end plane is coordinated to the receiving member; connection forces, plates, bolts/welds and erection details are not designed.",
+    "capacityVerified": false,
+    "postContacts": [],
+    "condition": null,
+    "scope": "new"
+  },
+  "scopeAudit": {
+    "scopedClashCount": 86,
+    "newPairIds": [],
+    "removedPairIds": [],
+    "changedExistingVolumes": [],
+    "unmappedJoistEnds": 0,
+    "note": "The eight local gallery clashes documented by the earlier final review remain. This addendum does not convert them or any member capacity into approved details."
+  },
+  "remainingRequirements": [
+    "Fresh final native/structural extraction after the tiny proxy update, with matching hashes and browser evidence",
+    "Native material and unrelated-scene preservation checks, separate from this structural comparison",
+    "Calculated beam, connection, masonry, padstone, restraint and foundation capacities",
+    "Resolution of the previously listed eight local clashes and generic bearing/framing allowances",
+    "Survey verification of grey retained pier bands and local masonry condition",
+    "Product-specific frame, angle, ledger, fire, acoustic, thermal and weathering details"
+  ],
+  "methodology": "Independently compared exact closed solids between the previously reviewed member register and the staged register, retaining their file hashes. Measured1mm source-wall slices below seven pad bases; compared physical plate and layer polygons; checked both garden leaves and the remaining cavity closer dimensions. Compared the current native candidate floor footprint directly to the staged physical source. No live model or specification was edited."
+}

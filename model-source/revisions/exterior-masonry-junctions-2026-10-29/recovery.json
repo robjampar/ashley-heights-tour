@@ -1,0 +1,31 @@
+{
+  "revision": "WM01-2026-10-29",
+  "preservedFiles": {
+    "scripts/structure/build_members.py": "263dff80634b4fa84378b563f98ac78d39cebceab3269e64b40e96af07705f9c",
+    "scripts/structure/continuous_joist_integration.py": "9c2d6a2438bfd1d40ed89606767593ba7d1c42b0afb28b828da4a18e9cfcf5aa",
+    "scripts/structure/garage_seven_metre.py": "081fbd8440ef83814cd02cda8fc89e21f5d3df396700b08fb3f6e7497ea8bca0",
+    "proposal/specs/structural-wall-assemblies.json": "384a461e7130893c64ab09c93671beb6a998a6af469a09d1816ff1f767b989a6",
+    "tests/test_garage_seven_metre.py": "a27f7313abf3a83c416c9da9897261889b087ed8d860d7f50cabfca11e5a5b27",
+    "README.md": "31696603e095c79ecd5a917131a8825333a6db8219d20d18f42665ebf0c7a305",
+    "docs/WORKSPACE.md": "03a3091cd650c7f7630651cf47cdeca511ba809afdbd3665e7ef08591cc3ead8",
+    "walkthrough/public/structure/members.json": "7e51db98cf2f12b39173081dd86af3f9e78cedef2c910bf025e8a921813846f7",
+    "walkthrough/public/structure/model.json": "1c3fd0b9cc1abc946af24795a67540910f6a0096d6500802c73752edcc87b386",
+    "walkthrough/public/structure/trials.json": "ebd515db3e122447f89f6425ed225e0337e21e58e1e003192689da9773069f68",
+    "scripts/build/build_support.py": "89a62b355314fe27c2c7c9598be3f4d03d7ab6315234324cf02fafed3e158682",
+    "outputs/output-proposed-compact/navigation.json": "314cc5488ac250618bae14533f0ec0e79ef5471b8b7c6441c572341202461608",
+    "outputs/output-proposed-compact/geometry.json": "d93859127bcfe4bea739394868a6bc120fc165b198dc7599d1957ca70c8d6b7d",
+    "outputs/output-proposed-compact/build-report.json": "058b7833863f72658ea8b5f9a5273c0dfa3710a11ff1836065f2a66abcc1180f",
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "604b8f999a9c57dd9ac8e65988252f8ac11dcd8ed41cae8c72bae7fad0291c2c",
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb": "e12f2c29038aaeef350ec8fc35750f3eeb651ac6ff5fa9b90f24cf564bafdfd2",
+    "outputs/output-proposed-compact/build-inputs.json": "84684ab7c334271e2341fbba4c0a2d4137165dd5a7f4cd4ec462a6292fe541f0",
+    "walkthrough/public/proposal-compact.glb": "e12f2c29038aaeef350ec8fc35750f3eeb651ac6ff5fa9b90f24cf564bafdfd2",
+    "walkthrough/public/proposal-compact-navigation.json": "314cc5488ac250618bae14533f0ec0e79ef5471b8b7c6441c572341202461608",
+    "walkthrough/public/visual-quality/compact-furnishings.glb": "4592121165dca9e949d655375afde7635947ea8c343b5e926929f7bde4db04fa",
+    "walkthrough/public/visual-quality/compact-furnishings.json": "8c94246e08d271ade0aa25be623b512b8233b94d441e471eaf81b2173b7f98c3",
+    "walkthrough/public/visual-quality/compact-daylight.json": "e5ef71f7ba67e33a8d1ad012668ddc5294afa55ffed2a526592febead01179a0",
+    "walkthrough/tests/stair-landing-floor.test.mjs": "d6c718e9b7b5eb6d44980f4c29836ce90c50d668093d816fe97affa3c7eecca8",
+    "tests/test_build_pipeline.py": "a96baff94348084c63277a9707a081cb37a7f9ac2597e7e99704a76957c62308",
+    "tests/test_structural_members.py": "94d7b7dd75374d3eff85db5422fdee2aa8338cb85bb20f447ac194fe9e5666c8"
+  },
+  "published": false
+}

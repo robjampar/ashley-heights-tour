@@ -1,0 +1,326 @@
+{
+  "revision": "UK01-2026-10-28",
+  "validatedAt": "2026-10-28T20:04:46.168544+00:00",
+  "installedLocally": true,
+  "nativeRebuilt": false,
+  "published": false,
+  "approvedForConstruction": false,
+  "buildingRegulationsCompliance": "not-demonstrated",
+  "limits": [
+    "Confirm actual permanent loads, partition positions, concentrated floor loads and every roof reaction; floor-only calculations do not verify roof support.",
+    "Check lateral-torsional stability and design compression-flange and end restraint, including construction stages.",
+    "Assess whole-floor vibration, deflection of flexible receiving supports and cumulative movement across connected beams and joists.",
+    "Agree movement limits and installation sequence with the ceiling, partition, glazing and floor-finish designs; 20 mm is an assumed coordination target, not a regulatory allowance.",
+    "Design steel joints, joist connections, web bearing/stiffeners, padstones and local masonry eccentricity and compression.",
+    "Verify the complete load path, wall stability, foundations, ground conditions and fire protection before construction."
+  ],
+  "tests": {
+    "python": {
+      "passed": 305,
+      "failed": 0
+    },
+    "web": {
+      "passed": 318,
+      "failed": 0
+    },
+    "browser": {
+      "errors": [],
+      "revision": "UK01-2026-10-28",
+      "nativeRevision": "CJ02-native-2026-10-28",
+      "clearGarageDepthM": 7,
+      "approvedForConstruction": false,
+      "members": [
+        {
+          "id": "M-FR-3-010",
+          "section": "305x305x129",
+          "depthMm": 318,
+          "review": "not-demonstrated",
+          "assumptionVerified": false,
+          "totalLimitMm": 20,
+          "maxTotalMm": 13.419639316353187
+        },
+        {
+          "id": "M-FR-3-001",
+          "section": "305x305x129",
+          "depthMm": 318,
+          "review": "not-demonstrated",
+          "assumptionVerified": false,
+          "totalLimitMm": 20,
+          "maxTotalMm": 18.481635661566045
+        },
+        {
+          "id": "M-CJ01-GROUND-HEAD",
+          "section": "305x165x40",
+          "depthMm": 303.4,
+          "review": "not-demonstrated",
+          "assumptionVerified": false,
+          "totalLimitMm": 10,
+          "maxTotalMm": 5.7975834108543305
+        },
+        {
+          "id": "M-GABLE-FLOOR-BLOCK",
+          "section": "305x305x97",
+          "depthMm": 307.9,
+          "review": "not-demonstrated",
+          "assumptionVerified": false,
+          "totalLimitMm": 10,
+          "maxTotalMm": 7.957905150967693
+        }
+      ]
+    },
+    "checkLayout": {
+      "passed": false,
+      "unchangedFromCJ02": true,
+      "existingFindings": 345
+    }
+  },
+  "nativeAndArchitectureUnchanged": {
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": true,
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb": true,
+    "outputs/output-proposed-compact/geometry.json": true,
+    "outputs/output-proposed-compact/navigation.json": true,
+    "outputs/output-proposed-compact/cj02-report.json": true,
+    "outputs/output-proposed-compact/cj02-source.json": true,
+    "walkthrough/public/proposal-compact.glb": true,
+    "walkthrough/public/proposal-compact-navigation.json": true
+  },
+  "geometry": {
+    "newScopedIntersections": {
+      "junctionReview": [],
+      "coveringFit": []
+    },
+    "counts": {
+      "junctionReview": {
+        "previous": 81,
+        "current": 81
+      },
+      "coveringFit": {
+        "previous": 1159,
+        "current": 1159
+      }
+    },
+    "supportAudit": {
+      "joists": 239,
+      "receiverMembers": 70,
+      "unmappedJoistEnds": 0,
+      "cantileverFreeEnds": 0,
+      "receiverEndsWithoutDirectWallCandidate": 70,
+      "basis": "Geometric contacts only. Connected receiver networks still need engineering reactions, supports and capacity; no complete load path is certified."
+    },
+    "connectionFit": {
+      "assemblies": 478,
+      "solidPairsChecked": 1965,
+      "intersections": [],
+      "seatLevelErrors": [],
+      "scope": "Each joist against its linked receiver, hanger against that joist/receiver, and its infill block against those three members. Seat top checked against joist underside. Other nearby members and product/fastener capacities are not covered."
+    },
+    "openIssues": 61
+  },
+  "members": [
+    {
+      "id": "M-FR-3-001",
+      "section": {
+        "name": "305x305x129",
+        "kgPerM": 129,
+        "depthMm": 318,
+        "widthMm": 308,
+        "webMm": 13.1,
+        "flangeMm": 20.6,
+        "rootMm": 20,
+        "flatWebMm": 236.8,
+        "ImajorCm4": 31035,
+        "WelMajorCm3": 1952,
+        "IminorCm4": 10041,
+        "areaCm2": 167,
+        "family": "UC"
+      },
+      "massKg": 1102.305,
+      "serviceability": {
+        "id": "UK01-floor-assumption",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 250,
+        "totalAbsoluteMm": 20,
+        "verifiedForAssembly": false,
+        "basis": "Variable-action L/360 follows the UK NA suggested limit for beams carrying brittle finishes. Total min(L/250,20 mm) is a provisional project target for this floor-only comparison, not a statutory rule or permission for 20 mm movement at finishes. Retain hold until cumulative movement, vibration and finishes are checked."
+      },
+      "maxTotalDeflectionMm": 18.481635661566045,
+      "maxVariableDeflectionMm": 8.53702790872045,
+      "caseCount": 12,
+      "withinModelledGravityChecks": true,
+      "buildingRegulationsCompliance": "not-demonstrated",
+      "bearingContacts": [
+        {
+          "padId": "M-CJ01-CROSS-W-PAD",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.0308
+        },
+        {
+          "padId": "M-CJ01-CROSS-E-PAD",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.0308
+        }
+      ]
+    },
+    {
+      "id": "M-FR-3-010",
+      "section": {
+        "name": "305x305x129",
+        "kgPerM": 129,
+        "depthMm": 318,
+        "widthMm": 308,
+        "webMm": 13.1,
+        "flangeMm": 20.6,
+        "rootMm": 20,
+        "flatWebMm": 236.8,
+        "ImajorCm4": 31035,
+        "WelMajorCm3": 1952,
+        "IminorCm4": 10041,
+        "areaCm2": 167,
+        "family": "UC"
+      },
+      "massKg": 1102.305,
+      "serviceability": {
+        "id": "UK01-floor-assumption",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 250,
+        "totalAbsoluteMm": 20,
+        "verifiedForAssembly": false,
+        "basis": "Provisional floor-only min(L/250,20 mm) total and L/360 variable check. If the receiver carries roof, facade or glazing loads, confirm those actions and adopt their movement limits before accepting this section; the floor-only result does not authorise that use."
+      },
+      "maxTotalDeflectionMm": 13.419639316353187,
+      "maxVariableDeflectionMm": 5.930541388890191,
+      "caseCount": 12,
+      "withinModelledGravityChecks": true,
+      "buildingRegulationsCompliance": "not-demonstrated",
+      "bearingContacts": [
+        {
+          "padId": "M-LP02-WEST-PAD",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.03065
+        },
+        {
+          "padId": "M-LP02-EAST-PAD",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.0308
+        }
+      ]
+    },
+    {
+      "id": "M-CJ01-GROUND-HEAD",
+      "section": {
+        "name": "305x165x40",
+        "kgPerM": 40.3,
+        "depthMm": 303.4,
+        "widthMm": 165.0,
+        "webMm": 6.0,
+        "flangeMm": 10.2,
+        "rootMm": 8.9,
+        "flatWebMm": 265.2,
+        "ImajorCm4": 8503,
+        "WelMajorCm3": 560
+      },
+      "massKg": 186.186,
+      "serviceability": {
+        "id": "UK01-retained-tight-target",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 360,
+        "totalAbsoluteMm": 10,
+        "verifiedForAssembly": false,
+        "basis": "Retain the previous min(L/360,10 mm) total project target. The reduced section is checked against the same modelled gravity assumptions; complete loading, restraint, connections and finishes remain unverified."
+      },
+      "maxTotalDeflectionMm": 5.7975834108543305,
+      "maxVariableDeflectionMm": 2.838626718033339,
+      "caseCount": 12,
+      "withinModelledGravityChecks": true,
+      "buildingRegulationsCompliance": "not-demonstrated",
+      "bearingContacts": [
+        {
+          "padId": "M-CJ01-HEAD-W-PAD",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.075075
+        },
+        {
+          "padId": "M-CJ01-HEAD-E-PAD",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.0165
+        }
+      ]
+    },
+    {
+      "id": "M-GABLE-FLOOR-BLOCK",
+      "section": {
+        "name": "305x305x97",
+        "kgPerM": 96.9,
+        "depthMm": 307.9,
+        "widthMm": 305.3,
+        "webMm": 9.9,
+        "flangeMm": 15.4,
+        "rootMm": 20,
+        "flatWebMm": 237.1,
+        "ImajorCm4": 22504,
+        "WelMajorCm3": 1462,
+        "IminorCm4": 7310,
+        "areaCm2": 125,
+        "family": "UC"
+      },
+      "massKg": 629.85,
+      "serviceability": {
+        "id": "UK01-retained-tight-target",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 360,
+        "totalAbsoluteMm": 10,
+        "verifiedForAssembly": false,
+        "basis": "Retain min(L/360,10 mm) total for the wall-carrying transfer. The masonry/roof line-load budgets remain assumptions; actual wall and roof reactions, bearing eccentricity and crack control must be established."
+      },
+      "maxTotalDeflectionMm": 7.957905150967693,
+      "maxVariableDeflectionMm": 1.0027484400412612,
+      "caseCount": 12,
+      "withinModelledGravityChecks": true,
+      "buildingRegulationsCompliance": "not-demonstrated",
+      "bearingContacts": [
+        {
+          "padId": "M-PAD-GABLE-BLOCK-S",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.020265
+        },
+        {
+          "padId": "M-PAD-GABLE-BLOCK-N",
+          "baseSupportedFraction": 1.0,
+          "steelContactAreaM2": 0.02
+        }
+      ]
+    }
+  ],
+  "screenshotsInspected": [
+    "full-width-beam.png",
+    "stated-movement-assumptions.png",
+    "ground-opening-head.png"
+  ],
+  "sha256": {
+    "scripts/structure/beam_optimisation.py": "2a8a9bc88026d8a423bfaf263247b677a9994af3e39c44fcb3a49ef11cdea919",
+    "proposal/specs/beam-optimisation.json": "14d8ca79008b5ca84f29d16d97ec49a44444bee3ace2b4e23380e4f246d053df",
+    "scripts/structure/beam_analysis.py": "1f7dfe65e4cb7301c6d3a46e0df2c708d54ee57a6dfc7ee7292c07f682ac2ce9",
+    "scripts/structure/continuous_joist_integration.py": "9c2d6a2438bfd1d40ed89606767593ba7d1c42b0afb28b828da4a18e9cfcf5aa",
+    "scripts/structure/sw02_integration.py": "52785804e84b5da1d39495bdb702dea63e9af28ed5111041be2ab0eec87bf0c9",
+    "scripts/structure/build_members.py": "263dff80634b4fa84378b563f98ac78d39cebceab3269e64b40e96af07705f9c",
+    "walkthrough/src/structure-members.js": "5874ff16294c2ffba1a962da780d6aae8bae9761521468d3e4276b9056e20076",
+    "tests/test_beam_optimisation.py": "cb7c1d2de069b7090b5c9dd57c8f71573ea415539c951cf64dc581ed1e0b58af",
+    "tests/test_garage_seven_metre.py": "a27f7313abf3a83c416c9da9897261889b087ed8d860d7f50cabfca11e5a5b27",
+    "walkthrough/tests/structure-members.test.mjs": "557772cbc2c418900f88fb11905e9c53ccacfb3934aae5ff38909f9980f880f4",
+    "walkthrough/tests/beam-optimisation-browser.mjs": "03e8a32e2a330fdda94eaf7e1101e608931424e8e2223c3d23c6a5fde0fcda19",
+    "walkthrough/public/structure/members.json": "7e51db98cf2f12b39173081dd86af3f9e78cedef2c910bf025e8a921813846f7",
+    "walkthrough/public/structure/member-schedule.json": "a0959d314b668a2754c269b58eaca68c8146ea2a12c5ca412c5e8d4d57be75bd",
+    "walkthrough/public/structure/coordination-pack.pdf": "785a1d91d9dbd88b6f1407c503d63a82f829ed74bf77f6bdd692860c6a2cdf56",
+    "walkthrough/public/structure/pack.json": "fc7f5f449822d899e284937176ca52afa742a2fa7de70871ca6b1fdff06a3d7c",
+    "logs/uk01-python-2026-10-28.log": "88663bea806c3a305cfbc0b4322fdd3c9be38f8fafcaa17ea09914a5446918c4",
+    "logs/uk01-web-tests-2026-10-28.log": "b2a4a7f25b2175ffe27ca82a0c3c52b6d89b36207286a51f52bc1d2f4ba4965b",
+    "logs/uk01-browser-2026-10-28.log": "88177b1f60e82631972719800bacac685d3f3d88e301d889f3f9704ab1d5bdeb",
+    "logs/uk01-layout-2026-10-28.log": "540ad054b6098a84a3de7205653926b2c0d8e0562598744cd89824c9d88d806a",
+    "walkthrough/test-results/beam-optimisation-2026-10-28/stated-movement-assumptions.png": "3df66d8f4073a43d9066ec82c6a74c239be185af37a27bb4c98a1306823f17e7",
+    "walkthrough/test-results/beam-optimisation-2026-10-28/west-wall-transfer.png": "b62b190528f2a2ad0bc8a5b8b5e4f120e27fb75f744e8120a1d702e52b51ced8",
+    "walkthrough/test-results/beam-optimisation-2026-10-28/ground-opening-head.png": "0a8fdedb50e8e5486b2ba48bd3929ad365e1e480aa2c2d53bcc4e9d45c208fa8",
+    "walkthrough/test-results/beam-optimisation-2026-10-28/north-transfer.png": "19d191f6eb0afbfebf4ca1b56a19a5272b0572b5d6b870ab94713d4ea6a11f86",
+    "walkthrough/test-results/beam-optimisation-2026-10-28/full-width-beam.png": "fe0b8a27ea669211ec2dd86d27ccc2a89cdd1c05ce11a63c7a1a7e55732535a5",
+    "walkthrough/test-results/beam-optimisation-2026-10-28/browser.json": "4273441a03688f081f0af013cb80c96d646f7525c1cb14b4d6a71368828a58a6"
+  }
+}

@@ -1,0 +1,1424 @@
+{
+  "createdAt": "2026-10-28T19:11:19.415009+00:00",
+  "sourceRevision": "CJ02-2026-10-28",
+  "installed": false,
+  "approvedForConstruction": false,
+  "method": "Replay every saved low/reference/high and variable-pattern case, retaining upstream reactions and replacing only the candidate beam self-weight. Simply supported members on rigid seats. The four beams are compared independently, not simultaneously resized.",
+  "scope": "Four main beams implicated in the current discussion; not a whole-building optimisation or a search of the full UK section range.",
+  "limits": "No complete lateral stability, vibration, support settlement, roof-load, masonry, connection, fire, or construction-stage assessment. Deflection targets are unchanged. Passing isolated checks is not a compliant design. Relaxing the 10 mm total target requires specific finish, glazing and cumulative movement assessment; no alternative target has been adopted.",
+  "referenceReproduced": true,
+  "sourceHashes": {
+    "walkthrough/public/structure/members.json": "1c13815e4cfc5f63e3a21dbf0464551486cca550d732ee668fd25fb9b8a0dc41",
+    "proposal/specs/structural-uk-catalog.json": "52ca74347ec294913dc191a65814bd4144431d590de587c5563889ccdd6a368d",
+    "scripts/structure/beam_analysis.py": "d68888da5f4a9e031a1187b51467a5e01f0e5b89ea71189ba5c87e410c63d52a",
+    "scripts/structure/trial_calculations.py": "1702f04803435ff66694831e436f61b8ee31a0b58889b33ce5ecb59695683977"
+  },
+  "references": [
+    "https://www.gov.uk/government/publications/structure-approved-document-a",
+    "https://steelconstruction.info/topics/design/design-codes-and-standards",
+    "https://www.steelconstruction.info/images/0/0d/SCI_P449.pdf",
+    "https://www.britishsteel.co.uk/wp-content/uploads/2026/03/British-Steel-product-brochure-03.03.26-3.pdf"
+  ],
+  "members": [
+    {
+      "id": "M-FR-3-001",
+      "name": "CJ01 \u00b7 full-width loft cross-beam over open suite",
+      "installedSection": "356x368x196",
+      "supportCentreSpanM": 8.445,
+      "physicalLengthM": 8.545,
+      "caseCount": 12,
+      "existingTotalDeflectionTargetMm": 10,
+      "comparisons": [
+        {
+          "section": "203x133x30",
+          "family": "UB",
+          "depthMm": 206.8,
+          "widthMm": 133.9,
+          "massKgPerM": 30.0,
+          "physicalLengthMassKg": 256.35,
+          "maxTotalDeflectionMm": 187.483209998527,
+          "maxVariableDeflectionMm": 91.48710674970289,
+          "maxElasticBendingUtilisation": 2.224668149695147,
+          "failedScreenChecks": [
+            "elasticBending",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x146x31",
+          "family": "UB",
+          "depthMm": 251.4,
+          "widthMm": 146.1,
+          "massKgPerM": 31.1,
+          "physicalLengthMassKg": 265.7495,
+          "maxTotalDeflectionMm": 123.11163966603608,
+          "maxVariableDeflectionMm": 60.03776595221835,
+          "maxElasticBendingUtilisation": 1.775705065779757,
+          "failedScreenChecks": [
+            "elasticBending",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x40",
+          "family": "UB",
+          "depthMm": 303.4,
+          "widthMm": 165.0,
+          "massKgPerM": 40.3,
+          "physicalLengthMassKg": 344.3635,
+          "maxTotalDeflectionMm": 64.2288282077467,
+          "maxVariableDeflectionMm": 31.159198065052287,
+          "maxElasticBendingUtilisation": 1.1184437836020356,
+          "failedScreenChecks": [
+            "elasticBending",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x51",
+          "family": "UB",
+          "depthMm": 355.0,
+          "widthMm": 171.5,
+          "massKgPerM": 51.0,
+          "physicalLengthMassKg": 435.795,
+          "maxTotalDeflectionMm": 38.517197395807095,
+          "maxVariableDeflectionMm": 18.573197416553775,
+          "maxElasticBendingUtilisation": 0.7834363520592761,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "406x178x60",
+          "family": "UB",
+          "depthMm": 406.4,
+          "widthMm": 177.9,
+          "massKgPerM": 60.1,
+          "physicalLengthMassKg": 513.5545,
+          "maxTotalDeflectionMm": 25.371569357605786,
+          "maxVariableDeflectionMm": 12.171941983146029,
+          "maxElasticBendingUtilisation": 0.5909483192811379,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "457x191x67",
+          "family": "UB",
+          "depthMm": 453.4,
+          "widthMm": 189.9,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 573.3694999999999,
+          "maxTotalDeflectionMm": 18.732588967304373,
+          "maxVariableDeflectionMm": 8.951807992267446,
+          "maxElasticBendingUtilisation": 0.48639425599574065,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "152x152x23",
+          "family": "UC",
+          "depthMm": 152.4,
+          "widthMm": 152.2,
+          "massKgPerM": 23,
+          "physicalLengthMassKg": 196.535,
+          "maxTotalDeflectionMm": 432.6287176136154,
+          "maxVariableDeflectionMm": 211.95732891771166,
+          "maxElasticBendingUtilisation": 3.784035570331112,
+          "failedScreenChecks": [
+            "elasticBending",
+            "shearBelowHalfResistance",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x73",
+          "family": "UC",
+          "depthMm": 254.1,
+          "widthMm": 254.6,
+          "massKgPerM": 73.1,
+          "physicalLengthMassKg": 624.6395,
+          "maxTotalDeflectionMm": 47.77845632338722,
+          "maxVariableDeflectionMm": 22.755875731953928,
+          "maxElasticBendingUtilisation": 0.6956593541165152,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x89",
+          "family": "UC",
+          "depthMm": 260.3,
+          "widthMm": 256.3,
+          "massKgPerM": 88.9,
+          "physicalLengthMassKg": 759.6505000000001,
+          "maxTotalDeflectionMm": 38.69087033884011,
+          "maxVariableDeflectionMm": 18.267144315164064,
+          "maxElasticBendingUtilisation": 0.5934423466316447,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x132",
+          "family": "UC",
+          "depthMm": 276.3,
+          "widthMm": 261.3,
+          "massKgPerM": 132,
+          "physicalLengthMassKg": 1127.94,
+          "maxTotalDeflectionMm": 25.236355477109203,
+          "maxVariableDeflectionMm": 11.638333456935628,
+          "maxElasticBendingUtilisation": 0.41008898229360286,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x167",
+          "family": "UC",
+          "depthMm": 289.1,
+          "widthMm": 265.2,
+          "massKgPerM": 167.1,
+          "physicalLengthMassKg": 1427.8695,
+          "maxTotalDeflectionMm": 19.361118659710513,
+          "maxVariableDeflectionMm": 8.763202392906647,
+          "maxElasticBendingUtilisation": 0.3287877905880568,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x97",
+          "family": "UC",
+          "depthMm": 307.9,
+          "widthMm": 305.3,
+          "massKgPerM": 96.9,
+          "physicalLengthMassKg": 828.0105000000001,
+          "maxTotalDeflectionMm": 25.046535252180927,
+          "maxVariableDeflectionMm": 11.773314128472252,
+          "maxElasticBendingUtilisation": 0.44126526187679926,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x129",
+          "family": "UC",
+          "depthMm": 318,
+          "widthMm": 308,
+          "massKgPerM": 129,
+          "physicalLengthMassKg": 1102.305,
+          "maxTotalDeflectionMm": 18.481635661566052,
+          "maxVariableDeflectionMm": 8.537027908720463,
+          "maxElasticBendingUtilisation": 0.34569734770833216,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x198",
+          "family": "UC",
+          "depthMm": 339.9,
+          "widthMm": 314.5,
+          "massKgPerM": 198.1,
+          "physicalLengthMassKg": 1692.7645,
+          "maxTotalDeflectionMm": 11.629510890694936,
+          "maxVariableDeflectionMm": 5.178886630839923,
+          "maxElasticBendingUtilisation": 0.23203324436540695,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x240",
+          "family": "UC",
+          "depthMm": 352.5,
+          "widthMm": 318.4,
+          "massKgPerM": 240,
+          "physicalLengthMassKg": 2050.8,
+          "maxTotalDeflectionMm": 9.43119955096352,
+          "maxVariableDeflectionMm": 4.110376697184827,
+          "maxElasticBendingUtilisation": 0.19489793988919968,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x153",
+          "family": "UC",
+          "depthMm": 362,
+          "widthMm": 370.5,
+          "massKgPerM": 152.9,
+          "physicalLengthMassKg": 1306.5305,
+          "maxTotalDeflectionMm": 11.872303867525439,
+          "maxVariableDeflectionMm": 5.414256894802076,
+          "maxElasticBendingUtilisation": 0.25257781168729104,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x177",
+          "family": "UC",
+          "depthMm": 368.2,
+          "widthMm": 372.6,
+          "massKgPerM": 177,
+          "physicalLengthMassKg": 1512.465,
+          "maxTotalDeflectionMm": 10.239918904305263,
+          "maxVariableDeflectionMm": 4.610654690713135,
+          "maxElasticBendingUtilisation": 0.22147002378011907,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x107",
+          "family": "UC",
+          "depthMm": 311,
+          "widthMm": 306,
+          "massKgPerM": 107,
+          "physicalLengthMassKg": 914.3149999999999,
+          "maxTotalDeflectionMm": 22.621102547529965,
+          "maxVariableDeflectionMm": 10.574602320779867,
+          "maxElasticBendingUtilisation": 0.4142032745975065,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x54",
+          "family": "UB",
+          "depthMm": 310.4,
+          "widthMm": 166.9,
+          "massKgPerM": 54.0,
+          "physicalLengthMassKg": 461.43,
+          "maxTotalDeflectionMm": 47.05676173521423,
+          "maxVariableDeflectionMm": 22.652758306013986,
+          "maxElasticBendingUtilisation": 0.8367100292782534,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x57",
+          "family": "UB",
+          "depthMm": 358.0,
+          "widthMm": 172.2,
+          "massKgPerM": 57.0,
+          "physicalLengthMassKg": 487.065,
+          "maxTotalDeflectionMm": 34.098463005606405,
+          "maxVariableDeflectionMm": 16.38710175328671,
+          "maxElasticBendingUtilisation": 0.699751824026521,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x67",
+          "family": "UB",
+          "depthMm": 363.4,
+          "widthMm": 173.2,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 573.3694999999999,
+          "maxTotalDeflectionMm": 28.29871558112023,
+          "maxVariableDeflectionMm": 13.523206469331338,
+          "maxElasticBendingUtilisation": 0.5892679947406654,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x196",
+          "family": "UC",
+          "depthMm": 372,
+          "widthMm": 374,
+          "massKgPerM": 196,
+          "physicalLengthMassKg": 1674.82,
+          "maxTotalDeflectionMm": 9.287749204168039,
+          "maxVariableDeflectionMm": 4.140567936912227,
+          "maxElasticBendingUtilisation": 0.2028204277542558,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        }
+      ]
+    },
+    {
+      "id": "M-FR-3-010",
+      "name": "Main loft north transfer \u00b7 seated within flush wall junction",
+      "installedSection": "305x305x198",
+      "supportCentreSpanM": 8.445,
+      "physicalLengthM": 8.545,
+      "caseCount": 12,
+      "existingTotalDeflectionTargetMm": 10,
+      "comparisons": [
+        {
+          "section": "203x133x30",
+          "family": "UB",
+          "depthMm": 206.8,
+          "widthMm": 133.9,
+          "massKgPerM": 30.0,
+          "physicalLengthMassKg": 256.35,
+          "maxTotalDeflectionMm": 133.24826124432988,
+          "maxVariableDeflectionMm": 63.55455486897446,
+          "maxElasticBendingUtilisation": 1.6908027393145604,
+          "failedScreenChecks": [
+            "elasticBending",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x146x31",
+          "family": "UB",
+          "depthMm": 251.4,
+          "widthMm": 146.1,
+          "massKgPerM": 31.1,
+          "physicalLengthMassKg": 265.7495,
+          "maxTotalDeflectionMm": 87.52024133661047,
+          "maxVariableDeflectionMm": 41.70722658068208,
+          "maxElasticBendingUtilisation": 1.3497870154439735,
+          "failedScreenChecks": [
+            "elasticBending",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x40",
+          "family": "UB",
+          "depthMm": 303.4,
+          "widthMm": 165.0,
+          "massKgPerM": 40.3,
+          "physicalLengthMassKg": 344.3635,
+          "maxTotalDeflectionMm": 45.756712264024664,
+          "maxVariableDeflectionMm": 21.645771010296368,
+          "maxElasticBendingUtilisation": 0.8512615916563093,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x51",
+          "family": "UB",
+          "depthMm": 355.0,
+          "widthMm": 171.5,
+          "massKgPerM": 51.0,
+          "physicalLengthMassKg": 435.795,
+          "maxTotalDeflectionMm": 27.506157819206337,
+          "maxVariableDeflectionMm": 12.902487970595866,
+          "maxElasticBendingUtilisation": 0.5971587826512795,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "406x178x60",
+          "family": "UB",
+          "depthMm": 406.4,
+          "widthMm": 177.9,
+          "massKgPerM": 60.1,
+          "physicalLengthMassKg": 513.5545,
+          "maxTotalDeflectionMm": 18.1553294264501,
+          "maxVariableDeflectionMm": 8.455643446526855,
+          "maxElasticBendingUtilisation": 0.4509944432840039,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "457x191x67",
+          "family": "UB",
+          "depthMm": 453.4,
+          "widthMm": 189.9,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 573.3694999999999,
+          "maxTotalDeflectionMm": 13.425345358398182,
+          "maxVariableDeflectionMm": 6.218670503785859,
+          "maxElasticBendingUtilisation": 0.37155080156075987,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "152x152x23",
+          "family": "UC",
+          "depthMm": 152.4,
+          "widthMm": 152.2,
+          "massKgPerM": 23,
+          "physicalLengthMassKg": 196.535,
+          "maxTotalDeflectionMm": 306.979387575049,
+          "maxVariableDeflectionMm": 147.24319272044005,
+          "maxElasticBendingUtilisation": 2.8731370056517878,
+          "failedScreenChecks": [
+            "elasticBending",
+            "shearBelowHalfResistance",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x73",
+          "family": "UC",
+          "depthMm": 254.1,
+          "widthMm": 254.6,
+          "massKgPerM": 73.1,
+          "physicalLengthMassKg": 624.6395,
+          "maxTotalDeflectionMm": 34.287028779715165,
+          "maxVariableDeflectionMm": 15.808124272142063,
+          "maxElasticBendingUtilisation": 0.5318308197684916,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x89",
+          "family": "UC",
+          "depthMm": 260.3,
+          "widthMm": 256.3,
+          "massKgPerM": 88.9,
+          "physicalLengthMassKg": 759.6505000000001,
+          "maxTotalDeflectionMm": 27.860313692165736,
+          "maxVariableDeflectionMm": 12.689878026789163,
+          "maxElasticBendingUtilisation": 0.4546297503795427,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x132",
+          "family": "UC",
+          "depthMm": 276.3,
+          "widthMm": 261.3,
+          "massKgPerM": 132,
+          "physicalLengthMassKg": 1127.94,
+          "maxTotalDeflectionMm": 18.335354819470403,
+          "maxVariableDeflectionMm": 8.084954575029652,
+          "maxElasticBendingUtilisation": 0.31589068110282215,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x167",
+          "family": "UC",
+          "depthMm": 289.1,
+          "widthMm": 265.2,
+          "massKgPerM": 167.1,
+          "physicalLengthMassKg": 1427.8695,
+          "maxTotalDeflectionMm": 14.164560905835804,
+          "maxVariableDeflectionMm": 6.087649364971556,
+          "maxElasticBendingUtilisation": 0.25434768135247293,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x97",
+          "family": "UC",
+          "depthMm": 307.9,
+          "widthMm": 305.3,
+          "massKgPerM": 96.9,
+          "physicalLengthMassKg": 828.0105000000001,
+          "maxTotalDeflectionMm": 18.066032696704657,
+          "maxVariableDeflectionMm": 8.178723378090563,
+          "maxElasticBendingUtilisation": 0.33839948316276613,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x129",
+          "family": "UC",
+          "depthMm": 318,
+          "widthMm": 308,
+          "massKgPerM": 129,
+          "physicalLengthMassKg": 1102.305,
+          "maxTotalDeflectionMm": 13.419600080827706,
+          "maxVariableDeflectionMm": 5.9305297535218315,
+          "maxElasticBendingUtilisation": 0.2661907248239917,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x198",
+          "family": "UC",
+          "depthMm": 339.9,
+          "widthMm": 314.5,
+          "massKgPerM": 198.1,
+          "physicalLengthMassKg": 1692.7645,
+          "maxTotalDeflectionMm": 8.558255186368577,
+          "maxVariableDeflectionMm": 3.5976854688432147,
+          "maxElasticBendingUtilisation": 0.18015238358800767,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x240",
+          "family": "UC",
+          "depthMm": 352.5,
+          "widthMm": 318.4,
+          "massKgPerM": 240,
+          "physicalLengthMassKg": 2050.8,
+          "maxTotalDeflectionMm": 6.9934143292402275,
+          "maxVariableDeflectionMm": 2.8554095829928023,
+          "maxElasticBendingUtilisation": 0.15203597377471578,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x153",
+          "family": "UC",
+          "depthMm": 362,
+          "widthMm": 370.5,
+          "massKgPerM": 152.9,
+          "physicalLengthMassKg": 1306.5305,
+          "maxTotalDeflectionMm": 8.661755878451897,
+          "maxVariableDeflectionMm": 3.7611932338929197,
+          "maxElasticBendingUtilisation": 0.19505913119251095,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x177",
+          "family": "UC",
+          "depthMm": 368.2,
+          "widthMm": 372.6,
+          "massKgPerM": 177,
+          "physicalLengthMassKg": 1512.465,
+          "maxTotalDeflectionMm": 7.505757466314626,
+          "maxVariableDeflectionMm": 3.2029442938283106,
+          "maxElasticBendingUtilisation": 0.17152869480062038,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x107",
+          "family": "UC",
+          "depthMm": 311,
+          "widthMm": 306,
+          "massKgPerM": 107,
+          "physicalLengthMassKg": 914.3149999999999,
+          "maxTotalDeflectionMm": 16.351185900697818,
+          "maxVariableDeflectionMm": 7.3459984394552,
+          "maxElasticBendingUtilisation": 0.3180581082861321,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x54",
+          "family": "UB",
+          "depthMm": 310.4,
+          "widthMm": 166.9,
+          "massKgPerM": 54.0,
+          "physicalLengthMassKg": 461.43,
+          "maxTotalDeflectionMm": 33.627075457008225,
+          "maxVariableDeflectionMm": 15.736490330074387,
+          "maxElasticBendingUtilisation": 0.6380258664276152,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x57",
+          "family": "UB",
+          "depthMm": 358.0,
+          "widthMm": 172.2,
+          "massKgPerM": 57.0,
+          "physicalLengthMassKg": 487.065,
+          "maxTotalDeflectionMm": 24.38330116642636,
+          "maxVariableDeflectionMm": 11.38384406856445,
+          "maxElasticBendingUtilisation": 0.5338065839659085,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x67",
+          "family": "UB",
+          "depthMm": 363.4,
+          "widthMm": 173.2,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 573.3694999999999,
+          "maxTotalDeflectionMm": 20.28123451268431,
+          "maxVariableDeflectionMm": 9.394344166014191,
+          "maxElasticBendingUtilisation": 0.450134830091236,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x196",
+          "family": "UC",
+          "depthMm": 372,
+          "widthMm": 374,
+          "massKgPerM": 196,
+          "physicalLengthMassKg": 1674.82,
+          "maxTotalDeflectionMm": 6.832261760932079,
+          "maxVariableDeflectionMm": 2.8763829296203984,
+          "maxElasticBendingUtilisation": 0.15743319513929932,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        }
+      ]
+    },
+    {
+      "id": "M-CJ01-GROUND-HEAD",
+      "name": "CJ01 \u00b7 wide ground-floor opening head",
+      "installedSection": "356x171x51",
+      "supportCentreSpanM": 4.52,
+      "physicalLengthM": 4.62,
+      "caseCount": 12,
+      "existingTotalDeflectionTargetMm": 10,
+      "comparisons": [
+        {
+          "section": "203x133x30",
+          "family": "UB",
+          "depthMm": 206.8,
+          "widthMm": 133.9,
+          "massKgPerM": 30.0,
+          "physicalLengthMassKg": 138.6,
+          "maxTotalDeflectionMm": 16.932095242627916,
+          "maxVariableDeflectionMm": 8.33454522908753,
+          "maxElasticBendingUtilisation": 0.6920278781983326,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x146x31",
+          "family": "UB",
+          "depthMm": 251.4,
+          "widthMm": 146.1,
+          "massKgPerM": 31.1,
+          "physicalLengthMassKg": 143.68200000000002,
+          "maxTotalDeflectionMm": 11.11789608551012,
+          "maxVariableDeflectionMm": 5.469486286752206,
+          "maxElasticBendingUtilisation": 0.5523416545725872,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x40",
+          "family": "UB",
+          "depthMm": 303.4,
+          "widthMm": 165.0,
+          "massKgPerM": 40.3,
+          "physicalLengthMassKg": 186.18599999999998,
+          "maxTotalDeflectionMm": 5.7975834108543305,
+          "maxVariableDeflectionMm": 2.838626718033339,
+          "maxElasticBendingUtilisation": 0.3477548206775481,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x51",
+          "family": "UB",
+          "depthMm": 355.0,
+          "widthMm": 171.5,
+          "massKgPerM": 51.0,
+          "physicalLengthMassKg": 235.62,
+          "maxTotalDeflectionMm": 3.4748342911195356,
+          "maxVariableDeflectionMm": 1.6920324559016815,
+          "maxElasticBendingUtilisation": 0.24347693185598251,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "406x178x60",
+          "family": "UB",
+          "depthMm": 406.4,
+          "widthMm": 177.9,
+          "massKgPerM": 60.1,
+          "physicalLengthMassKg": 277.66200000000003,
+          "maxTotalDeflectionMm": 2.2878462176883545,
+          "maxVariableDeflectionMm": 1.108873201793425,
+          "maxElasticBendingUtilisation": 0.1835824155456925,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "457x191x67",
+          "family": "UB",
+          "depthMm": 453.4,
+          "widthMm": 189.9,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 310.00199999999995,
+          "maxTotalDeflectionMm": 1.6885924163182278,
+          "maxVariableDeflectionMm": 0.8155165382787947,
+          "maxElasticBendingUtilisation": 0.15105613794410086,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "152x152x23",
+          "family": "UC",
+          "depthMm": 152.4,
+          "widthMm": 152.2,
+          "massKgPerM": 23,
+          "physicalLengthMassKg": 106.26,
+          "maxTotalDeflectionMm": 39.086101373357536,
+          "maxVariableDeflectionMm": 19.309474386749987,
+          "maxElasticBendingUtilisation": 1.1774710779876465,
+          "failedScreenChecks": [
+            "elasticBending",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x73",
+          "family": "UC",
+          "depthMm": 254.1,
+          "widthMm": 254.6,
+          "massKgPerM": 73.1,
+          "physicalLengthMassKg": 337.722,
+          "maxTotalDeflectionMm": 4.305557170981934,
+          "maxVariableDeflectionMm": 2.0730776417965715,
+          "maxElasticBendingUtilisation": 0.21599042220437667,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x89",
+          "family": "UC",
+          "depthMm": 260.3,
+          "widthMm": 256.3,
+          "massKgPerM": 88.9,
+          "physicalLengthMassKg": 410.718,
+          "maxTotalDeflectionMm": 3.483917824742116,
+          "maxVariableDeflectionMm": 1.6641507848481443,
+          "maxElasticBendingUtilisation": 0.18413177691655083,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x132",
+          "family": "UC",
+          "depthMm": 276.3,
+          "widthMm": 261.3,
+          "massKgPerM": 132,
+          "physicalLengthMassKg": 609.84,
+          "maxTotalDeflectionMm": 2.2677354987339022,
+          "maxVariableDeflectionMm": 1.0602610579151102,
+          "maxElasticBendingUtilisation": 0.1270241821741668,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x167",
+          "family": "UC",
+          "depthMm": 289.1,
+          "widthMm": 265.2,
+          "massKgPerM": 167.1,
+          "physicalLengthMassKg": 772.002,
+          "maxTotalDeflectionMm": 1.7369895923069851,
+          "maxVariableDeflectionMm": 0.7983344242719284,
+          "maxElasticBendingUtilisation": 0.10170723300456912,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x97",
+          "family": "UC",
+          "depthMm": 307.9,
+          "widthMm": 305.3,
+          "massKgPerM": 96.9,
+          "physicalLengthMassKg": 447.67800000000005,
+          "maxTotalDeflectionMm": 2.2544371669141587,
+          "maxVariableDeflectionMm": 1.0725579000816514,
+          "maxElasticBendingUtilisation": 0.1368699556895694,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x129",
+          "family": "UC",
+          "depthMm": 318,
+          "widthMm": 308,
+          "massKgPerM": 129,
+          "physicalLengthMassKg": 595.98,
+          "maxTotalDeflectionMm": 1.6609902503060163,
+          "maxVariableDeflectionMm": 0.7777297561926046,
+          "maxElasticBendingUtilisation": 0.10709136134355901,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x198",
+          "family": "UC",
+          "depthMm": 339.9,
+          "widthMm": 314.5,
+          "massKgPerM": 198.1,
+          "physicalLengthMassKg": 915.222,
+          "maxTotalDeflectionMm": 1.0419123570994173,
+          "maxVariableDeflectionMm": 0.471800523533249,
+          "maxElasticBendingUtilisation": 0.07169682514528744,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x240",
+          "family": "UC",
+          "depthMm": 352.5,
+          "widthMm": 318.4,
+          "massKgPerM": 240,
+          "physicalLengthMassKg": 1108.8,
+          "maxTotalDeflectionMm": 0.8434481767561214,
+          "maxVariableDeflectionMm": 0.3744584533097131,
+          "maxElasticBendingUtilisation": 0.060134562211251116,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x153",
+          "family": "UC",
+          "depthMm": 362,
+          "widthMm": 370.5,
+          "massKgPerM": 152.9,
+          "physicalLengthMassKg": 706.398,
+          "maxTotalDeflectionMm": 1.0658143096805355,
+          "maxVariableDeflectionMm": 0.49324293416649606,
+          "maxElasticBendingUtilisation": 0.07817356041752936,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x177",
+          "family": "UC",
+          "depthMm": 368.2,
+          "widthMm": 372.6,
+          "massKgPerM": 177,
+          "physicalLengthMassKg": 817.74,
+          "maxTotalDeflectionMm": 0.9182704276488062,
+          "maxVariableDeflectionMm": 0.4200341602296653,
+          "maxElasticBendingUtilisation": 0.06848476345534296,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x107",
+          "family": "UC",
+          "depthMm": 311,
+          "widthMm": 306,
+          "massKgPerM": 107,
+          "physicalLengthMassKg": 494.34000000000003,
+          "maxTotalDeflectionMm": 2.03513391445556,
+          "maxVariableDeflectionMm": 0.9633543397899615,
+          "maxElasticBendingUtilisation": 0.12842389429387327,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x54",
+          "family": "UB",
+          "depthMm": 310.4,
+          "widthMm": 166.9,
+          "massKgPerM": 54.0,
+          "physicalLengthMassKg": 249.48000000000002,
+          "maxTotalDeflectionMm": 4.244585957332534,
+          "maxVariableDeflectionMm": 2.06368356561538,
+          "maxElasticBendingUtilisation": 0.25999920799585957,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x57",
+          "family": "UB",
+          "depthMm": 358.0,
+          "widthMm": 172.2,
+          "massKgPerM": 57.0,
+          "physicalLengthMassKg": 263.34000000000003,
+          "maxTotalDeflectionMm": 3.0752624660913694,
+          "maxVariableDeflectionMm": 1.49287747299836,
+          "maxElasticBendingUtilisation": 0.21741235043803564,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x67",
+          "family": "UB",
+          "depthMm": 363.4,
+          "widthMm": 173.2,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 310.00199999999995,
+          "maxTotalDeflectionMm": 2.5509018857579924,
+          "maxVariableDeflectionMm": 1.231974427492726,
+          "maxElasticBendingUtilisation": 0.18300493149814076,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x196",
+          "family": "UC",
+          "depthMm": 372,
+          "widthMm": 374,
+          "massKgPerM": 196,
+          "physicalLengthMassKg": 905.52,
+          "maxTotalDeflectionMm": 0.8321853772708863,
+          "maxVariableDeflectionMm": 0.3772088982846391,
+          "maxElasticBendingUtilisation": 0.06267492853641006,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        }
+      ]
+    },
+    {
+      "id": "M-GABLE-FLOOR-BLOCK",
+      "name": "CJ01 \u00b7 west upper wall transfer with loft cross-beam reaction",
+      "installedSection": "305x305x129",
+      "supportCentreSpanM": 6.3135,
+      "physicalLengthM": 6.5,
+      "caseCount": 12,
+      "existingTotalDeflectionTargetMm": 10,
+      "comparisons": [
+        {
+          "section": "203x133x30",
+          "family": "UB",
+          "depthMm": 206.8,
+          "widthMm": 133.9,
+          "massKgPerM": 30.0,
+          "physicalLengthMassKg": 195.0,
+          "maxTotalDeflectionMm": 59.85175324126214,
+          "maxVariableDeflectionMm": 7.792075585182507,
+          "maxElasticBendingUtilisation": 1.1890485759004075,
+          "failedScreenChecks": [
+            "elasticBending",
+            "shearBelowHalfResistance",
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x146x31",
+          "family": "UB",
+          "depthMm": 251.4,
+          "widthMm": 146.1,
+          "massKgPerM": 31.1,
+          "physicalLengthMassKg": 202.15,
+          "maxTotalDeflectionMm": 39.30137277886626,
+          "maxVariableDeflectionMm": 5.11349442435725,
+          "maxElasticBendingUtilisation": 0.9491098869481847,
+          "failedScreenChecks": [
+            "shearBelowHalfResistance",
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x40",
+          "family": "UB",
+          "depthMm": 303.4,
+          "widthMm": 165.0,
+          "massKgPerM": 40.3,
+          "physicalLengthMassKg": 261.95,
+          "maxTotalDeflectionMm": 20.5016879177491,
+          "maxVariableDeflectionMm": 2.653869327847647,
+          "maxElasticBendingUtilisation": 0.5979348562113257,
+          "failedScreenChecks": [
+            "shearBelowHalfResistance",
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x51",
+          "family": "UB",
+          "depthMm": 355.0,
+          "widthMm": 171.5,
+          "massKgPerM": 51.0,
+          "physicalLengthMassKg": 331.5,
+          "maxTotalDeflectionMm": 12.293002307065468,
+          "maxVariableDeflectionMm": 1.5819033224457444,
+          "maxElasticBendingUtilisation": 0.4189398884652068,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "406x178x60",
+          "family": "UB",
+          "depthMm": 406.4,
+          "widthMm": 177.9,
+          "massKgPerM": 60.1,
+          "physicalLengthMassKg": 390.65000000000003,
+          "maxTotalDeflectionMm": 8.0966102394503,
+          "maxVariableDeflectionMm": 1.036700091638193,
+          "maxElasticBendingUtilisation": 0.31607392509501964,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "457x191x67",
+          "family": "UB",
+          "depthMm": 453.4,
+          "widthMm": 189.9,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 436.15,
+          "maxTotalDeflectionMm": 5.977472474356889,
+          "maxVariableDeflectionMm": 0.7624371015538245,
+          "maxElasticBendingUtilisation": 0.26019393792425527,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "152x152x23",
+          "family": "UC",
+          "depthMm": 152.4,
+          "widthMm": 152.2,
+          "massKgPerM": 23,
+          "physicalLengthMassKg": 149.5,
+          "maxTotalDeflectionMm": 138.12347721414633,
+          "maxVariableDeflectionMm": 18.052680715750835,
+          "maxElasticBendingUtilisation": 2.0221684880460256,
+          "failedScreenChecks": [
+            "elasticBending",
+            "shearBelowHalfResistance",
+            "totalDeflection",
+            "variableDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x73",
+          "family": "UC",
+          "depthMm": 254.1,
+          "widthMm": 254.6,
+          "massKgPerM": 73.1,
+          "physicalLengthMassKg": 475.15,
+          "maxTotalDeflectionMm": 15.244779857648641,
+          "maxVariableDeflectionMm": 1.938147461538138,
+          "maxElasticBendingUtilisation": 0.37218992152263697,
+          "failedScreenChecks": [
+            "shearBelowHalfResistance",
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x89",
+          "family": "UC",
+          "depthMm": 260.3,
+          "widthMm": 256.3,
+          "massKgPerM": 88.9,
+          "physicalLengthMassKg": 577.85,
+          "maxTotalDeflectionMm": 12.342910212988237,
+          "maxVariableDeflectionMm": 1.5558363827005337,
+          "maxElasticBendingUtilisation": 0.31761487524809695,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x132",
+          "family": "UC",
+          "depthMm": 276.3,
+          "widthMm": 261.3,
+          "massKgPerM": 132,
+          "physicalLengthMassKg": 858.0,
+          "maxTotalDeflectionMm": 8.046823085010269,
+          "maxVariableDeflectionMm": 0.9912519611108518,
+          "maxElasticBendingUtilisation": 0.2196895149427234,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "254x254x167",
+          "family": "UC",
+          "depthMm": 289.1,
+          "widthMm": 265.2,
+          "massKgPerM": 167.1,
+          "physicalLengthMassKg": 1086.1499999999999,
+          "maxTotalDeflectionMm": 6.171110349465724,
+          "maxVariableDeflectionMm": 0.746373317942996,
+          "maxElasticBendingUtilisation": 0.1762655727643821,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x97",
+          "family": "UC",
+          "depthMm": 307.9,
+          "widthMm": 305.3,
+          "massKgPerM": 96.9,
+          "physicalLengthMassKg": 629.85,
+          "maxTotalDeflectionMm": 7.989447787758558,
+          "maxVariableDeflectionMm": 1.0027484400412612,
+          "maxElasticBendingUtilisation": 0.23621053284384905,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x129",
+          "family": "UC",
+          "depthMm": 318,
+          "widthMm": 308,
+          "massKgPerM": 129,
+          "physicalLengthMassKg": 838.5,
+          "maxTotalDeflectionMm": 5.893219385344272,
+          "maxVariableDeflectionMm": 0.7271097436664585,
+          "maxElasticBendingUtilisation": 0.18518225468698707,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x198",
+          "family": "UC",
+          "depthMm": 339.9,
+          "widthMm": 314.5,
+          "massKgPerM": 198.1,
+          "physicalLengthMassKg": 1287.6499999999999,
+          "maxTotalDeflectionMm": 3.7055580885870585,
+          "maxVariableDeflectionMm": 0.44109249388550487,
+          "maxElasticBendingUtilisation": 0.12447334242782555,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x240",
+          "family": "UC",
+          "depthMm": 352.5,
+          "widthMm": 318.4,
+          "massKgPerM": 240,
+          "physicalLengthMassKg": 1560.0,
+          "maxTotalDeflectionMm": 3.0038344083179673,
+          "maxVariableDeflectionMm": 0.35008611645860166,
+          "maxElasticBendingUtilisation": 0.10463854122042042,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x153",
+          "family": "UC",
+          "depthMm": 362,
+          "widthMm": 370.5,
+          "massKgPerM": 152.9,
+          "physicalLengthMassKg": 993.85,
+          "maxTotalDeflectionMm": 3.7847209239921824,
+          "maxVariableDeflectionMm": 0.4611392846569642,
+          "maxElasticBendingUtilisation": 0.13536881250903152,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x177",
+          "family": "UC",
+          "depthMm": 368.2,
+          "widthMm": 372.6,
+          "massKgPerM": 177,
+          "physicalLengthMassKg": 1150.5,
+          "maxTotalDeflectionMm": 3.2635025466931005,
+          "maxVariableDeflectionMm": 0.3926954422714838,
+          "maxElasticBendingUtilisation": 0.11875591587683931,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x305x107",
+          "family": "UC",
+          "depthMm": 311,
+          "widthMm": 306,
+          "massKgPerM": 107,
+          "physicalLengthMassKg": 695.5,
+          "maxTotalDeflectionMm": 7.214943180253404,
+          "maxVariableDeflectionMm": 0.9006526000673933,
+          "maxElasticBendingUtilisation": 0.22177350985608096,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "305x165x54",
+          "family": "UB",
+          "depthMm": 310.4,
+          "widthMm": 166.9,
+          "massKgPerM": 54.0,
+          "physicalLengthMassKg": 351.0,
+          "maxTotalDeflectionMm": 15.017915191563514,
+          "maxVariableDeflectionMm": 1.9293648165773378,
+          "maxElasticBendingUtilisation": 0.44745886645165506,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x57",
+          "family": "UB",
+          "depthMm": 358.0,
+          "widthMm": 172.2,
+          "massKgPerM": 57.0,
+          "physicalLengthMassKg": 370.5,
+          "maxTotalDeflectionMm": 10.881951662872577,
+          "maxVariableDeflectionMm": 1.3957107183750952,
+          "maxElasticBendingUtilisation": 0.3742417553189872,
+          "failedScreenChecks": [
+            "totalDeflection"
+          ],
+          "withinExistingGravityScreen": false,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x171x67",
+          "family": "UB",
+          "depthMm": 363.4,
+          "widthMm": 173.2,
+          "massKgPerM": 67.1,
+          "physicalLengthMassKg": 436.15,
+          "maxTotalDeflectionMm": 9.029974113083957,
+          "maxVariableDeflectionMm": 1.1517890411743847,
+          "maxElasticBendingUtilisation": 0.3152256798971034,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        },
+        {
+          "section": "356x368x196",
+          "family": "UC",
+          "depthMm": 372,
+          "widthMm": 374,
+          "massKgPerM": 196,
+          "physicalLengthMassKg": 1274.0,
+          "maxTotalDeflectionMm": 2.9594570618139953,
+          "maxVariableDeflectionMm": 0.35265754351891826,
+          "maxElasticBendingUtilisation": 0.10879764715032583,
+          "failedScreenChecks": [],
+          "withinExistingGravityScreen": true,
+          "approvedForConstruction": false
+        }
+      ]
+    }
+  ]
+}

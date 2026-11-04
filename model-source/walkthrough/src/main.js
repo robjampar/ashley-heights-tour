@@ -1,16 +1,22 @@
+import {buildingClipBoxes} from './vegetation-clipping.js';
 import {loadModel} from './model-delivery.js';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {createSpatialBatcher} from './spatial-batches.js';
 import {surfaceDetail,setLawnTexture} from './materials.js';
+import {installVisualOverlay} from './visual-overlay.js';
 import {ExteriorAppearance} from './exterior-appearance.js';
 import lawnImage from '../node_modules/@dgreenheck/ez-tree/src/app/public/grass.jpg';   // MIT (ez-tree)
+import daylightSettings from '../public/visual-quality/daylight-settings.json';
 import {daylight} from './lighting.js';
 import {roomLights} from './room-lights.js';
+import {loadBakedDaylight} from './baked-daylight.js';
+import {roomReflections} from './room-reflections.js';
+import {qualityMaterial,finishQualityMaterial} from './quality-materials.js';
 import {roomMirrors} from './room-mirrors.js';
 import {RenderBudget} from './render-budget.js';
-import {DoorMotion} from './doors.js';
+import {DoorMotion,applyDoorDetailOverrides} from './doors.js';
 import {Navigation,pointInPolygon} from './navigation.js';
 import {TouchControls,coarsePointer} from './touch.js';
 import {EasterSession} from './easter-session.js';
@@ -18,7 +24,10 @@ import {WaveGame} from './wave-game.js';
 import {flyPosition,walkingPosition} from './flight.js';
 import {currentDesign,isProposal,comparisonURL,saveComparisonView,takeComparisonView,comparisonPosition,DESIGN_LABELS,DESIGN_ASSETS} from './design-comparison.js';
 import {StreetContext,readStreetPreference,writeStreetPreference,disableStreetSafely,onStreet} from './street-context.js';
+import {loadVehicle,captureVehicleReflections} from './vehicle-models.js';
+import {VEHICLES} from './vehicle-specs.js';
 import {Life,carTemplateFromMeshes} from './life.js';
+import {createStructureWalkthrough} from './structure-walkthrough.js';
 import {Inspector} from './inspect.js';
 import {Vegetation,claims as vegetationClaims} from './vegetation.js';
 import {STREET_DATA} from './street-context-data.js';
@@ -28,14 +37,17 @@ document.body.classList.toggle('touch-ui',coarsePointer());
 const canvas=$('view'), scene=new THREE.Scene();scene.background=new THREE.Color('#dce5e5');
 const viewportSize=()=>({width:document.documentElement.clientWidth,height:document.documentElement.clientHeight});
 const initialViewport=viewportSize();
-const camera=new THREE.PerspectiveCamera(72,initialViewport.width/initialViewport.height,.045,150);
+const camera=new THREE.PerspectiveCamera(60,initialViewport.width/initialViewport.height,.045,150);
 let renderer,nav,data,doors,easter=null,yaw=0,pitch=0,ready=false,active=false,dragging=false,lastPointer=null,mode='drag',lastTime=0,mapTime=0,chaseShadowTime=0,pageFocused=true;
 const keys=new Set();const stats={sourceMeshes:0,batches:0,hiddenMeshes:0};
+const diagnostics=new URLSearchParams(location.search).has('diagnostics'),frameSamples=[];let diagnosticRoom=null,diagnosticSince=0;
 let flying=false,lastWalkingPosition=null,takeoffTime=0;const verticalPointers=new Map();
 let localLights=null;
+let bakedDaylight=null,reflections=null,presentation=false,viewLens='natural';
 let mirrors=null;
 let appearance=null,appearanceBatches=[];
 let vegetation=null,pendingStreetGroup=null,streetContext=null,settingsPrevious=null,life=null,lifeShadowTime=0,inspector=null,pressPoint=null;
+let structureView=null,structureLoading=null,structureDocument=false,structureInspectBefore=false;
 const LIFE_KEYS={people:'ashley-heights-life-people',cars:'ashley-heights-life-cars'};
 function readLifePreference(kind){try{return localStorage.getItem(LIFE_KEYS[kind])==='1';}catch{return false;}}
 function writeLifePreference(kind,on){try{localStorage.setItem(LIFE_KEYS[kind],on?'1':'0');}catch{}}
@@ -46,8 +58,13 @@ const renderBudget=new RenderBudget({mobile:coarsePointer(),dpr:devicePixelRatio
 renderer.setPixelRatio(renderBudget.ratio(initialViewport.width,initialViewport.height));renderer.setSize(initialViewport.width,initialViewport.height,false);
 renderer.outputColorSpace=THREE.SRGBColorSpace;
 const lighting=daylight(renderer,scene,camera);
+function setViewLens(value){viewLens=['natural','wide','detail'].includes(value)?value:'natural';camera.fov=({natural:60,wide:72,detail:48})[viewLens];if(viewLens==='natural'&&camera.aspect<.8)camera.fov=70;camera.updateProjectionMatrix();$('view-lens').value=viewLens;}
+function setPresentation(value){presentation=!!value;document.body.classList.toggle('presentation',presentation);$('restore-controls').hidden=!presentation;$('presentation-toggle').setAttribute('aria-pressed',String(presentation));if(presentation){closeSettings({focus:false});setInspect(false,{persist:false});if(!active&&ready)start(false);}canvas.focus();}
+$('view-lens').onchange=e=>setViewLens(e.target.value);
+$('presentation-toggle').onclick=()=>setPresentation(true);$('restore-controls').onclick=()=>setPresentation(false);
+setViewLens('natural');
 {const tex=new THREE.TextureLoader().load(lawnImage);tex.wrapS=tex.wrapT=THREE.RepeatWrapping;tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=8;setLawnTexture(tex);}
-const touch=new TouchControls(canvas,$('move-pad'),$('move-thumb'),(dx,dy)=>{if(!ready||!active)return;yaw-=dx*.004;pitch=Math.max(-1.35,Math.min(1.35,pitch-dy*.004));syncCamera();},()=>{if(inspector?.enabled&&!easter?.game.started)inspectAt();else easter?.game.tapFire();});
+const touch=new TouchControls(canvas,$('move-pad'),$('move-thumb'),(dx,dy)=>{if(!ready||!active)return;yaw-=dx*.004;pitch=Math.max(-1.35,Math.min(1.35,pitch-dy*.004));syncCamera();},()=>{if(structureView?.enabled)return;if(inspector?.enabled&&!easter?.game.started)inspectAt();else easter?.game.tapFire();});
 function setMapVisible(show){$('map').hidden=!show;$('map-panel').classList.toggle('collapsed',!show);$('map-toggle').textContent=touch.enabled?(show?'×':'Map +'):(show?'−':'+');$('map-toggle').setAttribute('aria-expanded',String(show));$('map-toggle').setAttribute('aria-label',show?'Hide floorplan':'Show floorplan');}
 setMapVisible(!touch.enabled);
 function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').hidden=true,4200);}
@@ -146,6 +163,7 @@ function setLife(kind,on,{persist=true}={}){
 $('life-people').onchange=e=>setLife('people',e.target.checked);$('life-cars').onchange=e=>setLife('cars',e.target.checked);
 // Identify objects: click anything and read its unique model name.
 function setInspect(on,{persist=true}={}){
+ if(on&&structureView?.enabled)return;
  if(!inspector)return;inspector.setEnabled(on);document.body.classList.toggle('inspecting',inspector.enabled);$('inspect-mode').checked=inspector.enabled;
  if(!inspector.enabled)$('inspect-card').hidden=true;
  streetContext?.setLabels(inspector.enabled);   // tree/building ID labels (M2, T9, H3) only while identifying
@@ -178,6 +196,24 @@ $('inspect-copy').onclick=async()=>{const name=$('inspect-name').textContent;try
 document.addEventListener('pointerdown',e=>{if(settingsPrevious&&!$('settings-panel').contains(e.target)&&!$('settings-toggle').contains(e.target))closeSettings({focus:false});},true);
 const goToDesign=target=>{if(!ready)return;saveComparisonView(target,{...nav.position,yaw,pitch,active,flying,lastWalkingPosition});location.assign(comparisonURL(target));};
 $('design-switch').onchange=e=>goToDesign(e.target.value);
+async function toggleStructure(force){
+ if(!ready||currentDesign!=='proposed')return;
+ closeSettings({focus:false});if(document.pointerLockElement)document.exitPointerLock();
+ if(!structureView){
+  $('structure-toggle').disabled=true;$('structure-toggle').textContent='Loading structure…';
+  try{structureLoading??=createStructureWalkthrough({scene,renderer,camera,canvas,
+   renderHouse(){mirrors?.update(camera);return lighting.render({toScreen:false});},
+   focus(position,target){setFlying(true,{quiet:true});nav.position={x:position.x,y:-position.z,z:position.y-data.eyeHeight};const d=target.clone().sub(position);setDirection([d.x,-d.z,d.y]);syncCamera();updateMap();},
+   onView(view,on){structureDocument=on&&view!=='model';keys.clear();touch.reset();if(structureDocument&&document.pointerLockElement)document.exitPointerLock();},
+   onActive(on){if(on){structureInspectBefore=!!inspector?.enabled;setInspect(false,{persist:false});setMapVisible(false);start(false);}else setInspect(structureInspectBefore,{persist:false});$('structure-toggle').setAttribute('aria-pressed',String(on));$('structure-toggle').textContent=on?'Structure on':'Structure';lighting.updateShadows();}
+  });structureView=await structureLoading;window.walkthrough.structure=structureView;
+  }catch(error){structureLoading=null;console.error(error);toast('Structure could not load. Try again.');}
+  finally{$('structure-toggle').disabled=false;$('structure-toggle').textContent=structureView?.enabled?'Structure on':'Structure';}
+ }
+ if(structureView)structureView.setEnabled(force??!structureView.enabled);
+}
+$('structure-toggle').onclick=()=>toggleStructure();
+
 $('map-toggle').onclick=()=>setMapVisible($('map').hidden);
 $('flight-toggle').onclick=()=>{setFlying(!flying);if(!active)start(false);canvas.focus();};
 for(const [id,direction]of [['fly-up',1],['fly-down',-1]]){
@@ -200,15 +236,17 @@ canvas.addEventListener('pointerup',e=>{
 canvas.addEventListener('pointercancel',()=>{dragging=false;});
 document.addEventListener('pointermove',e=>{if(e.pointerType==='touch'||e.pointerType==='pen'||!active)return;let dx=0,dy=0;if(document.pointerLockElement===canvas){dx=e.movementX;dy=e.movementY;}else if(dragging&&lastPointer){dx=e.clientX-lastPointer[0];dy=e.clientY-lastPointer[1];lastPointer=[e.clientX,e.clientY];}else return;yaw-=dx*.0025;pitch=Math.max(-1.35,Math.min(1.35,pitch-dy*.0025));syncCamera();});
 const moveKeys=['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','ShiftLeft','ShiftRight'];
-document.addEventListener('keydown',e=>{if(e.code==='KeyI'&&ready&&!['SELECT','INPUT','BUTTON','TEXTAREA'].includes(document.activeElement?.tagName)&&!easter?.game.started){setInspect(!inspector?.enabled);toast(inspector?.enabled?'Identify objects · click anything to see its name':'Identify objects off');return;}if(e.code==='Escape'){if(settingsPrevious){e.preventDefault();closeSettings();return;}if(document.pointerLockElement)document.exitPointerLock();showMenu(true);return;}if(!active||['SELECT','INPUT','BUTTON'].includes(document.activeElement?.tagName))return;if(e.code==='KeyF'&&!e.repeat&&!easter?.game.started){e.preventDefault();setFlying(!flying);return;}if(e.code==='KeyE'&&!flying&&!e.repeat&&!easter?.game.started){e.preventDefault();setFlying(true);takeoffTime=performance.now();keys.add('KeyE');return;}if(moveKeys.includes(e.code)||(flying&&['KeyE','KeyQ'].includes(e.code))){e.preventDefault();keys.add(e.code);}});
+document.addEventListener('keydown',e=>{const editing=e.composedPath().some(el=>['SELECT','INPUT','BUTTON','TEXTAREA'].includes(el.tagName));if(e.code==='KeyH'&&ready&&!e.repeat&&!editing&&!easter?.game.started){setPresentation(!presentation);return;}if(e.code==='KeyI'&&ready&&!editing&&!easter?.game.started){setInspect(!inspector?.enabled);toast(inspector?.enabled?'Identify objects · click anything to see its name':'Identify objects off');return;}if(e.code==='Escape'){if(presentation){e.preventDefault();setPresentation(false);return;}if(settingsPrevious){e.preventDefault();closeSettings();return;}if(document.pointerLockElement)document.exitPointerLock();showMenu(true);return;}if(structureDocument||editing||!active)return;if(e.code==='KeyF'&&!e.repeat&&!easter?.game.started){e.preventDefault();setFlying(!flying);return;}if(e.code==='KeyE'&&!flying&&!e.repeat&&!easter?.game.started){e.preventDefault();setFlying(true);takeoffTime=performance.now();keys.add('KeyE');return;}if(moveKeys.includes(e.code)||(flying&&['KeyE','KeyQ'].includes(e.code))){e.preventDefault();keys.add(e.code);}});
 document.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>{keys.clear();dragging=false;pageFocused=false;});window.addEventListener('focus',()=>{pageFocused=true;lastTime=performance.now();});document.addEventListener('visibilitychange',()=>{keys.clear();lastTime=performance.now();});
-function resize(){const {width,height}=viewportSize();camera.aspect=width/height;camera.updateProjectionMatrix();renderBudget.dpr=devicePixelRatio;renderer.setPixelRatio(Math.min(easter?.game.started?1.25:Infinity,renderBudget.ratio(width,height)));renderer.setSize(width,height,false);lighting.resize(width,height);}
+function resize(){const {width,height}=viewportSize();camera.aspect=width/height;setViewLens(viewLens);renderBudget.dpr=devicePixelRatio;renderer.setPixelRatio(Math.min(easter?.game.started?1.25:Infinity,renderBudget.ratio(width,height)));renderer.setSize(width,height,false);lighting.resize(width,height);}
 window.addEventListener('resize',resize);window.visualViewport?.addEventListener('resize',resize);
 async function load(){
  document.body.classList.add('loading');data=await fetch(new URL('./'+DESIGN_ASSETS[currentDesign].navigation,import.meta.url)).then(r=>{if(!r.ok)throw Error('Navigation file missing');return r.json();});nav=new Navigation(data);
  streetContext=new StreetContext(scene,data);
  streetContext.onBuilt=g=>{for(const m of g.children)if(/^Street context (leaf|bark)$/.test(m.name))m.visible=false;if(vegetation?.siteDone)vegetation.buildStreet(STREET_DATA.trees,g).then(()=>lighting.updateShadows());else pendingStreetGroup=g;};let streetEnabled=false;try{streetEnabled=readStreetPreference(localStorage);}catch{}streetContext.setVisible(streetEnabled);$('street-context').checked=streetEnabled;stats.streetContext={...streetContext.stats,enabled:streetEnabled};
- localLights=roomLights(scene,[
+ const qualityVariant=currentDesign==='proposed'?'compact':currentDesign==='planning'?'planning':null;
+ if(qualityVariant){try{bakedDaylight=await loadBakedDaylight(new URL('./visual-quality/'+qualityVariant+'-daylight.json',import.meta.url));lighting.info.bakedDaylight=bakedDaylight.info;}catch(error){console.warn('Using live lighting fallback',error);}}
+ localLights=roomLights(scene,bakedDaylight?[]:[
   {name:'Kitchen daylight bounce',position:[2.15,6.40,1.55],range:4.2,intensity:1.65},
   {name:'Hall daylight bounce',position:[6.55,2.70,1.60],range:3.4,intensity:1.45},
   ...(data.proposalLights??[]),
@@ -216,15 +254,25 @@ async function load(){
  lighting.info.localBounceLights=localLights.info.budget;lighting.info.roomFills=localLights.info;
  if(data.modelUpdatedAt){const stamp=new Date(data.modelUpdatedAt);$('model-version').textContent='Updated '+new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Europe/London'}).format(stamp);$('model-version').title=stamp.toLocaleString('en-GB',{timeZone:'Europe/London'})+' · London time';}
  const loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);const gltf=await loadModel(loader,(new URL('./'+DESIGN_ASSETS[currentDesign].model,import.meta.url)).href,e=>{const pc=e.total?Math.round(e.loaded/e.total*75):35;$('progress').style.width=pc+'%';$('load-status').textContent='Loading model · '+pc+'%';});
+ if(qualityVariant){
+  try{
+   const overlay=await loadModel(loader,new URL('./visual-quality/'+qualityVariant+'-furnishings.glb',import.meta.url).href);
+   const detailManifest=await fetch(new URL('./visual-quality/'+qualityVariant+'-furnishings.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Detail manifest missing');return r.json();});
+   const result=installVisualOverlay(gltf.scene,overlay.scene,{removedObjects:[...(detailManifest.barDetails?.removedObjects??[]),...(detailManifest.frameDetails?.removedObjects??[])]});
+   const extra=detailManifest.barDetails?.navigationExtras;
+   if(extra){const removed=new Set([...(extra.removeObstacles??[]),...(extra.obstacles??[]).map(o=>o.name)]);data.obstacles=data.obstacles.filter(o=>!removed.has(o.name));data.obstacles.push(...(extra.obstacles??[]));const mirrors=new Map(data.mirrors.map(o=>[o.name,o]));for(const mirror of extra.mirrors??[])mirrors.set(mirror.name,mirror);data.mirrors=[...mirrors.values()];nav=new Navigation(data);}
+   applyDoorDetailOverrides(data.interactiveDoors,overlay.scene);stats.refinedObjects=result.replaced;
+  }catch(error){console.warn('Using original furnishings',error);}
+ }
+ const vehicles=new Map(),vehicleBays=qualityVariant?new Set(VEHICLES.map(v=>v.bay)):null;
+ if(vehicleBays)await Promise.all(VEHICLES.map(async spec=>{try{vehicles.set(spec.bay,await loadVehicle(scene,bakedDaylight,spec));}catch(error){console.warn(spec.model+' unavailable; using original parked car',error);}}));
  $('load-status').textContent='Preparing the rooms…';$('progress').style.width='85%';await new Promise(r=>setTimeout(r,20));
  gltf.scene.updateMatrixWorld(true);const hide=new Set(data.hiddenObjects),batches=createSpatialBatcher({cellSize:6,floorHeight:2.8,minMaterialTriangles:20000,indexVertices:false}),materials=new Map();
  doors=new DoorMotion(scene,data.interactiveDoors);
  mirrors=roomMirrors(scene,data.mirrors);
  vegetation=new Vegetation(scene,{mobile:touch.enabled});
  // Trees stop at the building: every room's volume (0.15 m out for the walls) clips the canopy.
- vegetation.setClipBoxes((data.planRooms??[]).filter(r=>r.floor!==2&&r.polygon_m?.length>2).map(r=>{
-  const base=r.base_z??({'-1':-2.8,0:0,1:2.8,3:5.55}[r.floor]??0),xs=r.polygon_m.map(p=>p[0]),ys=r.polygon_m.map(p=>p[1]);
-  return [Math.min(...xs)-.15,Math.min(...ys)-.15,base-.1,Math.max(...xs)+.15,Math.max(...ys)+.15,base+(r.floor===3?2.4:2.75)];}));
+ vegetation.setClipBoxes(buildingClipBoxes(data));
  vegetation.ground=(x,y)=>nav?.groundHeight?nav.groundHeight(x,y):0;
  // The outside-bay cars stay separate objects so the "Cars" setting can drive them.
  const dynamicBays=new Set((data.proposalSite?.driveway_bay_bounds_m??[]).map(b=>b.id).filter(id=>data.life?.drive?.[id]));const carMeshes=new Map();
@@ -234,14 +282,18 @@ async function load(){
  $('exterior-walls').value=appearance.state.walls;$('exterior-roof').value=appearance.state.roof;
  function displayMaterial(material){
   const name=material.name;if(materials.has(name))return materials.get(name);
-  const mat=material.clone();const rgba=data.materials[name]||data.materials[name.replaceAll('_',' ')];if(rgba){mat.color.setRGB(...rgba.slice(0,3));mat.opacity=rgba[3];}mat.side=THREE.DoubleSide;
+  const mat=qualityMaterial(material,{mobile:touch.enabled});const rgba=data.materials[name]||data.materials[name.replaceAll('_',' ')];if(rgba){mat.color.setRGB(...rgba.slice(0,3));mat.opacity=rgba[3];}mat.side=THREE.DoubleSide;
+  if(mat.map)mat.map.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
   if(/Mirror/i.test(name)){mat.transparent=false;mat.opacity=1;mat.metalness=1;mat.roughness=.06;}
   else if(mat.transparent||mat.opacity<1||/Glazing|Glass/i.test(name)){mat.transparent=true;mat.depthWrite=false;mat.transmission=0;mat.roughness=.09;mat.metalness=0;mat.side=THREE.FrontSide;}
-  surfaceDetail(mat,name);appearance.register(mat,name);materials.set(name,mat);return mat;
+  surfaceDetail(mat,name);appearance.register(mat,name);finishQualityMaterial(mat);bakedDaylight?.attach(mat);materials.set(name,mat);return mat;
  }
  function isHidden(ob){for(let p=ob;p;p=p.parent)if(hide.has(p.userData.name||p.name))return true;return false;}
  gltf.scene.traverse(ob=>{
-  if(!ob.isMesh)return;stats.sourceMeshes++;const door=doors.owner(ob);if(!door&&isHidden(ob)){stats.hiddenMeshes++;return;}
+  if(!ob.isMesh)return;stats.sourceMeshes++;
+  const car=/^Proposal \| Compact car (\w+)(?: |$)/.exec(ob.userData.name||ob.name);
+  if(car&&vehicleBays&&(!vehicleBays.has(car[1])||vehicles.has(car[1])))return;
+  const door=doors.owner(ob);if(!door&&isHidden(ob)){stats.hiddenMeshes++;return;}
   // Foliage and site trees are rebuilt as realistic vegetation instead of being batched.
   {const vname=ob.userData.name||ob.name,vmat=(Array.isArray(ob.material)?ob.material[0]:ob.material).name,vk=!door&&vegetationClaims(vname,vmat);if(vk){vegetation.collect(vk,ob,vmat);stats.vegetationSources=(stats.vegetationSources||0)+1;return;}}
   const geom=ob.geometry.clone();geom.applyMatrix4(ob.matrixWorld);
@@ -253,13 +305,12 @@ async function load(){
   for(const attr of Object.keys(geom.attributes))if(!keep.includes(attr))geom.deleteAttribute(attr);
   const material=displayMaterial(sourceMaterial);
   if(door){doors.add(door,geom,material);return;}
-  const car=/^Proposal \| Compact car (\w+)/.exec(ob.userData.name||ob.name);
   if(car&&dynamicBays.has(car[1])){const list=carMeshes.get(car[1])??[];list.push({geometry:geom,material});carMeshes.set(car[1],list);return;}
   batches.add(geom,material,ob.userData.name||ob.name);
  });
  const staticBatches=batches.finish({disposeSources:true});appearanceBatches=staticBatches.meshes.filter(mesh=>mesh.material.userData.exteriorRole==='oak-detail');for(const mesh of staticBatches.meshes){mesh.visible=appearance.visible(mesh.material);scene.add(mesh);}stats.batches+=staticBatches.meshes.length;stats.spatial=staticBatches.stats;
  // Vegetation grows in after the tour opens; shadows are refreshed once it is in.
- {const t0=performance.now();vegetation.buildSite(STREET_DATA.siteTrees).then(async()=>{if(pendingStreetGroup){const g=pendingStreetGroup;pendingStreetGroup=null;await vegetation.buildStreet(STREET_DATA.trees,g);}stats.vegetation={...vegetation.stats,ms:Math.round(performance.now()-t0)};lighting.updateShadows();});}
+ {const t0=performance.now();vegetation.buildSite(STREET_DATA.siteTrees).then(async()=>{if(pendingStreetGroup){const g=pendingStreetGroup;pendingStreetGroup=null;await vegetation.buildStreet(STREET_DATA.trees,g);}stats.vegetation={...vegetation.stats,ms:Math.round(performance.now()-t0)};lighting.updateShadows();for(const vehicle of vehicles.values())captureVehicleReflections(renderer,scene,vehicle);});}
  if(data.approachSurface){
   const shape=new THREE.Shape(data.approachSurface.polygon.map(([x,y])=>new THREE.Vector2(x,y)));
   // Sit clear of the drive surface (top -0.02 m) so the two never z-fight.
@@ -275,6 +326,13 @@ async function load(){
    const group=carTemplateFromMeshes(meshes,obstacle.box,info.heading_radians);group.userData.lifeCar='Proposal | Compact car '+id;scene.add(group);stats.batches+=group.children.length;
    templates.set(id,{group,obstacle});
   }
+  stats.vehicles=[];
+  for(const [bay,vehicle] of vehicles){
+   const info=data.proposalSite.cars.find(c=>c.bay===bay),obstacle=data.obstacles.find(o=>o.name==='Proposal | Compact car '+bay);
+   vehicle.group.position.set(info.centre_m[0],nav?.groundHeight(info.centre_m[0],info.centre_m[1])??0,-info.centre_m[1]);vehicle.group.rotation.y=info.heading_radians;scene.add(vehicle.group);
+   if(data.life?.drive?.[bay])templates.set(bay,{...vehicle,obstacle});
+   stats.vehicles.push(vehicle.dimensions);
+  }
   life=new Life(data,{scene,doors,carTemplates:templates,mobile:touch.enabled});
   inspector=new Inspector({scene,camera,canvas,doors,life,data});
   for(const [id,{group}] of templates){const car=life.cars.find(c=>c.id===id);if(car)car.apply();else group.visible=true;}
@@ -283,7 +341,15 @@ async function load(){
  lighting.updateShadows();
  {const game=new WaveGame(data,{scene,camera,doors,mobile:touch.enabled,isActive:()=>active&&!flying&&pageFocused&&!document.hidden,onDeath:caught,onArm:()=>{if(easter.clock.arm(nav.position)){lighting.setActionMode(true);renderer.setPixelRatio(Math.min(devicePixelRatio,1.25));resize();easter.game.arm(nav.position);easter.game.updateHUD(easter.clock);}},onReset:()=>{easter?.clock.reset();lighting.setActionMode(false);renderer.setPixelRatio(Math.min(devicePixelRatio,touch.enabled?1.25:1.5));resize();},toast});easter={clock:new EasterSession(data),game,pursuit:game.horde};}
  // Static room batching and small moving hinge batches; the editable source keeps every separate object.
+ // Keep the passage shortcuts on the clearer route beside the relocated flight.
+ const courtyardOffset=(data.proposal?.specification?.courtyard?.upper_glazing_x??10.35)-10.35;
+ if(qualityVariant&&courtyardOffset>0&&!data.grandLoftStair)for(const room of data.rooms){
+  if(['proposal-new-loft-landing','proposal-original-loft-bridge'].includes(room.id))room.position=[room.position[0]+courtyardOffset,...room.position.slice(1)];
+ }
  const options=new Map();$('rooms').replaceChildren();
+ if(vehicles.size)data.rooms.push({id:'driveway-vehicles',label:'Driveway · vehicles',group:'Outside',position:[2,-7,-.009],direction:[-4,.7,0]});
+ const entrancePair=data.interactiveDoors.filter(d=>d.id.startsWith('Proposal | Entrance solid door '));
+ if(qualityVariant&&entrancePair.length===2){const [a,b]=entrancePair;data.rooms.push({id:'front-entrance-detail',label:'Front entrance',group:'Outside',position:[a.openingCenter[0]-2.1,(a.openingCenter[1]+b.openingCenter[1])/2,a.openingCenter[2]],direction:[1,0,-.14]});}
  for(const room of data.rooms){if(!options.has(room.group)){const group=document.createElement('optgroup');group.label=room.group;options.set(room.group,group);$('rooms').append(group);}const option=document.createElement('option');option.value=room.id;option.textContent=room.label;options.get(room.group).append(option);}
  $('rooms').disabled=false;ready=true;
  const roomParameter=new URLSearchParams(location.search).get('room');
@@ -297,8 +363,11 @@ async function load(){
  {$('design-switch').value=currentDesign;$('design-switch').disabled=false;$('flight-toggle').disabled=false;}
 $('start').disabled=false;$('drag').disabled=false;$('settings-toggle').disabled=false;$('start').textContent=flying?'Start flying':'Start walking';$('load-status').textContent=data.redesign?`${DESIGN_LABELS[currentDesign]} · ${data.redesign.group} · Concept`:currentDesign==='planning'?'Proposed (planning application) · House and forecourt':currentDesign==='proposed'?'Proposed · New wing · Loft · Pool':'Existing · Start at the gates · Both floors · Garden';$('progress').style.width='100%';document.body.classList.remove('loading');
  if(!active)start(false);   // straight into the model: no welcome card
+ reflections=roomReflections(renderer,scene,data.planRooms,{mobile:touch.enabled});lighting.info.roomReflections=reflections.info;
  // Exposed only for local validation / reproducible viewpoint screenshots.
- window.walkthrough={ready:true,stats,appearance,setExteriorAppearance,nav,data,doors,mirrors:mirrors.mirrors,camera,renderer,lighting:lighting.info,touch,easter,life,setLife,inspector,setInspect,inspectAt,goTo,setFlying,setStreetVisible,setView(p,d){touch.reset();nav.position={x:p[0],y:p[1],z:p[2]};setDirection(d);if(doors.snap(nav.position))lighting.updateShadows();syncCamera();updateMap();},getState(){return {...nav.position,yaw,pitch,active,flying,room:roomLabel(),streetContext:data.streetContext.enabled,calls:renderer.info.render.calls};},startDrag:()=>start(false)};
+ window.walkthrough={ready:true,toggleStructure,stats,appearance,setExteriorAppearance,nav,data,doors,mirrors:mirrors.mirrors,camera,renderer,lighting:lighting.info,touch,easter,life,setLife,inspector,setInspect,inspectAt,goTo,setFlying,setStreetVisible,setPresentation,setViewLens,setView(p,d){touch.reset();nav.position={x:p[0],y:p[1],z:p[2]};setDirection(d);if(doors.snap(nav.position))lighting.updateShadows();syncCamera();updateMap();},getState(){return {...nav.position,yaw,pitch,active,flying,presentation,viewLens,room:roomLabel(),streetContext:data.streetContext.enabled,calls:renderer.info.render.calls};},startDrag:()=>start(false)};
+ $('structure-toggle').hidden=currentDesign!=='proposed';$('structure-toggle').disabled=false;
+ if(currentDesign==='proposed'&&new URLSearchParams(location.search).has('structure'))await toggleStructure(true);
 }
 function frame(time){
  requestAnimationFrame(frame);const elapsed=Math.max(0,(time-lastTime)/1000),dt=Math.min(elapsed,.04);lastTime=time;
@@ -307,7 +376,7 @@ function frame(time){
   const running=active&&!document.hidden&&(!easter?.game.started||pageFocused);
   if(running&&renderBudget.sample(elapsed*1000,time)){resize();lighting.info.renderScale=renderBudget.scale;}
   if(!running)renderBudget.reset();
-  if(running){
+  if(running&&!structureDocument){
    const f=Number(keys.has('KeyW')||keys.has('ArrowUp'))-Number(keys.has('KeyS')||keys.has('ArrowDown'))+touch.axes.forward;
    const r=Number(keys.has('KeyD')||keys.has('ArrowRight'))-Number(keys.has('KeyA')||keys.has('ArrowLeft'))+touch.axes.right;
    if(flying){const vertical=Number(keys.has('KeyE'))-Number(keys.has('KeyQ'))+[...verticalPointers.values()].reduce((a,b)=>a+b,0);const before=nav.position;nav.position=flyPosition(data,nav.position,{forward:f,right:r,vertical,yaw,pitch,fast:keys.has('ShiftLeft')||keys.has('ShiftRight')||touch.sprinting,dt});
@@ -331,7 +400,14 @@ function frame(time){
   if(time-mapTime>160){updateMap();if(easter?.clock.phase==='chasing')$('chase-time').textContent=(running?'Keep moving':'Paused')+' · '+duration(easter.clock.survived);mapTime=time;}
  }
  if(localLights)localLights.update(camera,time);
- mirrors?.update(camera);
- lighting.render();
+ if(bakedDaylight&&ready&&!easter?.game.started){const exposure=flying?daylightSettings.exteriorExposure:bakedDaylight.exposures.get(roomLabel())??daylightSettings.exteriorExposure;renderer.toneMappingExposure+=(exposure-renderer.toneMappingExposure)*(1-Math.exp(-dt*2.8));lighting.info.exposure=renderer.toneMappingExposure;}
+ if(structureView?.enabled){structureView.render();}else{mirrors?.update(camera);lighting.render();}
+ if(ready&&!structureView?.enabled&&!easter?.game.started&&!document.hidden)reflections?.update(camera,time);
+ if(diagnostics&&ready&&!document.hidden&&elapsed>0){
+  const room=roomLabel();if(room!==diagnosticRoom){frameSamples.length=0;diagnosticRoom=room;diagnosticSince=time;}
+  if(time-diagnosticSince<3000||frameSamples.length>=120)return;
+  frameSamples.push(elapsed*1000);
+  if(frameSamples.length===120){const sorted=[...frameSamples].sort((a,b)=>a-b);console.info('VISUAL_QUALITY_QA',JSON.stringify({room,design:currentDesign,refinedObjects:stats.refinedObjects,bakedDaylight:lighting.info.bakedDaylight,reflections:reflections?.info,medianFrameMs:+sorted[60].toFixed(2),p95FrameMs:+sorted[114].toFixed(2),pixelRatio:renderer.getPixelRatio(),programs:renderer.info.programs.length,viewport:[canvas.clientWidth,canvas.clientHeight]}));}
+ }
 }
 load().catch(e=>{console.error(e);$('start').textContent='Try again';$('start').disabled=false;$('start').onclick=()=>location.reload();$('load-status').textContent='The house could not load. Check your connection and try again.';$('progress').style.width='0';});requestAnimationFrame(frame);

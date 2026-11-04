@@ -1,0 +1,16 @@
+import {chromium} from '../../walkthrough/node_modules/playwright/index.mjs';
+import {writeFile} from 'node:fs/promises';
+const out=new URL('../../walkthrough/test-results/structural-framing-mapping-2026-10-26/',import.meta.url).pathname;
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--use-angle=metal']});
+const page=await browser.newPage({viewport:{width:1600,height:1050}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:8765/structure/?element=M-LOFT-GALLERY-009');await page.waitForFunction(()=>window.structureStudio?.ready);
+await page.getByRole('button',{name:'All members',exact:true}).click();await page.selectOption('#level','3');
+await page.check('#context');await page.waitForFunction(()=>document.querySelector('#loading').hidden);
+await page.evaluate(()=>{const s=window.structureStudio;s.select('M-FR-3-025');s.camera.position.set(1,7,-1);s.controls.target.set(6,5.5,2);s.controls.update();});
+await page.locator('#cut').fill('6.25');await page.locator('#cut').dispatchEvent('input');
+await page.waitForTimeout(400);await page.screenshot({path:out+'13-eaves-receiver-roof-context.png'});
+await page.evaluate(()=>{const s=window.structureStudio;s.camera.position.set(2.5,6.1,0);s.controls.target.set(5.8,5.5,2);s.controls.update();});
+await page.waitForTimeout(400);await page.screenshot({path:out+'14-eaves-receiver-close.png'});
+await writeFile(out+'eaves-review.json',JSON.stringify({errors,cutHeight:6.25,selected:'M-FR-3-025',overlay:true},null,2));
+await browser.close();console.log(JSON.stringify({errors}));if(errors.length)process.exitCode=1;

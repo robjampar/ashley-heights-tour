@@ -64,22 +64,22 @@
   },
   "wingDormer": {
     "bounds": [
-      9.55,
+      7.395,
       -11.7,
       12.6,
       -2.929
     ],
     "ceiling_z": 7.64,
     "roof_top_z": 7.86,
-    "basis": "Compact variant: with the lower ridge the loft lives in one long flat-roofed dormer on the east slope, like the existing rear dormer: the studio at its south end, the passage past the loft flight along its north part, its back edge beside the ridge; owner: the dormer ROOF continues north over the loft bridge to the original front wall, and the loft glass simply rises straight above the landing's garden-facing glazing on the same line (x 10.35), floor to dormer ceiling 19 September: moved out 0.5 m with the upper east wall (front at x 12.6, back 95 mm east of the re-centred ridge so the flat roof still tucks under the slope) and its south end kept north of the hip start (y -11.78). Owner (21 September, evening): the flat dormer roof carries on along the ridge over the loft bridge, from the original front wall to the rear dormer, in the same style as the link, so the two dormers read as one flat cap. The link and its extension start on the main dormer's line (x 9.55, just east of the ridge) and tuck under the slope, so the ridge runs unbroken the whole length. Owner (22 September): the original ridge continues through between the passage cap and the rear dormer; the passage's east side is a plain wall with a door into the eaves store. 22 September: the dormer's north end and the link's south end follow the courtyard facade north to y -3.229. 22 September (later): the dormer's north end runs on to the eaves over the courtyard facade, so its flat roof meets the eaves and its north cheek is a straight wall there instead of a 0.3 m strip of pitched slate beyond it.",
+    "basis": "Owner approved 19 October 2026: rear flat cap follows offset ridge; its west edge stays 95 mm east of the ridge. Continuous flat-ceiling gallery at existing loft floor level.",
     "link_bounds": [
-      9.55,
+      7.395,
       -2.929,
-      10.35,
+      9.7,
       -0.115
     ],
     "link_extension": [
-      9.55,
+      7.395,
       -0.115,
       10.3,
       4.075
@@ -91,7 +91,8 @@
       ],
       "basis": "Owner (22 September): the loft passage's east side is a plain clad wall - the rear dormer's east cheek carried on south to the link's glazed face, flush with it (so the cap over the passage is 10.505 wide like the rear dormer) - with a low door at its north end into the eaves store under the retained original hip. The cap over the passage stops at 4.075 where the original south slope meets it, so the original ridge and its two slopes run through unbroken between the two flat dormers. 22 September (later): both store doors move 0.8 m north towards the dormer windows and run full height, stopping 100 mm below the ceiling (the west one follows the slope).",
       "head_gap_m": 0.1
-    }
+    },
+    "link_extension_east_m": 10.35
   },
   "wingLayout": {
     "utility_store": false,
@@ -429,7 +430,7 @@
       -0.85,
       0
     ],
-    "gym_north_y": -4.169,
+    "gym_north_y": -3.199,
     "gym_view": [
       11.7,
       -4.8,
@@ -528,19 +529,23 @@
       ]
     },
     "east_windows_basis": "Owner (22 September): the east external door goes - that elevation is windows only. The gym's south window matches the one beside it (2.0 x 1.8 m, sill 0.55).",
-    "garage_north_door_basis": "Owner (22 September, late): the garage's door into the house moves to the top of the basement stair - x 5.25-6.15 in the garage's north wall, opening from the garage onto the stair-head landing (x 5.16-6.2) beside the first tread; it swings into the garage."
+    "garage_north_door_basis": "Owner (22 September, late): the garage's door into the house moves to the top of the basement stair - x 5.25-6.15 in the garage's north wall, opening from the garage onto the stair-head landing (x 5.16-6.2) beside the first tread; it swings into the garage.",
+    "gym_west_north_y": -4.169,
+    "gym_expanded_courtyard": true
   },
   "newWingRoof": {
     "ridge": 8.05,
     "eave": 5.35,
-    "pitch_degrees": 29.7,
-    "basis": "Compact variant (owner): ridge at the existing ridge height, 8.05 m, running straight into it; eaves 5.35 m; with the upper east wall on the ground-floor line the span is 9.45 m and the pitch about 29.7 degrees Owner (22 September): the new east slope is not carried over the original house; the retained original south slope and east hip stay there and the loft passage crosses them under its flat cap, its east side a plain wall. (The west slope still continues over the original house to the ridge junction.) Owner (22 September): the west slope over the connector keeps the wing's eaves line (x 4.73, fascia continuous with the wing) instead of stepping back to the link's wall line at x 5.43, so the eaves overhang the west court's edge.",
+    "pitch_degrees": 46.41308179826092,
+    "basis": "Owner approved 19 October 2026: ridge shifts 2.155 m toward drive, at unchanged 8.05 m height. Plain front slope, rear flat cap and one-level loft gallery; no front dormer.",
     "keep_original_roof_east_of_passage": true,
-    "connector_west_eave_aligned": true
+    "connector_west_eave_aligned": true,
+    "ridge_x": 7.3,
+    "rear_pitch_degrees": 21.427120773614117
   },
   "loftStairX": [
-    9.35,
-    10.31
+    9.03,
+    10.28
   ],
   "loftStairFootY": -4.6,
   "loftPassageX": 11.92,
@@ -576,7 +581,7 @@
     ]
   },
   "loftStairRises": "north",
-  "loftStairBasis": "Owner (18 September): the loft flight turns round to rise north in front of the two large garden windows (the landing glazing and the loft glass above it, both on x 10.35), so the loft room keeps no stair void; its top lands on the bridge and the wing loft is reached along the gallery west of the well.",
+  "loftStairBasis": "Owner 17 October: broad central east-facing flight with a split landing and left/north and right/south upper flights, leading to the hobby bridge and loft suite.",
   "loftCeiling": 7.64,
   "rearDormer": [
     -1.665,
@@ -636,7 +641,34 @@
       "descends": "east",
       "basis": "Owner (21 September): a single straight flight against the garage wall instead of the dogleg in the middle of the gallery. 13 risers of 215 mm on 240 mm goings (pitch 41.9\u00b0, 2R+G 671 mm), descending east from x 5.30; the slab is cut only over the top ten treads (x 5.30\u20137.70), the last three treads and the landing run under it with 2.0 m headroom. The hall-to-garage door moves to the last metre of that wall (x 9.15\u201310.05). Below, the cinema moves south of the flight (still 5.1 m deep), the wine store beside it, the games room across the north. Owner (22 September): the flight moves 0.9 m forward (east) so there is a 0.9 m landing at the top between the wing's west wall and the first riser (x 5.30-6.20); the slab is cut over x 6.20-8.60. Below, the flight lands at x 9.08 and the cinema door moves to the cinema's east wall (hinged north, swinging in) because the north-wall door would now sit under the lower treads.",
       "cinema_door": "east"
-    }
+    },
+    "fullFootprintPolygon": [
+      [
+        4.93,
+        -16.306
+      ],
+      [
+        13.98,
+        -16.306
+      ],
+      [
+        13.98,
+        -3.029
+      ],
+      [
+        9.7,
+        -3.029
+      ],
+      [
+        9.7,
+        -4
+      ],
+      [
+        4.93,
+        -4
+      ]
+    ],
+    "fullFootprintBasis": "Owner 20 October 2026: extend the existing shell beneath the enlarged gym; retaining wall steps with the ground-floor outline. Keep the accepted cinema, bar island, seating and stair."
   },
   "sideWingCellar": false,
   "dormerWindows": {
@@ -757,19 +789,21 @@
       -2.53,
       -0.61
     ],
-    "ground_recess_m": 1.2,
+    "ground_recess_m": 0,
     "overhang_column": null,
     "overhang_column_basis": "Owner (22 September, late): the rendered column under the courtyard overhang's free corner is removed.",
-    "gallery_south_panel_to_corner": true,
+    "gallery_south_panel_to_corner": false,
     "gallery_south_panel_basis": "Owner (22 September, night): the internal garden gallery's south panel extends south (to the right, seen from the gallery) to the corner stub by the gym at the wing's north wall, closing the 1.08 m gap between them.",
-    "gallery_panes": 3,
-    "overhang_fascia": true,
+    "gallery_panes": 2,
+    "overhang_fascia": false,
     "gallery_glazing_y": [
-      -3.49,
+      -2.53,
       -0.61
     ],
     "north_opening_west_x": 5.64,
-    "overhang_basis": "Owner review (23 September): the courtyard overhang's edge is a rendered band flush with the upper wall from the soffit (2.51) to the first floor (2.80), along the courtyard and down the east corner where the ground wall is recessed; the old storey-edge strip on the former wall line is dropped. The ground-floor gallery glazing grows by one pane to its south (the left, seen from the courtyard): three 0.96 m panes, y -3.49 to -0.61. The wing's north ground wall no longer runs 0.4 m past the link glazing into the house (opening from x 5.64)."
+    "overhang_basis": "Owner 19 October 2026: enclose the former 1.2 m covered recess as additional gym space. North wall flush with first floor at y=-3.029; no covered loggia. Existing garden doors move with the wall.",
+    "upper_glazing_x": 9.7,
+    "upper_offset_basis": "Owner approved 19 October 2026: courtyard facade vertically flush at x=9.70 m. No upper projection."
   },
   "internalGarden": {
     "basis": "P5 owner request: open-to-sky garden immediately outside the retained original drawing-room bay. Complete bay window, masonry, roof and curtains retained. Former east anteroom no longer enclosed floor area. 22 September: south edge at y -3.029 (see courtyard); the ground-floor divider glass runs between the wing's wall and a solid north bay.",
@@ -922,5 +956,21 @@
   "oldFrontGardenGable": false,
   "removals_basis": "Owner (22 September, late): the pier at the east end of the north upper facade opening and the floating 'old front garden gable' wall head above the original front eaves are removed.",
   "review_22_sep_basis": "Owner-requested fit review (22 Sep 2026, night), found by scripts/audit_proposal_fit.py and checked in the tour: utility wall cupboards no longer hang in front of the utility window; the dressing room's east window moves 0.12 m south clear of its north partition; the loft suite and ensuite doors move 0.10 m west so they no longer finish in a 7 cm stub against the east wall; the rear garden glazing starts at the west return's face instead of inside it; the ground-floor east wall stops at the recessed courtyard face; the internal garden gallery glazing has three panes.",
-  "sideWingFrontSetback_m": 0.9
+  "sideWingFrontSetback_m": 0.9,
+  "loftStairOpeningStartOffsetM": 0.44,
+  "loftGrandStair": false,
+  "loftLevelStair": true,
+  "rearGardenRoomInset": {
+    "eastInsetM": 0.5,
+    "internalReturnM": 0.1,
+    "basis": "Owner 20 October follow-up: add 100 mm to the existing 400 mm east inset (500 mm total). Reduce the existing internal opening by 200 mm, giving a 100 mm masonry return past the previous aligned jamb detail for the glazing to meet."
+  },
+  "rearGardenRoomChamfer": {
+    "revision": "garden-corner-chamfer-2026-10-20",
+    "corner": "northeast garden-facing east corner",
+    "setbackAlongEachWallM": 2.0,
+    "carryThroughRoofTerrace": true,
+    "diagonalGlassPanes": 2,
+    "ownerApproval": "20 October: Yes, that corner and terrace"
+  }
 }

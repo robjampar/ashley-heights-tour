@@ -1,0 +1,129 @@
+{
+  "revision": "loft-dormer-alignment-2026-10-19",
+  "floorZ": 5.55,
+  "entryWallY": -3.22,
+  "opening": [
+    8.53,
+    9.55
+  ],
+  "bedroomPolygon": [
+    [
+      7.58,
+      -9.35
+    ],
+    [
+      12.42,
+      -9.35
+    ],
+    [
+      12.42,
+      -3.27
+    ],
+    [
+      8.55,
+      -3.27
+    ],
+    [
+      8.55,
+      -4.64
+    ],
+    [
+      7.3,
+      -4.64
+    ],
+    [
+      7.3,
+      -5.3
+    ],
+    [
+      7.58,
+      -5.3
+    ]
+  ],
+  "previousAreaM2": 19.118,
+  "areaM2": 28.283099999999997,
+  "wardrobe": [
+    10,
+    -3.86,
+    11.97,
+    -3.28
+  ],
+  "sourceWardrobe": [
+    9.3,
+    -6,
+    11.27,
+    -5.42
+  ],
+  "route": [
+    [
+      7.85,
+      -1,
+      5.55
+    ],
+    [
+      9.07,
+      -1,
+      5.55
+    ],
+    [
+      9.02,
+      -2.15,
+      5.55
+    ],
+    [
+      9.02,
+      -4.78,
+      5.55
+    ],
+    [
+      11.8,
+      -4.78,
+      5.55
+    ],
+    [
+      11.8,
+      -6.5,
+      5.55
+    ]
+  ],
+  "basis": "Owner: bedroom starts in line with the dormer and exterior glazing stays unchanged. The bedroom-side wall face aligns with the existing usable dormer room edge at y=-3.27; the roof outline remains y=-2.929. This keeps the complete frame behind the existing courtyard pier. Restore guarding along the returned public landing. Open the bathroom hip store into the low eaves by removing duplicated blocking partitions and cutting a real doorway beneath the taller roof. Preserve roof, exterior glazing and stair geometry.",
+  "dormerStartY": -2.929,
+  "eavesStore": {
+    "opening": [
+      7.8,
+      8.6
+    ],
+    "wallY": -11.605,
+    "floorZ": 5.55,
+    "doorHeadZ": 7.35,
+    "polygon": [
+      [
+        7.58,
+        -14.1
+      ],
+      [
+        12.42,
+        -14.1
+      ],
+      [
+        12.42,
+        -11.7
+      ],
+      [
+        7.58,
+        -11.7
+      ]
+    ],
+    "view": [
+      8.2,
+      -11.96,
+      5.55
+    ],
+    "direction": [
+      -0.05,
+      -1,
+      -0.3
+    ]
+  },
+  "dormerRoomStartY": -3.27
+}

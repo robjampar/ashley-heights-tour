@@ -1,0 +1,3927 @@
+{
+  "method": "Closed mesh solid intersection; >0.1 cm\u00b3 recorded, contact alone excluded.",
+  "scope": "All modelled steel against primary member/wall solids and masonry against masonry, across enabled option combinations. Excludes hangers/details, finishes, MEP and unknown retained structure.",
+  "intersections": [
+    {
+      "a": "M-SOLIDBRICK-B612C8A",
+      "b": "M-SOLIDBRICK-BE8BA1B",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 52254.37,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-SOLIDBRICK-B612C8A",
+      "b": "M-SOLIDBRICK-9756B4F",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 52254.37,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-SOLIDBRICK-BE8BA1B",
+      "b": "M-SOLIDBRICK-27A32C4",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 52254.37,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-SOLIDBRICK-7BF8FBB",
+      "b": "M-SOLIDBRICK-03AF281",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 52254.37,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-CA822FA",
+      "b": "M-BRICK-6AE62E9",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 27316.25,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-E27074F",
+      "b": "M-BRICK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 27316.25,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-30F9F1D",
+      "b": "M-BRICK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 27316.25,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-ACE846B",
+      "b": "M-BRICK-393739F",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26790.94,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-DDF9501",
+      "b": "M-BRICK-86ABFA0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26650.0,
+      "conditions": [],
+      "scopeOptions": [
+        "garage-rebuild"
+      ]
+    },
+    {
+      "a": "M-BRICK-21BC764",
+      "b": "M-BLOCK-DC23D41",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26650.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-6AE62E9",
+      "b": "M-BRICK-6085826",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26650.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-E27074F",
+      "b": "M-BLOCK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26650.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-E27074F",
+      "b": "M-BRICK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26650.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-30F9F1D",
+      "b": "M-BLOCK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26650.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-30F9F1D",
+      "b": "M-BRICK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26650.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-ACE846B",
+      "b": "M-BRICK-393739F",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26137.5,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-DDF9501",
+      "b": "M-BLOCK-86ABFA0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": [
+        "garage-rebuild"
+      ]
+    },
+    {
+      "a": "M-BLOCK-D7D3F41",
+      "b": "M-BLOCK-83B87A2",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": [
+        "garage-rebuild"
+      ]
+    },
+    {
+      "a": "M-BLOCK-99298BA",
+      "b": "M-BLOCK-A2CE383",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-31022CF",
+      "b": "M-BLOCK-5E34A88",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-21BC764",
+      "b": "M-BLOCK-DC23D41",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-0C22ABF",
+      "b": "M-BLOCK-7C51DD7",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-6AE62E9",
+      "b": "M-BLOCK-6085826",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-E27074F",
+      "b": "M-BLOCK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-30F9F1D",
+      "b": "M-BLOCK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 26000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-7C51DD7",
+      "b": "M-BLOCK-34AD690",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 25500.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-5F8239C",
+      "b": "M-BLOCK-6C1C856",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 25500.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-8D6690D",
+      "b": "M-BLOCK-D66056C",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 23800.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-B0E5352",
+      "b": "M-BLOCK-303DDFE",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 22173.55,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-8D5FD18",
+      "b": "M-BRICK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 21252.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-EF992A0",
+      "b": "M-BLOCK-46D1A49",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 16656.25,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-034",
+      "b": "M-INF-GALLERY-011",
+      "categories": [
+        "beams",
+        "joists"
+      ],
+      "overlapCm3": 13505.14,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-034",
+      "b": "M-L-74AF027",
+      "categories": [
+        "beams",
+        "lintels"
+      ],
+      "overlapCm3": 8670.94,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-4D5245A",
+      "b": "M-BLOCK-73B5665",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 6500.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-EFF93DC",
+      "b": "M-BRICK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4202.5,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-CF37F9E",
+      "b": "M-BRICK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4202.5,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-EFF93DC",
+      "b": "M-BLOCK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4100.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-EFF93DC",
+      "b": "M-BRICK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4100.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-CF37F9E",
+      "b": "M-BLOCK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4100.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-CF37F9E",
+      "b": "M-BRICK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4100.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-EFF93DC",
+      "b": "M-BLOCK-C697235",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-CF37F9E",
+      "b": "M-BLOCK-EF992A0",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 4000.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-B01",
+      "b": "M-BRICK-482F42F",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 3884.16,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RE10-001",
+      "categories": [
+        "beams",
+        "fascia"
+      ],
+      "overlapCm3": 3230.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-94203D5-RETURN",
+      "b": "M-BLOCK-C6BF46F",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 2655.57,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-D8AE497-RETURN",
+      "b": "M-BLOCK-5FCEC4D",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 2655.57,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-B0E5352",
+      "b": "M-BLOCK-98197AC",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 2500.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-C697235",
+      "b": "M-BRICK-085CF7C",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 2047.79,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-EF992A0",
+      "b": "M-BRICK-778E003",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 2047.79,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-030",
+      "b": "M-L-6BA8A41",
+      "categories": [
+        "beams",
+        "lintels"
+      ],
+      "overlapCm3": 2030.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-74BA850",
+      "b": "M-BLOCK-F9476C7",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 1620.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-005",
+      "b": "M-B01",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 1610.07,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-C697235",
+      "b": "M-BLOCK-B0E5352",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 1518.0,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-SP-7B164DE-01",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 1498.5,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-C697235",
+      "b": "M-BRICK-98197AC",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 1482.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-EF992A0",
+      "b": "M-BRICK-98197AC",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 1482.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-55BD12C",
+      "b": "M-BLOCK-4BFD394",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 1478.8,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF07-033",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 1203.36,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-94203D5-RETURN",
+      "b": "M-BLOCK-C6BF46F",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 1140.18,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-D8AE497-RETURN",
+      "b": "M-BLOCK-5FCEC4D",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 1140.18,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RE07-002",
+      "categories": [
+        "beams",
+        "fascia"
+      ],
+      "overlapCm3": 1118.02,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-B0E5352",
+      "b": "M-BLOCK-085CF7C",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 826.45,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-RC-FC244DE",
+      "categories": [
+        "beams",
+        "rc"
+      ],
+      "overlapCm3": 738.7,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-RC-3D10A2B",
+      "categories": [
+        "beams",
+        "rc"
+      ],
+      "overlapCm3": 738.7,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-SP-7CA3390-06",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 688.23,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-010",
+      "b": "M-LOFT-GALLERY-001",
+      "categories": [
+        "beams",
+        "joists"
+      ],
+      "overlapCm3": 655.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-C697235",
+      "b": "M-BRICK-085CF7C",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 618.49,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BRICK-EF992A0",
+      "b": "M-BRICK-778E003",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 618.49,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-019",
+      "b": "M-BRICK-6AE62E9",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 611.18,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-BRICK-C697235",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 519.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-BRICK-EF992A0",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 519.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-029",
+      "b": "M-BLOCK-7C51DD7",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 506.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-BLOCK-C697235",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 506.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-BLOCK-EF992A0",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 506.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BLOCK",
+      "b": "M-BLOCK-8D5FD18",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 506.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BLOCK",
+      "b": "M-L-291FC58",
+      "categories": [
+        "beams",
+        "lintels"
+      ],
+      "overlapCm3": 395.65,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-B01",
+      "b": "M-BLOCK-C697235",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 367.14,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-B01",
+      "b": "M-BLOCK-EF992A0",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 367.14,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-022",
+      "b": "M-EDGE-01",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 363.72,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-SP-7CA3390-01",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 316.17,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-011",
+      "b": "M-LOFT-GALLERY-001",
+      "categories": [
+        "beams",
+        "joists"
+      ],
+      "overlapCm3": 290.9,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-004",
+      "b": "M-GABLE-FLOOR-BRICK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 286.04,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-006",
+      "b": "M-GABLE-FLOOR-BRICK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 286.04,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-007",
+      "b": "M-GABLE-FLOOR-BLOCK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 276.86,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-018",
+      "b": "M-BLOCK-CA822FA",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 269.28,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-036",
+      "b": "M-BRICK-0C22ABF",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 256.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-036",
+      "b": "M-L-6BA8A41",
+      "categories": [
+        "beams",
+        "lintels"
+      ],
+      "overlapCm3": 248.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-TH-BCB82D8",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 235.98,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-TH-9DF0F75",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 222.6,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-B01",
+      "b": "M-BRICK-E27074F",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 214.2,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-B01",
+      "b": "M-BRICK-30F9F1D",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 214.2,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-029",
+      "b": "M-BLOCK-0C22ABF",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 208.08,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-02",
+      "b": "M-S-5824C1F-04",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 202.75,
+      "conditions": [
+        "loft-upgrade"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-RE09-003",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 200.85,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-002",
+      "b": "M-GABLE-FLOOR-BLOCK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 181.5,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-BRICK-34AD690",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 181.09,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-BLOCK-5F8239C",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 167.99,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-035",
+      "b": "M-BRICK-6AE62E9",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 164.22,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-SP-7C66638-02",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 162.35,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-02",
+      "b": "M-SP-5824C1F-02",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 162.05,
+      "conditions": [
+        "loft-upgrade"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-8B25BC7-01",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 154.25,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-S-A581FA9-01",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 149.34,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-018",
+      "b": "M-FR-1-019",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-026",
+      "b": "M-FR-1-027",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-026",
+      "b": "M-FR-1-033",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-029",
+      "b": "M-FR-1-036",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-030",
+      "b": "M-FR-1-036",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-034",
+      "b": "M-FR-1-035",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-034",
+      "b": "M-FR-1-036",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-FR-3-009",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-009",
+      "b": "M-FR-3-010",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-023",
+      "b": "M-FR-3-024",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-024",
+      "b": "M-FR-3-025",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 141.39,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-032",
+      "b": "M-GABLE-FLOOR-BLOCK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 129.03,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-019",
+      "b": "M-BRICK-CA822FA",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 128.44,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-035",
+      "b": "M-BRICK-6085826",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 128.44,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-SP-7C66638-04",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 126.52,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-019",
+      "b": "M-BLOCK-6085826",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 125.31,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-SP-C782849-02",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 124.4,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-72A9B1A-13",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 116.3,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-72A9B1A-12",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 116.3,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-003",
+      "b": "M-GABLE-FLOOR-BLOCK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 112.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BLOCK",
+      "b": "M-BLOCK-46D1A49",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 111.44,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-S-3137518-07",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 110.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-013",
+      "b": "M-FR-1-019",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-013",
+      "b": "M-FR-1-035",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-017",
+      "b": "M-FR-1-018",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-017",
+      "b": "M-FR-1-030",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-027",
+      "b": "M-FR-1-028",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-028",
+      "b": "M-FR-1-029",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-032",
+      "b": "M-FR-1-033",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-002",
+      "b": "M-FR-3-012",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-007",
+      "b": "M-FR-3-008",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-011",
+      "b": "M-FR-3-022",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-012",
+      "b": "M-FR-3-022",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-017",
+      "b": "M-FR-3-025",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 101.32,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-01",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-02",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-03",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-04",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-05",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-06",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-07",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-08",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-09",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-S-7CA3390-10",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 93.77,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-FR-3-005",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 92.41,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-FR-3-006",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 92.41,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-001",
+      "b": "M-FR-0-005",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 92.41,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-004",
+      "b": "M-FR-0-005",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 92.41,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-FR-0-011",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 92.41,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-FR-0-012",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 92.41,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-S-3137518-08",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 89.44,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-01",
+      "b": "M-BLOCK-74BA850",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 88.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-01",
+      "b": "M-BLOCK-55BD12C",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 88.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-030",
+      "b": "M-BLOCK-0C22ABF",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 85.68,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-BLOCK-34AD690",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 83.92,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-CD02A47-01",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-CD02A47-02",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-CD02A47-03",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-01",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-02",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-03",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-04",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-05",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-06",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-07",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-08",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-09",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-10",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-11",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-12",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-7B164DE-13",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 80.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-FR-3-011",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 78.73,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-FR-3-010",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 78.73,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-RE03-003",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 76.06,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-033",
+      "b": "M-BLOCK-5DC1382",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 73.95,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-030",
+      "b": "M-BLOCK-CA822FA",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 73.44,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-ACE846B",
+      "b": "M-BRICK-5DC1382",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 65.34,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RE07-003",
+      "categories": [
+        "beams",
+        "fascia"
+      ],
+      "overlapCm3": 55.28,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-010",
+      "b": "M-FR-3-023",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 54.7,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-S-FD3BB48-12",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 49.16,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-023",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-024",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-018",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-019",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-020",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-021",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-022",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-017",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-010",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-011",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-012",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-013",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-014",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-015",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF15-016",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 46.71,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-SP-3137518-02",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 44.75,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-LOFT-GALLERY-007",
+      "b": "M-EDGE-01",
+      "categories": [
+        "joists",
+        "beams"
+      ],
+      "overlapCm3": 44.58,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-LOFT-GALLERY-008",
+      "b": "M-EDGE-01",
+      "categories": [
+        "joists",
+        "beams"
+      ],
+      "overlapCm3": 44.58,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-LOFT-GALLERY-009",
+      "b": "M-EDGE-01",
+      "categories": [
+        "joists",
+        "beams"
+      ],
+      "overlapCm3": 44.58,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-LOFT-GALLERY-010",
+      "b": "M-EDGE-01",
+      "categories": [
+        "joists",
+        "beams"
+      ],
+      "overlapCm3": 44.58,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-LOFT-GALLERY-011",
+      "b": "M-EDGE-01",
+      "categories": [
+        "joists",
+        "beams"
+      ],
+      "overlapCm3": 44.58,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-LOFT-GALLERY-012",
+      "b": "M-EDGE-01",
+      "categories": [
+        "joists",
+        "beams"
+      ],
+      "overlapCm3": 44.58,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-LOFT-GALLERY-013",
+      "b": "M-EDGE-01",
+      "categories": [
+        "joists",
+        "beams"
+      ],
+      "overlapCm3": 44.58,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-030",
+      "b": "M-TW-INFILL-15",
+      "categories": [
+        "beams",
+        "studs"
+      ],
+      "overlapCm3": 43.61,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-012",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-013",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-014",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-015",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-016",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-017",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-018",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-020",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-021",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-022",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-019",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-023",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-024",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-025",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-027",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-028",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-026",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-029",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-030",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-031",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-032",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-033",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-034",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-035",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-036",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-042",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-047",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-048",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-049",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-050",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-051",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-037",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-038",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-039",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-040",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-041",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-043",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-044",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-045",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-RF12-046",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 42.19,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-SP-CD02A47-01",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 41.96,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-RE11-003",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 41.07,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-SP-8B25BC7-01",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 39.15,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-BLOCK-8D5FD18",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 38.25,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-BLOCK-393739F",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 36.97,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-012",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-011",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-013",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-014",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-015",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-016",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-010",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-017",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-018",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-019",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-020",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF04-021",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 36.89,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-001",
+      "b": "M-SP-A581FA9-02",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 31.64,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-SP-72A9B1A-01",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 31.63,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-S-01B0968-06",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 27.54,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-S-01B0968-07",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 27.54,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-S-01B0968-05",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 27.54,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-S-01B0968-04",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 27.54,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-008",
+      "b": "M-S-01B0968-03",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 27.54,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-030",
+      "b": "M-TW-P2-0",
+      "categories": [
+        "beams",
+        "studs"
+      ],
+      "overlapCm3": 25.65,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-030",
+      "b": "M-TW-P1-0",
+      "categories": [
+        "beams",
+        "studs"
+      ],
+      "overlapCm3": 25.65,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF17-011",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 23.96,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF13-009",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 23.2,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-GROUND-EAST-031",
+      "categories": [
+        "beams",
+        "joists"
+      ],
+      "overlapCm3": 22.73,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-0-005",
+      "b": "M-GROUND-WEST-033",
+      "categories": [
+        "beams",
+        "joists"
+      ],
+      "overlapCm3": 22.73,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BLOCK",
+      "b": "M-BRICK-C697235",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 20.91,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BLOCK",
+      "b": "M-BRICK-EF992A0",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 20.91,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-031",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-032",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-033",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-034",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-035",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-036",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-037",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-038",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-039",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-RF12-040",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 20.66,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BLOCK",
+      "b": "M-BLOCK-C697235",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 20.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BLOCK",
+      "b": "M-BLOCK-EF992A0",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 20.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-025",
+      "b": "M-SP-7CA3390-05",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 20.16,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-01",
+      "b": "M-ROOF-B-RIDGE",
+      "categories": [
+        "beams",
+        "beams"
+      ],
+      "overlapCm3": 18.74,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-3-024",
+      "b": "M-BLOCK-34AD690",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 18.43,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-009",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-011",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-013",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-012",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-010",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-004",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-002",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-006",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-001",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-007",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-005",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-003",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RF10-008",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-029",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-031",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-028",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-027",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RE10-007",
+      "categories": [
+        "beams",
+        "fascia"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-030",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-019",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-018",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-021",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-020",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-023",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-022",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-026",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-025",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-024",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-015",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-016",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-014",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-ROOF-B-RIDGE",
+      "b": "M-RF10-017",
+      "categories": [
+        "beams",
+        "rafters"
+      ],
+      "overlapCm3": 17.21,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-018",
+      "b": "M-L-6BA8A41",
+      "categories": [
+        "beams",
+        "lintels"
+      ],
+      "overlapCm3": 16.2,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-CANT-GALLERY-BEARING",
+      "b": "M-S-A6681C6-01",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 13.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-CANT-GALLERY-BEARING",
+      "b": "M-S-A6681C6-02",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 13.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-CANT-GALLERY-BEARING",
+      "b": "M-S-A6681C6-03",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 13.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-CANT-GALLERY-BEARING",
+      "b": "M-S-9D75875-01",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 13.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-CANT-GALLERY-BEARING",
+      "b": "M-S-9D75875-02",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 13.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-CANT-GALLERY-BEARING",
+      "b": "M-S-9D75875-03",
+      "categories": [
+        "beams",
+        "framing-review"
+      ],
+      "overlapCm3": 13.76,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-01",
+      "b": "M-S-442F4C8-07",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 12.94,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-01",
+      "b": "M-SP-442F4C8-02",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 12.94,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-02",
+      "b": "M-S-442F4C8-07",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 12.94,
+      "conditions": [
+        "loft-upgrade"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-HIP-FLOOR-BEARING-02",
+      "b": "M-SP-442F4C8-02",
+      "categories": [
+        "beams",
+        "partitions"
+      ],
+      "overlapCm3": 12.94,
+      "conditions": [
+        "loft-upgrade"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-004",
+      "b": "M-GABLE-FLOOR-BLOCK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 9.18,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-006",
+      "b": "M-GABLE-FLOOR-BLOCK",
+      "categories": [
+        "trimmers",
+        "beams"
+      ],
+      "overlapCm3": 9.18,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-GABLE-FLOOR-BRICK",
+      "b": "M-RE11-002",
+      "categories": [
+        "beams",
+        "fascia"
+      ],
+      "overlapCm3": 7.17,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-FR-1-029",
+      "b": "M-L-6BA8A41",
+      "categories": [
+        "beams",
+        "lintels"
+      ],
+      "overlapCm3": 5.4,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-C697235",
+      "b": "M-BRICK-98197AC",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 2.2,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-BLOCK-EF992A0",
+      "b": "M-BRICK-98197AC",
+      "categories": [
+        "masonry",
+        "masonry"
+      ],
+      "overlapCm3": 2.2,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-EDGE-01",
+      "b": "M-BRICK-36EE5E4",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 2.08,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-CANT-GALLERY-BEARING",
+      "b": "M-BRICK-36EE5E4",
+      "categories": [
+        "beams",
+        "masonry"
+      ],
+      "overlapCm3": 1.96,
+      "conditions": [],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RE18-001",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 0.73,
+      "conditions": [
+        "roof-rebuild"
+      ],
+      "scopeOptions": []
+    },
+    {
+      "a": "M-RIDGE-02",
+      "b": "M-RE04-003",
+      "categories": [
+        "beams",
+        "trimmers"
+      ],
+      "overlapCm3": 0.39,
+      "conditions": [],
+      "scopeOptions": []
+    }
+  ],
+  "invalidSolids": [],
+  "counts": {
+    "beams / trimmers": 33,
+    "beams / beams": 15,
+    "beams / masonry": 37,
+    "beams / lintels": 6,
+    "beams / studs": 3,
+    "beams / joists": 12,
+    "beams / partitions": 38,
+    "beams / rafters": 111,
+    "beams / framing-review": 26,
+    "beams / rc": 2,
+    "beams / fascia": 5,
+    "masonry / masonry": 58
+  }
+}

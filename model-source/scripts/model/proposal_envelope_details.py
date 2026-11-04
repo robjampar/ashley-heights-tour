@@ -50,7 +50,7 @@ _roof_cap('Proposal | West elevation north eaves closure',[wx,_eby1],[wx,ny],5.3
 _roof_cap('Proposal | East elevation eaves closure',[ex,sy],[ex,nyc],5.35,.23,white)
 _roof_cap('Proposal | South elevation eaves closure',[wx,sy],[ex,sy],5.35,.23,white)
 _roof_cap('Proposal | North west elevation closure',[wx,ny],[7.45,ny],5.35,.23,white)
-_roof_cap('Proposal | North east elevation closure',[float(_cye.get('west_x',10.35)),nyc],[ex,nyc],5.35,.23,white)
+_roof_cap('Proposal | North east elevation closure',[float(_cye.get('upper_glazing_x',_cye.get('west_x',10.35))),nyc],[ex,nyc],5.35,.23,white)
 # Upper entrance glass follows the real pitched lining, in the same plane as
 # the tall glazing below. Owner: above the door-head transom the glazing is
 # two trapezoid panes meeting at the ridge, with no mullions rising from the

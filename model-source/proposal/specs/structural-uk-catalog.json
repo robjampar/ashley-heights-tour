@@ -1,0 +1,724 @@
+{
+  "source": "James Jones JJI technical manual, Table 16, printed page 28 (PDF page 15), November 2023 edition currently linked by supplier; retrieved 26 October 2026",
+  "columns": [
+    "g1.35-400",
+    "g1.35-480",
+    "g1.35-600",
+    "g0.75-400",
+    "g0.75-480",
+    "g0.75-600"
+  ],
+  "joists": [
+    {
+      "name": "JJI 195A+",
+      "depthMm": 195,
+      "spansMm": [
+        3621,
+        3372,
+        3086,
+        4024,
+        3768,
+        3459
+      ]
+    },
+    {
+      "name": "JJI 220A+",
+      "depthMm": 220,
+      "spansMm": [
+        4012,
+        3740,
+        3427,
+        4318,
+        4152,
+        3834
+      ]
+    },
+    {
+      "name": "JJI 220B+",
+      "depthMm": 220,
+      "spansMm": [
+        4493,
+        4183,
+        3826,
+        4724,
+        4542,
+        4292
+      ]
+    },
+    {
+      "name": "JJI 220C",
+      "depthMm": 220,
+      "spansMm": [
+        4669,
+        4345,
+        3970,
+        4871,
+        4683,
+        4459
+      ]
+    },
+    {
+      "name": "JJI 220D",
+      "depthMm": 220,
+      "spansMm": [
+        5182,
+        4815,
+        4391,
+        5297,
+        5093,
+        4890
+      ]
+    },
+    {
+      "name": "JJI 235A+",
+      "depthMm": 235,
+      "spansMm": [
+        4228,
+        3944,
+        3615,
+        4477,
+        4305,
+        4042
+      ]
+    },
+    {
+      "name": "JJI 235B+",
+      "depthMm": 235,
+      "spansMm": [
+        4728,
+        4405,
+        4031,
+        4890,
+        4702,
+        4514
+      ]
+    },
+    {
+      "name": "JJI 235C",
+      "depthMm": 235,
+      "spansMm": [
+        4919,
+        4580,
+        4188,
+        5046,
+        4852,
+        4658
+      ]
+    },
+    {
+      "name": "JJI 235D",
+      "depthMm": 235,
+      "spansMm": [
+        5462,
+        5078,
+        4635,
+        5488,
+        5277,
+        5066
+      ]
+    },
+    {
+      "name": "JJI 240A+",
+      "depthMm": 240,
+      "spansMm": [
+        4299,
+        4010,
+        3677,
+        4528,
+        4354,
+        4109
+      ]
+    },
+    {
+      "name": "JJI 240B+",
+      "depthMm": 240,
+      "spansMm": [
+        4801,
+        4474,
+        4095,
+        4941,
+        4751,
+        4561
+      ]
+    },
+    {
+      "name": "JJI 240C",
+      "depthMm": 240,
+      "spansMm": [
+        5000,
+        4656,
+        4259,
+        5102,
+        4906,
+        4711
+      ]
+    },
+    {
+      "name": "JJI 240D",
+      "depthMm": 240,
+      "spansMm": [
+        5551,
+        5167,
+        4717,
+        5551,
+        5338,
+        5125
+      ]
+    },
+    {
+      "name": "JJI 245A+",
+      "depthMm": 245,
+      "spansMm": [
+        4368,
+        4076,
+        3737,
+        4579,
+        4403,
+        4176
+      ]
+    },
+    {
+      "name": "JJI 245B+",
+      "depthMm": 245,
+      "spansMm": [
+        4873,
+        4541,
+        4157,
+        4991,
+        4799,
+        4607
+      ]
+    },
+    {
+      "name": "JJI 245C",
+      "depthMm": 245,
+      "spansMm": [
+        5081,
+        4732,
+        4330,
+        5158,
+        4960,
+        4762
+      ]
+    },
+    {
+      "name": "JJI 245D",
+      "depthMm": 245,
+      "spansMm": [
+        5615,
+        5255,
+        4798,
+        5615,
+        5399,
+        5184
+      ]
+    },
+    {
+      "name": "JJI 300A+",
+      "depthMm": 300,
+      "spansMm": [
+        5116,
+        4783,
+        4393,
+        5116,
+        4919,
+        4723
+      ]
+    },
+    {
+      "name": "JJI 300B+",
+      "depthMm": 300,
+      "spansMm": [
+        5529,
+        5278,
+        4841,
+        5529,
+        5316,
+        5104
+      ]
+    },
+    {
+      "name": "JJI 300C",
+      "depthMm": 300,
+      "spansMm": [
+        5752,
+        5531,
+        5085,
+        5752,
+        5531,
+        5310
+      ]
+    },
+    {
+      "name": "JJI 300D",
+      "depthMm": 300,
+      "spansMm": [
+        6286,
+        6044,
+        5673,
+        6286,
+        6044,
+        5803
+      ]
+    },
+    {
+      "name": "JJI 350A+",
+      "depthMm": 350,
+      "spansMm": [
+        5519,
+        5307,
+        4905,
+        5519,
+        5307,
+        5095
+      ]
+    },
+    {
+      "name": "JJI 350B+",
+      "depthMm": 350,
+      "spansMm": [
+        5920,
+        5692,
+        5360,
+        5920,
+        5692,
+        5465
+      ]
+    },
+    {
+      "name": "JJI 350C",
+      "depthMm": 350,
+      "spansMm": [
+        6287,
+        6045,
+        5780,
+        6287,
+        6045,
+        5804
+      ]
+    },
+    {
+      "name": "JJI 350D",
+      "depthMm": 350,
+      "spansMm": [
+        6817,
+        6555,
+        6293,
+        6817,
+        6555,
+        6293
+      ]
+    },
+    {
+      "name": "JJI 400D",
+      "depthMm": 400,
+      "spansMm": [
+        7260,
+        6981,
+        6703,
+        7260,
+        6981,
+        6703
+      ]
+    }
+  ],
+  "steel": [
+    {
+      "name": "203x133x30",
+      "kgPerM": 30.0,
+      "depthMm": 206.8,
+      "widthMm": 133.9,
+      "webMm": 6.4,
+      "flangeMm": 9.6,
+      "rootMm": 7.6,
+      "flatWebMm": 172.4,
+      "ImajorCm4": 2896,
+      "WelMajorCm3": 280
+    },
+    {
+      "name": "254x146x31",
+      "kgPerM": 31.1,
+      "depthMm": 251.4,
+      "widthMm": 146.1,
+      "webMm": 6.0,
+      "flangeMm": 8.6,
+      "rootMm": 7.6,
+      "flatWebMm": 219.0,
+      "ImajorCm4": 4413,
+      "WelMajorCm3": 351
+    },
+    {
+      "name": "305x165x40",
+      "kgPerM": 40.3,
+      "depthMm": 303.4,
+      "widthMm": 165.0,
+      "webMm": 6.0,
+      "flangeMm": 10.2,
+      "rootMm": 8.9,
+      "flatWebMm": 265.2,
+      "ImajorCm4": 8503,
+      "WelMajorCm3": 560
+    },
+    {
+      "name": "356x171x51",
+      "kgPerM": 51.0,
+      "depthMm": 355.0,
+      "widthMm": 171.5,
+      "webMm": 7.4,
+      "flangeMm": 11.5,
+      "rootMm": 12.7,
+      "flatWebMm": 306.6,
+      "ImajorCm4": 14265,
+      "WelMajorCm3": 804
+    },
+    {
+      "name": "406x178x60",
+      "kgPerM": 60.1,
+      "depthMm": 406.4,
+      "widthMm": 177.9,
+      "webMm": 7.9,
+      "flangeMm": 12.8,
+      "rootMm": 12.7,
+      "flatWebMm": 355.4,
+      "ImajorCm4": 21767,
+      "WelMajorCm3": 1071
+    },
+    {
+      "name": "457x191x67",
+      "kgPerM": 67.1,
+      "depthMm": 453.4,
+      "widthMm": 189.9,
+      "webMm": 8.5,
+      "flangeMm": 12.7,
+      "rootMm": 12.7,
+      "flatWebMm": 402.6,
+      "ImajorCm4": 29597,
+      "WelMajorCm3": 1306
+    }
+  ],
+  "lintels": [
+    {
+      "lengthMm": 750,
+      "swlKN": 15
+    },
+    {
+      "lengthMm": 900,
+      "swlKN": 15
+    },
+    {
+      "lengthMm": 1050,
+      "swlKN": 15
+    },
+    {
+      "lengthMm": 1200,
+      "swlKN": 15
+    },
+    {
+      "lengthMm": 1350,
+      "swlKN": 15
+    },
+    {
+      "lengthMm": 1500,
+      "swlKN": 15
+    },
+    {
+      "lengthMm": 1650,
+      "swlKN": 18
+    },
+    {
+      "lengthMm": 1800,
+      "swlKN": 18
+    },
+    {
+      "lengthMm": 1950,
+      "swlKN": 20
+    },
+    {
+      "lengthMm": 2100,
+      "swlKN": 20
+    },
+    {
+      "lengthMm": 2250,
+      "swlKN": 22
+    },
+    {
+      "lengthMm": 2400,
+      "swlKN": 22
+    },
+    {
+      "lengthMm": 2550,
+      "swlKN": 26
+    },
+    {
+      "lengthMm": 2700,
+      "swlKN": 26
+    },
+    {
+      "lengthMm": 2850,
+      "swlKN": 26
+    },
+    {
+      "lengthMm": 3000,
+      "swlKN": 26
+    },
+    {
+      "lengthMm": 3300,
+      "swlKN": 26
+    },
+    {
+      "lengthMm": 3600,
+      "swlKN": 26
+    }
+  ],
+  "coordinationSteel": [
+    {
+      "name": "152x152x23",
+      "kgPerM": 23,
+      "depthMm": 152.4,
+      "widthMm": 152.2,
+      "webMm": 5.8,
+      "flangeMm": 6.8,
+      "rootMm": 7.6,
+      "flatWebMm": 123.6,
+      "ImajorCm4": 1250,
+      "WelMajorCm3": 164,
+      "IminorCm4": 400,
+      "areaCm2": 29.2,
+      "family": "UC"
+    },
+    {
+      "name": "254x254x73",
+      "kgPerM": 73.1,
+      "depthMm": 254.1,
+      "widthMm": 254.6,
+      "webMm": 8.6,
+      "flangeMm": 14.2,
+      "rootMm": 20,
+      "flatWebMm": 185.7,
+      "ImajorCm4": 11643,
+      "WelMajorCm3": 916,
+      "IminorCm4": 3910,
+      "areaCm2": 95.2,
+      "family": "UC"
+    },
+    {
+      "name": "254x254x89",
+      "kgPerM": 88.9,
+      "depthMm": 260.3,
+      "widthMm": 256.3,
+      "webMm": 10.3,
+      "flangeMm": 17.3,
+      "rootMm": 20,
+      "flatWebMm": 185.7,
+      "ImajorCm4": 14504,
+      "WelMajorCm3": 1114,
+      "IminorCm4": 4860,
+      "areaCm2": 115,
+      "family": "UC"
+    },
+    {
+      "name": "254x254x132",
+      "kgPerM": 132,
+      "depthMm": 276.3,
+      "widthMm": 261.3,
+      "webMm": 15.3,
+      "flangeMm": 25.3,
+      "rootMm": 20,
+      "flatWebMm": 185.7,
+      "ImajorCm4": 22765,
+      "WelMajorCm3": 1648,
+      "IminorCm4": 7535,
+      "areaCm2": 170,
+      "family": "UC"
+    },
+    {
+      "name": "254x254x167",
+      "kgPerM": 167.1,
+      "depthMm": 289.1,
+      "widthMm": 265.2,
+      "webMm": 19.2,
+      "flangeMm": 31.7,
+      "rootMm": 20,
+      "flatWebMm": 185.7,
+      "ImajorCm4": 30234,
+      "WelMajorCm3": 2092,
+      "IminorCm4": 9875,
+      "areaCm2": 215,
+      "family": "UC"
+    },
+    {
+      "name": "305x305x97",
+      "kgPerM": 96.9,
+      "depthMm": 307.9,
+      "widthMm": 305.3,
+      "webMm": 9.9,
+      "flangeMm": 15.4,
+      "rootMm": 20,
+      "flatWebMm": 237.1,
+      "ImajorCm4": 22504,
+      "WelMajorCm3": 1462,
+      "IminorCm4": 7310,
+      "areaCm2": 125,
+      "family": "UC"
+    },
+    {
+      "name": "305x305x129",
+      "kgPerM": 129,
+      "depthMm": 318,
+      "widthMm": 308,
+      "webMm": 13.1,
+      "flangeMm": 20.6,
+      "rootMm": 20,
+      "flatWebMm": 236.8,
+      "ImajorCm4": 31035,
+      "WelMajorCm3": 1952,
+      "IminorCm4": 10041,
+      "areaCm2": 167,
+      "family": "UC"
+    },
+    {
+      "name": "305x305x198",
+      "kgPerM": 198.1,
+      "depthMm": 339.9,
+      "widthMm": 314.5,
+      "webMm": 19.1,
+      "flangeMm": 31.4,
+      "rootMm": 20,
+      "flatWebMm": 237.1,
+      "ImajorCm4": 51159,
+      "WelMajorCm3": 3010,
+      "IminorCm4": 16303,
+      "areaCm2": 254,
+      "family": "UC"
+    },
+    {
+      "name": "305x305x240",
+      "kgPerM": 240,
+      "depthMm": 352.5,
+      "widthMm": 318.4,
+      "webMm": 23,
+      "flangeMm": 37.7,
+      "rootMm": 20,
+      "flatWebMm": 237.1,
+      "ImajorCm4": 64458,
+      "WelMajorCm3": 3657,
+      "IminorCm4": 20319,
+      "areaCm2": 307,
+      "family": "UC"
+    },
+    {
+      "name": "356x368x153",
+      "kgPerM": 152.9,
+      "depthMm": 362,
+      "widthMm": 370.5,
+      "webMm": 12.3,
+      "flangeMm": 20.7,
+      "rootMm": 20,
+      "flatWebMm": 280.6,
+      "ImajorCm4": 48935,
+      "WelMajorCm3": 2704,
+      "IminorCm4": 17556,
+      "areaCm2": 196,
+      "family": "UC"
+    },
+    {
+      "name": "356x368x177",
+      "kgPerM": 177,
+      "depthMm": 368.2,
+      "widthMm": 372.6,
+      "webMm": 14.4,
+      "flangeMm": 23.8,
+      "rootMm": 20,
+      "flatWebMm": 280.6,
+      "ImajorCm4": 57464,
+      "WelMajorCm3": 3121,
+      "IminorCm4": 20532,
+      "areaCm2": 227,
+      "family": "UC"
+    },
+    {
+      "name": "305x305x107",
+      "kgPerM": 107,
+      "depthMm": 311,
+      "widthMm": 306,
+      "webMm": 10.9,
+      "flangeMm": 17,
+      "rootMm": 20,
+      "flatWebMm": 237,
+      "ImajorCm4": 25055,
+      "WelMajorCm3": 1611,
+      "IminorCm4": 8125,
+      "areaCm2": 138,
+      "family": "UC"
+    },
+    {
+      "name": "305x165x54",
+      "family": "UB",
+      "kgPerM": 54.0,
+      "depthMm": 310.4,
+      "widthMm": 166.9,
+      "webMm": 7.9,
+      "flangeMm": 13.7,
+      "rootMm": 8.9,
+      "flatWebMm": 265.2,
+      "ImajorCm4": 11696,
+      "WelMajorCm3": 754,
+      "source": "https://www.britishsteel.co.uk/wp-content/uploads/2026/02/british-steel-universal-beams-datasheet-190724.pdf",
+      "retrievedOn": "2026-10-27"
+    },
+    {
+      "name": "356x171x57",
+      "family": "UB",
+      "kgPerM": 57.0,
+      "depthMm": 358.0,
+      "widthMm": 172.2,
+      "webMm": 8.1,
+      "flangeMm": 13.0,
+      "rootMm": 12.7,
+      "flatWebMm": 306.6,
+      "ImajorCm4": 16168,
+      "WelMajorCm3": 903,
+      "source": "https://www.britishsteel.co.uk/wp-content/uploads/2026/02/british-steel-universal-beams-datasheet-190724.pdf",
+      "retrievedOn": "2026-10-27"
+    },
+    {
+      "name": "356x171x67",
+      "family": "UB",
+      "kgPerM": 67.1,
+      "depthMm": 363.4,
+      "widthMm": 173.2,
+      "webMm": 9.1,
+      "flangeMm": 15.7,
+      "rootMm": 12.7,
+      "flatWebMm": 306.6,
+      "ImajorCm4": 19592,
+      "WelMajorCm3": 1078,
+      "source": "https://www.britishsteel.co.uk/wp-content/uploads/2026/02/british-steel-universal-beams-datasheet-190724.pdf",
+      "retrievedOn": "2026-10-27"
+    },
+    {
+      "name": "356x368x196",
+      "kgPerM": 196,
+      "depthMm": 372,
+      "widthMm": 374,
+      "webMm": 16.4,
+      "flangeMm": 26.2,
+      "rootMm": 20,
+      "flatWebMm": 279.6,
+      "ImajorCm4": 63988,
+      "WelMajorCm3": 3440,
+      "IminorCm4": 22861,
+      "areaCm2": 252,
+      "family": "UC",
+      "source": "British Steel Universal columns datasheet, dimensions p3 and properties p4, retrieved 28 October 2026",
+      "sourceURL": "https://www.britishsteel.co.uk/wp-content/uploads/2026/02/british-steel-universal-columns-datasheet-100723.pdf"
+    }
+  ],
+  "coordinationSteelSource": {
+    "title": "British Steel universal columns \u2014 dimensions and properties",
+    "url": "https://www.britishsteel.co.uk/wp-content/uploads/2026/02/british-steel-universal-columns-datasheet-100723.pdf",
+    "pages": "PDF pages 1\u20132",
+    "retrieved": "2026-10-27",
+    "scope": "Supplementary section shortlist for depth / load-path comparisons. Does not change the earlier UK-T01 UB shortlist."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "revision": "UK01-2026-10-28",
+  "status": "Experimental smaller-section proposal; Building Regulations compliance not demonstrated",
+  "approvedForConstruction": false,
+  "buildingRegulationsCompliance": "not-demonstrated",
+  "basis": "UK first-generation Eurocode gravity combinations, 1.35 Gk + 1.50 Qk for the modelled adverse floor action; S355 grade with thickness-dependent yield strength. Member sizes remain preliminary. No safety factor has been reduced.",
+  "references": [
+    "https://www.gov.uk/government/publications/structure-approved-document-a",
+    "https://steelconstruction.info/topics/design/design-codes-and-standards",
+    "https://www.steelconstruction.info/images/0/0d/SCI_P449.pdf"
+  ],
+  "outstanding": [
+    "Confirm actual permanent loads, partition positions, concentrated floor loads and every roof reaction; floor-only calculations do not verify roof support.",
+    "Check lateral-torsional stability and design compression-flange and end restraint, including construction stages.",
+    "Assess whole-floor vibration, deflection of flexible receiving supports and cumulative movement across connected beams and joists.",
+    "Agree movement limits and installation sequence with the ceiling, partition, glazing and floor-finish designs; 20 mm is an assumed coordination target, not a regulatory allowance.",
+    "Design steel joints, joist connections, web bearing/stiffeners, padstones and local masonry eccentricity and compression.",
+    "Verify the complete load path, wall stability, foundations, ground conditions and fire protection before construction."
+  ],
+  "members": {
+    "M-FR-3-001": {
+      "section": "305x305x129",
+      "previousSection": "356x368x196",
+      "role": "Internal loft floor cross-beam over the open suite",
+      "serviceability": {
+        "id": "UK01-floor-assumption",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 250,
+        "totalAbsoluteMm": 20,
+        "verifiedForAssembly": false,
+        "basis": "Variable-action L/360 follows the UK NA suggested limit for beams carrying brittle finishes. Total min(L/250,20 mm) is a provisional project target for this floor-only comparison, not a statutory rule or permission for 20 mm movement at finishes. Retain hold until cumulative movement, vibration and finishes are checked."
+      }
+    },
+    "M-FR-3-010": {
+      "section": "305x305x129",
+      "previousSection": "305x305x198",
+      "role": "North loft floor transfer; roof and glazing reactions unresolved",
+      "serviceability": {
+        "id": "UK01-floor-assumption",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 250,
+        "totalAbsoluteMm": 20,
+        "verifiedForAssembly": false,
+        "basis": "Provisional floor-only min(L/250,20 mm) total and L/360 variable check. If the receiver carries roof, facade or glazing loads, confirm those actions and adopt their movement limits before accepting this section; the floor-only result does not authorise that use."
+      }
+    },
+    "M-CJ01-GROUND-HEAD": {
+      "section": "305x165x40",
+      "previousSection": "356x171x51",
+      "role": "Wide ground-floor opening head below the first-floor joists",
+      "serviceability": {
+        "id": "UK01-retained-tight-target",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 360,
+        "totalAbsoluteMm": 10,
+        "verifiedForAssembly": false,
+        "basis": "Retain the previous min(L/360,10 mm) total project target. The reduced section is checked against the same modelled gravity assumptions; complete loading, restraint, connections and finishes remain unverified."
+      }
+    },
+    "M-GABLE-FLOOR-BLOCK": {
+      "section": "305x305x97",
+      "previousSection": "305x305x129",
+      "role": "West wall transfer carrying the loft cross-beam end reaction",
+      "serviceability": {
+        "id": "UK01-retained-tight-target",
+        "variableSpanDivisor": 360,
+        "totalSpanDivisor": 360,
+        "totalAbsoluteMm": 10,
+        "verifiedForAssembly": false,
+        "basis": "Retain min(L/360,10 mm) total for the wall-carrying transfer. The masonry/roof line-load budgets remain assumptions; actual wall and roof reactions, bearing eccentricity and crack control must be established."
+      }
+    }
+  }
+}

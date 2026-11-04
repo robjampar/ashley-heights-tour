@@ -1,0 +1,215 @@
+{
+  "revision": "terrace-lounge-west-suite-2026-10-23",
+  "floorZ": 2.8,
+  "westBedroom": [
+    -5.065,
+    3.88,
+    -0.115,
+    8.705
+  ],
+  "westDressing": [
+    -2.82,
+    1.015,
+    -0.115,
+    3.76
+  ],
+  "westBathroom": [
+    -5.065,
+    1.015,
+    -2.94,
+    3.76
+  ],
+  "originalBedroom": [
+    0.115,
+    0.115,
+    4.5,
+    3.125
+  ],
+  "landingEnsuite": [
+    0.115,
+    3.255,
+    3.48,
+    5.615
+  ],
+  "publicPassage": [
+    3.6,
+    3.255,
+    4.53,
+    5.615
+  ],
+  "loungePolygon": [
+    [
+      0.115,
+      5.745
+    ],
+    [
+      3.845,
+      5.745
+    ],
+    [
+      3.845,
+      4.595
+    ],
+    [
+      4.975,
+      4.595
+    ],
+    [
+      4.975,
+      7.89
+    ],
+    [
+      4.925,
+      7.89
+    ],
+    [
+      4.925,
+      8.705
+    ],
+    [
+      0.115,
+      8.705
+    ]
+  ],
+  "terraceOpening": [
+    1.1919887,
+    8.705,
+    2.8,
+    3.6189206,
+    8.935,
+    4.98
+  ],
+  "westSuiteDoor": {
+    "centre": [
+      0,
+      6.45
+    ],
+    "hinge": [
+      -0.075,
+      6.037,
+      2.8
+    ],
+    "axis": [
+      0,
+      1
+    ],
+    "openAngle": 1.5707963267948966
+  },
+  "westBathroomDoor": {
+    "centre": [
+      -2.88,
+      1.75
+    ],
+    "hinge": [
+      -2.81,
+      2.163,
+      2.8
+    ],
+    "axis": [
+      0,
+      -1
+    ],
+    "openAngle": 1.5707963267948966
+  },
+  "landingBathroomDoor": {
+    "centre": [
+      2.95,
+      3.19
+    ],
+    "hinge": [
+      3.363,
+      3.26,
+      2.8
+    ],
+    "axis": [
+      -1,
+      0
+    ],
+    "openAngle": -1.5707963267948966
+  },
+  "westBed": {
+    "head": [
+      -3.55,
+      3.885
+    ],
+    "angleDegrees": 0,
+    "frameWidth": 1.96,
+    "frameLength": 2.14,
+    "mattress": [
+      1.8,
+      2.0
+    ],
+    "envelope": [
+      -4.53,
+      3.885,
+      -2.57,
+      6.025
+    ]
+  },
+  "originalBed": {
+    "head": [
+      0.13,
+      1.62
+    ],
+    "angleDegrees": -90,
+    "frameWidth": 1.76,
+    "frameLength": 2.14,
+    "mattress": [
+      1.6,
+      2.0
+    ],
+    "envelope": [
+      0.13,
+      0.74,
+      2.27,
+      2.5
+    ]
+  },
+  "wardrobes": [
+    {
+      "label": "west dressing east",
+      "bounds": [
+        -0.745,
+        1.55,
+        -0.145,
+        3.71
+      ],
+      "faces": "west",
+      "ceiling": 5.138
+    },
+    {
+      "label": "west dressing west",
+      "bounds": [
+        -2.79,
+        2.28,
+        -2.19,
+        3.71
+      ],
+      "faces": "east",
+      "ceiling": 5.138
+    },
+    {
+      "label": "original bedroom",
+      "bounds": [
+        3.88,
+        0.18,
+        4.48,
+        1.96
+      ],
+      "faces": "west",
+      "ceiling": 5.237
+    }
+  ],
+  "scope": "Interior changes in both proposals; terrace doors only in Compact, which contains the rear roof terrace. Planning retains its rear window.",
+  "terracePlanter": {
+    "component": "planter 0",
+    "from": [
+      1.25,
+      9.43
+    ],
+    "to": [
+      3.35,
+      11.85
+    ]
+  }
+}

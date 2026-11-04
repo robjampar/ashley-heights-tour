@@ -1,6 +1,19 @@
 import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 
+// Visual derivatives may add hardware or relocate an axis to a real hinge
+// barrel. Fixed jamb plates have no door_id and stay in the static scene.
+export function applyDoorDetailOverrides(specifications,root){
+ const byId=new Map(specifications.map(spec=>[spec.id,spec]));
+ root.traverse(object=>{
+  const spec=byId.get(object.userData?.door_id);if(!spec)return;
+  const name=object.userData.name||object.name;
+  if(!spec.members.includes(name))spec.members.push(name);
+  const hinge=object.userData.door_hinge;
+  if(Array.isArray(hinge)&&hinge.length===3&&hinge.every(Number.isFinite))spec.hinge=[...hinge];
+ });
+}
+
 // Geometry stays in its actual native pose. Hinged leaves rotate about their
 // exported hinges; the rigid garage leaf tilts and retracts along its tracks;
 // a sliding leaf translates along its openTranslation without rotating.

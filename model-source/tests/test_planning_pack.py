@@ -95,11 +95,24 @@ class PackIntegrityTests(unittest.TestCase):
         from unittest.mock import patch
         from scripts.planning_drawings import build_pack
         previous = (self.out / 'manifest.json').read_bytes()
-        with patch.object(build_pack.release, 'input_fingerprints', side_effect=[{'model': 'before'}, {'model': 'after'}]), patch.object(build_pack, 'build', return_value=0):
+        with patch.object(build_pack.release, 'model_source_issues', return_value=[]), patch.object(build_pack.release, 'input_fingerprints', side_effect=[{'model': 'before'}, {'model': 'after'}]), patch.object(build_pack, 'build', return_value=0):
             result = build_pack.main(['--out', str(self.out)])
         self.assertEqual(result, 2)
         self.assertEqual((self.out / 'manifest.json').read_bytes(), previous)
         self.assertEqual((self.out / 'drawings.pdf').read_bytes(), b'fixture')
+
+    def test_snapshot_never_claims_current_source_build(self):
+        self.manifest['review_snapshot'] = True
+        self.save()
+        reasons = release.freshness(self.out, self.inputs)
+        self.assertIn('Saved-export review snapshot; source/model reconciliation outstanding', reasons)
+
+    def test_force_does_not_bypass_stale_model_guard(self):
+        from unittest.mock import patch
+        from scripts.planning_drawings import build_pack
+        with patch.object(release, 'model_source_issues', return_value=['stale model']), patch.object(build_pack, 'build') as generate:
+            self.assertEqual(build_pack.main(['--force', '--out', str(self.out)]), 2)
+            generate.assert_not_called()
 
     def test_partial_preview_does_not_replace_full_issue(self):
         from unittest.mock import patch
@@ -121,6 +134,39 @@ class PackIntegrityTests(unittest.TestCase):
 
 
 class ContentTests(unittest.TestCase):
+    def test_source_links_survive_pdf_rendering(self):
+        import pymupdf
+        from scripts.planning_drawings.docs import html_to_pdf, A4
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'evidence.pdf'
+            url = 'https://www.sevenoaks.gov.uk/'
+            html_to_pdf(f'<p><a href="{url}">Council source</a></p>', path, rect=A4)
+            with pymupdf.open(path) as document:
+                self.assertIn(url, [link.get('uri') for page in document for link in page.get_links()])
+
+    def test_replaced_parking_bay_is_not_drawn(self):
+        from scripts.planning_drawings.site import parking_bays
+        bays = [{'id': name} for name in ('N1', 'N2', 'S1', 'S2')]
+        nav = {'proposalSite': {'driveway_bay_bounds_m': bays, 'bay_S2_replaced_by': 'lawn'}}
+        self.assertEqual([b['id'] for b in parking_bays(nav)], ['N1', 'N2', 'S1'])
+        del nav['proposalSite']['bay_S2_replaced_by']
+        self.assertEqual(parking_bays(nav), bays)
+
+    def test_draft_allowed_only_for_explicit_review_issue(self):
+        import pymupdf
+        from scripts.planning_drawings.checks import pdf_checks
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'brief.pdf'
+            doc = pymupdf.open()
+            page = doc.new_page(width=595, height=842)
+            page.insert_text((40, 40), 'Draft pre-application request - not sent')
+            doc.save(path)
+            doc.close()
+            self.assertFalse(pdf_checks([path])[0]['pass'])
+            review = pdf_checks([path], review_issue=True)[0]
+            self.assertTrue(review['pass'])
+            self.assertFalse(review['submission_wording_clear'])
+
     def test_detached_buildings_are_ground_level(self):
         from scripts.planning_drawings.model import SourceModel
         model = object.__new__(SourceModel)

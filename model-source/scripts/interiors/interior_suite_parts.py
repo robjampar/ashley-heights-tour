@@ -80,7 +80,7 @@ def east_facing_wc(b,pan,cistern,z,m):
 def oak_door(b,ns,label,d,opening,width,z):
     from mathutils import Vector,Matrix
     m=ns['suite_materials'];start=len(b.objects);w=d['width'];hx,hy,hz=d['hinge'];ax,ay=d['axis'];height=d.get('height',2.15)
-    b.box(label+' oak leaf',(w/2,0,.025+height/2),(w-.006,.038,height),m['oak'],.004)
+    b.box(label+' oak leaf',(w/2,0,d.get('bottomGap',.025)+height/2),(w-.006,.038,height),m['oak'],.004)
     for zz in(.24,1.10,min(1.95,height-.20)):b.cylinder(label+' bronze hinge',(0,.023,zz),.009,.075,m['bronze'],sides=24)
     for side in(-1,1):
         b.cylinder(label+' lever rose',(w-.075,side*.024,1.06),.024,.007,m['bronze'],(0,1,0),28)
@@ -97,3 +97,5 @@ def oak_door(b,ns,label,d,opening,width,z):
     for ob in b.objects[start:]:ob.matrix_world=tr@ob.matrix_world
     members=[ob.name for ob in b.objects[start:]]
     ns.get('proposed_doors',ns['nav'].setdefault('interactiveDoors',[])).append({'id':b.prefix+label,'wall':b.prefix+label,'hinge':d['hinge'],'members':members,'openingCenter':[*opening,z],'apertureAxis':d['axis'],'apertureWidth':width,'closedDelta':0,'openDelta':d['openAngle'],'openDistance':1.2,'closeDistance':1.8})
+    if d.get('roofScribedFrame'):
+        ns.get('proposed_doors',ns['nav']['interactiveDoors'])[-1]['roofScribedFrame']=d['roofScribedFrame']

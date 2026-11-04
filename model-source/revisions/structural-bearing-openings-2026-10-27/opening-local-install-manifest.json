@@ -1,0 +1,86 @@
+{
+  "revision": "structural-opening-fit-2026-10-27",
+  "preparedAt": "2026-10-27T10:31:46.546054+00:00",
+  "preparedBy": "opening_fit agent",
+  "installationPerformedByThisAgent": false,
+  "publicationPerformed": false,
+  "constructionApproved": false,
+  "nativeFiles": [
+    {
+      "source": "outputs/output-structural-openings-compact/Ashley Heights \u2014 Proposed (compact).blend",
+      "target": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+      "sha256": "3c1851b63993ebbf12d351fa92f99e42b460a804f41b2dbf7d666b1e393a0706",
+      "expectedBeforeSHA256": "3f6777a316de544dc47ce478fe16c4d867ef49a7a16f6687034803028110e8ce"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/Ashley Heights \u2014 Proposed (compact).glb",
+      "target": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb",
+      "sha256": "627740f3c7c5b8351fdac5988a49d9e85c0f54657e5ee67ef119da2362ad29f3",
+      "expectedBeforeSHA256": "2844f2487e8689d531ff407df00284219bfef965e6e2d8a3ee431bbbf0b12338"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/geometry.json",
+      "target": "outputs/output-proposed-compact/geometry.json",
+      "sha256": "cbfe472666b03cec833d4156db8e38d67f8bb030c441f94a88f1e40ffb4501a7",
+      "expectedBeforeSHA256": "05e956bcf112f8a321d5b2331bc2dec106de69e53b49c4b017b82c2ec841d9ef"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/navigation.json",
+      "target": "outputs/output-proposed-compact/navigation.json",
+      "sha256": "01e8694dee82d47b4d56bdc09f2f09406bd6a62c4fe86a3e0cb75ddcbb9a3b01",
+      "expectedBeforeSHA256": "f0ac26413f3abe0140a027826fb8b9f11accfd4755e3f07a58ecc1855dbc2d3a"
+    }
+  ],
+  "nativeEvidenceReports": [
+    {
+      "source": "outputs/output-structural-openings-compact/opening-fit-report.json",
+      "target": "outputs/output-proposed-compact/opening-fit-report.json",
+      "sha256": "6dc2d122ccc0884d3d1ded27c5e214c5c7f3203b25d14872d39e93d9072da242"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/opening-fit-source.json",
+      "target": "outputs/output-proposed-compact/opening-fit-source.json",
+      "sha256": "ea00260938a7c30048752e94d657ef44dae7079dc40a798b0afa81b8f0e5476a"
+    }
+  ],
+  "publicSourceFiles": [
+    {
+      "source": "outputs/output-structural-openings-compact/Ashley Heights \u2014 Proposed (compact).glb",
+      "target": "walkthrough/public/proposal-compact.glb",
+      "sha256": "627740f3c7c5b8351fdac5988a49d9e85c0f54657e5ee67ef119da2362ad29f3"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/navigation.json",
+      "target": "walkthrough/public/proposal-compact-navigation.json",
+      "sha256": "01e8694dee82d47b4d56bdc09f2f09406bd6a62c4fe86a3e0cb75ddcbb9a3b01"
+    }
+  ],
+  "checks": {
+    "nativeGeometry": "walkthrough/test-results/structural-bearing-openings-2026-10-27/openings/native-geometry-check.json",
+    "nativePreservation": "walkthrough/test-results/structural-bearing-openings-2026-10-27/openings/native-preservation.json",
+    "browser": "walkthrough/test-results/structural-bearing-openings-2026-10-27/openings/after-sealed/browser-check.json",
+    "packing": "outputs/output-structural-openings-compact/candidate-packing.json",
+    "sourceInputsMatchCurrent": true,
+    "scopedSolidIntersections": 0,
+    "unmeasuredScopedComponents": 0,
+    "frameRevealsChecked": 5,
+    "headSealsChecked": 10,
+    "unchangedGeometryRecords": 16002,
+    "unchangedNativeSceneSignatures": 8,
+    "changedObjects": 245,
+    "createdObjects": 28,
+    "broaderOutstandingOpeningIntersections": 29
+  },
+  "nextStepsOwnedByRoot": [
+    "Guard active native files against the preserved baseline before replacing them.",
+    "Install native core files and opening reports, then public GLB/navigation sources.",
+    "Refresh structural source hashes from the installed model.",
+    "Regenerate compact visual refinements and192-sample daylight.",
+    "Run local web build and required final checks. No publication."
+  ],
+  "notes": [
+    "candidate.glb and opening-fit-textures are staged preview assets, not public source replacements.",
+    "The staging server intentionally disables stale visual overlays.",
+    "This manifest records performed native/geometry/browser checks only; it is not a success/cache record for visual, drawing, web or publication work."
+  ]
+}

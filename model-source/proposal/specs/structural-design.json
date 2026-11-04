@@ -1,0 +1,38 @@
+{
+  "revision": "structural-coordination-2026-10-26-P01",
+  "issueStatus": "Coordination study - NOT FOR CONSTRUCTION",
+  "variant": "compact",
+  "approvedForConstruction": false,
+  "wallStrategy": "Brick outer leaf, insulated cavity and load-bearing blockwork inner leaf. Owner confirmed 26 October 2026. Leaf strengths, thicknesses, cavity, ties and support remain to be designed.",
+  "workshopStrategy": "Retain the separate 215 mm solid masonry architectural concept; its roof, lintels and foundation still need engineering.",
+  "evidence": {
+    "measuredStructuralSurvey": "not supplied",
+    "groundInvestigation": "not available - owner confirmed 26 October 2026",
+    "existingFoundationTrialPits": "not supplied",
+    "groundwaterMonitoring": "not supplied",
+    "structuralCalculations": "not available - owner confirmed 26 October 2026",
+    "drainageAndServicesSurvey": "not supplied",
+    "engineerApproval": "not appointed/recorded"
+  },
+  "sources": [
+    {"title": "Approved Document A - structure (England)", "url": "https://www.gov.uk/government/publications/structure-approved-document-a", "checked": "2026-10-26"},
+    {"title": "IStructE - structural engineering for domestic clients", "url": "https://www.istructe.org/resources/guidance/structural-engineering-for-domestic-clients/", "checked": "2026-10-26"},
+    {"title": "Approved Document C - site preparation and moisture", "url": "https://www.gov.uk/government/publications/site-preparation-and-resistance-to-contaminates-and-moisture-approved-document-c", "checked": "2026-10-26"}
+  ],
+  "designChecks": {
+    "walls": ["Reconcile cavity-wall thickness with fixed external and internal faces", "Masonry strengths, slenderness, restraint and wind", "Concentrated bearings, padstones, ties and movement joints", "Trace every wall load through floors to foundations"],
+    "openings": ["Confirm clear opening and actual bearing masonry on site", "Tributary floor, roof and masonry loads including point loads", "Lintel or beam selection, deflection, bearing and padstones", "Outer-leaf support, cavity tray, damp proofing and fire protection"],
+    "floors": ["Choose floor system and support lines before setting joist direction", "Dead, imposed, partition and concentrated loads", "Bending, shear, deflection, vibration and robustness", "Stair/rooflight trimming, hangers, bearings and service zones"],
+    "roof": ["Load paths for hips, ridge, dormers and rooflights", "Wind, snow, self-weight and restraint", "Loft courtyard projection and torsion/deflection at glazed faces", "Connections to the existing roof and wall supports"],
+    "concrete": ["Site investigation, groundwater and adjacent foundation levels", "Earth, water and surcharge loads; flotation and settlement", "Wall/slab thickness, bending, shear, crack width and reinforcement", "Waterproofing, joints, penetrations and maintainable drainage", "Temporary support and excavation sequence designed by specialists"],
+    "steel": ["Set support arrangement and complete gravity/lateral load path", "Section capacity, buckling, deflection and connections", "Columns, padstones and foundation reactions", "Fire and corrosion protection; fabrication dimensions after survey"]
+  },
+  "coordinationItems": [
+    {"id":"Q01","title":"House wall build-up","detail":"The visual model contains thin single wall shells. Reconcile brick/cavity/blockwork thickness before freezing room sizes or ordering lintels."},
+    {"id":"Q02","title":"Basement and existing foundations","detail":"Investigate soil, groundwater, drains, tree influence and adjacent foundations. No safe excavation, retaining-wall thickness, footing size or reinforcement is established."},
+    {"id":"Q03","title":"Large openings and transfer loads","detail":"Glazed courtyards, garage openings and the chamfered garden room require support and stability design. A window frame is not assumed to support the floor or masonry above."},
+    {"id":"Q04","title":"Continuous roof and 720 mm projection","detail":"Coordinate ridge/hip/dormer support and cantilever backspan with a structural engineer while retaining the accepted flat-ceiling route."},
+    {"id":"Q05","title":"Floor depth and stair headroom","detail":"The checked architectural headroom is only about 2.01 m in places. Engineered floor depths, finishes and tolerances may require layout adjustment."},
+    {"id":"Q06","title":"Quantities and completeness","detail":"Model opening heads are candidates, not a complete lintel order. Whole-house brick/block quantities await leaf geometry, verified openings, movement joints, below-ground work and waste allowances."}
+  ]
+}

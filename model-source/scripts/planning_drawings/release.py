@@ -5,6 +5,7 @@ import sys
 from importlib.metadata import version
 from pathlib import Path
 from .context import ROOT
+from scripts.maintenance.recorded_paths import current_path
 
 SHEET_IDS = {'PA-000', 'PA-001', 'PA-002', 'PA-003', 'PA-005', 'PA-010',
              'PA-011', 'PA-012', 'PA-020', 'PA-021', 'PA-022', 'PA-030',
@@ -27,8 +28,10 @@ def input_fingerprints(variant="planning"):
     model_inputs = ROOT / f'outputs/output-proposed-{variant}/build-inputs.json'
     if model_inputs.exists():
         paths.append(model_inputs)
-        paths += [ROOT / p for p in json.loads(model_inputs.read_text())]
-    inputs = {str(p.relative_to(ROOT)): sha(p) for p in paths}
+        paths += [ROOT / current_path(ROOT, p) for p in json.loads(model_inputs.read_text())]
+    paths += [ROOT / 'docs/maintenance/path-map.json']
+    # Preserve historical manifests. Resolve their paths, but never replace their hashes.
+    inputs = {str(p.relative_to(ROOT)): sha(p) if p.is_file() else 'MISSING' for p in paths}
     runtime = {'python': sys.version, 'packages': {p: version(p) for p in
                ('numpy', 'shapely', 'matplotlib', 'PyMuPDF', 'Pillow')}}
     inputs['@render-runtime'] = hashlib.sha256(json.dumps(runtime, sort_keys=True).encode()).hexdigest()
@@ -43,7 +46,7 @@ def model_source_issues(variant):
         return [variant + ' model has not been built with source tracking']
     return [variant + ' model needs rebuilding: ' + name
             for name, digest in json.loads(manifest.read_text()).items()
-            if not (ROOT / name).is_file() or sha(ROOT / name) != digest]
+            if not (ROOT / current_path(ROOT, name)).is_file() or sha(ROOT / current_path(ROOT, name)) != digest]
 
 
 def inventory(out):
@@ -65,6 +68,8 @@ def freshness(out, current_inputs=None):
     except (OSError, ValueError):
         return ['Unreadable build manifest']
     reasons = []
+    if manifest.get('review_snapshot'):
+        reasons.append('Saved-export review snapshot; source/model reconciliation outstanding')
     if current_inputs is None:
         reasons += model_source_issues(manifest.get('variant'))
     if not manifest.get('complete_build') or manifest.get('variant') not in ('planning', 'compact'):

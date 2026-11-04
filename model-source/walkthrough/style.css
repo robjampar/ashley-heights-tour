@@ -106,3 +106,15 @@ select.design-switch{font-family:inherit;font-size:13px;font-weight:600;color:#3
 .design-link:hover{background:white;text-decoration:underline}
 .design-link:focus-visible{outline:3px solid #48a69e;outline-offset:3px}
 .touch-ui .design-link{min-height:44px}
+
+/* Architectural viewing: keep one clear way back to navigation. */
+.presentation header,.presentation .explore-actions,.presentation footer,.presentation #map-panel,.presentation #crosshair,.presentation #look-hint,.presentation #inspect-card{display:none!important}
+#restore-controls{position:fixed;right:24px;bottom:24px;z-index:25;padding:11px 17px;border:1px solid #fff8;border-radius:24px;background:#fbfaf7dd;color:#34453e;backdrop-filter:blur(12px);box-shadow:0 3px 20px #0001}
+.view-settings{border:0;border-bottom:1px solid #ddd9cf;margin:0 0 14px;padding:0 0 10px}.view-settings legend{font-size:13px;font-weight:650;margin-bottom:9px}.view-settings select{width:100%;padding:9px;border:1px solid #d4d9d1;border-radius:7px;background:#fff}
+@media(max-width:540px){.toolbar #tour-link{display:none}#restore-controls{right:14px;bottom:14px}.presentation #move-pad{opacity:.5}}
+
+/* Shared structural member workspace inside the walkthrough. */
+#structure-toggle{font:inherit;text-align:left;cursor:pointer;border:1px solid #fff9}#structure-toggle[aria-pressed=true]{background:#183e61;color:#fff}
+.structure-active .design-tools .design-link:not(#structure-toggle),.structure-active #map-panel{display:none}.structure-active .design-tools{display:flex;flex-direction:row;align-items:start}.structure-active .design-switch{max-width:200px}.structure-active #inspect-card{display:none}.presentation #walkthrough-structure{display:none}
+
+@media(max-width:600px){.structure-active .design-switch{max-width:140px}.structure-active #structure-toggle{white-space:nowrap;font-size:12px;padding:10px;min-height:44px}}

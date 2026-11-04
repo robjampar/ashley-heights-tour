@@ -1,13 +1,13 @@
 {
   "room": "Loft bedroom, ensuite and hip store",
-  "revision": 2,
+  "revision": 4,
   "floorZ": 5.55,
   "ceilingZ": 7.94,
   "bounds": [
-    7.58,
+    7.3,
     -13,
     12.42,
-    -5.4
+    -3.27
   ],
   "bedroomPolygon": [
     [
@@ -20,11 +20,27 @@
     ],
     [
       12.42,
-      -5.4
+      -3.27
+    ],
+    [
+      8.55,
+      -3.27
+    ],
+    [
+      8.55,
+      -4.64
+    ],
+    [
+      7.3,
+      -4.64
+    ],
+    [
+      7.3,
+      -5.3
     ],
     [
       7.58,
-      -5.4
+      -5.3
     ]
   ],
   "bathroomPolygon": [
@@ -48,19 +64,19 @@
   "storePolygon": [
     [
       7.58,
-      -13
+      -14.1
     ],
     [
       12.42,
-      -13
+      -14.1
     ],
     [
       12.42,
-      -11.66
+      -11.7
     ],
     [
       7.58,
-      -11.66
+      -11.7
     ]
   ],
   "bed": {
@@ -97,10 +113,10 @@
     ]
   ],
   "wardrobe": [
-    9.3,
-    -6.0,
-    11.27,
-    -5.42
+    10,
+    -3.86,
+    11.97,
+    -3.28
   ],
   "eavesStorage": [
     7.6,
@@ -162,7 +178,7 @@
   },
   "hipDoor": {
     "hinge": [
-      8.962,
+      7.812,
       -11.52,
       5.55
     ],
@@ -191,13 +207,13 @@
   "view": {
     "id": "proposal-new-loft-studio",
     "position": [
-      11.82,
-      -6.95,
+      11.8,
+      -4.65,
       5.55
     ],
     "direction": [
-      -0.5,
-      -0.9,
+      -0.22,
+      -1,
       -0.04
     ]
   },
@@ -285,10 +301,10 @@
   "limitations": [
     "Dormer ceiling is about 2.09 m above the structural floor; finishes reduce this slightly.",
     "Low eaves and hip storage require stooping and are not counted as standing circulation.",
-    "Retains existing roof, dormer windows, partitions and door apertures.",
     "The entry and bathroom leaves are rehung at their east jambs to clear the bed and circulation.",
     "A compact 205 mm bedside perch on the doorway side preserves the ensuite approach; the opposite bedside is 410 mm wide."
   ],
   "hipStoreShelving": false,
-  "includeEavesStorage": false
+  "includeEavesStorage": false,
+  "loftBedroomExpansion": "loft-dormer-alignment-2026-10-19"
 }

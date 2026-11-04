@@ -1,0 +1,19 @@
+{
+  "errors": [],
+  "finish": {
+    "revision": "WM01-west-brick-finish-2026-10-29",
+    "material": "Appearance | wall | Red brown brick",
+    "faces": {
+      "Proposal | West recess upper facade": 2,
+      "WM01 | West recess exterior closure": 1,
+      "WM01 | West recess floor-band closure": 1
+    },
+    "interiorPlasterPreserved": true,
+    "geometryChanged": false
+  },
+  "appearance": {
+    "walls": "brick",
+    "roof": "dark"
+  },
+  "picked": "Proposal_|_West_recess_upper_facade_CJ02_coordinated_mesh001_1"
+}

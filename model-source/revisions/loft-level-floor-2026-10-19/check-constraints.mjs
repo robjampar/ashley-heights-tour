@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {makeRoof,zAt} from './roof.mjs';
+const out=new URL('../../walkthrough/test-results/loft-level-floor-2026-10-19/',import.meta.url);
+const m=JSON.parse(fs.readFileSync(new URL('trials.json',out))),o=m.options[0],r=makeRoof({ridgeX:7.30,flushX:9.70,retainRooflights:true});
+const results=[];
+function check(name,pass,evidence){results.push({name,pass,evidence});assert.ok(pass,name);}
+check('Loft remains at one level',m.floorZ===5.55&&m.roomFloorZ===5.55&&m.drop===0,{floor:m.floorZ,roomFloor:m.roomFloorZ,drop:m.drop});
+check('Both loft routes remain on that level',Object.values(o.upperRoutes).flat().every(p=>p[2]===5.55),'Every route vertex z=5.55 m; triangle floor-continuity check is separate.');
+check('Existing ridge height retained',Math.abs(r.parameters.ridgeZ-8.05)<1e-8,{ridgeZ:r.parameters.ridgeZ});
+const max=Math.max(...r.panels.flatMap(p=>p.poly.map(([x,y])=>zAt(p.plane,x,y))));
+check('No roof plane above the existing ridge',max<=8.050001,{maximumRoofSurface:max,rooflightFrameTop:8.04});
+check('No new flat roof on the front side of the moved ridge',r.parameters.caps.slice(1).every(c=>c[0]>r.parameters.ridgeX),{ridgeX:r.parameters.ridgeX,flatCapWest:r.parameters.capX});
+check('Courtyard wall flush',m.flushFacadeX===9.70&&r.parameters.flushX===9.70,{wallX:9.70,roofDripX:9.82});
+check('No lowered first-floor ceiling',Math.abs(m.downstairsClearHeight-2.45)<1e-8,{ceilingZ:5.25,firstFloorZ:2.80});
+const rise=2.75/o.nTotal,goings=o.flights.map(f=>Math.hypot(f.b[0]-f.a[0],f.b[1]-f.a[1])/(f.n-1));
+check('Uniform ordinary stair geometry',o.nTotal===15&&goings.every(g=>Math.abs(g-.26)<1e-8)&&o.flights.every(f=>f.w===1.10),{rises:15,riseM:rise,goings,pitchDegrees:Math.atan(rise/.26)*180/Math.PI,twiceRisePlusGoing:2*rise+.26});
+check('One rectangular turning landing',o.landings.length===1&&Math.abs((o.landings[0].box[3]-o.landings[0].box[1])-1.10)<1e-8,o.landings[0]);
+check('Top landing depth at least flight width',o.tops[0].box[3]-o.tops[0].box[1]>=1.10-1e-8,o.tops[0]);
+check('No wardobe or wall-head lowering',o.alteredHeaders.length===1&&o.alteredHeaders[0].includes('raised'),o.alteredHeaders);
+check('Accepted reading furniture retained',m.relocatedReading.length===29,{parts:m.relocatedReading.length,arrangement:'Original group rotated 90 degrees and relocated to the wider north gallery.'});
+check('Both rooflight positions retained',r.parameters.rooflights.length===2,r.parameters.rooflights);
+fs.writeFileSync(new URL('constraint-review.json',out),JSON.stringify({scope:'Parametric design constraints. Geometry audit and visual review remain separate; this is not engineering approval.',results},null,2));
+console.log(results.length+' design constraints passed.');

@@ -1,0 +1,15 @@
+# West-extension first-floor masonry band — M13, 26 October 2026
+
+The owner identified a horizontal masonry gap above **M-BRICK-DDF9501 — Proposal revision | Garage west | pier 0**. Its lower wall head ended at Z 2.600 m, while the upper brick/block leaves began at Z 2.800 m. The earlier continuity rule only covered the north/east wing walls and excluded original-garage rebuild heads.
+
+Fourteen upper leaves along the west extension now continue through that 200 mm floor band onto the actual lower pier/window-head slices. Both brick and block are included; no upper leaf is continued across an unsupported opening merely to hide a gap. The small front-west block return is aligned to the lower inner leaf rather than projecting into the front cavity. External brick and glazing positions are unchanged.
+
+The J-04 floor frame moves to room-side ledger centrelines: west X -4.8975 m, front Y 1.1825 m and rear Y 8.5375 m. Existing receiver IDs M-FR-1-020–023 are retained. Joists, hangers, edge connections and finish/deck/lining extents are regenerated consistently. Eighteen joists fit the revised field at nominal 400 mm centres. Masonry continues independently of the floor timber. Ledger fixings, opening heads, wall capacity and foundation load paths remain unverified.
+
+The existing roof, architectural native model, exterior dimensions, accepted layout, normal-view furniture and all F01 foundation assumptions remain unchanged. The other unresolved structural issues are not declared solved by this local repair.
+
+The full floor-band audit now contains 42 continued leaves, all with zero unmatched base area and zero measured intersection with floor joists/trimmers in that audit. Fourteen are the new west-extension continuations. Dedicated tests also check the continuous solid band through pier/sill seams and the adjoining joists/hangers against local masonry. Cost and visible course quantities follow the regenerated solids.
+
+M12 data/specification recovery copies are under `original/`. Review images and browser assertions are under `walkthrough/test-results/structural-extension-floor-band-2026-10-26/`; build/test logs are in `logs/structural-extension-floor-band-2026-10-26-*`. This is included in the shared walk/fly structural viewer and the standalone orbit workspace. Local build only; nothing published.
+
+Final validation: 79 Python structural tests and 32 structural web tests pass. The earlier full web suite passed all 311 tests; M13 changed structural data and labels only. The final integrated browser review passed 16 functional checks with no page errors; 2 GLB aborted-request diagnostics remain recorded, with asset loading separately verified. Both wall-band screenshots were visually reviewed. There are 2,621 members, 26,488 visible masonry pieces and 48 open issues. The global scoped solid audit retains 141 intersection pairs, with no additional pairs against the saved M12 register. All 553 linked hanger assemblies pass their scoped solid/seat checks. Workspace-layout findings equal the existing baseline. See the machine-readable validation report for exact counts and hashes.

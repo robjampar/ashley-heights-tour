@@ -1,0 +1,362 @@
+{
+  "revision": "CJ02-2026-10-28",
+  "validatedAt": "2026-10-28T18:55:22.841870+00:00",
+  "installedLocally": true,
+  "published": false,
+  "approvedForConstruction": false,
+  "method": "Targeted native integration from preserved CJ01 source; derivative export and structural regeneration. Not a full-source Blender rebuild.",
+  "nativeBuildInputsMatchCurrent": true,
+  "nativeReport": "outputs/output-proposed-compact/cj02-report.json",
+  "preservedReferenceSceneCount": 7,
+  "tests": {
+    "python": {
+      "passed": 299,
+      "failed": 0
+    },
+    "web": {
+      "passed": 317,
+      "failed": 0
+    },
+    "browser": {
+      "passed": true,
+      "routes": 3,
+      "screenshots": 11,
+      "result": {
+        "errors": [],
+        "passages": [
+          {
+            "id": "Proposal | Garage east separation door 0",
+            "actual": 11.487500000000022,
+            "expected": 11.4875
+          },
+          {
+            "id": "new garage depth",
+            "actual": 10.300000000000013,
+            "expected": 10.3
+          },
+          {
+            "id": "wide gym opening",
+            "actual": -9.049999999999978,
+            "expected": -9.05
+          }
+        ],
+        "updatedAt": "2026-10-28T18:41:33.953725+00:00",
+        "lowerTransferEndY": -9.59,
+        "cavityClosers": 2,
+        "native": "CJ02-native-2026-10-28",
+        "members": "CJ02-2026-10-28",
+        "depth": 7,
+        "returnEnd": 5.1825,
+        "ledgerX": 5.3325,
+        "brickTailPresent": false,
+        "oldGarageWallPresent": false,
+        "partitions": 34,
+        "windowPierEnd": -5.039999999
+      }
+    },
+    "checkLayout": {
+      "passed": false,
+      "findings": 345,
+      "unchangedFromCJ01": true,
+      "newFindings": 0
+    }
+  },
+  "visualReview": {
+    "finalInspected": [
+      "garage-rear-door.png",
+      "straight-entrance-framing.png"
+    ],
+    "findings": [
+      "Garage wall is continuous above and beside the rear door surround.",
+      "Entrance receiver follows a straight wall face; the former stepped return is removed."
+    ],
+    "screenshotDirectory": "walkthrough/test-results/garage-seven-metre-2026-10-28"
+  },
+  "structuralModel": {
+    "members": 2561,
+    "openIssues": 60,
+    "masonryUnits": 27287,
+    "audit": {
+      "newScopedIntersections": {
+        "junctionReview": [],
+        "coveringFit": []
+      },
+      "joistAndPartitionIntersections": [],
+      "failedCJGravity": [],
+      "supportAudit": {
+        "joists": 239,
+        "receiverMembers": 70,
+        "unmappedJoistEnds": 0,
+        "cantileverFreeEnds": 0,
+        "receiverEndsWithoutDirectWallCandidate": 70,
+        "basis": "Geometric contacts only. Connected receiver networks still need engineering reactions, supports and capacity; no complete load path is certified."
+      },
+      "connectionFit": {
+        "assemblies": 478,
+        "solidPairsChecked": 1965,
+        "intersections": [],
+        "seatLevelErrors": [],
+        "scope": "Each joist against its linked receiver, hanger against that joist/receiver, and its infill block against those three members. Seat top checked against joist underside. Other nearby members and product/fastener capacities are not covered."
+      },
+      "bearings": [
+        {
+          "beamId": "M-FR-3-001",
+          "wallId": "M-BLOCK-303DDFE",
+          "wallIds": [
+            "M-BLOCK-303DDFE",
+            "M-BLOCK-393739F"
+          ],
+          "padId": "M-CJ01-CROSS-W-PAD",
+          "groutId": "M-CJ01-CROSS-W-PAD-GROUT",
+          "nominalBearingM": 0.09999999999999964,
+          "bearingZ": 5.134,
+          "removedMasonryM3": 0.0270308,
+          "padBounds": [
+            [
+              5.1825,
+              -10.205,
+              4.924
+            ],
+            [
+              5.2825,
+              -9.604999999999999,
+              5.1240000000000006
+            ]
+          ],
+          "groutBounds": [
+            [
+              5.1825,
+              -10.092,
+              5.1240000000000006
+            ],
+            [
+              5.2825,
+              -9.718,
+              5.134
+            ]
+          ],
+          "steelPocketBounds": [
+            [
+              5.1725,
+              -10.102,
+              5.134
+            ],
+            [
+              13.737499999999999,
+              -9.708,
+              5.516
+            ]
+          ],
+          "contactAreaM2": 0.0374,
+          "baseSupportedFraction": 1.0,
+          "capacityVerified": false,
+          "basis": "CJ01 repeated north/south main-wing joists. The garage/store bearing line continues through a wide steel head to the rear outside wall. A transverse loft girder preserves the open suite. Floor gravity candidates only; complete connections, support movement, masonry, roof/stability and foundations remain unverified."
+        },
+        {
+          "beamId": "M-FR-3-001",
+          "wallId": "M-BLOCK-02FFCDC",
+          "wallIds": [
+            "M-BLOCK-02FFCDC"
+          ],
+          "padId": "M-CJ01-CROSS-E-PAD",
+          "groutId": "M-CJ01-CROSS-E-PAD-GROUT",
+          "nominalBearingM": 0.09999999999999964,
+          "bearingZ": 5.134,
+          "removedMasonryM3": 0.0270308,
+          "padBounds": [
+            [
+              13.6275,
+              -10.25,
+              4.924
+            ],
+            [
+              13.7275,
+              -9.65,
+              5.1240000000000006
+            ]
+          ],
+          "groutBounds": [
+            [
+              13.6275,
+              -10.092,
+              5.1240000000000006
+            ],
+            [
+              13.7275,
+              -9.718,
+              5.134
+            ]
+          ],
+          "steelPocketBounds": [
+            [
+              5.1725,
+              -10.102,
+              5.134
+            ],
+            [
+              13.737499999999999,
+              -9.708,
+              5.516
+            ]
+          ],
+          "contactAreaM2": 0.0374,
+          "baseSupportedFraction": 1.0,
+          "capacityVerified": false,
+          "basis": "CJ01 repeated north/south main-wing joists. The garage/store bearing line continues through a wide steel head to the rear outside wall. A transverse loft girder preserves the open suite. Floor gravity candidates only; complete connections, support movement, masonry, roof/stability and foundations remain unverified."
+        },
+        {
+          "beamId": "M-FR-3-010",
+          "wallId": "M-BLOCK-7C51DD7",
+          "wallIds": [
+            "M-BLOCK-7C51DD7"
+          ],
+          "padId": "M-LP02-WEST-PAD",
+          "groutId": "M-LP02-WEST-PAD-GROUT",
+          "nominalBearingM": 0.1,
+          "bearingZ": 5.1661,
+          "removedMasonryM3": 0.01459,
+          "padBounds": [
+            [
+              5.1825,
+              -5.3525,
+              5.016100000000001
+            ],
+            [
+              5.2825,
+              -4.7525,
+              5.1561
+            ]
+          ],
+          "groutBounds": [
+            [
+              5.1825,
+              -5.3525,
+              5.1561
+            ],
+            [
+              5.2825,
+              -5.04275,
+              5.1661
+            ]
+          ],
+          "steelPocketBounds": [
+            [
+              5.1725,
+              -5.367249999999999,
+              5.1661
+            ],
+            [
+              13.737499999999999,
+              -5.03275,
+              5.516
+            ]
+          ],
+          "contactAreaM2": 0.030975,
+          "baseSupportedFraction": 1.0,
+          "capacityVerified": false,
+          "basis": "CJ02 beam end extended into the perpendicular inner leaf. 100 \u00d7 600 \u00d7 140 mm padstone envelope with full geometric base contact. Steel contact is only the actual flange/pad overlap; local bearing, eccentricity and wall resistance remain unverified."
+        },
+        {
+          "beamId": "M-FR-3-010",
+          "wallId": "M-BLOCK-0B061C8",
+          "wallIds": [
+            "M-BLOCK-0B061C8"
+          ],
+          "padId": "M-LP02-EAST-PAD",
+          "groutId": "M-LP02-EAST-PAD-GROUT",
+          "nominalBearingM": 0.1,
+          "bearingZ": 5.1661,
+          "removedMasonryM3": 0.0147326,
+          "padBounds": [
+            [
+              13.6275,
+              -5.64,
+              5.016100000000001
+            ],
+            [
+              13.7275,
+              -5.04,
+              5.1561
+            ]
+          ],
+          "groutBounds": [
+            [
+              13.6275,
+              -5.35725,
+              5.1561
+            ],
+            [
+              13.7275,
+              -5.04275,
+              5.1661
+            ]
+          ],
+          "steelPocketBounds": [
+            [
+              5.1725,
+              -5.367249999999999,
+              5.1661
+            ],
+            [
+              13.737499999999999,
+              -5.03275,
+              5.516
+            ]
+          ],
+          "contactAreaM2": 0.03145,
+          "baseSupportedFraction": 1.0,
+          "capacityVerified": false,
+          "basis": "Dimensioned bearing envelope only; local compression, eccentricity, wall stability and onward load path require design."
+        }
+      ],
+      "counts": {
+        "junctionReview": 81,
+        "coveringFit": 1159
+      }
+    }
+  },
+  "knownLimits": "Geometry and bounded gravity sensitivity checks only. Complete load paths, connection capacities, masonry bearings, stability, fire separation, slab reinforcement and foundations remain unverified. Existing whole-building issues remain.",
+  "sha256": {
+    "proposal/specs/garage-seven-metre.json": "e4d6393c5aafb7de24f01505e88f3329b0b7b3b88b3edb0735c0e504e0fb2b9d",
+    "scripts/model/proposal_garage_seven_metre.py": "56f0599e1f868aa65c9c08a6ab09c8e7d64928bb61bdaa1db106a0a7398a5bba",
+    "scripts/build/prepare_garage_seven_metre.py": "3d9c4c45eadd50cce8de5a2ab8745879a5b1b35adaf3d36cd1d32ef8a612a220",
+    "scripts/structure/garage_seven_metre.py": "081fbd8440ef83814cd02cda8fc89e21f5d3df396700b08fb3f6e7497ea8bca0",
+    "scripts/structure/build_members.py": "dfdd480556724ee5118ea164e963060fb0f5806905639e45d2a34d494acad2d2",
+    "scripts/structure/continuous_joist_integration.py": "ded413ad6d498ad994adc5a4d88fde97beaa40461b73b238d18a9b0aabf11063",
+    "scripts/structure/sw02_integration.py": "c812b479daa82e3680f6421e5359587406c0acfbeac2a5553fc2a4182bc17b95",
+    "tests/test_garage_seven_metre.py": "e9f3201908bdf4cca58661ef3b677667322779efef2f514f82289e976868e65e",
+    "walkthrough/tests/garage-seven-metre-browser.mjs": "b49f961732749f559315aa1528afc3c59bef8aaf1a7defb48198bc4d342e84d1",
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "604b8f999a9c57dd9ac8e65988252f8ac11dcd8ed41cae8c72bae7fad0291c2c",
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb": "e12f2c29038aaeef350ec8fc35750f3eeb651ac6ff5fa9b90f24cf564bafdfd2",
+    "outputs/output-proposed-compact/geometry.json": "d93859127bcfe4bea739394868a6bc120fc165b198dc7599d1957ca70c8d6b7d",
+    "outputs/output-proposed-compact/navigation.json": "314cc5488ac250618bae14533f0ec0e79ef5471b8b7c6441c572341202461608",
+    "outputs/output-proposed-compact/cj02-report.json": "4e7b1a0e8ecf5c13d30014f18b7d453959705bba806d869756a0f92d74722a89",
+    "outputs/output-proposed-compact/cj02-source.json": "e80e2439c97a7ef296182eecb0e27b0bca553bca73e0c1faa70b4847f8486ba6",
+    "walkthrough/public/proposal-compact.glb": "e12f2c29038aaeef350ec8fc35750f3eeb651ac6ff5fa9b90f24cf564bafdfd2",
+    "walkthrough/public/proposal-compact-navigation.json": "314cc5488ac250618bae14533f0ec0e79ef5471b8b7c6441c572341202461608",
+    "walkthrough/public/visual-quality/compact-furnishings.glb": "4592121165dca9e949d655375afde7635947ea8c343b5e926929f7bde4db04fa",
+    "walkthrough/public/visual-quality/compact-furnishings.json": "8c94246e08d271ade0aa25be623b512b8233b94d441e471eaf81b2173b7f98c3",
+    "walkthrough/public/visual-quality/compact-daylight.json": "e5ef71f7ba67e33a8d1ad012668ddc5294afa55ffed2a526592febead01179a0",
+    "walkthrough/public/structure/members.json": "1c13815e4cfc5f63e3a21dbf0464551486cca550d732ee668fd25fb9b8a0dc41",
+    "walkthrough/public/structure/model.json": "1c3fd0b9cc1abc946af24795a67540910f6a0096d6500802c73752edcc87b386",
+    "walkthrough/public/structure/junction-review.json": "0f04e48df6d8a02031d7d7ab5f359ad8baadf1c6c33701e0522a5b8cf52f5d12",
+    "walkthrough/public/structure/covering-fit.json": "c465bbd3507fd8068e5a4ee395174eb3e58c703ee8921f20fe50003a56f2c964",
+    "revisions/garage-seven-metre-2026-10-28/geometry-audit.json": "af22cdfcc6dc25580d9e2f84c0629b97db7bb9b85ad52305527c82c0b9d38a79",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/browser.json": "d26718d91f53868834d8d3e1feb1c98ad9b02f2aa8865cd247eb7d3390491a4c",
+    "logs/cj02-python-2026-10-28.log": "fe8b899024f95ffb179a2031c76c4ff173896c570bfff26ce3a6b251f816b61f",
+    "logs/cj02-web-tests-2026-10-28.log": "906fb4aae5f085c7d25afe74b42304b4864d8f2c030962d8097e3517a124d303",
+    "logs/cj02-browser-2026-10-28.log": "7128d0fcb1eef57ee8e2485c2c6c558f1388a0d4c869cd8ca8b8a31517bac453",
+    "logs/cj02-layout-2026-10-28.log": "540ad054b6098a84a3de7205653926b2c0d8e0562598744cd89824c9d88d806a",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/bathroom-window.png": "27c7fc79414911d0a53cc1d59411e66c7048fd9aee931ed77d82313a15c73efd",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/entrance-return.png": "ddf51a9b9f26fb01a4d765a457f53bcad20490396da56f72038e9f5e25738e04",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/flush-corner-bearing.png": "9e6b93dc223d6a5b4849618e539ec43d640ccab078f030376850beb57c161b5a",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/garage-partition-and-joists.png": "5f3bb6cb9573c079f34b400c711135ddc4a15e9fb291f054bbc86a32bfdaa7d7",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/garage-rear-door.png": "bcb4b7beaafe9a6d1a6ecccc7a32d11b648e7ad224e71c2c0d0c6957048144cb",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/garage-seven-metres.png": "eaa12d5c0e4063c1f9e8fa7b9f61e50776a9036314fbfb831824333df5e88aa3",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/recess-studs-and-bearing-pier.png": "6b26da1db9e7ce63491bb2084350a9a95e8e6f9dfdf8cec07bb52fffbec5df36",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/straight-entrance-framing.png": "d8b362a45f3ada8e7dec80c7bbd05a0658a05e56c004db6dfebd8cd1a8547479",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/suite-preserved.png": "82d90bded9c0cfe94869304aa0a573a75954d204f4a2ba2b400f7ddc2ece9922",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/utility-storage.png": "7d6710ae59d48043164e2cb5d641119a8a1f932ba9f35fdced2c04c2d4986ebc",
+    "walkthrough/test-results/garage-seven-metre-2026-10-28/west-recess.png": "bfc81d1ad694b9ffc524db275419fc7a0c30064597451905d0ec6029bab03116"
+  }
+}

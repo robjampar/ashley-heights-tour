@@ -1,0 +1,18 @@
+{
+  "installed": false,
+  "liveSourcesUnchanged": {
+    "model": true,
+    "members": true
+  },
+  "joistGravityCases": 6,
+  "linkedFloorCases": 12,
+  "areaAudit": {
+    "actualM2": 83.33978249999998,
+    "proposedM2": 83.3397825,
+    "uncoveredM2": 0.0,
+    "outsideM2": 0.0
+  },
+  "maximumEquilibriumResidualKN": 2.7355895326763857e-13,
+  "layoutCheck": "347 log lines / 345 existing findings; identical to prior baseline; not a pass",
+  "threeDClashAuditPerformed": false
+}

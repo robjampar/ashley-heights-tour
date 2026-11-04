@@ -62,7 +62,7 @@ test('a resident walks from the hall to the drive and to the loft',()=>{
   const nav=new LocalNavigation(compact);nav.radius=.18;nav.stepUp=.42;nav.position={x:from.x,y:from.y,z:from.z};let index=1,stall=0;
   for(let step=0;step<20000&&index<job.path.length;step++){
    const t=job.path[index],dx=t.x-nav.position.x,dy=t.y-nav.position.y,len=Math.hypot(dx,dy);
-   if(len<.05){index++;continue;}
+   if(len<.001){index++;continue;}
    const before={...nav.position},amount=Math.min(len,1.2/60);
    const x=before.x+dx/len*amount,y=before.y+dy/len*amount,z=nav.support(x,y,before.z);
    if(z!==null&&!nav.blocked(x,y,z))nav.position={x,y,z};else nav.move(dx/len*amount,dy/len*amount);

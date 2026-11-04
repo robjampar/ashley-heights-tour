@@ -1,0 +1,110 @@
+{
+  "revision": "F02-2026-10-27",
+  "status": "Experimental reference assumptions; not a site-average measurement or construction design",
+  "approvedForConstruction": false,
+  "datum": "Model ground-floor FFL 0.000 m; assume adjacent ground at -0.150 m solely for this study",
+  "assumedGroundZ": -0.15,
+  "boundsMeaning": "Illustrative lower/reference/upper cases, not confidence bounds. Clay/tree effects, made ground, drains, groundwater or adjacent foundations can require deeper/wider foundations or a different system. Ashley Heights has mature trees: their influence is not assessed.",
+  "strip": {
+    "widthM": 0.6,
+    "thicknessM": 0.3,
+    "depthBelowAssumedGroundM": 1.0,
+    "stemWidthM": 0.3525,
+    "stemMaterial": "Foundation-grade masonry envelope; product and below-ground suitability unselected"
+  },
+  "gardenSlab": {
+    "referenceM": 0.15,
+    "lowerM": 0.125,
+    "upperM": 0.2,
+    "basis": "Ground-bearing floor only. Perimeter walls and terrace posts bear on separate foundations. Reinforcement, subgrade, fill and insulation arrangement unselected."
+  },
+  "basement": {
+    "raftReferenceM": 0.3,
+    "raftLowerM": 0.25,
+    "raftUpperM": 0.4,
+    "blindingM": 0.05,
+    "subbaseM": 0.15,
+    "additionalPermanentLoadKN": 800,
+    "basis": "Continuous reinforced-concrete raft concept under all six retaining-wall runs; no separate strip footings assumed beneath it. 300 mm is a spatial/budget allowance, not a thickness calculation. Local thickenings, punching, bending, crack control, wall-base fixity, waterstops, waterproofing and temporary works remain undesigned. The 352.5 mm retaining-wall envelope still coordinates the cavity wall above, not a calculated RC thickness. F02 lowers the raft top to -3.000 m beneath the unchanged -2.800 m finished floor, reserving 200 mm for the floor build-up. Retaining-wall and column bases follow the raft; excavation and groundwater heads update.",
+    "finishedFloorZ": -2.8,
+    "raftTopZ": -3.0,
+    "floorBuildUp": [
+      {
+        "id": "WATERPROOF",
+        "title": "Waterproofing / protection zone",
+        "depthMm": 15
+      },
+      {
+        "id": "INSULATION",
+        "title": "Rigid floor insulation allowance",
+        "depthMm": 100
+      },
+      {
+        "id": "SCREED",
+        "title": "Floating screed allowance",
+        "depthMm": 65
+      },
+      {
+        "id": "FINISH",
+        "title": "Floor finish / adhesive allowance",
+        "depthMm": 20
+      }
+    ],
+    "floorBuildUpBasis": "200 mm dimensional budget above the raft, preserving the authored basement FFL. Waterproofing type, drainage/access, gas protection, insulation strength/thermal performance, screed reinforcement/drying and edge details are unselected. Layers must be redesigned with the waterproofing specialist and structural engineer; no system performance is claimed."
+  },
+  "cases": [
+    {
+      "id": "lower",
+      "label": "Lighter / firmer illustrative case",
+      "grossAllowableBearingKPa": 150,
+      "depthBelowGroundM": 0.75,
+      "garageSuperstructureKNm": 30,
+      "gardenSuperstructureKNm": 15,
+      "gardenPostKN": 20,
+      "basementSuperstructureKN": 1200,
+      "waterLevelZ": -3.1
+    },
+    {
+      "id": "reference",
+      "label": "Reference assumptions",
+      "grossAllowableBearingKPa": 100,
+      "depthBelowGroundM": 1.0,
+      "garageSuperstructureKNm": 45,
+      "gardenSuperstructureKNm": 25,
+      "gardenPostKN": 35,
+      "basementSuperstructureKN": 1800,
+      "waterLevelZ": -1.6
+    },
+    {
+      "id": "upper",
+      "label": "Heavier / weaker / wetter illustrative case",
+      "grossAllowableBearingKPa": 75,
+      "depthBelowGroundM": 1.5,
+      "garageSuperstructureKNm": 70,
+      "gardenSuperstructureKNm": 40,
+      "gardenPostKN": 60,
+      "basementSuperstructureKN": 2500,
+      "waterLevelZ": -0.15
+    }
+  ],
+  "loadBasis": "Characteristic/service-load budgets, not extracted reactions: garage reference 45 kN/m rounds a 24.6 kN/m two-storey masonry allowance (6 m x 0.205 m x 20 kN/m3), two floor allowances of 2.5 kN/m2 x 2.5 m tributary width (12.5 kN/m), and roof 1.5 kN/m2 x 2.5 m (3.75 kN/m). Garden 25 kN/m is a wall/terrace budget; 35 kN is an independent illustrative post reaction. Basement total superstructure 1,800 kN is a separate whole-footprint service budget, not a completed load takedown. Do not add the post budget to the line-load budget as if independently verified. G01: the illustrative superstructure budgets and additional permanent-load allowance exclude the separately measured vehicle deck, local RC bands/bearing nodes and cinema bearing masonry. Their actual modelled volumes and assumed densities are added explicitly. This is still not a load takedown; empty-box uplift excludes these later construction stages.",
+  "calculationBasis": "Gross unfactored pressure screens against assumed gross allowable bearing, NOT Eurocode 7 ULS verification or settlement design. Include footing concrete 24 kN/m3, foundation masonry 20 kN/m3, soil cover on projections 18 kN/m3; raft/retaining concrete 25 kN/m3. Pressure screens omit eccentricity and local load spreading. Uplift uses water 9.81 kN/m3 at the raft underside and compares un-factored dead weight only, without relying on pumps or favourable soil friction.",
+  "sources": [
+    {
+      "title": "LABC Warranty Technical Manual v10, chapter 3: strip/raft foundations and tree effects (guidance, not site selection)",
+      "url": "https://info.labcwarranty.co.uk/hubfs/Technical%20Manual%20v10%20Files%20and%20Images/Manual%20Sections/Section%203%20Foundations.pdf"
+    },
+    {
+      "title": "LABC: raft foundation basics \u2014 reinforced raft, ground investigation and edge/internal stiffening",
+      "url": "https://www.labc.co.uk/news/raft-foundation-basics"
+    },
+    {
+      "title": "NHBC Standards 2024, chapters 4.3 and 5.4 \u2014 foundations and below-ground waterproofing guidance",
+      "url": "https://nhbcprod.blob.core.windows.net/shared/CC2981-NHBC-Standards-2024-aw-digital-version-lr-151223.pdf"
+    },
+    {
+      "title": "NHBC Standards 2026 \u2014 warranty guidance distinct from Building Regulations",
+      "url": "https://www.nhbc.co.uk/builders/products-and-services/techzone/nhbc-standards"
+    }
+  ]
+}

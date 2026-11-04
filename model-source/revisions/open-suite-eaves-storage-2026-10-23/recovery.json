@@ -1,0 +1,122 @@
+[
+  {
+    "path": "scripts/model/proposal_suite_layout_loft.py",
+    "sha256": "9c181bfacb268fc580ce93c5286ceb46577f2d9cfa07d94026cbbbf3bd1f85da"
+  },
+  {
+    "path": "scripts/build/build_support.py",
+    "sha256": "f5457f65f986d9395b89e38a73be5bc49604b0c823899856a9a8e039628bf14d"
+  },
+  {
+    "path": "tests/test_build_pipeline.py",
+    "sha256": "b8221b43b3ff81528a53759314aeca5f6dfb8b81d1fcc068982d1ef56cecdd9c"
+  },
+  {
+    "path": "walkthrough/tests/suite-layout-loft.test.mjs",
+    "sha256": "2b1cb263d1dea6c0db31ec2d5d2a801ee83d28145d1865b41de7b67f06b6d50c"
+  },
+  {
+    "path": "walkthrough/tests/modern-loft-stair.test.mjs",
+    "sha256": "ae6a1759982b70c10ba81bcdc8bafd446bf20c74bf91f04eabb0977a5594c74e"
+  },
+  {
+    "path": "walkthrough/tests/construction-details.test.mjs",
+    "sha256": "76899f18a8a6298fba1636a8f5fb3beb3d5f529f7a3ff24882df4955f781d7e3"
+  },
+  {
+    "path": "walkthrough/tests/loft-bedroom-expansion.test.mjs",
+    "sha256": "d97c4306273f6770f15cf6f2aae7a8bab00d1c619e43da3298cef3ed44ea4093"
+  },
+  {
+    "path": "walkthrough/tests/loft-finish.test.mjs",
+    "sha256": "050318fee457542880f9b74e08639506a2f7670c5e6b8eb863953330e7136aaf"
+  },
+  {
+    "path": "README.md",
+    "sha256": "ec51ed3538175c8473652c60b5e1909100b030b940c482c92117ae33b83f9c8f"
+  },
+  {
+    "path": "docs/WORKSPACE.md",
+    "sha256": "05cda391039c0ddc67665b35a281f33d71356e8a94d68b6328a1fdaf21f66c87"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+    "sha256": "8ee520d04f05f876e4139f2eba411f9e9f2531340a52cd1eb552406e38c8e12b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb",
+    "sha256": "5b1d3ad50658fedec01c102b72bb1288ecbcbd7b7c4c323d538e441cf2f94b77"
+  },
+  {
+    "path": "outputs/output-proposed-compact/geometry.json",
+    "sha256": "75996e1d387a2206acf3fd21aba11f1347ece3768889e81005b86cfeef0fa5a7"
+  },
+  {
+    "path": "outputs/output-proposed-compact/navigation.json",
+    "sha256": "964d21de3aab6136398fe0ad7ed25803304b345f7b24d22ae93e89a61ef9ae9c"
+  },
+  {
+    "path": "outputs/output-proposed-compact/suite-layout-loft-refresh.json",
+    "sha256": "2c86165a50fb48aa93e4295895b1a38b4062d831b0b25cc306cf51f6e89e073e"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact.glb",
+    "sha256": "5b1d3ad50658fedec01c102b72bb1288ecbcbd7b7c4c323d538e441cf2f94b77"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact-navigation.json",
+    "sha256": "964d21de3aab6136398fe0ad7ed25803304b345f7b24d22ae93e89a61ef9ae9c"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-furnishings.glb",
+    "sha256": "566bcc8ca1b292d7ae24aa12e4ee94159871ef3e66c7f3a4704683945f8fc05a"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-daylight.json",
+    "sha256": "cad8147d2e72c5b260486493a25fdcd7b08ed5bb302a3c303217a740510179fd"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-furnishings.json",
+    "sha256": "68a0d55281c9adb0a3a63d1f3f4c20088f6eb931dceca6226d28f42694a9971a"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).blend",
+    "sha256": "1531a0958ad0070783f50fc0483c4f071ab6376d0381ba9a54c8816b66817a50"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).glb",
+    "sha256": "4ff4db566645ad0473c57e5b5c3a81e6f912494a3d3e8c6b0e27e5a3344ef3a3"
+  },
+  {
+    "path": "outputs/output-proposed-planning/geometry.json",
+    "sha256": "0b220c96ce2f310663b4d3e766b26cd8f686222b2d4b3b7198a8a64c2c74ef42"
+  },
+  {
+    "path": "outputs/output-proposed-planning/navigation.json",
+    "sha256": "2d1f582c39982eff24bc3dc1b16f0227d2d39f65fc0189b0c8129b88bf6e76cd"
+  },
+  {
+    "path": "outputs/output-proposed-planning/suite-layout-loft-refresh.json",
+    "sha256": "a32a155c748d568d8b98a04808cea08880acea0cd2e1ffc8d1cc1f1a867a495e"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning.glb",
+    "sha256": "4ff4db566645ad0473c57e5b5c3a81e6f912494a3d3e8c6b0e27e5a3344ef3a3"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning-navigation.json",
+    "sha256": "2d1f582c39982eff24bc3dc1b16f0227d2d39f65fc0189b0c8129b88bf6e76cd"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-furnishings.glb",
+    "sha256": "e1f49f3d671991baf716b35542aa337b9ac643b3e634251f417e6b3952f7b10a"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-furnishings.json",
+    "sha256": "582358d1a0167e95d8502a6411deb746bdb8780f52458d16f2268d3143036b0a"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-daylight.json",
+    "sha256": "13819879eb02b9a41e2472c9b28e64446a093c03d9402c71722e2fe47537c19e"
+  }
+]

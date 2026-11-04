@@ -3,34 +3,62 @@ report summaries and the Sevenoaks validation checklist mapping."""
 
 
 def das_sections(ctx, schedule, risks, site_info, pr):
+    from .evidence import policy_paragraphs, CASES
     planning = ctx.get('design_variant') == 'planning'
-    ex_t = sum(r['gia_m2'] for r in schedule['existing']); pr_t = sum(r['gia_m2'] for r in schedule['proposed'])
-    gb = schedule['green_belt']; d = ctx['designations']
-    reds = [r for r in risks if r['verdict'] == 'red']
+    ex_t = sum(r['gia_m2'] for r in schedule['existing'])
+    pr_t = sum(r['gia_m2'] for r in schedule['proposed'])
+    setback = pr.nav.get('proposal', {}).get('specification', {}).get('sideWingFrontSetback_m')
     return {'sections': [
-        ('1. Introduction', [f"This statement accompanies a householder application for extensions and alterations at {ctx['address']} (title {ctx['title_number']}). It describes the site, the proposal and how the design responds to national policy, the Sevenoaks Local Plan and the Council's Residential Extensions SPD.",
-                              'The drawings are the PA series listed on PA-000. The existing drawings are a model reconstruction validated against the published room dimensions and will be replaced by measured survey drawings before submission.']),
-        ('2. Site and context', [f"The site is a {pr.site_polygon.area:,.0f} m² plot on the north side of Ashley Close, a short cul-de-sac of detached inter-war and post-war houses off Ashley Road in Sevenoaks. The house is a two-storey detached brick dwelling under a hipped {'tiled' if planning else 'slate'} roof with an attached single-storey garage to the west and a long rear garden with a summer house and a narrow strip running west behind No 3.",
-                                 f"Designations assumed for this issue: Green Belt {ctx.designation_text('green_belt')}; conservation area {ctx.designation_text('conservation_area')}; listed building {ctx.designation_text('listed_building')}; TPO {ctx.designation_text('tpo')}; flood zone {ctx.designation_text('flood_zone')}. {d['basis']}",
-                                 'Neighbours: No 3 to the west (two-storey detached), Marlow Court flats to the east beyond a planted boundary, No 5 across the close to the south-east. Site levels are model estimates; actual levels have not been surveyed.']),
-        ('3. The proposal', [ctx['proposal_description'],
-                             f"Floorspace: existing gross internal area about {ex_t:.0f} m² (excluding outbuildings); proposed about {pr_t:.0f} m² including the basement, an increase of {pr_t - ex_t:.0f} m². Garden buildings contain {sum(r['gia_m2'] for r in schedule['garden']):.0f} m² ({"retained outbuildings" if planning else "workshop and retained outbuildings; the open loggia is excluded"}).",
-                             'Levels: the new wing and basement follow the existing floor levels (ground ±0.00, first +2.80, loft +5.55); the new wing ridge matches the existing ridge at +8.05 m.']),
-        ('4. Amount, scale and layout', [ctx.get('front_wing_case', {}).get('summary', ''), f"The additions total {gb['B']:.0f} m² measured externally against an original dwelling of {gb['A']:.0f} m² ({gb['B'] / gb['A'] * 100:.0f}%). The largest element is the front wing, which contains the entrance, gym and garage on the ground floor, the principal suite above and a loft suite, over a basement cinema, bar and wine store.",
-                                          'The wing is set to the east of the existing house and linked at ground, first-floor and loft levels beside an open courtyard, so the original front elevation remains legible between the wing and the retained side wing.',
-                                          ('The side living room has a 2.40 m wide pair of glazed doors to the garden; the first-floor lounge has a rear window. Existing garden buildings and rear garden layout are retained.' if planning else 'The rear garden room is single storey with a terrace over; the workshop sits at the far end of the rear strip, 600 mm off the fences, with a flat roof 2.64 m high.')]),
-        ('4a. Policy and precedent - evidence to verify', ['The case references below are retained research leads. Decision notices, approved drawings, site constraints and policy extracts have not been re-verified for this issue; obtain and check them before relying on these comparisons.', 'The Residential Extensions SPD (para 4.21) says front extensions may be acceptable where, among other things, "the extension is to a detached house, where there is no strong visual relationship with adjoining properties" or it would enhance an otherwise unexceptional street scene, and (4.23) warns against them where houses share a common building line. No 4 is detached and closes the head of the cul-de-sac, where there is no common building line. The wing follows the host\'s hipped roof form, as the SPD asks.', 'Two-storey front extensions are regularly granted in Sevenoaks town where they are subservient in scale and do not significantly erode the set-back of the street. Relevant decisions:'] + [f"{p['ref']} — {p['address']}: {p['description']} ({p['decision']}). {p['relevance']}" for p in ctx.get('precedents', [])] + ([ctx['precedents_other']] if ctx.get('precedents_other') else []) + ([ctx['policy_to_check']] if ctx.get('policy_to_check') else [])),
-        ('5. Appearance and materials', [ctx['materials']['walls'] + '; ' + ctx['materials']['roof'] + '; ' + ctx['materials']['windows_doors'] + '. Dormers are ' + ctx['materials']['dormers'].lower() + '. Full details on PA-090.',
-                                         ('External walls match the existing red-brown brick in colour, texture, bond and mortar. Pitched roof tiles and tile-hung dormer cheeks and front panels match the existing roof covering in material, colour, profile, size and coursing.' if planning else 'The render is intended to read as a lighter, subordinate addition against the retained brick house; the roof pitches (29.7° wing, 30° entrance bay, 34° garage bay) sit close to the existing 30° hips.')]),
-        ('6. Access and parking', [f"Vehicular access is unchanged from Ashley Close through the existing gateway, with a new sliding oak gate set in a matching brick wall at the height of the existing 26-course (1.95 m) brick wall. {ctx['parking']['basis']} Visibility splays of {ctx['visibility_splays']['vehicle_x_m']} × {ctx['visibility_splays']['vehicle_y_m']} m are shown on PA-003.",
-                                   'Level access and bin/cycle storage are design intentions. Survey the thresholds and resolve a storage layout clear of the two cars and doors; the current block-plan storage marker needs relocation.']),
-        ('7. Neighbour amenity', [('The two-storey side-wing boundary gap and neighbour levels require survey confirmation. Flank-window glazing and opening restrictions are scheduled on PA-090.' if planning else 'The two-storey side wing is kept 1 m or more off the west boundary. The roof terrace has a 1.8 m opal laminated glass screen along its west edge in place of the balustrade, intended to reduce overlooking towards No 3; verify sightlines and neighbour levels (PA-021, PA-031, PA-005 R07). New flank windows within 12 m of a boundary are obscure-glazed below 1.7 m (PA-090).'),
-                                  ('Neighbour amenity, including daylight and oblique sightlines, is to be assessed against verified surroundings.' if planning else 'The pool pavilion is an open loggia. An enclosed plant location, equipment specification and noise assessment remain to be designed; no plant room is yet demonstrated.')]),
-        ('8. Trees, ecology and drainage', [ctx['trees']['basis'] + ' Trees within 15 m of the works are scheduled on PA-003.',
-                                            'A preliminary ecological appraisal will be commissioned for the roof works. Proposed drainage relies on infiltration testing and confirmation of the existing foul connection; routes, outfalls and capacity are unresolved. The basement will be designed by a specialist with a basement impact assessment.']),
-        ('9. Planning considerations', ['The site is not in the Green Belt (confirmed), so the SPD Appendix 2 floorspace test does not apply; it is reported on PA-080 for information only.' if not ctx.green_belt_module else f"The Green Belt floorspace test on PA-080 shows B + C = {gb['B'] + gb['C']:.0f} m² against a 50% limit of {gb['A'] * .5:.0f} m²; the proposal is inappropriate development unless very special circumstances are demonstrated.",
-                                        'The main matters are the scale of the new wing and its relationship to the close, and the size of the rear dormer. ' + (ctx.get('front_wing_case', {}).get('basis', '')) + ' The risk register on PA-005 sets out the remaining adjustments available' + (': ' + '; '.join(f"{r['id']} {r['topic']}" for r in reds) if reds else '') + '.',
-                                        'CIL: the net increase exceeds 100 m², so the official CIL additional information form is still required. The worksheet is provisional; establish exemption eligibility with the collecting authority before commencement.']),
+        ('1. Purpose and scope', [
+            f"Review statement for extensions and alterations at {ctx['address']}, {ctx.get('postcode', '')}, title {ctx['title_number']}. This issue tests the current envelope; it is not a submitted application or a finding that permission will be granted.",
+            ('The current planning model is the agreed scope. Pool, spa and loggia are excluded; existing garden buildings remain. The house envelope is unchanged by this review.' if planning else 'This is the separate full-design variant; use the planning variant for the agreed application scope.'),
+            'The drawings are generated from saved geometry and navigation exports. Existing dimensions, levels, neighbouring buildings and boundaries remain reconstructed estimates. Source/model differences are disclosed in manifest.json and REQUIRED-ACTIONS.md; these exports have not been represented as a fresh native-model build.'
+        ]),
+        ('2. Site and constraints', [
+            f"The modelled plot is {pr.site_polygon.area:,.0f} m² at the head of Ashley Close. The existing house is detached, two storeys, with a hipped roof, side garage and rear garden. Its original construction date and alteration history have not been established.",
+            ctx['designations']['basis'],
+            'No.3 is to the west, flats including Marlow Court are to the east, and No.5 is across the close. Their actual windows, ground levels and roof heights require verification. Local character is assessed under F05 Vine Avenue / Ashley Road.'
+        ]),
+        ('3. Proposal and quantities', [
+            ctx['proposal_description'],
+            f"Model GIA estimates: existing house {ex_t:.1f} m²; proposed house {pr_t:.1f} m², including basement and roof accommodation; increase {pr_t-ex_t:.1f} m² ({(pr_t/ex_t-1)*100:.1f}%). Retained outbuildings are scheduled separately. These are not certified survey or CIL quantities.",
+            f"The model uses ground floor ±0.00, first floor +2.80 m, loft +5.55 m, eaves +5.35 m and main ridge +8.05 m. Side-wing front setback in the saved navigation: {setback if setback is not None else 'not recorded'} m. Confirm all against measured drawings.",
+            'The former storey-area-based volume estimate has been withdrawn because it double counted roof accommodation and mixed basement with visible mass. A separate external-envelope calculation above and below ground is required if volume is relied on.'
+        ]),
+        ('4. Scale, layout and townscape case', [
+            ctx.get('front_wing_case', {}).get('summary', ''),
+            'Matching ridge height and materials are supporting features, not conclusive tests. The front projection, depth of roof, gaps and combined dormers must be judged together. The broad rear dormer remains a material risk even where its roof is below the ridge. No claim of subordination is made solely from a minimum setback.',
+            'PA-070 is a schematic common-datum comparison; it omits real depth, topography and parts of the surrounding street. It must not be used as proof of a harmless street presence. Replace it with survey-controlled street and oblique views before relying on that conclusion.'
+        ]),
+        ('4a. Policy and decision evidence', policy_paragraphs() + [
+            'The site is outside the mapped Green Belt. No Green Belt percentage limit is used to assess this urban householder proposal. Current national footprint and curtilage provisions must be tested separately from GIA.',
+            *[f"{c['address']} ({c['ref']}): {c['outcome']}. {c['finding']} Key distinction: {c['difference']} Source: {c['source']}" for c in CASES[:4]],
+            'The accompanying planning-evidence.pdf provides replacement-house cases, adverse decisions and the qualified No.3 Ashley Close recommendation. The examples are not a statistical sample and do not establish a likelihood of consent. Keeping the house remains the working route; demolition offers no automatic additional size entitlement.'
+        ]),
+        ('5. Materials and retained character', [
+            ctx['materials']['walls'] + ' ' + ctx['materials']['roof'] + ' Dormers: ' + ctx['materials']['dormers'] + '.',
+            'PA-090 records openings and the proposed finish. Verify material samples against the retained house. The effect of removing the porch, arched landing window and chimney must be assessed as part of the whole composition, not omitted from the comparison.'
+        ]),
+        ('6. Access, parking and servicing', [
+            ctx['parking']['basis'] + ' These spaces require dimensional and manoeuvring verification, including clear garage space after bin/cycle storage.',
+            ctx['visibility_splays']['basis'],
+            'Access thresholds, pedestrian routes, the sliding gate and bin/cycle storage require a coordinated layout. The old unverified storage marker has been omitted. No highway acceptance is implied.'
+        ]),
+        ('7. Neighbour amenity', [
+            'Assess daylight and sunlight, oppressive outlook, and direct/oblique overlooking independently at No.3, No.5 and the affected flats. Record habitable-room uses and single-aspect windows where ascertainable. A 45-degree check is a screening aid, not an overall pass.',
+            'The retained 2018 drawings for No.3 show a landing window on the nearest east flank; east-facing glazing on its western extension must not be mistaken for that closest flank. Verify the present as-built arrangement.',
+            'The proposed flank-window privacy treatment in PA-090 is an intention, not a completed sightline assessment. Define each restriction by opening tag and assess its effect on the room it serves. Test details within the envelope first; report unresolved harm rather than declaring compliance.'
+        ]),
+        ('8. Trees, ecology, heritage and drainage', [
+            ctx['trees']['basis'],
+            'Commission arboricultural, ecology, basement/retention and drainage evidence. Verify TPO 19/1987 against surveyed trees. Assess nearby heritage settings, including locally listed 3 Vine Avenue. River/sea Flood Zone 1 screening does not establish groundwater or basement suitability.',
+            'Infiltration, foul capacity, basement pumping and temporary works remain design questions for the relevant specialists. No soakaway performance, structural adequacy or ecological absence is assumed.'
+        ]),
+        ('9. Preparation and decision gates', [
+            'The evidence supports a reasoned assessment of the current envelope, not a no-risk conclusion. Preserve the envelope during the initial assessment. If harm is established, identify its specific cause and test proportionate details; any envelope reduction is a later owner decision.',
+            'The accompanying pre-application-draft.pdf is an unsent request focused on street context, roof mass, amenity, retention and validation. Pre-application advice is without prejudice.',
+            'The net area increase exceeds 100 m². Complete official CIL information using verified areas, demolition and lawful-use evidence. Confirm eligibility and obtain any applicable exemption before commencing; the preparation worksheet is not an exemption claim. Applicant declarations and ownership certificates remain unsigned.'
+        ]),
     ]}
 
 
@@ -51,16 +79,8 @@ def application_form_data(ctx, schedule, site_info, pr):
 
 
 def report_summaries(ctx, schedule, site_info, risks, pr):
-    ws = pr.nav.get('proposalWorkshop'); bb = pr.nav['proposalBasement']
-    roof_covering = 'tile-roofed' if ctx.get('design_variant') == 'planning' else 'slate-roofed'
-    return [
-        ('Arboricultural constraints (stand-in for the BS5837 report)', [f"{len(site_info['trees'])} trees are plotted from the model on PA-003 with estimated canopy radii; their survey status, species and dimensions remain unverified. New construction closest to a retained tree is listed on PA-005 R13. A BS5837:2012 survey with root protection areas, a tree constraints plan and, if TPO trees are affected, an arboricultural method statement, is required."]),
-        ('Ecology desk note (stand-in for the preliminary ecological appraisal)', [f'The roof works alter a {roof_covering} house built before 2000 with mature trees close by, which the Sevenoaks checklist treats as a bat-roost trigger. A preliminary roost assessment of the roof void and eaves, is required; works to the roof would be timed and supervised under any licence advice.']),
-        ('Drainage and SuDS note', [f"Impermeable area increases with the new wing roof ({schedule['proposed'][1]['external_m2'] - schedule['existing'][0]['external_m2']:.0f} m² additional footprint) ; the forecourt is resin-bound permeable. Roof water to new soakaways sized to BRE 365 subject to infiltration tests; foul to the existing connection. Basement drainage by pumped sump."]),
-        ('Basement impact note', [f"A {bb['outer_area_m2']:.0f} m² basement with a {bb['clear_height_m']:.2f} m clear height is formed beneath the new wing, wholly outside the footprint of the existing house with a nominal north wall 4 m south of the original main wall; actual foundation extents are unknown. Formation about 3.1 m below ground. A ground investigation, groundwater assessment and temporary-works design are required; the engineer must assess neighbouring foundations and any party-wall implications."]),
-        *([('Noise (plant)', ['Plant type and location are unresolved; the pool pavilion is open-sided and does not contain a designed plant room. Obtain an acoustic consultant assessment of the selected equipment and nearby receptors; a 10 m distance is not a universal exemption.'])] if ws else []),
-        *([('Workshop', [f"{ws['outside_size_m'][0]} × {ws['outside_size_m'][1]} m, {ws['outside_area_m2']:.1f} m² external, flat roof {ws['roof_top_m']:.2f} m, {ws['crawl_space_m']:.1f} m clear of the fences, timber boarded; no sleeping accommodation; Building Regulations exemption has not been established: the proposed timber building is only 0.6 m from the fences. Confirm fire resistance and approval requirements with Building Control."])] if ws else []),
-    ]
+    from .evidence import BRIEFS
+    return [(title, [brief]) for title, brief in BRIEFS]
 
 
 def checklist(ctx, manifest_sheets):
@@ -69,7 +89,7 @@ def checklist(ctx, manifest_sheets):
         return {'item': item, 'requirement': req, 'where': where, 'status': status, 'note': note}
     L = [
         s('N1', 'Site location plan 1:1250/1:2500 on an OS base, red line, north', 'PA-001', 'deferred', 'Traced base for this issue; purchase the OS extract'),
-        s('N2', 'Block/site plan 1:200 or 1:500: footprints, trees, boundaries, parking, access and splays, bins/cycles', 'PA-002, PA-003, PA-001 (1:500)', 'satisfied'),
+        s('N2', 'Block/site plan 1:200 or 1:500: footprints, trees, boundaries, parking, access and splays, bins/cycles', 'PA-002, PA-003, PA-001 (1:500)', 'verify', 'Survey, storage and access layout outstanding'),
         s('N3', 'Existing floor plans, every level incl. roof space and outbuildings', 'PA-010, PA-011', 'verify', 'Reconstruction - measured survey outstanding'),
         s('N4', 'Proposed floor plans, every level including all subterranean areas', 'PA-020, PA-021, PA-022', 'satisfied'),
         s('N5', 'Existing elevations, all sides', 'PA-012, PA-011', 'satisfied'),
@@ -86,7 +106,7 @@ def checklist(ctx, manifest_sheets):
         s('L1', 'Green Belt: floorspace calculation and outbuildings within 5 m', 'PA-080', 'n/a' if not ctx.green_belt_module else 'satisfied', 'Site confirmed outside the Green Belt'),
         s('L2', 'Arboricultural assessment (BS5837)', 'reports register', 'external', 'To commission'),
         s('L3', 'Preliminary ecological appraisal / bat survey', 'reports register', 'external', 'To commission'),
-        s('L4', 'Flood risk assessment', '—', 'verify', 'Check river, surface-water and groundwater risks; flood zone 1 is unverified'),
+        s('L4', 'Flood risk assessment', '—', 'verify', 'River/sea Zone 1 map screening available; assess surface-water, groundwater and basement risk'),
         s('L5', 'Noise assessment for plant', 'reports register', 'external', 'Once plant is located'),
         s('L6', 'Heritage statement', '—', 'verify', 'Check designation and nearby heritage assets/settings; an assumption does not close this item'),
         s('L7', 'Basement impact / structural statement', 'reports register', 'external', 'To commission'),
@@ -96,10 +116,10 @@ def checklist(ctx, manifest_sheets):
         s('L9', 'Ancient woodland and ancient/veteran tree screening', 'reports register', 'verify', 'Ask the arboriculturist to establish whether a separate impact assessment is triggered'),
         s('L10', 'Daylight/sunlight and neighbour amenity', 'PA-070 and consultant review', 'verify', 'Assess affected neighbours and whether a daylight study is needed'),
         s('L11', 'Plant specification and acoustic evidence', 'reports register', 'external', 'Resolve equipment and location; no designed plant enclosure'),
-        s('P1', 'Applicant details, title interests and designations', 'specs/planning-context.json', 'verify', 'Postcode, applicant details and all designations except owner-confirmed Green Belt status remain unverified'),
+        s('P1', 'Applicant details, title interests and designations', 'specs/planning-context.json', 'verify', 'Map screening is recorded in the statement; verify legal interests, boundaries and applicant declarations'),
         s('P2', 'Survey and floorspace reconciliation', 'PA-080 and manifest.json', 'external', 'Measured building/topographical survey; reconcile model room and wall envelopes before CIL'),
-        s('P3', 'Access, visibility and bin/cycle storage', 'PA-003', 'verify', 'Concept splays are not highway-approved; relocate storage marker into a workable garage layout'),
-        s('P4', 'Decision evidence and character-area policy', 'supporting/DAS.pdf', 'verify', 'Retrieve decision notices and drawings for retained precedent leads; verify character-area policy'),
+        s('P3', 'Access, visibility and bin/cycle storage', 'PA-003', 'verify', 'Concept splays are not highway-approved; establish workable garage storage before adding its marker'),
+        s('P4', 'Decision evidence and character-area policy', 'supporting/DAS.pdf', 'verify', 'F05 verified; evidence register separates decisions and recommendations. Obtain formal No.3 notice and approved drawings before promoting it to a granted comparator'),
     ]
     if ctx.get('design_variant') == 'planning':
         L = [item for item in L if item['item'] not in ('L5', 'L11')]

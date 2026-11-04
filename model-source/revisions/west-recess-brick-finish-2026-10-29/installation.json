@@ -1,0 +1,26 @@
+{
+  "targetedMaterialUpdate": true,
+  "fullSourceRebuild": false,
+  "published": false,
+  "geometryUnchanged": true,
+  "preservedScenes": {
+    "01 Exterior": "a29dd26eaa79263d86a6df60afc7bc5bfc7623ff79a90c1ee30c1e95732ec93e",
+    "02 Ground floor": "a29dd26eaa79263d86a6df60afc7bc5bfc7623ff79a90c1ee30c1e95732ec93e",
+    "03 First floor": "a29dd26eaa79263d86a6df60afc7bc5bfc7623ff79a90c1ee30c1e95732ec93e",
+    "04 Whole house": "a29dd26eaa79263d86a6df60afc7bc5bfc7623ff79a90c1ee30c1e95732ec93e",
+    "05 Garden layout": "a29dd26eaa79263d86a6df60afc7bc5bfc7623ff79a90c1ee30c1e95732ec93e",
+    "06 Hall stairs": "a29dd26eaa79263d86a6df60afc7bc5bfc7623ff79a90c1ee30c1e95732ec93e",
+    "07 Landing stairs": "a29dd26eaa79263d86a6df60afc7bc5bfc7623ff79a90c1ee30c1e95732ec93e"
+  },
+  "finish": {
+    "revision": "WM01-west-brick-finish-2026-10-29",
+    "material": "Appearance | wall | Red brown brick",
+    "faces": {
+      "Proposal | West recess upper facade": 2,
+      "WM01 | West recess exterior closure": 1,
+      "WM01 | West recess floor-band closure": 1
+    },
+    "interiorPlasterPreserved": true,
+    "geometryChanged": false
+  }
+}

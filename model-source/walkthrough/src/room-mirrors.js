@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import {Reflector} from 'three/addons/objects/Reflector.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {antiqueMirror} from './antique-mirror.js';
 
 // Coplanar mirrors share one reflection, retaining separate visible panels.
 // At most one nearby mirror group renders the complete house per frame.
@@ -22,8 +23,12 @@ export function roomMirrors(scene,specifications=[]){
   });
   const geometry=mergeGeometries(panels);panels.forEach(p=>p.dispose());
   const mirror=new Reflector(geometry,{color:0xc8c8c8,textureWidth:768,textureHeight:768,clipBias:.00001,multisample:0});
+  if(group.panels.some(p=>p.antique))antiqueMirror(mirror);
   mirror.name=group.panels.map(p=>p.name).join(' / ');mirror.position.copy(group.position);mirror.quaternion.copy(rotation);
   mirror.userData.mirrorNormal=group.normal;mirror.userData.mirrorCenters=group.panels.map(p=>p.position);
+  // The bar's normal standing position is 4.15 m from its back wall. Keep
+  // that whole seating area inside the live reflection range.
+  mirror.userData.mirrorRange=group.panels.some(p=>p.antique)?7:4;
   mirror.userData.mirrorPlaneCount=group.panels.length;mirror.visible=false;scene.add(mirror);mirror.updateMatrixWorld(true);return mirror;
  });
  for(const mirror of mirrors){const render=mirror.onBeforeRender;mirror.onBeforeRender=function(...args){const visibility=mirrors.map(m=>m.visible);for(const other of mirrors)if(other!==mirror)other.visible=false;try{render.apply(this,args);}finally{mirrors.forEach((m,i)=>m.visible=visibility[i]);}};}
@@ -35,7 +40,7 @@ export function roomMirrors(scene,specifications=[]){
   for(const mirror of mirrors){
    mirror.visible=false;delta.copy(camera.position).sub(mirror.position);
    const d=Math.min(...mirror.userData.mirrorCenters.map(p=>p.distanceTo(camera.position)));
-   if(d<4&&delta.dot(mirror.userData.mirrorNormal)>.05&&frustum.intersectsObject(mirror)&&d<distance){nearest=mirror;distance=d;}
+   if(d<mirror.userData.mirrorRange&&delta.dot(mirror.userData.mirrorNormal)>.05&&frustum.intersectsObject(mirror)&&d<distance){nearest=mirror;distance=d;}
   }
   if(nearest)nearest.visible=true;
  }};

@@ -89,7 +89,8 @@ class Resident {
     if(dist2(nav.position,this.path[i])<1.2&&life.planner.clear(nav.position,this.path[i])){this.index=i;break;}
    }
    const target=this.path[this.index],dx=target.x-nav.position.x,dy=target.y-nav.position.y,len=Math.hypot(dx,dy);
-   if(len<.05)this.index++;
+   // Reach the planned corner before turning; a 50 mm shortcut can cut through a newel.
+   if(len<.001)this.index++;
    else{
     // Give way: to the visitor, to a resident already ahead, to a car.
     const ahead={x:nav.position.x+dx/len*.7,y:nav.position.y+dy/len*.7,z:nav.position.z};
@@ -115,7 +116,7 @@ class Resident {
 // --------------------------------------------------------------------- cars
 class Car {
  constructor(life,bay,template){
-  this.life=life;this.bay=bay;this.id=bay.id;this.group=template.group;this.obstacle=template.obstacle;this.length=4.4;this.width=1.8;
+  this.life=life;this.bay=bay;this.id=bay.id;this.group=template.group;this.obstacle=template.obstacle;this.length=template.dimensions?.length??4.4;this.width=template.dimensions?.width??1.8;
   this.pose={x:bay.x,y:bay.y,t:bay.t};this.state='parked';this.until=life.time+rand(20,90);this.track=null;this.s=0;this.speed=0;this.owner=null;this.away=false;
   this.paths=life.drivePaths?.[bay.id]??null;this.apply();
  }

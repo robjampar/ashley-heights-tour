@@ -1,0 +1,61 @@
+{
+  "completedAt": "2026-10-27T10:36:54.046944+00:00",
+  "revision": "M16-2026-10-27",
+  "localInstalled": true,
+  "published": false,
+  "wallOptionInstalled": false,
+  "members": 2582,
+  "openIssues": 61,
+  "structuralClashes": {
+    "baselinePairs": 98,
+    "currentPairs": 86,
+    "newPairs": [],
+    "warning": "Eight local gallery pairs remain; one existing lintel overlap increases. See independent review for volumes."
+  },
+  "unmappedJoistEnds": 0,
+  "connectionFit": {
+    "assemblies": 522,
+    "solidPairsChecked": 2028,
+    "intersections": [],
+    "seatLevelErrors": [],
+    "scope": "Each joist against its linked receiver, hanger against that joist/receiver, and its infill block against those three members. Seat top checked against joist underside. Other nearby members and product/fastener capacities are not covered."
+  },
+  "beamEndCounts": {
+    "steel-connection-required": 16,
+    "masonry-bearing-unresolved": 4,
+    "padstone-envelope": 16,
+    "steel-seat-envelope": 2,
+    "concrete-seat-envelope": 2,
+    "support-unresolved": 6
+  },
+  "openings": {
+    "scopedClashes": 0,
+    "unmeasured": 0,
+    "broaderRemaining": 29,
+    "changed": 245,
+    "created": 28,
+    "preservedUnrelatedGeometryRecords": 16002,
+    "headSeals": 10
+  },
+  "tests": {
+    "python": 255,
+    "viewer": 316,
+    "browserPageErrors": [],
+    "installedOpeningCaptures": 11,
+    "layout": "Exactly the pre-existing345 findings; no new findings"
+  },
+  "visuals": {
+    "compactDaylightSamples": 192,
+    "furnishingsAndDaylightRebuilt": true,
+    "floorboardClippingFix": "Zero-area source triangles and clipped contacts excluded; area-conservation assertion retained."
+  },
+  "hashes": {
+    "walkthrough/public/structure/model.json": "907c94cb65ab621ab08c4e57a976df07b3bace2c3d85fc81d865fcaba5e79cb4",
+    "walkthrough/public/structure/members.json": "133a0e203b2b3a63a931a17c845835536e41c0fc6dd41831c730ede9d6ed8d2f",
+    "walkthrough/public/proposal-compact.glb": "627740f3c7c5b8351fdac5988a49d9e85c0f54657e5ee67ef119da2362ad29f3",
+    "walkthrough/public/proposal-compact-navigation.json": "01e8694dee82d47b4d56bdc09f2f09406bd6a62c4fe86a3e0cb75ddcbb9a3b01",
+    "walkthrough/public/visual-quality/compact-daylight.json": "2f09c5f6c63807e5cb7932ef7b7a1e306fc1b22cd6f9e41e8b793de146a33ee3",
+    "walkthrough/public/visual-quality/compact-furnishings.glb": "7cdc9ec3fab3d749d0f4411c050ad9228d4b936243f549adc3a43e4cf810745e"
+  },
+  "constructionApproved": false
+}

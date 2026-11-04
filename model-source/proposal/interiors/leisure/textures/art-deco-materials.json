@@ -1,0 +1,16 @@
+{
+  "marble": {
+    "file": "calacatta-oro.png",
+    "method": "built-in image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: physically based 3D material base-colour texture, NOT a room image. Create one square 2048x2048 seamless photographic texture of polished Calacatta Oro marble viewed perfectly orthographically face-on. Warm ivory/cream ground with delicate irregular pale taupe veins and occasional narrow honey-gold mineral veins. Sparse organic branching veining; mostly pale ivory, restrained natural geological detail, not heavily dramatic. Cover a 2 metre square slab. Flat even diffuse lighting, no reflections, no shading, no shadows, no borders, no perspective, no objects, no text, no tiling grid. Entire output must be pure usable marble albedo material texture. Match elegant Parisian Art Deco cream/gold marble countertops.",
+    "source": "/Users/r.parker/.codex/generated_images/01a13e96-4de9-7e53-89ea-3014cca9ebd6/exec-e13aa156-8fbe-4838-98cd-cdb1ef569254.png"
+  },
+  "walnut": {
+    "directory": "source/assets/materials/polyhaven/walnut_veneer",
+    "source": "https://polyhaven.com/a/walnut_veneer",
+    "license": "CC0",
+    "files": "files.json",
+    "validation": "Downloaded file MD5 values verified against official Poly Haven API manifest.",
+    "used": "2k diffuse, correctly scaled UV; restrained 0.07 mm browser height relief; no normal-map substitution."
+  }
+}

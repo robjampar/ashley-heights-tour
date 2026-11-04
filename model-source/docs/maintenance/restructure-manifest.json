@@ -1,0 +1,1702 @@
+{
+  "moves": [
+    {
+      "from": "output-proposed-compact",
+      "to": "outputs/output-proposed-compact"
+    },
+    {
+      "from": "output-proposed-planning",
+      "to": "outputs/output-proposed-planning"
+    },
+    {
+      "from": "output-redesign-e1",
+      "to": "outputs/output-redesign-e1"
+    },
+    {
+      "from": "output-redesign-i3",
+      "to": "outputs/output-redesign-i3"
+    },
+    {
+      "from": "output-redesign-i2",
+      "to": "outputs/output-redesign-i2"
+    },
+    {
+      "from": "output-refined",
+      "to": "outputs/output-refined"
+    },
+    {
+      "from": "output-walkthrough",
+      "to": "outputs/output-walkthrough"
+    },
+    {
+      "from": "output",
+      "to": "outputs/output"
+    },
+    {
+      "from": "output-redesign-g1",
+      "to": "outputs/output-redesign-g1"
+    },
+    {
+      "from": "output-proposed",
+      "to": "outputs/output-proposed"
+    },
+    {
+      "from": "output-final",
+      "to": "outputs/output-final"
+    },
+    {
+      "from": "output-reviewed",
+      "to": "outputs/output-reviewed"
+    },
+    {
+      "from": "output-redesign-e2",
+      "to": "outputs/output-redesign-e2"
+    },
+    {
+      "from": "output-scaled",
+      "to": "outputs/output-scaled"
+    },
+    {
+      "from": "output-redesign-i1",
+      "to": "outputs/output-redesign-i1"
+    },
+    {
+      "from": "output-redesign-e3",
+      "to": "outputs/output-redesign-e3"
+    },
+    {
+      "from": "photo-review",
+      "to": "archive/photo-review"
+    },
+    {
+      "from": "Regenerate Gate-aligned Option.command",
+      "to": "launchers/Regenerate Gate-aligned Option.command"
+    },
+    {
+      "from": "Open in SketchUp.command",
+      "to": "launchers/Open in SketchUp.command"
+    },
+    {
+      "from": "Open Proposed Design.command",
+      "to": "launchers/Open Proposed Design.command"
+    },
+    {
+      "from": "Open House Brochure.command",
+      "to": "launchers/Open House Brochure.command"
+    },
+    {
+      "from": "Open improvement review.command",
+      "to": "launchers/Open improvement review.command"
+    },
+    {
+      "from": "Open Planning in SketchUp.command",
+      "to": "launchers/Open Planning in SketchUp.command"
+    },
+    {
+      "from": "Open Planning Design.command",
+      "to": "launchers/Open Planning Design.command"
+    },
+    {
+      "from": "Open Proposed in SketchUp.command",
+      "to": "launchers/Open Proposed in SketchUp.command"
+    },
+    {
+      "from": "Open in Blender.command",
+      "to": "launchers/Open in Blender.command"
+    },
+    {
+      "from": "Open Walkthrough.command",
+      "to": "launchers/Open Walkthrough.command"
+    },
+    {
+      "from": "Regenerate All Outputs.command",
+      "to": "launchers/Regenerate All Outputs.command"
+    },
+    {
+      "from": "Regenerate Six Options.command",
+      "to": "launchers/Regenerate Six Options.command"
+    },
+    {
+      "from": "Open Planning Walkthrough.command",
+      "to": "launchers/Open Planning Walkthrough.command"
+    },
+    {
+      "from": "Open Rendered Walkthrough.command",
+      "to": "launchers/Open Rendered Walkthrough.command"
+    },
+    {
+      "from": "Open Proposed Walkthrough.command",
+      "to": "launchers/Open Proposed Walkthrough.command"
+    },
+    {
+      "from": "Rendered Walkthrough.md",
+      "to": "docs/Rendered Walkthrough.md"
+    },
+    {
+      "from": "LATEST.txt",
+      "to": "docs/LATEST.txt"
+    },
+    {
+      "from": "regenerate-redesign-review.log",
+      "to": "logs/regenerate-redesign-review.log"
+    },
+    {
+      "from": "regenerate-planning-timings.json",
+      "to": "logs/regenerate-planning-timings.json"
+    },
+    {
+      "from": "regenerate-all-timings.json",
+      "to": "logs/regenerate-all-timings.json"
+    },
+    {
+      "from": "regenerate-redesigns-timings.json",
+      "to": "logs/regenerate-redesigns-timings.json"
+    },
+    {
+      "from": "walkthrough/walkthrough",
+      "to": "archive/nested-walkthrough"
+    }
+  ],
+  "edited": [
+    {
+      "path": "Open House Brochure.command",
+      "beforeSha256": "d0eba02a6b3facb65d9e7719f21b6a8a62417a3c796b3ac82a36b8609258158f",
+      "afterSha256": "6395e049bdd517fd55c8b2ae70db3bdaded6b9185aeee67316c731d4d0971025"
+    },
+    {
+      "path": "Open Planning Design.command",
+      "beforeSha256": "be0a5da6ac416e121b1147b9d6e3110a4e058039a8f0a868e141c38279936407",
+      "afterSha256": "3ab486e320a559c618b4c4d4aaa363a8209b1e5896d55bbfa1f776a3ddab8f2b"
+    },
+    {
+      "path": "Open Planning Walkthrough.command",
+      "beforeSha256": "daa724fbd8d354db76c76613fb13cb4869564ed6716f053fb9ba24aba5b4aaa5",
+      "afterSha256": "908e33cac62539b81f9752641be5ffce364edcbb11bdb890d7cf05190f52a80d"
+    },
+    {
+      "path": "Open Planning in SketchUp.command",
+      "beforeSha256": "20104eefd71bfe3ea580c136a7010152642abe0f571951cffb719b4b71a9ffd8",
+      "afterSha256": "7c5489a2b38ed0980be82980a3161c77c14dcc1c78008de50031936ade9a09da"
+    },
+    {
+      "path": "Open Proposed Design.command",
+      "beforeSha256": "97ec1e2b9833ae3544777baac6d523c64de34871b4891d48dd0e1fbc196f521b",
+      "afterSha256": "5877b885eaa05daddb075d9992cd37e73c46c41f4c9529e893ea701c1a7f3014"
+    },
+    {
+      "path": "Open Proposed Walkthrough.command",
+      "beforeSha256": "441e5d04917f148baba2a88c6ddbcf6896c1b8bbf5446464b7bc6e1948b2d5f3",
+      "afterSha256": "3701e2704b5b2f76c0377ffd0df5d81b8908a954734d7607e99f93d841fd3b32"
+    },
+    {
+      "path": "Open Proposed in SketchUp.command",
+      "beforeSha256": "6fd945fcef6d5a0284f2425a7b381e6148e0bcccdc16bac32e8128d260b364f8",
+      "afterSha256": "fa1152f3e5e0661671b787065d8de04a46edd01532ee85f65a9ff04d45a044b0"
+    },
+    {
+      "path": "Open Rendered Walkthrough.command",
+      "beforeSha256": "6b69151f41c064c560145f616c787201de0daf62e0d588918ee2a529de6eaa84",
+      "afterSha256": "90287e9542b9c1f69dd556ffe3b6a7b15960c90571d915a99d3b12069657ff4e"
+    },
+    {
+      "path": "Open Walkthrough.command",
+      "beforeSha256": "619cca6215c4c78089855a3ae7950627b43c733c4756366886de21de55f14fac",
+      "afterSha256": "6c5ce57f947f2bc553f5e6285286221f416b280f9be5d399df6837d6e6c6f89b"
+    },
+    {
+      "path": "Open improvement review.command",
+      "beforeSha256": "ac7f84759b24e7ec0ae55a6c5a18794a3a9e804ab2868ed28045b557675ba3b7",
+      "afterSha256": "f2c001ba90300c388e29866662ec2ae449b9b1a699a08213069b43d62105e945"
+    },
+    {
+      "path": "Open in Blender.command",
+      "beforeSha256": "b1d1abe8ec4cf2dfd14563abdfd91f5301b528205efa7ae7b7136e9b2b64b07d",
+      "afterSha256": "b8692f9f1c5b157d0e49156fe668fd845f38bd341f076e9dc4e607ecccb5f40e"
+    },
+    {
+      "path": "Open in SketchUp.command",
+      "beforeSha256": "bb864e310184876310827a7b0a9d2dcc8c422a4e185cb99dd156ef7ad9704b0c",
+      "afterSha256": "6ef5ea73270be04add016b0d4df80725ee26bca265f656f04aaa03855829a0ef"
+    },
+    {
+      "path": "README.md",
+      "beforeSha256": "687089f6cf7b7f5217b07f6f20d5d0ab844060a30ff10711c025ebb5e712496f",
+      "afterSha256": "51f836ecd192825042e6aa315e3262a5fb079c689fafe1fda53478303df0f6ce"
+    },
+    {
+      "path": "Regenerate All Outputs.command",
+      "beforeSha256": "f6b8d65725c2d61af25788f7710e740dc9a754b685d4bdc48e3e7eecce31973c",
+      "afterSha256": "1947d05cc014540b370018c8145a27ee6f16a99caf8d86f08c2982f7263241a3"
+    },
+    {
+      "path": "Regenerate Gate-aligned Option.command",
+      "beforeSha256": "1ca71541389eca03789377253a0e4bf142fa52362822071e856e826cab4bc6ab",
+      "afterSha256": "13acb4f7917ee7ba92e843800168b613d0fe2e60339427d63af1b9fc392188d0"
+    },
+    {
+      "path": "Regenerate Six Options.command",
+      "beforeSha256": "dce90a15f5641db9d93aab02dc5c1328c9a7012e785b54f3708380466e6bac39",
+      "afterSha256": "f53c12112249a517172c4602d2025b5f43723d664ec9c9b593b0c946b87de10c"
+    },
+    {
+      "path": "proposal/P2_check_parking.py",
+      "beforeSha256": "b13278c20c41946500cdf80f46721fa1c419b1abdbf830983d1d593bd3647bcb",
+      "afterSha256": "bad19f6b88410570a07dcfcd746371c97486c5c7484b80d35115bb88192731b3"
+    },
+    {
+      "path": "proposal/P2_make_site_feasibility.py",
+      "beforeSha256": "530970086ca0d4190549eb9491db3ab69ce74c4dde6f496bf18d83e246391327",
+      "afterSha256": "7cd16ae2f04691049d32ec0f301669e38812b63ed5dac1f523a59540126bf3c0"
+    },
+    {
+      "path": "proposal/P3_make_site_feasibility.py",
+      "beforeSha256": "781b19feb82f75b5f7377e96f6c9126599e0f64786f6d7af349b203275fea618",
+      "afterSha256": "ee8e3f50bb21584e7370987e6a2a819776614b83a3ee30d34ae5dbfe0a3e05ac"
+    },
+    {
+      "path": "proposal/P3_native_light_audit.py",
+      "beforeSha256": "e23ac3b8bfb4fd205cf4d57f8ddbcb024af54915530693a01538a7bcd5c54be7",
+      "afterSha256": "09af40a2f85e144ee0b69918e2dacec3d4bd9eaef39e0a95d69900c84b2634c6"
+    },
+    {
+      "path": "proposal/P3_rear_geometry_audit.py",
+      "beforeSha256": "7ee9ae55bd7a1d7f4fd2b2039065b2229de939916dd16c0d7f9204ffc906ddf2",
+      "afterSha256": "f056b0fef99e6f91473d51fcf411004337e3241c48f0310bfc5ecfa951cb90a0"
+    },
+    {
+      "path": "proposal/P3_room_area_audit.py",
+      "beforeSha256": "2bd6ccceef63b2a5105548c01141afd12ac6068740e8ceac13ec46869d05f52a",
+      "afterSha256": "0b99453d559ccd85eb7a1654effb27d59fab5aecdd33dcfbf5169f5a210b00fa"
+    },
+    {
+      "path": "proposal/P3_solve_site_area.py",
+      "beforeSha256": "53cb16c9c63e82754106ad9d2eaef356ada8f5d50f294a118b5d824b08c7adb8",
+      "afterSha256": "7bdec07667bc3d52c19bfe47e6dbcb0904b71c7e339255b3ee1588deeee62ece"
+    },
+    {
+      "path": "proposal/P4-black-patch-audit.py",
+      "beforeSha256": "44c3855fb57dfa144861ef290144e8c284842f3dfeef37e2b0e0e25ce58df7b3",
+      "afterSha256": "0c8baccd049e550676640026075ff00bf29b37b5b796c217a62b07fc7fb91e5a"
+    },
+    {
+      "path": "proposal/P4-chimney-option-A-smoke.py",
+      "beforeSha256": "dd3baf84d5747a49fc934ab0145ee92f01fdae26d35fd87111b28f5ca01e6ee9",
+      "afterSha256": "3dfe925ceee3fd7fcf10ce0d85eac8a205b7e94d3730268dff6c59334d071693"
+    },
+    {
+      "path": "proposal/P4-edit-views-check-final.py",
+      "beforeSha256": "e407a0b7657d898c681696ee2b637bc28738b8ecc2256939204052649deb3907",
+      "afterSha256": "f1f63fb7b3ddb318a7eed244ecd3a0d5dadd6579145dc59b1cc282e6911e7e33"
+    },
+    {
+      "path": "proposal/P4-final-junction-audit.py",
+      "beforeSha256": "6b18903824e898a6094a2c095012b5e27db120bf312c86414cccef376f57f210",
+      "afterSha256": "35f91aca93200e7a11ebd5a9744c2384e60c3e0bfd0566e03c927b77c7e77061"
+    },
+    {
+      "path": "proposal/P4-floor-overlap-audit.py",
+      "beforeSha256": "90cfee6fd9f3f39274d6c4aa33e6269600f6c5a371dd87552b96bfa86189e5d3",
+      "afterSha256": "c249738b184768f2a9815bc760d32291d97f1b455e71fce48b425bfa96de0934"
+    },
+    {
+      "path": "proposal/P4-integrated-envelope-audit.py",
+      "beforeSha256": "f90a716dbd3b7cd047ba56021e579b9f40f97d866091908539ff23979873714a",
+      "afterSha256": "89a16e12fa6a9c7e33a6104e014fdfc3af1f84d0911d7a316de866f240d4d987"
+    },
+    {
+      "path": "proposal/P4-loft-area-audit.py",
+      "beforeSha256": "dddd501a685323027b57398ec5ccb23b6890f2429458c7a735d10e3fdb033fd9",
+      "afterSha256": "2702efab82a0d5acb988ce39ed548eda2b48ae11ff364f3dbad83954d0d3c0a6"
+    },
+    {
+      "path": "proposal/P4-low-collector-smoke.py",
+      "beforeSha256": "65eaa85068d0b89c28768c105bf63198f820bc0528800bcb27592f4aa53bc593",
+      "afterSha256": "7f65f956ecdec2973d0b5df941957be0db8ad12bc2b3c12f31ec87f1590113ca"
+    },
+    {
+      "path": "proposal/P4-roof-smoke.py",
+      "beforeSha256": "dd0afe7dd023c18959f2e3ae1099bb8edc27e08742df8bb7150c1665d9f4d152",
+      "afterSha256": "cd7ff0e46268b6ceeb0bd86527f1dbc855a7bf1f5c588f6c6461ed6da984186e"
+    },
+    {
+      "path": "proposal/P4-vegetation-clearance-smoke.py",
+      "beforeSha256": "2627340871c410e4d941de860a10e9cfc3a530b5e770197aa856640ba1f545ba",
+      "afterSha256": "f11b77c4d55841f8a747187b3a439284760b091af076db39d75ab2462c99045a"
+    },
+    {
+      "path": "proposal/P4-weathering-smoke.py",
+      "beforeSha256": "f8b7b28cd0c294bbd3e3a0fc8da2fc606f38c7efe12b68a9dabe55dd2ba3ae5f",
+      "afterSha256": "5140406bcc43cb141ef6bd18fe4466515f6b36cc078991306319f81d3ee7b6c4"
+    },
+    {
+      "path": "proposal/P4_audit_swept_doors.py",
+      "beforeSha256": "c9021ca8fee8b4adc2211d713ca8ed3eea1b55c544b56b610e0fb818c2630665",
+      "afterSha256": "0579de67c25c644ea55c6acd0738dc6421be192dcbb0b91abb7972c9d6f8ab66"
+    },
+    {
+      "path": "proposal/P4_bathroom_followup_check.py",
+      "beforeSha256": "749bb22d77ad14d3e3e4f7a6824f419965fdcc726a786b32957f3446269e13e7",
+      "afterSha256": "dd1273b6ba4f33ae48d2ba9648e0571b37e606480fb52b23ca2ad43d838e43e0"
+    },
+    {
+      "path": "proposal/P4_check_fixture_reach.mjs",
+      "beforeSha256": "0df2de5a1b3b917536015e2893333cb6a633dda71435ab1b91f5613d5374b462",
+      "afterSha256": "5953809ceb7aed104fb62e248f5ce818749133ad3bd45b7c9a81f55bcc0c1156"
+    },
+    {
+      "path": "proposal/P4_check_garage_sweep.py",
+      "beforeSha256": "f35ad1570a29b28bc9a6142b16bd632febe515405acabfb7ae2e231d4f54781a",
+      "afterSha256": "955ab206f511b95fd858f8bd88998f46d30e991d9bb9102bf413d7ce2736b028"
+    },
+    {
+      "path": "proposal/P4_make_front_floorplans.py",
+      "beforeSha256": "84c2a472569c872be37e2ee28428f8cdad29c9b9c83f7f6ea1fab7ce71e32cb2",
+      "afterSha256": "8be5781bf622618bd79c1741cddb0e1ec3ae9a88bffdb1a41e669d15aa239e67"
+    },
+    {
+      "path": "proposal/P4_make_rear_finish_comparison.py",
+      "beforeSha256": "3bbb3ac8a42eb5b4294806ebd15569035f9bc030c91bf02ac6cf0d7d41022749",
+      "afterSha256": "dd1521684488a2ace4b35f6056427d1d33e3bbcad59a379c64231e17aa9afa71"
+    },
+    {
+      "path": "proposal/P4_make_site_presentation.py",
+      "beforeSha256": "a15e12ef539e9b0bb587c347e2ffb9ed7213916fb3fa0a333d765d0118f3f7d2",
+      "afterSha256": "b9ae56ff50c9e74e0331925c10b432d8b6fe431885353bc1e46b765e76fec3b5"
+    },
+    {
+      "path": "proposal/P4_preview_architectural_lighting.py",
+      "beforeSha256": "2018e88f76358df709b51211e3899bcaf125e01c49a60ccb91de17c9fd5d940d",
+      "afterSha256": "2828a4435457d8dcd9a08bc7bbd65cabd4c9bc762583726bfac167127861192d"
+    },
+    {
+      "path": "proposal/P4_preview_boundary_foliage.py",
+      "beforeSha256": "d2a1e4e3494ddeb6b58dfae6654668a5c295f8d17c4e3dfcb23aad8ec3b5f1bf",
+      "afterSha256": "81627d20bd997240c0d2dd5011f4d9e78f49231372c8f7ae1f19016f95515732"
+    },
+    {
+      "path": "proposal/P4_preview_foliage_detail.py",
+      "beforeSha256": "14d88d4aec7f8d8d26a4aa248bf74f14e11926d5f7540eb04f2a88574d3575f3",
+      "afterSha256": "7740eea674e60c3b5e339b4f4d3d39707bfd823471de3b97a6df715983d5bad3"
+    },
+    {
+      "path": "proposal/P4_preview_rear_finishes.py",
+      "beforeSha256": "540a6f3ab76186c769f257aeab282dc500e8894a77aad88a31fb8c236d6e6c44",
+      "afterSha256": "9e7fc7c00f8dd43c87f0b479c67beb94519f2f606b351aef6506328e49851fe6"
+    },
+    {
+      "path": "proposal/P4_raypick_boundary_placeholders.py",
+      "beforeSha256": "f2b0b1ced7564669726664ef44fc0bfe1354737e4e2bd6bbf9677dcc62de82b7",
+      "afterSha256": "d0bfbcd621f7974612c8fcf51a15b086d8ab7291bdae587886e594800cb13a01"
+    },
+    {
+      "path": "proposal/P4_render_exterior_audit.py",
+      "beforeSha256": "8b1442f8ac8bbdb60561d5f5f41842043fbd4da6a6b826b4af533022ea1f2f5f",
+      "afterSha256": "c579c3be43d1b1d1eaa4bcec3c256346e030828171f34c7bcbd779d6edf3b93f"
+    },
+    {
+      "path": "proposal/P4_update_front_audit_status.py",
+      "beforeSha256": "6bea3933aa3defda0f27af9aa2c5591a8904fe2ed8ff65f51a6b833fda374417",
+      "afterSha256": "c976d87315a8bfb9ff2a023801a86ec9acc2fb7a6b8cf56c87152ed267628870"
+    },
+    {
+      "path": "proposal/P5-roof-envelope-audit.py",
+      "beforeSha256": "c12f553617029531aacf9d6ba597dc2e4a9dfeb40c1fb59a08a27525972dcaf4",
+      "afterSha256": "3459e374e75cde908889a1c2d7d9ad37be045c3d0dfbddae93b1f4e6b9c1eb98"
+    },
+    {
+      "path": "proposal/P5_make_site_presentation.py",
+      "beforeSha256": "6c9eaf16ee2a27cafe109c468c92abc270c8813e9deeeeebcb6a09a8ed96769e",
+      "afterSha256": "9455f0bf9a8fcbdf65c34f42f69d2f93db038a5db78e20289229b895a52b6d97"
+    },
+    {
+      "path": "proposal/P6-native-light-diagnosis.py",
+      "beforeSha256": "079fc6b00307b4beeb54f1ae446800ea3544ed2b8c898fb2c3b89644621370dc",
+      "afterSha256": "8aa5c6e7fe551392ab573c6c9b43da4cfff63c9969b6edeb42c51a87fa1cf69e"
+    },
+    {
+      "path": "proposal/P6-roof-envelope-audit.py",
+      "beforeSha256": "8272ea4d62a5d30812b652646f52e1e414273f55f45c31c6ca5897ae2e1f98c9",
+      "afterSha256": "f38383bc8ef3d08bb8c30dbf22255f3f111cffbfb0ec73140ad5ded17243a04d"
+    },
+    {
+      "path": "proposal/P6-roof-source-check.py",
+      "beforeSha256": "6f4260acce46d60e6d08af891565c58fcc8ce38aa36d13bc9a52dbb1aa03470a",
+      "afterSha256": "3f01ef128044bbc1e1bfcdd158676d3d88ff515d5085c061e128ca73fa8371de"
+    },
+    {
+      "path": "proposal/P6_audit_layout.py",
+      "beforeSha256": "786aff9e5a2404c03b9e79ad64990893417edb8b36eacd55e367dcd7c971a9ed",
+      "afterSha256": "31f39e4b77efefec2beaee866839dbfe43feb3094290e339f77b59b4402bfc4c"
+    },
+    {
+      "path": "proposal/P6_audit_side_facade.py",
+      "beforeSha256": "89254175b9a954493b2deaf75a482963b5a7cc9a71d244c90d423468d6514da9",
+      "afterSha256": "ecbb82a2968b9cb08d3a1b697e065d9961af77aeb5f6fe1cb794b3c52a5ca1d6"
+    },
+    {
+      "path": "proposal/P6_audit_swept_doors.py",
+      "beforeSha256": "15fbac6f24153d25dd4f2a5379754f2191762b1b491364e13a9f26c86432096a",
+      "afterSha256": "51bf475fc61e728e9fe2a66cae7538ba5a5cdb6fa611af58bfdb04861a185f27"
+    },
+    {
+      "path": "proposal/P6_fixture_grouping_check.py",
+      "beforeSha256": "c2ae09d8b410f39dc31830c2d2e50526b38f0fde26cbb75e35d88306574a2d04",
+      "afterSha256": "cbcfc6f9f6ee8bc78ef685f4651efff998bc03ef4f1525593761df8cd6f1233a"
+    },
+    {
+      "path": "proposal/P6_make_focused_review.py",
+      "beforeSha256": "1463099322200b9a1f9e69ae9548afc5d49a3483891cb49bde04c8bcd8c58b65",
+      "afterSha256": "917216e76caa4a31dc1178feeaaa1930fba1d9c23bb2e1d0406299f70903bf06"
+    },
+    {
+      "path": "proposal/P7_check_shared_lounge.py",
+      "beforeSha256": "130d8a5e22ccf1ddccf452043d018122d8e54dac6fa10407dd47ff226f39b957",
+      "afterSha256": "8ffc2cae63aa690aaf62b4a757499a86ebfded0ab4ddcd102196bd7b8d1fa0be"
+    },
+    {
+      "path": "proposal/P7_make_review.py",
+      "beforeSha256": "f675064bbdd18feb239373d888bd16d4f5a27e5f888c2483732f7d2f7ea44516",
+      "afterSha256": "ad00c07dd43d4e73a1c9f3a55d4fb54890d83a81fc2d379495acc1604e61df5c"
+    },
+    {
+      "path": "proposal/P8-roof-envelope-audit.py",
+      "beforeSha256": "88d4ad27ca392309cbd12d1868b10c68452d205210f037ded6368a7188b76953",
+      "afterSha256": "c87bd9cdfbfae227535fa2d25369a951686addbb2717c1c7f61763de5b64929a"
+    },
+    {
+      "path": "proposal/P8_check_shared_lounge.py",
+      "beforeSha256": "4a09bbc01c3032f1fe5db93eef8d5966d013e15d461d30bb0b880875dc31728d",
+      "afterSha256": "bd68e5948481f16e701aeb3252d4c79ad16d19a7c954147eca1c8ed8b0e2d0c3"
+    },
+    {
+      "path": "proposal/P8_check_workshop.py",
+      "beforeSha256": "b08ca8832fd433854f46dfb4a5d9ef416b530954eda5c85e07225cb3f255fd42",
+      "afterSha256": "7ce9f6d34a5e514a21e8979b1a7e451f9968610cff42bfb49b669aa0a4d3c12b"
+    },
+    {
+      "path": "proposal/audit-loft-concept.py",
+      "beforeSha256": "b96b285ecb4db42b2e4bdf0146b39f5995a48db435bfb50b52441de509e2accb",
+      "afterSha256": "bcc87233ada062ee68d6019225b4402784c29c2992d29fe3b0a98f618f155b02"
+    },
+    {
+      "path": "proposal/audit_P8_loft_source.py",
+      "beforeSha256": "fdf0ff36ac66fd02645f9a5236ab47e20da6e24b78fcbf6009cb3e22fb3b5305",
+      "afterSha256": "2929475539eb38785cc9b48721527d3354fc60e8e253510383f361fd2a137e44"
+    },
+    {
+      "path": "proposal/audit_proposal_doors.py",
+      "beforeSha256": "ba86678ae959ebabb948a075861079a392139972847edc2cb794ae686f17ab71",
+      "afterSha256": "2c80ddf7ef58972c41085c2d392ff27c17d2d5243a63aed4e4c271dafedaa9e6"
+    },
+    {
+      "path": "proposal/basement-source-proof/probe.py",
+      "beforeSha256": "736bbad444b2d80da36497664f9399745e8df9d2fa30e29c2cc69ba7c4d5cc02",
+      "afterSha256": "863ec66a0269c5e66b95bae534d83967aff67b4ce0617ad6b61c61032708d3c2"
+    },
+    {
+      "path": "proposal/check_parking.py",
+      "beforeSha256": "08afef717d12592cc10eb86ac7772cc7a2f4fef8580516570e0f21d64c99d8df",
+      "afterSha256": "7451f129712ba28a0dbf4b68e005c08ff623db0d6ef08dbffdc13bab27a330b7"
+    },
+    {
+      "path": "proposal/check_parking_comfort.py",
+      "beforeSha256": "d3947b79f960f58e0ee7e97352ebcb3e2ee2bd5cc957d33c39f7c17cdf70ce06",
+      "afterSha256": "8299486b2ea30b75d925355c0b564383ebd8c6fbda1a2b7777118a171cdef0d6"
+    },
+    {
+      "path": "proposal/check_parking_final.py",
+      "beforeSha256": "ef7d842a3991f18a27414b2fd4c98dcff211da18ee181a646dd63109a2b48266",
+      "afterSha256": "ef106effcc0d1de66f01179acf9a8e2612b86b4077133d47e91298c89fdae3ba"
+    },
+    {
+      "path": "proposal/check_parking_initial.py",
+      "beforeSha256": "fa8f929cf8314d7a8d06ad08591fd0646b7476d86f61e3a96a3a414406ab85a6",
+      "afterSha256": "bb03bb43798b16289549782e37f6dbc81cb31fbd38a00bae83fb4dc6e9eefbb5"
+    },
+    {
+      "path": "proposal/check_parking_tree_variant.py",
+      "beforeSha256": "540e9ffe52b46bc4c7f4cfeb5452c22c10199807716ca77548e30786627c2bc6",
+      "afterSha256": "c30b39e30bda893ca96258fe8aa2828dc890a35e621602bf1a5b3aa20535ed10"
+    },
+    {
+      "path": "proposal/check_parking_tree_variant2.py",
+      "beforeSha256": "7e8e28e3ee134c852f080b12c2ca0da9f884c7bf3f2483a0905bd42bc86ee61b",
+      "afterSha256": "6a8eb618c3ae9b5e5d141afc7ca560a3bd1cfb8d279a96a69882a3abf4b97aa5"
+    },
+    {
+      "path": "proposal/make_P4_chimney_options.py",
+      "beforeSha256": "c4d6bdb473752fecac1b17e3850676b47b7081b1c78c3e08178a852d5edd5443",
+      "afterSha256": "03c6110a9aa84d9159553e7e51f6d63ded829e6ab6d7b6401aa9e7f21d74f7a3"
+    },
+    {
+      "path": "proposal/make_P4_sections.py",
+      "beforeSha256": "6f33b82e87922e276d3da71509bfc240e4dcee3d272b917c9e701b3615f8e3c8",
+      "afterSha256": "99ead3c6ae5d3615a99468bad163d34ec6b3f1c6545ae571dea1b488ec4c3f19"
+    },
+    {
+      "path": "proposal/make_P5_floorplans.py",
+      "beforeSha256": "714e0540c78d1670632c606263cd8d82f1a1f75f65796aab99e9837501fd5fb0",
+      "afterSha256": "381f64298280d1dd5335de7d4f54986d8cabe8db7f7d143591f17f0acd6bf508"
+    },
+    {
+      "path": "proposal/make_P5_sections.py",
+      "beforeSha256": "cf6237767476bc064a9666459c0b47e06956119e53bf5aad5b8fb90305b94bdd",
+      "afterSha256": "f3e4c5ebbc92b7eb9567c0ea04e78b5b20f7ed853c4981fbb61d3f0b90613666"
+    },
+    {
+      "path": "proposal/make_P6_floorplans.py",
+      "beforeSha256": "b2484bd8ad42efffdb873404868f1bc349cc6c4e4609d20fa2f6bb0a3fe06a56",
+      "afterSha256": "a179c894919a53e777ad31475ed013ebdbd2eb1970d8fe1a22ea75438c84480e"
+    },
+    {
+      "path": "proposal/make_P7_floorplans.py",
+      "beforeSha256": "4ca6c19c431e4ba463b4d7eea9eea95c1f462f005f2f83a4f235d9f46d6bf1f3",
+      "afterSha256": "d159494845dc02e41bbb72ac21d91fd7fcb882f07bb90bf681db88e310d1d5ea"
+    },
+    {
+      "path": "proposal/make_P8_floorplans.py",
+      "beforeSha256": "29c6ef5b05b4efe186ae4f2ecdecf259f6049005eae3a19cadba2bf4c46ae7f2",
+      "afterSha256": "cb481c305097c22763b029be37a418c6f536f20d5d527cca7185ffcb86da3e17"
+    },
+    {
+      "path": "proposal/make_P8_site_plan.py",
+      "beforeSha256": "6936ebf0323bedf9831b475de0c3f7a9c06f7b7c7ecfeeb04b9f36f06f9a1b41",
+      "afterSha256": "e7e7fde0e57ba10691c5f9bc1591c43b563ae87111876dc38afce68dc608fc1c"
+    },
+    {
+      "path": "proposal/make_site_feasibility.py",
+      "beforeSha256": "18444c27c2743a6d929051305a0c18b34d879a407eede68d520944b56b5b3167",
+      "afterSha256": "d60e8fe84904e8e732fd9578854188f474e5763a409539a77cbbdc2038bae933"
+    },
+    {
+      "path": "proposal/neighbours/overlay.py",
+      "beforeSha256": "c200cbc840729bccafbd360db873f474777e7094b21dde69b56e52d65349cc6f",
+      "afterSha256": "24739c6b83225ef45abf6041648e35887ed7ccba26fe4f49b66d0f4b2e036fcd"
+    },
+    {
+      "path": "proposal/neighbours/terrain/build_terrain.py",
+      "beforeSha256": "70c05d9eec629f68bf39658c909a1dbe5d13049befa4abe09e3d88cc5b03abce",
+      "afterSha256": "dcf68bccb38cf39329c48cc48fed0f786f5b01ada2df8f1425e718bf404a0968"
+    },
+    {
+      "path": "proposal/original-preservation.json",
+      "beforeSha256": "9971c88ecd0e6fe59cda187c0a308604d94c1e3b42e29c36e77c74964dee2e43",
+      "afterSha256": "2b1dc14f8302b702371bd85872b92319f8954fc148cd1f2b9599baa90b8a4d0c"
+    },
+    {
+      "path": "proposal/refresh_P4_audit_notes.py",
+      "beforeSha256": "de02b582af5c0b897cc45d8468daacd68d15f5a7122e688b0fd53c893a9aace7",
+      "afterSha256": "27945339f458fec51dcd1c6c8d52ee2b28744738591cf03e20f0d7abafbfa28e"
+    },
+    {
+      "path": "proposal/street-registration/register.py",
+      "beforeSha256": "2cf6d7fd79c0795f864cbfaaac3a54c7351f4f694948c3e3e3f2b7ffa7de456c",
+      "afterSha256": "042de3d079e7216bf038da3608ecfbbceac3d07e84b5367200ffdaac0f3e7d2c"
+    },
+    {
+      "path": "proposal/superseded-p1/build_extension_proposal.py",
+      "beforeSha256": "6766071cdfc9ba70e3d434665b797930b41b98d6feeadf0e4938b6b7ebc0db21",
+      "afterSha256": "b023d8c52cb995f46c0f8edeb9d43f2798494fe7977b521342b1c15f6f0614b5"
+    },
+    {
+      "path": "proposal/workshop-source-proof/probe.py",
+      "beforeSha256": "5ad3cbcc07df883f6b331df47392edb19cceb474be7d332c33760c1d6170084c",
+      "afterSha256": "c10b686190f0787b3b476f417d71fae88a141616facf9077393e4489894cac32"
+    },
+    {
+      "path": "revisions/appearance-options/stage_github_pages-before.py",
+      "beforeSha256": "7975d201c4634ebce3ebb503e3df55a981c36f03b9b8a191a6c84b19f6147568",
+      "afterSha256": "ad9e63b07523c772ad5b07a6246d63b52f3eb6861b2e69c7f02fe1ba0f5155e5"
+    },
+    {
+      "path": "revisions/appearance-options/verify_exports.py",
+      "beforeSha256": "4108431d014417797580252b09b7a8e5b994c60a57529048348468088250d7f0",
+      "afterSha256": "f21b4ebb80b4c7865ca6a0b26fe2b56d098261c7c33d96de1880265588a0de8f"
+    },
+    {
+      "path": "revisions/brochure-expanded-2026-09-28/original-build_house_brochure.py",
+      "beforeSha256": "92ebdbb52806da7a0c89196b72fa0bc233352736a04913536645308f59137b70",
+      "afterSha256": "446e92c60ff8bd275af79f21bc041277146a084a650f9a4d81bcdf476ee18b7a"
+    },
+    {
+      "path": "revisions/brochure-spatial-2026-09-28/previous-builder.py",
+      "beforeSha256": "e39cf9d168a516a4c1c0940772656ceab339975482b351fa0b6be017ed60cccd",
+      "afterSha256": "c4447d4b40f1df521190cc7a5038144a13cf98764500cba653c5660281e467b5"
+    },
+    {
+      "path": "revisions/build-speed-2026-09-25/before/scripts/audit_exterior_finishes.py",
+      "beforeSha256": "62233fd47a6357d8d5e426af875bf2c90dd753b43d2298e43c7f68702b6c7a20",
+      "afterSha256": "01f3257e9ea1a812d760b4897e9a029625b9f2f66aeb953587b61130746049a9"
+    },
+    {
+      "path": "revisions/build-speed-2026-09-25/before/scripts/build_extension_proposal.py",
+      "beforeSha256": "daa1a94dac8ca7308fbe0c973ae0a3e2146bc6de6bf8859061be5667b7b9bf66",
+      "afterSha256": "681ee12fe5b2d06579007e935f6243bd59a3c639a002dbca9645476144826026"
+    },
+    {
+      "path": "revisions/build-speed-2026-09-25/before/scripts/finish_extension_proposal.py",
+      "beforeSha256": "7ccd3bacb1756f06face328983c0970c235a249c9c845b3e651bc15b4468554e",
+      "afterSha256": "319387cd89cb51b9cec8835a7ed93eb6cfa7315013eecb5b327fa2f6d59b1b4c"
+    },
+    {
+      "path": "revisions/build-speed-2026-09-25/before/scripts/regenerate_design_outputs.py",
+      "beforeSha256": "c3570bbc9c520a81e1e10006ff28220a56d9f2acc97e240ab2e1e252d174f751",
+      "afterSha256": "d00efa837641e80f0b96f43f8fe9bb30f8e5d7e34c67587e89674ef78dbf73e9"
+    },
+    {
+      "path": "revisions/build-speed-2026-09-25/verify_collection_index.py",
+      "beforeSha256": "b3491e2058d526f1c37f4fe90692978ed75a6ddafa1547c1c852cd47a23a100c",
+      "afterSha256": "8fe564da30c9798e5e2d6f97d95fe880b99cb820215833a649383f01047065e7"
+    },
+    {
+      "path": "revisions/finish-faces-2026-09-25/probe.py",
+      "beforeSha256": "d41baeb712400d455546205b72d7698e0ec3b603a13f7d0aab8e330181773310",
+      "afterSha256": "0edebde8a15be10a43743590c4309f02f665293cb8df4a6f0c970f82850884c9"
+    },
+    {
+      "path": "revisions/garden-stone-2026-09-29/render.py",
+      "beforeSha256": "c63c687765c13aaca624d78c7204b3fc6d7ed6c3ad86d5f2a1e530f3b0142ef2",
+      "afterSha256": "64ab2b0adb213625b84e977fa0882830e971e16e5a17f36a4aa54d79e4201af7"
+    },
+    {
+      "path": "revisions/kitchen-opening-2026-09-25/test_exterior_finish_faces-before.py",
+      "beforeSha256": "f271986d38c47039a8e3d79fe72d134f3592860ffe26501d9796e8e79005c9c4",
+      "afterSha256": "7dc71e0f516664925bae00c9d423f246badff2860374033690af1c30dd993650"
+    },
+    {
+      "path": "revisions/linen-baskets-accepted-2026-09-29/integrate_native.py",
+      "beforeSha256": "77a39bc3f5d9afe5f88cf9d0da47a8e729eb39b17b524f83534f089db222cf5e",
+      "afterSha256": "b4c6e2bee7ecff6e32c40590f5c93c9eaf52529afafb2a917f6f77675ce6c8f0"
+    },
+    {
+      "path": "revisions/linen-baskets-accepted-2026-09-29/integrate_web.py",
+      "beforeSha256": "caad1ca52820231a106aac8f3d5e75a95fc273a3447fa1f6d77ae581f0e9843c",
+      "afterSha256": "bc7a9656d1e824c306667ad54ec14d2dbe36da9d37a08b617d71dad4d602ae4a"
+    },
+    {
+      "path": "revisions/loft-wall-2026-09-25/diagnose_trim.py",
+      "beforeSha256": "eba69c744502a41aff8ee4af3f33b5c7c8909ce752bfd84896f3dde7056a10fc",
+      "afterSha256": "197d2f0f2bb95245e70d92596af2e89f1f9f36c5e1d6c64fa18a757bd392f6c0"
+    },
+    {
+      "path": "revisions/planning-roof-tiles-2026-09-23/gable-fix/check-junction.py",
+      "beforeSha256": "d9fc9885465e22d37b795c2a327cf716ec85740eacea422f528d04a29f6ee29e",
+      "afterSha256": "cec4e70807e3dbfb3c7fe0338eeb448e5c5ab76d7849aa7abced0c953da49944"
+    },
+    {
+      "path": "revisions/planning-roof-tiles-2026-09-23/photo-reference/model.py",
+      "beforeSha256": "aa0308e11f1852986186e68afbbaf7e90345a4efdc2a97eab9d34feb022d8f5b",
+      "afterSha256": "4331c2a534eb8bfb66d8e7dc7574fe9c93a5532405f5580d6e3e9aa8740c2c92"
+    },
+    {
+      "path": "revisions/planning-roof-tiles-2026-09-23/photo-reference/preview-finish-boundaries.py",
+      "beforeSha256": "6f988d3de6e3d5708df58e41337899329ecbe4ee3186ee11cd46cba62a2efc37",
+      "afterSha256": "6f0700de17abcc8bd3a84f7e2c40ef3a5af352c63f5287b21a906944d300bc74"
+    },
+    {
+      "path": "revisions/planning-roof-tiles-2026-09-23/photo-reference/test_planning_variant.py",
+      "beforeSha256": "07da0300214a4f52997d98160cebcaefcddd5d5dd710d55675312ff584ca8fea",
+      "afterSha256": "33d4e7352377c94d12d57509be961a03d62b6ff1c3c7d629beec401ef8b2ae33"
+    },
+    {
+      "path": "revisions/planning-roof-tiles-2026-09-23/photo-reference/verify-current.py",
+      "beforeSha256": "6797177acdb4674bf147346c444f411711ad39e33695af355ffcab26e9006435",
+      "afterSha256": "5f858857742c7bb8798027f9c949e29229dba316d05047d16a406a2681a2b59e"
+    },
+    {
+      "path": "revisions/planning-variant-2026-09-23/verify_final.py",
+      "beforeSha256": "a2f5c9ea29cf0857788298120df25e141ad8b076b70c913cff2e89289efbf200",
+      "afterSha256": "b5c1cc0a9151862318336aa9432ae6646f920844dc763b6ff022c82ec49a498d"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/inspect_gym.py",
+      "beforeSha256": "9e4f159e794ef1aae474c0fe02112e568ba83911155097a154ad9ad17831b327",
+      "afterSha256": "380e919a9ab428e09c47cbf22a43a82652eb47d265fddb6da863ff03ebf410a5"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/parking-size-sensitivity.mjs",
+      "beforeSha256": "81f3a2242f2a59f41f4b574d47d47ffae070599b0c4d6eb67b919ed7f7736baf",
+      "afterSha256": "5697f01fe43b41a431364db84a8bc4738ba9d130e8fa9e23981d5cf85410b4ef"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/probe-box-cutter.py",
+      "beforeSha256": "3ba13fb17489e5517c93f317e04d66ba23dbbac4761d55ebbda771f4081b737d",
+      "afterSha256": "d35ed6aa5f32bd35e49613e6d93c2178e209470fdc71092bcc21e192019c1e2f"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/probe-garage-orientation-v2.mjs",
+      "beforeSha256": "13d22d419b75a37c28873ecceb452b2ea7e3846899934ce2b851b54ea745b594",
+      "afterSha256": "06c3f91e3bd34f9559203d8062c2ebcfec26f57c1ecbadcec1543ca29aa68949"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/probe-garage-orientation.mjs",
+      "beforeSha256": "7eb1031402a422e681eb100aad9dde6bfc8c1d2069b20e885530a446826c876f",
+      "afterSha256": "3964d805716d7be2742399ce88ef0e00985f0d53ccc8fbe6b1f8dd61b651a269"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/probe-garage-walking-v2.mjs",
+      "beforeSha256": "b50cdaeb9adacf9dae70bc3e6e3abd44b2d805a8cddf12a4420fc9ef67d82e6b",
+      "afterSha256": "138cc995dc7ba7f239e3918f3b32cb7981e6c1238a208200433d63a4c10fb57d"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/probe-garage-walking.mjs",
+      "beforeSha256": "1bfd4fedb439c3a98597a5954c5885fa6f4bacb3080b86fb8f9a51d175efe98f",
+      "afterSha256": "cc7342a3e07a71599331eb77f07de486bc94c8be2e53738aca255c6fb6c32fa5"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/probe-loft-boolean.py",
+      "beforeSha256": "fb3289330f48c7b8483c8670ec7cc8c3eedaf2eb4e42bd496608e402142199d4",
+      "afterSha256": "c142be94ce36337667ff0809bb0985bfc25b4b37047b901324d562f72a4bd6a4"
+    },
+    {
+      "path": "revisions/redesigns-2026-09-25/reexport_gym.py",
+      "beforeSha256": "a45ad22af20393bc49b2d17523007a983c799fd7c8d5f08f74192f66e8165b16",
+      "afterSha256": "a34c823820a116c42023affbb7b6779a2ccd2a5733a53c19f2f72068f930ee17"
+    },
+    {
+      "path": "revisions/round-dining-accepted-2026-09-29/check_source_build.py",
+      "beforeSha256": "63edf9b46dfcbda1b82d851d156bded10727ecba4c068f512aef90d400c45824",
+      "afterSha256": "18a044bd5a75a0fcc748190bda019d7a164310718e3bc7e093daef3530feee6f"
+    },
+    {
+      "path": "revisions/round-dining-accepted-2026-09-29/integrate_native.py",
+      "beforeSha256": "2ceec29086fd588046be2e727d823cf176e120e1fd56b7cb99aa6c1d2da0bbb2",
+      "afterSha256": "a222b8d2b6841a86f2fc715a04edb44a06a9f23b68581ed43288e307a09f8c36"
+    },
+    {
+      "path": "revisions/round-dining-accepted-2026-09-29/integrate_web.py",
+      "beforeSha256": "d12edc54db6f4abfe287c9a5efb439d810e4f115183b55df1c7615e794890e65",
+      "afterSha256": "97bb4c5c755ab5a4010da3f4d94c33045fd093294a93c54d7ee7968bb6311e7e"
+    },
+    {
+      "path": "scripts/apply_detail_pass_v2.py",
+      "beforeSha256": "993870f488f6993a79df094f5f4c5d0d7406c241e275d74f62ad4910ee72a29a",
+      "afterSha256": "e4bb44104c12fae8b5168c08ceeec9e7265f322d8ed378047fd8f6659edbd683"
+    },
+    {
+      "path": "scripts/apply_gate_finial_revision.py",
+      "beforeSha256": "679443a54256804bcde438e22279d6a3982346aa7a9fa10874f64c201831b4fb",
+      "afterSha256": "56054765213bd90e2a9243c6bd0bea46b7c4fb198d03b7725336dd6443d85182"
+    },
+    {
+      "path": "scripts/apply_selected_door_revision.py",
+      "beforeSha256": "1817d1bf25b8bfe37bc362062f960c0ae5af10f7d99c3006cfb95d5cfab56d9e",
+      "afterSha256": "951dcccd08c18997af50ca832ced85ecf64940859141546da87cd8e216534734"
+    },
+    {
+      "path": "scripts/apply_site_revision.py",
+      "beforeSha256": "9471dd0a9bdfe78e6a39243bc1b67645ddae20a2c43bcd743a20224028853e26",
+      "afterSha256": "cba145836eaa05f4a5492b19e90605c1e3966b72f8848a6f5463d514c865fa93"
+    },
+    {
+      "path": "scripts/apply_site_terrain.py",
+      "beforeSha256": "705a47882991cdb501384022e2fc54355b263d35ce51e82465c900aa6cfe6667",
+      "afterSha256": "a5369eb8aebdcf5b15799450bb1caa111b852844294b273ce5bb96f9ef0ff235"
+    },
+    {
+      "path": "scripts/audit_bedroom4_ceiling.py",
+      "beforeSha256": "8986e6c837013bb671ab480800c21564b148a85ff84e2e4aae8c93426519d995",
+      "afterSha256": "3fa8dad01338ef5636704af46870ac820093c71f7c78d7822a7f46d96c282734"
+    },
+    {
+      "path": "scripts/audit_circulation.py",
+      "beforeSha256": "e92cf4d7cd72f50b0bc66841e99d14417d20c8f444a075ae15620a8fe1df80e1",
+      "afterSha256": "324587a51dcd541c5f57024c83e1751e90bc73f701cdc37feba198ed14c7a611"
+    },
+    {
+      "path": "scripts/audit_depth.py",
+      "beforeSha256": "6630be05a54074f5c7c1d312398d4e2926065488a92cab5b3b07b66b57e4ab5c",
+      "afterSha256": "267bdb11aacdf0b86f4621a0b50fa0f28d2fc4aa0f741ecb62deee23c60c62b1"
+    },
+    {
+      "path": "scripts/audit_dimensions.py",
+      "beforeSha256": "631997013808e9590df4b2788974d90b8ea877d3a6bc9fa93be35a177ae7b2a4",
+      "afterSha256": "826a32213321ff47a69923bf241e1d4730b1ef02e8f1551ea1637f377e360bff"
+    },
+    {
+      "path": "scripts/audit_exterior_finishes.py",
+      "beforeSha256": "f9157bc0b9af91ef9f8219962ef54b770a46cb64858762254ba1cbbc363c641e",
+      "afterSha256": "e09789ca5166bc124e6c914cf5ee01255e1ba9cc32799d8ae641a384d5fa0a6e"
+    },
+    {
+      "path": "scripts/audit_full_interior_preservation.py",
+      "beforeSha256": "b198ab716c060a5d9ec01e056ffaa7268acb03491121422883576315a9631b1f",
+      "afterSha256": "a7031ed991c0ffb4ef45a0ad59a71c3ef783210d665839c7426490a49ac51a3c"
+    },
+    {
+      "path": "scripts/audit_garage_details.py",
+      "beforeSha256": "3e8464a61f13486799a84811473f58f7250cd5c1a54e50034fbfbbb7e3977b9f",
+      "afterSha256": "e68188e54bdd8262c240a710894303850f7b0461d62a5cc8da016e1ae7ebb817"
+    },
+    {
+      "path": "scripts/audit_gate_aligned.py",
+      "beforeSha256": "8f7ed32fe74574da1600ed76a06267c51faa942855212e6395c580580fdf60bb",
+      "afterSha256": "7f7d1f6621ea882bb9c10705c6f9c56d5220d647dfe8bc8e414ab0e6ea052f72"
+    },
+    {
+      "path": "scripts/audit_gate_headroom.py",
+      "beforeSha256": "a034a108a23e7d09dfde98eb67c9dcfdaa81cc7fbe0500cfaaedad80b4453873",
+      "afterSha256": "c8001e5afd6834d8a3120534316555ca97069069d6ca3fd5b0fc0bbad917c279"
+    },
+    {
+      "path": "scripts/audit_ground_under_floors.py",
+      "beforeSha256": "c63075ebe6f6b710f8927d79c70546335ef0835fc5f599068afb66a675671615",
+      "afterSha256": "58ec2a3044acbcd4bb4593d8ea42fb0d0bc57e7fd67b486ca8987ef035b6c7ee"
+    },
+    {
+      "path": "scripts/audit_integrated_principal.py",
+      "beforeSha256": "890e2a5720694071af45488baea2e2550da951c3f8d10c805326a05d52daf3f5",
+      "afterSha256": "82b0bb81483917a5fb21efcad94ec1a9001982734e046e41967ec2ddd97ea0c5"
+    },
+    {
+      "path": "scripts/audit_internal_reveals.py",
+      "beforeSha256": "4ff8202a996989e5c3f066af91b2b30464b063798111507e8e109c16d4c2c0d3",
+      "afterSha256": "913a422a79ecadeda757d953a6f7b5c0b7fb2880d1fe15dd598af91feb0418c3"
+    },
+    {
+      "path": "scripts/audit_kitchen_interiors.py",
+      "beforeSha256": "1cc701a286a0b95ddcdd0170291cd4ab822f31992d7f085169b191128ffc1231",
+      "afterSha256": "bf749ebd4de75e834ea307ea7286402a850979805aa3b4ed9de0a9aafdc3ea82"
+    },
+    {
+      "path": "scripts/audit_landings_details.py",
+      "beforeSha256": "d5dabdd61f925a34a1367923faef815d39b9414bfb7067eefdaab419d17284cb",
+      "afterSha256": "e45578736038466763fa72146711061f23d5bbab1226c3a4bc227ec096bdb16d"
+    },
+    {
+      "path": "scripts/audit_leisure_native.py",
+      "beforeSha256": "7aa661e9f15788b946e7a658845c772fdf209b758b62600686fe6210e9f9b9cd",
+      "afterSha256": "59316eb2c109a2c5dbd2d759e057c02393a444b213443f56833df5efd1c859d2"
+    },
+    {
+      "path": "scripts/audit_office_details.py",
+      "beforeSha256": "5b08045f8bcc264f7de33257610b408fde50ae440bf4b440ff0efb6fc32408bb",
+      "afterSha256": "a227e0f7d472459cc50610cb73d03e7082b455dbdff58823fef39f293069be7c"
+    },
+    {
+      "path": "scripts/audit_overnight_preservation.py",
+      "beforeSha256": "b32421f1ad3587d59f00d56a8c17452278a7ea8a99a80d8df663f44d19f5bf72",
+      "afterSha256": "a188814e6b47013f38bf4bcfb5a144baedbf68f26c4b9cfee46482d4340ef5bf"
+    },
+    {
+      "path": "scripts/audit_owner_round2.py",
+      "beforeSha256": "9d6cc68f0e722cc4a148323bc84c05b7530f307b4156c5b3983ea596a244e475",
+      "afterSha256": "7c0ff0e38067c442603d90d41d713682bc975cb220380b5cbf3160955e4b0121"
+    },
+    {
+      "path": "scripts/audit_plan_openings.py",
+      "beforeSha256": "7ba3fc531d1f201338ec0c62253e703e6aada934a89310908c7afa243807165a",
+      "afterSha256": "3cee79f5b12ef8d4e6a62a42b23f161c25ba2d90b1fb0de4308a6dfa83dfa88f"
+    },
+    {
+      "path": "scripts/audit_proposal_fit.py",
+      "beforeSha256": "d0ab534650001d87acd1248ac23f2741323d3288e48fedf035a2368c32ff2c16",
+      "afterSha256": "4e21172acdc7583cc3b890d4b76c4992ae9fcc05eb7abed642dba8e2ee0b1512"
+    },
+    {
+      "path": "scripts/audit_proposal_headroom.py",
+      "beforeSha256": "4ae28349b50abce14fda55bdf125199691a101d1782f56bcb1b92d498c5be44d",
+      "afterSha256": "d2ac47acdfe785469fb2a5930d950314655474b645f959a5588008c13e2f0f76"
+    },
+    {
+      "path": "scripts/audit_proposal_kitchen_connection.py",
+      "beforeSha256": "10290ca735052e17eda6a135cd4b264c2515402d23727f9a1de22296fabe17ba",
+      "afterSha256": "75c0258dcf1da1db48e9910575ca5f3320f68db013aff14d273c1a5adebac003"
+    },
+    {
+      "path": "scripts/audit_redesign_headroom.py",
+      "beforeSha256": "1900d74306f56e2866fd1ee2a71981dc4808779de2659dde15f9f16509a0dd37",
+      "afterSha256": "c140e36912d636cf5032c466a67c05be2f8175a0d909b316810ea02b5149c909"
+    },
+    {
+      "path": "scripts/audit_redesign_site.py",
+      "beforeSha256": "c448bc657c595d5a535488c288f540f5ea8a4e2f8f0976722d443c25a9d3ccf7",
+      "afterSha256": "6458e34297ef8c0791fb1ae5170ba37fc7e87bd1cc7a35fafea83497f789ae6c"
+    },
+    {
+      "path": "scripts/audit_roof_joins.py",
+      "beforeSha256": "e01d3dc8d953d0a88de7aa2bc1856898bcb8fd318e028e68178c573db1566196",
+      "afterSha256": "5a60577c77fd57bab790d6acb3c19ea04ea04a2d2e5e49e33e723940fb99b2b4"
+    },
+    {
+      "path": "scripts/audit_saved_proposal_kitchen.py",
+      "beforeSha256": "4f694af30f49d45943d64ec6aac3010dd5fa8fda5f2363f8dd994d8d5f51ba2c",
+      "afterSha256": "c9f517fe9ee20fefcd647f221864df612493f0161e4c29e6338ca671ad2b735d"
+    },
+    {
+      "path": "scripts/audit_workshop_details.py",
+      "beforeSha256": "79a0c4c2fb469003f5947a3625b7ac09b4a89674b2ff4f30b0e37d97096c646e",
+      "afterSha256": "b4b557b65775a321032a14e26d2f90f5bf2baa666bfc06d942b94a17584ef0dd"
+    },
+    {
+      "path": "scripts/brochure_architectural_sheets.py",
+      "beforeSha256": "82af3a1a49a534d55ff319b020db938bc47eed3db5366c638aface45567c3424",
+      "afterSha256": "1e4bd527ab309e32529a826857f68e9ae2104594488fbf4c5679d0c6391bdd04"
+    },
+    {
+      "path": "scripts/brochure_context_views.py",
+      "beforeSha256": "e3f7666e88d10ec38d6f888cb6a43b176fa904d9bbf80a1452e6b7473542d1e9",
+      "afterSha256": "95736ef89c530ba10395c9daef901c5cc3e701c0bab0fe7171830dcefe4792f2"
+    },
+    {
+      "path": "scripts/brochure_orthographic_elevations.py",
+      "beforeSha256": "510896434c57c237242412d2944522674f22ff8ef0150f3eec503425d6a94920",
+      "afterSha256": "2dd5f55c6659b1e2edb1589f1a0746e221a3762f95a8286cade6f18dc46e43e8"
+    },
+    {
+      "path": "scripts/brochure_site_plans.py",
+      "beforeSha256": "0ca62eaea988bc6f47dc7c6a17d4125889bfcd7e03afcd7e5a1d695c4c51186d",
+      "afterSha256": "01c2f8a8f3e5cdfa7a89266752300b2b34e354a3c1833848bc93f7d284b2dc70"
+    },
+    {
+      "path": "scripts/build_extension_proposal.py",
+      "beforeSha256": "02d0cecdb0f012ee556875e55965551b8a1e400c767fba17e08840e5cfaa94fc",
+      "afterSha256": "5b7f396e1626d71003814540c0a8168c1759c3686324730c400f79557e39477f"
+    },
+    {
+      "path": "scripts/build_house_brochure_expanded.py",
+      "beforeSha256": "e39cf9d168a516a4c1c0940772656ceab339975482b351fa0b6be017ed60cccd",
+      "afterSha256": "c4447d4b40f1df521190cc7a5038144a13cf98764500cba653c5660281e467b5"
+    },
+    {
+      "path": "scripts/build_house_brochure_spatial.py",
+      "beforeSha256": "72d2038b0c2d9314205a1cfce12c2605d0090568be1ff78c5762e37cdad49abb",
+      "afterSha256": "465a03137026c085d5eff7903710811a8398bad4915f7e577c5c40c0287496fd"
+    },
+    {
+      "path": "scripts/build_model.py",
+      "beforeSha256": "3959ae4acec5835861f4776b69e425388cbebec9238a7cef924dd39da8a4f81b",
+      "afterSha256": "16075f34d94f87c6ca7d70a641cc164214e8e2fa8fd537a7a2bfdad21018fac5"
+    },
+    {
+      "path": "scripts/build_redesign.py",
+      "beforeSha256": "aac5f005a7ebd8a68073b8f44e3f035d3313dc121fedc821294b8a6725d0dec1",
+      "afterSha256": "90efeb27913632cfeb63114c9853001e78588df21914628bfb1f03b8249cb7d1"
+    },
+    {
+      "path": "scripts/build_redesign_options.py",
+      "beforeSha256": "9ef6fdf246c9d2f6909b88d5b7ca964762fac9b56081723cd70a9c0b674a8ad2",
+      "afterSha256": "06addba655dde4220edb8ea58c6fecf74a8d045e62f406250772cc50f1ed7281"
+    },
+    {
+      "path": "scripts/build_redesign_pdf.py",
+      "beforeSha256": "d10be07b55b0258b913634a18adf3e02c4fbabd8594d95eadf18c38c5276b0b6",
+      "afterSha256": "7aaf70bcc2aba0fea50be154112d3ba7a5593ba318c27128b740cd5ca783e4ab"
+    },
+    {
+      "path": "scripts/build_support.py",
+      "beforeSha256": "4be171dda0ccac42f613b69d6036bd37f015f8ad27e9fd89501fbf4f4512ca5f",
+      "afterSha256": "9e9f7cbd168d93859c0e5d5a474f01c4b0d0e4f77874718107a3d58064f7f807"
+    },
+    {
+      "path": "scripts/check_bedroom4_window_height.py",
+      "beforeSha256": "4c3171de44bdb01a306a75a53c96b383754155ee2caa20ec7a7daf1241694bf7",
+      "afterSha256": "03a5954ce91835edaad42553ce3224815552c017d7e765e560e455d6b0f056e7"
+    },
+    {
+      "path": "scripts/check_site_area.py",
+      "beforeSha256": "37c09fe70326b5e93dbda3f1bb4387d1b3d7fb869833dc0b01de338a78bd11b0",
+      "afterSha256": "8befb14faceadf3b6c34732028c61a3578bc461d0063fbc219e7cc3e39352cf0"
+    },
+    {
+      "path": "scripts/create_rendered_walkthrough.py",
+      "beforeSha256": "9dd0af9c46e33a7b39f5d724c0b3a1320bbbad39534d56a20efb84c7fb7eb54a",
+      "afterSha256": "f0c97b8e5f54bcb5b6982ec505c1174d525fa5c4440cc8b469622044d7466136"
+    },
+    {
+      "path": "scripts/create_walkthrough_revision.py",
+      "beforeSha256": "8e2a2392b098c80f80630fcdfff2fe7663dd2c5d865d54ca8080c364288d9cfc",
+      "afterSha256": "506a825c82a06002e2c31323e02ecdd42696f9a54f161b624307a31babb32b04"
+    },
+    {
+      "path": "scripts/draw_principal_layout.py",
+      "beforeSha256": "ee16c586a304546d032f9980bd659fdd084f208ca95a9bfca4c5c50340fc3740",
+      "afterSha256": "24d8a718c9865f9426959c34e154f930b9f687d15456a5b7fc49c7ce418fed13"
+    },
+    {
+      "path": "scripts/draw_redesign_plans.py",
+      "beforeSha256": "df213ffe3cfddb7b37e950187645f9ba4d248e7a4d534bef7d4034364690d566",
+      "afterSha256": "d4feaf9ffc441eb9ba9249534e574c18292e7ebba4287b1f4f398f19ba9572d8"
+    },
+    {
+      "path": "scripts/draw_redesign_sites.py",
+      "beforeSha256": "b28b1d1f3e72b2357e4325d2134905edc95a573486048aae81a87fa04e5653fa",
+      "afterSha256": "f68c594a07048fdbecad352816815e764b867be33bfa00ff520dca49ad6573bc"
+    },
+    {
+      "path": "scripts/draw_scaled_plan.py",
+      "beforeSha256": "13d22ad12ce86c0ff17383accb352954f9ab3a136a0c9fd7f091f4cf86ef6e16",
+      "afterSha256": "f936f2d1b5d1f61963270b7d46c25a7cbc1d38185522aa5a06b9f5fa80f3aaf7"
+    },
+    {
+      "path": "scripts/estimate_proposal_b_costs.py",
+      "beforeSha256": "054e70d3342a6d6e0b4ef9f27f099ddedf8df30e5cc538c23b263c475dcb8c72",
+      "afterSha256": "c19f512ff8ee69e8540b697fcc05524361e5458cd0ef0a726467f2c22b5ecf7c"
+    },
+    {
+      "path": "scripts/export_brochure_street.mjs",
+      "beforeSha256": "3a735949ba30d0f899c5dcefa4f24a7018811aa6f8eb5dbb8e770c2089409e55",
+      "afterSha256": "3d7221b07f7ca50a9e61786b00853e07f4cb4c592866b62800f06d07c783674b"
+    },
+    {
+      "path": "scripts/export_mac_preview.py",
+      "beforeSha256": "d04f6e6cbd52de3b79055acb7f8b5c092e05c5d471e6593420ebb08aea9aaba3",
+      "afterSha256": "b7d156f95734ca40bfaa53b1aafb94f6f844839d2a7889e442573f17abd7bf03"
+    },
+    {
+      "path": "scripts/export_proposal_mac_preview.py",
+      "beforeSha256": "c58d90fda82b7b9aa871f7d476f8d1d0f3ba32168d21a328b96a561657fc7a11",
+      "afterSha256": "5ff72d6740c556912658662472f1f9e72d35de8b7a5a0fce90fcd5f0e9c706b4"
+    },
+    {
+      "path": "scripts/export_sketchup.py",
+      "beforeSha256": "cbc327b5e3db7a14db8795e71450f969a519711badab26035145027cd7567db4",
+      "afterSha256": "0561d3700a0a049855833d122fc4b86bc9750df6a9eaa42005b4c1be9204a454"
+    },
+    {
+      "path": "scripts/finalize_owner_revision.py",
+      "beforeSha256": "5b147b5b55a27aabe5ab940c2d06df99c0349bb4a6fc85d5803cd549f0d0fa45",
+      "afterSha256": "2dd14862d6adfa34f509c8927e1ad11c961e7079d66c111c625270d06a97b36a"
+    },
+    {
+      "path": "scripts/finish_extension_proposal.py",
+      "beforeSha256": "bc8104aadae4383d61df32c39028962c359d2b241f171d9a784dff16f408a0db",
+      "afterSha256": "2f9aebb1ae90018bedc553db4fda4f5d05fae0bab3f7ac612bfc5ddc928cdfe7"
+    },
+    {
+      "path": "scripts/finish_walkthrough_revision.py",
+      "beforeSha256": "111402eb9593bd24396d3b6cad8a23606de77531c090a263a9604252ca786b9c",
+      "afterSha256": "d64cc4a57a6626b188a76ffeb62f0d649f771d2a4c83d7fdad7c20959c28c423"
+    },
+    {
+      "path": "scripts/fit_bedroom4_combined_window.py",
+      "beforeSha256": "99135774ab0790ef13bd46a30251cf1cff3656324af23a954d695834f92b937f",
+      "afterSha256": "d7d6a7557da14ffb70e62392d261b2e34cf9fcbb82b418f580143c722af15608"
+    },
+    {
+      "path": "scripts/fit_bedroom4_pose.py",
+      "beforeSha256": "938b86c5e1fbd0aeccf8516fc91bf06003259053a0fc4d971b4fd4ea459b1081",
+      "afterSha256": "2e65d9aad10b2f249dc3f8c7762a38fcc3d2037c7d8ac9c375c98fcee980d62c"
+    },
+    {
+      "path": "scripts/fit_gate_pose.py",
+      "beforeSha256": "538982f7af900f10671ef4ed7ad523d200f49548a49666fefcee51e318336e02",
+      "afterSha256": "cfbd75abaca1ce608d6b5bc3d16f9013e9b20af4f98368cbfab2bbbfdbc00e23"
+    },
+    {
+      "path": "scripts/fit_listing_views.py",
+      "beforeSha256": "5819a669d2676cc2302aa24f094c6eaffd4c6bf30aa13bb84429194db1ec2619",
+      "afterSha256": "44a5d5640c6c9f4faec68ee9a8dae0dc291ac4add05000a81928d1341e251c39"
+    },
+    {
+      "path": "scripts/make_alignment_overlays.py",
+      "beforeSha256": "894e2e9e8351c7605e3d66b7a8277cab85ae43e2efa0ec776ea50c73629c4faf",
+      "afterSha256": "392c054852a230c32e24aee1ed12a613e8d4b51c920645f898eabd16a97efa8c"
+    },
+    {
+      "path": "scripts/make_bedroom4_ceiling_review.py",
+      "beforeSha256": "497107b6e6d4faba953d24351e100c0812d6122ed7040f2d42bad4eebaee7dfe",
+      "afterSha256": "bea4ab0525b4aa78d53ef3756f2b355aafd103f2fbce468fbfd52316325bd90d"
+    },
+    {
+      "path": "scripts/make_detail_pass_v2_report.py",
+      "beforeSha256": "029c44700f368cf07f60040906d61ea6f5d3f8d18f5602a68f6eb8cb41fc6fdb",
+      "afterSha256": "ba519b0def74efebb4c04c07c9c175041a55a46d229918362c01901d88aebfae"
+    },
+    {
+      "path": "scripts/make_detail_review.py",
+      "beforeSha256": "027d82edb9c66c12676da9d70fc41e325788b3a5f82e8acf05e207509256c412",
+      "afterSha256": "ecc0530ee0ecd00d61275c41aed88bbd1b4a922b7eb92591fa96bdae7d85c009"
+    },
+    {
+      "path": "scripts/make_owner_corrections_review.py",
+      "beforeSha256": "af3f67b49bf505c4a279884bff45f683a4514c3b6f3b27687d226991a4342eff",
+      "afterSha256": "af96a53bb67a6892056149416c37d3d8ea593a3e85e76f504877929065eebf6f"
+    },
+    {
+      "path": "scripts/make_photo_report.py",
+      "beforeSha256": "173bad5bcb880db9291a2e0f34cea4f6b33e3f4ea1033f7d216d0a9fe180d33a",
+      "afterSha256": "b468b077c28a2e2abaaa29b85e2b4a37b2dc3d0308c667e06ff039e5db87f918"
+    },
+    {
+      "path": "scripts/make_proposal_design_book.py",
+      "beforeSha256": "e335ae7c425991911b28a5c8734b084333247824efc6269a47a579484b1c2837",
+      "afterSha256": "f506a1dcfa09706a503791ab73f22a9c6211989bd16ea1261b5f444efb068442"
+    },
+    {
+      "path": "scripts/make_proposal_review.py",
+      "beforeSha256": "e0d7429f61f3674e38ca4c42ee38258fc07eea3cbd569c35829b278980dbad71",
+      "afterSha256": "7c61a46c618c5910705e61419cb23587b3e36c86ec363ab68673d8251bb53281"
+    },
+    {
+      "path": "scripts/make_rendering_comparison.py",
+      "beforeSha256": "457c621e15188a714d6cdf12683a516c73aad1de324003875b1877f3f5e361aa",
+      "afterSha256": "0605a0bdb6e5534efc82afe6d94dc7368f0c42c1e28685e4a2d5d1f521205591"
+    },
+    {
+      "path": "scripts/make_room_gallery.py",
+      "beforeSha256": "36b3f1e861d55c7b65079435d92afe6e73d011986274416a8e8d883dfb46effc",
+      "afterSha256": "6196dfebb5a631e0a221166ed8f61cfec699f142e66214e092c1781eb8775ebe"
+    },
+    {
+      "path": "scripts/make_site_plan.py",
+      "beforeSha256": "1dd259d7e2e17211c43bf77b8059f264db27c524bbbf74189867b16f72cb79b6",
+      "afterSha256": "1117056effa0cbbe2fdd16c18480575f6cd140200bd5bc3d237655aeb2f48220"
+    },
+    {
+      "path": "scripts/make_walkthrough_report.py",
+      "beforeSha256": "9df0b5fa3ebfa6ef328255d5209216be3bcf984b5eceb995a9f88d903eb7542b",
+      "afterSha256": "138c5e2be1ee35333683dd4319ed8bef6f5c962bafb110399a43882927d8da5f"
+    },
+    {
+      "path": "scripts/make_window_decision_boards.py",
+      "beforeSha256": "9dbe450be3af91b73e5a2e1ca08e530206f2ef806cf634b9008191b2e6b0f550",
+      "afterSha256": "74dc6a46a4f168c07853aaa4dc86c1c14373d2ce4766ca6aa3e9976c978b97d7"
+    },
+    {
+      "path": "scripts/organize_latest.py",
+      "beforeSha256": "ada72cc3fab1177c869ead7fddb3298039e27fb2a2716b8015eb0426c71fb283",
+      "afterSha256": "b0ef3ea3f93b4af9537746c2bf58ed3e3c9a8edb0875629acbbc2514e4fb462a"
+    },
+    {
+      "path": "scripts/package_redesign_review.py",
+      "beforeSha256": "2ffd3a1fa9fd728e3d05c9271d0e541d53e40db95908e468707d788559307f4f",
+      "afterSha256": "ae60cc03bd8aad1529b48ebe3258df519bd7b2b6d598efa44018914cd694ec40"
+    },
+    {
+      "path": "scripts/plan_arrival_interiors.py",
+      "beforeSha256": "706412f3433a60a85265633717e4f01b7bd8f54aa77969986413455ab02b6af5",
+      "afterSha256": "2462bbed63e1f4224d4054ee2e147f4a90c87630924069070763580067a0b3d7"
+    },
+    {
+      "path": "scripts/plan_arrival_shell.py",
+      "beforeSha256": "a95438d5d001e65c7db64a4600eaabd27fdba16c4fcf5df94e88b0031f466de8",
+      "afterSha256": "071513a8be1f3f4e4d8cc7a91d2bca28ae533fcd891a0b7f882c507ad13d5354"
+    },
+    {
+      "path": "scripts/plan_formal_interiors.py",
+      "beforeSha256": "44354012f3e6df9b3471e92b7dfb0e30c687d56614bb51a55c2ed7a79460c308",
+      "afterSha256": "91125b5645dfc7f35a2d815e7cf9ad038999510489361e8c7bf29572bbba3a39"
+    },
+    {
+      "path": "scripts/planning_drawings/model.py",
+      "beforeSha256": "7d199d3fb12768489dc2269f78e4d9b5aa576c41a919ed57c0180e33d81aa3a1",
+      "afterSha256": "9c7f48ea50b310379a6e1e8c3f2bafa8d1bacf547826e4547701881e27f0f04f"
+    },
+    {
+      "path": "scripts/planning_drawings/release.py",
+      "beforeSha256": "00e47eef49ab4ba59094bbd0b5a609e247742690a7ce0855c4877af11f4d05da",
+      "afterSha256": "d7d679b04032ed06ad0710058139085f99811646fa38dfd2647b09b0a137bd1a"
+    },
+    {
+      "path": "scripts/prepare_photo_views.py",
+      "beforeSha256": "780d924c5eac3e97963b3d27d75f341be6298055379b0cb344bc0c3bea48e3c3",
+      "afterSha256": "4b7833d54de64b6ebf6fc360a60d9fad087fee104b47677efc41e36c47da41e2"
+    },
+    {
+      "path": "scripts/prepare_publication_rollout.py",
+      "beforeSha256": "fe742668e703b4c73d28ed691c929df77a9d397ab983203e20fe75b88d4d0c67",
+      "afterSha256": "9fa7160763422d2cefe8d2b1e2027034ffebd9a0b52d926c2c9d122ee5443c40"
+    },
+    {
+      "path": "scripts/prepare_walkthrough.py",
+      "beforeSha256": "90a996357a0f21b24798e8265cfe1c53f28c2e7b7dcecdcab24b2b5c4bf091ed",
+      "afterSha256": "39a1deb6115f0a554f8e071f72a1ff5397f360d8bc887c23a08b10952104b676"
+    },
+    {
+      "path": "scripts/preview_kitchen_interiors.py",
+      "beforeSha256": "b03173529601dcd02cd94d5104cb53bde6c6f06543fc5cc81def9571ab4d8572",
+      "afterSha256": "cdab61cfa7e53617df5e2e69bc9cd9f004952f8ac24d80c495beb9cadc3fa4e7"
+    },
+    {
+      "path": "scripts/preview_leisure_interiors.py",
+      "beforeSha256": "2453ba9ac73dca97c43fdd6c93bcb6d38268050d6ee28b585ad6778aa3aacb4b",
+      "afterSha256": "f6f5d3190eca9ac8a11b7eb4419e8c36912f27677c0ecf9008186f6eb7685b61"
+    },
+    {
+      "path": "scripts/preview_principal_bedroom.py",
+      "beforeSha256": "13a1e71a6a045efea3c926147b9fbc3778d76d4f9a93ea8ea68efe9960cb1fd7",
+      "afterSha256": "9acb4888936f246954252fb7718ea304f3e3ce2cd2f863ffb16ba11e12cdd675"
+    },
+    {
+      "path": "scripts/preview_principal_layout.py",
+      "beforeSha256": "3a3eee065804193bece02fc56f2fcae3dc72f9733fc079aac3e2dd3af304f597",
+      "afterSha256": "af93f11f2fecd6498f747a42f68786913e776da5b8d3b6e86a1cfcd203c354c6"
+    },
+    {
+      "path": "scripts/proof_drawing_rear_doors.py",
+      "beforeSha256": "983b38c3bc4cc71faf02c39d96acf2aec27d6d65209fae43b855864ae510caa3",
+      "afterSha256": "ec8f9965201f023f46fb2b10cf0f5f0dadc1c0bd5aaca5096fcea5e4f15ddfca"
+    },
+    {
+      "path": "scripts/proof_entrance_height.py",
+      "beforeSha256": "27a231ad16b003476df7e12d5c1aefc7975b36a1b4f63486865c7ff90e351949",
+      "afterSha256": "e9f8fb18cc7b0c7ed0144710d5de10a88bf27b84a81646b60cb70dc9dabb5b78"
+    },
+    {
+      "path": "scripts/proof_front_arch_windows.py",
+      "beforeSha256": "9ff316da89b41b8f9ee3c12ef03cfb0b5ec2024076602bd91afd59ce37392250",
+      "afterSha256": "6050fbeb7ef3d90d629d13af2afee651b2be726f47e67a1b794c156ff6e7f31d"
+    },
+    {
+      "path": "scripts/proof_front_bays.py",
+      "beforeSha256": "82e8c521ddc13b295d674ae80d6edbc4236940fcc16cf2e5c5db9aaaddbca372",
+      "afterSha256": "d045c6c5287f288d72096db2c23e31eb970f532e5f594aeadb45f014ef02b55d"
+    },
+    {
+      "path": "scripts/proof_lower_porch_option.py",
+      "beforeSha256": "45fd579cd2393af197b2615119fd1868c0a44ea9965cca4d9f01530b69a3ec62",
+      "afterSha256": "e902bde5d3fbcfb4e6c268e4f0bbe887d98990beed5a51ddbbd7916b99a966dd"
+    },
+    {
+      "path": "scripts/proof_porch_width.py",
+      "beforeSha256": "6c50a78570104614da9d02de86189fc56eb107672e9b4105c592ddb950b99e0e",
+      "afterSha256": "cfdbbdabc4fc5922e344dc78426aef3809cbb46e65a7135a25e5a8b347cf3958"
+    },
+    {
+      "path": "scripts/prove_rear_bay_selected_b.py",
+      "beforeSha256": "0d8cd2c2768fb0f41429a1de50b5cb4d78a476d26521b60adfa68173bd02ddcc",
+      "afterSha256": "7b0cb13709d0deee13fdaf3a5f83106d9b332291d105d4346708babc7145fce9"
+    },
+    {
+      "path": "scripts/redesign_external.py",
+      "beforeSha256": "6b9e7dcd932a7a5781a4bed29636b280275defc0e766b0bfc395c26eddc49199",
+      "afterSha256": "eccdfb911c92b4e784fa6baaf8dbb40f03824b90c8de3e5b752b41d573aa0f60"
+    },
+    {
+      "path": "scripts/redesign_site.py",
+      "beforeSha256": "3b8bb1dfcf4ddc3df08f1bb0c3ca2c5280238237d0a7a479dbcb099a31506325",
+      "afterSha256": "6c85ad55f6ca725894fc9f8f27a7eb873bf457b06c6e4414b23f8a52f413fa9f"
+    },
+    {
+      "path": "scripts/redesign_support.py",
+      "beforeSha256": "b08d662d6ae184364034651ddc3134b313ca57b1af9f824c6df85bf2c0f1911b",
+      "afterSha256": "f16d51e0ca6a48b74798eac1a905dbc5ecab59824ce2a77e9c072d6eb1c83345"
+    },
+    {
+      "path": "scripts/redesign_walk_masks.py",
+      "beforeSha256": "63dc7eb18ee2086df2bf849c85a713ace0a39770ab362befe396a478550766ef",
+      "afterSha256": "0b63c76345c55ba1e4cf5bb6d72be1cf40aec38b29a47a837158b40211841ffe"
+    },
+    {
+      "path": "scripts/refine_review.py",
+      "beforeSha256": "58acf2b8eafe85b7fff57da1cac205c417c466582faf552627bb59b29a9a964f",
+      "afterSha256": "be89672e01c162e4293643f03430b5f836e74e5fb35599b492ffca82f4e6085d"
+    },
+    {
+      "path": "scripts/refine_site.py",
+      "beforeSha256": "68d6f2d932f1b2ea2e3db2611aebed2ce059daa735019173ffafde1591f5d205",
+      "afterSha256": "5a8560cbc06b4a5f1965c30116e856622d82882e584938e3ba7a76009a5c0492"
+    },
+    {
+      "path": "scripts/refresh_exterior_appearance.py",
+      "beforeSha256": "793285f389aff5a11f8a34dbd03da684306656094ecd6ba91ceb3a751704181b",
+      "afterSha256": "845294f39ae17dd72c4df768ef095072a7a0b566b143e459c87c4c1392cee4c3"
+    },
+    {
+      "path": "scripts/refresh_proposal_paper_material.py",
+      "beforeSha256": "172d0660bad356c68e5c97197cff1efc3a783af9a2a048b92c6c9b4a44b88e90",
+      "afterSha256": "e4863aba7e962d78d1873b8bec408d52bf44eb458057d29adcc4006d60e672d4"
+    },
+    {
+      "path": "scripts/regenerate_design_outputs.py",
+      "beforeSha256": "0fb43e3db265078f0468ac7b011558029685ca8483c6b146b4ae95a21ab85229",
+      "afterSha256": "a5bb032b507d88f2491bf7582e002981793c703f644ecf6a86d590adc4908d3e"
+    },
+    {
+      "path": "scripts/regenerate_gate_aligned.py",
+      "beforeSha256": "aa90e961be2b1fd7c8fcf7f19106c6d92520e78a133e0ba683efbeb7f7cb1a79",
+      "afterSha256": "a7562018576e84de3b45d31841c536aa9bfdc9b955fd732e83d0ab8b7e2303f5"
+    },
+    {
+      "path": "scripts/regenerate_redesign_review.py",
+      "beforeSha256": "5acd11d5b0c5e2940797b77a5cf38a4280d9d0f1e491339b175e57c7a6b0c491",
+      "afterSha256": "636d2cc9b9f6549692cac16d58a47077736846221344942e3fbb7e1cfac51524"
+    },
+    {
+      "path": "scripts/register_annotated_aerial.py",
+      "beforeSha256": "f0069f8b150a82f8a9c14476caeeb538e749e2861c1eea6dc73dc69f5fe07b5e",
+      "afterSha256": "2685d35aacf8d0a860e26089b556b473f7b2b567d5f2dac4f4d1eb2c2bd6ff8b"
+    },
+    {
+      "path": "scripts/register_site_plan.py",
+      "beforeSha256": "ee93e98f6a918f06d3fba2eedc7105cc0ec65a5bc22e32bb9f424eba102ee1fe",
+      "afterSha256": "620702626691a37dcc450ee5421c5376602267942e2d6a819b166ca9eb6e1a8e"
+    },
+    {
+      "path": "scripts/render_balcony_surface_candidate.py",
+      "beforeSha256": "a95f7e08877133f368aa3831e87c619b913cbad04ae1b05145136a311ef78dcc",
+      "afterSha256": "3e3aba293deff361965ae6605d2a1d51b614f1d23d95e26369db2c817e8c641b"
+    },
+    {
+      "path": "scripts/render_bedroom4_ceiling_trials.py",
+      "beforeSha256": "4c459deb0b539c2e862d6aabbe5a6f004b99b05ab876266e5a2b8729b7c0155d",
+      "afterSha256": "ca51da4685102039e007186037c13671b08cc8f14f9dc504993d6f1331316e1d"
+    },
+    {
+      "path": "scripts/render_bedroom4_pose_trials.py",
+      "beforeSha256": "309cc56b5ac857b6727fb1b9d06e258ef0cb1a3f250d86db4e4891766744dd2c",
+      "afterSha256": "0f4ebd9ca0c9cc88cffa4602faf81ebaebdae78534d99f0a8b90caa92eab8352"
+    },
+    {
+      "path": "scripts/render_bedroom4_storey_trial.py",
+      "beforeSha256": "2a78aa0486eb5f17589957a6ceb9d539b2a23a37a5cbcf584ae7e243a751b709",
+      "afterSha256": "0ab1e3289fc599ae8d4e976535e3a403e0558d3e9a71837d0662818eb78322ff"
+    },
+    {
+      "path": "scripts/render_family_candidate.py",
+      "beforeSha256": "4b0e7c8e560d12133e3c0c02d33dad721c5d2414bef1361f610bbf2d9863ad3c",
+      "afterSha256": "f7b022deec607129087840972db2352c2c00963bcf7ee1b713fca1357fca4342"
+    },
+    {
+      "path": "scripts/render_front_arch_upview.py",
+      "beforeSha256": "57c027c5a76c407c50dce3bfe2a9ab91925b1430f6287313a978b73627d3231a",
+      "afterSha256": "277f97a12982324f7a18e79797e9ac3e0774577e2c6b9a39b0d326a8acbcbac0"
+    },
+    {
+      "path": "scripts/render_gate_pose_candidate.py",
+      "beforeSha256": "fe7e9deb3c6d291a17885214e4d37cb3bff0d0ac85ae9f47e0adbd04bf8f47fc",
+      "afterSha256": "58d0ac662482b480926268a58826e3e0d23ba549755a9ec42392b78ffe52a2ea"
+    },
+    {
+      "path": "scripts/render_house_brochure.py",
+      "beforeSha256": "5b0f81f4cacdd06d7472f144a892112cef98aea8937837e16a1c2533104663d5",
+      "afterSha256": "40d10a6438e386e31bfdef5d8658396d49e32bb57733fa17d515f200c456a569"
+    },
+    {
+      "path": "scripts/render_photo_views.py",
+      "beforeSha256": "058efe57b8185e65b861de8a48e40c1daef23b82ad3e98c21f35a9882d17b704",
+      "afterSha256": "40dbe3e63c233892f67af3f0a3d60e4cd2ba96bd4f07c01ef43328f78021b994"
+    },
+    {
+      "path": "scripts/render_proposal.py",
+      "beforeSha256": "341e972d4d7463e53d1bae36b370a7ff4ec5da391281785a0174d458e5382098",
+      "afterSha256": "1e93ff5db4fdca75eca5de7ae522d733d13f95c9fc324dc38248c0484408ba4a"
+    },
+    {
+      "path": "scripts/render_roof_inspections.py",
+      "beforeSha256": "2d454ac0e824619573501b6dce515bef647073af348a98b65d389c6e2cb9da59",
+      "afterSha256": "1e2148722333b8a57461cde0e4b15f299bc0eeffef2a4999c8d53f7669138c5a"
+    },
+    {
+      "path": "scripts/render_side_annex_proof.py",
+      "beforeSha256": "f4de12eef8241263dd44035a4431c4436dec9bcb174250f33828492b2dd9244c",
+      "afterSha256": "cbbd3fdd1b4fa9e6f56e3f66715ebee1a88a8cf0d317fe274e6ce94e48bb8dc5"
+    },
+    {
+      "path": "scripts/render_window_decision_options.py",
+      "beforeSha256": "b6e135853cd96813527569494e3eeb9b02764b35912f0fff433b625331536208",
+      "afterSha256": "c69bd997df9321f7613aecb0cae6e6b4e09e0eff90dcbc1993ece381b9b381f7"
+    },
+    {
+      "path": "scripts/review_family_candidate.py",
+      "beforeSha256": "241b64a1691b1d465ad2124ae9ee270025da958623fb279804737248481fb80a",
+      "afterSha256": "c049d1f56bcaf1d28c80386a8d8569735e761e227f6b697f51e3a64f997d50ca"
+    },
+    {
+      "path": "scripts/smoke_rendered_walkthrough_gui.py",
+      "beforeSha256": "7abee26409a08aab77ca9c679f6d2c6375738c699ab9fa685a76702f9787999f",
+      "afterSha256": "c563bcf4483a9c96bb3e6052fc4b79bb3bef6a3bbab53bdf5faad24059ab6f4c"
+    },
+    {
+      "path": "scripts/stage_github_pages.py",
+      "beforeSha256": "2abe696c98807e58f7e34615e043906470604e4a13b3457aece3bf524f4ea235",
+      "afterSha256": "a0bdbaa732e41275e8e8cf8ba0a6560fc321ba5f8eaf232090d12b46a6fa2ce0"
+    },
+    {
+      "path": "scripts/stage_redesign_sources.py",
+      "beforeSha256": "e3b2219997a27b95e419f307fd81f7677a8afe5e033cf19b385f117b0355ccf6",
+      "afterSha256": "dfbf80e91d5613bd3d8ab609092fa71c460828a7b667820b6a16e45e57161d05"
+    },
+    {
+      "path": "scripts/survey_loft_headroom.py",
+      "beforeSha256": "12ac8865370a6cf7f4e61604e7346116c6115070dc2ba66b84cdd5c2f236e0e5",
+      "afterSha256": "d325737d78da4ed69edc600a5ad1cef79f6e83cb77112bb7dae71c47b85467e7"
+    },
+    {
+      "path": "scripts/sync_site_references.py",
+      "beforeSha256": "7b49c49e4fdeab99f611a5308bbcd64f2eb52ec1462ff4613468f2364ddfb4b3",
+      "afterSha256": "855839cd72e2bda295de065978e756c4c973c19fcf057939e3985b37b2e6d8ed"
+    },
+    {
+      "path": "scripts/update_boundary_hedges.py",
+      "beforeSha256": "ee2a1303af5f1a9cb837231e804f7dec4c818248b56ea8a171f2722a9ad64901",
+      "afterSha256": "ebfce0fdf05e5015d6ff3bd8c6d334f57cf3f4e6bf69b611f6d9f957100d176b"
+    },
+    {
+      "path": "scripts/update_front_walls.py",
+      "beforeSha256": "21f694dc59c4b90f8fd055fe93a2ab00e14df66a0b6cacd41e299933da35e611",
+      "afterSha256": "c4a5aa33857b8da4f6fcaec7cb837df97de9165fb2601030617707a449e85ed5"
+    },
+    {
+      "path": "scripts/update_remove_site_objects.py",
+      "beforeSha256": "97362408df445f4e31d440356ede2bbed4dc1254d3f9860aff4e124c2c9c48d8",
+      "afterSha256": "ccce6811aa59c129dcd352ffb46e594ca826eaec8786b1984ff303b93db8ff6e"
+    },
+    {
+      "path": "scripts/update_site_trees.py",
+      "beforeSha256": "740029c091a38218c7ed6c79fee069d5d277c36cee70b3ccf1d1581853c077dc",
+      "afterSha256": "d8749cb71fd7e1f7d97231cad5da4a6c7841e2947318af10004e76787b68de6c"
+    },
+    {
+      "path": "scripts/validate_model.py",
+      "beforeSha256": "299b43f8f2432979605e4e64f5854d5d5f51ebd66865ccc4f18611cbc10441a2",
+      "afterSha256": "20b7308ab08d64bbbfa01a792db7518e890af29b2468fd369a32fdf51331b52a"
+    },
+    {
+      "path": "scripts/validate_rendered_walkthrough.py",
+      "beforeSha256": "767a556e5f17c375f104f0605fc69c10458f67407aae7af272dc782db20b3be1",
+      "afterSha256": "25d2b5ac6ffcaefd178e2677bf4411d9bdf9a4719be87dcc20e93efe24636383"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "beforeSha256": "01d5a1eb14427dab74d750b085593b129726e3d5722d5c1dd9b58aecce3a59af",
+      "afterSha256": "c0766375d5b3fc021f6f786e96870256d90861e705aefa4f047b727de5c7068b"
+    },
+    {
+      "path": "tests/test_build_pipeline.py",
+      "beforeSha256": "ffdf00656a2afa50fc3eee3ae74d1cb72e2231ff98a9c0e6bc9eea5ed0f62e99",
+      "afterSha256": "c0093ac9df7bbc52ffb14c8d0deb8ecf60950352c7e26ab864e270414a3e1b20"
+    },
+    {
+      "path": "tests/test_entrance_gable.py",
+      "beforeSha256": "2b7b21ade0c6f530e2e8cb9f8c356f2d401c4edab3927f7d1ab1411030259f64",
+      "afterSha256": "fa8ec5958dc3aed39cff4689985c14ea2cceb60b5e6d26f1bbbe7f2b489d831c"
+    },
+    {
+      "path": "tests/test_exterior_finish_faces.py",
+      "beforeSha256": "dc9efb26f7d5df139274f2d06bcf4380a0cf6968f2b534419af448f7fc05d50e",
+      "afterSha256": "b98520bdc3b844a90493eb00b77d9b10b2dff15bcbb55150a4b0bf7d88db53a1"
+    },
+    {
+      "path": "tests/test_loft_bedroom_wall.py",
+      "beforeSha256": "33fb1601d5881db19200e61b70db6e7a3f315e6bd6119460b6ee3620e3b4ced9",
+      "afterSha256": "1e6f8a74efd5f6eb341fd36b4746c5b32a94ea729b1dd7b4e9355f832696aa1e"
+    },
+    {
+      "path": "tests/test_planning_variant.py",
+      "beforeSha256": "6bb6a13232736345de5541f56210a986dc1507f4183b9d4d9bf5b5cd72781754",
+      "afterSha256": "10e4af33247d6767f4748288b5079f70f3b5ff34e6fceab2abb974cbc19b5ab2"
+    },
+    {
+      "path": "tests/test_redesign_cache.py",
+      "beforeSha256": "fa6c38d1234ef708bf76c5dc26420b068cd4d02c9edbdcaa892a7aa5ff11e7b1",
+      "afterSha256": "11da30a64a551fe156b4dbd9300d3cac93b2ac0e191cfd07d1b25dd10e850ded"
+    },
+    {
+      "path": "walkthrough/tests/arrival-layout.mjs",
+      "beforeSha256": "34e2fc6e88bf4251dd624fc957fd456597051f4d29b8b88b7fc6aa530f6f5da4",
+      "afterSha256": "56e9843469c3e46427decbdf2ca37cca2dcd9c6250be3e668c3e5cb12bc25d4f"
+    },
+    {
+      "path": "walkthrough/tests/bedroom2-layout.mjs",
+      "beforeSha256": "ff52702e6ccb669de53e269481b56af37bc79bcb5624d837571bc48e3cd13114",
+      "afterSha256": "61af8731b7f6a4068349436f61ef3d815ac60a7275fd29d1f7022bfefd9c5b57"
+    },
+    {
+      "path": "walkthrough/tests/bedroom3-layout.mjs",
+      "beforeSha256": "d08a52d6be023b2c8899a3f6c1ced336b5602e69551d3f4ca65485e06b4b11d9",
+      "afterSha256": "57d28c8bdafc483e521967ecae472c0c0d99a7ce27c3464d237050d91de3cfb0"
+    },
+    {
+      "path": "walkthrough/tests/bedroom4-pair-layout.mjs",
+      "beforeSha256": "ac3e4f9625e158c74308d492c3f9b042c4216eb2641023770a8c1c4a0e6cbcb4",
+      "afterSha256": "93774b56bd9cb298b543e49937f68137e1c2d00665d1a92e1ad107b60f81b683"
+    },
+    {
+      "path": "walkthrough/tests/circulation.mjs",
+      "beforeSha256": "86ee4fbc63beed3cf2793a76e75809d32efc8df4f97054653771c37b54b78e93",
+      "afterSha256": "529b2dc4f09ac359831ba07a5f19b43c1778a8f33b4eda0335d4b3cd7f08d1c5"
+    },
+    {
+      "path": "walkthrough/tests/cloakroom-layout.mjs",
+      "beforeSha256": "b5a2b89fd301e40d6454b8432472ca6b6cc64d823f3d021b3acd713bb887949c",
+      "afterSha256": "9d07890e6ad1071ef7256e35d09d7e82fc872d7e8da142d3739538a688d6f2d2"
+    },
+    {
+      "path": "walkthrough/tests/detail-captures.mjs",
+      "beforeSha256": "e714f2b2900f5a694d146fa09a5b77ee3f3bb821b21e15975508d11f9ee455ee",
+      "afterSha256": "274df8c0288c1ec4d409d082c7baa2232be8c8ed3d37b1824bfedb05b3b3ae40"
+    },
+    {
+      "path": "walkthrough/tests/doors.mjs",
+      "beforeSha256": "19f76a359fad013f6c70c121eda97b0b08f3a01b6030b39ae18ca05227b88872",
+      "afterSha256": "d9d869348d41c4a7f2f792bae7c8a0ce1f45931a135f13aa86eb96e7985280e9"
+    },
+    {
+      "path": "walkthrough/tests/drawing-rear-doors.mjs",
+      "beforeSha256": "2cbdf473aba9dd83accfea5196ea053b832b9976e2a3a9963e4f5ccc6d7c78c2",
+      "afterSha256": "3c01d392550726336290f8e4a81bee5385005ecabfb817ea07997844420c21b4"
+    },
+    {
+      "path": "walkthrough/tests/family-layout.mjs",
+      "beforeSha256": "6211136017d8e4701fefec6dd84f71d4f695c79c641bc908e252984e961f368a",
+      "afterSha256": "ed9b726e56e66647d1c14675ce90167a0dc388d06a3599cc556b9a2f363d3460"
+    },
+    {
+      "path": "walkthrough/tests/familybath-layout.mjs",
+      "beforeSha256": "23ea297707acd0ca305773d5fcf18b669b82647c9ff9e979e41d2419b9bd21b2",
+      "afterSha256": "5f790d20d9456f1881d930bfe8f5b1fab4f03204f1bd50c20955705c9f96b827"
+    },
+    {
+      "path": "walkthrough/tests/garage-door.mjs",
+      "beforeSha256": "414d7327b9f0abd686d1e4693e15b67f46629bdcae60c24880c6a35d283003a9",
+      "afterSha256": "749bb0ced5f939d38a925622898e0296b165f9eaea8b3492d57daf71cc021d01"
+    },
+    {
+      "path": "walkthrough/tests/garage-parking-walk.mjs",
+      "beforeSha256": "ea7bb6d2e7749f7dc01112b708f468fe426f752b34e7eec187b7c293d462a0b3",
+      "afterSha256": "8fb8ab3a4aeddb94df9ec61be79cb960ba8ba94f304dc41d245314428fdd49e2"
+    },
+    {
+      "path": "walkthrough/tests/garden-access.mjs",
+      "beforeSha256": "5f606c8bcf71fb6cca0347ee763f2e2e7babbfe7371a3dd3386a1ba6fa56a099",
+      "afterSha256": "ada1789e63313eba19be9456a5672b15874fec2ebb36743f7101e7dc7a88688c"
+    },
+    {
+      "path": "walkthrough/tests/gate-aligned-parking.mjs",
+      "beforeSha256": "caf8ac820e9c6a830de8ae43cc790a3bb2668fd8e05e6f35280749fe5afc3ac4",
+      "afterSha256": "ac14776e124682ff12427f849b568e6147216fb5d08b8fac40b1309301fdc0b4"
+    },
+    {
+      "path": "walkthrough/tests/gate-doors.mjs",
+      "beforeSha256": "00aed92ff15af5526aaa658d70b07c3cab1dbe3c444483d44191d5a74ea6933d",
+      "afterSha256": "2aa1440f8d587cb188f005bd08c721df3069c91e1eefba1c2571ac48659ea3de"
+    },
+    {
+      "path": "walkthrough/tests/gate-preparation.py",
+      "beforeSha256": "dd5b825d02f379c85b10b8d2ca2146e09076a67ad407d430137c2eb09c0db672",
+      "afterSha256": "c6c506aa809e7ee9e8ff4eba9eb45cbd7f5e190d98ef42c86690ace7ad81f07c"
+    },
+    {
+      "path": "walkthrough/tests/guest-layout.mjs",
+      "beforeSha256": "e40770246043d193d45512f6b44b6f90a52fcad902fc1ff78801d1d6ab4c1713",
+      "afterSha256": "e93225ff850b8355d93695f8b8f564285a5eaf4b00af04972a41e087c3859042"
+    },
+    {
+      "path": "walkthrough/tests/guestbath-layout.mjs",
+      "beforeSha256": "6c5f5df15fbde900290ade2975bad5d79969b62250e71b5123ec87743b8badb9",
+      "afterSha256": "aa33c44b94a38e1be83b1d786fa580c56ce86fe051a09c340c2093336572d761"
+    },
+    {
+      "path": "walkthrough/tests/gym-layout.mjs",
+      "beforeSha256": "3e1f2bdde83360256b945a8a26c7f4b0675433cf69284a2e0738d8ad1925a147",
+      "afterSha256": "ee6d07b1f6767ff6ff8851672c29d262cc1ebbd6cc26cf7d52c3468396c03e17"
+    },
+    {
+      "path": "walkthrough/tests/hobby-layout.mjs",
+      "beforeSha256": "5ee6e97c021defc432495cd9e57557f75bafca943589d58a7f0ec5b0f6ec27b2",
+      "afterSha256": "05642f926a4038557c3c70496f0223673658f6dc8cd9b2965c46de05186cd6f3"
+    },
+    {
+      "path": "walkthrough/tests/landings-layout.mjs",
+      "beforeSha256": "d30d8e818098cc3b97f37c5ed1af7fe4ef50654706ad97903fbd94ee5334a72f",
+      "afterSha256": "6e971857f87303ffd38c5cbd33d58da0012c4b64909691237697a7d89b40747c"
+    },
+    {
+      "path": "walkthrough/tests/lighting.mjs",
+      "beforeSha256": "04fd36c3ab73ecf3f664b20d3c1bba6d5358029f5f5917bbb545022b2706f767",
+      "afterSha256": "ac34591b8452e59e9961561394998a5b938cf86f5ae253c79312d0f79974e9ed"
+    },
+    {
+      "path": "walkthrough/tests/live-release.mjs",
+      "beforeSha256": "ca4b0403a44e31f559b4d388b3d55cf9ef96bb8eff174cbf1968d020d3a9783f",
+      "afterSha256": "696f21cf21a3eb5767b1dc6b3a3354351fd2fb2e4e125531a7f2556b18333895"
+    },
+    {
+      "path": "walkthrough/tests/loftsuite-layout.mjs",
+      "beforeSha256": "3636295e6eb9f8bd3a66bc13adad02f4e4b50cafac2e968acfa59c975699235e",
+      "afterSha256": "adb6d4a8633322d66b4a33be0725ca56db13c7f25dcff820a23aa33431135c92"
+    },
+    {
+      "path": "walkthrough/tests/poolgarden-layout.mjs",
+      "beforeSha256": "3b28a5bdc06d6942054d098b719ef87ffcca5d4724f143ac2dbd626b8f6110b3",
+      "afterSha256": "587d6a4306cc6434c2d5ccd39f1bf439da4889e482647688b9647690e88b3c9d"
+    },
+    {
+      "path": "walkthrough/tests/proposal-circulation.mjs",
+      "beforeSha256": "47c72408ebd56bda5d4d8044a6f549ed30e647eb0f0ce407ef75005b15d770ea",
+      "afterSha256": "ed79d769ab004618756ee6ce3ddc82c4a96ab69b7531b0e6a69d1a79482f06d8"
+    },
+    {
+      "path": "walkthrough/tests/proposal-room-access.mjs",
+      "beforeSha256": "b9cc3faaaa817ab4fd62945f1d7e7e9cbaeb2618d34b8b5572d2f1faf41553f6",
+      "afterSha256": "832422c9510aa13866c3de1bb2d428a5aabedbd6060837fe5e3a3cd06b4254b7"
+    },
+    {
+      "path": "walkthrough/tests/published-tour.mjs",
+      "beforeSha256": "a0628878b9ce178d71378f6b8fcea005cd9abde42e821d6fa05a3d3472b8dc15",
+      "afterSha256": "71c20603993c1915dcd49faf65094006d200d10a58a5b7596c20f1cef643ff9e"
+    },
+    {
+      "path": "walkthrough/tests/redesign-circulation.mjs",
+      "beforeSha256": "f1a5b1a4381c13749b353598d4201032ab22252cf84f21e811e53dd26957da6b",
+      "afterSha256": "3f81362888f1e7cec811ea9e70cb54e4ee1f2de6c3ee8201861778e43ef4a48b"
+    },
+    {
+      "path": "walkthrough/tests/redesign-ensuite-access.mjs",
+      "beforeSha256": "0a3d5b6f84e9d3bb18c0cd6f9dab93dc3700f61ed249102d00252de9deb9edaf",
+      "afterSha256": "effcd339d6e7b6b11c1733779d5c6da0c6840bb792c90b1dd9aa5f193255ba1e"
+    },
+    {
+      "path": "walkthrough/tests/redesign-garage-access.mjs",
+      "beforeSha256": "054449c767b6373876466a234960e990fd1258ba7aa53470f874277cfd992aa8",
+      "afterSha256": "407ec4c95a58c99a5bc5b86b981dc15a879ef5bfb3998b2e481d85acfb9cb4bd"
+    },
+    {
+      "path": "walkthrough/tests/redesign-parking.mjs",
+      "beforeSha256": "22e4b560d0fcea11f89e17aa12a2c23156c3e815fce697c7a7464e95c44b7a19",
+      "afterSha256": "734b45e2042beb26328423eeaaa6f024f1bc3f6d823a43c2146955d34ddb485f"
+    },
+    {
+      "path": "walkthrough/tests/redesign-pool.mjs",
+      "beforeSha256": "1dcf896c92026993ba8057d009f4f93f8791e2195879e34c8e8c8af65e4d6329",
+      "afterSha256": "c56e827b92d71e520377a1dc4a551b5ac91f4b490f59745d63fa304ea3387f20"
+    },
+    {
+      "path": "walkthrough/tests/redesign-private-access.mjs",
+      "beforeSha256": "5b4f44b7e9a1cb165f379a6e7a0e2f480fd89f5f61832f25c242377a85697b5f",
+      "afterSha256": "f68f37bfc89dabb407c0a2d73c20e3a075bd875792b261004b4643b41b2a233d"
+    },
+    {
+      "path": "walkthrough/tests/redesign-stairs.mjs",
+      "beforeSha256": "7a9d11967e5b37465237a6a9496886a857da2b863572676de9e21ac15d0211c5",
+      "afterSha256": "bd97a1577d379459e7e54137102a03c652cbda4445b6540d19c752821eba40c8"
+    },
+    {
+      "path": "walkthrough/tests/rendering-comparison.mjs",
+      "beforeSha256": "5466d05a3099cba35fe9d58f7f0326e5d59f50aed59a0ce6343183ceaad3a400",
+      "afterSha256": "780f16b94c01d2ec76fb9fcde2241caf8186edf2c3bcfe1a9bde190f90763e8e"
+    },
+    {
+      "path": "walkthrough/tests/sidebed-layout.mjs",
+      "beforeSha256": "d509d50e41d9251e7635ce93ca5730702361124c94e7d27db91bfad66f8c89aa",
+      "afterSha256": "5892e14cd4dbb5a8f473ded7345c4221cc2002f80544c6bfc6b1f77a71bad1cb"
+    },
+    {
+      "path": "walkthrough/tests/stair-landing.mjs",
+      "beforeSha256": "d45401b420fc679d7305322ad26ddfad349b4a352694c35f13d9679e8b7837c0",
+      "afterSha256": "7859778d9d5edf55b470b3d35b6afec83afe5da384b6b9aafcbb5a1c2d8de20d"
+    },
+    {
+      "path": "walkthrough/tests/terrace-layout.mjs",
+      "beforeSha256": "e6e0abc5bbabfe3d2faf8ef4f807b1995786e6985c79e232dbf063da90d2c096",
+      "afterSha256": "101fe0d91bfaf33c132d12101814a6156f51b5da75bf9d2d1ef5e410b961759b"
+    },
+    {
+      "path": "walkthrough/tests/utility-layout.mjs",
+      "beforeSha256": "e22eac7bcd576a3f174350e457e93ec716d751e2f947b38215f4f5be77ccde3e",
+      "afterSha256": "c1c6fc372d8ef6cd7e2b1928dbe02f18a10eecc1a3f144400baf3992e690c947"
+    },
+    {
+      "path": "walkthrough/tools/check-fourth-parking.mjs",
+      "beforeSha256": "ae7eacbb57b67e387c61b3cf4964d778b1f3fe21b36b5285d1cb3393f67e1dbd",
+      "afterSha256": "9701ae13fdf61336b38595001f775be9bcfc446fa5719b0d817bdd8eb96687a9"
+    },
+    {
+      "path": "walkthrough/tools/check-garage-drive.mjs",
+      "beforeSha256": "eceabfdac10a628f286b05da2494ac0ae432e758e5a49fed554939f536fdbe16",
+      "afterSha256": "b3c60252a4b149e5ea750750ac5bee3d518bbbe4a24959610bec2695d3308bfd"
+    }
+  ]
+}

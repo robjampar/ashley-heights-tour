@@ -1,0 +1,130 @@
+[
+  {
+    "path": "scripts/build/build_support.py",
+    "sha256": "72e066e0aa8858d1ee49ca6fb0f4d3d2a9a36610270e02bcb51c159e29ae8d96"
+  },
+  {
+    "path": "tests/test_build_pipeline.py",
+    "sha256": "eff07d631cdc9058d901fd0f6632804cfbcc4d521828245851da92fc6fee4a8a"
+  },
+  {
+    "path": "README.md",
+    "sha256": "7faaa50d2f30e3f242e07fb58018b972043922cce2de7c608c6ddd16654362f3"
+  },
+  {
+    "path": "docs/WORKSPACE.md",
+    "sha256": "2a8961713398fcf57fea7102422d128b356c91d6ae400fe3db3b589bfdc579e3"
+  },
+  {
+    "path": "walkthrough/tests/suite-layout-loft.test.mjs",
+    "sha256": "95b81f5ce2e63343fd435f3a562d73610e0845c1f3316a47a18ac9d01edc0d9d"
+  },
+  {
+    "path": "walkthrough/tests/modern-loft-stair.test.mjs",
+    "sha256": "96311f027d312e2f9e0ae6f7a0025fe4596e3aae24a1e661c794955d696e31bd"
+  },
+  {
+    "path": "walkthrough/tests/construction-details.test.mjs",
+    "sha256": "fc5a45be28ac25cb5a4367cc044add3631d0b919feb8dcb392ce4142fa4cab2b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+    "sha256": "1ede2a0ed29b98a45b1e2766124a706a86d703e39ab5ad1f05b5cfe3acbca683"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb",
+    "sha256": "7a7902b1585d9eb446d6403ac20825ac1b666635cc9dfb19557beeae5b31fb01"
+  },
+  {
+    "path": "outputs/output-proposed-compact/geometry.json",
+    "sha256": "d0fabcb156eda26f91c61c4363cdbb05a6a1ee127259ef0302f4372e2fc3f35d"
+  },
+  {
+    "path": "outputs/output-proposed-compact/navigation.json",
+    "sha256": "01aaa2739a99937ba75d97853aacafe5973b9133e474bc2b082309719f7b36e0"
+  },
+  {
+    "path": "outputs/output-proposed-compact/front-window-alignment-refresh.json",
+    "sha256": "0b4b24261584d62ef8e2bbdc575c268fb00695d7a8ef4d0eae96b1cfce97724c"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact-navigation.json",
+    "sha256": "01aaa2739a99937ba75d97853aacafe5973b9133e474bc2b082309719f7b36e0"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact.glb",
+    "sha256": "7a7902b1585d9eb446d6403ac20825ac1b666635cc9dfb19557beeae5b31fb01"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).blend",
+    "sha256": "73b83e8a29e0be32a53bfa113d88e17a7005ddfa11a9d78ade5da0ac2676b3f4"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).glb",
+    "sha256": "fa5c2d1b1f7b5b38c84c8f3ae906fa1f753830206d9a61d02cdb06ec0f2d2328"
+  },
+  {
+    "path": "outputs/output-proposed-planning/geometry.json",
+    "sha256": "306d2e3033b9ac0b1499f631ed1885eea34d085a208342b2783769ffa8d7fd9d"
+  },
+  {
+    "path": "outputs/output-proposed-planning/navigation.json",
+    "sha256": "d713133c8228b069fc5c3b405e92911a2bf6a35fee79bd710f00a22cc402d8b6"
+  },
+  {
+    "path": "outputs/output-proposed-planning/front-window-alignment-refresh.json",
+    "sha256": "ebd2d11482065abc9c1e16a16e69256e1ed75e21aad0eca7b8ca05bf65e355c0"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning.glb",
+    "sha256": "fa5c2d1b1f7b5b38c84c8f3ae906fa1f753830206d9a61d02cdb06ec0f2d2328"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning-navigation.json",
+    "sha256": "d713133c8228b069fc5c3b405e92911a2bf6a35fee79bd710f00a22cc402d8b6"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-daylight.json",
+    "sha256": "051bca477c34638eacc7f80cac6b006d8dd1a72d78c3379d8ed9943f54bcc06f",
+    "recoveredFrom": "Previous verified dist assets before the new web build"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-furnishings.json",
+    "sha256": "0ac49570808a0d5550939febd2d44fa5b324a6d926fd57a3c00ba0937e5c738f",
+    "recoveredFrom": "Previous verified dist assets before the new web build"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/compact-furnishings.glb",
+    "sha256": "bbfb59dd7e19175891a42a47c6aea30e63f6de82942fdbe97509250e1227b22d",
+    "recoveredFrom": "Previous verified dist assets before the new web build"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-daylight.json",
+    "sha256": "2fc9040a0a97ff25157c0e147d89a5e1825b5b3762ea99249a4e8546a66bebb7",
+    "recoveredFrom": "Previous verified dist assets before the new web build"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-furnishings.json",
+    "sha256": "636e5066524c696f70490fd16b9cf99023935c88627543943c29e3e80aa8f503",
+    "recoveredFrom": "Previous verified dist assets before the new web build"
+  },
+  {
+    "path": "walkthrough/public/visual-quality/planning-furnishings.glb",
+    "sha256": "d76c61c6ce5c75563fd55b89bf34a37d6d3e50bede3868e8dcaffdbbdd221b51",
+    "recoveredFrom": "Previous verified dist assets before the new web build"
+  },
+  {
+    "path": "walkthrough/tests/landing-oak-knee-wall.test.mjs",
+    "sha256": "047979684112b5c6186fde741b635f5c1e05023074df679c0601094b21a4178a",
+    "note": "Pre-edit source; landing test reconstructed by reversing the exact edit."
+  },
+  {
+    "path": "tests/test_planning_variant.py",
+    "sha256": "96680425c154b33116b9e1917f8cc3780470e19464a10945b28a942d61a8a16a",
+    "note": "Pre-edit source; landing test reconstructed by reversing the exact edit."
+  },
+  {
+    "path": "scripts/exports/bake_walkthrough_daylight.py",
+    "sha256": "703b522d601de44aeab2b5459d9695b5ea41cd57e7ed1d4c89b8bcdac1f117a0"
+  }
+]

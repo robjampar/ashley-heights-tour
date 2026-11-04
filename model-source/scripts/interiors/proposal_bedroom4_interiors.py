@@ -137,6 +137,10 @@ def apply_bedroom4(ns):
     for zz in(.701,.712,.723):b.box('hand towel woven hem',(4.492,.81,zz),(.002,.162,.003),ivory,.001)
     b.lathe('soap dispenser ceramic body',(4.628,1.82,.862),[(.030,0),(.037,.008),(.036,.109),(.022,.127)],ivory,40);b.cylinder('soap dispenser collar',(4.628,1.82,.998),.018,.020,bronze,sides=32);b.tube('soap pump spout',[(4.628,1.82,1.011),(4.671,1.82,1.011),(4.677,1.82,1.006)],.0045,bronze,3)
     transform=Matrix(((0,-1,0,6.49),(.40/.41,0,0,.14-4.403*.40/.41),(0,0,1,z),(0,0,0,1)))
+    # The newly created point light has a pending location update. Reading its
+    # stale identity matrix here used to move it to the transform origin at
+    # floor level, while the mirror and browser light went to the vanity.
+    bpy.context.view_layer.update()
     for ob in b.objects[vanity_start:]:ob.matrix_world=transform@ob.matrix_world
     for l in nav['proposalLights']:
         if l['name']==b.prefix+'basin face glow':l['position']=list(transform@Vector(l['position']))

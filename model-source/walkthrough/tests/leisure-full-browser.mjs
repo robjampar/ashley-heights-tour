@@ -31,7 +31,7 @@ try{
   assert.equal(record.rooms.landings.revision,2);assert(record.landings>=1000);
   assert.equal(record.rooms.arrival.revision,3);assert(record.arrival>=315);
   assert.equal(record.rooms.hobby.revision,1);assert(record.hobby>=490);
-  assert.equal(record.rooms.loftsuite.revision,2);assert(record.loftsuite>=250);
+  assert.equal(record.rooms.loftsuite.revision,3);assert(record.loftsuite>=250);
   assert.equal(record.rooms.sidebed.revision,2);assert(record.sidebed>=335);
   assert.equal(record.rooms.formal.revision,2);assert(record.formal>=375);
   assert.equal(record.rooms.bedroom4.revision,1);assert(record.bedroom4>=245);

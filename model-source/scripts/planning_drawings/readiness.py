@@ -17,7 +17,11 @@ def write_readiness(out, manifest):
         '4. Commission tree and ecology assessments. Confirm TPOs, ancient/veteran tree constraints and any further bat surveys. The model tree improvements do not replace a BS5837 survey.',
         '5. Resolve basement structure, groundwater, excavation and drainage with the relevant consultants. Verify flood and heritage constraints rather than relying on the current assumptions.',
         '6. Confirm a workable bin/cycle layout and access splays with the highway adviser.',
-        '7. Verify neighbour levels, flank window opening restrictions and daylight effects. Obtain the cited precedent decision notices and confirm the local character-area policy.', '',
+        '7. Verify neighbour levels, window uses, daylight/sunlight, outlook and privacy separately at No.3, No.5 and affected flats. Replace the schematic PA-070 with survey-controlled street and oblique views. F05 is the correct character area; the evidence register separates verified decisions from the No.3 recommendation.',
+        '8. Keep the current house envelope fixed for the first assessment; pool, spa and loggia are excluded. Read supporting/planning-evidence.pdf and supporting/pre-application-draft.pdf. No request has been sent to the council.', '',
+        '## Saved-model provenance', '',
+        ('This is an explicit saved-export review, not a newly rebuilt native model. The drawing set is complete for review, but source/model reconciliation remains outstanding.' if manifest.get('review_snapshot') else 'See model timestamps and hashes in manifest.json.'),
+        *['- ' + issue for issue in manifest.get('model_source_issues', [])], '',
         '## Model and schedule diagnostic', '',
     ]
     for name, diagnostic in manifest['footprint_consistency'].items():
@@ -34,7 +38,7 @@ def write_readiness(out, manifest):
               '- [Sevenoaks application guidance](https://www.sevenoaks.gov.uk/info/20013/planning_applications/282/apply_for_planning_permission/2): the council says not to submit its validation checklists. The drawings-only PDF therefore excludes PA-000, PA-005 and the preparation worksheets. Verify photograph/base-map publication rights.',
               '- [Sevenoaks CIL guidance](https://www.sevenoaks.gov.uk/info/20075/community_infrastrucure_levy/305/cil_guidance_for_planning_applicants) and [national CIL guidance](https://www.gov.uk/guidance/community-infrastructure-levy): official additional information and eligibility evidence remain outstanding. Any claimed residential extension exemption must be obtained before commencement.',
               '- [Manual for Streets, Table 7.1](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/3891/pdfmanforstreets.pdf): 25 m corresponds to 20 mph; 43 m to 30 mph. The shown 25 m splay is a concept pending speed and highway verification.',
-              '- [Sevenoaks Residential Extensions SPD](https://www.sevenoaks.gov.uk/downloads/download/141/residential_extensions_spd): retained as the design-policy reference. The precedent case files and site-specific constraints have not been independently verified in this issue.', '',
+              '- [Sevenoaks Residential Extensions SPD](https://www.sevenoaks.gov.uk/downloads/download/141/residential_extensions_spd): use with current national policy and F05. See supporting/evidence-register.json for sources, outcome confidence and comparison limits. Site measurements remain unverified.', '',
               '## Regenerate after parallel model work', '',
               'Run `.venv/bin/python -m scripts.planning_drawings.build_pack`, then the same command with `--check`. Builds read the saved geometry/navigation and do not modify the trees, model or viewer. If inputs change during generation, the previous issue is retained. A partial sheet build writes a separate preview and never marks the whole pack current.', '']
     (out / 'REQUIRED-ACTIONS.md').write_text('\n'.join(lines))
@@ -42,4 +46,6 @@ def write_readiness(out, manifest):
         'ready': False, 'outstanding': outstanding, 'risk_counts': counts,
         'area_reconciliation_required': any(not r['pass'] for r in manifest['footprint_consistency'].values()),
         'official_forms_completed': False, 'application_submitted': False,
+        'review_snapshot': manifest.get('review_snapshot', False),
+        'model_source_reconciliation_required': bool(manifest.get('model_source_issues')),
     }, indent=2) + '\n')

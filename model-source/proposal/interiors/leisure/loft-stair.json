@@ -1,0 +1,561 @@
+{
+  "id": "A",
+  "title": "Light oak loft stair",
+  "width": "900 mm flights \u00b7 fine oak guarding \u00b7 open half landing",
+  "nTotal": 15,
+  "flights": [
+    {
+      "a": [
+        6.75,
+        -1.8599999999999999
+      ],
+      "b": [
+        6.75,
+        -3.42
+      ],
+      "w": 0.9,
+      "n": 7,
+      "z": 0
+    },
+    {
+      "a": [
+        7.8,
+        -3.42
+      ],
+      "b": [
+        7.8,
+        -1.6
+      ],
+      "w": 0.9,
+      "n": 8,
+      "z": 1.2833333333333332
+    }
+  ],
+  "landings": [
+    {
+      "box": [
+        6.3,
+        -4.42,
+        8.25,
+        -3.42
+      ],
+      "z": 1.2833333333333332
+    }
+  ],
+  "tops": [
+    {
+      "box": [
+        7.3,
+        -1.6,
+        9.6,
+        -0.5
+      ],
+      "z": 2.75
+    }
+  ],
+  "exits": [
+    [
+      9,
+      -1.0
+    ]
+  ],
+  "caps": [
+    [
+      7.3,
+      -5.3,
+      9.6,
+      4.95
+    ]
+  ],
+  "ceilingPanels": [
+    {
+      "box": [
+        7.3,
+        -5.3,
+        9.6,
+        4.95
+      ],
+      "z": 7.6
+    }
+  ],
+  "holes": [
+    [
+      6,
+      -4.58,
+      8.47,
+      -1.6
+    ]
+  ],
+  "arrival": [
+    7.8,
+    -1.0,
+    5.55
+  ],
+  "walk": [
+    [
+      6.75,
+      -1.3599999999999999,
+      2.8
+    ],
+    [
+      6.75,
+      -1.8599999999999999,
+      2.8
+    ],
+    [
+      6.75,
+      -3.42,
+      4.083333333333333
+    ],
+    [
+      6.75,
+      -3.92,
+      4.083333333333333
+    ],
+    [
+      7.8,
+      -3.92,
+      4.083333333333333
+    ],
+    [
+      7.8,
+      -3.42,
+      4.083333333333333
+    ],
+    [
+      7.8,
+      -3.42,
+      4.083333333333333
+    ],
+    [
+      7.8,
+      -1.6,
+      5.55
+    ],
+    [
+      7.8,
+      -1.0,
+      5.55
+    ],
+    [
+      9,
+      -1.0,
+      5.55
+    ]
+  ],
+  "routes": {
+    "principal": [
+      [
+        7.6,
+        0.3,
+        2.8
+      ],
+      [
+        6.65,
+        0.3,
+        2.8
+      ],
+      [
+        6.65,
+        -0.65,
+        2.8
+      ],
+      [
+        7.65,
+        -0.65,
+        2.8
+      ],
+      [
+        8.3,
+        -0.85,
+        2.8
+      ],
+      [
+        9,
+        -0.85,
+        2.8
+      ],
+      [
+        9,
+        -4.75,
+        2.8
+      ],
+      [
+        8.945,
+        -4.75,
+        2.8
+      ],
+      [
+        8.945,
+        -9.2,
+        2.8
+      ]
+    ],
+    "approach": [
+      [
+        7.6,
+        0.3,
+        2.8
+      ],
+      [
+        6.75,
+        0.3,
+        2.8
+      ],
+      [
+        6.75,
+        -0.65,
+        2.8
+      ]
+    ],
+    "hobby": [
+      [
+        7.6,
+        0.3,
+        2.8
+      ],
+      [
+        6.75,
+        0.3,
+        2.8
+      ],
+      [
+        6.75,
+        -1.3599999999999999,
+        2.8
+      ],
+      [
+        6.75,
+        -1.8599999999999999,
+        2.8
+      ],
+      [
+        6.75,
+        -3.42,
+        4.083333333333333
+      ],
+      [
+        6.75,
+        -3.92,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -3.92,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -3.42,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -3.42,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -1.6,
+        5.55
+      ],
+      [
+        7.8,
+        -1.0,
+        5.55
+      ],
+      [
+        9,
+        -1.0,
+        5.55
+      ],
+      [
+        9,
+        4.95,
+        5.55
+      ],
+      [
+        9,
+        5.4,
+        5.55
+      ]
+    ],
+    "suite": [
+      [
+        7.6,
+        0.3,
+        2.8
+      ],
+      [
+        6.75,
+        0.3,
+        2.8
+      ],
+      [
+        6.75,
+        -1.3599999999999999,
+        2.8
+      ],
+      [
+        6.75,
+        -1.8599999999999999,
+        2.8
+      ],
+      [
+        6.75,
+        -3.42,
+        4.083333333333333
+      ],
+      [
+        6.75,
+        -3.92,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -3.92,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -3.42,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -3.42,
+        4.083333333333333
+      ],
+      [
+        7.8,
+        -1.6,
+        5.55
+      ],
+      [
+        7.8,
+        -1,
+        5.55
+      ],
+      [
+        9.07,
+        -1,
+        5.55
+      ],
+      [
+        9.02,
+        -2.15,
+        5.55
+      ],
+      [
+        9.02,
+        -4.78,
+        5.55
+      ],
+      [
+        11.8,
+        -4.78,
+        5.55
+      ],
+      [
+        11.8,
+        -6.5,
+        5.55
+      ]
+    ]
+  },
+  "upperRoutes": {
+    "hobby": [
+      [
+        7.8,
+        -1.0,
+        5.55
+      ],
+      [
+        9,
+        -1.0,
+        5.55
+      ],
+      [
+        9,
+        4.95,
+        5.55
+      ],
+      [
+        9,
+        5.4,
+        5.55
+      ]
+    ],
+    "suite": [
+      [
+        7.8,
+        -1,
+        5.55
+      ],
+      [
+        9.07,
+        -1,
+        5.55
+      ],
+      [
+        9.02,
+        -2.15,
+        5.55
+      ],
+      [
+        9.02,
+        -4.78,
+        5.55
+      ],
+      [
+        11.8,
+        -4.78,
+        5.55
+      ],
+      [
+        11.8,
+        -6.5,
+        5.55
+      ]
+    ]
+  },
+  "topRouteIndex": 10,
+  "revision": "light-oak-stair-2026-10-22",
+  "floorZ": 2.8,
+  "loftZ": 5.55,
+  "ceilingZ": 7.6,
+  "roof": {
+    "ridgeX": 7.3,
+    "ridgeZ": 8.05,
+    "oldRidgeX": 9.455,
+    "shiftM": 2.1550000000000002,
+    "eaves": [
+      4.73,
+      -16.506,
+      14.18,
+      -3.8
+    ],
+    "capX": 7.395,
+    "flushX": 9.7,
+    "westPitch": 46.41308179826092,
+    "eastPitch": 21.427120773614117,
+    "southRidgeY": -11.781,
+    "ridgeY": 4.40500020980835,
+    "caps": [
+      [
+        -1.7650000000000001,
+        4.3500000000000005,
+        10.52,
+        8.17
+      ],
+      [
+        7.395,
+        -11.8,
+        12.72,
+        -2.829
+      ],
+      [
+        7.395,
+        -2.929,
+        9.819999999999999,
+        -0.015
+      ],
+      [
+        7.395,
+        -0.115,
+        10.47,
+        4.075
+      ]
+    ],
+    "planes": [
+      [
+        1.0505836575875493,
+        0,
+        0.3807392996108909
+      ],
+      [
+        -0.3924418604651164,
+        0,
+        10.91482558139535
+      ],
+      [
+        0,
+        -0.5763073302543664,
+        10.588633910684575
+      ],
+      [
+        0,
+        0.5714285714285717,
+        14.782000000000004
+      ]
+    ],
+    "rooflights": [
+      [
+        7.85,
+        -2.2,
+        8.45,
+        -0.8
+      ],
+      [
+        7.85,
+        0.7,
+        8.45,
+        2
+      ]
+    ]
+  },
+  "openings": [
+    [
+      6,
+      -4.58,
+      8.47,
+      -1.6
+    ]
+  ],
+  "approvedStudySHA256": "934b41771fd9cb6aa147eb6bd1aee695ba55440a1432d0fe84085191ce5a5ab5",
+  "basis": "Owner-approved one-level loft, conventional return stair, offset ridge and flush courtyard facade. Owner follow-up: 650 mm southward stair shift creates a 1.725 m bottom landing. Owner follow-up: 1.00 m open-riser flights, glass guarding and repaired stairwell linings. Owner 20 October: integrated oak construction and matching rails, retaining the accepted open risers, width and route. Owner 21 October: oak spindles instead of glass, continuous rounded oak rails and integrated ivory sides in keeping with the ground-to-first staircase. Owner 22 October: reduce general visual bulk and footprint; remove the solid half-landing plinth, slim joinery and narrow both flights to 900 mm, retaining rise, going, bottom landing and full-height loft arrival.",
+  "stairShiftY": -0.65,
+  "bottomLanding": {
+    "box": [
+      6.05,
+      -1.84,
+      8.49,
+      -0.115
+    ],
+    "floorZ": 2.8,
+    "clearDepthM": 1.725,
+    "basis": "Owner 19 October: a more generous landing at the foot of the loft stair. Flights and their opening move 650 mm south; approved rise, going, width, level loft floor and roof remain."
+  },
+  "modern": {
+    "treadThicknessM": 0.05,
+    "clearRiserGapM": 0.09333333333333332,
+    "finish": "50 mm pale oak tread edges with recessed open-riser nibs, fine oak spindles, 50 mm rounded handrails, slim ivory outer strings and an open framed half landing",
+    "handrailWidthM": 0.05,
+    "oakStringThicknessM": 0.06,
+    "oakStringDepthM": 0.21,
+    "spindleWidthM": 0.022,
+    "newelWidthM": 0.03,
+    "designReference": "Lower staircase pale oak, rounded rails and ivory sides; visually lighter loft construction",
+    "newelDepthM": 0.06,
+    "visibleTreadEdgeM": 0.05,
+    "recessedRiserNibM": 0.04,
+    "guardOffsetM": 0.03
+  },
+  "suiteDoorDetail": {
+    "x": [
+      8.68,
+      9.08,
+      9.46
+    ],
+    "y": [
+      -3.156,
+      -3.165,
+      -3.175,
+      -3.255,
+      -3.262,
+      -3.269,
+      -3.279,
+      -3.319
+    ]
+  }
+}

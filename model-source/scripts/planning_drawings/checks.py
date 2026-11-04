@@ -32,15 +32,18 @@ def red_line_hash(polygon):
     return hashlib.sha256(json.dumps([[round(x, 4), round(y, 4)] for x, y in polygon.exterior.coords]).encode()).hexdigest()[:16]
 
 
-def pdf_checks(paths, max_mb=50):
+def pdf_checks(paths, max_mb=50, review_issue=False):
     out = []
     for p in paths:
         d = pymupdf.open(str(p)); sizes = {tuple(round(v) for v in (pg.rect.width, pg.rect.height)) for pg in d}
         text = ' '.join(pg.get_text() for pg in d).lower()
         bad = [w for w in ('draft', 'confidential', 'not for planning') if w in text]
+        # Internal review briefs are deliberately labelled draft. They must not
+        # be mistaken for submission documents, but this is not a rendering error.
+        blocking_words = [w for w in bad if not (review_issue and w == 'draft')]
         supported = {(2384, 1684), (1191, 842), (595, 842)}
         readable = bool(text.strip()) and len(d) > 0
-        out.append({'file': p.name, 'pages': len(d), 'page_sizes_pt': sorted(sizes), 'bytes': p.stat().st_size, 'under_limit': p.stat().st_size < max_mb * 1024 * 1024, 'forbidden_words': bad, 'pass': readable and sizes <= supported and p.stat().st_size < max_mb * 1024 * 1024 and not bad})
+        out.append({'file': p.name, 'pages': len(d), 'page_sizes_pt': sorted(sizes), 'bytes': p.stat().st_size, 'under_limit': p.stat().st_size < max_mb * 1024 * 1024, 'forbidden_words': bad, 'submission_wording_clear': not bad, 'review_issue': review_issue, 'pass': readable and sizes <= supported and p.stat().st_size < max_mb * 1024 * 1024 and not blocking_words})
         d.close()
     return out
 

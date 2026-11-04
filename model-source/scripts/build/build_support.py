@@ -30,11 +30,12 @@ MODULES = (
     'model/proposal_lifestyle.py', 'model/proposal_shared_lounge.py', 'model/proposal_housekeeping.py',
     'model/proposal_side_bathroom.py', 'model/proposal_original_rooms.py', 'model/proposal_basement.py',
     'model/proposal_roof_terrace.py', 'model/proposal_workshop.py', 'model/proposal_garden_levels.py',
-    'model/proposal_appearance.py', 'interiors/proposal_kitchen_interiors.py', 'interiors/proposal_principal_interiors.py', 'interiors/proposal_leisure_interiors.py', 'model/proposal_garden_stone.py', 'model/proposal_editability.py', 'model/proposal_edit_views.py', 'build/finish_extension_proposal.py',
+    'model/proposal_appearance.py', 'model/proposal_envelope_repairs.py', 'interiors/proposal_kitchen_interiors.py', 'interiors/proposal_principal_interiors.py', 'interiors/proposal_leisure_interiors.py', 'model/proposal_courtyard_stair_junction.py', 'model/proposal_hobby_door_openings.py', 'model/proposal_grand_loft_stair.py', 'interiors/proposal_accepted_bar.py', 'interiors/proposal_prep_kitchen.py', 'interiors/proposal_door_surrounds.py', 'model/proposal_level_loft.py', 'model/modern_loft_stair.py', 'model/proposal_loft_bedroom_expansion.py', 'model/proposal_loft_finish.py', 'model/proposal_basement_roof_corrections.py', 'model/proposal_landing_oak_knee_wall.py', 'model/proposal_loft_junction_cleanup.py', 'model/proposal_stair_landing_finish.py', 'model/proposal_rear_glass_inset.py', 'model/proposal_garden_chamfer.py', 'model/proposal_garden_stone.py', 'model/proposal_bedroom4_stair_suite.py', 'model/proposal_open_suite_eaves.py', 'model/proposal_lengthwise_bathroom.py', 'model/proposal_front_window_alignment.py', 'model/proposal_terrace_lounge_suite.py', 'model/proposal_symmetric_wing_roof.py', 'model/proposal_continuous_wing_roof.py', 'model/proposal_garden_workshop_envelope.py', 'model/proposal_structural_finishes.py', 'model/proposal_opening_fit.py', 'model/proposal_sw02.py', 'model/proposal_continuous_joists.py', 'model/proposal_garage_seven_metre.py', 'model/proposal_exterior_masonry_junctions.py', 'model/proposal_editability.py', 'model/proposal_edit_views.py', 'build/finish_extension_proposal.py',
 )
 PLANNING_OMISSIONS = {
+    'model/proposal_garden_workshop_envelope.py', 'model/proposal_structural_finishes.py', 'model/proposal_opening_fit.py', 'model/proposal_sw02.py', 'model/proposal_continuous_joists.py', 'model/proposal_garage_seven_metre.py', 'model/proposal_exterior_masonry_junctions.py',
     'model/proposal_rear.py', 'model/proposal_kitchen_connection.py',
-    'model/proposal_roof_terrace.py', 'model/proposal_workshop.py',
+    'model/proposal_roof_terrace.py', 'model/proposal_workshop.py', 'model/proposal_rear_glass_inset.py', 'model/proposal_garden_chamfer.py',
 }
 
 
@@ -70,12 +71,34 @@ def source_hashes(root, variant):
     paths.update(str(p.relative_to(root)) for p in (root / 'proposal/interiors/kitchen').rglob('*')
                  if p.is_file() and p.suffix in ('.json', '.png'))
     if variant in ('compact', 'planning'):
+        paths.add('proposal/specs/level-loft-components.json')
+        paths.add('proposal/specs/bedroom4-stair-suite-components.json')
+        paths.add('proposal/specs/suite-layout-loft-use.json')
+        paths.add('proposal/specs/open-suite-eaves-storage.json')
+        paths.add('proposal/specs/lengthwise-bathroom.json')
+        paths.add('proposal/specs/front-window-alignment.json')
+        paths.add('proposal/specs/terrace-lounge-west-suite.json')
+        paths.add('proposal/specs/symmetric-wing-roof.json')
+        paths.add('scripts/geometry/symmetric_roof.py')
+        paths.add('proposal/specs/continuous-wing-roof.json')
+        paths.add('scripts/geometry/continuous_roof.py')
+        paths.add('scripts/interiors/terrace_suite_furnishings.py')
+        paths.add('scripts/model/proposal_suite_layout_loft.py')
+        paths.update(('scripts/interiors/bar_lounge_details.py','scripts/interiors/door_frame_details.py','scripts/model/grand_stair_returns.py','proposal/interiors/leisure/prep-kitchen.json','proposal/interiors/leisure/loft-stair.json','proposal/interiors/leisure/loft-bedroom-expansion.json','proposal/interiors/leisure/loft-bedroom-finish.json','proposal/interiors/leisure/textures/calacatta-oro.png','source/assets/materials/polyhaven/walnut_veneer/walnut_veneer_diff_2k.jpg'))
         paths.update(('scripts/interiors/interior_furnishing.py','scripts/interiors/proposal_bar_interiors.py','scripts/interiors/proposal_gym_interiors.py','scripts/interiors/proposal_utility_interiors.py','scripts/interiors/proposal_guest_interiors.py','scripts/interiors/proposal_guestbath_interiors.py','scripts/interiors/proposal_family_interiors.py','scripts/interiors/proposal_cloakroom_interiors.py','scripts/interiors/proposal_bedroom2_interiors.py','scripts/interiors/proposal_bedroom3_interiors.py','scripts/interiors/proposal_familybath_interiors.py','scripts/interiors/proposal_bedroom4_interiors.py','scripts/interiors/proposal_formal_interiors.py','scripts/interiors/proposal_sidebed_interiors.py','scripts/interiors/proposal_loftsuite_interiors.py','scripts/interiors/proposal_hobby_interiors.py','scripts/interiors/proposal_arrival_interiors.py','scripts/interiors/proposal_landings_interiors.py','scripts/interiors/proposal_garage_interiors.py','scripts/interiors/proposal_gardenhouse_interiors.py','scripts/interiors/proposal_office_interiors.py','scripts/interiors/garden_level_steps.py','scripts/interiors/interior_suite_parts.py'))
         paths.update('proposal/interiors/leisure/'+name+'.json'for name in ('cinema','bar','gym','utility','guest','guestbath','family','cloakroom','bedroom2','bedroom3','familybath','bedroom4','formal','sidebed','loftsuite','hobby','arrival','landings','garage','gardenhouse','office'))
         paths.add('proposal/interiors/principal/accepted/manifest.json')
         paths.update(('scripts/interiors/principal_gable_wall.py', 'proposal/interiors/principal/gable-wall.json'))
         paths.update(str(p.relative_to(root)) for p in (root / 'proposal/interiors/principal/accepted' / variant).glob('*') if p.is_file())
     if variant == 'compact':
+        paths.add('proposal/specs/garden-workshop-envelope.json')
+        paths.add('proposal/specs/structural-finish-coordination.json')
+        paths.add('proposal/specs/structural-opening-fit.json')
+        paths.add('proposal/specs/sw02-native-integration.json')
+        paths.add('proposal/specs/continuous-joist-integration.json')
+        paths.add('proposal/specs/garage-seven-metre.json')
+        paths.add('proposal/specs/exterior-masonry-junctions.json')
+        paths.add('proposal/specs/simple-structure-retained-suite.json')
         paths.update(('scripts/interiors/proposal_terrace_interiors.py','proposal/interiors/leisure/terrace.json','scripts/interiors/proposal_poolgarden_interiors.py','proposal/interiors/leisure/poolgarden.json','scripts/interiors/proposal_workshop_interiors.py','proposal/interiors/leisure/workshop.json'))
     # These are optional in legacy reconstructions. Their appearance/disappearance
     # still changes the mapping and therefore invalidates the build.

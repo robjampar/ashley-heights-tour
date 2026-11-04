@@ -1,0 +1,76 @@
+{
+  "revision": "WM01-2026-10-29",
+  "recordedAt": "2026-10-29T01:00:48.088798+00:00",
+  "approvedForConstruction": false,
+  "published": false,
+  "fullSourceRebuild": false,
+  "targetedNativeIntegration": true,
+  "sourceInputsCurrent": true,
+  "tests": {
+    "python": {
+      "passed": 312,
+      "failed": 0,
+      "log": "logs/wm01-python-2026-10-29.log"
+    },
+    "web": {
+      "passed": 318,
+      "failed": 0,
+      "log": "logs/wm01-web-tests-2026-10-29.log"
+    },
+    "layout": {
+      "passed": false,
+      "baselineFindings": 345,
+      "identicalToUK01": true
+    },
+    "browser": {
+      "passed": true,
+      "javascriptErrors": [],
+      "views": 7,
+      "record": "walkthrough/test-results/exterior-masonry-2026-10-29/browser.json"
+    }
+  },
+  "builds": {
+    "structure": "logs/wm01-structure-2026-10-29.log",
+    "native": "logs/wm01-native-2026-10-29.log",
+    "visuals": "logs/wm01-visuals-2026-10-29.log",
+    "web": "logs/wm01-web-build-2026-10-29.log"
+  },
+  "geometryAudit": "geometry-audit.json",
+  "installation": "installation.json",
+  "sha256": {
+    "scripts/structure/exterior_masonry_junctions.py": "a6a21442adef0b0feb0188eb847ccb9eeb7cdc04bbafb3907a6495ecb8607e4d",
+    "scripts/structure/build_members.py": "d736b047721ee75d171f6bfd26e981574d96f29ae02a099c3ee3303a65c9b270",
+    "scripts/structure/continuous_joist_integration.py": "b2e8b363bf5b0fe94b1a1f0f25bf9fd5cf43c65d0c5ffefd654c4cf32923ba1b",
+    "scripts/model/proposal_exterior_masonry_junctions.py": "3e06bd63f13505b92ae447444abcbff3f718108ebc266f063feec9bd86b941e5",
+    "scripts/build/build_support.py": "4ae928e1461a3e1647757fd715ccd0fcbdbcf19ed4b58848388c3b4f8786eb41",
+    "scripts/build/prepare_exterior_masonry_junctions.py": "ebdefc5a76233b219d5a6a380c855e15a82c2caa63b10576bfad1ba8854cfc2f",
+    "proposal/specs/exterior-masonry-junctions.json": "4a52097329dcdeb4382078e31f4c99029dc9b662f46cd7c8d2585f16d9209b87",
+    "tests/test_exterior_masonry_junctions.py": "c48b1032f49e002b78bf635cd0a7cabfbf91e66d1869b457a552ade6d19435ba",
+    "tests/test_garage_seven_metre.py": "3a9e136024b66d674041b01a40f7f100e3146ac1c3f8f3a46d26b967ecb3ff0e",
+    "tests/test_build_pipeline.py": "a6f6abff22fe88c72ebbe5b39412c591126e1dc502a77d5395da776fcb655939",
+    "tests/test_structural_members.py": "ffbcf4deff8ffbc5283240c407ce4a70b762196f80e8f5147d6f272fe8bcec34",
+    "tests/test_structural_loft_loadpath.py": "496e1ad0207302614478ed504cda0ed3110f4c94fc88028b31cc822b204f6786",
+    "walkthrough/tests/stair-landing-floor.test.mjs": "10ebbb32608d9ea710253ee308859df893e3c92eead714c9c8a887abb7b57e03",
+    "walkthrough/tests/exterior-masonry-browser.mjs": "4395aa6b13d3444aecbc29ff17cf44a90d4c84c36faa30adc60ffee1fafcc5c3",
+    "walkthrough/public/structure/members.json": "373c67f89ef7b6407254b8a21ee5da0425a5e15c2e73787fdaad0869f27dd20e",
+    "walkthrough/public/structure/model.json": "86aaaaf8f4cada4f823e37a038b30ddea6256afe2a0611b40e09306781fb9e85",
+    "walkthrough/public/structure/trials.json": "51e4fcc14cf02b65e63ab30b08099a848c95f38b641b7b97513bc5182ae3ad75",
+    "walkthrough/public/proposal-compact.glb": "32cbec83c80e62d7e2b1bbe10adf5ae6200ac3dc73d3f79d4c7e3bd6bef52e22",
+    "walkthrough/public/proposal-compact-navigation.json": "e5881673cc149f93df4b6490be7a1de120395edfebcb2cfc8a8e580cdb927c98",
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "2a5bd8388a90dff978994f41df3064a1300a85fe7cc27335a96e799b35cf4be4",
+    "outputs/output-proposed-compact/geometry.json": "bee8eba11201aa42f135471b31fda6dadbab5ccfe473be9014eb2cb7cf3201bb",
+    "outputs/output-proposed-compact/wm01-source.json": "91a9a7a70cc18569b77a4fcc793303dfc2700b7eb3bfa3c6acd872c1f2f42698",
+    "outputs/output-proposed-compact/wm01-report.json": "40ffcaba3f8e3e6dd8695c520b65d57fb29c943e48d134297a1a9d73bdfabf3e",
+    "walkthrough/dist/app.js": "89026e1a545aa8b487925084692e5c71629daec358d5c6b4e72d80c605c35518"
+  },
+  "screenshots": {
+    "walkthrough/test-results/exterior-masonry-2026-10-29/after-architecture-window.png": "a2189fb6e0e71cf4690274fd648775d833334a069bb844373a36a287d79fbac3",
+    "walkthrough/test-results/exterior-masonry-2026-10-29/after-courtyard-window.png": "10d7af971e0abaa46c87ed3785987f33e825fd857db24937e1d81ba8b5e204b0",
+    "walkthrough/test-results/exterior-masonry-2026-10-29/after-ground-courtyard.png": "9467ec172d0a56c38e9e16e7c7cd3d7c8c582b1eeeb3305b717db02c43e18586",
+    "walkthrough/test-results/exterior-masonry-2026-10-29/after-west-return.png": "64d40e4d7c475cb04db53c6f894ce62a3a4f9eccb28ce590ce945c86c1817d6f",
+    "walkthrough/test-results/exterior-masonry-2026-10-29/after-inner-pier-support.png": "b1f180e4001875a43eea19e82ce2829ab3b5a3efc4fa9c7a2e8abda97d9c103d",
+    "walkthrough/test-results/exterior-masonry-2026-10-29/after-beam-channel.png": "e118740fb09153fe1848dbe23a691d038b40372b6b67a26e9b0cc53f944b00d7",
+    "walkthrough/test-results/exterior-masonry-2026-10-29/after-architecture-west.png": "6c2ced83b85cb6749e2ce1e4c543cec01966d04a94c1d2bbbf6d5d1c80552215"
+  },
+  "visualReview": "Reviewed west return, courtyard window, beam infill, inner shelf and normal architectural views; final pass also reviewed lower piers. Existing wider model issues are outside this scoped revision."
+}

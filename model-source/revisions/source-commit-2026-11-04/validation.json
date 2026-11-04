@@ -1,0 +1,32 @@
+{
+  "request": "Commit accumulated current model work locally",
+  "sourceManifestContentHashesVerified": true,
+  "requiredLatestFilesVerified": true,
+  "publicationHelperTests": {
+    "passed": 11,
+    "failed": 0,
+    "log": "logs/source-commit-tests-2026-11-04.log"
+  },
+  "layout": {
+    "passed": false,
+    "findings": 345,
+    "identicalToRecordedBaseline": true
+  },
+  "largeNativeFiles": "Retained locally; checksums and paths recorded in source manifest",
+  "publicReleaseChanged": false,
+  "pushed": false,
+  "published": false,
+  "stagedFiles": 929,
+  "stagedPathsLimitedToModelSource": true,
+  "whitespaceReview": {
+    "generatedSvgFindings": 10968,
+    "other": [
+      "model-source/revisions/continuous-wing-roof-2026-10-26/browser-review.mjs:15: trailing whitespace.",
+      "model-source/revisions/garden-workshop-envelope-2026-10-26/browser-review.mjs:14: trailing whitespace.",
+      "model-source/revisions/symmetric-wing-roof-2026-10-25/browser-review.mjs:14: trailing whitespace.",
+      "model-source/revisions/terrace-lounge-west-suite-2026-10-23/browser-review.mjs:15: trailing whitespace.",
+      "model-source/walkthrough/tests/modern-loft-stair.test.mjs:112: new blank line at EOF."
+    ],
+    "preservedHistoricalBytes": true
+  }
+}

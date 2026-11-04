@@ -1,0 +1,384 @@
+{
+  "revision": "M14-2026-10-26",
+  "basis": "Owner correction: loft wall construction is timber, with no brick/block leaves. Restore omitted lower-level garage and entrance masonry from the exact authored profiles. External finishes remain a separate architectural layer.",
+  "loftWallStartZ": 5.35,
+  "wallBodies": [
+    "Proposal | Garage wing south return",
+    "Proposal | Garage wing north return",
+    "Proposal | Entrance bay south return",
+    "Proposal | Entrance bay north return",
+    "Proposal | Entrance gable south rake band",
+    "Proposal | Entrance gable north rake band",
+    "Proposal | West recess upper facade",
+    "Proposal | West recess upper facade storey band",
+    "Proposal | West upper store facade",
+    "Proposal | West upper principal facade above vault",
+    "Proposal | West upper principal facade above wing roof",
+    "Principal gable wall | south pier",
+    "Principal gable wall | north pier",
+    "Principal gable wall | opening head",
+    "Proposal | West north oak band",
+    "Proposal | West south corner facade",
+    "Proposal | Courtyard ground return",
+    "Proposal | North west elevation closure 0",
+    "Proposal | North east elevation closure 0",
+    "Proposal | North east elevation closure 1",
+    "Proposal | Wing dormer south cheek",
+    "Proposal | Wing dormer north cheek",
+    "Proposal | Wing dormer north cheek storey band",
+    "Proposal | Courtyard upper wall pitched head",
+    "Proposal | Continued roof garage wing gable south head 0",
+    "Proposal | Continued roof garage wing gable north head 0",
+    "Proposal | Continued roof garage wing gable window head head 0",
+    "Proposal | Continued roof garage wing gable window head head 1",
+    "Continuous wing | suite entrance continuous partition",
+    "Proposal | New wing east upper sill 3",
+    "Proposal | New wing east upper sill 2",
+    "Proposal | New wing east upper sill 1",
+    "Proposal | New wing east upper sill 0",
+    "Proposal | New wing east upper pier 2",
+    "Proposal | New wing east upper pier 1",
+    "Proposal | New wing east upper pier 0",
+    "Proposal | New wing east upper end pier",
+    "Ensuite 01 | bathroom dividing wall.001",
+    "Ensuite 01 | bathroom dividing wall",
+    "Bedroom 02 | north media partition",
+    "Prep kitchen | partition west pier",
+    "Prep kitchen | partition low wall",
+    "Prep kitchen | partition east pier",
+    "Proposal | Original house loft stair | Suite north partition west",
+    "Proposal | Garden west return",
+    "Proposal | Rear inset | former kitchen window masonry infill",
+    "Aligned front windows | west pier",
+    "Aligned front windows | central pier",
+    "Aligned front windows | east pier",
+    "Aligned front windows | bathroom sill wall",
+    "Aligned front windows | dressing sill wall"
+  ],
+  "orientations": {
+    "Principal gable wall | south pier": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Principal gable wall | north pier": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Principal gable wall | opening head": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | West north oak band": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Entrance gable south rake band": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Entrance gable north rake band": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | West recess upper facade": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | West recess upper facade storey band": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | West upper store facade": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | West upper principal facade above vault": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | West upper principal facade above wing roof": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | West south corner facade": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Courtyard ground return": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Courtyard upper wall pitched head": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Continued roof garage wing gable south head 0": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Continued roof garage wing gable north head 0": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Continued roof garage wing gable window head head 0": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Continued roof garage wing gable window head head 1": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Garage wing south return": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Proposal | Garage wing north return": {
+      "normal": 1,
+      "outside": 1
+    },
+    "Proposal | Entrance bay south return": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Proposal | Entrance bay north return": {
+      "normal": 1,
+      "outside": 1
+    },
+    "Proposal | West entrance south pier": {
+      "normal": 0,
+      "outside": -1,
+      "cornerReturnSide": -1
+    },
+    "Proposal | West entrance north pier": {
+      "normal": 0,
+      "outside": -1,
+      "cornerReturnSide": 1
+    },
+    "Proposal | New wing east upper sill 3": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper sill 2": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper sill 1": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper sill 0": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper pier 2": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper pier 1": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper pier 0": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper head 3": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper head 2": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper head 1": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper head 0": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | New wing east upper end pier": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | North east upper corner return": {
+      "normal": 0,
+      "outside": 1
+    },
+    "Proposal | Garden west return": {
+      "normal": 0,
+      "outside": -1
+    },
+    "Proposal | Rear inset | former kitchen window masonry infill": {
+      "normal": 1,
+      "outside": 1
+    },
+    "Aligned front windows | west pier": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Aligned front windows | central pier": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Aligned front windows | east pier": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Aligned front windows | bathroom sill wall": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Aligned front windows | dressing sill wall": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Aligned front windows | bathroom head wall": {
+      "normal": 1,
+      "outside": -1
+    },
+    "Aligned front windows | dressing head wall": {
+      "normal": 1,
+      "outside": -1
+    }
+  },
+  "openingHeads": [
+    "Proposal | New wing east upper head 3",
+    "Proposal | New wing east upper head 2",
+    "Proposal | New wing east upper head 1",
+    "Proposal | New wing east upper head 0",
+    "Prep kitchen | partition glazing head",
+    "Prep kitchen | partition door head",
+    "Aligned front windows | bathroom head wall",
+    "Aligned front windows | dressing head wall"
+  ],
+  "framingRoles": {
+    "Proposal | Rear dormer face end pier": "loadbearing-proposal",
+    "Proposal | Wing dormer face pier 0": "loadbearing-proposal",
+    "Proposal | Original house loft stair | Winder front integrated enclosure": "non-loadbearing",
+    "Proposal | Wing dormer north cheek": "loadbearing-proposal",
+    "Proposal | Gym west partition pier 0": "loadbearing-proposal",
+    "Proposal | Rear dormer face pier 2": "loadbearing-proposal",
+    "Proposal | Principal suite north partition pier 1": "non-loadbearing",
+    "Terrace suites | ensuite public passage wall": "non-loadbearing",
+    "Proposal | Boot utility partition pier 0": "non-loadbearing",
+    "Proposal | Principal study west wall": "non-loadbearing",
+    "Proposal | Wing dormer face sill 2": "loadbearing-proposal",
+    "Proposal | Cinema north wall": "non-loadbearing",
+    "Proposal | Wing dormer face end pier": "loadbearing-proposal",
+    "Proposal | Wing dormer face sill 1": "loadbearing-proposal",
+    "Prep kitchen | partition glazing head": "non-loadbearing",
+    "Proposal | Rear dormer face head 1": "loadbearing-proposal",
+    "Proposal | Loft ensuite north wall head 0": "non-loadbearing",
+    "Proposal | Cinema east wall head 0": "non-loadbearing",
+    "Proposal | Rear dormer face pier 1": "loadbearing-proposal",
+    "Proposal | Boot utility partition end pier": "non-loadbearing",
+    "Proposal | Wing dormer face sill 0": "loadbearing-proposal",
+    "Proposal | Wing dormer face head 1": "loadbearing-proposal",
+    "Proposal | Rear dormer face head 0": "loadbearing-proposal",
+    "Proposal | Cinema east wall head 1": "non-loadbearing",
+    "Proposal | Gym west partition pier 2": "loadbearing-proposal",
+    "Proposal | Original house loft stair | Suite stair dividing wall": "non-loadbearing",
+    "Proposal | Gym west partition end pier": "loadbearing-proposal",
+    "Proposal | Wing dormer face pier 1": "loadbearing-proposal",
+    "Ensuite 01 | bathroom dividing wall": "non-loadbearing",
+    "Ensuite 01 | bathroom dividing wall.001": "non-loadbearing",
+    "Proposal | Gym west partition sill 0": "loadbearing-proposal",
+    "Proposal | Wing dormer south cheek": "loadbearing-proposal",
+    "Proposal | Rear dormer face sill 3": "loadbearing-proposal",
+    "Proposal | Loft ensuite north wall pier 0": "non-loadbearing",
+    "Proposal | Wing dormer face head 0": "loadbearing-proposal",
+    "Proposal | Wing dormer face head 2": "loadbearing-proposal",
+    "Bedroom 02 | north media partition": "non-loadbearing",
+    "Terrace suites | west bedroom south wall": "non-loadbearing",
+    "Proposal | Original house loft stair | Suite north partition west": "non-loadbearing",
+    "Proposal | Rear dormer face sill 1": "loadbearing-proposal",
+    "Proposal | Cinema east wall pier 1": "non-loadbearing",
+    "Proposal | Rear dormer face head 2": "loadbearing-proposal",
+    "Proposal | Loft ensuite north wall slope": "non-loadbearing",
+    "Proposal | Principal suite north partition head 0": "non-loadbearing",
+    "Continuous wing | suite entrance continuous partition": "non-loadbearing",
+    "Proposal | Rear dormer face sill 0": "loadbearing-proposal",
+    "Proposal | Rear dormer face head 3": "loadbearing-proposal",
+    "Proposal | Boot utility partition head 0": "non-loadbearing",
+    "Terrace suites | west ensuite front pier": "non-loadbearing",
+    "Proposal | Cinema south wall": "non-loadbearing",
+    "Proposal | Original house loft stair | Suite cross-wall closure and plaster": "non-loadbearing",
+    "Proposal | Gym west partition pier 1": "loadbearing-proposal",
+    "Proposal | Principal suite north partition pier 0": "non-loadbearing",
+    "Proposal | Gym west partition head 2": "loadbearing-proposal",
+    "Proposal | Gym west partition sill 2": "loadbearing-proposal",
+    "Proposal | Loft ensuite north wall end pier": "non-loadbearing",
+    "Proposal | Cinema east wall pier 0": "non-loadbearing",
+    "Proposal | Rear dormer face pier 0": "loadbearing-proposal",
+    "Terrace suites | west ensuite rear pier": "non-loadbearing",
+    "Proposal | Original house loft stair | Suite entrance head": "non-loadbearing",
+    "Proposal | Gym west partition head 0": "loadbearing-proposal",
+    "Prep kitchen | partition door head": "non-loadbearing",
+    "Terrace suites | lounge to west bedroom head": "non-loadbearing",
+    "Proposal | Rear dormer face sill 2": "loadbearing-proposal",
+    "Prep kitchen | partition west pier": "non-loadbearing",
+    "Proposal | Wing dormer north cheek storey band": "loadbearing-proposal",
+    "Proposal | Wing dormer face pier 2": "loadbearing-proposal",
+    "Prep kitchen | partition low wall": "non-loadbearing",
+    "Proposal | Rear dormer face pier 3": "loadbearing-proposal",
+    "Prep kitchen | partition east pier": "non-loadbearing",
+    "Proposal | Gym west partition head 1": "loadbearing-proposal"
+  },
+  "framingRoleBasis": "Load-bearing role is proposed intent, not a capacity check. Explicit room partitions are proposed non-loadbearing; dormer external support frames and the gym bearing wall are structural proposals. Unassigned framing is separately marked for review; knee walls are not assumed non-loadbearing.",
+  "additionalBodies": [
+    {
+      "id": "W-S-NE-UPPER-CORNER",
+      "name": "Proposal | North east upper corner return",
+      "polygon": [
+        [
+          13.75,
+          -3.4
+        ],
+        [
+          13.98,
+          -3.4
+        ],
+        [
+          13.98,
+          -3.029
+        ],
+        [
+          13.75,
+          -3.029
+        ]
+      ],
+      "bottom": 2.8,
+      "top": 5.35,
+      "level": 1,
+      "basis": "Complete the 371 mm east-side corner return between the last upper window jamb and north facade, aligned with the continuous ground-floor corner. Outer faces unchanged; structural-study infill, not a native architectural edit."
+    }
+  ],
+  "solidExistingInfills": [
+    "Proposal | Rear inset | former kitchen window masonry infill"
+  ],
+  "openingReservations": {
+    "Aligned front windows | bathroom head wall": {
+      "depthM": 0.18,
+      "widthM": 0.3525,
+      "outside": -1,
+      "basis": "Full cavity-width lintel envelope, with 150 mm end reservations. Fits into explicitly reserved head/bearing pockets; a product profile, leaf loads, padstones and capacity are not selected."
+    },
+    "Aligned front windows | dressing head wall": {
+      "depthM": 0.18,
+      "widthM": 0.3525,
+      "outside": -1,
+      "basis": "Full cavity-width lintel envelope, with 150 mm end reservations. Fits into explicitly reserved head/bearing pockets; a product profile, leaf loads, padstones and capacity are not selected."
+    }
+  },
+  "timberOpeningReservations": {
+    "Proposal | Principal suite north partition head 0": {
+      "widthM": 0.09,
+      "depthM": 0.195,
+      "startAllowanceM": 0.045,
+      "endAllowanceM": 0.09,
+      "basis": "Non-bearing door head; 45 mm left jack-stud space fits between the door jamb and the column encasement. The header clears the SHS by 30 mm. End bearing, fixings and lining junction remain to be specified; no structural transfer is assigned to this head."
+    }
+  }
+}

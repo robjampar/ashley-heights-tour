@@ -1,0 +1,136 @@
+{
+  "revision": "prep-kitchen-layout-2026-10-16",
+  "bounds": [
+    -5.065,
+    1.015,
+    -0.115,
+    3.58
+  ],
+  "floorZ": 0,
+  "ceilingZ": 2.56,
+  "partitionY": 3.64,
+  "partitionThickness": 0.12,
+  "doorAperture": [
+    -2.1,
+    -0.92
+  ],
+  "doorHeight": 2.2,
+  "programme": [
+    "sink",
+    "integrated dishwasher",
+    "second induction hob",
+    "oven",
+    "tall pantry storage",
+    "extra work surfaces",
+    "integrated downdraft extraction"
+  ],
+  "retained": [
+    "front low-sill windows",
+    "west side entrance",
+    "west window",
+    "rear side-garden TV lounge",
+    "wide connection to main kitchen",
+    "existing battery and electrical equipment on the original east wall"
+  ],
+  "roomView": {
+    "id": "proposal-prep-kitchen",
+    "label": "Pantry & prep kitchen",
+    "group": "Proposal \u00b7 Ground floor",
+    "position": [
+      -3.35,
+      1.65,
+      0
+    ],
+    "direction": [
+      0.65,
+      0.76,
+      0
+    ]
+  },
+  "partitionGlazing": {
+    "sill": 0.99,
+    "head": 2.51,
+    "boundsX": [
+      -4.4,
+      -2.1
+    ],
+    "mullionX": -2.59,
+    "frameWidth": 0.028,
+    "glass": "clear"
+  },
+  "fixedServices": {
+    "battery": {
+      "location": "east wall shared with the house, near the original garage front",
+      "retainInPlace": true,
+      "modelPosition": [
+        -0.295,
+        1.43,
+        0.68
+      ],
+      "positionBasis": "Estimated from retained original photo 2445664-1 and its recorded camera pose; corroborated by panorama 2445665",
+      "surveyed": false
+    },
+    "existingPower": "Battery, inverter, meter, distribution boards and high-level cabling remain represented on the photographed east wall",
+    "reservedWall": "Dedicated ventilated metal service enclosure on the east wall; no kitchen storage, wet or cooking appliances",
+    "reservedFloorBounds": [
+      -0.805,
+      1.02,
+      -0.115,
+      3.52
+    ],
+    "accessStatus": "Four full-height service access leaves with high and low louvres; equipment remains at its previous photo-estimated coordinates. Exact installed model, survey, thermal design and service clearances require installer confirmation before fabrication.",
+    "sources": [
+      "source/panoramas/2445664_2.jpg",
+      "source/panoramas/2445665_2.jpg",
+      "archive/photo-review/originals/2445664-1.jpg"
+    ],
+    "enclosure": {
+      "bounds": [
+        -0.8,
+        1.02,
+        -0.115,
+        3.52
+      ],
+      "height": 2.536,
+      "finish": "warm ivory powder-coated metal with flush bronze pulls",
+      "accessLeaves": 4,
+      "ventilation": "Real high and low louvred apertures in all four leaves, with no opaque backing or internal shelves",
+      "status": "visual concept, not a fabrication or compliance specification",
+      "reference": "https://givenergy.co.uk/wp-content/uploads/2023/08/00-Giv8.2-Battery-Manual-Booklet-with-WIFI-instruc-17-8-20.pdf",
+      "referenceBasis": "Similar photographed GivEnergy equipment; exact installed model is unconfirmed"
+    }
+  },
+  "appliances": {
+    "hob": {
+      "position": [
+        -3.295,
+        3.245,
+        0.927
+      ],
+      "location": "centred on the long north worktop beneath the glazing",
+      "extraction": "integrated downdraft"
+    },
+    "sink": {
+      "position": [
+        -4.725,
+        3.11,
+        0.92
+      ],
+      "location": "short west return"
+    },
+    "oven": {
+      "position": [
+        -3.295,
+        2.908,
+        0.487
+      ],
+      "location": "beneath the hob, facing south into clear floor"
+    }
+  },
+  "northWorktopBounds": [
+    -4.4,
+    2.91,
+    -2.19,
+    3.58
+  ]
+}

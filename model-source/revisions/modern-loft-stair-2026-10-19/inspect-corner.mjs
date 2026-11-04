@@ -1,0 +1,3 @@
+import {inspectGlb} from '../../walkthrough/tests/helpers/glb-geometry.mjs';import {Box3,Vector3} from '../../walkthrough/node_modules/three/build/three.module.js';
+const root=inspectGlb(new URL('../../walkthrough/public/proposal-compact.glb',import.meta.url));const region=new Box3(new Vector3(9.0,4.8,-.1),new Vector3(9.72,5.5,.7));let a=[];
+root.traverse(o=>{if(!o.isMesh)return;const b=new Box3().setFromObject(o);if(!b.intersectsBox(region))return;const s=b.getSize(new Vector3());if(s.x>1||s.z>1)return;a.push({name:o.name,box:[b.min.x,-b.max.z,b.min.y,b.max.x,-b.min.z,b.max.y].map(x=>+x.toFixed(3))})});console.log(a);

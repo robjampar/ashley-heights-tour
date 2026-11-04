@@ -16,6 +16,9 @@ _outer = spec['frontWing']
 _ox0, _oy0, _ox1, _oy1 = _outer
 _inner_south = _oy0 + .23
 _inner_north = _oy1 - .23
+_court=spec.get('courtyard') or {}
+_flush_gym=bool(spec.get('wingLayout',{}).get('gym_expanded_courtyard'))
+_gym_north=float(_court.get('facade_y',_oy1))
 _band_bottom, _band_top = 2.60, 2.80
 _storey_band_records = []
 
@@ -41,19 +44,20 @@ def _opaque_storey_band(label, bounds, material, reason,
     })
 
 
-_opaque_storey_band(
-    'west garage and store',
-    [_ox0, _inner_south, _ox0 + .23, float(spec['entranceBay']['y'][0])], white,
-    'Close the visible slot above the garage and store; stop at the full-height entrance pier.',
-)
-_opaque_storey_band(
-    'west study timber',
-    [_ox0, float(spec['entranceBay']['y'][1])-.20, _ox0 + .23, _inner_north], oak,
-    'Continue the timber facade between its separate ground and first-floor walls.',
-)
+# The garage slab and full-height return walls already close the projecting
+# bay. Keep only the exposed recess band; never stack a strip on those faces.
+_garage_south,_garage_north=spec['garageBay']['y']
+if _garage_south>_inner_south:
+    _opaque_storey_band('west south store',[_ox0,_inner_south,_ox0+.23,_garage_south],white,
+                       'Close the store edge south of the projecting garage bay.')
+_opaque_storey_band('west garage and store',
+    [_ox0,_garage_north,_ox0+.23,float(spec['entranceBay']['y'][0])],white,
+    'Close only the exposed recess north of the garage, clear of the slab and return.')
+# West north oak band is one full-height wall. The old study closure duplicated
+# its face and protruded through the brick appearance; no extra strip is needed.
 _opaque_storey_band(
     'east main wing',
-    [_ox1 - .23, _inner_south, _ox1, _inner_north], white,
+    [_ox1 - .23, _inner_south, _ox1, _gym_north-.23 if _flush_gym else _inner_north], white,
     'Close the opaque floor edge above service-room doors and windows without covering them.',
 )
 _opaque_storey_band(
@@ -64,18 +68,19 @@ _opaque_storey_band(
 if not (spec.get('courtyard') or {}).get('overhang_fascia'):   # with the courtyard notch this old wall line is inside; the overhang fascia closes the real edge
  _opaque_storey_band(
      'north east wing',
-     [10.35, _inner_north, _ox1, _oy1], white,
+     [float(_court.get('ground_glazing_x',9.7)),_gym_north-.23,_ox1,_gym_north] if _flush_gym else [10.35, _inner_north, _ox1, _oy1], white,
      'Close only the north strip east of the attached landing slab; shared landing openings stay clear.',
  )
+_upper_x = float((spec.get('courtyard') or {}).get('upper_glazing_x',10.35))
 _csy = float((spec.get('courtyard') or {}).get('facade_y', -4.0))   # the courtyard notch's facade line (22 September)
 _opaque_storey_band(
     'attached landing east half-width',
-    [10.35, _csy, 10.465, -.115], white,
+    [_upper_x, _csy, _upper_x+.115, -.115], white,
     'The attached floor already closes the inner half of this wall; fill only its unsupported outer half.',
 )
 _opaque_storey_band(
     'attached loft east half-width',
-    [10.35, _csy, 10.465, -.115], white,
+    [_upper_x, _csy, _upper_x+.115, -.115], white,
     'Close the recessed brown loft-deck edge above the same wall; the inner half is existing deck.',
     bottom=5.35, top=5.55,
 )

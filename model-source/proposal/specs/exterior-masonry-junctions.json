@@ -1,0 +1,26 @@
+{
+  "revision": "WM01-2026-10-29",
+  "approvedForConstruction": false,
+  "basis": "Restore the exterior west-recess brick skin while retaining the internal stud tail; classify the first-floor courtyard window piers by their level and exterior role, not the historical Level loft label. Masonry support plates and fitted beam-channel infill are spatial proposals, not fabrication or capacity approval.",
+  "courtyardPierSources": ["W-A6681C6", "W-9D75875"],
+  "courtyardPierRunsY": [[-3.1315, -2.53], [-0.61, -0.115]],
+  "courtyardBlockRunsY": [[-3.3815, -2.53], [-0.61, -0.115]],
+  "courtyardBrickX": [9.5975, 9.7],
+  "courtyardBlockX": [9.3475, 9.4475],
+  "courtyardPierZ": [2.8, 5.25],
+  "supportPlateMm": 12,
+  "supportBeamId": "M-FR-1-035",
+  "channelWebRootClearanceMm": 2,
+  "channelTopClearanceMm": 2,
+  "channelBeddingMm": 10,
+  "channelRunY": [-3.029, -0.115],
+  "windowReveals": [
+    {"objectName":"Proposal | Level loft | 067 Flush courtyard pier","memberId":"M-BRICK-A6681C6","low":[9.607,-2.558,2.797],"high":[9.703,-2.502,5.1145]},
+    {"objectName":"Proposal | Level loft | 068 Flush courtyard pier","memberId":"M-BRICK-9D75875","low":[9.607,-0.638,2.797],"high":[9.703,-0.582,5.1145]},
+    {"objectName":"Proposal | Internal garden gallery south panel","memberId":"M-WM01-GROUND-S-BRICK","low":[9.673,-2.557,-0.003],"high":[9.727,-2.503,2.379]},
+    {"objectName":"Proposal | Internal garden gallery north panel","memberId":"M-WM01-GROUND-N-BRICK","low":[9.673,-0.637,-0.003],"high":[9.727,-0.583,2.379]}
+  ],
+  "densityBoundsKNm3": {"brick": [18, 20, 22], "block": [6, 10, 15], "steel": [77, 77, 77], "grout": [20, 22, 24]},
+  "loadLimits": "Geometric masonry/plate/grout self-weight is added once to the linked floor-gravity screen, including the onward cross-beam reaction. These assumed densities are not selected product data. Beam torsion, shelf bending, welds, restraint, local flange/web effects, masonry strength, roof/facade actions, movement, fire/corrosion and thermal/moisture details remain unverified.",
+  "reference": "https://www.istructe.org/IStructE/media/Public/Resources/report-overview-specifying-detailing-masonry-construction-20190601.pdf"
+}

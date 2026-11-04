@@ -1,0 +1,34 @@
+{
+  "revision": "SW02",
+  "installed": false,
+  "approvedForConstruction": false,
+  "relevantTestsPassed": 39,
+  "liveSourcesUnchanged": {
+    "model": true,
+    "members": true
+  },
+  "suiteCoordination": {
+    "layoutSource": "Accepted compact principal bedroom revision 4 and ensuite revision 3, checked against live model furniture positions.",
+    "bedroomWardrobeBathroomPolygonsRetained": true,
+    "endPanelExtensionM": 0.5649999999999995,
+    "panelFurnitureIntersections": [],
+    "sofaSideAisleM": 1.205,
+    "wardrobeDoorSwingEnvelopeClearanceM": 0.16500000000000092,
+    "postPadstoneOverDoor": false,
+    "padstoneToDoorJambPlanClearanceM": 0.21499999999999986,
+    "minimumGirderBottomZ": 5.188000000000001,
+    "girderTopZ": 5.506,
+    "addedDepthComparedWithPreviousMainGirderMm": 0,
+    "maximumLoftPostGravityULSKN": 100.18639124064204,
+    "postBucklingPadstoneMasonryAndFoundationCapacityVerified": false,
+    "threeDClashAuditPerformed": false
+  },
+  "areaAudit": {
+    "actualM2": 83.33978249999998,
+    "proposedM2": 83.3397825,
+    "uncoveredM2": 0.0,
+    "outsideM2": 0.0
+  },
+  "layoutCheck": "345 pre-existing findings, unchanged from baseline",
+  "threeDClashAuditPerformed": false
+}

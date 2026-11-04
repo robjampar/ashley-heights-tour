@@ -1,0 +1,63 @@
+{
+  "revision": "WM01-west-brick-finish-2026-10-29",
+  "published": false,
+  "fullSourceRebuild": false,
+  "geometryUnchanged": true,
+  "structuralMemberGeometriesUnchanged": 2576,
+  "nativeExteriorFaces": 4,
+  "exportExteriorTriangles": 6,
+  "exportInteriorTrianglesPreserved": 30,
+  "tests": {
+    "python": {
+      "passed": 7,
+      "failed": 0
+    },
+    "web": {
+      "passed": 9,
+      "failed": 0
+    },
+    "layout": {
+      "passed": false,
+      "unchangedBaseline": true,
+      "findings": 345
+    }
+  },
+  "sha256": {
+    "scripts/model/proposal_exterior_masonry_junctions.py": "8ba1e0f4f7dcd12cdf04b8f76dd9f572734d5ccea8398e961ba7e7eb958a6b8a",
+    "walkthrough/public/proposal-compact.glb": "553fdb5f567b4d64565e822a54104358e9bae7f3c499a4174285b5f6d333ea5b",
+    "walkthrough/public/proposal-compact-navigation.json": "d917493f0ae7bc6081a296b3753d181684a3c26f765aef87cee8bcac31d8f597",
+    "walkthrough/public/structure/members.json": "a7b9ff5044a62913b2701c90c4bc9164a9dce78a4a67b77750d6d61e2056e622",
+    "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": "a5f1d4b5e2f25d4a77ccaaf1a049e2c7e727fdf26cf6e71e387e5fbeb5b594f2",
+    "outputs/output-proposed-compact/geometry.json": "9ab38dbe2805f9aad0aa296c839b256dcf79af605eb1ec6221d91e8021746a18",
+    "outputs/output-proposed-compact/wm01-report.json": "c2eb3cf1c8a853f7fd68b6ebb7c44ea83112149941a0fd1fc65c6aa217e51d5a"
+  },
+  "browser": {
+    "errors": [],
+    "finish": {
+      "revision": "WM01-west-brick-finish-2026-10-29",
+      "material": "Appearance | wall | Red brown brick",
+      "faces": {
+        "Proposal | West recess upper facade": 2,
+        "WM01 | West recess exterior closure": 1,
+        "WM01 | West recess floor-band closure": 1
+      },
+      "interiorPlasterPreserved": true,
+      "geometryChanged": false
+    },
+    "appearance": {
+      "walls": "brick",
+      "roof": "dark"
+    },
+    "picked": "Proposal_|_West_recess_upper_facade_CJ02_coordinated_mesh001_1",
+    "passed": true,
+    "reviewed": "Normal viewer close-up confirms the white strip is replaced by continuous brick, with plaster preserved inside."
+  },
+  "screenshots": {
+    "walkthrough/test-results/west-recess-brick-2026-10-29/before-west-brick.png": "84d4f187f0b21dd912681ff029b63d8ebb2bc874350a400c0f2e9b89244f5a4e",
+    "walkthrough/test-results/west-recess-brick-2026-10-29/after-west-brick.png": "d804811002f7782a8ca202ad4aaedb5577acf23c0f497fcdd850477350eb15ae",
+    "walkthrough/test-results/west-recess-brick-2026-10-29/after-render-option.png": "27937e4825505cb3dff399cf7a8d41a155726bd54400ffbd1c2d42824b51b2bd",
+    "walkthrough/test-results/west-recess-brick-2026-10-29/after-room-side.png": "d8a937e4b8de43ae6eeb3ade5fe89cb93a39b2cae22b96d5794035502cd7d1b3"
+  },
+  "nativeSourceInputsCurrent": true,
+  "localWebBuildPassed": true
+}

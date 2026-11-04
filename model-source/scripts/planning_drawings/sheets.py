@@ -255,14 +255,14 @@ def block_sheet(ctx, model, number, title, existing, demolished_polys, out_dir, 
             dim_v(ax, ws[3], 26.55, ws[0] + 1.0, text='600', size=4.6)
         dim_h(ax, 13.98, 17.14 - .2, -10.0, text=None, size=4.6)
     sh.scale_bar(200, DRAW[0] + 4, DRAW[1] + 6); sh.north_arrow(DRAW[2] - 22, DRAW[3] - 24)
-    tree_lines = [f"{t['id']}: {t['kind']}, canopy r {t['radius']} m, h {t['height_m']} m" + (' (new)' if t['new'] else '') for t in info['trees']]
-    notes = ['Boundaries: north timber fence 1.8 m; east planted boundary; south brick wall 1.8 m to Ashley Close; west brick wall 1.65 m to No 3; rear strip fences 1.8 m.',
-             ('Parking: three forecourt bays and two garage spaces (five). Access unchanged; new sliding oak gate set back ' + f"{model.site.get('gate_setback_m', 4.0):.1f} m" + ' from the carriageway.') if not existing else 'Parking: informal forecourt for four cars plus the garage. Existing iron gates between brick piers.',
-             'Trees (indicative from the model; BS5837 survey required): ' + '; '.join(tree_lines)]
+    tree_lines = [f"{t['id']}: {t['kind']}, illustrative canopy r {t['radius']} m" + (' (new)' if t['new'] else '') for t in info['trees']]
+    notes = ['Boundary heights are unverified. Front brick wall: owner count approximately 1.95 m; survey wall, gate and adjoining levels. Other fences and walls require survey.',
+             ('Parking: three forecourt bays and two garage spaces intended (five), dimensions/manoeuvring to verify. Bay S2 replaced by lawn in the saved model. Bin/cycle position unresolved; no verified storage marker shown. Access unchanged; new sliding gate; carriageway relationship requires survey.') if not existing else 'Parking: informal forecourt for four cars plus the garage. Existing iron gates between brick piers.',
+             'Model tree references are separate for existing/proposed, not matched survey or TPO IDs. Heights and RPAs not established. BS5837 survey required: ' + '; '.join(tree_lines)]
     y = sh.right_column_notes(extra=notes)
     sh.legend([('white', COL['red_line'], 'Application site (red line)', 'line'), (COL['room_new'] if not existing else COL['room_old'], INK, 'Building footprint', 'fill'), ('white', MUTED, 'Roof outline / overhang', 'dash'),
                ('white', COL['below'], 'Basement below', 'dash'), *([(COL['water'], '#4e8fa8', 'Pool / spa', 'fill')] if model.spec.get('pool') else []), (COL['neighbour'], '#8c9390', 'Neighbouring buildings (traced)', 'fill'),
-               ('#dfe9cf', '#5b8a3c', 'Tree canopy on site (T01…)', 'fill'), ('#e6eddc', '#6f8f5a', 'Neighbouring tree canopy (from 3D imagery)', 'fill'), ('#f6d9a8', '#c98a1e', 'Visibility splay', 'fill'), ('white', COL['demolish'], 'To be removed', 'hatch')], DRAW[2] + 12, y - 8)
+               ('#dfe9cf', '#5b8a3c', 'Illustrative tree canopy (EX/PR refs)', 'fill'), ('#e6eddc', '#6f8f5a', 'Neighbouring tree canopy (from 3D imagery)', 'fill'), ('#f6d9a8', '#c98a1e', 'Visibility splay', 'fill'), ('white', COL['demolish'], 'To be removed', 'hatch')], DRAW[2] + 12, y - 8)
     sh.manifest['site'] = {k: v for k, v in info.items() if k != 'trees'}; sh.manifest['trees'] = info['trees']
     return sh.save(out_dir)
 
@@ -292,10 +292,10 @@ def street_sheet(ctx, ex, pr, out_dir, variant):
                 ax.add_patch(MplPolygon(shape, closed=True, facecolor=col.get('roof', '#b9bdbb'), alpha=.6, edgecolor='#6b7370', lw=.5, zorder=1.2))
             ax.text((x0 + x1) / 2, hgt + rise + .3, hsx['name'].replace(' · reference estimate', '').replace('Neighbour ', 'No ') + f"  ridge {hgt + rise:.1f} m", ha='center', fontsize=4.4, color='#4b5552')
         views.elevation(ax, model, 'S', fp.HOUSE_REGION, extent=(u0, u1, zr[0], zr[1]), boundary=True)
-        ax.text(u0 + .5, zr[1] - .8, f'STREET SCENE FROM ASHLEY CLOSE — {label}   1:200', fontsize=7, weight='bold', color=INK, zorder=50)
+        ax.text(u0 + .5, zr[1] - .8, f'SCHEMATIC COMMON-DATUM COMPARISON — {label}   1:200', fontsize=7, weight='bold', color=INK, zorder=50)
         y_mm -= 12
     sh.scale_bar(200, DRAW[0] + 4, DRAW[1] + 6)
-    y = sh.right_column_notes(extra=['Neighbouring buildings: footprints traced from the OS-based plan; ' + sd['basis'], 'Indicative only; a measured street survey is required if the officer asks for a verified street scene.'])
+    y = sh.right_column_notes(extra=['Neighbouring buildings: footprints traced from the OS-based plan; ' + sd['basis'], 'NOT A VERIFIED STREET VIEW. Common datum, estimated heights, no true perspective depth or ground-level differences. No.5 and parts of the surrounding street are omitted. This schematic cannot establish absence of prominence or neighbour harm. Measured sections and matched street/oblique views are required.'])
     return sh.save(out_dir)
 
 

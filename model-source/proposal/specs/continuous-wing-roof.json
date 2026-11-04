@@ -1,0 +1,76 @@
+{
+  "revision": "continuous-wing-roof-2026-10-26",
+  "ridgeX": 9.455,
+  "ridgeZ": 8.05,
+  "eaveZ": 5.35,
+  "eavesX": [
+    4.73,
+    14.18
+  ],
+  "southY": -5.0,
+  "ridgeEndY": 4.40500020980835,
+  "floorZ": 5.55,
+  "ceilingZ": 7.6,
+  "roofThickness": 0.35,
+  "facadeX": 10.42,
+  "previousFacadeX": 9.7,
+  "courtyardY": [
+    -3.03,
+    -0.115
+  ],
+  "dormerWestX": 9.55,
+  "dormerRoofZ": 7.86,
+  "capEastX": 10.47,
+  "capNorthY": 4.40500020980835,
+  "rooflights": [
+    [
+      9.575,
+      -2.275,
+      10.325,
+      -0.725
+    ],
+    [
+      9.575,
+      0.625,
+      10.325,
+      2.075
+    ]
+  ],
+  "rooflightShiftX": 1.8,
+  "galleryRouteX": 9.74,
+  "suiteDoorX": 9.85,
+  "wardrobeShiftX": 0.4,
+  "originalRoofTop": [
+    [
+      -0.2700004577636719,
+      -0.2800006866455078,
+      5.350000381469727
+    ],
+    [
+      14.25,
+      -0.2800006866455078,
+      5.350000381469727
+    ],
+    [
+      14.25,
+      9.09000015258789,
+      5.350000381469727
+    ],
+    [
+      -0.2700004577636719,
+      9.09000015258789,
+      5.350000381469727
+    ],
+    [
+      3.359999656677246,
+      4.40500020980835,
+      8.050000190734863
+    ],
+    [
+      10.619999885559082,
+      4.40500020980835,
+      8.050000190734863
+    ]
+  ],
+  "basis": "Owner 26 October: continue the symmetrical main-wing roof at one uniform pitch and ridge line. Restore the loft-only courtyard overhang and align the dormer facade with the retained passage east cladding pier at X10.42. Keep the loft floor level, original-house stair and lower courtyard glazing."
+}

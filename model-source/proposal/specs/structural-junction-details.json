@@ -1,0 +1,855 @@
+{
+  "revision": "M15-2026-10-27",
+  "basis": "Experimental geometry coordination only. Gaps below are nominal modelling assumptions, not fabrication tolerances or permission to cut installed members.",
+  "joistEndGapMm": 3,
+  "hangerPlateMm": 2,
+  "beamEndClearanceMm": 10,
+  "rafterEndClearanceMm": 5,
+  "partitionSteelClearanceMm": 25,
+  "cornerSearchMm": 25,
+  "masonryCornerMaxAdjustmentMm": 360,
+  "layers": {
+    "finishMm": 22,
+    "deckMm": 22,
+    "serviceZoneMm": 25,
+    "ceilingMm": 31.5
+  },
+  "materialPreference": "Prefer solid timber where capacity, vibration and available depth permit; retain engineered I-joists as a common UK option. Steel alternatives need separate capacity, vibration, fire and connection design.",
+  "sources": [
+    {
+      "title": "JJI installation guidance: flange integrity and installation",
+      "url": "https://www.jamesjones.co.uk/assets/downloads/subdir/SAL04-20jm%20Site%20construction%20guide%20Dec18.pdf"
+    },
+    {
+      "title": "NHBC 2025 Part 6: floors, steelwork and masonry",
+      "url": "https://nhbc-standards.co.uk/downloads/2025/NHBC-Standards-2025-Part-6.pdf"
+    },
+    {
+      "title": "Simpson JHMI: steel support and infill requirements",
+      "url": "https://www.strongtie.co.uk/en-UK/products/joist-hanger-for-masonry-i-joists-jhmi"
+    },
+    {
+      "title": "British Gypsum head detail: movement and fire performance are system-specific",
+      "url": "https://www.british-gypsum.com/download-documents/construction-details-pdf/cn-121-021-gwsf-def-head-ceiling-abutting-ptn-en-30-or-60-minutes.pdf"
+    },
+    {
+      "title": "British Gypsum GypFloor Silent: system-specific board and resilient bar build-ups",
+      "url": "https://www.british-gypsum.com/documents/white-book/british-gypsum-wb-gypfloor-silent.pdf"
+    },
+    {
+      "title": "England Approved Document B: current statutory guidance",
+      "url": "https://www.gov.uk/government/publications/fire-safety-approved-document-b"
+    },
+    {
+      "title": "Timloc cavity closure principles; provisional geometry does not inherit product fire performance",
+      "url": "https://timloc.co.uk/products/thermo-loc-60-minute-fire-rated-cavity-barriers/"
+    }
+  ],
+  "masonryFloorContinuations": {
+    "bottomZ": 2.6,
+    "topZ": 2.8,
+    "sourceNamePrefixes": [
+      "North upper facade east",
+      "New wing east upper",
+      "North east upper corner return",
+      "Side bedrooms west",
+      "Aligned front windows",
+      "North upper facade pier 0"
+    ],
+    "basis": "Continue aligned brick/block leaves through the 200 mm first-floor envelope, including the west extension above the rebuilt original garage. Lower wall/head references are geometric candidates, not verified supports. In the retained-garage comparison the corresponding existing heads require survey. Timber ledgers carry only the floor, beside the inner block face; masonry heads, lintels, restraint and foundations require engineering design.",
+    "innerLeafAlignments": [
+      {
+        "memberId": "M-BLOCK-36EE5E4",
+        "axis": 0,
+        "minimum": 9.8375,
+        "basis": "Align the upper block return with the lower block leaf; the former 137.5 mm projection occupied the cavity/unsupported corner. Outer brick face retained; cavity closer and restraint still require design."
+      },
+      {
+        "memberId": "M-BLOCK-B89DC9E",
+        "axis": 1,
+        "minimum": 1.0375,
+        "basis": "Trim the upper front-west block return to the matching lower inner leaf rather than projecting into the front cavity; outside brick and glazing positions retained."
+      }
+    ],
+    "includeGarageRebuildHeads": true
+  },
+  "masonryLintelPockets": {
+    "lintelNamePrefixes": [
+      "Aligned front windows"
+    ],
+    "wallNamePrefixes": [
+      "Aligned front windows",
+      "Side wing front roof wall closure"
+    ],
+    "basis": "Subtract the explicit front-window lintel envelopes and end allowances from masonry, preserving the actual 1.2 m glazing apertures and wall below the bearing seats. Space coordination only; lintel product/capacity, padstones, cavity trays and restraint remain unverified."
+  },
+  "bearingSeatReservations": [
+    {
+      "id": "M-GRC-NORTH-PAD",
+      "beamId": "M-FR-3-022",
+      "wallId": "M-BLOCK-36EE5E4",
+      "name": "Shared gallery receiver \u00b7 north inner-leaf bearing pad",
+      "planBounds": [
+        [
+          10.1,
+          -3.3815
+        ],
+        [
+          10.54,
+          -3.2815
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "440 x 100 x 140 mm concrete bearing-pad envelope and 10 mm levelling-grout allowance, not a selected product or capacity approval. The 100 mm end-bearing proposal stays within the inner leaf; brick/cavity are not used as beam support. Local masonry stress, edge distance, pad reinforcement, grout, restraints and the downward wall/foundation route require verification."
+    },
+    {
+      "id": "M-LP02-SOUTH-PAD",
+      "beamId": "M-FR-3-001",
+      "wallId": "M-BLOCK-5F8239C",
+      "name": "LP02 \u00b7 south masonry bearing reservation",
+      "planBounds": [
+        [
+          8.145,
+          -16.0535
+        ],
+        [
+          8.495,
+          -15.9535
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideClearanceM": 0.01,
+      "topClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Dimensioned bearing envelope only; local compression, eccentricity, wall stability and onward load path require design."
+    },
+    {
+      "id": "M-LP02-WEST-PAD",
+      "beamId": "M-FR-3-010",
+      "wallId": "M-BLOCK-6FBC0C0",
+      "name": "LP02 \u00b7 west masonry bearing reservation",
+      "planBounds": [
+        [
+          5.06,
+          -5.3525
+        ],
+        [
+          5.5,
+          -5.2525
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideClearanceM": 0.01,
+      "topClearanceM": 0.01,
+      "nominalBearingM": 0.2,
+      "basis": "Dimensioned bearing envelope only; local compression, eccentricity, wall stability and onward load path require design.",
+      "additionalSupportWallIds": [
+        "M-BLOCK-7C51DD7"
+      ],
+      "requireFullMasonryContact": true
+    },
+    {
+      "id": "M-LP02-EAST-PAD",
+      "beamId": "M-FR-3-010",
+      "wallId": "M-BLOCK-0B061C8",
+      "name": "LP02 \u00b7 east masonry bearing reservation",
+      "planBounds": [
+        [
+          13.6275,
+          -5.5
+        ],
+        [
+          13.7275,
+          -5.2
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideClearanceM": 0.01,
+      "topClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Dimensioned bearing envelope only; local compression, eccentricity, wall stability and onward load path require design."
+    },
+    {
+      "id": "M-PAD-FR1-026-S",
+      "beamId": "M-FR-1-026",
+      "wallId": "M-BLOCK-4D5245A",
+      "name": "Entrance east trimmer \u00b7 south inner-leaf pad",
+      "planBounds": [
+        [
+          7.48,
+          -9.955
+        ],
+        [
+          7.92,
+          -9.855
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Provisional concrete padstone and levelling-grout geometry for an actual masonry bearing. Dimensions are spatial reservations, not selected products: reactions, local masonry stress, eccentricity, pad design, restraint, thermal continuity and onward foundation capacity require calculation.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true
+    },
+    {
+      "id": "M-PAD-GARDEN-W-S",
+      "beamId": "M-GARDEN-BEAM-01",
+      "wallId": "M-BLOCK-D97410F",
+      "name": "Garden terrace \u00b7 south west-return pad",
+      "planBounds": [
+        [
+          -4.7625,
+          8.935
+        ],
+        [
+          -4.6625,
+          9.375
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Provisional concrete padstone and levelling-grout geometry for an actual masonry bearing. Dimensions are spatial reservations, not selected products: reactions, local masonry stress, eccentricity, pad design, restraint, thermal continuity and onward foundation capacity require calculation.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true
+    },
+    {
+      "id": "M-PAD-GARDEN-W-N",
+      "beamId": "M-GARDEN-BEAM-04",
+      "wallId": "M-BLOCK-D97410F",
+      "name": "Garden terrace \u00b7 north west-return pad",
+      "planBounds": [
+        [
+          -4.7625,
+          13.62
+        ],
+        [
+          -4.6625,
+          14.06
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Provisional concrete padstone and levelling-grout geometry for an actual masonry bearing. Dimensions are spatial reservations, not selected products: reactions, local masonry stress, eccentricity, pad design, restraint, thermal continuity and onward foundation capacity require calculation. The pad is set 40 mm back from the north wall end to clear the glazing plane while supporting the entire beam flange at this seat.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true
+    },
+    {
+      "id": "M-PAD-GABLE-BLOCK-S",
+      "beamId": "M-GABLE-FLOOR-BLOCK",
+      "wallId": "M-BLOCK-8D5FD18",
+      "name": "Gable inner-leaf transfer \u00b7 south pad",
+      "planBounds": [
+        [
+          5.1825,
+          -16.0535
+        ],
+        [
+          5.6225,
+          -15.9535
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Provisional concrete padstone and levelling-grout geometry for an actual masonry bearing. Dimensions are spatial reservations, not selected products: reactions, local masonry stress, eccentricity, pad design, restraint, thermal continuity and onward foundation capacity require calculation.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true
+    },
+    {
+      "id": "M-PAD-GABLE-BLOCK-N",
+      "beamId": "M-GABLE-FLOOR-BLOCK",
+      "wallId": "M-BLOCK-C99B4D9",
+      "name": "Gable inner-leaf transfer \u00b7 north pad",
+      "planBounds": [
+        [
+          5.1825,
+          -9.79
+        ],
+        [
+          5.2825,
+          -9.35
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Provisional concrete padstone and levelling-grout geometry for an actual masonry bearing. Dimensions are spatial reservations, not selected products: reactions, local masonry stress, eccentricity, pad design, restraint, thermal continuity and onward foundation capacity require calculation.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true
+    },
+    {
+      "id": "M-PAD-GABLE-BRICK-S",
+      "beamId": "M-GABLE-FLOOR-BRICK",
+      "wallId": "M-BRICK-8D5FD18",
+      "name": "Gable outer-leaf transfer \u00b7 south pad",
+      "planBounds": [
+        [
+          4.93,
+          -16.306
+        ],
+        [
+          5.37,
+          -16.2035
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1025,
+      "basis": "Provisional outer-leaf transfer padstone, wholly within the brick leaf. This does not bridge the cavity. Reactions, local brick strength, eccentricity, outer-leaf stability/restraint, pad capacity and the concrete support below require engineering verification; no product or capacity is selected.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true,
+      "additionalSupportWallIds": [
+        "M-BRICK-7922371"
+      ]
+    },
+    {
+      "id": "M-PAD-GABLE-BRICK-N",
+      "beamId": "M-GABLE-FLOOR-BRICK",
+      "wallId": "M-BRICK-C99B4D9",
+      "name": "Gable outer-leaf transfer \u00b7 north pad",
+      "planBounds": [
+        [
+          4.93,
+          -9.79
+        ],
+        [
+          5.0325,
+          -9.35
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.1,
+      "basis": "Provisional outer-leaf transfer padstone, wholly within the brick leaf. This does not bridge the cavity. Reactions, local brick strength, eccentricity, outer-leaf stability/restraint, pad capacity and the concrete support below require engineering verification; no product or capacity is selected.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true,
+      "additionalSupportWallIds": [
+        "M-BRICK-ACE846B"
+      ]
+    },
+    {
+      "id": "M-PAD-GALLERY-CROSS-W",
+      "beamId": "M-FR-1-030",
+      "wallId": "M-BLOCK-0C22ABF",
+      "additionalSupportWallIds": [
+        "M-BLOCK-7C51DD7",
+        "M-BLOCK-34AD690"
+      ],
+      "name": "Gallery cross-beam \u00b7 west masonry pad",
+      "planBounds": [
+        [
+          5.1825,
+          -4.3525
+        ],
+        [
+          5.6225,
+          -4.2525
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.44,
+      "basis": "Inner-leaf padstone envelope aligned with the revised gallery cross-beam. It reserves an actual seat in the connected masonry and does not cross the cavity. Member reactions, compression/eccentricity, pad design, restraints and complete downward load path require calculation.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true
+    },
+    {
+      "id": "M-PAD-GALLERY-CROSS-E",
+      "beamId": "M-FR-1-030",
+      "wallId": "M-BLOCK-CA822FA",
+      "additionalSupportWallIds": [
+        "M-BLOCK-6AE62E9"
+      ],
+      "name": "Gallery cross-beam \u00b7 east masonry pad",
+      "planBounds": [
+        [
+          9.4975,
+          -4.3525
+        ],
+        [
+          9.9375,
+          -4.2525
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "sideAndTopClearanceM": 0.01,
+      "nominalBearingM": 0.44,
+      "basis": "Inner-leaf padstone envelope aligned with the revised gallery cross-beam. It reserves an actual seat in the connected masonry and does not cross the cavity. Member reactions, compression/eccentricity, pad design, restraints and complete downward load path require calculation.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "requireFullMasonryContact": true
+    }
+  ],
+  "ceilingCoordinationBasis": "Reserve 31.5 mm lining plus a 25 mm suspension/small-service zone. This is a dimensional budget, not a selected fire/acoustic system. I-joists, steel encasement, penetrations, resilient bars and board fixings need compatible tested details; large services need separately coordinated routes.",
+  "retainedBearingSeatReservations": [
+    {
+      "id": "M-LP03-NORTH-PAD",
+      "beamId": "M-FR-3-022",
+      "sourceWallId": "W-096B2FE",
+      "planBounds": [
+        [
+          10.17,
+          -0.115
+        ],
+        [
+          10.47,
+          0.115
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "basis": "A new pad pocket in the existing solid front pier, outside the adjacent window opening. Existing masonry strength/condition, ground-floor support and foundations require survey and design. Native architecture must be cut to the same pocket."
+    },
+    {
+      "id": "M-PAD-GALLERY-W-N",
+      "beamId": "M-FR-1-036",
+      "sourceWallId": "W-6E6BBF4",
+      "name": "Gallery west beam \u00b7 retained solid front-pier pad",
+      "planBounds": [
+        [
+          5.6,
+          -0.295
+        ],
+        [
+          5.8,
+          0.115
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "nominalBearingM": 0.41,
+      "basis": "New pad envelope in a full-height retained front pier, not the adjacent window head. Actual masonry condition, pad/member reactions, local stress, restraint and foundations require survey/design. The native opening-fit stage must apply the linked pocket before the architecture overlay is considered coordinated. South pad edge is set back30mm to clear the retained terminal glazing mullion by11mm;410mm geometric seat and full165mm flange width remain. This is envelope coordination, not pad or wall capacity verification.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ]
+    },
+    {
+      "id": "M-PAD-GALLERY-E-N",
+      "beamId": "M-FR-1-035",
+      "sourceWallId": "W-5012A48",
+      "name": "Gallery east beam \u00b7 retained solid front-pier pad",
+      "planBounds": [
+        [
+          9.48,
+          -0.115
+        ],
+        [
+          9.92,
+          0.115
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "nominalBearingM": 0.23,
+      "basis": "New pad envelope in a full-height retained front pier, not the adjacent window head. Actual masonry condition, pad/member reactions, local stress, restraint and foundations require survey/design. The native opening-fit stage must apply the linked pocket before the architecture overlay is considered coordinated.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ]
+    },
+    {
+      "id": "M-PAD-GALLERY-N-E",
+      "beamId": "M-FR-1-034",
+      "sourceWallId": "W-8C66A05",
+      "name": "Gallery north cross-beam \u00b7 first solid retained-pier pad",
+      "planBounds": [
+        [
+          8.89,
+          -0.325
+        ],
+        [
+          9.205,
+          0.115
+        ]
+      ],
+      "padDepthM": 0.14,
+      "groutDepthM": 0.01,
+      "nominalBearingM": 0.15,
+      "basis": "Independent150mm end-bearing proposal in W-8C66A05; the beam terminates beforeW-5012A48. The same local pocket applies to the intersecting drawing-hall wall W-51031F0. Existing pier condition, upper-wall/roof loads, combined stresses, pad design, restraint and foundations require verification; no capacity approval.",
+      "issueIds": [
+        "BEAM-END-BEARINGS"
+      ],
+      "additionalSourceWallIds": [
+        "W-51031F0"
+      ]
+    }
+  ],
+  "masonryPassagePockets": [
+    {
+      "id": "LP03-OUTER-LEAF",
+      "beamId": "M-FR-3-022",
+      "wallId": "M-BRICK-36EE5E4",
+      "clearanceM": 0.01,
+      "basis": "The continuous beam passes above the courtyard glazing through a block-out at the top of the outer brick leaf. The brick is not a beam bearing. Preserve the cavity and coordinate an insulated soffit, cavity tray, weathering and fire enclosure around this junction."
+    },
+    {
+      "beamId": "M-FR-1-035",
+      "wallId": "M-BRICK-CA822FA",
+      "clearanceM": 0.01,
+      "basis": "Small non-bearing flange passage in the outer opening jamb within the floor band; the floor beam bears on the separate inner-leaf cross-beam, not this brick toe. Local residual masonry, weather seal and fire detail require design.",
+      "sourceObject": "Proposal | North ground facade end pier"
+    }
+  ],
+  "masonryEndCorrections": [
+    {
+      "memberId": "M-BLOCK-C99B4D9",
+      "axis": 1,
+      "end": 1,
+      "targetM": -9.0475,
+      "basis": "Continue west recess inner leaf into the entrance south-return inner leaf."
+    },
+    {
+      "memberId": "M-BRICK-ACE846B",
+      "axis": 0,
+      "end": 1,
+      "targetM": 5.0325,
+      "basis": "Stop the outer return at its perpendicular brick leaf, rather than inside the cavity."
+    },
+    {
+      "memberId": "M-BLOCK-ACE846B",
+      "axis": 0,
+      "end": 1,
+      "targetM": 5.2825,
+      "basis": "Connect the two room-side leaves at the re-entrant entrance corner."
+    },
+    {
+      "memberId": "M-BRICK-7C51DD7",
+      "axis": 1,
+      "end": 0,
+      "targetM": -5.1025,
+      "basis": "Connect entrance north outer return to the west band."
+    },
+    {
+      "memberId": "M-BLOCK-7C51DD7",
+      "axis": 1,
+      "end": 0,
+      "targetM": -5.3525,
+      "basis": "Connect entrance north inner return to the west band."
+    },
+    {
+      "memberId": "M-BLOCK-7C51DD7",
+      "axis": 1,
+      "end": 1,
+      "targetM": -4.2525,
+      "basis": "Stop the inner return at the north facade inner leaf, preserving the 150 mm cavity."
+    },
+    {
+      "memberId": "M-BLOCK-C99B4D9",
+      "axis": 1,
+      "end": 0,
+      "targetM": -10.1425,
+      "basis": "Continue the west recess inner leaf south to the garage north inner return; this is the same exterior bearing leaf, not an added wall across a room."
+    },
+    {
+      "memberId": "M-BRICK-EF992A0",
+      "axis": 0,
+      "end": 1,
+      "targetM": 5.0325,
+      "basis": "Garage north brick leaf ends at the perpendicular west-recess brick face, preserving the cavity."
+    },
+    {
+      "memberId": "M-BLOCK-EF992A0",
+      "axis": 0,
+      "end": 1,
+      "targetM": 5.2825,
+      "basis": "Garage north block leaf continues into the west-recess inner leaf."
+    },
+    {
+      "memberId": "M-BRICK-6FBC0C0",
+      "axis": 0,
+      "end": 1,
+      "targetM": 5.0325,
+      "basis": "The north entrance cavity turns into the west facade; the outer brick stops at the brick return. Only the inner block pier projects east for the loft transfer pad, avoiding a brick/block bridge across the cavity."
+    }
+  ],
+  "cavityTerminalClosures": [
+    {
+      "id": "M-CLOSE-34AD690",
+      "name": "North upper facade west opening \u00b7 jamb cavity closer",
+      "brickId": "M-BRICK-34AD690",
+      "blockId": "M-BLOCK-34AD690",
+      "axis": 0,
+      "end": 1,
+      "planeM": 5.625,
+      "zRange": [
+        2.6,
+        5.35
+      ]
+    },
+    {
+      "id": "M-CLOSE-0C22ABF",
+      "name": "North ground facade west opening \u00b7 jamb cavity closer",
+      "brickId": "M-BRICK-0C22ABF",
+      "blockId": "M-BLOCK-0C22ABF",
+      "axis": 0,
+      "end": 1,
+      "planeM": 5.64,
+      "zRange": [
+        0,
+        2.6
+      ]
+    }
+  ],
+  "cavityClosureBasis": "50 mm-deep insulated vertical terminal and 3 mm moisture-resistant profile envelopes. Preserve the 150 mm cavity; no masonry bridge joins outer and inner leaves. UK supplier principle only, not a selected/tested assembly. Frame overlap, damp seals, cavity trays/weep drainage, fire performance, installation lengths/joints, restraint and thermal continuity require final detailing. Beam penetrations have a separate unselected compressible closure allowance; no fire rating is claimed.",
+  "cavityClosureReference": "https://timloc.co.uk/products/thermo-loc-60-minute-fire-rated-cavity-barriers/",
+  "bearingEndExtensions": [
+    {
+      "memberId": "M-FR-1-026",
+      "axis": 1,
+      "end": 0,
+      "planeM": -9.955,
+      "basis": "Extend 50 mm to provide a full 100 mm inner-leaf bearing, without changing the section."
+    },
+    {
+      "memberId": "M-GARDEN-BEAM-01",
+      "axis": 0,
+      "end": 0,
+      "planeM": -4.7625,
+      "basis": "Extend to the outside face of the 100 mm west inner leaf, for a complete masonry seat."
+    },
+    {
+      "memberId": "M-GARDEN-BEAM-04",
+      "axis": 0,
+      "end": 1,
+      "planeM": -4.7625,
+      "basis": "Extend to the outside face of the 100 mm west inner leaf, for a complete masonry seat."
+    },
+    {
+      "memberId": "M-GABLE-FLOOR-BLOCK",
+      "axis": 1,
+      "end": 1,
+      "planeM": -9.69,
+      "basis": "Extend 100 mm into the west recess inner leaf; the outer-leaf transfer remains separately unresolved."
+    },
+    {
+      "memberId": "M-GABLE-FLOOR-BRICK",
+      "axis": 1,
+      "end": 0,
+      "planeM": -16.306,
+      "basis": "Extend the outer-leaf transfer into the south brick-leaf bearing. This seat remains entirely within the same leaf."
+    },
+    {
+      "memberId": "M-GABLE-FLOOR-BRICK",
+      "axis": 1,
+      "end": 1,
+      "planeM": -9.69,
+      "basis": "Extend the outer-leaf transfer 100 mm into the west recess brick-leaf bearing."
+    }
+  ],
+  "replacedMasonryReturns": [
+    {
+      "id": "M-BLOCK-46D1A49",
+      "replacementId": "M-BLOCK-C99B4D9",
+      "reason": "The 205 by 230 mm architectural garage/store corner fragment was extracted on the wrong normal and occupied the external cavity. Its junction is now carried by the continuous C99B4D9 inner-leaf return, which retains source W-46D1A49. The original architectural object is unchanged; no existing physical wall is deleted."
+    }
+  ],
+  "masonryTopBedding": [
+    {
+      "id": "M-BED-GALLERY-CROSS-W",
+      "beamId": "M-FR-1-030",
+      "wallId": "M-BLOCK-34AD690",
+      "name": "Gallery west upper pier \u00b7 bearing bed above cross-beam",
+      "planBounds": [
+        [
+          5.1825,
+          -4.3525
+        ],
+        [
+          5.625,
+          -4.2525
+        ]
+      ],
+      "depthM": 0.01,
+      "basis": "Ten mm top bearing-bed envelope closes the finite beam pocket beneath the retained upper inner-leaf pier. It transfers that masonry and any superimposed facade/roof reactions into the end zone of the cross-beam; these loads and local flange/web resistance are NOT covered by a floor-only size assumption. Packing/grout product, compressive stress, restraint, thermal/fire detail and complete downward path require design.",
+      "additionalWallIds": [
+        "M-BLOCK-7C51DD7"
+      ]
+    }
+  ],
+  "glazingCornerPockets": [
+    {
+      "wallId": "M-BRICK-0C22ABF",
+      "sourceOpening": "Proposal | Courtyard edge passage fixed left mullion",
+      "bounds": [
+        [
+          5.588,
+          -4.027,
+          0
+        ],
+        [
+          5.642,
+          -3.973,
+          2.3791
+        ]
+      ],
+      "clearanceM": 0.003,
+      "basis": "Local exterior-jamb recess for the fixed frame, with 3 mm modelling clearance. Frame and facade planes retained. Sealing, fixing, weathering and minimum residual brick dimensions remain to be detailed."
+    },
+    {
+      "wallId": "M-BRICK-34AD690",
+      "sourceOpening": "Proposal | Courtyard upper landing mullion",
+      "bounds": [
+        [
+          5.588,
+          -4.027,
+          2.8
+        ],
+        [
+          5.642,
+          -3.973,
+          5.1145
+        ]
+      ],
+      "clearanceM": 0.003,
+      "basis": "Local exterior-jamb recess for the fixed frame, with 3 mm modelling clearance. Frame and facade planes retained. Sealing, fixing, weathering and minimum residual brick dimensions remain to be detailed."
+    }
+  ],
+  "retainedPierContinuity": [
+    {
+      "id": "M-RETAINED-GALLERY-W",
+      "name": "Front gallery west \u00b7 assumed retained pier band",
+      "lowerSourceId": "W-6E6BBF4",
+      "upperSourceId": "W-15C1BB3",
+      "beamId": "M-FR-1-036",
+      "planBounds": [
+        [
+          5.6,
+          -0.33
+        ],
+        [
+          5.8,
+          0.115
+        ]
+      ],
+      "zRange": [
+        2.6,
+        2.8
+      ],
+      "clearanceM": 0.01,
+      "basis": "The concealed 200 mm storey band is assumed to continue the existing solid pier where lower and upper architectural footprints coincide. Material, bond, condition and capacity require survey. A finite beam pocket and separate 10 mm top bearing bed preserve the upper wall; masonry/facade/roof reactions, local flange/web bearing, restraint, erection and temporary propping are not calculated. The grey band is retained context excluded from new masonry quantities.",
+      "planExclusions": [
+        {
+          "sourceFrameObject": "Proposal | Courtyard upper landing mullion.003",
+          "bounds": [
+            [
+              5.588,
+              -0.357
+            ],
+            [
+              5.642,
+              -0.303
+            ]
+          ],
+          "basis": "Extend the explicitly reviewed terminal-frame reveal through this hidden band and its bedding so neither occupies the missing upper-pier footprint."
+        }
+      ]
+    },
+    {
+      "id": "M-RETAINED-GALLERY-MID",
+      "name": "Front gallery middle \u00b7 assumed retained pier band",
+      "lowerSourceId": "W-8C66A05",
+      "upperSourceId": "W-EAABBF9",
+      "beamId": "M-FR-1-034",
+      "planBounds": [
+        [
+          8.89,
+          -0.33
+        ],
+        [
+          9.205,
+          0.115
+        ]
+      ],
+      "zRange": [
+        2.6,
+        2.8
+      ],
+      "clearanceM": 0.01,
+      "basis": "The concealed 200 mm storey band is assumed to continue the existing solid pier where lower and upper architectural footprints coincide. Material, bond, condition and capacity require survey. A finite beam pocket and separate 10 mm top bearing bed preserve the upper wall; masonry/facade/roof reactions, local flange/web bearing, restraint, erection and temporary propping are not calculated. The grey band is retained context excluded from new masonry quantities."
+    },
+    {
+      "id": "M-RETAINED-GALLERY-E",
+      "name": "Front gallery east \u00b7 assumed retained pier band",
+      "lowerSourceId": "W-5012A48",
+      "upperSourceId": "W-096B2FE",
+      "beamId": "M-FR-1-035",
+      "planBounds": [
+        [
+          9.205,
+          -0.115
+        ],
+        [
+          9.92673,
+          0.115
+        ]
+      ],
+      "zRange": [
+        2.6,
+        2.8
+      ],
+      "clearanceM": 0.01,
+      "basis": "The concealed 200 mm storey band is assumed to continue the existing solid pier where lower and upper architectural footprints coincide. Material, bond, condition and capacity require survey. A finite beam pocket and separate 10 mm top bearing bed preserve the upper wall; masonry/facade/roof reactions, local flange/web bearing, restraint, erection and temporary propping are not calculated. The grey band is retained context excluded from new masonry quantities."
+    }
+  ],
+  "finalMasonryOwnership": [
+    {
+      "ownerId": "M-BLOCK-7C51DD7",
+      "trimId": "M-BLOCK-0C22ABF",
+      "basis": "Remove the minor post-pocket Boolean corner remnant without changing the union of the connected block leaves; no extra solid is assigned across the cavity."
+    }
+  ],
+  "supersededOpeningHeads": [
+    {
+      "memberId": "M-L-74AF027",
+      "replacementId": "M-FR-1-034",
+      "openingSourceId": "O-74AF027",
+      "openingBounds": [
+        [
+          5.8,
+          -0.115,
+          2.6
+        ],
+        [
+          8.89,
+          0.115,
+          2.77
+        ]
+      ],
+      "westConnectionId": "M-FR-1-036",
+      "basis": "The architectural 3.09 m opening runs X5.8 to8.89. Its generic lintel envelope duplicated the revised034 floor receiver. 034 runs X5.81 to9.04: a10 mm unresolved steel connection to036 atX5.8 at its west end, and150 mm real bearing inW-8C66A05 at its east. Retire the duplicate quantity; explicitly assign the opening-head role to034. Its165 mm flange is narrower than the old230 mm envelope. Any upper masonry/facade/roof action, transverse load distribution, combined member design, connection plates, local stress, restraint and propping remain unverified."
+    }
+  ]
+}

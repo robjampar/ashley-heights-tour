@@ -1,0 +1,3 @@
+import {inspectGlb} from '../../walkthrough/tests/helpers/glb-geometry.mjs';import {Vector3,Raycaster} from '../../walkthrough/node_modules/three/build/three.module.js';
+let a=[];const root=inspectGlb(new URL('../../walkthrough/public/proposal-compact.glb',import.meta.url),n=>/Joined roof lining/.test(n));root.traverse(m=>{if(m.isMesh)a.push(m)});
+for(const [name,pts]of [['west',[-4.6,-4.23,-4,-3.8,-3,-2.5,-2,-1.6].map(y=>[5.985,y])],['south',[6,6.3,6.6,6.9,7.2,7.3,7.6,8.47].map(x=>[x,-4.59])],['north',[6,6.5,7,7.3].map(x=>[x,-1.6])]])console.log(name,pts.map(([x,y])=>{const h=new Raycaster(new Vector3(x,5.26,-y),new Vector3(0,1,0)).intersectObjects(a,false)[0];return {x,y,z:h?.point.y,name:h?.object.name}}));

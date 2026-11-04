@@ -24,6 +24,29 @@ class BuildCacheTests(unittest.TestCase):
         self.addCleanup(self.directory.cleanup)
         self.root = Path(self.directory.name)
         names = {
+            'scripts/model/grand_stair_returns.py',
+            'proposal/interiors/leisure/loft-stair.json',
+            'proposal/interiors/leisure/loft-bedroom-expansion.json',
+            'proposal/interiors/leisure/loft-bedroom-finish.json',
+            'proposal/specs/level-loft-components.json',
+            'proposal/specs/bedroom4-stair-suite-components.json',
+            'proposal/specs/suite-layout-loft-use.json',
+            'proposal/specs/open-suite-eaves-storage.json',
+            'proposal/specs/lengthwise-bathroom.json',
+            'proposal/specs/front-window-alignment.json',
+            'proposal/specs/terrace-lounge-west-suite.json',
+            'proposal/specs/symmetric-wing-roof.json',
+            'scripts/geometry/symmetric_roof.py',
+            'proposal/specs/continuous-wing-roof.json',
+            'proposal/specs/structural-finish-coordination.json',
+            'proposal/specs/structural-opening-fit.json',
+            'proposal/specs/simple-structure-retained-suite.json',
+            'proposal/specs/sw02-native-integration.json', 'proposal/specs/continuous-joist-integration.json', 'proposal/specs/garage-seven-metre.json',
+            'proposal/specs/garden-workshop-envelope.json',
+            'proposal/specs/exterior-masonry-junctions.json',
+            'scripts/geometry/continuous_roof.py',
+            'scripts/interiors/terrace_suite_furnishings.py',
+            'scripts/model/proposal_suite_layout_loft.py',
             'outputs/output-walkthrough/Ashley Heights.blend', 'outputs/output-walkthrough/geometry.json',
             'walkthrough/public/navigation.json', 'proposal/specs/design-spec.json',
             'proposal/specs/design-spec-compact.json', 'proposal/specs/design-spec-planning.json',
@@ -32,6 +55,7 @@ class BuildCacheTests(unittest.TestCase):
             'scripts/build/build_extension_proposal.py', 'scripts/build/build_support.py',
             'scripts/interiors/garden_stone.py', 'scripts/interiors/linen_baskets.py', 'proposal/interiors/garden-stone.json',
             'scripts/interiors/principal_gable_wall.py', 'proposal/interiors/principal/gable-wall.json',
+            'scripts/interiors/bar_lounge_details.py','scripts/interiors/door_frame_details.py','proposal/interiors/leisure/prep-kitchen.json','proposal/interiors/leisure/textures/calacatta-oro.png','source/assets/materials/polyhaven/walnut_veneer/walnut_veneer_diff_2k.jpg',
             'scripts/geometry/blender_collections.py', 'scripts/geometry/blender_booleans.py', 'scripts/geometry/exterior_exposure.py',
             'scripts/interiors/interior_furnishing.py', 'scripts/interiors/proposal_bar_interiors.py', 'scripts/interiors/proposal_gym_interiors.py', 'scripts/interiors/proposal_utility_interiors.py','scripts/interiors/proposal_guest_interiors.py','scripts/interiors/proposal_guestbath_interiors.py','scripts/interiors/proposal_family_interiors.py','scripts/interiors/proposal_cloakroom_interiors.py','scripts/interiors/proposal_bedroom2_interiors.py','scripts/interiors/proposal_bedroom3_interiors.py','scripts/interiors/proposal_familybath_interiors.py','scripts/interiors/proposal_bedroom4_interiors.py','scripts/interiors/proposal_formal_interiors.py','scripts/interiors/proposal_sidebed_interiors.py','scripts/interiors/proposal_loftsuite_interiors.py','scripts/interiors/proposal_hobby_interiors.py','scripts/interiors/proposal_arrival_interiors.py','scripts/interiors/proposal_landings_interiors.py','scripts/interiors/proposal_garage_interiors.py','scripts/interiors/proposal_gardenhouse_interiors.py','scripts/interiors/proposal_office_interiors.py','scripts/interiors/garden_level_steps.py','scripts/interiors/interior_suite_parts.py',
             'proposal/interiors/leisure/cinema.json', 'proposal/interiors/leisure/bar.json', 'proposal/interiors/leisure/gym.json', 'proposal/interiors/leisure/utility.json','proposal/interiors/leisure/guest.json','proposal/interiors/leisure/guestbath.json','proposal/interiors/leisure/family.json','proposal/interiors/leisure/cloakroom.json','proposal/interiors/leisure/bedroom2.json','proposal/interiors/leisure/bedroom3.json','proposal/interiors/leisure/familybath.json','proposal/interiors/leisure/bedroom4.json','proposal/interiors/leisure/formal.json','proposal/interiors/leisure/sidebed.json','proposal/interiors/leisure/loftsuite.json','proposal/interiors/leisure/hobby.json','proposal/interiors/leisure/arrival.json','proposal/interiors/leisure/landings.json','proposal/interiors/leisure/garage.json','proposal/interiors/leisure/gardenhouse.json','proposal/interiors/leisure/office.json',
@@ -102,6 +126,26 @@ class BuildCacheTests(unittest.TestCase):
         self.put('scripts/model/proposal_workshop.py', 'changed')
         self.assertTrue(self.fresh())
         self.assertFalse(self.fresh('compact'))
+
+    def test_opening_fit_spec_invalidates_only_the_proposed_design(self):
+        self.put('proposal/specs/structural-opening-fit.json', 'revised opening heads')
+        self.assertTrue(self.fresh('planning'))
+        self.assertFalse(self.fresh('compact'))
+
+    def test_grand_stair_layout_invalidates_both_designs(self):
+        self.put('proposal/interiors/leisure/loft-stair.json', 'revised split landing')
+        self.assertFalse(self.fresh('compact'))
+        self.assertFalse(self.fresh('planning'))
+
+    def test_stair_guard_detail_invalidates_both_designs(self):
+        self.put('scripts/model/grand_stair_returns.py', 'revised landing guards')
+        self.assertFalse(self.fresh('compact'))
+        self.assertFalse(self.fresh('planning'))
+
+    def test_level_loft_components_invalidate_both_designs(self):
+        self.put('proposal/specs/level-loft-components.json', 'revised level loft components')
+        self.assertFalse(self.fresh('compact'))
+        self.assertFalse(self.fresh('planning'))
 
     def test_missing_or_manually_modified_output_is_not_reused(self):
         for path in build.required_outputs(self.root, 'planning'):

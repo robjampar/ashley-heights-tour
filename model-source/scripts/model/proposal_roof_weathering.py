@@ -100,10 +100,15 @@ _rw_outlet('courtyard west connector',[(5.395,-3.72,_rw_court_eave-.14),(5.395,-
            wall_axis=(5.395,-4.0))
 if wing_dormer_link_roof_rect:
     # Proposal B: the link dormer's east gutter falls south into this pipe.
-    _glx=float(spec['wingDormer']['link_bounds'][2])+.075;_gly=float(spec['wingDormer']['link_bounds'][1]);_gwz=float(spec['wingDormer']['roof_top_z'])
+    _glx=wing_dormer_link_roof_rect[2]+.075;_gly=wing_dormer_link_roof_rect[1]+.025;_gwz=float(spec['wingDormer']['roof_top_z'])
     _cfy=float((spec.get('courtyard') or {}).get('facade_y',-4.0));_cd=_cfy+4.0   # the courtyard notch shifts the facade corner (22 September)
-    _rw_outlet('garden high connector',[(_glx,_gly+.06,_gwz-.125),(_glx,-3.72+_cd,_gwz-.30),(_glx,-3.72+_cd,_gwz-.86),(_glx+.055,-3.95+_cd,_gwz-1.06),(_glx+.055,-3.95+_cd,.16)],
-               wall_axis=(_glx+.055,_cfy))
+    # Follow the upper corner, then the loggia soffit back to the recessed
+    # ground-floor facade. A straight drop here stood in the courtyard.
+    _foot_y=_cfy-float((spec.get('courtyard') or {}).get('ground_recess_m',0))+.06
+    _corner_y=_cfy+.05;_pipe_x=float(spec['wingDormer']['link_bounds'][2])+.13
+    _foot_x=11.945-1.20-.125  # 125 mm inside the solid pier west of the gym opening
+    _rw_outlet('garden high connector',[(_glx,_gly,_gwz-.125),(_pipe_x,_corner_y,_gwz-.30),(_pipe_x,_corner_y,2.43),(_foot_x,_foot_y,2.43),(_foot_x,_foot_y,.16)],
+               clip_heights=(.75,1.55,2.15),wall_axis=(_foot_x,_foot_y-.06))
 else:
     _rw_garden_eave=_roof_height(10.34,-3.72) or _roof_height(10.34,-1.41)
     _rw_outlet('garden high connector',[(10.385,-3.72,_rw_garden_eave-.14),(10.385,-3.72,_rw_garden_eave-.45),(10.48,-3.95,_rw_garden_eave-.65),(10.48,-3.95,.16)],
@@ -151,7 +156,7 @@ if side_wing_roof_enabled:
     _rw_gutter('original rear west',(-.285,gy1,gz+.002),(7.0,gy1,gz+.022),.062)
     _rw_gutter('original rear east',(7.0,gy1,gz+.022),(_fe+.062,gy1,gz-.010),.062)
     _rw_gutter('original east',(_fe+.062,-.28,gz+.014),(_fe+.062,gy1,gz-.010),.062)
-    _rw_gutter('original front east',(9.205,_original_gy0,gz+.014),(_fe+.062,_original_gy0,gz-.008),.062)
+    _rw_gutter('original front east',(9.76 if spec.get('loftLevelStair') else 9.205,_original_gy0,gz+.014),(_fe+.062,_original_gy0,gz-.008),.062)
     # The original east wall's outer face is x 14.095; the pipes hang 55 mm off it.
     _rw_outlet('original north east corner',[(_fe+.062,gy1-.035,gz-.10),(14.15,9.05,4.95),(14.15,9.05,.16)],wall_axis=(14.095,9.05))
     _rw_outlet('original south east corner',[(_fe+.062,_original_gy0+.035,gz-.10),(14.15,-.24,4.95),(14.15,-.24,.16)],wall_axis=(14.095,-.24))
@@ -278,7 +283,7 @@ def _rw_hip_cap(label,a,b):
         pa=[a[k]+delta[k]*t0 for k in range(3)];pb=[a[k]+delta[k]*t1 for k in range(3)];pa[2]+=.020;pb[2]+=.020
         beam('Proposal | Roof weathering | '+label,pa,pb,.065,globals().get('proposal_roof_material',_rw_dark),_rw_layer)
 
-_rw_cx=(wing_eaves[0]+wing_eaves[2])/2;_rw_half=(wing_eaves[2]-wing_eaves[0])/2
+_rw_cx=wing_cx;_rw_half=(wing_eaves[2]-wing_eaves[0])/2
 for label,xx,yy,ry in[('south west',wing_eaves[0],wing_eaves[1],wing_eaves[1]+_rw_half),
                       ('south east',wing_eaves[2],wing_eaves[1],wing_eaves[1]+_rw_half),
                       ('north west',wing_eaves[0],continued_north_eave_y,continued_ridge_end_y),
@@ -397,17 +402,21 @@ for label,pa,pb in[('south',[_wd_x0,_wd_y0],[_wd_x1,_wd_y0]),('north',[_wd_x0,_w
     beam('Proposal | Roof weathering | Wing dormer '+label+' drip',(*pa,_wd_top(*pa)-.012),(*pb,_wd_top(*pb)-.012),.035,_rw_dark,_rw_layer)
 if wing_dormer_link_roof_rect:
     _lx0,_ly0,_lx1,_ly1=wing_dormer_link_roof_rect
+    _stepped_link=bool(wing_dormer_link_ext_rect and wing_dormer_link_ext_rect[2]<_lx1-.01)
+    _link_gutter_end_y=_ly1+.075 if _stepped_link else _ly1-.025
     _rw_skin('wing dormer link membrane',[(x,y,_wd_top(x,y))for x,y in _roof_rect(wing_dormer_link_roof_rect)],_rw_dark)
     if wing_dormer_link_ext_rect:
         # The membrane runs on over the extension to the rear dormer; the drip moves to its far end.
         _ex0,_ey0,_ex1,_ey1=wing_dormer_link_ext_rect
         _rw_skin('wing dormer link extension membrane',[(x,y,_wd_top(x,y))for x,y in _roof_rect(wing_dormer_link_ext_rect)],_rw_dark)
-        _rw_gutter('wing dormer link extension east gutter',(_ex1+.075,_ey0+.025,_wd_z-.037),(_ex1+.075,_ey1-.025,_wd_z-.010),.062)
+        _rw_gutter('wing dormer link extension east gutter',(_ex1+.075,_link_gutter_end_y if _stepped_link else _ey0+.025,_wd_z-.037),(_ex1+.075,_ey1-.025,_wd_z-.010),.062)
+        if _stepped_link:
+            _rw_gutter('wing dormer link north step gutter',(_ex1+.075,_link_gutter_end_y,_wd_z-.037),(_lx1+.075,_link_gutter_end_y,_wd_z-.055),.062)
     else:
         beam('Proposal | Roof weathering | Wing dormer link north drip',(_lx0,_ly1,_wd_top(_lx0,_ly1)-.012),(_lx1,_ly1,_wd_top(_lx1,_ly1)-.012),.035,_rw_dark,_rw_layer)
     # Falls south to the garden high connector on the facade pier; a pipe at
     # the north end would drop through the drawing room's bay window.
-    _rw_gutter('wing dormer link east gutter',(_lx1+.075,_ly0+.025,_wd_z-.037),(_lx1+.075,_ly1-.025,_wd_z-.010),.062)
+    _rw_gutter('wing dormer link east gutter',(_lx1+.075,_ly0+.025,_wd_z-(.062 if _stepped_link else .037)),(_lx1+.075,_link_gutter_end_y,_wd_z-(.055 if _stepped_link else .010)),.062)
 _wd_gx=_wd_x1+.075;_wd_mid=(_wd_y0+_wd_y1)/2
 _rw_gutter('wing dormer east south gutter',(_wd_gx,_wd_y0+.025,_wd_z-.037),(_wd_gx,_wd_mid,_wd_z-.010),.062)
 _rw_gutter('wing dormer east north gutter',(_wd_gx,_wd_mid,_wd_z-.010),(_wd_gx,_wd_y1-.025,_wd_z-.037),.062)

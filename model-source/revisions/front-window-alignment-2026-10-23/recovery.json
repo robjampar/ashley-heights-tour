@@ -1,0 +1,86 @@
+[
+  {
+    "path": "scripts/build/build_support.py",
+    "sha256": "86e4fd8a50201a1c3ba46463a2b24897e450929fe23c7fde5df948412cd55272"
+  },
+  {
+    "path": "tests/test_build_pipeline.py",
+    "sha256": "29f6833c8a6b38d3b74a8f32d7961ae4af24d86041bd1d90609487dc9ab60c35"
+  },
+  {
+    "path": "README.md",
+    "sha256": "1c5b4e5b1306347c8a928377a7e2d458eb73089ea894f77fd75c2a6fce39863d"
+  },
+  {
+    "path": "docs/WORKSPACE.md",
+    "sha256": "e46604aac7cb5daf5d33f60e8d31ca7bf53853052000e39c5537a6f77df35e60"
+  },
+  {
+    "path": "walkthrough/tests/suite-layout-loft.test.mjs",
+    "sha256": "07853e20ecb615bca041cb0e9ec39aede10cf6e3889442746d6ef8dabbdf8c41"
+  },
+  {
+    "path": "walkthrough/tests/modern-loft-stair.test.mjs",
+    "sha256": "085b495e5146bf01edddeefa1e375d6fcb48cdc89479bc41bdca7322d153925b"
+  },
+  {
+    "path": "walkthrough/tests/construction-details.test.mjs",
+    "sha256": "fc5a45be28ac25cb5a4367cc044add3631d0b919feb8dcb392ce4142fa4cab2b"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+    "sha256": "c885b1e3a2061d4a039500a267da898c8021a2932b51a7a7a98d04e0f0fd7fba"
+  },
+  {
+    "path": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb",
+    "sha256": "43a708fd8e2c853ef6984112193932fe489f9f7de7f41fb6dea091093d37ff25"
+  },
+  {
+    "path": "outputs/output-proposed-compact/geometry.json",
+    "sha256": "29950ecbdfd54ce4e2401e6e2b56f59618bfe79291b24a8546524627347a07cd"
+  },
+  {
+    "path": "outputs/output-proposed-compact/navigation.json",
+    "sha256": "57a5363df1d921b7efee6caef4853045f9c988f5d303856bfff1239b926af7a1"
+  },
+  {
+    "path": "outputs/output-proposed-compact/lengthwise-bathroom-refresh.json",
+    "sha256": "67d305527464e56ed3dcd90a6d4265529363d9e197bd8e8b1cdaa7ecbf314b0d"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact-navigation.json",
+    "sha256": "57a5363df1d921b7efee6caef4853045f9c988f5d303856bfff1239b926af7a1"
+  },
+  {
+    "path": "walkthrough/public/proposal-compact.glb",
+    "sha256": "43a708fd8e2c853ef6984112193932fe489f9f7de7f41fb6dea091093d37ff25"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).blend",
+    "sha256": "eb1bcbe38a8414fc387d9b56c873d04411e1984f7b7902b6bf1296860df91e8f"
+  },
+  {
+    "path": "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).glb",
+    "sha256": "ea597e42b43b44dc2014ef7176f9cec3665d301ca3202167d4eea65f2f3895b4"
+  },
+  {
+    "path": "outputs/output-proposed-planning/geometry.json",
+    "sha256": "ccac2e142f7bac2856424f3639a94f6ca8ebbd0969064a118b794bb55173eb7b"
+  },
+  {
+    "path": "outputs/output-proposed-planning/navigation.json",
+    "sha256": "d20f281f367e69345c0893474d092b67cf7a710316997f196adb71bc7823eeea"
+  },
+  {
+    "path": "outputs/output-proposed-planning/lengthwise-bathroom-refresh.json",
+    "sha256": "5c9f64930f1087d6253397be4f8984ebc335c9133f5a24fa632003903fb1d56e"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning.glb",
+    "sha256": "ea597e42b43b44dc2014ef7176f9cec3665d301ca3202167d4eea65f2f3895b4"
+  },
+  {
+    "path": "walkthrough/public/proposal-planning-navigation.json",
+    "sha256": "d20f281f367e69345c0893474d092b67cf7a710316997f196adb71bc7823eeea"
+  }
+]

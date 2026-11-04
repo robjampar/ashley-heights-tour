@@ -19,8 +19,8 @@ def _boundary_lines(model):
 
 
 def evaluate(ctx, ex, pr, schedule):
-    """Every threshold below is quoted from the Sevenoaks Residential Extensions SPD (2009),
-    the GPDO or a named standard; where a document gives no number the rule says so."""
+    """Model diagnostics and policy questions, not findings of planning compliance.
+    The agreed envelope is retained while outstanding evidence is assembled."""
     R = []
     site = pr.site_polygon; bl = _boundary_lines(pr)
     ex_gf, _ = fp.room_envelope(ex, 0.0); pr_gf, _ = fp.room_envelope(pr, 0.0); pr_ff, _ = fp.room_envelope(pr, 2.8)
@@ -31,8 +31,8 @@ def evaluate(ctx, ex, pr, schedule):
     bb = box(*nav['proposalBasement']['outerBounds'])
     inside = bb.intersection(ex_gf).area / bb.area if bb.area else 0
     R.append(_r('R01', 'Basement beneath the new wing', GB + ' GB2 — applies only in the Green Belt', f'{bb.area:.0f} m² basement, {inside * 100:.0f}% within the original footprint; wholly below ground, no external openings',
-                'Green Belt only. The Residential Extensions SPD has no basement policy.', 'red' if ctx.green_belt_module else 'green',
-                'Not in the Green Belt (confirmed): an engineering matter for the basement impact assessment.', ['entertainmentBasement.outerBounds']))
+                'Green Belt only. The Residential Extensions SPD has no basement policy.', 'red' if ctx.green_belt_module else 'amber',
+                'Outside the mapped Green Belt; structure, groundwater, excavation, drainage, trees and neighbour effects remain unresolved. Obtain coordinated assessments.', ['entertainmentBasement.outerBounds']))
     # R02 Scale
     R.append(_r('R02', 'Overall scale of the additions', SPD + ' 4.21–4.23 and the front-extension summary: "the scale should respect the scale of the building to which it is attached"',
                 f"External floor area {gb['A']:.0f} m² existing, +{gb['B']:.0f} m² proposed ({gb['B'] / gb['A'] * 100:.0f}%)",
@@ -43,9 +43,9 @@ def evaluate(ctx, ex, pr, schedule):
     south = bl.get('Front south boundary wall'); d_road = pr_gf.distance(south) if south is not None else 0
     case = ctx.get('front_wing_case', {})
     R.append(_r('R03', 'New wing towards Ashley Close', SPD + ' 4.21: front extensions "may be acceptable" where e.g. "the extension is to a detached house, where there is no strong visual relationship with adjoining properties", or it would enhance an unexceptional street scene; 4.23: unduly prominent where houses share "a common building line"',
-                f'Wing gable {fwd:.1f} m forward of the existing front wall, {d_road:.1f} m behind the front boundary wall, at the head of the cul-de-sac; detached house; no common building line across the turning head',
+                f'Wing gable {fwd:.1f} m forward of the existing front wall, {d_road:.1f} m behind the front boundary wall, at the head of the cul-de-sac; detached house; building-line relationship requires surveyed assessment',
                 'SPD 4.21 criteria (any may apply); roof "of the same form as the existing building" (front-extension summary)', 'amber',
-                (case.get('summary') or '') + ' The SPD\'s own criteria support this: detached house, no strong visual relationship with a building line at the head of the close. Precedent: 23/01491/HOUSE (54 Hitchen Hatch Lane) was granted on the test of not "significantly lessen[ing] the set-back" of the street. The hipped roof matches the host form.',
+                'Hold the envelope. Demonstrate cul-de-sac-head relationships using measured street and oblique views. Compare the adverse 72 Brattle Wood decision and favourable 60 Hitchen Hatch Lane decision; explain their differences. A new principal frontage is a design intention, not a policy exemption.',
                 ['newWing.bounds', 'entranceBay.projection_m', 'frontage', 'forecourt']))
     # R04 Rear dormer — SPD 4.31, 4.35, 4.36, 4.45
     rd = spec.get('rearDormer') or [-1.75, 4.45, 10.505, 8.05]
@@ -57,18 +57,18 @@ def evaluate(ctx, ex, pr, schedule):
     R.append(_r('R04', 'Rear dormer', SPD + ' 4.35: "proportionate in scale to the roof plane", "in line with existing doors and windows", "below … the ridgeline", "set back a minimum of 20 centimetres from the eaves and sides"; 4.36: disproportionate dormers "will not be allowed"; 4.31: must "not create the appearance of an extra storey"',
                 f'{rd[2] - rd[0]:.1f} m wide; roof {top:.2f} m vs ridge {ridge:.2f} m ({"below" if ok_ridge else "NOT below"} the ridge); cheeks {side_gap * 1000:.0f} mm in from where the hips start',
                 'Below the ridge; ≥ 200 mm from eaves and sides; proportionate (judgement); windows aligned with those below', 'amber' if ok_ridge else 'red',
-                ('Meets the ridge test. ' if ok_ridge else 'Drop the dormer roof below the ridge. ') + ('' if ok_side else f'Pull each cheek in by {max(0, .20 - side_gap) * 1000:.0f} mm to reach the 200 mm side set-back. ') + 'Its full width is the judgement point under 4.31/4.36 (reads as an extra storey from the garden); breaking it into two dormers or setting the cheeks further in would answer that. Align the dormer windows with the first-floor windows (4.35, 4.45).',
+                'Keep the current envelope for assessment. Demonstrate roof-plane proportion, window alignment and whether the combined dormers read as an extra storey. The model ridge clearance and cheek positions do not prove SPD compliance; no reduction is instructed in this issue.',
                 ['rearDormer.bounds', 'dormerWindows.rear']))
     # R05 Side wing roof
     R.append(_r('R05', 'Side wing and new wing roof heights', SPD + ' 4.20: a side extension "should not dominate the original building … introducing a lower roof on the extension"; 4.31: roof height increases "should be avoided"',
                 'New wing ridge 8.05 m = original 8.05 m; the original roof is extended over the former-garage side wing. The 5.20 m ridge belongs to the separate projecting garage bay, not the side wing.',
                 'No numerical set-down in the SPD; assess whether the side addition remains subordinate', 'amber',
-                'Subordination needs a planning judgement. Precedent: 21/02393/HOUSE (60 Hitchen Hatch Lane) — committee accepted an extension "not set down from the ridge height of the main house" because it "would incorporate the existing roof form". If the officer still finds the wing dominant, lowering its ridge is the lever.', ['newWingRoof.ridge', 'garageBay.ridge_z']))
+                'Subordination needs a planning judgement. Precedent: 21/02393/HOUSE (60 Hitchen Hatch Lane) — committee accepted an extension "not set down from the ridge height of the main house" because it "would incorporate the existing roof form". Keep the envelope fixed while testing combined roof mass and gaps; any lower-roof option is a later owner decision.', ['newWingRoof.ridge', 'garageBay.ridge_z']))
     # R06 Side gap
     d_west = pr_ff.distance(west) if west is not None else 9
     R.append(_r('R06', 'Two-storey side wing and the gap to No 3', SPD + ' 4.19: "a minimum of 1 metre between the side wall of a two storey side extension and the boundary for the full height"',
-                f'First floor {d_west:.2f} m from the west boundary', '≥ 1.0 m', 'green' if d_west >= 1.0 else 'red',
-                'Complies.' if d_west >= 1.0 else 'Move the first-floor side wall to ≥ 1 m from the boundary.', ['sideWing']))
+                f'First floor {d_west:.2f} m from the west boundary', 'Normally at least 1 m, potentially more for local character; verify full-height wall-to-boundary gap', 'amber' if d_west >= 1.0 else 'red',
+                'Model gap only: survey the boundary and test roof overhang, spacing, outlook and privacy independently.', ['sideWing']))
     # R07 Terrace
     rt = nav.get('proposalRoofTerrace', {}).get('usable_bounds_m')
     if rt:
@@ -88,8 +88,8 @@ def evaluate(ctx, ex, pr, schedule):
                     'Show the plant room (pavilion or basement) on the drawings and commission the noise assessment.', ['hotTub', 'pool']))
     # R09 Coverage
     bldg = fp.building_footprints(pr); ex_bldg = fp.building_footprints(ex)
-    R.append(_r('R09', 'Garden retained', SPD + ' 4.39 (corner plots) / general amenity — no numerical coverage limit', f'Buildings {bldg.area / site.area * 100:.0f}% of the {site.area:.0f} m² plot (existing {ex_bldg.area / site.area * 100:.0f}%)',
-                'No SPD figure; a large rear garden is retained', 'green', 'None needed.', []))
+    R.append(_r('R09', 'Garden retained', 'ADMP EN1/EN2; current NPPF L2(1)(d)(iii)', f'Buildings {bldg.area / site.area * 100:.0f}% of the {site.area:.0f} m² plot (existing {ex_bldg.area / site.area * 100:.0f}%)',
+                'Verify dated baseline: footprint of all buildings and retained existing non-developed curtilage; not a GIA test', 'amber', 'Calculate hard/soft surface changes and actual usable garden. Model coverage alone does not establish the L2 retained-area test or absence of harm.', []))
     # R10 Workshop
     if nav.get('proposalWorkshop'):
         ws_ = nav['proposalWorkshop']
@@ -103,23 +103,23 @@ def evaluate(ctx, ex, pr, schedule):
     R.append(_r('R11', 'Front boundary wall and gate', 'GPDO 2015 Sch.2 Part 2 Class A: walls adjacent to a highway ≤ 1 m without permission; ' + SPD + ' Boundaries section',
                 f"Matching brick wall {wall_top:.2f} m with a sliding gate; existing brick wall {existing_top:.2f} m (26 courses), as No 3's",
                 'Over 1 m adjacent to the highway needs permission (included in this application); judged on street character against the existing wall',
-                'green' if wall_top <= existing_top + .01 else 'amber',
+                'amber',
                 'Keep the wall at the existing height and confirm the brick and mortar match.', ['frontage.wall_top_z', 'frontage.gate']))
     # R12 Parking
     R.append(_r('R12', 'Parking', 'ADMP Appendix 2 (parking standards)', f"{ctx['parking']['proposed_spaces']} spaces (existing {ctx['parking']['existing_spaces']}); permeable resin-bound surface",
-                '4+ bedroom dwelling in a suburban location: 2 spaces (ADMP Appendix 2, as applied in 21/02393/HOUSE)', 'green', 'None needed.', ['forecourt']))
+                '4+ bedroom dwelling in a suburban location: 2 spaces (ADMP Appendix 2, as applied in 21/02393/HOUSE)', 'amber', 'Verify the five-space layout and manoeuvring; saved metadata previously counted six. Resolve garage storage and visibility.', ['forecourt']))
     # R13 Trees
     tr = [t for t in site_mod.trees(pr) if not t['new']]; near = []
     for t in tr:
         rpa = max(2.0, t['radius'] * 1.2); d = bldg.distance(Point(t['x'], t['y']))
         if d < rpa: near.append(f"{t['id']} ({t['kind']}, {d:.1f} m)")
-    R.append(_r('R13', 'Trees and root protection', 'BS5837:2012 (RPA = 12 × stem diameter); ADMP EN1; TPO status unknown', 'Building footprints near modelled canopy buffers (not surveyed RPAs): ' + (', '.join(near) if near else 'none'),
+    R.append(_r('R13', 'Trees and root protection', 'BS5837:2012 (RPA = 12 × stem diameter); ADMP EN1; TPO 19/1987 mapped; surveyed identity and legal coverage to verify', 'Building footprints near modelled canopy buffers (not surveyed RPAs): ' + (', '.join(near) if near else 'none'),
                 'No construction within an RPA without an arboricultural method statement', 'amber', 'Commission the BS5837 survey. The canopy-based proximity screen does not calculate a BS5837 RPA; it also includes retained footprints.', ['vegetation']))
     # R14 Materials
     if ctx.get('design_variant') == 'planning':
         R.append(_r('R14', 'Materials', SPD + ' Materials and Detailing (4.47 onwards)',
-                    'Matching red-brown facing brick; slate roof; dark-framed glazing',
-                    'Matching or clearly complementary', 'green',
+                    'Matching red-brown facing brick; dark brown-grey roof tiles; dark-framed glazing',
+                    'Matching or clearly complementary; verified samples required', 'amber',
                     'Approve brick, bond and mortar samples against the retained house.', ['materials']))
     else:
         # R14 Materials
@@ -127,11 +127,19 @@ def evaluate(ctx, ex, pr, schedule):
                     'Matching or clearly complementary', 'amber', 'Precedent: 18/03527/HOUSE (41 Brattle Wood) — officers found "the new rendered finish" appropriate when re-facing a house in a Residential Character Area. Justify render as the finish of the new principal elevation, or face the wing in matching brick.', ['materials']))
     # R15 Porch / front character
     R.append(_r('R15', 'Porch, chimney and arched window removed', SPD + ' Porches (4.25 onwards): porches "have an important effect on the appearance of a dwelling"', 'Porch, arched landing window, central front wall and chimney removed; entrance moves to the new wing',
-                'Judgement on the character of the host', 'amber', 'Explain in the DAS that the entrance moves to the new principal elevation; retain the chimney if the officer resists.', ['entranceBay', 'loftChimneyRemoved']))
+                'Judgement on the character of the host', 'amber', 'Explain in the DAS that the entrance moves to the new principal elevation; assess the resulting composition; any reinstatement is a later design decision.', ['entranceBay', 'loftChimneyRemoved']))
     # R16 Windows to neighbours
     obscure = 'obscure' in (ctx.get('materials', {}).get('privacy', '') or '').lower()
     R.append(_r('R16', 'Flank windows towards neighbours', SPD + ' 5.3: overlooking may be resolved by "obscure glazed or non-opening windows (unless the parts … which can be opened are more than 1.7 metres above the floor)"',
                 'East windows face Marlow Court; side-wing west windows face No 3' + ('; specified obscure-glazed below 1.7 m (PA-090)' if obscure else ''),
                 'No direct overlooking of neighbours\' windows or private amenity space; officers also apply a 21 m back-to-back distance (21/02393/HOUSE) — it is not in the SPD', 'amber',
                 'Identify each affected opening and its opening restriction in PA-090; verify remaining sightlines.' if obscure else 'Obscure-glaze below 1.7 m.', ['materials.privacy']))
+    R.append(_r('R17', 'Neighbour outlook, daylight and sunlight', 'ADMP EN2; SPD 5.5-5.8; Dene Cottage appeal 23/01976/HOUSE',
+                'No measured receptor assessment completed for No.3, No.5 or affected flats',
+                'Assess oppressive outlook independently of daylight and privacy', 'amber',
+                'Survey windows and levels; identify single-aspect habitable rooms. Do not treat a passing 45-degree screening line as overall compliance.', []))
+    R.append(_r('R18', 'Nearby local heritage setting', 'ADMP EN4; Kent HER MKE114805 / local list 10172',
+                '3 Vine Avenue is locally listed; approximate GIS separation 42.5 m from model plot',
+                'Proportionate setting assessment; outside an asset polygon does not mean no effect', 'amber',
+                'Record visibility and setting contribution using verified site context.', []))
     return R

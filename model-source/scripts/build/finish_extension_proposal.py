@@ -17,10 +17,12 @@ depsgraph=bpy.context.evaluated_depsgraph_get()
 for ob in scene.objects:
  if ob.type!='MESH':continue
  evaluated=ob.evaluated_get(depsgraph);evaluated_mesh=evaluated.to_mesh()
- objects.append({'name':ob.get('source_name',ob.name),'object_name':ob.name,'layer':next((c.name for c in _export_memberships[ob.as_pointer()] if c.name.startswith('P')),_export_memberships[ob.as_pointer()][0].name),'assembly':ob.get('assembly'),'walkthrough_opening_leaf':bool(ob.get('walkthrough_opening_leaf')),'walkthrough_keep_visible':bool(ob.get('walkthrough_keep_visible')),'vertices':[list(ob.matrix_world@v.co) for v in evaluated_mesh.vertices],'faces':[list(f.vertices) for f in evaluated_mesh.polygons],'materials':[m.get('appearance_source_material',m.name) for m in ob.data.materials],'face_materials':[f.material_index for f in evaluated_mesh.polygons],'material_appearance':[m.get('appearance_role') for m in ob.data.materials]})
+ objects.append({'name':ob.get('source_name',ob.name),'object_name':ob.name,'layer':next((c.name for c in _export_memberships[ob.as_pointer()] if c.name.startswith('P')),_export_memberships[ob.as_pointer()][0].name),'assembly':ob.get('assembly'),'structural_floor_datum':bool(ob.get('structural_floor_datum')),'structural_framing_reference':json.loads(ob.get('structural_framing_reference_json','null')),'structural_finish_detail':bool(ob.get('structural_finish_detail')),'walkthrough_opening_leaf':bool(ob.get('walkthrough_opening_leaf')),'walkthrough_keep_visible':bool(ob.get('walkthrough_keep_visible')),'vertices':[list(ob.matrix_world@v.co) for v in evaluated_mesh.vertices],'faces':[list(f.vertices) for f in evaluated_mesh.polygons],'materials':[m.get('appearance_source_material',m.name) for m in ob.data.materials],'face_materials':[f.material_index for f in evaluated_mesh.polygons],'material_appearance':[m.get('appearance_role') for m in ob.data.materials]})
  evaluated.to_mesh_clear()
 build_timer.lap('export.extract_geometry')
 proposal_g={**g,'objects':objects,'materials':PALETTE,'rooms':g['rooms']+new_rooms,'proposal':{'revision':spec['revision'],'brief':spec,'changes':changes,'originalFile':'../outputs/output-walkthrough/Ashley Heights.blend','coordinateSystem':'metres: x east,y rear/north,z up'}}
+for _coordination_key in ('structuralFinishCoordination','structuralOpeningFit'):
+ if _coordination_key in nav:proposal_g['proposal'][_coordination_key]=nav[_coordination_key]
 (OUT/'geometry.json').write_text(json.dumps(proposal_g,separators=(',',':')))
 build_timer.lap('export.write_geometry')
 # New collision data is derived alongside native pieces, including door apertures and stairs.
@@ -60,7 +62,7 @@ with build_timer.phase('export.save_blend'):
  bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(_native_name+'.blend')))
 with build_timer.phase('export.glb'):
  from scripts.interiors.proposal_kitchen_interiors import export_quiet_oak_gltf
- export_quiet_oak_gltf(filepath=str(OUT/(_native_name+'.glb')),export_format='GLB',use_active_scene=True,use_visible=True,export_cameras=False,export_lights=False,export_apply=True)
+ export_quiet_oak_gltf(filepath=str(OUT/(_native_name+'.glb')),export_format='GLB',use_active_scene=True,use_visible=True,export_cameras=False,export_lights=False,export_apply=True,export_extras=True)
 import shutil
 shutil.copyfile(OUT/(_native_name+'.glb'),ROOT/('walkthrough/public/proposal%s.glb'%VARIANT_SUFFIX))
 # Preservation is checked against the baseline captured before any proposal work.

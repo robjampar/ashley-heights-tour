@@ -1,0 +1,34 @@
+{
+  "edited": [
+    "scripts/verify_release.py",
+    "scripts/refine_review.py",
+    "scripts/smoke_rendered_walkthrough_gui.py",
+    "scripts/regenerate_redesign_review.py",
+    "scripts/audit_proposal_headroom.py",
+    "scripts/stage_redesign_sources.py",
+    "scripts/build_support.py",
+    "scripts/make_proposal_design_book.py",
+    "scripts/regenerate_design_outputs.py",
+    "scripts/validate_rendered_walkthrough.py",
+    "scripts/make_walkthrough_report.py",
+    "scripts/build_redesign_options.py",
+    "tests/test_build_pipeline.py",
+    "archive/photo-review/front-arch-proof/make-comparisons.py",
+    "archive/photo-review/entrance-details-v2-proof/glass_trial.py",
+    "archive/photo-review/entrance-details-v2-proof/proof.py",
+    "archive/photo-review/entrance-details-v2-proof/boards.py",
+    "archive/photo-review/proposal-layout-audit/make-board.py",
+    "archive/photo-review/stair-obstruction/native-proof.py",
+    "archive/photo-review/dining-wall-v2/prove.py",
+    "archive/photo-review/front-bay-proof/make-comparisons.py"
+  ],
+  "additionalEdited": [
+    "archive/photo-review/views.json",
+    "docs/Rendered Walkthrough.md",
+    "docs/LATEST.txt"
+  ],
+  "notes": [
+    "Photo source inventory remapped to archive; all 114 originals exist.",
+    "Historical symlink corrected; older resurfaced root copies retained separately."
+  ]
+}

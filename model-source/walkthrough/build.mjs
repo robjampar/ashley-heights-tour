@@ -1,18 +1,30 @@
 import {build} from 'esbuild';
 import {mkdir,cp,readFile,writeFile} from 'node:fs/promises';
 import {shareRoomTextures} from './tools/shared-room-textures.mjs';
+import {buildStructureStudio} from './tools/build-structure.mjs';
 import {packGlbLosslessly} from './tools/lossless-glb.mjs';
 import path from 'node:path';
+import {applyVehicleSpecifications,VEHICLE_MODELS} from './src/vehicle-specs.js';
 import {DESIGN_ASSETS} from './src/design-assets.js';
 import {digest,signature,cachedJson,cachedGlb,atomicWrite} from './tools/derived-cache.mjs';
 const started=performance.now(),performanceReport={navigation:[],models:[]};
 const assets=Object.values(DESIGN_ASSETS),modelNames=new Set(assets.map(a=>a.model));
-const driveSignature=await signature(['tools/plan-drive.mjs','src/drive.js','src/navigation.js','tools/derived-cache.mjs']);
+// A light cache belongs to one precise geometry/navigation revision. Never
+// silently use an earlier bake after the native model has been regenerated.
+for(const variant of ['compact','planning']){
+ const bake=JSON.parse(await readFile(`public/visual-quality/${variant}-daylight.json`,'utf8'));
+ if(bake.settingsSHA256!==digest(await readFile('public/visual-quality/daylight-settings.json')))throw Error(`${variant}: daylight settings changed. Run make build-visuals before make build-web.`);
+ if(bake.furnishingsSHA256!==digest(await readFile(`public/visual-quality/${variant}-furnishings.glb`)))throw Error(`${variant}: visual geometry changed. Run make build-visuals before make build-web.`);
+ const [model,navigation]=await Promise.all([readFile(`public/proposal-${variant}.glb`),readFile(`public/proposal-${variant}-navigation.json`)]);
+ if(bake.modelSHA256!==digest(model)||bake.navigationSHA256!==digest(navigation))throw Error(`${variant}: visual lighting is stale. Run make build-visuals before make build-web.`);
+}
+const driveSignature=await signature(['tools/plan-drive.mjs','src/drive.js','src/vehicle-specs.js','src/navigation.js','tools/derived-cache.mjs']);
 const packSignature=await signature(['tools/lossless-glb.mjs','tools/derived-cache.mjs','package-lock.json']);
 await mkdir('dist',{recursive:true});
 const meshoptNotice='meshoptimizer decoder\nCopyright (C) 2016-2026 Arseny Kapoulkine\n\n'+await readFile('node_modules/meshoptimizer/LICENSE.md','utf8');
 await build({entryPoints:['src/main.js'],outfile:'dist/app.js',bundle:true,minify:true,format:'esm',target:['safari17','chrome120'],sourcemap:true,loader:{'.jpg':'dataurl','.png':'dataurl'},banner:{js:'/*!\n'+meshoptNotice+'\n*/'}});
 await cp('public','dist',{recursive:true,filter:source=>!modelNames.has(path.basename(source))});
+await buildStructureStudio();
 // All room boards share one annotation engine and visual language, while
 // options.json supplies their own session, images and room references.
 for(const name of ['studio.js','studio.css'])await cp('public/interiors/kitchen/'+name,'dist/interiors/principal/'+name);
@@ -26,6 +38,7 @@ await cp('public/interiors/kitchen/studio.css','dist/interiors/leisure/studio.cs
 const {planDrivePaths,drivePlanningInput}=await import('./tools/plan-drive.mjs');
 for(const {navigation:name} of assets){
  const source=await readFile('public/'+name,'utf8'),data=JSON.parse(source),t=performance.now();
+ if(['proposal-compact-navigation.json','proposal-planning-navigation.json'].includes(name))applyVehicleSpecifications(data);
  const key=digest(driveSignature+'\n'+JSON.stringify(drivePlanningInput(data)));
  const {value:drive,hit}=await cachedJson('.cache/drive',key,()=>planDrivePaths(data,{log:line=>console.log(`${name} drive · ${line}`)}));
  if(drive){data.life={...(data.life??{}),drive};await writeFile('dist/'+name,JSON.stringify(data));}
@@ -49,6 +62,12 @@ for(const {model:name} of assets){
  const shared=await writeSharedModel(name,packed);compression.assets[name]={...metadata,embeddedPackedSHA256:metadata.packedSHA256,packedSHA256:digest(shared.packed),packedBytes:shared.packed.length,sharedTextures:shared.verification};
  performanceReport.models.push({name,cached:hit,seconds:(performance.now()-t)/1000});
  console.log(`${name}: ${(metadata.sourceBytes/1e6).toFixed(2)} MB → ${(metadata.packedBytes/1e6).toFixed(2)} MB; ${hit?'verified cache reused':'decoded buffers verified byte-exact'}`);
+}
+for(const vehicle of Object.values(VEHICLE_MODELS)){
+ const name='vehicles/'+vehicle.asset+'.glb',original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
+ const {packed,metadata}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);
+ await atomicWrite('dist/'+name,packed);compression.assets[name]=metadata;
+ console.log(`${vehicle.model}: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; decoded buffers verified byte-exact`);
 }
 await writeFile('dist/compression.json',JSON.stringify(compression,null,2)+'\n');
 // Room-only iteration keeps the full house untouched and uses the same

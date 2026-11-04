@@ -28,19 +28,28 @@ def apply_gym(ns):
     red=b.material('safety red',(.55,.035,.025,1),.55)
     opal=b.material('warm light diffuser',(1,.80,.56,1),.5,emission=1.25)
     z=cfg['floorZ'];ceiling=cfg['ceilingZ']-.018;poly=cfg['polygon']
-    b.mesh('continuous rubber floor',[(x,y,z+.018)for x,y in poly],[(0,1,2,3,4,5)],rubber)
-    b.mesh('ivory ceiling finish',[(x,y,ceiling)for x,y in poly],[(5,4,3,2,1,0)],ivory)
+    b.mesh('continuous rubber floor',[(x,y,z+.018)for x,y in poly],[tuple(range(len(poly)))],rubber)
+    b.mesh('ivory ceiling finish',[(x,y,ceiling)for x,y in poly],[tuple(reversed(range(len(poly))))],ivory)
+    north=cfg.get('courtyardInnerFaceY',-4.461)
     for yy in(-5.15,-6.15,-7.15,-8.15,-9.15,-10.15,-11.15,-12.15):
         a=9.265 if yy>-9.85 else 11.435
         b.box('rubber tile fine joint',((a+13.745)/2,yy,z+.0182),(13.745-a,.0015,.0003),graphite)
     for xx in(10.265,11.265,12.265,13.265):
         a=-9.845 if xx<11.43 else -12.495
-        b.box('rubber tile fine joint',(xx,(a-4.234)/2,z+.0182),(.0015,-4.234-a,.0003),graphite)
+        end=north-.005 if cfg.get('courtyardInnerFaceY') else -4.234
+        b.box('rubber tile fine joint',(xx,(a+end)/2,z+.0182),(.0015,end-a,.0003),graphite)
     # Slim skirting stays within existing wall collision allowances.
     door_y=cfg['hallDoorCentre'][1]
     for a,d in((-9.85,door_y-.525),(door_y+.525,-4.46)):
         b.box('west oak skirting',(9.272,(a+d)/2,.073),(.020,d-a,.11),oak,.003)
-    b.box('east oak skirting',(13.738,-8.48,.073),(.020,8.03,.11),oak,.003)
+    b.box('east oak skirting',(13.738,(-12.495+north)/2,.073),(.020,north+12.495,.11),oak,.003)
+    if cfg.get('courtyardInnerFaceY'):
+        for a,d in [(9.815,10.70),(13.19,13.75)]:
+            b.box('courtyard oak skirting',((a+d)/2,north-.012,.073),(d-a,.020,.11),oak,.003)
+        b.box('courtyard return skirting',(9.827,(north-4.229)/2,.073),(.020,abs(north+4.229),.11),oak,.003)
+        b.box('courtyard ceiling light housing',(11.8,-3.85,ceiling-.025),(2.40,.035,.035),bronze,.006)
+        b.box('courtyard ceiling light diffuser',(11.8,-3.85,ceiling-.046),(2.32,.022,.008),opal,.002)
+        b.light('courtyard room light',(11.8,-3.85,ceiling-.14),.48,65,3.5)
     b.box('south return skirting',(10.35,-9.838,.073),(2.16,.020,.11),oak,.003)
     b.box('utility return skirting',(11.442,-11.17,.073),(.020,2.64,.11),oak,.003)
     for xx in(10.50,12.25):
@@ -58,7 +67,7 @@ def apply_gym(ns):
     for a,d in cfg['westWindows']:
         b.window_reveal('west window '+str(a),'x',9.262,9.226,a,d,.60,2.40,ivory)
     # Stop the lining short of the complete inward-swinging door frames.
-    b.window_reveal('courtyard doors','y',-4.461,-4.430,10.710,13.180,-.004,2.388,ivory)
+    b.window_reveal('courtyard doors','y',north-.002,north+.029,10.710,13.180,-.004,2.388,ivory)
     # Product-sized compact treadmills. Rotate each complete assembly, including controls.
     for i,tread in enumerate(cfg['treadmills']):
         x,y=tread['frontX'],tread['centerY'];name=f'treadmill {i+1} ';tread_start=len(b.objects)

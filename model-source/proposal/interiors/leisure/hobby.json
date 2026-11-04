@@ -1,6 +1,6 @@
 {
   "room": "Original-house loft hobby room and bridge",
-  "revision": 1,
+  "revision": 2,
   "floorZ": 5.55,
   "ceilingZ": 7.96,
   "bounds": [
@@ -203,7 +203,7 @@
     }
   },
   "limitations": [
-    "The eaves doors are low and retain their existing openings. Storage beyond them requires stooping.",
+    "Full-height 1.981 m eaves door leaves open into the hobby room from ridge-centred openings; the stores beyond still follow the sloping roof.",
     "The dormer ceiling is about 2.09 m above the structural floor.",
     "The project-table chairs can be moved; the floor plan checks the normal working positions and occupied places.",
     "The open centre remains available for different hobbies; no specialist equipment is assumed.",
@@ -213,27 +213,8 @@
     {
       "label": "west eaves door",
       "hinge": [
-        -1.684,
-        5.188,
-        5.55
-      ],
-      "axis": [
-        0,
-        -1
-      ],
-      "width": 0.676,
-      "openAngle": -1.5707963267948966,
-      "height": 1.64,
-      "opening": [
-        -1.575,
-        4.85
-      ]
-    },
-    {
-      "label": "east eaves door",
-      "hinge": [
-        10.439,
-        5.188,
+        -1.466,
+        4.838,
         5.55
       ],
       "axis": [
@@ -242,11 +223,45 @@
       ],
       "width": 0.676,
       "openAngle": 1.5707963267948966,
-      "height": 1.64,
+      "height": 1.981,
+      "opening": [
+        -1.575,
+        4.5
+      ],
+      "bottomGap": 0.01,
+      "roofScribedFrame": {
+        "ridgeY": 4.405,
+        "ridgeUndersideZ": 7.8,
+        "pitch": 0.5763073639274281,
+        "flatCeilingZ": 7.64
+      }
+    },
+    {
+      "label": "east eaves door",
+      "hinge": [
+        10.221,
+        4.838,
+        5.55
+      ],
+      "axis": [
+        0,
+        -1
+      ],
+      "width": 0.676,
+      "openAngle": -1.5707963267948966,
+      "height": 1.981,
       "opening": [
         10.33,
-        4.85
-      ]
+        4.5
+      ],
+      "bottomGap": 0.01,
+      "roofScribedFrame": {
+        "ridgeY": 4.405,
+        "ridgeUndersideZ": 7.8,
+        "pitch": 0.5763073639274281,
+        "flatCeilingZ": 7.64
+      }
     }
-  ]
+  ],
+  "doorRevisionBasis": "Owner 17 October: replace both low eaves leaves with full-height doors; centre the openings under the ridge and swing into the hobby room to clear the retained hip roofs."
 }

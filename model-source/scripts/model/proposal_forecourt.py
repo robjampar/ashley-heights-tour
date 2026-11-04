@@ -47,7 +47,7 @@ for _label,(_x0,_y0,_x1,_y1) in _fc_planters:
 # Low path lights wash the garage wing's timber door and the entrance step.
 _gb=spec['garageBay'];_gx=spec['frontWing'][0]-_gb['projection_m']
 _gdy0,_gdy1=_gb['door_y']
-for _y in(_gdy0+.5,(_gdy0+_gdy1)/2,_gdy1-.5):lamp('Proposal | Garage wing uplight',_gx-.22,_y,.20)
+# Keep the vehicle approach clear; lighting is provided by fixed garage fittings.
 # The corner between the garage wing, the store and the south boundary wall
 # is a small lawn with a multi-stem tree in place of parking bay S2.
 _fc_lawn=mat('Front grass lawn',(.30,.42,.16,1),.95)

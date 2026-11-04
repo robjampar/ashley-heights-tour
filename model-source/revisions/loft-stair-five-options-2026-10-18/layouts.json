@@ -1,0 +1,469 @@
+{
+  "status": "Concept drawings only; proposed roof, openings and clearances require detailed modelling before selection is applied.",
+  "floorRise": 2.75,
+  "totalRisers": 16,
+  "flushGlazingX": 9.7,
+  "approximateGlassInnerFaceX": 9.65,
+  "options": [
+    {
+      "id": "1",
+      "title": "Broad U-shaped return",
+      "width": "1.20 m flights",
+      "passage": "\u22481.15 m passage",
+      "roof": "Widen the roof over the return and upper landing.",
+      "character": "Balanced arrival; shared landing leads both ways.",
+      "clear": [
+        8.5,
+        -5.3,
+        9.65,
+        0.8
+      ],
+      "flights": [
+        {
+          "a": [
+            6.45,
+            -1.1
+          ],
+          "b": [
+            6.45,
+            -2.85
+          ],
+          "w": 1.2,
+          "n": 8,
+          "z": 0
+        },
+        {
+          "a": [
+            7.85,
+            -2.85
+          ],
+          "b": [
+            7.85,
+            -1.1
+          ],
+          "w": 1.2,
+          "n": 8,
+          "z": 1.375
+        }
+      ],
+      "landings": [
+        {
+          "box": [
+            5.85,
+            -4.1,
+            8.45,
+            -2.85
+          ],
+          "z": 1.375
+        }
+      ],
+      "tops": [
+        {
+          "box": [
+            7.25,
+            -1.1,
+            8.5,
+            0.1
+          ],
+          "z": 2.75
+        }
+      ],
+      "start": [
+        6.45,
+        -0.8
+      ],
+      "exits": [
+        [
+          7.85,
+          -0.5
+        ]
+      ],
+      "routes": [
+        [
+          [
+            7.85,
+            -0.5
+          ],
+          [
+            9.0,
+            -0.5
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Reversed grand split",
+      "width": "1.50 m centre \u00b7 1.25 m branches",
+      "passage": "\u22481.00 m passage",
+      "roof": "Larger roof alteration over both inboard branches.",
+      "character": "Keeps two separate upper flights, rising away from glass.",
+      "clear": [
+        8.65,
+        -5.7,
+        9.65,
+        1.1
+      ],
+      "flights": [
+        {
+          "a": [
+            8.6,
+            -2.3
+          ],
+          "b": [
+            7.1,
+            -2.3
+          ],
+          "w": 1.5,
+          "n": 7,
+          "z": 0
+        },
+        {
+          "a": [
+            6.475,
+            -1.55
+          ],
+          "b": [
+            6.475,
+            0.45
+          ],
+          "w": 1.25,
+          "n": 9,
+          "z": 1.203125
+        },
+        {
+          "a": [
+            6.475,
+            -3.05
+          ],
+          "b": [
+            6.475,
+            -5.05
+          ],
+          "w": 1.25,
+          "n": 9,
+          "z": 1.203125
+        }
+      ],
+      "landings": [
+        {
+          "box": [
+            5.85,
+            -3.05,
+            7.1,
+            -1.55
+          ],
+          "z": 1.203125
+        }
+      ],
+      "tops": [
+        {
+          "box": [
+            5.85,
+            0.45,
+            8.65,
+            1.65
+          ],
+          "z": 2.75
+        },
+        {
+          "box": [
+            5.85,
+            -6.25,
+            8.65,
+            -5.05
+          ],
+          "z": 2.75
+        }
+      ],
+      "start": [
+        8.38,
+        -1.31
+      ],
+      "exits": [
+        [
+          6.475,
+          1.0
+        ],
+        [
+          6.475,
+          -5.65
+        ]
+      ],
+      "routes": [
+        [
+          [
+            6.475,
+            1.0
+          ],
+          [
+            9.02,
+            1.0
+          ]
+        ],
+        [
+          [
+            6.475,
+            -5.65
+          ],
+          [
+            9.02,
+            -5.65
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "3",
+      "title": "L-shaped quarter-turn",
+      "width": "1.20 m flights",
+      "passage": "\u22481.00 m passage",
+      "roof": "Raise the roof zone over the upper flight and arrival.",
+      "character": "Hugs the inner wall; turns toward the courtyard.",
+      "clear": [
+        8.65,
+        -5.3,
+        9.65,
+        0.8
+      ],
+      "flights": [
+        {
+          "a": [
+            6.25,
+            -4.6
+          ],
+          "b": [
+            6.25,
+            -2.85
+          ],
+          "w": 1.2,
+          "n": 8,
+          "z": 0
+        },
+        {
+          "a": [
+            6.85,
+            -2.25
+          ],
+          "b": [
+            8.6,
+            -2.25
+          ],
+          "w": 1.2,
+          "n": 8,
+          "z": 1.375
+        }
+      ],
+      "landings": [
+        {
+          "box": [
+            5.65,
+            -2.85,
+            6.85,
+            -1.65
+          ],
+          "z": 1.375
+        }
+      ],
+      "tops": [
+        {
+          "box": [
+            8.6,
+            -2.85,
+            9.65,
+            -1.65
+          ],
+          "z": 2.75
+        }
+      ],
+      "start": [
+        6.25,
+        -4.99
+      ],
+      "exits": [
+        [
+          9.08,
+          -2.25
+        ]
+      ],
+      "routes": []
+    },
+    {
+      "id": "4",
+      "title": "Straight flight + gallery",
+      "width": "1.30 m flight",
+      "passage": "\u22481.05 m passage",
+      "roof": "Continuous roof widening along the upper flight.",
+      "character": "Simple long flight; open landing leads left and right.",
+      "clear": [
+        8.6,
+        -5.3,
+        9.65,
+        1.1
+      ],
+      "flights": [
+        {
+          "a": [
+            7.9,
+            -4.6
+          ],
+          "b": [
+            7.9,
+            -0.85
+          ],
+          "w": 1.3,
+          "n": 16,
+          "z": 0
+        }
+      ],
+      "landings": [],
+      "tops": [
+        {
+          "box": [
+            7.25,
+            -0.85,
+            8.6,
+            0.45
+          ],
+          "z": 2.75
+        }
+      ],
+      "start": [
+        7.9,
+        -4.99
+      ],
+      "exits": [
+        [
+          7.9,
+          -0.2
+        ]
+      ],
+      "routes": [
+        [
+          [
+            7.9,
+            -0.2
+          ],
+          [
+            9.05,
+            -0.2
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Three-flight open well",
+      "width": "1.10 m flights",
+      "passage": "\u22481.00 m passage",
+      "roof": "Widen the roof above the upper flights and stairwell.",
+      "character": "Two turning landings around a small central void.",
+      "clear": [
+        8.65,
+        -5.3,
+        9.65,
+        1.1
+      ],
+      "flights": [
+        {
+          "a": [
+            6.35,
+            -1.0
+          ],
+          "b": [
+            6.35,
+            -2.25
+          ],
+          "w": 1.1,
+          "n": 6,
+          "z": 0
+        },
+        {
+          "a": [
+            6.9,
+            -2.8
+          ],
+          "b": [
+            7.5,
+            -2.8
+          ],
+          "w": 1.1,
+          "n": 3,
+          "z": 1.03125
+        },
+        {
+          "a": [
+            8.05,
+            -2.25
+          ],
+          "b": [
+            8.05,
+            -0.75
+          ],
+          "w": 1.1,
+          "n": 7,
+          "z": 1.546875
+        }
+      ],
+      "landings": [
+        {
+          "box": [
+            5.8,
+            -3.35,
+            6.9,
+            -2.25
+          ],
+          "z": 1.03125
+        },
+        {
+          "box": [
+            7.5,
+            -3.35,
+            8.6,
+            -2.25
+          ],
+          "z": 1.546875
+        }
+      ],
+      "tops": [
+        {
+          "box": [
+            7.5,
+            -0.75,
+            8.65,
+            0.35
+          ],
+          "z": 2.75
+        }
+      ],
+      "start": [
+        6.35,
+        -0.65
+      ],
+      "exits": [
+        [
+          8.05,
+          -0.2
+        ]
+      ],
+      "routes": [
+        [
+          [
+            8.05,
+            -0.2
+          ],
+          [
+            9.05,
+            -0.2
+          ]
+        ]
+      ],
+      "well": [
+        6.9,
+        -2.25,
+        7.5,
+        -1.0
+      ]
+    }
+  ]
+}

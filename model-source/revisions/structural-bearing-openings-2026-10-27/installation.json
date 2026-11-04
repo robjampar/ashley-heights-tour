@@ -1,0 +1,50 @@
+{
+  "installedAt": "2026-10-27T10:30:12.501066+00:00",
+  "localOnly": true,
+  "columnWallOptionInstalled": false,
+  "files": [
+    {
+      "source": "outputs/output-structural-openings-compact/Ashley Heights \u2014 Proposed (compact).blend",
+      "destination": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend",
+      "sha256": "3c1851b63993ebbf12d351fa92f99e42b460a804f41b2dbf7d666b1e393a0706"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/Ashley Heights \u2014 Proposed (compact).glb",
+      "destination": "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).glb",
+      "sha256": "627740f3c7c5b8351fdac5988a49d9e85c0f54657e5ee67ef119da2362ad29f3"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/geometry.json",
+      "destination": "outputs/output-proposed-compact/geometry.json",
+      "sha256": "cbfe472666b03cec833d4156db8e38d67f8bb030c441f94a88f1e40ffb4501a7"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/navigation.json",
+      "destination": "outputs/output-proposed-compact/navigation.json",
+      "sha256": "01e8694dee82d47b4d56bdc09f2f09406bd6a62c4fe86a3e0cb75ddcbb9a3b01"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/opening-fit-source.json",
+      "destination": "outputs/output-proposed-compact/opening-fit-source.json",
+      "sha256": "ea00260938a7c30048752e94d657ef44dae7079dc40a798b0afa81b8f0e5476a"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/opening-fit-report.json",
+      "destination": "outputs/output-proposed-compact/opening-fit-report.json",
+      "sha256": "6dc2d122ccc0884d3d1ded27c5e214c5c7f3203b25d14872d39e93d9072da242"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/Ashley Heights \u2014 Proposed (compact).glb",
+      "destination": "walkthrough/public/proposal-compact.glb",
+      "sha256": "627740f3c7c5b8351fdac5988a49d9e85c0f54657e5ee67ef119da2362ad29f3"
+    },
+    {
+      "source": "outputs/output-structural-openings-compact/navigation.json",
+      "destination": "walkthrough/public/proposal-compact-navigation.json",
+      "sha256": "01e8694dee82d47b4d56bdc09f2f09406bd6a62c4fe86a3e0cb75ddcbb9a3b01"
+    }
+  ],
+  "nativePreservation": "walkthrough/test-results/structural-bearing-openings-2026-10-27/openings/native-preservation.json",
+  "geometryCheck": "walkthrough/test-results/structural-bearing-openings-2026-10-27/openings/native-geometry-check.json",
+  "fullBuildCachePromoted": false
+}

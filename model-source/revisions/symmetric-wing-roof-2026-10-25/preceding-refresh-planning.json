@@ -1,0 +1,1267 @@
+{
+  "revision": "symmetric-wing-roof-2026-10-25",
+  "variant": "planning",
+  "updatedAt": "2026-10-25T23:14:00.963063+00:00",
+  "method": "Symmetric main wing roof, retained north connecting roof and level gallery. Coordinated rear dormer, bedroom, eaves door and entrance pendant fixings. Full native/GLB exports; seven original scenes and all unrelated proposal objects preserved.",
+  "fullRebuildPerformed": false,
+  "published": false,
+  "sourceInputs": {
+    "outputs/output-walkthrough/Ashley Heights.blend": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
+    "outputs/output-walkthrough/Ashley Heights.glb": "2b7f086fa70c041989595a9859d93c92b2e159f4eccae41d6c9bcd04a3df59d9",
+    "outputs/output-walkthrough/geometry.json": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
+    "proposal/interiors/garden-stone.json": "86abe15be3bcc51baf2acfc561e1391b548eb2b97249580173956c2b9340f49b",
+    "proposal/interiors/kitchen/quiet-oak.json": "830a481d0e513844a6cb1ef034c5586dbf673106987b91d00d7a8d631d21855d",
+    "proposal/interiors/kitchen/texture-prompts.json": "5bbf812a51cca7f8c9eb61f41decd775a761339de2dc2dc19c47d6ac25a058cc",
+    "proposal/interiors/kitchen/textures/cream-upholstery.png": "f566ca179a97b6bf43b1e803fbc11aacdc1c345342ec2865cbeea837fcf0841e",
+    "proposal/interiors/kitchen/textures/pale-oak.png": "ee9fa499b8e87edfe8e4abf56c06ff87e4fa3ec42bac8d3c075ff2cf161fa244",
+    "proposal/interiors/kitchen/textures/warm-limestone.png": "7eb3b0129821084a86d3adb57fa377321ce82141eece46c3ffd4c4a8104c5098",
+    "proposal/interiors/leisure/arrival.json": "ba6a8ee13d073a5b4077a86c2b9de775d81442171d84d09d2320d163c185de0b",
+    "proposal/interiors/leisure/bar.json": "972d743e924fdaff36aa9ca2286a291a8c2fd5187b877fa78174b2c0ae655623",
+    "proposal/interiors/leisure/bedroom2.json": "59354fb15e0031c58e0e43c65493b603fdc387a3604ffda2ab95b2b7c0872d12",
+    "proposal/interiors/leisure/bedroom3.json": "e7b5f16413a0911a56589035c40e429736a6db1e5ed5d664c3646587e5c01624",
+    "proposal/interiors/leisure/bedroom4.json": "7b1b9c46851bb305900b0a203cddb824bcec411a1a4ca95960ed32b84290cdda",
+    "proposal/interiors/leisure/cinema.json": "b8c01f3c336acac7cbec7e8f97ee15458d71ffed7532a523e811d8f439d67a91",
+    "proposal/interiors/leisure/cloakroom.json": "f365292d602870ba02487ea0c57f66f364e012ad6b52c0ab21e763f569ad9316",
+    "proposal/interiors/leisure/family.json": "cfae16ff60d29acf35573d7afa4f754971ac0e18216aa63ae05dc7d3e25e4a3a",
+    "proposal/interiors/leisure/familybath.json": "d3cbc85fe4dd05c806c9167f5ca3f9df3968b5dd600e1afda9addf12a2e89d83",
+    "proposal/interiors/leisure/formal.json": "13740203c9cde692631a60e1cd6e9ddca71a8ab5cf84c5a475065f5ff70e4414",
+    "proposal/interiors/leisure/garage.json": "9af271bcfa1a23a20c8b94105b5442d3979f33bf4efd452c1f5f0f9e5aae6257",
+    "proposal/interiors/leisure/gardenhouse.json": "c80d50cc0f0514afda4633dd957a6be51ae814733db57da5f6eb9146024cb8ab",
+    "proposal/interiors/leisure/guest.json": "1bcffde11802e2f55dbde8ff38dee153bb02d8b45c5856b342c8da9d53fb798f",
+    "proposal/interiors/leisure/guestbath.json": "855444887eeb088df734a35abf165eca534c031c1edc3c1e6dea3d54632a84d8",
+    "proposal/interiors/leisure/gym.json": "bf293a7828ff8bbf8d73aa40ba3922fb5556e703b33b49cb63f649faab14f998",
+    "proposal/interiors/leisure/hobby.json": "25cba6400d94265eea5ea54ffe8ed3f1f2f73060d4f5e188479f0098e7f6855e",
+    "proposal/interiors/leisure/landings.json": "637a676df6ac41733988ef3a8060ff54b003598ec75e8a3b512ec1b79f5f9846",
+    "proposal/interiors/leisure/loft-bedroom-expansion.json": "5a8f3bca2dbeb84b76c09ca5432827e98adca90fcb651e2cdb469734b2569073",
+    "proposal/interiors/leisure/loft-bedroom-finish.json": "6a2149c865600b15f524e7614cf00f7924ef87217d238f2c1e0b7f0f5e68afc9",
+    "proposal/interiors/leisure/loft-stair.json": "30a7f38d497bc00288c6d66e599849ae2318bfe0db1a8fcded650f43d49b928c",
+    "proposal/interiors/leisure/loftsuite.json": "2c14bc2ac2ca318902627ab19775bd287543a7ada3a086ed480e4574f29a8824",
+    "proposal/interiors/leisure/office.json": "2c85da5523a3506b204a537df2d9e28e91c44ff9a955a9bf10891e1734e690b1",
+    "proposal/interiors/leisure/prep-kitchen.json": "c505227d708710cd191ff161f0aca6370d22cbedf6ee76d5c4e25a7346dac6dc",
+    "proposal/interiors/leisure/sidebed.json": "9288705494aa24e8f13cf7e84c14293fbd72f4ff4f9308a11efc041b83b0147c",
+    "proposal/interiors/leisure/textures/calacatta-oro.png": "b83b382cbc3c9aadc500b50d466925b7dd32c59a4d99c4dcb87f0ca3e774d963",
+    "proposal/interiors/leisure/utility.json": "67e898e0de9406c0cdb35cdbd45aa0300941448c4f6bcc121321a5eba6f5cfd4",
+    "proposal/interiors/principal/accepted/manifest.json": "b3383be117a25620def2245fad9c03d46ffed53b1881fce4980e679c95641a69",
+    "proposal/interiors/principal/accepted/planning/bedroom-report.json": "c467f13d09d5532d50c8ddc3aa96cb3f38f1f9e4f440c6cc76537e63208f6070",
+    "proposal/interiors/principal/accepted/planning/ensuite-report.json": "c59a81def37320ad0401443da84dffbb07f502bcf82aabfdbfc87ff50ff5495c",
+    "proposal/interiors/principal/accepted/planning/metadata.json": "8cfe99dd6e6ba6670dc4e9a24ba72e7d61667990d0b712f3e82d93c61b606095",
+    "proposal/interiors/principal/accepted/planning/suite.blend": "e9a96df8fdb5fe4d81287ea24c9b9e26ac627cddcb3d340f07249df05eb1a290",
+    "proposal/interiors/principal/gable-wall.json": "959be155cc8fd5ef187aa6c32fa33fbfd6fa560a63360c76b06302195d53a142",
+    "proposal/neighbours/site-trees.json": "b097e78982fd155578b55e78224ea174ee3c5d9503fd54c9f2bcac4f44a2fc9e",
+    "proposal/reference/roof-tile-colour-reference.png": "f8608d1fcd92718b4336eafa054118eed6494b4e79e444789d4f2194a48a6e40",
+    "proposal/specs/bedroom4-stair-suite-components.json": "c86bedee105ed5c69713825b56db176a62927e9d12d297f4b711c6cfc79dc3e0",
+    "proposal/specs/design-spec-compact.json": "9abea0c5674420722cdc56694f0a50127ca88519b75dd443781e9d3aca884567",
+    "proposal/specs/design-spec-planning.json": "02f239fe2eba7d974312c5b34039f67270684d59bd39275869a3d500ca471d85",
+    "proposal/specs/design-spec.json": "e24aed14d4bac81eb394340556e6c3739a2274697a826096e9e9223ff5fa0708",
+    "proposal/specs/front-window-alignment.json": "51ffc2dea8814d1f48aa18ac92ccfc703cb2f8ae026bfd7691f6b7206e9a1c5b",
+    "proposal/specs/lengthwise-bathroom.json": "5566e1fb250aab21d7075be573aa7445d1e5f27ccc76317fb54c52f6072386fa",
+    "proposal/specs/level-loft-components.json": "6dd564552c28893b72d30dfc08aa7f0ba2e5e452ea70c246575c2374f2c11dd5",
+    "proposal/specs/open-suite-eaves-storage.json": "5b8e8d3c090e596843052037b8f9de5f852074b32c0b71f22471e93656b51e2a",
+    "proposal/specs/original-preservation.json": "2b1dc14f8302b702371bd85872b92319f8954fc148cd1f2b9599baa90b8a4d0c",
+    "proposal/specs/site-terrain.json": "870de1bd489c140c91c5fd001b8c793e16c55bc57ace34f6be1e938d2c2752a2",
+    "proposal/specs/suite-layout-loft-use.json": "5be53d7be9bf1c7be8eb7f224f6d2d1140b2a5f65a7cd490ac4e6798dfa80be1",
+    "proposal/specs/symmetric-wing-roof.json": "f72bf41c66a152b91efcc70534a8857949baeb61dd76ca549fed6658563a42b8",
+    "proposal/specs/terrace-lounge-west-suite.json": "22ff707e4b3462ccf98a6b6e67a43a4319b476a3a00154ded9f481efae4d0b05",
+    "proposal/studies/p4/P4_parking-validated.json": "592d2c8cfdeace5f7d7a3bf1fc7ad420a9b8f08db565c2ada56cbc6a29655b13",
+    "proposal/studies/p4/P4_site-feasibility.json": "3e4516ebf09a91ca8ab74f39e40c3c10ff0a671c78b5992f66e51c807bd17ccc",
+    "proposal/studies/p5/P5_internal-garden-area.json": "f821a2319d3a43633dc57f437c01b45a1c43496417fe022aa09e86245d458c95",
+    "scripts/build/build_extension_proposal.py": "f88c2e8a9f5b50e384fb6ee73784a73325eb0cc7724d17884a905cc27ec7e1cf",
+    "scripts/build/build_support.py": "f99a9f68c224750f9de54191d6bb5c577545699e4cb3e8127ddd2f6d5fc31ba9",
+    "scripts/build/finish_extension_proposal.py": "960f387e5743c7ee47ae026c73bfa7e86e477391eb89c1cb79f01affed4d079c",
+    "scripts/geometry/blender_booleans.py": "3a527a03e250afdd9d9a79b2f264d72eded94761aa2fdae8c280767ee3b3589e",
+    "scripts/geometry/blender_collections.py": "360be1b3e7133be57f6dd3c5f686a797d80eaa19149731f0c99cc125f482b8a3",
+    "scripts/geometry/exterior_exposure.py": "15a7f5e1310576debf45c1287c90738037e175f2836d7b2722c10d26293d24b1",
+    "scripts/geometry/symmetric_roof.py": "6fad36802a8bd55e19c3372282af821b96b1fce2884948b7c1f37377e5ad5ee4",
+    "scripts/interiors/bar_lounge_details.py": "e9e129109f9ae24efca94187e83307a71e046705f79522fae373e4ee19ba3fc0",
+    "scripts/interiors/door_frame_details.py": "b232b3e5f525f4183581539845d732fb42c1c73865a281b6705061cd901ae6e2",
+    "scripts/interiors/garden_level_steps.py": "94cc46e5368c88f879f15ac591ae82d414864519572e3a92f2d8e02e9dc9d917",
+    "scripts/interiors/garden_stone.py": "e31cc16b4f0073518c087109b5a51afd52f7e295e2b68ef4c104c21bfb4bdd69",
+    "scripts/interiors/interior_furnishing.py": "f3638e364a1a6cd47d1329d01840f50d70cdb01196541637791a6e9a2563a587",
+    "scripts/interiors/interior_suite_parts.py": "82b614b1a21d07e9690424d577ab97d6d545d50eca36aeabd03c6e2ffa8a3021",
+    "scripts/interiors/linen_baskets.py": "d12863a015f01825deed41a0fb2c434ca1da1c711e497c5b78afc4015595316d",
+    "scripts/interiors/principal_gable_wall.py": "6a63ce6b15c292c046f5a13d6acf10b5b64dc0f7ddebe902a3889a56a42797c0",
+    "scripts/interiors/proposal_accepted_bar.py": "51a7c4b3dded3e6391c3fd619a25d0cc75dca8c9757c29b24c8ca0d10f791c84",
+    "scripts/interiors/proposal_arrival_interiors.py": "609c7ee3703c2af9559bd99208d26858a92317b7792b4e203c5d8dc0c94d1de1",
+    "scripts/interiors/proposal_bar_interiors.py": "327a104b79f841d100e4c0e47c080d68fc0fceaad6b43420d0717d624586a96a",
+    "scripts/interiors/proposal_bedroom2_interiors.py": "7dd862c5dfc3f4db4e21916b51c62281558eb09664c95a55aa9a43c69e4b1334",
+    "scripts/interiors/proposal_bedroom3_interiors.py": "1257025f68a9369a4de82478bda8b3ed0c0b7973dfc901c61b59ea325b05d78f",
+    "scripts/interiors/proposal_bedroom4_interiors.py": "b2c714faefba65b8cd4d55b12d14a5f768750017ef15e871bfa7399c380abaf1",
+    "scripts/interiors/proposal_cloakroom_interiors.py": "426445eba18959d4ffb0c08347372db1fde03867136fb524bb9386df0d01c4f5",
+    "scripts/interiors/proposal_door_surrounds.py": "fdef2758e7dbad23f5e44226c0f01f8c83293ee9100fb80d495dff3c51c42640",
+    "scripts/interiors/proposal_family_interiors.py": "e8502c93ed861034bc808e0647985a2779f0fa823c6d9fc36f6df7b7313d7a2c",
+    "scripts/interiors/proposal_familybath_interiors.py": "c7f5b818a5f4acb4311c860ace70ca16cdbeca71bd627a461f4285b6cd0b1eaa",
+    "scripts/interiors/proposal_formal_interiors.py": "0ca0f59f7c79c861a937d1c06ade5649b6075f9e61068e3fba7e969e33e88ddc",
+    "scripts/interiors/proposal_garage_interiors.py": "9df1a1433ad10c07f31fc443fa36d6727f28469c861ada93f82d28801f0c6477",
+    "scripts/interiors/proposal_gardenhouse_interiors.py": "b66ece30a1a01e5e0c57005c73f3aa0158855cdecb048d93c14ccbb801fe2c6f",
+    "scripts/interiors/proposal_guest_interiors.py": "e07facf769857f7065a5f2d4f94a3b86b20bda362759e2c970bb5dc425857c8b",
+    "scripts/interiors/proposal_guestbath_interiors.py": "fca7f585b61bb1ef432bd3e5cde7e0cdd06287a4c338f247c7b57af7c48a39f7",
+    "scripts/interiors/proposal_gym_interiors.py": "cf3809f988814bbf811a580ba895e49792240c97656e8ba23ca85d4996ae2366",
+    "scripts/interiors/proposal_hobby_interiors.py": "b83230e6d9b413e04b1498a8eb6adadf39dec85ce373839f23a5cddd14dea0fa",
+    "scripts/interiors/proposal_interior_details.py": "8397e58ed47b9650c72fb45a61c65a504264c547e9b40db3bbd42d486b1b46b7",
+    "scripts/interiors/proposal_kitchen_interiors.py": "e4784bbef151cfa9bcdb38e042c4185a3942b4aa410bee3b9da9a67be89fa8e1",
+    "scripts/interiors/proposal_landings_interiors.py": "9bdf2c74211e4a30325b10c86ce814b5b8330bc19e99f75cca4554a2f5491c57",
+    "scripts/interiors/proposal_leisure_interiors.py": "dc0ccf02837e970c541f5efa2b7ce89b26f5249192c53c8ceb32a3d1b9114a66",
+    "scripts/interiors/proposal_loftsuite_interiors.py": "db3b948d6934070b80da8c6f4f76b37e6a8b8d78bbf0bfb534620838e31039dd",
+    "scripts/interiors/proposal_office_interiors.py": "23c0d157732b13446e1d08f853821ebd7803a2602b60601722519e1f51657995",
+    "scripts/interiors/proposal_prep_kitchen.py": "6630ed657276824f1a97a9051e9f6b620cf4fd2886844762b863cf578fe327ab",
+    "scripts/interiors/proposal_principal_interiors.py": "72ea5c2096a42e3b373a687cf61613a052dd950ca9e67ea63ddd0d2b451b5b15",
+    "scripts/interiors/proposal_sidebed_interiors.py": "4f4c525ac8be2007d0b2585d229ec7f7ed23a8d0753f2066481595fb887cfe27",
+    "scripts/interiors/proposal_utility_interiors.py": "f845ff36af25adfdead4e190a44d7ac1d50e9d1c001af1e9760beeea3b95ccad",
+    "scripts/interiors/terrace_suite_furnishings.py": "f96d5389d4f704a15cecac3ab5ad8bf2dc7562051e4263eabf61ff00cef7262e",
+    "scripts/model/build_model.py": "2e1d0f5fb9645c58d1c6d2f9cb74a70098d0beb8bd427c5dfcc8bfb0a46b43f3",
+    "scripts/model/grand_stair_returns.py": "26a15aec66cc75ea41cd656e26bf1835d37f18e65c75763113c17c2f6f10813e",
+    "scripts/model/modern_loft_stair.py": "380993b1ea5f51c8014034fd5a4231e6e59dc8d438e1ff85116ac9120d01a27e",
+    "scripts/model/proposal_appearance.py": "8813a01a60dcaf408726f194adcb0f551967714207bbe19595f435b52799ef9f",
+    "scripts/model/proposal_architectural_lighting.py": "779c359cc90d79f6339b599a9c4f6634fbec53188e58e2d65765ed87bd927de3",
+    "scripts/model/proposal_basement.py": "c8b80cd1f2eb948583edb2732420d8c1b9fa220339928464fcdab94792be9e0a",
+    "scripts/model/proposal_basement_roof_corrections.py": "d0dddad8ac6da6db96480842f3f40c5604828f4640fab29d54bf3290af45b70c",
+    "scripts/model/proposal_bedroom4_stair_suite.py": "11337627ec66eaf44421cf145e2cd705769bfb404343ea2cc2a728794c7f955b",
+    "scripts/model/proposal_boundary_foliage.py": "c6797403c98d5579f9c0b2c774ac7a16f64dac91f892f9af61219dfd377951f6",
+    "scripts/model/proposal_courtyard.py": "f660d9bf5ea5a41a39d59ba9f1112dd2d7cde177f57fea074de3c44fde8b1567",
+    "scripts/model/proposal_courtyard_stair_junction.py": "0b77840710f80f7cd0a8abe000a9414a2bd32a70b903da308803a8a9c11bc6f3",
+    "scripts/model/proposal_edit_views.py": "7722e14820cf50ed759b4966362a148538204f40f8efa856ed81f2e67ee24f3c",
+    "scripts/model/proposal_editability.py": "f9d3325708b75eab86549cb7dea22032aa6b04ca35b36ed933c9430f5b5ff7fe",
+    "scripts/model/proposal_envelope_details.py": "6c8284b463af78ac227af1c46d1ce7ff75c8c664f386e49052f34d18ccb0704d",
+    "scripts/model/proposal_envelope_repairs.py": "755293bc7cb263dab11ff45bc434244fc8a86c94b21a4b18d1f71ed19e3703e2",
+    "scripts/model/proposal_facade.py": "8f80ab0a15170d4769cb771d397d34cef79b7b19d61295115723b7eef10dff58",
+    "scripts/model/proposal_foliage_detail.py": "dabeeb17064c91d907ff0ef8c26ac068a798149a724652b765a9d98535f230b0",
+    "scripts/model/proposal_forecourt.py": "8117c29e5b7a70d678acd2785bcf890f102b335a27b7d5d3549007766860a3d2",
+    "scripts/model/proposal_front.py": "bed70197a9835197073ea7fe97c886626fd6304ba14576e1ea661aad3de5543f",
+    "scripts/model/proposal_front_window_alignment.py": "fd19134844ba5bf066fdcb45783e4fba9f4e8b84e5ba3bbfc606fb763ce89e5f",
+    "scripts/model/proposal_frontage.py": "b1e1480c6db45c70fb105069103b6d589932dc8ae96520f28d42a2126af7c865",
+    "scripts/model/proposal_garden_levels.py": "bc2001d1a69a78a506a8476a484f6052cc03bd178a743d82a7893efd91ff6a24",
+    "scripts/model/proposal_garden_stone.py": "c2dfb61adb131700a3db3800890900d2daaab7136f171b52a1f479a2ce4b16f6",
+    "scripts/model/proposal_grand_loft_stair.py": "5d00d271dc0bd05c5febbbefab8d43f7c866f157d7b452a80735e32dc8d0e6cb",
+    "scripts/model/proposal_helpers.py": "b9f3bf8f4a1620fec26c3dc9195ae30000e0f7d6128e48e77f65ddd1e5378b01",
+    "scripts/model/proposal_hobby_door_openings.py": "ced5610d088a909f5d3b37129f27b082bafd2e84758b2511de0eeb5f20c079b0",
+    "scripts/model/proposal_housekeeping.py": "589e9f58c2d4ee770e2541f7dd695251c8d8457be38750e37a66c0d015481ea8",
+    "scripts/model/proposal_landing_oak_knee_wall.py": "178ef00b59a7d6000682b91c108a431a01715c92456f93688bff737296579aa3",
+    "scripts/model/proposal_lengthwise_bathroom.py": "f4f3aef523c280cc5b1b55f438109658d10b08fc2bd480d7e5a26f11267b19cd",
+    "scripts/model/proposal_level_loft.py": "9ac73c6bec76fa317b1bf0537cb80a1c3180b22f0f6f00a57d9f643a65ba828e",
+    "scripts/model/proposal_lifestyle.py": "4b90507bf5dac13d60944db40ab8145e80690f373181110d4e4165c50514ba6b",
+    "scripts/model/proposal_loft.py": "ded55e3d3b70ee5e4be7608ff198ddce8d68043d8e41f333aa86c4441c5cad27",
+    "scripts/model/proposal_loft_bedroom_expansion.py": "188d0cf8eaa98c80b5ecff450d23012e94b9a97b56c75f5267e7a20c02128756",
+    "scripts/model/proposal_loft_finish.py": "836318259d08caff4408f922f9a3c32a767f405d56e56b97b8d487c2f215dce6",
+    "scripts/model/proposal_loft_junction_cleanup.py": "35ec18a99a831ae3a408be84fe3e9e305eca18cb0bd9d993140871a4d4a34e58",
+    "scripts/model/proposal_loft_roof_trim.py": "0ce10a296299ca160d119df28adff1343fbd1182153f52ff7c821e4661eeb8e2",
+    "scripts/model/proposal_materials.py": "43b7381b67ee0b415a79a4a3e74bbb5d30f90864a031b185c039167df5d60b01",
+    "scripts/model/proposal_open_suite_eaves.py": "9ab110c022b907ec9503dedae8239e9419a517c55776aa0ae9e173363c47d0c5",
+    "scripts/model/proposal_original_rooms.py": "5cedb4bd41171096247b445bca8a0a3fa097c1b4d74dadf5f9b2105e82a96bb7",
+    "scripts/model/proposal_planning.py": "3fbe8729120e31f63a59558f5ab15c0db314bcb2954fa7a58c69c2a5a5d7c12f",
+    "scripts/model/proposal_rear_finishes.py": "3b1fb39be7c5a8db1c06ce588ff69de8354472fab09bbd77fbf2b206d0e51e61",
+    "scripts/model/proposal_roof_weathering.py": "b735c4b3e70ec00c54fab52df36f80e9513d13c69bb15b95d6f2576cfaab3a06",
+    "scripts/model/proposal_roofs.py": "7da5674975b742ee9dd21ce8e957277989c268e8b26195c4f74c03774f083152",
+    "scripts/model/proposal_shared_lounge.py": "6d8622bd84192c0b9085de44e036e4e2746bd7e9430c829e32ff036ea1e34a4b",
+    "scripts/model/proposal_side_bathroom.py": "90b824531fc5e33c541fa043ac8c09ecb745eeef9ebdf1744957a90a135f81d1",
+    "scripts/model/proposal_side_wing.py": "105e6f179e97730ffd0adbfaeccc31fbfa5548f53174d8dcfef8436ada243cc5",
+    "scripts/model/proposal_site.py": "46c0e29e7bd55a507c59a4e66e97745d1cd7b727a7dba9463e1b640a362934d3",
+    "scripts/model/proposal_stair_landing_finish.py": "2ad267551840f13781899125bae8a111c322006b0743812fe41ff2f439f6d7ec",
+    "scripts/model/proposal_storey_closures.py": "1fab16f3ad8dd37d5a90cf1e5dea52c2bdb9c3b45499a5011bad39a14a1d7319",
+    "scripts/model/proposal_suite_layout_loft.py": "9c181bfacb268fc580ce93c5286ceb46577f2d9cfa07d94026cbbbf3bd1f85da",
+    "scripts/model/proposal_surface_junctions.py": "c0ec652aa486790b34f169703b2f7589c1357e19d3416bd9e8f1ed7686f9e3a7",
+    "scripts/model/proposal_symmetric_wing_roof.py": "d4920e6c2624deb3f311d316c6c8d446856d4c8c9f2110c307a803813ec36fd3",
+    "scripts/model/proposal_terrace_lounge_suite.py": "99883906ab8db113c3eb185845f0cfd209099ffb0d2136e1f9b3514616c70ab5",
+    "scripts/model/proposal_vegetation_clearance.py": "05e593af8644c897190c23bb4b36353f8d4c27caff3b1804b90b90b0a4c7b9c4",
+    "source/assets/materials/polyhaven/walnut_veneer/walnut_veneer_diff_2k.jpg": "66c73defcc62ac090cb838e8455b8c1febbfea29a15c8f40a5e2d398b2ba4733",
+    "walkthrough/public/house.glb": "2b7f086fa70c041989595a9859d93c92b2e159f4eccae41d6c9bcd04a3df59d9",
+    "walkthrough/public/navigation.json": "ee090474080cd08c5fdf3ac67cb9ac91df71335482e617968fc37083a22b07bf"
+  },
+  "changes": {
+    "symmetricWingRoof": {
+      "revision": "symmetric-wing-roof-2026-10-25",
+      "configuration": {
+        "revision": "symmetric-wing-roof-2026-10-25",
+        "mainNorthY": -5.0,
+        "ridgeX": 9.455,
+        "ridgeZ": 8.05,
+        "eaveZ": 5.35,
+        "eavesX": [
+          4.73,
+          14.18
+        ],
+        "southEaveY": -16.506,
+        "roofThickness": 0.35,
+        "dormerWestX": 9.55,
+        "dormerSouthY": -11.7,
+        "dormerEastX": 12.72,
+        "dormerRoofZ": 7.86,
+        "finishedCeilingZ": 7.6,
+        "floorZ": 5.55,
+        "bedHead": [
+          10.0,
+          -9.3
+        ],
+        "suiteRoute": [
+          [
+            9.04,
+            -2.6,
+            5.55
+          ],
+          [
+            9.04,
+            -4.35,
+            5.55
+          ],
+          [
+            10.35,
+            -4.35,
+            5.55
+          ],
+          [
+            10.35,
+            -5.3,
+            5.55
+          ],
+          [
+            10.35,
+            -6.6,
+            5.55
+          ]
+        ],
+        "basis": "Equal 29.745-degree main-wing slopes with the existing ridge and eaves heights. A straight roof junction at the north end separates the retained gallery roof. The level passage enters the bedroom's full-height rear dormer before crossing into the symmetrical roof section. No front dormer, changed courtyard facade or lowered floor."
+      },
+      "mainRoofPitchDegrees": 29.744881296942236,
+      "ridgeX": 9.455,
+      "ridgeZ": 8.05,
+      "connectorRoofRetained": true,
+      "frontDormerAdded": false,
+      "floorLevelChanged": false,
+      "courtyardFacadeChanged": false,
+      "removed": [
+        "Proposal | Joined roof 097 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 097 | New main hip 1 continued re",
+        "Proposal | Joined roof 098 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 098 | New main hip 1 continued re",
+        "Proposal | Joined roof 099 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 099 | New main hip 1 continued re",
+        "Proposal | Joined roof 100 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 100 | New main hip 1 continued re",
+        "Proposal | Joined roof 101 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 101 | New main hip 1 continued re",
+        "Proposal | Joined roof 102 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 102 | New main hip 1 continued re",
+        "Proposal | Joined roof 104 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 104 | New main hip 1 continued re",
+        "Proposal | Joined roof 105 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 105 | New main hip 1 continued re",
+        "Proposal | Joined roof 108 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 108 | New main hip 2 continued re",
+        "Proposal | Joined roof 109 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 109 | New main hip 2 continued re",
+        "Proposal | Joined roof 110 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 110 | New main hip 2 continued re",
+        "Proposal | Joined roof 111 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 111 | New main hip 2 continued re",
+        "Proposal | Joined roof 112 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 112 | New main hip 2 continued re",
+        "Proposal | Joined roof 113 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 113 | New main hip 2 continued re",
+        "Proposal | Joined roof 114 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 114 | New main hip 2 continued re",
+        "Proposal | Joined roof 115 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 115 | New main hip 2 continued re",
+        "Proposal | Joined roof 116 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 116 | New main hip 2 continued re",
+        "Proposal | Joined roof 117 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 117 | New main hip 2 continued re",
+        "Proposal | Joined roof 118 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 118 | New main hip 2 continued re",
+        "Proposal | Joined roof 122 | New main hip 4 continued region 1",
+        "Proposal | Joined roof lining 122 | New main hip 4 continued re",
+        "Proposal | Joined roof 123 | New main hip 4 continued region 1",
+        "Proposal | Joined roof lining 123 | New main hip 4 continued re",
+        "Proposal | Joined roof 159 | Gate gable south",
+        "Proposal | Joined roof lining 159 | Gate gable south",
+        "Proposal | Joined roof 160 | Gate gable south",
+        "Proposal | Joined roof lining 160 | Gate gable south",
+        "Proposal | Joined roof 161 | Gate gable south",
+        "Proposal | Joined roof lining 161 | Gate gable south",
+        "Proposal | Joined roof 164 | Gate gable north",
+        "Proposal | Joined roof lining 164 | Gate gable north",
+        "Proposal | Gate gable ridge",
+        "Proposal | Joined roof 195 | Wing east dormer",
+        "Proposal | Joined roof lining 195 | Wing east dormer",
+        "Proposal | Joined roof 196 | Wing east dormer",
+        "Proposal | Joined roof lining 196 | Wing east dormer",
+        "Proposal | Joined roof 197 | Wing east dormer",
+        "Proposal | Joined roof lining 197 | Wing east dormer",
+        "Proposal | Joined roof 198 | Wing east dormer",
+        "Proposal | Joined roof lining 198 | Wing east dormer",
+        "Proposal | Joined roof 204 | Wing east dormer",
+        "Proposal | Joined roof lining 204 | Wing east dormer",
+        "Proposal | Joined roof 205 | Wing east dormer",
+        "Proposal | Joined roof lining 205 | Wing east dormer",
+        "Proposal | Joined roof 206 | Wing east dormer",
+        "Proposal | Joined roof lining 206 | Wing east dormer",
+        "Proposal | Joined roof 212 | Wing east dormer",
+        "Proposal | Joined roof lining 212 | Wing east dormer",
+        "Proposal | Joined roof 213 | Wing east dormer",
+        "Proposal | Joined roof lining 213 | Wing east dormer",
+        "Proposal | Joined roof 214 | Wing east dormer",
+        "Proposal | Joined roof lining 214 | Wing east dormer",
+        "Proposal | Joined roof 216 | Wing east dormer",
+        "Proposal | Joined roof lining 216 | Wing east dormer",
+        "Proposal | Joined roof 217 | Wing east dormer",
+        "Proposal | Joined roof lining 217 | Wing east dormer",
+        "Proposal | Joined roof 218 | Wing east dormer",
+        "Proposal | Joined roof lining 218 | Wing east dormer",
+        "Proposal | Joined roof 219 | Wing east dormer",
+        "Proposal | Joined roof lining 219 | Wing east dormer",
+        "Proposal | Roof weathering | valley 07 left",
+        "Proposal | Roof weathering | valley 07 right",
+        "Proposal | Roof weathering | valley 08 right",
+        "Proposal | Roof weathering | Wing dormer south drip",
+        "Proposal | Roof weathering | wing dormer south cheek apron 00",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 00",
+        "Proposal | Roof weathering | wing dormer south cheek apron 01",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 01",
+        "Proposal | Roof weathering | wing dormer south cheek apron 02",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 02",
+        "Proposal | Roof weathering | wing dormer south cheek apron 03",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 03",
+        "Proposal | Roof weathering | wing dormer south cheek apron 04",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 04",
+        "Proposal | Roof weathering | wing dormer south cheek apron 05",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 05",
+        "Proposal | Roof weathering | wing dormer south cheek apron 06",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 06",
+        "Proposal | Roof weathering | wing dormer south cheek apron 07",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 07",
+        "Proposal | Roof weathering | wing dormer south cheek apron 08",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 08",
+        "Proposal | Roof weathering | wing dormer south cheek apron 09",
+        "Proposal | Roof weathering | wing dormer south cheek upstand 09",
+        "Proposal | Roof weathering | new main hip cap south west",
+        "Proposal | Roof weathering | new main hip cap south east",
+        "Proposal | Wing dormer south cheek head",
+        "Arrival 01 | pendant ceiling canopy",
+        "Arrival 01 | pendant canopy fixing",
+        "Arrival 01 | pendant canopy fixing.001",
+        "Arrival 01 | pendant ceiling canopy.001",
+        "Arrival 01 | pendant canopy fixing.002",
+        "Arrival 01 | pendant canopy fixing.003",
+        "Arrival 01 | pendant ceiling canopy.002",
+        "Arrival 01 | pendant canopy fixing.004",
+        "Arrival 01 | pendant canopy fixing.005",
+        "Arrival 01 | pendant suspension cable",
+        "Arrival 01 | pendant suspension cable.001",
+        "Arrival 01 | pendant suspension cable.002",
+        "Loft finish | oak artwork frame",
+        "Loft finish | artwork ivory mount",
+        "Loft finish | artwork colour field",
+        "Loft finish | artwork stone circle",
+        "Loft finish | oak artwork frame.001",
+        "Loft finish | artwork ivory mount.001",
+        "Loft finish | artwork colour field.001",
+        "Loft finish | artwork stone circle.001"
+      ],
+      "changed": [
+        "Proposal | Joined roof 103 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 103 | New main hip 1 continued re",
+        "Proposal | Joined roof 106 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 106 | New main hip 1 continued re",
+        "Proposal | Joined roof 107 | New main hip 1 continued region 1",
+        "Proposal | Joined roof lining 107 | New main hip 1 continued re",
+        "Proposal | Joined roof 119 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 119 | New main hip 2 continued re",
+        "Proposal | Joined roof 120 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 120 | New main hip 2 continued re",
+        "Proposal | Joined roof 121 | New main hip 2 continued region 1",
+        "Proposal | Joined roof lining 121 | New main hip 2 continued re",
+        "Proposal | Joined roof 162 | Gate gable north",
+        "Proposal | Joined roof lining 162 | Gate gable north",
+        "Proposal | Joined roof 163 | Gate gable north",
+        "Proposal | Joined roof lining 163 | Gate gable north",
+        "Proposal | Joined roof 165 | Gate gable north",
+        "Proposal | Joined roof lining 165 | Gate gable north",
+        "Proposal | New main ridge",
+        "Proposal | Joined roof 201 | Wing east dormer",
+        "Proposal | Joined roof lining 201 | Wing east dormer",
+        "Proposal | Joined roof 208 | Wing east dormer",
+        "Proposal | Joined roof lining 208 | Wing east dormer",
+        "Proposal | Joined roof 215 | Wing east dormer",
+        "Proposal | Joined roof lining 215 | Wing east dormer",
+        "Proposal | Joined roof 220 | Wing east dormer",
+        "Proposal | Joined roof lining 220 | Wing east dormer",
+        "Proposal | Joined roof 227 | Wing east dormer",
+        "Proposal | Joined roof lining 227 | Wing east dormer",
+        "Proposal | Joined roof 228 | Wing east dormer",
+        "Proposal | Joined roof lining 228 | Wing east dormer",
+        "Proposal | Joined roof 233 | Wing east dormer",
+        "Proposal | Joined roof lining 233 | Wing east dormer",
+        "Proposal | Roof weathering | valley 08 left",
+        "Proposal | Roof weathering | wing dormer membrane 00",
+        "Proposal | Roof weathering | wing dormer back upstand",
+        "Proposal | Loft knee wall 1",
+        "Proposal | Wing dormer south cheek",
+        "Proposal | Wing dormer face pier 0",
+        "Proposal | Wing dormer face pier 1",
+        "Proposal | Wing dormer face pier 2",
+        "Proposal | Wing dormer face end pier",
+        "Proposal | Loft ensuite north wall slope",
+        "Proposal | Loft ensuite north wall pier 0",
+        "Proposal | Loft ensuite north wall head 0",
+        "Proposal | Loft ensuite north wall end pier",
+        "Proposal | Level loft | 000 Continuous 2.05 m flat loft ceiling",
+        "Proposal | Level loft | 050 Scribed west loft lining",
+        "Loft finish | knee wall to stair enclosure return",
+        "Loft finish | knee wall oak skirting",
+        "Loft finish | return oak skirting",
+        "Loftsuite 01 | wall-backed upholstered headboard",
+        "Loftsuite 01 | bed recessed base",
+        "Loftsuite 01 | bed upholstered frame",
+        "Loftsuite 01 | double mattress",
+        "Loftsuite 01 | draped cotton duvet",
+        "Loftsuite 01 | folded duvet edge",
+        "Loftsuite 01 | woven bed throw",
+        "Loftsuite 01 | sleeping pillow",
+        "Loftsuite 01 | small linen cushion",
+        "Loftsuite 01 | sleeping pillow.001",
+        "Loftsuite 01 | small linen cushion.001",
+        "Loftsuite 01 | pillow stitched edge",
+        "Loftsuite 01 | pillow stitched edge.001",
+        "Loft finish | bed oak wall panel",
+        "Loft finish | headwall fine joint",
+        "Loft finish | headwall fine joint.001",
+        "Loft finish | headwall fine joint.002",
+        "Loft finish | headwall fine joint.003",
+        "Loft finish | headwall fine joint.004",
+        "Loft finish | bedside oak cabinet 0",
+        "Loft finish | bedside limestone top 0",
+        "Loft finish | bedside drawer recess 0",
+        "Loft finish | reading backplate 0",
+        "Loft finish | reading shade 0",
+        "Loft finish | reading lens 0",
+        "Loft finish | bedside reading light 0",
+        "Loft finish | bedside control plate 0",
+        "Loft finish | bedside switch",
+        "Loft finish | bedside switch.001",
+        "Loft finish | bedside oak cabinet 1",
+        "Loft finish | bedside limestone top 1",
+        "Loft finish | bedside drawer recess 1",
+        "Loft finish | reading backplate 1",
+        "Loft finish | reading shade 1",
+        "Loft finish | reading lens 1",
+        "Loft finish | bedside reading light 1",
+        "Loft finish | bedside control plate 1",
+        "Loft finish | bedside switch.002",
+        "Loft finish | bedside switch.003",
+        "Loft finish | bedside book pages",
+        "Loft finish | bedside book cover",
+        "Loft finish | bedside book cover.001",
+        "Loft finish | bedside ceramic carafe",
+        "Loft finish | reading arm 0",
+        "Loft finish | reading arm 1",
+        "Loft finish | dresser recessed plinth",
+        "Loft finish | dresser oak cabinet",
+        "Loft finish | dresser limestone top",
+        "Loft finish | dresser drawer front",
+        "Loft finish | dresser bronze pull",
+        "Loft finish | dresser drawer front.001",
+        "Loft finish | dresser bronze pull.001",
+        "Loft finish | dresser drawer front.002",
+        "Loft finish | dresser bronze pull.002",
+        "Loft finish | dresser ceramic vase",
+        "Loft finish | dresser folded linen",
+        "Loft finish | vase branch",
+        "Loft finish | vase branch.001",
+        "Loft finish | vase branch.002",
+        "Loft finish | window reading chair oak leg",
+        "Loft finish | window reading chair oak leg.001",
+        "Loft finish | window reading chair oak leg.002",
+        "Loft finish | window reading chair oak leg.003",
+        "Loft finish | window reading chair upholstered seat",
+        "Loft finish | window reading chair curved upholstered back",
+        "Loft finish | window reading chair tailored seam",
+        "Loft finish | reading side table base",
+        "Loft finish | reading side table stem",
+        "Loft finish | reading side table stone top",
+        "Loft finish | reading cup",
+        "Loft finish | desk chair oak leg",
+        "Loft finish | desk chair oak leg.001",
+        "Loft finish | desk chair oak leg.002",
+        "Loft finish | desk chair oak leg.003",
+        "Loft finish | desk chair upholstered seat",
+        "Loft finish | desk chair curved upholstered back",
+        "Loft finish | desk chair tailored seam",
+        "Loftsuite 01 | window pier ceramic planter",
+        "Loftsuite 01 | planter soil",
+        "Loftsuite 01 | plant leaf",
+        "Loftsuite 01 | plant leaf.001",
+        "Loftsuite 01 | plant leaf.002",
+        "Loftsuite 01 | plant leaf.003",
+        "Loftsuite 01 | plant leaf.004",
+        "Loftsuite 01 | plant leaf.005",
+        "Loftsuite 01 | plant leaf.006",
+        "Loftsuite 01 | plant leaf.007",
+        "Loftsuite 01 | plant leaf.008",
+        "Loftsuite 01 | plant leaf.009",
+        "Loftsuite 01 | plant leaf.010",
+        "Loftsuite 01 | plant leaf.011",
+        "Loftsuite 01 | plant leaf.012",
+        "Loftsuite 01 | plant leaf.013",
+        "Loftsuite 01 | plant leaf.014",
+        "Loftsuite 01 | plant leaf.015",
+        "Loftsuite 01 | plant leaf.016",
+        "Loftsuite 01 | plant leaf.017",
+        "Loftsuite 01 | plant leaf.018",
+        "Loftsuite 01 | plant leaf.019",
+        "Loftsuite 01 | plant leaf.020",
+        "Loftsuite 01 | plant stem",
+        "Loftsuite 01 | plant stem.001",
+        "Loftsuite 01 | plant stem.002",
+        "Loftsuite 01 | plant stem.003",
+        "Loftsuite 01 | plant stem.004",
+        "Loftsuite 01 | plant stem.005",
+        "Loftsuite 01 | plant stem.006",
+        "Loftsuite 01 | hip store door oak leaf",
+        "Loftsuite 01 | hip store door bronze hinge",
+        "Loftsuite 01 | hip store door bronze hinge.001",
+        "Loftsuite 01 | hip store door bronze hinge.002",
+        "Loftsuite 01 | hip store door lever rose",
+        "Loftsuite 01 | hip store door key escutcheon",
+        "Loftsuite 01 | hip store door lever rose.001",
+        "Loftsuite 01 | hip store door key escutcheon.001",
+        "Loftsuite 01 | hip store door lever",
+        "Loftsuite 01 | hip store door lever.001",
+        "Frame detail | 24 hinge jamb lining",
+        "Frame detail | 24 latch jamb lining",
+        "Frame detail | 24 head lining",
+        "Frame detail | 24 front left architrave",
+        "Frame detail | 24 front right architrave",
+        "Frame detail | 24 front head architrave",
+        "Frame detail | 24 back left architrave",
+        "Frame detail | 24 back right architrave",
+        "Frame detail | 24 back head architrave",
+        "Frame detail | 24 left planted door stop",
+        "Frame detail | 24 right planted door stop",
+        "Frame detail | 24 head planted door stop",
+        "Loftsuite 01 | hip store wall light",
+        "Loftsuite 01 | hip store wall diffuser",
+        "Loftsuite 01 | hip store glow",
+        "Loftsuite 01 | concealed WC cistern",
+        "Loftsuite 01 | cistern stone cap",
+        "Loftsuite 01 | open wall-hung WC pan",
+        "Loftsuite 01 | WC concealed rear outlet",
+        "Loftsuite 01 | WC dark bowl outlet",
+        "Loftsuite 01 | open WC seat",
+        "Loftsuite 01 | WC seat hinge",
+        "Loftsuite 01 | WC seat hinge.001",
+        "Loftsuite 01 | dual flush plate",
+        "Loftsuite 01 | dual flush button",
+        "Loftsuite 01 | dual flush button.001"
+      ],
+      "created": [
+        "Symmetric wing | roof 00 west slope",
+        "Symmetric wing | lining 00 west slope",
+        "Symmetric wing | flat apex ceiling 00",
+        "Symmetric wing | roof 01 west slope",
+        "Symmetric wing | lining 01 west slope",
+        "Symmetric wing | flat apex ceiling 01",
+        "Symmetric wing | roof 02 west slope",
+        "Symmetric wing | lining 02 west slope",
+        "Symmetric wing | flat apex ceiling 02",
+        "Symmetric wing | roof 03 west slope",
+        "Symmetric wing | lining 03 west slope",
+        "Symmetric wing | flat apex ceiling 03",
+        "Symmetric wing | roof 04 west slope",
+        "Symmetric wing | lining 04 west slope",
+        "Symmetric wing | roof 05 east slope",
+        "Symmetric wing | lining 05 east slope",
+        "Symmetric wing | flat apex ceiling 05",
+        "Symmetric wing | roof 06 east slope",
+        "Symmetric wing | lining 06 east slope",
+        "Symmetric wing | roof 07 east slope",
+        "Symmetric wing | lining 07 east slope",
+        "Symmetric wing | flat apex ceiling 07",
+        "Symmetric wing | roof 08 east slope",
+        "Symmetric wing | lining 08 east slope",
+        "Symmetric wing | roof 09 east slope",
+        "Symmetric wing | lining 09 east slope",
+        "Symmetric wing | flat apex ceiling 09",
+        "Symmetric wing | roof 10 south hip",
+        "Symmetric wing | lining 10 south hip",
+        "Symmetric wing | flat apex ceiling 10",
+        "Symmetric wing | roof 11 entrance gable south",
+        "Symmetric wing | lining 11 entrance gable south",
+        "Symmetric wing | roof 12 entrance gable south",
+        "Symmetric wing | lining 12 entrance gable south",
+        "Symmetric wing | roof 13 entrance gable north",
+        "Symmetric wing | lining 13 entrance gable north",
+        "Symmetric wing | roof 14 entrance gable north",
+        "Symmetric wing | lining 14 entrance gable north",
+        "Symmetric wing | roof 15 rear dormer",
+        "Symmetric wing | lining 15 rear dormer",
+        "Symmetric wing | roof 16 rear dormer",
+        "Symmetric wing | lining 16 rear dormer",
+        "Symmetric wing | roof 17 rear dormer",
+        "Symmetric wing | lining 17 rear dormer",
+        "Symmetric wing | tiled north abutment 00",
+        "Symmetric wing | north abutment weathering 00",
+        "Symmetric wing | tiled north abutment 01",
+        "Symmetric wing | north abutment weathering 01",
+        "Symmetric wing | tiled north abutment 02",
+        "Symmetric wing | north abutment weathering 02",
+        "Symmetric wing | tiled north abutment 03",
+        "Symmetric wing | north abutment weathering 03",
+        "Symmetric wing | tiled north abutment 04",
+        "Symmetric wing | north abutment weathering 04",
+        "Symmetric wing | tiled north abutment 06",
+        "Symmetric wing | north abutment weathering 06",
+        "Symmetric wing | main ridge",
+        "Symmetric wing | south west hip",
+        "Symmetric wing | south east hip",
+        "Symmetric wing | entrance gable ridge",
+        "Symmetric wing | entrance valley 0",
+        "Symmetric wing | entrance valley 1",
+        "Symmetric wing | dormer west flashing",
+        "Symmetric wing | dormer south drip",
+        "Symmetric wing | dormer south cheek apron",
+        "Symmetric wing | dormer south cheek upstand",
+        "Symmetric wing | dormer west upstand",
+        "Symmetric wing | entrance pendant ceiling canopy 0",
+        "Symmetric wing | entrance pendant suspension 0",
+        "Symmetric wing | entrance pendant fixing 0 0",
+        "Symmetric wing | entrance pendant fixing 0 1",
+        "Symmetric wing | entrance pendant ceiling canopy 1",
+        "Symmetric wing | entrance pendant suspension 1",
+        "Symmetric wing | entrance pendant fixing 1 0",
+        "Symmetric wing | entrance pendant fixing 1 1",
+        "Symmetric wing | entrance pendant ceiling canopy 2",
+        "Symmetric wing | entrance pendant suspension 2",
+        "Symmetric wing | entrance pendant fixing 2 0",
+        "Symmetric wing | entrance pendant fixing 2 1",
+        "Symmetric wing | headboard panel end",
+        "Symmetric wing | bed artwork oak frame",
+        "Symmetric wing | bed artwork ivory mount",
+        "Symmetric wing | bed artwork colour field"
+      ],
+      "movedBedAssembly": [
+        "Loftsuite 01 | wall-backed upholstered headboard",
+        "Loftsuite 01 | bed recessed base",
+        "Loftsuite 01 | bed upholstered frame",
+        "Loftsuite 01 | double mattress",
+        "Loftsuite 01 | draped cotton duvet",
+        "Loftsuite 01 | folded duvet edge",
+        "Loftsuite 01 | woven bed throw",
+        "Loftsuite 01 | sleeping pillow",
+        "Loftsuite 01 | small linen cushion",
+        "Loftsuite 01 | sleeping pillow.001",
+        "Loftsuite 01 | small linen cushion.001",
+        "Loftsuite 01 | pillow stitched edge",
+        "Loftsuite 01 | pillow stitched edge.001",
+        "Loft finish | bed oak wall panel",
+        "Loft finish | headwall fine joint",
+        "Loft finish | headwall fine joint.001",
+        "Loft finish | headwall fine joint.002",
+        "Loft finish | headwall fine joint.003",
+        "Loft finish | headwall fine joint.004",
+        "Loft finish | bedside oak cabinet 0",
+        "Loft finish | bedside limestone top 0",
+        "Loft finish | bedside drawer recess 0",
+        "Loft finish | reading backplate 0",
+        "Loft finish | reading shade 0",
+        "Loft finish | reading lens 0",
+        "Loft finish | bedside reading light 0",
+        "Loft finish | bedside control plate 0",
+        "Loft finish | bedside switch",
+        "Loft finish | bedside switch.001",
+        "Loft finish | bedside oak cabinet 1",
+        "Loft finish | bedside limestone top 1",
+        "Loft finish | bedside drawer recess 1",
+        "Loft finish | reading backplate 1",
+        "Loft finish | reading shade 1",
+        "Loft finish | reading lens 1",
+        "Loft finish | bedside reading light 1",
+        "Loft finish | bedside control plate 1",
+        "Loft finish | bedside switch.002",
+        "Loft finish | bedside switch.003",
+        "Loft finish | bedside book pages",
+        "Loft finish | bedside book cover",
+        "Loft finish | bedside book cover.001",
+        "Loft finish | bedside ceramic carafe",
+        "Loft finish | reading arm 0",
+        "Loft finish | reading arm 1"
+      ],
+      "roofPanels": [
+        {
+          "label": "west slope",
+          "poly": [
+            [
+              4.73,
+              -16.506
+            ],
+            [
+              9.455,
+              -11.780999999999999
+            ],
+            [
+              9.455,
+              -11.7
+            ],
+            [
+              4.73,
+              -11.7
+            ]
+          ],
+          "plane": [
+            0.5714285714285717,
+            0,
+            2.647142857142855
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "west slope",
+          "poly": [
+            [
+              9.455,
+              -11.7
+            ],
+            [
+              9.455,
+              -9.4
+            ],
+            [
+              4.73,
+              -9.399999999999999
+            ],
+            [
+              4.73,
+              -11.7
+            ]
+          ],
+          "plane": [
+            0.5714285714285717,
+            0,
+            2.647142857142855
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "west slope",
+          "poly": [
+            [
+              9.455,
+              -9.4
+            ],
+            [
+              9.455,
+              -7.2
+            ],
+            [
+              6.9524999825,
+              -7.2
+            ],
+            [
+              4.73,
+              -9.399704508291967
+            ],
+            [
+              4.73,
+              -9.399999999999999
+            ]
+          ],
+          "plane": [
+            0.5714285714285717,
+            0,
+            2.647142857142855
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "west slope",
+          "poly": [
+            [
+              9.455,
+              -7.2
+            ],
+            [
+              9.455,
+              -5.0
+            ],
+            [
+              9.175298518880059,
+              -5.0
+            ],
+            [
+              6.9524999825,
+              -7.2
+            ]
+          ],
+          "plane": [
+            0.5714285714285717,
+            0,
+            2.647142857142855
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "west slope",
+          "poly": [
+            [
+              9.175298518880059,
+              -5.0
+            ],
+            [
+              4.73,
+              -5.0
+            ],
+            [
+              4.73,
+              -5.000295491708033
+            ],
+            [
+              6.952499982499999,
+              -7.200000000000001
+            ]
+          ],
+          "plane": [
+            0.5714285714285717,
+            0,
+            2.647142857142855
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "east slope",
+          "poly": [
+            [
+              14.18,
+              -16.506
+            ],
+            [
+              14.18,
+              -11.799999999999997
+            ],
+            [
+              9.474,
+              -11.799999999999999
+            ]
+          ],
+          "plane": [
+            -0.5714285714285717,
+            0,
+            13.452857142857146
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "east slope",
+          "poly": [
+            [
+              14.18,
+              -11.799999999999997
+            ],
+            [
+              14.18,
+              -11.7
+            ],
+            [
+              12.720000000000002,
+              -11.7
+            ],
+            [
+              12.720000000000002,
+              -11.799999999999997
+            ]
+          ],
+          "plane": [
+            -0.5714285714285717,
+            0,
+            13.452857142857146
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "east slope",
+          "poly": [
+            [
+              9.787500017499998,
+              -11.7
+            ],
+            [
+              9.455,
+              -11.7
+            ],
+            [
+              9.455,
+              -11.780999999999999
+            ],
+            [
+              9.474,
+              -11.799999999999999
+            ],
+            [
+              9.7875000175,
+              -11.799999999999999
+            ]
+          ],
+          "plane": [
+            -0.5714285714285717,
+            0,
+            13.452857142857146
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "east slope",
+          "poly": [
+            [
+              14.18,
+              -11.7
+            ],
+            [
+              14.18,
+              -5.0
+            ],
+            [
+              12.719999999999999,
+              -5.0
+            ],
+            [
+              12.72,
+              -11.7
+            ]
+          ],
+          "plane": [
+            -0.5714285714285717,
+            0,
+            13.452857142857146
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "east slope",
+          "poly": [
+            [
+              9.55,
+              -5.0
+            ],
+            [
+              9.455,
+              -5.0
+            ],
+            [
+              9.455,
+              -11.7
+            ],
+            [
+              9.55,
+              -11.7
+            ]
+          ],
+          "plane": [
+            -0.5714285714285717,
+            0,
+            13.452857142857146
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "south hip",
+          "poly": [
+            [
+              4.73,
+              -16.506
+            ],
+            [
+              14.18,
+              -16.506
+            ],
+            [
+              9.455000000000002,
+              -11.780999999999999
+            ]
+          ],
+          "plane": [
+            0,
+            0.5714285714285717,
+            14.782000000000004
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "entrance gable south",
+          "poly": [
+            [
+              5.90789290759842,
+              -8.233892907598413
+            ],
+            [
+              6.9525000175,
+              -7.2
+            ],
+            [
+              4.874000000000008,
+              -7.2
+            ]
+          ],
+          "plane": [
+            0,
+            0.5773502691896256,
+            10.776921938165305
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "entrance gable south",
+          "poly": [
+            [
+              3.26,
+              -9.4
+            ],
+            [
+              4.729701481119943,
+              -9.4
+            ],
+            [
+              5.90789290759842,
+              -8.233892907598413
+            ],
+            [
+              4.874000000000008,
+              -7.2
+            ],
+            [
+              3.26,
+              -7.2
+            ]
+          ],
+          "plane": [
+            0,
+            0.5773502691896256,
+            10.776921938165305
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "entrance gable north",
+          "poly": [
+            [
+              3.26,
+              -7.2
+            ],
+            [
+              4.73,
+              -7.2
+            ],
+            [
+              4.73,
+              -5.0
+            ],
+            [
+              3.26,
+              -5.0
+            ]
+          ],
+          "plane": [
+            0,
+            -0.5773502691896256,
+            2.463078061834696
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "entrance gable north",
+          "poly": [
+            [
+              4.73,
+              -7.2
+            ],
+            [
+              6.9525000175,
+              -7.2
+            ],
+            [
+              4.73,
+              -5.000295457067016
+            ]
+          ],
+          "plane": [
+            0,
+            -0.5773502691896256,
+            2.463078061834696
+          ],
+          "thickness": 0.35,
+          "kind": "pitched"
+        },
+        {
+          "label": "rear dormer",
+          "poly": [
+            [
+              12.72,
+              -11.7
+            ],
+            [
+              12.72,
+              -8.516000000000014
+            ],
+            [
+              9.55,
+              -11.685999999999996
+            ],
+            [
+              9.55,
+              -11.7
+            ]
+          ],
+          "plane": [
+            0,
+            0,
+            7.86
+          ],
+          "thickness": 0.2600000000000007,
+          "kind": "flat"
+        },
+        {
+          "label": "rear dormer",
+          "poly": [
+            [
+              9.787499982500002,
+              -11.799999999999999
+            ],
+            [
+              12.72,
+              -11.799999999999999
+            ],
+            [
+              12.72,
+              -11.7
+            ],
+            [
+              9.787499982500002,
+              -11.7
+            ]
+          ],
+          "plane": [
+            0,
+            0,
+            7.86
+          ],
+          "thickness": 0.2600000000000007,
+          "kind": "flat"
+        },
+        {
+          "label": "rear dormer",
+          "poly": [
+            [
+              12.72,
+              -8.516000000000014
+            ],
+            [
+              12.72,
+              -5.0
+            ],
+            [
+              9.55,
+              -5.0
+            ],
+            [
+              9.55,
+              -11.685999999999996
+            ]
+          ],
+          "plane": [
+            0,
+            0,
+            7.86
+          ],
+          "thickness": 0.2600000000000007,
+          "kind": "flat"
+        }
+      ],
+      "suiteRoute": [
+        [
+          9.04,
+          -2.6,
+          5.55
+        ],
+        [
+          9.04,
+          -4.35,
+          5.55
+        ],
+        [
+          10.35,
+          -4.35,
+          5.55
+        ],
+        [
+          10.35,
+          -5.3,
+          5.55
+        ],
+        [
+          10.35,
+          -6.6,
+          5.55
+        ]
+      ],
+      "published": false,
+      "closedRoofScribedWalls": true
+    },
+    "retainedFloorRepair": {
+      "revision": "oak-spindle-stair-2026-10-21",
+      "finishedFloorZ": 2.802,
+      "lintelTopZ": 2.77,
+      "oakThresholdBounds": [
+        5.8,
+        -0.115,
+        8.89,
+        0.115
+      ],
+      "courtyardJoinBounds": [
+        9.3,
+        -4.23,
+        9.7,
+        -2.6
+      ],
+      "stairHeadFinishOwnership": [
+        7.3124141693,
+        0.115,
+        7.9200000763,
+        1.01
+      ],
+      "changed": [
+        "Landings 01 | continuous oak landing floor",
+        "Landings 01 | continuous oak landing floor.007",
+        "Landings 01 | continuous oak landing floor.008",
+        "Proposal | Original ground junction lintel",
+        "Proposal | Entrance first floor continuation"
+      ],
+      "retired": [],
+      "added": [
+        "Proposal | Stair landing finish | oak threshold over recessed o",
+        "Proposal | Stair landing finish | courtyard junction closed flo",
+        "Proposal | Stair landing finish | courtyard junction continuous"
+      ],
+      "trimmedFloorFinishes": [
+        "Landings 01 | continuous oak landing floor",
+        "Landings 01 | continuous oak landing floor.007",
+        "Landings 01 | continuous oak landing floor.008"
+      ],
+      "layoutUnchanged": true
+    }
+  },
+  "files": {
+    "Ashley Heights \u2014 Proposed (planning application).blend": "f061025e949c806f4c46602048aece2a687aaa354f98e2030f1e16f8dfadbc3d",
+    "Ashley Heights \u2014 Proposed (planning application).glb": "34aab90fdd860d659f9322287d6769de1e34228775a5b45ba228988c5e476491",
+    "geometry.json": "f094301c403f5d37068fa908faed4fb66698175758e2b068989b44c28d274119",
+    "navigation.json": "7583068b6425939af44fec8b744536429667fc86faa279c3fbf2fcf8c47d904e"
+  }
+}

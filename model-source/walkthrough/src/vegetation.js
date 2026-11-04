@@ -1,3 +1,4 @@
+import {VEGETATION_CLIP_MAX} from './vegetation-clipping.js';
 // Realistic vegetation for the tour (owner, 23 September 2026: "photorealism for the trees").
 //
 // Trees are grown with ez-tree (MIT; bark from Poly Haven / TextureCan, CC0) from the
@@ -10,6 +11,7 @@
 // planters stay.
 import * as THREE from 'three';
 import {Tree,TreePreset} from '@dgreenheck/ez-tree';
+import {photoTreeRecord,foliageProfile,fitTreeGeometry,densifyUpperFoliage} from './planting-profiles.js';
 
 // Which model objects this module replaces. Site trees are grown from their records
 // (proposal/neighbours/site-trees.json via STREET_DATA.siteTrees); foliage blobs and
@@ -57,7 +59,7 @@ function rngFrom(seed){let s=(Math.abs(Math.sin(seed*12.9898)*43758.5453)%1)*233
 
 // Trees stop at the building: fragments inside a room's volume are discarded (owner, 24 Sep 2026:
 // M1's branches went into the house). Boxes come from the design's rooms (setClipBoxes).
-const CLIP_MAX=48;
+const CLIP_MAX=VEGETATION_CLIP_MAX;
 function clipPatch(shader,clip){
  shader.uniforms.uClipMin=clip.min;shader.uniforms.uClipMax=clip.max;shader.uniforms.uClipCount=clip.count;
  shader.vertexShader='varying vec3 vVegWorld;\n'+shader.vertexShader.replace('#include <project_vertex>',`#include <project_vertex>
@@ -70,6 +72,7 @@ function clipPatch(shader,clip){
   for(int i=0;i<${CLIP_MAX};i++){if(i>=uClipCount)break;if(all(greaterThan(vVegWorld,uClipMin[i]))&&all(lessThan(vVegWorld,uClipMax[i])))discard;}`);
 }
 function withClip(mat,clip,key){
+ mat.userData.vegetationClip=true;
  const prev=mat.onBeforeCompile;
  mat.onBeforeCompile=(shader,renderer)=>{if(prev)prev.call(mat,shader,renderer);clipPatch(shader,clip);};
  const prevKey=mat.customProgramCacheKey?.bind(mat);
@@ -115,17 +118,25 @@ export class Vegetation {
   return {mat,depth};
  }
  // --- tree prototypes -------------------------------------------------------------
- prototype(species,seed,large){
-  const key=species+'|'+seed+'|'+(large?1:0);if(this.prototypes.has(key))return this.prototypes.get(key);
-  const sp=SPECIES[species];const json=structuredClone(TreePreset[large&&sp.large?sp.large:sp.preset]);
+ prototype(species,seed,large,record=null){
+  const profile=record?.photoProfile,fit=record&&(profile||record.dbh||record.crownBase!=null);
+  const key=species+'|'+seed+'|'+(large?1:0)+(fit?'|'+JSON.stringify(record):'');if(this.prototypes.has(key))return this.prototypes.get(key);
+  const sp={...SPECIES[species],...(profile??{})};const json=structuredClone(TreePreset[profile?.preset??(large&&sp.large?sp.large:sp.preset)]);
   json.seed=seed;json.bark={...json.bark,type:sp.bark,textured:true};json.leaves={...json.leaves,type:sp.leaf,tint:0xffffff};
   if(sp.leafScale)json.leaves.size*=sp.leafScale;
   if(sp.leafCount)json.leaves.count=Math.round(json.leaves.count*sp.leafCount);
   if(sp.evergreen)json.type='evergreen';
   if(this.mobile)json.leaves.count=Math.max(1,Math.round(json.leaves.count*.6));
   if(sp.clearStem){json.branch.start={...json.branch.start,1:sp.clearStem};}
+  if(profile){
+   json.type='evergreen';json.branch.children[0]=profile.branchCount;json.branch.angle[1]=profile.branchAngle;
+   json.branch.gnarliness[0]=.015;json.branch.start[1]=Math.max(.14,(record.crownBase??.3)/record.height);
+   json.leaves.count=Math.round(profile.leafCount*(this.mobile?.6:1));json.leaves.size=profile.leafSize;
+  }
   const t0=performance.now();const tree=new Tree();tree.loadFromJson(json);(this.stats.timing??={})[key]=Math.round(performance.now()-t0);
   const bg=tree.branchesMesh.geometry,lg=tree.leavesMesh.geometry;
+  const fitted=fit?fitTreeGeometry(bg,lg,record,json):null;
+  const upperFoliage=densifyUpperFoliage(lg,profile);
   bg.computeBoundingBox();lg.computeBoundingBox();const box=bg.boundingBox.clone().union(lg.boundingBox);
   const height=box.max.y-Math.min(0,box.min.y),width=Math.max(box.max.x-box.min.x,box.max.z-box.min.z);
   // Leaves: outward normals from the crown centre and a little per-leaf colour variation.
@@ -141,7 +152,7 @@ export class Vegetation {
   if(!this.textures[sp.leaf])this.textures[sp.leaf]=this.leafMaterial(tree.leavesMesh.material.map);
   const barkKey='bark-'+sp.bark;
   if(!this.textures[barkKey]){const m=tree.branchesMesh.material;this.textures[barkKey]=withClip(new THREE.MeshStandardMaterial({map:m.map,normalMap:m.normalMap,roughness:.95,metalness:0,color:0xd8d2c8}),this.clip,'bark');}
-  const proto={bg,lg,height,width,species,leafMat:this.textures[sp.leaf],barkMat:this.textures[barkKey],instances:[]};
+  const proto={bg,lg,height,width,species,fitted,upperFoliage,leafMat:this.textures[sp.leaf],barkMat:this.textures[barkKey],instances:[]};
   this.prototypes.set(key,proto);this.stats.prototypes++;
   if(!this.leafTextureForHedges&&sp.leaf==='aspen')this.leafTextureForHedges=tree.leavesMesh.material.map;
   if(!this.anyLeafTexture)this.anyLeafTexture=tree.leavesMesh.material.map;
@@ -149,12 +160,14 @@ export class Vegetation {
   return proto;
  }
  plant(t,{x,y,z=null}){   // t: a researched tree record
+  t=photoTreeRecord(t);
   if(z===null)z=this.ground(x,y)-.08;
   const species=speciesOf(t),H=t.height,R=t.crown??H*.3,rnd=rngFrom(Math.round(x*97+y*31));
-  const large=H>=12&&!!SPECIES[species].large,proto=this.prototype(species,1+Math.floor(rnd()*3),large);
+  const large=H>=12&&!!SPECIES[species].large,proto=this.prototype(species,1+Math.floor(rnd()*3),large,t);
   let sxz=(2*R)/proto.width*(SPECIES[species].spread??1),sy=H/proto.height;
+  if(proto.fitted){sxz=1;sy=1;}
   if(species==='cypress')sxz=Math.min(sxz,(2*R)/proto.width);
-  const m=new THREE.Matrix4().compose(new THREE.Vector3(x,z,-y),new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),rnd()*Math.PI*2),new THREE.Vector3(sxz*(.95+rnd()*.1),sy,sxz*(.95+rnd()*.1)));
+  const m=new THREE.Matrix4().compose(new THREE.Vector3(x,z,-y),new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),rnd()*Math.PI*2),new THREE.Vector3(sxz*(proto.fitted?1:.95+rnd()*.1),sy,sxz*(proto.fitted?1:.95+rnd()*.1)));
   proto.instances.push({m,tint:.9+rnd()*.2});this.stats.trees++;
   (this.spots??=[]).push({x,z:-y,y:z,rx:R*1.05,rz:R*1.05});
  }
@@ -175,9 +188,11 @@ export class Vegetation {
   if(!list.length)return;const tv=performance.now();
   const map=(texture&&this.leafMaps?.[texture])||this.leafTextureForHedges||this.anyLeafTexture;const leaf=this.leafMaterial(map,{wind:false});
   // Size everything first so the card data goes straight into typed arrays (no per-card objects).
-  const plans=list.map((vol,k)=>{const {radii,shape='ellipsoid',density=38}=vol,a=radii.x,b=radii.y,c=radii.z,pp=1.6075;
+  const plans=list.map((vol,k)=>{const {radii,shape='ellipsoid',density=38,variation}=vol,a=radii.x,b=radii.y,c=radii.z,pp=1.6075;
    const area=shape==='box'?8*(a*b+b*c+a*c):4*Math.PI*Math.pow((Math.pow(a*b,pp)+Math.pow(a*c,pp)+Math.pow(b*c,pp))/3,1/pp);
-   return Math.min(9000,Math.round(area*density*(this.mobile?.45:1)));});
+   // Small photo-scaled leaves need more cards to retain the earlier coverage.
+   const cap=variation!=null?(this.mobile?16000:36000):9000;
+   return Math.min(cap,Math.round(area*density*(this.mobile?.45:1)));});
   const total=plans.reduce((s,n)=>s+n,0);
   const P=new Float32Array(total*12),N=new Float32Array(total*12),C=new Float32Array(total*12),U=new Float32Array(total*8),I=new Uint32Array(total*6);
   const corners=[[-.5,-.5,0,0],[.5,-.5,1,0],[.5,.5,1,1],[-.5,.5,0,1]];
@@ -251,7 +266,8 @@ export class Vegetation {
   const vols=this.foliage.map(({box,material,name})=>{const c=box.getCenter(new THREE.Vector3()),s=box.getSize(new THREE.Vector3()),long=Math.max(s.x,s.z)/Math.max(.01,Math.min(s.x,s.z));
    const clipped=/box ball|Boundary hedge|hedge/i.test(name),crown=/crown|canopy|Cherry/i.test(name),blossom=/blossom/i.test(material);
    if(blossom)return {center:c,radii:s.clone().multiplyScalar(.6),shape:'ellipsoid',tint:'#f2e4ea',cardSize:.11,density:55};
-   return {center:c,radii:s.clone().multiplyScalar(.5),shape:long>2.5?'box':'ellipsoid',tint:crown?'#7b9a52':clipped?'#5d7a3c':'#6a8448',cardSize:/box ball/i.test(name)?.16:crown?.3:.34,density:/box ball/i.test(name)?70:40};});
+   const profile=foliageProfile(name,c);
+   return {center:c,radii:s.clone().multiplyScalar(.5),shape:profile.shape??(long>2.5?'box':'ellipsoid'),...profile,tint:crown?'#839769':profile.tint};});
   const varied=vols.flatMap((v,i)=>irregular(v,i));
   for(let i=0;i<varied.length;i+=60){this.volumes(varied.slice(i,i+60));await idle();}
   for(const t of this.firRows||[]){
@@ -265,7 +281,11 @@ export class Vegetation {
   this.grassClumps(this.grass);this.groundShade(this.spots||[]);this.spots=[];this.siteDone=true;
  }
  row(t){
-  if(t.species==='fir'){this.firRows=(this.firRows||[]).concat([t]);return;}
+  if(t.species==='fir'){
+   const [x0,y0]=t.from,[x1,y1]=t.to,L=Math.hypot(x1-x0,y1-y0),n=Math.max(3,Math.round(L/1.25)),rnd=rngFrom(x0*17+y0*3);
+   for(let i=0;i<n;i++){const f=(i+.5)/n;this.plant({...t,kind:'conifer',height:t.height*(.91+rnd()*.09),crown:(t.width??2.8)*.5,dbh:.16},{x:x0+(x1-x0)*f,y:y0+(y1-y0)*f});}
+   return;
+  }
   const [x0,y0]=t.from,[x1,y1]=t.to,L=Math.hypot(x1-x0,y1-y0),n=Math.max(2,Math.round(L/1.3)),w=(t.width??2)/2;
   if(t.height>5){const r=rngFrom(x0*11+y0*5);for(let i=0;i<n;i++){const f=(i+.5+(r()-.5)*.5)/n,side=(r()-.5)*.6;this.plant({kind:'treeBush',height:t.height*(.72+r()*.4),crown:w*(.9+r()*.6)},{x:x0+(x1-x0)*f+side*(y1-y0)/L,y:y0+(y1-y0)*f-side*(x1-x0)/L});}return;}
   // A continuous hedge: masses spaced closer than their size along the line so they merge.
@@ -305,6 +325,11 @@ export class Vegetation {
 function irregular(v,seed){
  if(v.cardSize&&v.cardSize<.15&&/f2e4ea/i.test(v.tint))return [v];   // blossom stays as modelled
  const rnd=rngFrom(seed*3.7+v.center.x*1.3+v.center.z*.7),out=[],n=2+(rnd()<.45?1:0),base=new THREE.Color(v.tint);
+ if(v.variation!=null){
+  // Retained hedges keep their measured envelopes. Small surface variation
+  // replaces the former expansion into several oversized overlapping balls.
+  return [{...v,center:v.center.clone(),radii:v.radii.clone(),tint:'#'+base.offsetHSL((rnd()-.5)*.015,0,(rnd()-.5)*v.variation).getHexString()}];
+ }
  for(let k=0;k<n;k++){
   const r=v.radii,c=v.center.clone().add(new THREE.Vector3((rnd()-.5)*r.x*.55,(rnd()-.35)*r.y*.3,(rnd()-.5)*r.z*.55));
   const rad=new THREE.Vector3(r.x*(.68+rnd()*.42),r.y*(.72+rnd()*.38),r.z*(.68+rnd()*.42));

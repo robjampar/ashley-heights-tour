@@ -1,0 +1,130 @@
+{
+  "proposal/specs/structural-members.json": {
+    "sha256": "b6216f74af5d037001fe021de6931b0a60e8fa1465d532203b3d4f2f5832857b",
+    "bytes": 8635
+  },
+  "proposal/specs/structural-trials.json": {
+    "sha256": "4b0ed3cd6347b40118ea19103d9b0a69e238004848d840ec72183757d303b973",
+    "bytes": 15319
+  },
+  "proposal/specs/structural-junction-details.json": {
+    "sha256": "d386d772876f34d8dbc01443daf31d10f39fcd2631f18d93f1be37f3f3fa4887",
+    "bytes": 3493
+  },
+  "proposal/specs/structural-uk-catalog.json": {
+    "sha256": "e681d58935549ff1ab0e973f4fa8373faff8da3bf103d48cf1c1430e5a5c3428",
+    "bytes": 7311
+  },
+  "proposal/specs/structural-floor-layout.json": {
+    "sha256": "51ffc866d5ee3884c8f3ebe9e3b00dd44379df28e8585badf7e9147e9c093116",
+    "bytes": 75218
+  },
+  "proposal/specs/structural-design.json": {
+    "sha256": "a4ab1014363b7bb297c530f96868d692fed8a5bdbb09137f4261d63201b686a6",
+    "bytes": 4638
+  },
+  "proposal/specs/structural-foundations.json": {
+    "sha256": "ffd914bf59fd15000a48c39f4669bf4b6a095a8f74046a092a7dab1fa7da372a",
+    "bytes": 4179
+  },
+  "proposal/specs/structural-wall-assemblies.json": {
+    "sha256": "6d2f99497e1e76640d364afc82dc3c8c2a4b31f0e5a56dbabd301d40eaea6ac2",
+    "bytes": 14338
+  },
+  "scripts/structure/build_pack.py": {
+    "sha256": "2df1a2f53ffb2e7609e1ce295db3649b43259c27881ed75e83f42abf28c5f321",
+    "bytes": 12888
+  },
+  "scripts/structure/support_screen.py": {
+    "sha256": "5abc535eed1c2010447810eedd60882df7d90d3bbf5d3d95c78345c73d732a8f",
+    "bytes": 5826
+  },
+  "scripts/structure/__init__.py": {
+    "sha256": "df8772e601ac203b4433dd01051112e06cb2af33a7639587997bfacd7a022a21",
+    "bytes": 77
+  },
+  "scripts/structure/build_members.py": {
+    "sha256": "be80794d420bc11996a8b8231ac1212efe80ff1921456cd08eca002d1e991597",
+    "bytes": 102845
+  },
+  "scripts/structure/trial_calculations.py": {
+    "sha256": "1702f04803435ff66694831e436f61b8ee31a0b58889b33ce5ecb59695683977",
+    "bytes": 17909
+  },
+  "scripts/structure/junctions.py": {
+    "sha256": "c01433878dd974684d57171316e0ec4acbd27b3014680abe11edfdb6737abbce",
+    "bytes": 27841
+  },
+  "scripts/structure/build_study.py": {
+    "sha256": "897d0dd9c7b4a9474166b7f945cf20958bc410690420a9c10dfa9d092a4aefde",
+    "bytes": 17656
+  },
+  "scripts/structure/foundations.py": {
+    "sha256": "8521df702fdc1840c7ce4fa4cfce3e1cacca385db9fac15872152797a265256b",
+    "bytes": 7112
+  },
+  "scripts/structure/garden_room.py": {
+    "sha256": "ef3dddbbec9b0a104f47b15f2243ea2907fb7919a8b642e81b105f232992cb73",
+    "bytes": 17819
+  },
+  "scripts/structure/build_trial_pack.py": {
+    "sha256": "b13816b5e354ae75c5546882f5c9c272dbcf7839ed0ce18e50e466087952c45b",
+    "bytes": 16447
+  },
+  "walkthrough/src/structure-studio.js": {
+    "sha256": "2a29d52f5e7ef5153874aea6d4e08e9170c3c4887c93e5d3216632060e7a4a20",
+    "bytes": 36851
+  },
+  "walkthrough/src/structure-trials.js": {
+    "sha256": "28aa08068ed2fe8dbd3d9f89ebf1f4dd0ee6780b558ffff3ee528eb438447d3c",
+    "bytes": 13220
+  },
+  "walkthrough/src/structure-walkthrough.js": {
+    "sha256": "11c71bafb8dad0699061fa7295b386288fff8aff2cfb528316253a1fae8268fd",
+    "bytes": 15031
+  },
+  "walkthrough/src/structure-members.js": {
+    "sha256": "19b65c26c7217262130a58c2ca53d6f49104d789cef8ee7f19967947f01660fd",
+    "bytes": 20297
+  },
+  "walkthrough/src/structure-systems.js": {
+    "sha256": "76ca314c5e338dbc4fe32aebf9f2690484aed532308f76c217874f3b6a911ae0",
+    "bytes": 1666
+  },
+  "walkthrough/src/structure-geometry.js": {
+    "sha256": "c2f2681933e17b413cc8e3ea45db6290a9754e4749ae792040c1b7ef19c83a1e",
+    "bytes": 10179
+  },
+  "walkthrough/src/structure-entry.js": {
+    "sha256": "bcbb2a0ce58a28d7563175dd61f56a1c3a5bbfb8f47211e3097778d2371b0a73",
+    "bytes": 92
+  },
+  "walkthrough/src/structure-junctions.js": {
+    "sha256": "9a208746980d46c0ff2dbe522964e6b9d1958cd54b5098a55b58a9f17426925e",
+    "bytes": 10989
+  },
+  "walkthrough/src/structure-composite.js": {
+    "sha256": "a24f3d3c30afa947aa69f724974ad5a0f11a8afa47fc9abc011c1405041d876a",
+    "bytes": 3892
+  },
+  "walkthrough/src/structure-foundations.js": {
+    "sha256": "0a29b3db87099984863d27186640fa6f87ff3b9cc428e718af82132ef698b909",
+    "bytes": 6137
+  },
+  "walkthrough/public/structure/members.json": {
+    "sha256": "da02cd0f46bc153aeebd1ccbbee62ee7e981e5da8113c6f3db06787db199a70e",
+    "bytes": 24599219
+  },
+  "walkthrough/public/structure/model.json": {
+    "sha256": "e345a2f5e2fe24ae46787e1814c063f877aab0e20bcfdcfc85409cffb5afce96",
+    "bytes": 1673609
+  },
+  "walkthrough/public/structure/junction-review.json": {
+    "sha256": "28cf8b509c8a8f2ef925320c42f0ac2b2cd684db9b781526fe43546b4c501962",
+    "bytes": 1226356
+  },
+  "walkthrough/public/structure/trials.json": {
+    "sha256": "adbd4e2a9c567c69daab1d89d5fe5c918e3ab81e81f631b5bdce57532f2d578e",
+    "bytes": 236212
+  }
+}

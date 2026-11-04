@@ -39,13 +39,15 @@ def schedule_data(ctx, ex, pr):
     cil = {'existing_gia': round(ex_gia, 1), 'proposed_gia': round(pr_gia, 1), 'increase': round(pr_gia - ex_gia, 1), 'demolished': demolished, 'verdict': 'CIL additional information form required (≥ 100 m²); exemption eligibility to be confirmed' if pr_gia - ex_gia >= 100 else 'Below the 100 m² threshold'}
     ex_gf = ex_rows[0]['external']; pr_gf = [r for r in pr_rows if abs(r['z']) < .05][0]['external']
     ex_roof = fp.roof_outline(ex, fp.HOUSE_REGION); pr_roof = fp.roof_outline(pr, fp.HOUSE_REGION)
-    vol_ex = A * 2.8 + .5 * ex_roof.area * 2.7; vol_pr = sum(r['external_m2'] for r in pr_rows) * 2.8 + .5 * pr_roof.area * 2.7
+    # Do not multiply loft/basement floor areas by an assumed storey height:
+    # that double counts roof space and confuses underground and visible mass.
+    basement_row = next(r for r in pr_rows if r['z'] < 0)
     heights = [['Ridge height (main)', '8.05 m', '8.05 m (new wing) / 8.05 m retained'], ['Eaves height', '5.35 m', '5.35 m'], ['Dormer roof', '—', '7.86 m'], ['Entrance bay ridge', '—', '6.62 m'], ['Garage bay ridge', '3.0 m flat', '5.20 m'],
-               ['Ground-floor footprint (walls)', f'{ex_gf.area:.0f} m²', f'{pr_gf.area:.0f} m²'], ['Roof plan area', f'{ex_roof.area:.0f} m²', f'{pr_roof.area:.0f} m²'], ['Approximate volume', f'{vol_ex:.0f} m³', f'{vol_pr:.0f} m³'],
-               ['Basement', '—', f"{pr.nav['proposalBasement']['outer_area_m2']:.0f} m² external, floor −2.80"], *([['Garden workshop', '—', f"{pr.nav['proposalWorkshop']['outside_area_m2']:.1f} m², 2.64 m high"]] if pr.nav.get('proposalWorkshop') else [])]
+               ['Ground-floor footprint (model envelope)', f'{ex_gf.area:.0f} m²', f'{pr_gf.area:.0f} m²'], ['Roof plan area', f'{ex_roof.area:.0f} m²', f'{pr_roof.area:.0f} m²'], ['External volume', 'Not established', 'Not established; separate above/below ground'],
+               ['Basement', '—', f"{basement_row['external_m2']:.1f} m² external estimate, floor −2.80"], *([['Garden workshop', '—', f"{pr.nav['proposalWorkshop']['outside_area_m2']:.1f} m², 2.64 m high"]] if pr.nav.get('proposalWorkshop') else [])]
     site_area = pr.site_polygon.area
     ex_all = fp.building_footprints(ex); pr_all = fp.building_footprints(pr)
-    coverage = {'Site area': f'{site_area:,.0f} m²', 'Existing buildings': f'{ex_all.area:.0f} m² ({ex_all.area / site_area * 100:.0f}%)', 'Proposed buildings': f'{pr_all.area:.0f} m² ({pr_all.area / site_area * 100:.0f}%)', **({'Proposed swimming pool': '8.0 × 3.5 m (new works)'} if pr.spec.get('pool') else {})}
+    coverage = {'Site area': f'{site_area:,.0f} m²', 'Existing buildings': f'{ex_all.area:.0f} m² ({ex_all.area / site_area * 100:.0f}%)', 'Proposed buildings': f'{pr_all.area:.0f} m² ({pr_all.area / site_area * 100:.0f}%)', 'Building footprint ratio': f'{pr_all.area / ex_all.area:.2f} times existing (model estimate; dated baseline to verify)', 'Retained non-developed area': 'Not established: survey curtilage and hard landscape; coverage alone is not the L2 test', **({'Proposed swimming pool': '8.0 × 3.5 m (new works)'} if pr.spec.get('pool') else {})}
     return {'existing': ex_rows, 'proposed': pr_rows, 'garden': garden, 'green_belt': gb, 'cil': cil, 'heights': heights, 'coverage': coverage}
 
 
@@ -104,6 +106,9 @@ def build(argv=None):
         docs.application_form_pdf(ctx, statement.application_form_data(ctx, sched, site_info, pr), out / 'supporting' / 'householder-application-form.pdf')
         docs.cil_form_pdf(ctx, sched['cil'], out / 'supporting' / 'cil-form.pdf')
         docs.report_summaries_pdf(ctx, statement.report_summaries(ctx, sched, site_info, rk, pr), out / 'supporting' / 'report-summaries.pdf')
+        if a.variant == 'planning':
+            from .evidence import write_documents
+            write_documents(ctx, sched, out)
         (out / 'supporting' / 'schedules.json').write_text(json.dumps({k: v for k, v in sched.items() if k in ('green_belt', 'cil', 'heights', 'coverage')} | {'existing': [{k: v for k, v in r.items() if k in ('label', 'external_m2', 'gia_m2', 'rooms_m2')} for r in sched['existing']], 'proposed': [{k: v for k, v in r.items() if k in ('label', 'external_m2', 'gia_m2', 'rooms_m2')} for r in sched['proposed']], 'garden': sched['garden']}, indent=1))
     all_sheets = sorted(sm + doc_manifest, key=lambda m: m['sheet'])
     # Checks.
@@ -115,14 +120,15 @@ def build(argv=None):
     (out / 'checks' / 'validation-checklist.json').write_text(json.dumps(cl, indent=1))
     if not a.no_docs:
         p = docs.register_sheet(ctx, all_sheets, cl, ctx.replace_before_submission(), out / 'PA-000.pdf'); all_sheets.insert(0, {'sheet': 'PA-000', 'title': 'Drawing register, notes and validation checklist', 'scales': [], 'file': p.name, 'bytes': p.stat().st_size, 'sha256': sha(p)})
-    pc = checks.pdf_checks(sorted(out.glob('PA-*.pdf')) + sorted((out / 'supporting').glob('*.pdf')))
+    pc = checks.pdf_checks(sorted(out.glob('PA-*.pdf')) + sorted((out / 'supporting').glob('*.pdf')),
+                           review_issue='NOT FOR SUBMISSION' in ctx['sheet_status'])
     # Merge.
     merged = out / 'Ashley Heights - Planning Review.pdf'
     if not only:
         m = pymupdf.open()
         for s in all_sheets:
             m.insert_pdf(pymupdf.open(str(out / s['file'])))
-        for f in ('DAS.pdf', 'householder-application-form.pdf', 'cil-form.pdf', 'report-summaries.pdf'):
+        for f in ('DAS.pdf', 'planning-evidence.pdf', 'pre-application-draft.pdf', 'householder-application-form.pdf', 'cil-form.pdf', 'report-summaries.pdf'):
             if (out / 'supporting' / f).exists():
                 m.insert_pdf(pymupdf.open(str(out / 'supporting' / f)))
         m.set_metadata({'title': 'Ashley Heights — planning drawings', 'author': ctx.get('drawn_by', ''), 'subject': ctx['address']}); m.save(str(merged), garbage=3, deflate=True); m.close()
@@ -177,6 +183,7 @@ def main(argv=None):
     parser.add_argument('--no-docs', action='store_true')
     parser.add_argument('--check', action='store_true')
     parser.add_argument('--force', action='store_true', help='Redraw a complete pack even when verified inputs and outputs match')
+    parser.add_argument('--snapshot-review', action='store_true', help='Explicitly issue a NOT FOR SUBMISSION review of saved exports; record unresolved source/model differences')
     parser.add_argument('--out', default=None)
     args = parser.parse_args(argv)
     out = Path(args.out or (OUT if args.variant == "planning" else ROOT / "proposal/proposed")).resolve()
@@ -187,7 +194,7 @@ def main(argv=None):
             print('  ' + reason)
         return int(bool(reasons))
     source_issues = release.model_source_issues(args.variant)
-    if source_issues:
+    if source_issues and not args.snapshot_review:
         print('\n'.join(source_issues), file=sys.stderr)
         return 2
     only = {s.strip() for s in args.sheets.split(',') if s.strip()}
@@ -222,6 +229,12 @@ def main(argv=None):
                 command += ['--no-docs']
             result = build(command)
             if result:
+                failed = staging / 'manifest.json'
+                if failed.exists():
+                    diagnostics = json.loads(failed.read_text())
+                    for check in diagnostics.get('pdf_checks', []):
+                        if not check['pass']:
+                            print('PDF check failed: ' + json.dumps(check), file=sys.stderr)
                 print('Build checks failed; previous issue preserved.', file=sys.stderr)
                 return result
             if release.input_fingerprints(args.variant) != inputs:
@@ -229,7 +242,8 @@ def main(argv=None):
                 return 2
             manifest = json.loads((staging / 'manifest.json').read_text())
             complete = not only and not args.no_docs
-            manifest.update(complete_build=complete, source_files=inputs, submission_ready=False)
+            manifest.update(complete_build=complete, source_files=inputs, submission_ready=False,
+                            review_snapshot=args.snapshot_review, model_source_issues=source_issues)
             from .readiness import write_readiness
             write_readiness(staging, manifest)
             manifest['artifacts'] = release.inventory(staging)

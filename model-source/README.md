@@ -9,3 +9,7 @@ See `WORKSPACE-README.md` under this directory for the current-model pipeline. B
 The viewer uses `npm ci` then `npm run build` from `walkthrough/`. Python drawing/review tooling requires matplotlib, shapely, Pillow, reportlab, pypdf and svglib. Drawings and layouts are concept studies, not surveyed application or construction documents.
 
 Account usage records, browser session logs, credentials and temporary captures are excluded from this snapshot.
+
+## Current house and structure
+
+The snapshot also includes current proposal specifications, the unified structural walkthrough, structural calculation sources and generated member data, and dated coordination/finish review records. The structural design remains experimental. A source commit does not update the public tour: building, release staging and publishing are separate steps. Large native/geometry recovery files remain local and are identified by checksum in `required_local_baselines`. Restore those files before running checks that compare against earlier model issues.

@@ -30,13 +30,21 @@ def html_to_pdf(body, path, rect=A3L, margin=28, compact=False):
     story = pymupdf.Story(html='<html><body>' + body + '</body></html>', user_css=CSS + (' table th,table td{font-size:7.2pt;padding:1.1pt 3.5pt;line-height:1.12} h2{margin-top:7pt}' if compact else ''))
     writer = pymupdf.DocumentWriter(str(path))
     more = True
+    positions = []
+    page_number = 0
+    def record_position(position):
+        position.page_num = page_number
+        positions.append(position)
     while more:
+        page_number += 1
         dev = writer.begin_page(rect)
         more, _ = story.place(rect + (margin, margin, -margin, -margin))
+        story.element_positions(record_position)
         story.draw(dev)
         writer.end_page()
     writer.close()
     with pymupdf.open(str(path)) as document:
+        pymupdf.Story.add_pdf_links(document, positions)
         for index, page in enumerate(document):
             page.insert_text((margin, page.rect.height - 14), f'Ashley Heights | {Path(path).stem} | Review issue | {index + 1} / {len(document)}', fontsize=7, color=(.37, .42, .44))
         document.saveIncr()
@@ -83,15 +91,18 @@ def floorspace_sheet(ctx, ex_rows, pr_rows, garden_rows, gb, cil, heights, cover
     body += '<h2>Floor areas — existing dwelling</h2>' + table([[r['label'], f"{r['external_m2']:.1f}", f"{r['gia_m2']:.1f}", f"{r['rooms_m2']:.1f}"] for r in ex_rows] + [['Total', f"{sum(r['external_m2'] for r in ex_rows):.1f}", f"{sum(r['gia_m2'] for r in ex_rows):.1f}", f"{sum(r['rooms_m2'] for r in ex_rows):.1f}"]], ['Level', 'External area m² (to outer wall face)', 'GIA m² (inner face)', 'Sum of room polygons m²'], num_cols=(1, 2, 3))
     body += '<h2>Floor areas — proposed dwelling</h2>' + table([[r['label'], f"{r['external_m2']:.1f}", f"{r['gia_m2']:.1f}", f"{r['rooms_m2']:.1f}"] for r in pr_rows] + [['Total', f"{sum(r['external_m2'] for r in pr_rows):.1f}", f"{sum(r['gia_m2'] for r in pr_rows):.1f}", f"{sum(r['rooms_m2'] for r in pr_rows):.1f}"]], ['Level', 'External area m²', 'GIA m²', 'Sum of room polygons m²'], num_cols=(1, 2, 3))
     body += '<h2>Garden buildings (enclosed floorspace)</h2>' + table([[r['label'], f"{r['external_m2']:.1f}", f"{r['gia_m2']:.1f}", r['note']] for r in garden_rows], ['Building', 'External m²', 'GIA m²', 'Note'], num_cols=(1, 2))
-    body += '<h2>Green Belt SPD Appendix 2 test (' + ('applies' if ctx.green_belt_module else 'shown for information — the site is outside the Green Belt (confirmed)') + ')</h2>'
-    body += table([['A  Original dwelling (external, all floors)', f"{gb['A']:.1f}"], ['C  Previous extensions', f"{gb['C']:.1f}"], ['B  Proposed additions (external, incl. basement outside the original footprint)', f"{gb['B']:.1f}"],
+    if ctx.green_belt_module:
+        body += '<h2>Green Belt comparison - verify original-house history and applicable policy</h2>'
+        body += table([['A  Existing dwelling (unverified original baseline)', f"{gb['A']:.1f}"], ['C  Previous extensions (unverified)', f"{gb['C']:.1f}"], ['B  Proposed additions (external, incl. basement outside the original footprint)', f"{gb['B']:.1f}"],
                    ['B + C', f"{gb['B'] + gb['C']:.1f}"], ['50% of A (limit)', f"{gb['A'] * .5:.1f}"], ['Result', gb['verdict']]], ['Item', 'm²'], num_cols=(1,))
-    body += '<p class="small">' + html.escape(gb['basis']) + '</p>'
+        body += '<p class="small">' + html.escape(gb['basis']) + '</p>'
+    else:
+        body += '<h2>Applicable scale assessment</h2><p>Outside the mapped Green Belt: no Green Belt percentage test is applied. Assess character, amenity and current NPPF L2 footprint/retained-area provisions. Original-house history and publication-date baseline remain to be established.</p>'
     body += '<p class=box>Area estimates require reconciliation with a measured survey and the independent wall-envelope diagnostic in manifest.json. Do not use these figures as a certified CIL calculation.</p>'
     body += '<h2>CIL</h2>' + table([['Existing GIA', f"{cil['existing_gia']:.1f}"], ['Proposed GIA', f"{cil['proposed_gia']:.1f}"], ['Net increase', f"{cil['increase']:.1f}"], ['Result', cil['verdict']]], ['Item', 'm²'], num_cols=(1,))
     body += '<h2>Heights, footprint and site coverage</h2>' + table(heights, ['Element', 'Existing', 'Proposed'])
     body += table([[k, v] for k, v in coverage.items()], ['Site coverage', 'Value'])
-    body += '<p class="muted">Areas are measured from the model\'s room polygons (internal faces) with a 230 mm wall allowance; they are not a measured survey. Volumes are approximate (external area × storey height plus half the roof plan area × roof rise).</p>'
+    body += '<p class="muted">Areas use model room polygons with a nominal wall allowance; they are not surveyed. External volume is not established: the former floor-area formula double counted roof space. Any replacement comparison must calculate the external envelope consistently and separate underground from above-ground mass.</p>'
     return html_to_pdf(body, path, compact=True)
 
 
@@ -123,13 +134,13 @@ def materials_sheet(ctx, records_ex, records_pr, path):
 
 # ---------------------------------------------------------------- PA-005
 def risk_sheet(ctx, risks, path):
-    body = header(ctx, 'PA-005', 'Planning risk and opportunity register', 'Where the scheme could be adjusted to make consent easier — for the owner to assess')
-    body += '<p>Each item is measured from the current model against the policy or guidance named. RED: likely reason for refusal or a required change; AMBER: officer scrutiny likely, mitigation available; GREEN: no issue identified by this limited check; survey and planning judgement still required. The "spec key" is the field in proposal/specs/design-spec-compact.json that controls the element, so a change is a spec edit and a rebuild.</p>'
+    body = header(ctx, 'PA-005', 'Planning risk and evidence register', 'Current house envelope retained; evidence first, redesign only by later owner decision')
+    body += '<p>Model estimates and planning questions, not a consent prediction. RED: identified conflict requiring assessment; AMBER: unresolved evidence or planning judgement; GREEN: limited diagnostic only, never permission. Source keys identify model inputs for traceability and do not authorise design changes.</p>'
     rows = []; cls = []
     for r in risks:
         rows.append([r['id'], r['topic'], r['policy'], r['measured'], r['threshold'], r['verdict'].upper(), r['fix'], ', '.join(r['spec_keys'])])
         cls.append(r['verdict'])
-    body += table(rows, ['Ref', 'Topic', 'Policy / guidance', 'Measured (model)', 'Test', 'Verdict', 'Adjustment that would clear it', 'Spec key(s)'], cls)
+    body += table(rows, ['Ref', 'Topic', 'Policy / guidance', 'Model evidence', 'Test', 'Status', 'Evidence / next action', 'Source key(s)'], cls)
     counts = {v: sum(1 for r in risks if r['verdict'] == v) for v in ('red', 'amber', 'green')}
     body += f'<p><b>Summary:</b> {counts["red"]} red, {counts["amber"]} amber, {counts["green"]} green.</p>'
     body += '<p class="muted">Policy references: Sevenoaks Residential Extensions SPD (2009); Development in the Green Belt SPD (2015); Sevenoaks Local Plan ADMP policies EN1/EN2; NPPF chapter 12; Town and Country Planning (General Permitted Development) Order 2015 Schedule 2 Part 1 as a benchmark for scale; Manual for Streets.</p>'

@@ -1,0 +1,339 @@
+{
+  "revision": "UK-T01-2026-10-26",
+  "status": "Experimental sensitivity study - not for construction",
+  "approvedForConstruction": false,
+  "jurisdiction": "England: Ashley Heights, Sevenoaks, Kent",
+  "boundsMeaning": "Low, reference and high are chosen sensitivity cases, not measured site bounds, probabilities or guaranteed worst cases. Conditions outside these cases remain possible.",
+  "correction": "8.59 m is the east-west bounding width of a fragmented floor mesh, NOT a verified clear joist span. No central spine beam is proposed. Direction is assessed by local bay and supports below.",
+  "basis": "First-generation BS EN Eurocodes with the corresponding UK National Annexes as the trial basis. Do not mix generations. Confirm applicable editions at engineering appointment. England Approved Documents are guidance, not a substitute for calculations.",
+  "scenarios": [
+    {
+      "id": "low",
+      "label": "Lower assumed load",
+      "floorGk": 0.75,
+      "floorQk": 1.5,
+      "spanAllowanceM": 0.1,
+      "masonryLineGk": 4,
+      "pointGk": 0,
+      "soilGamma": 18,
+      "saturatedGamma": 20,
+      "K0": 0.4,
+      "surchargeKPa": 5,
+      "waterHeadM": 0
+    },
+    {
+      "id": "reference",
+      "label": "Reference assumptions",
+      "floorGk": 1.0,
+      "floorQk": 1.5,
+      "spanAllowanceM": 0.15,
+      "masonryLineGk": 7,
+      "pointGk": 0,
+      "soilGamma": 19,
+      "saturatedGamma": 21,
+      "K0": 0.5,
+      "surchargeKPa": 10,
+      "waterHeadM": 1.5
+    },
+    {
+      "id": "high",
+      "label": "Higher assumed load",
+      "floorGk": 1.35,
+      "floorQk": 1.5,
+      "spanAllowanceM": 0.25,
+      "masonryLineGk": 10,
+      "pointGk": 10,
+      "soilGamma": 20,
+      "saturatedGamma": 22,
+      "K0": 0.7,
+      "surchargeKPa": 20,
+      "waterHeadM": 3.05
+    }
+  ],
+  "floorLoadBasis": "Gk includes an assumed 0.35 kN/m2 lightweight-partition allowance; remaining floor/deck/finish/ceiling/services allowance is 0.40 / 0.65 / 1.00 kN/m2. These are budgets, not measured build-ups. Stone, screed, masonry partitions, baths and heavy storage can exceed them. Qk=1.5 kN/m2 domestic floor area loading; supplier table also includes a separate 2 kN concentrated imposed-load check.",
+  "floorZones": [
+    {
+      "id": "J-01",
+      "name": "First floor over garage",
+      "elementIds": [
+        "F-8A7A6AE",
+        "F-46D63C5"
+      ],
+      "clearSpanM": 6.056,
+      "direction": "North-south / between south wall and garage-store division",
+      "axis": [
+        [
+          7,
+          -16.076,
+          2.7
+        ],
+        [
+          7,
+          -10.02,
+          2.7
+        ]
+      ],
+      "alternate": "Main garage bay east-west is about 6.04 m, but the western alcove extends the overall room to about 7.71 m and the west garage-door opening is 5.44 m wide. Compare the whole bearing arrangement, not only the shortest number.",
+      "supportStatus": "Candidate geometry only. Check south-wall opening heads, garage/store wall and its door head, wall alignment, and the reactions through the basement. Western alcove requires separate edge detailing."
+    },
+    {
+      "id": "J-02",
+      "name": "First floor over utility",
+      "elementIds": [
+        "F-8A7A6AE"
+      ],
+      "clearSpanM": 2.32,
+      "direction": "East-west / garage separation to east wall",
+      "axis": [
+        [
+          11.43,
+          -14,
+          2.7
+        ],
+        [
+          13.75,
+          -14,
+          2.7
+        ]
+      ],
+      "alternate": "North-south utility bay is about 3.47 m. East-west offers the shorter candidate span where both bearing lines are present.",
+      "supportStatus": "Garage separation and east-wall openings require design. Architectural floor mesh coverage is incomplete in part of this bay; room and finish polygons do not prove a structural deck exists."
+    },
+    {
+      "id": "J-03",
+      "name": "First floor over northern gym",
+      "elementIds": [
+        "F-8A7A6AE",
+        "F-7721FDF"
+      ],
+      "clearSpanM": 4.49,
+      "direction": "East-west / gym west partition line to east wall",
+      "axis": [
+        [
+          9.26,
+          -8,
+          2.7
+        ],
+        [
+          13.75,
+          -8,
+          2.7
+        ]
+      ],
+      "alternate": "North-south is about 6.53 m between the garage/store line and north return; the stepped courtyard end and openings need individual trimming.",
+      "supportStatus": "Preferred trial: design the glazed line as a load-bearing timber stud wall, with timber headers and supporting stud packs around openings. No masonry piers required. Specify restraint, bearings, connections, fire/acoustics and a continuous support through the basement."
+    },
+    {
+      "id": "J-04",
+      "name": "West wing first floor",
+      "elementIds": [
+        "F-2EBA91B"
+      ],
+      "clearSpanM": 4.95,
+      "direction": "East-west / outside west wall to original-house junction",
+      "axis": [
+        [
+          -5.065,
+          6,
+          2.7
+        ],
+        [
+          -0.115,
+          6,
+          2.7
+        ]
+      ],
+      "alternate": "The north-south lounge bay is approximately 5.01 m; the prep-kitchen partition could divide it only if designed to carry load. Compare openings at the original-house junction.",
+      "supportStatus": "Original-house junction contains openings; verify/replace heads and establish bearing and foundations. Existing structure is unsurveyed."
+    }
+  ],
+  "steelStudies": [
+    {
+      "id": "B-01",
+      "name": "West garage door head",
+      "elementName": "Proposal | West garage facade head 0",
+      "clearSpanM": 5.44,
+      "tributaryWidthM": 0,
+      "lineGkMultiplier": 1,
+      "axis": [
+        [
+          3.375,
+          -15.66,
+          2.48
+        ],
+        [
+          3.375,
+          -10.22,
+          2.48
+        ]
+      ],
+      "basis": "Garage joists in the north-south candidate run parallel to this opening, so no distributed floor tributary width is assigned here. Assumed wall/roof-equivalent permanent line load 4 / 7 / 10 kN/m is a sensitivity only. Higher case adds a 10 kN permanent midspan point load. The actual roof, upper facade and edge-floor reactions remain unknown."
+    },
+    {
+      "id": "B-02",
+      "name": "Gym west full-span steel alternative (not preferred)",
+      "elementNames": [
+        "Proposal | Gym west partition head 0",
+        "Proposal | Gym west partition head 1",
+        "Proposal | Gym west partition head 2"
+      ],
+      "clearSpanM": 5.675,
+      "tributaryWidthM": 2.245,
+      "lineGkMultiplier": 0,
+      "axis": [
+        [
+          9.2,
+          -9.905,
+          2.48
+        ],
+        [
+          9.2,
+          -4.23,
+          2.48
+        ]
+      ],
+      "basis": "Comparison only if the timber stud-wall route cannot be made to work. One gym floor bay only: 4.49 / 2 = 2.245 m tributary width. Assumes simple end supports; neither is established. No gallery, loft or roof reaction included. Higher case adds 10 kN permanent midspan load. Not the preferred scheme."
+    }
+  ],
+  "joistConditions": "James Jones Table 16, domestic intermediate floors, service class 1, simply supported, adequately restrained with 22 mm chipboard and 15 mm plasterboard; engineering span, not cut length. Uses 1.35 kN/m2 table conservatively for reference Gk=1.0, without interpolation. Published vibration assumptions include a 4 m floor width; actual room widths and finishes require supplier design. Bearings, holes, hangers, trimming, fire and acoustics remain unverified.",
+  "steelConditions": "Six-section British Steel S355 UB shortlist. Simple span, major-axis bending, symmetric UDL plus central permanent point load, no axial load/torsion, no holes and effective lateral/torsional restraint assumed. Elastic bending and web shear screen only, not a member approval. Connections, lateral-torsional buckling, patch loading, bearings, robustness, fire and support capacities are not checked. The stated section may be inadequate once these are considered.",
+  "steelDeflection": "Chosen trial criteria: total characteristic deflection <= min(L/360,10 mm), imposed-only <= L/360. This is a project screening criterion, not a universal regulatory limit. Glazing/masonry may need tighter limits, camber and differential-movement checks.",
+  "basementBasis": "3.05 m retained-height illustration from ground datum to underside of current 250 mm base. Effective-stress earth pressure with assumed K0 plus hydrostatic water and uniform surface surcharge. Cantilever base moment is a comparison model, not the designed restraint condition. No beneficial drainage assumed. Adjacent foundations, compaction, heave, swelling, accidental surcharge and flooding above grade are outside these scenarios.",
+  "unresolved": [
+    "No whole-building vertical/lateral load analysis; wind, snow, roof, terrace, storage, plant and vehicle cases remain to be established.",
+    "Joist direction is not inferred from a floor bounding box. Measured supports and every opening/void need reconciliation, especially around the galleries.",
+    "No ground capacity, settlement, foundation or basement reinforcement design; no safe excavation or temporary-works sequence.",
+    "No construction-approved member sizes, lintel schedule, bearing/padstone design or fabrication dimensions.",
+    "350+ mm cavity wall build-up differs from the current 230 mm shell; thermal, fire, moisture, acoustic and dimensional coordination remain required.",
+    "Engineer and supplier validation is needed BEFORE excavation, demolition, fabrication or construction, followed by site verification."
+  ],
+  "sources": [
+    {
+      "id": "AD-A",
+      "title": "England Approved Document A",
+      "url": "https://www.gov.uk/government/publications/structure-approved-document-a"
+    },
+    {
+      "id": "AD-C",
+      "title": "England Approved Document C",
+      "url": "https://www.gov.uk/government/publications/site-preparation-and-resistance-to-contaminates-and-moisture-approved-document-c"
+    },
+    {
+      "id": "SCI-BASIS",
+      "title": "SCI / BCSA Eurocodes and UK National Annexes",
+      "url": "https://steelconstruction.info/topics/design/design-codes-and-standards/"
+    },
+    {
+      "id": "SCI-MEMBER",
+      "title": "SCI / BCSA member design",
+      "url": "https://steelconstruction.info/topics/design/member-design/"
+    },
+    {
+      "id": "BS-UB",
+      "title": "British Steel section properties",
+      "url": "https://www.britishsteel.co.uk/wp-content/uploads/2025/08/british-sections-product-range.pdf",
+      "local": "revisions/structural-trials-2026-10-26/references/british-steel-sections.pdf"
+    },
+    {
+      "id": "JJI",
+      "title": "James Jones JJI technical manual - Table 16, p28",
+      "url": "https://www.jamesjones.co.uk/assets/uploads/assets/downloads/brochures/jji-joist-tech-manual-nov-2023-duplicate-duplicate.pdf",
+      "local": "revisions/structural-trials-2026-10-26/references/jji-joists.pdf"
+    },
+    {
+      "id": "CATNIC",
+      "title": "Catnic CG150/100 datasheet",
+      "url": "https://catnic.com/assets/datasheets/uk/lintels/cg150-100.pdf?v=1739350228"
+    },
+    {
+      "id": "BRICK",
+      "title": "Wienerberger UK standard brick dimensions",
+      "url": "https://www.wienerberger.co.uk/products/brick/standard-format-bricks.html"
+    },
+    {
+      "id": "BLOCK",
+      "title": "Forterra Conbloc aggregate block guide",
+      "url": "https://www.forterra.co.uk/wp-content/uploads/2021/02/Conbloc-Guide-June-2024.pdf"
+    },
+    {
+      "id": "SCIA",
+      "title": "SCIA Eurocode steel classification examples",
+      "url": "https://downloads.scia.net/support/sciaengineer/manuals/15/steel/%5Beng%5Dadvanced%20concept%20training%20steel%2015.3.pdf"
+    },
+    {
+      "id": "UK-STUD",
+      "title": "Planning Portal: internal-wall structural support",
+      "url": "https://www.planningportal.co.uk/permission/common-projects/internal-walls/building-regulations-structural-support/"
+    },
+    {
+      "id": "EC5-TIMBER",
+      "title": "Swedish Wood / TDUK Eurocode 5 material data and formulas (national choices require UK confirmation)",
+      "url": "https://www.swedishwood.com/siteassets/5-publikationer/pdfer/sw-design-of-timber-structures-vol2-2022.pdf"
+    },
+    {
+      "id": "UK-C24",
+      "title": "MGM Timber UK: finished C24 stock sizes",
+      "url": "https://www.mgmtimber.co.uk/timber/strength_class-c24?filter_width_simple=15442"
+    },
+    {
+      "id": "UK-LVL",
+      "title": "Metsa Wood UK: Kerto LVL load-bearing studs",
+      "url": "https://www.metsagroup.com/en-gb/metsawood/products-and-services/products/kerto-lvl/kerto-lvl-t-stud/"
+    }
+  ],
+  "timberWall": {
+    "id": "TW-01",
+    "name": "Gym glazed load-bearing timber stud wall",
+    "preferred": true,
+    "approvedForConstruction": false,
+    "minorAdjustmentsAuthorized": true,
+    "heightM": 2.6,
+    "currentEnvelopeThicknessMm": 120,
+    "axis": [
+      [
+        9.2,
+        -9.905,
+        0
+      ],
+      [
+        9.2,
+        -4.169,
+        0
+      ]
+    ],
+    "trialTributaryWidthM": 5.01,
+    "loadBasis": "Upper sensitivity geometry: half 4.49 m gym bay plus half 5.53 m gallery bay = 5.01 m tributary width. Assumes one domestic floor, including the scenario partition budget. Gallery voids may reduce load but are not deducted. Roof/loft/upper masonry and concentrated reactions are NOT automatically included. Headers share load equally between two side-by-side plies, requiring designed connections and bearing to both.",
+    "openings": [
+      {
+        "id": "TH-01",
+        "name": "South glazing",
+        "clearSpanM": 1.4,
+        "bottomY": -9.705,
+        "topY": -8.305,
+        "headZ": 2.4,
+        "elementName": "Proposal | Gym west partition head 0"
+      },
+      {
+        "id": "TH-02",
+        "name": "Doorway",
+        "clearSpanM": 1.0,
+        "bottomY": -8.105,
+        "topY": -7.105,
+        "headZ": 2.333,
+        "elementName": "Proposal | Gym west partition head 1"
+      },
+      {
+        "id": "TH-03",
+        "name": "North glazing",
+        "clearSpanM": 1.8,
+        "bottomY": -6.405,
+        "topY": -4.605,
+        "headZ": 2.4,
+        "elementName": "Proposal | Gym west partition head 2"
+      }
+    ],
+    "basis": "Test ordinary graded structural timber first, then UK-supplied LVL if needed. Timber headers and jack/king studs are part of the wall framing, not exposed masonry piers. Stud sizes/spacing and connections remain unselected pending axial/buckling, local bearing and whole-wall checks.",
+    "coordination": "Current heads start at 2.40 m (windows) and 2.333 m (door), with floor underside at 2.60 m: only 200 / 267 / 200 mm head zones. A header, top plates and bearing arrangement must fit together; any required lowering of glazing or floor-depth change must be shown. Adjacent 200 mm solid strips may need minor widening for stud packs. Preserve doorway clear width; revise glazing only as needed.",
+    "supportBelow": "The model has a full basement under this wall. The ground-floor slab is an architectural envelope, not an established support for the stud wall. A designed transfer/rib/wall/beam and foundation load path is needed below; changing to timber does not remove this requirement."
+  }
+}

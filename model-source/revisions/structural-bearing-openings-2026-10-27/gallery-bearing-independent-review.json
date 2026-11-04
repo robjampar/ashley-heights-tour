@@ -1,0 +1,202 @@
+{
+  "revision": "gallery-bearing-independent-review-2026-10-27",
+  "reviewedAt": "2026-10-27T09:22:24.789627+00:00",
+  "status": "Source proposal review; final regenerated geometry and native pocket audit still required",
+  "installedByThisReview": false,
+  "approvedForConstruction": false,
+  "sourceHashes": {
+    "walkthrough/public/structure/members.json": "3c1c35188af2d9e07c6499e851f7ac7153fc7be90b0703689da1c684313557c8",
+    "walkthrough/public/structure/model.json": "20092e572b3bde34480765eea319c81a2034982965ea50f5604bc258b84ef059",
+    "proposal/specs/structural-junction-details.json": "b3fa00a1c58c3ae9f77e4076d583ca201521b85f67f15958aa8dc64db88c365c",
+    "proposal/specs/structural-floor-layout.json": "0b184af9bebb07d3143b9750dbca0ec5569d45f6ac93a3990726dd2cfa00aea7"
+  },
+  "receiverProposals": [
+    {
+      "id": "M-FR-1-026",
+      "line": [
+        [
+          7.7,
+          -9.905
+        ],
+        [
+          7.7,
+          -4.3025
+        ]
+      ],
+      "name": "Entrance east trimmer \u00b7 garage wall to gallery cross-beam",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 1,
+      "basis": "Extended south into the garage/store separation wall envelope and north to the continuous gallery cross-beam. Wall bearing pocket/padstone, beam connection, separation-wall capacity and basement/foundation transfer require design. No midpoint column is assumed."
+    },
+    {
+      "id": "M-FR-1-030",
+      "line": [
+        [
+          5.1825,
+          -4.3025
+        ],
+        [
+          9.9375,
+          -4.3025
+        ]
+      ],
+      "name": "First-floor entrance gallery \u00b7 continuous cross-beam",
+      "material": "steel",
+      "section": "305x165x40",
+      "merge": [
+        "M-FR-1-018",
+        "M-FR-1-029"
+      ],
+      "throughPriority": 2,
+      "basis": "Align the cross-beam with the actual north inner-leaf centre. Both ends have explicit padstone seats in the joined masonry piers. First-floor reactions, member size, wall capacity, lateral restraint and onward foundations remain uncalculated."
+    },
+    {
+      "id": "M-FR-1-036",
+      "line": [
+        [
+          5.7175,
+          -4.3025
+        ],
+        [
+          5.7175,
+          0.115
+        ]
+      ],
+      "name": "First-floor gallery west beam \u00b7 solid front-pier bearing",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 1,
+      "basis": "First-floor gallery bearing coordination: real masonry/retained-pier seats and steel end connections are modelled. Beam sizes, all load effects, joints, masonry, edge-angle facade loads and onward foundations remain uncalculated."
+    },
+    {
+      "id": "M-FR-1-035",
+      "line": [
+        [
+          9.7,
+          -4.3025
+        ],
+        [
+          9.7,
+          0.115
+        ]
+      ],
+      "name": "First-floor gallery east beam \u00b7 continuous to solid front pier",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 1,
+      "merge": [
+        "M-FR-1-019"
+      ],
+      "basis": "First-floor gallery bearing coordination: real masonry/retained-pier seats and steel end connections are modelled. Beam sizes, all load effects, joints, masonry, edge-angle facade loads and onward foundations remain uncalculated."
+    },
+    {
+      "id": "M-FR-1-034",
+      "line": [
+        [
+          5.7175,
+          0
+        ],
+        [
+          9.355,
+          0
+        ]
+      ],
+      "name": "First-floor gallery north cross-beam \u00b7 west receiver to retained pier",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 0,
+      "basis": "The north cross-beam connects to the west steel and terminates with150 mm nominal bearing in the solid retained east front pier, separately from the east-side beam. It does not pass through the pier to an unnecessary hidden steel joint. Combined pier stresses, member reactions, pad design and onward foundations remain uncalculated."
+    }
+  ],
+  "retainedPadPlanChecks": [
+    {
+      "padId": "M-PAD-GALLERY-W-N",
+      "wallId": "W-6E6BBF4",
+      "padAreaM2": 0.08800000000000008,
+      "uncoveredPlanAreaM2": 0.0,
+      "sourceBounds": [
+        [
+          5.6,
+          -0.33,
+          0.0
+        ],
+        [
+          5.8,
+          0.115,
+          2.6
+        ]
+      ],
+      "fullHeightBelowPad": true,
+      "approvedForConstruction": false
+    },
+    {
+      "padId": "M-PAD-GALLERY-E-N",
+      "wallId": "W-5012A48",
+      "padAreaM2": 0.10119999999999989,
+      "uncoveredPlanAreaM2": 0.0,
+      "sourceBounds": [
+        [
+          9.205,
+          -0.115,
+          0.0
+        ],
+        [
+          9.92673,
+          0.115,
+          2.6
+        ]
+      ],
+      "fullHeightBelowPad": true,
+      "approvedForConstruction": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "GIR-01",
+      "severity": "required-detail",
+      "finding": "Moving the 036 axis from X5.5 to X5.7175 leaves 135 mm of the current F4F2D55C deck beyond its west flange at X5.635. Most of that strip is already outside the accepted glazing plane at X5.615. A full floor outrigger should not be added merely to preserve surplus exterior floor geometry.",
+      "recommendation": "Coordinate the actual native floor, structural plate, deck/finish layers and fascia to a trimmed edge near the actual frame footprint. The masonry agent proposes a continuous L50\u00d750\u00d76 support-angle envelope at the steel outer flange; this avoids assuming the deck alone carries the glazing."
+    },
+    {
+      "id": "GIR-02",
+      "severity": "required-detail",
+      "finding": "Accepted glazing mullions occupy X5.591\u20135.639 and horizontal frames approximately X5.5875\u20135.6425. Trimming to the centre plane at X5.615 leaves half the frame outside the floor.",
+      "recommendation": "Retain support under the full frame footprint and show a fixing to the steel or edge angle. Check the real frames before choosing a floor edge at X5.59; the proposed angle outer edge at X5.585 is outside the frame. Its vertical leg touches only the top-flange edge, not the web, so the attachment must not imply bolts through empty space."
+    },
+    {
+      "id": "GIR-03",
+      "severity": "required-detail",
+      "finding": "The new 035 north pad fits the solid retained pier W-5012A48. However, the 034 cross-beam at Y0 traverses the pier from X9.205 to approximately X9.6075 before joining 035. The 035 pad pocket at X9.48\u20139.92 does not clear the entire cross-beam.",
+      "recommendation": "Audit and coordinate a pocket for 034 and its connection in the retained pier, preserving the adjacent opening, masonry bearing and coursing. Alternative: 034 has no linked joist hangers in the current register, so a shallower nonprimary rim may work if an actual load review confirms that it carries no other loads."
+    },
+    {
+      "id": "GIR-04",
+      "severity": "required-detail",
+      "finding": "030 now aligns with the 100 mm inner leaf. Upper block member 34AD690 continues from Z2.6 and intersects the beam top at Z2.756 over the west pad. Generic 10 mm upper clearance leaves the block underside at Z2.766.",
+      "recommendation": "Provide actual bedding and bearing for this upper masonry at the seat, or a separately verified support route. Do not leave a 10 mm air gap and report the wall as supported. Include the load in local flange, pad and wall checks. The present register places this masonry over the west pad; it is not a full unbroken upper wall across the entire beam."
+    },
+    {
+      "id": "GIR-05",
+      "severity": "engineering-open",
+      "finding": "Both proposed north pads fit full-height retained piers rather than window heads. This verifies plan contact only.",
+      "recommendation": "Existing piers, foundations, pad compression, member reactions, restraint and construction pockets still need design and survey. Preserve alteration scope and native pocket recovery data."
+    },
+    {
+      "id": "GIR-06",
+      "severity": "engineering-open",
+      "finding": "This review has not independently calculated first-floor member capacity. Reactions from 036, 035 and FR1-026 feed 030. Member 034 appears secondary but should not be downgraded solely because it has no linked joists.",
+      "recommendation": "Keep capacity explicitly unverified. Regenerate joists and hangers after moving receivers, check every end and connection, and include facade gravity and wind loads on the edge angle."
+    }
+  ],
+  "methodology": "Read the current triangulated retained-wall model and planned pad rectangles, then intersect their horizontal footprints. Inspected member axes, section bounds, linked hangers and accepted native window positions. This review does not alter the live model or verify capacity. Hashes capture a transitional source state; the final build may differ.",
+  "pendingFinalChecks": [
+    "Full actual pad-base contact at its underside, not only the overall wall footprint",
+    "Continuous 035 replaces 019 without overlap or unintended condition/scope changes",
+    "030/035/036/034 end gaps, connection geometry and actions",
+    "034 retained-pier pocket and upper 34AD690 bearing bed",
+    "Complete glazing support at the trimmed west edge and angle",
+    "Regenerated joists/hangers, preserved voids and clearances",
+    "Native overlay pockets and actual browser review"
+  ]
+}

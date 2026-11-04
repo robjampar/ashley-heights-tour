@@ -1,0 +1,11 @@
+import json,hashlib
+from pathlib import Path
+root=Path(__file__).resolve().parents[2]
+p=json.loads((root/'walkthrough/public/structure/members.json').read_text());old=json.loads((root/'revisions/structural-west-loft-front-2026-10-26/original/walkthrough/public/structure/members.json').read_text())
+a=p['junctionReview']['clashAudit']['intersections'];b=old['junctionReview']['clashAudit']['intersections'];key=lambda r:tuple(sorted((r['a'],r['b'])));known={key(r) for r in b}
+js=[e for e in p['elements'] if e['category']=='joists' and e['id'].startswith('M-LOFT-WEST-EXT-')]
+front=[e for e in p['elements'] if e['name'].startswith('Aligned front windows')]
+hashes={f:hashlib.sha256((root/f).read_bytes()).hexdigest() for f in p['sourceHashes']}
+report={'revision':p['revision'],'members':len(p['elements']),'masonryPieces':sum(p['unitCounts'].values()),'openIssues':len(p['issues']),'westJoists':len(js),'westJoistLengthM':sorted(set(e['measurements']['lengthM'] for e in js)),'retiredTransferPresent':any(e['id']=='M-HIP-FLOOR-BEARING-01' for e in p['elements']),'frontWallAndLintelIds':[e['id'] for e in front],'masonryContinuations':len(p['junctionReview']['masonryFloor']['continuations']),'unmatchedBaseAreaM2':sum(r['unmatchedBaseAreaM2'] for r in p['junctionReview']['masonryFloor']['continuations']),'checkedTimberMasonryIntersections':p['junctionReview']['masonryFloor']['timberIntersections'],'clashesBefore':len(b),'clashesAfter':len(a),'newClashes':[r for r in a if key(r) not in known],'connectionFit':p['junctionReview']['connectionFit'],'sourceFingerprintsMatch':hashes==p['sourceHashes'],'nativeHashes':{f:hashlib.sha256((root/'outputs/output-proposed-compact'/f).read_bytes()).hexdigest() for f in ['geometry.json','navigation.json']},'joistFloorOnlyCases':[{k:c[k] for k in ['scenario','instantDeflectionMm','finalDeflectionMm','withinScreen','uls']} for c in js[0]['supportScreen']['cases']]}
+assert not report['newClashes'];assert not report['connectionFit']['intersections'];assert not report['connectionFit']['seatLevelErrors'];assert report['sourceFingerprintsMatch'];assert not report['retiredTransferPresent'];assert report['unmatchedBaseAreaM2']<1e-7
+out=root/'walkthrough/test-results/structural-west-loft-front-2026-10-26/validation.json';out.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

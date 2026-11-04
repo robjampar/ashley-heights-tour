@@ -122,13 +122,15 @@ class PlanningVariantTests(unittest.TestCase):
    # CURRENT-BRIEF, 24 September: setback doubled from 450 to 900 mm.
    self.assertEqual(nav['proposalSideWing']['front_setback_m'],.90)
    self.assertEqual(nav['proposalSideWing']['wall_centrelines_m']['rear'],8.82)
-   facing=next(o for o in data['objects']if o['name'] in ('Proposal | Side wing front brick facing','Proposal | Side wing front oak cladding'))
+   facing=next(o for o in data['objects']if o['name'] in ('Proposal | Side wing front brick facing','Proposal | Side wing front oak cladding','Aligned front windows | continuous brick facing','Aligned front windows | continuous oak cladding'))
    self.assertAlmostEqual(min(v[1]for v in facing['vertices']),.90-.131,places=4)
    roofs=[o for o in data['objects']if 'Side wing continued front slope' in o['name']and 'lining'not in o['name']]
    self.assertTrue(roofs)
    self.assertAlmostEqual(min(v[1]for o in roofs for v in o['vertices']),expected_roof_y,places=4)
-   room=next(r for r in nav['planRooms']if r['name']=='Side garden living')
-   self.assertAlmostEqual(min(v[1]for v in room['polygon_m']),1.015,places=4)
+   # The accepted prep kitchen occupies the front of the former lounge.
+   rooms={r['name']:r for r in nav['planRooms']}
+   self.assertAlmostEqual(min(v[1]for v in rooms['Pantry & prep kitchen']['polygon_m']),1.015,places=4)
+   self.assertAlmostEqual(min(v[1]for v in rooms['Side garden living']['polygon_m']),3.70,places=4)
  def test_attached_rear_room_fits_the_house_area_region(self):
   from scripts.planning_drawings.model import load_proposed
   from scripts.planning_drawings.footprints import level_envelope,room_envelope,HOUSE_REGION

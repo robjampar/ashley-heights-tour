@@ -8,7 +8,22 @@ let lawnTexture=null;
 export function setLawnTexture(texture){lawnTexture=texture;}
 export function surfaceDetail(material,name){
  name=name.replaceAll('_',' ');
- if(name.startsWith('Proposal | Quiet oak')){
+ if(name.startsWith('Interior | Bar Art Deco')){
+  // Preserve the selected material's measured tint and finish. The generic
+  // wood/stone/architectural-glass rules erase this room's lacquer and glass.
+  if(/reeded glass|crystal glass/i.test(name)){
+   material.transparent=true;material.depthWrite=false;material.transmission=0;
+   material.opacity=/reeded/.test(name)?.30:.22;material.metalness=.90;
+   material.envMapIntensity=1.15;
+  }else if(/bottle glass/i.test(name)){
+   material.transparent=false;material.opacity=1;material.depthWrite=true;
+  }
+  if(material.map&&/walnut/.test(name)){
+   material.bumpMap=material.map.clone();material.bumpMap.colorSpace=NoColorSpace;material.bumpScale=.00007;
+  }
+  return;
+ }
+ if(name.startsWith('Proposal | Quiet oak')||name.startsWith('Interior | Prep-Kitchen')){
   if(material.map){
    material.bumpMap=material.map.clone();material.bumpMap.colorSpace=NoColorSpace;
    material.bumpScale=name.includes('limestone')?.000048:.00008;
@@ -30,13 +45,18 @@ export function surfaceDetail(material,name){
   // as clear architectural glass. Ripple detail below is static and local.
   material.transparent=true;material.depthWrite=false;
   material.metalness=0;material.roughness=.16;material.envMapIntensity=1.1;
+ }else if(/bottle glass/i.test(name)){
+  // Coloured beverage containers are not low-opacity architectural windows.
+  material.transparent=false;material.opacity=1;material.depthWrite=true;
+  material.transmission=0;material.metalness=0;material.roughness=.20;
+  material.envMapIntensity=1;return;
  }else if(/Glazing|glass/i.test(name)){
   // Window panes are dielectric, not partially metallic white sheets.
   material.metalness=0;material.roughness=/mist/i.test(name)?.4:.1;
-  material.opacity=/mist/i.test(name)?.36:.11;material.envMapIntensity=.8;
+  material.opacity=/cut crystal/i.test(name)?.32:/mist/i.test(name)?.36:.11;material.envMapIntensity=.8;
   return;
  }
- const textile=/carpet|upholstery|linen|curtain|fabric|cushion|Entrance mat/i.test(name);
+ const textile=/carpet|upholstery|linen|curtain|fabric|cushion|Entrance mat/i.test(name)&&!/leather/i.test(name);
  const wood=/oak|walnut|pine|timber|rattan/i.test(name)&&!textile;
  const anthracite=name==='Proposal | Slate roof anthracite';
  const greyTiles=/Grey roof tiles/i.test(name);
@@ -78,10 +98,11 @@ export function surfaceDetail(material,name){
    float aa=max(fwidth(p.x),fwidth(p.y))*.65;
    float mortar=1.-smoothstep(.0035-aa,.0035+aa+.0001,min(edge.x,edge.y));
    float brickTone=surfaceHash(floor(uv));
-   vec3 clay=mix(vec3(.12,.035,.012),vec3(.29,.10,.037),brickTone);
-   clay*=.94+.12*surfaceNoise(p*38.);
-   diffuseColor.rgb=mix(clay,vec3(.28,.245,.19),mortar);
-   detailHeight=(-mortar*.0012+(fineNoise-.5)*.00012)*microFade;
+   vec3 clay=mix(vec3(.105,.033,.016),vec3(.255,.087,.039),brickTone);
+   clay*=.86+.24*surfaceNoise(p*38.)+.08*surfaceNoise(p*3.7);
+   float chipped=surfaceNoise(p*135.)*.18;
+   diffuseColor.rgb=mix(clay,vec3(.205,.184,.151),mortar*(.86+chipped));
+   detailHeight=(-mortar*.003+(fineNoise-.5)*.00035)*microFade;
   `;
   else if(kind===2)code+=`
    // Roof courses use the roof plane, not only its height above the ground.
@@ -99,10 +120,10 @@ export function surfaceDetail(material,name){
    detailHeight=(fineNoise-.5)*.00028*microFade;
   `;
   else if(kind===4)code+=`
-   float grain=surfaceNoise(vec2(p.x*48.,p.y*2.8));
+   float grain=surfaceNoise(vec2(p.x*48.+sin(p.y*3.)*1.2,p.y*2.8));
    float grainFade=1.-smoothstep(.003,.010,pixelSize);
-   diffuseColor.rgb*=mix(.955,.90+.11*grain,grainFade);
-   detailHeight=(grain-.5)*.00018*grainFade;
+   diffuseColor.rgb*=mix(.98,.87+.23*grain,grainFade);
+   detailHeight=(grain-.5)*.00025*grainFade;
   `;
   else if(kind===13)code+=`
    float slatWidth=.12;
@@ -121,8 +142,9 @@ export function surfaceDetail(material,name){
    detailHeight=(fineNoise-.5)*.00006*microFade;
   `;
   else if(kind===6)code+=`
-   diffuseColor.rgb*=.96+(fineNoise-.5)*.13*microFade;
-   detailHeight=(fineNoise-.5)*.0002*microFade;
+   float weave=sin(p.x*1900.)*sin(p.y*1850.);
+   diffuseColor.rgb*=.985+(fineNoise-.5)*.09*microFade;
+   detailHeight=((fineNoise-.5)*.00018+weave*.000045)*microFade;
   `;
   else if(kind===7)code+=`
    diffuseColor.rgb*=.96+(fineNoise-.5)*.075*microFade;
@@ -157,6 +179,7 @@ export function surfaceDetail(material,name){
    detailHeight=(fineNoise-.5)*.00022*microFade;
   `;
   shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\n'+code);
+  shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>\nroughnessFactor=clamp(roughnessFactor+(fineNoise-.5)*${kind===4?'.16':kind===1?'.12':'.06'}*microFade,.045,1.);`);
   shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
    vec3 surfaceDx=dFdx(-vViewPosition),surfaceDy=dFdy(-vViewPosition);
    vec3 surfaceR1=cross(surfaceDy,normal),surfaceR2=cross(normal,surfaceDx);
@@ -165,4 +188,5 @@ export function surfaceDetail(material,name){
   `);
  };
  material.customProgramCacheKey=()=>`daylight-surface-v3-${kind}${anthracite?'-anthracite':''}${greyTiles?'-grey':matchingTiles?'-brown-grey':''}${/vertical hanging/i.test(name)?'-vertical-hanging':''}`;
+ material.userData.bakedDaylight?.attach(material);
 }

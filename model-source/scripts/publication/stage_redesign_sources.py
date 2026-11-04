@@ -58,9 +58,35 @@ review_root = ROOT/'revisions/whole-house-review-2026-09-29'
 paths.update(str(p.relative_to(ROOT)) for p in review_root.iterdir()
              if p.is_file() and p.suffix in ('.py', '.js', '.mjs', '.html', '.css', '.md'))
 paths.add('revisions/whole-house-review-2026-09-29/proposals.json')
+# Targeted native integrations deliberately retain historical full-build input
+# records. Include current specs and review evidence independently of those
+# records, so newer structural/finish work is not omitted from source commits.
+for directory in ('proposal/specs', 'docs', 'walkthrough/public/structure'):
+ paths.update(str(p.relative_to(ROOT)) for p in (ROOT/directory).rglob('*')
+              if p.is_file() and p.suffix in ('.json','.md','.svg','.html','.css','.pdf'))
+paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'scripts').rglob('requirements*.txt'))
+paths.update(('walkthrough/serve.py','walkthrough/.gitignore'))
+for directory in sorted((ROOT/'revisions').iterdir()):
+ if not directory.is_dir() or not any(month in directory.name for month in ('2026-10-','2026-11-')):
+  continue
+ paths.update(str(p.relative_to(ROOT)) for p in directory.iterdir()
+              if p.is_file() and p.suffix in ('.json','.md','.svg','.py','.mjs'))
+ # Regression comparisons and native recovery files are local baselines.
+ for sub in ('original/walkthrough/public/structure','original/outputs/output-proposed-compact'):
+  paths.update(str(p.relative_to(ROOT)) for p in (directory/sub).glob('*')
+               if p.is_file() and (p.suffix in ('.blend','.glb') or p.name in ('members.json','model.json','trials.json','geometry.json','navigation.json')))
+for directory in ('exterior-masonry-2026-10-29','west-recess-brick-2026-10-29'):
+ paths.update(str(p.relative_to(ROOT)) for p in (ROOT/'walkthrough/test-results'/directory).glob('*')
+              if p.is_file() and p.suffix in ('.json','.png'))
+for variant in ('compact','planning'):
+ directory=ROOT/f'outputs/output-proposed-{variant}'
+ paths.update(str(p.relative_to(ROOT)) for p in directory.glob('*')
+              if p.is_file() and (p.name in ('geometry.json','navigation.json') or p.name.startswith('Ashley Heights') and p.suffix in ('.blend','.glb') and not p.stem[-1:].isdigit()))
+ paths.update(str(p.relative_to(ROOT)) for p in directory.glob('*-source.json'))
+paths = {current_path(ROOT, name) for name in paths}
 for name in sorted(paths):
  source=ROOT/name
- if (source.is_file() and source.stat().st_size > 100*1024*1024) or name.startswith(('outputs/','walkthrough/public/house','walkthrough/public/proposal','revisions/interiors-overnight-2026-09-27/before/'))or source.suffix in('.blend','.glb') or source.name=='preview-navigation.json' or name in ('revisions/redesigns-2026-09-25/compact-object-index.json','revisions/redesigns-2026-09-25/original-object-index.json','revisions/interiors-principal-integration-2026-09-27/compact-before/navigation.json','revisions/interiors-principal-integration-2026-09-27/planning-before/navigation.json'):
+ if (source.is_file() and source.stat().st_size > 100*1024*1024) or name.startswith(('outputs/','walkthrough/public/house','walkthrough/public/proposal','revisions/interiors-overnight-2026-09-27/before/'))or '/original/' in name or source.suffix in('.blend','.glb') or source.name=='preview-navigation.json' or name in ('revisions/redesigns-2026-09-25/compact-object-index.json','revisions/redesigns-2026-09-25/original-object-index.json','revisions/interiors-principal-integration-2026-09-27/compact-before/navigation.json','revisions/interiors-principal-integration-2026-09-27/planning-before/navigation.json'):
   if source.is_file():
    with source.open('rb')as handle:digest=hashlib.file_digest(handle,'sha256').hexdigest()
    baseline[name]={'sha256':digest,'bytes':source.stat().st_size}
@@ -92,6 +118,9 @@ if previous_path.exists():
 previous_path.write_text(json.dumps({'files':manifest,'required_local_baselines':baseline},indent=2)+'\n')
 (DEST/'README.md').write_text('''# Editable model source snapshot\n\nThis directory preserves the authored Blender scripts, design specifications, browser source and concept-check evidence for the six-option study. The published review is at `../model/redesigns/`; the current designs remain separate choices in `../model/`.\n\nThe large native reconstruction and existing generated baselines are retained in the local Ashley Heights model workspace, not duplicated in Git. `source-manifest.json` records the required baseline checksums. Generated full-house navigation snapshots repeated in isolated room studies are also recorded as local baselines; rerunning the room preview regenerates them. This source snapshot is not a standalone reconstruction from photographs: restore the listed baselines into their recorded relative paths before running Blender builds.\n\nSee `WORKSPACE-README.md` under this directory for the current-model pipeline. Build an additional option with Blender 4.5 LTS: `Blender --background --python-exit-code 1 --python scripts/build/build_redesign.py -- e1`. The other IDs are `i1`, `i2`, `i3`, `e2`, `e3`, and the separate gate-aligned alternative `g1`. Each writes its own native model, geometry, navigation and GLB. Never hand-edit a generated model without saving a separate copy.\n\nThe viewer uses `npm ci` then `npm run build` from `walkthrough/`. Python drawing/review tooling requires matplotlib, shapely, Pillow, reportlab, pypdf and svglib. Drawings and layouts are concept studies, not surveyed application or construction documents.\n\nAccount usage records, browser session logs, credentials and temporary captures are excluded from this snapshot.\n''')
 print('Staged',len(manifest),'source files;',len(baseline),'local baseline references')
+
+with (DEST/'README.md').open('a') as stream:
+ stream.write('\n## Current house and structure\n\nThe snapshot also includes current proposal specifications, the unified structural walkthrough, structural calculation sources and generated member data, and dated coordination/finish review records. The structural design remains experimental. A source commit does not update the public tour: building, release staging and publishing are separate steps. Large native/geometry recovery files remain local and are identified by checksum in `required_local_baselines`. Restore those files before running checks that compare against earlier model issues.\n')
 
 # Recheck after evidence staging, which can add bytes after the viewer guard.
 site_bytes=public_bytes(DEST.parent)

@@ -1,0 +1,7 @@
+# Brick display correction — 26 October 2026
+
+The owner reported pale/white exterior brickwork at M-BRICK-9AC1EAD, M-BRICK-CB5B264 and M-BRICK-303DDFE. The preceding mortar-face change assumed a consistent outward triangle winding. These authored wall prisms used the opposite orientation, putting the pale mortar backing outside the brick units.
+
+`mortarTriangles()` now resolves closed-leaf orientation and ensures outer faces recess towards the leaf interior. The generator also normalises 73 inward/inconsistently wound masonry leaves using the same solid interpretation already used by its geometry audit. Cut corner returns retain their recessed surfaces; the renderer handles reversed winding without changing brick/block colours, units or prices. Some boolean return faces require the explicit outer-face guard in addition to whole-solid orientation.
+
+The three reported areas were captured before and after in Chrome. Final confirmation and testing are included in [M08](../structural-existing-bearings-2026-10-26/README.md), after the owner added the gallery steel and existing-wall bearing requests. The regression tests cover all masonry outer faces and reversed winding of all three reported leaves plus the previously corrected corner. Source recovery copies are in `original/`; browser images are in the matching `walkthrough/test-results/` folder. No native architectural or published asset changed.

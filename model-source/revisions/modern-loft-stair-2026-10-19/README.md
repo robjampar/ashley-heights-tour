@@ -1,0 +1,17 @@
+# Modern open-riser loft stairs — 19 October 2026
+
+The owner accepted the new stair arrangement, then requested slightly narrower flights, a very modern staircase with visible open risers, and repairs to patchy or missing surfaces around the stairwell.
+
+The revision keeps the accepted 650 mm southward position, 1.725 m bottom landing, continuous +5.55 m loft floor, offset ridge, flush courtyard facade and bedroom access. Each flight narrows from 1.10 m to 1.00 m. Thirteen separate 90 mm natural-oak treads replace the closed risers/soffits, giving 93.33 mm clear vertical gaps between successive treads. Satin graphite central spines, tread saddles and discreet side clamps support clear glass balustrades with slim metal caps. The half landing and gallery guards use the same finish family. The half landing is 2.25 × 1.10 m.
+
+Continuous west, north and south plaster returns close exposed roof voids above the first-floor ceiling without intruding into the walking envelope. Plaster edge linings finish the cut gallery slab. Superseded original junction heads are trimmed out where they overlapped the replacement ceiling and caused coplanar surfaces.
+
+`modern_loft_stair.py` supplies the parametrically authored staircase and repairs to `proposal_level_loft.py`. The original approved small-component asset is preserved; its retired closed stair/guard parts are no longer imported. New geometry, navigation and current full-build fingerprints are regenerated together for both proposals. The original native proposals and affected sources are recoverable under `original/`. No publication is included.
+
+Live inspection also identified `Proposal | Roof drainage | original front east` protruding into the landing. After the full builds, `finish-gutter.py` moves only its first 26 vertices from x=9.205 m to x=9.76 m, outside the flush facade, and applies the same start coordinate to the roof-weathering source. Completed pre-correction outputs and their source are preserved under `pre-gutter/`; historical build caches remain unchanged. Separate per-variant refresh reports and `verify-final-provenance.py` trace this later correction.
+
+The full native rebuilds completed. The compact GLB export was resumed successfully from its saved native model in a fresh process after the original exporter stalled in mesh validation; `resumed-export.json` records that recovery. A further browser review added a continuous matching cove over the landing cupboard (`finish-cove.py`), with recovery copies under `pre-detail/`. Before the subsequent bedroom enlargement, verification passed 184 web tests, 106 Python tests, both 192-sample lighting audits, 1,809 overhead samples per variant and unchanged signatures for all seven retained original scenes. Screenshot evidence is in `walkthrough/test-results/modern-loft-stair-2026-10-19/`; logs are under `logs/`. Three initial builds were stopped before exporting while the ceiling junction, outward surface normals and non-coplanar lining returns were checked in preflight. Their logs are retained; the completed rebuild uses the checked source.
+
+These are modelled design details; stair support sizing and connections remain subject to the project's construction design.
+
+The owner then requested a larger open loft bedroom and another pass on door/plaster intersections. That follow-up is recorded separately in [the bedroom and frame revision](../loft-bedroom-expansion-2026-10-19/README.md); it supersedes the modern-stair output hashes without rewriting their historical evidence.

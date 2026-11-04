@@ -12,16 +12,16 @@
     "address": "4 Ashley Close, Sevenoaks, Kent"
   },
   "agent": {
-    "name": "None \u2014 applicant acting",
+    "name": "None — applicant acting",
     "address": ""
   },
-  "proposal_description": "Erection of a two-storey extension with rooms in the roof and a basement beneath, forming a new principal elevation to Ashley Close, together with a first-floor and roof extension to the existing side wing, rear dormer, with the side-extension front wall and roof edge set back 450 mm from the original front alignment, keeping the retained house frontage visually prominent, and alterations to fenestration, forecourt, boundary wall and gate, following removal of the porch, chimney and front boundary piers. External walls finished in red-brown facing brick to match the existing house, with matching dark brown-grey roof tiles and tile-hung dormer cheeks and front panels, consistent with the same roof finish on neighbouring houses.",
+  "proposal_description": "Erection of a two-storey front extension with rooms in the roof and a basement beneath, forming a new principal frontage to Ashley Close; first-floor and roof extension to the existing side wing; rear dormer; alterations to fenestration, forecourt, boundary wall and gate; removal of the porch, chimney and front boundary piers. The side-wing front wall and roof edge are set back 900 mm in the saved model, subject to survey reconciliation. Matching red-brown facing brick and dark brown-grey roof tiles, with tile-hung dormer cheeks and front panels. Existing garden buildings retained. Pool, spa and loggia excluded from this application.",
   "north_bearing_of_model_y_deg": 352.9,
-  "north_basis": "Least-squares registration of the model to the north-up OS extract (proposal/street-registration/registration.json): model +x bears 82.65\u00b0, so model +y bears 352.9\u00b0. Confirm against the purchased OS extract.",
+  "north_basis": "Least-squares registration of the model to the north-up OS extract (proposal/street-registration/registration.json): model +x bears 82.65°, so model +y bears 352.9°. Confirm against the purchased OS extract.",
   "red_line_source": "navigation.site.outline_m (HM Land Registry title plan K568939 traced and registered)",
   "blue_line_polygons": [],
   "rear_strip_in_same_title": true,
-  "rear_strip_basis": "The rear garden strip is drawn inside the same red line as on the title plan; the coloured strips at its north-west corner on the title plan are rights of way, not separate titles \u2014 verify against the register.",
+  "rear_strip_basis": "The rear garden strip is drawn inside the same red line as on the title plan; the coloured strips at its north-west corner on the title plan are rights of way, not separate titles — verify against the register.",
   "designations": {
     "green_belt": false,
     "aonb": false,
@@ -30,7 +30,7 @@
     "tpo": null,
     "flood_zone": "1",
     "article_4_direction": false,
-    "basis": "Green Belt: owner confirms the site is outside. Read-only Sevenoaks public GIS screening on 25 September 2026, using the existing approximate model-to-BNG registration, shows no plot overlap with The Vine conservation area or nearby Article 4 areas. These are map checks, not formal land-charge verification. TPO 19/1987 (T4 cherry and G1 group) is mapped beside the east/rear boundary; legal coverage, surviving tree identity and root protection require survey and council/arboricultural confirmation. Historic England NHLE screening finds no listed-building point/polygon on the reconstructed plot; this does not determine curtilage, setting or local listing. Current Environment Agency flood-zone data returns no Zone 2/3 polygon within the plot plus 100 m, supporting river/sea Flood Zone 1 map screening. Natural England boundary screening places the plot outside Kent Downs National Landscape, about 675 m away; setting effects are not assessed. Environment Agency surface-water spatial-planning WMS screening shows no mapped extent across the approximate plot in the present-day or 2070s upper-end climate scenarios; these are area-level datasets, not an individual-property flood assessment. Local-list status, groundwater, sewer flooding, drainage changes and basement suitability remain unverified. See proposal/redesigns/research/RESEARCH.md.",
+    "basis": "Green Belt: owner confirms the site is outside. Read-only Sevenoaks public GIS screening on 25 September 2026, using the existing approximate model-to-BNG registration, shows no plot overlap with The Vine conservation area or nearby Article 4 areas. These are map checks, not formal land-charge verification. TPO 19/1987 (T4 cherry and G1 group) is mapped beside the east/rear boundary; legal coverage, surviving tree identity and root protection require survey and council/arboricultural confirmation. Historic England NHLE screening finds no listed-building point/polygon on the reconstructed plot; this does not determine curtilage, setting or local listing. Current Environment Agency flood-zone data returns no Zone 2/3 polygon within the plot plus 100 m, supporting river/sea Flood Zone 1 map screening. Natural England boundary screening places the plot outside Kent Downs National Landscape, about 675 m away; setting effects are not assessed. Environment Agency surface-water spatial-planning WMS screening shows no mapped extent across the approximate plot in the present-day or 2070s upper-end climate scenarios; these are area-level datasets, not an individual-property flood assessment. Groundwater, sewer flooding, drainage changes and basement suitability remain unverified. See proposal/redesigns/research/RESEARCH.md. Further official GIS screening on 3 October 2026 places the approximate plot inside the urban confines and outside the Green Belt, local-list polygons and Article 4 polygons. The nearest locally listed asset identified is 3 Vine Avenue (10172), approximately 42.5 m from the modelled plot; its setting requires assessment. This is map screening, not a land-charge or measured-boundary certificate.",
     "confirmed": [
       "green_belt"
     ],
@@ -43,7 +43,7 @@
     ]
   },
   "original_dwelling": {
-    "basis": "The existing house is treated as the original dwelling as first built (post-1948, unextended); no previous extensions are known.",
+    "basis": "Existing reconstructed house is the comparison baseline, not a verified original-house baseline. Historic application leads 83/01218/HIST, 83/01336/HIST and 84/00546/HIST require notices and approved drawings; construction date and extension history are unverified.",
     "previous_extensions_m2": 0
   },
   "existing_drawings_basis": "Existing drawings are a model reconstruction from the estate-agent floor plan, aerial and photographic sources, validated against the 34 published room dimensions; heights are photo-fitted (floor-to-floor 2.80 m, eaves 5.35 m, ridge 8.05 m). To be confirmed by measured survey before submission.",
@@ -75,7 +75,7 @@
     "basis": "The shown 2.4 m x 25 m splay is an unverified concept, not an accepted 30 mph design. Manual for Streets Table 7.1 gives 25 m at 20 mph and 43 m at 30 mph. Confirm observed speeds, highway geometry and the required splays with KCC Highways."
   },
   "trees": {
-    "basis": "Tree positions are the modelled trunks (photographic reconstruction); species and dimensions are estimates for this issue. A BS5837 survey is required."
+    "basis": "Tree locations and canopies are illustrative model objects, not a BS5837 survey. Labels are model references, not survey or TPO IDs; heights and RPAs are deliberately not certified. Match a consistent survey inventory across existing/proposed plans before submission."
   },
   "materials": {
     "walls": "External walls: red-brown facing brick to match the existing house in colour, texture, bond and mortar. Internal wall faces: white painted plaster, with no exposed brick.",
@@ -87,11 +87,11 @@
     "boundary": "Matching red-brown brick front wall, 1.95 m (26 courses), with oak-slatted sliding gate; existing fences and hedges retained",
     "privacy": "Side-wing west bedroom windows and new-wing east windows facing neighbours obscure-glazed below 1.7 m; opening restrictions and sightlines to be verified."
   },
-  "drawing_revision": "G",
-  "issue_date": "2026-09-25",
+  "drawing_revision": "H",
+  "issue_date": "2026-10-03",
   "sheet_status": "REVIEW - NOT FOR SUBMISSION",
   "drawn_by": "RP",
-  "checked_by": "\u2014",
+  "checked_by": "—",
   "pre_application_advice": false,
   "site_visit_contact": "Applicant",
   "reports_to_commission": [
@@ -109,8 +109,8 @@
     },
     {
       "id": "PEA",
-      "title": "Preliminary ecological appraisal (bat roost potential \u2014 roof and loft works)",
-      "trigger": "Alterations to the roof of a pre-2000 dwelling with mature trees",
+      "title": "Preliminary ecological appraisal (bat roost potential — roof and loft works)",
+      "trigger": "Roof works and nearby mature trees; establish construction date and bat-roost potential with ecologist",
       "status": "required"
     },
     {
@@ -135,67 +135,106 @@
       "id": "HER",
       "title": "Heritage statement",
       "trigger": "Confirm heritage/setting effects, local-list status and any historic curtilage against current validation requirements",
-      "status": "Conservation and NHLE map screening completed; local-list and setting assessment remain open"
+      "status": "Mapped local-list and designated-asset screening available; setting effects unresolved, including 3 Vine Avenue"
     },
     {
       "id": "HWY",
       "title": "Highways: access and visibility splay confirmation",
       "trigger": "Altered gate and forecourt",
       "status": "confirm with KCC Highways"
+    },
+    {
+      "id": "AMEN",
+      "title": "Daylight, sunlight, outlook and privacy assessment",
+      "trigger": "Front/side wings and roof accommodation; No.3, No.5 and affected flats",
+      "status": "required before relying on a no-harm conclusion"
+    },
+    {
+      "id": "VIS",
+      "title": "Surveyed street views, oblique views and site sections",
+      "trigger": "New frontage and combined roof/dormer mass",
+      "status": "required; current PA-070 is a schematic, not a verified visual assessment"
     }
   ],
   "front_wing_case": {
-    "summary": "The new wing is two storeys with rooms in the roof: its eaves (5.35 m) and ridge (8.05 m) are the same as the existing two-storey house, and the loft rooms sit within that roof behind a flat-topped dormer. The plot sits at the head of the Ashley Close cul-de-sac, so the wing is designed as the house's new principal elevation towards the turning head rather than as a front extension of the retained house: its south gable stands parallel to the front boundary wall and faces the turning head, the entrance moves into it, and the retained house reads as the rear range behind the courtyard.",
-    "basis": "Owner's position (22 September): the front elevation of the house is being re-formed; because the plot closes the cul-de-sac the wing faces the road as a new frontage rather than projecting in front of a building line shared with neighbours."
+    "summary": "The proposal retains the modelled 8.05 m ridge and 5.35 m eaves while adding a front wing and roof accommodation. The design intention is a new principal frontage at the cul-de-sac head, with an open courtyard and a legible retained house. These features support an argument to test, not a finding of acceptability. The modelled projection is approximately 16 m beyond the original front, with approximately 5.3 m remaining to the front boundary wall. Surveyed street and oblique views must establish prominence and building-line relationships.",
+    "basis": "Owner instruction, 3 October 2026: hold the current planning-model house envelope fixed and strengthen its case first. Assess any unresolved harm explicitly; reduction is a later fallback, not authorised by this review."
   },
   "precedents": [
     {
+      "ref": "25/03306/HOUSE",
+      "address": "26 Vine Court Road, Sevenoaks",
+      "decision": "Committee grant, 12 March 2026",
+      "description": "Extensive remodelling, extensions, roof accommodation and basement works were accepted while retaining the house.",
+      "relevance": "Conservation-area site with a generous plot. Officer report records approximately 10 m front setback, compared with approximately 5.3 m to the front boundary wall in Ashley's model. Approved dormers were described as modest.",
+      "source": "https://sevenoaks.moderngov.co.uk/mgAi.aspx?ID=27388&J=1"
+    },
+    {
       "ref": "21/02393/HOUSE",
-      "address": "Meadowfield, 60 Hitchen Hatch Lane, Sevenoaks TN13 3AU",
-      "decision": "Granted by Development Control Committee (2021; referred by a councillor on neighbour amenity, officers recommended approval)",
-      "description": "Demolition of garage and shed; remodelling and enhancement including extensions to the existing house, new porch, integral garage, loft conversion, landscaping, covered pergola, rooflights and alterations to fenestration",
-      "relevance": "A whole-house remodel keeping the existing house, on the road bounding Ashley Close. The committee report found that the extension, 'whilst not set down from the ridge height of the main house, would incorporate the existing roof form, therefore considered to reflect the character of the existing dwelling', and that it would not 'significantly alter the existing residential and built up character of the area'. Mature landscaping screening it from the street weighed in its favour. Assessed under Core Strategy SP1, ADMP EN1/EN2/T2 and the Residential Extensions SPD.",
-      "policies": "Core Strategy SP1, ADMP EN1, EN2, T2, Residential Extensions SPD"
+      "address": "Meadowfield, 60 Hitchen Hatch Lane",
+      "decision": "Committee grant, 21 October 2021",
+      "description": "An extension without a lowered ridge was accepted because the integrated roof form and surrounding context were suitable.",
+      "relevance": "Screening, the open western plot and separation from neighbours mattered. The decision does not establish that matching ridge height alone makes a large front wing acceptable.",
+      "source": "https://sevenoaks.moderngov.co.uk/mgAi.aspx?ID=14745&J=1"
     },
     {
-      "ref": "23/01491/HOUSE",
-      "address": "54 Hitchen Hatch Lane, Sevenoaks TN13 3AU",
-      "decision": "Granted 25 Jul 2023 (delegated)",
-      "description": "Two storey front extension with front porch; alteration to fenestration",
-      "relevance": "Adjoining road (Hitchen Hatch Lane bounds Ashley Close to the north); same Urban Confines and Sevenoaks Residential Character Area constraints. The officer's test was whether the front extension would 'significantly lessen the set-back nature' of the properties lining that section of the road, and whether it was subservient in scale with a common gabled design. Obscure glazing in the flank was accepted as the privacy answer.",
-      "policies": "ADMP EN1, Core Strategy SP1, Sevenoaks Town Neighbourhood Plan C4, Residential Character Area assessment"
+      "ref": "22/03572/HOUSE; APP/G2245/D/23/3328771",
+      "address": "72 Brattle Wood",
+      "decision": "Appeal dismissed, 31 January 2024",
+      "description": "A deep front garage projection dominated the house and disrupted the street relationship despite a matching roof pitch. Screening did not overcome the harm.",
+      "relevance": "The regular White Hart Wood frontage differs from Ashley's cul-de-sac head. Demonstrate that distinction with measured context rather than simply asserting it.",
+      "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=55875980"
     },
     {
-      "ref": "23/02575/HOUSE",
-      "address": "Cedar Bank, Hopgarden Lane, Sevenoaks TN13 1PX",
-      "decision": "Granted",
-      "description": "Demolition of garage; two storey front and side extension incorporating a garage at lower ground level, with a dormer to the new front extension",
-      "relevance": "A two-storey front extension with rooms in the roof (dormer) granted in Sevenoaks town \u2014 the closest match in form to the new wing."
+      "ref": "23/01976/HOUSE; APP/G2245/D/23/3330895",
+      "address": "Dene Cottage, Knockholt Road, Halstead",
+      "decision": "Appeal dismissed, 7 February 2024",
+      "description": "Street character was acceptable, but the extension would harm outlook from a neighbour's sole bedroom windows. Acceptable daylight and privacy did not cure oppressive outlook.",
+      "relevance": "Different house form and window arrangement. The transferable lesson is to assess outlook separately, especially from single-aspect habitable rooms.",
+      "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=55970938"
     },
     {
-      "ref": "23/02298/HOUSE",
-      "address": "Springfield, 4 Farnaby Drive, Sevenoaks TN13 2LQ",
-      "decision": "Granted",
-      "description": "Two storey front extension, part single/part double storey rear and side extension, facade updates including alterations to fenestration, removal of chimney",
-      "relevance": "Re-formed front facade with chimney removal \u2014 the same package of front changes as this scheme."
+      "ref": "17/00330/FUL; APP/G2245/W/17/3189529",
+      "address": "Summerhill, Seal Hollow Road",
+      "decision": "Replacement-house appeal allowed, 5 April 2018",
+      "description": "A significantly larger and taller replacement was accepted because its siting, lower hipped eaves, gaps and angled relationship avoided unacceptable effects.",
+      "relevance": "Large plots and a backland setting differ from Ashley's visible frontage. This is evidence of context-dependent acceptance, not an allowance for equivalent enlargement.",
+      "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=26385845"
     },
     {
-      "ref": "25/02441/HOUSE",
-      "address": "Aldington, 53 Oakhill Road, Sevenoaks TN13 1NT",
-      "decision": "Granted",
-      "description": "Demolition of chimney; two storey front extension; first floor front and rear extension; two storey side extension; raising the roof for a loft conversion",
-      "relevance": "Recent (2025) grant combining a two-storey front extension, side extension, chimney removal and roof works."
+      "ref": "21/01058/FUL; APP/G2245/W/22/3292870",
+      "address": "Lyndhurst Cottage, Holly Bush Lane",
+      "decision": "Replacement-house appeal dismissed, 25 August 2022",
+      "description": "The inspector accepted massing and modern design but rejected privacy effects associated with windows and raised outdoor areas.",
+      "relevance": "The subsequent 22/02482/FUL committee approval followed window changes while retaining the bulk and form. This supports testing targeted amenity measures before assuming wholesale reduction is necessary.",
+      "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=48940710"
     },
     {
-      "ref": "22/02064/HOUSE",
-      "address": "66 Brittains Lane, Sevenoaks TN13 2JS",
-      "decision": "Granted",
-      "description": "Part single/part two storey side and rear extension; two storey front extension; roof extension and loft conversion with front and rear dormers",
-      "relevance": "Two-storey front extension with front and rear dormers granted together."
+      "ref": "11/03230/FUL",
+      "address": "Bucklers, The Coppice, Lower Bitchet",
+      "decision": "Committee grant, 24 May 2012",
+      "description": "A replacement dwelling was accepted against a substantial certified permitted-development fallback and its particular design advantages.",
+      "relevance": "Green Belt and protected landscape: not Ashley's designation context. It demonstrates a mechanism for comparison, not a general demolition bonus or an applicable percentage allowance.",
+      "source": "https://sevenoaks.moderngov.co.uk/mgAi.aspx?ID=1615&J=1"
+    },
+    {
+      "ref": "22/03178/FUL; APP/G2245/W/23/3319396",
+      "address": "Greengates, Rosemary Lane, Hodsoll Street",
+      "decision": "Replacement-house appeal dismissed, 13 December 2023",
+      "description": "The replacement had less floorspace, footprint and slightly less volume than its fallback but greater upper-level massing and visual harm. A credible fallback did not compel approval.",
+      "relevance": "Green Belt case. Do not import its Green Belt enlargement tests into Ashley's urban site; use only to explain why aggregate area or volume cannot replace visual assessment.",
+      "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=55254423"
+    },
+    {
+      "ref": "18/00772/HOUSE",
+      "address": "3 Ashley Close",
+      "decision": "Officer recommendation to grant, 3 May 2018; formal notice not verified",
+      "description": "The officer accepted substantial additional width on balance, considering roof design, gaps and the particular relationships with neighbouring houses.",
+      "relevance": "The upper front projection was about 1 m, compared with about 16 m beyond Ashley's original frontage. Proposed drawings are not proof of the present as-built arrangement.",
+      "source": "proposal/neighbours/planning/P58CNHBKLL900/18_00772_HOUSE-OFFICER_REPORT-1918841.pdf"
     }
   ],
-  "policy_to_check": "The council's Formal Detached character assessment, printed pages 273-277, explicitly places Ashley Close in F05 Vine Avenue / Ashley Road (verified 25 September 2026). Use its guidance on spacing, setbacks and mature planting. Source: https://www.sevenoaks.gov.uk/download/downloads/id/740/f_formal_detached.pdf . The F04 reference in the nearby Hitchen Hatch Lane precedent is not this property's character-area designation. Sevenoaks Town Neighbourhood Plan policy C4 and the cited precedent decisions still require full verification for an application.",
-  "precedents_other": "Other granted remodelling schemes in Sevenoaks keeping the house: 13/01992/HOUSE Rozelle, Hillborough Avenue (remodelling with two-storey side and part two-storey front extension and a basement); 12/00579/HOUSE and 13/01081/HOUSE 3 Cade Lane (remodelling with new front gable, double-height entrance, ridge raised 0.7 m); 17/01231/HOUSE Blackhall Barns, Woodland Rise (remodelling with front, side and two-storey rear extensions, ridge raised); 16/02673/HOUSE Yarnfield, 100 Kippington Road ('new front elevation design'); 25/03547/HOUSE Chenies, 84 Oakhill Road (fa\u00e7ade improvements, front door relocated).",
+  "policy_to_check": "F05 Vine Avenue / Ashley Road is the verified character-area reference. Apply adopted SP1, EN1, EN2, EN4, made neighbourhood policy C4 and current national policy L2; distinguish the emerging Regulation 19 plan from adopted policy.",
   "submission_verification": {
     "applicant_details": "unconfirmed",
     "ownership_certificate": "unconfirmed",
@@ -208,7 +247,7 @@
   "validation_source": {
     "title": "Sevenoaks householder validation checklist, revision September 2026",
     "url": "https://www.sevenoaks.gov.uk/download/downloads/id/4896/1_application_for_householder_planning_permission_validation_checklist.pdf",
-    "checked_on": "2026-09-23"
+    "checked_on": "2026-10-03"
   },
   "design_variant": "planning",
   "roof_context_basis": "Owner confirmed on 23 September 2026 that all neighbouring houses have the same dark brown-grey roof tiles as Ashley Heights and supplied a close-up colour reference (proposal/reference/roof-tile-colour-reference.png)."

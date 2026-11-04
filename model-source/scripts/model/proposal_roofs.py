@@ -191,9 +191,11 @@ wing_eaves=[wing_outer[0]-.20,wing_outer[1]-.20,wing_outer[2]+.20,wing_outer[3]+
 # short north hip is retired. A matching-pitch end hip meets the original
 # house roof in actual clipped valleys, with no independent connector roof.
 wing_half=(wing_eaves[2]-wing_eaves[0])/2
-wing_cx=(wing_eaves[0]+wing_eaves[2])/2
+wing_cx=float(spec['newWingRoof'].get('ridge_x',(wing_eaves[0]+wing_eaves[2])/2))
 WING_RIDGE=float(spec['newWingRoof']['ridge']);WING_EAVE=float(spec['newWingRoof']['eave'])
 wing_roof_slope=(WING_RIDGE-WING_EAVE)/wing_half
+wing_west_slope=(WING_RIDGE-WING_EAVE)/(wing_cx-wing_eaves[0])
+wing_east_slope=(WING_RIDGE-WING_EAVE)/(wing_eaves[2]-wing_cx)
 # Owner (proposal B): with the new ridge at the existing ridge height the two
 # ridges meet in one straight line, so the continued ridge runs to the
 # original ridge and the north cap is the original rear slope itself instead
@@ -204,7 +206,7 @@ ridge_joins_original=abs(WING_RIDGE-_orig_ridge_z)<.02
 continued_ridge_end_y=_orig_ridge_y if ridge_joins_original else 2.60
 continued_north_eave_y=continued_ridge_end_y+wing_half
 continued_roof_domains=[list(wing_eaves),
-    [wing_eaves[0] if spec['newWingRoof'].get('connector_west_eave_aligned') else 5.43,wing_eaves[3],10.35,original_top[0][1]],   # owner (22 September): one continuous west eaves line
+    [wing_eaves[0] if spec['newWingRoof'].get('connector_west_eave_aligned') else 5.43,wing_eaves[3],float(spec.get('courtyard',{}).get('upper_glazing_x',10.35)),original_top[0][1]],
     [original_top[0][0],original_top[0][1],original_top[1][0],original_top[3][1]]]
 _north_cap_slope=_orig_rear_slope if ridge_joins_original else wing_roof_slope
 # Owner (22 September, proposal B): east of the link the wing's north wall
@@ -212,10 +214,10 @@ _north_cap_slope=_orig_rear_slope if ridge_joins_original else wing_roof_slope
 # with it.
 _cyn=spec.get('courtyard') or {}
 if _cyn.get('facade_y') is not None and float(_cyn['facade_y'])>wing_outer[3]+.01:
-    continued_roof_domains.append([float(_cyn.get('west_x',10.35)),wing_eaves[3],wing_eaves[2],float(_cyn['facade_y'])+.20])
+    continued_roof_domains.append([float(_cyn.get('upper_glazing_x',_cyn.get('west_x',10.35))),wing_eaves[3],wing_eaves[2],float(_cyn['facade_y'])+.20])
 continued_main_planes=[
-    (wing_roof_slope,0,WING_RIDGE-wing_roof_slope*wing_cx),
-    (-wing_roof_slope,0,WING_RIDGE+wing_roof_slope*wing_cx),
+    (wing_west_slope,0,WING_RIDGE-wing_west_slope*wing_cx),
+    (-wing_east_slope,0,WING_RIDGE+wing_east_slope*wing_cx),
     (0,-_north_cap_slope,WING_RIDGE+_north_cap_slope*continued_ridge_end_y),
     (0,wing_roof_slope,WING_RIDGE-wing_roof_slope*(wing_eaves[1]+wing_half))]
 # Owner (22 September, proposal B): the new east slope is not carried over the
@@ -265,11 +267,11 @@ cross_x0=min(g['verge_x'] for g in bay_gables)
 # There is only ONE new main ridge, centred over its existing footprint.
 link_x0,link_x1,link_y0,link_y1=7.45,10.35,wing_eaves[3],original_top[3][1]
 link_cx=wing_cx;link_ridge=WING_RIDGE;link_slope=wing_roof_slope
-link_eave=link_ridge-link_slope*abs(link_x1-link_cx)
+link_eave=link_ridge-wing_east_slope*abs(link_x1-link_cx)
 cap_start=continued_ridge_end_y;south_cap_start=wing_eaves[1]+wing_half
 link_domains=continued_roof_domains
-link_planes=[(link_slope,0,link_ridge-link_slope*link_cx),
-             (-link_slope,0,link_ridge+link_slope*link_cx),
+link_planes=[(wing_west_slope,0,link_ridge-wing_west_slope*link_cx),
+             (-wing_east_slope,0,link_ridge+wing_east_slope*link_cx),
              (0,-_north_cap_slope,link_ridge+_north_cap_slope*cap_start),
              (0,link_slope,link_ridge-link_slope*south_cap_start)]
 west_plane=link_planes[0]
@@ -299,7 +301,7 @@ if _wdl:
 # bridge to the rear dormer, whose roof is at the same height.
 _wdle=_wd.get('link_extension');wing_dormer_link_ext_rect=None
 if _wdl and _wdle:
-    wing_dormer_link_ext_rect=[_wdle[0],_wdle[1],max(_wdle[2],_wdl[2])+.12,_wdle[3]]   # owner review: one straight east edge with the link roof, membrane and gutter
+    wing_dormer_link_ext_rect=[_wdle[0],_wdle[1],float(_wd.get('link_extension_east_m',max(_wdle[2],_wdl[2])))+.12,_wdle[3]]   # retained north passage; the widened courtyard link steps back to this edge
     _roof_add('Wing east dormer link extension',[(x,y,_wd_top) for x,y in _roof_rect(wing_dormer_link_ext_rect)],'dormer')
 
 
@@ -634,7 +636,8 @@ def _roof_exposed_line(name,a,b,z):
             beam(name,(a[0]+dx*t0,a[1]+dy*t0,z+.012),
                       (a[0]+dx*t1,a[1]+dy*t1,z+.012),.065,roof_outer_material,L)
 
-wing_half=(wing_eaves[2]-wing_eaves[0])/2;wing_cx=(wing_eaves[0]+wing_eaves[2])/2
+wing_half=(wing_eaves[2]-wing_eaves[0])/2
+# Retain the authored offset ridge used by the roof planes above.
 _roof_exposed_line('Proposal | New main ridge',(wing_cx,wing_eaves[1]+wing_half),
                   (wing_cx,continued_ridge_end_y),WING_RIDGE)
 _roof_exposed_line('Proposal | Original ridge joined',(original_top[4][0],original_top[4][1]),

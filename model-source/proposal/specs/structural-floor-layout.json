@@ -1,0 +1,4393 @@
+{
+  "revision": "M15-2026-10-27",
+  "basis": "Structural floor plates reconstructed where architectural meshes were disjointed for finish ownership. These are not blanket bounding boxes. The source navigation and accepted floor finishes establish the occupied areas; the entrance double-height void and original stair apertures remain.",
+  "floorPlateCorrections": {
+    "Proposal | Wing first floor": {
+      "polygon": [
+        [
+          5.16,
+          -16.076
+        ],
+        [
+          13.75,
+          -16.076
+        ],
+        [
+          13.75,
+          -4.23
+        ],
+        [
+          5.16,
+          -4.23
+        ],
+        [
+          5.16,
+          -5.51
+        ],
+        [
+          7.7,
+          -5.51
+        ],
+        [
+          7.7,
+          -8.63
+        ],
+        [
+          5.16,
+          -8.63
+        ]
+      ],
+      "bottom": 2.6,
+      "top": 2.8,
+      "basis": "Union of navigation surfaces named Proposal | Wing first floor. Restores the bathroom/bedroom finish deductions; preserves the 2.54 by 3.12 m entrance double-height void. Source: proposal_surface_junctions.py and current principal-suite/landing finishes."
+    },
+    "Proposal | Entrance first floor continuation": {
+      "polygon": [
+        [
+          5.625,
+          -4.3
+        ],
+        [
+          9.7,
+          -4.3
+        ],
+        [
+          9.7,
+          -0.115
+        ],
+        [
+          9.205,
+          -0.115
+        ],
+        [
+          9.205,
+          -0.33
+        ],
+        [
+          8.89,
+          -0.33
+        ],
+        [
+          8.89,
+          0
+        ],
+        [
+          5.8,
+          0
+        ],
+        [
+          5.8,
+          -0.33
+        ],
+        [
+          5.585,
+          -0.33
+        ],
+        [
+          5.585,
+          -4
+        ],
+        [
+          5.625,
+          -4
+        ]
+      ],
+      "bottom": 2.6,
+      "top": 2.8,
+      "basis": "Trim 85 mm of surplus external floor edge beyond the unchanged X5.615 glazing. Preserve all usable interior floor and Y0 original-house junction. Main floor joists end at the relocated west receiver; the 50 mm beyond its outer flange has an explicit small steel edge-angle reservation with unverified facade/connection design.",
+      "framingReference": {
+        "polygon": [
+          [
+            5.5,
+            -4.3
+          ],
+          [
+            9.7,
+            -4.3
+          ],
+          [
+            9.7,
+            0
+          ],
+          [
+            5.5,
+            0
+          ]
+        ],
+        "bottom": 2.6,
+        "top": 2.8,
+        "basis": "Legacy reviewed receiver-network identity only; not the physical deck or a support assertion. Physical plate uses the corrected notched polygon, joists use explicit clearances, and actual layers are clipped to the named piers."
+      }
+    },
+    "Proposal | Wing loft floor": {
+      "polygons": [
+        [
+          [
+            5.2325,
+            -16.0035
+          ],
+          [
+            13.6775,
+            -16.0035
+          ],
+          [
+            13.6775,
+            -4.3025
+          ],
+          [
+            10.5,
+            -4.3025
+          ],
+          [
+            10.5,
+            -5.3
+          ],
+          [
+            7.35,
+            -5.3
+          ],
+          [
+            7.35,
+            -8.63
+          ],
+          [
+            5.2325,
+            -8.63
+          ]
+        ],
+        [
+          [
+            5.2325,
+            -5
+          ],
+          [
+            5.5,
+            -5
+          ],
+          [
+            5.5,
+            -4.3025
+          ],
+          [
+            5.2325,
+            -4.3025
+          ]
+        ]
+      ],
+      "bottom": 5.35,
+      "top": 5.55,
+      "basis": "Extend structural framing from the finished loft-floor margins to the centre of the proposed block-leaf bearing lines. Preserve the actual double-height/entrance void. Bearing recesses, plates and the deeper joist build-up remain unverified; this does not add habitable room area."
+    },
+    "Proposal | Wing loft floor courtyard notch": {
+      "polygon": [
+        [
+          10.5,
+          -4.3025
+        ],
+        [
+          13.6775,
+          -4.3025
+        ],
+        [
+          13.6775,
+          -3.3315
+        ],
+        [
+          10.5,
+          -3.3315
+        ]
+      ],
+      "bottom": 5.35,
+      "top": 5.55,
+      "basis": "Structural continuation to the same east/north block-leaf bearing lines as the adjoining loft plate, with the accepted courtyard notch retained. Reconcile wall head, floor depth and connections."
+    },
+    "Proposal | Original loft deck 03": {
+      "polygon": [
+        [
+          -5.065,
+          0.9
+        ],
+        [
+          -0.115,
+          0.9
+        ],
+        [
+          -0.115,
+          -0.115
+        ],
+        [
+          13.865,
+          -0.115
+        ],
+        [
+          13.865,
+          8.705
+        ],
+        [
+          -5.065,
+          8.705
+        ]
+      ],
+      "bottom": 5.35,
+      "top": 5.55,
+      "basis": "Structural-only floor continuation beneath the original-house and side-wing hips to the first-floor wall lines. The former source deck represented the usable loft area clipped by sloped-roof height. Framing beneath eaves must not stop at that head-height contour. Original-house strengthening remains optional; actual existing framing and intermediate support need survey. The original stair aperture is cut separately."
+    }
+  },
+  "additionalPlates": [
+    {
+      "id": "F-S-GALLERY-EAVES",
+      "name": "Structural study | Gallery floor continuation to west roof bearing",
+      "polygon": [
+        [
+          5.615,
+          -4.3
+        ],
+        [
+          7.3,
+          -4.3
+        ],
+        [
+          7.3,
+          0
+        ],
+        [
+          5.615,
+          0
+        ]
+      ],
+      "bottom": 5.35,
+      "top": 5.55,
+      "level": 3,
+      "basis": "Owner correction: extend gallery joists into the low eaves to the first-floor glazed-wall head at X5.615. This is a proposed structural continuation, not additional habitable floor area or a native-model change. Coordinate the eaves beam, roof build-up and glazing head."
+    },
+    {
+      "id": "F-S-GALLERY-NORTH-INFILL",
+      "name": "Structural study | Close loft gallery notch at former return",
+      "polygon": [
+        [
+          5.615,
+          -5.3
+        ],
+        [
+          10.42,
+          -5.3
+        ],
+        [
+          10.42,
+          -4.3
+        ],
+        [
+          5.615,
+          -4.3
+        ]
+      ],
+      "bottom": 5.35,
+      "top": 5.55,
+      "level": 3,
+      "basis": "Close only the small notch beside the former short steel return, to the west eaves bearing line X5.615. Preserve the larger entrance void south of Y-5.3 and the actual relocated stair opening. Retire the detached low-eaves floor-margin fragment outside this bearing line; it is not a separate joisted bay. No habitable headroom is claimed."
+    },
+    {
+      "id": "F-S-GALLERY-NE-SEAM",
+      "name": "Structural study | Close 80 mm gallery / north-east floor seam",
+      "level": 3,
+      "polygon": [
+        [
+          10.42,
+          -5.3
+        ],
+        [
+          10.5,
+          -5.3
+        ],
+        [
+          10.5,
+          -3.3315
+        ],
+        [
+          10.42,
+          -3.3315
+        ]
+      ],
+      "bottom": 5.35,
+      "top": 5.55,
+      "basis": "GRC-01: close the unintended 80 mm seam between the two adjacent structural floor fields over their single shared receiver. Native floor/ceiling finish continuation is part of the overnight coordination work."
+    }
+  ],
+  "cantilevers": [],
+  "sources": [
+    {
+      "title": "James Jones engineered timber technical information",
+      "url": "https://www.jamesjones.co.uk/products-and-services/engineered-timber/downloads"
+    }
+  ],
+  "primaryReceiverProposals": [
+    {
+      "id": "GALLERY-FIRST-WEST",
+      "name": "First-floor gallery west steel beam",
+      "level": 1,
+      "line": [
+        [
+          5.5,
+          -4.23
+        ],
+        [
+          5.5,
+          0
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-1-036"
+      ]
+    },
+    {
+      "id": "GALLERY-FIRST-EAST",
+      "name": "First-floor gallery east steel beam",
+      "level": 1,
+      "line": [
+        [
+          9.7,
+          -4.23
+        ],
+        [
+          9.7,
+          0
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-1-019",
+        "M-FR-1-035"
+      ]
+    },
+    {
+      "id": "GALLERY-FIRST-JUNCTION",
+      "name": "First-floor gallery house-junction steel beam",
+      "level": 1,
+      "line": [
+        [
+          5.5,
+          0
+        ],
+        [
+          9.7,
+          0
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-1-034"
+      ]
+    },
+    {
+      "id": "GALLERY-FIRST-SOUTH",
+      "name": "First-floor entrance gallery cross beam",
+      "level": 1,
+      "line": [
+        [
+          5.16,
+          -4.23
+        ],
+        [
+          9.7,
+          -4.23
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-1-018",
+        "M-FR-1-029",
+        "M-FR-1-030"
+      ]
+    },
+    {
+      "id": "ENTRANCE-FIRST-EAST",
+      "name": "Entrance void first-floor east steel trimmer",
+      "level": 1,
+      "line": [
+        [
+          7.7,
+          -8.63
+        ],
+        [
+          7.7,
+          -5.51
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-1-026"
+      ]
+    },
+    {
+      "id": "ENTRANCE-FIRST-NORTH",
+      "name": "Entrance void first-floor north steel trimmer",
+      "level": 1,
+      "line": [
+        [
+          5.16,
+          -5.51
+        ],
+        [
+          7.7,
+          -5.51
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-1-027"
+      ]
+    },
+    {
+      "id": "ENTRANCE-FIRST-SOUTH",
+      "name": "Entrance void first-floor south steel trimmer",
+      "level": 1,
+      "line": [
+        [
+          5.16,
+          -8.63
+        ],
+        [
+          7.7,
+          -8.63
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-1-033"
+      ]
+    },
+    {
+      "id": "GALLERY-EAVES-WEST",
+      "name": "Gallery west eaves steel beam / roof bearing receiver",
+      "level": 3,
+      "line": [
+        [
+          5.615,
+          -4.3
+        ],
+        [
+          5.615,
+          -0.115
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-3-025"
+      ]
+    },
+    {
+      "id": "ENTRANCE-LOFT-EAST",
+      "name": "Entrance void loft east steel trimmer",
+      "level": 3,
+      "line": [
+        [
+          7.35,
+          -8.63
+        ],
+        [
+          7.35,
+          -5.3
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-3-009"
+      ]
+    },
+    {
+      "id": "ENTRANCE-LOFT-SOUTH",
+      "name": "Entrance void loft south steel trimmer",
+      "level": 3,
+      "line": [
+        [
+          5.2325,
+          -8.63
+        ],
+        [
+          7.35,
+          -8.63
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-3-008"
+      ]
+    },
+    {
+      "id": "ENTRANCE-LOFT-NORTH",
+      "name": "Entrance void loft north steel transfer beam",
+      "level": 3,
+      "line": [
+        [
+          7.35,
+          -5.3
+        ],
+        [
+          10.5,
+          -5.3
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-3-010",
+        "M-FR-3-011",
+        "M-FR-3-012"
+      ]
+    },
+    {
+      "id": "ENTRANCE-LOFT-RETURN",
+      "name": "Entrance loft gallery steel return",
+      "level": 3,
+      "line": [
+        [
+          7.3,
+          -5.3
+        ],
+        [
+          7.3,
+          -4.3
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-3-023"
+      ]
+    },
+    {
+      "id": "GALLERY-EAVES-SOUTH",
+      "name": "Gallery eaves south steel cross beam",
+      "level": 3,
+      "line": [
+        [
+          5.615,
+          -4.3
+        ],
+        [
+          7.3,
+          -4.3
+        ]
+      ],
+      "section": "305x165x40",
+      "expectedMemberIds": [
+        "M-FR-3-024"
+      ]
+    }
+  ],
+  "primaryReceiverBasis": "Explicit steel material proposal for primary gallery/eaves and entrance-void support lines. The UB 305x165x40 profile is a dimensional comparison with the previous 300 mm timber envelope, NOT a calculated section selection. Actual loads, reactions, deflection, torsion, stability, bearings, connections, fire protection and foundation transfers are unresolved. Multiple model segments on one proposal line do not imply fabrication splices.",
+  "joistReferenceLines": {
+    "LOFT-HOUSE": [
+      {
+        "id": "M-LOFT-HOUSE-001",
+        "line": [
+          [
+            0.4,
+            -0.065
+          ],
+          [
+            0.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-002",
+        "line": [
+          [
+            0.8,
+            -0.065
+          ],
+          [
+            0.8,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-003",
+        "line": [
+          [
+            1.2000000000000002,
+            -0.065
+          ],
+          [
+            1.2000000000000002,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-004",
+        "line": [
+          [
+            1.6,
+            -0.065
+          ],
+          [
+            1.6,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-005",
+        "line": [
+          [
+            2.0,
+            -0.065
+          ],
+          [
+            2.0,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-006",
+        "line": [
+          [
+            2.4,
+            -0.065
+          ],
+          [
+            2.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-007",
+        "line": [
+          [
+            2.8000000000000003,
+            -0.065
+          ],
+          [
+            2.8000000000000003,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-008",
+        "line": [
+          [
+            3.2,
+            -0.065
+          ],
+          [
+            3.2,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-009",
+        "line": [
+          [
+            3.6,
+            -0.065
+          ],
+          [
+            3.6,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-010",
+        "line": [
+          [
+            4.0,
+            -0.065
+          ],
+          [
+            4.0,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-011",
+        "line": [
+          [
+            4.4,
+            -0.065
+          ],
+          [
+            4.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-031",
+        "line": [
+          [
+            4.800000000000001,
+            -0.065
+          ],
+          [
+            4.800000000000001,
+            1.26
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-012",
+        "line": [
+          [
+            4.800000000000001,
+            5.6
+          ],
+          [
+            4.800000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-032",
+        "line": [
+          [
+            5.200000000000001,
+            -0.065
+          ],
+          [
+            5.200000000000001,
+            1.26
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-013",
+        "line": [
+          [
+            5.200000000000001,
+            5.6
+          ],
+          [
+            5.200000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-014",
+        "line": [
+          [
+            5.6000000000000005,
+            5.0
+          ],
+          [
+            5.6000000000000005,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-015",
+        "line": [
+          [
+            6.000000000000001,
+            5.0
+          ],
+          [
+            6.000000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-016",
+        "line": [
+          [
+            6.4,
+            5.0
+          ],
+          [
+            6.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-017",
+        "line": [
+          [
+            6.800000000000001,
+            5.0
+          ],
+          [
+            6.800000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-018",
+        "line": [
+          [
+            7.200000000000001,
+            5.0
+          ],
+          [
+            7.200000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-019",
+        "line": [
+          [
+            7.6000000000000005,
+            5.0
+          ],
+          [
+            7.6000000000000005,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-020",
+        "line": [
+          [
+            8.0,
+            5.0
+          ],
+          [
+            8.0,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-021",
+        "line": [
+          [
+            8.4,
+            5.0
+          ],
+          [
+            8.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-022",
+        "line": [
+          [
+            8.8,
+            5.0
+          ],
+          [
+            8.8,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-023",
+        "line": [
+          [
+            9.200000000000001,
+            5.0
+          ],
+          [
+            9.200000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-024",
+        "line": [
+          [
+            9.600000000000001,
+            5.0
+          ],
+          [
+            9.600000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-025",
+        "line": [
+          [
+            10.000000000000002,
+            5.0
+          ],
+          [
+            10.000000000000002,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-026",
+        "line": [
+          [
+            10.4,
+            5.0
+          ],
+          [
+            10.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-027",
+        "line": [
+          [
+            10.8,
+            -0.065
+          ],
+          [
+            10.8,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-028",
+        "line": [
+          [
+            11.200000000000001,
+            -0.065
+          ],
+          [
+            11.200000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-029",
+        "line": [
+          [
+            11.600000000000001,
+            -0.065
+          ],
+          [
+            11.600000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-030",
+        "line": [
+          [
+            12.000000000000002,
+            -0.065
+          ],
+          [
+            12.000000000000002,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-033",
+        "line": [
+          [
+            12.4,
+            -0.065
+          ],
+          [
+            12.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-034",
+        "line": [
+          [
+            12.8,
+            -0.065
+          ],
+          [
+            12.8,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-035",
+        "line": [
+          [
+            13.200000000000001,
+            -0.065
+          ],
+          [
+            13.200000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-HOUSE-036",
+        "line": [
+          [
+            13.600000000000001,
+            -0.065
+          ],
+          [
+            13.600000000000001,
+            8.655
+          ]
+        ]
+      }
+    ],
+    "LOFT-WEST-EXT": [
+      {
+        "id": "M-LOFT-WEST-EXT-010",
+        "line": [
+          [
+            -4.800000000000001,
+            0.9500000000000001
+          ],
+          [
+            -4.800000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-011",
+        "line": [
+          [
+            -4.4,
+            0.9500000000000001
+          ],
+          [
+            -4.4,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-012",
+        "line": [
+          [
+            -4.000000000000001,
+            0.9500000000000001
+          ],
+          [
+            -4.000000000000001,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-013",
+        "line": [
+          [
+            -3.6000000000000005,
+            0.9500000000000001
+          ],
+          [
+            -3.6000000000000005,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-001",
+        "line": [
+          [
+            -3.2000000000000006,
+            0.9500000000000001
+          ],
+          [
+            -3.2000000000000006,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-002",
+        "line": [
+          [
+            -2.8000000000000007,
+            0.9500000000000001
+          ],
+          [
+            -2.8000000000000007,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-003",
+        "line": [
+          [
+            -2.4000000000000004,
+            0.9500000000000001
+          ],
+          [
+            -2.4000000000000004,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-004",
+        "line": [
+          [
+            -2.0000000000000004,
+            0.9500000000000001
+          ],
+          [
+            -2.0000000000000004,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-005",
+        "line": [
+          [
+            -1.6000000000000005,
+            0.9500000000000001
+          ],
+          [
+            -1.6000000000000005,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-006",
+        "line": [
+          [
+            -1.2000000000000006,
+            0.9500000000000001
+          ],
+          [
+            -1.2000000000000006,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-007",
+        "line": [
+          [
+            -0.8000000000000007,
+            0.9500000000000001
+          ],
+          [
+            -0.8000000000000007,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-008",
+        "line": [
+          [
+            -0.40000000000000036,
+            0.9500000000000001
+          ],
+          [
+            -0.40000000000000036,
+            8.655
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-WEST-EXT-009",
+        "line": [
+          [
+            0.0,
+            -0.065
+          ],
+          [
+            0.0,
+            8.655
+          ]
+        ]
+      }
+    ],
+    "LOFT-GALLERY": [
+      {
+        "id": "M-LOFT-GALLERY-001",
+        "line": [
+          [
+            7.4375,
+            -5.164
+          ],
+          [
+            10.37,
+            -5.164
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-002",
+        "line": [
+          [
+            7.4375,
+            -4.8
+          ],
+          [
+            10.37,
+            -4.8
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-003",
+        "line": [
+          [
+            7.4375,
+            -4.436
+          ],
+          [
+            10.37,
+            -4.436
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-004",
+        "line": [
+          [
+            5.702500000000001,
+            -4.0
+          ],
+          [
+            10.37,
+            -4.0
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-005",
+        "line": [
+          [
+            5.702500000000001,
+            -3.6
+          ],
+          [
+            10.37,
+            -3.6
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-006",
+        "line": [
+          [
+            5.702500000000001,
+            -3.2
+          ],
+          [
+            10.37,
+            -3.2
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-007",
+        "line": [
+          [
+            5.702500000000001,
+            -2.8
+          ],
+          [
+            10.42,
+            -2.8
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-008",
+        "line": [
+          [
+            5.702500000000001,
+            -2.4
+          ],
+          [
+            10.42,
+            -2.4
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-009",
+        "line": [
+          [
+            5.702500000000001,
+            -2.0
+          ],
+          [
+            10.42,
+            -2.0
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-010",
+        "line": [
+          [
+            5.702500000000001,
+            -1.6
+          ],
+          [
+            10.42,
+            -1.6
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-011",
+        "line": [
+          [
+            5.702500000000001,
+            -1.2000000000000002
+          ],
+          [
+            10.42,
+            -1.2000000000000002
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-012",
+        "line": [
+          [
+            5.702500000000001,
+            -0.7999999999999998
+          ],
+          [
+            10.42,
+            -0.7999999999999998
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-013",
+        "line": [
+          [
+            5.702500000000001,
+            -0.39999999999999947
+          ],
+          [
+            10.42,
+            -0.39999999999999947
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-014",
+        "line": [
+          [
+            5.55,
+            0.0
+          ],
+          [
+            10.37,
+            0.0
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-015",
+        "line": [
+          [
+            5.62,
+            0.40000000000000036
+          ],
+          [
+            10.37,
+            0.40000000000000036
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-016",
+        "line": [
+          [
+            5.62,
+            0.7999999999999998
+          ],
+          [
+            10.37,
+            0.7999999999999998
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-017",
+        "line": [
+          [
+            5.62,
+            1.2000000000000002
+          ],
+          [
+            10.37,
+            1.2000000000000002
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-018",
+        "line": [
+          [
+            5.62,
+            1.6000000000000005
+          ],
+          [
+            10.37,
+            1.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-019",
+        "line": [
+          [
+            5.62,
+            2.0
+          ],
+          [
+            10.37,
+            2.0
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-020",
+        "line": [
+          [
+            5.62,
+            2.4000000000000004
+          ],
+          [
+            10.37,
+            2.4000000000000004
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-021",
+        "line": [
+          [
+            5.62,
+            2.8
+          ],
+          [
+            10.37,
+            2.8
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-022",
+        "line": [
+          [
+            5.62,
+            3.2
+          ],
+          [
+            10.37,
+            3.2
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-023",
+        "line": [
+          [
+            5.62,
+            3.6000000000000005
+          ],
+          [
+            10.37,
+            3.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-024",
+        "line": [
+          [
+            5.62,
+            4.000000000000001
+          ],
+          [
+            10.37,
+            4.000000000000001
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-025",
+        "line": [
+          [
+            5.62,
+            4.400000000000001
+          ],
+          [
+            10.37,
+            4.400000000000001
+          ]
+        ]
+      },
+      {
+        "id": "M-LOFT-GALLERY-026",
+        "line": [
+          [
+            5.55,
+            4.8
+          ],
+          [
+            10.37,
+            4.8
+          ]
+        ]
+      }
+    ],
+    "GROUND-WEST": [
+      {
+        "id": "M-GROUND-WEST-001",
+        "line": [
+          [
+            4.9799999999999995,
+            -16.0
+          ],
+          [
+            9.10925,
+            -16.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-002",
+        "line": [
+          [
+            4.9799999999999995,
+            -15.6
+          ],
+          [
+            9.10925,
+            -15.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-003",
+        "line": [
+          [
+            4.9799999999999995,
+            -15.2
+          ],
+          [
+            9.10925,
+            -15.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-004",
+        "line": [
+          [
+            4.9799999999999995,
+            -14.8
+          ],
+          [
+            9.10925,
+            -14.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-005",
+        "line": [
+          [
+            4.9799999999999995,
+            -14.4
+          ],
+          [
+            9.10925,
+            -14.4
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-006",
+        "line": [
+          [
+            4.9799999999999995,
+            -14.0
+          ],
+          [
+            9.10925,
+            -14.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-007",
+        "line": [
+          [
+            4.9799999999999995,
+            -13.6
+          ],
+          [
+            9.10925,
+            -13.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-008",
+        "line": [
+          [
+            4.9799999999999995,
+            -13.2
+          ],
+          [
+            9.10925,
+            -13.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-009",
+        "line": [
+          [
+            4.9799999999999995,
+            -12.8
+          ],
+          [
+            9.10925,
+            -12.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-010",
+        "line": [
+          [
+            4.9799999999999995,
+            -12.4
+          ],
+          [
+            9.10925,
+            -12.4
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-011",
+        "line": [
+          [
+            4.9799999999999995,
+            -12.0
+          ],
+          [
+            9.10925,
+            -12.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-012",
+        "line": [
+          [
+            4.9799999999999995,
+            -11.6
+          ],
+          [
+            9.10925,
+            -11.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-013",
+        "line": [
+          [
+            4.9799999999999995,
+            -11.2
+          ],
+          [
+            9.10925,
+            -11.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-014",
+        "line": [
+          [
+            4.9799999999999995,
+            -10.8
+          ],
+          [
+            9.10925,
+            -10.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-015",
+        "line": [
+          [
+            4.9799999999999995,
+            -10.399999999999999
+          ],
+          [
+            9.10925,
+            -10.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-016",
+        "line": [
+          [
+            4.9799999999999995,
+            -10.0
+          ],
+          [
+            9.10925,
+            -10.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-017",
+        "line": [
+          [
+            4.9799999999999995,
+            -9.6
+          ],
+          [
+            6.15,
+            -9.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-018",
+        "line": [
+          [
+            8.65,
+            -9.6
+          ],
+          [
+            9.10925,
+            -9.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-019",
+        "line": [
+          [
+            4.9799999999999995,
+            -9.2
+          ],
+          [
+            6.15,
+            -9.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-020",
+        "line": [
+          [
+            8.65,
+            -9.2
+          ],
+          [
+            9.10925,
+            -9.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-021",
+        "line": [
+          [
+            4.9799999999999995,
+            -8.8
+          ],
+          [
+            9.10925,
+            -8.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-022",
+        "line": [
+          [
+            4.9799999999999995,
+            -8.399999999999999
+          ],
+          [
+            9.10925,
+            -8.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-023",
+        "line": [
+          [
+            4.9799999999999995,
+            -8.0
+          ],
+          [
+            9.10925,
+            -8.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-024",
+        "line": [
+          [
+            4.9799999999999995,
+            -7.6
+          ],
+          [
+            9.10925,
+            -7.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-025",
+        "line": [
+          [
+            4.9799999999999995,
+            -7.199999999999999
+          ],
+          [
+            9.10925,
+            -7.199999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-026",
+        "line": [
+          [
+            4.9799999999999995,
+            -6.799999999999999
+          ],
+          [
+            9.10925,
+            -6.799999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-027",
+        "line": [
+          [
+            4.9799999999999995,
+            -6.399999999999999
+          ],
+          [
+            9.10925,
+            -6.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-028",
+        "line": [
+          [
+            4.9799999999999995,
+            -6.0
+          ],
+          [
+            9.10925,
+            -6.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-029",
+        "line": [
+          [
+            4.9799999999999995,
+            -5.6
+          ],
+          [
+            9.10925,
+            -5.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-030",
+        "line": [
+          [
+            4.9799999999999995,
+            -5.199999999999999
+          ],
+          [
+            9.10925,
+            -5.199999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-031",
+        "line": [
+          [
+            4.9799999999999995,
+            -4.799999999999999
+          ],
+          [
+            9.10925,
+            -4.799999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-032",
+        "line": [
+          [
+            4.9799999999999995,
+            -4.399999999999999
+          ],
+          [
+            9.10925,
+            -4.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-WEST-033",
+        "line": [
+          [
+            4.9799999999999995,
+            -4.0
+          ],
+          [
+            9.10925,
+            -4.0
+          ]
+        ]
+      }
+    ],
+    "GROUND-EAST": [
+      {
+        "id": "M-GROUND-EAST-001",
+        "line": [
+          [
+            9.29075,
+            -16.0
+          ],
+          [
+            13.93,
+            -16.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-002",
+        "line": [
+          [
+            9.29075,
+            -15.6
+          ],
+          [
+            13.93,
+            -15.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-003",
+        "line": [
+          [
+            9.29075,
+            -15.2
+          ],
+          [
+            13.93,
+            -15.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-004",
+        "line": [
+          [
+            9.29075,
+            -14.8
+          ],
+          [
+            13.93,
+            -14.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-005",
+        "line": [
+          [
+            9.29075,
+            -14.4
+          ],
+          [
+            13.93,
+            -14.4
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-006",
+        "line": [
+          [
+            9.29075,
+            -14.0
+          ],
+          [
+            13.93,
+            -14.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-007",
+        "line": [
+          [
+            9.29075,
+            -13.6
+          ],
+          [
+            13.93,
+            -13.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-008",
+        "line": [
+          [
+            9.29075,
+            -13.2
+          ],
+          [
+            13.93,
+            -13.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-009",
+        "line": [
+          [
+            9.29075,
+            -12.8
+          ],
+          [
+            13.93,
+            -12.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-010",
+        "line": [
+          [
+            9.29075,
+            -12.4
+          ],
+          [
+            13.93,
+            -12.4
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-011",
+        "line": [
+          [
+            9.29075,
+            -12.0
+          ],
+          [
+            13.93,
+            -12.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-012",
+        "line": [
+          [
+            9.29075,
+            -11.6
+          ],
+          [
+            13.93,
+            -11.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-013",
+        "line": [
+          [
+            9.29075,
+            -11.2
+          ],
+          [
+            13.93,
+            -11.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-014",
+        "line": [
+          [
+            9.29075,
+            -10.8
+          ],
+          [
+            13.93,
+            -10.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-015",
+        "line": [
+          [
+            9.29075,
+            -10.399999999999999
+          ],
+          [
+            13.93,
+            -10.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-016",
+        "line": [
+          [
+            9.29075,
+            -10.0
+          ],
+          [
+            13.93,
+            -10.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-017",
+        "line": [
+          [
+            9.29075,
+            -9.6
+          ],
+          [
+            13.93,
+            -9.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-018",
+        "line": [
+          [
+            9.29075,
+            -9.2
+          ],
+          [
+            13.93,
+            -9.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-019",
+        "line": [
+          [
+            9.29075,
+            -8.8
+          ],
+          [
+            13.93,
+            -8.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-020",
+        "line": [
+          [
+            9.29075,
+            -8.399999999999999
+          ],
+          [
+            13.93,
+            -8.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-021",
+        "line": [
+          [
+            9.29075,
+            -8.0
+          ],
+          [
+            13.93,
+            -8.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-022",
+        "line": [
+          [
+            9.29075,
+            -7.6
+          ],
+          [
+            13.93,
+            -7.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-023",
+        "line": [
+          [
+            9.29075,
+            -7.199999999999999
+          ],
+          [
+            13.93,
+            -7.199999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-024",
+        "line": [
+          [
+            9.29075,
+            -6.799999999999999
+          ],
+          [
+            13.93,
+            -6.799999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-025",
+        "line": [
+          [
+            9.29075,
+            -6.399999999999999
+          ],
+          [
+            13.93,
+            -6.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-026",
+        "line": [
+          [
+            9.29075,
+            -6.0
+          ],
+          [
+            13.93,
+            -6.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-027",
+        "line": [
+          [
+            9.29075,
+            -5.6
+          ],
+          [
+            13.93,
+            -5.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-028",
+        "line": [
+          [
+            9.29075,
+            -5.199999999999999
+          ],
+          [
+            13.93,
+            -5.199999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-029",
+        "line": [
+          [
+            9.29075,
+            -4.799999999999999
+          ],
+          [
+            13.93,
+            -4.799999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-030",
+        "line": [
+          [
+            9.29075,
+            -4.399999999999999
+          ],
+          [
+            13.93,
+            -4.399999999999999
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-031",
+        "line": [
+          [
+            9.29075,
+            -4.0
+          ],
+          [
+            9.649999999999999,
+            -4.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-032",
+        "line": [
+          [
+            9.75,
+            -4.0
+          ],
+          [
+            13.93,
+            -4.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-033",
+        "line": [
+          [
+            9.75,
+            -3.5999999999999996
+          ],
+          [
+            13.93,
+            -3.5999999999999996
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-EAST-034",
+        "line": [
+          [
+            9.75,
+            -3.1999999999999993
+          ],
+          [
+            13.93,
+            -3.1999999999999993
+          ]
+        ]
+      }
+    ],
+    "GROUND-GALLERY": [
+      {
+        "id": "M-GROUND-GALLERY-001",
+        "line": [
+          [
+            5.55,
+            -3.6
+          ],
+          [
+            9.649999999999999,
+            -3.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-002",
+        "line": [
+          [
+            5.55,
+            -3.2
+          ],
+          [
+            9.649999999999999,
+            -3.2
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-003",
+        "line": [
+          [
+            5.55,
+            -2.8
+          ],
+          [
+            9.764999999999999,
+            -2.8
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-004",
+        "line": [
+          [
+            5.55,
+            -2.4
+          ],
+          [
+            9.764999999999999,
+            -2.4
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-005",
+        "line": [
+          [
+            5.55,
+            -2.0
+          ],
+          [
+            9.764999999999999,
+            -2.0
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-006",
+        "line": [
+          [
+            5.55,
+            -1.6
+          ],
+          [
+            9.764999999999999,
+            -1.6
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-007",
+        "line": [
+          [
+            5.55,
+            -1.1999999999999997
+          ],
+          [
+            9.764999999999999,
+            -1.1999999999999997
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-008",
+        "line": [
+          [
+            5.55,
+            -0.7999999999999998
+          ],
+          [
+            9.764999999999999,
+            -0.7999999999999998
+          ]
+        ]
+      },
+      {
+        "id": "M-GROUND-GALLERY-009",
+        "line": [
+          [
+            5.55,
+            -0.3999999999999999
+          ],
+          [
+            9.764999999999999,
+            -0.3999999999999999
+          ]
+        ]
+      }
+    ]
+  },
+  "receiverRevisions": [
+    {
+      "id": "M-FR-1-026",
+      "line": [
+        [
+          7.7,
+          -9.905
+        ],
+        [
+          7.7,
+          -4.3025
+        ]
+      ],
+      "name": "Entrance east trimmer \u00b7 garage wall to gallery cross-beam",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 1,
+      "basis": "Extended south into the garage/store separation wall envelope and north to the continuous gallery cross-beam. Wall bearing pocket/padstone, beam connection, separation-wall capacity and basement/foundation transfer require design. No midpoint column is assumed."
+    },
+    {
+      "id": "M-FR-1-030",
+      "line": [
+        [
+          5.1825,
+          -4.3025
+        ],
+        [
+          9.9375,
+          -4.3025
+        ]
+      ],
+      "name": "First-floor entrance gallery \u00b7 continuous cross-beam",
+      "material": "steel",
+      "section": "305x165x40",
+      "merge": [
+        "M-FR-1-018",
+        "M-FR-1-029"
+      ],
+      "throughPriority": 2,
+      "basis": "Align the cross-beam with the actual north inner-leaf centre. Both ends have explicit padstone seats in the joined masonry piers. First-floor reactions, member size, wall capacity, lateral restraint and onward foundations remain uncalculated."
+    },
+    {
+      "id": "M-FR-1-027",
+      "line": [
+        [
+          7.7,
+          -5.51
+        ],
+        [
+          5.16,
+          -5.51
+        ]
+      ],
+      "name": "Entrance void north timber deck-edge trimmer",
+      "material": "timber",
+      "width": 0.09,
+      "depth": 0.3,
+      "basis": "No joist end reaction was assigned to this line. Retained as a doubled timber deck-edge/balustrade trimming reservation, removing the redundant steel proposal. Deck edge loads, balustrade fixings and timber span still require calculation."
+    },
+    {
+      "id": "M-FR-1-033",
+      "line": [
+        [
+          5.16,
+          -8.63
+        ],
+        [
+          7.7,
+          -8.63
+        ]
+      ],
+      "name": "Entrance void south timber deck-edge trimmer",
+      "material": "timber",
+      "width": 0.09,
+      "depth": 0.3,
+      "basis": "No joist end reaction was assigned to this line. Retained as a doubled timber deck-edge/balustrade trimming reservation, removing the redundant steel proposal. Deck edge loads, balustrade fixings and timber span still require calculation."
+    },
+    {
+      "id": "M-FR-3-010",
+      "line": [
+        [
+          5.3,
+          -5.3
+        ],
+        [
+          13.7275,
+          -5.3
+        ]
+      ],
+      "name": "Main loft north transfer \u00b7 seated on entrance return and east pier",
+      "material": "steel",
+      "section": "305x305x107",
+      "merge": [
+        "M-FR-3-011",
+        "M-FR-3-012"
+      ],
+      "throughPriority": 3,
+      "basis": "Continuous cross-beam from the entrance return to the east upper pier; the longitudinal girder ends at its south face. This reverses the former unsupported split junction. The 8.445 m transfer is not sized: reaction, deflection, west inner-leaf return/pocket and east bearing need engineering design. A larger/downstand section or additional support may be required."
+    },
+    {
+      "id": "M-FR-3-023",
+      "name": "Entrance loft gallery return \u00b7 aligned cantilever proposal",
+      "line": [
+        [
+          7.35,
+          -5.3
+        ],
+        [
+          7.35,
+          -4.2175
+        ]
+      ],
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 2,
+      "basis": "Aligned with M-FR-3-009 across the continuous transfer M-FR-3-010. The 1.083 m projection receives three joists and the secondary gallery cross member. A designed moment-transfer joint, transfer-beam torsion/stiffeners and backspan/anchorage are essential; an ordinary simple shear connection is insufficient. Geometry only, not a verified cantilever or connection."
+    },
+    {
+      "id": "M-FR-3-024",
+      "name": "Gallery south deck edge \u00b7 timber trim only",
+      "line": [
+        [
+          5.615,
+          -4.3
+        ],
+        [
+          7.35,
+          -4.3
+        ]
+      ],
+      "material": "timber",
+      "throughPriority": -1,
+      "basis": "235 mm deep floor-edge trim between the eaves receiver and the aligned return. No joist ends or masonry bear on this member. It does not support M-FR-3-023; end fixings and decking edge support require design.",
+      "width": 0.09,
+      "depth": 0.235
+    },
+    {
+      "id": "M-FR-3-008",
+      "name": "Loft opening south header \u00b7 west wall to column girder",
+      "line": [
+        [
+          5.2325,
+          -8.63
+        ],
+        [
+          8.32,
+          -8.63
+        ]
+      ],
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 1,
+      "basis": "M15: extends through the void-edge trimmer junction to the main loft girder. The void-edge trimmer lands on this header instead of both ends being unsupported at their shared corner. The header transfers its east reaction into the main girder, whose capacity, support reactions and architectural fit remain unresolved. End connections and west wall bearing require design."
+    },
+    {
+      "id": "M-FR-3-022",
+      "name": "Gallery outer edge \u00b7 continuous beam over two wall piers",
+      "line": [
+        [
+          10.32,
+          -5.3
+        ],
+        [
+          10.32,
+          0.115
+        ]
+      ],
+      "material": "steel",
+      "section": "254x146x31",
+      "throughPriority": 0,
+      "basis": "LP03: the accepted 720 mm architectural projection is carried by one continuous outer-edge beam over the first-floor north pier and retained original-house front pier. Gallery joists are simply supported between west and east receivers; the former under-joist bearing beam and free rim are retired. All support capacities, roof/facade eccentricity, restraint and connections remain unverified.",
+      "merge": [
+        "M-FR-3-002"
+      ]
+    },
+    {
+      "id": "M-FR-3-001",
+      "name": "Main loft south girder \u00b7 south wall to stair-side column",
+      "material": "steel",
+      "section": "305x305x129",
+      "line": [
+        [
+          8.32,
+          -16.0535
+        ],
+        [
+          8.32,
+          -8.635
+        ]
+      ],
+      "throughPriority": 2,
+      "basis": "Experimental floor-only shorter-span route. Column sits at the principal north wall / basement stair guard, with explicit cap and raft contact. Roof loads, stability, combined column actions, connections, masonry and raft design remain unverified."
+    },
+    {
+      "id": "M-FR-3-005",
+      "name": "South loft wall \u00b7 east rim reservation",
+      "material": "timber",
+      "width": 0.09,
+      "depth": 0.3,
+      "line": [
+        [
+          8.32,
+          -16.0035
+        ],
+        [
+          13.6775,
+          -16.0035
+        ]
+      ],
+      "basis": "Continuous wall-side floor rim; paired with the new girder axis. It is not a transfer for the primary girder."
+    },
+    {
+      "id": "M-FR-3-006",
+      "name": "South loft wall \u00b7 west rim reservation",
+      "material": "timber",
+      "width": 0.09,
+      "depth": 0.3,
+      "line": [
+        [
+          5.2325,
+          -16.0035
+        ],
+        [
+          8.32,
+          -16.0035
+        ]
+      ],
+      "basis": "Wall-side rim terminates clear of the new girder flange; not a girder support."
+    },
+    {
+      "id": "M-FR-0-005",
+      "line": [
+        [
+          9.2,
+          -10.005
+        ],
+        [
+          9.2,
+          -4.1525
+        ]
+      ],
+      "name": "Ground floor north girder \u00b7 cinema bearing wall to RC perimeter",
+      "material": "steel",
+      "section": "356x171x67",
+      "throughPriority": 2,
+      "basis": "G01 candidate. Garage and utility floor to the south is a suspended RC slab. Northern timber floor girder has explicit pads on the proposed cinema north bearing wall and existing modelled RC perimeter. Two-storey floor gravity budgets only; actual bearing-wall reactions, lateral stability, pads, connections and raft remain unverified."
+    },
+    {
+      "id": "M-FR-1-036",
+      "line": [
+        [
+          5.7175,
+          -4.3025
+        ],
+        [
+          5.7175,
+          0.115
+        ]
+      ],
+      "name": "First-floor gallery west beam \u00b7 solid front-pier bearing",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 1,
+      "basis": "First-floor gallery bearing coordination: real masonry/retained-pier seats and steel end connections are modelled. Beam sizes, all load effects, joints, masonry, edge-angle facade loads and onward foundations remain uncalculated."
+    },
+    {
+      "id": "M-FR-1-035",
+      "line": [
+        [
+          9.7,
+          -4.3025
+        ],
+        [
+          9.7,
+          0.115
+        ]
+      ],
+      "name": "First-floor gallery east beam \u00b7 continuous to solid front pier",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 1,
+      "merge": [
+        "M-FR-1-019"
+      ],
+      "basis": "First-floor gallery bearing coordination: real masonry/retained-pier seats and steel end connections are modelled. Beam sizes, all load effects, joints, masonry, edge-angle facade loads and onward foundations remain uncalculated."
+    },
+    {
+      "id": "M-FR-1-034",
+      "line": [
+        [
+          5.7175,
+          0
+        ],
+        [
+          9.04,
+          0
+        ]
+      ],
+      "name": "First-floor gallery north cross-beam \u00b7 west receiver to retained pier",
+      "material": "steel",
+      "section": "305x165x40",
+      "throughPriority": 0,
+      "basis": "North cross-beam connects to the west steel and terminates with150 mm nominal bearing in retained solid pier W-8C66A05, before the adjacent W-5012A48 pier. The east-side beam has its own independent pad. Member reactions, combined pier stresses, pad design, upper-wall loads and onward foundations remain uncalculated."
+    }
+  ],
+  "framingClearances": {
+    "J-02": {
+      "maxX": 13.5825,
+      "basis": "Room-side 90 mm ledger reservation beside the continuous east/north block leaf. Timber carries floor joists only; masonry passes independently through the floor depth. Ledger/hanger anchors and restraint require design."
+    },
+    "J-03": {
+      "maxX": 13.5825,
+      "maxY": -3.4265,
+      "basis": "Room-side 90 mm ledger reservation beside the continuous east/north block leaf. Timber carries floor joists only; masonry passes independently through the floor depth. Ledger/hanger anchors and restraint require design."
+    },
+    "INF-GYM": {
+      "maxX": 13.5825,
+      "basis": "Room-side 90 mm ledger reservation beside the continuous east/north block leaf. Timber carries floor joists only; masonry passes independently through the floor depth. Ledger/hanger anchors and restraint require design."
+    },
+    "INF-HALL": {
+      "minX": 5.3275,
+      "maxY": -4.3975,
+      "basis": "Keep entrance return timbers and floor layers inside the west and north inner block faces."
+    },
+    "J-04": {
+      "minX": -4.8975,
+      "minY": 1.1825,
+      "maxY": 8.5375,
+      "basis": "Room-side ledger centrelines, 45 mm inside the west/front/rear inner block faces. The brick and block continue through the first-floor band separately; ledger anchors and opening transfers remain undesigned."
+    },
+    "LOFT-WEST-EXT": {
+      "minX": -4.8975,
+      "maxX": -0.16,
+      "minY": 1.1825,
+      "maxY": 8.5375,
+      "basis": "Replace the unsupported cross-room transfer with an east-west solid-timber joist field over the shorter west-extension width. 89 x 235 mm C24 at 300 mm nominal centres is an experimental floor-only candidate, not an approved design. Perimeter timber receivers remain provisional wall-face ledgers and must bridge the window/door openings with designed anchors, heads, bearing and restraint. Roof reactions, heavy partitions, vibration, fire/acoustics and full wall/foundation load paths remain unverified."
+    },
+    "INF-GALLERY": {
+      "minX": 5.7175,
+      "sheetMinX": 5.585,
+      "maxX": 9.7,
+      "basis": "The main joist field starts at the relocated west steel. Finished floor and sheet edges stop at X5.585, outside the unchanged X5.615 glazing line; the remaining 50 mm outboard of the steel flange has a separately modelled edge-angle reservation, not an assumed unsupported panel cantilever.",
+      "sheetCutWallIds": [
+        "M-BRICK-34AD690",
+        "M-BLOCK-34AD690",
+        "M-BRICK-7C51DD7",
+        "M-BLOCK-7C51DD7",
+        "M-CLOSE-34AD690-CORE",
+        "M-CLOSE-34AD690-PROFILE",
+        "M-BED-GALLERY-CROSS-W"
+      ]
+    }
+  },
+  "joistEdgeInsets": {
+    "GROUND-WEST": [
+      {
+        "polygon": [
+          [
+            5.3275,
+            -5.4475
+          ],
+          [
+            5.545,
+            -5.4475
+          ],
+          [
+            5.545,
+            -4.905
+          ],
+          [
+            5.3275,
+            -4.905
+          ]
+        ]
+      }
+    ],
+    "INF-HALL": [
+      {
+        "polygon": [
+          [
+            5.3275,
+            -5.3975
+          ],
+          [
+            5.545,
+            -5.3975
+          ],
+          [
+            5.545,
+            -4.955
+          ],
+          [
+            5.3275,
+            -4.955
+          ]
+        ]
+      }
+    ]
+  },
+  "retainedWallBearingStudy": {
+    "enabled": true,
+    "basis": "Owner identifies existing house walls as solid construction and proposes reusing them for loft-floor bearings. Candidate contacts follow actual retained wall geometry; wall material/strength, openings, wall-head seats and load path to foundations require survey and design. No blanket under-hip steel line is assumed. Missing contacts remain unresolved. The new west extension has no retained first-floor wall in this register and keeps its separate transfer reservation.",
+    "removedSteelIds": [
+      "M-HIP-FLOOR-BEARING-02",
+      "M-HIP-FLOOR-BEARING-03",
+      "M-HIP-FLOOR-BEARING-04"
+    ],
+    "minimumCrossingM": 0.09
+  },
+  "originalLoftZone": {
+    "frontY": -0.115,
+    "basis": "One north-south replacement joist field in the original house. The gallery finish objects overlapping that house do not define a separate structural bay. Preserve the stair aperture."
+  },
+  "groundWallInterface": {
+    "basis": "Continuous concrete bearing envelope under both cavity-wall leaves, independent of the room-side timber deck. Envelope only: RC thickness, reinforcement, anchorage, water/thermal separation, slab/foundation capacity and construction sequence are not designed.",
+    "joistBoundary": [
+      [
+        5.3275,
+        -15.9085
+      ],
+      [
+        13.5825,
+        -15.9085
+      ],
+      [
+        13.5825,
+        -3.4265
+      ],
+      [
+        9.9825,
+        -3.4265
+      ],
+      [
+        9.9825,
+        -4.3975
+      ],
+      [
+        5.3275,
+        -4.3975
+      ]
+    ],
+    "galleryBoundary": [
+      [
+        5.5,
+        -3.955
+      ],
+      [
+        9.54,
+        -3.955
+      ],
+      [
+        9.54,
+        -0.115
+      ],
+      [
+        5.5,
+        -0.115
+      ]
+    ],
+    "wallPolygons": {
+      "M-RC-FC244DE": [
+        [
+          4.93,
+          -16.306
+        ],
+        [
+          13.98,
+          -16.306
+        ],
+        [
+          13.98,
+          -15.9535
+        ],
+        [
+          4.93,
+          -15.9535
+        ]
+      ],
+      "M-RC-51B8D91": [
+        [
+          4.93,
+          -15.9535
+        ],
+        [
+          5.2825,
+          -15.9535
+        ],
+        [
+          5.2825,
+          -4.3525
+        ],
+        [
+          4.93,
+          -4.3525
+        ]
+      ],
+      "M-RC-93C6185": [
+        [
+          13.6275,
+          -15.9535
+        ],
+        [
+          13.98,
+          -15.9535
+        ],
+        [
+          13.98,
+          -3.3815
+        ],
+        [
+          13.6275,
+          -3.3815
+        ]
+      ],
+      "M-RC-3D10A2B": [
+        [
+          4.93,
+          -4.3525
+        ],
+        [
+          9.9375,
+          -4.3525
+        ],
+        [
+          9.9375,
+          -4
+        ],
+        [
+          4.93,
+          -4
+        ]
+      ],
+      "M-RC-7BC42C7": [
+        [
+          9.585,
+          -4
+        ],
+        [
+          9.9375,
+          -4
+        ],
+        [
+          9.9375,
+          -3.3815
+        ],
+        [
+          9.585,
+          -3.3815
+        ]
+      ],
+      "M-RC-C741BCD": [
+        [
+          9.585,
+          -3.3815
+        ],
+        [
+          13.98,
+          -3.3815
+        ],
+        [
+          13.98,
+          -3.029
+        ],
+        [
+          9.585,
+          -3.029
+        ]
+      ]
+    },
+    "baseZ": -3.0,
+    "topZ": 0,
+    "wallEnvelopeMm": 352.5
+  },
+  "networkCoordination": {
+    "retire": [
+      "M-FR-0-001",
+      "M-FR-0-006",
+      "M-FR-0-009",
+      "M-FR-0-011",
+      "M-FR-0-014",
+      "M-FR-3-013",
+      "M-FR-3-014",
+      "M-FR-3-015",
+      "M-FR-3-016",
+      "M-FR-3-018",
+      "M-FR-3-019",
+      "M-FR-3-020",
+      "M-FR-3-021",
+      "M-FR-3-023",
+      "M-FR-3-024",
+      "M-FR-3-028",
+      "M-FR-3-029",
+      "M-FR-3-OPT-001",
+      "M-FR-3-OPT-002",
+      "M-FR-3-OPT-003",
+      "M-FR-3-OPT-008",
+      "M-FR-3-OPT-009",
+      "M-FR-3-OPT-014"
+    ],
+    "lines": [
+      {
+        "id": "M-FR-3-OPT-007",
+        "line": [
+          [
+            5.5,
+            1.31
+          ],
+          [
+            5.5,
+            5.55
+          ]
+        ]
+      },
+      {
+        "id": "M-FR-3-OPT-010",
+        "line": [
+          [
+            0,
+            -0.115
+          ],
+          [
+            10.32,
+            -0.115
+          ]
+        ],
+        "name": "Original house \u00b7 front floor rim west of gallery beam",
+        "basis": "North-south replacement joists return to the original facade. Wall/opening-head bearings and receiver capacity require design."
+      },
+      {
+        "id": "M-FR-0-002",
+        "line": [
+          [
+            5.3275,
+            -9.6975
+          ],
+          [
+            5.3275,
+            -5.4475
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 2",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-51B8D91"
+        ]
+      },
+      {
+        "id": "M-FR-0-003",
+        "line": [
+          [
+            5.3275,
+            -4.3975
+          ],
+          [
+            5.5,
+            -4.3975
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 3",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-3D10A2B"
+        ]
+      },
+      {
+        "id": "M-FR-0-004",
+        "line": [
+          [
+            5.5,
+            -4.3975
+          ],
+          [
+            9.2,
+            -4.3975
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 4",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-3D10A2B"
+        ]
+      },
+      {
+        "id": "M-FR-0-005",
+        "line": [
+          [
+            9.2,
+            -10.005
+          ],
+          [
+            9.2,
+            -4.1525
+          ]
+        ]
+      },
+      {
+        "id": "M-FR-0-010",
+        "line": [
+          [
+            13.5825,
+            -3.4265
+          ],
+          [
+            13.5825,
+            -9.6975
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 10",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-93C6185"
+        ]
+      },
+      {
+        "id": "M-FR-0-012",
+        "line": [
+          [
+            9.2,
+            -4.3975
+          ],
+          [
+            9.9825,
+            -4.3975
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 12",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-3D10A2B"
+        ]
+      },
+      {
+        "id": "M-FR-0-013",
+        "line": [
+          [
+            9.9825,
+            -4.3975
+          ],
+          [
+            9.9825,
+            -3.4265
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 13",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-7BC42C7"
+        ]
+      },
+      {
+        "id": "M-FR-0-015",
+        "line": [
+          [
+            9.9825,
+            -3.4265
+          ],
+          [
+            13.5825,
+            -3.4265
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 15",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-C741BCD"
+        ]
+      },
+      {
+        "id": "M-FR-0-016",
+        "line": [
+          [
+            5.5,
+            -0.115
+          ],
+          [
+            9.54,
+            -0.115
+          ]
+        ]
+      },
+      {
+        "id": "M-FR-0-017",
+        "line": [
+          [
+            9.54,
+            -0.115
+          ],
+          [
+            9.54,
+            -3.955
+          ]
+        ],
+        "name": "Ground floor \u00b7 wall-face ledger 17",
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-7BC42C7"
+        ]
+      },
+      {
+        "id": "M-FR-0-018",
+        "line": [
+          [
+            5.5,
+            -3.955
+          ],
+          [
+            5.5,
+            -0.115
+          ]
+        ]
+      },
+      {
+        "id": "M-FR-3-025",
+        "line": [
+          [
+            5.615,
+            -5.3
+          ],
+          [
+            5.615,
+            -0.17
+          ]
+        ],
+        "basis": "Continuous west eaves receiver extends back to the main north transfer. Receives the extended gallery joists. Existing wall heads are bearing candidates; section, roof seat, transfer joint, wall reactions and end supports require design. The former short cantilever return is removed."
+      },
+      {
+        "id": "M-FR-1-028",
+        "line": [
+          [
+            5.545,
+            -5.3975
+          ],
+          [
+            5.545,
+            -4.955
+          ]
+        ],
+        "name": "Entrance north return \u00b7 room-side floor receiver",
+        "basis": "Local wall-face ledger against the extended entrance pier; linked joists stop clear of both masonry leaves. Anchors and capacities remain unverified.",
+        "supportIds": [
+          "M-BLOCK-7C51DD7"
+        ]
+      },
+      {
+        "id": "M-FR-1-032",
+        "line": [
+          [
+            5.3275,
+            -9.68
+          ],
+          [
+            5.3275,
+            -8.63
+          ]
+        ],
+        "name": "Entrance south return \u00b7 room-side floor receiver",
+        "basis": "Room-side floor receiver, clear of the brick/block leaves. South end is 10 mm beyond the extended gable transfer steel; the first connected joist remains at Y\u22129.60. Ledger anchors, restraint, capacities and the floor-edge detail require design.",
+        "supportIds": [
+          "M-BLOCK-C99B4D9",
+          "M-BLOCK-5DC1382"
+        ]
+      },
+      {
+        "id": "M-FR-1-027",
+        "line": [
+          [
+            7.7,
+            -5.51
+          ],
+          [
+            5.3275,
+            -5.51
+          ]
+        ]
+      },
+      {
+        "id": "M-FR-1-033",
+        "line": [
+          [
+            5.3275,
+            -8.63
+          ],
+          [
+            7.7,
+            -8.63
+          ]
+        ]
+      },
+      {
+        "id": "M-FR-1-020",
+        "line": [
+          [
+            -4.8975,
+            8.5375
+          ],
+          [
+            -0.115,
+            8.5375
+          ]
+        ],
+        "name": "West extension first floor \u00b7 rear room-side ledger",
+        "basis": "Timber floor-edge reservation sits inside the blockwork; it does not support masonry. Linked joists and hangers follow this position. Wall anchors, bearings/heads across openings, restraint and capacity require design."
+      },
+      {
+        "id": "M-FR-1-021",
+        "line": [
+          [
+            -0.115,
+            8.5375
+          ],
+          [
+            -0.115,
+            1.1825
+          ]
+        ],
+        "name": "West extension first floor \u00b7 house-side room-side ledger",
+        "basis": "Timber floor-edge reservation sits inside the blockwork; it does not support masonry. Linked joists and hangers follow this position. Wall anchors, bearings/heads across openings, restraint and capacity require design."
+      },
+      {
+        "id": "M-FR-1-022",
+        "line": [
+          [
+            -0.115,
+            1.1825
+          ],
+          [
+            -4.8975,
+            1.1825
+          ]
+        ],
+        "name": "West extension first floor \u00b7 front room-side ledger",
+        "basis": "Timber floor-edge reservation sits inside the blockwork; it does not support masonry. Linked joists and hangers follow this position. Wall anchors, bearings/heads across openings, restraint and capacity require design."
+      },
+      {
+        "id": "M-FR-1-023",
+        "line": [
+          [
+            -4.8975,
+            1.1825
+          ],
+          [
+            -4.8975,
+            8.5375
+          ]
+        ],
+        "name": "West extension first floor \u00b7 west room-side ledger",
+        "basis": "Timber floor-edge reservation sits inside the blockwork; it does not support masonry. Linked joists and hangers follow this position. Wall anchors, bearings/heads across openings, restraint and capacity require design."
+      },
+      {
+        "id": "M-FR-3-026",
+        "name": "West loft rear perimeter closure",
+        "line": [
+          [
+            -4.8975,
+            8.5375
+          ],
+          [
+            -0.16,
+            8.5375
+          ]
+        ],
+        "basis": "Room-side timber perimeter proposal, clear of the brick/block leaves. Replace the unsupported cross-room transfer with an east-west solid-timber joist field over the shorter west-extension width. 89 x 235 mm C24 at 300 mm nominal centres is an experimental floor-only candidate, not an approved design. Perimeter timber receivers remain provisional wall-face ledgers and must bridge the window/door openings with designed anchors, heads, bearing and restraint. Roof reactions, heavy partitions, vibration, fire/acoustics and full wall/foundation load paths remain unverified."
+      },
+      {
+        "id": "M-FR-3-027",
+        "name": "West loft east wall-face ledger / opening trimmer",
+        "line": [
+          [
+            -0.16,
+            8.5375
+          ],
+          [
+            -0.16,
+            1.1825
+          ]
+        ],
+        "basis": "Room-side timber perimeter proposal, clear of the brick/block leaves. Replace the unsupported cross-room transfer with an east-west solid-timber joist field over the shorter west-extension width. 89 x 235 mm C24 at 300 mm nominal centres is an experimental floor-only candidate, not an approved design. Perimeter timber receivers remain provisional wall-face ledgers and must bridge the window/door openings with designed anchors, heads, bearing and restraint. Roof reactions, heavy partitions, vibration, fire/acoustics and full wall/foundation load paths remain unverified."
+      },
+      {
+        "id": "M-FR-3-030",
+        "name": "West loft front perimeter closure",
+        "line": [
+          [
+            -0.16,
+            1.1825
+          ],
+          [
+            -4.8975,
+            1.1825
+          ]
+        ],
+        "basis": "Room-side timber perimeter proposal, clear of the brick/block leaves. Replace the unsupported cross-room transfer with an east-west solid-timber joist field over the shorter west-extension width. 89 x 235 mm C24 at 300 mm nominal centres is an experimental floor-only candidate, not an approved design. Perimeter timber receivers remain provisional wall-face ledgers and must bridge the window/door openings with designed anchors, heads, bearing and restraint. Roof reactions, heavy partitions, vibration, fire/acoustics and full wall/foundation load paths remain unverified."
+      },
+      {
+        "id": "M-FR-3-031",
+        "name": "West loft west wall-face ledger / window trimmer",
+        "line": [
+          [
+            -4.8975,
+            1.1825
+          ],
+          [
+            -4.8975,
+            8.5375
+          ]
+        ],
+        "basis": "Room-side timber perimeter proposal, clear of the brick/block leaves. Replace the unsupported cross-room transfer with an east-west solid-timber joist field over the shorter west-extension width. 89 x 235 mm C24 at 300 mm nominal centres is an experimental floor-only candidate, not an approved design. Perimeter timber receivers remain provisional wall-face ledgers and must bridge the window/door openings with designed anchors, heads, bearing and restraint. Roof reactions, heavy partitions, vibration, fire/acoustics and full wall/foundation load paths remain unverified."
+      },
+      {
+        "id": "M-FR-0-007",
+        "line": [
+          [
+            5.3275,
+            -8.795
+          ],
+          [
+            9.2,
+            -8.795
+          ]
+        ],
+        "name": "Basement stair opening north timber trimmer",
+        "basis": "Opening extends to the main girder so the coordinated basement ceiling and floor structure clear the lower treads. Side trimmers connect to the girder; no stub joists or duplicate end trimmer."
+      },
+      {
+        "id": "M-FR-0-008",
+        "line": [
+          [
+            6.15,
+            -9.7925
+          ],
+          [
+            6.15,
+            -8.795
+          ]
+        ]
+      }
+    ],
+    "add": [
+      {
+        "id": "M-FR-0-GALLERY-SOUTH",
+        "name": "Ground gallery \u00b7 courtyard wall-face ledger",
+        "line": [
+          [
+            5.5,
+            -3.955
+          ],
+          [
+            9.54,
+            -3.955
+          ]
+        ],
+        "ffl": 0,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Floor-only timber ledger beside the concrete wall face. Masonry bears independently on the concrete envelope above. Ledger anchors, end/hanger capacities, moisture separation, restraint and fire protection require design; this is not a wall transfer beam.",
+        "supportIds": [
+          "M-RC-3D10A2B"
+        ]
+      },
+      {
+        "id": "M-LP02-GROUND-N",
+        "name": "LP02 \u00b7 stepped wall-side floor closure N",
+        "line": [
+          [
+            5.3275,
+            -4.905
+          ],
+          [
+            5.3275,
+            -4.3975
+          ]
+        ],
+        "ffl": 0,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-RC-51B8D91"
+        ]
+      },
+      {
+        "id": "M-LP02-GROUND-P",
+        "name": "LP02 \u00b7 stepped wall-side floor closure P",
+        "line": [
+          [
+            5.545,
+            -5.4475
+          ],
+          [
+            5.545,
+            -4.905
+          ]
+        ],
+        "ffl": 0,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-LP02-WEST-BUTTRESS"
+        ]
+      },
+      {
+        "id": "M-LP02-GROUND-RS",
+        "name": "LP02 \u00b7 stepped wall-side floor closure RS",
+        "line": [
+          [
+            5.3275,
+            -5.4475
+          ],
+          [
+            5.545,
+            -5.4475
+          ]
+        ],
+        "ffl": 0,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-LP02-WEST-BUTTRESS"
+        ]
+      },
+      {
+        "id": "M-LP02-GROUND-RN",
+        "name": "LP02 \u00b7 stepped wall-side floor closure RN",
+        "line": [
+          [
+            5.545,
+            -4.905
+          ],
+          [
+            5.3275,
+            -4.905
+          ]
+        ],
+        "ffl": 0,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-LP02-WEST-BUTTRESS"
+        ]
+      },
+      {
+        "id": "M-LP02-FIRST-S",
+        "name": "LP02 \u00b7 stepped wall-side floor closure S",
+        "line": [
+          [
+            5.3275,
+            -5.51
+          ],
+          [
+            5.3275,
+            -5.3975
+          ]
+        ],
+        "ffl": 2.8,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-BLOCK-6FBC0C0"
+        ]
+      },
+      {
+        "id": "M-LP02-FIRST-N",
+        "name": "LP02 \u00b7 stepped wall-side floor closure N",
+        "line": [
+          [
+            5.3275,
+            -4.955
+          ],
+          [
+            5.3275,
+            -4.3575
+          ]
+        ],
+        "ffl": 2.8,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-BLOCK-7C51DD7"
+        ]
+      },
+      {
+        "id": "M-LP02-FIRST-RS",
+        "name": "LP02 \u00b7 stepped wall-side floor closure RS",
+        "line": [
+          [
+            5.3275,
+            -5.3975
+          ],
+          [
+            5.545,
+            -5.3975
+          ]
+        ],
+        "ffl": 2.8,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-BLOCK-6FBC0C0"
+        ]
+      },
+      {
+        "id": "M-LP02-FIRST-RN",
+        "name": "LP02 \u00b7 stepped wall-side floor closure RN",
+        "line": [
+          [
+            5.545,
+            -4.955
+          ],
+          [
+            5.3275,
+            -4.955
+          ]
+        ],
+        "ffl": 2.8,
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Local floor receiver follows the added pier/buttress. Floor timber carries no masonry. Wall anchors, blocking/end fixings and capacities require design.",
+        "supportIds": [
+          "M-BLOCK-7C51DD7"
+        ]
+      },
+      {
+        "id": "M-LP03-HOUSE-RIM-E",
+        "name": "Original house \u00b7 front floor rim east of gallery beam",
+        "line": [
+          [
+            10.32,
+            -0.115
+          ],
+          [
+            13.865,
+            -0.115
+          ]
+        ],
+        "ffl": 5.55,
+        "width": 0.09,
+        "depth": 0.3,
+        "condition": "loft-upgrade",
+        "basis": "Floor rim terminates against the continuous gallery beam; no timber runs through its flanges. Existing wall/header capacity and connections remain unverified."
+      },
+      {
+        "id": "M-G01-SOUTH-LEDGER-W",
+        "name": "Ground floor \u00b7 slab-edge ledger W",
+        "ffl": 0,
+        "line": [
+          [
+            5.3275,
+            -9.7475
+          ],
+          [
+            6.15,
+            -9.7475
+          ]
+        ],
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Short slab-edge ledger supports only the western floor strip beside the stair. It terminates at the west stair trimmer, leaving the opening clear. RC/masonry anchors, hanger and reactions require design.",
+        "supportIds": [
+          "M-G01-GARAGE-SLAB"
+        ]
+      },
+      {
+        "id": "M-G01-SOUTH-LEDGER-E",
+        "name": "Ground floor \u00b7 slab-edge ledger E",
+        "ffl": 0,
+        "line": [
+          [
+            9.2,
+            -9.7475
+          ],
+          [
+            13.5825,
+            -9.7475
+          ]
+        ],
+        "width": 0.09,
+        "depth": 0.3,
+        "basis": "Floor edge timber beside the suspended RC slab. Separate from masonry above the slab. Concrete-edge anchor spacing, edge distance and load capacity need design.",
+        "supportIds": [
+          "M-G01-GARAGE-SLAB"
+        ]
+      },
+      {
+        "id": "M-GAL-FRONT-LEDGER-01",
+        "name": "Gallery north-east deck edge \u00b7 retained-pier face ledger",
+        "line": [
+          [
+            9.205,
+            -0.16
+          ],
+          [
+            9.7,
+            -0.16
+          ]
+        ],
+        "ffl": 2.8,
+        "width": 0.09,
+        "depth": 0.3,
+        "supportIds": [
+          "W-5012A48"
+        ],
+        "basis": "Short room-side ledger supports only the new deck margin beside the retained front pier. It touches the wall face and ends against the east steel via an unselected joint. It carries no masonry. Anchor type, embedment/edge distances into the existing wall belowZ2.6, ledger capacity, restraint and fixing design remain unverified."
+      }
+    ],
+    "basis": "Retire finish-object seams inside the original-house loft; coordinate ground-floor timbers to concrete wall faces. Previous member geometry is retained in the dated M10 recovery snapshot."
+  },
+  "concreteFloorZones": {
+    "GROUND-GALLERY": {
+      "id": "M-RC-GROUND-GALLERY",
+      "name": "Entrance link \u00b7 concrete slab in place of joisted floor",
+      "thicknessM": 0.25,
+      "topZ": -0.1,
+      "finishMm": 22,
+      "buildUpMm": 78,
+      "jointM": 0.01,
+      "polygon": [
+        [
+          5.5,
+          -3.99
+        ],
+        [
+          9.575,
+          -3.99
+        ],
+        [
+          9.575,
+          -0.115
+        ],
+        [
+          5.5,
+          -0.115
+        ]
+      ],
+      "retiredReceiverIds": [
+        "M-FR-0-016",
+        "M-FR-0-017",
+        "M-FR-0-018",
+        "M-FR-0-GALLERY-SOUTH"
+      ],
+      "basis": "Owner instruction: concrete slab replaces the entrance-link joists between former receivers 18 and 17. 250 mm thickness is a space/quantity allowance, not a calculated slab. This area is outside the modelled basement; ground bearing is only a working assumption. Survey ground/backfill and resolve differential movement beside the basement. A suspended solution may be needed. Reinforcement, foundations, insulation, DPM/waterproofing, joints and support capacity remain unverified."
+    }
+  },
+  "loftGalleryInfill": {
+    "polygon": [
+      [
+        5.615,
+        -5.3
+      ],
+      [
+        10.42,
+        -5.3
+      ],
+      [
+        10.42,
+        -4.3
+      ],
+      [
+        5.615,
+        -4.3
+      ]
+    ],
+    "sourceId": "F-S-GALLERY-NORTH-INFILL",
+    "bearingX": 5.615,
+    "southY": -5.3,
+    "northY": -4.3,
+    "basis": "Close only the small notch beside the former short steel return, to the west eaves bearing line X5.615. Preserve the larger entrance void south of Y-5.3 and the actual relocated stair opening. Retire the detached low-eaves floor-margin fragment outside this bearing line; it is not a separate joisted bay. No habitable headroom is claimed.",
+    "retiredEavesFragment": [
+      [
+        5.2325,
+        -5.3
+      ],
+      [
+        5.615,
+        -5.3
+      ],
+      [
+        5.615,
+        -4.3
+      ],
+      [
+        5.2325,
+        -4.3
+      ]
+    ]
+  },
+  "joistPositionAdjustments": {
+    "INF-HALL": [
+      {
+        "from": -4.4,
+        "to": -4.44,
+        "basis": "Shift the north edge joist and its complete hanger 40 mm south to clear the return masonry; local spacing is reduced."
+      }
+    ],
+    "LOFT-HOUSE": [
+      {
+        "from": 10.4,
+        "to": 10.45,
+        "basis": "Clear the continuous edge-beam bearing in the original front pier; an extra joist at X10.15 preserves maximum 400 mm nominal spacing."
+      }
+    ],
+    "GROUND-WEST": [
+      {
+        "from": -8.6965,
+        "to": -8.4715,
+        "basis": "Clear the stair-side column casing by 5 mm while keeping the joist continuous between receivers."
+      },
+      {
+        "from": -8.4,
+        "to": -8.23575,
+        "basis": "Reduced local spacing beside the relocated column-clear joist; no overlap or unsupported cut ends."
+      }
+    ]
+  },
+  "receiverDescriptions": {
+    "M-FR-3-OPT-011": {
+      "name": "Original-house loft \u00b7 doubled timber perimeter closure",
+      "basis": "Perimeter closure parallel to the north\u2013south loft joists, not an ordinary joist or an 8.82 m clear-span girder. It is shown as a doubled 45 \u00d7 300 mm timber envelope rather than the neighbouring JJI 300D I-joist profile. No joist ends frame into this member in the current layout; rim tying, blocking, restraint and local support remain to design."
+    }
+  },
+  "westLoftShortSpanStudy": {
+    "retiredTransferId": "M-HIP-FLOOR-BEARING-01",
+    "retiredJoistIds": [
+      "M-LOFT-WEST-EXT-010",
+      "M-LOFT-WEST-EXT-011",
+      "M-LOFT-WEST-EXT-012",
+      "M-LOFT-WEST-EXT-013",
+      "M-LOFT-WEST-EXT-001",
+      "M-LOFT-WEST-EXT-002",
+      "M-LOFT-WEST-EXT-003",
+      "M-LOFT-WEST-EXT-004",
+      "M-LOFT-WEST-EXT-005",
+      "M-LOFT-WEST-EXT-006",
+      "M-LOFT-WEST-EXT-007",
+      "M-LOFT-WEST-EXT-008",
+      "M-LOFT-WEST-EXT-009"
+    ],
+    "direction": 0,
+    "widthMm": 89,
+    "depthMm": 235,
+    "spacingMm": 300,
+    "referenceEngineeringSpanM": 4.7375,
+    "basis": "Replace the unsupported cross-room transfer with an east-west solid-timber joist field over the shorter west-extension width. 89 x 235 mm C24 at 300 mm nominal centres is an experimental floor-only candidate, not an approved design. Perimeter timber receivers remain provisional wall-face ledgers and must bridge the window/door openings with designed anchors, heads, bearing and restraint. Roof reactions, heavy partitions, vibration, fire/acoustics and full wall/foundation load paths remain unverified."
+  },
+  "galleryReceiverCoordination": {
+    "id": "GRC-01",
+    "receiverId": "M-FR-3-022",
+    "mergedIds": [
+      "M-FR-3-002"
+    ],
+    "axisX": 10.32,
+    "southY": -5.3,
+    "bearingAxisY": -3.3315,
+    "bearingEndY": -3.2815,
+    "originalGalleryEdgeX": 10.42,
+    "originalWingEdgeX": 10.5,
+    "seamSourceId": "F-S-GALLERY-NE-SEAM",
+    "freeEdgeX": 10.42,
+    "rimPlies": 2,
+    "rimPlyWidthM": 0.045,
+    "rimDepthM": 0.235,
+    "rimEndGapM": 0.005,
+    "retiredOuterSteelId": "M-EDGE-01",
+    "basis": "LP03: the accepted 720 mm architectural projection is carried by one continuous outer-edge beam over the first-floor north pier and retained original-house front pier. Gallery joists are simply supported between west and east receivers; the former under-joist bearing beam and free rim are retired. All support capacities, roof/facade eccentricity, restraint and connections remain unverified.",
+    "northSupportY": 0.0,
+    "northEndY": 0.115,
+    "edgeSupported": true
+  },
+  "loftSupportRevision": {
+    "id": "LP02",
+    "mainX": 8.32,
+    "columnY": -8.63,
+    "southSupportY": -16.0035,
+    "northSupportY": -5.3,
+    "northTransferWestSupportX": 5.4,
+    "southGirderId": "M-FR-3-001",
+    "northGirderId": "M-LP02-NORTH",
+    "columnId": "M-LP02-COLUMN",
+    "section": "305x305x129",
+    "splitGapM": 0.01,
+    "basis": "Experimental floor-only shorter-span route. Column sits at the principal north wall / basement stair guard, with explicit cap and raft contact. Roof loads, stability, combined column actions, connections, masonry and raft design remain unverified.",
+    "westPierEndX": 5.5,
+    "rafterAvoidance": {
+      "memberId": "M-RF08-009",
+      "newCrossCoordinates": [
+        8.138,
+        8.502
+      ],
+      "axis": 1,
+      "basis": "Replace the one rafter colliding with the parallel loft girder by two rafters flanking its full flange. Preserve roof planes and maximum 400 mm nominal centres; bearing and restraint details remain unverified."
+    },
+    "raftTopZ": -3.0
+  },
+  "edgeSupportedProjection": {
+    "projectionM": 0.72,
+    "beamId": "M-FR-3-022",
+    "intermediateSupportY": -3.3315,
+    "northSupportY": 0,
+    "northSupportSourceId": "W-096B2FE",
+    "northPadId": "M-LP03-NORTH-PAD",
+    "basis": "LP03: the accepted 720 mm architectural projection is carried by one continuous outer-edge beam over the first-floor north pier and retained original-house front pier. Gallery joists are simply supported between west and east receivers; the former under-joist bearing beam and free rim are retired. All support capacities, roof/facade eccentricity, restraint and connections remain unverified."
+  },
+  "additionalJoistPositions": {
+    "LOFT-HOUSE": [
+      10.15
+    ],
+    "GROUND-WEST": [
+      -8.6965
+    ]
+  },
+  "basementStairHeadroom": {
+    "oldVoid": [
+      6.2,
+      -9.785,
+      8.6,
+      -8.845
+    ],
+    "newVoid": [
+      6.2,
+      -9.785,
+      9.11,
+      -8.845
+    ],
+    "retiredReceiver": "M-FR-0-006",
+    "basis": "Opening extends to the main girder so the coordinated basement ceiling and floor structure clear the lower treads. Side trimmers connect to the girder; no stub joists or duplicate end trimmer."
+  },
+  "groundDeckStrategy": {
+    "revision": "G01-study-2026-10-27",
+    "status": "Experimental coordination candidate; not approved for construction",
+    "basis": "Replace the vehicle-loaded garage/utility deck south of the basement stair with a suspended RC slab on the perimeter RC walls and strengthened cinema walls. Retain timber floor north of the cinema, on a shorter main steel girder. All dimensions are experimental; reinforcement, load spreading, foundations and connection designs remain unverified.",
+    "geometry": {
+      "groundFFL": 0,
+      "slabTopZ": -0.075,
+      "slabBottomZ": -0.325,
+      "slabNorthY": -9.7975,
+      "cinemaNorthWallY": -9.905,
+      "cinemaEastWallX": 9.0975,
+      "wallWidthM": 0.215,
+      "bearingWallBottomZ": -3.0,
+      "bearingWallTopZ": -0.325,
+      "mainGirderX": 9.2,
+      "mainSupportY": [
+        -9.905,
+        -4.2525
+      ],
+      "newBasementStairVoid": [
+        6.2,
+        -9.785,
+        9.11,
+        -8.845
+      ],
+      "cinemaNorthEndX": 9.435,
+      "slabPolygon": [
+        [
+          5.1325,
+          -16.1035
+        ],
+        [
+          13.7775,
+          -16.1035
+        ],
+        [
+          13.7775,
+          -9.7975
+        ],
+        [
+          5.1325,
+          -9.7975
+        ]
+      ],
+      "slabClearPolygon": [
+        [
+          5.2825,
+          -15.9535
+        ],
+        [
+          13.6275,
+          -15.9535
+        ],
+        [
+          13.6275,
+          -9.7975
+        ],
+        [
+          5.2825,
+          -9.7975
+        ]
+      ]
+    },
+    "loads": {
+      "normalConcreteKNm3": 25,
+      "slabThicknessM": [
+        0.2,
+        0.225,
+        0.25
+      ],
+      "superimposedPermanentKPa": [
+        0.5,
+        1,
+        1.5
+      ],
+      "vehicleUDLKPa": [
+        2.5,
+        3,
+        3.5
+      ],
+      "singleWheelOrJackKN": [
+        10,
+        15,
+        20
+      ],
+      "garagePartitionLineKNm": [
+        5,
+        10,
+        20
+      ],
+      "slabStripWidthM": 1.0,
+      "limitations": "Wheel/axle/load distribution and simultaneous actions are not assigned from inaccessible normative text. Use separate UDL and concentrated-load sensitivities. 1 m strip is an explicit modelling assumption, not a verified effective width. Verify the actual van maximum gross/axle weights and future vehicles."
+    },
+    "sources": [
+      {
+        "title": "IStructE UK National Annex publication schedule, 19 October 2026",
+        "url": "https://www.istructe.org/resources/eurocodes/publication-schedule-of-uk-national-annexes-and-fu/",
+        "note": "NA to BS EN 1991-1-1:2025 reported published 30 September 2026. Exact normative values not accessed; no claim that older draft values equal the published annex."
+      },
+      {
+        "title": "JRC Eurocode 1 workshop: traffic/parking categories",
+        "url": "https://eurocodes.jrc.ec.europa.eu/sites/default/files/2022-06/EN1991_2_Malakatas.pdf"
+      },
+      {
+        "title": "BCSA second-generation Eurocode presentation",
+        "url": "https://bcsa.org.uk/upload/Resources/The%20Future%20of%20Steel/Presentations/TFoSC%20Mungo%20Stacy%20EN%201990%20and%20EN%201991.pdf",
+        "note": "Draft indicative UK choices only: F1 q3 kPa, axle30 kN, jack15 kN. Used to motivate upper sensitivity, not represented as the published standard."
+      },
+      {
+        "title": "FP McCann hollowcore flooring",
+        "url": "https://fpmccann.co.uk/portfolio-items/hollowcore-flooring/",
+        "note": "Precast alternative requires supplier selection for actual spans, wall lines and vehicle loads, plus erection/crane access."
+      }
+    ],
+    "section": "356x171x67",
+    "retiredTimberIds": [
+      "M-FR-0-001",
+      "M-FR-0-006",
+      "M-FR-0-009",
+      "M-FR-0-011"
+    ],
+    "sourceWallNames": [
+      "Proposal | Cinema north wall",
+      "Proposal | Cinema east wall pier 0",
+      "Proposal | Cinema east wall head 0",
+      "Proposal | Cinema east wall pier 1",
+      "Proposal | Cinema east wall head 1"
+    ]
+  },
+  "groundSolidJoistStudy": {
+    "id": "G02",
+    "widthMm": 45,
+    "depthMm": 295,
+    "spacingMm": 400,
+    "basis": "Short northern suspended ground-floor bays use 45 \u00d7 295 mm solid C24 at 400 mm centres. This uses about 43% less net timber than the earlier 95 \u00d7 245 mm option; both are compared in G02. Garage vehicle bays remain the separate G01 concrete-deck concept. Same FFL, ceiling datum and support network; joists are 5 mm shallower than the earlier 300 mm I-joist reservation. Experimental floor-load candidate; no complete floor-system approval.",
+    "loadBasis": "Assumed superimposed floor Gk 0.75 / 1.00 / 1.35 kPa, including a lightweight-partition allowance, plus joist self-weight at 4.2 kN/m\u00b3. Alternative Qk 1.50 / 1.50 / 2.00 kPa or one 2.00 kN midspan point on a single joist. The point and distributed cases are separate sensitivities, not simultaneous. Heavy walls, vehicles and plant are excluded from these timber bays. These are assumptions, not certified statutory bounds.",
+    "loadCases": [
+      {
+        "id": "lower",
+        "floorGk": 0.75,
+        "floorQk": 1.5,
+        "pointQkKN": 2
+      },
+      {
+        "id": "reference",
+        "floorGk": 1,
+        "floorQk": 1.5,
+        "pointQkKN": 2
+      },
+      {
+        "id": "upper",
+        "floorGk": 1.35,
+        "floorQk": 2,
+        "pointQkKN": 2
+      }
+    ],
+    "limits": "Limited C24 bending, shear and deformation screen: Emean 11000 / Gmean 690 N/mm\u00b2; SC1; kdef 0.6; psi2 0.3; gammaM 1.3; kcr 0.67; kh=ksys=1. Instant <= min(L/300,8 mm), final <= min(L/250,10 mm) are study targets. Vibration, restraint, floor diaphragm, service penetrations, bearing and compatible hanger/ledger fixings, fire/acoustic/moisture assemblies and the onward load route remain unverified. No construction approval.",
+    "supplierReference": {
+      "supplier": "Davies Timber / Cleveland Timber dimensional references",
+      "nominalMm": [
+        47,
+        300
+      ],
+      "listedFinishedMm": [
+        45,
+        295
+      ],
+      "listedLengthsM": [
+        4.8
+      ],
+      "url": "https://www.daviestimber.co.uk/collections/timber/products/47mm-x-250mm-structural-graded-carcassing-10x-2-finish-245mm-x-45mm-5-75-per-metre-copy",
+      "secondSource": "https://www.clevelandtimber.co.uk/collections/all-timber/products/untreated-c24-sawn-carcassing-47mm-x-300mm-ex-12x2",
+      "checked": "2026-10-27",
+      "advertised4p8mPriceExVAT": 35.95,
+      "basis": "UK supplier listing for 47 \u00d7 300 nominal / 45 \u00d7 295 finished C24; Davies page lists 4.8 m at \u00a335.95 ex VAT. Listing is a supply benchmark, not a delivered quote or installed rate. Grade, moisture, durability, size/tolerance and availability require confirmation. The 44 \u00d7 293.5 mm case is an assumed smaller-section sensitivity, not a claimed supplier tolerance."
+    },
+    "minimumSectionSensitivityMm": [
+      44,
+      293.5
+    ]
+  },
+  "firstGalleryEdgeDetail": {
+    "revision": "GB01",
+    "beamId": "M-FR-1-036",
+    "floorSourceId": "F-4F2D55C",
+    "sheetEdgeX": 5.585,
+    "angleOuterX": 5.585,
+    "angleBackX": 5.635,
+    "topZ": 2.756,
+    "legM": 0.05,
+    "thicknessM": 0.006,
+    "segmentsY": [
+      [
+        -3.99,
+        -0.34
+      ]
+    ],
+    "basis": "50 x 50 x 6 mm equal-angle spatial reservation against the outer edge of the west receiver top flange. Upper surface is flush with the deck underside. It supports the narrow remaining floor/glazing margin without changing glazing or habitable floor. Two pieces stop either side of the north facade masonry pier; no brick/steel notches are inferred. Flange-edge attachment, welds/brackets, beam torsion, facade self-weight/wind loads, fire/thermal separation, movement, waterproofing and fixings remain unverified. No product, fabrication weld or capacity approval is implied.",
+    "retainedPierNotches": [
+      {
+        "sourceId": "W-8C66A05",
+        "bounds": [
+          [
+            8.89,
+            -0.33
+          ],
+          [
+            9.205,
+            0
+          ]
+        ]
+      },
+      {
+        "sourceId": "W-5012A48",
+        "bounds": [
+          [
+            9.205,
+            -0.115
+          ],
+          [
+            9.7,
+            0
+          ]
+        ]
+      },
+      {
+        "sourceId": "W-6E6BBF4",
+        "bounds": [
+          [
+            5.585,
+            -0.33
+          ],
+          [
+            5.8,
+            0
+          ]
+        ],
+        "basis": "The real west retained pier and its upper wall occupy this corner; omit the exterior15mm sliver as well as actual masonry footprint."
+      }
+    ],
+    "retainedContinuityBasis": "The concealed 200 mm storey band is assumed to continue the existing solid pier where lower and upper architectural footprints coincide. Material, bond, condition and capacity require survey. A finite beam pocket and separate 10 mm top bearing bed preserve the upper wall; masonry/facade/roof reactions, local flange/web bearing, restraint, erection and temporary propping are not calculated. The grey band is retained context excluded from new masonry quantities.",
+    "retainedFramePockets": [
+      {
+        "sourceWallId": "W-6E6BBF4",
+        "sourceObject": "Proposal revision | House front centre | corrected wall 4",
+        "sourceFrameObject": "Proposal | Courtyard edge passage fixed right mullion.002",
+        "bounds": [
+          [
+            5.588,
+            -0.357,
+            0
+          ],
+          [
+            5.642,
+            -0.303,
+            2.3791
+          ]
+        ],
+        "clearanceM": 0.003,
+        "basis": "Local retained-pier reveal around the fixed terminal mullion; preserve the glazing plane and8mm residual clearance to the shifted pad envelope. Existing masonry repair, jamb seal and weather/fire detailing require survey and design."
+      },
+      {
+        "sourceWallId": "W-15C1BB3",
+        "additionalSourceWallIds": [
+          "W-BFCD7D3"
+        ],
+        "sourceObject": "Proposal revision | First front | corrected wall 5",
+        "additionalSourceObjects": [
+          "Proposal revision | First front | corrected wall 6"
+        ],
+        "sourceFrameObject": "Proposal | Courtyard upper landing mullion.003",
+        "bounds": [
+          [
+            5.588,
+            -0.357,
+            2.8
+          ],
+          [
+            5.642,
+            -0.303,
+            5.1145
+          ]
+        ],
+        "clearanceM": 0.003,
+        "basis": "Same fixed terminal-frame reveal at the upper storey; preserve the glazing plane. The assumed hidden band and its bed use the same explicit plan exclusion, with actual contact rechecked."
+      }
+    ],
+    "segmentStartNumber": 2,
+    "retiredSegments": [
+      {
+        "memberId": "M-GALLERY-EDGE-ANGLE-01",
+        "segmentY": [
+          -4.21,
+          -4.1125
+        ],
+        "reason": "The physical corner notch removes the deck entirely here. Omit this redundant segment so it does not enter the insulated cavity terminal."
+      }
+    ]
+  },
+  "omittedJoistPositions": {
+    "INF-GALLERY": [
+      {
+        "at": 0,
+        "basis": "Omit the redundant autogenerated row that would be shifted into the solid retained pier. The regular joist atY\u22120.4 and north cross-beam atY0 bound the final deck bay; the short east pier margin has a separate wall-face ledger."
+      }
+    ]
+  }
+}

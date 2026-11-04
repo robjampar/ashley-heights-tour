@@ -1,0 +1,4 @@
+# Additional closed-solid junction audit dependency; install into workspace .venv.
+manifold3d==3.5.4
+# Trimesh winding repair for the expanded concrete bearing audit.
+networkx==3.6.1

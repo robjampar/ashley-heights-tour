@@ -1,0 +1,25 @@
+import {chromium} from '../../walkthrough/node_modules/playwright/index.mjs';
+import {writeFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const out=new URL('../../walkthrough/test-results/structural-wall-supports-2026-10-26/',import.meta.url).pathname;
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--use-angle=metal']});
+const p=await browser.newPage({viewport:{width:1700,height:1100}}),errors=[],failed=[],checks=[];
+p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>failed.push({url:r.url(),error:r.failure()?.errorText}));p.on('response',r=>{if(r.status()>=400)failed.push({url:r.url(),status:r.status()});});
+async function shot(name){await p.waitForTimeout(350);await p.screenshot({path:out+name+'.png'});}
+await p.goto('http://127.0.0.1:8765/structure/');await p.waitForFunction(()=>window.structureStudio?.ready);
+assert.equal(await p.evaluate(()=>window.structureStudio.members.revision),'M09-2026-10-26');
+await p.evaluate(()=>{const s=window.structureStudio;s.inspectJunction(['M-FR-0-001','M-FR-0-002','M-RC-FC244DE','M-RC-51B8D91','M-BRICK-8D5FD18','M-BLOCK-8D5FD18','M-GROUND-WEST-002','M-GROUND-WEST-003']);s.select('M-FR-0-001');s.cutawayPlanes.structure.constant=.55;document.getElementById('cut').value='.55';document.getElementById('cut-value').textContent='0.55 m';s.camera.position.set(9.6,2.9,11.8);s.controls.target.set(6.5,-.25,15.8);s.controls.update();});
+await shot('01-ground-header-and-independent-wall-bearing');
+assert.ok((await p.locator('#selection').innerText()).includes('Masonry bears independently'));checks.push('Named header identifies floor-only role and concrete support');
+await p.evaluate(()=>window.structureStudio.select('M-BLOCK-8D5FD18'));
+assert.ok((await p.locator('#selection').innerText()).includes('100.0%'));await shot('02-block-base-contact-inspector');
+await p.locator('[data-junction-pair]').first().click();assert.ok((await p.evaluate(()=>window.structureStudio.visible())).includes('M-RC-FC244DE'));checks.push('Wall inspector reports full geometric contact and opens the actual concrete bearing');
+await p.evaluate(()=>{const s=window.structureStudio;const ids=s.members.elements.filter(e=>e.level===0&&['joists','trimmers','beams'].includes(e.category)||e.concreteWallCoordination).map(e=>e.id);s.inspectJunction(ids);s.select('M-RC-7BC42C7');s.camera.position.set(21,15,3);s.controls.target.set(9,-.6,9.5);s.controls.update();});await shot('03-ground-floor-and-connected-concrete-ring');
+await p.evaluate(()=>{const s=window.structureStudio;const ids=s.members.elements.filter(e=>e.id.startsWith('M-LOFT-')&&e.category==='joists'||e.id.startsWith('M-FR-3-')||e.id.startsWith('M-STAIR-')).map(e=>e.id);s.inspectJunction(ids);s.select('M-LOFT-HOUSE-015');s.camera.position.set(4.5,43,3.6);s.controls.target.set(4.5,5.35,3.7);s.controls.update();});await shot('04-loft-direction-and-stair-opening');
+assert.ok((await p.evaluate(()=>window.structureStudio.visible())).includes('M-LOFT-HOUSE-015'));checks.push('Original-house north-south joists visible with the actual stair aperture');
+await p.evaluate(()=>{const s=window.structureStudio;s.inspectJunction(['M-FR-3-009','M-FR-3-010','M-FR-3-023','M-FR-3-024','M-FR-3-025','M-LOFT-GALLERY-001','M-LOFT-GALLERY-002','M-LOFT-GALLERY-003']);s.select('M-FR-3-024');s.camera.position.set(10.6,8.4,1);s.controls.target.set(6.9,5.35,4.8);s.controls.update();});await shot('05-gallery-floor-edge-and-steel-return');
+assert.ok((await p.locator('#selection').innerText()).includes('No joist ends or masonry'));checks.push('024 is floor-edge timber with no claimed masonry or return support');
+await p.evaluate(()=>{const s=window.structureStudio;s.select('M-FR-3-023');});assert.ok((await p.locator('#selection').innerText()).includes('Not a simple shear joint'));checks.push('Adjoining return still exposes unresolved moment connection');
+await p.evaluate(()=>{const s=window.structureStudio;s.inspectJunction(['M-BLOCK-A2CE383','M-GROUND-EAST-003','M-GROUND-EAST-004','M-GROUND-EAST-005']);s.select('M-BLOCK-A2CE383');s.cutawayPlanes.structure.constant=.6;s.camera.position.set(14,3.5,12);s.controls.target.set(11.3,0,14.5);s.controls.update();});await shot('06-unresolved-internal-wall-support-exposed');
+assert.ok((await p.locator('#selection').innerText()).includes('Timber beneath this wall is not an approved wall support'));checks.push('Unresolved internal block wall is exposed, never counted as timber-supported');
+await writeFile(out+'browser-review.json',JSON.stringify({errors,failed,checks},null,2));await browser.close();assert.equal(errors.length,0);assert.equal(failed.length,0);console.log(JSON.stringify({errors,failed,checks}));
