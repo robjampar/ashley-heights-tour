@@ -1,0 +1,24 @@
+{
+  "base": "https://robjampar.github.io/ashley-heights-tour/model/",
+  "phase": "live",
+  "errors": [],
+  "failed": [],
+  "checks": [
+    "Structure button opens current overlay and register",
+    "Beam selection shows member inspector",
+    "Split view works",
+    "Floor plans render",
+    "Versioned member register download resolves",
+    "Standalone structure preserves member link and loads matching house",
+    "planning still loads",
+    "original still loads",
+    "Direct structure link enables overlay automatically"
+  ],
+  "structure": {
+    "revision": "WM01-2026-10-29",
+    "members": 2576,
+    "native": "WM01-west-brick-finish-2026-10-29",
+    "approved": false
+  },
+  "passed": true
+}

@@ -7,6 +7,11 @@ const page=await browser.newPage({viewport:{width:1440,height:960},deviceScaleFa
 const report={base,label,device:'Chrome on this Mac; 1440 × 960, DPR 2; fresh browser cache',errors:[],views:[]};page.on('pageerror',e=>report.errors.push(e.message));
 await page.addInitScript(()=>{window.longTasks=[];new PerformanceObserver(list=>longTasks.push(...list.getEntries().map(e=>({start:e.startTime,ms:e.duration})))).observe({type:'longtask',buffered:true});});
 try{
+ if(process.argv[4]){
+  const html=await fs.readFile(process.argv[4],'utf8');
+  await page.route(base+'?design=proposed',route=>route.fulfill({contentType:'text/html',body:html}));
+  report.controlHTML=process.argv[4];
+ }
  const begin=Date.now();await page.goto(base+'?design=proposed');await page.waitForFunction(()=>window.walkthrough?.ready);report.readyMs=Date.now()-begin;
  await page.evaluate(()=>{walkthrough.startDrag();walkthrough.setLife('people',false);walkthrough.setLife('cars',false);const r=walkthrough.renderer,render=r.render.bind(r);window.perfPasses=[];r.render=(...args)=>{const t=performance.now();render(...args);perfPasses.push({cpu:performance.now()-t,calls:r.info.render.calls,triangles:r.info.render.triangles});};});
  await page.waitForTimeout(5000);

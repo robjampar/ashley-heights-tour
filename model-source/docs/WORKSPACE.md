@@ -1,5 +1,9 @@
 # Workspace structure and maintenance
 
+## Published viewer performance update — 4 November 2026
+
+Release `8ec815c` was deployed by Pages run `41815014975`. House/detail/daylight/vehicle downloads start concurrently; the overlay uses an indexed name lookup; furnishings use verified lossless meshopt packing. Structural rendering excludes hidden per-member objects from the scene hierarchy and freezes static transforms, retaining all 2,576 register entries and selection/filter functions. Zero-opacity layers skip unnecessary render passes. Automatic resolution recovers after sustained headroom, and Settings exposes Automatic, High detail and Faster movement. Restrained contact shading and more directional structural lighting improve depth without changing accepted materials or native geometry. See the [measurements, browser checks and limitations](../revisions/viewer-performance-2026-11-04/README.md); final FPS results varied with background system load.
+
 ## Current public structural walkthrough — 4 November 2026
 
 The public Proposed viewer now includes the unified Structure toggle, opacity/split controls, member inspection, drawings and register. Release `1948826` packages the current WM01 member data and coordinated native model with the west-recess brick finish; GitHub Pages run `41811770120` deployed it successfully. The structural runtime is content-addressed beside the matching model, with a stable `/model/structure/` redirect preserving member links. The prior main-view release remains available for cached clients. See the [publication and validation record](../revisions/structural-publication-2026-11-04/README.md), including the existing door-architrave audit failure. No native geometry or structural calculation was changed by publication.

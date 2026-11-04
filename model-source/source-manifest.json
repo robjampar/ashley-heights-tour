@@ -12,8 +12,8 @@
     },
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "6c9e9c5a87ae065a3b2e14ea40c3721528ae62243fab8f298b793dab5fd0ecab",
-      "bytes": 26323
+      "sha256": "7bd537942b9a342a9166b728816d878aee3589b9ccd7f430f8aae7644ca62c7e",
+      "bytes": 26685
     },
     "docs/PROJECT-HISTORY.md": {
       "source": "docs/PROJECT-HISTORY.md",
@@ -27,8 +27,8 @@
     },
     "docs/WORKSPACE.md": {
       "source": "docs/WORKSPACE.md",
-      "sha256": "58c01d1420b4c6ce8984881d25468b297c617b2432a8fac2781934aca7f3cf6b",
-      "bytes": 135013
+      "sha256": "2355350198e3873a5f6a5cd4e2cfba5150b033a4c9f32f5c5778adb847dee1ee",
+      "bytes": 135941
     },
     "docs/maintenance/CLEANUP-2026-09-29.md": {
       "source": "docs/maintenance/CLEANUP-2026-09-29.md",
@@ -5867,8 +5867,8 @@
     },
     "revisions/viewer-performance-2026-11-04/README.md": {
       "source": "revisions/viewer-performance-2026-11-04/README.md",
-      "sha256": "a79cc998fc1fbad3f5b6793d9a84286b2b047db14a46e299dcb7b22207de70f3",
-      "bytes": 3614
+      "sha256": "db1c622673791bff9d3f27a9197b7c105802e93c3a0e49c028a92ea2e097cae9",
+      "bytes": 5355
     },
     "revisions/viewer-performance-2026-11-04/artifact.json": {
       "source": "revisions/viewer-performance-2026-11-04/artifact.json",
@@ -5902,8 +5902,8 @@
     },
     "revisions/viewer-performance-2026-11-04/validation.json": {
       "source": "revisions/viewer-performance-2026-11-04/validation.json",
-      "sha256": "a09633987c2438932cf8536a61e73bdbf3db1125255bad080627550b9070bdbf",
-      "bytes": 1440
+      "sha256": "afe3d20cefc99e6cfb9f1de7d5732c3a8f61a801db8a918a5c73388102305c8c",
+      "bytes": 3059
     },
     "revisions/wall-supported-floor-2026-10-27/README.md": {
       "source": "revisions/wall-supported-floor-2026-10-27/README.md",
@@ -10622,8 +10622,8 @@
     },
     "walkthrough/tests/viewer-performance.mjs": {
       "source": "walkthrough/tests/viewer-performance.mjs",
-      "sha256": "3d437851f9eb74454c396f8bd9c1aae257d0ab9f8a7842ec06ea44ec437a2c23",
-      "bytes": 3901
+      "sha256": "231f127e56d216d7cced4fda61cae9c3dee3f66cbb580a587ca3c4d5f35d93f7",
+      "bytes": 4123
     },
     "walkthrough/tests/viewer-quality-review.mjs": {
       "source": "walkthrough/tests/viewer-quality-review.mjs",
@@ -10754,6 +10754,36 @@
       "source": "revisions/viewer-performance-2026-11-04/mobile-checks.json",
       "sha256": "c01f0c015c56234f2bea41da9315ea7cd01f567260b96e22549d21df67d2c5c9",
       "bytes": 56
+    },
+    "revisions/viewer-performance-2026-11-04/live-repeat.json": {
+      "source": "revisions/viewer-performance-2026-11-04/live-repeat.json",
+      "sha256": "8535e24237331f865d32c16cb85ef74eb47c27ff96ac2fa345346717623226b4",
+      "bytes": 53899
+    },
+    "revisions/viewer-performance-2026-11-04/live-checks.json": {
+      "source": "revisions/viewer-performance-2026-11-04/live-checks.json",
+      "sha256": "bb6846a45da1b8ec27ddd53c1758dd9fa35c47aa67a193a0163207b7ccb70046",
+      "bytes": 703
+    },
+    "revisions/viewer-performance-2026-11-04/live-first.json": {
+      "source": "revisions/viewer-performance-2026-11-04/live-first.json",
+      "sha256": "358c3f85778292629eed70dff19076d17d281c9c52d1f23694747945fbefc805",
+      "bytes": 53884
+    },
+    "revisions/viewer-performance-2026-11-04/refresh-control.json": {
+      "source": "revisions/viewer-performance-2026-11-04/refresh-control.json",
+      "sha256": "e27cdb2784df39e6bddec387376e757cf422eddab517d30cdd0fb95db432f16a",
+      "bytes": 88
+    },
+    "revisions/viewer-performance-2026-11-04/retained-control.json": {
+      "source": "revisions/viewer-performance-2026-11-04/retained-control.json",
+      "sha256": "c06221b8b0208b2231bf5e2b059ad49b388c3c1c72cceba421a455891d788a39",
+      "bytes": 54411
+    },
+    "revisions/viewer-performance-2026-11-04/live-quality-checks.json": {
+      "source": "revisions/viewer-performance-2026-11-04/live-quality-checks.json",
+      "sha256": "2ca8932dd408f249783dada846b381ff11260b94a2006196177437cf4658ca9b",
+      "bytes": 414
     }
   },
   "required_local_baselines": {

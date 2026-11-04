@@ -1,0 +1,12 @@
+{
+  "base": "https://robjampar.github.io/ashley-heights-tour/model/",
+  "label": "live",
+  "errors": [],
+  "checks": [
+    "Quality modes change resolution and persist across reloads",
+    "Batched structure retains individual member selection with fewer than 1,000 scene objects",
+    "Zero-opacity passes, independent cutaways and return to normal viewer work"
+  ],
+  "structureChildren": 206,
+  "passed": true
+}
