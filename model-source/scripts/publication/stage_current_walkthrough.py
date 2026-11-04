@@ -4,12 +4,13 @@ Runtime visual/vehicle directories are immutable per release, so cached pages
 cannot combine a new model with an earlier lighting or furnishing overlay.
 No native projects, local duplicates or private workspace files are published.
 """
-import hashlib,json,re,sys
+import hashlib,json,re,sys,shutil
 from pathlib import Path
 from datetime import datetime,timezone
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
 from scripts.publication.model_delivery import delivery_asset
 from scripts.publication.pages_artifact import public_bytes
+from scripts.publication.structure_delivery import package_structure, redirect_structure
 
 def stage(root=ROOT):
     dist=root/'walkthrough/dist';repo=root/'deployment/ashley-heights-tour';dest=repo/'model'
@@ -39,6 +40,13 @@ def stage(root=ROOT):
         assert './'+directory+'/' in app,directory
         app=app.replace('./'+directory+'/', './'+prefix)
         for name,data in payload.items():runtime[prefix+name]=write(prefix+name,data)
+    prefix,payload,members=package_structure(dist,sources['proposal-compact.glb']['path'])
+    assert app.count('./structure/')==1
+    app=app.replace('./structure/', './'+prefix)
+    app=app.replace('../proposal-compact.glb','../../'+sources['proposal-compact.glb']['path'])
+    for name,data in payload.items():runtime[prefix+name]=write(prefix+name,data)
+    directories['structure']=prefix
+    write('structure/index.html',redirect_structure(prefix))
     app=re.sub(r'\n?//# sourceMappingURL=.*','',app).encode();app_name=f'app.{sha(app)[:16]}.js';assets[app_name]=write(app_name,app)
     html=(dist/'index.html').read_text()
     for source,target in [('app.js',app_name),('style.css',sources['style.css']['path'])]:
@@ -50,9 +58,20 @@ def stage(root=ROOT):
         p=Path(relative);data=(dist/p).read_bytes();assert p.parts[0]=='textures'and len(p.parts)==2 and p.stem==sha(data)
         textures[relative]=write(relative,data)
     for name in('THREE-LICENSE.txt','MESHOPT-LICENSE.txt'):write(name,(dist/name).read_bytes())
-    # All formerly referenced files remain. This update is comfortably below
-    # the Pages budget and needs no deletion or staged cache-expiry rollout.
+    # Preserve the currently published issue for cached clients. Only previously
+    # retired assets whose retention window has elapsed may leave the site.
     now=datetime.now(timezone.utc);retained=manifest.setdefault('previous_assets',{})
+    archived=[]
+    for name,info in list(retained.items()):
+        if name in previous['assets'] or name in assets or info.get('retain_until_epoch',float('inf'))>now.timestamp():continue
+        source=dest/name
+        assert source.resolve().is_relative_to(dest.resolve())
+        if source.exists():
+            assert sha(source.read_bytes())==info['sha256'],name
+            recovery=root/'revisions/structural-publication-2026-11-04/expired-public-assets'/name
+            recovery.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,recovery)
+            source.unlink();archived.append('model/'+name)
+        retained.pop(name)
     for name,info in previous['assets'].items():
         if name not in assets:retained[name]={**info,'retired_at_epoch':now.timestamp(),'retain_until_epoch':now.timestamp()+1800}
     for name in assets:retained.pop(name,None)
@@ -64,12 +83,13 @@ def stage(root=ROOT):
         for suffix,path in [('native',folder/f'Ashley Heights — Proposed ({label}).blend'),('geometry',folder/'geometry.json')]:manifest['designs'][key+'_'+suffix+'_sha256']=sha(path.read_bytes())
         manifest['designs'][key+'_updated_at']=n['modelUpdatedAt']
         manifest.setdefault('current_revisions',{})[variant]={k:n[k]['revision']for k in('continuousWingRoof','gardenWorkshopEnvelope')if k in n}
-    manifest['validation']={'revision':'garden-workshop-envelope-2026-10-26','sha256':sha((root/'walkthrough/test-results/garden-workshop-envelope-2026-10-26/final-validation.json').read_bytes()),'pythonTests':114,'viewerTests':279}
+    manifest['structure']={'path':'./structure/','runtimePath':'./'+prefix,'revision':members['revision'],'members':len(members['elements']),'approvedForConstruction':members['approvedForConstruction']}
+    manifest['validation']={'revision':'WM01-west-brick-finish-2026-10-29','sha256':sha((root/'revisions/west-recess-brick-finish-2026-10-29/validation.json').read_bytes()),'scope':'Material/export checks and prior WM01 model validation; publication browser checks recorded separately.'}
     write('release.json',(json.dumps(manifest,indent=2)+'\n').encode())
     total=public_bytes(repo);assert total<1_000_000_000,total
     manifest['staged_site_bytes']=total;write('release.json',(json.dumps(manifest,indent=2)+'\n').encode())
-    return {'stagedBytes':public_bytes(repo),'writtenFiles':sorted(set(written)),'sourceAssets':sources,'runtimeDirectories':directories,'currentRevisions':manifest['current_revisions']}
+    return {'stagedBytes':public_bytes(repo),'writtenFiles':sorted(set(written)),'archivedExpiredFiles':archived,'sourceAssets':sources,'runtimeDirectories':directories,'currentRevisions':manifest['current_revisions'],'structure':manifest['structure']}
 
 if __name__=='__main__':
-    result=stage();out=ROOT/'walkthrough/test-results/publication-2026-10-26';out.mkdir(parents=True,exist_ok=True)
+    result=stage();out=ROOT/'walkthrough/test-results/structural-publication-2026-11-04';out.mkdir(parents=True,exist_ok=True)
     (out/'staging.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items()if k not in('writtenFiles','sourceAssets')},indent=2));print('Files written:',len(result['writtenFiles']))

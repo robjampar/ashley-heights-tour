@@ -1,0 +1,68 @@
+{
+  "browser": {
+    "base": "http://127.0.0.1:8904/model/",
+    "phase": "preview",
+    "errors": [],
+    "failed": [],
+    "checks": [
+      "Structure button opens current overlay and register",
+      "Beam selection shows member inspector",
+      "Split view works",
+      "Floor plans render",
+      "Versioned member register download resolves",
+      "Standalone structure preserves member link and loads matching house",
+      "planning still loads",
+      "original still loads"
+    ],
+    "structure": {
+      "revision": "WM01-2026-10-29",
+      "members": 2576,
+      "native": "WM01-west-brick-finish-2026-10-29",
+      "approved": false
+    },
+    "passed": true
+  },
+  "unitTests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "artifact": {
+    "files": 663,
+    "bytes": 888414152,
+    "excludedUntrackedBrochureContextFiles": [
+      "model/brochure/context/neighbourhood-plan.afca1730755af6c6.png",
+      "model/brochure/context/site-plan.46a5641c4545e0f5.svg",
+      "model/brochure/context/neighbourhood-plan.352838a2ecedd406.svg",
+      "model/brochure/context/site-plan.a8e8582cab8c9863.png"
+    ]
+  },
+  "layout": {
+    "passed": false,
+    "findings": 345,
+    "identicalToBaseline": true
+  },
+  "visualAudit": {
+    "passed": false,
+    "issue": "Existing authored door architrave offsets approximately 0.3645 m exceed 0.12 m tolerance; no native changes in this publication"
+  },
+  "geometryChanged": false,
+  "approvedForConstruction": false,
+  "published": false,
+  "inputHashChecks": {
+    "compact": {
+      "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": true,
+      "walkthrough/public/proposal-compact.glb": true,
+      "walkthrough/public/proposal-compact-navigation.json": true,
+      "walkthrough/public/visual-quality/compact-furnishings.glb": true,
+      "outputs/output-visual-realism-compact/Ashley Heights \u2014 Proposed (compact) \u2014 visual refinement.blend": true
+    },
+    "planning": {
+      "outputs/output-proposed-planning/Ashley Heights \u2014 Proposed (planning application).blend": true,
+      "walkthrough/public/proposal-planning.glb": true,
+      "walkthrough/public/proposal-planning-navigation.json": true,
+      "walkthrough/public/visual-quality/planning-furnishings.glb": true,
+      "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement.blend": true
+    }
+  },
+  "whitespaceReview": "Authored source clean; generated Three.js shader strings retain upstream whitespace."
+}

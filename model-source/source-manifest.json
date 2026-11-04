@@ -5340,6 +5340,31 @@
       "sha256": "355aeabc109cb533827da9abb5370e5a6928f6f249e654ffd3189a014b17ad1e",
       "bytes": 5882
     },
+    "revisions/structural-publication-2026-11-04/README.md": {
+      "source": "revisions/structural-publication-2026-11-04/README.md",
+      "sha256": "ccf2590b67cf4ae562a63f0bf2b8dfc93b8f95f7a01fa3f124a0bb5fd7ea697a",
+      "bytes": 2295
+    },
+    "revisions/structural-publication-2026-11-04/artifact.json": {
+      "source": "revisions/structural-publication-2026-11-04/artifact.json",
+      "sha256": "81d73fce5d387ceae53dc966d4bff1b84dc168e75f412b4a2a9a89786e161eab",
+      "bytes": 352
+    },
+    "revisions/structural-publication-2026-11-04/preview-checks.json": {
+      "source": "revisions/structural-publication-2026-11-04/preview-checks.json",
+      "sha256": "deedc844c3e4ec27a78b8982c7c4a475811b654ae3cea4eaf2bfda3d6e1b948e",
+      "bytes": 621
+    },
+    "revisions/structural-publication-2026-11-04/staging.json": {
+      "source": "revisions/structural-publication-2026-11-04/staging.json",
+      "sha256": "fe7d5e175337502cf9ddfadb0f13627488b0e3c36d719ddccc31263610974909",
+      "bytes": 6556
+    },
+    "revisions/structural-publication-2026-11-04/validation.json": {
+      "source": "revisions/structural-publication-2026-11-04/validation.json",
+      "sha256": "de990757a2f437c191dc6910c239c404f2439c9a7d99575c2928dbf59e43bfd0",
+      "bytes": 2533
+    },
     "revisions/structural-replacement-and-supports-2026-10-26/README.md": {
       "source": "revisions/structural-replacement-and-supports-2026-10-26/README.md",
       "sha256": "c36dcfa4ea24107cd5b7ec67423285758cdb70fde233aa565da05e7625f0d85e",
@@ -7602,8 +7627,8 @@
     },
     "scripts/publication/stage_current_walkthrough.py": {
       "source": "scripts/publication/stage_current_walkthrough.py",
-      "sha256": "080538e83c85d7c5b93d74aac9bb02be2d157a649987c223cd4890f430b7f7ac",
-      "bytes": 6233
+      "sha256": "c2afe1e66f6774e894876913fd05f8f0876316f13545b1b9f1010c18d34b6027",
+      "bytes": 7769
     },
     "scripts/publication/stage_github_pages.py": {
       "source": "scripts/publication/stage_github_pages.py",
@@ -7624,6 +7649,11 @@
       "source": "scripts/publication/stage_room_studies.py",
       "sha256": "e93ff6338bdc79d04c1cfccba7c47302745a0ec40b93e0201ce724c2add8311e",
       "bytes": 2639
+    },
+    "scripts/publication/structure_delivery.py": {
+      "source": "scripts/publication/structure_delivery.py",
+      "sha256": "1e47f4d28681279959244e8e17ef6b0c0e1276578b83279846751295f07e50c5",
+      "bytes": 1628
     },
     "scripts/reconstruction/__init__.py": {
       "source": "scripts/reconstruction/__init__.py",
@@ -8614,6 +8644,11 @@
       "source": "tests/test_structural_west_loft_front.py",
       "sha256": "e0bbd52641c7ac88fd6f5f542af65dbaa1b6d7f406f52a71eb3f631223a542ce",
       "bytes": 3447
+    },
+    "tests/test_structure_delivery.py": {
+      "source": "tests/test_structure_delivery.py",
+      "sha256": "e5ce53ea3fd4fb69cb58720e19fb916f9eef2cf4123dbb3861e059ccf47b4f51",
+      "bytes": 2050
     },
     "tests/test_sw02_integration.py": {
       "source": "tests/test_sw02_integration.py",
@@ -10459,6 +10494,11 @@
       "source": "walkthrough/tests/street-context/browser.mjs",
       "sha256": "854fabd6ab9cc42d58afacfc39897d78b596422f2974a6eb937a08d8fe25bae4",
       "bytes": 8055
+    },
+    "walkthrough/tests/structural-publication-browser.mjs": {
+      "source": "walkthrough/tests/structural-publication-browser.mjs",
+      "sha256": "ee0b341ec0b072fec8841a10e4525a76d0123fffd012e17ee6cc795e82013f94",
+      "bytes": 4508
     },
     "walkthrough/tests/structure-bearings.test.mjs": {
       "source": "walkthrough/tests/structure-bearings.test.mjs",
