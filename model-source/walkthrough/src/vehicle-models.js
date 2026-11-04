@@ -4,8 +4,15 @@ import {CubeCamera,WebGLCubeRenderTarget,HalfFloatType,PMREMGenerator,FrontSide}
 import {loadModel} from './model-delivery.js';
 
 const sources=new Map();
+export function preloadVehicles(specifications){
+ for(const spec of specifications){
+  if(!sources.has(spec.asset))sources.set(spec.asset,loadModel(new GLTFLoader().setMeshoptDecoder(MeshoptDecoder),'./vehicles/'+spec.asset+'.glb'));
+  // Downloads can start with the house; the caller still handles each failure.
+  sources.get(spec.asset).catch(()=>{});
+ }
+}
 export async function loadVehicle(scene,bakedDaylight,spec){
- if(!sources.has(spec.asset))sources.set(spec.asset,loadModel(new GLTFLoader().setMeshoptDecoder(MeshoptDecoder),'./vehicles/'+spec.asset+'.glb'));
+ preloadVehicles([spec]);
  const group=(await sources.get(spec.asset)).scene.clone(true),clones=new Map();
  group.traverse(o=>{if(!o.isMesh)return;const clone=m=>{if(!clones.has(m))clones.set(m,m.clone());return clones.get(m);};o.material=Array.isArray(o.material)?o.material.map(clone):clone(o.material);});
  group.name=spec.model+' · '+spec.bay;group.userData.lifeCar=group.name;group.userData.vehicleSize=spec;

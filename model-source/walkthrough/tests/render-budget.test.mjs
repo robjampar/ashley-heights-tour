@@ -12,3 +12,16 @@ test('Resolution changes only for sustained slow frames and remains bounded',()=
  for(let t=2500;t<16000;t+=40)r.sample(40,t);assert.equal(r.scale,.65);
  r.reset();r.sample(2000,20000);assert.equal(r.scale,.65);
 });
+test('Temporary slowdowns recover full resolution after sustained headroom, without immediate oscillation',()=>{
+ const r=new RenderBudget({dpr:2});
+ for(let t=0;t<5000;t+=34)r.sample(34,t);assert.equal(r.scale,.7);
+ for(let t=5000;t<11000;t+=17)r.sample(17,t);assert.equal(r.scale,.7);
+ for(let t=11000;t<48000;t+=17)r.sample(17,t);assert.equal(r.scale,1);
+ for(let t=48000;t<50000;t+=23)r.sample(23,t);assert.equal(r.scale,1);
+});
+test('Explicit detail and faster movement choices bound raster cost and reset adaptive history',()=>{
+ const r=new RenderBudget({dpr:2,quality:'detail'});assert.equal(r.ratio(1440,960),Math.sqrt(5000000/(1440*960)));
+ for(let t=0;t<10000;t+=40)r.sample(40,t);assert.equal(r.scale,1);
+ r.setQuality('fast');assert.equal(r.ratio(1440,960),1);
+ r.setQuality('invalid');assert.equal(r.quality,'auto');assert.equal(r.ratio(1440,960),1.5);
+});

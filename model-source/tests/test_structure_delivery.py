@@ -9,7 +9,7 @@ class StructureDeliveryTests(unittest.TestCase):
     def test_complete_runtime_and_versioned_model_reference(self):
         with TemporaryDirectory() as tmp:
             root=Path(tmp);folder=root/'structure';folder.mkdir()
-            for name in FILES:(folder/name).write_bytes(b'content')
+            for name in FILES:(folder/name).write_bytes(b'{}' if name.endswith('.json') else b'content')
             (folder/'index.html').write_text('<a href="../?design=proposed">House</a>')
             (folder/'studio.js').write_text('load("../proposal-compact.glb")')
             (folder/'members.json').write_text(json.dumps({'revision':'R1','elements':[],'approvedForConstruction':False}))
@@ -19,6 +19,7 @@ class StructureDeliveryTests(unittest.TestCase):
             self.assertIn(b'../../proposal-compact.abcdef.glb.gz',payload['studio.js'])
             self.assertIn(b'../../?design=proposed',payload['index.html'])
             self.assertFalse(members['approvedForConstruction'])
+            self.assertEqual(json.loads(payload['members.json']),members)
             self.assertEqual(package_structure(root,'proposal-compact.abcdef.glb.gz')[0],prefix)
             (folder/'members.json').write_text(json.dumps({'revision':'R2'}))
             self.assertNotEqual(package_structure(root,'proposal-compact.abcdef.glb.gz')[0],prefix)
@@ -30,5 +31,5 @@ class StructureDeliveryTests(unittest.TestCase):
         with TemporaryDirectory() as tmp:
             root=Path(tmp);(root/'structure').mkdir()
             for name in FILES:
-                if name!='members.json':(root/'structure'/name).write_bytes(b'content')
+                if name!='members.json':(root/'structure'/name).write_bytes(b'{}' if name.endswith('.json') else b'content')
             with self.assertRaises(FileNotFoundError):package_structure(root,'model.glb.gz')

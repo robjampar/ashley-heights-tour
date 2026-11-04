@@ -4,7 +4,7 @@ Runtime visual/vehicle directories are immutable per release, so cached pages
 cannot combine a new model with an earlier lighting or furnishing overlay.
 No native projects, local duplicates or private workspace files are published.
 """
-import hashlib,json,re,sys,shutil
+import hashlib,json,re,sys,shutil,argparse
 from pathlib import Path
 from datetime import datetime,timezone
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
@@ -12,7 +12,8 @@ from scripts.publication.model_delivery import delivery_asset
 from scripts.publication.pages_artifact import public_bytes
 from scripts.publication.structure_delivery import package_structure, redirect_structure
 
-def stage(root=ROOT):
+def stage(root=ROOT,recovery_dir=None):
+    recovery_dir=recovery_dir or root/'revisions/structural-publication-2026-11-04/expired-public-assets'
     dist=root/'walkthrough/dist';repo=root/'deployment/ashley-heights-tour';dest=repo/'model'
     previous=json.loads((dest/'release.json').read_text());manifest=json.loads(json.dumps(previous))
     sha=lambda data:hashlib.sha256(data).hexdigest()
@@ -68,7 +69,7 @@ def stage(root=ROOT):
         assert source.resolve().is_relative_to(dest.resolve())
         if source.exists():
             assert sha(source.read_bytes())==info['sha256'],name
-            recovery=root/'revisions/structural-publication-2026-11-04/expired-public-assets'/name
+            recovery=recovery_dir/name
             recovery.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,recovery)
             source.unlink();archived.append('model/'+name)
         retained.pop(name)
@@ -91,5 +92,6 @@ def stage(root=ROOT):
     return {'stagedBytes':public_bytes(repo),'writtenFiles':sorted(set(written)),'archivedExpiredFiles':archived,'sourceAssets':sources,'runtimeDirectories':directories,'currentRevisions':manifest['current_revisions'],'structure':manifest['structure']}
 
 if __name__=='__main__':
-    result=stage();out=ROOT/'walkthrough/test-results/structural-publication-2026-11-04';out.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--record-dir',type=Path,default=ROOT/'walkthrough/test-results/structural-publication-2026-11-04');parser.add_argument('--recovery-dir',type=Path);args=parser.parse_args()
+    result=stage(recovery_dir=args.recovery_dir);out=args.record_dir;out.mkdir(parents=True,exist_ok=True)
     (out/'staging.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items()if k not in('writtenFiles','sourceAssets')},indent=2));print('Files written:',len(result['writtenFiles']))

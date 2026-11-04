@@ -72,9 +72,9 @@ export function daylight(renderer,scene,camera,{actionMode=false}={}){
  let ao=null;
  if(!touchDevice){
  ao=new GTAOPass(scene,camera,innerWidth,innerHeight,undefined,
-  {radius:.24,distanceExponent:1.5,thickness:.08,scale:1,samples:24},
+  {radius:.28,distanceExponent:1.5,thickness:.08,scale:1,samples:24},
   {radius:4,rings:2,samples:12});
- ao.blendIntensity=.60;
+ ao.blendIntensity=.72;
  // The house contains authored two-sided surfaces. Match the visible pass so
  // a reversed lining cannot disappear from the depth/normal contact buffer.
  ao.normalMaterial.side=THREE.DoubleSide;

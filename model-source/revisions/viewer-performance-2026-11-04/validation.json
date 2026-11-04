@@ -1,0 +1,48 @@
+{
+  "fullWebTestsPassed": 319,
+  "laterTargetedTestsPassed": 10,
+  "publicationTestsPassed": 9,
+  "packagedBrowser": {
+    "base": "http://127.0.0.1:8905/model/",
+    "phase": "packaged",
+    "errors": [],
+    "failed": [],
+    "checks": [
+      "Structure button opens current overlay and register",
+      "Beam selection shows member inspector",
+      "Split view works",
+      "Floor plans render",
+      "Versioned member register download resolves",
+      "Standalone structure preserves member link and loads matching house",
+      "planning still loads",
+      "original still loads",
+      "Direct structure link enables overlay automatically"
+    ],
+    "structure": {
+      "revision": "WM01-2026-10-29",
+      "members": 2576,
+      "native": "WM01-west-brick-finish-2026-10-29",
+      "approved": false
+    },
+    "passed": true
+  },
+  "qualityBrowser": {
+    "base": "http://127.0.0.1:8905/model/",
+    "label": "preview",
+    "errors": [],
+    "checks": [
+      "Quality modes change resolution and persist across reloads",
+      "Batched structure retains individual member selection with fewer than 1,000 scene objects",
+      "Zero-opacity passes, independent cutaways and return to normal viewer work"
+    ],
+    "structureChildren": 206,
+    "passed": true
+  },
+  "layout": {
+    "findings": 345,
+    "sameAsBaseline": true
+  },
+  "nativeModelChanged": false,
+  "memberCalculationsChanged": false,
+  "published": false
+}

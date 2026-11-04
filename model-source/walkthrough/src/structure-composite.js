@@ -10,8 +10,8 @@ import {FullScreenQuad} from 'three/addons/postprocessing/Pass.js';
 // screen-space wipe, so changing its position never moves or rescales the model.
 export function createStructureComposite({renderer,camera,renderHouse}){
  const scene=new THREE.Scene();
- scene.add(new THREE.HemisphereLight(0xdcefff,0x446079,3));
- const sun=new THREE.DirectionalLight(0xffffff,2);sun.position.set(-10,25,20);scene.add(sun);
+ scene.add(new THREE.HemisphereLight(0xf0f5ff,0x686055,2));
+ const sun=new THREE.DirectionalLight(0xffffff,3);sun.position.set(-10,25,20);scene.add(sun);
  const target=new THREE.WebGLRenderTarget(1,1,{type:THREE.HalfFloatType,samples:2});
  const composer=new EffectComposer(renderer,target);composer.renderToScreen=false;
  composer.addPass(new RenderPass(scene,camera,null,0x000000,0));composer.addPass(new OutputPass());
@@ -37,13 +37,14 @@ export function createStructureComposite({renderer,camera,renderHouse}){
   const parent=group.parent,visible=group.visible,exposure=renderer.toneMappingExposure;
   const oldTarget=renderer.getRenderTarget();let shadowUpdate=renderer.shadowMap.needsUpdate;
   try{
-   group.visible=false;uniforms.house.value=renderHouse();shadowUpdate=renderer.shadowMap.needsUpdate;
+   group.visible=false;
+   if(houseOpacity>0||mode==='split'){uniforms.house.value=renderHouse();shadowUpdate=renderer.shadowMap.needsUpdate;}
    renderer.getSize(size);const ratio=renderer.getPixelRatio();
    if(width!==size.x||height!==size.y||pixelRatio!==ratio){width=size.x;height=size.y;pixelRatio=ratio;composer.setPixelRatio(ratio);composer.setSize(width,height);}
    scene.add(group);group.visible=true;renderer.toneMappingExposure=1;
    // The isolated member scene has its own lights and never rewrites the
    // finished house's shadow maps, environment, materials or daylight exposure.
-   renderer.shadowMap.needsUpdate=false;composer.render();
+   renderer.shadowMap.needsUpdate=false;if(structureOpacity>0)composer.render();
    uniforms.structure.value=composer.readBuffer.texture;
    uniforms.houseOpacity.value=houseOpacity;uniforms.structureOpacity.value=structureOpacity;
    uniforms.vivid.value=vivid;

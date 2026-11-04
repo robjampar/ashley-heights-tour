@@ -69,6 +69,14 @@ for(const vehicle of Object.values(VEHICLE_MODELS)){
  await atomicWrite('dist/'+name,packed);compression.assets[name]=metadata;
  console.log(`${vehicle.model}: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; decoded buffers verified byte-exact`);
 }
+// Apply the same verified, lossless geometry packing to the detailed interiors.
+// Preserve embedded textures here: immutable publication directories add a level.
+for(const variant of ['compact','planning']){
+ const name=`visual-quality/${variant}-furnishings.glb`,original=await readFile('public/'+name),key=digest(packSignature+'\n'+digest(original));
+ const {packed,metadata}=await cachedGlb('.cache/glb',key,original,packGlbLosslessly);
+ await atomicWrite('dist/'+name,packed);compression.assets[name]=metadata;
+ console.log(`${variant} furnishings: ${(original.length/1e6).toFixed(2)} MB → ${(packed.length/1e6).toFixed(2)} MB; decoded buffers verified byte-exact`);
+}
 await writeFile('dist/compression.json',JSON.stringify(compression,null,2)+'\n');
 // Room-only iteration keeps the full house untouched and uses the same
 // byte-exact geometry packing as the tour, including authored UV seams.

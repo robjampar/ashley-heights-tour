@@ -10,6 +10,11 @@ FILES = ('index.html', 'studio.css', 'studio.js', 'model.json', 'trials.json',
 def package_structure(dist, model_path):
     payload = {name: (dist/'structure'/name).read_bytes() for name in FILES}
     members = json.loads(payload['members.json'])
+    # Keep authored reports readable in source control. Ship the identical
+    # JSON values without indentation to reduce download/parse and site cost.
+    for name in FILES:
+        if name.endswith('.json'):
+            payload[name] = json.dumps(json.loads(payload[name]), separators=(',', ':'), ensure_ascii=False).encode()
     # The immutable package sits one directory below the stable structure URL.
     payload['index.html'] = payload['index.html'].replace(b'../?design=proposed', b'../../?design=proposed')
     token = b'../proposal-compact.glb'

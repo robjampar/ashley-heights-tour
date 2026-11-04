@@ -1,0 +1,988 @@
+{
+  "base": "https://robjampar.github.io/ashley-heights-tour/model/",
+  "label": "before",
+  "device": "Chrome on this Mac; 1440 × 960, DPR 2; fresh browser cache",
+  "errors": [],
+  "views": [
+    {
+      "name": "front",
+      "medianMs": 16.700000000000728,
+      "p95Ms": 33.400000000001455,
+      "frames": 195,
+      "cpuMs": 10,
+      "calls": 1323,
+      "triangles": 6525993,
+      "pixelRatio": 1.5,
+      "lighting": {
+        "toneMapping": "AgX",
+        "exposure": 1.2,
+        "sky": "precomputed analytic daylight",
+        "skyCubeSize": 256,
+        "sunDirection": [
+          -0.3907311284892738,
+          0.8273442818725405,
+          0.40352276823285793
+        ],
+        "sunVisible": true,
+        "localBounceLights": 0,
+        "castShadows": true,
+        "ambientOcclusion": "GTAO",
+        "aoResolutionScale": 0.75,
+        "antialiasing": "MSAA",
+        "environmentReflections": true,
+        "shadowMapSize": 4096,
+        "touchDevice": false,
+        "actionMode": false,
+        "bakedDaylight": {
+          "method": "Cycles diffuse indirect + direct sky and fixtures; live sun excluded",
+          "probes": 1925,
+          "samples": 192,
+          "variant": "compact"
+        },
+        "roomFills": {
+          "budget": 0,
+          "sources": 0,
+          "selected": []
+        },
+        "roomReflections": {
+          "captures": 0,
+          "cachedRooms": 0,
+          "room": null,
+          "resolution": 256
+        }
+      },
+      "memory": {
+        "geometries": 1004,
+        "textures": 53
+      },
+      "stats": {
+        "sourceMeshes": 17698,
+        "batches": 880,
+        "hiddenMeshes": 0,
+        "streetContext": {
+          "meshes": 0,
+          "triangles": 0,
+          "enabled": false
+        },
+        "refinedObjects": 1931,
+        "vegetationSources": 501,
+        "spatial": {
+          "sourceMeshes": 15621,
+          "sourceVertices": 9221352,
+          "sourceTriangles": 3073784,
+          "emptySourceMeshes": 0,
+          "batches": 702,
+          "opaqueBatches": 679,
+          "transparentBatches": 23,
+          "spanBatches": 34,
+          "globalBatches": 383,
+          "outputVertices": 4231198,
+          "outputTriangles": 3073784,
+          "indexedBatches": 702,
+          "oversizedSourceMeshes": 0,
+          "inputStoredVertices": 4231198,
+          "inputIndexEntries": 9221352,
+          "cellSize": 6,
+          "floorHeight": 2.8,
+          "transparentCellSize": 3,
+          "maxVertices": 200000,
+          "indexVertices": false,
+          "minMaterialTriangles": 20000
+        },
+        "doorBatches": 177,
+        "interactiveDoors": 66,
+        "vehicles": [
+          {
+            "bay": "G1",
+            "model": "Nissan NV200 panel van",
+            "asset": "nissan-nv200",
+            "length": 4.73,
+            "width": 2.04,
+            "height": 1.86,
+            "turningRadius": 5.6
+          },
+          {
+            "bay": "N1",
+            "model": "2024 Tesla Model 3",
+            "asset": "tesla-model-3",
+            "length": 4.72,
+            "width": 2.1,
+            "height": 1.42,
+            "turningRadius": 5.8
+          },
+          {
+            "bay": "N2",
+            "model": "Fiat 500 Abarth",
+            "asset": "fiat-500",
+            "length": 3.66,
+            "width": 1.9,
+            "height": 1.52,
+            "turningRadius": 5.3
+          }
+        ],
+        "geometryBytes": 158593124,
+        "life": {
+          "people": false,
+          "cars": false,
+          "residents": 0,
+          "carCount": 1
+        },
+        "vegetation": {
+          "trees": 17,
+          "prototypes": 10,
+          "leafCards": 747336,
+          "triangles": 1794416,
+          "meshes": 32,
+          "timing": {
+            "broadleaf|1|0|{\"id\":\"M1\",\"label\":\"Large tree in the front garden, south-east\",\"x\":15.4,\"y\":-13.5,\"height\":11.05,\"crown\":4.2,\"kind\":\"broadleaf\",\"dbh\":0.8,\"crownBase\":0.4,\"photoProfile\":{\"form\":\"broad-evergreen\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#758263\",\"branchCount\":104,\"branchAngle\":94,\"leafCount\":38,\"leafSize\":1.22,\"crownBase\":0.4,\"note\":\"Dark evergreen sprays, broad uneven crown, heavy trunk and sparse foliage almost to the ground; the previous generic oak silhouette did not match the driveway photographs. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6}}": 22,
+            "spruce|1|0|{\"id\":\"M3\",\"label\":\"Tall open conifer on the west front wall by No 3\",\"x\":-6.8,\"y\":-4,\"height\":11.3,\"crown\":2.6,\"kind\":\"spruce\",\"dbh\":0.35,\"photoProfile\":{\"form\":\"open-conifer\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#819071\",\"branchCount\":44,\"branchAngle\":112,\"leafCount\":24,\"leafSize\":1.08,\"crownBase\":2.1,\"note\":\"Retain the owner's 11.3 m height and slender visible stem; separated drooping branches rather than a solid cone. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":2.1}": 7,
+            "broadleaf|3|0": 9,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.682988882832873,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.169788271761787,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.490904699588816,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 12,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.994799918781643,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.524233631281941,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "birch|2|0": 3,
+            "birch|3|0": 3,
+            "volumes Vegetation | hedges and shrubs": 37
+          },
+          "ms": 2424
+        }
+      }
+    },
+    {
+      "name": "suite",
+      "medianMs": 16.700000000000728,
+      "p95Ms": 50,
+      "frames": 213,
+      "cpuMs": 4.800000071525574,
+      "calls": 321,
+      "triangles": 3298727,
+      "pixelRatio": 1.5,
+      "lighting": {
+        "toneMapping": "AgX",
+        "exposure": 1.6499999903565574,
+        "sky": "precomputed analytic daylight",
+        "skyCubeSize": 256,
+        "sunDirection": [
+          -0.3907311284892738,
+          0.8273442818725405,
+          0.40352276823285793
+        ],
+        "sunVisible": true,
+        "localBounceLights": 0,
+        "castShadows": true,
+        "ambientOcclusion": "GTAO",
+        "aoResolutionScale": 0.75,
+        "antialiasing": "MSAA",
+        "environmentReflections": true,
+        "shadowMapSize": 4096,
+        "touchDevice": false,
+        "actionMode": false,
+        "bakedDaylight": {
+          "method": "Cycles diffuse indirect + direct sky and fixtures; live sun excluded",
+          "probes": 1925,
+          "samples": 192,
+          "variant": "compact"
+        },
+        "roomFills": {
+          "budget": 0,
+          "sources": 0,
+          "selected": []
+        },
+        "roomReflections": {
+          "captures": 1,
+          "cachedRooms": 1,
+          "room": "New principal suite",
+          "resolution": 256
+        }
+      },
+      "memory": {
+        "geometries": 1015,
+        "textures": 56
+      },
+      "stats": {
+        "sourceMeshes": 17698,
+        "batches": 880,
+        "hiddenMeshes": 0,
+        "streetContext": {
+          "meshes": 0,
+          "triangles": 0,
+          "enabled": false
+        },
+        "refinedObjects": 1931,
+        "vegetationSources": 501,
+        "spatial": {
+          "sourceMeshes": 15621,
+          "sourceVertices": 9221352,
+          "sourceTriangles": 3073784,
+          "emptySourceMeshes": 0,
+          "batches": 702,
+          "opaqueBatches": 679,
+          "transparentBatches": 23,
+          "spanBatches": 34,
+          "globalBatches": 383,
+          "outputVertices": 4231198,
+          "outputTriangles": 3073784,
+          "indexedBatches": 702,
+          "oversizedSourceMeshes": 0,
+          "inputStoredVertices": 4231198,
+          "inputIndexEntries": 9221352,
+          "cellSize": 6,
+          "floorHeight": 2.8,
+          "transparentCellSize": 3,
+          "maxVertices": 200000,
+          "indexVertices": false,
+          "minMaterialTriangles": 20000
+        },
+        "doorBatches": 177,
+        "interactiveDoors": 66,
+        "vehicles": [
+          {
+            "bay": "G1",
+            "model": "Nissan NV200 panel van",
+            "asset": "nissan-nv200",
+            "length": 4.73,
+            "width": 2.04,
+            "height": 1.86,
+            "turningRadius": 5.6
+          },
+          {
+            "bay": "N1",
+            "model": "2024 Tesla Model 3",
+            "asset": "tesla-model-3",
+            "length": 4.72,
+            "width": 2.1,
+            "height": 1.42,
+            "turningRadius": 5.8
+          },
+          {
+            "bay": "N2",
+            "model": "Fiat 500 Abarth",
+            "asset": "fiat-500",
+            "length": 3.66,
+            "width": 1.9,
+            "height": 1.52,
+            "turningRadius": 5.3
+          }
+        ],
+        "geometryBytes": 158593124,
+        "life": {
+          "people": false,
+          "cars": false,
+          "residents": 0,
+          "carCount": 1
+        },
+        "vegetation": {
+          "trees": 17,
+          "prototypes": 10,
+          "leafCards": 747336,
+          "triangles": 1794416,
+          "meshes": 32,
+          "timing": {
+            "broadleaf|1|0|{\"id\":\"M1\",\"label\":\"Large tree in the front garden, south-east\",\"x\":15.4,\"y\":-13.5,\"height\":11.05,\"crown\":4.2,\"kind\":\"broadleaf\",\"dbh\":0.8,\"crownBase\":0.4,\"photoProfile\":{\"form\":\"broad-evergreen\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#758263\",\"branchCount\":104,\"branchAngle\":94,\"leafCount\":38,\"leafSize\":1.22,\"crownBase\":0.4,\"note\":\"Dark evergreen sprays, broad uneven crown, heavy trunk and sparse foliage almost to the ground; the previous generic oak silhouette did not match the driveway photographs. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6}}": 22,
+            "spruce|1|0|{\"id\":\"M3\",\"label\":\"Tall open conifer on the west front wall by No 3\",\"x\":-6.8,\"y\":-4,\"height\":11.3,\"crown\":2.6,\"kind\":\"spruce\",\"dbh\":0.35,\"photoProfile\":{\"form\":\"open-conifer\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#819071\",\"branchCount\":44,\"branchAngle\":112,\"leafCount\":24,\"leafSize\":1.08,\"crownBase\":2.1,\"note\":\"Retain the owner's 11.3 m height and slender visible stem; separated drooping branches rather than a solid cone. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":2.1}": 7,
+            "broadleaf|3|0": 9,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.682988882832873,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.169788271761787,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.490904699588816,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 12,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.994799918781643,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.524233631281941,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "birch|2|0": 3,
+            "birch|3|0": 3,
+            "volumes Vegetation | hedges and shrubs": 37
+          },
+          "ms": 2424
+        }
+      }
+    },
+    {
+      "name": "overlay",
+      "medianMs": 16.700000000004366,
+      "p95Ms": 33.400000000001455,
+      "frames": 196,
+      "cpuMs": 17.80000001192093,
+      "calls": 1457,
+      "triangles": 6860035,
+      "pixelRatio": 1.275,
+      "lighting": {
+        "toneMapping": "AgX",
+        "exposure": 1.2000000000033628,
+        "sky": "precomputed analytic daylight",
+        "skyCubeSize": 256,
+        "sunDirection": [
+          -0.3907311284892738,
+          0.8273442818725405,
+          0.40352276823285793
+        ],
+        "sunVisible": true,
+        "localBounceLights": 0,
+        "castShadows": true,
+        "ambientOcclusion": "GTAO",
+        "aoResolutionScale": 0.75,
+        "antialiasing": "MSAA",
+        "environmentReflections": true,
+        "shadowMapSize": 4096,
+        "touchDevice": false,
+        "actionMode": false,
+        "bakedDaylight": {
+          "method": "Cycles diffuse indirect + direct sky and fixtures; live sun excluded",
+          "probes": 1925,
+          "samples": 192,
+          "variant": "compact"
+        },
+        "roomFills": {
+          "budget": 0,
+          "sources": 0,
+          "selected": []
+        },
+        "roomReflections": {
+          "captures": 1,
+          "cachedRooms": 1,
+          "room": null,
+          "resolution": 256
+        },
+        "renderScale": 0.85
+      },
+      "memory": {
+        "geometries": 1141,
+        "textures": 58
+      },
+      "stats": {
+        "sourceMeshes": 17698,
+        "batches": 880,
+        "hiddenMeshes": 0,
+        "streetContext": {
+          "meshes": 0,
+          "triangles": 0,
+          "enabled": false
+        },
+        "refinedObjects": 1931,
+        "vegetationSources": 501,
+        "spatial": {
+          "sourceMeshes": 15621,
+          "sourceVertices": 9221352,
+          "sourceTriangles": 3073784,
+          "emptySourceMeshes": 0,
+          "batches": 702,
+          "opaqueBatches": 679,
+          "transparentBatches": 23,
+          "spanBatches": 34,
+          "globalBatches": 383,
+          "outputVertices": 4231198,
+          "outputTriangles": 3073784,
+          "indexedBatches": 702,
+          "oversizedSourceMeshes": 0,
+          "inputStoredVertices": 4231198,
+          "inputIndexEntries": 9221352,
+          "cellSize": 6,
+          "floorHeight": 2.8,
+          "transparentCellSize": 3,
+          "maxVertices": 200000,
+          "indexVertices": false,
+          "minMaterialTriangles": 20000
+        },
+        "doorBatches": 177,
+        "interactiveDoors": 66,
+        "vehicles": [
+          {
+            "bay": "G1",
+            "model": "Nissan NV200 panel van",
+            "asset": "nissan-nv200",
+            "length": 4.73,
+            "width": 2.04,
+            "height": 1.86,
+            "turningRadius": 5.6
+          },
+          {
+            "bay": "N1",
+            "model": "2024 Tesla Model 3",
+            "asset": "tesla-model-3",
+            "length": 4.72,
+            "width": 2.1,
+            "height": 1.42,
+            "turningRadius": 5.8
+          },
+          {
+            "bay": "N2",
+            "model": "Fiat 500 Abarth",
+            "asset": "fiat-500",
+            "length": 3.66,
+            "width": 1.9,
+            "height": 1.52,
+            "turningRadius": 5.3
+          }
+        ],
+        "geometryBytes": 158593124,
+        "life": {
+          "people": false,
+          "cars": false,
+          "residents": 0,
+          "carCount": 1
+        },
+        "vegetation": {
+          "trees": 17,
+          "prototypes": 10,
+          "leafCards": 747336,
+          "triangles": 1794416,
+          "meshes": 32,
+          "timing": {
+            "broadleaf|1|0|{\"id\":\"M1\",\"label\":\"Large tree in the front garden, south-east\",\"x\":15.4,\"y\":-13.5,\"height\":11.05,\"crown\":4.2,\"kind\":\"broadleaf\",\"dbh\":0.8,\"crownBase\":0.4,\"photoProfile\":{\"form\":\"broad-evergreen\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#758263\",\"branchCount\":104,\"branchAngle\":94,\"leafCount\":38,\"leafSize\":1.22,\"crownBase\":0.4,\"note\":\"Dark evergreen sprays, broad uneven crown, heavy trunk and sparse foliage almost to the ground; the previous generic oak silhouette did not match the driveway photographs. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6}}": 22,
+            "spruce|1|0|{\"id\":\"M3\",\"label\":\"Tall open conifer on the west front wall by No 3\",\"x\":-6.8,\"y\":-4,\"height\":11.3,\"crown\":2.6,\"kind\":\"spruce\",\"dbh\":0.35,\"photoProfile\":{\"form\":\"open-conifer\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#819071\",\"branchCount\":44,\"branchAngle\":112,\"leafCount\":24,\"leafSize\":1.08,\"crownBase\":2.1,\"note\":\"Retain the owner's 11.3 m height and slender visible stem; separated drooping branches rather than a solid cone. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":2.1}": 7,
+            "broadleaf|3|0": 9,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.682988882832873,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.169788271761787,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.490904699588816,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 12,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.994799918781643,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.524233631281941,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "birch|2|0": 3,
+            "birch|3|0": 3,
+            "volumes Vegetation | hedges and shrubs": 37
+          },
+          "ms": 2424
+        }
+      }
+    },
+    {
+      "name": "steel",
+      "medianMs": 33.30000000000291,
+      "p95Ms": 50,
+      "frames": 140,
+      "cpuMs": 16.900000035762787,
+      "calls": 1931,
+      "triangles": 9475736,
+      "pixelRatio": 0.9750000000000001,
+      "lighting": {
+        "toneMapping": "AgX",
+        "exposure": 1.2000000000000008,
+        "sky": "precomputed analytic daylight",
+        "skyCubeSize": 256,
+        "sunDirection": [
+          -0.3907311284892738,
+          0.8273442818725405,
+          0.40352276823285793
+        ],
+        "sunVisible": true,
+        "localBounceLights": 0,
+        "castShadows": true,
+        "ambientOcclusion": "GTAO",
+        "aoResolutionScale": 0.75,
+        "antialiasing": "MSAA",
+        "environmentReflections": true,
+        "shadowMapSize": 4096,
+        "touchDevice": false,
+        "actionMode": false,
+        "bakedDaylight": {
+          "method": "Cycles diffuse indirect + direct sky and fixtures; live sun excluded",
+          "probes": 1925,
+          "samples": 192,
+          "variant": "compact"
+        },
+        "roomFills": {
+          "budget": 0,
+          "sources": 0,
+          "selected": []
+        },
+        "roomReflections": {
+          "captures": 1,
+          "cachedRooms": 1,
+          "room": null,
+          "resolution": 256
+        },
+        "renderScale": 0.65
+      },
+      "memory": {
+        "geometries": 1141,
+        "textures": 58
+      },
+      "stats": {
+        "sourceMeshes": 17698,
+        "batches": 880,
+        "hiddenMeshes": 0,
+        "streetContext": {
+          "meshes": 0,
+          "triangles": 0,
+          "enabled": false
+        },
+        "refinedObjects": 1931,
+        "vegetationSources": 501,
+        "spatial": {
+          "sourceMeshes": 15621,
+          "sourceVertices": 9221352,
+          "sourceTriangles": 3073784,
+          "emptySourceMeshes": 0,
+          "batches": 702,
+          "opaqueBatches": 679,
+          "transparentBatches": 23,
+          "spanBatches": 34,
+          "globalBatches": 383,
+          "outputVertices": 4231198,
+          "outputTriangles": 3073784,
+          "indexedBatches": 702,
+          "oversizedSourceMeshes": 0,
+          "inputStoredVertices": 4231198,
+          "inputIndexEntries": 9221352,
+          "cellSize": 6,
+          "floorHeight": 2.8,
+          "transparentCellSize": 3,
+          "maxVertices": 200000,
+          "indexVertices": false,
+          "minMaterialTriangles": 20000
+        },
+        "doorBatches": 177,
+        "interactiveDoors": 66,
+        "vehicles": [
+          {
+            "bay": "G1",
+            "model": "Nissan NV200 panel van",
+            "asset": "nissan-nv200",
+            "length": 4.73,
+            "width": 2.04,
+            "height": 1.86,
+            "turningRadius": 5.6
+          },
+          {
+            "bay": "N1",
+            "model": "2024 Tesla Model 3",
+            "asset": "tesla-model-3",
+            "length": 4.72,
+            "width": 2.1,
+            "height": 1.42,
+            "turningRadius": 5.8
+          },
+          {
+            "bay": "N2",
+            "model": "Fiat 500 Abarth",
+            "asset": "fiat-500",
+            "length": 3.66,
+            "width": 1.9,
+            "height": 1.52,
+            "turningRadius": 5.3
+          }
+        ],
+        "geometryBytes": 158593124,
+        "life": {
+          "people": false,
+          "cars": false,
+          "residents": 0,
+          "carCount": 1
+        },
+        "vegetation": {
+          "trees": 17,
+          "prototypes": 10,
+          "leafCards": 747336,
+          "triangles": 1794416,
+          "meshes": 32,
+          "timing": {
+            "broadleaf|1|0|{\"id\":\"M1\",\"label\":\"Large tree in the front garden, south-east\",\"x\":15.4,\"y\":-13.5,\"height\":11.05,\"crown\":4.2,\"kind\":\"broadleaf\",\"dbh\":0.8,\"crownBase\":0.4,\"photoProfile\":{\"form\":\"broad-evergreen\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#758263\",\"branchCount\":104,\"branchAngle\":94,\"leafCount\":38,\"leafSize\":1.22,\"crownBase\":0.4,\"note\":\"Dark evergreen sprays, broad uneven crown, heavy trunk and sparse foliage almost to the ground; the previous generic oak silhouette did not match the driveway photographs. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6}}": 22,
+            "spruce|1|0|{\"id\":\"M3\",\"label\":\"Tall open conifer on the west front wall by No 3\",\"x\":-6.8,\"y\":-4,\"height\":11.3,\"crown\":2.6,\"kind\":\"spruce\",\"dbh\":0.35,\"photoProfile\":{\"form\":\"open-conifer\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#819071\",\"branchCount\":44,\"branchAngle\":112,\"leafCount\":24,\"leafSize\":1.08,\"crownBase\":2.1,\"note\":\"Retain the owner's 11.3 m height and slender visible stem; separated drooping branches rather than a solid cone. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":2.1}": 7,
+            "broadleaf|3|0": 9,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.682988882832873,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.169788271761787,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.490904699588816,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 12,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.994799918781643,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.524233631281941,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "birch|2|0": 3,
+            "birch|3|0": 3,
+            "volumes Vegetation | hedges and shrubs": 37
+          },
+          "ms": 2424
+        }
+      }
+    },
+    {
+      "name": "split",
+      "medianMs": 16.69999999999709,
+      "p95Ms": 33.39999999999418,
+      "frames": 247,
+      "cpuMs": 15.399999976158142,
+      "calls": 1333,
+      "triangles": 6527003,
+      "pixelRatio": 0.9750000000000001,
+      "lighting": {
+        "toneMapping": "AgX",
+        "exposure": 1.2000000000000008,
+        "sky": "precomputed analytic daylight",
+        "skyCubeSize": 256,
+        "sunDirection": [
+          -0.3907311284892738,
+          0.8273442818725405,
+          0.40352276823285793
+        ],
+        "sunVisible": true,
+        "localBounceLights": 0,
+        "castShadows": true,
+        "ambientOcclusion": "GTAO",
+        "aoResolutionScale": 0.75,
+        "antialiasing": "MSAA",
+        "environmentReflections": true,
+        "shadowMapSize": 4096,
+        "touchDevice": false,
+        "actionMode": false,
+        "bakedDaylight": {
+          "method": "Cycles diffuse indirect + direct sky and fixtures; live sun excluded",
+          "probes": 1925,
+          "samples": 192,
+          "variant": "compact"
+        },
+        "roomFills": {
+          "budget": 0,
+          "sources": 0,
+          "selected": []
+        },
+        "roomReflections": {
+          "captures": 1,
+          "cachedRooms": 1,
+          "room": null,
+          "resolution": 256
+        },
+        "renderScale": 0.65
+      },
+      "memory": {
+        "geometries": 1141,
+        "textures": 58
+      },
+      "stats": {
+        "sourceMeshes": 17698,
+        "batches": 880,
+        "hiddenMeshes": 0,
+        "streetContext": {
+          "meshes": 0,
+          "triangles": 0,
+          "enabled": false
+        },
+        "refinedObjects": 1931,
+        "vegetationSources": 501,
+        "spatial": {
+          "sourceMeshes": 15621,
+          "sourceVertices": 9221352,
+          "sourceTriangles": 3073784,
+          "emptySourceMeshes": 0,
+          "batches": 702,
+          "opaqueBatches": 679,
+          "transparentBatches": 23,
+          "spanBatches": 34,
+          "globalBatches": 383,
+          "outputVertices": 4231198,
+          "outputTriangles": 3073784,
+          "indexedBatches": 702,
+          "oversizedSourceMeshes": 0,
+          "inputStoredVertices": 4231198,
+          "inputIndexEntries": 9221352,
+          "cellSize": 6,
+          "floorHeight": 2.8,
+          "transparentCellSize": 3,
+          "maxVertices": 200000,
+          "indexVertices": false,
+          "minMaterialTriangles": 20000
+        },
+        "doorBatches": 177,
+        "interactiveDoors": 66,
+        "vehicles": [
+          {
+            "bay": "G1",
+            "model": "Nissan NV200 panel van",
+            "asset": "nissan-nv200",
+            "length": 4.73,
+            "width": 2.04,
+            "height": 1.86,
+            "turningRadius": 5.6
+          },
+          {
+            "bay": "N1",
+            "model": "2024 Tesla Model 3",
+            "asset": "tesla-model-3",
+            "length": 4.72,
+            "width": 2.1,
+            "height": 1.42,
+            "turningRadius": 5.8
+          },
+          {
+            "bay": "N2",
+            "model": "Fiat 500 Abarth",
+            "asset": "fiat-500",
+            "length": 3.66,
+            "width": 1.9,
+            "height": 1.52,
+            "turningRadius": 5.3
+          }
+        ],
+        "geometryBytes": 158593124,
+        "life": {
+          "people": false,
+          "cars": false,
+          "residents": 0,
+          "carCount": 1
+        },
+        "vegetation": {
+          "trees": 17,
+          "prototypes": 10,
+          "leafCards": 747336,
+          "triangles": 1794416,
+          "meshes": 32,
+          "timing": {
+            "broadleaf|1|0|{\"id\":\"M1\",\"label\":\"Large tree in the front garden, south-east\",\"x\":15.4,\"y\":-13.5,\"height\":11.05,\"crown\":4.2,\"kind\":\"broadleaf\",\"dbh\":0.8,\"crownBase\":0.4,\"photoProfile\":{\"form\":\"broad-evergreen\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#758263\",\"branchCount\":104,\"branchAngle\":94,\"leafCount\":38,\"leafSize\":1.22,\"crownBase\":0.4,\"note\":\"Dark evergreen sprays, broad uneven crown, heavy trunk and sparse foliage almost to the ground; the previous generic oak silhouette did not match the driveway photographs. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6}}": 22,
+            "spruce|1|0|{\"id\":\"M3\",\"label\":\"Tall open conifer on the west front wall by No 3\",\"x\":-6.8,\"y\":-4,\"height\":11.3,\"crown\":2.6,\"kind\":\"spruce\",\"dbh\":0.35,\"photoProfile\":{\"form\":\"open-conifer\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#819071\",\"branchCount\":44,\"branchAngle\":112,\"leafCount\":24,\"leafSize\":1.08,\"crownBase\":2.1,\"note\":\"Retain the owner's 11.3 m height and slender visible stem; separated drooping branches rather than a solid cone. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":2.1}": 7,
+            "broadleaf|3|0": 9,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.682988882832873,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.169788271761787,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|1|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.490904699588816,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 12,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.994799918781643,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 10,
+            "conifer|3|0|{\"id\":\"M5\",\"label\":\"Fir hedge mass inside the south front wall\",\"kind\":\"conifer\",\"from\":[1.5,-22.2],\"to\":[8,-21.5],\"x\":4.75,\"y\":-21.85,\"height\":9.524233631281941,\"crown\":1.4,\"width\":2.8,\"foliageFrom\":0.3,\"species\":\"fir\",\"dbh\":0.16,\"photoProfile\":{\"form\":\"fir-mass\",\"preset\":\"Pine Medium\",\"leaf\":\"pine\",\"bark\":\"pine\",\"tint\":\"#718064\",\"branchCount\":80,\"branchAngle\":100,\"leafCount\":34,\"leafSize\":1.28,\"crownBase\":0.3,\"note\":\"One overlapping evergreen mass along the accepted row, with low foliage and irregular top; no isolated lollipop trees. Owner 20 October: denser upper sprays above 3 m, preserving overall height, spread and trunk position.\",\"upperFoliageFrom\":3,\"upperFoliageMultiplier\":1.6},\"crownBase\":0.3}": 11,
+            "birch|2|0": 3,
+            "birch|3|0": 3,
+            "volumes Vegetation | hedges and shrubs": 37
+          },
+          "ms": 2424
+        }
+      }
+    }
+  ],
+  "readyMs": 9940,
+  "resources": [
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/style.e103d12e34f2ab24.css",
+      "start": 181.5,
+      "ms": 155.39999997615814,
+      "bytes": 6890,
+      "decoded": 27467
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/app.70d40a6504ecefff.js",
+      "start": 181.5999999642372,
+      "ms": 348.7000000476837,
+      "bytes": 3665654,
+      "decoded": 5577069
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/proposal-compact-navigation.78969290d5ef8028.json",
+      "start": 715.3000000119209,
+      "ms": 168.39999997615814,
+      "bytes": 373660,
+      "decoded": 3069852
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/visual-quality/f655624309a5687a/compact-daylight.json",
+      "start": 897.3000000119209,
+      "ms": 189.5999999642372,
+      "bytes": 383472,
+      "decoded": 2422333
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/proposal-compact.c847b0f1b7381afd.glb.gz",
+      "start": 1126.699999988079,
+      "ms": 2536.100000023842,
+      "bytes": 42824795,
+      "decoded": 42824495
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/textures/66c73defcc62ac090cb838e8455b8c1febbfea29a15c8f40a5e2d398b2ba4733.jpg",
+      "start": 4225,
+      "ms": 333.69999998807907,
+      "bytes": 2060918,
+      "decoded": 2060618
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/textures/ee9fa499b8e87edfe8e4abf56c06ff87e4fa3ec42bac8d3c075ff2cf161fa244.png",
+      "start": 4225.5,
+      "ms": 367,
+      "bytes": 2033130,
+      "decoded": 2032830
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/textures/f566ca179a97b6bf43b1e803fbc11aacdc1c345342ec2865cbeea837fcf0841e.png",
+      "start": 4225.599999964237,
+      "ms": 656.1000000238419,
+      "bytes": 2670716,
+      "decoded": 2670416
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/textures/7eb3b0129821084a86d3adb57fa377321ce82141eece46c3ffd4c4a8104c5098.png",
+      "start": 4226.099999964237,
+      "ms": 699.1000000238419,
+      "bytes": 2779124,
+      "decoded": 2778824
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/textures/b83b382cbc3c9aadc500b50d466925b7dd32c59a4d99c4dcb87f0ca3e774d963.png",
+      "start": 4228.899999976158,
+      "ms": 659.1999999880791,
+      "bytes": 1883271,
+      "decoded": 1882971
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/visual-quality/f655624309a5687a/compact-furnishings.glb",
+      "start": 4961.099999964237,
+      "ms": 1190.300000011921,
+      "bytes": 16214661,
+      "decoded": 38315148
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/visual-quality/f655624309a5687a/compact-furnishings.json",
+      "start": 6290.5,
+      "ms": 101.80000001192093,
+      "bytes": 32608,
+      "decoded": 437582
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/vehicles/0c084002aafd80d8/tesla-model-3.glb",
+      "start": 6855,
+      "ms": 625.6999999880791,
+      "bytes": 4766823,
+      "decoded": 5442756
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/vehicles/0c084002aafd80d8/nissan-nv200.glb",
+      "start": 6855.099999964237,
+      "ms": 195.9000000357628,
+      "bytes": 2062850,
+      "decoded": 2680536
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/vehicles/0c084002aafd80d8/fiat-500.glb",
+      "start": 6855.099999964237,
+      "ms": 860.5,
+      "bytes": 5527082,
+      "decoded": 6697240
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/structure/52f2de1e1eca67d1/index.html",
+      "start": 31907.30000001192,
+      "ms": 259.0999999642372,
+      "bytes": 3447,
+      "decoded": 9132
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/structure/52f2de1e1eca67d1/studio.css",
+      "start": 32176.599999964237,
+      "ms": 142,
+      "bytes": 4112,
+      "decoded": 14380
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/structure/52f2de1e1eca67d1/model.json",
+      "start": 32179.80000001192,
+      "ms": 144,
+      "bytes": 159969,
+      "decoded": 1762171
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/structure/52f2de1e1eca67d1/trials.json",
+      "start": 32355.399999976158,
+      "ms": 200.5,
+      "bytes": 25889,
+      "decoded": 236197
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/structure/52f2de1e1eca67d1/members.json",
+      "start": 32567,
+      "ms": 1906.5,
+      "bytes": 3701762,
+      "decoded": 35730641
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/structure/52f2de1e1eca67d1/pack.json",
+      "start": 35221.5,
+      "ms": 112.89999997615814,
+      "bytes": 549,
+      "decoded": 332
+    },
+    {
+      "url": "https://robjampar.github.io/ashley-heights-tour/model/structure/52f2de1e1eca67d1/trial-pack.json",
+      "start": 35367,
+      "ms": 107.59999996423721,
+      "bytes": 587,
+      "decoded": 408
+    }
+  ],
+  "longTasks": [
+    {
+      "start": 541.0999999642372,
+      "ms": 193
+    },
+    {
+      "start": 3689,
+      "ms": 209
+    },
+    {
+      "start": 3916.199999988079,
+      "ms": 664
+    },
+    {
+      "start": 6157.800000011921,
+      "ms": 89
+    },
+    {
+      "start": 6393.300000011921,
+      "ms": 461
+    },
+    {
+      "start": 7764.099999964237,
+      "ms": 921
+    },
+    {
+      "start": 8686,
+      "ms": 982
+    },
+    {
+      "start": 9721.800000011921,
+      "ms": 96
+    },
+    {
+      "start": 9842.599999964237,
+      "ms": 163
+    },
+    {
+      "start": 10054.5,
+      "ms": 350
+    },
+    {
+      "start": 10463.800000011921,
+      "ms": 328
+    },
+    {
+      "start": 10876.300000011921,
+      "ms": 63
+    },
+    {
+      "start": 11002.099999964237,
+      "ms": 304
+    },
+    {
+      "start": 17180.099999964237,
+      "ms": 355
+    },
+    {
+      "start": 24595.5,
+      "ms": 68
+    },
+    {
+      "start": 34473.69999998808,
+      "ms": 219
+    },
+    {
+      "start": 34702.19999998808,
+      "ms": 519
+    },
+    {
+      "start": 35221.5,
+      "ms": 85
+    },
+    {
+      "start": 35479.09999996424,
+      "ms": 117
+    },
+    {
+      "start": 39148.80000001192,
+      "ms": 94
+    },
+    {
+      "start": 46377.19999998808,
+      "ms": 137
+    },
+    {
+      "start": 48819.59999996424,
+      "ms": 102
+    }
+  ]
+}

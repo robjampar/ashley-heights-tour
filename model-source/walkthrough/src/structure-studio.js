@@ -16,12 +16,10 @@ const resource=name=>new URL(name,baseURL);
 const rootClass=embed?root.host.classList:document.body.classList;
 $('layers-toggle').onclick=()=>{const on=rootClass.toggle('layers-open');$('layers-toggle').setAttribute('aria-expanded',String(on));};
 const state={view:'model',level:'all',region:'house',retained:true,categories:[...ISOLATION.all],representation:'members',scope:'all',garageRebuild:true,loftUpgrade:true,roofOption:new URLSearchParams(location.search).get('roof')==='retain'?'retain':'replace',systemFilters:SYSTEM_KEYS.filter(k=>k!=='layers'),focusSystem:null,isolated:null,isolatedIds:null,mode:'solid',selected:null,trialOverlay:false,sectionAt:9.455};
-const response=await fetch(resource('model.json'));if(!response.ok)throw Error('Structural register failed to load');
-const data=await response.json();
-const trialResponse=await fetch(resource('trials.json'));if(!trialResponse.ok)throw Error('UK trial study failed to load');
-const trials=await trialResponse.json();data.elements.push(...trials.visualStudies);let trialScenario='reference';
-const memberResponse=await fetch(resource('members.json'));if(!memberResponse.ok)throw Error('Detailed members failed to load');
-const members=await memberResponse.json();
+const [data,trials,members]=await Promise.all(['model.json','trials.json','members.json'].map(async name=>{
+ const response=await fetch(resource(name));if(!response.ok)throw Error('Structural data failed to load: '+name);return response.json();
+}));
+data.elements.push(...trials.visualStudies);let trialScenario='reference';
 state.garageRebuild=members.garageOption.default!==false;
 const emptySelection=$('selection').innerHTML;
 for(const e of data.elements){e.roofContext=members.retainedRoofIds.includes(e.id);if(members.retainedIds.includes(e.id)){e.retained=true;e.scope='retained';}if(members.garageContextIds.includes(e.id)){e.retained=true;e.scope='retained';e.garageContext=true;}}
@@ -76,6 +74,10 @@ for(const es of batchGroups.values()){
   object.userData={batch:true,ranges,kind};scene.add(object);batches.push({object,es,kind});
  }
 }
+// Geometry is already in world coordinates. These objects never move, even
+// when the layer is composited beside the architecture or selected separately.
+scene.updateMatrixWorld(true);
+scene.traverse(object=>{object.matrixAutoUpdate=false;object.matrixWorldAutoUpdate=false;});
 let architecture=null,architecturePromise=null;
 async function context(on){
  if(embed){embed.context(on,Number($('context-opacity').value)/100,architectureClipping);return;}
@@ -131,6 +133,12 @@ function refresh(){
   object.material.color.set(kind==='mesh'&&e.category==='masonry'?'#ffffff':e.retained?'#718a9f':e.leaf==='block'?'#b9b9ac':CATEGORIES[e.category].color);
   object.material.opacity=kind==='mesh'?(e.retained?(e.category==='walls'&&state.mode==='solid'?.3:.055):e.member?(state.mode==='solid'?1:.14):state.mode==='solid'?.6:.055):(e.retained?.2:state.mode==='solid'?.28:.9);
   for(const item of es){const original=(kind==='mesh'?meshes:lines).get(item.id);if(original){original.visible=item.id===state.selected;original.renderOrder=2;}}
+ }
+ // Hidden per-member meshes remain in the picking/register maps, but need not
+ // be traversed by every house, shadow, normal and composite render pass.
+ for(const object of [...meshes.values(),...lines.values()]){
+  if(object.visible&&!object.parent)scene.add(object);
+  else if(!object.visible&&object.parent===scene)scene.remove(object);
  }
  $('model').hidden=state.view!=='model';$('drawing').hidden=['model','schedule','trials','costs','issues','roof-options','junctions','foundations'].includes(state.view);$('register').hidden=state.view!=='schedule';$('trials').hidden=state.view!=='trials';$('costs').hidden=state.view!=='costs';$('member-issues').hidden=state.view!=='issues';$('roof-options').hidden=state.view!=='roof-options';$('junctions').hidden=state.view!=='junctions';$('foundations').hidden=state.view!=='foundations';
  const elev=['front','rear','west','east'].includes(state.view);$('elevation').hidden=!elev;$('section-control').hidden=state.view!=='section';

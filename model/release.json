@@ -2123,7 +2123,7 @@
       "method": "Measured furniture studies; separate design review required"
     }
   },
-  "published_utc": "2026-11-04T09:55:11.361768+00:00",
+  "published_utc": "2026-11-04T10:25:23.691958+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -2212,35 +2212,17 @@
       "bytes": 27467,
       "sha256": "e103d12e34f2ab247a375d0c1744c0f3600ec135508ba3ff73fcd152ee351876"
     },
-    "app.70d40a6504ecefff.js": {
-      "bytes": 5577069,
-      "sha256": "70d40a6504ecefff7778760ce646794a3a29b48602f873ffb683fdbc49cbe10c"
+    "app.053a2a2286622136.js": {
+      "bytes": 5578405,
+      "sha256": "053a2a2286622136310263ed7de09bfc926005d120766ec6c342fd926564aaf6"
     }
   },
   "previous_assets": {
-    "proposal-compact.ebe984af95d9841c.glb.gz": {
-      "bytes": 42538361,
-      "sha256": "ebe984af95d9841c6cfc3f83f23a95d2b38b2fdaffa329ca1f5a3901277faa78",
-      "retired_at_epoch": 1793786111.361768,
-      "retain_until_epoch": 1793787911.361768
-    },
-    "proposal-compact-navigation.d98b335e9d6a67ee.json": {
-      "bytes": 2365245,
-      "sha256": "d98b335e9d6a67eec08e65f058792cfab894f15e63890f112dace26141a78d79",
-      "retired_at_epoch": 1793786111.361768,
-      "retain_until_epoch": 1793787911.361768
-    },
-    "style.ebb8ecb3363bef49.css": {
-      "bytes": 26736,
-      "sha256": "ebb8ecb3363bef49b6042a9a300359606621bea4ab720d674f271b529639452e",
-      "retired_at_epoch": 1793786111.361768,
-      "retain_until_epoch": 1793787911.361768
-    },
-    "app.8510037bb91baa56.js": {
-      "bytes": 5439753,
-      "sha256": "8510037bb91baa565c05da353c7328e744d54f80294dd095d324e0f15dfdd02d",
-      "retired_at_epoch": 1793786111.361768,
-      "retain_until_epoch": 1793787911.361768
+    "app.70d40a6504ecefff.js": {
+      "bytes": 5577069,
+      "sha256": "70d40a6504ecefff7778760ce646794a3a29b48602f873ffb683fdbc49cbe10c",
+      "retired_at_epoch": 1793787923.691958,
+      "retain_until_epoch": 1793789723.691958
     }
   },
   "easter": {
@@ -2673,7 +2655,7 @@
     "basis": "Approximate road and low-detail neighbouring buildings from supplied site images"
   },
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates.",
-  "staged_site_bytes": 888888808,
+  "staged_site_bytes": 949819004,
   "previous_runtime_assets": {
     "visual-quality/9ce5a8a9108f53d4/compact-daylight.json": {
       "bytes": 2414105,
@@ -2702,9 +2684,7 @@
     "visual-quality/9ce5a8a9108f53d4/planning-furnishings.json": {
       "bytes": 408660,
       "sha256": "7e174964a0e72c0a07de0f7e379529054f9c4dc6c52820109b455542d6d9c505"
-    }
-  },
-  "runtime_assets": {
+    },
     "visual-quality/f655624309a5687a/compact-daylight.json": {
       "bytes": 2422333,
       "sha256": "606a5475dcebdc8c5127545f00095dd39ee931b702ddc156211d8be66b9a364a"
@@ -2732,38 +2712,6 @@
     "visual-quality/f655624309a5687a/planning-furnishings.json": {
       "bytes": 408660,
       "sha256": "7e174964a0e72c0a07de0f7e379529054f9c4dc6c52820109b455542d6d9c505"
-    },
-    "vehicles/0c084002aafd80d8/CREDITS.md": {
-      "bytes": 4039,
-      "sha256": "a95768fc86b3626447b6c559af189fa0a4f317efadc15ae2e47060ef7fe174e6"
-    },
-    "vehicles/0c084002aafd80d8/credits.html": {
-      "bytes": 1810,
-      "sha256": "9b9791068be6012fbd3c94fcb39d5ec294d36e98f1a9464e81e20557cebf84ce"
-    },
-    "vehicles/0c084002aafd80d8/fiat-500.glb": {
-      "bytes": 6697240,
-      "sha256": "a648ac8556c6e18e7a4eadf96b139e0df410702d80547a55c59fe7bcbd50019f"
-    },
-    "vehicles/0c084002aafd80d8/fiat-500.json": {
-      "bytes": 245,
-      "sha256": "a07133e5dfad449d980bf51aed80fcaa1de0b5560cf0f4176e154ae71b045662"
-    },
-    "vehicles/0c084002aafd80d8/nissan-nv200.glb": {
-      "bytes": 2680536,
-      "sha256": "dadb9336a07b4aa38f33ff3b034d2fac1f82e3841d7a458da37c1b71a5509487"
-    },
-    "vehicles/0c084002aafd80d8/nissan-nv200.json": {
-      "bytes": 343,
-      "sha256": "16762919d9fab82aa4e82d9e344ba43777468423f44d340d2c40df232a9133da"
-    },
-    "vehicles/0c084002aafd80d8/tesla-model-3.glb": {
-      "bytes": 5442756,
-      "sha256": "ce4e68a9a742850f65b5338ffc8ea1d9eeffb3234d7c6f54749d1850e4cfc1b0"
-    },
-    "vehicles/0c084002aafd80d8/tesla-model-3.json": {
-      "bytes": 271,
-      "sha256": "8622a991caa44dec76de08dc5fe469493867d62faac93885b59143567a7e6194"
     },
     "structure/52f2de1e1eca67d1/index.html": {
       "bytes": 9132,
@@ -2810,10 +2758,116 @@
       "sha256": "74a66fd2fb52d8af3f603c1e027a4e200447bcc2dff41367da9fa98f2c1b7f7f"
     }
   },
+  "runtime_assets": {
+    "visual-quality/2fdc3ee54bfe6970/compact-daylight.json": {
+      "bytes": 2422333,
+      "sha256": "606a5475dcebdc8c5127545f00095dd39ee931b702ddc156211d8be66b9a364a"
+    },
+    "visual-quality/2fdc3ee54bfe6970/compact-furnishings.glb": {
+      "bytes": 24334128,
+      "sha256": "dc6bb6ffa631b2be372c8d565702747fb46fc87333af9b17d2a3bd712ad199f4"
+    },
+    "visual-quality/2fdc3ee54bfe6970/compact-furnishings.json": {
+      "bytes": 437582,
+      "sha256": "2d5317729ba7795e37edc62f6fbb88d65d9e72c4e2390f6a799d4d000b70bcec"
+    },
+    "visual-quality/2fdc3ee54bfe6970/daylight-settings.json": {
+      "bytes": 237,
+      "sha256": "9ec312cb26f68a1f603f13e48b5c8546ae7a86492989657f1b084249adab07c8"
+    },
+    "visual-quality/2fdc3ee54bfe6970/planning-daylight.json": {
+      "bytes": 1645565,
+      "sha256": "be91ccd59b38cdd66b1d24fb067910ffad92e7d14472bf9be65c7b92719678b3"
+    },
+    "visual-quality/2fdc3ee54bfe6970/planning-furnishings.glb": {
+      "bytes": 21685136,
+      "sha256": "a2a0d6bba3011a762ed81ab65e0ab7eed8c401d89dfbb6a9bd1c8a6630809813"
+    },
+    "visual-quality/2fdc3ee54bfe6970/planning-furnishings.json": {
+      "bytes": 408660,
+      "sha256": "7e174964a0e72c0a07de0f7e379529054f9c4dc6c52820109b455542d6d9c505"
+    },
+    "vehicles/0c084002aafd80d8/CREDITS.md": {
+      "bytes": 4039,
+      "sha256": "a95768fc86b3626447b6c559af189fa0a4f317efadc15ae2e47060ef7fe174e6"
+    },
+    "vehicles/0c084002aafd80d8/credits.html": {
+      "bytes": 1810,
+      "sha256": "9b9791068be6012fbd3c94fcb39d5ec294d36e98f1a9464e81e20557cebf84ce"
+    },
+    "vehicles/0c084002aafd80d8/fiat-500.glb": {
+      "bytes": 6697240,
+      "sha256": "a648ac8556c6e18e7a4eadf96b139e0df410702d80547a55c59fe7bcbd50019f"
+    },
+    "vehicles/0c084002aafd80d8/fiat-500.json": {
+      "bytes": 245,
+      "sha256": "a07133e5dfad449d980bf51aed80fcaa1de0b5560cf0f4176e154ae71b045662"
+    },
+    "vehicles/0c084002aafd80d8/nissan-nv200.glb": {
+      "bytes": 2680536,
+      "sha256": "dadb9336a07b4aa38f33ff3b034d2fac1f82e3841d7a458da37c1b71a5509487"
+    },
+    "vehicles/0c084002aafd80d8/nissan-nv200.json": {
+      "bytes": 343,
+      "sha256": "16762919d9fab82aa4e82d9e344ba43777468423f44d340d2c40df232a9133da"
+    },
+    "vehicles/0c084002aafd80d8/tesla-model-3.glb": {
+      "bytes": 5442756,
+      "sha256": "ce4e68a9a742850f65b5338ffc8ea1d9eeffb3234d7c6f54749d1850e4cfc1b0"
+    },
+    "vehicles/0c084002aafd80d8/tesla-model-3.json": {
+      "bytes": 271,
+      "sha256": "8622a991caa44dec76de08dc5fe469493867d62faac93885b59143567a7e6194"
+    },
+    "structure/a0619ec3e4f3dd25/index.html": {
+      "bytes": 9132,
+      "sha256": "953b3d28c1c92a589e024e771ada33b29b61d16ba8e942e1cb37e7c4b8bb9b47"
+    },
+    "structure/a0619ec3e4f3dd25/studio.css": {
+      "bytes": 14380,
+      "sha256": "4b5e9b82f5dbe759d3f272159404725a7253f7112677aa3e7d56bc446134c954"
+    },
+    "structure/a0619ec3e4f3dd25/studio.js": {
+      "bytes": 801532,
+      "sha256": "2960811a1cd4bf388532e4cc56ee4adfd45a8460eea4d790094b61ca43cc5739"
+    },
+    "structure/a0619ec3e4f3dd25/model.json": {
+      "bytes": 1762116,
+      "sha256": "1efe72d7f7e24a14c35c546b4c846a2f9c84999e8d6210d03cac054ef8b78123"
+    },
+    "structure/a0619ec3e4f3dd25/trials.json": {
+      "bytes": 144584,
+      "sha256": "4f5d46a7963d464b3d0d85a241ce57ff03a106749883cadca45c2d581fea8025"
+    },
+    "structure/a0619ec3e4f3dd25/members.json": {
+      "bytes": 35683321,
+      "sha256": "b6287e9ac5ffce17be8f42aceab0ba03c37b0660e698592fdc3d9491c1860f75"
+    },
+    "structure/a0619ec3e4f3dd25/member-schedule.json": {
+      "bytes": 15611327,
+      "sha256": "2099d358d31310f7ebae5561f76f8a76425f6e6e063f85c042447a0c2d6b26ac"
+    },
+    "structure/a0619ec3e4f3dd25/pack.json": {
+      "bytes": 310,
+      "sha256": "79abb5d2f9b9b479ea225a36d8c4b971fa929c85af50ef6b93cd631ce628df37"
+    },
+    "structure/a0619ec3e4f3dd25/trial-pack.json": {
+      "bytes": 382,
+      "sha256": "f0d5804a410b3f6c3e40263abda815a6437286b3d85c0cab9924c5a7cbd615e2"
+    },
+    "structure/a0619ec3e4f3dd25/coordination-pack.pdf": {
+      "bytes": 332322,
+      "sha256": "785a1d91d9dbd88b6f1407c503d63a82f829ed74bf77f6bdd692860c6a2cdf56"
+    },
+    "structure/a0619ec3e4f3dd25/trial-study.pdf": {
+      "bytes": 426225,
+      "sha256": "74a66fd2fb52d8af3f603c1e027a4e200447bcc2dff41367da9fa98f2c1b7f7f"
+    }
+  },
   "runtime_directories": {
-    "visual-quality": "visual-quality/f655624309a5687a/",
+    "visual-quality": "visual-quality/2fdc3ee54bfe6970/",
     "vehicles": "vehicles/0c084002aafd80d8/",
-    "structure": "structure/52f2de1e1eca67d1/"
+    "structure": "structure/a0619ec3e4f3dd25/"
   },
   "source_assets": {
     "house.glb": {
@@ -2918,7 +2972,7 @@
   },
   "structure": {
     "path": "./structure/",
-    "runtimePath": "./structure/52f2de1e1eca67d1/",
+    "runtimePath": "./structure/a0619ec3e4f3dd25/",
     "revision": "WM01-2026-10-29",
     "members": 2576,
     "approvedForConstruction": false

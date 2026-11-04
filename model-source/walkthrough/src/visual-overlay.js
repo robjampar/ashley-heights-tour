@@ -12,6 +12,7 @@ function objects(root){
 }
 export function installVisualOverlay(base,overlay,{roomOnly=false,removedObjects=[]}={}){
  const originals=objects(base),removed=new Set();let replaced=0,added=0;
+ const byName=new Map();for(const item of originals){const list=byName.get(item.name)??[];list.push(item);byName.set(item.name,list);}
  const acceptedSources=new Set(originals.flatMap(o=>[o.name,o.node.userData.source_name]));
  const retire=new Set(removedObjects);
  for(const item of originals)if(retire.has(item.name)||(roomOnly&&retire.has(item.node.userData.source_name))){item.node.removeFromParent();removed.add(item.node);}
@@ -19,7 +20,7 @@ export function installVisualOverlay(base,overlay,{roomOnly=false,removedObjects
  function match(name,node){
   // Full-house node names are unique. source_name can be shared by repeated
   // cushions, legs or boards; using it here leaves duplicate old geometry.
-  let candidates=originals.filter(o=>o.name===name&&!removed.has(o.node));
+  let candidates=(byName.get(name)??[]).filter(o=>!removed.has(o.node));
   if(roomOnly){
    const source=node.userData.source_name||name;
    candidates=originals.filter(o=>!removed.has(o.node)&&(o.name===name||o.node.userData.source_name===name||o.node.userData.source_name===source));
