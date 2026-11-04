@@ -10,4 +10,6 @@ The currently published assets remain available for cached clients. Eleven older
 
 Checks remain limited: the broad visual-quality audit fails an existing door-architrave alignment assertion (approximately 0.3645 m against a 0.12 m tolerance). The native, furnishings and lighting input hashes agree; this publication does not claim that geometry issue is fixed. The workspace layout check retains its existing findings. The experimental structure remains explicitly unapproved for construction.
 
-This record describes prepublication verification. Deployment and live-site results are recorded separately after upload; source commits alone do not establish that the site is live.
+Release commit `1948826` was pushed with source commit `c182c0d`. GitHub Pages run [41811770120](https://github.com/robjampar/ashley-heights-tour/actions/runs/41811770120) successfully deployed the complete site. Its packaged inventory matches the preview: 663 files, 888,414,152 bytes. The public release manifest now exposes WM01 and the immutable structure runtime. Live browser results are recorded separately in `live-checks.json`.
+
+All nine live browser checks passed with no page errors or HTTP failures. The public release manifest matches the staged release byte for byte. The direct `?design=proposed&structure=1` link enables the overlay automatically. Live screenshots were reviewed for the split view and initial structure view.

@@ -47,7 +47,7 @@
   },
   "geometryChanged": false,
   "approvedForConstruction": false,
-  "published": false,
+  "published": true,
   "inputHashChecks": {
     "compact": {
       "outputs/output-proposed-compact/Ashley Heights \u2014 Proposed (compact).blend": true,
@@ -64,5 +64,32 @@
       "outputs/output-visual-realism-planning/Ashley Heights \u2014 Proposed (planning application) \u2014 visual refinement.blend": true
     }
   },
-  "whitespaceReview": "Authored source clean; generated Three.js shader strings retain upstream whitespace."
+  "whitespaceReview": "Authored source clean; generated Three.js shader strings retain upstream whitespace.",
+  "releaseCommit": "19488262a07f789e80ebbfe4f2a815551505b0d9",
+  "pagesRun": 41811770120,
+  "liveBrowser": {
+    "base": "https://robjampar.github.io/ashley-heights-tour/model/",
+    "phase": "live",
+    "errors": [],
+    "failed": [],
+    "checks": [
+      "Structure button opens current overlay and register",
+      "Beam selection shows member inspector",
+      "Split view works",
+      "Floor plans render",
+      "Versioned member register download resolves",
+      "Standalone structure preserves member link and loads matching house",
+      "planning still loads",
+      "original still loads",
+      "Direct structure link enables overlay automatically"
+    ],
+    "structure": {
+      "revision": "WM01-2026-10-29",
+      "members": 2576,
+      "native": "WM01-west-brick-finish-2026-10-29",
+      "approved": false
+    },
+    "passed": true
+  },
+  "liveReleaseMatches": true
 }

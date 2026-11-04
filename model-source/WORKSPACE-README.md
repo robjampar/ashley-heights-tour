@@ -2,6 +2,8 @@
 
 Editable house models, design specifications, room studies and the local walkthrough.
 
+**Published 4 November 2026:** the [public Proposed walkthrough](https://robjampar.github.io/ashley-heights-tour/model/?design=proposed&structure=1) now includes the unified structural overlay, split view, member inspection and drawings, together with the WM01 model and west-recess brick finish. The earlier notes below describe local development stages; the [publication record](revisions/structural-publication-2026-11-04/README.md) identifies the released issue and verification limits.
+
 ## Open the project
 
 Double-click a launcher in **[launchers/](launchers/)**:

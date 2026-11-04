@@ -1,5 +1,9 @@
 # Workspace structure and maintenance
 
+## Current public structural walkthrough — 4 November 2026
+
+The public Proposed viewer now includes the unified Structure toggle, opacity/split controls, member inspection, drawings and register. Release `1948826` packages the current WM01 member data and coordinated native model with the west-recess brick finish; GitHub Pages run `41811770120` deployed it successfully. The structural runtime is content-addressed beside the matching model, with a stable `/model/structure/` redirect preserving member links. The prior main-view release remains available for cached clients. See the [publication and validation record](../revisions/structural-publication-2026-11-04/README.md), including the existing door-architrave audit failure. No native geometry or structural calculation was changed by publication.
+
 ## Source and generated files
 
 `source/` holds supplied reference material. `proposal/specs/` holds the current house/site specifications; `proposal/interiors/` holds accepted room assets. Earlier stage evidence and its study scripts live in `proposal/studies/`. `scripts/` contains packages grouped by responsibility, documented in its README. Imports, shared execution module lists and build fingerprints use these package paths.

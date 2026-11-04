@@ -12,8 +12,8 @@
     },
     "WORKSPACE-README.md": {
       "source": "README.md",
-      "sha256": "5e1c806f578e6e90d97fab4c67a4db48f20d764a44d6d3dea2c6952347755ea5",
-      "bytes": 25831
+      "sha256": "6c9e9c5a87ae065a3b2e14ea40c3721528ae62243fab8f298b793dab5fd0ecab",
+      "bytes": 26323
     },
     "docs/PROJECT-HISTORY.md": {
       "source": "docs/PROJECT-HISTORY.md",
@@ -27,8 +27,8 @@
     },
     "docs/WORKSPACE.md": {
       "source": "docs/WORKSPACE.md",
-      "sha256": "04bd2ab15ac205d8f43fd72c56d3f604cdf50ef8ffdb2959fc02bdefc3f6c254",
-      "bytes": 134202
+      "sha256": "58c01d1420b4c6ce8984881d25468b297c617b2432a8fac2781934aca7f3cf6b",
+      "bytes": 135013
     },
     "docs/maintenance/CLEANUP-2026-09-29.md": {
       "source": "docs/maintenance/CLEANUP-2026-09-29.md",
@@ -5342,8 +5342,8 @@
     },
     "revisions/structural-publication-2026-11-04/README.md": {
       "source": "revisions/structural-publication-2026-11-04/README.md",
-      "sha256": "ccf2590b67cf4ae562a63f0bf2b8dfc93b8f95f7a01fa3f124a0bb5fd7ea697a",
-      "bytes": 2295
+      "sha256": "067e23d7b79d4aded021cdc4f04036a75f1ee918f9d7b825d2c31696287f7503",
+      "bytes": 2854
     },
     "revisions/structural-publication-2026-11-04/artifact.json": {
       "source": "revisions/structural-publication-2026-11-04/artifact.json",
@@ -5362,8 +5362,8 @@
     },
     "revisions/structural-publication-2026-11-04/validation.json": {
       "source": "revisions/structural-publication-2026-11-04/validation.json",
-      "sha256": "de990757a2f437c191dc6910c239c404f2439c9a7d99575c2928dbf59e43bfd0",
-      "bytes": 2533
+      "sha256": "5acf848d5d00637885cd6cf1d93b7ec8691d7f7f7f580020a395611cb5794491",
+      "bytes": 3420
     },
     "revisions/structural-replacement-and-supports-2026-10-26/README.md": {
       "source": "revisions/structural-replacement-and-supports-2026-10-26/README.md",
@@ -10497,8 +10497,8 @@
     },
     "walkthrough/tests/structural-publication-browser.mjs": {
       "source": "walkthrough/tests/structural-publication-browser.mjs",
-      "sha256": "ee0b341ec0b072fec8841a10e4525a76d0123fffd012e17ee6cc795e82013f94",
-      "bytes": 4508
+      "sha256": "49c4fe9f4d5ff574f961a8262fa7e2452038dc0d07d43c7d1959223235954522",
+      "bytes": 4875
     },
     "walkthrough/tests/structure-bearings.test.mjs": {
       "source": "walkthrough/tests/structure-bearings.test.mjs",
@@ -10694,6 +10694,11 @@
       "source": "walkthrough/tools/verify-compressed-glbs.mjs",
       "sha256": "fca1e1912bedd5bd0187f379697b08c8f2d03bd0b6f60db9a06e84d3cfce3d5e",
       "bytes": 1207
+    },
+    "revisions/structural-publication-2026-11-04/live-checks.json": {
+      "source": "revisions/structural-publication-2026-11-04/live-checks.json",
+      "sha256": "bb6846a45da1b8ec27ddd53c1758dd9fa35c47aa67a193a0163207b7ccb70046",
+      "bytes": 703
     }
   },
   "required_local_baselines": {

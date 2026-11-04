@@ -31,6 +31,9 @@ try{
  await page.waitForFunction(()=>window.structureStudio.architecture?.children.length>0);
  record.checks.push('Standalone structure preserves member link and loads matching house');
  for(const design of ['planning','original']){await page.goto(base+'?design='+design);await page.waitForFunction(()=>window.walkthrough?.ready);assert.equal(await page.locator('#structure-toggle').isVisible(),false);record.checks.push(design+' still loads');}
+ await page.goto(base+'?design=proposed&structure=1');await page.waitForFunction(()=>window.walkthrough?.structure?.enabled);
+ assert.equal(await page.locator('#structure-toggle').textContent(),'Structure on');
+ await page.screenshot({path:new URL('direct-structure-link.png',out).pathname});record.checks.push('Direct structure link enables overlay automatically');
  assert.deepEqual(record.errors,[]);assert.deepEqual(record.failed,[]);record.passed=true;
  console.log(phase,record.checks.length,'checks passed');
 }catch(error){record.passed=false;record.error=String(error.stack);throw error;}
