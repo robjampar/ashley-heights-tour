@@ -1,0 +1,38 @@
+{
+  "revision": "VB01-2026-11-09",
+  "ownerAccepted": true,
+  "ownerInstruction": "Use conservative allowances: fully laden van up to 3.5 tonnes and Tesla up to 3.1 tonnes, potentially parked together.",
+  "vehicles": [
+    {"id": "van", "name": "Laden van", "maximumGrossMassKg": 3500},
+    {"id": "tesla", "name": "Tesla allowance", "maximumGrossMassKg": 3100}
+  ],
+  "simultaneousParking": true,
+  "gravityMPerS2": 9.81,
+  "provisionalVehicleUDLKPa": 5.0,
+  "localPointSensitivitiesKN": [20, 25, 30],
+  "assumptions": {
+    "maximumAxleFraction": 0.65,
+    "heavierWheelFractionOfAxle": 0.60,
+    "movementSensitivityFactor": 1.20,
+    "trackWidthsM": [1.6, 1.8, 2.0],
+    "jackFloorLoadKN": 30,
+    "note": "Axle fractions, track widths, wheel imbalance and movement factor are explicit study assumptions, not vehicle data or prescribed Eurocode values. The 30 kN jack case is a separate local floor action, not additional vehicle mass. Actual plated axle ratings and tyre/jack contact patches remain required."
+  },
+  "codeBasis": {
+    "provisionalCategory": "G: both gross vehicle allowances exceed 30 kN",
+    "basis": "Use first-generation EN 1991-1-1 with the applicable UK National Annex as the provisional project basis. JRC guidance gives Category G for 30-160 kN vehicles and a 5 kPa UDL. Exact UK concentrated-action requirements, combinations, access restrictions and edition must be confirmed by the designer. No 40-90 kN generic axle range is silently adopted as the selected UK axle load.",
+    "confirmedUKNormativeLocalLoad": false,
+    "sources": [
+      {"title": "JRC Eurocode 1 workshop, page 32", "url": "https://eurocodes.jrc.ec.europa.eu/sites/default/files/2022-06/EN1991_2_Malakatas.pdf"},
+      {"title": "IStructE Eurocode transition guidance", "url": "https://www.istructe.org/resources/eurocodes/"}
+    ]
+  },
+  "limits": [
+    "Two vehicles together is the operational brief, not a verified parking layout or full-deck load-pattern analysis.",
+    "UDL, axle pairs and local jack sensitivities are evaluated separately; the full vehicle weights are not added again to those actions.",
+    "Transverse spreading through topping/infill, tyre and jack patches, punching, beam torsion and joint transfer remain unverified.",
+    "The paired-wheel study assumes an axle parallel to the precast beam. Turning, wheelbase, both axles, edge approaches and loads shared through the central wall/opening heads need full layout analysis.",
+    "Vehicle weights are variable actions and must not be credited as permanent resistance to groundwater uplift.",
+    "No car lift, heavier vehicle or construction plant is included in this parking brief."
+  ]
+}

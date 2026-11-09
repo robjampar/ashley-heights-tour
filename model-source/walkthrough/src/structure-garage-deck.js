@@ -1,0 +1,42 @@
+import {esc,resolveGarageDeck} from './structure-geometry.js';
+
+export function installGarageDeck(members){
+ const study=members.garageBeamBlock;if(!study||members.garageDeckInstalled)return;
+ for(const e of members.elements)if(study.replacesIds.includes(e.id))e.garageDeckOption='solid-rc';
+ members.elements.push(...study.elements);
+ Object.assign(members.rates,study.rates);
+ members.issues.push({id:'BB01',severity:'unresolved',title:'Selected beam-and-block garage: detailed design pending',detail:study.decision+' '+study.supplierReference.limitation,elementIds:['M-BB01-TOPPING','M-BB01-EDGE-RC','M-BB01-BEAM-W-08']});
+ members.garageDeckInstalled=true;
+}
+export function deckFoundations(members,option){
+ return resolveGarageDeck(members,option)==='beam-block'&&members.garageBeamBlock?{...members,foundations:members.garageBeamBlock.foundations}:members;
+}
+const n=(x,d=2)=>Number(x).toFixed(d);
+export function vehicleBriefMarkup(study){
+ const v=study.vehicleBrief;if(!v)return '';const a=v.assumptions;
+ const vehicles=v.vehicles.map(item=>`${n(item.maximumGrossMassKg/1000,1)} t ${esc(item.id==='van'?'laden van':item.name.replace(' allowance',''))}`).join(' + ');
+ return `<section class="garage-vehicle-brief"><h3>Agreed vehicles · VB01</h3><p><strong>${vehicles}, parked together.</strong> Combined static weight ${n(v.combinedStaticWeightKN,1)} kN. These are maximum gross allowances, not kerb weights or identified vehicle models.</p><p>Provisional Category G study: ${n(v.provisionalVehicleUDLKPa,1)} kPa vehicle UDL, separate ${v.localPointSensitivitiesKN.join(' / ')} kN point/jack sensitivities, plus paired-wheel cases. Exact UK local actions and full parking/load patterns require designer confirmation.</p><p>Axle assumption: ${n(a.maximumAxleFraction*100,0)}% of vehicle weight; wheel split ${n(a.heavierWheelFractionOfAxle*100,0)}:${n((1-a.heavierWheelFractionOfAxle)*100,0)}; study movement factor ×${n(a.movementSensitivityFactor,2)}. Neither equal sharing across beams nor these assumed vehicle distributions is verified. Vehicles are not credited against groundwater uplift.</p><p><a href="${esc(study.enquiryUrl??'garage-deck-enquiry.pdf')}" target="_blank" rel="noopener">Open supplier enquiry pack ↗</a></p></section>`;
+}
+export function garageDeckMarkup(members,{detail=false,garageDeck=resolveGarageDeck(members)}={}){
+ const s=members.garageBeamBlock;if(!s)return '';
+ const q=s.quantities,ref=s.supplierReference;
+ const table=[['Site concrete',n(q.baselineConcreteM3)+' m³',n(q.siteConcreteM3)+' m³ + '+n(q.groutM3)+' m³ grout'],
+ ['Deck self-weight',n(q.baselineWeightKN,1)+' kN',n(q.alternativeWeightKN,1)+' kN'],
+ ['Structural depth','250 mm','150 mm beams + 100 mm nominal topping'],
+ ['Floor / basement ceiling','Existing datums','Unchanged'],
+ ['Components','Poured slab',q.beamCount+' beams · '+q.blockCount+' infill pieces']];
+ let checks='';
+ if(detail){
+  const cases=s.demandCases.filter(c=>c.action==='distributed'||c.stationFraction===.5);
+  checks=`<details><summary>Vehicle-load sensitivity — not supplier verification</summary><p>UDL and isolated wheel/jack cases are separate. Local loads of ${s.vehicleBrief?.localPointSensitivitiesKN.join(' / ')??'10 / 15 / 20'} kN are compared with hypothetical sharing across 1–5 beams. Equal sharing is NOT established by the model. Demand uses 1.35 G + 1.50 Q; no composite beam capacity or deflection result is assumed.</p><div class="table-scroll"><table><thead><tr><th>Case / bay</th><th>Action / sharing assumption</th><th>ULS moment</th><th>ULS end reactions</th></tr></thead><tbody>${cases.map(c=>`<tr><td>${esc(c.scenario)} / ${esc(c.bay)}</td><td>${c.action==='distributed'?n(c.vehicleUDLKPa,1)+' kPa':n(c.localLoadKN,0)+' kN ÷ '+c.assumedSharingBeams+' beam(s)'}</td><td>${n(c.uls.momentKNm)} kNm</td><td>${c.uls.reactionsKN.map(x=>n(x)).join(' / ')} kN</td></tr>`).join('')}</tbody></table></div><p>The linked data also checks local loads at 5%, 25%, 75% and 95% of the span. Legacy reference: ${n(ref.serviceMomentKNm)} kNm service moment, ${n(ref.ultimateMomentKNm)} kNm ultimate moment, ${n(ref.ultimateShearKN)} kN shear. ${esc(ref.limitation)}</p></details>`;
+  if(s.pairedAxleCases)checks+=`<details><summary>Paired-wheel demand · van and Tesla</summary><p>Upper permanent-load case. Two wheel forces move together at assumed tracks of 1.6 / 1.8 / 2.0 m; both 60:40 orientations and eleven stations are sampled. Reactions below are separate end envelopes, not a simultaneous pair. This is a local axle study, not a verified whole-deck parking analysis.</p><div class="table-scroll"><table><thead><tr><th>Vehicle / bay</th><th>Assumed beams sharing</th><th>Max ULS moment</th><th>Left / right reaction envelopes</th></tr></thead><tbody>${s.pairedAxleCases.map(c=>`<tr><td>${esc(c.vehicleName)} / ${esc(c.bay)}</td><td>${c.assumedSharingBeams}</td><td>${n(c.worstUlsMoment.uls.momentKNm)} kNm</td><td>${n(c.worstLeftReaction.uls.reactionsKN[0])} / ${n(c.worstRightReaction.uls.reactionsKN[1])} kN</td></tr>`).join('')}</tbody></table></div></details>`;
+
+ }
+ return `<article class="trial-card"><h2>Garage floor over basement · selected system</h2><p><strong>${garageDeck==='beam-block'?'Viewing the selected beam-and-block proposal':'Viewing the solid RC alternative'}.</strong> ${esc(s.decision)}</p>${vehicleBriefMarkup(s)}<div class="table-scroll"><table><thead><tr><th>Item</th><th>Solid RC alternative</th><th>Beam-and-block proposal</th></tr></thead><tbody>${table.map(row=>`<tr>${row.map(x=>`<td>${esc(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p>${n(q.siteConcreteReductionPercent,0)}% less site concrete, with precast concrete and blocks added separately. This is not the same percentage saving in weight or installed cost. ${q.cutBlockCount} infill pieces need cuts; supplier layout and waste allowance remain outstanding.</p><p><strong>Bearing route:</strong> two ${s.clearSpansM.map(x=>n(x,3)).join(' / ')} m clear bays, onto the perimeter concrete and existing cinema bearing wall/opening heads. The solid north strip retains the bearing wall and stair/girder junction. No upper masonry load is assigned to the infill.</p><p><strong>Build-up:</strong> 100 mm nominal topping reserves 25 mm for camber/tolerance above a 75 mm minimum comparison allowance. Manufacturer camber, reinforcement, fire/thermal layers and complete wheel-load design are unverified.</p><p><button class="outline" data-garage-deck-view="framing">Inspect beams, blocks and bearings</button> <button class="outline" data-garage-deck-view="complete">Show topping</button> <button class="text-button" data-garage-deck-option="solid-rc">Compare solid RC</button></p>${checks}${s.deeperBeamComparison?`<details><summary>Deeper-beam alternative considered</summary><p>${esc(s.deeperBeamComparison.section)}. A 225 mm beam + 100 mm topping + 22 mm finish totals 347 mm, extending 22 mm below the current structural/finish envelope while leaving about 85 mm above the ceiling board. ${esc(s.deeperBeamComparison.basis)}</p></details>`:''}<details><summary>Construction sequence and outstanding design</summary><ol>${s.installation.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><ul>${s.openDesign.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details><p><a href="${esc(ref.url)}" target="_blank" rel="noopener">Supplier reference · legacy guide, pages 10 and 12 ↗</a></p></article>`;
+}
+
+export function garageDeckMemberFacts(e,members,state={}){
+ if(e.deckRole)return `<h2>Beam-and-block proposal</h2>${e.profileBasis?`<p>${esc(e.profileBasis)}</p>`:''}${e.nominalBearingsMm?`<p>Nominal end bearings ${e.nominalBearingsMm.join(' / ')} mm. Clear span ${n(e.nominalClearSpanM,3)} m; ${n(e.engineeringSpanM,3)} m between bearing centres. Geometric seat only; capacity and erection tolerance require design.</p>`:''}${e.flangeSeatMm?`<p>Modelled block overlap on each flange: ${n(e.flangeSeatMm,1)} mm. Verify block strength, flange profile, seating and tolerances with the supplier.</p>`:''}${e.reinforcementStatus?`<p>${esc(e.reinforcementStatus)}</p>`:''}${e.loadPathNote?`<p>${esc(e.loadPathNote)}</p>`:''}${(e.supportMemberIds??[]).map(id=>`<button class="text-button" data-focus-member="${esc(id)}">Support ${esc(id)} ↗</button>`).join('')}${garageDeckMarkup(members,{...state,detail:true})}`;
+ if(members.garageBeamBlock?.replacesIds.includes(e.id))return garageDeckMarkup(members,{...state,detail:true});
+ return '';
+}

@@ -304,6 +304,9 @@ def build(navpath=None):
     for zid in ('GROUND-WEST','GROUND-EAST'):zone_polys[zid]=zone_polys[zid].intersection(ground_inside)
     ground_deck=floor_spec.get('groundDeckStrategy')
     if ground_deck:
+        from scripts.structure.garage_vehicle_brief import apply_vehicle_brief
+        ground_deck=apply_vehicle_brief(ground_deck)
+        floor_spec['groundDeckStrategy']=ground_deck
         slab_plan=Polygon(ground_deck['geometry']['slabClearPolygon'])
         opening_coords=ground_deck['geometry']['newBasementStairVoid'].copy();opening_coords[0]=6.15
         opening=box(*opening_coords)
@@ -1339,6 +1342,22 @@ def build(navpath=None):
         beamOptimisation=beam_optimisation,
         garageSevenMetre={k:v for k,v in cj02.items()if k not in('operations','replacementMeshes','boxes','retire')}if cj02 else None,
         continuousJoistIntegration={k:v for k,v in cj.items()if k not in('operations','replacementMeshes','finalMeshCorrections','retire','lightMoves')}if cj else None,sourceHashes={str(p.relative_to(ROOT)):digest(p) for p in [ROOT/'scripts/structure/exterior_masonry_junctions.py',exterior_masonry.SPEC,ROOT/'scripts/structure/beam_optimisation.py',ROOT/'proposal/specs/beam-optimisation.json',ROOT/'scripts/structure/garage_seven_metre.py',ROOT/'proposal/specs/garage-seven-metre.json',ROOT/'scripts/structure/continuous_joist_integration.py',ROOT/'proposal/specs/continuous-joist-integration.json',SPEC,WALL_SPEC,FLOOR_SPEC,JUNCTION_SPEC,finish_path,Path(__file__).resolve(),ROOT/'scripts/structure/garden_room.py',ROOT/'scripts/structure/ground_floor.py',ROOT/'scripts/structure/sw02_integration.py',ROOT/'scripts/structure/simple_stacked_wall_study.py',ROOT/'proposal/specs/simple-structure-retained-suite.json',ROOT/'scripts/structure/vehicle_deck_study.py',ROOT/'scripts/structure/covering_fit.py',ROOT/'scripts/structure/foundations.py',foundation_path,ROOT/'scripts/structure/junctions.py',ROOT/'scripts/structure/masonry_details.py',ROOT/'scripts/structure/support_screen.py',ROOT/'scripts/structure/loft_loadpath.py',ROOT/'scripts/structure/column_study.py',ROOT/'scripts/structure/continuous_beam.py',ROOT/'scripts/structure/beam_analysis.py',ROOT/'scripts/structure/trial_calculations.py',ROOT/'scripts/structure/requirements.txt',OUT/'model.json',OUT/'trials.json',navpath,catpath]})
+    # Separate optional deck: never feed two mutually exclusive slabs into the
+    # accepted model's intersection, bearing or foundation calculations.
+    from scripts.structure.garage_beam_block import build_alternative, SPEC as beam_block_spec
+    result['garageBeamBlock'] = build_alternative(result)
+    # Retain the RC calculations/geometry as an explicitly labelled alternative.
+    # The selected scheme lives in its own payload to keep audit solids exclusive.
+    result['garageDeckDefault'] = result['garageBeamBlock']['defaultOption']
+    for element in elements:
+        if element['id'] in result['garageBeamBlock']['replacesIds']:
+            element['garageDeckOption'] = 'solid-rc'
+            element['status'] = 'Solid RC comparison only; vehicle deck design unresolved'
+    for path in (beam_block_spec, ROOT/'scripts/structure/garage_beam_block.py', ROOT/'scripts/structure/garage_vehicle_brief.py', ROOT/'proposal/specs/garage-vehicle-brief.json', ROOT/'scripts/structure/garage_supplier_pack.py'):
+        result['sourceHashes'][str(path.relative_to(ROOT))] = digest(path)
+    from scripts.structure.garage_supplier_pack import generate_pack
+    result['garageBeamBlock']['enquiryPack'] = generate_pack(result, OUT/'garage-deck-enquiry.pdf')
+    (OUT/'garage-beam-block.json').write_text(json.dumps({k:v for k,v in result['garageBeamBlock'].items() if k!='elements'},indent=2)+'\n')
     (OUT/'covering-fit.json').write_text(json.dumps(covering_fit,indent=2)+'\n')
     (OUT/'junction-review.json').write_text(json.dumps(junction_review,indent=2)+'\n')
     (OUT/'members.json').write_text(json.dumps(result,separators=(',',':'))+'\n')

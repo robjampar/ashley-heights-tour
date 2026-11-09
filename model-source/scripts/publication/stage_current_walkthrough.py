@@ -85,6 +85,9 @@ def stage(root=ROOT,recovery_dir=None):
         manifest['designs'][key+'_updated_at']=n['modelUpdatedAt']
         manifest.setdefault('current_revisions',{})[variant]={k:n[k]['revision']for k in('continuousWingRoof','gardenWorkshopEnvelope')if k in n}
     manifest['structure']={'path':'./structure/','runtimePath':'./'+prefix,'revision':members['revision'],'members':len(members['elements']),'approvedForConstruction':members['approvedForConstruction']}
+    if members.get('garageBeamBlock'):
+        deck=members['garageBeamBlock']
+        manifest['structure']['garageDeck']={'defaultOption':deck['defaultOption'],'selection':deck['selection'],'members':len(deck['elements']),'enquiryPack':'./'+prefix+'garage-deck-enquiry.pdf','approvedForConstruction':False}
     manifest['validation']={'revision':'WM01-west-brick-finish-2026-10-29','sha256':sha((root/'revisions/west-recess-brick-finish-2026-10-29/validation.json').read_bytes()),'scope':'Material/export checks and prior WM01 model validation; publication browser checks recorded separately.'}
     write('release.json',(json.dumps(manifest,indent=2)+'\n').encode())
     total=public_bytes(repo);assert total<1_000_000_000,total

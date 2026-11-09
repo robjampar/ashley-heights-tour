@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {costRows,costTotals,memberCSV,costMarkup,ISOLATION,memberFacts,timberFramingCosts} from '../src/structure-members.js';
-import {filteredElements,makeDrawing,MEMBER_CATEGORIES} from '../src/structure-geometry.js';
+import {filteredElements,makeDrawing,MEMBER_CATEGORIES,garageDeckElements} from '../src/structure-geometry.js';
 const members=JSON.parse(await readFile(new URL('../public/structure/members.json',import.meta.url),'utf8'));
 const architecture=JSON.parse(await readFile(new URL('../public/structure/model.json',import.meta.url),'utf8'));
 const data={...architecture,elements:[...architecture.elements.map(e=>({...e,retained:e.retained||members.retainedIds.includes(e.id),garageContext:members.garageContextIds.includes(e.id),roofContext:members.retainedRoofIds.includes(e.id)})),...members.elements]};
@@ -144,7 +144,7 @@ test('wall framing costs and CSV preserve roles without counting them twice',()=
  for(const role of roles){const e=members.elements.find(e=>e.framingRole===role);assert.ok(memberFacts(e,members,members.rates).includes('Framing role'));}
 });
 test('steel receiver allowances use mass and roof fascia stays distinct from bearing headers',()=>{
- const rows=costRows(members),steel=rows.filter(e=>members.elements.find(m=>m.id===e.id).proposedBeamLine);
+ const elements=garageDeckElements(members),rows=costRows(members),steel=rows.filter(e=>elements.find(m=>m.id===e.id).proposedBeamLine);
  assert.equal(steel.length,9); // The two east gallery receiver pieces are now one continuous steel.
  assert.ok(!rows.some(e=>e.id==='M-FR-1-019'));assert.ok(rows.some(e=>e.id==='M-FR-1-035'));assert.ok(steel.every(e=>e.material==='steel'&&e.unit==='kg'&&e.rateKey==='steel'));
  const roof=filteredElements(data,{representation:'members',categories:ISOLATION.roof,focusSystem:'roof',roofOption:'replace',retained:false});

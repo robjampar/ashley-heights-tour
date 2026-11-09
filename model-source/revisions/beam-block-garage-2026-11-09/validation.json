@@ -1,0 +1,563 @@
+{
+  "recordedAtUTC": "2026-11-09T15:48:38.942585+00:00",
+  "revision": "BB01-2026-11-09",
+  "defaultOption": "solid-rc",
+  "adopted": false,
+  "approvedForConstruction": false,
+  "baseline": {
+    "beforeMembers": 2576,
+    "afterMembers": 2576,
+    "memberChangesOtherThanSourceIdOrder": 0,
+    "sourceIdOrderOnlyCount": 263,
+    "foundationsUnchanged": true,
+    "beforeRecordedIntersections": 81,
+    "afterRecordedIntersections": 81
+  },
+  "alternative": {
+    "objects": 335,
+    "quantities": {
+      "baselineConcreteM3": 13.618337260580201,
+      "siteConcreteM3": 6.964007261381203,
+      "groutM3": 0.2525999999725238,
+      "siteConcreteReductionPercent": 48.86301368420871,
+      "beamCount": 32,
+      "beamLengthM": 137.27999998399997,
+      "blockCount": 300,
+      "cutBlockCount": 60,
+      "blockVolumeM3": 2.5928999996774977,
+      "baselineWeightKN": 340.45843151450504,
+      "alternativeWeightKN": 297.1836320578356,
+      "weightDeltaKN": -43.27479945666943,
+      "structureDepthMm": 250,
+      "finishAndScreedMm": 75,
+      "undersideZ": -0.325,
+      "finishedFloorZ": 0,
+      "basementCeilingZ": -0.4639
+    },
+    "audit": {
+      "internalIntersections": [],
+      "sharedStructureIntersections": [],
+      "outsideOriginalSlabM3": 0.0,
+      "bearingSeats": [
+        {
+          "memberId": "M-BB01-BEAM-W-01",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995793,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-01",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999998672,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-02",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999647,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-02",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016500000000001666,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-03",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999994977,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-03",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.0164999999999984,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-04",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995723,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-04",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999935,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-05",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999996434,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-05",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999813,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-06",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999994943,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-06",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999147,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-07",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995654,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-07",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999997926,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-08",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999996334,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-08",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999998877,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-09",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999994842,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-09",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999997725,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-10",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999552,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-10",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016500000000000077,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-11",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.0206249999999962,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-11",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999752,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-12",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999994776,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-12",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999847,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-13",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995453,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-13",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999418,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-14",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999613,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-14",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999283,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-15",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999994707,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-15",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999147,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-16",
+          "end": 1,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995383,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-W-16",
+          "end": 2,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999806,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-01",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999759,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-01",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995893,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-02",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.0165000000000017,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-02",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999996434,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-03",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.0164999999999984,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-03",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995078,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-04",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999998266,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-04",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999997857,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-05",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999213,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-05",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999637,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-06",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999147,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-06",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999994877,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-07",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999012,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-07",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999569,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-08",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999779,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-08",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999637,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-09",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999997725,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-09",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999996976,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-10",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999748,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-10",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995623,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-11",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999752,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-11",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999998332,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-12",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999553,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-12",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999474,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-13",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999418,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-13",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999995418,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-14",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.016499999999999283,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-14",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.020624999999996094,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-15",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999806,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-15",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999474,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-16",
+          "end": 1,
+          "expectedAreaM2": 0.016499999999999855,
+          "contactAreaM2": 0.01649999999999806,
+          "capacityVerified": false
+        },
+        {
+          "memberId": "M-BB01-BEAM-E-16",
+          "end": 2,
+          "expectedAreaM2": 0.020624999999999893,
+          "contactAreaM2": 0.02062499999999752,
+          "capacityVerified": false
+        }
+      ],
+      "unchangedFloorAndCeilingLevels": true,
+      "capacityVerified": false
+    },
+    "loadCases": 156,
+    "deeperComparison": {
+      "section": "125 \u00d7 225 mm at 530 mm centres \u2014 comparison only, not drawn",
+      "totalWith100mmToppingAnd22mmFinishMm": 347,
+      "extraDepthBelowCurrentEnvelopeMm": 22,
+      "nominalCeilingServiceSpaceMm": 85.4,
+      "worstLegacyDemandRatioByAssumedSharing": {
+        "1": 1.8500612793530506,
+        "2": 1.1870240006268244,
+        "3": 0.9666917222512971,
+        "4": 0.8565255830635331,
+        "5": 0.7904258995508748
+      },
+      "basis": "A deeper beam is a credible supplier alternative, not ruled out: replace the 53 mm screed allowance with structural topping and lower the beam bearing datum by 22 mm. This requires revised wall seats and opening-head checks. Capacity, complete build-up and wheel sharing remain unverified; the shallower option is drawn solely to preserve all current interfaces.",
+      "capacityVerified": false
+    }
+  },
+  "tests": {
+    "fullPythonBeforeFinalVisualCorrection": 320,
+    "fullWebBeforeFinalVisualCorrection": 323,
+    "finalPythonGeometryAndLoads": 7,
+    "finalWebTargeted": 9,
+    "finalBrowserChecks": 9,
+    "browserErrors": [],
+    "browserFailedResponses": [],
+    "browserReport": "walkthrough/test-results/beam-block-garage-2026-11-09/checks.json"
+  },
+  "visualReview": {
+    "reviewed": [
+      "02-beams-blocks-bearings.png",
+      "03-topping.png",
+      "04-plan.png",
+      "05-costs.png",
+      "06-walkthrough-overlay.png"
+    ],
+    "folder": "walkthrough/test-results/beam-block-garage-2026-11-09",
+    "correctedFindings": [
+      "Removed coplanar zero-volume caps that obscured infill.",
+      "Removed double-render flicker on selected batch surfaces."
+    ],
+    "scope": "Desktop Chrome local model/plan/cost/overlay, not an engineering or whole-house visual approval."
+  },
+  "workspaceLayout": {
+    "exitCode": 2,
+    "findings": 345,
+    "sameFindingSetAs": "logs/viewer-performance-layout-2026-11-04.log",
+    "added": [],
+    "removed": []
+  },
+  "nativeBlenderRebuilt": false,
+  "published": false,
+  "publishingCheckoutChanged": false,
+  "sha256": {
+    "proposal/specs/garage-beam-block.json": "5ee23edadbfee671ec7702e578f7d522764637b7d46f2c33f0edc3438d754c7e",
+    "scripts/structure/garage_beam_block.py": "98747d6f7d611354eab2bfd9b82d318f2c55757b7d785a0d04c144fecdf50566",
+    "scripts/structure/build_members.py": "053abb5e0b2f3a7505e2692d34dbe563dd4e7335f370d83e2d1689dc02d32b12",
+    "walkthrough/src/structure-garage-deck.js": "a951a3d33e5ee2b3acb64d8e7f11057ae12f6f171e93ae02e370ce8ade4c394c",
+    "walkthrough/src/structure-geometry.js": "a1090c0c113809c903084a245d04f8329014ccbc50092bb5e9c473952a0264f3",
+    "walkthrough/src/structure-studio.js": "36cbe30bf5e6039233608268489b15c10fe774066498bdca811663adecdd5fee",
+    "walkthrough/src/structure-members.js": "e594b7e0998dbff6507cfc671bbdcbd7359ac3206fa9d03e914e288daf27cc5b",
+    "walkthrough/src/structure-foundations.js": "f4f97ea422d9d2f8b92282ff6d9467f0a91ea7c30de8292ede88cf8d1e3f257a",
+    "walkthrough/src/structure-junctions.js": "beb6f0743a058ae9459c9baddfe5b8f3b5d7a942f01846f97b46429fcb12c4c6",
+    "walkthrough/public/structure/index.html": "c9a081e80a10fb48c728fcd77c7be35b834dfeacfba2ae7f8fd3ce0d2f8333a7",
+    "tests/test_garage_beam_block.py": "4c5022b28eaba4bd5193fdf2697739ce248e2a016d03747020fa12aec1415c14",
+    "walkthrough/tests/garage-beam-block.test.mjs": "8137b4f3303c5498f52c2ddf85151324488d8701ebbe61a87e6a6498107aed5e",
+    "walkthrough/tests/garage-beam-block-browser.mjs": "4411c7f546edf82a5ca53acf07b6b0ea39125395e2be6dd03b111d1cc6dcb07c",
+    "walkthrough/public/structure/members.json": "8cb3cdd16f807a7c0446ea7bfa2d2021e4037ef260f5e1b936073e14f3a83f94",
+    "walkthrough/public/structure/garage-beam-block.json": "b26cb006a07a1c925d81beb72a45559b6714c26aa107270aef4e4b487157e29d"
+  }
+}

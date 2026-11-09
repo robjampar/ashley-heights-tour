@@ -1,0 +1,5801 @@
+{
+  "revision": "BB01-2026-11-09",
+  "defaultOption": "solid-rc",
+  "decision": "Detailed alternative only. Less site concrete and full-area soffit formwork, but a current supplier vehicle-load/topping design and like-for-like installed quotes are missing. Do not replace the baseline automatically.",
+  "beam": {
+    "widthM": 0.165,
+    "depthM": 0.15,
+    "webM": 0.115,
+    "flangeM": 0.05,
+    "spacingM": 0.345,
+    "countPerBay": 16,
+    "massKgM": 50.06
+  },
+  "profileBasis": "150 x 165 mm overall envelope and 50.06 kg/m from Stressline guide. Simplified 115 mm web / 50 mm flange are VISUAL allowances, not manufacturer dimensions. Straight beams depict nominal datum; no tendons, camber curve or fabrication geometry is claimed.",
+  "block": {
+    "lengthM": 0.44,
+    "widthM": 0.215,
+    "depthM": 0.1,
+    "jointM": 0.005,
+    "densityKgM3": 1970
+  },
+  "outerBearingM": 0.125,
+  "centreBearingM": 0.1,
+  "toppingM": 0.1,
+  "minimumToppingAllowanceM": 0.075,
+  "camberToleranceBudgetM": 0.025,
+  "nominalEndRowsY": [
+    -15.6125,
+    -10.4375
+  ],
+  "supplierReference": {
+    "url": "https://www.stressline.net/wp-content/uploads/2017/03/Stressline-Flooring-Brochure-2016_V9_LR.pdf",
+    "title": "Stressline Flooring Systems Guide, 2017, pages 10 and 12",
+    "clearSpanM": 5.26,
+    "floorSelfWeightKPa": 2.63,
+    "vehicleUDLKPa": 2.5,
+    "toppingM": 0.075,
+    "serviceMomentKNm": 9.61,
+    "ultimateMomentKNm": 14.72,
+    "ultimateShearKN": 38.2,
+    "limitation": "Legacy BS 8110 table. Values are reference benchmarks ONLY, not verified current Eurocode resistances. The 100 mm topping, finishes, partitions, actual vehicle axle/wheel/jack loads, fire exposure and basement restraint need a fresh supplier design. No equal sharing between beams is established."
+  },
+  "rates": {
+    "precastBeam": {
+      "label": "Precast floor beam supply/installation: unquoted allowance",
+      "unit": "m",
+      "low": 20,
+      "reference": 30,
+      "high": 45
+    },
+    "floorBlock": {
+      "label": "Floor infill block supply/lay/cut: unquoted allowance",
+      "unit": "each",
+      "low": 2.5,
+      "reference": 4,
+      "high": 6
+    },
+    "floorGrout": {
+      "label": "Floor joint grout placed: unquoted allowance",
+      "unit": "m\u00b3",
+      "low": 350,
+      "reference": 500,
+      "high": 750
+    }
+  },
+  "openDesign": [
+    "Current manufacturer design for beams, floor-grade infill, topping reinforcement and camber; no composite beam credit assumed.",
+    "Actual van gross/axle weights, paired wheel positions, jack contact patch, load distribution and local topping bending/punching; UDL and isolated point cases below are separate sensitivities.",
+    "RC edge strips, central closure and existing opening bands: reinforcement, anchorage, bearing stress, restraint and complete reactions through the masonry to the raft.",
+    "Basement lateral restraint/diaphragm and wall ties; water protection at edges, joints and garage threshold; groundwater uplift including construction stages.",
+    "Fire resistance from either side, protected basement ceiling, thermal insulation and acoustic layers. A legacy half-hour beam rating is not a complete garage/basement separation design.",
+    "Temporary erection stability, lifting access, wet topping and construction loads, cure period and propping. No cutting/drilling of prestressed beams.",
+    "Topping reinforcement, RC edge formwork, delivery/lifting, membrane/insulation, ceiling and professional design remain unpriced; quantities are not an order schedule."
+  ],
+  "status": "Comparison alternative; NOT adopted or approved",
+  "approvedForConstruction": false,
+  "replacesIds": [
+    "M-G01-GARAGE-SLAB"
+  ],
+  "quantities": {
+    "baselineConcreteM3": 13.618337260580201,
+    "siteConcreteM3": 6.9640072613812025,
+    "groutM3": 0.2525999999725238,
+    "siteConcreteReductionPercent": 48.863013684208724,
+    "beamCount": 32,
+    "beamLengthM": 137.27999998399997,
+    "blockCount": 300,
+    "cutBlockCount": 60,
+    "blockVolumeM3": 2.5928999996774977,
+    "baselineWeightKN": 340.45843151450504,
+    "alternativeWeightKN": 297.1836320578356,
+    "weightDeltaKN": -43.27479945666943,
+    "structureDepthMm": 250,
+    "finishAndScreedMm": 75,
+    "undersideZ": -0.325,
+    "finishedFloorZ": 0,
+    "basementCeilingZ": -0.4639
+  },
+  "clearSpansM": [
+    4.0650000010000005,
+    4.064999997999999
+  ],
+  "supportCentreSpansM": {
+    "west": 4.177500001000001,
+    "east": 4.177499998
+  },
+  "demandCases": [
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "distributed",
+      "assumedSharingBeams": null,
+      "localLoadKN": null,
+      "vehicleUDLKPa": 2.5,
+      "stationFraction": null,
+      "sls": {
+        "momentKNm": 6.118607166093381,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          5.858630438902426,
+          5.858630438902426
+        ],
+        "totalLoadKN": 11.717260877804852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.542343251997899,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          8.179383123832963,
+          8.179383123832963
+        ],
+        "totalLoadKN": 16.358766247665926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6366916926215798,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.345846681715232,
+        "momentStationM": 1.8313298650970093,
+        "reactionsKN": [
+          13.557083563471176,
+          4.557083563471176
+        ],
+        "totalLoadKN": 18.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.3939283644058,
+        "momentStationM": 1.8027276278300108,
+        "reactionsKN": [
+          19.72706281068609,
+          6.227062810686088
+        ],
+        "totalLoadKN": 25.954125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5562795714584008,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 11.010649987585865,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          11.557083563471176,
+          6.557083563471176
+        ],
+        "totalLoadKN": 18.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 16.03929935852217,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          16.727062810686093,
+          9.227062810686087
+        ],
+        "totalLoadKN": 25.954125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.145749218271162,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 14.680866650114485,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          9.057083563471176,
+          9.057083563471176
+        ],
+        "totalLoadKN": 18.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 21.38573247802956,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          12.97706281068609,
+          12.977062810686087
+        ],
+        "totalLoadKN": 25.954125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.527665624361549,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 11.010649987585872,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          6.557083563471178,
+          11.557083563471174
+        ],
+        "totalLoadKN": 18.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 16.03929935852217,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          9.227062810686089,
+          16.72706281068609
+        ],
+        "totalLoadKN": 25.954125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.1457492182711626,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.3458466817152335,
+        "momentStationM": 2.3461701359029927,
+        "reactionsKN": [
+          4.557083563471178,
+          13.557083563471174
+        ],
+        "totalLoadKN": 18.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.393928364405808,
+        "momentStationM": 2.374772373169993,
+        "reactionsKN": [
+          6.227062810686093,
+          19.727062810686085
+        ],
+        "totalLoadKN": 25.954125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.556279571458401,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.775392906202169,
+        "momentStationM": 1.960039932798505,
+        "reactionsKN": [
+          8.807083563471176,
+          4.307083563471176
+        ],
+        "totalLoadKN": 13.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.530203321904868,
+        "momentStationM": 1.9457388141650065,
+        "reactionsKN": [
+          12.60206281068609,
+          5.852062810686087
+        ],
+        "totalLoadKN": 18.454125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.4969191369617242,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.250273109806656,
+        "momentStationM": 1.4451996619925225,
+        "reactionsKN": [
+          7.807083563471176,
+          5.307083563471176
+        ],
+        "totalLoadKN": 13.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.306878661162344,
+        "momentStationM": 1.373694068825026,
+        "reactionsKN": [
+          11.10206281068609,
+          7.352062810686087
+        ],
+        "totalLoadKN": 18.454125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7544508959216084,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 9.458991648864483,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          6.557083563471176,
+          6.557083563471176
+        ],
+        "totalLoadKN": 13.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.55291997615456,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          9.22706281068609,
+          9.227062810686087
+        ],
+        "totalLoadKN": 18.454125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9842863318277298,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 7.250273109806659,
+        "momentStationM": 2.7323003390074794,
+        "reactionsKN": [
+          5.307083563471177,
+          7.807083563471175
+        ],
+        "totalLoadKN": 13.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.306878661162344,
+        "momentStationM": 2.803805932174977,
+        "reactionsKN": [
+          7.352062810686089,
+          11.102062810686089
+        ],
+        "totalLoadKN": 18.454125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7544508959216086,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.775392906202169,
+        "momentStationM": 2.2174600682014964,
+        "reactionsKN": [
+          4.307083563471176,
+          8.807083563471176
+        ],
+        "totalLoadKN": 13.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.530203321904869,
+        "momentStationM": 2.231761186834997,
+        "reactionsKN": [
+          5.852062810686091,
+          12.602062810686087
+        ],
+        "totalLoadKN": 18.454125621372178,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.4969191369617242,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.592392207014566,
+        "momentStationM": 2.0029432886990035,
+        "reactionsKN": [
+          7.223750230137843,
+          4.223750230137843
+        ],
+        "totalLoadKN": 11.447500460275686,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.2542125732658,
+        "momentStationM": 1.9934092096100042,
+        "reactionsKN": [
+          10.227062810686089,
+          5.727062810686088
+        ],
+        "totalLoadKN": 15.954125621372176,
+        "equilibriumResidualKN": 1.7763568394002505e-15
+      },
+      "maxLegacyDemandRatio": 0.47787640031369055,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 6.156505630949894,
+        "momentStationM": 1.6597164414950156,
+        "reactionsKN": [
+          6.557083563471177,
+          4.890416896804509
+        ],
+        "totalLoadKN": 11.447500460275686,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.628984946435793,
+        "momentStationM": 1.6120460460500172,
+        "reactionsKN": [
+          9.227062810686089,
+          6.727062810686088
+        ],
+        "totalLoadKN": 15.954125621372176,
+        "equilibriumResidualKN": 1.7763568394002505e-15
+      },
+      "maxLegacyDemandRatio": 0.6406353414099786,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 7.718366648447816,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          5.723750230137843,
+          5.723750230137843
+        ],
+        "totalLoadKN": 11.447500460275686,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.941982475529553,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          7.977062810686089,
+          7.977062810686087
+        ],
+        "totalLoadKN": 15.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8031599009831235,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 6.156505630949893,
+        "momentStationM": 2.5177835595049864,
+        "reactionsKN": [
+          4.89041689680451,
+          6.557083563471176
+        ],
+        "totalLoadKN": 11.447500460275686,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.628984946435793,
+        "momentStationM": 2.5654539549499846,
+        "reactionsKN": [
+          6.727062810686089,
+          9.227062810686087
+        ],
+        "totalLoadKN": 15.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6406353414099786,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.592392207014565,
+        "momentStationM": 2.174556712300998,
+        "reactionsKN": [
+          4.223750230137843,
+          7.223750230137843
+        ],
+        "totalLoadKN": 11.447500460275686,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.254212573265803,
+        "momentStationM": 2.184090791389998,
+        "reactionsKN": [
+          5.727062810686089,
+          10.227062810686087
+        ],
+        "totalLoadKN": 15.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.47787640031369044,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.502232587292654,
+        "momentStationM": 2.0243949666492527,
+        "reactionsKN": [
+          6.432083563471176,
+          4.182083563471176
+        ],
+        "totalLoadKN": 10.614167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.118451748732755,
+        "momentStationM": 2.0172444073325035,
+        "reactionsKN": [
+          9.039562810686089,
+          5.664562810686088
+        ],
+        "totalLoadKN": 14.704125621372176,
+        "equilibriumResidualKN": 1.7763568394002505e-15
+      },
+      "maxLegacyDemandRatio": 0.4684945460242096,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 5.643140138318775,
+        "momentStationM": 1.7669748312462614,
+        "reactionsKN": [
+          5.932083563471176,
+          4.682083563471176
+        ],
+        "totalLoadKN": 10.614167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.845901833734626,
+        "momentStationM": 1.7312220346625131,
+        "reactionsKN": [
+          8.289562810686089,
+          6.414562810686088
+        ],
+        "totalLoadKN": 14.704125621372176,
+        "equilibriumResidualKN": 1.7763568394002505e-15
+      },
+      "maxLegacyDemandRatio": 0.5872154150175625,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 6.848054148239482,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          5.307083563471176,
+          5.307083563471176
+        ],
+        "totalLoadKN": 10.614167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.636513725217053,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          7.352062810686089,
+          7.352062810686087
+        ],
+        "totalLoadKN": 14.704125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7125966855608202,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 5.643140138318777,
+        "momentStationM": 2.4105251697537398,
+        "reactionsKN": [
+          4.682083563471176,
+          5.932083563471176
+        ],
+        "totalLoadKN": 10.614167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.845901833734627,
+        "momentStationM": 2.446277966337489,
+        "reactionsKN": [
+          6.414562810686089,
+          8.289562810686087
+        ],
+        "totalLoadKN": 14.704125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5872154150175627,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.502232587292654,
+        "momentStationM": 2.1531050343507485,
+        "reactionsKN": [
+          4.182083563471176,
+          6.432083563471176
+        ],
+        "totalLoadKN": 10.614167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.118451748732752,
+        "momentStationM": 2.160255593667498,
+        "reactionsKN": [
+          5.664562810686087,
+          9.039562810686089
+        ],
+        "totalLoadKN": 14.704125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.4684945460242096,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.448565849018513,
+        "momentStationM": 2.0372659734194025,
+        "reactionsKN": [
+          5.957083563471176,
+          4.157083563471176
+        ],
+        "totalLoadKN": 10.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.0377103099445995,
+        "momentStationM": 2.0315455259660027,
+        "reactionsKN": [
+          8.327062810686089,
+          5.627062810686088
+        ],
+        "totalLoadKN": 13.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.46291007794157263,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 5.34584668171523,
+        "momentStationM": 1.8313298650970093,
+        "reactionsKN": [
+          5.557083563471176,
+          4.557083563471176
+        ],
+        "totalLoadKN": 10.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.393928364405797,
+        "momentStationM": 1.8027276278300104,
+        "reactionsKN": [
+          7.727062810686088,
+          6.227062810686088
+        ],
+        "totalLoadKN": 13.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5562795714584007,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 6.3258666481144825,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          5.057083563471176,
+          5.057083563471176
+        ],
+        "totalLoadKN": 10.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.85323247502955,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          6.977062810686088,
+          6.977062810686088
+        ],
+        "totalLoadKN": 13.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6582587563074384,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 5.345846681715231,
+        "momentStationM": 2.346170135902992,
+        "reactionsKN": [
+          4.557083563471176,
+          5.557083563471176
+        ],
+        "totalLoadKN": 10.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.3939283644058005,
+        "momentStationM": 2.3747723731699915,
+        "reactionsKN": [
+          6.227062810686089,
+          7.727062810686087
+        ],
+        "totalLoadKN": 13.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5562795714584008,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "lower",
+      "spanM": 4.177500001000001,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.448565849018513,
+        "momentStationM": 2.140234027580599,
+        "reactionsKN": [
+          4.1570835634711765,
+          5.957083563471175
+        ],
+        "totalLoadKN": 10.114167126942352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.037710309944604,
+        "momentStationM": 2.1459544750339994,
+        "reactionsKN": [
+          5.627062810686089,
+          8.327062810686087
+        ],
+        "totalLoadKN": 13.954125621372176,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.46291007794157263,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "distributed",
+      "assumedSharingBeams": null,
+      "localLoadKN": null,
+      "vehicleUDLKPa": 3,
+      "stationFraction": null,
+      "sls": {
+        "momentKNm": 6.871203373484938,
+        "momentStationM": 2.0887500005,
+        "reactionsKN": [
+          6.579249189074925,
+          6.579249189074927
+        ],
+        "totalLoadKN": 13.158498378149853,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.614792847530872,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          9.206264842828777,
+          9.206264842828777
+        ],
+        "totalLoadKN": 18.412529685657553,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7150055539526471,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 6.312965406873573,
+        "momentStationM": 1.734114919997838,
+        "reactionsKN": [
+          18.667392938557427,
+          5.167392938557426
+        ],
+        "totalLoadKN": 23.834785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.79960059014521,
+        "momentStationM": 1.694711022164264,
+        "reactionsKN": [
+          27.338480467052527,
+          7.088480467052526
+        ],
+        "totalLoadKN": 34.426960934105054,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7156670279333122,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 15.209279816295204,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          15.667392938557429,
+          8.167392938557425
+        ],
+        "totalLoadKN": 23.834785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 22.294910564920396,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          22.838480467052527,
+          11.588480467052525
+        ],
+        "totalLoadKN": 34.426960934105054,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.582651385670677,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 20.279039755060275,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          11.917392938557429,
+          11.917392938557425
+        ],
+        "totalLoadKN": 23.834785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 29.726547419893873,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          17.21348046705253,
+          17.213480467052523
+        ],
+        "totalLoadKN": 34.426960934105054,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.110201847560903,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 15.209279816295213,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          8.16739293855743,
+          15.667392938557423
+        ],
+        "totalLoadKN": 23.834785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 22.294910564920407,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          11.58848046705253,
+          22.838480467052523
+        ],
+        "totalLoadKN": 34.426960934105054,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.5826513856706779,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 6.312965406873585,
+        "momentStationM": 2.443385081002166,
+        "reactionsKN": [
+          5.16739293855743,
+          18.667392938557423
+        ],
+        "totalLoadKN": 23.834785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.799600590145218,
+        "momentStationM": 2.4827889788357393,
+        "reactionsKN": [
+          7.0884804670525305,
+          27.338480467052523
+        ],
+        "totalLoadKN": 34.426960934105054,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.715667027933312,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.429943040294846,
+        "momentStationM": 1.9114324602489206,
+        "reactionsKN": [
+          11.542392938557429,
+          4.792392938557425
+        ],
+        "totalLoadKN": 16.334785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.458443520878563,
+        "momentStationM": 1.8917305113321314,
+        "reactionsKN": [
+          16.650980467052523,
+          6.525980467052526
+        ],
+        "totalLoadKN": 23.17696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5650304932668935,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 9.360996972174709,
+        "momentStationM": 1.2021622992445928,
+        "reactionsKN": [
+          10.042392938557427,
+          6.292392938557426
+        ],
+        "totalLoadKN": 16.334785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.488012573886678,
+        "momentStationM": 1.1036525546606575,
+        "reactionsKN": [
+          14.400980467052523,
+          8.775980467052527
+        ],
+        "totalLoadKN": 23.17696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9740891750441946,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 12.446227253185269,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          8.167392938557429,
+          8.167392938557425
+        ],
+        "totalLoadKN": 16.334785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 17.977328667081355,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          11.588480467052525,
+          11.588480467052525
+        ],
+        "totalLoadKN": 23.17696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.2951329087601737,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 9.360996972174716,
+        "momentStationM": 2.9753377017554103,
+        "reactionsKN": [
+          6.292392938557429,
+          10.042392938557425
+        ],
+        "totalLoadKN": 16.334785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.488012573886675,
+        "momentStationM": 3.073847446339342,
+        "reactionsKN": [
+          8.775980467052523,
+          14.400980467052527
+        ],
+        "totalLoadKN": 23.17696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9740891750441952,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.429943040294842,
+        "momentStationM": 2.266067540751083,
+        "reactionsKN": [
+          4.792392938557427,
+          11.542392938557427
+        ],
+        "totalLoadKN": 16.334785877114854,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.4584435208785695,
+        "momentStationM": 2.2857694896678695,
+        "reactionsKN": [
+          6.525980467052527,
+          16.650980467052523
+        ],
+        "totalLoadKN": 23.17696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.565030493266893,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.150378713122853,
+        "momentStationM": 1.9705383069992801,
+        "reactionsKN": [
+          9.167392938557427,
+          4.667392938557425
+        ],
+        "totalLoadKN": 13.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.036018600602338,
+        "momentStationM": 1.9574036743880883,
+        "reactionsKN": [
+          13.088480467052525,
+          6.338480467052525
+        ],
+        "totalLoadKN": 19.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.53593951229166,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.593763794125017,
+        "momentStationM": 1.4976915329963956,
+        "reactionsKN": [
+          8.167392938557427,
+          5.667392938557426
+        ],
+        "totalLoadKN": 13.834785877114852,
+        "equilibriumResidualKN": 1.7763568394002505e-15
+      },
+      "uls": {
+        "momentKNm": 10.760202068855943,
+        "momentStationM": 1.432018369940439,
+        "reactionsKN": [
+          11.588480467052525,
+          7.838480467052525
+        ],
+        "totalLoadKN": 19.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7901939431971923,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 9.835289752560262,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          6.917392938557426,
+          6.917392938557426
+        ],
+        "totalLoadKN": 13.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 14.060922416143857,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          9.713480467052525,
+          9.713480467052525
+        ],
+        "totalLoadKN": 19.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.0234432624932637,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 7.593763794125018,
+        "momentStationM": 2.679808468003607,
+        "reactionsKN": [
+          5.667392938557427,
+          8.167392938557425
+        ],
+        "totalLoadKN": 13.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.760202068855943,
+        "momentStationM": 2.745481631059562,
+        "reactionsKN": [
+          7.838480467052525,
+          11.588480467052525
+        ],
+        "totalLoadKN": 19.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7901939431971924,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.150378713122858,
+        "momentStationM": 2.2069616940007233,
+        "reactionsKN": [
+          4.667392938557429,
+          9.167392938557423
+        ],
+        "totalLoadKN": 13.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.036018600602337,
+        "momentStationM": 2.220096326611913,
+        "reactionsKN": [
+          6.338480467052525,
+          13.088480467052525
+        ],
+        "totalLoadKN": 19.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5359395122916606,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.013367136103282,
+        "momentStationM": 2.0000912303744602,
+        "reactionsKN": [
+          7.979892938557427,
+          4.604892938557425
+        ],
+        "totalLoadKN": 12.584785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.829423784741596,
+        "momentStationM": 1.9902402559160663,
+        "reactionsKN": [
+          11.307230467052525,
+          6.244730467052525
+        ],
+        "totalLoadKN": 17.55196093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5216823242563249,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 6.7794118692607475,
+        "momentStationM": 1.6454561498722966,
+        "reactionsKN": [
+          7.229892938557426,
+          5.354892938557426
+        ],
+        "totalLoadKN": 12.584785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.511737923274872,
+        "momentStationM": 1.5962012775803294,
+        "reactionsKN": [
+          10.182230467052525,
+          7.369730467052525
+        ],
+        "totalLoadKN": 17.55196093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.705453888580723,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 8.529821002247763,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          6.292392938557426,
+          6.292392938557426
+        ],
+        "totalLoadKN": 12.584785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 12.1027192906751,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          8.775980467052523,
+          8.775980467052527
+        ],
+        "totalLoadKN": 17.55196093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8875984393598089,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 6.77941186926075,
+        "momentStationM": 2.5320438511277055,
+        "reactionsKN": [
+          5.354892938557427,
+          7.229892938557425
+        ],
+        "totalLoadKN": 12.584785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.511737923274872,
+        "momentStationM": 2.5812987234196716,
+        "reactionsKN": [
+          7.369730467052525,
+          10.182230467052525
+        ],
+        "totalLoadKN": 17.55196093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7054538885807232,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.013367136103284,
+        "momentStationM": 2.177408770625542,
+        "reactionsKN": [
+          4.604892938557427,
+          7.979892938557425
+        ],
+        "totalLoadKN": 12.584785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.829423784741591,
+        "momentStationM": 2.187259745083934,
+        "reactionsKN": [
+          6.244730467052523,
+          11.307230467052527
+        ],
+        "totalLoadKN": 17.55196093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5216823242563251,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.932046777592796,
+        "momentStationM": 2.0178229843995683,
+        "reactionsKN": [
+          7.2673929385574265,
+          4.5673929385574255
+        ],
+        "totalLoadKN": 11.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.706944541393908,
+        "momentStationM": 2.009942204832853,
+        "reactionsKN": [
+          10.238480467052526,
+          6.188480467052526
+        ],
+        "totalLoadKN": 16.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5132202682198539,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 6.312965406873573,
+        "momentStationM": 1.7341149199978378,
+        "reactionsKN": [
+          6.667392938557427,
+          5.167392938557425
+        ],
+        "totalLoadKN": 11.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.799600590145202,
+        "momentStationM": 1.694711022164263,
+        "reactionsKN": [
+          9.338480467052523,
+          7.088480467052526
+        ],
+        "totalLoadKN": 16.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6569162754290919,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 7.746539752060265,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          5.917392938557427,
+          5.917392938557425
+        ],
+        "totalLoadKN": 11.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.927797415393854,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          8.213480467052525,
+          8.213480467052525
+        ],
+        "totalLoadKN": 16.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8060915454797363,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 6.312965406873574,
+        "momentStationM": 2.4433850810021642,
+        "reactionsKN": [
+          5.167392938557426,
+          6.667392938557426
+        ],
+        "totalLoadKN": 11.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.799600590145205,
+        "momentStationM": 2.4827889788357376,
+        "reactionsKN": [
+          7.088480467052525,
+          9.338480467052525
+        ],
+        "totalLoadKN": 16.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.656916275429092,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "reference",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.932046777592795,
+        "momentStationM": 2.1596770166004338,
+        "reactionsKN": [
+          4.567392938557426,
+          7.267392938557426
+        ],
+        "totalLoadKN": 11.834785877114852,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.706944541393907,
+        "momentStationM": 2.1675577961671477,
+        "reactionsKN": [
+          6.188480467052525,
+          10.238480467052526
+        ],
+        "totalLoadKN": 16.42696093410505,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5132202682198539,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "distributed",
+      "assumedSharingBeams": null,
+      "localLoadKN": null,
+      "vehicleUDLKPa": 3.5,
+      "stationFraction": null,
+      "sls": {
+        "momentKNm": 7.623799580876501,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          7.299867939247427,
+          7.299867939247427
+        ],
+        "totalLoadKN": 14.599735878494855,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.687242443063845,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          10.233146561824588,
+          10.233146561824588
+        ],
+        "totalLoadKN": 20.466293123649177,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.793319415283715,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 7.297056424483242,
+        "momentStationM": 1.6515628625455991,
+        "reactionsKN": [
+          23.777702313643676,
+          5.777702313643677
+        ],
+        "totalLoadKN": 29.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.233559969970159,
+        "momentStationM": 1.6029865138839985,
+        "reactionsKN": [
+          34.94989812341896,
+          7.949898123418963
+        ],
+        "totalLoadKN": 42.89979624683792,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9149187990423812,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 19.40790964500453,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          19.777702313643672,
+          9.777702313643678
+        ],
+        "totalLoadKN": 29.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 28.55052177131862,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          28.94989812341896,
+          13.949898123418963
+        ],
+        "totalLoadKN": 42.89979624683792,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.0195535530701907,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 25.87721286000604,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          14.777702313643674,
+          14.777702313643678
+        ],
+        "totalLoadKN": 29.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 38.06736236175816,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          21.449898123418958,
+          21.449898123418965
+        ],
+        "totalLoadKN": 42.89979624683792,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.692738070760254,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 19.407909645004533,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          9.777702313643676,
+          19.777702313643676
+        ],
+        "totalLoadKN": 29.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 28.55052177131862,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          13.949898123418961,
+          28.94989812341896
+        ],
+        "totalLoadKN": 42.89979624683792,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.0195535530701907,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 7.297056424483242,
+        "momentStationM": 2.525937138454402,
+        "reactionsKN": [
+          5.777702313643676,
+          23.777702313643676
+        ],
+        "totalLoadKN": 29.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.233559969970155,
+        "momentStationM": 2.574513487116002,
+        "reactionsKN": [
+          7.949898123418961,
+          34.94989812341896
+        ],
+        "totalLoadKN": 42.89979624683792,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9149187990423812,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 6.088736247500341,
+        "momentStationM": 1.8701564315227999,
+        "reactionsKN": [
+          14.277702313643676,
+          5.277702313643676
+        ],
+        "totalLoadKN": 19.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.393755508373655,
+        "momentStationM": 1.8458682571919993,
+        "reactionsKN": [
+          20.69989812341896,
+          7.199898123418963
+        ],
+        "totalLoadKN": 27.899796246837926,
+        "equilibriumResidualKN": -3.552713678800501e-15
+      },
+      "maxLegacyDemandRatio": 0.6335833764308367,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 11.575097143129533,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          12.277702313643676,
+          7.277702313643677
+        ],
+        "totalLoadKN": 19.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 16.801303018506122,
+        "momentStationM": 1.0443750002500003,
+        "reactionsKN": [
+          17.699898123418965,
+          10.199898123418961
+        ],
+        "totalLoadKN": 27.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.2044846142694623,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 15.433462857506038,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          9.777702313643674,
+          9.777702313643678
+        ],
+        "totalLoadKN": 19.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 22.401737358008162,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          13.949898123418963,
+          13.949898123418963
+        ],
+        "totalLoadKN": 27.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.605979485692616,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 11.575097143129526,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          7.277702313643674,
+          12.277702313643678
+        ],
+        "totalLoadKN": 19.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 16.801303018506125,
+        "momentStationM": 3.1331250007500007,
+        "reactionsKN": [
+          10.199898123418965,
+          17.69989812341896
+        ],
+        "totalLoadKN": 27.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.2044846142694616,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 6.088736247500341,
+        "momentStationM": 2.3073435694772013,
+        "reactionsKN": [
+          5.277702313643676,
+          14.277702313643676
+        ],
+        "totalLoadKN": 19.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.393755508373662,
+        "momentStationM": 2.331631743808002,
+        "reactionsKN": [
+          7.199898123418965,
+          20.69989812341896
+        ],
+        "totalLoadKN": 27.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6335833764308367,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.710251029503506,
+        "momentStationM": 1.9430209545151995,
+        "reactionsKN": [
+          11.111035646977008,
+          5.111035646977011
+        ],
+        "totalLoadKN": 16.22207129395402,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.820967645059494,
+        "momentStationM": 1.9268288382946674,
+        "reactionsKN": [
+          15.949898123418965,
+          6.949898123418962
+        ],
+        "totalLoadKN": 22.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5941988584290849,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 9.078167214109378,
+        "momentStationM": 1.360104770575998,
+        "reactionsKN": [
+          9.777702313643676,
+          6.444368980310344
+        ],
+        "totalLoadKN": 16.22207129395402,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 12.969994619291494,
+        "momentStationM": 1.2791441894733313,
+        "reactionsKN": [
+          13.949898123418963,
+          8.949898123418963
+        ],
+        "totalLoadKN": 22.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.944658398970799,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 11.95221285667271,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          8.11103564697701,
+          8.11103564697701
+        ],
+        "totalLoadKN": 16.22207129395402,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 17.179862356758157,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          11.449898123418963,
+          11.449898123418963
+        ],
+        "totalLoadKN": 22.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.243726624003404,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 9.078167214109374,
+        "momentStationM": 2.8173952304240024,
+        "reactionsKN": [
+          6.444368980310342,
+          9.777702313643678
+        ],
+        "totalLoadKN": 16.22207129395402,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 12.969994619291493,
+        "momentStationM": 2.89835581152667,
+        "reactionsKN": [
+          8.949898123418963,
+          13.949898123418963
+        ],
+        "totalLoadKN": 22.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9446583989707986,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.710251029503509,
+        "momentStationM": 2.2344790464848012,
+        "reactionsKN": [
+          5.11103564697701,
+          11.11103564697701
+        ],
+        "totalLoadKN": 16.22207129395402,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.820967645059495,
+        "momentStationM": 2.250671162705335,
+        "reactionsKN": [
+          6.949898123418965,
+          15.949898123418961
+        ],
+        "totalLoadKN": 22.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5941988584290853,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.525562453192118,
+        "momentStationM": 1.9794532160114005,
+        "reactionsKN": [
+          9.527702313643676,
+          5.027702313643677
+        ],
+        "totalLoadKN": 14.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.542163767880787,
+        "momentStationM": 1.9673091288460007,
+        "reactionsKN": [
+          13.574898123418965,
+          6.824898123418962
+        ],
+        "totalLoadKN": 20.399796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5749804842031341,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.942202807157918,
+        "momentStationM": 1.5422660780569988,
+        "reactionsKN": [
+          8.527702313643676,
+          6.027702313643677
+        ],
+        "totalLoadKN": 14.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.221772691073783,
+        "momentStationM": 1.4815456422299986,
+        "reactionsKN": [
+          12.074898123418963,
+          8.324898123418963
+        ],
+        "totalLoadKN": 20.399796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8264519050112299,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 10.21158785625604,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          7.277702313643675,
+          7.277702313643677
+        ],
+        "totalLoadKN": 14.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 14.568924856133163,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          10.199898123418965,
+          10.199898123418961
+        ],
+        "totalLoadKN": 20.399796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.0626001931587972,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 7.942202807157918,
+        "momentStationM": 2.6352339229430024,
+        "reactionsKN": [
+          6.027702313643676,
+          8.527702313643676
+        ],
+        "totalLoadKN": 14.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.221772691073785,
+        "momentStationM": 2.6959543587700026,
+        "reactionsKN": [
+          8.324898123418963,
+          12.074898123418963
+        ],
+        "totalLoadKN": 20.399796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8264519050112299,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.525562453192117,
+        "momentStationM": 2.198046784988601,
+        "reactionsKN": [
+          5.027702313643676,
+          9.527702313643676
+        ],
+        "totalLoadKN": 14.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.542163767880783,
+        "momentStationM": 2.210190872154001,
+        "reactionsKN": [
+          6.824898123418963,
+          13.574898123418963
+        ],
+        "totalLoadKN": 20.399796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.574980484203134,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.4162065978651315,
+        "momentStationM": 2.0013125729091206,
+        "reactionsKN": [
+          8.577702313643677,
+          4.977702313643676
+        ],
+        "totalLoadKN": 13.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.377310259006639,
+        "momentStationM": 1.9915973031768006,
+        "reactionsKN": [
+          12.149898123418964,
+          6.749898123418962
+        ],
+        "totalLoadKN": 18.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5636011027955392,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.297056424483241,
+        "momentStationM": 1.6515628625455987,
+        "reactionsKN": [
+          7.777702313643675,
+          5.777702313643677
+        ],
+        "totalLoadKN": 13.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.233559969970159,
+        "momentStationM": 1.602986513883999,
+        "reactionsKN": [
+          10.949898123418963,
+          7.949898123418963
+        ],
+        "totalLoadKN": 18.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7593190868348847,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 9.16721285600604,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          6.777702313643675,
+          6.777702313643677
+        ],
+        "totalLoadKN": 13.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.002362355758157,
+        "momentStationM": 2.0887500005000006,
+        "reactionsKN": [
+          9.449898123418963,
+          9.449898123418963
+        ],
+        "totalLoadKN": 18.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9539243346520334,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 7.297056424483239,
+        "momentStationM": 2.5259371384544016,
+        "reactionsKN": [
+          5.777702313643675,
+          7.777702313643677
+        ],
+        "totalLoadKN": 13.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.233559969970162,
+        "momentStationM": 2.5745134871160027,
+        "reactionsKN": [
+          7.949898123418965,
+          10.949898123418961
+        ],
+        "totalLoadKN": 18.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7593190868348845,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "west",
+      "scenario": "upper",
+      "spanM": 4.177500001000001,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.416206597865127,
+        "momentStationM": 2.1761874280908806,
+        "reactionsKN": [
+          4.977702313643675,
+          8.577702313643677
+        ],
+        "totalLoadKN": 13.555404627287352,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.377310259006637,
+        "momentStationM": 2.185902697823201,
+        "reactionsKN": [
+          6.749898123418964,
+          12.149898123418962
+        ],
+        "totalLoadKN": 18.899796246837926,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5636011027955388,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "distributed",
+      "assumedSharingBeams": null,
+      "localLoadKN": null,
+      "vehicleUDLKPa": 2.5,
+      "stationFraction": null,
+      "sls": {
+        "momentKNm": 6.271566982090199,
+        "momentStationM": 2.0628027018126303,
+        "reactionsKN": [
+          6.044602158179155,
+          5.931408711211142
+        ],
+        "totalLoadKN": 11.976010869390297,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.748796890405472,
+        "momentStationM": 2.0636599536028832,
+        "reactionsKN": [
+          8.430444944662487,
+          8.277633791255667
+        ],
+        "totalLoadKN": 16.708078735918154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6526084268564204,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.517960365122386,
+        "momentStationM": 1.7938606760067242,
+        "reactionsKN": [
+          13.74305528404166,
+          4.6298618370736415
+        ],
+        "totalLoadKN": 18.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.629092025962221,
+        "momentStationM": 1.7652584387397243,
+        "reactionsKN": [
+          19.97812463345624,
+          6.3253134800494175
+        ],
+        "totalLoadKN": 26.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5741894240501964,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 11.204874196017268,
+        "momentStationM": 1.0443749995,
+        "reactionsKN": [
+          11.74305528404166,
+          6.6298618370736415
+        ],
+        "totalLoadKN": 18.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 16.30150203906081,
+        "momentStationM": 1.0443749995,
+        "reactionsKN": [
+          16.97812463345624,
+          9.325313480049417
+        ],
+        "totalLoadKN": 26.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.1659598539039822,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 14.832882261528852,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          9.243055284041658,
+          9.129861837073642
+        ],
+        "totalLoadKN": 18.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 21.590953552313955,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          13.22812463345624,
+          13.075313480049417
+        ],
+        "totalLoadKN": 26.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.5434841062985278,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 11.086657789896643,
+        "momentStationM": 3.1331249985,
+        "reactionsKN": [
+          6.743055284041658,
+          11.629861837073642
+        ],
+        "totalLoadKN": 18.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 16.14190989079797,
+        "momentStationM": 3.1331249985,
+        "reactionsKN": [
+          9.47812463345624,
+          16.825313480049417
+        ],
+        "totalLoadKN": 26.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.1536584588862273,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.480491177532101,
+        "momentStationM": 2.3087009468127064,
+        "reactionsKN": [
+          4.7430552840416595,
+          13.62986183707364
+        ],
+        "totalLoadKN": 18.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.572888244576798,
+        "momentStationM": 2.3373031840797047,
+        "reactionsKN": [
+          6.47812463345624,
+          19.825313480049417
+        ],
+        "totalLoadKN": 26.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5702904451126015,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.9381392930867545,
+        "momentStationM": 1.9225707437082193,
+        "reactionsKN": [
+          8.99305528404166,
+          4.3798618370736415
+        ],
+        "totalLoadKN": 13.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.751316038677433,
+        "momentStationM": 1.9082696250747193,
+        "reactionsKN": [
+          12.85312463345624,
+          5.950313480049417
+        ],
+        "totalLoadKN": 18.803438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.513854244858143,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.4504886827815255,
+        "momentStationM": 1.4077304729022364,
+        "reactionsKN": [
+          7.993055284041659,
+          5.3798618370736415
+        ],
+        "totalLoadKN": 13.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.584195157070344,
+        "momentStationM": 1.336224879734739,
+        "reactionsKN": [
+          11.35312463345624,
+          7.450313480049417
+        ],
+        "totalLoadKN": 18.803438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7752849825995345,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 9.611007264028856,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          6.743055284041659,
+          6.6298618370736415
+        ],
+        "totalLoadKN": 13.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.758141056063955,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          9.47812463345624,
+          9.325313480049417
+        ],
+        "totalLoadKN": 18.803438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.0001048141549278,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 7.35681571380581,
+        "momentStationM": 2.6948311499171926,
+        "reactionsKN": [
+          5.493055284041659,
+          7.8798618370736415
+        ],
+        "totalLoadKN": 13.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.44368570360677,
+        "momentStationM": 2.7663367430846906,
+        "reactionsKN": [
+          7.60312463345624,
+          11.200313480049417
+        ],
+        "totalLoadKN": 18.803438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7655375352555474,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.9194046992916105,
+        "momentStationM": 2.1799908791112106,
+        "reactionsKN": [
+          4.4930552840416595,
+          8.87986183707364
+        ],
+        "totalLoadKN": 13.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.723214147984721,
+        "momentStationM": 2.1942919977447097,
+        "reactionsKN": [
+          6.10312463345624,
+          12.700313480049417
+        ],
+        "totalLoadKN": 18.803438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5119047553893455,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.752016161724955,
+        "momentStationM": 1.9654740996087166,
+        "reactionsKN": [
+          7.409721950708324,
+          4.2965285037403085
+        ],
+        "totalLoadKN": 11.706250454448632,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.470641641777086,
+        "momentStationM": 1.955940020519718,
+        "reactionsKN": [
+          10.47812463345624,
+          5.825313480049417
+        ],
+        "totalLoadKN": 16.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.49448659331164985,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 6.341109043053807,
+        "momentStationM": 1.6222472524047284,
+        "reactionsKN": [
+          6.743055284041658,
+          4.9631951704069746
+        ],
+        "totalLoadKN": 11.706250454448632,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.882883201037364,
+        "momentStationM": 1.5745768569597307,
+        "reactionsKN": [
+          9.47812463345624,
+          6.8253134800494175
+        ],
+        "totalLoadKN": 16.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6598448535956095,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 7.870382264862187,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          5.909721950708324,
+          5.7965285037403085
+        ],
+        "totalLoadKN": 11.706250454448632,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.14720355731395,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          8.228124633456238,
+          8.075313480049418
+        ],
+        "totalLoadKN": 16.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8189783834403941,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 6.278660397069996,
+        "momentStationM": 2.4803143704146993,
+        "reactionsKN": [
+          5.076388617374991,
+          6.6298618370736415
+        ],
+        "totalLoadKN": 11.706250454448632,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.789210232061649,
+        "momentStationM": 2.5279847658596983,
+        "reactionsKN": [
+          6.97812463345624,
+          9.325313480049417
+        ],
+        "totalLoadKN": 16.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6533465553662847,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.739526432528194,
+        "momentStationM": 2.1370875232107114,
+        "reactionsKN": [
+          4.409721950708325,
+          7.296528503740308
+        ],
+        "totalLoadKN": 11.706250454448632,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.451907047981945,
+        "momentStationM": 2.146621602299711,
+        "reactionsKN": [
+          5.97812463345624,
+          10.325313480049417
+        ],
+        "totalLoadKN": 16.303438113505656,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.4931869336657851,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.660295325915951,
+        "momentStationM": 1.9869257775589668,
+        "reactionsKN": [
+          6.618055284041659,
+          4.2548618370736415
+        ],
+        "totalLoadKN": 10.8729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.332538993113388,
+        "momentStationM": 1.9797752182422155,
+        "reactionsKN": [
+          9.290624633456236,
+          5.7628134800494175
+        ],
+        "totalLoadKN": 15.053438113505655,
+        "equilibriumResidualKN": -1.7763568394002505e-15
+      },
+      "maxLegacyDemandRatio": 0.4849422815729397,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 5.819937469987215,
+        "momentStationM": 1.7295056421559756,
+        "reactionsKN": [
+          6.118055284041659,
+          4.7548618370736415
+        ],
+        "totalLoadKN": 10.8729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.088090967682977,
+        "momentStationM": 1.693752845572226,
+        "reactionsKN": [
+          8.540624633456238,
+          6.512813480049417
+        ],
+        "totalLoadKN": 15.053438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6056126399570463,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 7.000069765278857,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          5.493055284041659,
+          5.3798618370736415
+        ],
+        "totalLoadKN": 10.8729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.841734807938952,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          7.603124633456238,
+          7.450313480049417
+        ],
+        "totalLoadKN": 15.053438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7284151680831277,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 5.773100985499359,
+        "momentStationM": 2.3730559806634535,
+        "reactionsKN": [
+          4.868055284041659,
+          6.0048618370736415
+        ],
+        "totalLoadKN": 10.8729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.01783624095119,
+        "momentStationM": 2.4088087772472013,
+        "reactionsKN": [
+          6.665624633456238,
+          8.387813480049417
+        ],
+        "totalLoadKN": 15.053438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6007389162850529,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.650928029018378,
+        "momentStationM": 2.1156358452604622,
+        "reactionsKN": [
+          4.368055284041659,
+          6.5048618370736415
+        ],
+        "totalLoadKN": 10.8729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.318488047767036,
+        "momentStationM": 2.1227864045772113,
+        "reactionsKN": [
+          5.915624633456238,
+          9.137813480049417
+        ],
+        "totalLoadKN": 15.053438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.48396753683854093,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 4.605691857989553,
+        "momentStationM": 1.9997967843291165,
+        "reactionsKN": [
+          6.143055284041659,
+          4.229861837073641
+        ],
+        "totalLoadKN": 10.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.250392459846855,
+        "momentStationM": 1.9940763368757155,
+        "reactionsKN": [
+          8.578124633456238,
+          5.725313480049418
+        ],
+        "totalLoadKN": 14.303438113505655,
+        "equilibriumResidualKN": 1.7763568394002505e-15
+      },
+      "maxLegacyDemandRatio": 0.4792603390207652,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 5.5179603651223825,
+        "momentStationM": 1.7938606760067233,
+        "reactionsKN": [
+          5.743055284041659,
+          4.6298618370736415
+        ],
+        "totalLoadKN": 10.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.629092025962222,
+        "momentStationM": 1.7652584387397234,
+        "reactionsKN": [
+          7.978124633456237,
+          6.3253134800494175
+        ],
+        "totalLoadKN": 14.303438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5741894240501959,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 6.477882265528857,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          5.243055284041659,
+          5.1298618370736415
+        ],
+        "totalLoadKN": 10.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.05845355831395,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          7.228124633456237,
+          7.0753134800494175
+        ],
+        "totalLoadKN": 14.303438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6740772388687677,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 5.4804911775321,
+        "momentStationM": 2.3087009468127055,
+        "reactionsKN": [
+          4.743055284041659,
+          5.6298618370736415
+        ],
+        "totalLoadKN": 10.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.572888244576792,
+        "momentStationM": 2.337303184079704,
+        "reactionsKN": [
+          6.478124633456237,
+          7.8253134800494175
+        ],
+        "totalLoadKN": 14.303438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5702904451126015,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "lower",
+      "spanM": 4.177499998,
+      "gkKPa": 5.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 10,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 4.598198020471493,
+        "momentStationM": 2.1027648384903124,
+        "reactionsKN": [
+          4.343055284041658,
+          6.029861837073642
+        ],
+        "totalLoadKN": 10.3729171211153,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 6.239151703569772,
+        "momentStationM": 2.108485285943712,
+        "reactionsKN": [
+          5.878124633456238,
+          8.425313480049416
+        ],
+        "totalLoadKN": 14.303438113505655,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.4784805432332459,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "distributed",
+      "assumedSharingBeams": null,
+      "localLoadKN": null,
+      "vehicleUDLKPa": 3,
+      "stationFraction": null,
+      "sls": {
+        "momentKNm": 7.126898245568172,
+        "momentStationM": 2.050241140633203,
+        "reactionsKN": [
+          6.889202056823495,
+          6.700546311876804
+        ],
+        "totalLoadKN": 13.589748368700299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.95986986643553,
+        "momentStationM": 2.051597563964193,
+        "reactionsKN": [
+          9.624701214056469,
+          9.370015958378435
+        ],
+        "totalLoadKN": 18.994717172434903,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.741612720662661,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 6.612819486380136,
+        "momentStationM": 1.676759963051043,
+        "reactionsKN": [
+          18.977345807858498,
+          5.288690062911803
+        ],
+        "totalLoadKN": 24.2660358707703,
+        "equilibriumResidualKN": 3.552713678800501e-15
+      },
+      "uls": {
+        "momentKNm": 9.21085602979808,
+        "momentStationM": 1.6373560652174683,
+        "reactionsKN": [
+          27.75691684060897,
+          7.252231584930935
+        ],
+        "totalLoadKN": 35.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7266208597018055,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 15.532986833922502,
+        "momentStationM": 1.0443749995,
+        "reactionsKN": [
+          15.977345807858496,
+          8.288690062911803
+        ],
+        "totalLoadKN": 24.2660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 22.731915037451625,
+        "momentStationM": 1.0443749995,
+        "reactionsKN": [
+          23.25691684060897,
+          11.752231584930936
+        ],
+        "totalLoadKN": 35.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.6163357787640482,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 20.532399112184173,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          12.227345807858496,
+          12.038690062911803
+        ],
+        "totalLoadKN": 24.2660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 30.068582550323626,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          17.63191684060897,
+          17.377231584930936
+        ],
+        "totalLoadKN": 35.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.1365659846185405,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 15.33595949038813,
+        "momentStationM": 3.1331249985,
+        "reactionsKN": [
+          8.477345807858496,
+          15.788690062911803
+        ],
+        "totalLoadKN": 24.2660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 22.46592812368022,
+        "momentStationM": 3.1331249985,
+        "reactionsKN": [
+          12.00691684060897,
+          23.002231584930936
+        ],
+        "totalLoadKN": 35.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.595833453734457,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 6.526787053209946,
+        "momentStationM": 2.3860301240553694,
+        "reactionsKN": [
+          5.477345807858498,
+          18.7886900629118
+        ],
+        "totalLoadKN": 24.2660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.081807380042799,
+        "momentStationM": 2.425434021888943,
+        "reactionsKN": [
+          7.506916840608973,
+          27.502231584930932
+        ],
+        "totalLoadKN": 35.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7199537064118045,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.7082890120713525,
+        "momentStationM": 1.854077503302123,
+        "reactionsKN": [
+          11.852345807858494,
+          4.913690062911804
+        ],
+        "totalLoadKN": 16.7660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.837436798936363,
+        "momentStationM": 1.8343755543853368,
+        "reactionsKN": [
+          17.06941684060897,
+          6.689731584930935
+        ],
+        "totalLoadKN": 23.759148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5939946942842199,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 9.724411429858733,
+        "momentStationM": 1.1750000000000007,
+        "reactionsKN": [
+          10.352345807858496,
+          6.413690062911803
+        ],
+        "totalLoadKN": 16.7660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.97240855474679,
+        "momentStationM": 1.1750000000000007,
+        "reactionsKN": [
+          14.81941684060897,
+          8.939731584930936
+        ],
+        "totalLoadKN": 23.759148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.0119054557605343,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 12.699586615934171,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          8.477345807858496,
+          8.288690062911803
+        ],
+        "totalLoadKN": 16.7660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 18.319363805948626,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          12.00691684060897,
+          11.752231584930936
+        ],
+        "totalLoadKN": 23.759148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.3214970464031397,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 9.510294291945932,
+        "momentStationM": 2.9179827448086137,
+        "reactionsKN": [
+          6.602345807858496,
+          10.163690062911803
+        ],
+        "totalLoadKN": 16.7660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.673432873936552,
+        "momentStationM": 3.016492489392548,
+        "reactionsKN": [
+          9.194416840608971,
+          14.564731584930934
+        ],
+        "totalLoadKN": 23.759148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.989624796248276,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.665272795486256,
+        "momentStationM": 2.208712583804287,
+        "reactionsKN": [
+          5.102345807858496,
+          11.663690062911803
+        ],
+        "totalLoadKN": 16.7660358707703,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.77291247405872,
+        "momentStationM": 2.2284145327210734,
+        "reactionsKN": [
+          6.9444168406089695,
+          16.814731584930936
+        ],
+        "totalLoadKN": 23.759148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5895185010911818,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.421555315656017,
+        "momentStationM": 1.9131833500524844,
+        "reactionsKN": [
+          9.477345807858496,
+          4.788690062911803
+        ],
+        "totalLoadKN": 14.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.404257824795111,
+        "momentStationM": 1.900048717441293,
+        "reactionsKN": [
+          13.50691684060897,
+          6.502231584930935
+        ],
+        "totalLoadKN": 20.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5641576811296584,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.9222953506049745,
+        "momentStationM": 1.4403365760495999,
+        "reactionsKN": [
+          8.477345807858496,
+          5.788690062911803
+        ],
+        "totalLoadKN": 14.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.21447372396891,
+        "momentStationM": 1.3746634129936435,
+        "reactionsKN": [
+          12.00691684060897,
+          8.002231584930936
+        ],
+        "totalLoadKN": 20.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8243803694698205,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 10.088649117184168,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          7.227345807858495,
+          7.038690062911804
+        ],
+        "totalLoadKN": 14.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 14.402957557823624,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          10.13191684060897,
+          9.877231584930936
+        ],
+        "totalLoadKN": 20.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.0498074003313391,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 7.778907961987987,
+        "momentStationM": 2.6224535110568112,
+        "reactionsKN": [
+          5.977345807858496,
+          8.288690062911803
+        ],
+        "totalLoadKN": 14.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.99939264104343,
+        "momentStationM": 2.688126674112767,
+        "reactionsKN": [
+          8.25691684060897,
+          11.752231584930936
+        ],
+        "totalLoadKN": 20.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8094597254930268,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.392877837932618,
+        "momentStationM": 2.1496067370539267,
+        "reactionsKN": [
+          4.977345807858496,
+          9.288690062911803
+        ],
+        "totalLoadKN": 14.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.361241608210019,
+        "momentStationM": 2.162741369665118,
+        "reactionsKN": [
+          6.756916840608971,
+          13.252231584930934
+        ],
+        "totalLoadKN": 20.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5611735523342996,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.280959054014771,
+        "momentStationM": 1.9427362734276648,
+        "reactionsKN": [
+          8.289845807858496,
+          4.726190062911803
+        ],
+        "totalLoadKN": 13.016035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.192285982001857,
+        "momentStationM": 1.9328852989692709,
+        "reactionsKN": [
+          11.72566684060897,
+          6.408481584930935
+        ],
+        "totalLoadKN": 18.134148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5495274770046588,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.0900200026323335,
+        "momentStationM": 1.5881011929255013,
+        "reactionsKN": [
+          7.539845807858496,
+          5.476190062911803
+        ],
+        "totalLoadKN": 13.016035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.939124443725277,
+        "momentStationM": 1.5388463206335339,
+        "reactionsKN": [
+          10.60066684060897,
+          7.533481584930935
+        ],
+        "totalLoadKN": 18.134148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7377752344050296,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 8.78318036780917,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          6.602345807858496,
+          6.413690062911803
+        ],
+        "totalLoadKN": 13.016035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 12.444754433761124,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          9.19441684060897,
+          8.939731584930936
+        ],
+        "totalLoadKN": 18.134148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9139625772954392,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 6.9824794611695955,
+        "momentStationM": 2.4746888941809098,
+        "reactionsKN": [
+          5.664845807858496,
+          7.351190062911803
+        ],
+        "totalLoadKN": 13.016035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.777813631531172,
+        "momentStationM": 2.523943766472877,
+        "reactionsKN": [
+          7.788166840608971,
+          10.345981584930934
+        ],
+        "totalLoadKN": 18.134148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7265847514224345,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.259450945722221,
+        "momentStationM": 2.120053813678746,
+        "reactionsKN": [
+          4.914845807858496,
+          8.101190062911803
+        ],
+        "totalLoadKN": 13.016035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.160023819563035,
+        "momentStationM": 2.1299047881371393,
+        "reactionsKN": [
+          6.6631668406089695,
+          11.470981584930936
+        ],
+        "totalLoadKN": 18.134148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5472893804081396,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.197487884731277,
+        "momentStationM": 1.9604680274527726,
+        "reactionsKN": [
+          7.577345807858496,
+          4.688690062911803
+        ],
+        "totalLoadKN": 12.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.066580522494665,
+        "momentStationM": 1.9525872478860586,
+        "reactionsKN": [
+          10.656916840608972,
+          6.3522315849309345
+        ],
+        "totalLoadKN": 17.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5408416113143889,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 6.612819486380134,
+        "momentStationM": 1.6767599630510426,
+        "reactionsKN": [
+          6.977345807858496,
+          5.288690062911803
+        ],
+        "totalLoadKN": 12.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.210856029798077,
+        "momentStationM": 1.6373560652174683,
+        "reactionsKN": [
+          9.75691684060897,
+          7.252231584930935
+        ],
+        "totalLoadKN": 17.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6881185729844053,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 7.999899118184169,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          6.227345807858496,
+          6.038690062911803
+        ],
+        "totalLoadKN": 12.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.269832559323627,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          8.63191684060897,
+          8.377231584930936
+        ],
+        "totalLoadKN": 17.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.832455683473899,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 6.526787053209945,
+        "momentStationM": 2.386030124055369,
+        "reactionsKN": [
+          5.477345807858496,
+          6.788690062911803
+        ],
+        "totalLoadKN": 12.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.081807380042793,
+        "momentStationM": 2.4254340218889427,
+        "reactionsKN": [
+          7.506916840608971,
+          9.502231584930934
+        ],
+        "totalLoadKN": 17.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6791661865983294,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "reference",
+      "spanM": 4.177499998,
+      "gkKPa": 6.13,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 15,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.180281398097239,
+        "momentStationM": 2.102322059653638,
+        "reactionsKN": [
+          4.877345807858496,
+          7.388690062911803
+        ],
+        "totalLoadKN": 12.266035870770299,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.04077079254361,
+        "momentStationM": 2.110202839220353,
+        "reactionsKN": [
+          6.606916840608971,
+          10.402231584930934
+        ],
+        "totalLoadKN": 17.009148425539905,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.5390511340371736,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "distributed",
+      "assumedSharingBeams": null,
+      "localLoadKN": null,
+      "vehicleUDLKPa": 3.5,
+      "stationFraction": null,
+      "sls": {
+        "momentKNm": 8.03456325076483,
+        "momentStationM": 2.0332181724430245,
+        "reactionsKN": [
+          7.795792529962505,
+          7.493943338047796
+        ],
+        "totalLoadKN": 15.2897358680103,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.241504446629477,
+        "momentStationM": 2.0352712134586515,
+        "reactionsKN": [
+          10.902644759018253,
+          10.4951483499334
+        ],
+        "totalLoadKN": 21.397793108951653,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8360627732325525,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 7.795512070403792,
+        "momentStationM": 1.56671559060485,
+        "reactionsKN": [
+          24.273626906170005,
+          5.971777714255296
+        ],
+        "totalLoadKN": 30.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.919202182303993,
+        "momentStationM": 1.5181392419432496,
+        "reactionsKN": [
+          35.619396323329504,
+          8.211899914244649
+        ],
+        "totalLoadKN": 43.83129623757415,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9324449299300916,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 19.925840878034613,
+        "momentStationM": 1.0443749995,
+        "reactionsKN": [
+          20.273626906170005,
+          9.971777714255296
+        ],
+        "totalLoadKN": 30.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 29.24972893422172,
+        "momentStationM": 1.0443749995,
+        "reactionsKN": [
+          29.6193963233295,
+          14.21189991424465
+        ],
+        "totalLoadKN": 43.83129623757415,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.073448582521812,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 26.282587837839486,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          15.273626906170005,
+          14.971777714255296
+        ],
+        "totalLoadKN": 30.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 38.61461857958329,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          22.1193963233295,
+          21.71189991424465
+        ],
+        "totalLoadKN": 43.83129623757415,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.7349206907221113,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 19.610597128379627,
+        "momentStationM": 3.1331249985,
+        "reactionsKN": [
+          10.273626906170009,
+          19.971777714255293
+        ],
+        "totalLoadKN": 30.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 28.824149872187466,
+        "momentStationM": 3.1331249985,
+        "reactionsKN": [
+          14.6193963233295,
+          29.21189991424465
+        ],
+        "totalLoadKN": 43.83129623757415,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 2.040644862474467,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 1,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 7.6258175295223,
+        "momentStationM": 2.4410898665136553,
+        "reactionsKN": [
+          6.2736269061700085,
+          23.971777714255293
+        ],
+        "totalLoadKN": 30.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.664660370981736,
+        "momentStationM": 2.4896662151752507,
+        "reactionsKN": [
+          8.619396323329497,
+          35.211899914244654
+        ],
+        "totalLoadKN": 43.83129623757415,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9217774846660903,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 6.544768258950503,
+        "momentStationM": 1.78530915958205,
+        "reactionsKN": [
+          14.773626906170001,
+          5.471777714255295
+        ],
+        "totalLoadKN": 20.245404620425298,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 9.015762269001936,
+        "momentStationM": 1.7610209852512502,
+        "reactionsKN": [
+          21.369396323329504,
+          7.46189991424465
+        ],
+        "totalLoadKN": 28.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6810372798075446,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 12.123775312874752,
+        "momentStationM": 1.1750000000000007,
+        "reactionsKN": [
+          12.773626906170001,
+          7.471777714255295
+        ],
+        "totalLoadKN": 20.245404620425298,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 17.503888676848682,
+        "momentStationM": 1.091153137207784,
+        "reactionsKN": [
+          18.369396323329504,
+          10.46189991424465
+        ],
+        "totalLoadKN": 28.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.2615791168444073,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 15.838837842839478,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          10.273626906170001,
+          9.971777714255296
+        ],
+        "totalLoadKN": 20.245404620425298,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 22.9489935870833,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          14.619396323329504,
+          14.21189991424465
+        ],
+        "totalLoadKN": 28.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.6481621064349095,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 11.779287859491467,
+        "momentStationM": 3.096870573445255,
+        "reactionsKN": [
+          7.773626906170003,
+          12.471777714255294
+        ],
+        "totalLoadKN": 20.245404620425298,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 17.074931127812473,
+        "momentStationM": 3.1331249985,
+        "reactionsKN": [
+          10.869396323329504,
+          17.96189991424465
+        ],
+        "totalLoadKN": 28.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.2257323475017134,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 2,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 6.459920988509761,
+        "momentStationM": 2.222496297536452,
+        "reactionsKN": [
+          5.773626906170003,
+          14.471777714255294
+        ],
+        "totalLoadKN": 20.245404620425298,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.88849136334082,
+        "momentStationM": 2.2467844718672527,
+        "reactionsKN": [
+          7.869396323329507,
+          20.961899914244647
+        ],
+        "totalLoadKN": 28.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6722082194078836,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 6.152141829463556,
+        "momentStationM": 1.8581736825744524,
+        "reactionsKN": [
+          11.60696023950334,
+          5.305111047588629
+        ],
+        "totalLoadKN": 16.91207128709197,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.42176258845258,
+        "momentStationM": 1.8419815663539172,
+        "reactionsKN": [
+          16.619396323329504,
+          7.21189991424465
+        ],
+        "totalLoadKN": 23.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6401812517651984,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 9.633187705990423,
+        "momentStationM": 1.2752574986352503,
+        "reactionsKN": [
+          10.273626906170007,
+          6.638444380921962
+        ],
+        "totalLoadKN": 16.91207128709197,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.740484100566086,
+        "momentStationM": 1.1942969175325824,
+        "reactionsKN": [
+          14.619396323329505,
+          9.211899914244649
+        ],
+        "totalLoadKN": 23.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.0024128726316779,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 12.357587844506156,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          8.60696023950334,
+          8.305111047588628
+        ],
+        "totalLoadKN": 16.91207128709197,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 17.727118589583306,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          12.119396323329505,
+          11.711899914244649
+        ],
+        "totalLoadKN": 23.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.2859092450058436,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 9.350363471187926,
+        "momentStationM": 2.732547958483255,
+        "reactionsKN": [
+          6.940293572836673,
+          9.971777714255296
+        ],
+        "totalLoadKN": 16.91207128709197,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.316247748362338,
+        "momentStationM": 2.8135085395859205,
+        "reactionsKN": [
+          9.619396323329504,
+          14.21189991424465
+        ],
+        "totalLoadKN": 23.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.972982671299472,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 3,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 6.09557698250306,
+        "momentStationM": 2.1496317745440536,
+        "reactionsKN": [
+          5.606960239503341,
+          11.305111047588628
+        ],
+        "totalLoadKN": 16.91207128709197,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.336915318011844,
+        "momentStationM": 2.165823890764586,
+        "reactionsKN": [
+          7.619396323329507,
+          16.211899914244647
+        ],
+        "totalLoadKN": 23.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6342952114987576,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.9603826474070996,
+        "momentStationM": 1.8946059440706517,
+        "reactionsKN": [
+          10.023626906170005,
+          5.221777714255295
+        ],
+        "totalLoadKN": 15.2454046204253,
+        "equilibriumResidualKN": 1.7763568394002505e-15
+      },
+      "uls": {
+        "momentKNm": 8.132352802656284,
+        "momentStationM": 1.8824618569052507,
+        "reactionsKN": [
+          14.244396323329504,
+          7.08689991424465
+        ],
+        "totalLoadKN": 21.331296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.620227122518949,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 8.461870270313648,
+        "momentStationM": 1.4574188061162499,
+        "reactionsKN": [
+          9.023626906170003,
+          6.221777714255296
+        ],
+        "totalLoadKN": 15.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.939232629260406,
+        "momentStationM": 1.3966983702892493,
+        "reactionsKN": [
+          12.744396323329504,
+          8.58689991424465
+        ],
+        "totalLoadKN": 21.331296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.880527603570619,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 10.616962845339483,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          7.773626906170004,
+          7.471777714255295
+        ],
+        "totalLoadKN": 15.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 15.116181090833301,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          10.869396323329504,
+          10.46189991424465
+        ],
+        "totalLoadKN": 21.331296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 1.1047828142913094,
+      "belowLegacyBenchmarks": false,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 8.24975209421178,
+        "momentStationM": 2.550386651002254,
+        "reactionsKN": [
+          6.523626906170005,
+          8.721777714255294
+        ],
+        "totalLoadKN": 15.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 11.621055365107596,
+        "momentStationM": 2.611107086829253,
+        "reactionsKN": [
+          8.994396323329504,
+          12.33689991424465
+        ],
+        "totalLoadKN": 21.331296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8584549525714652,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 4,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.917959012186727,
+        "momentStationM": 2.1131995130478525,
+        "reactionsKN": [
+          5.523626906170005,
+          9.721777714255294
+        ],
+        "totalLoadKN": 15.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 8.068717349825723,
+        "momentStationM": 2.125343600213252,
+        "reactionsKN": [
+          7.4943963233295054,
+          13.836899914244649
+        ],
+        "totalLoadKN": 21.331296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6158125923191183,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.05,
+      "sls": {
+        "momentKNm": 5.84678442863307,
+        "momentStationM": 1.9164653009683708,
+        "reactionsKN": [
+          9.073626906170002,
+          5.171777714255296
+        ],
+        "totalLoadKN": 14.2454046204253,
+        "equilibriumResidualKN": -1.7763568394002505e-15
+      },
+      "uls": {
+        "momentKNm": 7.961135748611583,
+        "momentStationM": 1.9067500312360512,
+        "reactionsKN": [
+          12.819396323329505,
+          7.011899914244649
+        ],
+        "totalLoadKN": 19.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6084062880991749,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.25,
+      "sls": {
+        "momentKNm": 7.795512070403785,
+        "momentStationM": 1.56671559060485,
+        "reactionsKN": [
+          8.273626906170003,
+          5.971777714255296
+        ],
+        "totalLoadKN": 14.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.919202182304002,
+        "momentStationM": 1.51813924194325,
+        "reactionsKN": [
+          11.619396323329505,
+          8.211899914244649
+        ],
+        "totalLoadKN": 19.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.8111875203333804,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.5,
+      "sls": {
+        "momentKNm": 9.572587845839482,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          7.273626906170004,
+          6.971777714255295
+        ],
+        "totalLoadKN": 14.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 13.549618591583304,
+        "momentStationM": 2.088749999,
+        "reactionsKN": [
+          10.119396323329505,
+          9.711899914244649
+        ],
+        "totalLoadKN": 19.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.9961069558625892,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.75,
+      "sls": {
+        "momentKNm": 7.625817529522286,
+        "momentStationM": 2.4410898665136527,
+        "reactionsKN": [
+          6.273626906170003,
+          7.971777714255296
+        ],
+        "totalLoadKN": 14.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 10.664660370981759,
+        "momentStationM": 2.4896662151752533,
+        "reactionsKN": [
+          8.619396323329505,
+          11.211899914244649
+        ],
+        "totalLoadKN": 19.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.7935293995340569,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    },
+    {
+      "bay": "east",
+      "scenario": "upper",
+      "spanM": 4.177499998,
+      "gkKPa": 6.63,
+      "action": "wheel-or-jack",
+      "assumedSharingBeams": 5,
+      "localLoadKN": 20,
+      "vehicleUDLKPa": null,
+      "stationFraction": 0.95,
+      "sls": {
+        "momentKNm": 5.812845520456775,
+        "momentStationM": 2.091340156150132,
+        "reactionsKN": [
+          5.473626906170004,
+          8.771777714255295
+        ],
+        "totalLoadKN": 14.2454046204253,
+        "equilibriumResidualKN": 0.0
+      },
+      "uls": {
+        "momentKNm": 7.910227386347131,
+        "momentStationM": 2.1010554258824516,
+        "reactionsKN": [
+          7.419396323329504,
+          12.41189991424465
+        ],
+        "totalLoadKN": 19.831296237574154,
+        "equilibriumResidualKN": 0.0
+      },
+      "maxLegacyDemandRatio": 0.6048746639393107,
+      "belowLegacyBenchmarks": true,
+      "capacityVerified": false,
+      "approvedForConstruction": false
+    }
+  ],
+  "foundations": {
+    "revision": "F02-2026-10-27",
+    "status": "Experimental reference assumptions; not a site-average measurement or construction design",
+    "approvedForConstruction": false,
+    "datum": "Model ground-floor FFL 0.000 m; assume adjacent ground at -0.150 m solely for this study",
+    "assumedGroundZ": -0.15,
+    "boundsMeaning": "Illustrative lower/reference/upper cases, not confidence bounds. Clay/tree effects, made ground, drains, groundwater or adjacent foundations can require deeper/wider foundations or a different system. Ashley Heights has mature trees: their influence is not assessed.",
+    "strip": {
+      "widthM": 0.6,
+      "thicknessM": 0.3,
+      "depthBelowAssumedGroundM": 1.0,
+      "stemWidthM": 0.3525,
+      "stemMaterial": "Foundation-grade masonry envelope; product and below-ground suitability unselected"
+    },
+    "gardenSlab": {
+      "referenceM": 0.15,
+      "lowerM": 0.125,
+      "upperM": 0.2,
+      "basis": "Ground-bearing floor only. Perimeter walls and terrace posts bear on separate foundations. Reinforcement, subgrade, fill and insulation arrangement unselected."
+    },
+    "basement": {
+      "raftReferenceM": 0.3,
+      "raftLowerM": 0.25,
+      "raftUpperM": 0.4,
+      "blindingM": 0.05,
+      "subbaseM": 0.15,
+      "additionalPermanentLoadKN": 800,
+      "basis": "Continuous reinforced-concrete raft concept under all six retaining-wall runs; no separate strip footings assumed beneath it. 300 mm is a spatial/budget allowance, not a thickness calculation. Local thickenings, punching, bending, crack control, wall-base fixity, waterstops, waterproofing and temporary works remain undesigned. The 352.5 mm retaining-wall envelope still coordinates the cavity wall above, not a calculated RC thickness. F02 lowers the raft top to -3.000 m beneath the unchanged -2.800 m finished floor, reserving 200 mm for the floor build-up. Retaining-wall and column bases follow the raft; excavation and groundwater heads update.",
+      "finishedFloorZ": -2.8,
+      "raftTopZ": -3.0,
+      "floorBuildUp": [
+        {
+          "id": "WATERPROOF",
+          "title": "Waterproofing / protection zone",
+          "depthMm": 15
+        },
+        {
+          "id": "INSULATION",
+          "title": "Rigid floor insulation allowance",
+          "depthMm": 100
+        },
+        {
+          "id": "SCREED",
+          "title": "Floating screed allowance",
+          "depthMm": 65
+        },
+        {
+          "id": "FINISH",
+          "title": "Floor finish / adhesive allowance",
+          "depthMm": 20
+        }
+      ],
+      "floorBuildUpBasis": "200 mm dimensional budget above the raft, preserving the authored basement FFL. Waterproofing type, drainage/access, gas protection, insulation strength/thermal performance, screed reinforcement/drying and edge details are unselected. Layers must be redesigned with the waterproofing specialist and structural engineer; no system performance is claimed."
+    },
+    "cases": [
+      {
+        "id": "lower",
+        "label": "Lighter / firmer illustrative case",
+        "grossAllowableBearingKPa": 150,
+        "depthBelowGroundM": 0.75,
+        "garageSuperstructureKNm": 30,
+        "gardenSuperstructureKNm": 15,
+        "gardenPostKN": 20,
+        "basementSuperstructureKN": 1200,
+        "waterLevelZ": -3.1,
+        "stripSelfAndCoverKNm": 10.555,
+        "garagePressureKPa": 67.59,
+        "garageRequiredWidthScreenM": 0.27,
+        "garageWithinPressureScreen": true,
+        "gardenPressureKPa": 42.59,
+        "gardenRequiredWidthScreenM": 0.17,
+        "gardenWithinPressureScreen": true,
+        "housePostPadPressureKPa": 47.16,
+        "housePostPadWithinScreen": true,
+        "basementGrossPressureKPa": 31.045769785332517,
+        "basementWithinPressureScreen": true,
+        "waterHeadAtRaftM": 0.2,
+        "upliftKN": 226.88,
+        "emptyBoxDeadWeightKN": 1989.95,
+        "emptyBoxBalanceKN": 1763.07,
+        "completedIllustrativeDeadWeightKN": 3189.7452005433306,
+        "completedIllustrativeBalanceKN": 2962.8652005433305,
+        "modelledVehicleDeckAndBearingWallsKN": 399.79520054333057
+      },
+      {
+        "id": "reference",
+        "label": "Reference assumptions",
+        "grossAllowableBearingKPa": 100,
+        "depthBelowGroundM": 1.0,
+        "garageSuperstructureKNm": 45,
+        "gardenSuperstructureKNm": 25,
+        "gardenPostKN": 35,
+        "basementSuperstructureKN": 1800,
+        "waterLevelZ": -1.6,
+        "stripSelfAndCoverKNm": 13.431,
+        "garagePressureKPa": 97.39,
+        "garageRequiredWidthScreenM": 0.584,
+        "garageWithinPressureScreen": true,
+        "gardenPressureKPa": 64.05,
+        "gardenRequiredWidthScreenM": 0.384,
+        "gardenWithinPressureScreen": true,
+        "housePostPadPressureKPa": 75.18,
+        "housePostPadWithinScreen": true,
+        "basementGrossPressureKPa": 36.235769785332515,
+        "basementWithinPressureScreen": true,
+        "waterHeadAtRaftM": 1.7,
+        "upliftKN": 1928.48,
+        "emptyBoxDeadWeightKN": 1989.95,
+        "emptyBoxBalanceKN": 61.48,
+        "completedIllustrativeDeadWeightKN": 3189.7452005433306,
+        "completedIllustrativeBalanceKN": 1261.2652005433306,
+        "modelledVehicleDeckAndBearingWallsKN": 399.79520054333057
+      },
+      {
+        "id": "upper",
+        "label": "Heavier / weaker / wetter illustrative case",
+        "grossAllowableBearingKPa": 75,
+        "depthBelowGroundM": 1.5,
+        "garageSuperstructureKNm": 70,
+        "gardenSuperstructureKNm": 40,
+        "gardenPostKN": 60,
+        "basementSuperstructureKN": 2500,
+        "waterLevelZ": -0.15,
+        "stripSelfAndCoverKNm": 19.183,
+        "garagePressureKPa": 148.64,
+        "garageRequiredWidthScreenM": 1.189,
+        "garageWithinPressureScreen": false,
+        "gardenPressureKPa": 98.64,
+        "gardenRequiredWidthScreenM": 0.789,
+        "gardenWithinPressureScreen": false,
+        "housePostPadPressureKPa": 123.4,
+        "housePostPadWithinScreen": false,
+        "basementGrossPressureKPa": 42.28576978533251,
+        "basementWithinPressureScreen": true,
+        "waterHeadAtRaftM": 3.15,
+        "upliftKN": 3573.35,
+        "emptyBoxDeadWeightKN": 1989.95,
+        "emptyBoxBalanceKN": -1583.4,
+        "completedIllustrativeDeadWeightKN": 3189.7452005433306,
+        "completedIllustrativeBalanceKN": -383.6047994566694,
+        "modelledVehicleDeckAndBearingWallsKN": 399.79520054333057
+      }
+    ],
+    "loadBasis": "Characteristic/service-load budgets, not extracted reactions: garage reference 45 kN/m rounds a 24.6 kN/m two-storey masonry allowance (6 m x 0.205 m x 20 kN/m3), two floor allowances of 2.5 kN/m2 x 2.5 m tributary width (12.5 kN/m), and roof 1.5 kN/m2 x 2.5 m (3.75 kN/m). Garden 25 kN/m is a wall/terrace budget; 35 kN is an independent illustrative post reaction. Basement total superstructure 1,800 kN is a separate whole-footprint service budget, not a completed load takedown. Do not add the post budget to the line-load budget as if independently verified. G01: the illustrative superstructure budgets and additional permanent-load allowance exclude the separately measured vehicle deck, local RC bands/bearing nodes and cinema bearing masonry. Their actual modelled volumes and assumed densities are added explicitly. This is still not a load takedown; empty-box uplift excludes these later construction stages.",
+    "calculationBasis": "Gross unfactored pressure screens against assumed gross allowable bearing, NOT Eurocode 7 ULS verification or settlement design. Include footing concrete 24 kN/m3, foundation masonry 20 kN/m3, soil cover on projections 18 kN/m3; raft/retaining concrete 25 kN/m3. Pressure screens omit eccentricity and local load spreading. Uplift uses water 9.81 kN/m3 at the raft underside and compares un-factored dead weight only, without relying on pumps or favourable soil friction.",
+    "sources": [
+      {
+        "title": "LABC Warranty Technical Manual v10, chapter 3: strip/raft foundations and tree effects (guidance, not site selection)",
+        "url": "https://info.labcwarranty.co.uk/hubfs/Technical%20Manual%20v10%20Files%20and%20Images/Manual%20Sections/Section%203%20Foundations.pdf"
+      },
+      {
+        "title": "LABC: raft foundation basics \u2014 reinforced raft, ground investigation and edge/internal stiffening",
+        "url": "https://www.labc.co.uk/news/raft-foundation-basics"
+      },
+      {
+        "title": "NHBC Standards 2024, chapters 4.3 and 5.4 \u2014 foundations and below-ground waterproofing guidance",
+        "url": "https://nhbcprod.blob.core.windows.net/shared/CC2981-NHBC-Standards-2024-aw-digital-version-lr-151223.pdf"
+      },
+      {
+        "title": "NHBC Standards 2026 \u2014 warranty guidance distinct from Building Regulations",
+        "url": "https://www.nhbc.co.uk/builders/products-and-services/techzone/nhbc-standards"
+      }
+    ],
+    "memberIds": [
+      "M-GF-1",
+      "M-GF-2",
+      "M-GF-3",
+      "M-GARDEN-FOUNDATION",
+      "M-GS-1",
+      "M-GS-2",
+      "M-GS-3",
+      "M-GARDEN-STEM",
+      "M-RC-EEBF948",
+      "M-BASEMENT-FLOOR-WATERPROOF",
+      "M-BASEMENT-FLOOR-INSULATION",
+      "M-BASEMENT-FLOOR-SCREED",
+      "M-BASEMENT-FLOOR-FINISH",
+      "M-BASEMENT-BLINDING",
+      "M-BASEMENT-SUBBASE",
+      "M-WM01-COURTYARD-FOOTING",
+      "M-WM01-COURTYARD-UPSTAND"
+    ],
+    "raftAreaM2": 115.63684,
+    "raftBaseZ": -3.3,
+    "raftTopZ": -3.0,
+    "wallWeightKN": 1122.68,
+    "raftWeightKN": 867.28,
+    "checksCompleted": [
+      "Unfactored gross concentric pressure arithmetic",
+      "Water-head and un-factored dead-weight sensitivity",
+      "Model fit/quantity checks only"
+    ],
+    "checksNotCompleted": [
+      "Site investigation or a verified load takedown",
+      "Eurocode 7 ULS/SLS, settlement, eccentricity or local post/column bearing",
+      "Raft/wall flexure, shear, punching, crack control or reinforcement",
+      "Tree influence, ground heave, chemical class or drains",
+      "Waterproofing system, staged uplift, existing-house support or temporary excavation works"
+    ],
+    "courtyardMasonryContinuation": {
+      "memberIds": [
+        "M-WM01-COURTYARD-FOOTING",
+        "M-WM01-COURTYARD-UPSTAND"
+      ],
+      "basis": "WM01 connected bearing geometry using F01 reference dimensions; not included in the garage/garden pressure checks. Ground, reinforcement, settlement and junction with deeper/retained foundations remain unverified.",
+      "approvedForConstruction": false
+    },
+    "garageDeckNote": "BB01 changes only the garage deck self-weight in the existing unfactored pressure/uplift sensitivities. A lighter floor reduces pressure AND reduces uplift resistance. Empty-box construction stage is unchanged."
+  },
+  "retainedSupportIds": [
+    "M-RC-51B8D91",
+    "M-RC-93C6185",
+    "M-RC-FC244DE",
+    "M-G01-CINEMA-NORTH",
+    "M-G01-CINEMA-EAST-1",
+    "M-SW02-CINEMA-NORTH-PIER",
+    "M-G01-CINEMA-HEAD-S",
+    "M-G01-CINEMA-HEAD-N"
+  ],
+  "audit": {
+    "internalIntersections": [],
+    "outsideOriginalSlabM3": 0.0,
+    "unchangedFloorAndCeilingLevels": true,
+    "capacityVerified": false
+  },
+  "installation": [
+    "Design supplier layout, bearings, topping/ties, local RC strips and temporary works together.",
+    "Construct verified basement walls and opening heads; check bearing levels and lifting access.",
+    "Install precast beams and floor-grade infill to supplier layout; no cutting or drilling of beams.",
+    "Grout joints, form remaining RC strips, install specified reinforcement/ties and membranes.",
+    "Place and cure designed topping with controlled construction loads; complete garage finish and protected/insulated basement ceiling."
+  ]
+}

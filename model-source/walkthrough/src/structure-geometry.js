@@ -5,8 +5,19 @@ export const CATEGORIES={beams:{label:'Steel & ridge beams',color:'#83b9d5'},joi
 export const MEMBER_CATEGORIES=['beams','joists','rafters','trimmers','studs','partitions','framing-review','fascia','connections','details','layers','lintels','masonry','rc'];
 export const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const centre=e=>e.bounds[0].map((x,i)=>(x+e.bounds[1][i])/2);
-export function filteredElements(data,{categories=Object.keys(CATEGORIES),region='house',retained=true,level='all',trialOverlay=false,representation='all',garageRebuild=true,loftUpgrade=true,roofOption='replace',focusSystem=null,scope='all',isolatedIds=null,systemFilters=null}={}){
- return data.elements.filter(e=>(!isolatedIds||isolatedIds.includes(e.id))&&(!systemFilters||systemFilters.some(key=>systemMatches(e,key)))&&(!e.trial||trialOverlay)&&
+export function resolveGarageDeck(data,choice){
+ const requested=['beam-block','solid-rc'].includes(choice)?choice:null;
+ const preferred=data.garageBeamBlock?.defaultOption??data.garageDeckDefault;
+ return requested??(['beam-block','solid-rc'].includes(preferred)?preferred:'solid-rc');
+}
+export function garageDeckElements(data){
+ const study=data.garageBeamBlock;
+ if(!study||data.garageDeckInstalled)return data.elements;
+ const replaced=new Set(study.replacesIds);
+ return [...data.elements.map(e=>replaced.has(e.id)?{...e,garageDeckOption:'solid-rc'}:e),...study.elements];
+}
+export function filteredElements(data,{categories=Object.keys(CATEGORIES),region='house',retained=true,level='all',trialOverlay=false,representation='all',garageRebuild=true,loftUpgrade=true,roofOption='replace',focusSystem=null,scope='all',isolatedIds=null,systemFilters=null,garageDeck=resolveGarageDeck(data)}={}){
+ return garageDeckElements(data).filter(e=>(!e.garageDeckOption||e.garageDeckOption===garageDeck)&&(!isolatedIds||isolatedIds.includes(e.id))&&(!systemFilters||systemFilters.some(key=>systemMatches(e,key)))&&(!e.trial||trialOverlay)&&
  (representation==='all'||representation==='envelopes'&&!e.member||representation==='members'&&(e.member||e.retained||e.trial))&&
  (categories.includes(e.category)||(e.masonryDetail&&categories.includes('masonry'))||(representation==='members'&&retained&&e.retained&&(!systemFilters||systemFilters.some(key=>systemMatches(e,key)))))&&
  (e.condition!=='loft-upgrade'||loftUpgrade)&&(e.condition!=='roof-rebuild'||roofOption==='replace')&&(!e.roofContext||roofOption!=='replace')&&
@@ -79,7 +90,7 @@ export function makeDrawing(data,options={}){
   const label=r.name.replace(/^New |^Original |^Proposal /,'').slice(0,28);
   parts.push(`<text x="${x.toFixed(2)}" y="${y.toFixed(2)}" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="${ink}" opacity=".65" pointer-events="none">${esc(label)}</text>`);
  }
- if(selected){const e=data.elements.find(e=>e.id===selected);if(groups.some(g=>g.e.id===selected)){parts.push(`<text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="${ink}">${esc(e.id+' · '+e.name)}</text>`);}}
+ if(selected){const e=es.find(e=>e.id===selected);if(groups.some(g=>g.e.id===selected)){parts.push(`<text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="${ink}">${esc(e.id+' · '+e.name)}</text>`);}}
  if(view!=='plan'&&view!=='section')for(const f of data.floorLevels){const y=xy([ext[0],f.z])[1];parts.push(`<path d="M24 ${y.toFixed(2)}H${width-24}" stroke="${ink}" opacity=".3" stroke-dasharray="4 4"/><text x="24" y="${(y-5).toFixed(2)}" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="${ink}">${esc(f.label)} ${f.z.toFixed(2)} m</text>`);}
  const bx=28,by=height-22;parts.push(`<path d="M${bx} ${by-5}v10m0 -5h${(5*scale).toFixed(2)}m0 -5v10" stroke="${ink}" fill="none"/><text x="${bx}" y="${by-10}" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="${ink}">5 m · model geometry</text>`);
  parts.push(`<text x="${width-24}" y="${height-14}" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="${ink}">${options.representation==='members'?'M16 · ROOF '+(options.roofOption==='replace'?'B — REBUILD':'A — RETAIN'):'P01'} - COORDINATION ONLY - NOT FOR CONSTRUCTION</text>`);

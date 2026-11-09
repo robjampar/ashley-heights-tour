@@ -1,0 +1,157 @@
+{
+  "recordedAtUTC": "2026-11-09T16:22:30.225287+00:00",
+  "revision": "VB01-2026-11-09",
+  "ownerAccepted": true,
+  "vehicleBrief": {
+    "revision": "VB01-2026-11-09",
+    "ownerAccepted": true,
+    "ownerInstruction": "Use conservative allowances: fully laden van up to 3.5 tonnes and Tesla up to 3.1 tonnes, potentially parked together.",
+    "vehicles": [
+      {
+        "id": "van",
+        "name": "Laden van",
+        "maximumGrossMassKg": 3500,
+        "grossWeightKN": 34.335,
+        "staticHeavyAxleKN": 22.31775,
+        "movementHeavyAxleKN": 26.781299999999998,
+        "movementHeavyWheelKN": 16.068779999999997
+      },
+      {
+        "id": "tesla",
+        "name": "Tesla allowance",
+        "maximumGrossMassKg": 3100,
+        "grossWeightKN": 30.411,
+        "staticHeavyAxleKN": 19.76715,
+        "movementHeavyAxleKN": 23.72058,
+        "movementHeavyWheelKN": 14.232348
+      }
+    ],
+    "simultaneousParking": true,
+    "gravityMPerS2": 9.81,
+    "provisionalVehicleUDLKPa": 5.0,
+    "localPointSensitivitiesKN": [
+      20,
+      25,
+      30
+    ],
+    "assumptions": {
+      "maximumAxleFraction": 0.65,
+      "heavierWheelFractionOfAxle": 0.6,
+      "movementSensitivityFactor": 1.2,
+      "trackWidthsM": [
+        1.6,
+        1.8,
+        2.0
+      ],
+      "jackFloorLoadKN": 30,
+      "note": "Axle fractions, track widths, wheel imbalance and movement factor are explicit study assumptions, not vehicle data or prescribed Eurocode values. The 30 kN jack case is a separate local floor action, not additional vehicle mass. Actual plated axle ratings and tyre/jack contact patches remain required."
+    },
+    "codeBasis": {
+      "provisionalCategory": "G: both gross vehicle allowances exceed 30 kN",
+      "basis": "Use first-generation EN 1991-1-1 with the applicable UK National Annex as the provisional project basis. JRC guidance gives Category G for 30-160 kN vehicles and a 5 kPa UDL. Exact UK concentrated-action requirements, combinations, access restrictions and edition must be confirmed by the designer. No 40-90 kN generic axle range is silently adopted as the selected UK axle load.",
+      "confirmedUKNormativeLocalLoad": false,
+      "sources": [
+        {
+          "title": "JRC Eurocode 1 workshop, page 32",
+          "url": "https://eurocodes.jrc.ec.europa.eu/sites/default/files/2022-06/EN1991_2_Malakatas.pdf"
+        },
+        {
+          "title": "IStructE Eurocode transition guidance",
+          "url": "https://www.istructe.org/resources/eurocodes/"
+        }
+      ]
+    },
+    "limits": [
+      "Two vehicles together is the operational brief, not a verified parking layout or full-deck load-pattern analysis.",
+      "UDL, axle pairs and local jack sensitivities are evaluated separately; the full vehicle weights are not added again to those actions.",
+      "Transverse spreading through topping/infill, tyre and jack patches, punching, beam torsion and joint transfer remain unverified.",
+      "The paired-wheel study assumes an axle parallel to the precast beam. Turning, wheelbase, both axles, edge approaches and loads shared through the central wall/opening heads need full layout analysis.",
+      "Vehicle weights are variable actions and must not be credited as permanent resistance to groundwater uplift.",
+      "No car lift, heavier vehicle or construction plant is included in this parking brief."
+    ],
+    "combinedGrossMassKg": 6600,
+    "combinedStaticWeightKN": 64.74600000000001,
+    "combinedMovementSensitivityKN": 77.69520000000001,
+    "combinedUlsVariableOnlyKN": 116.54280000000003,
+    "approvedForConstruction": false
+  },
+  "tests": {
+    "python": 20,
+    "web": 26,
+    "browser": 11,
+    "browserErrors": [],
+    "browserFailedResponses": []
+  },
+  "geometry": {
+    "allBaselineMemberTrianglesUnchanged": true,
+    "allAlternativeTrianglesUnchanged": true,
+    "baselineMemberCount": 2576,
+    "alternativeCount": 335,
+    "bearingContacts": 64,
+    "internalIntersections": [],
+    "sharedIntersections": []
+  },
+  "foundationDataUnchangedInBothOptions": true,
+  "loadCases": {
+    "precastPointAndUDL": 156,
+    "pairedAxleEnvelopes": 20,
+    "sampledLayoutsPerAxleEnvelope": 66,
+    "rcStrip": 108
+  },
+  "pdf": {
+    "path": "walkthrough/public/structure/garage-deck-enquiry.pdf",
+    "pages": 4,
+    "dataSha256": "debfb3c52f432b95a5c435d56440aaead5280f6fbae14d816b547608d097354c",
+    "approvedForConstruction": false,
+    "sentToSupplier": false,
+    "sha256": "2cc83c4bc6cf151a5ff19504da79c19a310626052a5b504f52e9911d537eb5b9",
+    "latestRenderMatchesReviewedPages": [
+      {
+        "page": 1,
+        "sameAsVisuallyReviewedRendering": true,
+        "pngSHA256": "ff2ce16c3d71e4bf6684f82655eeb17918daed0c4f603682473b420b7229fd6d"
+      },
+      {
+        "page": 2,
+        "sameAsVisuallyReviewedRendering": true,
+        "pngSHA256": "a4b2425bdac6d264cfcb3920d8a07a505fe65248d7a834b65019dee44fb89db9"
+      },
+      {
+        "page": 3,
+        "sameAsVisuallyReviewedRendering": true,
+        "pngSHA256": "6409348554642d7962034e7ef2738af6d3083e6937d0e441566f6a0be52e4676"
+      },
+      {
+        "page": 4,
+        "sameAsVisuallyReviewedRendering": true,
+        "pngSHA256": "9a03d768af16570def50ebe918b9136f864d562a7ed8bd06c33735b87899e652"
+      }
+    ]
+  },
+  "layout": {
+    "exitCode": 2,
+    "findings": 345,
+    "sameFindingSetAs": "logs/beam-block-layout-2026-11-09.log"
+  },
+  "defaultDeck": "solid-rc",
+  "sentToSupplier": false,
+  "published": false,
+  "nativeRebuilt": false,
+  "approvedForConstruction": false,
+  "sourceSHA256": {
+    "proposal/specs/garage-vehicle-brief.json": "f30779106c2f4f3fb8bdc4fae1482bc1d38ef81d3a660c0c239bc7522c887573",
+    "scripts/structure/garage_vehicle_brief.py": "f126dd35f86ef468cd5662380949fb9a7990e49eddb5fec7fb6035e085dfe9ca",
+    "scripts/structure/garage_supplier_pack.py": "0d05d58b3d5d60ef247cbb18175434f266563eedb18b50ec04ef9029eddfbf20",
+    "scripts/structure/garage_beam_block.py": "0a89b9252f20343dbc06c820959cbc45dddcd66c5373461cdd1a76844252ae65",
+    "scripts/structure/vehicle_deck_study.py": "947b78546c9e97cf1503261decfb517471073d0abc5e0b4b95b4c4785bf9daff",
+    "scripts/structure/build_members.py": "b1f470379658b0dac3f9405775ab79c25e7a891a652628b284b98e3d3401b126",
+    "scripts/structure/requirements.txt": "3c1fab9b4dc5236db74949b0fa7349408a0cb04a4f5072179d2288b592ac59c2",
+    "walkthrough/src/structure-garage-deck.js": "9c646f6fec75fc8d75d48b159a9b65c6dde3fa06dc4f6085fd14b7732469a9e0",
+    "walkthrough/src/structure-studio.js": "1c67addde119b9de8e4d7bb690fbf7fd09ad2442a0404ae4834b1b56b446d1a3",
+    "tests/test_garage_vehicle_brief.py": "420adc8442071e3df874260b58c9d9d97ea569027a2dd16b4dc8d4640a6e6f65",
+    "walkthrough/tests/garage-beam-block.test.mjs": "a4ea57827b9bbe7860a22ec96111e17638e5817ea7acf215f3be2fe1f0346e90",
+    "walkthrough/tests/garage-beam-block-browser.mjs": "8bed739f7681a4996074c6403e249dd90dc39db686d816c3ae1dcef99a25fb19",
+    "walkthrough/public/structure/members.json": "a43c0276bdaa2dd04ec2dd8b6014b32fa2bd0c6bafa6bc1579840307f72fd8c1",
+    "walkthrough/public/structure/garage-deck-enquiry.pdf": "2cc83c4bc6cf151a5ff19504da79c19a310626052a5b504f52e9911d537eb5b9"
+  }
+}

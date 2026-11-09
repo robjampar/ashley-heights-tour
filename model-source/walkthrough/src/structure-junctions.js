@@ -1,13 +1,15 @@
+import {garageDeckMarkup} from './structure-garage-deck.js';
 import {bearingEndFacts,cavityFacts,bearingReviewMarkup} from './structure-bearings.js';
-import {esc,CATEGORIES} from './structure-geometry.js';
+import {esc,CATEGORIES,resolveGarageDeck} from './structure-geometry.js';
 
 export function optionIncludes(e,state={}){
- return !!e&&(state.region==='all'||!state.region||e.region===state.region)&&
+ return !!e&&(!e.garageDeckOption||e.garageDeckOption===(state.garageDeck??'solid-rc'))&&(state.region==='all'||!state.region||e.region===state.region)&&
  (e.condition!=='roof-rebuild'||state.roofOption!=='retain')&&
  (e.condition!=='loft-upgrade'||state.loftUpgrade!==false)&&
  (e.scope!=='garage-rebuild'||state.garageRebuild!==false);
 }
 export function junctionRows(members,state={}){
+ state={...state,garageDeck:resolveGarageDeck(members,state?.garageDeck)};
  const by=new Map(members.elements.map(e=>[e.id,e]));
  return members.junctionReview.clashAudit.intersections.filter(h=>[h.a,h.b].every(id=>optionIncludes(by.get(id),state)));
 }
@@ -23,13 +25,15 @@ function nextStep(categories){
  return 'Review the bearing/end geometry and member levels. Intermediate roof bearings and crossings have not been notched to hide the clash.';
 }
 export function coveringFitMarkup(members,state={}){
+ state={...state,garageDeck:resolveGarageDeck(members,state?.garageDeck)};
  const audit=members.coveringFit;if(!audit)return '';
  const by=new Map(members.elements.map(e=>[e.id,e]));
  const hits=audit.intersections.filter(h=>optionIncludes(by.get(h.memberId),state));
  const groups=new Map();for(const hit of hits){const key=hit.kind==='roof-lining'?'Upper roof linings':hit.kind.includes('floor')||hit.kind==='basement-finish'?'Floor coverings':'Ceiling coverings';if(!groups.has(key))groups.set(key,[]);groups.get(key).push(hit);}
- return `<article class="trial-card"><h2>Architecture: floor and ceiling fit</h2><p>${audit.measured.length} authored coverings were measured. <strong>${hits.length} overlaps</strong> remain against the structural options currently selected; <strong>${audit.unmeasured.length} unmeasured items</strong> are listed separately. These counts include roof and bearing interfaces beyond the horizontal floor-framing check.</p><p>${esc(audit.scope)}</p>${[...groups].map(([label,rows])=>`<details><summary>${esc(label)} · ${rows.length} overlaps</summary><div class="table-scroll"><table><thead><tr><th>Authored covering</th><th>Member</th><th>Overlap</th></tr></thead><tbody>${rows.map(h=>`<tr><td>${esc(h.objectName)}</td><td><button class="text-button" data-focus-member="${esc(h.memberId)}">${esc(h.memberId)}</button><br>${esc(h.memberName)}</td><td>${h.overlapCm3==null?'Plane crossing':h.overlapCm3.toLocaleString('en-GB')+' cm³'}</td></tr>`).join('')}</tbody></table></div></details>`).join('')}${audit.unmeasured.length?`<details><summary>Unmeasured surfaces and members · ${audit.unmeasured.length}</summary>${audit.unmeasured.map(r=>`<p><strong>${esc(r.objectName??r.memberId)}</strong><br>${esc(r.reason)}</p>`).join('')}</details>`:''}<p><a href="./covering-fit.json" download>Complete finish-fit measurements · JSON ↓</a></p></article>`;
+ return `<article class="trial-card"><h2>Architecture: floor and ceiling fit</h2>${state.garageDeck==='beam-block'?'<p>BB01 is contained within the previous slab envelope and preserves the lining datums. Its own internal/shared-structure check is separate; these legacy covering measurements have not been recomputed for each precast part.</p>':''}<p>${audit.measured.length} authored coverings were measured. <strong>${hits.length} overlaps</strong> remain against the structural options currently selected; <strong>${audit.unmeasured.length} unmeasured items</strong> are listed separately. These counts include roof and bearing interfaces beyond the horizontal floor-framing check.</p><p>${esc(audit.scope)}</p>${[...groups].map(([label,rows])=>`<details><summary>${esc(label)} · ${rows.length} overlaps</summary><div class="table-scroll"><table><thead><tr><th>Authored covering</th><th>Member</th><th>Overlap</th></tr></thead><tbody>${rows.map(h=>`<tr><td>${esc(h.objectName)}</td><td><button class="text-button" data-focus-member="${esc(h.memberId)}">${esc(h.memberId)}</button><br>${esc(h.memberName)}</td><td>${h.overlapCm3==null?'Plane crossing':h.overlapCm3.toLocaleString('en-GB')+' cm³'}</td></tr>`).join('')}</tbody></table></div></details>`).join('')}${audit.unmeasured.length?`<details><summary>Unmeasured surfaces and members · ${audit.unmeasured.length}</summary>${audit.unmeasured.map(r=>`<p><strong>${esc(r.objectName??r.memberId)}</strong><br>${esc(r.reason)}</p>`).join('')}</details>`:''}<p><a href="./covering-fit.json" download>Complete finish-fit measurements · JSON ↓</a></p></article>`;
 }
 export function junctionsMarkup(members,state){
+ state={...state,garageDeck:resolveGarageDeck(members,state?.garageDeck)};
  const j=members.junctionReview,by=new Map(members.elements.map(e=>[e.id,e])),pairs=junctionRows(members,state);
  const cuts=j.endCuts.filter(c=>optionIncludes(by.get(c.memberId),state)&&optionIncludes(by.get(c.supportId),state));
  const groups=new Map();for(const p of pairs){const key=p.categories.map(c=>CATEGORIES[c].label).sort().join(' / ');if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p);}
@@ -44,7 +48,7 @@ export function junctionsMarkup(members,state){
  <article class="trial-card"><h2>Remaining overlaps</h2><p>${esc(j.clashAudit.method)} Some overlaps mark an intended bearing pocket; others need a changed assembly or level. Each pair remains visible for review. This is not a clash-free certificate.</p>${[...groups].sort((a,b)=>b[1].length-a[1].length).map(([label,hits])=>`<details><summary>${esc(label)} · ${hits.length}</summary><p>${esc(nextStep(hits[0].categories))}</p><div class="table-scroll"><table><thead><tr><th>Members</th><th>Overlap volume</th><th>3D detail</th></tr></thead><tbody>${rows(hits)}</tbody></table></div></details>`).join('')||'<p>No positive-volume overlaps in the selected audit scope.</p>'}<p class="muted">${esc(j.scopeLimit)}</p></article>
  <article class="trial-card"><h2>Coordinated end geometry</h2><p>Full-section end setbacks and plumb roof-member ends avoid passing through a steel face. The connection across each gap still needs to be designed.</p><details><summary>Review ${cuts.length} end cuts</summary><div class="table-scroll"><table><thead><tr><th>Member / receiver</th><th>End geometry</th><th>3D detail</th></tr></thead><tbody>${cuts.map(c=>`<tr><td>${esc(c.memberId)}<br>${esc(c.supportId)}</td><td>End ${c.end} · ${esc(c.cut)}<br>${c.setbackMm} mm setback; ${c.modelClearanceMm} mm nominal gap</td><td>${pairButton(c.memberId,c.supportId)}</td></tr>`).join('')}</tbody></table></div></details></article>
  <article class="trial-card"><h2>Non-bearing heads below steel</h2><p>Complete panel heads and their studs move together beneath parallel downstand beams. The ${j.assumptions.partitionSteelClearanceMm} mm gap is a combined movement/fire-lining space allowance; the actual movement, steel protection and head/sealing system remain to be designed. Cross-beam junctions remain in the overlap list.</p>${j.partitionHeads.filter(r=>optionIncludes(by.get(r.headId),state)&&optionIncludes(by.get(r.beamId),state)).map(r=>`<p><strong>${esc(r.headId)}</strong> · ${r.dropMm} mm lower, with ${r.studIds.length} shortened studs.</p>${pairButton([r.headId,...r.studIds].join(','),r.beamId,'Inspect complete partition head')}`).join('')}</article>
- <article class="trial-card"><h2>Construction layers</h2><p>Use <strong>Floor build-ups</strong> to see selectable deck, finish, service-space and ceiling allowances. These layers follow the floor openings and are excluded from the cost subtotal. The schedule below records what remains missing.</p><div class="table-scroll"><table><thead><tr><th>System</th><th>Shown in the model</th><th>Still unresolved / not fully modelled</th></tr></thead><tbody>${j.layerSchedule.map(r=>`<tr><td><strong>${esc(r.system)}</strong></td><td>${esc(r.shown)}</td><td>${esc(r.unresolved)}</td></tr>`).join('')}</tbody></table></div></article>
+ ${state.garageDeck==='beam-block'?garageDeckMarkup(members,state):''}<article class="trial-card"><h2>Construction layers</h2><p>Use <strong>Floor build-ups</strong> to see selectable deck, finish, service-space and ceiling allowances. These layers follow the floor openings and are excluded from the cost subtotal. The schedule below records what remains missing.</p><div class="table-scroll"><table><thead><tr><th>System</th><th>Shown in the model</th><th>Still unresolved / not fully modelled</th></tr></thead><tbody>${j.layerSchedule.map(item=>{const r=state.garageDeck==='beam-block'&&item.system==='Basement and vehicle deck'?{...item,shown:'Selected beam-and-block system; provisional 150 mm precast beams and 100 mm nominal reinforced topping within the existing 250 mm structural envelope; original 75 mm finish/screed allowance and ceiling datum retained. Local RC edges retain the bearing-wall route.'}:item;return `<tr><td><strong>${esc(r.system)}</strong></td><td>${esc(r.shown)}</td><td>${esc(r.unresolved)}</td></tr>`;}).join('')}</tbody></table></div></article>
  <article class="trial-card"><h2>Joist material preference</h2><p>${esc(j.assumptions.materialPreference)}</p><p>The short ground-floor bays and west loft now have solid C24 candidates with limited floor-load screens. The ground-floor bays include staggered full-depth blocking and a rough stock comparison in Costs. Longer bays retain I-joist reservations pending complete manufacturer design; selected fire, acoustic, vibration and connection details remain open.</p></article>
  <div class="trial-sources">${j.assumptions.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)} ↗</a>`).join('')}</div>`;
 }
@@ -63,6 +67,7 @@ export function junctionFacts(e,members){
 }
 
 export function cutCSV(members,state){
+ state={...state,garageDeck:resolveGarageDeck(members,state?.garageDeck)};
  const by=new Map(members.elements.map(e=>[e.id,e]));
  const fields=['id','section','modelLengthMm','endTreatment','ends','headAdjustment','fabricationReady'];
  const quote=x=>'"'+String(typeof x==='object'?JSON.stringify(x):x??'').replaceAll('"','""')+'"';

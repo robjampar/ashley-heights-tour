@@ -1,3 +1,4 @@
+import {installGarageDeck,deckFoundations} from './structure-garage-deck.js';
 import {foundationMarkup} from './structure-foundations.js';
 import {SYSTEM_KEYS,toggleSystem,categoriesForSystems} from './structure-systems.js';
 import * as THREE from 'three';
@@ -6,7 +7,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {loadModel} from './model-delivery.js';
-import {CATEGORIES,MEMBER_CATEGORIES,esc,centre,filteredElements,makeDrawing} from './structure-geometry.js';
+import {CATEGORIES,MEMBER_CATEGORIES,esc,centre,filteredElements,makeDrawing,resolveGarageDeck} from './structure-geometry.js';
 import {trialMarkup,directionSVG} from './structure-trials.js';
 import {costMarkup,memberCSV,issueMarkup,memberFacts,masonryTriangles,mortarTriangles,ISOLATION,roofOptionsMarkup} from './structure-members.js';
 import {junctionsMarkup,cutCSV} from './structure-junctions.js';
@@ -15,10 +16,14 @@ const $=id=>root.querySelector('#'+id);
 const resource=name=>new URL(name,baseURL);
 const rootClass=embed?root.host.classList:document.body.classList;
 $('layers-toggle').onclick=()=>{const on=rootClass.toggle('layers-open');$('layers-toggle').setAttribute('aria-expanded',String(on));};
-const state={view:'model',level:'all',region:'house',retained:true,categories:[...ISOLATION.all],representation:'members',scope:'all',garageRebuild:true,loftUpgrade:true,roofOption:new URLSearchParams(location.search).get('roof')==='retain'?'retain':'replace',systemFilters:SYSTEM_KEYS.filter(k=>k!=='layers'),focusSystem:null,isolated:null,isolatedIds:null,mode:'solid',selected:null,trialOverlay:false,sectionAt:9.455};
+const state={garageDeck:null,view:'model',level:'all',region:'house',retained:true,categories:[...ISOLATION.all],representation:'members',scope:'all',garageRebuild:true,loftUpgrade:true,roofOption:new URLSearchParams(location.search).get('roof')==='retain'?'retain':'replace',systemFilters:SYSTEM_KEYS.filter(k=>k!=='layers'),focusSystem:null,isolated:null,isolatedIds:null,mode:'solid',selected:null,trialOverlay:false,sectionAt:9.455};
 const [data,trials,members]=await Promise.all(['model.json','trials.json','members.json'].map(async name=>{
  const response=await fetch(resource(name));if(!response.ok)throw Error('Structural data failed to load: '+name);return response.json();
 }));
+installGarageDeck(members);
+state.garageDeck=resolveGarageDeck(members,new URLSearchParams(location.search).get('garageDeck'));
+data.garageDeckDefault=resolveGarageDeck(members);
+if(members.garageBeamBlock)members.garageBeamBlock.enquiryUrl=new URL('garage-deck-enquiry.pdf',baseURL).href;
 data.elements.push(...trials.visualStudies);let trialScenario='reference';
 state.garageRebuild=members.garageOption.default!==false;
 const emptySelection=$('selection').innerHTML;
@@ -34,12 +39,13 @@ const pickCanvas=embed?.canvas??$('model');
 const camera=embed?.camera??new THREE.PerspectiveCamera(42,1,.05,350),controls=embed?{target:new THREE.Vector3(),update(){embed.focus(camera.position.clone(),this.target.clone());}}:new OrbitControls(camera,renderer.domElement);
 controls.enableDamping=true;controls.dampingFactor=.12;controls.maxDistance=150;controls.minDistance=.15;
 const clipping=new THREE.Plane(new THREE.Vector3(0,-1,0),9),architectureClipping=new THREE.Plane(new THREE.Vector3(0,-1,0),9),meshes=new Map(),lines=new Map();
+const deckColor=e=>({beam:'#87b6d1',block:'#c7bfa6',topping:'#a9b9af',edge:'#a0acb6',grout:'#8e907f'}[e.deckRole]??CATEGORIES[e.category].color);
 const cutPlaneFor=e=>e.member||e.trial?clipping:architectureClipping;
 if(!embed)scene.add(new THREE.HemisphereLight(0xdcefff,0x446079,3));const sun=new THREE.DirectionalLight(0xffffff,2);sun.position.set(-10,25,20);if(!embed)scene.add(sun);
 const vector=p=>new THREE.Vector3(p[0],p[2],-p[1]);
 const grid=new THREE.GridHelper(80,80,0x284661,0x18324c);grid.position.y=-3.12;if(!embed)scene.add(grid);
 for(const e of data.elements){
- const color=e.retained?'#718a9f':e.leaf==='block'?'#b9b9ac':CATEGORIES[e.category].color;
+ const color=e.retained?'#718a9f':e.leaf==='block'?'#b9b9ac':deckColor(e);
  const cutPlane=cutPlaneFor(e);
  if(e.triangles?.length){
   const unitTriangles=masonryTriangles(e),mortar=mortarTriangles(e),displayTriangles=[...unitTriangles,...mortar];
@@ -61,7 +67,7 @@ for(const e of data.elements){
 const batches=[],batchGroups=new Map();
 for(const e of data.elements){
  if(!meshes.has(e.id))continue;
- const key=JSON.stringify([e.category,e.region,e.level,e.scope,e.retained,e.condition,e.garageContext,e.roofContext,e.leaf,e.trial]);
+ const key=JSON.stringify([e.category,e.deckRole,e.garageDeckOption,e.region,e.level,e.scope,e.retained,e.condition,e.garageContext,e.roofContext,e.leaf,e.trial]);
  if(!batchGroups.has(key))batchGroups.set(key,[]);batchGroups.get(key).push(e);
 }
 for(const es of batchGroups.values()){
@@ -119,18 +125,18 @@ function refresh(){
  syncSystemButtons();
  for(const label of root.querySelectorAll('#systems .check')){const category=label.querySelector('input').value;label.querySelector('.system-count').textContent=filteredElements(data,{...state,categories:[category],systemFilters:null,retained:false}).length;}
  const ids=new Set(current().map(e=>e.id));
- for(const e of data.elements){const mesh=meshes.get(e.id),line=lines.get(e.id),selected=e.id===state.selected,color=selected?'#fff1bc':e.retained?'#718a9f':e.leaf==='block'?'#b9b9ac':CATEGORIES[e.category].color;
-  if(mesh){mesh.visible=ids.has(e.id);mesh.material.color.set(e.category==='masonry'&&!selected?'#ffffff':color);mesh.material.opacity=e.retained?(e.category==='walls'&&state.mode==='solid'?.3:.055):e.member?(state.mode==='solid'?1:.14):(selected?.4:state.mode==='solid'?.6:.055);mesh.material.transparent=e.retained||state.mode!=='solid'||!e.member;mesh.material.depthWrite=!e.retained&&state.mode==='solid';}
+ for(const e of data.elements){const mesh=meshes.get(e.id),line=lines.get(e.id),selected=e.id===state.selected,color=selected?'#fff1bc':e.retained?'#718a9f':e.leaf==='block'?'#b9b9ac':deckColor(e);
+  if(mesh){mesh.material.polygonOffset=selected;mesh.material.polygonOffsetFactor=-1;mesh.material.polygonOffsetUnits=-1;mesh.visible=ids.has(e.id);mesh.material.color.set(e.category==='masonry'&&!selected?'#ffffff':color);mesh.material.opacity=e.retained?(e.category==='walls'&&state.mode==='solid'?.3:.055):e.member?(state.mode==='solid'?1:.14):(selected?.4:state.mode==='solid'?.6:.055);mesh.material.transparent=e.retained||state.mode!=='solid'||!e.member;mesh.material.depthWrite=!e.retained&&state.mode==='solid';}
   if(line){line.visible=ids.has(e.id);line.material.color.set(color);line.material.opacity=selected?1:e.retained?.2:state.mode==='solid'?.28:.9;}
  }
  for(const {object,es,kind}of batches){
-  const all=es.every(e=>ids.has(e.id));object.visible=all;
+  const all=es.every(e=>ids.has(e.id))&&!(es.length===1&&es[0].id===state.selected);object.visible=all;
   if(!all)continue;
   const e=es[0],source=(kind==='mesh'?meshes:lines).get(e.id);
-  object.material.copy(source.material);
+  object.material.copy(source.material);object.material.polygonOffset=false;
   // Material.copy clones planes. Keep the live plane shared with the sliders.
   object.material.clippingPlanes=source.material.clippingPlanes;
-  object.material.color.set(kind==='mesh'&&e.category==='masonry'?'#ffffff':e.retained?'#718a9f':e.leaf==='block'?'#b9b9ac':CATEGORIES[e.category].color);
+  object.material.color.set(kind==='mesh'&&e.category==='masonry'?'#ffffff':e.retained?'#718a9f':e.leaf==='block'?'#b9b9ac':deckColor(e));
   object.material.opacity=kind==='mesh'?(e.retained?(e.category==='walls'&&state.mode==='solid'?.3:.055):e.member?(state.mode==='solid'?1:.14):state.mode==='solid'?.6:.055):(e.retained?.2:state.mode==='solid'?.28:.9);
   for(const item of es){const original=(kind==='mesh'?meshes:lines).get(item.id);if(original){original.visible=item.id===state.selected;original.renderOrder=2;}}
  }
@@ -151,7 +157,7 @@ function refresh(){
   const drawing=makeDrawing(data,{...state,level:state.view==='plan'?(state.level==='all'?0:Number(state.level)):state.level});$('drawing').innerHTML=drawing.svg;
   $('visible-count').textContent=drawing.count+' element references in this view';
  }else{$('visible-count').textContent=ids.size+(state.representation==='members'?' members / assemblies & retained context':' architectural envelopes & studies');}
- if(state.view==='foundations'){$('foundations').innerHTML=foundationMarkup(members);$('visible-count').textContent='Reference geometry · illustrative assumptions · not a construction design';}
+ if(state.view==='foundations'){$('foundations').innerHTML=foundationMarkup(deckFoundations(members,state.garageDeck));$('visible-count').textContent='Reference geometry · illustrative assumptions · not a construction design';}
  if(state.view==='junctions'){$('junctions').innerHTML=junctionsMarkup(members,state);$('visible-count').textContent='Measured geometry · model dimensions only';}
  if(state.view==='schedule')renderRegister();
  if(state.view==='trials'){renderTrials();$('visible-count').textContent='4 floor bays · timber bearing-wall study · 3 scenarios';}
@@ -164,11 +170,12 @@ function refresh(){
 }
 function select(id){
  state.selected=id;const e=data.elements.find(e=>e.id===id);if(!e)return;
+ if(e.garageDeckOption&&e.garageDeckOption!==state.garageDeck){state.garageDeck=e.garageDeckOption;syncInputs();}
  if(e.member){
-  $('selection').innerHTML=memberFacts(e,members,rates);
+  $('selection').innerHTML=memberFacts(e,members,rates,state);
   $('focus-element').onclick=()=>focusElement(e);
   $('isolate-element').onclick=()=>{state.isolated=e.id;state.retained=false;focusElement(e);};
-  const url=new URL(location.href);url.searchParams.set('element',id);history.replaceState(null,'',url);refresh();return;
+  const url=new URL(location.href);url.searchParams.set('element',id);url.searchParams.set('garageDeck',state.garageDeck);history.replaceState(null,'',url);refresh();return;
  }
  const m=e.measurements;const values=[];
  if(m.envelopeM)values.push(['Model envelope',m.envelopeM.map(x=>x.toFixed(3)).join(' × ')+' m']);
@@ -180,7 +187,7 @@ function select(id){
  $('selection').innerHTML=`<p class="eyebrow">ELEMENT INSPECTOR</p><span class="ref">${esc(e.id)}</span><h2>${esc(e.name.replace(/^Proposal \| /,''))}</h2><span class="badge">${esc(e.status)}</span><p>${esc(e.basis)}</p><dl class="facts">${values.map(([a,b])=>`<div><dt>${esc(a)}</dt><dd>${esc(b)}</dd></div>`).join('')}</dl><h2>Required design checks</h2><ul class="check-list">${e.checks.map(c=>`<li>${esc(c)}</li>`).join('')}</ul><button id="focus-element" class="outline">Focus in 3D</button>${related.length?'<button id="show-trials" class="outline" style="margin-top:8px">View UK trial calculations</button>':''}`;
  if(related.length)$('show-trials').onclick=()=>{state.view='trials';refresh();};
  $('focus-element').onclick=()=>{state.systemFilters=null;state.representation=e.retained?'members':'envelopes';state.isolated=null;state.isolatedIds=null;state.categories=Object.keys(CATEGORIES);renderSystems();state.view='model';if(e.trial){state.trialOverlay=true;$('trial-overlay').checked=true;}if(!state.categories.includes(e.category))state.categories.push(e.category);state.region=e.region;state.level='all';state.retained=true;syncInputs();refresh();controls.target.copy(vector(centre(e)));const size=Math.max(...e.bounds[1].map((v,i)=>v-e.bounds[0][i]),2);camera.position.copy(controls.target).add(new THREE.Vector3(size*.9,size*.7,size*.9));};
- const url=new URL(location.href);url.searchParams.set('element',id);history.replaceState(null,'',url);refresh();
+ const url=new URL(location.href);url.searchParams.set('element',id);url.searchParams.set('garageDeck',state.garageDeck);history.replaceState(null,'',url);refresh();
 }
 function focusElement(e){
  state.systemFilters=null;
@@ -223,6 +230,28 @@ function setRoofOption(option){
  syncInputs();refresh();const url=new URL(location.href);url.searchParams.set('roof',option);history.replaceState(null,'',url);
 }
 $('roof-option').onchange=()=>setRoofOption($('roof-option').value);
+function setGarageDeck(option){
+ if(!['solid-rc','beam-block'].includes(option)||!members.garageBeamBlock)return;
+ state.garageDeck=option;state.isolated=null;state.isolatedIds=null;state.selected=null;$('selection').innerHTML=emptySelection;
+ const url=new URL(location.href);url.searchParams.set('garageDeck',option);url.searchParams.delete('element');history.replaceState(null,'',url);
+ syncInputs();refresh();
+}
+function showGarageDeck(part='framing'){
+ const study=members.garageBeamBlock;if(!study)return;
+ if(part!=='solid-rc')setGarageDeck('beam-block');else setGarageDeck('solid-rc');
+ const selected=state.garageDeck==='beam-block'?study.elements.filter(e=>part==='complete'||!['topping','grout'].includes(e.deckRole)).map(e=>e.id):study.replacesIds;
+ state.view='model';state.level='all';state.region='house';state.scope='all';state.representation='members';state.retained=false;state.systemFilters=null;state.focusSystem=null;state.categories=[...MEMBER_CATEGORIES];
+ state.isolatedIds=[...selected,...study.retainedSupportIds];state.selected=null;
+ renderSystems();syncInputs();clipping.constant=.05;$('cut').value='.05';$('cut-value').textContent='0.05 m';refresh();
+ controls.target.copy(vector([9.455,-12.9,-.5]));camera.position.copy(vector([18.5,-22,8]));controls.update();
+ select(state.garageDeck==='beam-block'?(part==='complete'?'M-BB01-TOPPING':'M-BB01-BEAM-W-08'):'M-G01-GARAGE-SLAB');
+}
+$('garage-deck').onchange=()=>setGarageDeck($('garage-deck').value);
+$('inspect-garage-deck').onclick=()=>showGarageDeck(state.garageDeck==='beam-block'?'framing':'solid-rc');
+for(const el of [$('selection'),$('costs')])el.addEventListener('click',event=>{
+ const view=event.target.closest('[data-garage-deck-view]');if(view){showGarageDeck(view.dataset.garageDeckView);return;}
+ const choice=event.target.closest('[data-garage-deck-option]');if(choice)showGarageDeck(choice.dataset.garageDeckOption);
+});
 $('roof-options').onclick=event=>{const b=event.target.closest('[data-roof-choice],[data-roof-model],[data-roof-plan]');if(!b)return;const option=b.dataset.roofChoice??b.dataset.roofModel??b.dataset.roofPlan;setRoofOption(option);if(b.dataset.roofModel||b.dataset.roofPlan){isolate('roof');state.retained=true;state.level=b.dataset.roofPlan?'3':'all';state.view=b.dataset.roofPlan?'plan':'model';syncInputs();refresh();fit();}};
 function download(text,name,type){const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function renderCosts(){
@@ -235,7 +264,7 @@ function renderCosts(){
 function renderTrials(){$('trials').innerHTML=trialMarkup(data,trials,trialScenario);$('trial-scenario').onchange=event=>{trialScenario=event.target.value;renderTrials();};}
 $('trials').onclick=event=>{const b=event.target.closest('[data-trial-element]');if(b){select(b.dataset.trialElement);$('focus-element').click();}};
 function renderRegister(){const query=$('search').value.trim().toLowerCase();const es=filteredElements(data,state).filter(e=>(e.id+' '+e.name+' '+(e.section??'')+' '+(e.scope??'')).toLowerCase().includes(query));$('register-list').innerHTML=es.map(e=>`<button class="register-row ${e.id===state.selected?'selected':''}" data-element="${esc(e.id)}"><strong>${esc(e.id)}</strong><span>${esc(e.name.replace(/^Proposal \| /,''))}</span><small>${esc(CATEGORIES[e.category].label+' · '+e.status)}</small></button>`).join('');$('visible-count').textContent=es.length+' references · trial geometry, not an order list';}
-function syncInputs(){for(const id of ['region','level','representation','scope'])$(id).value=state[id];$('retained').checked=state.retained;$('roof-option').value=state.roofOption;$('garage-rebuild').checked=state.garageRebuild;$('loft-upgrade').checked=state.loftUpgrade;for(const c of root.querySelectorAll('#systems input'))c.checked=state.categories.includes(c.value);}
+function syncInputs(){$('garage-deck').value=state.garageDeck;for(const id of ['region','level','representation','scope'])$(id).value=state[id];$('retained').checked=state.retained;$('roof-option').value=state.roofOption;$('garage-rebuild').checked=state.garageRebuild;$('loft-upgrade').checked=state.loftUpgrade;for(const c of root.querySelectorAll('#systems input'))c.checked=state.categories.includes(c.value);}
 function resize(){if(embed||state.view!=='model')return;const rect=$('viewport').getBoundingClientRect();renderer.setSize(rect.width,rect.height,false);camera.aspect=rect.width/Math.max(1,rect.height);camera.updateProjectionMatrix();}
 if(!embed)new ResizeObserver(resize).observe($('viewport'));
 function renderSystems(){const keys=state.representation==='members'?MEMBER_CATEGORIES:Object.keys(CATEGORIES).filter(k=>!MEMBER_CATEGORIES.includes(k));$('systems').innerHTML=keys.map(id=>{const c=CATEGORIES[id];return `<label class="check"><input type="checkbox" value="${id}" ${state.categories.includes(id)?'checked':''}><i class="swatch" style="background:${c.color}"></i>${esc(c.label)}<span class="system-count">${data.elements.filter(e=>e.category===id).length}</span></label>`;}).join('');}
@@ -282,10 +311,12 @@ $('coverage').innerHTML=['M01 adds detailed trial members and wall assemblies. E
 $('sources').innerHTML=[...data.sources,...members.sources].map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)} ↗</a>`).join('');
 $('loading').hidden=true;const initialView=new URLSearchParams(location.search).get('view');if(['trials','issues','costs','roof-options','junctions','foundations'].includes(initialView))state.view=initialView;syncInputs();refresh();if(!embed)fit();
 const initial=new URLSearchParams(location.search).get('element');if(data.elements.some(e=>e.id===initial))select(initial);
+const initialDeckView=new URLSearchParams(location.search).get('deckView');
+if(!embed&&['framing','complete','solid-rc'].includes(initialDeckView))showGarageDeck(initialDeckView);
 const packResponse=await fetch(resource('pack.json'));if(packResponse.ok){const pack=await packResponse.json();if(!pack.available){const link=root.querySelector('a[href="./coordination-pack.pdf"]');link.removeAttribute('href');link.setAttribute('aria-disabled','true');link.textContent='PDF awaits current drawing issue';}}
 const trialPackResponse=await fetch(resource('trial-pack.json'));if(trialPackResponse.ok){const p=await trialPackResponse.json();if(!p.available){const link=root.querySelector('a[href="./trial-study.pdf"]');link.removeAttribute('href');link.setAttribute('aria-disabled','true');link.textContent='Trial PDF awaits current issue';}}
 if(!embed)renderer.setAnimationLoop(()=>{if(state.view==='model'&&!document.hidden){controls.update();renderer.render(scene,camera);}});
-const api={ready:true,data,trials,members,setRoofOption,inspectJunction,toggleVisibleSystem,get rates(){return rates;},isolate,focusElement,visible:()=>current().map(e=>e.id),setGarageRebuild(on){state.garageRebuild=on;syncInputs();refresh();},controls,directionSVG:()=>directionSVG(data,trials),state,select,fit,setView(view){state.view=view;refresh();},setRegion(region){state.region=region;syncInputs();refresh();fit();},setLevel(level){state.level=String(level);syncInputs();refresh();fit();},drawing:options=>makeDrawing(data,{...state,...options}),renderer,scene,camera,get architecture(){return architecture;},cutawayPlanes:{structure:clipping,architecture:architectureClipping}};
+const api={ready:true,setGarageDeck,showGarageDeck,data,trials,members,setRoofOption,inspectJunction,toggleVisibleSystem,get rates(){return rates;},isolate,focusElement,visible:()=>current().map(e=>e.id),setGarageRebuild(on){state.garageRebuild=on;syncInputs();refresh();},controls,directionSVG:()=>directionSVG(data,trials),state,select,fit,setView(view){state.view=view;refresh();},setRegion(region){state.region=region;syncInputs();refresh();fit();},setLevel(level){state.level=String(level);syncInputs();refresh();fit();},drawing:options=>makeDrawing(data,{...state,...options}),renderer,scene,camera,get architecture(){return architecture;},cutawayPlanes:{structure:clipping,architecture:architectureClipping}};
 
 if(!embed)window.structureStudio=api;
 return api;

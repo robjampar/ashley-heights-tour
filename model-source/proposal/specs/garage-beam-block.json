@@ -1,0 +1,82 @@
+{
+  "revision": "BB01-2026-11-09",
+  "defaultOption": "beam-block",
+  "decision": "Owner-selected beam-and-block system. The displayed 150 mm beams and 100 mm topping are provisional geometry, not accepted member sizes: vehicle/jacking load design, reinforcement, bearings and temporary works require supplier/engineer design. Solid RC is retained as a comparison; installed savings are not established.",
+  "beam": {
+    "widthM": 0.165,
+    "depthM": 0.15,
+    "webM": 0.115,
+    "flangeM": 0.05,
+    "spacingM": 0.345,
+    "countPerBay": 16,
+    "massKgM": 50.06
+  },
+  "profileBasis": "150 x 165 mm overall envelope and 50.06 kg/m from Stressline guide. Simplified 115 mm web / 50 mm flange are VISUAL allowances, not manufacturer dimensions. Straight beams depict nominal datum; no tendons, camber curve or fabrication geometry is claimed.",
+  "block": {
+    "lengthM": 0.44,
+    "widthM": 0.215,
+    "depthM": 0.1,
+    "jointM": 0.005,
+    "densityKgM3": 1970
+  },
+  "outerBearingM": 0.125,
+  "centreBearingM": 0.1,
+  "toppingM": 0.1,
+  "minimumToppingAllowanceM": 0.075,
+  "camberToleranceBudgetM": 0.025,
+  "nominalEndRowsY": [
+    -15.6125,
+    -10.4375
+  ],
+  "supplierReference": {
+    "url": "https://www.stressline.net/wp-content/uploads/2017/03/Stressline-Flooring-Brochure-2016_V9_LR.pdf",
+    "title": "Stressline Flooring Systems Guide, 2017, pages 10 and 12",
+    "clearSpanM": 5.26,
+    "floorSelfWeightKPa": 2.63,
+    "vehicleUDLKPa": 2.5,
+    "toppingM": 0.075,
+    "serviceMomentKNm": 9.61,
+    "ultimateMomentKNm": 14.72,
+    "ultimateShearKN": 38.2,
+    "limitation": "Legacy BS 8110 table. Values are reference benchmarks ONLY, not verified current Eurocode resistances. The 100 mm topping, finishes, partitions, actual vehicle axle/wheel/jack loads, fire exposure and basement restraint need a fresh supplier design. No equal sharing between beams is established."
+  },
+  "rates": {
+    "precastBeam": {
+      "label": "Precast floor beam supply/installation: unquoted allowance",
+      "unit": "m",
+      "low": 20,
+      "reference": 30,
+      "high": 45
+    },
+    "floorBlock": {
+      "label": "Floor infill block supply/lay/cut: unquoted allowance",
+      "unit": "each",
+      "low": 2.5,
+      "reference": 4,
+      "high": 6
+    },
+    "floorGrout": {
+      "label": "Floor joint grout placed: unquoted allowance",
+      "unit": "m\u00b3",
+      "low": 350,
+      "reference": 500,
+      "high": 750
+    }
+  },
+  "openDesign": [
+    "Current manufacturer design for beams, floor-grade infill, topping reinforcement and camber; no composite beam credit assumed.",
+    "Actual van gross/axle weights, paired wheel positions, jack contact patch, load distribution and local topping bending/punching; UDL and isolated point cases below are separate sensitivities.",
+    "RC edge strips, central closure and existing opening bands: reinforcement, anchorage, bearing stress, restraint and complete reactions through the masonry to the raft.",
+    "Basement lateral restraint/diaphragm and wall ties; water protection at edges, joints and garage threshold; groundwater uplift including construction stages.",
+    "Fire resistance from either side, protected basement ceiling, thermal insulation and acoustic layers. A legacy half-hour beam rating is not a complete garage/basement separation design.",
+    "Temporary erection stability, lifting access, wet topping and construction loads, cure period and propping. No cutting/drilling of prestressed beams.",
+    "Topping reinforcement, RC edge formwork, delivery/lifting, membrane/insulation, ceiling and professional design remain unpriced; quantities are not an order schedule."
+  ],
+  "selection": {
+    "revision": "BB02-2026-11-09",
+    "ownerSelectedSystem": true,
+    "ownerInstruction": "lets go with block and beam",
+    "detailedSizingAccepted": false,
+    "approvedForConstruction": false
+  }
+}

@@ -16,6 +16,8 @@ class StructureDeliveryTests(unittest.TestCase):
             (folder/'members 2.json').write_text('unwanted local duplicate')
             prefix,payload,members=package_structure(root,'proposal-compact.abcdef.glb.gz')
             self.assertEqual(set(payload),set(FILES))
+            self.assertIn('garage-beam-block.json',payload)
+            self.assertIn('garage-deck-enquiry.pdf',payload)
             self.assertIn(b'../../proposal-compact.abcdef.glb.gz',payload['studio.js'])
             self.assertIn(b'../../?design=proposed',payload['index.html'])
             self.assertFalse(members['approvedForConstruction'])

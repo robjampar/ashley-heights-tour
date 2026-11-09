@@ -2123,7 +2123,7 @@
       "method": "Measured furniture studies; separate design review required"
     }
   },
-  "published_utc": "2026-11-04T10:25:23.691958+00:00",
+  "published_utc": "2026-11-09T21:35:26.910594+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -2212,17 +2212,17 @@
       "bytes": 27467,
       "sha256": "e103d12e34f2ab247a375d0c1744c0f3600ec135508ba3ff73fcd152ee351876"
     },
-    "app.053a2a2286622136.js": {
-      "bytes": 5578405,
-      "sha256": "053a2a2286622136310263ed7de09bfc926005d120766ec6c342fd926564aaf6"
+    "app.22bb9ba89d196040.js": {
+      "bytes": 5590392,
+      "sha256": "22bb9ba89d196040945b30464ec5dd73c501468db5e0ef7f1c9c9c210af5e9ae"
     }
   },
   "previous_assets": {
-    "app.70d40a6504ecefff.js": {
-      "bytes": 5577069,
-      "sha256": "70d40a6504ecefff7778760ce646794a3a29b48602f873ffb683fdbc49cbe10c",
-      "retired_at_epoch": 1793787923.691958,
-      "retain_until_epoch": 1793789723.691958
+    "app.053a2a2286622136.js": {
+      "bytes": 5578405,
+      "sha256": "053a2a2286622136310263ed7de09bfc926005d120766ec6c342fd926564aaf6",
+      "retired_at_epoch": 1794260066.069665,
+      "retain_until_epoch": 1794261866.069665
     }
   },
   "easter": {
@@ -2655,105 +2655,49 @@
     "basis": "Approximate road and low-detail neighbouring buildings from supplied site images"
   },
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates.",
-  "staged_site_bytes": 949819004,
+  "staged_site_bytes": 786973209,
   "previous_runtime_assets": {
-    "visual-quality/9ce5a8a9108f53d4/compact-daylight.json": {
-      "bytes": 2414105,
-      "sha256": "dc1c4ec3ccdfd493fdf5d242341cb0d55094b97c1adfe978c32bfc4b346dd092"
-    },
-    "visual-quality/9ce5a8a9108f53d4/compact-furnishings.glb": {
-      "bytes": 37538648,
-      "sha256": "741372db8dacd15fdb12a3da7567edee246f29211ef6660d9e8bca586ce0353f"
-    },
-    "visual-quality/9ce5a8a9108f53d4/compact-furnishings.json": {
-      "bytes": 436515,
-      "sha256": "c3ea9460ea7b4218b5427e41f99f63bdc66db82db67773df35d124b508baa150"
-    },
-    "visual-quality/9ce5a8a9108f53d4/daylight-settings.json": {
-      "bytes": 237,
-      "sha256": "9ec312cb26f68a1f603f13e48b5c8546ae7a86492989657f1b084249adab07c8"
-    },
-    "visual-quality/9ce5a8a9108f53d4/planning-daylight.json": {
-      "bytes": 1645565,
-      "sha256": "be91ccd59b38cdd66b1d24fb067910ffad92e7d14472bf9be65c7b92719678b3"
-    },
-    "visual-quality/9ce5a8a9108f53d4/planning-furnishings.glb": {
-      "bytes": 34674880,
-      "sha256": "576e99e676310faf837b63d68f55eae8d4dce99dc728f6ffb12fefd137e16958"
-    },
-    "visual-quality/9ce5a8a9108f53d4/planning-furnishings.json": {
-      "bytes": 408660,
-      "sha256": "7e174964a0e72c0a07de0f7e379529054f9c4dc6c52820109b455542d6d9c505"
-    },
-    "visual-quality/f655624309a5687a/compact-daylight.json": {
-      "bytes": 2422333,
-      "sha256": "606a5475dcebdc8c5127545f00095dd39ee931b702ddc156211d8be66b9a364a"
-    },
-    "visual-quality/f655624309a5687a/compact-furnishings.glb": {
-      "bytes": 38315148,
-      "sha256": "6352765875a8c6b0d1737ce1575c7191895f71e85e54e6b80fecae5485b0f88e"
-    },
-    "visual-quality/f655624309a5687a/compact-furnishings.json": {
-      "bytes": 437582,
-      "sha256": "2d5317729ba7795e37edc62f6fbb88d65d9e72c4e2390f6a799d4d000b70bcec"
-    },
-    "visual-quality/f655624309a5687a/daylight-settings.json": {
-      "bytes": 237,
-      "sha256": "9ec312cb26f68a1f603f13e48b5c8546ae7a86492989657f1b084249adab07c8"
-    },
-    "visual-quality/f655624309a5687a/planning-daylight.json": {
-      "bytes": 1645565,
-      "sha256": "be91ccd59b38cdd66b1d24fb067910ffad92e7d14472bf9be65c7b92719678b3"
-    },
-    "visual-quality/f655624309a5687a/planning-furnishings.glb": {
-      "bytes": 34674880,
-      "sha256": "576e99e676310faf837b63d68f55eae8d4dce99dc728f6ffb12fefd137e16958"
-    },
-    "visual-quality/f655624309a5687a/planning-furnishings.json": {
-      "bytes": 408660,
-      "sha256": "7e174964a0e72c0a07de0f7e379529054f9c4dc6c52820109b455542d6d9c505"
-    },
-    "structure/52f2de1e1eca67d1/index.html": {
+    "structure/a0619ec3e4f3dd25/index.html": {
       "bytes": 9132,
       "sha256": "953b3d28c1c92a589e024e771ada33b29b61d16ba8e942e1cb37e7c4b8bb9b47"
     },
-    "structure/52f2de1e1eca67d1/studio.css": {
+    "structure/a0619ec3e4f3dd25/studio.css": {
       "bytes": 14380,
       "sha256": "4b5e9b82f5dbe759d3f272159404725a7253f7112677aa3e7d56bc446134c954"
     },
-    "structure/52f2de1e1eca67d1/studio.js": {
-      "bytes": 801428,
-      "sha256": "9407fe4c8a0922c90fd001e5340b85abe8a0ee9a5c4d7b277371d70e756c6048"
+    "structure/a0619ec3e4f3dd25/studio.js": {
+      "bytes": 801532,
+      "sha256": "2960811a1cd4bf388532e4cc56ee4adfd45a8460eea4d790094b61ca43cc5739"
     },
-    "structure/52f2de1e1eca67d1/model.json": {
-      "bytes": 1762171,
-      "sha256": "38f23812a3af336d6749e95a8345730e76aa898ddc688ed892c0d6159f8a5eb1"
+    "structure/a0619ec3e4f3dd25/model.json": {
+      "bytes": 1762116,
+      "sha256": "1efe72d7f7e24a14c35c546b4c846a2f9c84999e8d6210d03cac054ef8b78123"
     },
-    "structure/52f2de1e1eca67d1/trials.json": {
-      "bytes": 236197,
-      "sha256": "94646f61ef19465b953b9fdaa21ed0e5fb786076a3a639e96df484b648669e72"
+    "structure/a0619ec3e4f3dd25/trials.json": {
+      "bytes": 144584,
+      "sha256": "4f5d46a7963d464b3d0d85a241ce57ff03a106749883cadca45c2d581fea8025"
     },
-    "structure/52f2de1e1eca67d1/members.json": {
-      "bytes": 35730641,
-      "sha256": "a7b9ff5044a62913b2701c90c4bc9164a9dce78a4a67b77750d6d61e2056e622"
+    "structure/a0619ec3e4f3dd25/members.json": {
+      "bytes": 35683321,
+      "sha256": "b6287e9ac5ffce17be8f42aceab0ba03c37b0660e698592fdc3d9491c1860f75"
     },
-    "structure/52f2de1e1eca67d1/member-schedule.json": {
-      "bytes": 29378038,
-      "sha256": "75685e4a92abed4bde1833cc518d3bd375299919b5655c740897e245de913520"
+    "structure/a0619ec3e4f3dd25/member-schedule.json": {
+      "bytes": 15611327,
+      "sha256": "2099d358d31310f7ebae5561f76f8a76425f6e6e063f85c042447a0c2d6b26ac"
     },
-    "structure/52f2de1e1eca67d1/pack.json": {
-      "bytes": 332,
-      "sha256": "fc7f5f449822d899e284937176ca52afa742a2fa7de70871ca6b1fdff06a3d7c"
+    "structure/a0619ec3e4f3dd25/pack.json": {
+      "bytes": 310,
+      "sha256": "79abb5d2f9b9b479ea225a36d8c4b971fa929c85af50ef6b93cd631ce628df37"
     },
-    "structure/52f2de1e1eca67d1/trial-pack.json": {
-      "bytes": 408,
-      "sha256": "061ba0e947059f300af27853c6a176140407c40caaabdc050186ffb0ae5b83a8"
+    "structure/a0619ec3e4f3dd25/trial-pack.json": {
+      "bytes": 382,
+      "sha256": "f0d5804a410b3f6c3e40263abda815a6437286b3d85c0cab9924c5a7cbd615e2"
     },
-    "structure/52f2de1e1eca67d1/coordination-pack.pdf": {
+    "structure/a0619ec3e4f3dd25/coordination-pack.pdf": {
       "bytes": 332322,
       "sha256": "785a1d91d9dbd88b6f1407c503d63a82f829ed74bf77f6bdd692860c6a2cdf56"
     },
-    "structure/52f2de1e1eca67d1/trial-study.pdf": {
+    "structure/a0619ec3e4f3dd25/trial-study.pdf": {
       "bytes": 426225,
       "sha256": "74a66fd2fb52d8af3f603c1e027a4e200447bcc2dff41367da9fa98f2c1b7f7f"
     }
@@ -2819,55 +2763,63 @@
       "bytes": 271,
       "sha256": "8622a991caa44dec76de08dc5fe469493867d62faac93885b59143567a7e6194"
     },
-    "structure/a0619ec3e4f3dd25/index.html": {
-      "bytes": 9132,
-      "sha256": "953b3d28c1c92a589e024e771ada33b29b61d16ba8e942e1cb37e7c4b8bb9b47"
+    "structure/d32bc49a7c0acdcc/index.html": {
+      "bytes": 9446,
+      "sha256": "38ad7b15699fde550c54a6a90694fd6a63a34bfdbc060da0b999d508e2d5a103"
     },
-    "structure/a0619ec3e4f3dd25/studio.css": {
+    "structure/d32bc49a7c0acdcc/studio.css": {
       "bytes": 14380,
       "sha256": "4b5e9b82f5dbe759d3f272159404725a7253f7112677aa3e7d56bc446134c954"
     },
-    "structure/a0619ec3e4f3dd25/studio.js": {
-      "bytes": 801532,
-      "sha256": "2960811a1cd4bf388532e4cc56ee4adfd45a8460eea4d790094b61ca43cc5739"
+    "structure/d32bc49a7c0acdcc/studio.js": {
+      "bytes": 813467,
+      "sha256": "96cc9881ee90e1a298e3eac7cf7c6dc82da2cfdb98c5e09f5f0b643060624550"
     },
-    "structure/a0619ec3e4f3dd25/model.json": {
+    "structure/d32bc49a7c0acdcc/model.json": {
       "bytes": 1762116,
       "sha256": "1efe72d7f7e24a14c35c546b4c846a2f9c84999e8d6210d03cac054ef8b78123"
     },
-    "structure/a0619ec3e4f3dd25/trials.json": {
+    "structure/d32bc49a7c0acdcc/trials.json": {
       "bytes": 144584,
       "sha256": "4f5d46a7963d464b3d0d85a241ce57ff03a106749883cadca45c2d581fea8025"
     },
-    "structure/a0619ec3e4f3dd25/members.json": {
-      "bytes": 35683321,
-      "sha256": "b6287e9ac5ffce17be8f42aceab0ba03c37b0660e698592fdc3d9491c1860f75"
+    "structure/d32bc49a7c0acdcc/members.json": {
+      "bytes": 38614446,
+      "sha256": "cbd8280c83318083e278b851584d871b42fa5c9403de1bf4260a1cde766c257a"
     },
-    "structure/a0619ec3e4f3dd25/member-schedule.json": {
-      "bytes": 15611327,
-      "sha256": "2099d358d31310f7ebae5561f76f8a76425f6e6e063f85c042447a0c2d6b26ac"
+    "structure/d32bc49a7c0acdcc/member-schedule.json": {
+      "bytes": 18542452,
+      "sha256": "1047bd19d169e5efead13cdfe9bb62f4ca4655bebda28e53aff5202452a780f1"
     },
-    "structure/a0619ec3e4f3dd25/pack.json": {
+    "structure/d32bc49a7c0acdcc/pack.json": {
       "bytes": 310,
       "sha256": "79abb5d2f9b9b479ea225a36d8c4b971fa929c85af50ef6b93cd631ce628df37"
     },
-    "structure/a0619ec3e4f3dd25/trial-pack.json": {
+    "structure/d32bc49a7c0acdcc/trial-pack.json": {
       "bytes": 382,
       "sha256": "f0d5804a410b3f6c3e40263abda815a6437286b3d85c0cab9924c5a7cbd615e2"
     },
-    "structure/a0619ec3e4f3dd25/coordination-pack.pdf": {
+    "structure/d32bc49a7c0acdcc/coordination-pack.pdf": {
       "bytes": 332322,
       "sha256": "785a1d91d9dbd88b6f1407c503d63a82f829ed74bf77f6bdd692860c6a2cdf56"
     },
-    "structure/a0619ec3e4f3dd25/trial-study.pdf": {
+    "structure/d32bc49a7c0acdcc/trial-study.pdf": {
       "bytes": 426225,
       "sha256": "74a66fd2fb52d8af3f603c1e027a4e200447bcc2dff41367da9fa98f2c1b7f7f"
+    },
+    "structure/d32bc49a7c0acdcc/garage-beam-block.json": {
+      "bytes": 177484,
+      "sha256": "14836adf680359f40a51d0d9359cbb9132892d1bc9b573a9bc9587de16c70717"
+    },
+    "structure/d32bc49a7c0acdcc/garage-deck-enquiry.pdf": {
+      "bytes": 19262,
+      "sha256": "efe06ce3a9d2608745ebe432c420cd0f8708be074de1082a30f40d8f421331d7"
     }
   },
   "runtime_directories": {
     "visual-quality": "visual-quality/2fdc3ee54bfe6970/",
     "vehicles": "vehicles/0c084002aafd80d8/",
-    "structure": "structure/a0619ec3e4f3dd25/"
+    "structure": "structure/d32bc49a7c0acdcc/"
   },
   "source_assets": {
     "house.glb": {
@@ -2972,9 +2924,22 @@
   },
   "structure": {
     "path": "./structure/",
-    "runtimePath": "./structure/a0619ec3e4f3dd25/",
+    "runtimePath": "./structure/d32bc49a7c0acdcc/",
     "revision": "WM01-2026-10-29",
     "members": 2576,
-    "approvedForConstruction": false
+    "approvedForConstruction": false,
+    "garageDeck": {
+      "defaultOption": "beam-block",
+      "selection": {
+        "revision": "BB02-2026-11-09",
+        "ownerSelectedSystem": true,
+        "ownerInstruction": "lets go with block and beam",
+        "detailedSizingAccepted": false,
+        "approvedForConstruction": false
+      },
+      "members": 335,
+      "enquiryPack": "./structure/d32bc49a7c0acdcc/garage-deck-enquiry.pdf",
+      "approvedForConstruction": false
+    }
   }
 }

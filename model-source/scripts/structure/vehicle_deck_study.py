@@ -4,6 +4,8 @@ from scripts.structure.beam_analysis import gravity_span
 
 
 def strip_sensitivities(cfg):
+    from scripts.structure.garage_vehicle_brief import apply_vehicle_brief
+    cfg=apply_vehicle_brief(cfg)
     g=cfg['geometry'];loads=cfg['loads'];centre=g['cinemaEastWallX']
     # Centreline spans are conservative against min(clear + effective depth,
     # support centres), without claiming the actual support fixity is known.
@@ -38,7 +40,7 @@ def strip_sensitivities(cfg):
            'neutralAxisRatio':x/d if x is not None else None,
            'withinDuctilityAssumption':x is not None and x/d<=.45,
            'equilibriumResidualKN':response['equilibriumResidualKN']})
-    return {'status':'Flexural equilibrium sensitivity only; reinforcement is NOT selected',
+    return {'status':'Flexural equilibrium sensitivity only; reinforcement is NOT selected', 'vehicleBrief':cfg['vehicleBrief'],
       'supportSpanBasis':'Wall-centre to wall-centre simply supported strips. No continuity/fixity credit. A local wheel/jack is placed at midspan; vehicle axle pattern and transverse load distribution remain unresolved.',
       'materialAssumptions':{'concrete':'C30/37','reinforcement':'B500','alphaCc':.85,'gammaC':1.5,'gammaS':1.15,'coverMm':40,'trialBarDiameterMm':16},
       'cases':rows,'approvedForConstruction':False,

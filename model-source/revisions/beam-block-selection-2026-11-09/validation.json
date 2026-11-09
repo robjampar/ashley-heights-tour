@@ -1,0 +1,108 @@
+{
+  "revision": "BB02-2026-11-09",
+  "verifiedAtUtc": "2026-11-09T19:38:26.947651+00:00",
+  "selection": {
+    "revision": "BB02-2026-11-09",
+    "ownerSelectedSystem": true,
+    "ownerInstruction": "lets go with block and beam",
+    "detailedSizingAccepted": false,
+    "approvedForConstruction": false
+  },
+  "defaultOption": "beam-block",
+  "tests": {
+    "python": {
+      "passed": 20,
+      "log": "logs/beam-block-selection-python-2026-11-09.log"
+    },
+    "web": {
+      "passed": 324,
+      "failed": 0,
+      "log": "logs/beam-block-selection-web-tests-2026-11-09.log"
+    },
+    "browser": {
+      "passed": 12,
+      "errors": [],
+      "failedRequests": [],
+      "record": "walkthrough/test-results/beam-block-selection-2026-11-09/checks.json"
+    },
+    "buildMembers": "passed",
+    "buildWeb": "passed",
+    "workspaceLayout": {
+      "passed": false,
+      "identicalToPreExistingBaseline": true,
+      "findingCount": 345,
+      "log": "logs/beam-block-selection-layout-2026-11-09.log"
+    }
+  },
+  "unchanged": {
+    "baseMemberGeometry": 2576,
+    "beamBlockMemberGeometry": 335,
+    "quantities": true,
+    "vehicleLoadsAndDemandCases": true,
+    "foundationComparisons": true,
+    "floorCeilingDatums": true
+  },
+  "geometryAudit": {
+    "internalIntersections": 0,
+    "sharedStructureIntersections": 0,
+    "outsideOriginalSlabM3": 0.0,
+    "fullBearingContacts": 64,
+    "capacityVerified": false
+  },
+  "visualReview": {
+    "pdfPages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "pdfRenderFolder": "tmp/pdfs/beam-block-selection/",
+    "browserScreenshots": [
+      "02-beams-blocks-bearings.png",
+      "06-walkthrough-overlay.png"
+    ],
+    "result": "Selected-system labels and exposed beams/blocks visible; no clipping or overlap in the four PDF pages."
+  },
+  "enquiryPack": {
+    "path": "walkthrough/public/structure/garage-deck-enquiry.pdf",
+    "pages": 4,
+    "dataSha256": "74e7de89dec813a0d51c746ed6b9b0ae1b79fe4fd8d5e0b3d3af132991bf0c6b",
+    "approvedForConstruction": false,
+    "sentToSupplier": false,
+    "sha256": "efe06ce3a9d2608745ebe432c420cd0f8708be074de1082a30f40d8f421331d7",
+    "distMatches": true
+  },
+  "sourceSha256": {
+    "proposal/specs/garage-beam-block.json": "5faf76231cc7568475c73dc1926b075ba90ba55388cbd60126e5a5028c767a37",
+    "scripts/structure/garage_beam_block.py": "72a573bd79805c3611f3362970def46e073c2d17bb46ee9a1696bc97aac2850d",
+    "scripts/structure/garage_supplier_pack.py": "a3745d0020c42281e59e09192fc02b2593820f2aa2683acfea3daef18e77ec80",
+    "scripts/structure/build_members.py": "bc37242e4f9af37fa4775f332be92926eea07f8cd4c7e14b7f1a155e3c5f5d8a",
+    "walkthrough/src/structure-geometry.js": "f3b1fa77057283eb85b9515cca8c687cc48574e729d2afcc5b9a56aa447d9ac1",
+    "walkthrough/src/structure-studio.js": "b07fc4fbb1d94baa008947c2ff84b6b42f1a41d86bd4d25832faa7bf0982f2a8",
+    "walkthrough/src/structure-members.js": "398e749bbf72ecca533ec6710a5e3a8afd2d8f45a61b6b8ab30960de64c1b100",
+    "walkthrough/src/structure-junctions.js": "48ccbb0fb3c73277b7748a898f17085a3271d786a6112c644d1ef2e3da607216",
+    "walkthrough/src/structure-garage-deck.js": "a004523bd98f77be185015551dc0cfb0192e9b80773a03d3a6cca63ebb4e0f3d",
+    "walkthrough/public/structure/index.html": "bc3f72c3073fb387c30ff3b1ab720ab2104bef69c0837afef9a49a452f54c351",
+    "walkthrough/public/structure/members.json": "8bb7908629caaedc2a163a0010c8dbbf13827f5bc4747bef65a8be185458ddca",
+    "walkthrough/public/structure/garage-beam-block.json": "1a52101153fb63f58be078adbabdaf9de6061d1f03e990c62e97e629443386df",
+    "walkthrough/public/structure/garage-deck-enquiry.pdf": "efe06ce3a9d2608745ebe432c420cd0f8708be074de1082a30f40d8f421331d7",
+    "tests/test_garage_beam_block.py": "95a134ad67779a6ec69aa7a05a38167a18725c40ec3093a094f758358cb337b2",
+    "walkthrough/tests/garage-beam-block.test.mjs": "10dbe018126f235a8aca4d503396bbe14c683b68e57b2a80ec7c0f99e4bac2e8",
+    "walkthrough/tests/garage-beam-block-browser.mjs": "77c26875cba009d611a2db9a8e39830bf78b4f6c559cc6a2348832223f61b326",
+    "README.md": "c92b0e5b1dc032b8176d5c60c8234b5a7346ef0cdd4e5ab77eacb14fd725c776",
+    "docs/WORKSPACE.md": "c4f4a684fde8592b4d9cf7ef65444c216ffb3d6d4a09b9939861999c2ee5c428",
+    "walkthrough/tests/structure-members.test.mjs": "f29f2290612f9c96614ad367cb57b1299573775e794f75a80bb199c80f5a4cf9"
+  },
+  "actions": {
+    "nativeBlenderRebuild": false,
+    "published": false,
+    "committed": false,
+    "supplierContact": false,
+    "procurement": false
+  },
+  "limits": [
+    "System selected; displayed 150 mm beams and 100 mm topping are provisional.",
+    "Beam sizing, topping reinforcement, wheel/jacking load distribution, bearings and temporary works remain unresolved.",
+    "Existing wider model issues and incomplete cost allowances remain; no construction approval or proven installed saving."
+  ]
+}

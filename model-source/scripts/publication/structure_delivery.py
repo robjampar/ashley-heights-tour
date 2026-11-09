@@ -4,7 +4,8 @@ import json
 
 FILES = ('index.html', 'studio.css', 'studio.js', 'model.json', 'trials.json',
          'members.json', 'member-schedule.json', 'pack.json', 'trial-pack.json',
-         'coordination-pack.pdf', 'trial-study.pdf')
+         'coordination-pack.pdf', 'trial-study.pdf',
+         'garage-beam-block.json', 'garage-deck-enquiry.pdf')
 
 
 def package_structure(dist, model_path):
