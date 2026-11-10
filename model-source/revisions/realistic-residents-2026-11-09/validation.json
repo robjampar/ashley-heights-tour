@@ -1,0 +1,432 @@
+{
+  "completed": "2026-11-10T00:13:23.569278+00:00",
+  "browser": {
+    "errors": [],
+    "checks": [
+      "People do not add asset downloads to initial house loading",
+      "Switching People off while loading cannot spawn late figures",
+      "Seven detailed residents, all six styles, four motion clips and two or three materials each",
+      "Repeated characters have independent skeletons",
+      "Detailed resident rendered inside the actual Proposed model, including close face view",
+      "Toggle off/on reuses six downloads without disposing shared textures or meshes",
+      "Existing People control reflects loaded state"
+    ],
+    "requests": [
+      "http://127.0.0.1:8765/people/man.glb",
+      "http://127.0.0.1:8765/people/woman.glb",
+      "http://127.0.0.1:8765/people/man-smart.glb",
+      "http://127.0.0.1:8765/people/woman-dress.glb",
+      "http://127.0.0.1:8765/people/teen.glb",
+      "http://127.0.0.1:8765/people/child.glb"
+    ],
+    "warnings": [],
+    "residents": [
+      {
+        "style": "man",
+        "asset": "Microsoft Rocketbox",
+        "clips": [
+          "idle",
+          "run",
+          "sit",
+          "walk"
+        ],
+        "legScale": 0.9587040587705383,
+        "meshes": 3
+      },
+      {
+        "style": "woman",
+        "asset": "Microsoft Rocketbox",
+        "clips": [
+          "idle",
+          "run",
+          "sit",
+          "walk"
+        ],
+        "legScale": 0.9957997776000929,
+        "meshes": 3
+      },
+      {
+        "style": "man-smart",
+        "asset": "Microsoft Rocketbox",
+        "clips": [
+          "idle",
+          "run",
+          "sit",
+          "walk"
+        ],
+        "legScale": 0.9587042715106417,
+        "meshes": 3
+      },
+      {
+        "style": "woman-dress",
+        "asset": "Microsoft Rocketbox",
+        "clips": [
+          "idle",
+          "run",
+          "sit",
+          "walk"
+        ],
+        "legScale": 0.995799739991007,
+        "meshes": 3
+      },
+      {
+        "style": "teen",
+        "asset": "Microsoft Rocketbox",
+        "clips": [
+          "idle",
+          "run",
+          "sit",
+          "walk"
+        ],
+        "legScale": 0.8724208033717258,
+        "meshes": 2
+      },
+      {
+        "style": "child",
+        "asset": "Microsoft Rocketbox",
+        "clips": [
+          "idle",
+          "run",
+          "sit",
+          "walk"
+        ],
+        "legScale": 0.7573763218749393,
+        "meshes": 2
+      },
+      {
+        "style": "man",
+        "asset": "Microsoft Rocketbox",
+        "clips": [
+          "idle",
+          "run",
+          "sit",
+          "walk"
+        ],
+        "legScale": 0.9587041794394889,
+        "meshes": 3
+      }
+    ],
+    "roomPose": {
+      "camera": {
+        "x": 4.85,
+        "y": -7.25,
+        "z": 0
+      },
+      "person": {
+        "x": 7.25,
+        "y": -6.15,
+        "z": 0
+      }
+    },
+    "passed": true
+  },
+  "unit_tests": {
+    "life": 8,
+    "realistic_residents": 3,
+    "failed": 0
+  },
+  "layout": {
+    "preexisting_findings": 345,
+    "identical_to": "logs/viewer-performance-layout-2026-11-04.log"
+  },
+  "asset_manifest": {
+    "license": "MIT",
+    "source": "https://github.com/microsoft/Microsoft-Rocketbox",
+    "models": [
+      {
+        "style": "man",
+        "source": "Adults/Male_Adult_01",
+        "file": "man.glb",
+        "vertices": 4025,
+        "triangles": 7440,
+        "bytes": 3288344,
+        "clips": [
+          "idle",
+          "walk",
+          "run",
+          "sit"
+        ],
+        "sourceExportBytes": 26544348,
+        "sha256": "bb40a014dd332826567dd1f34c7ef6ed7a1dd97b8a31c60fba989f623ec65240"
+      },
+      {
+        "style": "woman",
+        "source": "Adults/Female_Adult_06",
+        "file": "woman.glb",
+        "vertices": 3669,
+        "triangles": 6992,
+        "bytes": 2393428,
+        "clips": [
+          "idle",
+          "walk",
+          "run",
+          "sit"
+        ],
+        "sourceExportBytes": 20649168,
+        "sha256": "bef9babda3884478496359af0c2dc347883cc1107dbd42716b7466808835162e"
+      },
+      {
+        "style": "man-smart",
+        "source": "Adults/Male_Adult_08",
+        "file": "man-smart.glb",
+        "vertices": 3907,
+        "triangles": 7364,
+        "bytes": 3330596,
+        "clips": [
+          "idle",
+          "walk",
+          "run",
+          "sit"
+        ],
+        "sourceExportBytes": 25209388,
+        "sha256": "f0ecba52865346c2afb27f0809686c78f75cf4949c0f21f0bfd67b67ac23e3ae"
+      },
+      {
+        "style": "woman-dress",
+        "source": "Adults/Female_Adult_11",
+        "file": "woman-dress.glb",
+        "vertices": 4758,
+        "triangles": 8896,
+        "bytes": 3482220,
+        "clips": [
+          "idle",
+          "walk",
+          "run",
+          "sit"
+        ],
+        "sourceExportBytes": 29991156,
+        "sha256": "be1015942e6c9f9f061e8ca95fa6f3a22b39b049bef4a4572792959af58848ab"
+      },
+      {
+        "style": "teen",
+        "source": "Adults/Male_Adult_12",
+        "file": "teen.glb",
+        "vertices": 3383,
+        "triangles": 6722,
+        "bytes": 2432520,
+        "clips": [
+          "idle",
+          "walk",
+          "run",
+          "sit"
+        ],
+        "sourceExportBytes": 22599544,
+        "sha256": "71e32fe186a2a2e6da8df84272d6396581ec2aca95d2b557c638fd0fd67dfd8f"
+      },
+      {
+        "style": "child",
+        "source": "Children/Male_Child_01",
+        "file": "child.glb",
+        "vertices": 3352,
+        "triangles": 6660,
+        "bytes": 2088768,
+        "clips": [
+          "idle",
+          "walk",
+          "run",
+          "sit"
+        ],
+        "sourceExportBytes": 20734288,
+        "sha256": "495d62f16ab816bedb96598f20a053c8961a1c4f4ebd2a3f813b4b4a9bccde47"
+      }
+    ],
+    "texturePolicy": "2048 px face colour; 1024 px clothing, normal and hair maps; JPEG colour/normal, PNG alpha; source maps preserved."
+  },
+  "motion_bounds": [
+    {
+      "style": "man",
+      "clips": {
+        "idle": {
+          "lowest": 0.0019163307981350242,
+          "highest": 1.8217995143758303,
+          "maxFoot": 0.002141904300593911,
+          "duration": 2.7666666507720947
+        },
+        "walk": {
+          "lowest": 0.00334186133881198,
+          "highest": 1.8190276347462295,
+          "maxFoot": 0.010293456530212075,
+          "duration": 1.100000023841858
+        },
+        "run": {
+          "lowest": -0.006107947156720361,
+          "highest": 1.8133391885395311,
+          "maxFoot": 0.01953002634669687,
+          "duration": 0.800000011920929
+        },
+        "sit": {
+          "lowest": -0.009843521740279582,
+          "highest": 1.5028859282221525,
+          "maxFoot": -0.009508434298247104,
+          "duration": 5
+        }
+      }
+    },
+    {
+      "style": "woman",
+      "clips": {
+        "idle": {
+          "lowest": -0.003008803772579949,
+          "highest": 1.7329231658239512,
+          "maxFoot": -0.0027465657495241436,
+          "duration": 2.700000047683716
+        },
+        "walk": {
+          "lowest": -0.01584913037556579,
+          "highest": 1.7341814030840734,
+          "maxFoot": 0.002136624435421841,
+          "duration": 1.2666666507720947
+        },
+        "run": {
+          "lowest": -0.0033326214211880645,
+          "highest": 1.7592766514746323,
+          "maxFoot": 0.0255205599874766,
+          "duration": 0.8666666746139526
+        },
+        "sit": {
+          "lowest": -0.01794802844339094,
+          "highest": 1.402823279308797,
+          "maxFoot": -0.017058625300298225,
+          "duration": 5
+        }
+      }
+    },
+    {
+      "style": "man-smart",
+      "clips": {
+        "idle": {
+          "lowest": 0.0019162339088125702,
+          "highest": 1.8241633875616308,
+          "maxFoot": 0.0021418190258924996,
+          "duration": 2.7666666507720947
+        },
+        "walk": {
+          "lowest": 0.001284103691137739,
+          "highest": 1.8198736927766226,
+          "maxFoot": 0.010310797892066015,
+          "duration": 1.100000023841858
+        },
+        "run": {
+          "lowest": -0.0061082786542272505,
+          "highest": 1.8153273501038667,
+          "maxFoot": 0.01955815230084801,
+          "duration": 0.800000011920929
+        },
+        "sit": {
+          "lowest": -0.009843490524587883,
+          "highest": 1.5045565727229495,
+          "maxFoot": -0.009508409753818725,
+          "duration": 5
+        }
+      }
+    },
+    {
+      "style": "woman-dress",
+      "clips": {
+        "idle": {
+          "lowest": -0.0017169838648850577,
+          "highest": 1.7356775816609216,
+          "maxFoot": -0.0014542334034663984,
+          "duration": 2.700000047683716
+        },
+        "walk": {
+          "lowest": -0.014825734146588054,
+          "highest": 1.736993992790416,
+          "maxFoot": 0.002257571398522673,
+          "duration": 1.2666666507720947
+        },
+        "run": {
+          "lowest": -0.004276285876532393,
+          "highest": 1.762156348441025,
+          "maxFoot": 0.025089698275205907,
+          "duration": 0.8666666746139526
+        },
+        "sit": {
+          "lowest": -0.01857636638137139,
+          "highest": 1.4145966749944487,
+          "maxFoot": -0.017686970501911148,
+          "duration": 5
+        }
+      }
+    },
+    {
+      "style": "teen",
+      "clips": {
+        "idle": {
+          "lowest": 0.0017438636408306785,
+          "highest": 1.6423991830718674,
+          "maxFoot": 0.0019491376226216106,
+          "duration": 2.7666666507720947
+        },
+        "walk": {
+          "lowest": 0.0023230988971779665,
+          "highest": 1.6417904665689478,
+          "maxFoot": 0.010153819732481528,
+          "duration": 1.100000023841858
+        },
+        "run": {
+          "lowest": -0.005598344272930267,
+          "highest": 1.6351076696645526,
+          "maxFoot": 0.0182843308720243,
+          "duration": 0.800000011920929
+        },
+        "sit": {
+          "lowest": -0.008953715788210026,
+          "highest": 1.3523560394781442,
+          "maxFoot": -0.008648785588900365,
+          "duration": 5
+        }
+      }
+    },
+    {
+      "style": "child",
+      "clips": {
+        "idle": {
+          "lowest": 0.00364708458679297,
+          "highest": 1.4336689611675906,
+          "maxFoot": 0.0038251410669158936,
+          "duration": 2.7666666507720947
+        },
+        "walk": {
+          "lowest": 0.0011604310727953981,
+          "highest": 1.4302434717608836,
+          "maxFoot": 0.01201650490725592,
+          "duration": 1.100000023841858
+        },
+        "run": {
+          "lowest": -0.002683325446358409,
+          "highest": 1.4266683677899183,
+          "maxFoot": 0.017597799833927508,
+          "duration": 0.800000011920929
+        },
+        "sit": {
+          "lowest": -0.00576162941223729,
+          "highest": 1.1811699037829984,
+          "maxFoot": -0.005496887532453032,
+          "duration": 5
+        }
+      }
+    }
+  ],
+  "visual_review": [
+    "studio-idle.png",
+    "studio-walk.png",
+    "studio-sit.png",
+    "studio-treadmill.png",
+    "in-house-standing.png",
+    "in-house-face.png"
+  ],
+  "native_architecture_changed": false,
+  "published": false,
+  "sha256": {
+    "scripts/exports/prepare_people_assets.py": "3f3244745e1c91120b886e47fdd40d0d56a6b1a7684396c664446c41a8b0861a",
+    "scripts/exports/optimise_people_textures.py": "78e04dbc3328f90de2e194c2efcfca6067f7fc68703af9173ec5cad7675af31f",
+    "walkthrough/src/realistic-residents.js": "aeae78e92f6f67f82ac40da80287b9934c64582e052b87e938f098228c6e0d00",
+    "walkthrough/src/life.js": "364b8638fe907a1765b2aad8329f62e4c20c433ec28ebd88316d84efcd617be4",
+    "walkthrough/src/main.js": "d7cc0f0fc5b8575477edff975ee402622b418e809c6b8b7beedc78c7f849a758",
+    "walkthrough/index.html": "8c8ced1f6d748f88a1963b5d8693a473b0a3457c2e59e01e5f20a1215ef5efd4",
+    "walkthrough/public/vehicles/credits.html": "3ca9656c27d2c19abfe64e920a140ced82544da8c934dbfbfc19f90e77c1541b",
+    "walkthrough/public/people/assets.json": "d203490b15b9f10a460c4cd897473c1cb4b4599e2887dbede89050d774540306",
+    "walkthrough/dist/app.js": "9b3edaf6f5b8eb86607ce001e61528d685edeac80cff5c76cea417c518a0557d"
+  }
+}

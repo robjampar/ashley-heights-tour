@@ -1,0 +1,103 @@
+{
+  "license": "MIT",
+  "source": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "models": [
+    {
+      "style": "man",
+      "source": "Adults/Male_Adult_01",
+      "file": "man.glb",
+      "vertices": 4025,
+      "triangles": 7440,
+      "bytes": 3288344,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "sit"
+      ],
+      "sourceExportBytes": 26544348,
+      "sha256": "bb40a014dd332826567dd1f34c7ef6ed7a1dd97b8a31c60fba989f623ec65240"
+    },
+    {
+      "style": "woman",
+      "source": "Adults/Female_Adult_06",
+      "file": "woman.glb",
+      "vertices": 3669,
+      "triangles": 6992,
+      "bytes": 2393428,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "sit"
+      ],
+      "sourceExportBytes": 20649168,
+      "sha256": "bef9babda3884478496359af0c2dc347883cc1107dbd42716b7466808835162e"
+    },
+    {
+      "style": "man-smart",
+      "source": "Adults/Male_Adult_08",
+      "file": "man-smart.glb",
+      "vertices": 3907,
+      "triangles": 7364,
+      "bytes": 3330596,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "sit"
+      ],
+      "sourceExportBytes": 25209388,
+      "sha256": "f0ecba52865346c2afb27f0809686c78f75cf4949c0f21f0bfd67b67ac23e3ae"
+    },
+    {
+      "style": "woman-dress",
+      "source": "Adults/Female_Adult_11",
+      "file": "woman-dress.glb",
+      "vertices": 4758,
+      "triangles": 8896,
+      "bytes": 3482220,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "sit"
+      ],
+      "sourceExportBytes": 29991156,
+      "sha256": "be1015942e6c9f9f061e8ca95fa6f3a22b39b049bef4a4572792959af58848ab"
+    },
+    {
+      "style": "teen",
+      "source": "Adults/Male_Adult_12",
+      "file": "teen.glb",
+      "vertices": 3383,
+      "triangles": 6722,
+      "bytes": 2432520,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "sit"
+      ],
+      "sourceExportBytes": 22599544,
+      "sha256": "71e32fe186a2a2e6da8df84272d6396581ec2aca95d2b557c638fd0fd67dfd8f"
+    },
+    {
+      "style": "child",
+      "source": "Children/Male_Child_01",
+      "file": "child.glb",
+      "vertices": 3352,
+      "triangles": 6660,
+      "bytes": 2088768,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "sit"
+      ],
+      "sourceExportBytes": 20734288,
+      "sha256": "495d62f16ab816bedb96598f20a053c8961a1c4f4ebd2a3f813b4b4a9bccde47"
+    }
+  ],
+  "texturePolicy": "2048 px face colour; 1024 px clothing, normal and hair maps; JPEG colour/normal, PNG alpha; source maps preserved."
+}

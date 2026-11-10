@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {Horde} from './horde.js';
+import {loadZombieAssets,RealisticZombieFigure,zombieAppearance} from './realistic-zombies.js';
 import {createOffscreenSpawnGate} from './spawn-visibility.js';
 import {CombatState,WEAPONS,waveSpec} from './combat-state.js';
 import {combatOccluders} from './combat-occlusion.js';
@@ -9,10 +10,11 @@ const native=v=>({x:v.x,y:-v.z,z:v.y});
 const world=p=>new THREE.Vector3(p.x,p.z,-p.y);
 const $=id=>document.getElementById(id);
 export class WaveGame{
- constructor(data,{scene,camera,doors,mobile=false,isActive,onDeath,onArm,onReset,toast}){
+ constructor(data,{scene,camera,doors,bakedDaylight,mobile=false,isActive,onDeath,onArm,onReset,toast}){
   Object.assign(this,{data,scene,camera,doors,mobile,isActive,onDeath,onArm,onReset,toast});this.state=new CombatState();this.audio=new CombatAudio();this.time=0;this.hurtTime=0;this.hitTime=0;this.recoil=0;this.manualFiring=false;
   this.group=new THREE.Group();this.group.name='After Hours combat';scene.add(this.group);this.pickups=[];this.projectiles=[];this.effects=[];this.ray=new THREE.Raycaster();this.occluders=combatOccluders(data);
-  this.horde=new Horde(data,{maxAlive:mobile?7:12,canSpawn:createOffscreenSpawnGate(camera),onAttack:e=>{if(this.state.phase!=='dead'){this.state.hurt(e.damage);this.hurtTime=.55;this.audio.play('hurt');if(!this.state.health)this.die();}},onDeath:e=>{const points=this.state.kill(e.headshot);this.toast((e.headshot?'Headshot! +':'Zombie down +')+points);if(e.boss){const bonus=this.state.wave*500;this.state.score+=bonus;this.addPickup('health',e.position);this.addPickup('ammo',{...e.position,x:e.position.x+.24});this.toast('Groundskeeper defeated · +'+bonus+' · supplies dropped');}else if(this.state.kills%3===0)this.addPickup(this.state.kills%9===0?'health':'ammo',e.position);}});
+  this.enemyAssetsReady=false;this.bakedDaylight=bakedDaylight;
+  this.horde=new Horde(data,{appearanceFactory:zombieAppearance,figureFactory:()=>{throw Error('Detailed enemies are not loaded');},maxAlive:mobile?7:12,canSpawn:createOffscreenSpawnGate(camera),onAttack:e=>{if(this.state.phase!=='dead'){this.state.hurt(e.damage);this.hurtTime=.55;this.audio.play('hurt');if(!this.state.health)this.die();}},onDeath:e=>{const points=this.state.kill(e.headshot);this.toast((e.headshot?'Headshot! +':'Zombie down +')+points);if(e.boss){const bonus=this.state.wave*500;this.state.score+=bonus;this.addPickup('health',e.position);this.addPickup('ammo',{...e.position,x:e.position.x+.24});this.toast('Groundskeeper defeated · +'+bonus+' · supplies dropped');}else if(this.state.kills%3===0)this.addPickup(this.state.kills%9===0?'health':'ammo',e.position);}});
   this.group.add(this.horde.group);scene.add(camera);this.hand=new THREE.Group();this.hand.position.set(.23,-.27,-.52);camera.add(this.hand);this.buildUI();this.reset();
  }
  buildUI(){
@@ -46,8 +48,22 @@ export class WaveGame{
   if(Math.hypot(p.position.x-this.player.x,p.position.y-this.player.y)>.65||Math.abs(p.position.z-this.player.z)>.4)return false;
   const origin=world(this.player).add(new THREE.Vector3(0,this.data.eyeHeight,0)),target=world(p.position).add(new THREE.Vector3(0,p.baseHeight,0)),direction=target.clone().sub(origin);const length=direction.length();this.ray.set(origin,direction.normalize());this.ray.near=.015;this.ray.far=length-.08;const moving=this.doors.doors.map(d=>d.pivot).filter(Boolean);return this.ray.intersectObjects([...this.occluders,...moving],true).length===0;
  }
+ async prepareEnemies(){
+  if(this.enemyAssetsReady)return;
+  if(this.enemyAssetsLoading)return this.enemyAssetsLoading;
+  this.enemyAssetsLoading=loadZombieAssets().then(assets=>{
+   this.horde.figureFactory=(id,options)=>new RealisticZombieFigure(assets.get(options.asset),id,{...options,scene:this.scene,bakedDaylight:this.bakedDaylight});
+   this.enemyAssetsReady=true;
+  }).finally(()=>{this.enemyAssetsLoading=null;});
+  return this.enemyAssetsLoading;
+ }
  takeBow(){
-  if(!this.isActive()||!this.canTakeBow())return false;const p=this.pickups.find(p=>p.kind==='bow');
+  if(!this.isActive()||!this.canTakeBow())return false;
+  if(!this.enemyAssetsReady){
+   if(!this.enemyAssetsLoading&&performance.now()>=(this.enemyRetryAfter??0)){this.toast('Preparing After Hours…');this.prepareEnemies().catch(error=>{console.error('Zombie assets could not load',error);this.enemyRetryAfter=performance.now()+10000;this.toast('Could not load After Hours. Stay near the bow to retry.');});}
+   return false;
+  }
+  const p=this.pickups.find(p=>p.kind==='bow');
   this.clearObject(p.mesh);this.pickups.splice(this.pickups.indexOf(p),1);this.state.acquire('bow');this.equip();this.audio.play('pickup');this.activateUI(true);$('view').focus();this.onArm();this.toast('Bow collected · Enter the house to begin');return true;
  }
  clearObject(ob){ob.traverse(o=>{if(o.isMesh||o.isLine){o.geometry.dispose();if(o.material.dispose)o.material.dispose();}});ob.removeFromParent();}

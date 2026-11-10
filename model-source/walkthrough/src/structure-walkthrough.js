@@ -4,10 +4,22 @@ import {createStructureComposite} from './structure-composite.js';
 
 // One scene/camera/navigation and one member register. The compact controls
 // live in a shadow root; drawings and calculations expand only when requested.
-export async function createStructureWalkthrough({scene,renderer,camera,canvas,renderHouse,focus,onView,onActive}){
+export async function createStructureWalkthrough({scene,renderer,camera,canvas,renderHouse,focus,onView,onActive,controlsMount}){
  const baseURL=new URL('./structure/',location.href),host=document.createElement('section');
  host.id='walkthrough-structure';host.setAttribute('aria-label','Structure over the house');host.hidden=true;
- const root=host.attachShadow({mode:'open'});document.body.append(host);
+ const overlayRoot=host.attachShadow({mode:'open'});document.body.append(host);
+ // Controls belong to Settings; drawings/selection remain over the viewport.
+ // Both surfaces address the same controls and the same studio state.
+ const controlsHost=controlsMount?document.createElement('div'):null;
+ const controlsRoot=controlsHost?.attachShadow({mode:'open'});
+ if(controlsHost){controlsHost.id='structure-settings-controls';controlsHost.hidden=true;controlsMount.append(controlsHost);}
+ const root=controlsRoot?{
+  host,
+  append:(...nodes)=>overlayRoot.append(...nodes),
+  getElementById:id=>overlayRoot.getElementById(id)??controlsRoot.getElementById(id),
+  querySelector:selector=>overlayRoot.querySelector(selector)??controlsRoot.querySelector(selector),
+  querySelectorAll:selector=>[...overlayRoot.querySelectorAll(selector),...controlsRoot.querySelectorAll(selector)],
+ }:overlayRoot;
  const response=await fetch(new URL('index.html',baseURL));if(!response.ok)throw Error('Structural controls unavailable');
  const doc=new DOMParser().parseFromString(await response.text(),'text/html');doc.querySelectorAll('script').forEach(s=>s.remove());
  const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('studio.css',baseURL);
@@ -49,6 +61,39 @@ export async function createStructureWalkthrough({scene,renderer,camera,canvas,r
  <div id="house-opacity-control"></div><label class="check"><input type="checkbox" id="vivid-structure"> Vivid structure · stronger colours</label><div class="overlay-actions"><button id="overlay-layers" aria-expanded="false">Layers &amp; cutaways</button><select id="review-view" aria-label="Drawings and structural data"><option value="model">Drawings &amp; data…</option><option value="plan">Floor plans</option><option value="front">Elevations</option><option value="section">Sections</option><option value="schedule">Member register</option><option value="costs">Build costs</option><option value="foundations">Foundations</option><option value="junctions">Connections &amp; fit</option><option value="roof-options">Roof options</option><option value="issues">Open issues</option><option value="trials">UK trials</option></select></div>
  <p class="overlay-note">X-ray overlay · click a member to inspect.<br><strong>Experimental · not for construction.</strong></p></div>`;
  rail.append(card,root.querySelector('.left-panel'));root.append(rail);
+ if(controlsRoot){
+  const controlsLink=link.cloneNode();controlsRoot.append(controlsLink);
+  const controlsStyle=document.createElement('style');controlsStyle.textContent=`
+   :host{display:block;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#263d34;--muted:#6c7c73;--line:#dce3d9;--blue:#2c6f62}
+   :host([hidden]),[hidden]{display:none!important}*{box-sizing:border-box}
+   .control-rail{position:static;width:auto;overflow:visible;pointer-events:auto}
+   .overlay-card{padding:0;margin:22px 0 0;background:none;border:0;box-shadow:none}
+   .overlay-heading{display:none}.overlay-body{display:block}
+   .segmented{display:flex;margin:0 0 22px;background:#edf0e9;border:0;border-radius:9px;padding:3px}
+   .segmented button{flex:1;min-height:44px;border:0;border-radius:7px;font:inherit}
+   .segmented button[aria-pressed=true]{background:#dfece3;color:#245c4e}
+   .cut-label{margin:18px 0;font-size:13px}.cut-label input{margin-top:12px;accent-color:#397b68}
+   .check{min-height:44px;align-items:center;font-size:13px}.check input{width:18px;height:18px;accent-color:#397b68}
+   .overlay-actions{display:grid;gap:12px;margin:20px 0 0;padding:20px 0 0;border-top:1px solid var(--line)}
+   .overlay-actions button,.overlay-actions select{width:100%;min-width:0;min-height:44px;padding:10px 12px;font:inherit;font-size:14px;background:#fff;border:1px solid #cbd6cb;border-radius:8px;color:#2c4339}
+   .overlay-note{margin:18px 0 0;font-size:11px;color:var(--muted);line-height:1.6}.overlay-note strong{font-weight:500;color:#806b44}
+   .left-panel{display:none;width:auto;overflow:visible;border:0;border-top:1px solid var(--line);padding:20px 0 0;margin-top:20px;background:none;box-shadow:none}
+   :host(.layers-open) .left-panel{display:block}.left-panel h1,.left-panel .intro{display:none}
+   .left-panel input,.left-panel select{min-height:40px}.left-panel input[type=checkbox]{min-height:0}.left-panel .check{margin:4px 0}
+   .left-panel .field{margin-bottom:16px}.left-panel .field select{font-size:16px}.left-panel .outline{min-height:44px}
+   .left-panel .segmented{flex-wrap:wrap}.left-panel .segmented button{font-size:12px;flex:1 1 auto}
+   .left-panel .quick-isolate{gap:6px}.left-panel .quick-isolate button{min-height:40px}
+   button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #48a69e;outline-offset:2px}
+  `;controlsRoot.append(controlsStyle,rail);
+  const viewportStyle=document.createElement('style');viewportStyle.textContent=`
+   .right-panel{top:100px;bottom:90px}
+   :host(.document-view) header{inset:100px 26px auto;z-index:4}
+   :host(.document-view) .right-panel{top:144px}
+   :host(.document-view) .workspace{inset:144px 26px 90px}
+   .split-ui{top:100px}
+   @media(max-width:700px){.right-panel{top:82px;bottom:90px}:host(.document-view) .right-panel{top:126px}:host(.document-view) header{inset:82px 12px auto}:host(.document-view) .workspace,:host(.document-view:not(.inspector-hidden)) .workspace:has(+.has-selection){inset:126px 12px 90px}.split-ui{top:82px;bottom:90px}}
+  `;overlayRoot.append(viewportStyle);
+ }
  const context=$('context');context.checked=true;context.closest('label').hidden=true;context.closest('label').nextElementSibling.hidden=true;
  const opacityInput=$('context-opacity');opacityInput.min='0';opacityInput.max='100';opacityInput.value='100';opacityInput.setAttribute('aria-label','House opacity');
  const opacityLabel=opacityInput.closest('label');opacityLabel.childNodes[0].textContent='House opacity ';$('context-opacity-value').textContent='100%';$('house-opacity-control').append(opacityLabel);
@@ -81,7 +126,7 @@ export async function createStructureWalkthrough({scene,renderer,camera,canvas,r
  for(const a of root.querySelectorAll('a[href]'))if(a.getAttribute('href').startsWith('./'))a.href=new URL(a.getAttribute('href'),baseURL);
  const revealSelection=()=>{if(studio.state.selected){panel.classList.add('has-selection');host.classList.remove('inspector-hidden');}};
  const observer=new MutationObserver(revealSelection);observer.observe($('selection'),{childList:true});revealSelection();
- $('overlay-layers').onclick=()=>{host.classList.toggle('layers-open');$('overlay-layers').setAttribute('aria-expanded',String(host.classList.contains('layers-open')));};
+ $('overlay-layers').onclick=()=>{const on=host.classList.toggle('layers-open');controlsHost?.classList.toggle('layers-open',on);$('overlay-layers').setAttribute('aria-expanded',String(on));};
  $('collapse-overlay').onclick=()=>{const collapsed=host.classList.toggle('appearance-collapsed');$('collapse-overlay').textContent=collapsed?'+':'−';$('collapse-overlay').setAttribute('aria-expanded',String(!collapsed));$('collapse-overlay').setAttribute('aria-label',collapsed?'Expand overlay controls':'Collapse overlay controls');};
  $('review-view').onchange=()=>studio.setView($('review-view').value);returnModel.onclick=()=>studio.setView('model');
  function setMode(value){mode=value==='split'?'split':'overlay';host.classList.toggle('split-view',mode==='split');$('overlay-mode').setAttribute('aria-pressed',String(mode==='overlay'));$('split-mode').setAttribute('aria-pressed',String(mode==='split'));}
@@ -92,7 +137,7 @@ export async function createStructureWalkthrough({scene,renderer,camera,canvas,r
  const handle=$('split-handle');handle.onpointerdown=event=>{event.preventDefault();handle.setPointerCapture(event.pointerId);};handle.onpointermove=event=>{if(handle.hasPointerCapture(event.pointerId)){const r=canvas.getBoundingClientRect();setDivider((event.clientX-r.left)/r.width);}};handle.onpointerup=event=>handle.releasePointerCapture(event.pointerId);
  handle.onkeydown=event=>{const step=event.shiftKey?.1:.02;if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();event.stopPropagation();setDivider(event.key==='Home'?.05:event.key==='End'?.95:divider+(event.key==='ArrowRight'?step:-step));}};
  function setEnabled(on){
-  enabled=!!on;host.hidden=!enabled;studio.scene.visible=enabled;
+  enabled=!!on;host.hidden=!enabled;if(controlsHost)controlsHost.hidden=!enabled;studio.scene.visible=enabled;
   if(enabled){capture();applyContext(context.checked,Number(opacityInput.value)/100,studio.cutawayPlanes.architecture);}
   else{for(const [material,planes]of materialPlanes){if(material.clippingPlanes!==planes){material.clippingPlanes=planes;material.needsUpdate=true;}}materialPlanes.clear();clipApplied=false;for(const object of [...architecture.children])scene.add(object);}
   document.body.classList.toggle('structure-active',enabled);onActive(enabled);onView(studio.state.view,enabled);
@@ -100,5 +145,5 @@ export async function createStructureWalkthrough({scene,renderer,camera,canvas,r
  }
  close.onclick=event=>{event.preventDefault();setEnabled(false);};
  function render(){refreshArchitecture();composite.render(studio.scene,{houseOpacity:architectureOn?opacity:0,structureOpacity,vivid,mode,divider});}
- return {studio,root,host,setEnabled,setMode,setDivider,refreshArchitecture,render,canPick,get enabled(){return enabled;},get architecture(){return architecture;},get appearance(){return {mode,houseOpacity:opacity,structureOpacity,divider,vivid};}};
+ return {studio,root,host,controlsRoot,controlsHost,setEnabled,setMode,setDivider,refreshArchitecture,render,canPick,get enabled(){return enabled;},get architecture(){return architecture;},get appearance(){return {mode,houseOpacity:opacity,structureOpacity,divider,vivid};}};
 }

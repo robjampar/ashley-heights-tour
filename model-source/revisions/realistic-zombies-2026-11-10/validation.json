@@ -1,0 +1,291 @@
+{
+  "published": false,
+  "assetBytes": 7420848,
+  "browser": {
+    "checks": [
+      "No zombie downloads during normal house loading",
+      "Picking up bow loads four detailed adult variants before arming game",
+      "House entry starts actual wave with detailed skinned enemies",
+      "Actual mesh headshots, damage and kill rewards work for upright amputee and prone crawler",
+      "Reset/restart retains asset cache and returns to normal tour"
+    ],
+    "errors": [],
+    "requests": [
+      "http://127.0.0.1:8765/zombies/man-decayed.glb",
+      "http://127.0.0.1:8765/zombies/woman-decayed.glb",
+      "http://127.0.0.1:8765/zombies/missing-arm.glb",
+      "http://127.0.0.1:8765/zombies/crawler.glb"
+    ],
+    "fixture": {
+      "c": {
+        "x": 4.85,
+        "y": -7.25,
+        "z": 0
+      },
+      "p": {
+        "x": 7.25,
+        "y": -6.15,
+        "z": 0
+      }
+    },
+    "performance": {
+      "figures": 12,
+      "medianFrameMs": 18.299999952316284,
+      "p95FrameMs": 23,
+      "averageFigureUpdateMs": 3.065555548667908,
+      "limitation": "Headless Chrome on this Mac, not physical mobile hardware."
+    },
+    "passed": true
+  },
+  "motion": [
+    {
+      "asset": "man-decayed",
+      "injury": "shamble",
+      "states": {
+        "pursue": {
+          "bottom": 0.006297651464707066,
+          "highestBottom": 0.00800000000000034,
+          "top": 1.7978604013434047,
+          "headMin": 1.5298009983848093,
+          "headMax": 1.5729269385656488,
+          "handRange": 0.0508523048328616
+        },
+        "idle": {
+          "bottom": 0.00776435651414753,
+          "highestBottom": 0.00800000000000034,
+          "top": 1.821031495994442,
+          "headMin": 1.5781024751969266,
+          "headMax": 1.5941128871238697,
+          "handRange": 0.005017484567084063
+        },
+        "windup": {
+          "bottom": 0.0077643662803847935,
+          "highestBottom": 0.00800000000000034,
+          "top": 1.8213422929853498,
+          "headMin": 1.5908198823400033,
+          "headMax": 1.5943511736664808,
+          "handRange": 0.4702257206286088
+        },
+        "stagger": {
+          "bottom": 0.006614004048857036,
+          "highestBottom": 0.00800000000000023,
+          "top": 1.8226414333656076,
+          "headMin": 1.5873861586752798,
+          "headMax": 1.5957367632678123,
+          "handRange": 0.13009675640061763
+        },
+        "dead": {
+          "bottom": 0.0060216117128599755,
+          "highestBottom": 0.007777568346783892,
+          "top": 1.8217279452387007,
+          "headMin": 0.2700904398207249,
+          "headMax": 1.5946965808345843,
+          "handRange": 0.9653964467728295
+        }
+      }
+    },
+    {
+      "asset": "woman-decayed",
+      "injury": "limp",
+      "states": {
+        "pursue": {
+          "bottom": 0.006085842791985097,
+          "highestBottom": 0.008000000128208895,
+          "top": 1.7316576118168263,
+          "headMin": 1.3285580181048984,
+          "headMax": 1.5173836445012576,
+          "handRange": 0.6446135459789556
+        },
+        "idle": {
+          "bottom": 0.006384498823896134,
+          "highestBottom": 0.00800000000000023,
+          "top": 1.7495516749531728,
+          "headMin": 1.512893629668842,
+          "headMax": 1.5351617384518899,
+          "handRange": 0.23110434325079784
+        },
+        "windup": {
+          "bottom": 0.0063844877029016756,
+          "highestBottom": 0.008000000000000007,
+          "top": 1.7488381246408171,
+          "headMin": 1.5292271005357514,
+          "headMax": 1.534502119640713,
+          "handRange": 0.4212469896335478
+        },
+        "stagger": {
+          "bottom": 0.006425934828992341,
+          "highestBottom": 0.008000000000000118,
+          "top": 1.746622424495411,
+          "headMin": 1.5231264033342005,
+          "headMax": 1.5321756525156718,
+          "handRange": 0.13540535167339268
+        },
+        "dead": {
+          "bottom": 0.007586152236187194,
+          "highestBottom": 0.00800000000000023,
+          "top": 1.7455076960249827,
+          "headMin": 0.23918379670588988,
+          "headMax": 1.5312592316561093,
+          "handRange": 0.940542897121226
+        }
+      }
+    },
+    {
+      "asset": "missing-arm",
+      "injury": "missing-arm",
+      "states": {
+        "pursue": {
+          "bottom": 0.007568793141456753,
+          "highestBottom": 0.008000000000000118,
+          "top": 1.7914267884854445,
+          "headMin": 1.5307602219874785,
+          "headMax": 1.567535917279757,
+          "handRange": 0.05129800575110933
+        },
+        "idle": {
+          "bottom": 0.007999999999999785,
+          "highestBottom": 0.00800000000000023,
+          "top": 1.821557271470514,
+          "headMin": 1.5703947890018968,
+          "headMax": 1.5945819301593032,
+          "handRange": 0.01698763809082955
+        },
+        "windup": {
+          "bottom": 0.007999999999999785,
+          "highestBottom": 0.00800000000000034,
+          "top": 1.821215646864691,
+          "headMin": 1.590859253636074,
+          "headMax": 1.5942528330854482,
+          "handRange": 0.4702257206286088
+        },
+        "stagger": {
+          "bottom": 0.007904273876088719,
+          "highestBottom": 0.008000000000000118,
+          "top": 1.8230969016170957,
+          "headMin": 1.5909263245663035,
+          "headMax": 1.5956762769671915,
+          "handRange": 0.13110668702787553
+        },
+        "dead": {
+          "bottom": 0.007999999999999896,
+          "highestBottom": 0.00800000000000034,
+          "top": 1.8229666056372502,
+          "headMin": 0.27059907429038765,
+          "headMax": 1.5959325627102587,
+          "handRange": 0.9653964467728295
+        }
+      }
+    },
+    {
+      "asset": "crawler",
+      "injury": "crawl",
+      "states": {
+        "pursue": {
+          "bottom": 0.00799999999999984,
+          "highestBottom": 0.008000000000000174,
+          "top": 0.8366887830957799,
+          "headMin": 0.6054703086970507,
+          "headMax": 0.6107835820159265,
+          "handRange": 0.14854140352866751
+        },
+        "idle": {
+          "bottom": 0.007999999999999896,
+          "highestBottom": 0.008000000000000174,
+          "top": 0.8362164229829766,
+          "headMin": 0.6057066452427907,
+          "headMax": 0.6101941811470787,
+          "handRange": 0.057668300151310414
+        },
+        "windup": {
+          "bottom": 0.00799999999999984,
+          "highestBottom": 0.008000000000000174,
+          "top": 0.8324390501247877,
+          "headMin": 0.5909763822669855,
+          "headMax": 0.6084465544764538,
+          "handRange": 0.1298561200979581
+        },
+        "stagger": {
+          "bottom": 0.005025759019303633,
+          "highestBottom": 0.008000000000000174,
+          "top": 0.8339347673654024,
+          "headMin": 0.5687566470465807,
+          "headMax": 0.6094933001939381,
+          "handRange": 0.055724958240799705
+        },
+        "dead": {
+          "bottom": 0.0070463409596875914,
+          "highestBottom": 0.008000003760749358,
+          "top": 0.841330072620462,
+          "headMin": 0.23996126951273034,
+          "headMax": 0.6176426978875902,
+          "handRange": 0.34226029432180705
+        }
+      }
+    }
+  ],
+  "unitChecks": {
+    "existing": 31,
+    "new": 2,
+    "passed": true
+  },
+  "build": "make build-web completed",
+  "layout": "unchanged 345 existing findings",
+  "files": [
+    {
+      "path": "scripts/exports/prepare_people_assets.py",
+      "sha256": "a81f6f571fda12889ad236fda7d4de40e79db7d15360b31adb6413c15b5fa3a9"
+    },
+    {
+      "path": "scripts/exports/prepare_zombie_assets.py",
+      "sha256": "c9fd7a8cb0c6b26cc9309c786deb46b5cb50f28055b5015092064421f07b3f3b"
+    },
+    {
+      "path": "scripts/exports/optimise_people_textures.py",
+      "sha256": "e4eeb132b4827784283db0817259ccee318b8f2148b6e935d0b5cc954f158c0c"
+    },
+    {
+      "path": "walkthrough/src/realistic-zombies.js",
+      "sha256": "7aefd6bbb7bcfad5c33fb60f027e29f1dc9ead1248cb9651e9a375eb1ebf6d4d"
+    },
+    {
+      "path": "walkthrough/src/horde.js",
+      "sha256": "fc69f79157be3037234315ca4dac5190c63588da8cb7681bf6788377d635706c"
+    },
+    {
+      "path": "walkthrough/src/wave-game.js",
+      "sha256": "117e4496b5fac8f7a15e02377621de3ee19c2cf6ffc7eca2b2a4ab9bc118e2dd"
+    },
+    {
+      "path": "walkthrough/src/main.js",
+      "sha256": "3d7fa7110fae5c76a68078cf87e57a0e0d2426a0d75227a47ab6461b558b8054"
+    },
+    {
+      "path": "walkthrough/public/vehicles/credits.html",
+      "sha256": "c9cd572eb92da7a5669f64ad1d14018c1d45bda9c17cb7fce96aecc078c677d1"
+    },
+    {
+      "path": "source/assets/zombies/texture-prompts.json",
+      "sha256": "07e2b805376024986c52d1cdb2a79979922f470ac0e3d15a6565a8035b1e27de"
+    },
+    {
+      "path": "source/assets/zombies/motion-sources.json",
+      "sha256": "be84328438ff555225801f69da788a455ca73087c23e26663253bddaa04abae9"
+    },
+    {
+      "path": "source/assets/zombies/textures/man-head.png",
+      "sha256": "0e76b75944fba5cbcc5acc8f15ba5eb8c71ef43f8b7780b702ee161475c6be76"
+    },
+    {
+      "path": "source/assets/zombies/textures/woman-body.png",
+      "sha256": "b1e3618876a89ba96023cd6ca78f58e681456aaa7fec2ad6c4a8c6fc6b6055b3"
+    },
+    {
+      "path": "source/assets/zombies/textures/man-body.png",
+      "sha256": "57c76b5e37cd6b6536d9567d295621fd697b43e7fac7963d07ed1b008af4b830"
+    },
+    {
+      "path": "source/assets/zombies/textures/woman-head.png",
+      "sha256": "b308aebe58392b606fa0ee9b6af3b02777f731a1cb7ed4f27fc96f4892608fab"
+    }
+  ]
+}

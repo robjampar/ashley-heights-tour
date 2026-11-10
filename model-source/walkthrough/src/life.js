@@ -24,7 +24,7 @@ class Resident {
   // at the visitor's limit, so a follower taking slightly different sample
   // points still climbs onto a flight from its side.
   this.nav.stepUp=.42;
-  this.figure=new ResidentFigure(index,style);life.group.add(this.figure.group);
+  this.figure=life.figureFactory(index,style);life.group.add(this.figure.group);
   this.path=null;this.index=1;this.job=null;this.target=null;this.activity=null;this.activityUntil=0;this.wait=0;this.stalled=0;
   this.phase=Math.random()*10;this.facing={x:0,y:1};this.speed=rand(1.05,1.35);this.state='idle';this.car=null;this.hidden=false;
   this.nextPlanAt=0;this.failures=0;
@@ -108,7 +108,7 @@ class Resident {
    }
    if(this.path&&this.index>=this.path.length){const done=this.target;this.path=null;this.life.claimed.delete(done.key);this.arrive();this.target=null;}
   }
-  this.figure.update(time+this.phase,nav.position,this.facing,moving,dt,{state:moving?'walk':this.state==='sit'||this.state==='treadmill'?'idle':this.state});
+  this.figure.update(time+this.phase,nav.position,this.facing,moving,dt,{state:moving?'walk':this.state==='sit'||this.state==='treadmill'?'idle':this.state,speed:this.speed});
  }
  dispose(){if(this.target)this.life.claimed.delete(this.target.key);this.figure.dispose();}
 }
@@ -208,7 +208,8 @@ class Car {
 
 // -------------------------------------------------------------------- system
 export class Life {
- constructor(data,{scene,doors,carTemplates=new Map(),mobile=false,drivePaths=null}={}) {
+ constructor(data,{scene,doors,carTemplates=new Map(),mobile=false,drivePaths=null,figureFactory=(index,style)=>new ResidentFigure(index,style)}={}) {
+  this.figureFactory=figureFactory;
   this.data=data;this.scene=scene;this.doors=doors;this.mobile=mobile;this.drivePaths=drivePaths??data.life?.drive??null;
   this.group=new THREE.Group();this.group.name='Life';scene.add(this.group);
   this.planner=new PursuitPlanner(data,{spacing:.2,radius:.18});

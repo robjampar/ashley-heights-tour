@@ -13,8 +13,8 @@ export const HORDE_TYPES=Object.freeze({
 });
 
 export class Horde {
- constructor(data,{maxAlive=12,onAttack=()=>{},onDeath=()=>{},canSpawn=()=>true}={}){
-  this.data=data;this.maxAlive=Math.max(1,Math.min(20,Math.floor(maxAlive)));this.onAttack=onAttack;this.onDeath=onDeath;this.canSpawn=canSpawn;
+ constructor(data,{maxAlive=12,onAttack=()=>{},onDeath=()=>{},canSpawn=()=>true,figureFactory=(id,options)=>new ZombieFigure(id%3,options),appearanceFactory=null}={}){
+  this.data=data;this.maxAlive=Math.max(1,Math.min(20,Math.floor(maxAlive)));this.onAttack=onAttack;this.onDeath=onDeath;this.canSpawn=canSpawn;this.figureFactory=figureFactory;this.appearanceFactory=appearanceFactory;
   this.group=new THREE.Group();this.group.name='Survival horde';this.actors=[];this.planners=new Map();
   this.nextId=1;this.time=0;this.wave=0;this.total=0;this.spawned=0;this.killed=0;this.skipped=0;this.droppedSpawns=0;this.active=false;
   this.player={x:0,y:0,z:0};this.heading={x:0,y:1};this.spawnJob=null;this.candidates=[];this.nextSpawn=0;this.spawnStall=0;this.spawnVisibilityBlocked=false;this.candidateRounds=0;this.roundRobin=0;
@@ -43,6 +43,7 @@ export class Horde {
   let style=boss?'groundskeeper':pool[(index+this.wave-1)%pool.length];if(style==='child'&&type==='brute')style='worker';
   const stats={...HORDE_TYPES[type]};
   if(boss)Object.assign(stats,{health:350,speed:.69,radius:.32,wallRadius:.25,damage:34,windup:1.38,recovery:1.75,range:1.08});
+  if(this.appearanceFactory)return this.appearanceFactory(index,type,{style,boss,stats});
   else if(style==='child')Object.assign(stats,{health:Math.round(stats.health*.65),speed:stats.speed*1.08,radius:.17,wallRadius:.13,range:.66,windup:stats.windup*.90,recovery:stats.recovery*.92});
   return {style,boss,stats};
  }
@@ -63,11 +64,11 @@ export class Horde {
    .sort((a,b)=>a.score-b.score).slice(0,90);
  }
  createActor(type,point,path,appearance=this.appearance(this.spawned,type)){
-  const {stats,style,boss}=appearance,id=this.nextId++,deathVariant=boss?0:Math.floor(seeded(id,55)*3),figure=new ZombieFigure(id%3,{type,style,boss,deathVariant});
+  const {stats,style,boss}=appearance,id=this.nextId++,deathVariant=boss?0:Math.floor(seeded(id,55)*3),figure=this.figureFactory(id,{...appearance,type,deathVariant});
   figure.group.userData.actorId=id;figure.group.traverse(o=>{if(o.isMesh)o.userData.actorId=id;});this.group.add(figure.group);
   const nav=new LocalNavigation(this.data);nav.radius=stats.wallRadius;nav.position=copy(point);
   const scale=1+Math.min(.55,Math.max(0,this.wave-1)*.035),maxHealth=Math.round(stats.health*scale);
-  const actor={id,type,style,boss,stats,figure,nav,radius:stats.radius,health:maxHealth,maxHealth,alive:true,state:'pursue',
+  const actor={id,type,style,boss,stats,figure,nav,radius:stats.radius,health:maxHealth,maxHealth,injury:appearance.injury,alive:true,state:'pursue',
    stateTime:0,path,index:1,job:null,lastTarget:copy(this.player),nextPlan:this.time+.4+(id%5)*.12,
    stalled:0,unreachable:0,lastProgress:this.time,phase:id*1.713,flankSide:id%2?1:-1,flankUntil:0,
    attackAim:{x:0,y:1},hitFlash:0,staggerDuration:.35,deathTime:0,deathDuration:figure.deathDuration,deathVariant,knockback:{x:0,y:0},
@@ -265,7 +266,7 @@ export class Horde {
    const facing=actor.state==='windup'||actor.state==='recover'?actor.attackAim:['hide','peek'].includes(actor.state)?actor.noticeDirection:{x:actor.nav.position.x-before.x,y:actor.nav.position.y-before.y};
    if(Math.hypot(facing.x,facing.y)>.0001&&!['hide','peek','seeking-hide'].includes(actor.state))actor.noticeDirection={...facing};
    const duration=actor.state==='windup'?actor.stats.windup:actor.state==='recover'?actor.stats.recovery:actor.staggerDuration;
-   actor.figure.update(this.time+actor.phase,actor.nav.position,facing,moved>.001,dt,{state:actor.state,progress:actor.stateTime/duration,running:actor.type==='runner'&&moved>.001,hitFlash:actor.hitFlash});
+   actor.figure.update(this.time+actor.phase,actor.nav.position,facing,moved>.001,dt,{state:actor.state,progress:actor.stateTime/duration,running:actor.type==='runner'&&moved>.001,speed:moved/Math.max(dt,.001),hitFlash:actor.hitFlash});
   }
   return this.state();
  }

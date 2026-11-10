@@ -12,9 +12,9 @@ from scripts.publication.model_delivery import delivery_asset
 from scripts.publication.pages_artifact import public_bytes
 from scripts.publication.structure_delivery import package_structure, redirect_structure
 
-def stage(root=ROOT,recovery_dir=None):
+def stage(root=ROOT,recovery_dir=None,repo=None):
     recovery_dir=recovery_dir or root/'revisions/structural-publication-2026-11-04/expired-public-assets'
-    dist=root/'walkthrough/dist';repo=root/'deployment/ashley-heights-tour';dest=repo/'model'
+    dist=root/'walkthrough/dist';repo=Path(repo) if repo else root/'deployment/ashley-heights-tour';dest=repo/'model'
     previous=json.loads((dest/'release.json').read_text());manifest=json.loads(json.dumps(previous))
     sha=lambda data:hashlib.sha256(data).hexdigest()
     written=[];sources={};assets={}
@@ -33,9 +33,17 @@ def stage(root=ROOT,recovery_dir=None):
         app=app.replace(token,json.dumps(sources[name]['path']))
     runtime={};directories={}
     groups={'visual-quality':[f'{v}-{s}'for v in('compact','planning')for s in('daylight.json','furnishings.json','furnishings.glb')]+['daylight-settings.json'],
+            'people':[m['file'] for m in json.loads((dist/'people/assets.json').read_text())['models']]+['assets.json','LICENSE.txt'],
+            'zombies':[m['file'] for m in json.loads((dist/'zombies/assets.json').read_text())['models']]+['assets.json','LICENSE.txt'],
             'vehicles':[f'{v}.{s}'for v in('tesla-model-3','fiat-500','nissan-nv200')for s in('glb','json')]+['credits.html','CREDITS.md']}
     for directory,names in groups.items():
         payload={name:(dist/directory/name).read_bytes()for name in sorted(names)}
+        if directory=='vehicles':
+            credits=payload['credits.html'].decode()
+            for characters in ('people','zombies'):
+                credits=credits.replace('../'+characters+'/', '../../'+directories[characters])
+            credits=credits.replace('href="../?design=proposed"','href="../../?design=proposed"')
+            payload['credits.html']=credits.encode()
         key=sha(json.dumps({n:sha(v)for n,v in payload.items()},sort_keys=True).encode())[:16]
         prefix=f'{directory}/{key}/';directories[directory]=prefix
         assert './'+directory+'/' in app,directory
@@ -79,6 +87,10 @@ def stage(root=ROOT,recovery_dir=None):
     manifest['previous_runtime_assets']={**previous.get('previous_runtime_assets',{}),**previous.get('runtime_assets',{})}
     for name in runtime:manifest['previous_runtime_assets'].pop(name,None)
     manifest.update(assets=assets,runtime_assets=runtime,runtime_directories=directories,source_assets=sources,published_utc=now.isoformat(),release_method='Verified main walkthrough update; existing photo tour, brochure and room studies preserved.')
+    manifest['characters']={name:{'runtimePath':'./'+directories[name],
+        'models':len(json.loads((dist/name/'assets.json').read_text())['models']),
+        'bytes':sum(m['bytes'] for m in json.loads((dist/name/'assets.json').read_text())['models'])}
+        for name in ('people','zombies')}
     for variant,key in [('compact','proposal'),('planning','planning')]:
         n=json.loads((dist/f'proposal-{variant}-navigation.json').read_text());folder=root/f'outputs/output-proposed-{variant}';label='compact'if variant=='compact'else'planning application'
         for suffix,path in [('native',folder/f'Ashley Heights — Proposed ({label}).blend'),('geometry',folder/'geometry.json')]:manifest['designs'][key+'_'+suffix+'_sha256']=sha(path.read_bytes())
@@ -95,6 +107,6 @@ def stage(root=ROOT,recovery_dir=None):
     return {'stagedBytes':public_bytes(repo),'writtenFiles':sorted(set(written)),'archivedExpiredFiles':archived,'sourceAssets':sources,'runtimeDirectories':directories,'currentRevisions':manifest['current_revisions'],'structure':manifest['structure']}
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--record-dir',type=Path,default=ROOT/'walkthrough/test-results/structural-publication-2026-11-04');parser.add_argument('--recovery-dir',type=Path);args=parser.parse_args()
-    result=stage(recovery_dir=args.recovery_dir);out=args.record_dir;out.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--record-dir',type=Path,default=ROOT/'walkthrough/test-results/structural-publication-2026-11-04');parser.add_argument('--recovery-dir',type=Path);parser.add_argument('--repo',type=Path);args=parser.parse_args()
+    result=stage(recovery_dir=args.recovery_dir,repo=args.repo);out=args.record_dir;out.mkdir(parents=True,exist_ok=True)
     (out/'staging.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items()if k not in('writtenFiles','sourceAssets')},indent=2));print('Files written:',len(result['writtenFiles']))

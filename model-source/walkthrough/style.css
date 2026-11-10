@@ -118,3 +118,32 @@ select.design-switch{font-family:inherit;font-size:13px;font-weight:600;color:#3
 .structure-active .design-tools .design-link:not(#structure-toggle),.structure-active #map-panel{display:none}.structure-active .design-tools{display:flex;flex-direction:row;align-items:start}.structure-active .design-switch{max-width:200px}.structure-active #inspect-card{display:none}.presentation #walkthrough-structure{display:none}
 
 @media(max-width:600px){.structure-active .design-switch{max-width:140px}.structure-active #structure-toggle{white-space:nowrap;font-size:12px;padding:10px;min-height:44px}}
+
+/* Unified Settings: one navigation bar and one panel for every model option. */
+.toolbar #flight-toggle{min-width:70px;min-height:44px;padding:10px 12px;border:0;border-radius:7px;box-shadow:none;backdrop-filter:none;background:transparent;font-size:13px}
+.toolbar #flight-toggle[aria-pressed=true]{background:#2c6f62;color:white}
+.toolbar #flight-toggle:hover{background:#e3ece3}.toolbar #flight-toggle[aria-pressed=true]:hover{background:#245d51}
+#settings-panel{display:flex;flex-direction:column;width:390px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 112px - var(--safe-top));padding:0;overflow:hidden;border-radius:16px;background:#faf9f5fa}
+.settings-heading{flex-shrink:0;padding:16px 20px 10px}.settings-heading h2{font-size:19px;letter-spacing:-.3px;margin:0 0 4px}.settings-caption{font-size:12px;color:#6c7c73}
+.settings-tabs{display:flex;gap:4px;padding:0 16px 14px;border-bottom:1px solid #dfe5dc;flex-shrink:0}
+.settings-tabs button{flex:1;min-width:0;min-height:44px;padding:10px 8px;border:0;border-radius:9px;background:transparent;color:#52665a;font-weight:550}
+.settings-tabs button[aria-selected=true]{background:#e2ede4;color:#285e50}.settings-tabs button:hover{background:#edf1e9}
+.settings-body{padding:20px;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.settings-group,#settings-panel .view-settings,#exterior-finish-controls{min-width:0;border:0;border-bottom:1px solid #dce3d9;margin:0 0 22px;padding:0 0 22px}
+.settings-group legend,#settings-panel .view-settings legend,#exterior-finish-controls legend{font-size:13px;font-weight:650;padding:0;margin:0 0 9px;color:#354e41}
+#settings-panel select{display:block;position:static;width:100%;min-width:0;max-width:100%;min-height:44px;padding:10px 12px;border:1px solid #cbd6cb;border-radius:8px;background:#fff;color:#2c4339;font:inherit;font-size:15px;box-shadow:none;cursor:pointer}
+#settings-panel .finish-label{margin:12px 0 8px;font-size:13px;font-weight:500}#settings-panel .settings-note,#settings-panel #street-description{line-height:1.6;font-size:12px;color:#6c7c73;margin:9px 0 16px}
+#settings-panel .settings-option{min-height:44px;margin-top:14px;font-size:14px}#settings-panel .settings-option input{width:20px;height:20px}
+#settings-panel .scene-settings p{padding-left:32px;margin-top:0}
+.settings-links{display:grid;gap:2px}.settings-links a{display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:11px 0;color:#326e61;text-decoration:none;font-size:13px}.settings-links a:hover{text-decoration:underline}
+.settings-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.settings-actions button,.settings-primary{display:block;min-height:44px;padding:10px 12px;border:1px solid #cbd6cb;border-radius:8px;background:#fff;color:#2c4339;font:inherit;font-size:13px;line-height:1.4}
+#settings-panel #fullscreen{display:block;font-size:13px;line-height:1.4}.settings-credits{margin-top:20px!important}.settings-credits a{color:#617b6e}
+.settings-toggle-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px}.settings-toggle-row label{font-weight:600}
+#structure-toggle{min-width:66px;min-height:44px;padding:9px 15px;border:1px solid #cbd6cb;border-radius:24px;background:#fff;color:#536b5c;text-align:center;font:inherit;font-size:13px}
+#structure-toggle[aria-pressed=true]{background:#2c6f62;border-color:#2c6f62;color:#fff}
+#structure-off-note{border-top:1px solid #dce3d9;padding-top:18px;margin-top:22px!important}
+#structure-open-proposed{width:100%;background:#2c6f62;color:#fff;border-color:#2c6f62}
+.easter-game #flight-toggle,.easter-game #settings-tab-design,.easter-game #settings-tab-structure{display:none}
+@media(max-width:700px){#settings-panel{top:76px;right:12px;max-height:calc(100dvh - 92px - var(--safe-bottom))}.settings-heading{padding:14px 16px 9px}.settings-body{padding:18px}.toolbar{min-width:0}.toolbar select{min-width:70px}.toolbar #flight-toggle{min-width:62px;padding:10px 8px}}
+.touch-ui #settings-panel{top:calc(70px + var(--safe-top));max-height:calc(100dvh - 86px - var(--safe-top) - var(--safe-bottom));right:calc(12px + var(--safe-right));max-width:calc(100vw - 24px - var(--safe-left) - var(--safe-right))}
+@media(pointer:coarse){#settings-panel select{font-size:16px}}

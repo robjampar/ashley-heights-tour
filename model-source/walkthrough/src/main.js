@@ -27,6 +27,7 @@ import {StreetContext,readStreetPreference,writeStreetPreference,disableStreetSa
 import {loadVehicle,preloadVehicles,captureVehicleReflections} from './vehicle-models.js';
 import {VEHICLES} from './vehicle-specs.js';
 import {Life,carTemplateFromMeshes} from './life.js';
+import {loadResidentAssets,RealisticResidentFigure} from './realistic-residents.js';
 import {createStructureWalkthrough} from './structure-walkthrough.js';
 import {Inspector} from './inspect.js';
 import {Vegetation,claims as vegetationClaims} from './vegetation.js';
@@ -133,7 +134,28 @@ function openSettings(){
  if(!ready)return;if(settingsPrevious){closeSettings();return;}
  settingsPrevious={active,mode};mode='drag';active=false;keys.clear();clearVertical();touch.setActive(false);easter?.game.cancelFire();dragging=false;
  if(document.pointerLockElement)document.exitPointerLock();
- $('settings-panel').hidden=false;$('settings-toggle').setAttribute('aria-expanded','true');(appearance?.enabled?$('exterior-walls'):$('street-context')).focus();
+ $('settings-panel').hidden=false;$('settings-toggle').setAttribute('aria-expanded','true');
+ selectSettingsTab(easter?.game.started?'view':settingsTab,{focus:true});
+}
+let settingsTab='design';
+function selectSettingsTab(name,{focus=false}={}){
+ settingsTab=easter?.game.started?'view':name;
+ for(const button of document.querySelectorAll('[data-settings-tab]')){
+  const selected=button.dataset.settingsTab===settingsTab;
+  button.setAttribute('aria-selected',String(selected));button.tabIndex=selected?0:-1;
+  $(button.getAttribute('aria-controls')).hidden=!selected;
+  if(selected&&focus)button.focus();
+ }
+ $('settings-panel').querySelector('.settings-body').scrollTop=0;
+}
+for(const button of document.querySelectorAll('[data-settings-tab]')){
+ button.onclick=()=>selectSettingsTab(button.dataset.settingsTab);
+ button.onkeydown=event=>{
+  if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+  event.preventDefault();const tabs=[...document.querySelectorAll('[data-settings-tab]')].filter(b=>b.getClientRects().length);
+  const index=tabs.indexOf(button),next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+  selectSettingsTab(tabs[next].dataset.settingsTab,{focus:true});
+ };
 }
 function setStreetVisible(enabled,{persist=true}={}){
  if(!streetContext)return;let moved=false;
@@ -152,15 +174,36 @@ function setExteriorAppearance(value){
 $('exterior-walls').onchange=e=>setExteriorAppearance({walls:e.target.value});
 $('exterior-roof').onchange=e=>setExteriorAppearance({roof:e.target.value});
 $('settings-toggle').onclick=openSettings;$('settings-close').onclick=()=>closeSettings();$('street-context').onchange=e=>setStreetVisible(e.target.checked);
-function setLife(kind,on,{persist=true}={}){
+let peopleRequest=0;
+async function setLife(kind,on,{persist=true}={}){
  if(!life)return;
- if(kind==='people')life.setPeople(on);else{
+ if(kind==='people'){
+  const request=++peopleRequest,targetLife=life;
+  $('life-people').checked=on;
+  if(persist)writeLifePreference(kind,on);
+  if(on&&!life.residents.length){
+   $('people-description').textContent='Loading detailed people…';
+   stats.life={...stats.life,loadingPeople:true};
+   try{
+    const assets=await loadResidentAssets();
+    if(request!==peopleRequest||life!==targetLife)return;
+    life.figureFactory=(index,style)=>new RealisticResidentFigure(assets.get(style),index,style,{scene,bakedDaylight});
+   }catch(error){
+    if(request!==peopleRequest||life!==targetLife)return;
+    console.warn('Detailed people unavailable',error);
+    $('life-people').checked=false;$('people-description').textContent='People could not load. Switch on to retry.';
+    stats.life={...stats.life,loadingPeople:false};return;
+   }
+  }
+  $('people-description').textContent='Detailed residents going about the house.';
+  life.setPeople(on);
+ }else{
   if(on&&!life.cars.length){toast(isProposal(currentDesign)?'No car paths are available for this design.':'Cars belong to the proposed design: switch to Proposed.');$('life-cars').checked=false;return;}
   life.setCars(on);
  }
  $(kind==='people'?'life-people':'life-cars').checked=kind==='people'?life.people:life.carsOn;
  if(persist)writeLifePreference(kind,on);
- stats.life={people:life.people,cars:life.carsOn,residents:life.residents.length,carCount:life.cars.length};
+ stats.life={people:life.people,cars:life.carsOn,residents:life.residents.length,carCount:life.cars.length,loadingPeople:false};
  lighting.updateShadows();
 }
 $('life-people').onchange=e=>setLife('people',e.target.checked);$('life-cars').onchange=e=>setLife('cars',e.target.checked);
@@ -197,21 +240,23 @@ $('inspect-mode').onchange=e=>setInspect(e.target.checked);
 $('inspect-close').onclick=()=>{$('inspect-card').hidden=true;inspector?.clear();};
 $('inspect-copy').onclick=async()=>{const name=$('inspect-name').textContent;try{await navigator.clipboard.writeText(name);toast('Copied: '+name);}catch{toast('Select the name to copy it.');}};
 document.addEventListener('pointerdown',e=>{if(settingsPrevious&&!$('settings-panel').contains(e.target)&&!$('settings-toggle').contains(e.target))closeSettings({focus:false});},true);
-const goToDesign=target=>{if(!ready)return;saveComparisonView(target,{...nav.position,yaw,pitch,active,flying,lastWalkingPosition});location.assign(comparisonURL(target));};
+const goToDesign=target=>{if(!ready)return;saveComparisonView(target,{...nav.position,yaw,pitch,active:settingsPrevious?.active??active,flying,lastWalkingPosition});location.assign(comparisonURL(target));};
 $('design-switch').onchange=e=>goToDesign(e.target.value);
+$('structure-open-proposed').onclick=()=>goToDesign('proposed');
 async function toggleStructure(force){
  if(!ready||currentDesign!=='proposed')return;
- closeSettings({focus:false});if(document.pointerLockElement)document.exitPointerLock();
+ if(document.pointerLockElement)document.exitPointerLock();
  if(!structureView){
-  $('structure-toggle').disabled=true;$('structure-toggle').textContent='Loading structure…';
+  $('structure-toggle').disabled=true;$('structure-status').textContent='Loading…';
   try{structureLoading??=createStructureWalkthrough({scene,renderer,camera,canvas,
+   controlsMount:$('structure-settings-mount'),
    renderHouse(){mirrors?.update(camera);return lighting.render({toScreen:false});},
    focus(position,target){setFlying(true,{quiet:true});nav.position={x:position.x,y:-position.z,z:position.y-data.eyeHeight};const d=target.clone().sub(position);setDirection([d.x,-d.z,d.y]);syncCamera();updateMap();},
-   onView(view,on){structureDocument=on&&view!=='model';keys.clear();touch.reset();if(structureDocument&&document.pointerLockElement)document.exitPointerLock();},
-   onActive(on){if(on){structureInspectBefore=!!inspector?.enabled;setInspect(false,{persist:false});setMapVisible(false);start(false);}else setInspect(structureInspectBefore,{persist:false});$('structure-toggle').setAttribute('aria-pressed',String(on));$('structure-toggle').textContent=on?'Structure on':'Structure';lighting.updateShadows();}
+   onView(view,on){structureDocument=on&&view!=='model';keys.clear();touch.reset();if(structureDocument){closeSettings({focus:false});if(document.pointerLockElement)document.exitPointerLock();}},
+   onActive(on){if(on){structureInspectBefore=!!inspector?.enabled;setInspect(false,{persist:false});setMapVisible(false);if(!settingsPrevious)start(false);}else setInspect(structureInspectBefore,{persist:false});$('structure-toggle').setAttribute('aria-pressed',String(on));$('structure-status').textContent=on?'On':'Off';$('structure-off-note').hidden=on;lighting.updateShadows();}
   });structureView=await structureLoading;window.walkthrough.structure=structureView;
   }catch(error){structureLoading=null;console.error(error);toast('Structure could not load. Try again.');}
-  finally{$('structure-toggle').disabled=false;$('structure-toggle').textContent=structureView?.enabled?'Structure on':'Structure';}
+  finally{$('structure-toggle').disabled=false;$('structure-status').textContent=structureView?.enabled?'On':'Off';}
  }
  if(structureView)structureView.setEnabled(force??!structureView.enabled);
 }
@@ -350,7 +395,7 @@ async function load(){
  }
  stats.geometryBytes=0;const measuredGeometries=new Set();scene.traverse(object=>{const geometry=object.geometry;if(!geometry||measuredGeometries.has(geometry))return;measuredGeometries.add(geometry);for(const attr of Object.values(geometry.attributes))stats.geometryBytes+=attr.array.byteLength;if(geometry.index)stats.geometryBytes+=geometry.index.array.byteLength;});
  lighting.updateShadows();
- {const game=new WaveGame(data,{scene,camera,doors,mobile:touch.enabled,isActive:()=>active&&!flying&&pageFocused&&!document.hidden,onDeath:caught,onArm:()=>{if(easter.clock.arm(nav.position)){lighting.setActionMode(true);renderer.setPixelRatio(Math.min(devicePixelRatio,1.25));resize();easter.game.arm(nav.position);easter.game.updateHUD(easter.clock);}},onReset:()=>{easter?.clock.reset();lighting.setActionMode(false);renderer.setPixelRatio(Math.min(devicePixelRatio,touch.enabled?1.25:1.5));resize();},toast});easter={clock:new EasterSession(data),game,pursuit:game.horde};}
+ {const game=new WaveGame(data,{scene,camera,doors,bakedDaylight,mobile:touch.enabled,isActive:()=>active&&!flying&&pageFocused&&!document.hidden,onDeath:caught,onArm:()=>{if(easter.clock.arm(nav.position)){lighting.setActionMode(true);renderer.setPixelRatio(Math.min(devicePixelRatio,1.25));resize();easter.game.arm(nav.position);easter.game.updateHUD(easter.clock);}},onReset:()=>{easter?.clock.reset();lighting.setActionMode(false);renderer.setPixelRatio(Math.min(devicePixelRatio,touch.enabled?1.25:1.5));resize();},toast});easter={clock:new EasterSession(data),game,pursuit:game.horde};}
  // Static room batching and small moving hinge batches; the editable source keeps every separate object.
  // Keep the passage shortcuts on the clearer route beside the relocated flight.
  const courtyardOffset=(data.proposal?.specification?.courtyard?.upper_glazing_x??10.35)-10.35;
@@ -377,7 +422,8 @@ $('start').disabled=false;$('drag').disabled=false;$('settings-toggle').disabled
  reflections=roomReflections(renderer,scene,data.planRooms,{mobile:touch.enabled});lighting.info.roomReflections=reflections.info;
  // Exposed only for local validation / reproducible viewpoint screenshots.
  window.walkthrough={ready:true,toggleStructure,stats,appearance,setExteriorAppearance,nav,data,doors,mirrors:mirrors.mirrors,camera,renderer,lighting:lighting.info,touch,easter,life,setLife,inspector,setInspect,inspectAt,goTo,setFlying,setStreetVisible,setPresentation,setViewLens,setView(p,d){touch.reset();nav.position={x:p[0],y:p[1],z:p[2]};setDirection(d);if(doors.snap(nav.position))lighting.updateShadows();syncCamera();updateMap();},getState(){return {...nav.position,yaw,pitch,active,flying,presentation,viewLens,room:roomLabel(),streetContext:data.streetContext.enabled,calls:renderer.info.render.calls};},startDrag:()=>start(false)};
- $('structure-toggle').hidden=currentDesign!=='proposed';$('structure-toggle').disabled=false;
+ $('settings-design-name').textContent=DESIGN_LABELS[currentDesign]??currentDesign;
+ $('structure-available').hidden=currentDesign!=='proposed';$('structure-unavailable').hidden=currentDesign==='proposed';$('structure-toggle').disabled=currentDesign!=='proposed';
  if(currentDesign==='proposed'&&new URLSearchParams(location.search).has('structure'))await toggleStructure(true);
 }
 function frame(time){

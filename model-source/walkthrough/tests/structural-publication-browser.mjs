@@ -10,11 +10,11 @@ const page=await browser.newPage({viewport:{width:1500,height:1000}});page.setDe
 page.on('pageerror',e=>record.errors.push(e.message));page.on('response',r=>{if(r.status()>=400)record.failed.push({url:r.url(),status:r.status()});});
 try{
  await page.goto(base+'?design=proposed');await page.waitForFunction(()=>window.walkthrough?.ready);
- assert.equal(await page.locator('#structure-toggle').isVisible(),true);
- await page.evaluate(()=>walkthrough.startDrag());await page.locator('#structure-toggle').click();
- await page.waitForFunction(()=>window.walkthrough?.structure?.enabled);
+ assert.equal(await page.locator('#structure-toggle').isVisible(),false);
+ await page.evaluate(()=>walkthrough.startDrag());await page.locator('#settings-toggle').click();await page.locator('#settings-tab-structure').click();await page.locator('#structure-toggle').click();
+ await page.waitForFunction(()=>window.walkthrough?.structure?.enabled);await page.locator('#settings-close').click();
  record.structure=await page.evaluate(()=>{const w=walkthrough,m=w.structure.studio.members;return {revision:m.revision,members:m.elements.length,native:w.data.exteriorMasonryCoordination?.exteriorFinish?.revision,approved:m.approvedForConstruction};});
- assert.equal(record.structure.revision,'WM01-2026-10-29');assert.equal(record.structure.native,'WM01-west-brick-finish-2026-10-29');assert.equal(record.structure.approved,false);assert.equal(record.structure.members,2576);
+ assert.equal(record.structure.revision,'WM01-2026-10-29');assert.equal(record.structure.native,'WM01-west-brick-finish-2026-10-29');assert.equal(record.structure.approved,false);assert.equal(record.structure.members,2911);
  record.checks.push('Structure button opens current overlay and register');
  await page.evaluate(()=>{const w=walkthrough;w.setFlying(true);w.setLife('people',false);w.setView([11.5,-1.8,1.05],[-1.8,.1,-.1]);w.structure.studio.select('M-FR-1-035');const r=w.structure.root;for(const [id,val]of [['cut','5.6'],['context-opacity','15'],['structure-opacity','100']]){const e=r.querySelector('#'+id);e.value=val;e.dispatchEvent(new Event('input',{bubbles:true}));}});
  await page.waitForTimeout(1500);await page.screenshot({path:new URL('overlay-beam.png',out).pathname});
@@ -33,7 +33,7 @@ try{
  record.checks.push('Standalone structure preserves member link and loads matching house');
  for(const design of ['planning','original']){await page.goto(base+'?design='+design);await page.waitForFunction(()=>window.walkthrough?.ready);assert.equal(await page.locator('#structure-toggle').isVisible(),false);record.checks.push(design+' still loads');}
  await page.goto(base+'?design=proposed&structure=1');await page.waitForFunction(()=>window.walkthrough?.structure?.enabled);
- assert.equal(await page.locator('#structure-toggle').textContent(),'Structure on');
+ assert.equal(await page.locator('#structure-status').textContent(),'On');
  await page.screenshot({path:new URL('direct-structure-link.png',out).pathname});record.checks.push('Direct structure link enables overlay automatically');
  assert.deepEqual(record.errors,[]);assert.deepEqual(record.failed,[]);record.passed=true;
  console.log(phase,record.checks.length,'checks passed');

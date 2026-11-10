@@ -1,0 +1,93 @@
+{
+  "license": "MIT (base models and source motion); locally authored derivatives",
+  "source": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "models": [
+    {
+      "style": "man-decayed",
+      "file": "man-decayed.glb",
+      "humanSource": "man",
+      "injury": null,
+      "cuts": [],
+      "vertices": 3495,
+      "triangles": 6946,
+      "clips": [
+        "idle",
+        "injured",
+        "rush"
+      ],
+      "sourceExportBytes": 14908056,
+      "bytes": 1748496,
+      "sha256": "864322884099c6b8479780a6d8b5f39ee09ced89f9ebd781bf5bab86ea1954eb"
+    },
+    {
+      "style": "woman-decayed",
+      "file": "woman-decayed.glb",
+      "humanSource": "woman-dress",
+      "injury": null,
+      "cuts": [],
+      "vertices": 4194,
+      "triangles": 8340,
+      "clips": [
+        "idle",
+        "injured",
+        "rush"
+      ],
+      "sourceExportBytes": 18270112,
+      "bytes": 2184552,
+      "sha256": "5013ba2e4ac469c4675f5df0636dd900d99681db98c06d97d89b30ded5b2256f"
+    },
+    {
+      "style": "missing-arm",
+      "file": "missing-arm.glb",
+      "humanSource": "man",
+      "injury": "arm",
+      "cuts": [
+        {
+          "bone": "Bip01 L UpperArm",
+          "removedVertices": 523,
+          "capFaces": 1
+        }
+      ],
+      "vertices": 2972,
+      "triangles": 5900,
+      "clips": [
+        "idle",
+        "injured",
+        "rush"
+      ],
+      "sourceExportBytes": 14871356,
+      "bytes": 1711792,
+      "sha256": "3820f5593b6003b790c35c07fbd08421cbbd373e1a4563aad7bc79c90b6e939d"
+    },
+    {
+      "style": "crawler",
+      "file": "crawler.glb",
+      "humanSource": "man",
+      "injury": "legs",
+      "cuts": [
+        {
+          "bone": "Bip01 L Calf",
+          "removedVertices": 176,
+          "capFaces": 1
+        },
+        {
+          "bone": "Bip01 R Calf",
+          "removedVertices": 165,
+          "capFaces": 1
+        }
+      ],
+      "vertices": 3154,
+      "triangles": 6264,
+      "clips": [
+        "crawl",
+        "idle",
+        "injured",
+        "rush"
+      ],
+      "sourceExportBytes": 14935752,
+      "bytes": 1776008,
+      "sha256": "e1215af20b1671fc0023184ed15c035dd5e99cb0b6b78d56777951f3526cbb90"
+    }
+  ],
+  "texturePolicy": "2048 px face colour; 1024 px clothing, normal and hair maps; JPEG colour/normal, PNG alpha; source maps preserved."
+}

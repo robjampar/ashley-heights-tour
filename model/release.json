@@ -2123,7 +2123,7 @@
       "method": "Measured furniture studies; separate design review required"
     }
   },
-  "published_utc": "2026-11-09T21:35:26.910594+00:00",
+  "published_utc": "2026-11-10T08:03:14.872237+00:00",
   "model_updated_at": "2026-09-24T12:10:39.641579+00:00",
   "source_native_sha256": "a634e317ea480f2a52aafc5709ece8e89ca9945894d20f7fcc34142aa4e8c418",
   "source_geometry_sha256": "470a901e1845d2e8b70a043ad91dd6a1836fb95b144dbbb96bbf3b3407518415",
@@ -2208,21 +2208,27 @@
       "bytes": 2010991,
       "sha256": "5ac4c2d56c138bc30b72b5b9a7f8fbbdca6c3c5988c1634e75f68dd1e137c02c"
     },
-    "style.e103d12e34f2ab24.css": {
-      "bytes": 27467,
-      "sha256": "e103d12e34f2ab247a375d0c1744c0f3600ec135508ba3ff73fcd152ee351876"
+    "style.f0ed5477dd49fa75.css": {
+      "bytes": 31782,
+      "sha256": "f0ed5477dd49fa7529ec6ed7677d0a677a38591c6b57ce4df289be7484189774"
     },
-    "app.22bb9ba89d196040.js": {
-      "bytes": 5590392,
-      "sha256": "22bb9ba89d196040945b30464ec5dd73c501468db5e0ef7f1c9c9c210af5e9ae"
+    "app.88e9f20fae682d06.js": {
+      "bytes": 5621144,
+      "sha256": "88e9f20fae682d06d28bec4a6da603f481dad4f258d5d416e7794215bce2f03f"
     }
   },
   "previous_assets": {
-    "app.053a2a2286622136.js": {
-      "bytes": 5578405,
-      "sha256": "053a2a2286622136310263ed7de09bfc926005d120766ec6c342fd926564aaf6",
-      "retired_at_epoch": 1794260066.069665,
-      "retain_until_epoch": 1794261866.069665
+    "style.e103d12e34f2ab24.css": {
+      "bytes": 27467,
+      "sha256": "e103d12e34f2ab247a375d0c1744c0f3600ec135508ba3ff73fcd152ee351876",
+      "retired_at_epoch": 1794297794.872237,
+      "retain_until_epoch": 1794299594.872237
+    },
+    "app.22bb9ba89d196040.js": {
+      "bytes": 5590392,
+      "sha256": "22bb9ba89d196040945b30464ec5dd73c501468db5e0ef7f1c9c9c210af5e9ae",
+      "retired_at_epoch": 1794297794.872237,
+      "retain_until_epoch": 1794299594.872237
     }
   },
   "easter": {
@@ -2655,7 +2661,7 @@
     "basis": "Approximate road and low-detail neighbouring buildings from supplied site images"
   },
   "accuracy_note": "Photo and plan reconstruction; unmeasured details remain estimates.",
-  "staged_site_bytes": 786973209,
+  "staged_site_bytes": 825851049,
   "previous_runtime_assets": {
     "structure/a0619ec3e4f3dd25/index.html": {
       "bytes": 9132,
@@ -2700,6 +2706,38 @@
     "structure/a0619ec3e4f3dd25/trial-study.pdf": {
       "bytes": 426225,
       "sha256": "74a66fd2fb52d8af3f603c1e027a4e200447bcc2dff41367da9fa98f2c1b7f7f"
+    },
+    "vehicles/0c084002aafd80d8/CREDITS.md": {
+      "bytes": 4039,
+      "sha256": "a95768fc86b3626447b6c559af189fa0a4f317efadc15ae2e47060ef7fe174e6"
+    },
+    "vehicles/0c084002aafd80d8/credits.html": {
+      "bytes": 1810,
+      "sha256": "9b9791068be6012fbd3c94fcb39d5ec294d36e98f1a9464e81e20557cebf84ce"
+    },
+    "vehicles/0c084002aafd80d8/fiat-500.glb": {
+      "bytes": 6697240,
+      "sha256": "a648ac8556c6e18e7a4eadf96b139e0df410702d80547a55c59fe7bcbd50019f"
+    },
+    "vehicles/0c084002aafd80d8/fiat-500.json": {
+      "bytes": 245,
+      "sha256": "a07133e5dfad449d980bf51aed80fcaa1de0b5560cf0f4176e154ae71b045662"
+    },
+    "vehicles/0c084002aafd80d8/nissan-nv200.glb": {
+      "bytes": 2680536,
+      "sha256": "dadb9336a07b4aa38f33ff3b034d2fac1f82e3841d7a458da37c1b71a5509487"
+    },
+    "vehicles/0c084002aafd80d8/nissan-nv200.json": {
+      "bytes": 343,
+      "sha256": "16762919d9fab82aa4e82d9e344ba43777468423f44d340d2c40df232a9133da"
+    },
+    "vehicles/0c084002aafd80d8/tesla-model-3.glb": {
+      "bytes": 5442756,
+      "sha256": "ce4e68a9a742850f65b5338ffc8ea1d9eeffb3234d7c6f54749d1850e4cfc1b0"
+    },
+    "vehicles/0c084002aafd80d8/tesla-model-3.json": {
+      "bytes": 271,
+      "sha256": "8622a991caa44dec76de08dc5fe469493867d62faac93885b59143567a7e6194"
     }
   },
   "runtime_assets": {
@@ -2731,35 +2769,91 @@
       "bytes": 408660,
       "sha256": "7e174964a0e72c0a07de0f7e379529054f9c4dc6c52820109b455542d6d9c505"
     },
-    "vehicles/0c084002aafd80d8/CREDITS.md": {
+    "people/96a4dcd00dc42600/LICENSE.txt": {
+      "bytes": 1066,
+      "sha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352"
+    },
+    "people/96a4dcd00dc42600/assets.json": {
+      "bytes": 2566,
+      "sha256": "d203490b15b9f10a460c4cd897473c1cb4b4599e2887dbede89050d774540306"
+    },
+    "people/96a4dcd00dc42600/child.glb": {
+      "bytes": 2088768,
+      "sha256": "495d62f16ab816bedb96598f20a053c8961a1c4f4ebd2a3f813b4b4a9bccde47"
+    },
+    "people/96a4dcd00dc42600/man-smart.glb": {
+      "bytes": 3330596,
+      "sha256": "f0ecba52865346c2afb27f0809686c78f75cf4949c0f21f0bfd67b67ac23e3ae"
+    },
+    "people/96a4dcd00dc42600/man.glb": {
+      "bytes": 3288344,
+      "sha256": "bb40a014dd332826567dd1f34c7ef6ed7a1dd97b8a31c60fba989f623ec65240"
+    },
+    "people/96a4dcd00dc42600/teen.glb": {
+      "bytes": 2432520,
+      "sha256": "71e32fe186a2a2e6da8df84272d6396581ec2aca95d2b557c638fd0fd67dfd8f"
+    },
+    "people/96a4dcd00dc42600/woman-dress.glb": {
+      "bytes": 3482220,
+      "sha256": "be1015942e6c9f9f061e8ca95fa6f3a22b39b049bef4a4572792959af58848ab"
+    },
+    "people/96a4dcd00dc42600/woman.glb": {
+      "bytes": 2393428,
+      "sha256": "bef9babda3884478496359af0c2dc347883cc1107dbd42716b7466808835162e"
+    },
+    "zombies/f5a11103023ff335/LICENSE.txt": {
+      "bytes": 1066,
+      "sha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352"
+    },
+    "zombies/f5a11103023ff335/assets.json": {
+      "bytes": 2335,
+      "sha256": "f0582971f2c09224aa43962c3ccb80e5cf9fdc9de9186ee1e5b9eebb57f450bc"
+    },
+    "zombies/f5a11103023ff335/crawler.glb": {
+      "bytes": 1776008,
+      "sha256": "e1215af20b1671fc0023184ed15c035dd5e99cb0b6b78d56777951f3526cbb90"
+    },
+    "zombies/f5a11103023ff335/man-decayed.glb": {
+      "bytes": 1748496,
+      "sha256": "864322884099c6b8479780a6d8b5f39ee09ced89f9ebd781bf5bab86ea1954eb"
+    },
+    "zombies/f5a11103023ff335/missing-arm.glb": {
+      "bytes": 1711792,
+      "sha256": "3820f5593b6003b790c35c07fbd08421cbbd373e1a4563aad7bc79c90b6e939d"
+    },
+    "zombies/f5a11103023ff335/woman-decayed.glb": {
+      "bytes": 2184552,
+      "sha256": "5013ba2e4ac469c4675f5df0636dd900d99681db98c06d97d89b30ded5b2256f"
+    },
+    "vehicles/ab98225852418419/CREDITS.md": {
       "bytes": 4039,
       "sha256": "a95768fc86b3626447b6c559af189fa0a4f317efadc15ae2e47060ef7fe174e6"
     },
-    "vehicles/0c084002aafd80d8/credits.html": {
-      "bytes": 1810,
-      "sha256": "9b9791068be6012fbd3c94fcb39d5ec294d36e98f1a9464e81e20557cebf84ce"
+    "vehicles/ab98225852418419/credits.html": {
+      "bytes": 2741,
+      "sha256": "07bbe809ff27e7730e677c1a42a9c01a6a860d7aa8e99d0e8220f8ba67723aab"
     },
-    "vehicles/0c084002aafd80d8/fiat-500.glb": {
+    "vehicles/ab98225852418419/fiat-500.glb": {
       "bytes": 6697240,
       "sha256": "a648ac8556c6e18e7a4eadf96b139e0df410702d80547a55c59fe7bcbd50019f"
     },
-    "vehicles/0c084002aafd80d8/fiat-500.json": {
+    "vehicles/ab98225852418419/fiat-500.json": {
       "bytes": 245,
       "sha256": "a07133e5dfad449d980bf51aed80fcaa1de0b5560cf0f4176e154ae71b045662"
     },
-    "vehicles/0c084002aafd80d8/nissan-nv200.glb": {
+    "vehicles/ab98225852418419/nissan-nv200.glb": {
       "bytes": 2680536,
       "sha256": "dadb9336a07b4aa38f33ff3b034d2fac1f82e3841d7a458da37c1b71a5509487"
     },
-    "vehicles/0c084002aafd80d8/nissan-nv200.json": {
+    "vehicles/ab98225852418419/nissan-nv200.json": {
       "bytes": 343,
       "sha256": "16762919d9fab82aa4e82d9e344ba43777468423f44d340d2c40df232a9133da"
     },
-    "vehicles/0c084002aafd80d8/tesla-model-3.glb": {
+    "vehicles/ab98225852418419/tesla-model-3.glb": {
       "bytes": 5442756,
       "sha256": "ce4e68a9a742850f65b5338ffc8ea1d9eeffb3234d7c6f54749d1850e4cfc1b0"
     },
-    "vehicles/0c084002aafd80d8/tesla-model-3.json": {
+    "vehicles/ab98225852418419/tesla-model-3.json": {
       "bytes": 271,
       "sha256": "8622a991caa44dec76de08dc5fe469493867d62faac93885b59143567a7e6194"
     },
@@ -2818,7 +2912,9 @@
   },
   "runtime_directories": {
     "visual-quality": "visual-quality/2fdc3ee54bfe6970/",
-    "vehicles": "vehicles/0c084002aafd80d8/",
+    "people": "people/96a4dcd00dc42600/",
+    "zombies": "zombies/f5a11103023ff335/",
+    "vehicles": "vehicles/ab98225852418419/",
     "structure": "structure/d32bc49a7c0acdcc/"
   },
   "source_assets": {
@@ -2903,8 +2999,8 @@
       "sourceSHA256": "5ac4c2d56c138bc30b72b5b9a7f8fbbdca6c3c5988c1634e75f68dd1e137c02c"
     },
     "style.css": {
-      "path": "style.e103d12e34f2ab24.css",
-      "sourceSHA256": "e103d12e34f2ab247a375d0c1744c0f3600ec135508ba3ff73fcd152ee351876"
+      "path": "style.f0ed5477dd49fa75.css",
+      "sourceSHA256": "f0ed5477dd49fa7529ec6ed7677d0a677a38591c6b57ce4df289be7484189774"
     }
   },
   "release_method": "Verified main walkthrough update; existing photo tour, brochure and room studies preserved.",
@@ -2940,6 +3036,18 @@
       "members": 335,
       "enquiryPack": "./structure/d32bc49a7c0acdcc/garage-deck-enquiry.pdf",
       "approvedForConstruction": false
+    }
+  },
+  "characters": {
+    "people": {
+      "runtimePath": "./people/96a4dcd00dc42600/",
+      "models": 6,
+      "bytes": 17015876
+    },
+    "zombies": {
+      "runtimePath": "./zombies/f5a11103023ff335/",
+      "models": 4,
+      "bytes": 7420848
     }
   }
 }
